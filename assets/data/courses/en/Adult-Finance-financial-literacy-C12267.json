@@ -1,0 +1,1040 @@
+{
+  "id": "Adult-Finance-financial-literacy-C12267",
+  "nm": "Adult Finance",
+  "lvl": "Level 3AK",
+  "vrt": "financial-literacy",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Diary Tracks the Cash 📒",
+      "desc": "Cash Flow Statement, Business Finance",
+      "rwc": "Pencil, Eraser",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 1,
+          "nm": "Can a diary track profit? 📒",
+          "desc": "In this activity, students will explore how businesses manage money by tracking income and expenses through a simple cash diary example. They will also understand how loans such as those supported by PM Mudra Yojana help businesses grow.",
+          "yt": "MQWm2dJUPpA",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 1,
+        "nm": "Can a diary track your profits? 📒",
+        "qs": [
+          {
+            "q": "What is the primary purpose of maintaining a cash diary in a business?",
+            "opts": {
+              "1": "To track money inflow and outflow",
+              "2": "To attract more customers",
+              "3": "To create a business logo"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What does the term 'Money Out' refer to in a business context?",
+            "opts": {
+              "1": "The money earned from sales",
+              "2": "The profit gained from the business",
+              "3": "The money spent on expenses"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If Fiza wants to know if her business made a profit on Day 3, what should she calculate?",
+            "opts": {
+              "1": "The number of customers she served",
+              "2": "The total expenses for the month",
+              "3": "The difference between Money In and Money Out"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "Fiza wants to expand her lemonade stall but lacks sufficient funds. Which type of loan should she consider?",
+            "opts": { "1": "A personal loan", "2": "A Mudra Loan", "3": "A credit card loan" },
+            "ans": "2"
+          },
+          {
+            "q": "Imagine Fiza wants to use a Mudra Loan to attract new customers. What could be a potential strategy?",
+            "opts": {
+              "1": "Decrease product quality",
+              "2": "Improve marketing and advertising",
+              "3": "Reduce working hours"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Fill-Your-Business-Cash-Diary-📒-Basic",
+          "seq": 1,
+          "nm": "Fill Your Business Cash Diary 📒",
+          "desc": "In this activity, students will explore how businesses manage money by tracking income and expenses through a simple cash diary example. They will also understand how loans such as those supported by PM Mudra Yojana help businesses grow.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Name one thing recorded in a cash diary, then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types any one of the following words: Income / Expense, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Income / Expense, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Income / Expense, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Click a photo of Flowers and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "Any Flower",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Flower"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & explain your Cash Diary and whether your business made profit or loss"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Click a clear photo of your Cash Diary and upload it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Shop Logs Every Rupee 🧾",
+      "desc": "Cash Flow Statement, Business Finance",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 2,
+          "nm": "Can Fiza find her profit? 🧾",
+          "desc": "In this activity, students will learn in an easy way how businesses manage money by keeping track of income and expenses. Students will create a simple cash diary table to record money coming in and going out. They will also understand in a simple way how loans like PM Mudra Yojana help businesses grow.",
+          "yt": "B0gSC8GYcWM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 2,
+        "nm": "Did your business make profit? 💰",
+        "qs": [
+          {
+            "q": "What does 'Money In' refer to in the context of a business?",
+            "opts": {
+              "1": "The money received from sales",
+              "2": "The total profit made by the business",
+              "3": "The expenses incurred by the business"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How is profit determined in a business according to the script?",
+            "opts": {
+              "1": "When Money Out is greater than Money In",
+              "2": "When Money In is greater than Money Out",
+              "3": "When Money In and Money Out are equal"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If a business has Money In of ₹400 and Money Out of ₹150, what is the financial result?",
+            "opts": { "1": "Profit", "2": "Loss", "3": "No profit, no loss" },
+            "ans": "1"
+          },
+          {
+            "q": "If you wanted to expand your lemonade stall but lack funds, which loan could help according to the script?",
+            "opts": { "1": "Personal Loan", "2": "Mudra Loan", "3": "Mortgage Loan" },
+            "ans": "2"
+          },
+          {
+            "q": "Which type of Mudra Loan would be suitable for an expanding business as per the script?",
+            "opts": { "1": "Shishu Loan", "2": "Kishor Loan", "3": "Tarun Loan" },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Fill-Fiza's-Business-Cash-Diary-🧾-Remedial",
+          "seq": 2,
+          "nm": "Fill Fiza's Business Cash Diary 🧾",
+          "desc": "In this activity, students will learn in an easy way how businesses manage money by keeping track of income and expenses. Students will create a simple cash diary table to record money coming in and going out. They will also understand in a simple way how loans like PM Mudra Yojana help businesses grow.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Name one thing tracked in your simple cash diary, then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types any one of the following words: Income / Expense, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Income / Expense, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Income / Expense, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Click a photo of a plant or tree and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "Plant / Tree",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Plant / Tree"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & explain what a Mudra Loan is and how it helps your business"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Click a clear photo of your Cash Diary (guided activity) and upload it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Direct or Indirect Sorted 📑",
+      "desc": "Types of Taxes",
+      "rwc": "Pencil, Eraser",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 3,
+          "nm": "Can chips bills hide taxes? 📑",
+          "desc": "In this activity, students learn how Direct and Indirect Taxes work in real life. They understand which taxes they pay directly and which ones are added to the things they buy. Students will sort different taxes, think like smart taxpayers, and learn how taxes affect their daily life and the country’s services.",
+          "yt": "7pSckrj9qJ0",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 3,
+        "nm": "Do you pay tax without knowing? 🧾",
+        "qs": [
+          {
+            "q": "What is a Direct Tax?",
+            "opts": {
+              "1": "A tax that is directly paid to the government by an individual or organization.",
+              "2": "A tax included in the price of goods and services.",
+              "3": "A tax that can be shifted to another person or entity."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "How does an Indirect Tax work?",
+            "opts": {
+              "1": "It is included in the price of goods and services and paid by the consumer.",
+              "2": "It is paid directly from an individual's income to the government.",
+              "3": "It cannot be shifted from the person who earns to someone else."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Which of the following is an example of an Indirect Tax?",
+            "opts": { "1": "Income Tax", "2": "Property Tax", "3": "Tax on biscuits" },
+            "ans": "3"
+          },
+          {
+            "q": "Anika's parents receive a monthly salary, and she sees a deduction labeled \"Income Tax\" on their payslip. What should Anika understand about this deduction?",
+            "opts": {
+              "1": "It is a Direct Tax paid directly from her parents' income to the government.",
+              "2": "It is an Indirect Tax that her parents will recover through other purchases.",
+              "3": "It is a tax that can be shifted to someone else in her family."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Raj buys a packet of chips and notices a small tax amount added to the total bill. He wants to make a smart financial decision regarding this type of tax. What should Raj consider?",
+            "opts": {
+              "1": "Stop buying chips to avoid paying any tax at all.",
+              "2": "Understand that this is an Indirect Tax and consider it when budgeting.",
+              "3": "Ask the seller to reduce the tax amount on the bill."
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Sort-Direct-and-Indirect-Taxes-📑-Basic",
+          "seq": 3,
+          "nm": "Sort Direct and Indirect Taxes 📑",
+          "desc": "In this activity, students learn how Direct and Indirect Taxes work in real life. They understand which taxes they pay directly and which ones are added to the things they buy. Students will sort different taxes, think like smart taxpayers, and learn how taxes affect their daily life and the country’s services.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a ⭐ if you feel confident, or 👎 if you are confused",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Name one type of tax (Direct or Indirect), then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types any one of the following words: Direct / Indirect, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Direct / Indirect, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Direct / Indirect, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Click a photo of a book and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "Book",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a book"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & explain the difference between Direct and Indirect Tax from your activity"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Click a clear photo of your Tax Sorting chart and upload it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Government Spends Wisely 🏛️",
+      "desc": "Tax",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 4,
+          "nm": "Can you spend taxes wisely? 🏛️",
+          "desc": "In this activity, students learn how the government uses tax money to provide services like roads, hospitals, and schools. They will think like the government — plan how to use limited money wisely, understand what taxes mean, and learn to make fair, thoughtful decisions that help everyone in their community.",
+          "yt": "RUxTer3RMzE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 4,
+        "nm": "How does tax money get spent? 🏗️",
+        "qs": [
+          {
+            "q": "What does the government use tax money for?",
+            "opts": {
+              "1": "To run public services like roads and hospitals",
+              "2": "To pay extra money to rich people",
+              "3": "To give rewards to students"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Why does every choice of the government matter?",
+            "opts": {
+              "1": "Because choices can be changed anytime without impact",
+              "2": "Because only one service needs improvement",
+              "3": "Because each decision affects other needs and services"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If a school roof is broken, which area needs tax money?",
+            "opts": {
+              "1": "Buying more computer",
+              "2": "Road development",
+              "3": "Education support and school repairs"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "What can happen if all the money is spent only on one favourite problem?",
+            "opts": {
+              "1": "Other important needs will not get support",
+              "2": "Everything in the area will get fixed",
+              "3": "The money will increase by itself"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "You are making a poster. Which title shows clear decision-making?",
+            "opts": {
+              "1": "My favourite colours and drawings",
+              "2": "How I divided ₹10,000 tax money for my community”",
+              "3": "Things I want to buy this month"
+            },
+            "ans": "2"
+          }
+        ]
+      }
+    },
+    {
+      "nm": "Wheel Spins the Investments 🎡",
+      "desc": "Investments Types of investments Diversification",
+      "rwc": "Pencil, Eraser",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 5,
+          "nm": "Can a wheel spread investments? 🎡",
+          "desc": "In this activity, students will create an Investment Wheel by listing five different types of investments and linking them to SDG 4: Quality Education. They will understand how learning investment skills helps prepare for future jobs and entrepreneurship.",
+          "yt": "Ihz0XqqFqcE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 5,
+        "nm": "Can smart investing reduce risk? 📊",
+        "qs": [
+          {
+            "q": "What is the main focus of the activity 'Smart Investing'?",
+            "opts": {
+              "1": "Financial Literacy",
+              "2": "Health and Wellness",
+              "3": "Environmental Conservation"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What is diversification in the context of investments?",
+            "opts": {
+              "1": "Spreading money across different investments",
+              "2": "Investing all money in one place",
+              "3": "Avoiding any type of investment"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How can one balance returns and reduce risk according to the script?",
+            "opts": {
+              "1": "By only choosing the safest investments",
+              "2": "By diversifying investments",
+              "3": "By investing solely in risky investments"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If you have a high tolerance for risk and want to maximize returns, what should you consider doing?",
+            "opts": {
+              "1": "Invest more in risky investments",
+              "2": "Invest only in safe investments",
+              "3": "Avoid any investments"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "You have 20,000 rupees to invest and want to practice diversification. What is a balanced approach?",
+            "opts": {
+              "1": "Invest all in one risky investment",
+              "2": "Choose 3 safe and 2 risky investments",
+              "3": "Invest only in safe bank deposits"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-Your-Investment-Wheel-🎡-Intermediate",
+          "seq": 4,
+          "nm": "Build Your Investment Wheel 🎡",
+          "desc": "In this activity, students will create an Investment Wheel by listing five different types of investments and linking them to SDG 4: Quality Education. They will understand how learning investment skills helps prepare for future jobs and entrepreneurship.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Name one type of investment, then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types any one of the following words: FD / Stocks / PPF / Gold, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: FD / Stocks / PPF / Gold, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: FD / Stocks / PPF / Gold, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Click a photo of a pen or pencil and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "Pen / Pencil",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than Pen/Pencil"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & explain your investment choices (safe and risky)"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Click a clear photo of your Investment Wheel and upload it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Risk Meets the Return 📈",
+      "desc": "Investments, Risk, Return",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 6,
+          "nm": "Can a truck lose money? 📈",
+          "desc": "Students will learn what investment really means and why money can sometimes grow or shrink. Through simple examples like food trucks, trees, and flowers, they will understand the ideas of investment, risk, and return. They will explore the difference between safe investments like FD and PPF, and risky investments like stocks, business, and cryptocurrency. In the activity, students choose safe and risky investment options for a ₹25,000 budget, helping them build strong decision-making skills and understand how to invest wisely based on their goals.",
+          "yt": "XWTfHFBBsjM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 6,
+        "nm": "Can risk ever be worth it? 💹",
+        "qs": [
+          {
+            "q": "What does Investment mean?",
+            "opts": {
+              "1": "Spending all your money on Wants",
+              "2": "Putting money in a place where it can grow in the future",
+              "3": "Keeping money under your pillow"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Why do people invest even when there is risk?",
+            "opts": {
+              "1": "Because investments give returns, which can be profit or loss",
+              "2": "Because investments never fail",
+              "3": "Because it is free to invest anywhere"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "If you put money in a Fixed Deposit, what type of investment is it?",
+            "opts": { "1": "Safe Investment", "2": "Risky Investment", "3": "No Investment" },
+            "ans": "1"
+          },
+          {
+            "q": "Imagine you need your money back safely in 2 months. Which option should you choose?",
+            "opts": { "1": "Stocks", "2": "Savings account", "3": "Cryptocurrency" },
+            "ans": "2"
+          },
+          {
+            "q": "Imagine you want to grow your money over 10 years. Which is the smarter choice?",
+            "opts": {
+              "1": "Keep all money at home",
+              "2": "Put everything in one risky option",
+              "3": "Put most money in safe options and some in risky ones"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Choose-Your-Safe-and-Risky-Investments-📈-Remedial",
+          "seq": 5,
+          "nm": "Choose Your Safe and Risky Investments 📈",
+          "desc": "Students will learn what investment really means and why money can sometimes grow or shrink. Through simple examples like food trucks, trees, and flowers, they will understand the ideas of investment, risk, and return. They will explore the difference between safe investments like FD and PPF, and risky investments like stocks, business, and cryptocurrency. In the activity, students choose safe and risky investment options for a ₹25,000 budget, helping them build strong decision-making skills and understand how to invest wisely based on their goals.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Name one type of investment, then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types any one of the following words: Safe / Risky, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Safe / Risky, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Safe / Risky, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Draw anything on paper and click its photo and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "Clear drawing photo",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a drawing photo"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & explain your investment plan and how you reduced risk"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Click a clear photo of your Investment Selection activity and upload it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Puzzle Unlocks Payments 🧩",
+      "desc": "Digital Payments",
+      "rwc": "Pencil, Eraser",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 7,
+          "nm": "Can a puzzle unlock payments? 🧩",
+          "desc": "In this activity, students will create a “Digital Payments Puzzle” poster that illustrates the key modes of digital money transfer (UPI via QR/contacts, IMPS, NEFT/RTGS via internet or mobile banking) and shows how each supports SDG 8: Decent Work & Economic Growth. They will illustrate the SDG 8 theme in the centre, summarize its key benefits around it, and depict various digital payment methods in the other panels.",
+          "yt": "bzPVpR9pUvo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 7,
+        "nm": "Can UPI replace your wallet? 📲",
+        "qs": [
+          {
+            "q": "What does UPI stand for in the context of digital payments?",
+            "opts": {
+              "1": "Universal Payments Interface",
+              "2": "Unified Payments Interface",
+              "3": "Universal Payment Index"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "How do digital payments support SDG 8 according to the script?",
+            "opts": {
+              "1": "By reducing the need for physical currency and promoting global trade",
+              "2": "By enabling instant payments that strengthen local economies and create jobs",
+              "3": "By supporting financial institutions in developing new banking products"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Which method allows you to pay instantly without worrying about exact change, according to the script?",
+            "opts": {
+              "1": "Scanning a QR code with your phone",
+              "2": "Writing a check",
+              "3": "Using coins and cash"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "You are a shopkeeper who wants to restock quickly after a busy day. Which payment method should you encourage customers to use to ensure quick access to funds?",
+            "opts": {
+              "1": "Digital payments via UPI",
+              "2": "Credit card payments",
+              "3": "Cash payments"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "You are planning to pay a daily-wage worker as soon as they complete their work. What is the most efficient payment method according to the script?",
+            "opts": { "1": "Paying in cash", "2": "Digital transfer", "3": "Writing a check" },
+            "ans": "2"
+          }
+        ]
+      }
+    },
+    {
+      "nm": "Chart Maps the Transfer 💳",
+      "desc": "Digital Payments",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 8,
+          "nm": "Can a scan replace cash? 💳",
+          "desc": "In this activity, students will learn in an easy way about important money topics like saving, investing, tax planning, retirement, and financial protection. Students will create a simple “Financial Planning Poster” to show how these ideas help in managing money and making better decisions for the future. They will also understand how these skills connect to SDG 4: Quality Education.",
+          "yt": "MWqfInivuaE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 8,
+        "nm": "Which payment is truly instant? ⚡",
+        "qs": [
+          {
+            "q": "What does UPI stand for?",
+            "opts": {
+              "1": "Unified Payments Interface",
+              "2": "Universal Payment Integration",
+              "3": "United Payment Infrastructure"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Which digital payment method is typically not instant and may take some time?",
+            "opts": { "1": "IMPS", "2": "UPI", "3": "NEFT" },
+            "ans": "3"
+          },
+          {
+            "q": "What is the first step in making a digital payment?",
+            "opts": {
+              "1": "Open the app or website",
+              "2": "Confirm using PIN or OTP",
+              "3": "Enter the amount"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "If you need to transfer a large amount of money immediately, which method should you choose?",
+            "opts": { "1": "RTGS", "2": "NEFT", "3": "UPI" },
+            "ans": "1"
+          },
+          {
+            "q": "You are at a store with no cash. What should you do to pay quickly using a mobile app?",
+            "opts": {
+              "1": "Wait for NEFT transfer",
+              "2": "Use RTGS for immediate payment",
+              "3": "Scan using a payment app and pay instantly"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Complete-the-Digital-Payments-Chart-💳-Remedial",
+          "seq": 6,
+          "nm": "Complete the Digital Payments Chart 💳",
+          "desc": "In this activity, students will learn in an easy way about important money topics like saving, investing, tax planning, retirement, and financial protection. Students will create a simple “Financial Planning Poster” to show how these ideas help in managing money and making better decisions for the future. They will also understand how these skills connect to SDG 4: Quality Education.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Name one financial concept you learned, then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types any one of the following words: Saving / Investing / Planning, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Saving / Investing / Planning, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Saving / Investing / Planning, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Show your school bag and click its photo and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "School bag",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a School bag"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & explain how digital payments help people and businesses"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Click a clear photo of your Digital Payments chart and upload it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Loan Funds the Dream 🎓",
+      "desc": "Education Loan Flowchart",
+      "rwc": "Pencil, Eraser",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 9,
+          "nm": "Can a loan fund dreams? 🎓",
+          "desc": "In this activity, students learn how an education loan helps continue higher studies when immediate funds are not available. Through Riya’s real-life story, students understand the steps to apply for an education loan, the meaning and importance of the moratorium period, and how loan repayment works after studies are completed. By comparing loan options and identifying better choices based on interest rate and moratorium period, students develop practical decision-making skills for managing education-related finances responsibly.",
+          "yt": "oyYJD3AaB3M",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 9,
+        "nm": "Can a loan fund your studies? 🎓",
+        "qs": [
+          {
+            "q": "What is the primary purpose of an education loan according to the script?",
+            "opts": {
+              "1": "To buy a new car",
+              "2": "To help cover expenses of higher studies",
+              "3": "To invest in the stock market"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Why is it important to compare different education loan options?",
+            "opts": {
+              "1": "To avoid wrong decisions and reduce financial pressure",
+              "2": "To avoid filling out multiple applications",
+              "3": "To ensure the loan is approved quickly"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What should Riya do after gathering necessary documents for an education loan?",
+            "opts": {
+              "1": "Fill out the loan application form",
+              "2": "Wait for bank approval",
+              "3": "Submit them to the college"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Riya is choosing between two loans. Loan 1 has a lower interest rate, but a shorter moratorium period. Loan 2 has a slightly higher interest rate, but a longer moratorium period. Which loan should she consider if she wants to reduce immediate financial pressure?",
+            "opts": { "1": "Loan 1", "2": "Both are equal", "3": "Loan 2" },
+            "ans": "3"
+          },
+          {
+            "q": "Riya's friend is unsure about when to start repaying her education loan. What should Riya advise based on the moratorium period concept?",
+            "opts": {
+              "1": "Repay after course completion plus 6 months to 1 year",
+              "2": "Repay immediately after loan approval",
+              "3": "Repay before the course begins"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Map-the-Education-Loan-Steps-🎓-Advanced",
+          "seq": 7,
+          "nm": "Map the Education Loan Steps 🎓",
+          "desc": "In this activity, students learn how an education loan helps continue higher studies when immediate funds are not available. Through Riya’s real-life story, students understand the steps to apply for an education loan, the meaning and importance of the moratorium period, and how loan repayment works after studies are completed. By comparing loan options and identifying better choices based on interest rate and moratorium period, students develop practical decision-making skills for managing education-related finances responsibly.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "What helps students pay for higher studies, then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types the word: Loan, then the response is valid OR If the student sends a voice note and the response includes the word: Loan, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include the word: Loan, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Click a photo of a bottle and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "Bottle",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Bottle"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & explain the steps of an Education Loan from your activity"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Click a clear photo of your Education Loan activity and upload it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Steps Open the Future 🚪",
+      "desc": "Education Loan Flowchart",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 10,
+          "nm": "Can Neha pay college later? 🚪",
+          "desc": "In this activity, students will learn in an easy way how an education loan helps students continue their studies when they do not have enough money. Through a simple example, students will understand the basic steps to apply for an education loan, what a moratorium period means, and how loan repayment works after studies are completed. They will also compare simple loan options to make better financial decisions.",
+          "yt": "JH2CmlbjgII",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 10,
+        "nm": "Which loan has better terms? 📝",
+        "qs": [
+          {
+            "q": "What is the first step in applying for an education loan?",
+            "opts": { "1": "Check eligibility", "2": "Collect documents", "3": "Compare loans" },
+            "ans": "1"
+          },
+          {
+            "q": "What does the moratorium period allow you to do?",
+            "opts": {
+              "1": "Have a break time from repaying the loan",
+              "2": "Start repaying the loan immediately",
+              "3": "Increase the loan amount"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Which documents are needed for income proof of a co-applicant?",
+            "opts": {
+              "1": "Aadhaar and passport",
+              "2": "Salary slips and bank statements",
+              "3": "Admission letter and fee structure"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If you are choosing a loan, which option is better?",
+            "opts": {
+              "1": "Low interest + long moratorium",
+              "2": "High interest + long moratorium",
+              "3": "High interest + short moratorium"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Riya wants to study without financial pressure. Which loan feature should she prioritize?",
+            "opts": {
+              "1": "High loan amount",
+              "2": "Long moratorium period",
+              "3": "Quick bank verification"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Complete-the-Education-Loan-Guide-🚪-Remedial",
+          "seq": 8,
+          "nm": "Complete the Education Loan Guide 🚪",
+          "desc": "In this activity, students will learn in an easy way how an education loan helps students continue their studies when they do not have enough money. Through a simple example, students will understand the basic steps to apply for an education loan, what a moratorium period means, and how loan repayment works after studies are completed. They will also compare simple loan options to make better financial decisions.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "What is one benefit of an education loan, then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types any one of the following words: Education / Access, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Education / Access, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Education / Access, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Click a photo of something you like and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "Clear object photo",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Clear object photo"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & explain what an Education Loan and moratorium mean"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Click a clear photo of your Education Loan worksheet and upload it"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

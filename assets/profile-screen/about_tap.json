@@ -1,0 +1,24 @@
+{
+  "mission": {
+    "title": "Our Mission",
+    "body": "To empower India's under-served children to become leaders by developing 21st-century skills through our AI and ML-driven WhatsApp chatbot, TAP Buddy.",
+    "image": "assets/profile-screen/21st-century-skills.png"
+  },
+  "problem": {
+    "title": "The Problem",
+    "body": [
+      "21st-century skills and mindsets (critical thinking, self-awareness, complex problem solving, self-confidence, financial literacy) are essential for children to succeed and thrive in the current world.",
+      "However, over 60 million low-income middle and high school children in India do not have access to quality services for developing them. The lack of 21st-century skills and mindsets heavily restricts the capacity of children from low-income communities to have healthy personal identities, manage emotions, make independent choices, and achieve individual and collective goals."
+    ],
+    "source": "Source: CASEL, UNICEF Life Skills Report 2019, and the National Education Policy 2020, Skills Builder Framework",
+    "image": "assets/profile-screen/child-art-img.png"
+  },
+  "solution": {
+    "title": "The Solution",
+    "body": [
+      "We have built an AI and NLP-powered WhatsApp chatbot called TAP Buddy that uses co-curricular electives and self-learning as a medium to develop 21st-century skills for marginalised middle and high school students in India. Our chatbot provides video-based electives and prompts students to perform projects independently via personalised, bot-based nudges and content.",
+      "The design of self-learning project videos develops skills like creativity, confidence, self-awareness, communication and problem-solving. They also provide students with world exposure to break their mental barriers and build a growth mindset."
+    ],
+    "image": "assets/profile-screen/tap-buddy-phone-img.png"
+  }
+}

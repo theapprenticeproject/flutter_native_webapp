@@ -1,0 +1,240 @@
+{
+  "flow_id": "activity_flow",
+  "version": "4.1.0",
+  "language": "en",
+  "steps": [
+    {
+      "step_id": "AF-001",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "static",
+      "audio_id": "aud_af_001",
+      "display_text": "Good {{part_of_day}}, {{name}} ☀️",
+      "voice_text": "Good day to you! Hope you're feeling good and ready to learn.",
+      "next_step": "AF-002",
+      "back_step": null
+    },
+    {
+      "step_id": "AF-002",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "static",
+      "audio_id": "aud_af_002",
+      "display_text": "Today we'll be learning {{unit_name}} from your {{course_display}} course. Exciting stuff ahead 🔥",
+      "voice_text": "Today we've got a brand new topic lined up for you, and trust me, it's a good one. Let's dive in!",
+      "next_step": "AF-003",
+      "back_step": null
+    },
+    {
+      "step_id": "AF-003",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "static",
+      "audio_id": "aud_af_003",
+      "display_text": "Let's start with a video. In this video you'll learn: \"{{video_description}}\" 🎬",
+      "voice_text": "Let's kick things off with a short video — it's going to make this whole topic click for you.",
+      "next_step": "AF-004",
+      "back_step": null
+    },
+    {
+      "step_id": "AF-004",
+      "type": "dynamic",
+      "sender": "bot",
+      "input_mode": "static",
+      "component": "VideoPlayer",
+      "content_ref": {
+        "source": "courses/{lang}/{course_id}.json",
+        "path": "units[{unit_index}].vids[0]"
+      },
+      "render_key": "video-{course_id}-{unit_index}",
+      "on_skip_attempt": {
+        "display_text": "Hey, watch the full video to earn your points and unlock the next part! You've got this 💪",
+        "voice_text": "Hang on, don't skip just yet — finish the video so you can earn your points and unlock the next part. You've got this!"
+      },
+      "on_complete_event": "video_done",
+      "next_step": "AF-005",
+      "back_step": null,
+      "fallback_guide": "Watch the video above to continue — it's worth it, I promise! 🎬"
+    },
+    {
+      "step_id": "AF-005",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "static",
+      "audio_id": "aud_af_005",
+      "display_text": "Yayyy you crushed that video! [+{{video_points}} pts] Keep going — every point counts 🌟",
+      "voice_text": "Yes! You crushed that video, that's some solid points right there. Keep that momentum going, every point counts.",
+      "points_ref": "courses/{lang}/{course_id}.json#units[{unit_index}].vids[0].pts",
+      "auto_advance_ms": 2000,
+      "next_step": "AF-006",
+      "back_step": null
+    },
+    {
+      "step_id": "AF-006",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "static",
+      "audio_id": "aud_af_006",
+      "display_text": "Now it's time to earn some more points 💰 Send in your submission below!",
+      "voice_text": "Alright, time to earn even more points — go ahead and send in your submission below.",
+      "next_step": "AF-007",
+      "back_step": null
+    },
+    {
+      "step_id": "AF-007",
+      "type": "dynamic",
+      "sender": "bot",
+      "input_mode": "static",
+      "component": "SubmissionCard",
+      "content_ref": {
+        "source": "courses/{lang}/{course_id}.json",
+        "path": "units[{unit_index}].assigns[0]",
+        "step_selector": "match_sub_types_and_archetype_to_profile"
+      },
+      "render_key": "submission-{course_id}-{unit_index}",
+      "on_submit_event": "submission_done",
+      "next_step": "AF-008",
+      "back_step": null,
+      "fallback_guide": "Do the submission above champ — I'm waiting on you! Just fill it in and tap send 😄"
+    },
+    {
+      "step_id": "AF-008",
+      "type": "dynamic",
+      "sender": "bot",
+      "input_mode": "static",
+      "component": "SubmissionReview",
+      "audio_id": "aud_af_008",
+      "display_text": "I am SO proud of you {{name}} 🥹 That's the spirit! [+{{submission_points}} pts]",
+      "voice_text": "I am so, so proud of you right now — well earned. That's exactly the spirit!",
+      "content_ref": {
+        "source": "review_result",
+        "path": "current"
+      },
+      "await_event": "submission_review_ready",
+      "next_step": "AF-009",
+      "back_step": null
+    },
+    {
+      "step_id": "AF-009",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "static",
+      "audio_id": "aud_af_009",
+      "display_text": "Now let's test what you've learnt 🧠 Quiz time — let's go!",
+      "voice_text": "Now let's see what stuck — quiz time, let's go!",
+      "next_step": "AF-010",
+      "back_step": null
+    },
+    {
+      "step_id": "AF-010",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "static",
+      "audio_id": "aud_af_010",
+      "display_text": "We've got {{quiz_question_count}} questions coming your way. Take your time — think, then tap! 💡",
+      "voice_text": "A few questions coming your way. No rush at all — just think it through, then tap your answer.",
+      "next_step": "AF-QUIZ-QUESTION",
+      "back_step": null
+    },
+    {
+      "step_id": "AF-QUIZ-QUESTION",
+      "type": "dynamic",
+      "sender": "bot",
+      "input_mode": "buttons_only",
+      "component": "QuizQuestion",
+      "content_ref": {
+        "source": "courses/{lang}/{course_id}.json",
+        "path": "units[{unit_index}].quiz.qs[{quiz_index}]"
+      },
+      "render_key": "quiz-{course_id}-{unit_index}-{quiz_index}",
+      "loop_state": "quiz_index",
+      "loop_bound_ref": "courses/{lang}/{course_id}.json#units[{unit_index}].quiz.qs.length",
+      "on_correct": { "next_step": "AF-QUIZ-CORRECT" },
+      "on_wrong": { "next_step": "AF-QUIZ-WRONG" },
+      "back_step": null,
+      "fallback_guide": "Tap one of the answer options above — just trust your gut! 💭"
+    },
+    {
+      "step_id": "AF-QUIZ-CORRECT",
+      "type": "dynamic",
+      "sender": "bot",
+      "input_mode": "static",
+      "component": "QuizCorrectFeedback",
+      "content_ref": {
+        "source": "generated",
+        "kind": "celebration"
+      },
+      "display_text": "Nailed it! [+{{quiz_points}} pts]",
+      "auto_advance_ms": 1500,
+      "next_step_rule": {
+        "if_more_questions": "AF-QUIZ-QUESTION",
+        "if_last_question": "AF-011"
+      },
+      "back_step": null
+    },
+    {
+      "step_id": "AF-QUIZ-WRONG",
+      "type": "dynamic",
+      "sender": "bot",
+      "input_mode": "static",
+      "component": "QuizFeedback",
+      "content_ref": {
+        "source": "courses/{lang}/{course_id}.json",
+        "path": "units[{unit_index}].quiz.qs[{quiz_index}]",
+        "fields": ["ans", "exp"]
+      },
+      "cheer_up": {
+        "source": "generated",
+        "kind": "cheer_up"
+      },
+      "auto_advance_ms": 2500,
+      "next_step_rule": {
+        "if_more_questions": "AF-QUIZ-QUESTION",
+        "if_last_question": "AF-011"
+      },
+      "back_step": null
+    },
+    {
+      "step_id": "AF-011",
+      "type": "dynamic",
+      "sender": "bot",
+      "input_mode": "static",
+      "component": "QuizSummary",
+      "audio_id": "aud_af_011",
+      "display_text": "Quiz done! Here's how you did 🕐",
+      "voice_text": "Quiz's all done. Here's how you did.",
+      "content_ref": {
+        "source": "session_state",
+        "fields": ["quiz_correct", "quiz_total"]
+      },
+      "next_step_rule": {
+        "if_more_units": "AF-UNIT-TRANSITION",
+        "if_last_unit": "AF-END"
+      },
+      "back_step": null
+    },
+    {
+      "step_id": "AF-UNIT-TRANSITION",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "static",
+      "audio_id": "aud_af_unit_transition",
+      "display_text": "Great work on {{unit_name}}! Let's move on to {{next_unit_name}} 🚀",
+      "voice_text": "Great work on that unit! Let's move on to the next one.",
+      "on_enter_event": "increment_unit_index",
+      "next_step": "AF-001",
+      "back_step": null
+    },
+    {
+      "step_id": "AF-END",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "static",
+      "audio_id": "aud_af_end",
+      "display_text": "You did really well this week, {{name}} 🎉 See you next week!",
+      "voice_text": "You did really well this week. See you next week!",
+      "next_step": null,
+      "back_step": null
+    }
+  ]
+}

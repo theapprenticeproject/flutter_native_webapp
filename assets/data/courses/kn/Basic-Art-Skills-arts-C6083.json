@@ -1,0 +1,1107 @@
+{
+  "id": "Basic-Art-Skills-arts-C6083",
+  "nm": "Basic Art Skills",
+  "lvl": "Level 3AK",
+  "vrt": "arts",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Waste Becomes a Holder ♻️",
+      "desc": "Recycling art",
+      "rwc": "Boxes, Bottles, Paper, Glue, Scissors, Colors, Decorative Items",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 41,
+          "nm": "Can waste become a holder? ♻️",
+          "desc": "In this activity, students will make a pen holder using waste materials!They will use empty boxes, bottles, and leftover paper to create something useful. This activity will help students be creative and learn how to care for the environment. They will decorate their pen holder in their own way and make it unique!",
+          "yt": "536z1WXxcPU",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 42,
+        "nm": "Can trash become a holder? 🗑️",
+        "qs": [
+          {
+            "q": "ಚಟುವಟಿಕೆಯಲ್ಲಿ ಪೆನ್ ಹೋಲ್ಡರ್ ರಚಿಸಲು ಸೂಚಿಸಲಾದ ಮುಖ್ಯ ವಸ್ತು ಯಾವುದು?",
+            "opts": {
+              "1": "ಕಾರ್ಡ್‌ಬೋರ್ಡ್ ಟ್ಯೂಬ್‌ಗಳು",
+              "2": "ತ್ಯಾಜ್ಯ ಅಥವಾ ಖಾಲಿ ಬಾಟಲಿಗಳು ಮತ್ತು ಡಬ್ಬಿಗಳು",
+              "3": "ಪತ್ರಿಕೆ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ವೀಡಿಯೊ ಪ್ರಕಾರ ತ್ಯಾಜ್ಯ ವಸ್ತುಗಳನ್ನು ಮರುಬಳಕೆ ಮಾಡುವುದು ಯಾಕೆ ಮುಖ್ಯ?",
+            "opts": {
+              "1": "ಹೊಸ ಉತ್ಪನ್ನಗಳ ವೆಚ್ಚ ಕಡಿಮೆ ಮಾಡಲು",
+              "2": "ಸೃಜನಾತ್ಮಕತೆ ವೃದ್ಧಿಸಲು",
+              "3": "ನಮ್ಮ ಭೂಮಿ ರಕ್ಷಿಸಲು ಸಹಾಯ ಮಾಡಲು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ತ್ಯಾಜ್ಯ ಡಬ್ಬಿಯನ್ನು ಪೆನ್ ಹೋಲ್ಡರ್ ಆಗಿ ಪರಿವರ್ತಿಸುವ ಮೊದಲ ಹಂತ ಯಾವುದು?",
+            "opts": {
+              "1": "ಪೆನ್ ಮೂಲಕ ಕತ್ತರಿಸುವ ಜಾಗ ಗುರುತಿಸಿ",
+              "2": "ಡಬ್ಬಿಯನ್ನು ಕಾಗದದಿಂದ ಮುಚ್ಚಿ",
+              "3": "ಡಬ್ಬಿಗೆ ಕಾಗದ ಅಂಟಿಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಬೇಸ್ ಕಾಗದದಿಂದ ಮುಚ್ಚಿದ ನಂತರ ನಿಮ್ಮ ಪೆನ್ ಹೋಲ್ಡರ್ ಅನ್ನು ಸೃಜನಾತ್ಮಕವಾಗಿ ಅಲಂಕರಿಸುವುದು ಹೇಗೆ?",
+            "opts": {
+              "1": "ಸ್ಟಿಕ್ಕರ್ ಮತ್ತು ರಿಬ್ಬನ್ ಜೋಡಿಸಿ",
+              "2": "ಬಣ್ಣದ ಕಾಗದದಿಂದ ಕಣ್ಣು ಮತ್ತು ರೆಕ್ಕೆಗಳಂತಹ ಆಕಾರಗಳನ್ನು ಕತ್ತರಿಸಿ",
+              "3": "ಬೇರೆ ಬೇರೆ ಬಣ್ಣಗಳಿಂದ ಬಣ್ಣ ಹಾಕಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಕಾಗದದ ಬದಲು ಹಳೆಯ ಬಟ್ಟೆ ಇದ್ದರೆ ನಿಮ್ಮ ಪೆನ್ ಹೋಲ್ಡರ್‌ಗೆ ಅದನ್ನು ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೇಗೆ ಬಳಸಬಹುದು?",
+            "opts": {
+              "1": "ಹೋಲ್ಡರ್‌ನಲ್ಲಿ ಪೆನ್ ಸುತ್ತ ಸುತ್ತಲು ಬಳಸಿ",
+              "2": "ಅನನ್ಯ ಅಲಂಕಾರಿಕ ಹೊದಿಕೆಯಾಗಿ ಹೋಲ್ಡರ್‌ಗೆ ಅಂಟಿಸಿ",
+              "3": "ಹೋಲ್ಡರ್ ಸುತ್ತ ಚಿಕ್ಕ ಪಟ್ಟಿಗಳಾಗಿ ಕತ್ತರಿಸಿ ಕಟ್ಟಿ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Waste-Material-Pen-Holder-♻️-Basic",
+          "seq": 38,
+          "nm": "Make a Waste Material Pen Holder ♻️",
+          "desc": "In this activity, students will make a pen holder using waste materials!They will use empty boxes, bottles, and leftover paper to create something useful. This activity will help students be creative and learn how to care for the environment. They will decorate their pen holder in their own way and make it unique!",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಇಷ್ಟವಾದರೆ \"Useful\" ಎಂದು ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ \"Waste\" ಎಂದು ಕಳುಹಿಸಿ",
+              "unguided_text": "Pen Holder ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Useful, Waste",
+              "invalid_criteria": "Any word other than useful, waste"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನೀವು ಬಳಸುವ ಪೆನ್ನಿನ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "Picture of a pen",
+              "invalid_criteria": "Anything other than picture of a pen"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ನಿಮ್ಮ ಪೆನ್ ಹೋಲ್ಡರ್‌ನ ತಳಕ್ಕೆ ಯಾವ ವಸ್ತು ಬಳಸಿದಿರಿ ಎಂದು ಹೇಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನೀವು ತಯಾರಿಸಿದ ಪೆನ್ ಹೋಲ್ಡರ್‌ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Box Becomes a Stand 📦",
+      "desc": "Recycling art",
+      "rwc": "Boxes, Bottles, Paper, Glue, Scissors, Colors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 42,
+          "nm": "Can a box become stand? 📦",
+          "desc": "In this activity, students will make a pen holder using waste materials.They will use boxes, bottles, and paper. This will help them be creative and care for the environment. They will decorate their pen holder in their own way.",
+          "yt": "c85HQBXDEzs",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 43,
+        "nm": "What makes your holder unique? ✨",
+        "qs": [
+          {
+            "q": "ಪೆನ್ ಹೋಲ್ಡರ್ ರಚಿಸಲು ಯಾವ ವಸ್ತುಗಳು ಬೇಕು?",
+            "opts": {
+              "1": "ಖಾಲಿ ಡಬ್ಬಿ, ತ್ಯಾಜ್ಯ ಕಾಗದ, ಕತ್ತರಿ ಮತ್ತು ಗೋಂದು",
+              "2": "ಪ್ಲಾಸ್ಟಿಕ್ ಬಾಟಲ್, ಬಣ್ಣದ ಕಾಗದ, ಕತ್ತರಿ ಮತ್ತು ಟೇಪ್",
+              "3": "ಕಾರ್ಡ್‌ಬೋರ್ಡ್ ಟ್ಯೂಬ್, ಗಿಫ್ಟ್ ಪೇಪರ್, ಗೋಂದು ಮತ್ತು ದಾರ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಡಬ್ಬಿ ಮುಚ್ಚಲು ಎರಡು ಕಾಗದ ಬಳಸಲು ಯಾಕೆ ಸೂಚಿಸಲಾಗಿದೆ?",
+            "opts": {
+              "1": "ಕಾಗದ ಸುಲಭವಾಗಿ ಹರಿಯದಂತೆ",
+              "2": "ಕಾಗದ ಚಿಕ್ಕದಾಗಿರಬಹುದು ಮತ್ತು ಡಬ್ಬಿ ಸಂಪೂರ್ಣ ಮುಚ್ಚಲು ಬೇಕಾಗಬಹುದು",
+              "3": "ಪೆನ್ ಹೋಲ್ಡರ್ ಹೆಚ್ಚು ಬಣ್ಣದಾಯಕವಾಗಿಸಲು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಪೆನ್ ಹೋಲ್ಡರ್ ವಿನ್ಯಾಸ ಮಾಡುವಾಗ ಗೋಂದು ಕಾಗದದ ಮೇಲೆ ಕಲೆ ಬಿಟ್ಟರೆ ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಹೆಚ್ಚು ಕಾಗದದಿಂದ ಕಲೆ ಮುಚ್ಚಿ",
+              "2": "ಹೊಸ ಕಾಗದದಿಂದ ಮೊದಲಿನಿಂದ ಪ್ರಾರಂಭಿಸಿ",
+              "3": "ಅದನ್ನು ವಿನ್ಯಾಸದ ಭಾಗವೆಂದು ಪರಿಗಣಿಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ನಿಮ್ಮ ಪೆನ್ ಹೋಲ್ಡರ್ ಅನ್ನು ಸೃಜನಾತ್ಮಕವಾಗಿ ಅಲಂಕರಿಸಲು ಹೇಗೆ ಮಾಡಬಹುದು?",
+            "opts": {
+              "1": "ವೀಡಿಯೊದಲ್ಲಿ ತೋರಿಸಿದ ನಿಖರ ವಿನ್ಯಾಸ ಅನುಸರಿಸಿ",
+              "2": "ವಿನ್ಯಾಸಕ್ಕೆ ಆಕಾರಗಳು, ಮುಖಗಳು ಅಥವಾ ಪಾತ್ರಗಳನ್ನು ಸೇರಿಸಿ",
+              "3": "ಡಬ್ಬಿ ಮುಚ್ಚಲು ಒಂದೇ ಬಣ್ಣ ಬಳಸಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ನಿಮ್ಮ ಪೆನ್ ಹೋಲ್ಡರ್ ಅನನ್ಯ ಶೈಲಿ ಪ್ರತಿಬಿಂಬಿಸಬೇಕಿದ್ದರೆ ಏನು ಯೋಚಿಸಬೇಕು?",
+            "opts": {
+              "1": "ಸರಳತೆಗಾಗಿ ಮಾದರಿ ಇಲ್ಲದ ಸಾದಾ ಕಾಗದ ಮಾತ್ರ ಬಳಸಿ",
+              "2": "ಪಟ್ಟಿಗಳು ಅಥವಾ ಚುಕ್ಕೆಗಳಂತಹ ಬೇರೆ ಬೇರೆ ಮಾದರಿಗಳನ್ನು ಸಂಯೋಜಿಸಿ",
+              "3": "ಸರಳತೆಗಾಗಿ ಒಂದೇ ವಸ್ತು ಬಳಸಿ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Box-Pen-Stand-📦-Remedial",
+          "seq": 39,
+          "nm": "Make a Box Pen Stand 📦",
+          "desc": "In this activity, students will make a pen holder using waste materials.They will use boxes, bottles, and paper. This will help them be creative and care for the environment. They will decorate their pen holder in their own way.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಇಷ್ಟವಾದರೆ \"Useful\" ಎಂದು ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ \"Waste\" ಎಂದು ಕಳುಹಿಸಿ",
+              "unguided_text": "Pen Stand ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Useful, Waste",
+              "invalid_criteria": "Any word other than useful, waste"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನೀವು ಬಳಸುವ ಪೆನ್ನಿನ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "Picture of a pen",
+              "invalid_criteria": "Anything other than picture of a pen"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ನಿಮ್ಮ ಪೆನ್ ಹೋಲ್ಡರ್‌ನ ತಳಕ್ಕೆ ಯಾವ ವಸ್ತು ಬಳಸಿದಿರಿ ಎಂದು ಹೇಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನೀವು ತಯಾರಿಸಿದ ಪೆನ್ ಹೋಲ್ಡರ್‌ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Everyday Things Pop 🎨",
+      "desc": "PopArt",
+      "rwc": "Paper, Pencil, Markers, Crayons, Oil Pastels, Marker",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 43,
+          "nm": "Can chips become pop art? 🎨",
+          "desc": "In this activity, students will recognise the main features of pop art culture and create a pop art style advertisement inspired by Andy Warhol",
+          "yt": "rTS294bRhq8",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 44,
+        "nm": "Who invented Pop Art anyway? 🎨",
+        "qs": [
+          {
+            "q": "ಪಾಪ್ ಆರ್ಟ್‌ನ ಪಿತಾಮಹ ಎಂದು ಯಾರನ್ನು ಪರಿಗಣಿಸಲಾಗಿದೆ?",
+            "opts": { "1": "ಆಂಡಿ ವಾರ್ಹೋಲ್", "2": "ರಾಯ್ ಲಿಕ್ಟೆನ್‌ಸ್ಟೈನ್", "3": "ಪಾಬ್ಲೋ ಪಿಕಾಸೊ" },
+            "ans": "1"
+          },
+          {
+            "q": "ಪಾಪ್ ಆರ್ಟ್‌ನ ಮುಖ್ಯ ಗಮನ ಯಾವುದು?",
+            "opts": {
+              "1": "ದೈನಂದಿನ ವಸ್ತುಗಳನ್ನು ಕಲೆಯಾಗಿ ಪರಿವರ್ತಿಸುವುದು",
+              "2": "ಪ್ರಭಾವಶಾಲಿ ಭೂದೃಶ್ಯಗಳು",
+              "3": "ಸಂಕೀರ್ಣ ಮತ್ತು ಗಂಭೀರ ವಿಷಯಗಳು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಪಾಪ್ ಆರ್ಟ್‌ನ ವಿಶೇಷ ಲಕ್ಷಣ ಯಾವುದು?",
+            "opts": {
+              "1": "ಸಂಕೀರ್ಣ ಜ್ಯಾಮಿತೀಯ ಮಾದರಿಗಳು",
+              "2": "ಏಕವರ್ಣದ ಬಣ್ಣಗಳು",
+              "3": "ದಪ್ಪ ರೂಪರೇಖೆಗಳು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಸರಳ ವಸ್ತುವಿನ ಪಾಪ್ ಆರ್ಟ್-ಪ್ರೇರಿತ ಜಾಹೀರಾತು ರಚಿಸಬೇಕಿದ್ದರೆ, ಸೃಜನಾತ್ಮಕತೆ ಪ್ರದರ್ಶಿಸಲು ಯಾವ ವಿಧಾನ ಉತ್ತಮ?",
+            "opts": {
+              "1": "ವಸ್ತು ಆಕರ್ಷಕವಾಗಿ ಕಾಣಲು ಪ್ರಕಾಶಮಾನ ಬಣ್ಣಗಳು ಮತ್ತು ಅನನ್ಯ ಮಾದರಿಗಳು ಬಳಸಿ",
+              "2": "ಯಾವುದೇ ಬಣ್ಣ ಇಲ್ಲದೆ ವಿನ್ಯಾಸ ಸರಳ ಮತ್ತು ಸಾದಾ ಇರಿಸಿ",
+              "3": "ನಾಟಕೀಯ ಪರಿಣಾಮಕ್ಕೆ ಕಪ್ಪು ಮತ್ತು ಬಿಳಿ ಟೋನ್‌ಗಳು ಮಾತ್ರ ಬಳಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಪೆನ್ಸಿಲ್‌ನಂತಹ ಸರಳ ವಸ್ತು ಇದ್ದರೆ ಜಾಹೀರಾತಿನಲ್ಲಿ ಅದನ್ನು ಎದ್ದು ಕಾಣಿಸಲು ಪಾಪ್ ಆರ್ಟ್ ತಂತ್ರಗಳನ್ನು ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೇಗೆ ಅನ್ವಯಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಸೂಕ್ಷ್ಮ ಛಾಯೆಗಳೊಂದಿಗೆ ವಾಸ್ತವಿಕ ಶೈಲಿಯಲ್ಲಿ ಬಿಡಿಸಿ",
+              "2": "ಸಂಕೀರ್ಣ ಛಾಯಾಂಕನದೊಂದಿಗೆ ವಿವರವಾದ ರೇಖಾಚಿತ್ರದಲ್ಲಿ ಚಿತ್ರಿಸಿ",
+              "3": "ಹೊಳೆಯುವ ಬಣ್ಣಗಳು, ದಪ್ಪ ರೇಖೆಗಳು ಮತ್ತು ಮೋಜಿನ ಮಾದರಿಗಳೊಂದಿಗೆ ಬಳಸಿ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-a-Pop-Art-Advertisement-🎨-Basic",
+          "seq": 40,
+          "nm": "Design a Pop Art Advertisement 🎨",
+          "desc": "In this activity, students will recognise the main features of pop art culture and create a pop art style advertisement inspired by Andy Warhol",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಇಷ್ಟವಾದರೆ \"Creative\" ಎಂದು ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ \"Boring\" ಎಂದು ಕಳುಹಿಸಿ",
+              "unguided_text": "Pop Art Advertisement ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Creative, Boring",
+              "invalid_criteria": "Any word other than creative, boring"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಬಾಟಲಿಯ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "Picture of a bottle",
+              "invalid_criteria": "Anything other than picture of a bottle"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಒಂದು ಜೋಡಿ ಪೂರಕ ಬಣ್ಣಗಳನ್ನು ಹೇಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ಪೂರಕ ಬಣ್ಣಗಳನ್ನು ಬಳಸಿ ನೀವು ರಚಿಸಿದ pop art ಕಲಾಕೃತಿಯ ಸ್ಪಷ್ಟ ಫೋಟೋ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "One Object Four Colors 🖼️",
+      "desc": "PopArt",
+      "rwc": "Paper, Pencil, Markers, Crayons, Oil Pastels, Marker",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 44,
+          "nm": "Can one object pop four? 🖼️",
+          "desc": "Students will create a Pop Art–style artwork inspired by Andy Warhol by drawing one simple object four times on their paper and coloring each version using different pairs of complementary colors. They will experiment with bold outlines, bright contrasts, and simple background patterns to make their artwork look vibrant and balanced.",
+          "yt": "tSPs21lu7uA",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 45,
+        "nm": "Can objects become pop art? 🍌",
+        "qs": [
+          {
+            "q": "ಸಾಮಾನ್ಯ ವಸ್ತುಗಳನ್ನು ಪಾಪ್ ಆರ್ಟ್ ಆಗಿ ಪರಿವರ್ತಿಸಿದ ಖ್ಯಾತಿ ಯಾರಿಗಿದೆ?",
+            "opts": { "1": "ಆಂಡಿ ವಾರ್ಹೋಲ್", "2": "ಪಾಬ್ಲೋ ಪಿಕಾಸೊ", "3": "ವಿನ್ಸೆಂಟ್ ವ್ಯಾನ್ ಗಾಗ್" },
+            "ans": "1"
+          },
+          {
+            "q": "ವೀಡಿಯೊದಲ್ಲಿ ವಿವರಿಸಿದ ಪಾಪ್ ಆರ್ಟ್ ರಚಿಸುವ ಮುಖ್ಯ ಆಲೋಚನೆ ಯಾವುದು?",
+            "opts": {
+              "1": "ಸಂಕೀರ್ಣ ಮತ್ತು ವಾಸ್ತವಿಕ ಭಾವಚಿತ್ರಗಳನ್ನು ಬಿಡಿಸಲು",
+              "2": "ಸರಳ ವಸ್ತುಗಳನ್ನು ದಪ್ಪ ಬಣ್ಣಗಳೊಂದಿಗೆ ಪರಿವರ್ತಿಸಲು",
+              "3": "ದುಬಾರಿ ವಸ್ತುಗಳನ್ನು ಬಳಸಲು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಕಲಾಕೃತಿಗಾಗಿ ಕಾಗದವನ್ನು ವಿಭಾಗಗಳಾಗಿ ವಿಭಜಿಸುವ ಹಂತ ಯಾವುದು?",
+            "opts": { "1": "ರೂಪರೇಖೆ ರಚಿಸಿ", "2": "ಬಣ್ಣ ಜೋಡಿಗಳನ್ನು ಆರಿಸಿ", "3": "ಕಾಗದ ವಿಭಜಿಸಿ" },
+            "ans": "3"
+          },
+          {
+            "q": "ರೂಪರೇಖೆ ದಪ್ಪಗೊಳಿಸುವ ಹೊರತಾಗಿ ನಿಮ್ಮ ಪಾಪ್ ಆರ್ಟ್‌ಗೆ ಹೆಚ್ಚಿನ ಸೃಜನಾತ್ಮಕತೆ ಸೇರಿಸಲು ಏನು ಮಾಡಬಹುದು?",
+            "opts": {
+              "1": "ಒಂದು ವಿಭಾಗದಲ್ಲಿ ಬಹು ವಸ್ತುಗಳನ್ನು ಬಿಡಿಸಿ",
+              "2": "ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಚುಕ್ಕೆಗಳು ಅಥವಾ ಜಿಗ್-ಜ್ಯಾಗ್‌ಗಳಂತಹ ಮಾದರಿಗಳನ್ನು ಸೇರಿಸಿ",
+              "3": "ಇಡೀ ಕಲಾಕೃತಿಗೆ ಒಂದೇ ಬಣ್ಣ ಬಳಸಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಪೂರಕ ಬಣ್ಣಗಳನ್ನು ಬಳಸಿ ನಿಮ್ಮ ಪಾಪ್ ಆರ್ಟ್‌ನ ಪ್ರತಿ ವಿಭಾಗ ಬೇರೆ ಬೇರೆ ಕಾಣಿಸುವಂತೆ ಹೇಗೆ ಮಾಡಬಹುದು?",
+            "opts": {
+              "1": "ಯಾವುದೇ ಬಣ್ಣ ಬಳಸದೆ ಇರಿ",
+              "2": "ಎಲ್ಲಾ ವಿಭಾಗಗಳಲ್ಲಿ ಒಂದೇ ಬಣ್ಣ ಜೋಡಿ ಬಳಸಿ",
+              "3": "ಪ್ರತ್ಯೇಕ ವಿಭಾಗಗಳಲ್ಲಿ ಕೆಂಪು-ಹಸಿರು ಮತ್ತು ನೀಲಿ-ಕಿತ್ತಳೆಯಂತಹ ಬೇರೆ ಬೇರೆ ಜೋಡಿಗಳನ್ನು ಬಳಸಿ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Four-Panel-Pop-Art-🖼️-Remedial",
+          "seq": 41,
+          "nm": "Create a Four Panel Pop Art 🖼️",
+          "desc": "Students will create a Pop Art–style artwork inspired by Andy Warhol by drawing one simple object four times on their paper and coloring each version using different pairs of complementary colors. They will experiment with bold outlines, bright contrasts, and simple background patterns to make their artwork look vibrant and balanced.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಇಷ್ಟವಾದರೆ \"Creative\" ಎಂದು ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ \"Boring\" ಎಂದು ಕಳುಹಿಸಿ",
+              "unguided_text": "Pop Art ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Creative, Boring",
+              "invalid_criteria": "Any word other than creative, boring"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಕೆಂಪು ಬಣ್ಣದ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "Picture of anything in red color",
+              "invalid_criteria": "Anything other which is not red in color"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಒಂದು ಪೂರಕ ಬಣ್ಣದ ಜೋಡಿ ಹೇಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನೀವು ರಚಿಸಿದ pop art ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Strips Weave a Story 🧵",
+      "desc": "Kente weaving technique",
+      "rwc": "Base Sheet, Paper, Glue, Scissors",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 45,
+          "nm": "Can paper strips weave stories? 🧵",
+          "desc": "In this activity students will learn about the cultural references of Kente Weaving and how patterns and repetitions can be used in order to create a expressive artwork",
+          "yt": "l496hk5P0eE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 46,
+        "nm": "What story does Kente tell? 🧵",
+        "qs": [
+          {
+            "q": "ಘಾನಾದ ಬಟ್ಟೆಯ ಹೆಸರೇನು?",
+            "opts": { "1": "ಅಂಕಾರ", "2": "ದಾಶಿಕಿ", "3": "ಕೆಂಟೆ" },
+            "ans": "3"
+          },
+          {
+            "q": "ಕೆಂಟೆ ನೇಯ್ಗೆಯಲ್ಲಿ ಮಾದರಿ ಪುನರಾವರ್ತನೆ ಯಾಕೆ ಮುಖ್ಯ?",
+            "opts": {
+              "1": "ಬಟ್ಟೆ ಹೆಚ್ಚು ದುಬಾರಿ ಮಾಡಲು",
+              "2": "ಕಡಿಮೆ ವಸ್ತುಗಳ ಬಳಕೆಗೆ ಸಹಾಯ ಮಾಡಲು",
+              "3": "ಲಯ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಗುರುತು ರಚಿಸಲು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಕೆಂಟೆ-ಶೈಲಿಯ ನೇಯ್ಗೆ ಪ್ರಾರಂಭಿಸಿದರೆ ಮೊದಲ ಹಂತ ಯಾವುದು?",
+            "opts": {
+              "1": "ಬೇಸ್ ಶೀಟ್ ಅನ್ನು ಬಣ್ಣಗಳಿಂದ ಬಣ್ಣಿಸಿ",
+              "2": "ಬೇಸ್‌ಗಾಗಿ ಸಮಾನ ಅಗಲದ ಪಟ್ಟಿಗಳನ್ನು ಕತ್ತರಿಸಿ",
+              "3": "ಬೇಸ್ ಶೀಟ್‌ನಲ್ಲಿ ಮಾದರಿಗಳನ್ನು ಬಿಡಿಸಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಸೃಜನಾತ್ಮಕತೆ ಬಳಸಿ ಕೆಂಟೆ-ಪ್ರೇರಿತ ಕಲಾಕೃತಿ ರಚಿಸುತ್ತಿದ್ದೀರಿ. ನಿಮ್ಮ ಕಥೆಗೆ ಅನನ್ಯ ಸ್ಪರ್ಶ ಸೇರಿಸಲು ಯಾವ ವಿಧಾನ ಉತ್ತಮ?",
+            "opts": {
+              "1": "ಸರಳತೆಗಾಗಿ ಒಂದೇ ಬಣ್ಣ ಬಳಸಿ",
+              "2": "ನೇಯ್ಗೆಯಲ್ಲಿ ಬಳಸಿದ ಬಣ್ಣಗಳಿಗೆ ವೈಯಕ್ತಿಕ ಅರ್ಥ ನಿಯೋಜಿಸಿ",
+              "3": "ಯಾವುದೇ ಬದಲಾವಣೆ ಇಲ್ಲದೆ ಸಾಂಪ್ರದಾಯಿಕ ಮಾದರಿಗಳನ್ನು ಅನುಸರಿಸಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ನಿಮ್ಮ ಕೆಂಟೆ-ಪ್ರೇರಿತ ಚೀಲದ ಕಥೆಯನ್ನು ಇತರರಿಗೆ ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೇಗೆ ಹಂಚಿಕೊಳ್ಳಬಹುದು?",
+            "opts": {
+              "1": "ಜಾಗತಿಕವಾಗಿ ಸಂಪರ್ಕಿಸಲು TAP Buddy ನಲ್ಲಿ ಅದರ ಕಥೆ ಮತ್ತು ಅರ್ಥ ಹಂಚಿಕೊಳ್ಳಿ",
+              "2": "ಅದನ್ನು ವೈಯಕ್ತಿಕ ರಹಸ್ಯವಾಗಿ ಇರಿಸಿ",
+              "3": "ಅದರ ಇತಿಹಾಸದ ಬಗ್ಗೆ ವಿಸ್ತಾರ ಪ್ರಬಂಧ ಬರೆಯಿರಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Weave-a-Kente-Inspired-Bookmark-🧵-Intermediate",
+          "seq": 42,
+          "nm": "Weave a Kente Inspired Bookmark 🧵",
+          "desc": "In this activity students will learn about the cultural references of Kente Weaving and how patterns and repetitions can be used in order to create a expressive artwork",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಇಷ್ಟವಾದರೆ \"Interesting\" ಎಂದು ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ \"Hard\" ಎಂದು ಕಳುಹಿಸಿ",
+              "unguided_text": "Kente Weaving ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Interesting, Hard",
+              "invalid_criteria": "Any word other than interesting, hard"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಬಟ್ಟೆಯ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "Picture of any cloth",
+              "invalid_criteria": "Anything other than a picture of clothes"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಚಟುವಟಿಕೆಯ ಹೆಸರನ್ನು ಹೇಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ತಂತ್ರ ಬಳಸಿ ನೀವು ರಚಿಸಿದ Kente weaving ಕಲಾಕೃತಿಯ ಸ್ಪಷ್ಟ ಫೋಟೋ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Ghana Lives in Paper 🪡",
+      "desc": "Kente weaving technique",
+      "rwc": "Base Sheet, Colored Strips, Glue, Scissors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 46,
+          "nm": "Can Ghana's art use paper? 🪡",
+          "desc": "In this activity, students will learn about a traditional African weaving technique using colorful strips of paper.",
+          "yt": "umwsEeBvTXE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 47,
+        "nm": "Can strips become a weave? 🎨",
+        "qs": [
+          {
+            "q": "ಎರಡು ಗುಂಪಿನ ದಾರಗಳು ಅಥವಾ ಕಾಗದ ಪಟ್ಟಿಗಳನ್ನು ಅಡ್ಡ ಹಾಕುವ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಏನೆಂದು ಕರೆಯಲಾಗುತ್ತದೆ?",
+            "opts": { "1": "ಹೊಲಿಗೆ", "2": "ನೇಯ್ಗೆ", "3": "ಹೆಣಿಗೆ" },
+            "ans": "2"
+          },
+          {
+            "q": "ಕೆಂಟೆ ನೇಯ್ಗೆಯ ಒಂದು ಸಾಂಸ್ಕೃತಿಕ ಮಹತ್ವ ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ಯಾವುದು?",
+            "opts": {
+              "1": "ಇದು ಆಧುನಿಕ ಕಲಾ ರೂಪ",
+              "2": "ಇದನ್ನು ಮುಖ್ಯವಾಗಿ ಪೀಠೋಪಕರಣ ತಯಾರಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ",
+              "3": "ಇದು ಘಾನಾ ಸಂಸ್ಕೃತಿಯಲ್ಲಿ ಹೆಚ್ಚಿನ ಮಹತ್ವ ಹೊಂದಿದೆ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ನೇಯ್ಗೆ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿ ಪಟ್ಟಿಗಳನ್ನು ಭದ್ರಗೊಳಿಸಲು ಗೋಂದು ಬಳಸುವ ಹಂತ ಯಾವುದು?",
+            "opts": {
+              "1": "ಅಂತಿಮ ಕಲಾಕೃತಿಗೆ ಒರಟು ರೇಖಾಚಿತ್ರಗಳನ್ನು ಮಾಡಿ",
+              "2": "ಪಟ್ಟಿಗಳನ್ನು ಜಾಗದಲ್ಲಿ ಇರಿಸಲು ಮೇಲ್ಭಾಗದಲ್ಲಿ ಗೋಂದು ಹಾಕಿ",
+              "3": "ಕಾಗದ ಪಟ್ಟಿಗಳನ್ನು ಕತ್ತರಿಸಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ನಿಮ್ಮ ಕೆಂಟೆ ನೇಯ್ಗೆಗೆ ಹೊಸ ಮಾದರಿ ವಿನ್ಯಾಸಗೊಳಿಸಬೇಕಿದ್ದರೆ ನೀವು ಪ್ರಾಥಮಿಕವಾಗಿ ಯಾವ ಕೌಶಲ್ಯ ಬಳಸುತ್ತೀರಿ?",
+            "opts": { "1": "ಸಹಯೋಗ", "2": "ವಿಮರ್ಶಾತ್ಮಕ ಚಿಂತನೆ", "3": "ಸೃಜನಾತ್ಮಕತೆ" },
+            "ans": "3"
+          },
+          {
+            "q": "ನೇಯ್ಗೆ ಮಾಡುವಾಗ ಪಟ್ಟಿಗಳು ಚಲಿಸದಂತೆ ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೇಗೆ ಖಚಿತಪಡಿಸಬಹುದು?",
+            "opts": {
+              "1": "ವೇಗವಾಗಿ ನೇಯ್ದು",
+              "2": "ಭಾರವಾದ ಕಾಗದ ಬಳಸಿ",
+              "3": "ತುದಿಗಳಲ್ಲಿ ಒಂದು ಪಟ್ಟಿ ಗೋಂದಿನಿಂದ ಅಂಟಿಸಿ"
+            },
+            "ans": "3"
+          }
+        ]
+      }
+    },
+    {
+      "nm": "Dots Tell Nature's Tale 🌿",
+      "desc": "Gond art",
+      "rwc": "Paper, Pencil, Pen, Colors",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 47,
+          "nm": "Can nature merge into art? 🌿",
+          "desc": "In this activity, students will create a Gond Art inspired art work to promote nature conservation & sustainability",
+          "yt": "q6SkgecztXk",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 48,
+        "nm": "What does Gond art say? 🌳",
+        "qs": [
+          {
+            "q": "ಮಧ್ಯ ಭಾರತದ ಬುಡಕಟ್ಟು ಸಮುದಾಯದಲ್ಲಿ ಗೊಂಡ್ ಕಲೆಯನ್ನು ಮುಖ್ಯವಾಗಿ ಯಾವ ಉದ್ದೇಶಕ್ಕೆ ಬಳಸಲಾಗುತ್ತದೆ?",
+            "opts": {
+              "1": "ತಮ್ಮ ಮನೆ ಅಲಂಕರಿಸಲು",
+              "2": "ಹಳೆಯ ಕಥೆಗಳು ಮತ್ತು ಸಂಪ್ರದಾಯಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಲು",
+              "3": "ಅಂತರರಾಷ್ಟ್ರೀಯ ಮಾರುಕಟ್ಟೆಯಲ್ಲಿ ಮಾರಾಟ ಮಾಡಲು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಗೊಂಡ್ ಕಲೆಯಲ್ಲಿ ಕಾಣಿಸುವ ಮುಖ್ಯ ಅಂಶಗಳು ಯಾವುವು?",
+            "opts": {
+              "1": "ಆಧುನಿಕ ವಾಸ್ತುಶಿಲ್ಪ",
+              "2": "ಡಿಜಿಟಲ್ ತಂತ್ರಗಳ ಬಳಕೆ",
+              "3": "ಪ್ರಕಾಶಮಾನ ಬಣ್ಣಗಳು, ಚುಕ್ಕೆಗಳು ಮತ್ತು ರೇಖೆ ಮಾದರಿಗಳು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಪರಿಸರ ಸಂರಕ್ಷಣೆಯ ಸಂದೇಶ ತಿಳಿಸಲು ಗೊಂಡ್ ಕಲೆ ಹೇಗೆ ಅನ್ವಯಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಮಾದರಿಗಳು ಮತ್ತು ಪ್ರಕಾಶಮಾನ ಬಣ್ಣಗಳೊಂದಿಗೆ ಪ್ರಕೃತಿ-ಥೀಮ್ ಕಲಾಕೃತಿ ಬಿಡಿಸಿ",
+              "2": "ಪರಿಸರ ಸಮಸ್ಯೆಗಳ ಬಗ್ಗೆ ಪ್ರಬಂಧ ಬರೆದು",
+              "3": "ಅಳಿವಿನಂಚಿನ ಪ್ರಾಣಿಗಳ ಶಿಲ್ಪಗಳು ರಚಿಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಸಾಮರಸ್ಯ ಸಂಕೇತಿಸುವ ಗೊಂಡ್ ಕಲೆಗಾಗಿ ಹೊಸ ಮಾದರಿ ಕಂಡುಹಿಡಿದರೆ, ಯಾವುದು ಅತ್ಯಂತ ಸೃಜನಾತ್ಮಕ?",
+            "opts": {
+              "1": "ಒಂದು ಸರಣಿಯ ಪ್ರತ್ಯೇಕ ಚುಕ್ಕೆಗಳು",
+              "2": "ಜಿಗ್-ಜ್ಯಾಗ್ ಮಾದರಿ",
+              "3": "ಏಕತೆ ಪ್ರತಿನಿಧಿಸುವ ಪರಸ್ಪರ ಸಂಪರ್ಕಿತ ವೃತ್ತಗಳು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಜಲ ಸಂರಕ್ಷಣೆಯ ಮಹತ್ವ ತಿಳಿಸುವ ಗೊಂಡ್ ಕಲಾಕೃತಿ ರಚಿಸಬೇಕಿದ್ದರೆ, ಯಾವ ವಸ್ತುಗಳ ಸಂಯೋಜನೆ ಅತ್ಯಂತ ಸೃಜನಾತ್ಮಕ?",
+            "opts": {
+              "1": "ಪ್ರಾಣಿಗಳೊಂದಿಗೆ ಪರ್ವತ",
+              "2": "ಹರಿಯುವ ವಿನ್ಯಾಸದಲ್ಲಿ ಒಂದಾಗಿರುವ ನದಿ ಮತ್ತು ಮೀನು",
+              "3": "ರೆಂಬೆಗಳಿರುವ ಮರ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Gond-Art-Nature-Scene-🌿-Intermediate",
+          "seq": 43,
+          "nm": "Create a Gond Art Nature Scene 🌿",
+          "desc": "In this activity, students will create a Gond Art inspired art work to promote nature conservation & sustainability",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಇಷ್ಟವಾದರೆ \"Detailed\" ಎಂದು ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ \"Confusing\" ಎಂದು ಕಳುಹಿಸಿ",
+              "unguided_text": "Gond Art ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Detailed, Confusing",
+              "invalid_criteria": "Any word other than detailed, confusing"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಪುಸ್ತಕದ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "Picture of a book",
+              "invalid_criteria": "Anything other than a picture of book"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ನೀವು ಯಾವ ಕಲಾ ಶೈಲಿ ಕಲಿತಿರಿ ಎಂದು ಹೇಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನೀವು ರಚಿಸಿದ Gond art ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Animal Wears Patterns 🐘",
+      "desc": "Gond art",
+      "rwc": "Paper, Cardboard, Pencil, Pen, Colors, Scissors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 48,
+          "nm": "Can patterns dress an animal? 🐘",
+          "desc": "Students make a colourful animal coaster using Gond art style. They draw a simple animal, fill it with bright colours, and then decorate it with easy patterns like lines, dots, and shapes inspired by nature. This activity shows how simple drawings can become beautiful traditional artworks.",
+          "yt": "5NTumpiyGBc",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 49,
+        "nm": "Can animals become coasters? 🐾",
+        "qs": [
+          {
+            "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ಉಲ್ಲೇಖಿಸಿದ ಗೊಂಡ್ ಕಲೆಯ ಮೂಲ ಯಾವುದು?",
+            "opts": {
+              "1": "ಮಧ್ಯಪ್ರದೇಶ ಮತ್ತು ಮಧ್ಯ ಭಾರತ",
+              "2": "ರಾಜಸ್ಥಾನ ಮತ್ತು ಗುಜರಾತ್",
+              "3": "ಕೇರಳ ಮತ್ತು ತಮಿಳುನಾಡು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಗೊಂಡ್-ಶೈಲಿಯ ಪ್ರಾಣಿ ಕೋಸ್ಟರ್ ರಚಿಸುವ ಮೊದಲ ಹಂತ ಯಾವುದು?",
+            "opts": {
+              "1": "ಗಾಢ ಮಾರ್ಕರ್‌ನಿಂದ ರೂಪರೇಖೆ ಬಿಡಿಸಿ",
+              "2": "ಗೊಂಡ್ ಮಾದರಿಗಳನ್ನು ಸೇರಿಸಿ",
+              "3": "ಸರಳ ಪ್ರಾಣಿ ಆಕಾರ ಬಿಡಿಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಗೊಂಡ್ ಕಲೆ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿ ಪ್ರಾಣಿ ಆಕಾರ ಬಿಡಿಸಿದ ನಂತರ ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಪ್ರಕೃತಿಯಿಂದ ಪ್ರೇರಿತ ಮಾದರಿಗಳನ್ನು ಸೇರಿಸಿ",
+              "2": "ಮಾದರಿಗಳನ್ನು ಮಿಶ್ರಣ ಮಾಡಿ ಆಕಾರಗಳನ್ನು ಬದಲಾಯಿಸಿ",
+              "3": "ಕಪ್ಪು ಅಥವಾ ಗಾಢ ಮಾರ್ಕರ್‌ನಿಂದ ರೂಪರೇಖೆ ಬಿಡಿಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಮೀನನ್ನು ನಿಮ್ಮ ಪ್ರಾಣಿಯಾಗಿ ಬಳಸಿ ಗೊಂಡ್-ಶೈಲಿಯ ಮಾದರಿ ರಚಿಸಬೇಕಿದ್ದರೆ, ಸೃಜನಾತ್ಮಕವಾಗಿ ಯಾವುದನ್ನು ಸೇರಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಅಲೆ ರೇಖೆಗಳು ಮತ್ತು ಎಲೆ ಆಕಾರಗಳು",
+              "2": "ಚುಕ್ಕೆ ಸುರುಳಿಗಳು ಮತ್ತು ಜಿಗ್-ಜ್ಯಾಗ್‌ಗಳು",
+              "3": "ನೇರ ರೇಖೆಗಳು ಮತ್ತು ಜ್ಯಾಮಿತೀಯ ಆಕಾರಗಳು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಆಮೆಯನ್ನು ನಿಮ್ಮ ಪ್ರಾಣಿಯಾಗಿ ಬಳಸಿ ಗೊಂಡ್-ಶೈಲಿಯ ಕೋಸ್ಟರ್ ರಚಿಸಬೇಕಿದ್ದರೆ, ವೀಡಿಯೊದಲ್ಲಿ ವಿವರಿಸಿದ ಸೃಜನಾತ್ಮಕ ಕೌಶಲ್ಯಕ್ಕೆ ಯಾವ ವಿಧಾನ ಹೊಂದಿಕೊಳ್ಳುತ್ತದೆ?",
+            "opts": {
+              "1": "ನೈಸರ್ಗಿಕ ಭಾವ ನೀಡಲು ಚುಕ್ಕೆಗಳು ಮತ್ತು ಬಾಗಿದ ರೇಖೆಗಳ ಮಾದರಿಗಳನ್ನು ಮಿಶ್ರಣ ಮಾಡಿ",
+              "2": "ಪ್ರಕೃತಿಗೆ ಸಂಬಂಧಿಸದ ಅಮೂರ್ತ ಆಕಾರಗಳು ಬಿಡಿಸಿ",
+              "3": "ಸರಳತೆ ಕಾಪಾಡಲು ಒಂದೇ ಬಣ್ಣ ಬಳಸಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Gond-Art-Animal-Coaster-🐘-Remedial",
+          "seq": 44,
+          "nm": "Make a Gond Art Animal Coaster 🐘",
+          "desc": "Students make a colourful animal coaster using Gond art style. They draw a simple animal, fill it with bright colours, and then decorate it with easy patterns like lines, dots, and shapes inspired by nature. This activity shows how simple drawings can become beautiful traditional artworks.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಇಷ್ಟವಾದರೆ \"Neat\" ಎಂದು ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ \"Messy\" ಎಂದು ಕಳುಹಿಸಿ",
+              "unguided_text": "Gond Art Coaster ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Neat, Messy",
+              "invalid_criteria": "Any word other than neat, messy"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಕಪ್‌ನ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "Picture of a cup",
+              "invalid_criteria": "Anything other which is not a cup"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು Gond art ನಲ್ಲಿ ಸರಳ ಬಣ್ಣ ಹಾಕಿದ ನಂತರ ಏನು ಸೇರಿಸುತ್ತೀರಿ ಎಂದು ಹೇಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನೀವು ರಚಿಸಿದ Gond art coaster ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Shapes Speak Without Words 🌍",
+      "desc": "Warli art",
+      "rwc": "Paper, Paint, Pen, Brush, Pencil",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 49,
+          "nm": "Can shapes protect our earth? 🌍",
+          "desc": "Students create a simple Warli-style poster to show an environmental message without using words. They choose one rule like saving water, planting trees, or not littering, and draw using basic shapes such as circles, triangles, and lines on dark paper. Nature elements are added, and the final drawing is outlined with white paint to clearly show the message.",
+          "yt": "UUu8VFxpZnQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 50,
+        "nm": "Can shapes tell a story? 🔺",
+        "qs": [
+          {
+            "q": "ವಾರ್ಲಿ ಕಲೆ ಪೋಸ್ಟರ್ ರಚಿಸಲು ಯಾವ ರೀತಿಯ ಕಾಗದ ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ?",
+            "opts": {
+              "1": "ಪ್ರಕಾಶಮಾನ ಬಿಳಿ ಕಾಗದ",
+              "2": "ಪಾರದರ್ಶಕ ಕಾಗದ",
+              "3": "ಗಾಢ ಕಂದು/ಕಪ್ಪು ಕಾಗದ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ವಾರ್ಲಿ ಕಲೆಯಲ್ಲಿ ಪ್ರಕೃತಿ ಅಂಶಗಳನ್ನು ಸೇರಿಸುವುದು ಯಾಕೆ ಮುಖ್ಯ?",
+            "opts": {
+              "1": "ವಿಷಯದ ಕೇಂದ್ರದಲ್ಲಿ ಪ್ರಕೃತಿ ಇದೆ ಎಂದು ಒತ್ತಿ ಹೇಳಲು",
+              "2": "ಚಿತ್ರಕಲೆ ಬಣ್ಣದಾಯಕ ಮಾಡಲು",
+              "3": "ಆಧುನಿಕ ಜೀವನ ಚಿತ್ರಿಸಲು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ವಾರ್ಲಿ ಕಲೆಯಲ್ಲಿ ಸಂದೇಶ ತಿಳಿಸಲು ಮುಖ್ಯವಾಗಿ ಯಾವ ಆಕಾರಗಳನ್ನು ಬಳಸಲಾಗುತ್ತದೆ?",
+            "opts": {
+              "1": "ಚೌಕಗಳು, ವಜ್ರಾಕೃತಿಗಳು ಮತ್ತು ಷಡ್ಭುಜಗಳು",
+              "2": "ವೃತ್ತಗಳು, ತ್ರಿಕೋಣಗಳು ಮತ್ತು ರೇಖೆಗಳು",
+              "3": "ನಕ್ಷತ್ರಗಳು, ಹೃದಯಗಳು ಮತ್ತು ಅಂಡಾಕೃತಿಗಳು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "'ನೀರು ಉಳಿಸಿ' ಎಂಬ ವಿಷಯ ಆರಿಸಿದರೆ, ವಾರ್ಲಿ ಆಕಾರಗಳನ್ನು ಬಳಸಿ ಯಾವ ಸೃಜನಾತ್ಮಕ ದೃಶ್ಯ ಚಿತ್ರಿಸಬಹುದು?",
+            "opts": {
+              "1": "ನದಿ ಬಳಿ ಪುಸ್ತಕ ಓದುವ ವ್ಯಕ್ತಿ",
+              "2": "ಪಾತ್ರೆಯಲ್ಲಿ ನೀರು ತರುವ ಮತ್ತು ಗಿಡಗಳಿಗೆ ಹಾಕುವ ಆಕೃತಿಗಳು",
+              "3": "ಸೂರ್ಯನ ಅಡಿ ಮಲಗಿರುವ ಆಕೃತಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "'ಕಸ ಹಾಕಬೇಡಿ' ಬಗ್ಗೆ ವಾರ್ಲಿ ಕಲೆ ಪೋಸ್ಟರ್‌ನಲ್ಲಿ ಚಲನೆ ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೇಗೆ ತೋರಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಕಸದ ಡಬ್ಬಿ ಬಳಿ ನಿಂತ ಸ್ಥಿರ ಆಕೃತಿ ಬಿಡಿಸಿ",
+              "2": "ಕಸದ ಡಬ್ಬಿಯಲ್ಲಿ ಕಸ ಹಾಕುವ ಆಕೃತಿ ಚಿತ್ರಿಸಲು ರೇಖೆಗಳು ಬಳಸಿ",
+              "3": "ಸ್ವಚ್ಛ ಪ್ರದೇಶದಲ್ಲಿ ಕುಳಿತ ಆಕೃತಿಗಳನ್ನು ಚಿತ್ರಿಸಿ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-a-Warli-Environment-Poster-🌍-Advanced",
+          "seq": 45,
+          "nm": "Design a Warli Environment Poster 🌍",
+          "desc": "Students create a simple Warli-style poster to show an environmental message without using words. They choose one rule like saving water, planting trees, or not littering, and draw using basic shapes such as circles, triangles, and lines on dark paper. Nature elements are added, and the final drawing is outlined with white paint to clearly show the message.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಇಷ್ಟವಾದರೆ \"Fun\" ಎಂದು ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ \"Boring\" ಎಂದು ಕಳುಹಿಸಿ",
+              "unguided_text": "Warli Poster ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Fun, Boring",
+              "invalid_criteria": "Any word other than fun, boring"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "arts",
+              "unguided_text": "Synced",
+              "valid_criteria": "Picture of white or brown color",
+              "invalid_criteria": "Anything other than a picture of white or brown color"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ವಿಷಯವನ್ನು ಹೇಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನೀವು ರಚಿಸಿದ Warli poster ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Triangles Build Villages 🏕️",
+      "desc": "Warli",
+      "rwc": "Paper, Pen, Paint, Brush, Pencil",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 50,
+          "nm": "Can triangles build a village? 🏕️",
+          "desc": "SWABT understand and appreciate this traditional tribal art from Maharashtra, India. Students will learn to create simple, symbolic designs using geometric shapes like circles, triangles, and lines to depict nature, animals, and daily life.",
+          "yt": "CnTrMn-y9DM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 51,
+        "nm": "What does Warli art show? 🏡",
+        "qs": [
+          {
+            "q": "ವಾರ್ಲಿ ಕಲೆಯ ಪ್ರಾಥಮಿಕ ಗಮನ ಯಾವುದು?",
+            "opts": {
+              "1": "ಸಮತೋಲನ ಮತ್ತು ಸರಳತೆ",
+              "2": "ಸಂಕೀರ್ಣತೆ ಮತ್ತು ವಿವರ",
+              "3": "ಪ್ರಕಾಶಮಾನ ಬಣ್ಣಗಳು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ವಾರ್ಲಿ ಕಲೆಯನ್ನು ಸಾಂಪ್ರದಾಯಿಕವಾಗಿ ಯಾವ ಮೇಲ್ಮೈಯಲ್ಲಿ ರಚಿಸಲಾಗುತ್ತಿತ್ತು?",
+            "opts": { "1": "ಮರದ ಹಲಗೆಗಳು", "2": "ಕ್ಯಾನ್ವಾಸ್", "3": "ಕೆಂಪು ಮಣ್ಣಿನ ಗೋಡೆಗಳು" },
+            "ans": "3"
+          },
+          {
+            "q": "ವಾರ್ಲಿ ಕಲೆಯಲ್ಲಿ ಯಾವ ಜ್ಯಾಮಿತೀಯ ಆಕಾರ ಸೂರ್ಯ ಮತ್ತು ಚಂದ್ರನನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತದೆ?",
+            "opts": { "1": "ವೃತ್ತ", "2": "ರೇಖೆ", "3": "ತ್ರಿಕೋಣ" },
+            "ans": "1"
+          },
+          {
+            "q": "ಒಂದು ಹಬ್ಬ ಚಿತ್ರಿಸುವ ವಾರ್ಲಿ ಕಲಾಕೃತಿ ರಚಿಸಬೇಕಿದ್ದರೆ, ಯಾವ ಅಂಶಕ್ಕೆ ಸೃಜನಾತ್ಮಕವಾಗಿ ಗಮನ ನೀಡುವಿರಿ?",
+            "opts": {
+              "1": "ನೃತ್ಯ ಮಾಡುವ ಮತ್ತು ಸಂಭ್ರಮಿಸುವ ಜನರು",
+              "2": "ಪ್ರಾಣಿಗಳು ಮಾತ್ರ",
+              "3": "ಬಾಹ್ಯಾಕಾಶ ನೌಕೆ ಮತ್ತು ಅನ್ಯಗ್ರಹ ಜೀವಿಗಳು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ವಾರ್ಲಿ ಕಲೆ ರಚಿಸುವಾಗ ನಿಮ್ಮ ಕಲಾಕೃತಿ ಹೇಗೆ ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೆಚ್ಚಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಜ್ಯಾಮಿತೀಯ ಆಕಾರಗಳಲ್ಲಿ ಮಾತ್ರ ಗಮನ ನೀಡಿ",
+              "2": "ಹೆಚ್ಚಿನ ಅಂಶಗಳು ಮತ್ತು ಬಣ್ಣಗಳನ್ನು ಸೇರಿಸಿ",
+              "3": "ಕಪ್ಪು ಮತ್ತು ಬಿಳಿ ಬಣ್ಣಗಳನ್ನು ಮಾತ್ರ ಬಳಸಿ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Warli-Village-Scene-🏕️-Remedial",
+          "seq": 46,
+          "nm": "Create a Warli Village Scene 🏕️",
+          "desc": "SWABT understand and appreciate this traditional tribal art from Maharashtra, India. Students will learn to create simple, symbolic designs using geometric shapes like circles, triangles, and lines to depict nature, animals, and daily life.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಇಷ್ಟವಾದರೆ \"Cultural\" ಎಂದು ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ \"Difficult\" ಎಂದು ಕಳುಹಿಸಿ",
+              "unguided_text": "Warli Art ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Cultural, Difficult",
+              "invalid_criteria": "Any word other than cultural, difficult"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "arts",
+              "unguided_text": "Synced",
+              "valid_criteria": "Picture of white or brown color",
+              "invalid_criteria": "Anything other than a picture of white or brown color"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು Warli ಆಕೃತಿ ತಯಾರಿಸಲು ಯಾವ ಆಕಾರಗಳನ್ನು ಬಳಸುತ್ತಾರೆ ಎಂದು ಹೇಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನೀವು ರಚಿಸಿದ Warli art ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

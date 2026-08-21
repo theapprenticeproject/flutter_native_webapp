@@ -1,0 +1,13 @@
+{
+  "@@locale": "en",
+  "appName": "App Name Here",
+  "continueButton": "Continue",
+  "sendOtp": "Send OTP",
+  "verifyOtp": "Verify",
+  "createPassword": "Create Password",
+  "enterPassword": "Enter Password",
+  "logout": "Logout",
+  "language": "Language",
+  "settings": "Settings",
+  "passport": "Passport"
+}

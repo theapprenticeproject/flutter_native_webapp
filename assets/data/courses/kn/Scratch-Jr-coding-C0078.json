@@ -1,0 +1,1456 @@
+{
+  "id": "Scratch-Jr-coding-C0078",
+  "nm": "Scratch Jr",
+  "lvl": "Level 3AK",
+  "vrt": "coding",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "First Code Awakens 🐱",
+      "desc": "App installation and navigation (Google Play Store / App Store). Scratch Junior interface: Home icon, My Projects page, stage, programming area. Sprite management: adding and removing characters. Block categories: trigger blocks, motion blocks, end blocks.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 118,
+          "nm": "Can your phone build games? 📱",
+          "desc": "In this activity, students learn how to download and open the Scratch Junior app on their devices. They explore the home screen, understand the stage, add sprites, create a simple animated project, and experiment with basic blocks like motion and trigger blocks. Students also learn to customize their project with titles, colors, and backgrounds to create their first animation.",
+          "yt": "IlMdng38_7Q",
+          "pts": 10,
+          "pq": {
+            "id": 121,
+            "nm": "How do you start on Scratch Jr? 🐱",
+            "qs": [
+              {
+                "q": "ಆಂಡ್ರಾಯ್ಡ್ ಫೋನ್‌ನಲ್ಲಿ ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಯಾವ ಸ್ಟೋರ್ ಬಳಸುತ್ತೀರಿ?",
+                "opts": {
+                  "1": "ಆ್ಯಪ್ ಸ್ಟೋರ್",
+                  "2": "ಸ್ಕ್ರಾಚ್ ವೆಬ್‌ಸೈಟ್",
+                  "3": "ಗೂಗಲ್ ಪ್ಲೇ ಸ್ಟೋರ್"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "ಪ್ರಾಜೆಕ್ಟ್‌ಗೆ ಪಠ್ಯ ಸೇರಿಸಲು ಯಾವ ಐಕಾನ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                "opts": { "1": "ABC ಐಕಾನ್", "2": "ಹಸಿರು ಧ್ವಜ ಐಕಾನ್", "3": "ರೀಸೆಟ್ ಐಕಾನ್" },
+                "ans": "2"
+              },
+              {
+                "q": "ಹೊಸ ಪ್ರಾಜೆಕ್ಟ್ ಪ್ರಾರಂಭಿಸಲು ಮನೆ ಐಕಾನ್ ನಂತರ ಏನು ಒತ್ತಬೇಕು?",
+                "opts": {
+                  "1": "ಪ್ರಶ್ನೆ ಚಿಹ್ನೆ (?) ಒತ್ತಬೇಕು",
+                  "2": "ಹಸಿರು ಧ್ವಜ ಒತ್ತಬೇಕು",
+                  "3": "ಪ್ಲಸ್ (+) ಚಿಹ್ನೆ ಒತ್ತಬೇಕು"
+                },
+                "ans": "2"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 122,
+        "nm": "Can you code it? 🎮",
+        "qs": [
+          {
+            "q": "ಆಂಡ್ರಾಯ್ಡ್ ಫೋನ್‌ನಲ್ಲಿ ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ನೀವು ಯಾವ ಸ್ಟೋರ್ ಬಳಸುತ್ತೀರಿ?",
+            "opts": { "1": "ಗೂಗಲ್ ಪ್ಲೇ ಸ್ಟೋರ್", "2": "ಆ್ಯಪ್ ಸ್ಟೋರ್", "3": "ಸ್ಕ್ರಾಚ್ ವೆಬ್‌ಸೈಟ್" },
+            "ans": "1"
+          },
+          {
+            "q": "ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್‌ಗೆ ಪಠ್ಯ ಸೇರಿಸಲು ಯಾವ ಐಕಾನ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+            "opts": { "1": "ರೀಸೆಟ್ ಐಕಾನ್", "2": "ABC ಐಕಾನ್", "3": "ಹಸಿರು ಧ್ವಜ ಐಕಾನ್" },
+            "ans": "2"
+          },
+          {
+            "q": "ಹೊಸ ಪ್ರಾಜೆಕ್ಟ್ ಪ್ರಾರಂಭಿಸಲು ಮನೆ ಐಕಾನ್ ನಂತರ ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಪ್ಲಸ್ (+) ಚಿಹ್ನೆ ಒತ್ತಬೇಕು",
+              "2": "ಪ್ರಶ್ನೆ ಚಿಹ್ನೆ (?) ಒತ್ತಬೇಕು",
+              "3": "ಹಸಿರು ಧ್ವಜ ಒತ್ತಬೇಕು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್ ಮೊದಲ ಬಾರಿ ತೆರೆದಾಗ ಡೀಫಾಲ್ಟ್ ಬೆಕ್ಕಿನ ಸ್ಪ್ರೈಟ್ ಕಾಣಿಸುತ್ತದೆ. ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್ ಅನ್ನು ಹೆಚ್ಚು ಸೃಜನಾತ್ಮಕವಾಗಿ ಮಾಡಲು ಹೇಗೆ ಮಾಡಬಹುದು?",
+            "opts": {
+              "1": "ಅದನ್ನು ಹಾಗೇ ಬಿಡಬೇಕು",
+              "2": "ಹೊಸ ಸ್ಪ್ರೈಟ್‌ಗಳು ಮತ್ತು ಹಿನ್ನೆಲೆಗಳನ್ನು ಸೇರಿಸಬೇಕು",
+              "3": "ಎಲ್ಲ ಸ್ಪ್ರೈಟ್‌ಗಳನ್ನು ಅಳಿಸಿ ಖಾಲಿ ಮಾಡಬೇಕು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ನಿಮ್ಮ ಮೊದಲ ಪ್ರಾಜೆಕ್ಟ್ ವಿಶಿಷ್ಟವಾಗಿ ಮಾಡಲು ಉತ್ತಮ ವಿಧಾನ ಯಾವುದು?",
+            "opts": {
+              "1": "ಕೇವಲ ಡೀಫಾಲ್ಟ್ ಸ್ಪ್ರೈಟ್ ಮತ್ತು ಹಿನ್ನೆಲೆ ಬಳಸಿ",
+              "2": "ಗೆಳೆಯರ ಪ್ರಾಜೆಕ್ಟ್‌ನಂತೆಯೇ ಮಾಡಿ",
+              "3": "ವಿವಿಧ ಸ್ಪ್ರೈಟ್‌ಗಳು, ಹಿನ್ನೆಲೆಗಳು ಮತ್ತು ಚಲನೆಗಳನ್ನು ಬಳಸಿ ಕಥೆ ಹೇಳಿ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-Your-First-Animation-🐱-Basic",
+          "seq": 112,
+          "nm": "Build Your First Animation 🐱",
+          "desc": "In this activity, students learn how to download and open the Scratch Junior app on their devices. They explore the home screen, understand the stage, add sprites, create a simple animated project, and experiment with basic blocks like motion and trigger blocks. Students also learn to customize their project with titles, colors, and backgrounds to create their first animation.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ನೀವು ಚಟುವಟಿಕೆಯನ್ನು ಆನಂದಿಸಿದರೆ, ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ನಮಗೆ ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ \"Fun\" ಎಂದು ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್‌ನೋಟ್ ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ \"Boring\" ಎಂದು ಕಳುಹಿಸಿ",
+              "unguided_text": "ಇಂದಿನ ಚಟುವಟಿಕೆಯ ಅನುಭವವನ್ನು ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ (ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್)",
+              "valid_criteria": "fun, boring",
+              "invalid_criteria": "Any word other than fun, boring"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನೀವು ಬಳಸುವ ಒಂದು ಗ್ಯಾಜೆಟ್‌ನ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೂ ವಸ್ತುವಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "valid_criteria": "Phone, TV, laptop, tablet or similar gadget",
+              "invalid_criteria": "Any object other than a gadget"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನೀವು ಕಲಿತ ಒಂದು ಹೊಸ ಪರಿಕಲ್ಪನೆ ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ಸಮುದ್ರ ತೀರದ ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಏಡಿ ಮತ್ತು ಕೋಡ್ ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Butterfly Feeds the Garden 🌸",
+      "desc": "Students will be able to add backgrounds and sprites, duplicate and modify sprites as well as their colors using the Paint Editor , and using the ABC tool to add titles. Students will be able to apply coding concepts by using the Start on Green Flag block to start the animation, Motion (blue) blocks to move the butterfly, turn blocks to show direction change, and the Repeat Forever block to create continuous movement. In addition, they will understand that butterflies drink nectar from flowers, which provides them with energy and nutrition, and plays an important role in nature.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 119,
+          "nm": "Can butterflies drink flowers? 🦋",
+          "desc": "In this activity, students will create an animation in ScratchJr showing a butterfly flying across flowers and drinking nectar. They will design the scene by adding and duplicating flowers, using the Paint Editor, and animate the butterfly’s movement using trigger, motion and repeat forever blocks. Students will also add a title to their project, making it visually complete and meaningful.",
+          "yt": "QBzhkA8SDcg",
+          "pts": 10,
+          "pq": {
+            "id": 123,
+            "nm": "What makes the butterfly move? 🦋",
+            "qs": [
+              {
+                "q": "ಚಿಟ್ಟೆಗಳು ಹೂವುಗಳಿಂದ ಏನು ಕುಡಿಯುತ್ತವೆ?",
+                "opts": { "1": "ಮಕರಂದ", "2": "ರಸ", "3": "ನೀರು" },
+                "ans": "2"
+              },
+              {
+                "q": "'ರಿಪೀಟ್ ಫಾರೆವರ್' ಬ್ಲಾಕ್‌ನ ಉದ್ದೇಶವೇನು?",
+                "opts": {
+                  "1": "ಚಿಟ್ಟೆಯ ಮಕರಂದ ಕುಡಿಯುವ ಚಲನೆಯನ್ನು ನಿರಂತರವಾಗಿ ಪುನರಾವರ್ತಿಸಲು",
+                  "2": "ಹಿನ್ನೆಲೆ ಬಣ್ಣ ಬದಲಾಯಿಸಲು",
+                  "3": "ಚಿಟ್ಟೆ ಒಮ್ಮೆ ಮಾತ್ರ ಹಾರಲು"
+                },
+                "ans": "2"
+              },
+              {
+                "q": "ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಪಠ್ಯ ಸಂದೇಶ ಸೇರಿಸಲು ಯಾವ ಟೂಲ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                "opts": { "1": "ಡುಪ್ಲಿಕೇಟ್ ಟೂಲ್", "2": "ABC ಟೂಲ್", "3": "ಫಿಲ್ ಟೂಲ್" },
+                "ans": "2"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 124,
+        "nm": "Why do butterflies fly? 🦋",
+        "qs": [
+          {
+            "q": "ಚಿಟ್ಟೆಗಳು ಹೂವುಗಳಿಂದ ಏನು ಕುಡಿಯುತ್ತವೆ?",
+            "opts": { "1": "ನೀರು", "2": "ಮಕರಂದ", "3": "ರಸ" },
+            "ans": "2"
+          },
+          {
+            "q": "ಅನಿಮೇಷನ್ ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ 'ರಿಪೀಟ್ ಫಾರೆವರ್' ಬ್ಲಾಕ್ ಬಳಸುವ ಉದ್ದೇಶವೇನು?",
+            "opts": {
+              "1": "ಚಿಟ್ಟೆ ಒಮ್ಮೆ ಮಾತ್ರ ಹಾರಲು",
+              "2": "ಚಿಟ್ಟೆಯ ಮಕರಂದ ಕುಡಿಯುವ ಚಲನೆಯನ್ನು ನಿರಂತರವಾಗಿ ಪುನರಾವರ್ತಿಸಲು",
+              "3": "ಹಿನ್ನೆಲೆ ಬಣ್ಣ ಬದಲಾಯಿಸಲು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಪಠ್ಯ ಸಂದೇಶ ಸೇರಿಸಲು ಯಾವ ಟೂಲ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+            "opts": { "1": "ಫಿಲ್ ಟೂಲ್", "2": "ಡುಪ್ಲಿಕೇಟ್ ಟೂಲ್", "3": "ABC ಟೂಲ್" },
+            "ans": "3"
+          },
+          {
+            "q": "ಚಿಟ್ಟೆ ನೇರ ರೇಖೆಯಲ್ಲಿ ಚಲಿಸುವ ಬದಲು ಬಗ್ಗಿ ಮಕರಂದ ಕುಡಿಯಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಬಹುದು?",
+            "opts": {
+              "1": "ಬಲಕ್ಕೆ ಮತ್ತು ಎಡಕ್ಕೆ ತಿರುಗಿಸುವ ಬ್ಲಾಕ್‌ಗಳು",
+              "2": "ಬಲ ಮತ್ತು ಎಡಕ್ಕೆ ಚಲಿಸುವ ಬ್ಲಾಕ್‌ಗಳು",
+              "3": "ರೀಸೆಟ್ ಬ್ಲಾಕ್"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಅನಿಮೇಷನ್ ಅನ್ನು ವೀಕ್ಷಕರಿಗೆ ಹೆಚ್ಚು ಆಕರ್ಷಕವಾಗಿ ಮಾಡಲು ಏನು ಮಾಡಬಹುದು?",
+            "opts": {
+              "1": "ಹೆಚ್ಚು ಹೂವುಗಳನ್ನು ಸೇರಿಸಿ",
+              "2": "ಬೇರೆ ಹಿನ್ನೆಲೆ ಬಳಸಿ",
+              "3": "ಚಿಟ್ಟೆ ಮಕರಂದ ಕುಡಿಯುವಾಗ ಧ್ವನಿ ಪರಿಣಾಮ ಸೇರಿಸಿ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Animate-a-Hungry-Butterfly-🌸-Remedial",
+          "seq": 113,
+          "nm": "Animate a Hungry Butterfly 🌸",
+          "desc": "In this activity, students will create an animation in ScratchJr showing a butterfly flying across flowers and drinking nectar. They will design the scene by adding and duplicating flowers, using the Paint Editor, and animate the butterfly’s movement using trigger, motion and repeat forever blocks. Students will also add a title to their project, making it visually complete and meaningful.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ನೀವು ಚಟುವಟಿಕೆಯನ್ನು ಅರ್ಥಮಾಡಿಕೊಂಡರೆ, ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ನಮಗೆ ಕಳುಹಿಸಿ",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ನಮ್ಮ ಚಿಟ್ಟೆಯನ್ನು ಹೂವುಗಳ ಕಡೆಗೆ ಬಾಗಿಸಿದ ಬ್ಲಾಕ್ ಯಾವುದು - ಬಲಕ್ಕೆ ತಿರುಗಿ ಅಥವಾ ಎಡಕ್ಕೆ ತಿರುಗಿ",
+              "unguided_text": "ಇಂದಿನ ಚಟುವಟಿಕೆ ಮಾಡುವಾಗ ನೀವು ಹೇಗೆ ಅನುಭವಿಸಿದಿರಿ ಎಂದು ಒಂದು ಪದದಲ್ಲಿ ಹೇಳಿ (ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್)",
+              "valid_criteria": "turn right",
+              "invalid_criteria": "Any other word"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಒಂದು ಹೂವು ಅಥವಾ ಗಿಡದ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೂ ವಸ್ತುವಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "valid_criteria": "Objects related to plants such as Flower, leaf, garden plant",
+              "invalid_criteria": "Objects not related to plants"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನೀವು ಕಲಿತ ಒಂದು ಹೊಸ ಪರಿಕಲ್ಪನೆ ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ಸಮುದ್ರ ತೀರದ ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಏಡಿ ಮತ್ತು ಕೋಡ್ ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Worlds at Risk 🐘",
+      "desc": "Students will learn to add backgrounds and sprites, use the Paint Editor to modify sprites, and use the ABC tool to add titles. They will also learn to add new pages to create a multi-scene project. In coding, students will learn to use the Start on Green Flag block to begin the animation, Motion (blue) blocks to move sprites, and the Go to Page block to transition from one scene to the next. In addition, students will understand that some animals are endangered, meaning their numbers are decreasing. They will learn that different animals live in different habitats (Arctic, Savanna, Desert), and that loss of habitat affects animal survival.Ina ddition, students learn that some animals are endangered, meaning their numbers are decreasing, different animals live in different habitats (Arctic, Savanna, Desert) and loss of habitat affects animal survival.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 120,
+          "nm": "Can three animals share a home? 🐘",
+          "desc": "In this activity, students will create a multi-page animation in ScratchJr showcasing three endangered animals — a polar bear, an African elephant, and a Bactrian camel — in their natural habitats. They will design each scene using different backgrounds, modify sprites using the Paint Editor, and animate the animals moving across the screen using the blue motion blocks. Students will also connect multiple pages using the go to page end blocks to create a smooth transition between habitats, while understanding how human actions are affecting these animals' homes.",
+          "yt": "CvGomAMrZEc",
+          "pts": 10,
+          "pq": {
+            "id": 125,
+            "nm": "Which animal needs a cold home? 🐻‍❄️",
+            "qs": [
+              {
+                "q": "ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್‌ನಲ್ಲಿ ಹೊಸ ಪ್ರಾಜೆಕ್ಟ್ ಪ್ರಾರಂಭಿಸಲು ಮೊದಲ ಹಂತ ಯಾವುದು?",
+                "opts": {
+                  "1": "ಸೇವ್ ಐಕಾನ್ ಒತ್ತಿ ನಂತರ ಪ್ಲಸ್ ಒತ್ತಿ ಹೊಸ ಪ್ರಾಜೆಕ್ಟ್ ಪ್ರಾರಂಭಿಸಿ",
+                  "2": "ಸೆಟ್ಟಿಂಗ್ಸ್ ಐಕಾನ್ ಒತ್ತಿ ನಂತರ ಪ್ಲಸ್ ಒತ್ತಿ ಹೊಸ ಪ್ರಾಜೆಕ್ಟ್ ಪ್ರಾರಂಭಿಸಿ",
+                  "3": "ಮನೆ ಐಕಾನ್ ಒತ್ತಿ ನಂತರ ಪ್ಲಸ್ ಒತ್ತಿ ಹೊಸ ಪ್ರಾಜೆಕ್ಟ್ ಪ್ರಾರಂಭಿಸಿ"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "ಪ್ರಾಣಿಗಳ ಸಂಖ್ಯೆ ಕಡಿಮೆಯಾಗಲು ಮುಖ್ಯ ಕಾರಣವೇನು?",
+                "opts": { "1": "ಅವುಗಳ ಆವಾಸ ನಾಶ", "2": "ಇತರ ಪ್ರಾಣಿಗಳ ದಾಳಿ", "3": "ಆಹಾರದ ಕೊರತೆ" },
+                "ans": "2"
+              },
+              {
+                "q": "ಆಫ್ರಿಕನ್ ಆನೆಯ ಬಣ್ಣ ಬದಲಾಯಿಸಲು ಯಾವ ಟೂಲ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                "opts": { "1": "ರೇಖೆ ಟೂಲ್", "2": "ಪೇಂಟ್ ಟೂಲ್", "3": "ಫಿಲ್ ಟೂಲ್" },
+                "ans": "2"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 126,
+        "nm": "Can animals survive change? 🐘",
+        "qs": [
+          {
+            "q": "ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್‌ನಲ್ಲಿ ಹೊಸ ಪ್ರಾಜೆಕ್ಟ್ ಪ್ರಾರಂಭಿಸಲು ಮೊದಲ ಹಂತ ಯಾವುದು?",
+            "opts": {
+              "1": "ಮನೆ ಐಕಾನ್ ಒತ್ತಿ ನಂತರ ಪ್ಲಸ್ ಒತ್ತಿ ಹೊಸ ಪ್ರಾಜೆಕ್ಟ್ ಪ್ರಾರಂಭಿಸಿ",
+              "2": "ಸೇವ್ ಐಕಾನ್ ಒತ್ತಿ ನಂತರ ಪ್ಲಸ್ ಒತ್ತಿ ಹೊಸ ಪ್ರಾಜೆಕ್ಟ್ ಪ್ರಾರಂಭಿಸಿ",
+              "3": "ಸೆಟ್ಟಿಂಗ್ಸ್ ಐಕಾನ್ ಒತ್ತಿ ನಂತರ ಪ್ಲಸ್ ಒತ್ತಿ ಹೊಸ ಪ್ರಾಜೆಕ್ಟ್ ಪ್ರಾರಂಭಿಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಆಫ್ರಿಕನ್ ಆನೆಗಳು, ಬ್ಯಾಕ್ಟ್ರಿಯನ್ ಒಂಟೆಗಳು ಮತ್ತು ಧ್ರುವ ಕರಡಿಗಳ ಸಂಖ್ಯೆ ಕಡಿಮೆಯಾಗಲು ಮುಖ್ಯ ಕಾರಣವೇನು?",
+            "opts": { "1": "ಆಹಾರದ ಕೊರತೆ", "2": "ಅವುಗಳ ಆವಾಸ ನಾಶ", "3": "ಇತರ ಪ್ರಾಣಿಗಳ ದಾಳಿ" },
+            "ans": "2"
+          },
+          {
+            "q": "ಪೇಂಟ್ ಎಡಿಟರ್‌ನಲ್ಲಿ ಆಫ್ರಿಕನ್ ಆನೆಯ ಬಣ್ಣ ಬದಲಾಯಿಸಲು ಯಾವ ಟೂಲ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+            "opts": { "1": "ಫಿಲ್ ಟೂಲ್", "2": "ರೇಖೆ ಟೂಲ್", "3": "ಪೇಂಟ್ ಟೂಲ್" },
+            "ans": "1"
+          },
+          {
+            "q": "ಮಳೆಕಾಡಿನ ಪ್ರಾಣಿಗಳಿಗಾಗಿ ಇದೇ ರೀತಿಯ ಅನಿಮೇಷನ್ ರಚಿಸಲು ಯಾವ ಸೃಜನಾತ್ಮಕ ಅಂಶ ಸೇರಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಅನೇಕ ಆರ್ಕ್ಟಿಕ್ ಹಿನ್ನೆಲೆಗಳನ್ನು ಸೇರಿಸಿ",
+              "2": "ಮರುಭೂಮಿ ಹಿನ್ನೆಲೆ ಸೇರಿಸಿ",
+              "3": "ಪೇಂಟ್ ಎಡಿಟರ್ ಬಳಸಿ ಮಳೆಕಾಡಿನ ಬಣ್ಣ ಮತ್ತು ವಿವರಗಳನ್ನು ಸೇರಿಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್ ಬಳಸಿ ಅರಣ್ಯನಾಶದ ಪ್ರಭಾವವನ್ನು ಹೇಗೆ ತೋರಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಮರಗಳು ಮಾಯವಾದಂತೆ ಪ್ರಾಣಿಗಳು ಚಲಿಸುವ ದೃಶ್ಯ ರಚಿಸಿ",
+              "2": "ಹಿನ್ನೆಲೆಗೆ ಹೆಚ್ಚಿನ ಮರಗಳನ್ನು ಸೇರಿಸಿ",
+              "3": "ಬದಲಾವಣೆಯಿಲ್ಲದ ಹುಲ್ಲುಗಾವಲು ಹಿನ್ನೆಲೆ ಬಳಸಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Code-Endangered-Animal-Scenes-🐘-Basic",
+          "seq": 114,
+          "nm": "Code Endangered Animal Scenes 🐘",
+          "desc": "In this activity, students will create a multi-page animation in ScratchJr showcasing three endangered animals — a polar bear, an African elephant, and a Bactrian camel — in their natural habitats. They will design each scene using different backgrounds, modify sprites using the Paint Editor, and animate the animals moving across the screen using the blue motion blocks. Students will also connect multiple pages using the go to page end blocks to create a smooth transition between habitats, while understanding how human actions are affecting these animals' homes.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಅರ್ಥವಾದರೆ 💡 ಕಳುಹಿಸಿ, ಸಂದೇಹವಿದ್ದರೆ ❓ ಕಳುಹಿಸಿ",
+              "unguided_text": "ನೀವು ಚಟುವಟಿಕೆಯನ್ನು ಅರ್ಥಮಾಡಿಕೊಂಡರೆ, ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ನಮಗೆ ಕಳುಹಿಸಿ",
+              "valid_criteria": "💡 or ❓",
+              "invalid_criteria": "Any emoji other than 💡 or ❓"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಪ್ರಾಣಿಗಳು ನಮ್ಮಿಂದಾಗಿ ತಮ್ಮ ಮನೆಗಳನ್ನು ಕಳೆದುಕೊಳ್ಳುತ್ತಿವೆ. ಅಳಿವಿನಂಚಿನ ಪ್ರಾಣಿಯ ಹೆಸರನ್ನು ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್‌ನೋಟ್‌ನಲ್ಲಿ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಇಂದಿನ ಚಟುವಟಿಕೆಯಿಂದ ಯಾವುದಾದರೂ ಒಂದು ಅಳಿವಿನಂಚಿನ ಪ್ರಾಣಿಯ ಹೆಸರನ್ನು ಹಂಚಿಕೊಳ್ಳಿ (ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್)",
+              "valid_criteria": "TRUE",
+              "invalid_criteria": "Any word, except True"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಒಂದು ಪ್ರಾಣಿಯ ಫೋಟೋ ತೆಗೆಯಿರಿ (ನೈಜ ಅಥವಾ ಚಿತ್ರ/ರೇಖಾಚಿತ್ರದಿಂದ)",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೂ ವಸ್ತುವಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "valid_criteria": "Images showing an animal or bird, such as pet, bird, animal photo, drawing of animal",
+              "invalid_criteria": "Objects not related to animals"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನೀವು ಕಲಿತ ಒಂದು ಹೊಸ ಪರಿಕಲ್ಪನೆ ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ಸಮುದ್ರ ತೀರದ ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಏಡಿ ಮತ್ತು ಕೋಡ್ ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Bear Finds the Igloo 🐻",
+      "desc": "ScratchJr interface (sprites, background, blocks) Motion blocks (move, hop, turn) Events block (start on green flag) Looks block (resize characters) Grid system for position and movement Basic sequencing and debugging",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 121,
+          "nm": "Can a bear find igloo? 🐻",
+          "desc": "In this activity, students explore motion blocks in ScratchJr to move characters across the screen. They learn how to control direction, steps, and positioning using a grid system. Through a fun challenge, they guide a polar bear to its igloo while applying logic, sequencing, and visualization skills.",
+          "yt": "JX1-D6xXBns",
+          "pts": 10,
+          "pq": {
+            "id": 127,
+            "nm": "Does the grid really help? 🔲",
+            "qs": [
+              {
+                "q": "ಇಂದಿನ ಕೋಡಿಂಗ್ ಸಾಹಸದ ಮುಖ್ಯ ಗಮನ ಏನು?",
+                "opts": {
+                  "1": "ಹಲವು ದೃಶ್ಯಗಳೊಂದಿಗೆ ಸಂಕೀರ್ಣ ಅನಿಮೇಷನ್ ವಿನ್ಯಾಸ ಮಾಡುವುದು",
+                  "2": "ಹೊಸ ಪಾತ್ರಗಳನ್ನು ಸ್ಕ್ರಾಚ್‌ನಿಂದ ರಚಿಸುವುದು",
+                  "3": "ಪರದೆಯ ಮೇಲೆ ಪಾತ್ರಗಳನ್ನು ಚಲಿಸಲು ಮೋಷನ್ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಕಲಿಯುವುದು"
+                },
+                "ans": "3"
+              },
+              {
+                "q": "ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್‌ನಲ್ಲಿ 'ಗ್ರಿಡ್' ಯಾವ ಪಾತ್ರ ವಹಿಸುತ್ತದೆ?",
+                "opts": {
+                  "1": "ಪಾತ್ರದ ನಿಖರ ಸ್ಥಳ ಮತ್ತು ಹಂತಗಳನ್ನು ಲೆಕ್ಕಿಸಲು",
+                  "2": "ಪಾತ್ರಗಳ ಬಣ್ಣ ಬದಲಾಯಿಸಲು",
+                  "3": "ದೃಶ್ಯಕ್ಕೆ ಹೆಚ್ಚಿನ ಪಾತ್ರಗಳನ್ನು ಸೇರಿಸಲು"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "ಹಸಿರು ಧ್ವಜ ಒತ್ತಿದಾಗ ಕೋಡ್ ತಾನಾಗೇ ಚಲಿಸುವಂತೆ ಮಾಡಲು ಏನು ಮಾಡಬೇಕು?",
+                "opts": {
+                  "1": "ಹೆಚ್ಚಿನ ಮೋಷನ್ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಸೇರಿಸಿ",
+                  "2": "ಪಾತ್ರಗಳ ಗಾತ್ರ ಹೆಚ್ಚಿಸಿ",
+                  "3": "ಟ್ರಿಗರ್ ಬ್ಲಾಕ್ ವಿಭಾಗದಿಂದ ಹಳದಿ ಸ್ಟಾರ್ಟ್ ಆನ್ ಗ್ರೀನ್ ಬ್ಲಾಕ್ ಸೇರಿಸಿ"
+                },
+                "ans": "1"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 128,
+        "nm": "What does the grid do? 🔲",
+        "qs": [
+          {
+            "q": "ಇಂದಿನ ಕೋಡಿಂಗ್ ಸಾಹಸದ ಮುಖ್ಯ ಗಮನ ಏನು?",
+            "opts": {
+              "1": "ಪರದೆಯ ಮೇಲೆ ಪಾತ್ರಗಳನ್ನು ಚಲಿಸಲು ಮೋಷನ್ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಕಲಿಯುವುದು",
+              "2": "ಹಲವು ದೃಶ್ಯಗಳೊಂದಿಗೆ ಸಂಕೀರ್ಣ ಅನಿಮೇಷನ್ ವಿನ್ಯಾಸ ಮಾಡುವುದು",
+              "3": "ಹೊಸ ಪಾತ್ರಗಳನ್ನು ಸ್ಕ್ರಾಚ್‌ನಿಂದ ರಚಿಸುವುದು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್‌ನಲ್ಲಿ 'ಗ್ರಿಡ್' ಯಾವ ಪಾತ್ರ ವಹಿಸುತ್ತದೆ?",
+            "opts": {
+              "1": "ದೃಶ್ಯಕ್ಕೆ ಹೆಚ್ಚಿನ ಪಾತ್ರಗಳನ್ನು ಸೇರಿಸಲು",
+              "2": "ಪಾತ್ರದ ನಿಖರ ಸ್ಥಳ ಮತ್ತು ಹಂತಗಳನ್ನು ಲೆಕ್ಕಿಸಲು",
+              "3": "ಪಾತ್ರಗಳ ಬಣ್ಣ ಬದಲಾಯಿಸಲು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಹಸಿರು ಧ್ವಜ ಒತ್ತಿದಾಗ ಕೋಡ್ ತಾನಾಗೇ ಚಲಿಸುವಂತೆ ಮಾಡಲು ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಟ್ರಿಗರ್ ಬ್ಲಾಕ್ ವಿಭಾಗದಿಂದ ಹಳದಿ ಸ್ಟಾರ್ಟ್ ಆನ್ ಗ್ರೀನ್ ಬ್ಲಾಕ್ ಸೇರಿಸಿ",
+              "2": "ಹೆಚ್ಚಿನ ಮೋಷನ್ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಸೇರಿಸಿ",
+              "3": "ಪಾತ್ರಗಳ ಗಾತ್ರ ಹೆಚ್ಚಿಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಟ್ಯಾಪ್ ಮಾಡಿದಾಗ ಅಡೆತಡೆಗಳನ್ನು ಹಾರಿ ದಾಟುವ ಪಾತ್ರಕ್ಕೆ ಯಾವ ಕೋಡ್ ಬಳಸಬೇಕು?",
+            "opts": {
+              "1": "ಸ್ಟಾರ್ಟ್ ಆನ್ ಟ್ಯಾಪ್, ಹಾಪ್ ಬ್ಲಾಕ್ ಮತ್ತು ಎಂಡ್ ಬ್ಲಾಕ್",
+              "2": "ಪಾತ್ರ ಸೇರಿಸಿ ಮತ್ತು ಹಿಂದಿನ ಕೋಡ್ ಕಾಪಿ ಮಾಡಿ",
+              "3": "ಸ್ಟಾರ್ಟ್ ಆನ್ ಗ್ರೀನ್ ಫ್ಲ್ಯಾಗ್, ಬಲಕ್ಕೆ ಚಲಿಸಿ, ಎಂಡ್ ಬ್ಲಾಕ್"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಪಾತ್ರ ವಿವಿಧ ಪರಿಸರಗಳ ಮೂಲಕ ಪ್ರಯಾಣಿಸುವ ಕಥೆ ರಚಿಸಲು ಏನು ಮಾಡಬಹುದು?",
+            "opts": {
+              "1": "ಪ್ರಯಾಣ ಅನುಕರಿಸಲು ಪಾತ್ರದ ವೇಗ ಹೆಚ್ಚಿಸಿ",
+              "2": "ವಿಭಿನ್ನ ರೂಪದ ಪಾತ್ರಗಳ ಹೆಚ್ಚಿನ ಸ್ಪ್ರೈಟ್‌ಗಳನ್ನು ಸೇರಿಸಿ",
+              "3": "ವಿವಿಧ ಹಿನ್ನೆಲೆಗಳ ಪುಟಗಳನ್ನು ಸೇರಿಸಿ ಮತ್ತು 'ಗೋ ಟು ಪೇಜ್' ಬ್ಲಾಕ್‌ಗಳು ಬಳಸಿ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Guide-Bear-to-Igloo-🐻-Remedial",
+          "seq": 115,
+          "nm": "Guide Bear to Igloo 🐻",
+          "desc": "In this activity, students explore motion blocks in ScratchJr to move characters across the screen. They learn how to control direction, steps, and positioning using a grid system. Through a fun challenge, they guide a polar bear to its igloo while applying logic, sequencing, and visualization skills.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಅರ್ಥವಾದರೆ 💡 ಕಳುಹಿಸಿ, ಸಂದೇಹವಿದ್ದರೆ ❓ ಕಳುಹಿಸಿ",
+              "unguided_text": "ನೀವು ಇನ್ನಷ್ಟು ಚಟುವಟಿಕೆಗಳನ್ನು ಬಯಸಿದರೆ, ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ನಮಗೆ ಕಳುಹಿಸಿ",
+              "valid_criteria": "💡 or ❓",
+              "invalid_criteria": "Any emoji other than 💡 or ❓"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ನೀಲಿ ಮೋಷನ್ ಬ್ಲಾಕ್‌ಗಳಿಂದ ನೀವು ಚಲಿಸಿದ ಪಾತ್ರದ ಹೆಸರನ್ನು ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್‌ನೋಟ್‌ನಲ್ಲಿ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಬಳಸಿದ ಯಾವುದಾದರೂ ಒಂದು ಪಾತ್ರದ ಹೆಸರನ್ನು ಹಂಚಿಕೊಳ್ಳಿ (ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್)",
+              "valid_criteria": "polar bear",
+              "invalid_criteria": "Any other word"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ತಣ್ಣನೆಯ ಸ್ಥಳವನ್ನು ತೋರಿಸುವ ಅಥವಾ ವಸ್ತುಗಳನ್ನು ತಂಪಾಗಿ ಇಡುವ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೂ ವಸ್ತುವಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "valid_criteria": "Objects related to cold such as Fridge, ice, cold drink, snow image",
+              "invalid_criteria": "Objects not related to cold"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನೀವು ಕಲಿತ ಒಂದು ಹೊಸ ಪರಿಕಲ್ಪನೆ ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ಸಮುದ್ರ ತೀರದ ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಏಡಿ ಮತ್ತು ಕೋಡ್ ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Dance Floor Goes Live 💃",
+      "desc": "Coordination and timing in animations How wait blocks control when an action begins How repeat blocks help actions occur multiple times How sound blocks can be combined with motion blocks That multiple scripts can start together using the green flag How changing wait values creates different rhythms and beats How camera feature in paint editor works",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 122,
+          "nm": "Can two characters sync dance? 💃",
+          "desc": "In this activity, students will create a coordinated dance animation in Scratch Junior by programming two characters to dance in sync with music. Students will design a dance floor, add characters, record music, and use wait block and repeat block to control when and how each character dances, helping them understand coordination and sequencing in animation.",
+          "yt": "8tNzyfHsm7E",
+          "pts": 10,
+          "pq": {
+            "id": 129,
+            "nm": "Can two characters share a stage? 🎭",
+            "qs": [
+              {
+                "q": "ಈ ಚಟುವಟಿಕೆಯ ಮುಖ್ಯ ಉದ್ದೇಶ ಏನು?",
+                "opts": {
+                  "1": "ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್‌ನಲ್ಲಿ ಸಂಘಟಿತ ನೃತ್ಯ ದೃಶ್ಯ ರಚಿಸಲು",
+                  "2": "ಸಂಗೀತ ಪ್ಲೇಯರ್ ನಿರ್ಮಿಸಲು",
+                  "3": "ಹೊಸ ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಭಾಷೆ ಕಲಿಯಲು"
+                },
+                "ans": "2"
+              },
+              {
+                "q": "ವೇಟ್ ಬ್ಲಾಕ್‌ನ ಪಾತ್ರವೇನು?",
+                "opts": {
+                  "1": "ಪಾತ್ರಗಳ ಗಾತ್ರ ಹೆಚ್ಚಿಸಲು",
+                  "2": "ನಿರ್ದಿಷ್ಟ ಸಮಯ ಕ್ರಿಯೆಗಳನ್ನು ವಿಳಂಬಿಸಲು",
+                  "3": "ಹಿನ್ನೆಲೆ ಬದಲಾಯಿಸಲು"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "ಎರಡು ಪಾತ್ರಗಳು ಬೇರೆ ಸಮಯದಲ್ಲಿ ನೃತ್ಯ ಮಾಡುವಂತೆ ಮಾಡಲು ಏನು ಮಾಡಬೇಕು?",
+                "opts": {
+                  "1": "ಪ್ರತಿ ಪಾತ್ರಕ್ಕೂ ಬೇರೆ ವೇಟ್ ಬ್ಲಾಕ್ ಸಮಯ ಹೊಂದಿಸಿ",
+                  "2": "ಪ್ರತಿ ಪಾತ್ರಕ್ಕೂ ಬೇರೆ ಸಂಗೀತ ರೆಕಾರ್ಡ್ ಮಾಡಿ",
+                  "3": "ಹಿನ್ನೆಲೆ ಬದಲಾಯಿಸಿ"
+                },
+                "ans": "3"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 130,
+        "nm": "Can you sync the dance? 💃",
+        "qs": [
+          {
+            "q": "ಈ ಚಟುವಟಿಕೆಯ ಮುಖ್ಯ ಉದ್ದೇಶ ಏನು?",
+            "opts": {
+              "1": "ಹೊಸ ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಭಾಷೆ ಕಲಿಯಲು",
+              "2": "ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್‌ನಲ್ಲಿ ಸಂಘಟಿತ ನೃತ್ಯ ದೃಶ್ಯ ರಚಿಸಲು",
+              "3": "ಸಂಗೀತ ಪ್ಲೇಯರ್ ನಿರ್ಮಿಸಲು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ ವೇಟ್ ಬ್ಲಾಕ್‌ನ ಪಾತ್ರವೇನು?",
+            "opts": {
+              "1": "ಹಿನ್ನೆಲೆ ಬದಲಾಯಿಸಲು",
+              "2": "ಪಾತ್ರಗಳ ಗಾತ್ರ ಹೆಚ್ಚಿಸಲು",
+              "3": "ನಿರ್ದಿಷ್ಟ ಸಮಯ ಕ್ರಿಯೆಗಳನ್ನು ವಿಳಂಬಿಸಲು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್‌ನಲ್ಲಿ ಎರಡು ಪಾತ್ರಗಳು ಬೇರೆ ಬೇರೆ ಸಮಯದಲ್ಲಿ ನೃತ್ಯ ಮಾಡುವಂತೆ ಮಾಡಲು ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಹಿನ್ನೆಲೆ ಬದಲಾಯಿಸಿ",
+              "2": "ಪ್ರತಿ ಪಾತ್ರಕ್ಕೂ ಬೇರೆ ಸಂಗೀತ ರೆಕಾರ್ಡ್ ಮಾಡಿ",
+              "3": "ಪ್ರತಿ ಪಾತ್ರಕ್ಕೂ ಬೇರೆ ವೇಟ್ ಬ್ಲಾಕ್ ಸಮಯ ಹೊಂದಿಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ನೃತ್ಯ ಚಲನೆಗಳನ್ನು ಹೆಚ್ಚು ಸೃಜನಾತ್ಮಕವಾಗಿ ಮಾಡಲು ಪ್ರಾಜೆಕ್ಟ್‌ಗೆ ಏನು ಸೇರಿಸಬಹುದು?",
+            "opts": {
+              "1": "ವಿಭಿನ್ನ ಮೋಷನ್ ಮತ್ತು ವೇಟ್ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಸೇರಿಸಿ ಅನನ್ಯ ನೃತ್ಯ ಅನುಕ್ರಮ ರಚಿಸಿ",
+              "2": "ಪಾತ್ರಗಳ ಗಾತ್ರ ಹೆಚ್ಚಿಸಿ ಮತ್ತು ಕಡಿಮೆ ಮಾಡಿ",
+              "3": "ಹಿನ್ನೆಲೆ ಬಣ್ಣ ಬದಲಾಯಿಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ನೃತ್ಯ ದೃಶ್ಯ ಸೃಜನಾತ್ಮಕವಾಗಿ ಉತ್ತಮಗೊಳಿಸಲು ಒಂದು ಸರಳ ಕೆಲಸ ಏನು?",
+            "opts": {
+              "1": "ಸಂಗೀತದೊಂದಿಗೆ ಅನನ್ಯ ರೀತಿಯಲ್ಲಿ ಸಂವಹಿಸುವ ಮೂರನೇ ಪಾತ್ರ ಸೇರಿಸಿ",
+              "2": "ಹಿನ್ನೆಲೆ ಸಂಗೀತ ತೆಗೆದು ಪಾಪ್ ಶಬ್ದ ಹಾಕಿ",
+              "3": "ಒಂದೇ ಪಾತ್ರ ಬಳಸಿ ನೃತ್ಯ ಮಾಡಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Sync-Two-Dancers-Together-💃-Intermediate",
+          "seq": 116,
+          "nm": "Sync Two Dancers Together 💃",
+          "desc": "In this activity, students will create a coordinated dance animation in Scratch Junior by programming two characters to dance in sync with music. Students will design a dance floor, add characters, record music, and use wait block and repeat block to control when and how each character dances, helping them understand coordination and sequencing in animation.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಸುಲಭವಾಗಿದ್ದರೆ 😊 ಕಳುಹಿಸಿ, ಗೊಂದಲವಾಗಿದ್ದರೆ 😕 ಕಳುಹಿಸಿ",
+              "unguided_text": "ನೀವು ಇನ್ನಷ್ಟು ಚಟುವಟಿಕೆಗಳನ್ನು ಬಯಸಿದರೆ, ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ನಮಗೆ ಕಳುಹಿಸಿ",
+              "valid_criteria": "😊 or 😕",
+              "invalid_criteria": "Any emoji other than 😊 or 😕"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ನಿಮ್ಮ ನೃತ್ಯ ಅನಿಮೇಷನ್‌ಗೆ ಸಂಗೀತ ಸೇರಿಸುವ ಸರಿಯಾದ ಬ್ಲಾಕ್‌ನ ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್‌ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಬಳಸಿದ ಯಾವುದಾದರೂ ಒಂದು ಬ್ಲಾಕ್‌ನ ಹೆಸರನ್ನು ಹಂಚಿಕೊಳ್ಳಿ (ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್)",
+              "valid_criteria": "Play recorded sound",
+              "invalid_criteria": "Any other block"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನರ್ತಿಸುತ್ತಿರುವ ಯಾರಾದರೊಬ್ಬರ ಫೋಟೋ ತೆಗೆಯಿರಿ (ನೈಜ ಅಥವಾ ಚಿತ್ರ/ರೇಖಾಚಿತ್ರದಿಂದ)",
+              "unguided_text": "ನಿಮ್ಮ ಹತ್ತಿರದ ಯಾವುದಾದರೂ ವಸ್ತುವಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "valid_criteria": "Images showing dance such as person dancing or in pose",
+              "invalid_criteria": "Still objects with no action or pose"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನೀವು ಕಲಿತ ಒಂದು ಹೊಸ ಪರಿಕಲ್ಪನೆ ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ಸಮುದ್ರ ತೀರದ ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಏಡಿ ಮತ್ತು ಕೋಡ್ ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Water Runs Dry 💧",
+      "desc": "Add backgrounds and multiple sprites, and use the Say block to add dialogues. Aapply coding concepts by using the Start on Green Flag block to begin the animation, Send Message and Start on Message blocks to create communication between sprites, and the End block to control the flow of scripts. Understand that water is a limited resource, and careless usage can lead to water shortages. They will learn that saving water is important for everyday life.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 123,
+          "nm": "Can sprites talk about water? 💧",
+          "desc": "In this activity, students will create a conversation-based animation in ScratchJr where two characters discuss a water shortage problem. Using message blocks, students will program a sequence of dialogues between the characters to show how water wastage leads to scarcity and why it is important to save water.",
+          "yt": "cJZfjEr_ad0",
+          "pts": 10,
+          "pq": {
+            "id": 131,
+            "nm": "Where did Rahul's water go? 💧",
+            "qs": [
+              {
+                "q": "ನೀರಿನ ಕೊರತೆಗೆ ಮುಖ್ಯ ಕಾರಣವೇನು?",
+                "opts": {
+                  "1": "ನೀರು ಸರಬರಾಜಿನಲ್ಲಿ ತಾಂತ್ರಿಕ ದೋಷ ಆಯಿತು",
+                  "2": "ವಾತಾವರಣ ತುಂಬಾ ಬಿಸಿಯಾಗಿತ್ತು",
+                  "3": "ನೀರನ್ನು ಪೋಲು ಮಾಡಿ ಎಚ್ಚರಿಕೆಯಿಂದ ಬಳಸಲಿಲ್ಲ"
+                },
+                "ans": "3"
+              },
+              {
+                "q": "ಈ ಅನಿಮೇಷನ್ ರಚಿಸುವ ಮುಖ್ಯ ಉದ್ದೇಶವೇನು?",
+                "opts": {
+                  "1": "ಸ್ಕ್ರಾಚ್‌ನಲ್ಲಿ ವಿವಿಧ ಬಣ್ಣಗಳನ್ನು ಬಳಸಲು ಕಲಿಯಲು",
+                  "2": "ನೀರು ಉಳಿಸುವ ಮಹತ್ವ ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು",
+                  "3": "ಸಂಭಾಷಣೆ ಬರೆಯುವ ಕೌಶಲ ಅಭ್ಯಾಸ ಮಾಡಲು"
+                },
+                "ans": "2"
+              },
+              {
+                "q": "ಹುಡುಗನ ಕೋಡ್ ಪ್ರಾರಂಭಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                "opts": {
+                  "1": "ಸ್ಟಾರ್ಟ್ ಆನ್ ಗ್ರೀನ್ ಫ್ಲ್ಯಾಗ್ ಬ್ಲಾಕ್",
+                  "2": "ಸ್ಟಾರ್ಟ್ ಆನ್ ಆರೆಂಜ್ ಮೆಸೇಜ್ ಬ್ಲಾಕ್",
+                  "3": "ಸ್ಟಾರ್ಟ್ ಆನ್ ರೆಡ್ ಮೆಸೇಜ್ ಬ್ಲಾಕ್"
+                },
+                "ans": "3"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 132,
+        "nm": "Where did the water go? 💧",
+        "qs": [
+          {
+            "q": "ರಾಹುಲ್ ಮತ್ತು ಪ್ರಿಯಾ ಮನೆಗಳಲ್ಲಿ ನೀರಿನ ಕೊರತೆಗೆ ಮುಖ್ಯ ಕಾರಣವೇನು?",
+            "opts": {
+              "1": "ನೀರನ್ನು ಪೋಲು ಮಾಡಿ ಎಚ್ಚರಿಕೆಯಿಂದ ಬಳಸಲಿಲ್ಲ",
+              "2": "ನೀರು ಸರಬರಾಜಿನಲ್ಲಿ ತಾಂತ್ರಿಕ ದೋಷ ಆಯಿತು",
+              "3": "ವಾತಾವರಣ ತುಂಬಾ ಬಿಸಿಯಾಗಿತ್ತು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್‌ನಲ್ಲಿ ಈ ಅನಿಮೇಷನ್ ರಚಿಸುವ ಮುಖ್ಯ ಉದ್ದೇಶವೇನು?",
+            "opts": {
+              "1": "ಸಂಭಾಷಣೆ ಬರೆಯುವ ಕೌಶಲ ಅಭ್ಯಾಸ ಮಾಡಲು",
+              "2": "ಸ್ಕ್ರಾಚ್‌ನಲ್ಲಿ ವಿವಿಧ ಬಣ್ಣಗಳನ್ನು ಬಳಸಲು ಕಲಿಯಲು",
+              "3": "ನೀರು ಉಳಿಸುವ ಮಹತ್ವ ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಹುಡುಗನ ಕೋಡ್ ಪ್ರಾರಂಭಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+            "opts": {
+              "1": "ಸ್ಟಾರ್ಟ್ ಆನ್ ರೆಡ್ ಮೆಸೇಜ್ ಬ್ಲಾಕ್",
+              "2": "ಸ್ಟಾರ್ಟ್ ಆನ್ ಗ್ರೀನ್ ಫ್ಲ್ಯಾಗ್ ಬ್ಲಾಕ್",
+              "3": "ಸ್ಟಾರ್ಟ್ ಆನ್ ಆರೆಂಜ್ ಮೆಸೇಜ್ ಬ್ಲಾಕ್"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ನೀರು ಉಳಿಸುವ ಪರಿಹಾರ ನೀಡುವ ಹೊಸ ಪಾತ್ರದ ಮೊದಲ ಸಂಭಾಷಣೆ ಏನಾಗಿರಬಹುದು?",
+            "opts": {
+              "1": "\"ಗಿಡಗಳಿಗೆ ಮಳೆನೀರು ಸಂಗ್ರಹಿಸೋಣ.\"",
+              "2": "\"ಎಲ್ಲ ನಲ್ಲಿಗಳನ್ನು ತೆರೆದೇ ಇಡೋಣ.\"",
+              "3": "\"ಹೆಚ್ಚು ನೀರಿರುವ ಹೊಸ ಜಾಗಕ್ಕೆ ಹೋಗೋಣ.\""
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಸೋರುವ ನಲ್ಲಿ ಸರಿಪಡಿಸುವ ದೃಶ್ಯ ಸೇರಿಸಲು ಯಾವ ಸಂಭಾಷಣೆ ಬಳಸಬಹುದು?",
+            "opts": {
+              "1": "\"ನಲ್ಲಿ ಸರಿಪಡಿಸಲು ಪ್ಲಂಬರ್ ಬರಲಿ ಎಂದು ಕಾಯೋಣ.\"",
+              "2": "\"ನೀರು ಉಳಿಸಲು ನಲ್ಲಿ ಹೇಗೆ ಸರಿಪಡಿಸುವುದು ಇಲ್ಲಿ ನೋಡಿ.\"",
+              "3": "\"ತಕ್ಷಣ ಹೊಸ ನಲ್ಲಿ ಕೊಳ್ಳಬೇಕು.\""
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Code-a-Water-Conversation-💧-Remedial",
+          "seq": 117,
+          "nm": "Code a Water Conversation 💧",
+          "desc": "In this activity, students will create a conversation-based animation in ScratchJr where two characters discuss a water shortage problem. Using message blocks, students will program a sequence of dialogues between the characters to show how water wastage leads to scarcity and why it is important to save water.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಸುಲಭವಾಗಿದ್ದರೆ 😊 ಕಳುಹಿಸಿ, ಗೊಂದಲವಾಗಿದ್ದರೆ 😕 ಕಳುಹಿಸಿ",
+              "unguided_text": "ನೀವು ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ಆತ್ಮವಿಶ್ವಾಸ ಹೊಂದಿದ್ದರೆ, ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ನಮಗೆ ಕಳುಹಿಸಿ",
+              "valid_criteria": "😊 or 😕",
+              "invalid_criteria": "Any emoji other than 😊 or 😕"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಪಾತ್ರಗಳಿಗೆ ಸಂವಾದ ಸೇರಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ - wait, say, end. ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್‌ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಬಳಸಿದ ಯಾವುದಾದರೂ ಹಳದಿ ಬ್ಲಾಕ್‌ನ ಹೆಸರನ್ನು ಹಂಚಿಕೊಳ್ಳಿ (ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್)",
+              "valid_criteria": "Say block",
+              "invalid_criteria": "Any other word"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಪರಸ್ಪರ ಮುಖ ನೋಡುತ್ತಿರುವ ಇಬ್ಬರ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೂ ವಸ್ತುವಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "valid_criteria": "Two people talking and looking at each other",
+              "invalid_criteria": "Single object with no interaction"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನೀವು ಕಲಿತ ಒಂದು ಹೊಸ ಪರಿಕಲ್ಪನೆ ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ಸಮುದ್ರ ತೀರದ ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಏಡಿ ಮತ್ತು ಕೋಡ್ ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Jungle Cleans Up 🐰",
+      "desc": "ScratchJr interface (sprites, backgrounds, paint editor), Message blocks (send message, start on message) Motion blocks (move, hop), Looks blocks (resize, dialogue/say block), Events block (green flag start),Grid usage for movement planning and basic animation sequencing",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 124,
+          "nm": "Can a rabbit teach recycling? 🐰",
+          "desc": "In this activity, students create an interactive story using ScratchJr message blocks where characters communicate with each other. Through a jungle-based storyline, students learn about proper waste disposal and its impact on the environment while building a sequence of actions using coding blocks.",
+          "yt": "7GqaHIQzh1E",
+          "pts": 10,
+          "pq": {
+            "id": 133,
+            "nm": "What happens after the rabbit talks? 🐇",
+            "qs": [
+              {
+                "q": "ಈ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಕಲಿಸಲಾದ ಎರಡು ಮುಖ್ಯ ವಿಷಯಗಳು ಯಾವುವು?",
+                "opts": {
+                  "1": "ಪಾತ್ರಗಳ ಚಿತ್ರಣ ಮತ್ತು ಈವೆಂಟ್ ಕೋಡಿಂಗ್",
+                  "2": "ಸಂಗೀತ ನುಡಿಸುವುದು ಮತ್ತು ಹಿನ್ನೆಲೆ ರಚಿಸುವುದು",
+                  "3": "ಮೆಸೇಜ್ ಬ್ಲಾಕ್‌ಗಳ ಬಳಕೆ ಮತ್ತು ಸರಿಯಾದ ತ್ಯಾಜ್ಯ ವಿಲೇವಾರಿ"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "ಮೆಸೇಜ್ ಬ್ಲಾಕ್‌ಗಳ ಬಗ್ಗೆ ಕಲಿಯುವುದು ಯಾಕೆ ಮುಖ್ಯ?",
+                "opts": {
+                  "1": "ಹೊಸ ಪಾತ್ರಗಳನ್ನು ಚಿತ್ರಿಸಲು",
+                  "2": "ಬಣ್ಣಬಣ್ಣದ ಹಿನ್ನೆಲೆ ರಚಿಸಲು",
+                  "3": "ಪಾತ್ರಗಳು ಪರಸ್ಪರ ಸಂವಹಿಸಲು"
+                },
+                "ans": "3"
+              },
+              {
+                "q": "ಲಾಲಿಪಾಪ್ ಹೇಗೆ ರಚಿಸಬಹುದು?",
+                "opts": {
+                  "1": "ಬಾಲ್ ಸ್ಪ್ರೈಟ್ ಬಳಸಿ",
+                  "2": "ಚಿತ್ರ ಆಮದು ಮಾಡಿ",
+                  "3": "ಬಾಲ್ ಸ್ಪ್ರೈಟ್ ಸಂಪಾದಿಸಿ ಲಾಲಿಪಾಪ್ ರೀತಿ ಮಾಡಿ"
+                },
+                "ans": "3"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 134,
+        "nm": "Can blocks send messages? 📨",
+        "qs": [
+          {
+            "q": "ಈ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಕಲಿಸಲಾದ ಎರಡು ಮುಖ್ಯ ವಿಷಯಗಳು ಯಾವುವು?",
+            "opts": {
+              "1": "ಮೆಸೇಜ್ ಬ್ಲಾಕ್‌ಗಳ ಬಳಕೆ ಮತ್ತು ಸರಿಯಾದ ತ್ಯಾಜ್ಯ ವಿಲೇವಾರಿ",
+              "2": "ಪಾತ್ರಗಳ ಚಿತ್ರಣ ಮತ್ತು ಈವೆಂಟ್ ಕೋಡಿಂಗ್",
+              "3": "ಸಂಗೀತ ನುಡಿಸುವುದು ಮತ್ತು ಹಿನ್ನೆಲೆ ರಚಿಸುವುದು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್‌ನಲ್ಲಿ ಮೆಸೇಜ್ ಬ್ಲಾಕ್‌ಗಳ ಬಗ್ಗೆ ಕಲಿಯುವುದು ಯಾಕೆ ಮುಖ್ಯ?",
+            "opts": {
+              "1": "ಪಾತ್ರಗಳು ಪರಸ್ಪರ ಸಂವಹಿಸಲು",
+              "2": "ಹೊಸ ಪಾತ್ರಗಳನ್ನು ಚಿತ್ರಿಸಲು",
+              "3": "ಬಣ್ಣಬಣ್ಣದ ಹಿನ್ನೆಲೆ ರಚಿಸಲು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್‌ನಲ್ಲಿ ಲಾಲಿಪಾಪ್ ಇಲ್ಲದಿದ್ದರೆ ಹೇಗೆ ರಚಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಬಾಲ್ ಸ್ಪ್ರೈಟ್ ಸಂಪಾದಿಸಿ ಲಾಲಿಪಾಪ್ ರೀತಿ ಮಾಡಿ",
+              "2": "ಬಾಲ್ ಸ್ಪ್ರೈಟ್ ಬಳಸಿ",
+              "3": "ಚಿತ್ರ ಆಮದು ಮಾಡಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಗೆಳೆಯರಲ್ಲಿ ಪರಿಸರ ಜಾಗೃತಿ ಮೂಡಿಸಲು ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್ ಹೇಗೆ ಬಳಸಬಹುದು?",
+            "opts": {
+              "1": "ಪಾತ್ರಗಳು ಪಾರ್ಕ್ ಸ್ವಚ್ಛ ಮಾಡುವ ಸಂವಾದಾತ್ಮಕ ಕಥೆ ರಚಿಸಿ",
+              "2": "ಪಿಕ್ನಿಕ್ ದಿನದ ಅನಿಮೇಷನ್ ಮಾಡಿ",
+              "3": "ವಿವಿಧ ಹಂತಗಳ ಜಂಗಲ್ ಆಟ ವಿನ್ಯಾಸ ಮಾಡಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್ ಬಳಸಿ ನಿಮ್ಮ ಮೊಹಲ್ಲದಲ್ಲಿ ಮರುಬಳಕೆ ಪ್ರೋತ್ಸಾಹಿಸಲು ಏನು ರಚಿಸಬಹುದು?",
+            "opts": {
+              "1": "ನೃತ್ಯ ಪಾರ್ಟಿ ಅನಿಮೇಷನ್",
+              "2": "ಮರುಬಳಕೆ ವಸ್ತುವಿನ ಪ್ರಯಾಣ ತೋರಿಸುವ ಪ್ರಾಜೆಕ್ಟ್",
+              "3": "ಅನಿಮೇಟೆಡ್ ಪಾತ್ರಗಳೊಂದಿಗೆ ಅಡುಗೆ ಕಾರ್ಯಕ್ರಮ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-Characters-Pass-Messages-🐰-Intermediate",
+          "seq": 118,
+          "nm": "Make Characters Pass Messages 🐰",
+          "desc": "In this activity, students create an interactive story using ScratchJr message blocks where characters communicate with each other. Through a jungle-based storyline, students learn about proper waste disposal and its impact on the environment while building a sequence of actions using coding blocks.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ತಯಾರಾಗಿದ್ದರೆ ✅ ಕಳುಹಿಸಿ, ಸಮಯ ಬೇಕಾದರೆ ⏳ ಕಳುಹಿಸಿ, ತಯಾರಾಗಿಲ್ಲದಿದ್ದರೆ ❌ ಕಳುಹಿಸಿ",
+              "unguided_text": "ನೀವು ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ಆತ್ಮವಿಶ್ವಾಸ ಹೊಂದಿದ್ದರೆ, ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ನಮಗೆ ಕಳುಹಿಸಿ",
+              "valid_criteria": "✅ or ⏳ or ❌",
+              "invalid_criteria": "Any emoji other than ✅ or ⏳ or ❌"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಪಾತ್ರಗಳಿಗೆ ಸಂವಾದ ಸೇರಿಸಲು ಬಳಸುವ ಸರಿಯಾದ ಬ್ಲಾಕ್‌ನ ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್‌ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಇಂದಿನ ಚಟುವಟಿಕೆಯ ಸಂದೇಶವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ (ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್)",
+              "valid_criteria": "Say block",
+              "invalid_criteria": "Any other word"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಸ್ವಚ್ಛ ಅಥವಾ ಕೊಳಕು ಸ್ಥಳದ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೂ ವಸ್ತುವಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "valid_criteria": "Images related to clean or dirty surroundings such as  Clean desk, messy room, garbage dump, beautiful clean garden",
+              "invalid_criteria": "Random objects with no cleanliness context"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನೀವು ಕಲಿತ ಒಂದು ಹೊಸ ಪರಿಕಲ್ಪನೆ ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ಸಮುದ್ರ ತೀರದ ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಏಡಿ ಮತ್ತು ಕೋಡ್ ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Two Scripts Move Together 🏔️",
+      "desc": "Motion blocks like move right, hop, turn, up, down. Run two scripts simultaneously on a single sprite. How different combinations of blocks create new types of animation. Repeat Forever block to create looping movements.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 125,
+          "nm": "Can two codes move together? 🏃",
+          "desc": "In this activity, students will learn how to create new character movements by combining two scripts in Scratch Jr. They will apply their knowledge of basic motion blocks, such as move right, hop, and turn, to create more complex movements like a ball rolling forward or a penguin hopping forward on ice. Students will discover how the repeat forever block can help create continuous, repetitive movements, enabling their characters to perform dynamic actions.",
+          "yt": "W_iW1uKHXfw",
+          "pts": 10,
+          "pq": {
+            "id": 135,
+            "nm": "Can one sprite do two things? 🔀",
+            "qs": [
+              {
+                "q": "ಎರಡು ಮೋಷನ್ ಬ್ಲಾಕ್ ಜೋಡಿಸಿದಾಗ ಸ್ಪ್ರೈಟ್‌ಗೆ ಏನಾಗುತ್ತದೆ?",
+                "opts": {
+                  "1": "ಸ್ಪ್ರೈಟ್ ಎರಡೂ ಕ್ರಿಯೆಗಳನ್ನು ಒಂದರ ನಂತರ ಒಂದು ನಿರ್ವಹಿಸುತ್ತದೆ",
+                  "2": "ಸ್ಪ್ರೈಟ್ ಯಾದೃಚ್ಛಿಕ ದಿಕ್ಕಿನಲ್ಲಿ ಚಲಿಸುತ್ತದೆ",
+                  "3": "ಸ್ಪ್ರೈಟ್ ಒಂದೇ ಕ್ರಿಯೆ ನಿರ್ವಹಿಸುತ್ತದೆ"
+                },
+                "ans": "2"
+              },
+              {
+                "q": "ಸ್ಪ್ರೈಟ್ ಏಕಕಾಲದಲ್ಲಿ ಚಲಿಸಿ ತಿರುಗುವಂತೆ ಮಾಡಲು ಏನು ಮಾಡಬೇಕು?",
+                "opts": {
+                  "1": "ಕೋಡ್‌ಗೆ 'ರಿಪೀಟ್ ಫಾರೆವರ್' ಎಂಡ್ ಬ್ಲಾಕ್ ಸೇರಿಸಿ",
+                  "2": "ಯಾವುದಾದರೂ ಒಂದು 'ಮೂವ್' ಬ್ಲಾಕ್ ನಂತರ 'ರಿಪೀಟ್ ಫಾರೆವರ್' ಎಂಡ್ ಬ್ಲಾಕ್ ಸೇರಿಸಿ",
+                  "3": "ಬೇರೆ ಬೇರೆ ಚಲನೆಗಳೊಂದಿಗೆ ಎರಡು 'ಸ್ಟಾರ್ಟ್ ಆನ್ ಗ್ರೀನ್ ಫ್ಲ್ಯಾಗ್' ಬ್ಲಾಕ್ ಸೇರಿಸಿ"
+                },
+                "ans": "3"
+              },
+              {
+                "q": "ಚಲನೆ ಅನಂತವಾಗಿ ಮುಂದುವರಿಯಬೇಕಿದ್ದರೆ ಏನು ಮಾಡಬೇಕು?",
+                "opts": {
+                  "1": "ಕೋಡ್ ಆರಂಭದಲ್ಲಿ ಸ್ಟಾರ್ಟ್ ಫಾರೆವರ್ ಬ್ಲಾಕ್ ಸೇರಿಸಿ",
+                  "2": "ಕೋಡ್ ಕೊನೆಯಲ್ಲಿ ರಿಪೀಟ್ ಫಾರೆವರ್ ಬ್ಲಾಕ್ ಸೇರಿಸಿ",
+                  "3": "ಇನ್ನಷ್ಟು ಮೋಷನ್ ಬ್ಲಾಕ್ ಸೇರಿಸಿ"
+                },
+                "ans": "1"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 136,
+        "nm": "Can sprites move together? 🔀",
+        "qs": [
+          {
+            "q": "ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್‌ನಲ್ಲಿ ಒಂದು ಸ್ಪ್ರೈಟ್‌ಗೆ ಒಂದೇ 'ಸ್ಟಾರ್ಟ್ ಆನ್ ಗ್ರೀನ್ ಫ್ಲ್ಯಾಗ್' ಬ್ಲಾಕ್‌ಗೆ ಎರಡು ಮೋಷನ್ ಬ್ಲಾಕ್ ಜೋಡಿಸಿದಾಗ ಏನಾಗುತ್ತದೆ?",
+            "opts": {
+              "1": "ಸ್ಪ್ರೈಟ್ ಒಂದೇ ಕ್ರಿಯೆ ನಿರ್ವಹಿಸುತ್ತದೆ",
+              "2": "ಸ್ಪ್ರೈಟ್ ಎರಡೂ ಕ್ರಿಯೆಗಳನ್ನು ಒಂದರ ನಂತರ ಒಂದು ನಿರ್ವಹಿಸುತ್ತದೆ",
+              "3": "ಸ್ಪ್ರೈಟ್ ಯಾದೃಚ್ಛಿಕ ದಿಕ್ಕಿನಲ್ಲಿ ಚಲಿಸುತ್ತದೆ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಸ್ಪ್ರೈಟ್ ಏಕಕಾಲದಲ್ಲಿ ಚಲಿಸಿ ತಿರುಗುವಂತೆ ಮಾಡಲು ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಬೇರೆ ಬೇರೆ ಚಲನೆಗಳೊಂದಿಗೆ ಎರಡು 'ಸ್ಟಾರ್ಟ್ ಆನ್ ಗ್ರೀನ್ ಫ್ಲ್ಯಾಗ್' ಬ್ಲಾಕ್ ಸೇರಿಸಿ",
+              "2": "ಕೋಡ್‌ಗೆ 'ರಿಪೀಟ್ ಫಾರೆವರ್' ಎಂಡ್ ಬ್ಲಾಕ್ ಸೇರಿಸಿ",
+              "3": "ಯಾವುದಾದರೂ ಒಂದು 'ಮೂವ್' ಬ್ಲಾಕ್ ನಂತರ 'ರಿಪೀಟ್ ಫಾರೆವರ್' ಎಂಡ್ ಬ್ಲಾಕ್ ಸೇರಿಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಚಲನೆ ಅನಂತವಾಗಿ ಮುಂದುವರಿಯಬೇಕಿದ್ದರೆ ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಇನ್ನಷ್ಟು ಮೋಷನ್ ಬ್ಲಾಕ್ ಸೇರಿಸಿ",
+              "2": "ಕೋಡ್ ಆರಂಭದಲ್ಲಿ ಸ್ಟಾರ್ಟ್ ಫಾರೆವರ್ ಬ್ಲಾಕ್ ಸೇರಿಸಿ",
+              "3": "ಕೋಡ್ ಕೊನೆಯಲ್ಲಿ ರಿಪೀಟ್ ಫಾರೆವರ್ ಬ್ಲಾಕ್ ಸೇರಿಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್‌ನಲ್ಲಿ ಒಂದು ಪಾತ್ರಕ್ಕೆ ಎರಡು ಸ್ಕ್ರಿಪ್ಟ್ ಸೇರಿಸುವುದರಿಂದ ಏನು ಪ್ರಯೋಜನ?",
+            "opts": {
+              "1": "ಕಡಿಮೆ ಬ್ಲಾಕ್‌ಗಳಲ್ಲಿ ಹೆಚ್ಚು ಸಂಕೀರ್ಣ ಚಲನೆ ರಚಿಸಬಹುದು",
+              "2": "ಪಾತ್ರಕ್ಕೆ ಹೊಸ ಚಲನೆಗಳನ್ನು ಪ್ರಯೋಗಿಸಿ ರಚಿಸಬಹುದು",
+              "3": "ಪ್ರಾಜೆಕ್ಟ್ ಬೇಗ ಮುಗಿಸಲು ಸುಲಭ ಮಾಡುತ್ತದೆ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ನಿಮ್ಮ ಪಾತ್ರ ಹಿಮ್ಮುಖ ನೆಗೆಯಬೇಕಿದ್ದರೆ 'ಸ್ಟಾರ್ಟ್ ಆನ್ ಗ್ರೀನ್ ಫ್ಲ್ಯಾಗ್' + 'ಹಾಪ್' ಸ್ಕ್ರಿಪ್ಟ್ ಜೊತೆ ಯಾವ ಸ್ಕ್ರಿಪ್ಟ್ ಸೇರಿಸಬೇಕು?",
+            "opts": {
+              "1": "'ಸ್ಟಾರ್ಟ್ ಆನ್ ಗ್ರೀನ್ ಫ್ಲ್ಯಾಗ್' + 'ಬಲಕ್ಕೆ ಚಲಿಸಿ'",
+              "2": "'ಸ್ಟಾರ್ಟ್ ಆನ್ ಗ್ರೀನ್ ಫ್ಲ್ಯಾಗ್' + 'ಬಲಕ್ಕೆ ತಿರುಗಿ'",
+              "3": "'ಸ್ಟಾರ್ಟ್ ಆನ್ ಗ್ರೀನ್ ಫ್ಲ್ಯಾಗ್' + 'ಎಡಕ್ಕೆ ಚಲಿಸಿ'"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Combine-Scripts-for-New-Moves-🏃-Remedial",
+          "seq": 119,
+          "nm": "Combine Scripts for New Moves 🏃",
+          "desc": "In this activity, students will learn how to create new character movements by combining two scripts in Scratch Jr. They will apply their knowledge of basic motion blocks, such as move right, hop, and turn, to create more complex movements like a ball rolling forward or a penguin hopping forward on ice. Students will discover how the repeat forever block can help create continuous, repetitive movements, enabling their characters to perform dynamic actions.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ತಯಾರಾಗಿದ್ದರೆ ✅ ಕಳುಹಿಸಿ, ಸಮಯ ಬೇಕಾದರೆ ⏳ ಕಳುಹಿಸಿ, ತಯಾರಾಗಿಲ್ಲದಿದ್ದರೆ ❌ ಕಳುಹಿಸಿ",
+              "unguided_text": "ನೀವು ಚಟುವಟಿಕೆಯನ್ನು ಆನಂದಿಸಿದರೆ, ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ನಮಗೆ ಕಳುಹಿಸಿ!",
+              "valid_criteria": "✅ or ⏳ or ❌",
+              "invalid_criteria": "Any emoji other than ✅ or ⏳ or ❌"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಚೆಂಡನ್ನು ಶಾಶ್ವತವಾಗಿ ಉರುಳಿಸುವ ಬ್ಲಾಕ್‌ನ ಹೆಸರನ್ನು ಪಠ್ಯ ಅಥವಾ ಧ್ವನಿ ಸಂದೇಶದಲ್ಲಿ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಬಳಸಿದ ಯಾವುದಾದರೂ ನೀಲಿ ಬ್ಲಾಕ್‌ನ ಹೆಸರನ್ನು ಹಂಚಿಕೊಳ್ಳಿ (ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್)",
+              "valid_criteria": "repeat forever block",
+              "invalid_criteria": "Any other word"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಬೇರೆ ಸ್ಥಾನದಲ್ಲಿ ಅಥವಾ ಚಲನೆಯಲ್ಲಿ ಇರುವ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೂ ವಸ್ತುವಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "valid_criteria": "Object in motion, person changing pose",
+              "invalid_criteria": "Objects with no visible movement or change"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನೀವು ಕಲಿತ ಒಂದು ಹೊಸ ಪರಿಕಲ್ಪನೆ ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ಸಮುದ್ರ ತೀರದ ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಏಡಿ ಮತ್ತು ಕೋಡ್ ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Crab Jumps the Bag 🦀",
+      "desc": "Message blocks - to update score or trigger events. Role of Start on Tap, Start on Bump, and End Block in gaming Animate continuous movement using Repeat Forever. Run two scripts on the same character for special movement effects. Page navigation blocks to build multi-page Scratch Jr games. Basic environmental awareness: impact of plastic on sea animals.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 126,
+          "nm": "Can a crab dodge plastic? 🦀",
+          "desc": "In this activity, students will make a fun game using Scratch Jr. In the game, a crab needs to jump over a flying plastic bag to safely reach the water. Students will design a beach background, draw the plastic bag, and make it move. They will also program the crab to jump and move forward. Students will add a scoring system, and create screens for winning and losing. Through this project, students will learn how pollution affects sea animals and how to make an interactive game using coding blocks.",
+          "yt": "OYyUUCVEbrw",
+          "pts": 10,
+          "pq": {
+            "id": 137,
+            "nm": "Can a crab reach the sea? 🌊",
+            "qs": [
+              {
+                "q": "ಸಮುದ್ರ ತೀರದ ಹಿನ್ನೆಲೆ ರಚಿಸಲು ಯಾವ ಟೂಲ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                "opts": { "1": "ಪೇಂಟ್ ಟೂಲ್", "2": "ಶೇಪ್ ಟೂಲ್", "3": "ಟೆಕ್ಸ್ಟ್ ಟೂಲ್" },
+                "ans": "1"
+              },
+              {
+                "q": "ಎರಡು ಬೇರೆ ಕೋಡ್ ಬಳಸಲು ಯಾಕೆ ಸೂಚಿಸಲಾಗಿದೆ?",
+                "opts": {
+                  "1": "ಕೋಡ್ ಸರಳಗೊಳಿಸಲು",
+                  "2": "ಏಕಕಾಲಿಕ ಕ್ರಿಯೆಗಳನ್ನು ಸಾಧಿಸಲು",
+                  "3": "ಹಸಿರು ಧ್ವಜ ಬಳಕೆ ತಪ್ಪಿಸಲು"
+                },
+                "ans": "2"
+              },
+              {
+                "q": "ಏಡಿ ಪಾಲಿಬ್ಯಾಗ್ ಮುಟ್ಟಿದಾಗ ಏನಾಗುತ್ತದೆ?",
+                "opts": {
+                  "1": "ಏಡಿ ಸಿಲುಕುತ್ತದೆ ಮತ್ತು ಚೀಲ ನಿಲ್ಲುತ್ತದೆ",
+                  "2": "ಏಡಿ ಹೆಚ್ಚು ಎತ್ತರ ನೆಗೆಯುತ್ತದೆ",
+                  "3": "ಆಟ ಮತ್ತೆ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ"
+                },
+                "ans": "1"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 138,
+        "nm": "Can a crab save the sea? 🦀",
+        "qs": [
+          {
+            "q": "ಸ್ಕ್ರಾಚ್ ಜೂನಿಯರ್ ಆಟದಲ್ಲಿ ಸಮುದ್ರ ತೀರದ ಹಿನ್ನೆಲೆ ರಚಿಸಲು ಯಾವ ಟೂಲ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+            "opts": { "1": "ಟೆಕ್ಸ್ಟ್ ಟೂಲ್", "2": "ಪೇಂಟ್ ಟೂಲ್", "3": "ಶೇಪ್ ಟೂಲ್" },
+            "ans": "2"
+          },
+          {
+            "q": "ಏಡಿಯ ಚಲನೆಗಳಿಗೆ ಎರಡು ಬೇರೆ ಕೋಡ್ ಬಳಸಲು ಯಾಕೆ ಸೂಚಿಸಲಾಗಿದೆ?",
+            "opts": {
+              "1": "ಹಸಿರು ಧ್ವಜ ಬಳಕೆ ತಪ್ಪಿಸಲು",
+              "2": "ಕೋಡ್ ಸರಳಗೊಳಿಸಲು",
+              "3": "ಏಕಕಾಲಿಕ ಕ್ರಿಯೆಗಳನ್ನು ಸಾಧಿಸಲು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಆಟದ ಸಮಯದಲ್ಲಿ ಏಡಿ ಪಾಲಿಬ್ಯಾಗ್ ಮುಟ್ಟಿದಾಗ ಏನಾಗುತ್ತದೆ?",
+            "opts": {
+              "1": "ಆಟ ಮತ್ತೆ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ",
+              "2": "ಏಡಿ ಸಿಲುಕುತ್ತದೆ ಮತ್ತು ಚೀಲ ನಿಲ್ಲುತ್ತದೆ",
+              "3": "ಏಡಿ ಹೆಚ್ಚು ಎತ್ತರ ನೆಗೆಯುತ್ತದೆ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಆಟಕ್ಕೆ ಹೊಸ ವೈಶಿಷ್ಟ್ಯ ಸೇರಿಸಿ ಸೃಜನಾತ್ಮಕವಾಗಿ ಉತ್ತಮಗೊಳಿಸಲು ಏನು ಮಾಡಬಹುದು?",
+            "opts": {
+              "1": "ಹಿನ್ನೆಲೆ ನಗರ ದೃಶ್ಯಕ್ಕೆ ಬದಲಾಯಿಸಿ",
+              "2": "ಆಟಕ್ಕೆ ಹೆಚ್ಚಿನ ಏಡಿಗಳನ್ನು ಸೇರಿಸಿ",
+              "3": "ಏಡಿ ನೆಗೆಯುವಾಗ ಧ್ವನಿ ಪರಿಣಾಮ ಸೇರಿಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಆಟ ಹೆಚ್ಚು ಸವಾಲಿನದಾಗಿ ಮಾಡಲು ಯಾವ ಸೃಜನಾತ್ಮಕ ಪರಿಹಾರ ಬಳಸಬಹುದು?",
+            "opts": {
+              "1": "ಪಾಲಿಬ್ಯಾಗ್ ಗಾತ್ರ ಹೆಚ್ಚಿಸಿ",
+              "2": "ಏಡಿ ಗಾತ್ರ ಕಡಿಮೆ ಮಾಡಿ",
+              "3": "ಏಡಿ ನೆಗೆಯಬೇಕಾದ ಬಂಡೆಗಳಂತಹ ಅಡೆತಡೆಗಳನ್ನು ಸೇರಿಸಿ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-the-Crab-Jump-Game-🦀-Advanced",
+          "seq": 120,
+          "nm": "Build the Crab Jump Game 🦀",
+          "desc": "In this activity, students will make a fun game using Scratch Jr. In the game, a crab needs to jump over a flying plastic bag to safely reach the water. Students will design a beach background, draw the plastic bag, and make it move. They will also program the crab to jump and move forward. Students will add a scoring system, and create screens for winning and losing. Through this project, students will learn how pollution affects sea animals and how to make an interactive game using coding blocks.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ನೀವು ಮಾಡಬಲ್ಲಿರಾದರೆ 💪 ಕಳುಹಿಸಿ, ಪ್ರಯತ್ನಿಸುತ್ತೀರಾದರೆ 🤔 ಕಳುಹಿಸಿ, ಖಚಿತವಿಲ್ಲದಿದ್ದರೆ 😬 ಕಳುಹಿಸಿ",
+              "unguided_text": "ನೀವು ಚಟುವಟಿಕೆಯನ್ನು ಆನಂದಿಸಿದರೆ, ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ನಮಗೆ ಕಳುಹಿಸಿ!",
+              "valid_criteria": "💪 or 🤔 or 😬",
+              "invalid_criteria": "Any emoji other than💪 or 🤔 or 😬"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನೀವು ಮಾಡಿದ್ದನ್ನು ಉತ್ತಮವಾಗಿ ವಿವರಿಸುವ 1 ಪದದ ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ - ಕಥೆ, ಆಟ ಅಥವಾ ಅನಿಮೇಷನ್",
+              "unguided_text": "ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನೀವು ಏನು ಮಾಡಿದಿರಿ ಎಂದು ಒಂದು ಪದದಲ್ಲಿ ಹೇಳಿ (ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್)",
+              "valid_criteria": "game",
+              "invalid_criteria": "Any word other than game"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಪ್ರಕೃತಿಯಿಂದ ಯಾವುದಾದರೊಂದು ವಸ್ತುವಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ (ನೀರು, ಮರಳು, ಗಿಡಗಳು)",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೂ ವಸ್ತುವಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "valid_criteria": "Objects from nature such as Plants, soil, water, natural surroundings",
+              "invalid_criteria": "Indoor or Outdoor objects not related to nature"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನೀವು ಕಲಿತ ಒಂದು ಹೊಸ ಪರಿಕಲ್ಪನೆ ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ಸಮುದ್ರ ತೀರದ ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಏಡಿ ಮತ್ತು ಕೋಡ್ ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Lizard Runs the Desert 🦎",
+      "desc": "Trigger Blocks: Start on Green Flag, Start on Tap Motion Blocks: Move Right, Move Left, Repeat Forever Look Blocks: Grow/Shrink, Change Colors Sound Blocks: Pop sound Paint Editor: Create and modify sprites and backgrounds Game Design: How to set up a playable game with obstacles and interactions",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 127,
+          "nm": "Can a lizard outrun cactus? 🦎",
+          "desc": "In this activity, students will be walked through the steps to create a desert game in Scratch Jr. They will learn how to modify the desert background, create and resize sprites like the cactus and lizard, change sprite colors and then code them using motion, trigger, and sound blocks. By the end, they will have a fully functional game where to avoid the cactus and they must tap the lizard to make it hop forward without touching the cactus.",
+          "yt": "oDhKqAf4_dU",
+          "pts": 10,
+          "pq": {
+            "id": 139,
+            "nm": "Can Lizzy dodge the cactus? 🌵",
+            "qs": [
+              {
+                "q": "ಲಿಜ್ಜಿ ಹಲ್ಲಿ ಯಾವುದನ್ನು ತಪ್ಪಿಸಬೇಕು?",
+                "opts": { "1": "ಕಳ್ಳಿ ಗಿಡಗಳನ್ನು", "2": "ಬಂಡೆಗಳನ್ನು", "3": "ಹುಲಿಗಳನ್ನು" },
+                "ans": "2"
+              },
+              {
+                "q": "ಸಮುದ್ರ ತೀರದ ಹಿನ್ನೆಲೆ ರಚಿಸಲು ಯಾವ ಟೂಲ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                "opts": { "1": "ಪೇಂಟ್ ಟೂಲ್", "2": "ಶೇಪ್ ಟೂಲ್", "3": "ಟೆಕ್ಸ್ಟ್ ಟೂಲ್" },
+                "ans": "1"
+              },
+              {
+                "q": "ಲಿಜ್ಜಿ ಕಳ್ಳಿ ಗಿಡ ತಾಕಿದರೆ ಏನು ಬದಲಾಯಿಸಬೇಕು?",
+                "opts": {
+                  "1": "ಹಾಪ್ ಸಂಖ್ಯೆ ಹೆಚ್ಚಿಸಿ",
+                  "2": "ಲಿಜ್ಜಿಯ ಬಣ್ಣ ಬದಲಾಯಿಸಿ",
+                  "3": "ಕಳ್ಳಿ ಗಿಡ ದೊಡ್ಡದು ಮಾಡಿ"
+                },
+                "ans": "2"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 140,
+        "nm": "Can Lizzy dodge it? 🦎",
+        "qs": [
+          {
+            "q": "ಮರುಭೂಮಿ ಆಟದಲ್ಲಿ ಲಿಜ್ಜಿ ಹಲ್ಲಿ ಯಾವುದನ್ನು ತಪ್ಪಿಸಬೇಕು?",
+            "opts": { "1": "ಹುಲಿಗಳನ್ನು", "2": "ಕಳ್ಳಿ ಗಿಡಗಳನ್ನು", "3": "ಬಂಡೆಗಳನ್ನು" },
+            "ans": "2"
+          },
+          {
+            "q": "ಆಟದಲ್ಲಿ ಲಿಜ್ಜಿ ಹಲ್ಲಿಯನ್ನು ಯಾಕೆ ಟ್ಯಾಪ್ ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಕಳ್ಳಿ ಗಿಡ ತಾಕದಂತೆ ಮುಂದಕ್ಕೆ ನೆಗೆಯಲು",
+              "2": "ಅವಳನ್ನು ಮಲಗಿಸಲು",
+              "3": "ಅವಳ ಬಣ್ಣ ಬದಲಾಯಿಸಲು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಲಿಜ್ಜಿ ಕಡಿಮೆ ನೆಗೆದು ಕಳ್ಳಿ ಗಿಡ ತಾಕಿದರೆ ಆಟದಲ್ಲಿ ಏನು ಬದಲಾಯಿಸಬೇಕು?",
+            "opts": {
+              "1": "ಕಳ್ಳಿ ಗಿಡ ದೊಡ್ಡದು ಮಾಡಿ",
+              "2": "ಹಾಪ್ ಸಂಖ್ಯೆ ಹೆಚ್ಚಿಸಿ",
+              "3": "ಲಿಜ್ಜಿಯ ಬಣ್ಣ ಬದಲಾಯಿಸಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಪ್ರಿಯಾ ತನ್ನ ಹಲ್ಲಿಯನ್ನು ಚಲಿಸುವ ಕಳ್ಳಿ ಗಿಡ ಮೇಲೆ ನೆಗೆಯಿಸಲು ಅತ್ಯುತ್ತಮ ವಿಧಾನ ಯಾವುದು?",
+            "opts": {
+              "1": "ಹಲ್ಲಿಗೆ ಎರಡು ಸ್ಕ್ರಿಪ್ಟ್ ಬಳಸಿ, ಒಂದು ಮೇಲೆ ನೆಗೆಯಲು ಮತ್ತು ಒಂದು ಮುಂದೆ ಚಲಿಸಲು",
+              "2": "ಕಳ್ಳಿ ಗಿಡ ಮಾಯವಾಗಲು 'ಶ್ರಿಂಕ್' ಬ್ಲಾಕ್ ಬಳಸಿ",
+              "3": "ಸಂಗೀತ ಸೇರಿಸಲು 'ಸೌಂಡ್' ಬ್ಲಾಕ್ ಬಳಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಅರ್ಜುನ್‌ನ ಮರುಭೂಮಿ ಆಟ ಹಗಲಿನ ಸಮಯ ತೋರಿಸಲು ಅತ್ಯುತ್ತಮ ನಿರ್ಧಾರ ಯಾವುದು?",
+            "opts": {
+              "1": "ಹೆಚ್ಚು ಕಳ್ಳಿ ಗಿಡ ಸೇರಿಸಿ",
+              "2": "ಆಕಾಶದ ಬಣ್ಣ ನೀಲಿ ಮತ್ತು ಮರಳಿನ ಬಣ್ಣ ಹಳದಿ ಮಾಡಿ",
+              "3": "ಹಲ್ಲಿಯನ್ನು ದೊಡ್ಡದು ಮಾಡಿ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-the-Desert-Lizard-Game-🦎-Remedial",
+          "seq": 121,
+          "nm": "Build the Desert Lizard Game 🦎",
+          "desc": "In this activity, students will be walked through the steps to create a desert game in Scratch Jr. They will learn how to modify the desert background, create and resize sprites like the cactus and lizard, change sprite colors and then code them using motion, trigger, and sound blocks. By the end, they will have a fully functional game where to avoid the cactus and they must tap the lizard to make it hop forward without touching the cactus.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ನೀವು ಮಾಡಬಲ್ಲಿರಾದರೆ 💪 ಕಳುಹಿಸಿ, ಪ್ರಯತ್ನಿಸುತ್ತೀರಾದರೆ 🤔 ಕಳುಹಿಸಿ, ಖಚಿತವಿಲ್ಲದಿದ್ದರೆ 😬 ಕಳುಹಿಸಿ",
+              "unguided_text": "ನೀವು ಚಟುವಟಿಕೆಯನ್ನು ಅರ್ಥಮಾಡಿಕೊಂಡರೆ, ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ನಮಗೆ ಕಳುಹಿಸಿ",
+              "valid_criteria": "💪 or 🤔 or 😬",
+              "invalid_criteria": "Any emoji other than💪 or 🤔 or 😬"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನೀವು ಮಾಡಿದ್ದನ್ನು ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್‌ನಲ್ಲಿ ಹೇಳಿ - ಕಥೆ, ಆಟ ಅಥವಾ ಅನಿಮೇಷನ್",
+              "unguided_text": "ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನೀವು ಏನು ಮಾಡಿದಿರಿ ಎಂದು ಒಂದು ಪದದಲ್ಲಿ ಹೇಳಿ (ಪಠ್ಯ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್)",
+              "valid_criteria": "game",
+              "invalid_criteria": "Any word other than game"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಬಿಸಿ ಪ್ರದೇಶಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಯಾವುದಾದರೊಂದು ವಸ್ತುವಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೂ ವಸ್ತುವಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "valid_criteria": "Sun, sand, bright outdoor area",
+              "invalid_criteria": "Objects not related to heat or desert"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನೀವು ಕಲಿತ ಒಂದು ಹೊಸ ಪರಿಕಲ್ಪನೆ ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ಸಮುದ್ರ ತೀರದ ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಏಡಿ ಮತ್ತು ಕೋಡ್ ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

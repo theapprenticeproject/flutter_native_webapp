@@ -1,0 +1,1106 @@
+{
+  "id": "Basic-Electronics-science-lab-C2258",
+  "nm": "Basic Electronics",
+  "lvl": "Level 3AK",
+  "vrt": "science-lab",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "LEDs Speak Emotions 💡",
+      "desc": "LED",
+      "rwc": "Diy Card, LED, Coin Cell",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 61,
+          "nm": "Can LEDs express your emotions? 💡",
+          "desc": "Students will be able to make paper circuits and learn how they can use sustainability in technology. They will recognise the innovative ways to learn about electricity, circuits, and the basics of electronics, thus addressing SDG 4 of Quality Education.",
+          "yt": "2fKo1NB8pwI",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 62,
+        "nm": "Can copper light a card? 💡",
+        "qs": [
+          {
+            "q": "What does the script encourage children to create?",
+            "opts": {
+              "1": "A birthday cake",
+              "2": "A glowing LED card",
+              "3": "A digital photo album"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Why is copper tape used in the LED card project?",
+            "opts": {
+              "1": "To add weight to the card",
+              "2": "To conduct electricity like wire",
+              "3": "To decorate the card"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Where should the LED be placed on the card with a robot design?",
+            "opts": {
+              "1": "On the robot's arm",
+              "2": "On the robot's heart",
+              "3": "On the robot's head"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If the LED doesn't glow, what problem-solving step should you take first?",
+            "opts": {
+              "1": "Check the LED connections to the coin cell",
+              "2": "Replace the drawing sheet",
+              "3": "Change the LED color"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How can you ensure the LED glows when the card is pressed?",
+            "opts": {
+              "1": "Make sure the circuit is completed by pressing the side",
+              "2": "Use a larger coin cell",
+              "3": "Use more colors on the card"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Glowing-LED-Card-💡-Basic",
+          "seq": 57,
+          "nm": "Build a Glowing LED Card 💡",
+          "desc": "Students will be able to make paper circuits and learn how they can use sustainability in technology. They will recognise the innovative ways to learn about electricity, circuits, and the basics of electronics, thus addressing SDG 4 of Quality Education.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Glowing' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Glowing'.",
+              "invalid_criteria": "Anything other than the word 'Glowing'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of copper tape or a coin cell!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains copper tape or a coin cell.",
+              "invalid_criteria": "Anything other than the target objects."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Lamp and Fan Born 🔌",
+      "desc": "DC Motors",
+      "rwc": "Breadboard, Resistor, LED, Battery, Switch, Motor",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 62,
+          "nm": "Can one circuit light and fan? 🔌",
+          "desc": "Students will make a study lamp and FAN using basic electronics items.",
+          "yt": "cADNt8mlgHY",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 63,
+        "nm": "Can light control a lamp? 🔦",
+        "qs": [
+          {
+            "q": "What component is used to provide light in the study lamp + fan project?",
+            "opts": { "1": "LED", "2": "Fluorescent tube", "3": "Incandescent bulb" },
+            "ans": "1"
+          },
+          {
+            "q": "What is the primary purpose of the DC motor in the project described in the script?",
+            "opts": {
+              "1": "To generate electricity",
+              "2": "To turn the fan blade",
+              "3": "To power the LED"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "How is the resistor connected in the circuit?",
+            "opts": {
+              "1": "Between the motor and the battery",
+              "2": "Between the switch and the battery",
+              "3": "Between the positive leg of the LED and the positive terminal of the battery"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If the LED is not glowing, what is a potential problem to solve?",
+            "opts": {
+              "1": "The switch is turned on",
+              "2": "The fan blade is attached to the motor",
+              "3": "The resistor might not be properly connected"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "In a situation where the fan is running but the light is not on, what could be a possible issue to investigate?",
+            "opts": {
+              "1": "The fan blade might be loose",
+              "2": "The switch might be off",
+              "3": "The LED might be faulty or not connected properly"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Study-Lamp-and-Fan-🔌-Remedial",
+          "seq": 58,
+          "nm": "Build a Study Lamp and Fan 🔌",
+          "desc": "Students will make a study lamp and FAN using basic electronics items.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Student' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Student'.",
+              "invalid_criteria": "Anything other than the word 'Student'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a DC motor with us!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a DC motor.",
+              "invalid_criteria": "Anything other than a motor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Darkness Triggers Light 🌑",
+      "desc": "LDR",
+      "rwc": "Ldr, Transistor, LED, Resistors, Wires, Battery",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 63,
+          "nm": "Can darkness flip a switch? 🌑",
+          "desc": "Students will build an automatic streetlight system using light sensors and basic electronics. Through this project, they’ll explore how smart infrastructure can reduce energy waste and improve urban living. It helps them understand the impact of sensor-based automation on sustainability, supporting SDG 7 (Affordable and Clean Energy) and SDG 11 (Sustainable Cities and Communities).",
+          "yt": "BvEfhDIKPw8",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 64,
+        "nm": "Can darkness switch lights on? 🌃",
+        "qs": [
+          {
+            "q": "What component is used to detect light levels in the smart street light system?",
+            "opts": { "1": "LED", "2": "Transistor", "3": "LDR" },
+            "ans": "3"
+          },
+          {
+            "q": "Why is it beneficial for street lights to automatically turn off during the day?",
+            "opts": {
+              "1": "It makes the street lights last longer",
+              "2": "It prevents the lights from overheating",
+              "3": "It conserves electricity and prevents waste"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "What happens to the LED when the light on the LDR decreases?",
+            "opts": { "1": "The LED turns ON", "2": "The LED turns OFF", "3": "The LED blinks" },
+            "ans": "1"
+          },
+          {
+            "q": "If a city's street lights are not turning on automatically at night, which component should be checked first for potential issues?",
+            "opts": { "1": "Battery", "2": "LDR", "3": "Wires" },
+            "ans": "2"
+          },
+          {
+            "q": "A student is building the circuit and notices the LED does not turn on at night. What might be a possible reason?",
+            "opts": {
+              "1": "The battery is overcharged",
+              "2": "The LED is connected to the wrong terminal of the battery",
+              "3": "The LDR is not properly connected to the base of the transistor"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-Automatic-Street-Lights-🌑-Basic",
+          "seq": 59,
+          "nm": "Build Automatic Street Lights 🌑",
+          "desc": "Students will build an automatic streetlight system using light sensors and basic electronics. Through this project, they’ll explore how smart infrastructure can reduce energy waste and improve urban living. It helps them understand the impact of sensor-based automation on sustainability, supporting SDG 7 (Affordable and Clean Energy) and SDG 11 (Sustainable Cities and Communities).",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Light' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Light'.",
+              "invalid_criteria": "Anything other than the word 'Light'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of an LDR with us!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains an LDR (Light Dependent Resistor).",
+              "invalid_criteria": "Anything other than an LDR."
+            }      
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Buttons Control Traffic 🚦",
+      "desc": "Parallel Circuits",
+      "rwc": "Motor, Wire, Battery, Switch, Tape, Glue, Cardboard, Scale, Pencil, Scissors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 64,
+          "nm": "Can buttons control traffic lights? 🚦",
+          "desc": "students will create a traffic light circuit. The circuit will consist of three LEDS, Red, Yellow and green. They will use three push button to turn on and off individual LEDs..",
+          "yt": "n_vN3iT-yIM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 65,
+        "nm": "Can a button control traffic? 🚦",
+        "qs": [
+          {
+            "q": "What are the colors of the LEDs used in the Manual Traffic System?",
+            "opts": {
+              "1": "Red, Blue, Green",
+              "2": "Red, Yellow, Green",
+              "3": "Blue, Yellow, Green"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "What happens when you press a button in the circuit described in the script?",
+            "opts": {
+              "1": "The corresponding LED turns on",
+              "2": "All LEDs turn on",
+              "3": "The circuit disconnects"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Which component is used to limit the current supply in the circuit?",
+            "opts": { "1": "Transistor", "2": "Resistor", "3": "Capacitor" },
+            "ans": "2"
+          },
+          {
+            "q": "If the red LED is not lighting up, what could be a possible problem in your circuit?",
+            "opts": {
+              "1": "The resistor is connected to the yellow LED",
+              "2": "The positive terminal of the battery is not connected to the power rail",
+              "3": "The negative terminal of the red LED is not connected to the push button"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "How can you modify the setup if you want the green LED to stay on even after releasing its button?",
+            "opts": {
+              "1": "Connect a second push button in parallel with the green LED",
+              "2": "Add a latch circuit to the green LED",
+              "3": "Remove the resistor from the circuit"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Manual-Traffic-Simulator-🚦-Remedial",
+          "seq": 60,
+          "nm": "Build a Manual Traffic Simulator 🚦",
+          "desc": "students will create a traffic light circuit. The circuit will consist of three LEDS, Red, Yellow and green. They will use three push button to turn on and off individual LEDs..",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Traffic' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Traffic'.",
+              "invalid_criteria": "Anything other than the word 'Traffic'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a push button!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a push button switch.",
+              "invalid_criteria": "Anything other than a push button."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note and tell us: How many LEDs did you use?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Video of the simulator working!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Plants Get Their Light 🌿",
+      "desc": "LDR",
+      "rwc": "Ldr, Transistor, LED, Resistors, Wires, Battery",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 65,
+          "nm": "Can a plant get auto-light? 🌿",
+          "desc": "Students will build an automatic LED system that lights up plant pots when sunlight is low.",
+          "yt": "Nm7iRdDda88",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 66,
+        "nm": "Can darkness trigger a light? 🌙",
+        "qs": [
+          {
+            "q": "What components are needed to create the smart system described in the script?",
+            "opts": {
+              "1": "Capacitors, diodes, resistors, and a solar panel.",
+              "2": "LDR, transistor, LED, resistors, wires, and a battery.",
+              "3": "Microcontroller, sensors, and a display."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "What happens to the LDR's resistance when the light decreases?",
+            "opts": {
+              "1": "The resistance increases.",
+              "2": "The resistance decreases.",
+              "3": "The resistance remains the same."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How is the LED connected in the smart system?",
+            "opts": {
+              "1": "The anode to the collector of the transistor and the cathode to the positive terminal of the battery.",
+              "2": "The anode to the negative terminal of the battery and the cathode to the collector of the transistor.",
+              "3": "The anode to the positive terminal of the battery and the cathode to the collector of the transistor."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If you want to implement this system in a garden to turn on lights automatically at night, which component is crucial to detect the change in light?",
+            "opts": { "1": "LDR (Light Dependent Resistor).", "2": "Battery.", "3": "Transistor." },
+            "ans": "1"
+          },
+          {
+            "q": "To ensure energy saving in a smart home setup, what role does the described system play when connected to indoor lighting?",
+            "opts": {
+              "1": "It requires manual operation to turn lights on and off.",
+              "2": "It keeps lights on constantly regardless of ambient light conditions.",
+              "3": "It automatically turns lights on when it's dark and off when there's enough light."
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-an-Automatic-Plant-Light-🌿-Intermediate",
+          "seq": 61,
+          "nm": "Build an Automatic Plant Light 🌿",
+          "desc": "Students will build an automatic LED system that lights up plant pots when sunlight is low.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Plant' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Plant'.",
+              "invalid_criteria": "Anything other than the word 'Plant'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a transistor with us!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a transistor.",
+              "invalid_criteria": "Anything other than a transistor."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note and tell us: Which component detects light?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Picture of your Plant Light circuit!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Motor Lifts the Weight 🏗️",
+      "desc": "Mechanical Advantage, Pulley System Efficiency, Rotational Force, Torque, Data Analysis, Design Refinement",
+      "rwc": "Tape, Battery, Switch, Motor, A Small Object",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 66,
+          "nm": "Can a motor lift objects? 🏗️",
+          "desc": "Students analyze the final build and performance data from the Motorised Pulley Challenge. They evaluate the system's efficiency, assess the mechanical advantage gained by the pulley, and calculate the motor's theoretical vs. actual lifting capacity. They will propose and justify one final design refinement.",
+          "yt": "4jBRw9jJCeo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 67,
+        "nm": "Can a motor lift things up? 🏋️",
+        "qs": [
+          {
+            "q": "What type of motion does the motor in the pulley system perform?",
+            "opts": { "1": "Linear motion", "2": "Rotational motion", "3": "Oscillatory motion" },
+            "ans": "2"
+          },
+          {
+            "q": "What is the primary function of the motor in the pulley system described in the script?",
+            "opts": {
+              "1": "To convert electrical energy into rotational motion",
+              "2": "To provide support for the pulley",
+              "3": "To store electrical energy"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Which component should be connected to both the motor and the battery to control the pulley system?",
+            "opts": { "1": "Pulley wheel", "2": "Switch", "3": "Rubber bands" },
+            "ans": "2"
+          },
+          {
+            "q": "If you only have a pencil and a bottle at home, what could be their potential use in creating the pulley system?",
+            "opts": {
+              "1": "To replace the battery",
+              "2": "To act as columns for support",
+              "3": "To connect the wires"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "What problem does the motorized pulley solve when lifting objects?",
+            "opts": {
+              "1": "It simplifies lifting by using electrical energy",
+              "2": "It requires multiple people to operate",
+              "3": "It uses manual effort to lift objects"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Motorised-Pulley-System-🏗️-Remedial",
+          "seq": 62,
+          "nm": "Build a Motorised Pulley System 🏗️",
+          "desc": "Students analyze the final build and performance data from the Motorised Pulley Challenge. They evaluate the system's efficiency, assess the mechanical advantage gained by the pulley, and calculate the motor's theoretical vs. actual lifting capacity. They will propose and justify one final design refinement.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Motor' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Motor'.",
+              "invalid_criteria": "Anything other than the word 'Motor'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of the pulley wheel!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a pulley wheel or similar round object.",
+              "invalid_criteria": "Anything other than a pulley part."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note and tell us: Are your connections secure?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Picture of the pulley lifting weight!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Coin Cell Glows Small 🔋",
+      "desc": "Coin Cell Power Source, Low-Voltage Circuitry, Power Source Comparison, Miniaturization, Safe Current Limiting",
+      "rwc": "Resistor, LED, Wire, Battery, Tape, Cardboard",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 67,
+          "nm": "Can one cell light badges? 🔋",
+          "desc": "Students will power one LED from the 3V coin cell using 470 Ω (safer, longer life). Build a tiny “badge”: tape coin cell to the back, wires to LED legs. Compare brightness vs. 9V version.",
+          "yt": "NFSlw21KRro",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 68,
+        "nm": "Can a badge actually glow? ✨",
+        "qs": [
+          {
+            "q": "What is used to power the mini LED badge in the script?",
+            "opts": { "1": "A 5V USB charger", "2": "A 3V coin cell", "3": "A 12V car battery" },
+            "ans": "2"
+          },
+          {
+            "q": "Why does the LED connected to the 9V battery appear brighter than the one connected to the 3V coin cell?",
+            "opts": {
+              "1": "Because the LED is larger",
+              "2": "Because higher voltage results in more brightness",
+              "3": "Because the LED is of a different color"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "What is the purpose of using electrical tape in the LED badge project?",
+            "opts": {
+              "1": "To change the color of the LED",
+              "2": "To secure the connections",
+              "3": "To decorate the badge"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If a student wants to make a badge that lasts longer on a single battery, which component should they reconsider?",
+            "opts": {
+              "1": "The type of battery used",
+              "2": "The type of LED used",
+              "3": "The shape of the cardboard"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "A student notices that their LED badge is not lighting up. What should they check first based on the script?",
+            "opts": {
+              "1": "If the cardboard shape is correct",
+              "2": "If the LED is colorful enough",
+              "3": "If the connections are secure and not loose"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Coin-Cell-Gadget-🔋-Intermediate",
+          "seq": 63,
+          "nm": "Build a Coin Cell Gadget 🔋",
+          "desc": "Students will power one LED from the 3V coin cell using 470 Ω (safer, longer life). Build a tiny “badge”: tape coin cell to the back, wires to LED legs. Compare brightness vs. 9V version.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Gadget' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Gadget'.",
+              "invalid_criteria": "Anything other than the word 'Gadget'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a coin cell battery!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a 3V coin cell battery.",
+              "invalid_criteria": "Anything other than a coin cell."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note and tell us: What is your gadget's design?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Picture of your unique Gadget!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Tank Signals Its Full 💧",
+      "desc": "Touch Sensor",
+      "rwc": "Breadboard, Resistor, LED, Battery, Transistor, Cardboard",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 68,
+          "nm": "Can a finger sense water? 💧",
+          "desc": "Simulate a water level sensor using touch (wet finger) and LEDs to show when the “tank” is full.",
+          "yt": "kfjwDD7_EyU",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 69,
+        "nm": "Is your water tank full? 💧",
+        "qs": [
+          {
+            "q": "What is the primary purpose of the water level detector discussed in the script?",
+            "opts": {
+              "1": "To improve the taste of water",
+              "2": "To prevent water tank overflow",
+              "3": "To increase the water temperature"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Why is creating a water level detector important according to the script?",
+            "opts": {
+              "1": "It accelerates water flow in pipes",
+              "2": "It helps in conserving water and reducing human error",
+              "3": "It makes water colder"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "What component is used in the activity to simulate water contact?",
+            "opts": { "1": "A wet finger", "2": "A piece of cloth", "3": "A pencil" },
+            "ans": "1"
+          },
+          {
+            "q": "If you notice the LED does not light up when the tank is full, what should you check first based on the setup instructions?",
+            "opts": {
+              "1": "Replace the LED with a new one",
+              "2": "Increase the battery voltage",
+              "3": "Ensure all connections are secure and correct"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "Suppose the motor isn't lifting the object as expected. What could be a potential solution?",
+            "opts": {
+              "1": "Remove the battery and use direct current from a power outlet",
+              "2": "Use a heavier object",
+              "3": "Check if the thread is properly attached to the pulley"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Water-Level-Indicator-💧-Remedial",
+          "seq": 64,
+          "nm": "Build a Water Level Indicator 💧",
+          "desc": "Simulate a water level sensor using touch (wet finger) and LEDs to show when the “tank” is full.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Indicator' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Indicator'.",
+              "invalid_criteria": "Anything other than the word 'Indicator'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of an iron nail with us!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a large iron nail.",
+              "invalid_criteria": "Anything other than an iron nail."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note and tell us: How does the nail become magnetic?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Picture of the electromagnet working!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Knob Dims the Torch 🔦",
+      "desc": "Current Control, Ohm's Law Application",
+      "rwc": "Potentiometer, LED, Battery, Resistor",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 69,
+          "nm": "Can a knob dim light? 🔦",
+          "desc": "Students will be testing their Potentiometer knowledge developed in previous sections.",
+          "yt": "yBA8sTvPVDM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 70,
+        "nm": "Can you control light brightness? 🔆",
+        "qs": [
+          {
+            "q": "What component helps in adjusting the brightness of the flashlight in the script?",
+            "opts": { "1": "Resistor", "2": "Potentiometer", "3": "Breadboard" },
+            "ans": "2"
+          },
+          {
+            "q": "What is the primary role of the potentiometer in the flashlight circuit according to the script?",
+            "opts": {
+              "1": "To supply power",
+              "2": "To connect components",
+              "3": "To adjust brightness"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If you have all the components except jumper wires, what can you use instead according to the script?",
+            "opts": { "1": "Simple connecting wires", "2": "Resistor", "3": "Breadboard" },
+            "ans": "1"
+          },
+          {
+            "q": "What should you do if you want to change the brightness of the DIY flashlight described in the script?",
+            "opts": {
+              "1": "Use a different resistor",
+              "2": "Change the LED",
+              "3": "Adjust the potentiometer"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If your LED does not glow after following the instructions in the script, what might be a possible problem to solve?",
+            "opts": {
+              "1": "The LED is too bright",
+              "2": "The LED is connected incorrectly",
+              "3": "The battery is too strong"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Potentiometer-Flashlight-🔦-Advanced",
+          "seq": 65,
+          "nm": "Build a Potentiometer Flashlight 🔦",
+          "desc": "Students will be testing their Potentiometer knowledge developed in previous sections.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Brightness' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Brightness'.",
+              "invalid_criteria": "Anything other than the word 'Brightness'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a potentiometer!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a potentiometer (dial/knob).",
+              "invalid_criteria": "Anything other than a potentiometer."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note and tell us: What does the potentiometer do?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Video of you controlling the light!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Hull Finds Its Speed 🚤",
+      "desc": "Design Trade-Offs, Hull Drag, Propeller Pitch,",
+      "rwc": "Pen, Paper",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 70,
+          "nm": "Can a bottle boat race? 🚤",
+          "desc": "Show a stable hull, centered mass, and balanced prop. Explain why bigger isn’t always better (heavier = slower start). Share averaged data from 3 trials and one tip (prop pitch or hull drag).",
+          "yt": "4Oc-nQfxCtw",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 71,
+        "nm": "Can a motor sail a boat? ⛵",
+        "qs": [
+          {
+            "q": "What is the main objective of the boat activity described in the script?",
+            "opts": {
+              "1": "To build the largest boat possible.",
+              "2": "To take the boat the farthest distance in 10 seconds.",
+              "3": "To make the boat float for the longest time."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Why is it important to place the battery in the center of the boat?",
+            "opts": {
+              "1": "To ensure better balance and stability.",
+              "2": "To make the boat faster.",
+              "3": "To make the boat look symmetrical."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What propeller size was found to be most effective for the boat?",
+            "opts": {
+              "1": "A small propeller.",
+              "2": "A large propeller.",
+              "3": "A medium-sized propeller."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If a student notices their boat moving in a zig-zag pattern, what should they check first to solve the problem?",
+            "opts": {
+              "1": "The placement of the battery.",
+              "2": "The material of the boat hull.",
+              "3": "The size of the propeller."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "A student observes their boat isn't covering much distance despite a strong motor. What could be a potential solution based on the activity?",
+            "opts": {
+              "1": "Increase the size of the battery.",
+              "2": "Change the propeller to a medium-sized one with a medium blade angle.",
+              "3": "Add more weight to the boat for stability."
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Optimise-Your-Bottle-Boat-🚤-Remedial",
+          "seq": 66,
+          "nm": "Optimise Your Bottle Boat 🚤",
+          "desc": "Show a stable hull, centered mass, and balanced prop. Explain why bigger isn’t always better (heavier = slower start). Share averaged data from 3 trials and one tip (prop pitch or hull drag).",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Propeller' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Propeller'.",
+              "invalid_criteria": "Anything other than the word 'Propeller'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a plastic propeller!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a boat propeller.",
+              "invalid_criteria": "Anything other than a propeller."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note and tell us: Which change helped the most?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share your Reading Table and a Picture of the boat!!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

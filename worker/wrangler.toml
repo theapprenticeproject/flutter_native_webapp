@@ -1,0 +1,12 @@
+name = "tapapp-worker"
+main = "src/worker.js"
+compatibility_date = "2026-07-01"
+ 
+[vars]
+FRAPPE_BASE_URL = "https://opened.lol:8081"
+ALLOWED_ORIGINS = "*"
+GROQ_MODEL = "qwen/qwen3.6-27b"
+
+kv_namespaces = [
+  { binding = "KV", id = "e3d834d9f35d4954bc25a0a392e8be09" }
+]

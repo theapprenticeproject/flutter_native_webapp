@@ -1,0 +1,1102 @@
+{
+  "id": "Advanced-Electronics-Kit-Less-science-lab-C5125",
+  "nm": "Advanced Electronics Kit-Less",
+  "lvl": "Level 3AK",
+  "vrt": "science-lab",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "The Lights-Out Lab 🏠",
+      "desc": "Electric circuit, series connection, current flow, open and closed circuit, energy consumption, basic measurement of current. DC power supply, switch, LED, ammeter (series), connecting wires, simulate.",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 21,
+          "nm": "Can a Circuit Teach You to Save Energy? 🌱",
+          "desc": "या Activity मध्ये, विद्यार्थी एव्हरीसर्किट अॅपमध्ये स्विच, एलईडी आणि अॅमीटर वापरून एक स्मार्ट रूम सर्किट तयार करतील जेणेकरून वेगवेगळ्या परिस्थितींमध्ये ऊर्जा कशी वापरली जाते हे निरीक्षण करता येईल. ते दिवा चालू आणि बंद करण्याचे अनुकरण करतील आणि विद्युत प्रवाहात कसा बदल होतो हे पाहतील, ज्यामुळे त्यांना वापरात नसलेल्या उपकरणांचे स्विच बंद करण्यासारख्या साध्या क्रिया ऊर्जा वापर कमी करण्यात कशा मदत करतात हे समजेल. हा Activity एसडीजी ७ – स्वस्त आणि स्वच्छ ऊर्जा याच्या उद्दिष्टाशी जोडतो कारण तो दैनंदिन जीवनात विजेचा विचारपूर्वक आणि कार्यक्षम वापर प्रोत्साहित करतो.",
+          "yt": "XsP54OmWg8w",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 22,
+        "nm": "Is Your Room Wasting Power? 💡",
+        "qs": [
+          {
+            "q": "सर्किट सिमुलेशनमध्ये स्विच बंद केल्यावर काय होते?",
+            "opts": {
+              "1": "The LED turns off but the ammeter still shows 20 mA.",
+              "2": "The LED remains on and the ammeter shows 20 mA.",
+              "3": "The LED turns off and the ammeter shows 0 A."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "विजेच्या वापराबद्दल कोणता संदेश दिला जातो?",
+            "opts": {
+              "1": "Leaving lights on has no significant impact on electricity consumption.",
+              "2": "Turning off unnecessary lights helps reduce energy waste and protect the environment.",
+              "3": "Using more electricity is beneficial for the environment."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "सर्किटमधून वाहणारी वीज मोजण्यासाठी कोणता घटक वापरला जातो?",
+            "opts": { "1": "LED", "2": "Switch", "3": "Ammeter" },
+            "ans": "3"
+          },
+          {
+            "q": "जर तुमचे विजेचे बिल अनपेक्षितपणे जास्त आले तर, स्क्रिप्टच्या सल्ल्यानुसार तुम्ही कोणती कृती करू शकता?",
+            "opts": {
+              "1": "Turn off unnecessary lights and devices to reduce energy waste.",
+              "2": "Use more devices to balance the electricity load.",
+              "3": "Increase the voltage of all appliances."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "एसडीजी ७ - परवडणारी आणि स्वच्छ ऊर्जा यामध्ये तुम्ही कसा योगदान देऊ शकता?",
+            "opts": {
+              "1": "By using more energy to support power companies.",
+              "2": "By building more electrical circuits without consideration of energy use.",
+              "3": "By using electricity wisely and efficiently, such as turning off lights when not needed."
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Simulate-a-Smart-Room-🏠-Basic",
+          "seq": 19,
+          "nm": "Smart Room Energy Monitor",
+          "desc": "या Activity मध्ये, विद्यार्थी एव्हरीसर्किट अॅपमध्ये स्विच, एलईडी आणि अॅमीटर वापरून एक स्मार्ट रूम सर्किट तयार करतील जेणेकरून वेगवेगळ्या परिस्थितींमध्ये ऊर्जा कशी वापरली जाते हे निरीक्षण करता येईल. ते दिवा चालू आणि बंद करण्याचे अनुकरण करतील आणि विद्युत प्रवाहात कसा बदल होतो हे पाहतील, ज्यामुळे त्यांना वापरात नसलेल्या उपकरणांचे स्विच बंद करण्यासारख्या साध्या क्रिया ऊर्जा वापर कमी करण्यात कशा मदत करतात हे समजेल. हा Activity एसडीजी ७ – स्वस्त आणि स्वच्छ ऊर्जा याच्या उद्दिष्टाशी जोडतो कारण तो दैनंदिन जीवनात विजेचा विचारपूर्वक आणि कार्यक्षम वापर प्रोत्साहित करतो.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला तर 👍 पाठवा, आवडला नाही तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "जर तुम्हाला उपक्रम आवडला तर 'Smart' हा शब्द टाइप करा।",
+              "unguided_text": "तुम्ही उपक्रमातून काय शिकलात? एका शब्दात सांगा।",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुमच्या आजूबाजूला switch चा फोटो शेअर करा!!",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "एक voice note/text शेअर करा आणि सांगा: switch बंद केल्यावर काय होते?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "switch-controlled LED circuit चा video/फोटो शेअर करा!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Toggle to Save the Planet 🔦",
+      "desc": "Electric circuit, current flow, open and closed circuit, current measurement, energy consumption, Ohm’s Law (basic application). DC power supply, resistor, ammeter (series), switch, LED, connecting wires, simulate.",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 22,
+          "nm": "Can One Flip of a Switch Change Everything? 🌍",
+          "desc": "या ऍक्टिविटीमध्ये, विद्यार्थी टॉगल स्विच आणि अॅमीटर वापरून एक स्मार्ट रूम लाइट सर्किट तयार करतील ज्यामुळे विद्युत प्रवाहाचे निरीक्षण करता येईल. ते कसे साधे स्विचिंग आणि निरीक्षण एसडीजी ७: परवडणारी आणि स्वच्छ ऊर्जा याला ऊर्जा संरक्षण प्रोत्साहन देऊन समर्थन देते हे समजतील.",
+          "yt": "HkLEqRbhgtc",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 23,
+        "nm": "Does Your Ammeter Agree? ⚡",
+        "qs": [
+          {
+            "q": "EveryCircuit अ‍ॅपमध्ये तयार केलेल्या सर्किटमधील चालू स्थिती पाहण्यासाठी कोणता घटक वापरला जातो?",
+            "opts": { "1": "Resistor", "2": "Toggle switch", "3": "Ammeter" },
+            "ans": "3"
+          },
+          {
+            "q": "SDG 7 संबंधित प्रकल्पाचा मुख्य उद्दिष्ट काय आहे?",
+            "opts": {
+              "1": "To ensure clean and reliable electricity for all and to use energy smartly",
+              "2": "To learn basic circuit connections",
+              "3": "To calculate power consumption"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "सिम्युलेशन दरम्यान अ‍ॅमीटर नकारात्मक चालू मुल्य दर्शवित असल्यास आपल्याला काय करावे?",
+            "opts": {
+              "1": "Rotate the ammeter",
+              "2": "Increase the voltage",
+              "3": "Replace the LED"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "जर एखादा विद्यार्थी घरातील लाईट बंद करायला विसरला आणि अनावश्यक वीज वापर झाला, तर अ‍ॅक्टिव्हिटीमधील कोणता सर्किट घटक याला टाळण्यासाठी मदत करू शकतो?",
+            "opts": { "1": "Resistor", "2": "LED", "3": "Toggle switch" },
+            "ans": "3"
+          },
+          {
+            "q": "शाळेला ऊर्जा बचत करणारे दिवे बसवायचे आहेत जे आवश्यक नसल्यास बंद होतील. असे प्रणाली डिझाइन करताना अ‍ॅक्टिव्हिटीमधील कोणती कौशल्य सर्वात उपयुक्त ठरेल?",
+            "opts": {
+              "1": "Calculating voltage and current",
+              "2": "Using a toggle switch to control lighting",
+              "3": "Taking notes on circuit design"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Wire-the-Energy-Saving-Room-🔦-Remedial",
+          "seq": 20,
+          "nm": "EnergyEfficientLight",
+          "desc": "या ऍक्टिविटीमध्ये, विद्यार्थी टॉगल स्विच आणि अॅमीटर वापरून एक स्मार्ट रूम लाइट सर्किट तयार करतील ज्यामुळे विद्युत प्रवाहाचे निरीक्षण करता येईल. ते कसे साधे स्विचिंग आणि निरीक्षण एसडीजी ७: परवडणारी आणि स्वच्छ ऊर्जा याला ऊर्जा संरक्षण प्रोत्साहन देऊन समर्थन देते हे समजतील.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला तर 👍 पाठवा, आवडला नाही तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "जर तुम्हाला उपक्रम आवडला तर 'Smart' हा शब्द टाइप करा।",
+              "unguided_text": "तुम्ही उपक्रमातून काय शिकलात? एका शब्दात सांगा।",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुमच्या आजूबाजूला switch चा फोटो शेअर करा!!",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "एक voice note/text शेअर करा आणि सांगा: switch बंद केल्यावर काय होते?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "switch-controlled LED circuit चा video/फोटो शेअर करा!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Knob in Charge 🎚️",
+      "desc": "Resistance, variable resistance (potentiometer), current flow, brightness control, energy efficiency, series circuit. DC power supply, potentiometer, LED, connecting wires, simulate.",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 23,
+          "nm": "Can a Resistor Decide How Bright Your Room Is? 💡",
+          "desc": "या अॅक्टिविटीमध्ये, विद्यार्थी पोटेन्शिओमीटर वापरून एलईडीच्या चमकदारपणावर नियंत्रण ठेवतात आणि ट्रान्झिस्टरचा वापर करून जेव्हा सभोवतालचा प्रकाश वाढतो (एलडीआरचा वापर करून) तेव्हा स्वयंचलित मंदावणीचे अनुकरण करतात. उर्जासमर्थ इनडोअर लाइटिंगला प्रोत्साहन देते.",
+          "yt": "aVCXJJY-QXE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 24,
+        "nm": "More Resistance, More Dark? 🌑",
+        "qs": [
+          {
+            "q": "विद्युत सर्किटमध्ये विद्युत प्रवाह नियंत्रित करण्यासाठी कोणता मुख्य घटक वापरला जातो?",
+            "opts": { "1": "Resistor", "2": "Potentiometer", "3": "Capacitor" },
+            "ans": "2"
+          },
+          {
+            "q": "पोटेंशिओमीटरचा प्रतिकार बदलल्यावर एलईडीचे तेजस्वीत बदलते का?",
+            "opts": {
+              "1": "Because altering resistance changes the current flow through the LED.",
+              "2": "Because the potentiometer directly powers the LED.",
+              "3": "Because the LED has a built-in dimming function."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "एव्हरीसर्किटमध्ये घटक जोडण्यासाठी कोणते पाऊल क्रम योग्य आहे?",
+            "opts": {
+              "1": "Connect power supply to potentiometer, potentiometer to LED, and LED to ground.",
+              "2": "Connect power supply to LED, then potentiometer to ground.",
+              "3": "Connect potentiometer to LED, then LED to power supply."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "वर्णन केलेल्या सर्किट सेटअप वापरून घरातील ऊर्जा वापर कमी करायचा असल्यास काय कराल?",
+            "opts": {
+              "1": "Remove the LED from the circuit.",
+              "2": "Decrease the voltage of the power supply to 1V.",
+              "3": "Increase the resistance of the potentiometer to decrease current flow."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "निर्देशांवर आधारित प्रत्यक्ष जीवनातील सर्किट मॉडेल कसे अनुकरण कराल?",
+            "opts": {
+              "1": "By using EveryCircuit to create and test the circuit virtually.",
+              "2": "By manually adjusting each circuit component physically.",
+              "3": "By drawing the circuit on paper and calculating values manually."
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Master-the-Brightness-Knob-🎚️-Basic",
+          "seq": 21,
+          "nm": "Smart Desk Lamp with Automatic Dimming",
+          "desc": "या अॅक्टिविटीमध्ये, विद्यार्थी पोटेन्शिओमीटर वापरून एलईडीच्या चमकदारपणावर नियंत्रण ठेवतात आणि ट्रान्झिस्टरचा वापर करून जेव्हा सभोवतालचा प्रकाश वाढतो (एलडीआरचा वापर करून) तेव्हा स्वयंचलित मंदावणीचे अनुकरण करतात. उर्जासमर्थ इनडोअर लाइटिंगला प्रोत्साहन देते.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला तर 👍 पाठवा, आवडला नाही तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "जर तुम्हाला उपक्रम आवडला तर 'Smart' हा शब्द टाइप करा।",
+              "unguided_text": "तुम्ही उपक्रमातून काय शिकलात? एका शब्दात सांगा।",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुमच्या आजूबाजूला switch चा फोटो शेअर करा!!",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "एक voice note/text शेअर करा आणि सांगा: switch बंद केल्यावर काय होते?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "switch-controlled LED circuit चा video/फोटो शेअर करा!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Why Does the Resistor Get Hot? 🔥",
+      "desc": "Power dissipation, voltage–current relationship, Ohm’s Law, unit conversion (mA to A). DC power supply, resistor, ammeter (series), voltmeter (parallel), simulate.",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 24,
+          "nm": "Why Does Your Charger Warm Up? 🔌",
+          "desc": "विद्यार्थी प्रतिरोधकांमध्ये उर्जा (पॉवर) कशी नष्ट होते हे शोधून काढतील आणि साध्या प्रतिरोधी परिपथामध्ये नष्ट होणाऱ्या उर्जेची गणना कशी करायची हे शिकतील. ही कृती इलेक्ट्रॉनिक उपकरणांची कार्यक्षमता आणि त्यामधील उर्जा-नाश यांचा परस्परसंबंध काय आहे, तसेच ऊर्जा-कार्यक्षम परिपथ तयार करताना उर्जा समजून घेणे का महत्त्वाचे आहे, याबद्दल चर्चेला प्रोत्साहन देईल.",
+          "yt": "2Wu5fLb30hQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 25,
+        "nm": "Can You Calculate the Heat? 🔥",
+        "qs": [
+          {
+            "q": "प्रतिरोधकातील शक्ती नष्ट होण्याचे गणन करणाऱ्या सूत्राचे नाव काय आहे?",
+            "opts": {
+              "1": "Power = Voltage × Current",
+              "2": "Power = Current × Resistance",
+              "3": "Power = Voltage × Resistance"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "मोबाइल चार्जर खूप वेळासाठी प्लगमध्ये लावल्यावर गरम का होतो?",
+            "opts": {
+              "1": "Due to power dissipation as heat from electrical energy.",
+              "2": "Because the charger is charging faster.",
+              "3": "Because the phone is using too much battery."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "जर विद्युतदाब 9 V आणि प्रवाह 0.09 A असेल, तर प्रतिरोधकातील शक्ती नष्ट होण्याचे प्रमाण किती आहे?",
+            "opts": { "1": "0.9 Watts", "2": "0.09 Watts", "3": "0.81 Watts" },
+            "ans": "3"
+          },
+          {
+            "q": "राहुलला त्याच्या सर्किटमधील प्रतिरोधक खूप गरम होत असल्याचे दिसते. त्याला माहित आहे की जास्त प्रतिकार असणारा प्रतिरोधक वापरल्यास शक्ती नष्ट होणे कमी होऊ शकते. प्रतिरोधक थंड करण्यासाठी राहुलने काय करावे?",
+            "opts": {
+              "1": "Replace the current resistor with one that has a higher resistance value.",
+              "2": "Increase the voltage supply to the circuit.",
+              "3": "Add more resistors in parallel to the circuit."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "नेहा शाळेतील प्रकल्पासाठी सुरक्षित सर्किट तयार करू इच्छिते, ज्यामुळे तिच्या प्रतिरोधकांसाठी सुरक्षित मर्यादेपेक्षा जास्त शक्ती नष्ट होणार नाही. तिच्याकडे 9 V निश्चित विद्युतदाब पुरवठा आहे. सुरक्षित शक्ती पातळी राखण्यासाठी नेहाने काय करावे?",
+            "opts": {
+              "1": "Use a resistor with a very low resistance value.",
+              "2": "Choose a resistor with a higher resistance value to reduce current.",
+              "3": "Increase the voltage supply to 12 V to reduce power dissipation."
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Calculate-the-Power-Burn-🔥-Remedial",
+          "seq": 22,
+          "nm": "Power Dissipation in Resistors",
+          "desc": "विद्यार्थी प्रतिरोधकांमध्ये उर्जा (पॉवर) कशी नष्ट होते हे शोधून काढतील आणि साध्या प्रतिरोधी परिपथामध्ये नष्ट होणाऱ्या उर्जेची गणना कशी करायची हे शिकतील. ही कृती इलेक्ट्रॉनिक उपकरणांची कार्यक्षमता आणि त्यामधील उर्जा-नाश यांचा परस्परसंबंध काय आहे, तसेच ऊर्जा-कार्यक्षम परिपथ तयार करताना उर्जा समजून घेणे का महत्त्वाचे आहे, याबद्दल चर्चेला प्रोत्साहन देईल.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला तर 👍 पाठवा, आवडला नाही तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "जर तुम्हाला उपक्रम आवडला तर 'Smart' हा शब्द टाइप करा।",
+              "unguided_text": "तुम्ही उपक्रमातून काय शिकलात? एका शब्दात सांगा।",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुमच्या आजूबाजूला switch चा फोटो शेअर करा!!",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "एक voice note/text शेअर करा आणि सांगा: switch बंद केल्यावर काय होते?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "switch-controlled LED circuit चा video/फोटो शेअर करा!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Light Up a Number 🔢",
+      "desc": "7-segment display structure, segment control (ON/OFF), common pin connection, digit formation, multi-digit display logic. DC power supply, 7-segment display, connecting wires, ground, simulate.",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 25,
+          "nm": "Can 7 Segments Display Any Number? 🎰",
+          "desc": "या ॲक्टिव्हिटीमध्ये, विद्यार्थ्यांनी एव्हरीसर्किट चा वापर करून एक बहु-अंकी प्रदर्शन प्रणाली डिझाइन आणि अनुकरण करायची आहे. ते योग्य सेगमेंट संयोजन आणि मूलभूत तर्कशास्त्र लागू करून ७-सेगमेंट प्रदर्शनावर वेगवेगळे अंक दर्शवतील. विद्यार्थी दोन-अंकी संख्या (उदा., २३, ४५) दर्शवून आणि विविध सेगमेंट नमुन्यांनी प्रत्येक अंक कसा तयार होतो हे शोधून त्यांच्या समजुतीचा विस्तार करतील. ही ॲक्टिव्हिटी त्यांना वास्तव जीवनात वापरले जाणारे डिजिटल प्रदर्शन - जसे की घड्याळे, स्कोरबोर्ड, आणि काऊंटर - सर्किट डिझाइनशी जोडण्यास मदत करते.",
+          "yt": "AGfj8PjvBb8",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 26,
+        "nm": "Which Segments Make Your Digit? 🔢",
+        "qs": [
+          {
+            "q": "इलेक्ट्रॉनिक्समध्ये ७-सेगमेंट डिस्प्लेका मुख्य उद्देश काय आहे?",
+            "opts": {
+              "1": "To store data",
+              "2": "To amplify sound",
+              "3": "To display numerical digits"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "७-सेगमेंट डिस्प्लेमध्ये अंक '७' तयार करण्यासाठी काय करणे आवश्यक आहे?",
+            "opts": {
+              "1": "Connect segments a, b, and c",
+              "2": "Connect segments b, c, and d",
+              "3": "Connect segments a, d, and e"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "मल्टी-डिजिट डिस्प्ले तयार करताना, प्रक्रियेतील पहिला टप्पा कोणता आहे?",
+            "opts": {
+              "1": "Connect the segments to form the digit '1'",
+              "2": "Display the digit '7' on a single 7-segment display",
+              "3": "Increase the voltage of the DC power supply"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "जर एखाद्या विद्यार्थ्याला त्यांच्या ७-सेगमेंट डिस्प्लेवर बरोबर अंक न दाखवण्याची समस्या आली, तर त्याने पहिल्यांदा काय तपासावे?",
+            "opts": {
+              "1": "Check if the correct segments are connected based on the chart",
+              "2": "Ensure the DC power supply voltage is set to 5 volts",
+              "3": "Make sure the simulation software is updated"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "विद्यार्थ्याला दोन ७-सेगमेंट डिस्प्ले वापरून '२५' अंक दाखवायचा आहे, तर कोणता महत्वाचा टप्पा तो घ्यायला हवा?",
+            "opts": {
+              "1": "Set the DC power supply to 1.5 volts for each segment",
+              "2": "Use three displays for better accuracy",
+              "3": "Connect the correct segments for each digit and ground the common pin"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Wire-Your-Own-Scoreboard-🔢-Intermediate",
+          "seq": 23,
+          "nm": "Digit Output (7-Segment) Intermediate",
+          "desc": "या ॲक्टिव्हिटीमध्ये, विद्यार्थ्यांनी एव्हरीसर्किट चा वापर करून एक बहु-अंकी प्रदर्शन प्रणाली डिझाइन आणि अनुकरण करायची आहे. ते योग्य सेगमेंट संयोजन आणि मूलभूत तर्कशास्त्र लागू करून ७-सेगमेंट प्रदर्शनावर वेगवेगळे अंक दर्शवतील. विद्यार्थी दोन-अंकी संख्या (उदा., २३, ४५) दर्शवून आणि विविध सेगमेंट नमुन्यांनी प्रत्येक अंक कसा तयार होतो हे शोधून त्यांच्या समजुतीचा विस्तार करतील. ही ॲक्टिव्हिटी त्यांना वास्तव जीवनात वापरले जाणारे डिजिटल प्रदर्शन - जसे की घड्याळे, स्कोरबोर्ड, आणि काऊंटर - सर्किट डिझाइनशी जोडण्यास मदत करते.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला तर 👍 पाठवा, आवडला नाही तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "जर तुम्हाला उपक्रम आवडला तर 'Smart' हा शब्द टाइप करा।",
+              "unguided_text": "तुम्ही उपक्रमातून काय शिकलात? एका शब्दात सांगा।",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुमच्या आजूबाजूला switch चा फोटो शेअर करा!!",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "एक voice note/text शेअर करा आणि सांगा: switch बंद केल्यावर काय होते?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "switch-controlled LED circuit चा video/फोटो शेअर करा!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Digits Come Alive 🖥️",
+      "desc": "Seven-segment display, segment control, binary logic for digit formation, circuit connections. DC power supply, 7-segment display.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 26,
+          "nm": "Can You Make a Circuit Show 41? 🎯",
+          "desc": "विद्यार्थी एक सर्किट तयार करतील जे सात सेगमेंट डिस्प्लेवर एक संख्या दर्शवेल.",
+          "yt": "65CQ3wupCM4",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 27,
+        "nm": "Is Your Display Showing the Right Number? 🔢",
+        "qs": [
+          {
+            "q": "अ‍ॅक्टिव्हिटीमध्ये डीसी पॉवर सप्लायसाठी काय व्होल्टेज सेट केले आहे?",
+            "opts": { "1": "12V", "2": "3V", "3": "5V" },
+            "ans": "3"
+          },
+          {
+            "q": "सेव्हन-सिगमेंट डिस्प्लेमध्ये मुख्य कार्य काय आहे?",
+            "opts": {
+              "1": "To power the entire circuit",
+              "2": "To display numbers and some letters by turning ON/OFF LED segments",
+              "3": "To connect multiple circuits together"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "सूचनांनुसार ७-सिगमेंट डिस्प्लेमध्ये कॉमन पिन कसा जोडावा?",
+            "opts": {
+              "1": "To the positive terminal of the DC power supply",
+              "2": "To ground",
+              "3": "To another 7-segment display"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "जर एका ७-सिगमेंट डिस्प्लेमध्ये योग्य संख्या दिसत नसेल, तर तुम्ही प्रथम काय तपासावे?",
+            "opts": {
+              "1": "Ensure all necessary LED segments are connected according to the number you want to display",
+              "2": "Replace the DC power supply",
+              "3": "Restart EveryCircuit"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "७-सिगमेंट डिस्प्लेमध्ये \"४१\" संख्या योग्यरित्या दाखवली आहे का हे तुम्ही कसे तपासू शकता?",
+            "opts": {
+              "1": "By adjusting the voltage of the power supply",
+              "2": "By checking which segments are lit for each digit",
+              "3": "By randomly connecting the segments"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Display-Your-Lucky-Number-🖥️-Remedial",
+          "seq": 24,
+          "nm": "DigitOutput(7-Segment )",
+          "desc": "विद्यार्थी एक सर्किट तयार करतील जे सात सेगमेंट डिस्प्लेवर एक संख्या दर्शवेल.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला तर 👍 पाठवा, आवडला नाही तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "जर तुम्हाला उपक्रम आवडला तर 'Smart' हा शब्द टाइप करा।",
+              "unguided_text": "तुम्ही उपक्रमातून काय शिकलात? एका शब्दात सांगा।",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुमच्या आजूबाजूला switch चा फोटो शेअर करा!!",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "एक voice note/text शेअर करा आणि सांगा: switch बंद केल्यावर काय होते?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "switch-controlled LED circuit चा video/फोटो शेअर करा!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "The Solar Panel's Gatekeeper ☀️",
+      "desc": "Directional current flow, diode (forward & reverse bias), voltage measurement, circuit protection, energy efficiency in clean energy systems. DC power supply, diode, resistor, LED, voltmeter (parallel), connecting wires, simulate.",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 27,
+          "nm": "Can a Diode Make Solar Power Safer? 🌍",
+          "desc": "या अॅक्टिव्हिटीमध्ये, आपण एव्हरीसर्किट अॅपमध्ये डायोड, एलईडी आणि व्होल्टमीटर वापरून एक स्वच्छ ऊर्जा निर्देशक तयार करू. आपण शिकाल की डायोड कसा केवळ एका दिशेने करंटला वाहू देतो — स्वच्छ ऊर्जा प्रणालींचे संरक्षण करण्यासाठी एक महत्त्वपूर्ण संकल्पना. हे हँड्स-ऑन प्रोजेक्ट एसडीजी १३: क्लायमेट अॅक्शनला समर्थन देते कारण ते दर्शवते की साधे इलेक्ट्रॉनिक्स सोलर पॅनेल्स आणि बॅटर्‍यांमधील ऊर्जा हानी कशी रोखतात.",
+          "yt": "SO-_bnqYp28",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 28,
+        "nm": "Does Your Diode Keep the Current Safe? 🚦",
+        "qs": [
+          {
+            "q": "सर्किटमध्ये डायोडचे प्राथमिक कार्य काय आहे?",
+            "opts": {
+              "1": "To allow current to flow in only one direction",
+              "2": "To store electrical energy",
+              "3": "To increase voltage"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "स्वच्छ ऊर्जा प्रणालींमध्ये विद्युत प्रवाह फक्त एका दिशेने वाहणे महत्त्वाचे का आहे?",
+            "opts": {
+              "1": "To increase the speed of electrical flow",
+              "2": "To prevent energy loss and component damage",
+              "3": "To reduce the cost of components"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "जर सर्किटमध्ये डायोड योग्यरित्या जोडलेला असेल तर काय होईल?",
+            "opts": {
+              "1": "The circuit will short and stop working",
+              "2": "The LED glows and voltmeter shows a voltage reading",
+              "3": "The LED does not glow and voltmeter shows 0 volts"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "तुम्हाला लक्षात येते की सोलर पॅनल सिस्टमची बॅटरी रात्री झपाट्याने डिस्चार्ज होत आहे. हे टाळण्यासाठी तुम्ही काय करू शकाल?",
+            "opts": {
+              "1": "Increase the number of solar panels",
+              "2": "Install a diode to prevent reverse current flow",
+              "3": "Reduce the voltage of the system"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "सर्किट सिम्युलेशनमध्ये, एलईडी उजळत नाही आणि व्होल्टमीटर 0 व्होल्ट दाखवतो. समस्या काय असू शकते?",
+            "opts": {
+              "1": "The diode is connected in the wrong direction",
+              "2": "The resistor value is too high",
+              "3": "The power supply voltage is too low"
+            },
+            "ans": "1"
+          }
+        ]
+      }
+    },
+    {
+      "nm": "No Reverse, No Waste 🔋",
+      "desc": "Directional current flow, diode behavior (forward bias & reverse blocking), circuit protection, energy loss prevention, basic power flow in circuits. DC power supply (2), diode, LED, switch, connecting wires, ground, simulate.",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 28,
+          "nm": "Can a Tiny Diode Protect a Solar Battery? 🌞",
+          "desc": "या अ‍ॅक्टिविटीमध्ये, विद्यार्थी एव्हरीसर्किट अ‍ॅपमध्ये डायोड, एलईडी, आणि वोल्टमीटर वापरून एक साधा सर्किट तयार करतील ज्यामुळे सौर चार्जिंग सिस्टमची अनुकरण केली जाईल. ते शोधून काढतील की डायोड रिव्हर्स करंट फ्लो कसा थांबवतो, ज्यामुळे साठवलेल्या उर्जेचे (जसे की बॅटरीमध्ये) परत फ्लो होऊन वाया जाण्याचे टाळले जाते. हे विद्यार्थ्यांना समजायला मदत करते की सौर पॅनल्स आणि बॅटरी सिस्टम्समध्ये डायोड्स कसे कार्यक्षमता आणि सुरक्षा सुधारण्यासाठी वापरले जातात. ही अ‍ॅक्टिविटी एसडीजी १३ – क्लायमेट अ‍ॅक्शनशी संबंधित आहे, ज्यामुळे लहान इलेक्ट्रॉनिक घटक स्वच्छ ऊर्जा प्रणालींना कसे समर्थन देतात यावर प्रकाश टाकला जातो.",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 29,
+        "nm": "What Blocks the Reverse Flow? ⬅️",
+        "qs": [
+          {
+            "q": "सोलर पॅनल प्रणालीमध्ये उलट प्रवाह रोखण्यासाठी कोणता घटक वापरला जातो?",
+            "opts": { "1": "Capacitor", "2": "Diode", "3": "Resistor" },
+            "ans": "2"
+          },
+          {
+            "q": "सोलर चार्जिंग प्रणालीमध्ये डायोड का महत्त्वाचा आहे?",
+            "opts": {
+              "1": "It changes the direction of the current.",
+              "2": "It increases the voltage.",
+              "3": "It prevents energy from flowing back and getting wasted."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "सर्किटमधून डायोड काढल्यावर काय होते?",
+            "opts": {
+              "1": "The LED will not light up.",
+              "2": "The circuit will stop working.",
+              "3": "Energy can flow back and get wasted."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "रात्री बॅटरी सोलर पॅनेलमध्ये डिस्चार्ज झाल्यास कोणती समस्या निर्माण होते?",
+            "opts": {
+              "1": "Improved circuit connectivity.",
+              "2": "Increased solar panel efficiency.",
+              "3": "Energy waste and potential battery damage."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "जर सोलर चार्जिंग प्रणाली कार्यक्षमतेने काम करत नसेल, तर स्क्रिप्टच्या वर्णनानुसार कोणता घटक गायब असू शकतो?",
+            "opts": { "1": "Switch", "2": "LED", "3": "Diode" },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Simulate-a-Solar-Charging-Shield-🔋-Remedial",
+          "seq": 25,
+          "nm": "Solar Charging Protector",
+          "desc": "या अ‍ॅक्टिविटीमध्ये, विद्यार्थी एव्हरीसर्किट अ‍ॅपमध्ये डायोड, एलईडी, आणि वोल्टमीटर वापरून एक साधा सर्किट तयार करतील ज्यामुळे सौर चार्जिंग सिस्टमची अनुकरण केली जाईल. ते शोधून काढतील की डायोड रिव्हर्स करंट फ्लो कसा थांबवतो, ज्यामुळे साठवलेल्या उर्जेचे (जसे की बॅटरीमध्ये) परत फ्लो होऊन वाया जाण्याचे टाळले जाते. हे विद्यार्थ्यांना समजायला मदत करते की सौर पॅनल्स आणि बॅटरी सिस्टम्समध्ये डायोड्स कसे कार्यक्षमता आणि सुरक्षा सुधारण्यासाठी वापरले जातात. ही अ‍ॅक्टिविटी एसडीजी १३ – क्लायमेट अ‍ॅक्शनशी संबंधित आहे, ज्यामुळे लहान इलेक्ट्रॉनिक घटक स्वच्छ ऊर्जा प्रणालींना कसे समर्थन देतात यावर प्रकाश टाकला जातो.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला तर 👍 पाठवा, आवडला नाही तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "जर तुम्हाला उपक्रम आवडला तर 'Smart' हा शब्द टाइप करा।",
+              "unguided_text": "तुम्ही उपक्रमातून काय शिकलात? एका शब्दात सांगा।",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुमच्या आजूबाजूला switch चा फोटो शेअर करा!!",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "एक voice note/text शेअर करा आणि सांगा: switch बंद केल्यावर काय होते?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "switch-controlled LED circuit चा video/फोटो शेअर करा!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Bins That Speak in Color 🗑️",
+      "desc": "RGB LED color mixing, circuit control using switches, parallel connections, state indication system, voltage and brightness relationship. DC power supply, toggle switches, RGB LED, connecting wires, ground, simulate.",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 29,
+          "nm": "Can LEDs Tell You When to Take Out the Trash? 🌆",
+          "desc": "या अ‍ॅक्टिविटीमध्ये, विद्यार्थी टॉगल स्विचेस आणि आरजीबी एलईडीस वापरून एक बिन-लेव्हल डिटेक्शन सर्किटची नक्कल करतात. वेगवेगळ्या रंगांद्वारे रिकामे, अर्धवट-भरलेले आणि पूर्ण-भरलेले अशा अवस्थांचे निदर्शन होते, ज्यामुळे स्मार्ट सिटी वेस्ट मॅनेजमेंटला प्रोत्साहन मिळते.",
+          "yt": "7FaMpJhMYjQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 30,
+        "nm": "What Color is the Full Bin? 🌈",
+        "qs": [
+          {
+            "q": "स्मार्ट बिन इंडिकेटरचा उद्देश काय आहे?",
+            "opts": {
+              "1": "To improve the aesthetic of waste bins.",
+              "2": "To automatically clean waste bins when full.",
+              "3": "To show the fullness level of waste bins using color indicators."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "स्मार्ट बिन इंडिकेटरमध्ये आरजीबी एलईडीची भूमिका काय आहे?",
+            "opts": {
+              "1": "It indicates the fullness level of the bin through different colors.",
+              "2": "It provides a sound alert when the bin is full.",
+              "3": "It powers the entire circuit."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "एव्हरीसर्किटमध्ये सर्किट कसे सिम्युलेट करता?",
+            "opts": {
+              "1": "By creating a model of the circuit and observing its operation.",
+              "2": "By connecting the RGB LED directly to a power outlet.",
+              "3": "By using a smartphone application unrelated to EveryCircuit."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "जर स्मार्ट बिन इंडिकेटरचा आरजीबी एलईडी उजळत नसेल, तर तुम्ही कोणती पायरी प्रथम तपासाल?",
+            "opts": {
+              "1": "Remove the RGB LED and replace it with a regular LED.",
+              "2": "Turn off all switches and restart the circuit.",
+              "3": "Ensure the voltage of the DC power supply is set to 3V."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "स्मार्ट सिटीमध्ये, जर डबे कार्यक्षमतेने साफ होत नसतील तर स्मार्ट बिन इंडिकेटर कसा लागू करता येईल?",
+            "opts": {
+              "1": "By integrating a camera to monitor the bins.",
+              "2": "By assigning more personnel to manually check the bins.",
+              "3": "By using sensors to automatically indicate when the bin is full and needs cleaning."
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-the-Smart-City-Bin-Indicator-🗑️-Advanced",
+          "seq": 26,
+          "nm": "Smart Waste Bin with Full-Level Indicator and Color Feedback",
+          "desc": "या अ‍ॅक्टिविटीमध्ये, विद्यार्थी टॉगल स्विचेस आणि आरजीबी एलईडीस वापरून एक बिन-लेव्हल डिटेक्शन सर्किटची नक्कल करतात. वेगवेगळ्या रंगांद्वारे रिकामे, अर्धवट-भरलेले आणि पूर्ण-भरलेले अशा अवस्थांचे निदर्शन होते, ज्यामुळे स्मार्ट सिटी वेस्ट मॅनेजमेंटला प्रोत्साहन मिळते.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला तर 👍 पाठवा, आवडला नाही तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "जर तुम्हाला उपक्रम आवडला तर 'Smart' हा शब्द टाइप करा।",
+              "unguided_text": "तुम्ही उपक्रमातून काय शिकलात? एका शब्दात सांगा।",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुमच्या आजूबाजूला switch चा फोटो शेअर करा!!",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "एक voice note/text शेअर करा आणि सांगा: switch बंद केल्यावर काय होते?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "switch-controlled LED circuit चा video/फोटो शेअर करा!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Mix the Colors of Light 🌈",
+      "desc": "RGB LED, LED color control, Switch mechanism, Circuit design, Troubleshooting",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 30,
+          "nm": "Can One LED Glow in Every Color? 🌈",
+          "desc": "विद्यार्थी Every Circuit अॅपवर एक सर्किट तयार करतील, ज्यातून त्यांना RGB LED म्हणजे काय आणि ती कशी काम करते हे समजेल. ते स्विचच्या मदतीने RGB LED चे वेगवेगळे रंग नियंत्रित करतील.",
+          "yt": "W3NWTCabPGQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 31,
+        "nm": "Can You Mix Red, Green and Blue? 🌈",
+        "qs": [
+          {
+            "q": "कसल्या प्रकारचा LED रंगीत चमकणारे प्रभाव तयार करण्यासाठी वापरला जातो जसे की गेमिंग कीबोर्ड आणि स्टेज लाईट्समध्ये?",
+            "opts": { "1": "UV LED", "2": "IR LED", "3": "RGB LED" },
+            "ans": "3"
+          },
+          {
+            "q": "RGB LED का चमकत नाही जेव्हा फक्त ग्रीन आणि ब्लू स्विचेस 2V वर चालू केले जातात?",
+            "opts": {
+              "1": "Because the LED is faulty",
+              "2": "Because Green and Blue LEDs need 3V to glow",
+              "3": "Because the voltage is too high"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "EveryCircuit अ‍ॅपमध्ये, स्विचेससह RGB LED नियंत्रित करण्यासाठी घटक कसे व्यवस्थीत करावे?",
+            "opts": {
+              "1": "Connect the RGB LED directly to the DC supply",
+              "2": "Connect all switches in parallel to the RGB LED",
+              "3": "Connect each switch’s output terminal to one of the RGB LED’s color inputs"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "जर पॉवर सप्लाय 3.2V वर सेट केले असेल, तर फक्त रेड LED सुरक्षितपणे कसे चमकवावे ज्यामुळे ते जळणार नाही?",
+            "opts": {
+              "1": "Turn off the DC power supply",
+              "2": "Use a resistor to reduce the voltage to the Red LED",
+              "3": "Use a higher voltage DC supply"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "RGB LED का खराब होते जेव्हा रेड स्विच 3.3V वर चालू केला जातो?",
+            "opts": {
+              "1": "Red LED needs only about 2V, so excess voltage damages it",
+              "2": "Red LED needs higher voltage",
+              "3": "Red LED works only with AC supply"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Control-the-Color-Mixer-🌈-Remedial",
+          "seq": 27,
+          "nm": "RGB LED",
+          "desc": "विद्यार्थी Every Circuit अॅपवर एक सर्किट तयार करतील, ज्यातून त्यांना RGB LED म्हणजे काय आणि ती कशी काम करते हे समजेल. ते स्विचच्या मदतीने RGB LED चे वेगवेगळे रंग नियंत्रित करतील.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला तर 👍 पाठवा, आवडला नाही तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "जर तुम्हाला उपक्रम आवडला तर 'Smart' हा शब्द टाइप करा।",
+              "unguided_text": "तुम्ही उपक्रमातून काय शिकलात? एका शब्दात सांगा।",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुमच्या आजूबाजूला switch चा फोटो शेअर करा!!",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "एक voice note/text शेअर करा आणि सांगा: switch बंद केल्यावर काय होते?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "switch-controlled LED circuit चा video/फोटो शेअर करा!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

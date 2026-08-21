@@ -1,0 +1,1142 @@
+{
+  "id": "Basic-Electonics-Kit-less-science-lab-C3217",
+  "nm": "Basic Electonics Kit-less",
+  "lvl": "Level 3AK",
+  "vrt": "science-lab",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "The Circuit's Bodyguard 🛡️",
+      "desc": "Overcurrent protection, fuse working principle, voltage–current relationship, circuit breaking, safety in electrical circuits. DC power supply, fuse, LED, ammeter (series), connecting wires, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 51,
+          "nm": "Can a Tiny Wire Save Your Circuit? 🔥",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਸਰਕਿਟ ਬਣਾਉਣਗੇ ਜਿਸ ਵਿੱਚ ੨.੫ ਵੋਲਟ ਡੀਸੀ ਪਾਵਰ ਸਪਲਾਈ, ੧੮ ਮਿਲੀਐੰਪੀਅਰ ਫਿਊਜ਼ ਅਤੇ ਇੱਕ ਐਲਈਡੀ ਸ਼ਾਮਲ ਹੋਵੇਗੀ। ਉਹ ਸਮਝਣਗੇ ਕਿ ਫਿਊਜ਼ ਕੀ ਹੈ ਅਤੇ ਇਸ ਗੱਲ ਦਾ ਅਨੁਭਵ ਕਰਨਗੇ ਕਿ ਇਹ ਕਿਵੇਂ ਕੰਪੋਨੈਂਟਸ ਦੀ ਰੱਖਿਆ ਕਰਦਾ ਹੈ ਜਦੋਂ ਕਰੰਟ ਸੁਰੱਖਿਅਤ ਸੀਮਾ ਤੋਂ ਵੱਧ ਜਾਂਦਾ ਹੈ, ਤਦ ਸਰਕਿਟ ਨੂੰ ਤੋੜ ਕੇ।",
+          "yt": "8y7rSM9Hf3s",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 52,
+        "nm": "When Does the Fuse Blow? ⚡",
+        "qs": [
+          {
+            "q": "ਸਰਕਿਟ ਵਿੱਚ ਫਿਊਜ਼ ਦਾ ਮੁੱਖ ਕੰਮ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To protect devices from getting damaged by overcurrent",
+              "2": "To increase the voltage in the circuit",
+              "3": "To decrease the current in the circuit"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਫਿਊਜ਼ ਤਾਰ ਕਿਉਂ ਪਿਘਲ ਜਾਂਦਾ ਹੈ?",
+            "opts": {
+              "1": "Because the current exceeds its maximum limit",
+              "2": "Because it is connected to the LED",
+              "3": "Because it is made of a poor conductor"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਜਦੋਂ ਡੀ.ਸੀ. ਸਪਲਾਈ ਵੋਲਟੇਜ 2.1V ਤੱਕ ਵਧ ਜਾਂਦਾ ਹੈ ਤਾਂ ਕੀ ਹੁੰਦਾ ਹੈ?",
+            "opts": {
+              "1": "The circuit stops working entirely",
+              "2": "The LED shines brighter",
+              "3": "The fuse blows to protect the LED"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇ ਇੱਕ ਵਿਦਿਆਰਥੀ ਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਉਸਦਾ LED ਸਰਕਿਟ ਵਿੱਚ ਉਮੀਦ ਦੇ ਅਨੁਸਾਰ ਨਹੀਂ ਚਮਕ ਰਿਹਾ, ਤਾਂ ਸਭ ਤੋਂ ਪਹਿਲਾਂ ਉਸਨੂੰ ਕੀ ਚੈੱਕ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "The color of the LED to ensure it is correct",
+              "2": "The direction of the fuse to make sure it is polarized correctly",
+              "3": "The current flow to ensure it is within a safe range"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਇੱਕ ਵਿਦਿਆਰਥੀ ਨੇ ਫਿਊਜ਼ ਨਾਲ ਸਰਕਿਟ ਸੈਟ ਕੀਤਾ ਪਰ LED ਫਿਰ ਵੀ ਨੁਕਸਾਨ ਹੋ ਜਾਂਦਾ ਹੈ। ਇਸ ਦਾ ਕਾਰਨ ਕੀ ਹੋ ਸਕਦਾ ਹੈ?",
+            "opts": {
+              "1": "The LED was connected backwards",
+              "2": "The fuse’s maximum current limit was set too high",
+              "3": "The voltage was set too low from the beginning"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Blow-the-Fuse-Safely-💥-Basic",
+          "seq": 47,
+          "nm": "FuseProtectionCircuitSavetheLED",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਸਰਕਿਟ ਬਣਾਉਣਗੇ ਜਿਸ ਵਿੱਚ ੨.੫ ਵੋਲਟ ਡੀਸੀ ਪਾਵਰ ਸਪਲਾਈ, ੧੮ ਮਿਲੀਐੰਪੀਅਰ ਫਿਊਜ਼ ਅਤੇ ਇੱਕ ਐਲਈਡੀ ਸ਼ਾਮਲ ਹੋਵੇਗੀ। ਉਹ ਸਮਝਣਗੇ ਕਿ ਫਿਊਜ਼ ਕੀ ਹੈ ਅਤੇ ਇਸ ਗੱਲ ਦਾ ਅਨੁਭਵ ਕਰਨਗੇ ਕਿ ਇਹ ਕਿਵੇਂ ਕੰਪੋਨੈਂਟਸ ਦੀ ਰੱਖਿਆ ਕਰਦਾ ਹੈ ਜਦੋਂ ਕਰੰਟ ਸੁਰੱਖਿਅਤ ਸੀਮਾ ਤੋਂ ਵੱਧ ਜਾਂਦਾ ਹੈ, ਤਦ ਸਰਕਿਟ ਨੂੰ ਤੋੜ ਕੇ।",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Fuse Protection' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ charging cable ਜਾਂ wire ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note/text ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: circuit ਵਿੱਚ fuse ਦੀ ਕੀ ਭੂਮਿਕਾ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ਕੰਮ ਕਰਦੇ ਹੋਏ ਦਾ video/ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "One Button to Rule the Light 💡",
+      "desc": "Current flow in a closed circuit, role of switches in circuit control, resistance limiting current, energy conservation in electrical systems. DC power supply, push button (switch), resistor, LED, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 52,
+          "nm": "Can One Button Save Energy? 🌱",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਸਮਾਰਟ ਲਾਈਟ ਕੰਟਰੋਲ ਪ੍ਰਣਾਲੀ ਬਣਾਉਣਗੇ ਜੋ ਬਿਜਲੀ ਦੇ ਉਪਯੋਗ ਨੂੰ ਨਿਯੰਤ੍ਰਿਤ ਕਰਨ ਲਈ ਇੱਕ ਪੁਸ਼ ਬਟਨ ਦੀ ਵਰਤੋਂ ਕਰੇਗੀ। ਇਸ ਹੈਂਡਸ-ਆਨ ਪ੍ਰਾਜੈਕਟ ਰਾਹੀਂ, ਉਹ ਊਰਜਾ ਦੀ ਬਚਤ ਕਰਨ ਅਤੇ ਬੇਕਾਰ ਨੂੰ ਘਟਾਉਣ ਦੇ ਮਹੱਤਵ ਨੂੰ ਸਿੱਖਣਗੇ। ਰਿਨਿਊਏਬਲ ਰਿਸੋਰਸਿਸ ਨਾਲ ਜੁੜੇ ਇਸ ਐਕਟਿਵਿਟੀ ਰਾਹੀਂ, ਵਿਦਿਆਰਥੀ ਸਮਝਣਗੇ ਕਿ ਕਿਵੇਂ ਸੋਚ-ਵਿਚਾਰ ਕੇ ਕੀਤੇ ਗਏ ਐਨਰਜੀ ਉਪਯੋਗ ਨਾਲ ਇਕ ਟਿਕਾਊ ਭਵਿੱਖ ਦੀ ਯੋਗਦਾਨ ਪਾ ਸਕਦੇ ਹਨ। ਇਹ ਪ੍ਰਾਜੈਕਟ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਆਪਣੇ ਰੋਜ਼ਾਨਾ ਜੀਵਨ ਵਿੱਚ ਸਮਾਰਟ ਐਨਰਜੀ ਆਦਤਾਂ ਅਪਣਾਉਣ ਲਈ ਪ੍ਰੇਰਿਤ ਕਰਦਾ ਹੈ।",
+          "yt": "RApZbWyPvqc",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 53,
+        "nm": "Press It and See! 🔘",
+        "qs": [
+          {
+            "q": "ਐਕਟਿਵਿਟੀ ਦੌਰਾਨ ਬਣਾਏ ਗਏ ਸਰਕਿਟ ਵਿੱਚ ਕਿਹੜਾ ਘਟਕਾ 'ਗੇਟਕੀਪਰ' ਵਜੋਂ ਕੰਮ ਕਰਦਾ ਹੈ?",
+            "opts": { "1": "LED", "2": "Push button", "3": "Resistor" },
+            "ans": "2"
+          },
+          {
+            "q": "ਐਕਟਿਵਿਟੀ ਵਿੱਚ ਸਮਾਰਟ ਕੰਟਰੋਲ ਸਿਸਟਮ ਦੇ ਵਰਤੋਂ ਦਾ ਮੁੱਖ ਮਕਸਦ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To increase the brightness of the LED",
+              "2": "To make the circuit more complex",
+              "3": "To prevent unnecessary energy usage"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਜਦੋਂ ਪੁਸ਼ ਬਟਨ ਦਬਾਇਆ ਜਾਂਦਾ ਹੈ ਤਾਂ ਸਰਕਿਟ ਵਿੱਚ ਏਲਈਡੀ 'ਤੇ ਕੀ ਅਸਰ ਹੁੰਦਾ ਹੈ?",
+            "opts": { "1": "The LED blinks", "2": "The LED remains off", "3": "The LED glows" },
+            "ans": "3"
+          },
+          {
+            "q": "ਰੀਆ ਆਪਣੇ ਘਰ ਵਿੱਚ ਬਿਨਾ ਲੋੜ ਦੀ ਊਰਜਾ ਦੀ ਵਰਤੋਂ ਰੋਕਣਾ ਚਾਹੁੰਦੀ ਹੈ। ਐਕਟਿਵਿਟੀ ਦੇ ਸੰਕਲਪ ਦੇ ਆਧਾਰ 'ਤੇ ਉਹ ਕੀ ਲਾਗੂ ਕਰ ਸਕਦੀ ਹੈ?",
+            "opts": {
+              "1": "Install more lights",
+              "2": "Remove existing light switches",
+              "3": "Use motion sensors and timers"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇ ਤੁਹਾਡੇ ਸਰਕਿਟ ਵਿੱਚ ਏਲਈਡੀ ਨਹੀਂ ਚਮਕਦੀ, ਤਾਂ ਸਕ੍ਰਿਪਟ ਅਨੁਸਾਰ ਪਹਿਲਾਂ ਤੁਹਾਨੂੰ ਕੀ ਚੈੱਕ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": { "1": "LED polarity", "2": "Simulation speed", "3": "Resistor value" },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Smart-Energy-Switch-🔘-Remedial",
+          "seq": 48,
+          "nm": "SmartLightControlSystem",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਸਮਾਰਟ ਲਾਈਟ ਕੰਟਰੋਲ ਪ੍ਰਣਾਲੀ ਬਣਾਉਣਗੇ ਜੋ ਬਿਜਲੀ ਦੇ ਉਪਯੋਗ ਨੂੰ ਨਿਯੰਤ੍ਰਿਤ ਕਰਨ ਲਈ ਇੱਕ ਪੁਸ਼ ਬਟਨ ਦੀ ਵਰਤੋਂ ਕਰੇਗੀ। ਇਸ ਹੈਂਡਸ-ਆਨ ਪ੍ਰਾਜੈਕਟ ਰਾਹੀਂ, ਉਹ ਊਰਜਾ ਦੀ ਬਚਤ ਕਰਨ ਅਤੇ ਬੇਕਾਰ ਨੂੰ ਘਟਾਉਣ ਦੇ ਮਹੱਤਵ ਨੂੰ ਸਿੱਖਣਗੇ। ਰਿਨਿਊਏਬਲ ਰਿਸੋਰਸਿਸ ਨਾਲ ਜੁੜੇ ਇਸ ਐਕਟਿਵਿਟੀ ਰਾਹੀਂ, ਵਿਦਿਆਰਥੀ ਸਮਝਣਗੇ ਕਿ ਕਿਵੇਂ ਸੋਚ-ਵਿਚਾਰ ਕੇ ਕੀਤੇ ਗਏ ਐਨਰਜੀ ਉਪਯੋਗ ਨਾਲ ਇਕ ਟਿਕਾਊ ਭਵਿੱਖ ਦੀ ਯੋਗਦਾਨ ਪਾ ਸਕਦੇ ਹਨ। ਇਹ ਪ੍ਰਾਜੈਕਟ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਆਪਣੇ ਰੋਜ਼ਾਨਾ ਜੀਵਨ ਵਿੱਚ ਸਮਾਰਟ ਐਨਰਜੀ ਆਦਤਾਂ ਅਪਣਾਉਣ ਲਈ ਪ੍ਰੇਰਿਤ ਕਰਦਾ ਹੈ।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Fuse Protection' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ charging cable ਜਾਂ wire ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note/text ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: circuit ਵਿੱਚ fuse ਦੀ ਕੀ ਭੂਮਿਕਾ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ਕੰਮ ਕਰਦੇ ਹੋਏ ਦਾ video/ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Twist to Dim 🎚️",
+      "desc": "Variable resistance, voltage–current relationship, current–brightness relationship, energy efficiency. DC power supply, potentiometer, LED, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 53,
+          "nm": "Can You Control Light with a Knob? 🎛️",
+          "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਇੱਕ ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ ਇੱਕ ਸਰਕਟ ਦਾ ਸਿਮੂਲੇਸ਼ਨ ਕਰਨਗੇ ਤਾਂ ਕਿ ਇੱਕ ਐਲਈਡੀ ਦੀ ਚਮਕ ਨੂੰ ਨਿਯੰਤ੍ਰਿਤ ਕੀਤਾ ਜਾ ਸਕੇ ਅਤੇ ਇਹ ਪਤਾ ਲਗਾਇਆ ਜਾ ਸਕੇ ਕਿ ਵੱਖ-ਵੱਖ ਚਮਕ ਪੱਧਰ ਕਿਵੇਂ ਊਰਜਾ ਦੀ ਵਰਤੋਂ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਦੇ ਹਨ। ਉਹ ਕਈ ਸੈਟਿੰਗਾਂ (ਘੱਟ, ਦਰਮਿਆਨਾ, ਵੱਧ) ਦੀ ਤੁਲਨਾ ਕਰਨਗੇ ਅਤੇ ਰੋਜ਼ਾਨਾ ਵਰਤੋਂ ਲਈ ਸਭ ਤੋਂ ਕੁਸ਼ਲ ਪੱਧਰ ਦੀ ਪਛਾਣ ਕਰਨਗੇ। ਇਸ ਨਾਲ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਸਮਝਣ ਵਿੱਚ ਮਦਦ ਮਿਲਦੀ ਹੈ ਕਿ ਕਿਵੇਂ ਊਰਜਾ ਦੀ ਖਪਤ ਨੂੰ ਸਹੀ ਢੰਗ ਨਾਲ ਸੈਟ ਕਰਕੇ ਕਚਰੇ ਨੂੰ ਘਟਾਇਆ ਜਾ ਸਕਦਾ ਹੈ ਅਤੇ ਇਹ ਐਸ.ਡੀ.ਜੀ 12 - ਜਿੰਮੇਵਾਰ ਖਪਤ ਅਤੇ ਉਤਪਾਦਨ ਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ।",
+          "yt": "wscjh7B6Qz8",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 54,
+        "nm": "How Bright Can You Go? 💡",
+        "qs": [
+          {
+            "q": "ਕਿਹੜਾ ਭਾਗ ਪ੍ਰਤੀਰੋਧ 'ਚ ਤਬਦੀਲੀ ਕਰਕੇ LED ਦੀ ਚਮਕ ਨੂੰ ਨਿਯੰਤ੍ਰਿਤ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ?",
+            "opts": { "1": "Capacitor", "2": "Inductor", "3": "Potentiometer" },
+            "ans": "3"
+          },
+          {
+            "q": "ਜਦੋਂ ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਦਾ ਪ੍ਰਤੀਰੋਧ ਵਧਾਇਆ ਜਾਂਦਾ ਹੈ ਤਾਂ ਕਰੰਟ ਦਾ ਪ੍ਰਵਾਹ ਕੀ ਹੁੰਦਾ ਹੈ?",
+            "opts": {
+              "1": "The current flow remains unchanged",
+              "2": "The current flow decreases",
+              "3": "The current flow increases"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "DC ਪਾਵਰ ਸਪਲਾਈ, ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਅਤੇ LED ਨੂੰ ਜੋੜਨ ਲਈ ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਕਿਹੜੀ ਭਾਗਵਾਰੀ ਦਰਸਾਈ ਗਈ ਹੈ?",
+            "opts": { "1": "Series", "2": "Random", "3": "Parallel" },
+            "ans": "1"
+          },
+          {
+            "q": "ਜੇ ਤੁਸੀਂ ਆਪਣੀ ਸਰਕਿਟ ਸਿਮੂਲੇਸ਼ਨ ਵਿੱਚ LED ਨੂੰ ਹੌਲੀ ਚਮਕਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਨਾਲ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "Increase the resistance",
+              "2": "Decrease the resistance",
+              "3": "Remove the potentiometer"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਸਕ੍ਰਿਪਟ ਦੀ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਦੀ ਵਰਤੋਂ ਕਰਕੇ LED ਦੀ ਵੱਧ ਤੋਂ ਵੱਧ ਚਮਕ ਕਿਵੇਂ ਪ੍ਰਾਪਤ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ?",
+            "opts": {
+              "1": "Set the potentiometer to a low resistance setting",
+              "2": "Disconnect the potentiometer",
+              "3": "Use a higher voltage power supply"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Dial-Up-the-Glow-🎚️-Basic",
+          "seq": 49,
+          "nm": "Smart Light Efficiency Controller",
+          "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਇੱਕ ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ ਇੱਕ ਸਰਕਟ ਦਾ ਸਿਮੂਲੇਸ਼ਨ ਕਰਨਗੇ ਤਾਂ ਕਿ ਇੱਕ ਐਲਈਡੀ ਦੀ ਚਮਕ ਨੂੰ ਨਿਯੰਤ੍ਰਿਤ ਕੀਤਾ ਜਾ ਸਕੇ ਅਤੇ ਇਹ ਪਤਾ ਲਗਾਇਆ ਜਾ ਸਕੇ ਕਿ ਵੱਖ-ਵੱਖ ਚਮਕ ਪੱਧਰ ਕਿਵੇਂ ਊਰਜਾ ਦੀ ਵਰਤੋਂ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਦੇ ਹਨ। ਉਹ ਕਈ ਸੈਟਿੰਗਾਂ (ਘੱਟ, ਦਰਮਿਆਨਾ, ਵੱਧ) ਦੀ ਤੁਲਨਾ ਕਰਨਗੇ ਅਤੇ ਰੋਜ਼ਾਨਾ ਵਰਤੋਂ ਲਈ ਸਭ ਤੋਂ ਕੁਸ਼ਲ ਪੱਧਰ ਦੀ ਪਛਾਣ ਕਰਨਗੇ। ਇਸ ਨਾਲ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਸਮਝਣ ਵਿੱਚ ਮਦਦ ਮਿਲਦੀ ਹੈ ਕਿ ਕਿਵੇਂ ਊਰਜਾ ਦੀ ਖਪਤ ਨੂੰ ਸਹੀ ਢੰਗ ਨਾਲ ਸੈਟ ਕਰਕੇ ਕਚਰੇ ਨੂੰ ਘਟਾਇਆ ਜਾ ਸਕਦਾ ਹੈ ਅਤੇ ਇਹ ਐਸ.ਡੀ.ਜੀ 12 - ਜਿੰਮੇਵਾਰ ਖਪਤ ਅਤੇ ਉਤਪਾਦਨ ਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ।",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Fuse Protection' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ charging cable ਜਾਂ wire ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note/text ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: circuit ਵਿੱਚ fuse ਦੀ ਕੀ ਭੂਮਿਕਾ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ਕੰਮ ਕਰਦੇ ਹੋਏ ਦਾ video/ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Dim Your Light, Save the Planet 🌍",
+      "desc": "Variable resistance, voltage–current relationship, current–brightness relationship, Ohm’s Law, energy efficiency. DC power supply, potentiometer, resistor, LED, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 54,
+          "nm": "Can Dimming a Light Save the Earth? 🌱",
+          "desc": "ਵਿਦਿਆਰਥੀ ਪ੍ਰੋਟੋਸਰਕਿਟ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਬੁਨਿਆਦੀ ਇਲੈਕਟ੍ਰਾਨਿਕ ਸਰਕਿਟ ਦਾ ਨਕਲ ਕਰਨ ਦੇ ਯੋਗ ਹੋਣਗੇ ਤਾਂ ਜੋ ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਨਾਲ ਐੱਲਈਡੀ ਦੀ ਚਮਕ ਨੂੰ ਨਿਯੰਤ੍ਰਿਤ ਕੀਤਾ ਜਾ ਸਕੇ, ਅਤੇ ਸਮਝ ਸਕਣ ਕਿ ਊਰਜਾ ਦੀ ਖਪਤ ਨੂੰ ਠੀਕ ਕਰਨਾ ਕਿਵੇਂ ਐਸਡੀਜੀ 12 - ਜਿੰਮੇਵਾਰ ਖਪਤ ਅਤੇ ਉਤਪਾਦਨ ਵਿੱਚ ਯੋਗਦਾਨ ਪਾਉਂਦਾ ਹੈ। ਇਸ ਹੱਥ-ਉੱਤੇ ਪ੍ਰਾਜੈਕਟ ਰੂਪ ਵਿੱਚ ਗਤੀਵਿਧੀ ਰਾਹੀਂ, ਵਿਦਿਆਰਥੀ ਇਹ ਸਿੱਖਣਗੇ ਕਿ ਕਿਵੇਂ ਰੋਜ਼ਾਨਾ ਦੇ ਛੋਟੇ ਛੋਟੇ ਕਦਮ ਜਿਵੇਂ ਕਿ ਬੱਤੀਆਂ ਦੀ ਚਮਕ ਘਟਾਉਣਾ ਸਮਾਰਟ ਊਰਜਾ ਦੀ ਵਰਤੋਂ ਦੀ ਪਾਸੇ ਵਧਦੇ ਹਨ ਅਤੇ ਵਾਤਾਵਰਣ ਤੇ ਪ੍ਰਭਾਵ ਘਟਾਉਂਦੇ ਹਨ।",
+          "yt": "jf3Pl10YOqQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 55,
+        "nm": "Is Your Potentiometer Saving Power? ⚡",
+        "qs": [
+          {
+            "q": "ਕਿਹੜਾ ਕੰਪੋਨੈਂਟ ਐਕਟਿਵਿਟੀ ਵਿੱਚ ਇੱਕ ਐਲਈਡੀ ਦੀ ਬ੍ਰਾਈਟਨੈਸ ਨੂੰ ਠੀਕ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+            "opts": { "1": "Resistor", "2": "Potentiometer", "3": "DC power supply" },
+            "ans": "2"
+          },
+          {
+            "q": "ਡਿਮ ਯੋਰ ਲਾਈਟ, ਸੇਵ ਦ ਪਲੇਨਟ' ਐਕਟਿਵਿਟੀ ਦਾ ਮੁੱਖ ਮਕਸਦ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To save energy by controlling LED brightness",
+              "2": "To learn about different types of LEDs",
+              "3": "To increase LED brightness"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਜੇਕਰ ਸਿਮੂਲੇਸ਼ਨ ਦੌਰਾਨ ਐਲਈਡੀ ਫੁੱਟ ਜਾਂਦੀ ਹੈ ਤਾਂ ਤੁਹਾਨੂੰ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "Remove the potentiometer",
+              "2": "Decrease the power supply voltage",
+              "3": "Increase the resistor value to 300 ohms"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਤੁਸੀਂ ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਨੂੰ ਠੀਕ ਕਰਨ ਤੋਂ ਬਾਅਦ ਐਲਈਡੀ ਦੀ ਬ੍ਰਾਈਟਨੈਸ ਵਿੱਚ ਕੋਈ ਮਹੱਤਵਪੂਰਨ ਤਬਦੀਲੀ ਨਹੀਂ ਦੇਖਦੇ। ਇਸ ਨੂੰ ਠੀਕ ਕਰਨ ਲਈ ਤੁਹਾਨੂੰ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "Decrease the power supply voltage",
+              "2": "Increase the potentiometer’s resistance value to 4 kilo ohms",
+              "3": "Remove the resistor from the circuit"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਤੁਸੀਂ ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚੋਂ ਸਿੱਖੇ ਗਏ ਕਨਸੈਪਟ ਨੂੰ ਆਪਣੇ ਘਰ ਵਿੱਚ ਲਾਗੂ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਹੇ ਹੋ। ਇਸ ਦਾ ਇਕ ਉਦਾਹਰਨ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "Installing additional lights to enhance brightness",
+              "2": "Increasing the power supply to all lights",
+              "3": "Using a dimmer switch to control room lighting"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Smart-Dimmer-Challenge-🌍-Remedial",
+          "seq": 50,
+          "nm": "DimYourLight",
+          "desc": "ਵਿਦਿਆਰਥੀ ਪ੍ਰੋਟੋਸਰਕਿਟ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਬੁਨਿਆਦੀ ਇਲੈਕਟ੍ਰਾਨਿਕ ਸਰਕਿਟ ਦਾ ਨਕਲ ਕਰਨ ਦੇ ਯੋਗ ਹੋਣਗੇ ਤਾਂ ਜੋ ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਨਾਲ ਐੱਲਈਡੀ ਦੀ ਚਮਕ ਨੂੰ ਨਿਯੰਤ੍ਰਿਤ ਕੀਤਾ ਜਾ ਸਕੇ, ਅਤੇ ਸਮਝ ਸਕਣ ਕਿ ਊਰਜਾ ਦੀ ਖਪਤ ਨੂੰ ਠੀਕ ਕਰਨਾ ਕਿਵੇਂ ਐਸਡੀਜੀ 12 - ਜਿੰਮੇਵਾਰ ਖਪਤ ਅਤੇ ਉਤਪਾਦਨ ਵਿੱਚ ਯੋਗਦਾਨ ਪਾਉਂਦਾ ਹੈ। ਇਸ ਹੱਥ-ਉੱਤੇ ਪ੍ਰਾਜੈਕਟ ਰੂਪ ਵਿੱਚ ਗਤੀਵਿਧੀ ਰਾਹੀਂ, ਵਿਦਿਆਰਥੀ ਇਹ ਸਿੱਖਣਗੇ ਕਿ ਕਿਵੇਂ ਰੋਜ਼ਾਨਾ ਦੇ ਛੋਟੇ ਛੋਟੇ ਕਦਮ ਜਿਵੇਂ ਕਿ ਬੱਤੀਆਂ ਦੀ ਚਮਕ ਘਟਾਉਣਾ ਸਮਾਰਟ ਊਰਜਾ ਦੀ ਵਰਤੋਂ ਦੀ ਪਾਸੇ ਵਧਦੇ ਹਨ ਅਤੇ ਵਾਤਾਵਰਣ ਤੇ ਪ੍ਰਭਾਵ ਘਟਾਉਂਦੇ ਹਨ।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Fuse Protection' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ charging cable ਜਾਂ wire ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note/text ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: circuit ਵਿੱਚ fuse ਦੀ ਕੀ ਭੂਮਿਕਾ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ਕੰਮ ਕਰਦੇ ਹੋਏ ਦਾ video/ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "One Way Only 🚦",
+      "desc": "One-way current flow, diode functionality, voltage–current relationship, circuit protection, basic clean energy systems. DC power supply, diode, resistor, LED, voltmeter, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 55,
+          "nm": "Can a Diode Guard Your Solar Panel? ☀️",
+          "desc": "ਇਸ ਐਕਟੀਵਿਟੀ ਵਿੱਚ, ਅਸੀਂ ਪ੍ਰੋਟੋਸਰਕਿਟ ਐਪ ਵਿੱਚ ਡਾਇਓਡ, ਐਲਈਡੀ, ਰੇਜ਼ਿਸਟਰ ਅਤੇ ਵੋਲਟਮੀਟਰ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਕਲੀਨ ਐਨਰਜੀ ਇੰਡਿਕੇਟਰ ਬਣਾਵਾਂਗੇ। ਤੁਸੀਂ ਸਿੱਖੋਗੇ ਕਿ ਕਿਵੇਂ ਇੱਕ ਡਾਇਓਡ ਕਰੰਟ ਦੇ ਵਹਾਅ ਦੀ ਦਿਸ਼ਾ ਨੂੰ ਨਿਯੰਤਰਤ ਕਰਦਾ ਹੈ — ਸਾਫ ਸਫਾਈ ਊਰਜਾ ਪ੍ਰਣਾਲੀਆਂ ਦੀ ਰੱਖਿਆ ਵਿੱਚ ਇੱਕ ਮਹੱਤਵਪੂਰਨ ਧਾਰਨਾ। ਇਹ ਪ੍ਰਾਜੈਕਟ ਐਸਡੀਜੀ 13: ਕਲਾਈਮੇਟ ਐਕਸ਼ਨ ਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ ਕਿਉਂਕਿ ਇਹ ਸਾਨੂੰ ਸਮਝਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ ਕਿ ਕਿਵੇਂ ਸਾਦੇ ਸਰਕਟ ਨਵੀਨੀਕਰਣ ਯੋਗ ਸਰੋਤਾਂ ਨੂੰ ਜ਼ਿਆਦਾ ਸੁਰੱਖਿਅਤ ਅਤੇ ਕੁਸ਼ਲ ਬਣਾਉਂਦੇ ਹਨ।",
+          "yt": "f7oxhExh1Zk",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 56,
+        "nm": "Forward or Reverse? ⬅️",
+        "qs": [
+          {
+            "q": "ਸਰਕਟ ਵਿੱਚ ਕਿਹੜਾ ਹਿੱਸਾ ਯਕੀਨੀ ਬਣਾਉਂਦਾ ਹੈ ਕਿ ਕਰੰਟ ਸਿਰਫ ਇੱਕ ਹੀ ਦਿਸ਼ਾ ਵਿੱਚ ਵਗੇ?",
+            "opts": { "1": "Voltmeter", "2": "Resistor", "3": "Diode" },
+            "ans": "3"
+          },
+          {
+            "q": "ਸਾਫ਼ ਊਰਜਾ ਪ੍ਰਣਾਲੀਆਂ ਵਿੱਚ ਇਕ-ਦਿਸ਼ਾ ਵਾਲੀ ਕਰੰਟ ਵਗਣ ਲਈ ਡਾਇਓਡ ਦਾ ਯਕੀਨੀ ਬਣਾਉਣਾ ਕਿਉਂ ਮਹੱਤਵਪੂਰਣ ਹੈ?",
+            "opts": {
+              "1": "To prevent energy loss and component damage",
+              "2": "To decrease voltage levels",
+              "3": "To increase energy consumption"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਜਦੋਂ ਡਾਇਓਡ ਨੂੰ ਸਰਕਟ ਵਿੱਚ ਉਲਟੀ ਦਿਸ਼ਾ ਵਿੱਚ ਜੋੜਿਆ ਜਾਂਦਾ ਹੈ ਤਾਂ ਕੀ ਹੁੰਦਾ ਹੈ?",
+            "opts": {
+              "1": "The voltmeter shows a reading",
+              "2": "The current doesn't flow and the LED doesn't glow",
+              "3": "The current flows and the LED glows"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਜੇ ਤੁਸੀਂ ਦੇਖਦੇ ਹੋ ਕਿ ਤੁਹਾਡੇ ਸੋਲਰ ਪੈਨਲ ਪ੍ਰਣਾਲੀ ਦੀ ਬੈਟਰੀ ਰਾਤ ਨੂੰ ਡ੍ਰੇਨ ਹੋ ਰਹੀ ਹੈ, ਤਾਂ ਇਸ ਸਮੱਸਿਆ ਨੂੰ ਹੱਲ ਕਰਨ ਲਈ ਤੁਸੀਂ ਕਿਹੜੇ ਹਿੱਸੇ ਨੂੰ ਚੈੱਕ ਜਾਂ ਸ਼ਾਮਲ ਕਰਾਂਗੇ?",
+            "opts": { "1": "Resistor", "2": "Diode", "3": "LED" },
+            "ans": "2"
+          },
+          {
+            "q": "ਜਦੋਂ ਤੁਸੀਂ ਸਰਕਟ ਦਾ ਸਿਮੂਲੇਸ਼ਨ ਕਰਦੇ ਹੋ, ਤਾਂ ਐਲਈਡੀ ਨਹੀਂ ਜਲਦੀ। ਜੇ ਸਾਰੇ ਕਨੈਕਸ਼ਨ ਸਹੀ ਹਨ ਤਾਂ ਸੰਭਾਵੀ ਕਾਰਣ ਕੀ ਹੋ ਸਕਦਾ ਹੈ?",
+            "opts": {
+              "1": "The diode might be in reverse direction",
+              "2": "The voltmeter is disconnected",
+              "3": "The resistor value is too low"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-the-One-Way-Gate-🚦-Intermediate",
+          "seq": 51,
+          "nm": "CleanEnergyIndicator",
+          "desc": "ਇਸ ਐਕਟੀਵਿਟੀ ਵਿੱਚ, ਅਸੀਂ ਪ੍ਰੋਟੋਸਰਕਿਟ ਐਪ ਵਿੱਚ ਡਾਇਓਡ, ਐਲਈਡੀ, ਰੇਜ਼ਿਸਟਰ ਅਤੇ ਵੋਲਟਮੀਟਰ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਕਲੀਨ ਐਨਰਜੀ ਇੰਡਿਕੇਟਰ ਬਣਾਵਾਂਗੇ। ਤੁਸੀਂ ਸਿੱਖੋਗੇ ਕਿ ਕਿਵੇਂ ਇੱਕ ਡਾਇਓਡ ਕਰੰਟ ਦੇ ਵਹਾਅ ਦੀ ਦਿਸ਼ਾ ਨੂੰ ਨਿਯੰਤਰਤ ਕਰਦਾ ਹੈ — ਸਾਫ ਸਫਾਈ ਊਰਜਾ ਪ੍ਰਣਾਲੀਆਂ ਦੀ ਰੱਖਿਆ ਵਿੱਚ ਇੱਕ ਮਹੱਤਵਪੂਰਨ ਧਾਰਨਾ। ਇਹ ਪ੍ਰਾਜੈਕਟ ਐਸਡੀਜੀ 13: ਕਲਾਈਮੇਟ ਐਕਸ਼ਨ ਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ ਕਿਉਂਕਿ ਇਹ ਸਾਨੂੰ ਸਮਝਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ ਕਿ ਕਿਵੇਂ ਸਾਦੇ ਸਰਕਟ ਨਵੀਨੀਕਰਣ ਯੋਗ ਸਰੋਤਾਂ ਨੂੰ ਜ਼ਿਆਦਾ ਸੁਰੱਖਿਅਤ ਅਤੇ ਕੁਸ਼ਲ ਬਣਾਉਂਦੇ ਹਨ।",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Fuse Protection' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ charging cable ਜਾਂ wire ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note/text ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: circuit ਵਿੱਚ fuse ਦੀ ਕੀ ਭੂਮਿਕਾ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ਕੰਮ ਕਰਦੇ ਹੋਏ ਦਾ video/ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "The Current's One-Way Street 🛣️",
+      "desc": "One-way current flow, forward bias, reverse bias, diode functionality, basic circuit behavior. DC power supply, diode, LED, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 56,
+          "nm": "What Happens When You Flip the Diode? 🔄",
+          "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਇੱਕ ਸਧਾਰਣ ਸਰਕਟ ਬਣਾਉਣਗੇ ਜੋ ਡਾਇਓਡ, ਐਲਈਡੀ, ਰਜਿਸਟਰ ਅਤੇ ਪਾਵਰ ਸਪਲਾਈ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ ਪ੍ਰੋਟੋਸਰਕਿਟ ਐਪ ਵਿੱਚ ਬਣਾਇਆ ਜਾਵੇਗਾ ਤਾਂ ਜੋ ਦੇਖਿਆ ਜਾ ਸਕੇ ਕਿ ਧਾਰਾ ਸਿਰਫ ਇੱਕ ਦਿਸ਼ਾ ਵਿੱਚ ਕਿਵੇਂ ਵਗਦਾ ਹੈ। ਉਹ ਇਹ ਜਾਂਚਣਗੇ ਕਿ ਕੀ ਹੁੰਦਾ ਹੈ ਜਦੋਂ ਡਾਇਓਡ ਨੂੰ ਸਹੀ ਤਰੀਕੇ ਨਾਲ ਜੁੜਿਆ ਜਾਂਦਾ ਹੈ ਅਤੇ ਜਦੋਂ ਇਸਨੂੰ ਉਲਟਾ ਕੀਤਾ ਜਾਂਦਾ ਹੈ। ਇਹ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਡਾਇਓਡ ਦੇ ਮੁੱਢਲੇ ਕੰਮ ਅਤੇ ਇਹ ਕਿਵੇਂ ਬਿਜਲੀ ਦੇ ਵਾਹ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਦਾ ਹੈ, ਨੂੰ ਸਮਝਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ, ਜੋ ਸੁਰੱਖਿਅਤ ਅਤੇ ਕਾਰਗਰ ਊਰਜਾ ਦੇ ਇਸਤੇਮਾਲ (ਐਸਡੀਜੀ ੧੩ – ਕਲਾਈਮੇਟ ਐਕਸ਼ਨ) ਦੇ ਵਿਚਾਰ ਨਾਲ ਜੁੜਿਆ ਹੈ।",
+          "yt": "fCQHXdHUYZs",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 57,
+        "nm": "Does the Diode Block or Allow? ⚡",
+        "qs": [
+          {
+            "q": "ਸਰਕਟ ਵਿੱਚ ਡਾਇਓਡ ਦਾ ਮੁੱਖ ਕੰਮ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To store energy",
+              "2": "To allow current in one direction",
+              "3": "To increase voltage"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਜਦੋਂ ਡਾਇਓਡ ਨੂੰ ਰਿਵਰਸ ਬਾਇਸ ਵਿੱਚ ਜੋੜਿਆ ਜਾਂਦਾ ਹੈ ਤਾਂ ਕੀ ਹੁੰਦਾ ਹੈ?",
+            "opts": {
+              "1": "The LED turns off",
+              "2": "The LED glows",
+              "3": "The current increases"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਪ੍ਰੋਟੋਸਰਕਟ ਵਿੱਚ ਸਰਕਟ ਦੀ ਨਕਲ ਕਰਨ ਲਈ ਭਾਗਾਂ ਨੂੰ ਕਿਵੇਂ ਲਗਾਇਆ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "In series, one after another",
+              "2": "In parallel, side by side",
+              "3": "In a triangular configuration"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਜੇ ਐਲਈਡੀ ਚਮਕ ਨਹੀਂ ਰਹੀ, ਤਾਂ ਸਰਕਟ ਵਿੱਚ ਸੰਭਾਵਿਤ ਸਮੱਸਿਆ ਕੀ ਹੋ ਸਕਦੀ ਹੈ?",
+            "opts": {
+              "1": "The DC power supply is too high",
+              "2": "The diode is in reverse bias",
+              "3": "The diode is in forward bias"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਤੁਸੀਂ ਕਿਵੇਂ ਜਾਂਚ ਸਕਦੇ ਹੋ ਕਿ ਡਾਇਓਡ ਸਰਕਟ ਵਿੱਚ ਸਹੀ ਤਰ੍ਹਾਂ ਕੰਮ ਕਰ ਰਿਹਾ ਹੈ?",
+            "opts": {
+              "1": "Check if the LED glows with the diode in forward bias",
+              "2": "Increase the voltage to see if the LED glows",
+              "3": "Observe if the current flows in both directions"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Flip-the-Diode-and-Find-Out-🔄-Remedial",
+          "seq": 52,
+          "nm": "One-Way Current Indicator",
+          "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਇੱਕ ਸਧਾਰਣ ਸਰਕਟ ਬਣਾਉਣਗੇ ਜੋ ਡਾਇਓਡ, ਐਲਈਡੀ, ਰਜਿਸਟਰ ਅਤੇ ਪਾਵਰ ਸਪਲਾਈ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ ਪ੍ਰੋਟੋਸਰਕਿਟ ਐਪ ਵਿੱਚ ਬਣਾਇਆ ਜਾਵੇਗਾ ਤਾਂ ਜੋ ਦੇਖਿਆ ਜਾ ਸਕੇ ਕਿ ਧਾਰਾ ਸਿਰਫ ਇੱਕ ਦਿਸ਼ਾ ਵਿੱਚ ਕਿਵੇਂ ਵਗਦਾ ਹੈ। ਉਹ ਇਹ ਜਾਂਚਣਗੇ ਕਿ ਕੀ ਹੁੰਦਾ ਹੈ ਜਦੋਂ ਡਾਇਓਡ ਨੂੰ ਸਹੀ ਤਰੀਕੇ ਨਾਲ ਜੁੜਿਆ ਜਾਂਦਾ ਹੈ ਅਤੇ ਜਦੋਂ ਇਸਨੂੰ ਉਲਟਾ ਕੀਤਾ ਜਾਂਦਾ ਹੈ। ਇਹ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਡਾਇਓਡ ਦੇ ਮੁੱਢਲੇ ਕੰਮ ਅਤੇ ਇਹ ਕਿਵੇਂ ਬਿਜਲੀ ਦੇ ਵਾਹ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਦਾ ਹੈ, ਨੂੰ ਸਮਝਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ, ਜੋ ਸੁਰੱਖਿਅਤ ਅਤੇ ਕਾਰਗਰ ਊਰਜਾ ਦੇ ਇਸਤੇਮਾਲ (ਐਸਡੀਜੀ ੧੩ – ਕਲਾਈਮੇਟ ਐਕਸ਼ਨ) ਦੇ ਵਿਚਾਰ ਨਾਲ ਜੁੜਿਆ ਹੈ।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Fuse Protection' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ charging cable ਜਾਂ wire ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note/text ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: circuit ਵਿੱਚ fuse ਦੀ ਕੀ ਭੂਮਿਕਾ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ਕੰਮ ਕਰਦੇ ਹੋਏ ਦਾ video/ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Ohm's Law in Action 📐",
+      "desc": "Ohm’s Law (V = I × R), voltage–current relationship, resistance variation, current–brightness relationship, measurement and observation. DC power supply, potentiometer, LED, ammeter (series), voltmeter (parallel), simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 57,
+          "nm": "Can Math Predict Your LED's Brightness? 🔢",
+          "desc": "ਇਸ ਐਕਟੀਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਇੱਕ ਸਰਕਟ ਡਿਜ਼ਾਈਨ ਅਤੇ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਨਗੇ ਜਿੱਥੇ ਇੱਕ ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਧਾਰਾ ਵੱਖਰਾ ਕਰਕੇ ਐਲਈਡੀ ਦੀ ਚਮਕ ਨੂੰ ਨਿਯੰਤ੍ਰਿਤ ਕਰਦਾ ਹੈ। ਉਹ ਵੱਖ-ਵੱਖ ਰੋਧ ਕਦਰਾਂ 'ਤੇ ਧਾਰਾ ਮਾਪਣਗੇ ਅਤੇ ਆਪਣੇ ਅਧਿਐਨ ਦਾ ਇਸਤੇਮਾਲ ਵੋਲਟੇਜ, ਧਾਰਾ, ਅਤੇ ਰੋਧ ਦੇ ਵਿਚਕਾਰ ਦੇ ਸੰਬੰਧ ਨੂੰ ਸਮਝਣ ਲਈ ਕਰਨਗੇ। ਵਿਦਿਆਰਥੀ ਇਹ ਵੀ ਪੜਤਾਲ ਕਰਨਗੇ ਕਿ ਕਿਸ ਤਰ੍ਹਾਂ ਇੱਕ ਸਥਿਰ ਰੋਧਕ ਨੂੰ ਸ਼ਾਮਲ ਕਰਨ ਨਾਲ ਵਾਧੂ ਧਾਰਾ ਨੂੰ ਨਿਯੰਤ੍ਰਿਤ ਕਰਨ ਵਿੱਚ ਮਦਦ ਮਿਲ ਸਕਦੀ ਹੈ, ਜਿਸ ਨਾਲ ਸਰਕਟ ਨੂੰ ਜ਼ਿਆਦਾ ਸੁਰੱਖਿਅਤ ਅਤੇ ਸਥਿਰ ਬਣਾਇਆ ਜਾ ਸਕਦਾ ਹੈ।",
+          "yt": "gkb_1RFbfYQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 58,
+        "nm": "Voltage, Current, Resistance — Can You Crack It? 📐",
+        "qs": [
+          {
+            "q": "ਜੇਕਰ ਵੋਲਟੇਜ ਸਥਿਰ ਹੈ, ਤਾਂ ਸਰਕਟ ਵਿੱਚ ਰੋਧ ਵਧਣ 'ਤੇ ਕਰੰਟ ਦਾ ਕੀ ਹੁੰਦਾ ਹੈ?",
+            "opts": {
+              "1": "The current decreases",
+              "2": "The current remains the same",
+              "3": "The current increases"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਨਿਮਨਲਿਖਿਤ ਵਿੱਚੋਂ ਕਿਹੜਾ ਭਾਗ LED ਦੀ ਚਮਕ ਨੂੰ ਨਿਯੰਤ੍ਰਿਤ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+            "opts": { "1": "Potentiometer", "2": "Voltmeter", "3": "Ammeter" },
+            "ans": "1"
+          },
+          {
+            "q": "ਸਕ੍ਰਿਪਟ ਅਨੁਸਾਰ, ਜਦੋਂ ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਨੂੰ 0.2 'ਤੇ ਸੈਟ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਤਾਂ ਰੋਧ ਕੀ ਹੁੰਦਾ ਹੈ?",
+            "opts": { "1": "30 ohms", "2": "150 ohms", "3": "96 ohms" },
+            "ans": "1"
+          },
+          {
+            "q": "ਤੁਹਾਨੂੰ ਉਹੀ ਸਰਕਟ ਬਣਾਉਣ ਲਈ ਕਿਹਾ ਗਿਆ ਹੈ, ਪਰ LED ਚਮਕਦੀ ਨਹੀਂ। ਤੁਸੀਂ ਕਿਹੜਾ ਕਦਮ ਛੱਡਿਆ ਹੋ ਸਕਦਾ ਹੈ?",
+            "opts": {
+              "1": "Connecting the voltmeter across the LED",
+              "2": "Ensuring the current flows in the expected direction for the ammeter",
+              "3": "Changing the potentiometer resistance to 150 ohms"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਜੇਕਰ ਤੁਹਾਡੇ ਸਰਕਟ ਵਿੱਚ LED ਉਮੀਦ ਦੇ ਅਨੁਸਾਰ ਧੁੰਦਲੀ ਨਹੀਂ ਹੋ ਰਹੀ, ਤਾਂ ਕਿਹੜੇ ਭਾਗ ਦੀ ਸੈਟਿੰਗ ਤੁਹਾਨੂੰ ਬਦਲਣੀ ਚਾਹੀਦੀ ਹੈ?",
+            "opts": { "1": "The voltmeter", "2": "The potentiometer", "3": "The ammeter" },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Prove-Ohm's-Law-Yourself-📐-Intermediate",
+          "seq": 53,
+          "nm": "Precision LED Control using Potentiometer",
+          "desc": "ਇਸ ਐਕਟੀਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਇੱਕ ਸਰਕਟ ਡਿਜ਼ਾਈਨ ਅਤੇ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਨਗੇ ਜਿੱਥੇ ਇੱਕ ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਧਾਰਾ ਵੱਖਰਾ ਕਰਕੇ ਐਲਈਡੀ ਦੀ ਚਮਕ ਨੂੰ ਨਿਯੰਤ੍ਰਿਤ ਕਰਦਾ ਹੈ। ਉਹ ਵੱਖ-ਵੱਖ ਰੋਧ ਕਦਰਾਂ 'ਤੇ ਧਾਰਾ ਮਾਪਣਗੇ ਅਤੇ ਆਪਣੇ ਅਧਿਐਨ ਦਾ ਇਸਤੇਮਾਲ ਵੋਲਟੇਜ, ਧਾਰਾ, ਅਤੇ ਰੋਧ ਦੇ ਵਿਚਕਾਰ ਦੇ ਸੰਬੰਧ ਨੂੰ ਸਮਝਣ ਲਈ ਕਰਨਗੇ। ਵਿਦਿਆਰਥੀ ਇਹ ਵੀ ਪੜਤਾਲ ਕਰਨਗੇ ਕਿ ਕਿਸ ਤਰ੍ਹਾਂ ਇੱਕ ਸਥਿਰ ਰੋਧਕ ਨੂੰ ਸ਼ਾਮਲ ਕਰਨ ਨਾਲ ਵਾਧੂ ਧਾਰਾ ਨੂੰ ਨਿਯੰਤ੍ਰਿਤ ਕਰਨ ਵਿੱਚ ਮਦਦ ਮਿਲ ਸਕਦੀ ਹੈ, ਜਿਸ ਨਾਲ ਸਰਕਟ ਨੂੰ ਜ਼ਿਆਦਾ ਸੁਰੱਖਿਅਤ ਅਤੇ ਸਥਿਰ ਬਣਾਇਆ ਜਾ ਸਕਦਾ ਹੈ।",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Fuse Protection' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ charging cable ਜਾਂ wire ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note/text ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: circuit ਵਿੱਚ fuse ਦੀ ਕੀ ਭੂਮਿਕਾ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ਕੰਮ ਕਰਦੇ ਹੋਏ ਦਾ video/ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "The Brightness Dial Experiment 🎛️",
+      "desc": "Potentiometer, LED, Variable resistor, Current measurement, Ammeter, Current limiting",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 58,
+          "nm": "Can a Spinning Knob Control Your LED? 🌀",
+          "desc": "ਵਿਦਿਆਰਥੀ LED ਦੇ ਨਾਲ ਸੀਰੀਜ਼ ਵਿੱਚ ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਨੂੰ ਇੱਕ ਬਦਲਣਯੋਗ ਰੇਜ਼ਿਸਟਰ ਵਜੋਂ ਵਰਤਣਗੇ ਅਤੇ ਨੌਬ ਘੁਮਾ ਕੇ LED ਦੀ ਚਮਕ ਬਦਲਣਗੇ। ਉਹ ਘੱਟ ਅਤੇ ਵੱਧ ਸੈਟਿੰਗਾਂ ’ਤੇ ਐਮੀਟਰ ਦੀਆਂ ਰੀਡਿੰਗਾਂ ਦਰਜ ਕਰਨਗੇ। ਲੋੜ ਪੈਣ ’ਤੇ ਕਰੰਟ ਨੂੰ ਸੀਮਿਤ ਕਰਨ ਲਈ ਇੱਕ ਫਿਕਸਡ ਸੀਰੀਜ਼ ਰੇਜ਼ਿਸਟਰ ਵਰਤਿਆ ਜਾਵੇਗਾ।",
+          "yt": "cheIK9PPsSA",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 59,
+        "nm": "High Resistance or Low — What Wins? 🎚️",
+        "qs": [
+          {
+            "q": "ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "A variable resistor",
+              "2": "A type of capacitor",
+              "3": "A fixed resistor"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਦੀ ਰਿਸਿਸਟੈਂਸ ਵਧਾਉਣ ਨਾਲ ਐਲਈਡੀ 'ਤੇ ਕਿਵੇਂ ਅਸਰ ਪੈਂਦਾ ਹੈ?",
+            "opts": {
+              "1": "The LED flickers",
+              "2": "The LED becomes brighter",
+              "3": "The LED becomes dimmer"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇ ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਨੂੰ ਘੱਟ ਰਜਿਸਟੈਂਸ 'ਤੇ ਸੈਟ ਕੀਤਾ ਜਾਵੇ, ਤਾਂ ਸਰਕਿਟ ਵਿੱਚ ਕਰੰਟ ਨਾਲ ਕੀ ਹੁੰਦਾ ਹੈ?",
+            "opts": {
+              "1": "The current increases",
+              "2": "The current decreases",
+              "3": "The current stops"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਪ੍ਰੋਟੋਸਰਕਿਟ ਵਿੱਚ, ਜੇ ਐਮੀਟਰ ਨਕਾਰਾਤਮਕ ਪੜ੍ਹਾਈ ਦਿਖਾਉਂਦਾ ਹੈ, ਤਾਂ ਤੁਹਾਨੂੰ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "Replace the ammeter",
+              "2": "Rotate its orientation",
+              "3": "Increase the voltage"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਸਰਕਿਟ ਦਾ ਇਸਤੇਮਾਲ ਕਰਕੇ ਪ੍ਰੋਟੋਸਰਕਿਟ ਐਪ ਵਿੱਚ ਸਮੱਸਿਆ-ਹੱਲ ਦੇਣ ਦੀਆਂ ਕੁਸ਼ਲਤਾਵਾਂ ਕਿਵੇਂ ਦਰਸਾਈਆਂ ਜਾ ਸਕਦੀਆਂ ਹਨ?",
+            "opts": {
+              "1": "By adjusting the potentiometer to achieve desired LED brightness and analyzing the changes",
+              "2": "By memorizing the circuit diagram",
+              "3": "By connecting additional LEDs to the circuit"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Spin-the-Knob,-Change-the-Glow-🎛️-Remedial",
+          "seq": 54,
+          "nm": "Potentiometer Dimmer (Simple)",
+          "desc": "ਵਿਦਿਆਰਥੀ LED ਦੇ ਨਾਲ ਸੀਰੀਜ਼ ਵਿੱਚ ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਨੂੰ ਇੱਕ ਬਦਲਣਯੋਗ ਰੇਜ਼ਿਸਟਰ ਵਜੋਂ ਵਰਤਣਗੇ ਅਤੇ ਨੌਬ ਘੁਮਾ ਕੇ LED ਦੀ ਚਮਕ ਬਦਲਣਗੇ। ਉਹ ਘੱਟ ਅਤੇ ਵੱਧ ਸੈਟਿੰਗਾਂ ’ਤੇ ਐਮੀਟਰ ਦੀਆਂ ਰੀਡਿੰਗਾਂ ਦਰਜ ਕਰਨਗੇ। ਲੋੜ ਪੈਣ ’ਤੇ ਕਰੰਟ ਨੂੰ ਸੀਮਿਤ ਕਰਨ ਲਈ ਇੱਕ ਫਿਕਸਡ ਸੀਰੀਜ਼ ਰੇਜ਼ਿਸਟਰ ਵਰਤਿਆ ਜਾਵੇਗਾ।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Fuse Protection' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ charging cable ਜਾਂ wire ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note/text ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: circuit ਵਿੱਚ fuse ਦੀ ਕੀ ਭੂਮਿਕਾ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ਕੰਮ ਕਰਦੇ ਹੋਏ ਦਾ video/ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "The Delay Game ⏳",
+      "desc": "Capacitance, charging and discharging of a capacitor, time delay in circuits, energy storage, relationship between capacitance and discharge time. DC power supply, resistor, polarized capacitor, LED, SPST switch, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 59,
+          "nm": "Can a Circuit Remember to Glow? ⏳",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਸਰਕਟ ਡਿਜ਼ਾਇਨ ਕਰਨਗੇ ਜਿੱਥੇ ਉਹ ਕੈਪੈਸਿਟੈਂਸ ਅਤੇ ਰੈਜ਼ਿਸਟੈਂਸ ਨੂੰ ਸਮਾਂਜਸੀਤ ਕਰਕੇ ਇਹ ਨਿਯੰਤਰਿਤ ਕਰ ਸਕਣ ਕਿ ਸਵਿੱਚ ਛੱਡਣ ਤੋਂ ਬਾਅਦ ਐਲਈਡੀ ਕਿੰਨਾ ਸਮਾਂ ਆਨ ਰਹਿੰਦੀ ਹੈ। ਉਹ ਕਈ ਸੰਰਚਨਾਵਾਂ ਦੀ ਤੁਲਨਾ ਕਰਨਗੇ ਅਤੇ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਨਗੇ ਕਿ ਆਰਸੀ ਮੁੱਲ ਕਿਵੇਂ ਡੀਲੇ ਸਮੇਂ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਦੇ ਹਨ, ਜੋ ਕਿ ਉਨ੍ਹਾਂ ਨੂੰ ਆਟੋਮੈਟਿਕ ਲਾਈਟਾਂ ਅਤੇ ਅਲਾਰਮਾਂ ਵਰਗੇ ਹਕੀਕਤੀ ਜਗਤ ਦੇ ਉਪਕਰਣਾਂ ਵਿੱਚ ਵਰਤੇ ਜਾਣ ਵਾਲੇ ਟਾਈਮਿੰਗ ਸਰਕਟਾਂ ਦੀ ਸਮਝ ਪ੍ਰਦਾਨ ਕਰੇਗਾ।",
+          "yt": "iI7k0NeFXCE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 60,
+        "nm": "Which Capacitor Holds On Longer? ⏱️",
+        "qs": [
+          {
+            "q": "ਜਦੋਂ ਕੈਪੇਸੀਟਰ ਚਾਰਜ ਹੋ ਰਿਹਾ ਹੁੰਦਾ ਹੈ ਤਾਂ ਸਰਕਿਟ ਵਿੱਚ LED ਨਾਲ ਕੀ ਹੁੰਦਾ ਹੈ?",
+            "opts": {
+              "1": "The LED glows brightly at first.",
+              "2": "The LED does not glow at first.",
+              "3": "The LED flickers at first."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਸਰਕਿਟ ਵਿੱਚ ਕਿਹੜਾ ਕਪੋਨੈਂਟ LED ਦੇ ਦੇਰੀ ਨਾਲ ਬੰਦ ਹੋਣ ਲਈ ਜ਼ਿੰਮੇਵਾਰ ਹੈ?",
+            "opts": { "1": "The resistor", "2": "The DC power supply", "3": "The capacitor" },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇ ਤੁਸੀਂ ਚਾਹੁੰਦੇ ਹੋ ਕਿ LED ਬੰਦ ਕਰਨ ਤੋਂ ਬਾਅਦ ਲੰਮਾ ਚਲਦਾ ਰਹੇ, ਤਾਂ ਤੁਹਾਨੂੰ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "Decrease the resistance of the resistor",
+              "2": "Use a stronger DC power supply",
+              "3": "Increase the capacitance of the capacitor"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਤੁਸੀਂ ਪ੍ਰੋਟੋਸਰਕਿਟ ਵਿੱਚ ਇੱਕ ਸਰਕਿਟ ਦਾ ਸਿਮੂਲੇਟ ਕਰਦੇ ਹੋ ਅਤੇ ਨੋਟ ਕਰਦੇ ਹੋ ਕਿ LED ਬੰਦ ਕਰਨ ਤੋਂ ਬਾਅਦ ਬਹੁਤ ਜਲਦੀ ਬੰਦ ਹੋ ਜਾਂਦੀ ਹੈ। ਡੀਲੇ ਵਧਾਉਣ ਲਈ ਕੋਈ ਹੱਲ ਕੀ ਹੋ ਸਕਦਾ ਹੈ?",
+            "opts": {
+              "1": "Use a resistor with higher resistance.",
+              "2": "Add another LED in series with the existing one.",
+              "3": "Replace the capacitor with one that has a higher capacitance value."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਟ੍ਰਬਲਸ਼ੂਟਿੰਗ ਕਰਦੇ ਸਮੇਂ, ਤੁਸੀਂ ਪਾਉਂਦੇ ਹੋ ਕਿ ਤੁਹਾਡੇ ਸਰਕਿਟ ਵਿੱਚ LED ਕਦੇ ਵੀ ਬੰਦ ਨਹੀਂ ਹੁੰਦੀ ਭਾਵੇਂ ਬੰਦ ਕਰਨ ਤੋਂ ਬਾਅਦ। ਸਮੱਸਿਆ ਕੀ ਹੋ ਸਕਦੀ ਹੈ?",
+            "opts": {
+              "1": "The switch is malfunctioning.",
+              "2": "The capacitor is constantly discharging into the LED.",
+              "3": "The resistor is not properly connected."
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Race-the-Capacitors-🏁-Advanced",
+          "seq": 55,
+          "nm": "Adjustable Delay Timer Circuit",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਸਰਕਟ ਡਿਜ਼ਾਇਨ ਕਰਨਗੇ ਜਿੱਥੇ ਉਹ ਕੈਪੈਸਿਟੈਂਸ ਅਤੇ ਰੈਜ਼ਿਸਟੈਂਸ ਨੂੰ ਸਮਾਂਜਸੀਤ ਕਰਕੇ ਇਹ ਨਿਯੰਤਰਿਤ ਕਰ ਸਕਣ ਕਿ ਸਵਿੱਚ ਛੱਡਣ ਤੋਂ ਬਾਅਦ ਐਲਈਡੀ ਕਿੰਨਾ ਸਮਾਂ ਆਨ ਰਹਿੰਦੀ ਹੈ। ਉਹ ਕਈ ਸੰਰਚਨਾਵਾਂ ਦੀ ਤੁਲਨਾ ਕਰਨਗੇ ਅਤੇ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਨਗੇ ਕਿ ਆਰਸੀ ਮੁੱਲ ਕਿਵੇਂ ਡੀਲੇ ਸਮੇਂ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਦੇ ਹਨ, ਜੋ ਕਿ ਉਨ੍ਹਾਂ ਨੂੰ ਆਟੋਮੈਟਿਕ ਲਾਈਟਾਂ ਅਤੇ ਅਲਾਰਮਾਂ ਵਰਗੇ ਹਕੀਕਤੀ ਜਗਤ ਦੇ ਉਪਕਰਣਾਂ ਵਿੱਚ ਵਰਤੇ ਜਾਣ ਵਾਲੇ ਟਾਈਮਿੰਗ ਸਰਕਟਾਂ ਦੀ ਸਮਝ ਪ੍ਰਦਾਨ ਕਰੇਗਾ।",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Fuse Protection' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ charging cable ਜਾਂ wire ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note/text ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: circuit ਵਿੱਚ fuse ਦੀ ਕੀ ਭੂਮਿਕਾ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ਕੰਮ ਕਰਦੇ ਹੋਏ ਦਾ video/ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Store It, Glow It! 🔋",
+      "desc": "Capacitors, voltage smoothing, energy storage, LED operation, push-to-charge circuits. DC power supply, LED, resistor, polarized capacitor, SPST switch.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 60,
+          "nm": "Can a Tiny Component Store Power? ⚡",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇਹ ਸਿੱਖਣਗੇ ਕਿ ਕਿਵੇਂ ਇੱਕ ਸਧਾਰਨ ਸਰਕਿਟ ਬਣਾਇਆ ਜਾਂਦਾ ਹੈ ਅਤੇ ਸਿਮੂਲੇਟ ਕੀਤਾ ਜਾਂਦਾ ਹੈ ਜਿਸ ਵਿੱਚ ਇੱਕ ਕੈਪੇਸੀਟਰ ਦੀ ਵਰਤੋਂ ਕੀਤੀ ਜਾਂਦੀ ਹੈ ਤਾਂ ਜੋ ਸਵਿੱਚ ਬੰਦ ਕਰਨ ਦੇ ਬਾਅਦ ਵੀ LED ਕੁਝ ਸਮੇਂ ਲਈ ਚੱਲਦਾ ਰਹੇ। ਉਹ ਇਹ ਵੀ ਪੜ੍ਹ੍ਹਣਗੇ ਕਿ ਕੈਪੇਸੀਟਰ ਦੀ ਕੈਪਾਸਿਟੈਂਸ ਨੂੰ ਕਿਵੇਂ ਅਡਜਸਟ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ ਤਾਂ ਜੋ LED ਦੇ ਡਿਸਚਾਰਜ ਸਮੇਂ ਨੂੰ ਬਦਲਿਆ ਜਾ ਸਕੇ।",
+          "yt": "1TcPPGo0VGE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 61,
+        "nm": "How Long Does Your Capacitor Last? 🔋",
+        "qs": [
+          {
+            "q": "ਕੈਪੇਸਟਰ ਦਾ ਮੁੱਖ ਕੰਮ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To act as a switch",
+              "2": "To store electricity for a short time",
+              "3": "To supply power to the circuit continuously"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਸਵਿੱਚ ਬੰਦ ਕਰਨ ਦੇ ਬਾਅਦ ਵੀ ਥੋੜ੍ਹੇ ਸਮੇਂ ਲਈ ਐਲਈਡੀ ਕਿਉਂ ਚਮਕਦੀ ਰਹਿੰਦੀ ਹੈ?",
+            "opts": {
+              "1": "Because the capacitor discharges its stored energy",
+              "2": "Because the resistor keeps supplying power",
+              "3": "Because the LED is a self-powered component"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਜਦੋਂ ਸਵਿੱਚ ਖੁਲ੍ਹਿਆ ਜਾਂਦਾ ਹੈ ਤਾਂ ਕੈਪੇਸਟਰ ਦੀ ਕੀਮਤ ਵਧਾਉਣ ਨਾਲ ਐਲਈਡੀ ਦੇ ਚਮਕਣ ਦੇ ਸਮੇਂ ਤੇ ਕੀ ਅਸਰ ਪੈਂਦਾ ਹੈ?",
+            "opts": {
+              "1": "The LED stops glowing immediately",
+              "2": "The LED glows for a shorter time",
+              "3": "The LED glows for a longer time"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਤੁਸੀਂ ਦੇਖਦੇ ਹੋ ਕਿ ਤੁਹਾਡੇ ਪ੍ਰੋਟੋਸਰਕਟ ਸਿਮੂਲੇਸ਼ਨ ਵਿੱਚ ਐਲਈਡੀ ਸਵਿੱਚ ਬੰਦ ਕਰਨ ਤੋਂ ਬਾਅਦ ਓਨ ਨਹੀਂ ਰਹਿੰਦੀ। ਇਸਦਾ ਸੰਭਾਵੀ ਸਮੱਸਿਆ ਕੀ ਹੋ ਸਕਦੀ ਹੈ?",
+            "opts": {
+              "1": "The DC power supply is insufficient",
+              "2": "The resistor value is too high",
+              "3": "The capacitor might not be properly connected"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਸਿਮੂਲੇਸ਼ਨ ਦੌਰਾਨ, ਜੇ ਐਲਈਡੀ ਬਿਲਕੁਲ ਵੀ ਨਹੀਂ ਚਮਕਦੀ, ਤਾਂ ਸਮੱਸਿਆ ਹੱਲ ਕਰਨ ਦੇ ਹੁਨਰ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਸੰਭਾਵੀ ਹੱਲ ਕੀ ਹੋ ਸਕਦਾ ਹੈ?",
+            "opts": {
+              "1": "Check all connections to ensure they match the described circuit",
+              "2": "Use a different type of LED",
+              "3": "Increase the DC power supply voltage"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-the-Glow-After-Off-Circuit-🔋-Remedial",
+          "seq": 56,
+          "nm": "Press-to-Hold Delay Light",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇਹ ਸਿੱਖਣਗੇ ਕਿ ਕਿਵੇਂ ਇੱਕ ਸਧਾਰਨ ਸਰਕਿਟ ਬਣਾਇਆ ਜਾਂਦਾ ਹੈ ਅਤੇ ਸਿਮੂਲੇਟ ਕੀਤਾ ਜਾਂਦਾ ਹੈ ਜਿਸ ਵਿੱਚ ਇੱਕ ਕੈਪੇਸੀਟਰ ਦੀ ਵਰਤੋਂ ਕੀਤੀ ਜਾਂਦੀ ਹੈ ਤਾਂ ਜੋ ਸਵਿੱਚ ਬੰਦ ਕਰਨ ਦੇ ਬਾਅਦ ਵੀ LED ਕੁਝ ਸਮੇਂ ਲਈ ਚੱਲਦਾ ਰਹੇ। ਉਹ ਇਹ ਵੀ ਪੜ੍ਹ੍ਹਣਗੇ ਕਿ ਕੈਪੇਸੀਟਰ ਦੀ ਕੈਪਾਸਿਟੈਂਸ ਨੂੰ ਕਿਵੇਂ ਅਡਜਸਟ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ ਤਾਂ ਜੋ LED ਦੇ ਡਿਸਚਾਰਜ ਸਮੇਂ ਨੂੰ ਬਦਲਿਆ ਜਾ ਸਕੇ।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Fuse Protection' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ charging cable ਜਾਂ wire ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note/text ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: circuit ਵਿੱਚ fuse ਦੀ ਕੀ ਭੂਮਿਕਾ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ਕੰਮ ਕਰਦੇ ਹੋਏ ਦਾ video/ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

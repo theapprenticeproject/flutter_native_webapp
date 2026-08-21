@@ -1,0 +1,18 @@
+{
+  "flows": {
+    "auth": {
+      "auth_flow.json": { "languages": ["en"] },
+      "auth_registry.json": { "languages": ["en"] }
+    },
+    "onboarding": {
+      "student_onboarding.json": { "languages": ["en"] }
+    },
+    "activity": {
+      "activity_flow.json": { "languages": ["en"] },
+      "activity_registry.json": { "languages": ["en"] }
+    },
+    "course": {
+      "science.json": { "languages": ["en"] }
+    }
+  }
+}

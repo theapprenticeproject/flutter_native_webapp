@@ -1,0 +1,25 @@
+[
+  {
+    "id": "capgemini-tap-demo-website-launch",
+    "title": "Capgemini-TAP demo website launch",
+    "type": "Event",
+    "published_date": "2026-12-07",
+    "authors": ["TAP", "Capgemini"],
+    "content": "Citizenship Academy – A learning tool developed by The Apprentice Project and powered by Capgemini!\n\nJoin us for the exciting launch of The Citizenship Academy, a transformative platform designed to nurture the citizens of tomorrow! Created by The Apprentice Project and powered by Capgemini, this website empowers children by equipping them with essential 21st-century skills.\n\nThe Citizen Academy offers dynamic, interactive courses in STEM Science and STEM Coding, fostering critical thinking, creativity, and problem-solving skills that are crucial for success in today's world. This initiative reflects our shared commitment to shaping informed, capable, and responsible future citizens.\n\nBe part of this milestone moment as we unveil a platform that combines education with innovation, helping children from all walks of life build brighter futures.",
+    "location": "Mumbai, India",
+    "event_start": "2026-12-07 07:00:00",
+    "event_end": "2027-03-22 16:30:00",
+    "speakers": [
+      { "name": "Anand Gopakumar", "title": "CEO and Co-Founder, The Apprentice Project" },
+      {
+        "name": "Anurag Pratap",
+        "title": "Vice President & Head Corporate Social Responsibility and Sustainability, Capgemini India"
+      }
+    ],
+    "event_content_items": [
+      "Unveiling of Website",
+      "Website run through",
+      "About the TAP and Capgemini collaboration"
+    ]
+  }
+]

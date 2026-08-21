@@ -1,0 +1,1122 @@
+{
+  "id": "Advanced-Electronics-science-lab-C4178",
+  "nm": "Advanced Electronics",
+  "lvl": "Level 3AK",
+  "vrt": "science-lab",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Buttons Run the Signals 🚦",
+      "desc": "Parallel Circuits",
+      "rwc": "Leds, Battery, Breadboard",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 31,
+          "nm": "Can buttons run traffic signals? 🚦",
+          "desc": "In this activity, students having the electronic kit will make a traffic light by designing a simple circuit with a parallel connection of LEDs. Students who do not have the kit will simulate the circuit of the traffic light in the PROTO Circuit Simulator. They will understand the importance of following the traffic rules to prevent injuries and deaths due to road accidents, thus addressing SDG 3 of Good Health and Well-being.",
+          "yt": "e_ytpV04z8c",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 32,
+        "nm": "Can you build a traffic light? 🚦",
+        "qs": [
+          {
+            "q": "What is the first component mentioned to be used in making the traffic light?",
+            "opts": { "1": "Resistor", "2": "LED", "3": "Push button" },
+            "ans": "3"
+          },
+          {
+            "q": "Why are traffic lights important according to the script?",
+            "opts": {
+              "1": "To prevent accidents",
+              "2": "To save electricity",
+              "3": "To control pollution"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Which terminal of the LED is connected to the power rail in the traffic light circuit?",
+            "opts": { "1": "Positive terminal", "2": "Both terminals", "3": "Negative terminal" },
+            "ans": "1"
+          },
+          {
+            "q": "If the red LED does not light up when the button is pressed, what should you check first according to the script?",
+            "opts": {
+              "1": "Check the resistor connection",
+              "2": "Ensure the negative terminal is connected to the push button",
+              "3": "Replace the battery"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If the green LED is not lighting up, which component should you troubleshoot based on the instructions?",
+            "opts": {
+              "1": "The battery's connection",
+              "2": "The placement of the push buttons",
+              "3": "The connection between the push button and LED"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Push-Button-Traffic-Light-🚦-Basic",
+          "seq": 28,
+          "nm": "Build a Push Button Traffic Light 🚦",
+          "desc": "In this activity, students having the electronic kit will make a traffic light by designing a simple circuit with a parallel connection of LEDs. Students who do not have the kit will simulate the circuit of the traffic light in the PROTO Circuit Simulator. They will understand the importance of following the traffic rules to prevent injuries and deaths due to road accidents, thus addressing SDG 3 of Good Health and Well-being.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Traffic' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Traffic'.",
+              "invalid_criteria": "Anything other than the word 'Traffic'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a push button!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a push button switch.",
+              "invalid_criteria": "Anything other than a push button."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note and tell us: How many LEDs did you use?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Video of the traffic light working!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Rain Wakes the Circuit 🌧️",
+      "desc": "LDR",
+      "rwc": "Breadboard, Resistor, LED, Transistor, Motor, Battery",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 32,
+          "nm": "Can wetness trigger a wiper? 🌧️",
+          "desc": "Students build a circuit using an LDR covered with a wet-absorbent material. When the water level increases (rain), light intensity drops, triggering an LED/motor (wiper demo).",
+          "yt": "I-rDa3MgFOQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 33,
+        "nm": "Can rain trigger a wiper? 🌧️",
+        "qs": [
+          {
+            "q": "What component is used to detect rain in the rain-triggered wiper system?",
+            "opts": { "1": "LED", "2": "LDR (Light Dependent Resistor)", "3": "BC547 Transistor" },
+            "ans": "2"
+          },
+          {
+            "q": "What is the main purpose of the rain-triggered wiper system described in the script?",
+            "opts": {
+              "1": "To automatically activate an LED or motor when it rains",
+              "2": "To detect sunlight intensity",
+              "3": "To save energy"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Which component needs to be connected to the base of the transistor to complete the circuit?",
+            "opts": { "1": "9V battery", "2": "LED", "3": "LDR (Light Dependent Resistor)" },
+            "ans": "3"
+          },
+          {
+            "q": "If the rain-triggered wiper system does not work, which of these could be a possible problem to check?",
+            "opts": {
+              "1": "The connections are incorrect or loose",
+              "2": "The LED is too bright",
+              "3": "The breadboard is the wrong color"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "In an urban setting, how could the concept of a rain-triggered system be applied to promote sustainability?",
+            "opts": {
+              "1": "By using more plastic",
+              "2": "By implementing rain-sensing irrigation systems to conserve water",
+              "3": "By installing more streetlights"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Rain-Triggered-Alert-🌧️-Remedial",
+          "seq": 29,
+          "nm": "Build a Rain Triggered Alert 🌧️",
+          "desc": "Students build a circuit using an LDR covered with a wet-absorbent material. When the water level increases (rain), light intensity drops, triggering an LED/motor (wiper demo).",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Wiper' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Wiper'.",
+              "invalid_criteria": "Anything other than the word 'Wiper'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of the DC motor!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a DC motor.",
+              "invalid_criteria": "Anything other than a motor."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note and tell us: What triggers the LED?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Video of the rain alert working!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Blades Catch Free Energy 🌬️",
+      "desc": "Clean Energy",
+      "rwc": "Scissors, Paper, Resistor, LED, Battery, Switch, Motor",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 33,
+          "nm": "Can paper blades generate power? 🌬️",
+          "desc": "Students will explore how renewable energy works by creating a simple wind turbine using a DC motor and LEDs. Through this hands-on activity, they’ll understand mechanical-to-electrical energy conversion, the role of sustainable technology, and how clean energy helps reduce climate change. This supports SDG 7 (Affordable and Clean Energy), SDG 9 (Industry, Innovation and Infrastructure), and SDG 13 (Climate Action).",
+          "yt": "VV2JoHdiQiY",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 34,
+        "nm": "Can wind generate electricity? 🌬️",
+        "qs": [
+          {
+            "q": "What component is used to power the DIY mini classroom windmill?",
+            "opts": { "1": "Solar panel", "2": "AA battery", "3": "9V battery" },
+            "ans": "3"
+          },
+          {
+            "q": "What is the purpose of testing different blade designs in the windmill activity?",
+            "opts": {
+              "1": "To see which design provides the most air",
+              "2": "To make the windmill heavier",
+              "3": "To make the windmill more colorful"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Which part of the windmill is attached to the motor shaft?",
+            "opts": { "1": "The switch", "2": "The pole", "3": "The fan" },
+            "ans": "3"
+          },
+          {
+            "q": "If the fan on your mini windmill isn't spinning, what is a possible problem you could check first?",
+            "opts": {
+              "1": "Increase the size of the battery",
+              "2": "Change the paper blades to metal ones",
+              "3": "Ensure the switch is in the 'on' position"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If your windmill keeps falling over, what is a solution you could try to stabilize it?",
+            "opts": {
+              "1": "Ensure the base is properly secured with glue or tape",
+              "2": "Add more blades to the fan",
+              "3": "Use a larger motor"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Cardboard-Windmill-🌬️-Basic",
+          "seq": 30,
+          "nm": "Build a Cardboard Windmill 🌬️",
+          "desc": "Students will explore how renewable energy works by creating a simple wind turbine using a DC motor and LEDs. Through this hands-on activity, they’ll understand mechanical-to-electrical energy conversion, the role of sustainable technology, and how clean energy helps reduce climate change. This supports SDG 7 (Affordable and Clean Energy), SDG 9 (Industry, Innovation and Infrastructure), and SDG 13 (Climate Action).",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Energy' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Energy'.",
+              "invalid_criteria": "Anything other than the word 'Energy'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of the DC motor!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a DC motor.",
+              "invalid_criteria": "Anything other than a motor."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note and tell us: What happens when the blades spin?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Video of your windmill working!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Light Sets the Alarm 🔦",
+      "desc": "LDR",
+      "rwc": "Breadboard, Resistor, Battery, Transistor",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 34,
+          "nm": "Can light set off alarms? 🔦",
+          "desc": "Students will create a light-triggered buzzer alert, simulating a basic security system.",
+          "yt": "kHW1q-hg8Ww",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 35,
+        "nm": "Can light trigger a buzzer? 🔔",
+        "qs": [
+          {
+            "q": "What component is used to detect light in the security alert system?",
+            "opts": {
+              "1": "LDR (Light Dependent Resistor)",
+              "2": "BC547 Transistor",
+              "3": "10kΩ Resistor"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What is the main purpose of the project mentioned in the script?",
+            "opts": {
+              "1": "To build a light-triggered security alert system",
+              "2": "To create a sound system",
+              "3": "To design a decorative lighting system"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Which component is connected to both the transistor's base and the breadboard?",
+            "opts": { "1": "LED", "2": "LDR", "3": "10kΩ Resistor" },
+            "ans": "3"
+          },
+          {
+            "q": "If you want to upgrade your security system to work in dark areas, what component might you consider adding?",
+            "opts": { "1": "Infrared sensors", "2": "More resistors", "3": "Additional buzzers" },
+            "ans": "1"
+          },
+          {
+            "q": "Your security system isn't buzzing when the LDR is exposed to light. What should you check first?",
+            "opts": {
+              "1": "Check the connections of the LDR and transistor",
+              "2": "Replace the battery",
+              "3": "Reposition the breadboard"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Light-Triggered-Burglar-Alert-🔦-Remedial",
+          "seq": 31,
+          "nm": "Build a Light Triggered Burglar Alert 🔦",
+          "desc": "Students will create a light-triggered buzzer alert, simulating a basic security system.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Alert' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Alert'.",
+              "invalid_criteria": "Anything other than the word 'Alert'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of the buzzer!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a piezoelectric buzzer.",
+              "invalid_criteria": "Anything other than a buzzer."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note and tell us: What happens when the LDR is covered?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Video with sound of the alert!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Magnets Push Apart 🧲",
+      "desc": "Magnetic Levitation",
+      "rwc": "Pen, Straw, LED, Battery, Switch",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 35,
+          "nm": "Can opposite magnets really float? 🧲",
+          "desc": "In this activity, students will create a*Magnetic Levitation Display*, where a magnet floats in the air without any support! Using simple components like magnets, LED, wires, and a battery, they will build a model that demonstrates the concept of*magnetic repulsion and balance*. When the magnet achieves perfect levitation, the LED will glow. This fun hands-on project helps students understand futuristic technologies like*Maglev trains*, which are fast, energy-efficient, and eco-friendly. The activity also enhances their creativity and problem-solving skills.",
+          "yt": "X7DS59aOsaM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 36,
+        "nm": "Can magnets make things levitate? 🧲",
+        "qs": [
+          {
+            "q": "What is the primary concept demonstrated in the Magnetic Levitation Display activity?",
+            "opts": {
+              "1": "Thermal expansion",
+              "2": "Electromagnetic induction",
+              "3": "Magnetic levitation"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "Why does the LED light glow when the magnet is perfectly balanced?",
+            "opts": {
+              "1": "Because the electrical circuit is complete",
+              "2": "Because of the heat produced by the magnets",
+              "3": "Because the magnets are aligned with the Earth's magnetic field"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Which component is used to fix the magnet onto the cardboard base?",
+            "opts": { "1": "Rubber band", "2": "Double-sided tape", "3": "Glue stick" },
+            "ans": "2"
+          },
+          {
+            "q": "If the LED is not glowing, which problem-solving step should you take first?",
+            "opts": {
+              "1": "Replace the battery",
+              "2": "Check all the connections",
+              "3": "Add more magnets"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "A student finds that the LED stops glowing when the magnets are moved. What does this indicate?",
+            "opts": {
+              "1": "The battery is dead",
+              "2": "The magnets are too weak",
+              "3": "The circuit is broken"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Magnetic-Levitation-Display-🧲-Intermediate",
+          "seq": 32,
+          "nm": "Build a Magnetic Levitation Display 🧲",
+          "desc": "In this activity, students will create a*Magnetic Levitation Display*, where a magnet floats in the air without any support! Using simple components like magnets, LED, wires, and a battery, they will build a model that demonstrates the concept of*magnetic repulsion and balance*. When the magnet achieves perfect levitation, the LED will glow. This fun hands-on project helps students understand futuristic technologies like*Maglev trains*, which are fast, energy-efficient, and eco-friendly. The activity also enhances their creativity and problem-solving skills.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Balance' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Balance'.",
+              "invalid_criteria": "Anything other than the word 'Balance'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of the magnets you used!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains 2–3 magnets.",
+              "invalid_criteria": "Anything other than magnets."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note and tell us: When does the LED glow?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Picture of the balanced state!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Motor Lifts Again 🏗️",
+      "desc": "Mechanical Advantage, Pulley System Efficiency, Rotational Force, Torque, Data Analysis, Design Refinement",
+      "rwc": "Tape, Battery, Switch, Motor, A Small Object",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 36,
+          "nm": "Can a motor lift weight? 🏗️",
+          "desc": "Students analyze the final build and performance data from the Motorised Pulley Challenge. They evaluate the system's efficiency, assess the mechanical advantage gained by the pulley, and calculate the motor's theoretical vs. actual lifting capacity. They will propose and justify one final design refinement.",
+          "yt": "m05snBmuHpE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 37,
+        "nm": "Can a motor lift heavy loads? 🏗️",
+        "qs": [
+          {
+            "q": "What type of motion does the motor in the pulley system create?",
+            "opts": { "1": "Vibrational motion", "2": "Rotational motion", "3": "Linear motion" },
+            "ans": "2"
+          },
+          {
+            "q": "What is the primary function of the motor in the motorized pulley system described?",
+            "opts": {
+              "1": "To generate sound",
+              "2": "To convert electrical energy into rotational motion",
+              "3": "To provide light"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Which component is used to control the operation of the motor in the pulley system?",
+            "opts": { "1": "Pulley wheel", "2": "Switch", "3": "Rubber bands" },
+            "ans": "2"
+          },
+          {
+            "q": "If the pulley system is not lifting the object, which component should you check first for any disconnection?",
+            "opts": {
+              "1": "The object tied with the thread",
+              "2": "The tape securing the object",
+              "3": "The connections between the switch, motor, and battery"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "A student wants to use heavier objects with the motorized pulley. What should they ensure to prevent system failure?",
+            "opts": {
+              "1": "The base is made of metal instead of cardboard",
+              "2": "The switch is placed closer to the battery",
+              "3": "The motor is strong enough to lift the heavier load"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Motorised-Pulley-System-🏗️-Remedial",
+          "seq": 33,
+          "nm": "Build a Motorised Pulley System 🏗️",
+          "desc": "Students analyze the final build and performance data from the Motorised Pulley Challenge. They evaluate the system's efficiency, assess the mechanical advantage gained by the pulley, and calculate the motor's theoretical vs. actual lifting capacity. They will propose and justify one final design refinement.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Motor' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Motor'.",
+              "invalid_criteria": "Anything other than the word 'Motor'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of the pulley wheel!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a pulley wheel or similar round object.",
+              "invalid_criteria": "Anything other than a pulley part."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note and tell us: Are your connections secure?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Picture of the pulley lifting weight!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Magnet Pulls the Metal 🔩",
+      "desc": "Trade-Offs in Design, Mechanical Advantage Calculation, Interface Optimization, Data Presentation",
+      "rwc": "Cardboard, Tape, Battery, Wire, Switch, Bottle",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 37,
+          "nm": "Can a magnet grab metal? 🔩",
+          "desc": "Students will analyze the final, integrated design for the Metal Extractor + Pulley Challenge. They will evaluate the efficiency of the combined electromechanical system, focusing on the interface between the lifting force of the electromagnet and the mechanical advantage of the pulley.",
+          "yt": "wjWqbx9ASas",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 38,
+        "nm": "Can a nail become a magnet? 🔩",
+        "qs": [
+          {
+            "q": "What is used to wrap around the iron nail to make an electromagnet?",
+            "opts": { "1": "Insulated copper wire", "2": "Steel wool", "3": "Plastic string" },
+            "ans": "1"
+          },
+          {
+            "q": "What is the primary purpose of using a pulley in this system?",
+            "opts": {
+              "1": "To cut the metal pieces",
+              "2": "To lift the metal easily",
+              "3": "To charge the battery"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If you wanted to substitute the copper wire in the electromagnet, which skill should you use to find alternatives?",
+            "opts": { "1": "Time Management", "2": "Problem Solving", "3": "Communication" },
+            "ans": "2"
+          },
+          {
+            "q": "If the metal pieces are not being lifted effectively, what could you try first?",
+            "opts": {
+              "1": "Add more cardboard to the stand",
+              "2": "Use a bigger metal piece",
+              "3": "Check the connections between the battery and the copper wire"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If the pulley system isn't functioning smoothly, which of these actions might help?",
+            "opts": {
+              "1": "Decrease the number of turns of copper wire",
+              "2": "Remove the cardboard stand entirely",
+              "3": "Ensure the pulley wheel is fixed properly and rotates freely"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Magnet-and-Pulley-Extractor-🔩-Intermediate",
+          "seq": 34,
+          "nm": "Build a Magnet and Pulley Extractor 🔩",
+          "desc": "Students will analyze the final, integrated design for the Metal Extractor + Pulley Challenge. They will evaluate the efficiency of the combined electromechanical system, focusing on the interface between the lifting force of the electromagnet and the mechanical advantage of the pulley.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Extractor' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Extractor'.",
+              "invalid_criteria": "Anything other than the word 'Extractor'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of an iron nail!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a large iron nail.",
+              "invalid_criteria": "Anything other than an iron nail."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note and tell us: How does it lift the metal?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Video of the extractor lifting metal!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Coils Generate Sparks ⚡",
+      "desc": "Induced Currents",
+      "rwc": "Scissors, Cardboard, Tape, Resistor, LED, Wire, Transistor, Pliers",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 38,
+          "nm": "Can coils generate real electricity? ⚡",
+          "desc": "Students will use primary coil and BC457 transistor to induce current in a secondary coil.",
+          "yt": "q2seZSX6CKo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 39,
+        "nm": "Can coils generate electricity? ⚡",
+        "qs": [
+          {
+            "q": "What is needed to create a coil for generating electricity in the script?",
+            "opts": { "1": "Copper wire", "2": "Plastic tube", "3": "Steel rod" },
+            "ans": "1"
+          },
+          {
+            "q": "What happens when the coil is moved away from the LED setup?",
+            "opts": {
+              "1": "The LED glows brighter",
+              "2": "The LED stops glowing",
+              "3": "The coil generates more electricity"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "How is the first coil connected to the LED in the script?",
+            "opts": {
+              "1": "Both ends of the coil are connected to the LED",
+              "2": "The first coil is connected to the LED through a transistor and resistor",
+              "3": "The coil is directly connected to the battery"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If your LED setup stops working, what is the first step you should take to solve the problem based on the script?",
+            "opts": {
+              "1": "Check the connections and ensure the wire insulation is removed at the ends",
+              "2": "Use a larger LED",
+              "3": "Increase the number of turns in the coil"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What should you do if you are unsure how many turns are needed in the coil to generate electricity?",
+            "opts": {
+              "1": "Consult AI assistance like ChatGPT for guidance",
+              "2": "Randomly guess the number of turns",
+              "3": "Use more powerful magnets"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Demonstrate-Electromagnetic-Induction-⚡-Remedial",
+          "seq": 35,
+          "nm": "Demonstrate Electromagnetic Induction ⚡",
+          "desc": "Students will use primary coil and BC457 transistor to induce current in a secondary coil.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Field' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Field'.",
+              "invalid_criteria": "Anything other than the word 'Field'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of the copper wire coil!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a coil of copper wire.",
+              "invalid_criteria": "Anything other than copper wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note and tell us: When does the LED glow?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Video of the induction working!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Copper Lights a Card 💌",
+      "desc": "LEDs, Battery, Copper Tape",
+      "rwc": "Handmade Gift Card, Tape, LED, Coin Cell",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 39,
+          "nm": "Can copper light a card? 💌",
+          "desc": "Student have to create a Birthday card using LEDs, coin cell and wire.",
+          "yt": "oVXr6qsUQAE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 40,
+        "nm": "Can copper light a greeting? 💌",
+        "qs": [
+          {
+            "q": "What is used to conduct electricity in the LED card project?",
+            "opts": { "1": "Rubber band", "2": "Copper tape", "3": "Plastic tape" },
+            "ans": "2"
+          },
+          {
+            "q": "What is the purpose of using a coin cell in the LED card?",
+            "opts": {
+              "1": "To attach the LED to the card",
+              "2": "To draw designs on the card",
+              "3": "To supply power to the LED"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "What should you do first when starting the LED card project?",
+            "opts": {
+              "1": "Draw an outline for the card",
+              "2": "Place the LED",
+              "3": "Color the card"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "If your LED is not glowing, what might be the problem?",
+            "opts": {
+              "1": "The colors used are too dark",
+              "2": "The drawing sheet is too thick",
+              "3": "The LED legs are connected to the wrong sides of the coin cell"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "How can you ensure the LED lights up when desired on a finished card?",
+            "opts": {
+              "1": "Attach more LEDs to the card",
+              "2": "Use more colorful designs",
+              "3": "Press the side of the card to complete the circuit"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Glowing-Birthday-Card-💌-Advanced",
+          "seq": 36,
+          "nm": "Build a Glowing Birthday Card 💌",
+          "desc": "Student have to create a Birthday card using LEDs, coin cell and wire.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Birthday' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Birthday'.",
+              "invalid_criteria": "Anything other than the word 'Birthday'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of the copper tape!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains copper tape.",
+              "invalid_criteria": "Anything other than copper tape."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note and tell us: How did you connect the battery?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Picture of your unique Birthday Card!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Magnets Float in Air 🧲",
+      "desc": "Repel Properties of magnet",
+      "rwc": "Pen, Cardboard, Tape, Straw, LED, Battery, Switch",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 40,
+          "nm": "Can magnets make things float? 🧲",
+          "desc": "In this activity, students will create a*Magnetic Levitation Display*, where a magnet floats in the air without any support! Using simple components like magnets, LED, wires, and a battery, they will build a model that demonstrates the concept of*magnetic repulsion and balance*. When the magnet achieves perfect levitation, the LED will glow. This fun hands-on project helps students understand futuristic technologies like*Maglev trains*, which are fast, energy-efficient, and eco-friendly. The activity also enhances their creativity and problem-solving skills.",
+          "yt": "X7DS59aOsaM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 41,
+        "nm": "Can magnets make things float? 🧲",
+        "qs": [
+          {
+            "q": "What do you need to fix the first magnet to the cardboard?",
+            "opts": { "1": "Double-sided tape", "2": "Nails", "3": "Glue" },
+            "ans": "1"
+          },
+          {
+            "q": "What happens when the magnets are correctly positioned with opposite poles facing each other in the Magnetic Levitation Display?",
+            "opts": {
+              "1": "The magnet floats above",
+              "2": "The magnets stick together",
+              "3": "The LED light glows immediately"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Which component is necessary for the LED to glow in the Magnetic Levitation Display?",
+            "opts": { "1": "A resistor", "2": "A capacitor", "3": "A switch" },
+            "ans": "3"
+          },
+          {
+            "q": "If the LED does not glow after setting up the Magnetic Levitation Display, what should you do?",
+            "opts": {
+              "1": "Replace the LED",
+              "2": "Check all the connections again",
+              "3": "Use more magnets"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "How can you ensure the LED glows continuously in the Magnetic Levitation Display?",
+            "opts": {
+              "1": "Maintain the perfect balance of the magnets",
+              "2": "Use stronger magnets",
+              "3": "Add more batteries"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Magnetic-Levitation-Display-🧲-Intermediate",
+          "seq": 37,
+          "nm": "Build a Magnetic Levitation Display 🧲",
+          "desc": "In this activity, students will create a*Magnetic Levitation Display*, where a magnet floats in the air without any support! Using simple components like magnets, LED, wires, and a battery, they will build a model that demonstrates the concept of*magnetic repulsion and balance*. When the magnet achieves perfect levitation, the LED will glow. This fun hands-on project helps students understand futuristic technologies like*Maglev trains*, which are fast, energy-efficient, and eco-friendly. The activity also enhances their creativity and problem-solving skills.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Balance' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Balance'.",
+              "invalid_criteria": "Anything other than the word 'Balance'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of the magnets you used!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains 2–3 magnets.",
+              "invalid_criteria": "Anything other than magnets."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note and tell us: When does the LED glow?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Picture of the balanced state!!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

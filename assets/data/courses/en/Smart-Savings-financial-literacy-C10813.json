@@ -1,0 +1,1123 @@
+{
+  "id": "Smart-Savings-financial-literacy-C10813",
+  "nm": "Smart Savings",
+  "lvl": "Level 3AK",
+  "vrt": "financial-literacy",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Idea Becomes a Business 💼",
+      "desc": "Entrepreneurship, Business Loans",
+      "rwc": "Pencil, Eraser",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 128,
+          "nm": "Can a small idea grow? 💼",
+          "desc": "In this activity, students will learn how the Pradhan Mantri Mudra Yojana (PMMY) helps small businesses start and grow. Students will design a small “Business Idea Card” and explain how a Mudra loan could support that business and create jobs in the community.",
+          "yt": "ekk-wNiaJfU",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 141,
+        "nm": "Can a loan start your business? 💼",
+        "qs": [
+          {
+            "q": "What is the Pradhan Mantri Mudra Yojana (PMMY) designed to do?",
+            "opts": {
+              "1": "Provide scholarships for education",
+              "2": "Help people start small businesses by providing loans",
+              "3": "Offer insurance for small businesses"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Why is no collateral required for loans under PMMY?",
+            "opts": {
+              "1": "To encourage large corporations to apply",
+              "2": "To make it easier for people to start a business",
+              "3": "To ensure loans are repaid on time"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If your business needs a loan of ₹3 lakh, which PMMY category should you choose?",
+            "opts": { "1": "Kishor", "2": "Tarun", "3": "Shishu" },
+            "ans": "1"
+          },
+          {
+            "q": "You want to open a stationery shop but lack funds. What would be a smart first step based on the script?",
+            "opts": {
+              "1": "Apply for a PMMY loan with a well-thought-out plan",
+              "2": "Wait until you save up enough money",
+              "3": "Hire employees immediately"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Imagine your business idea is to start an online craft shop. How can you use the PMMY to create jobs according to the script?",
+            "opts": {
+              "1": "Hire a delivery person or assistant",
+              "2": "Invest all funds in marketing",
+              "3": "Focus solely on product development"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-Your-Own-Business-Idea-Card-💼-Basic",
+          "seq": 122,
+          "nm": "Design Your Own Business Idea Card 💼",
+          "desc": "In this activity, students will learn how the Pradhan Mantri Mudra Yojana (PMMY) helps small businesses start and grow. Students will design a small “Business Idea Card” and explain how a Mudra loan could support that business and create jobs in the community.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Name one benefit of a Mudra loan, then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types any one of the following words: Growth / Jobs / Business, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Growth / Jobs / Business, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Growth / Jobs / Business, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Click a photo of Flowers and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "Any Flower",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Flower"
+            }
+            
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Small Shop Starts Here 🏪",
+      "desc": "Entrepreneurship, Business Loans",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 129,
+          "nm": "Can Ravi start printing shop? 🏪",
+          "desc": "In this activity, students will learn in a simple way how small businesses work and how government schemes like Pradhan Mantri Mudra Yojana (PMMY) help people start earning. Students will think of a small business idea (like a food stall or shop) and draw it in their notebook. They will also write how this business can help them earn money and support their family.",
+          "yt": "nr4HuGYyqMI",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 142,
+        "nm": "Which loan fits your business? 🏪",
+        "qs": [
+          {
+            "q": "What is the purpose of the Pradhan Mantri Mudra Yojana (PMMY)?",
+            "opts": {
+              "1": "To offer scholarships for international studies",
+              "2": "To provide free education to students",
+              "3": "To help people start and grow small businesses"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "Why is the Pradhan Mantri Mudra Yojana important for SDG 8?",
+            "opts": {
+              "1": "It focuses on environmental conservation",
+              "2": "It supports technological advancements",
+              "3": "It promotes decent work and economic growth"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "Which loan category should Ravi initially apply for if he is just starting his printing business?",
+            "opts": { "1": "Tarun", "2": "Kishor", "3": "Shishu" },
+            "ans": "3"
+          },
+          {
+            "q": "Ravi needs to decide how to fund his new printing shop. What should he consider?",
+            "opts": {
+              "1": "Applying for a Shishu loan under PMMY",
+              "2": "Buying expensive equipment immediately",
+              "3": "Hiring more staff before starting"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Ravi wants to expand his business after a year of successful operation. Which loan category should he consider?",
+            "opts": { "1": "Tarun Plus", "2": "Kishor", "3": "Shishu" },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-a-Simple-Business-Card-🏪-Remedial",
+          "seq": 123,
+          "nm": "Design a Simple Business Card 🏪",
+          "desc": "In this activity, students will learn in a simple way how small businesses work and how government schemes like Pradhan Mantri Mudra Yojana (PMMY) help people start earning. Students will think of a small business idea (like a food stall or shop) and draw it in their notebook. They will also write how this business can help them earn money and support their family.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Name your business idea, then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types any one of the following words: Food / Shop / Service, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Food / Shop / Service, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Food / Shop / Service, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Click a photo of a plant or tree and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "Plant / Tree",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Plant / Tree"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & explain your Business Idea and how it will help others"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Click a clear photo of your Business Idea Card (Mudra Basics) and upload it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Future Gets Saved Early 🌸",
+      "desc": "Sukanya Samriddhi Yojana",
+      "rwc": "Pencil, Eraser",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 130,
+          "nm": "Can girls save for future? 🌸",
+          "desc": "In this activity, students will be able to explain how the Sukanya Samriddhi Yojana helps girls with education and money, supporting equality and future opportunities.",
+          "yt": "ASCU2dasN6g",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 143,
+        "nm": "Can you save for your daughter? 👧",
+        "qs": [
+          {
+            "q": "What is the Sukanya Samriddhi Account?",
+            "opts": {
+              "1": "A private investment plan for retirement",
+              "2": "A government saving scheme for the future of the girl child",
+              "3": "A loan scheme for purchasing a home"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Who is eligible to open a Sukanya Samriddhi Account?",
+            "opts": {
+              "1": "Any individual or organization",
+              "2": "Parents or legal guardians of a girl child under 10 years",
+              "3": "Only the girl child herself"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "What is the minimum annual deposit required for the Sukanya Samriddhi Account?",
+            "opts": { "1": "500 rupees", "2": "1,000 rupees", "3": "250 rupees" },
+            "ans": "3"
+          },
+          {
+            "q": "If a parent wants to open a Sukanya Samriddhi Account for their two daughters, what is the maximum number of accounts they can open?",
+            "opts": { "1": "Three accounts", "2": "Two accounts", "3": "One account" },
+            "ans": "2"
+          },
+          {
+            "q": "A family wants to save for their daughter's education and marriage using a government scheme. Which account should they consider?",
+            "opts": {
+              "1": "Sukanya Samriddhi Account",
+              "2": "Recurring Deposit Account",
+              "3": "Fixed Deposit Account"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Answer-the-Sukanya-Scheme-Questions-🌸-Basic",
+          "seq": 124,
+          "nm": "Answer the Sukanya Scheme Questions 🌸",
+          "desc": "In this activity, students will be able to explain how the Sukanya Samriddhi Yojana helps girls with education and money, supporting equality and future opportunities.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Name one benefit of Sukanya Samriddhi Yojana, then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types any one of the following words: Education / Savings / Security, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Education / Savings / Security, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Education / Savings / Security, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Click a photo of a book and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "Book",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a book"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & explain Sukanya Samriddhi Yojana from your activity"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Click a clear photo of your Sukanya Samriddhi answers and upload it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Girl's Goal Has a Plan 🎯",
+      "desc": "Government Savings Schemes",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 131,
+          "nm": "Can Sneha become a doctor? 🎯",
+          "desc": "In this activity, students will learn in an easy way about Sukanya Samriddhi Yojana and how it helps families save money for a girl’s education and future needs. Students will create a simple “Future Plan Poster” to show how saving money early can help in achieving education goals and better opportunities for girls.",
+          "yt": "XZkZB2WHET0",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 144,
+        "nm": "Can a scheme build her future? 🌟",
+        "qs": [
+          {
+            "q": "What is the name of the government saving scheme mentioned in the script?",
+            "opts": {
+              "1": "Sukanya Samriddhi Yojana",
+              "2": "Beti Bachao Beti Padhao",
+              "3": "Kanyashree Prakalpa"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Who is eligible to benefit from the Sukanya Samriddhi Yojana?",
+            "opts": {
+              "1": "Girl children who are 10 years old or younger",
+              "2": "All children under 18",
+              "3": "Only college-going students"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How can Sneha's parents start saving for her future education through the scheme?",
+            "opts": {
+              "1": "By opening a regular savings account",
+              "2": "By investing in stock markets",
+              "3": "By opening a Sukanya Samriddhi Yojana account"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If a family has two daughters, what is the maximum amount they can deposit in Sukanya Samriddhi Yojana per year for both daughters?",
+            "opts": { "1": "1,50,000 rupees", "2": "2,50,000 rupees", "3": "3,00,000 rupees" },
+            "ans": "2"
+          },
+          {
+            "q": "How does the Sukanya Samriddhi Yojana differ from a Piggy Bank?",
+            "opts": {
+              "1": "The government pays yearly interest, increasing savings",
+              "2": "It requires no documentation",
+              "3": "It allows for unlimited withdrawals"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Sukanya-Future-Plan-Poster-🎯-Remedial",
+          "seq": 125,
+          "nm": "Build a Sukanya Future Plan Poster 🎯",
+          "desc": "In this activity, students will learn in an easy way about Sukanya Samriddhi Yojana and how it helps families save money for a girl’s education and future needs. Students will create a simple “Future Plan Poster” to show how saving money early can help in achieving education goals and better opportunities for girls.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "What is the goal of saving for girls, then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types any one of the following words: Education / Future, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Education / Future, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Education / Future, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Click a photo of a financial literacy notebook and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "Notebook",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Notebook"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & explain your Sukanya poster and its benefit"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Click a clear photo of your Sukanya Future Poster and upload it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Money Plans the Future 🗺️",
+      "desc": "Saving and Investment Options",
+      "rwc": "Pencil, Eraser",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 132,
+          "nm": "Can planning protect your future? 🗺️",
+          "desc": "In this activity, students will create an Investment Wheel by listing five different savings and investment options. They will link their wheel to SDG 1: No Poverty by understanding how financial services help everyone.",
+          "yt": "4Xo1B-Ihi9U",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 145,
+        "nm": "Can saving fight poverty? 💪",
+        "qs": [
+          {
+            "q": "What is the main objective of SDG 1 mentioned in the script?",
+            "opts": {
+              "1": "Promote gender equality",
+              "2": "Ensure clean water and sanitation",
+              "3": "End poverty"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "Why did Aisha's parents save and invest money?",
+            "opts": {
+              "1": "To go on a vacation",
+              "2": "To buy a new house",
+              "3": "To support Aisha's dream of becoming a doctor"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "What is the benefit of keeping money in a bank or post office as explained by Aisha?",
+            "opts": {
+              "1": "It helps in immediate spending",
+              "2": "Money is safe and earns interest",
+              "3": "Money is only safe"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If you were to design a creative workshop like Aisha, what resource could you use to make it engaging?",
+            "opts": {
+              "1": "Plain text documents",
+              "2": "Interactive activities and visuals",
+              "3": "Formal lectures"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "You want to help your community understand financial literacy. What decision can you make to effectively spread awareness?",
+            "opts": {
+              "1": "Rely solely on social media posts",
+              "2": "Organize informative and interactive workshops",
+              "3": "Distribute pamphlets without explanation"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Financial-Planning-Poster-🗺️-Intermediate",
+          "seq": 126,
+          "nm": "Build a Financial Planning Poster 🗺️",
+          "desc": "In this activity, students will create an Investment Wheel by listing five different savings and investment options. They will link their wheel to SDG 1: No Poverty by understanding how financial services help everyone.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a ⭐ if you feel confident, or 👎 if you are confused",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Name one financial option from your investment wheel, then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types any one of the following words: Savings / FD / RD / Stocks / Insurance, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Savings / FD / RD / Stocks / Insurance, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Savings / FD / RD / Stocks / Insurance, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Click a photo of a pen or pencil and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "Pen / Pencil",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than Pen/Pencil"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & explain your Financial Planning poster"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Click a clear photo of your Financial Planning poster and upload it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Plans Protect the Future 🛡️",
+      "desc": "Financial Services",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 133,
+          "nm": "Can saving protect from loss? 🛡️",
+          "desc": "In this activity, students will create a Financial Planning poster covering important money topics like saving, investing, planning for taxes, retirement, and protecting against financial risks. They will learn how these skills connect to SDG 4: Quality Education by helping develop decision-making and critical thinking for real-life financial success.",
+          "yt": "gUlvSIRomUo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 146,
+        "nm": "Can investing protect your future? 📊",
+        "qs": [
+          {
+            "q": "What was the amount Aman saved from his first salary?",
+            "opts": { "1": "₹5,000", "2": "₹15,000", "3": "₹10,000" },
+            "ans": "3"
+          },
+          {
+            "q": "What is the main goal of the lesson in the script?",
+            "opts": {
+              "1": "Learn Smart Financial Planning",
+              "2": "To learn how to save money",
+              "3": "Understand insurance policies"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "If a person has ₹10,000 to invest, how should they divide it according to the diversification example in the script?",
+            "opts": {
+              "1": "₹5,000 in stocks, ₹3,000 in savings, ₹2,000 in mutual funds",
+              "2": "₹4,000 in gold, ₹4,000 in FD, ₹2,000 in savings",
+              "3": "₹5,000 in FD/Savings, ₹3,000 in Mutual Fund, ₹2,000 in Stocks"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "Aman wants to invest his savings for both growth and protection. Which two financial actions should he consider?",
+            "opts": {
+              "1": "Saving money in a fixed deposit only",
+              "2": "Investing and buying insurance",
+              "3": "Putting all money in mutual funds and stocks"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Anjali is planning her finances and wants to ensure she is protected against unexpected medical emergencies. What should she prioritize in her financial plan?",
+            "opts": {
+              "1": "Saving money in a savings account",
+              "2": "Investing heavily in stocks",
+              "3": "Getting health insurance"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-Your-Financial-Protection-Plan-🛡️-Remedial",
+          "seq": 127,
+          "nm": "Build Your Financial Protection Plan 🛡️",
+          "desc": "In this activity, students will create a Financial Planning poster covering important money topics like saving, investing, planning for taxes, retirement, and protecting against financial risks. They will learn how these skills connect to SDG 4: Quality Education by helping develop decision-making and critical thinking for real-life financial success.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a ⭐ if you feel confident, or 👎 if you are confused",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Name one part of financial planning, then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types any one of the following words: Saving / Investing / Tax / Insurance, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Saving / Investing / Tax / Insurance, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Saving / Investing / Tax / Insurance, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Draw anything on paper and click its photo and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "Clear drawing photo",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a drawing photo"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & explain how interest helps money grow and support economy"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Click a clear photo of your Financial Protection Plan (advanced) and upload it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Interest Earns Extra Back 🧮",
+      "desc": "Simple Interest",
+      "rwc": "Pencil, Eraser",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 134,
+          "nm": "Can interest grow Ankit's money? 🧮",
+          "desc": "In this activity, students solve two Simple Interest questions using the given values, compare which one gives higher interest, and share a photo of their work before taking the quiz.",
+          "yt": "u8Cqxvw85j0",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 147,
+        "nm": "Which bank gives more interest? 🏦",
+        "qs": [
+          {
+            "q": "What does “P” stand for in the Simple Interest formula?",
+            "opts": { "1": "Profit", "2": "Principal", "3": "Percentage" },
+            "ans": "2"
+          },
+          {
+            "q": "Why do people keep money in the bank?",
+            "opts": {
+              "1": "To keep it safe and earn interest",
+              "2": "Only for spending",
+              "3": "To hide it"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "SI for ₹200 at 6% for 1 year is:",
+            "opts": { "1": "₹10", "2": "₹8", "3": "₹12" },
+            "ans": "3"
+          },
+          {
+            "q": "You want to earn more interest. Which bank will you choose?",
+            "opts": { "1": "Bank giving 5%", "2": "Bank giving 3%", "3": "Bank giving 0%" },
+            "ans": "1"
+          },
+          {
+            "q": "Which is a good rule for growing your money?",
+            "opts": {
+              "1": "Never save money",
+              "2": "Save in bank to earn interest",
+              "3": "Spend first, save later"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Solve-Two-Interest-Calculations-🧮-Intermediate",
+          "seq": 128,
+          "nm": "Solve Two Interest Calculations 🧮",
+          "desc": "In this activity, students solve two Simple Interest questions using the given values, compare which one gives higher interest, and share a photo of their work before taking the quiz.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Which option gives more interest, then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types any one of the following words: Simple / Compund, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: One / Two, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Simple/ Compund, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Click a photo of a table or chair and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "Table / Chair",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Table / Chair"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & explain how you calculated Simple Interest in your activity"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Click a clear photo of your Simple Interest activity and upload it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Growth Powers the Economy 📊",
+      "desc": "Interest, Banking",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 135,
+          "nm": "Can interest build an economy? 📊",
+          "desc": "In this activity, students will explore how interest works in saving, borrowing, and investing, and how it drives business growth, job creation, and economic development, all linked to SDG 8: Decent Work and Economic Growth. They will create an artifact to demonstrate their understanding of how financial decisions impact the economy.",
+          "yt": "6e_wZF_hjGo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 148,
+        "nm": "Can interest grow an economy? 📈",
+        "qs": [
+          {
+            "q": "What is the main topic of the video?",
+            "opts": {
+              "1": "The Power of Interest",
+              "2": "The Importance of Saving",
+              "3": "The Basics of Banking"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How does interest contribute to economic growth according to the video?",
+            "opts": {
+              "1": "By reducing taxes",
+              "2": "By helping businesses grow and creating jobs",
+              "3": "By increasing inflation"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If you save ₹1,000 in a bank with an interest rate of 3% per year, how much interest will you earn in one year?",
+            "opts": { "1": "₹10", "2": "₹50", "3": "₹30" },
+            "ans": "3"
+          },
+          {
+            "q": "A person takes a loan to start a business. What is a possible positive outcome of this action, based on decision-making skills discussed in the video?",
+            "opts": {
+              "1": "Decreasing the business's revenue",
+              "2": "Increasing the amount of debt",
+              "3": "Creating new job opportunities"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "A government official is planning to use interest to fund a new infrastructure project. What should they consider to make a smart decision?",
+            "opts": {
+              "1": "The popularity of the project",
+              "2": "The color of the infrastructure",
+              "3": "The long-term economic impact of the project"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Draw-the-Interest-Growth-Panels-📊-Remedial",
+          "seq": 129,
+          "nm": "Draw the Interest Growth Panels 📊",
+          "desc": "In this activity, students will explore how interest works in saving, borrowing, and investing, and how it drives business growth, job creation, and economic development, all linked to SDG 8: Decent Work and Economic Growth. They will create an artifact to demonstrate their understanding of how financial decisions impact the economy.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "What helps money grow over time, then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types the word: Interest, then the response is valid OR If the student sends a voice note and the response includes the word: Interest, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include the word: Interest, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Show your school bag and click its photo and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "School bag",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a School bag"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & explain how interest helps money grow"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Click a clear photo of your Interest poster and upload it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Scan Pay Done 📲",
+      "desc": "Digital Payments",
+      "rwc": "Pencil, Eraser",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 136,
+          "nm": "Can a QR replace cash? 📲",
+          "desc": "In this activity, students will create a “Digital Payments Puzzle” poster that illustrates the key modes of digital money transfer (UPI via QR/contacts, IMPS, NEFT/RTGS via internet or mobile banking) and shows how each supports SDG 8: Decent Work & Economic Growth. They will illustrate the SDG 8 theme in the centre, summarize its key benefits around it, and depict various digital payment methods in the other panels.",
+          "yt": "bzPVpR9pUvo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 149,
+        "nm": "Can UPI replace your wallet? 📲",
+        "qs": [
+          {
+            "q": "What does UPI stand for in the context of digital payments?",
+            "opts": {
+              "1": "Universal Payments Interface",
+              "2": "Unified Payments Interface",
+              "3": "Universal Payment Index"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "How do digital payments support SDG 8 according to the script?",
+            "opts": {
+              "1": "By reducing the need for physical currency and promoting global trade",
+              "2": "By enabling instant payments that strengthen local economies and create jobs",
+              "3": "By supporting financial institutions in developing new banking products"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Which method allows you to pay instantly without worrying about exact change, according to the script?",
+            "opts": {
+              "1": "Scanning a QR code with your phone",
+              "2": "Writing a check",
+              "3": "Using coins and cash"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "You are a shopkeeper who wants to restock quickly after a busy day. Which payment method should you encourage customers to use to ensure quick access to funds?",
+            "opts": {
+              "1": "Digital payments via UPI",
+              "2": "Credit card payments",
+              "3": "Cash payments"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "You are planning to pay a daily-wage worker as soon as they complete their work. What is the most efficient payment method according to the script?",
+            "opts": { "1": "Paying in cash", "2": "Digital transfer", "3": "Writing a check" },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-the-Digital-Payments-Puzzle-📲-Advanced",
+          "seq": 130,
+          "nm": "Build the Digital Payments Puzzle 📲",
+          "desc": "In this activity, students will create a “Digital Payments Puzzle” poster that illustrates the key modes of digital money transfer (UPI via QR/contacts, IMPS, NEFT/RTGS via internet or mobile banking) and shows how each supports SDG 8: Decent Work & Economic Growth. They will illustrate the SDG 8 theme in the centre, summarize its key benefits around it, and depict various digital payment methods in the other panels.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a ⭐ if you feel confident, or 👎 if you are confused",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Name one digital payment method, then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types any one of the following words: UPI / IMPS / NEFT / RTGS, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: UPI / IMPS / NEFT / RTGS, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: UPI / IMPS / NEFT / RTGS, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Click a photo of a bottle and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "Bottle",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Bottle"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & explain your Digital Payments poster and its benefits"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Click a clear photo of your Digital Payments puzzle poster and upload it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Payments Go Digital 💳",
+      "desc": "Digital Payments",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 137,
+          "nm": "Can apps move your money? 💳",
+          "desc": "In this activity, students will learn in an easy way about important money topics like saving, investing, tax planning, retirement, and financial protection. Students will create a simple “Financial Planning Poster” to show how these ideas help in managing money and making better decisions for the future. They will also understand how these skills connect to SDG 4: Quality Education.",
+          "yt": "MWqfInivuaE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 150,
+        "nm": "Which payment is truly instant? ⚡",
+        "qs": [
+          {
+            "q": "What does UPI stand for?",
+            "opts": {
+              "1": "Unified Payments Interface",
+              "2": "Universal Payment Integration",
+              "3": "United Payment Infrastructure"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Which digital payment method is typically not instant and may take some time?",
+            "opts": { "1": "IMPS", "2": "UPI", "3": "NEFT" },
+            "ans": "3"
+          },
+          {
+            "q": "What is the first step in making a digital payment?",
+            "opts": {
+              "1": "Open the app or website",
+              "2": "Confirm using PIN or OTP",
+              "3": "Enter the amount"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "If you need to transfer a large amount of money immediately, which method should you choose?",
+            "opts": { "1": "RTGS", "2": "NEFT", "3": "UPI" },
+            "ans": "1"
+          },
+          {
+            "q": "You are at a store with no cash. What should you do to pay quickly using a mobile app?",
+            "opts": {
+              "1": "Wait for NEFT transfer",
+              "2": "Use RTGS for immediate payment",
+              "3": "Scan using a payment app and pay instantly"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Complete-the-Digital-Payments-Chart-💳-Remedial",
+          "seq": 131,
+          "nm": "Complete the Digital Payments Chart 💳",
+          "desc": "In this activity, students will learn in an easy way about important money topics like saving, investing, tax planning, retirement, and financial protection. Students will create a simple “Financial Planning Poster” to show how these ideas help in managing money and making better decisions for the future. They will also understand how these skills connect to SDG 4: Quality Education.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Name one financial concept you learned, then either type your answer in a single word or send a voice note.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a voice note",
+              "valid_criteria": "If the student types any one of the following words: Saving / Investing / Planning, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Saving / Investing / Planning, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Saving / Investing / Planning, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Show your school bag and click its photo and upload it",
+              "unguided_text": "Click any picture around you and share it!",
+              "valid_criteria": "School bag",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a School bag"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & explain how digital payments help people and businesses"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Click a clear photo of your Digital Payments chart and upload it"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

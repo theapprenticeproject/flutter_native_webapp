@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "tapapp-app-tap",
+    "staging": "tapapp-app-tap"
+  },
+  "targets": {},
+  "etags": {}
+}

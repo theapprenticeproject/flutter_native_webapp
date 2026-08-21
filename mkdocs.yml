@@ -1,0 +1,37 @@
+site_name: TapApp Documentation
+site_description: End-to-end developer documentation for TapApp
+docs_dir: documentation
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Overview: index.md
+  - Getting Started: getting-started.md
+  - Architecture: architecture.md
+  - Frontend: frontend.md
+  - Learning Flows: learning-flows.md
+  - API Reference: api-reference.md
+  - Frappe Backend: frappe-backend.md
+  - Content and Assets: content-and-assets.md
+  - Deployment: deployment.md
+  - Testing and Operations: testing-and-operations.md

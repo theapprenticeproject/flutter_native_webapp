@@ -1,0 +1,64 @@
+{
+  "registry_id": "activity_registry",
+  "version": "4.0.0",
+  "language": "en",
+  "component_bindings": [
+    {
+      "step_id": "AF-004",
+      "component": "VideoPlayer",
+      "source": "courses/{lang}/{course_id}.json",
+      "path": "units[{unit_index}].vids[0]",
+      "fields": ["id", "nm", "desc", "yt", "pts"]
+    },
+    {
+      "step_id": "AF-007",
+      "component": "SubmissionCard",
+      "source": "courses/{lang}/{course_id}.json",
+      "path": "units[{unit_index}].assigns[0]",
+      "fields": ["id", "nm", "desc", "steps"],
+      "step_selector": "match_sub_types_to_profile"
+    },
+    {
+      "step_id": "AF-008",
+      "component": "SubmissionReview",
+      "source": "review_result",
+      "path": "current",
+      "fields": ["review"]
+    },
+    {
+      "step_id": "AF-QUIZ-QUESTION",
+      "component": "QuizQuestion",
+      "source": "courses/{lang}/{course_id}.json",
+      "path": "units[{unit_index}].quiz.qs[{quiz_index}]",
+      "fields": ["q", "opts", "ans", "hint"]
+    },
+    {
+      "step_id": "AF-QUIZ-CORRECT",
+      "component": "QuizCorrectFeedback",
+      "source": "generated",
+      "kind": "celebration"
+    },
+    {
+      "step_id": "AF-QUIZ-WRONG",
+      "component": "QuizFeedback",
+      "source": "courses/{lang}/{course_id}.json",
+      "path": "units[{unit_index}].quiz.qs[{quiz_index}]",
+      "fields": ["ans", "exp"],
+      "cheer_up_source": "generated"
+    },
+    {
+      "step_id": "AF-011",
+      "component": "QuizSummary",
+      "source": "session_state",
+      "path": null,
+      "fields": ["quiz_correct", "quiz_total"]
+    },
+    {
+      "step_id": "AF-UNIT-TRANSITION",
+      "component": "UnitTransitionCard",
+      "source": "courses/{lang}/{course_id}.json",
+      "path": "units[{next_unit_index}]",
+      "fields": ["nm"]
+    }
+  ]
+}

@@ -1,0 +1,790 @@
+{
+  "id": "OctoStudio-coding-C1567",
+  "nm": "OctoStudio",
+  "lvl": "Level 3AK",
+  "vrt": "coding",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Hero Clears the Air 🌿",
+      "desc": "Concepts: Animation sequencing, message passing (synchronization), scene transitions, cause-effect representation (pollution vs clean environment). Blocks: When Play, Say, Wait, Send, When Received, Hide, Show, Switch Backdrop",
+      "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 101,
+          "nm": "Can a hero clean the air? 🌿",
+          "desc": "In this activity, students will create an animation where a “Clean Air Hero” takes action to reduce pollution in their surroundings. Using OctoStudio, they will design a scene where polluted air gets cleaned through actions like switching off smoke sources or activating clean elements like trees or wind. Students will understand the importance of clean air in fighting climate change while practising event-based coding, sequencing, and simple interactivity.",
+          "yt": "OUl1KF7JPtM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 104,
+        "nm": "Can code clean the air? 🌫️",
+        "qs": [
+          {
+            "q": "ಒಕ್ಟೋಸ್ಟುಡಿಯೋದಲ್ಲಿ ಒಂದು ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ ಅನೇಕ ದೃಶ್ಯಗಳನ್ನು ಬದಲಾಯಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+            "opts": {
+              "1": "ಸೇ ಬ್ಲಾಕ್",
+              "2": "ವೆನ್ ಪ್ಲೇ ಬ್ಲಾಕ್",
+              "3": "ಸ್ವಿಚ್ ಬ್ಯಾಕ್‌ಡ್ರಾಪ್ ಬ್ಲಾಕ್"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಅನಿಮೇಷನ್ ರಚನೆ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿ ಸೆಂಡ್ ಬ್ಲಾಕ್‌ನ ಉದ್ದೇಶವೇನು?",
+            "opts": {
+              "1": "ಮತ್ತೊಂದು ಸ್ಪ್ರೈಟ್ ಕ್ರಿಯೆ ಪ್ರಾರಂಭಿಸಲು ಸಂದೇಶ ಕಳುಹಿಸಲು",
+              "2": "ಹಿನ್ನೆಲೆ ಬದಲಾಯಿಸಲು",
+              "3": "ಸ್ಪ್ರೈಟ್‌ಗಳನ್ನು ಮರೆಮಾಡಲು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಹುಡುಗಿಯ ಸಂಭಾಷಣೆ ನಿರ್ದಿಷ್ಟ ಸಮಯ ಕಾಣಿಸಬೇಕಿದ್ದರೆ ಯಾವ ಬ್ಲಾಕ್‌ಗಳು ಬಳಸಬೇಕು?",
+            "opts": {
+              "1": "ಸೆಂಡ್ ಮತ್ತು ವೇಟ್ ಬ್ಲಾಕ್‌ಗಳು",
+              "2": "ಸೇ ಮತ್ತು ವೇಟ್ ಬ್ಲಾಕ್‌ಗಳು",
+              "3": "ಸ್ವಿಚ್ ಬ್ಯಾಕ್‌ಡ್ರಾಪ್ ಮತ್ತು ಹೈಡ್ ಬ್ಲಾಕ್‌ಗಳು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಮಲಿನ ವಾತಾವರಣದಿಂದ ಶುದ್ಧ ವಾತಾವರಣಕ್ಕೆ ಪರಿವರ್ತನೆ ತೋರಿಸಲು ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೇಗೆ ಮಾಡಬಹುದು?",
+            "opts": {
+              "1": "ಸ್ವಿಚ್ ಬ್ಯಾಕ್‌ಡ್ರಾಪ್, ಸೇ ಮತ್ತು ಸೆಂಡ್ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಸಂಯೋಜಿಸಿ",
+              "2": "ಪೇಂಟ್ ಎಡಿಟರ್ ಬಳಸಿ ಮೋಡ ಚಿತ್ರಿಸಿ",
+              "3": "ಕೇವಲ ಸೇ ಬ್ಲಾಕ್ ಬಳಸಿ ಪರಿವರ್ತನೆ ವಿವರಿಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಹೊಗೆ ಕಾಣಿಸಿಕೊಂಡ ನಂತರ ವೇಗವಾಗಿ ಸ್ವಚ್ಛ ಮಾಡುವ ಹೊಸ ಪಾತ್ರ ಸೇರಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಬೇಕು?",
+            "opts": {
+              "1": "ಹೊಸ ಪಾತ್ರದ ಕ್ರಿಯೆ ಪ್ರಾರಂಭಿಸಲು ಸೆಂಡ್ ಬ್ಲಾಕ್ ಬಳಸಿ",
+              "2": "ಪಾತ್ರ ಪರಿಚಯಿಸಲು ಸೇ ಬ್ಲಾಕ್ ಬಳಸಿ",
+              "3": "ಪಾತ್ರ ಚಿತ್ರಿಸಲು ಪೇಂಟ್ ಎಡಿಟರ್ ಬಳಸಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Animate-a-Clean-Air-Hero-🌿-Basic",
+          "seq": 96,
+          "nm": "Animate a Clean Air Hero 🌿",
+          "desc": "In this activity, students will create an animation where a “Clean Air Hero” takes action to reduce pollution in their surroundings. Using OctoStudio, they will design a scene where polluted air gets cleaned through actions like switching off smoke sources or activating clean elements like trees or wind. Students will understand the importance of clean air in fighting climate change while practising event-based coding, sequencing, and simple interactivity.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 'Clean' ಎಂಬ ಪದವನ್ನು ಟೈಪ್ ಮಾಡಿ.",
+              "unguided_text": "ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "valid_criteria": "Response matching the word 'Clean'.",
+              "invalid_criteria": "Anything other than the word 'Clean'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಇರುವ ಗಿಡದ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "valid_criteria": "Image contains a real plant found at home or nearby.",
+              "invalid_criteria": "Anything other than a plant (e.g., toys, electronics, or unrelated objects)."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ವಾಯ್ಸ್ ನೋಟ್/ಪಠ್ಯ ಹಂಚಿಕೊಳ್ಳಿ ಮತ್ತು ಹೇಳಿ: ಅನಿಮೇಷನ್‌ನಲ್ಲಿ sprites ಹೇಗೆ ಸಂವಹನ ನಡೆಸುತ್ತವೆ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Clean Air Hero ಅನಿಮೇಷನ್ ಪ್ರಾಜೆಕ್ಟ್‌ನ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Seed Grows a Hero 🌱",
+      "desc": "Concepts: Animation, conditionals, events Blocks: When tapped, Move, When touching, Send, Hide, Show, Wait",
+      "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 102,
+          "nm": "Can a seed become a tree? 🌱",
+          "desc": "In this activity, students will build a Climate Hero animation in OctoStudio. They’ll design a scene where a kid, guided by an elder, plants a seed, waters it, and watches it grow into a tree using show/hide, say, and send-and-receive blocks. Understand how trees help reduce climate change while practising event-driven coding and sequencing.",
+          "yt": "wDW1RLUuB9g",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 105,
+        "nm": "Can a sprite speak? 🗣️",
+        "qs": [
+          {
+            "q": "ಈ ಅನಿಮೇಷನ್ ಚಟುವಟಿಕೆಯ ಮುಖ್ಯ ಗುರಿ ಏನು?",
+            "opts": {
+              "1": "ಕಾರುಗಳಿಗೆ ನೀರು ಹಾಕುವ ಪಾತ್ರ ಅನಿಮೇಟ್ ಮಾಡಲು",
+              "2": "ಜಾಗತಿಕ ತಾಪಮಾನದ ಬಗ್ಗೆ ಮಾತನಾಡುವ ಪಾತ್ರ ಅನಿಮೇಟ್ ಮಾಡಲು",
+              "3": "ಪರಿಸರ ಸಹಾಯಕ್ಕೆ ಮರ ನೆಡುವ ಪಾತ್ರ ಅನಿಮೇಟ್ ಮಾಡಲು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಈ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಸ್ಪ್ರೈಟ್ ಮಾತನಾಡುವಂತೆ ಮಾಡಲು ಯಾವ ಬ್ಲಾಕ್ ವರ್ಗ ಬಳಸಲಾಗುತ್ತದೆ?",
+            "opts": { "1": "ವರ್ಡ್ಸ್ ಅಂಡ್ ಸೌಂಡ್ಸ್", "2": "ಮೋಷನ್", "3": "ಕಂಟ್ರೋಲ್" },
+            "ans": "1"
+          },
+          {
+            "q": "ಈ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಸೇ ಬ್ಲಾಕ್ ಏನು ಮಾಡುತ್ತದೆ?",
+            "opts": {
+              "1": "ಸ್ಪ್ರೈಟ್ ನೆಗೆಯುವಂತೆ ಮಾಡುತ್ತದೆ",
+              "2": "ಸ್ಪ್ರೈಟ್ ಸಂದೇಶ ಹೇಳುವಂತೆ ಮಾಡುತ್ತದೆ",
+              "3": "ಸ್ಪ್ರೈಟ್ ಮುಂದೆ ಚಲಿಸುವಂತೆ ಮಾಡುತ್ತದೆ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಮುದುಕ ಸ್ಪ್ರೈಟ್ ಏನು ಹೇಳುತ್ತದೆ?",
+            "opts": {
+              "1": "\"ಮರ ನೆಡುವುದು ನಮ್ಮ ಭೂಮಿಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ.\"",
+              "2": "\"ಪ್ರತಿದಿನ ಗಿಡಗಳಿಗೆ ನೀರು ಹಾಕಿ.\"",
+              "3": "\"ಭೂಮಿಯನ್ನು ಉಳಿಸೋಣ!\""
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಬೀಜ ಸ್ಪ್ರೈಟ್ 'plant' ಸಂದೇಶ ಸ್ವೀಕರಿಸಿದಾಗ ಏನಾಗುತ್ತದೆ?",
+            "opts": {
+              "1": "ಬೀಜ ಮಾಯವಾಗುತ್ತದೆ",
+              "2": "ನೀರಿನ ಸ್ಪ್ರೈಟ್ ಮಾಯವಾಗುತ್ತದೆ",
+              "3": "ಬೀಜ ಗಿಡವಾಗಿ ಬೆಳೆದು ಪರದೆಯ ಮೇಲೆ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Animate-a-Tree-Planting-Story-🌱-Remedial",
+          "seq": 97,
+          "nm": "Animate a Tree Planting Story 🌱",
+          "desc": "In this activity, students will build a Climate Hero animation in OctoStudio. They’ll design a scene where a kid, guided by an elder, plants a seed, waters it, and watches it grow into a tree using show/hide, say, and send-and-receive blocks. Understand how trees help reduce climate change while practising event-driven coding and sequencing.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 'Hero' ಎಂಬ ಪದವನ್ನು ಟೈಪ್ ಮಾಡಿ.",
+              "unguided_text": "ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "valid_criteria": "Response matching the word 'Hero'.",
+              "invalid_criteria": "Anything other than the word 'Hero'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಇರುವ ಗಿಡದ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "valid_criteria": "Image contains a real plant found at home or nearby.",
+              "invalid_criteria": "Anything other than a plant (e.g., toys, electronics, or unrelated objects)."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ವಾಯ್ಸ್ ನೋಟ್/ಪಠ್ಯ ಹಂಚಿಕೊಳ್ಳಿ ಮತ್ತು ಹೇಳಿ: ಹವಾಮಾನ ಬದಲಾವಣೆ ಎಂದರೇನು ಮತ್ತು ಅದಕ್ಕೆ ಕಾರಣವೇನು?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "OctoStudio ವೃಕ್ಷಾರೋಪಣ ಅನಿಮೇಷನ್‌ನ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Share the Leftovers 🍱",
+      "desc": "Concepts: Event-based programming, message passing (broadcast & receive), sequencing of actions, social awareness through animation, sprite interaction, timing and synchronization. Blocks/Functions: When Play, Say, Wait, Send, When Received, Go To (motion), Text Block, Speed control.",
+      "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 103,
+          "nm": "Can sharing stop food waste? 🍱",
+          "desc": "In this activity, students will use OctoStudio to create a short animated conversation where a child shares their leftover food with someone. Students will understand the importance of not wasting food and how sharing leftover food can contribute to Sustainable Development Goal 2: Zero Hunger. They will create an interactive conversation using OctoStudio blocks like send message and recieve message.",
+          "yt": "D9yqZG1liuo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 106,
+        "nm": "Does food waste matter? 🍱",
+        "qs": [
+          {
+            "q": "ಈ ಅನಿಮೇಷನ್ ಚಟುವಟಿಕೆಯ ಮುಖ್ಯ ಸಂದೇಶ ಏನು?",
+            "opts": { "1": "ನೀರು ಉಳಿಸಿ", "2": "ಹೆಚ್ಚು ಮರುಬಳಕೆ ಮಾಡಿ", "3": "ಆಹಾರ ವ್ಯರ್ಥ ಮಾಡಬೇಡಿ" },
+            "ans": "3"
+          },
+          {
+            "q": "ಈ ಚಟುವಟಿಕೆಗೆ ಯಾವ ಸುಸ್ಥಿರ ಅಭಿವೃದ್ಧಿ ಗುರಿ ಸಂಬಂಧಿಸಿದೆ?",
+            "opts": {
+              "1": "SDG 3 - ಉತ್ತಮ ಆರೋಗ್ಯ ಮತ್ತು ಯೋಗಕ್ಷೇಮ",
+              "2": "SDG 2 - ಶೂನ್ಯ ಹಸಿವು",
+              "3": "SDG 1 - ಬಡತನ ನಿರ್ಮೂಲನೆ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಸ್ಪ್ರೈಟ್‌ಗಳ ನಡುವೆ ಸಂವಹನ ಮಾಡಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+            "opts": { "1": "ಸೇ ಬ್ಲಾಕ್", "2": "ಸೆಂಡ್ ಬ್ಲಾಕ್", "3": "ವೇಟ್ ಬ್ಲಾಕ್" },
+            "ans": "2"
+          },
+          {
+            "q": "ಆಹಾರ ವ್ಯರ್ಥದ ಬಗ್ಗೆ ಅನಿಮೇಷನ್ ಸೃಜನಾತ್ಮಕವಾಗಿ ಉತ್ತಮಗೊಳಿಸಲು ಏನು ಮಾಡಬಹುದು?",
+            "opts": {
+              "1": "ಕೇವಲ ಕಪ್ಪು ಮತ್ತು ಬಿಳಿ ಬಣ್ಣ ಬಳಸಿ",
+              "2": "ಎಲ್ಲ ಸಂಭಾಷಣೆ ತೆಗೆದುಹಾಕಿ",
+              "3": "ಸಮುದಾಯ ಆಹಾರ ಹಂಚಿಕೊಳ್ಳುವ ಹೆಚ್ಚಿನ ಪಾತ್ರಗಳನ್ನು ಸೇರಿಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "'ಆಹಾರ ವ್ಯರ್ಥ ಮಾಡಬೇಡಿ' ಸಂದೇಶ ವಿಭಿನ್ನ ಸನ್ನಿವೇಶದಲ್ಲಿ ಅನಿಮೇಷನ್‌ನ ಮೂಲಕ ತೋರಿಸಲು ಹೇಗೆ ಮಾಡಬಹುದು?",
+            "opts": {
+              "1": "ಪಾತ್ರಗಳಿಲ್ಲದೆ ಕೇವಲ ಆಹಾರ ವಸ್ತುಗಳ ಮೇಲೆ ಗಮನ ಕೊಡಿ",
+              "2": "ರೆಸ್ಟೋರೆಂಟ್‌ನಲ್ಲಿ ಗ್ರಾಹಕರು ಉಳಿದ ಆಹಾರ ದಾನ ಮಾಡುವ ಅನಿಮೇಷನ್ ರಚಿಸಿ",
+              "3": "ಪಠ್ಯ ಅಥವಾ ಧ್ವನಿ ಇಲ್ಲದ ಅನಿಮೇಷನ್ ಮಾಡಿ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Animate-a-Food-Sharing-Scene-🍱-Basic",
+          "seq": 98,
+          "nm": "Animate a Food Sharing Scene 🍱",
+          "desc": "In this activity, students will use OctoStudio to create a short animated conversation where a child shares their leftover food with someone. Students will understand the importance of not wasting food and how sharing leftover food can contribute to Sustainable Development Goal 2: Zero Hunger. They will create an interactive conversation using OctoStudio blocks like send message and recieve message.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 'Animation' ಎಂಬ ಪದವನ್ನು ಟೈಪ್ ಮಾಡಿ.",
+              "unguided_text": "ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "valid_criteria": "Response matching the word 'Animation'.",
+              "invalid_criteria": "Anything other than the word 'Animation'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಇರುವ ತಟ್ಟೆಯ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "valid_criteria": "Image contains a plate.",
+              "invalid_criteria": "Anything other than a plate (e.g., bowl, cup, utensil, or unrelated object)"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ವಾಯ್ಸ್ ನೋಟ್/ಪಠ್ಯ ಹಂಚಿಕೊಳ್ಳಿ ಮತ್ತು ಹೇಳಿ: ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ತೋರಿಸಲಾದ ಅಂತಿಮ ಸಂದೇಶ ಏನು"
+            },
+            { "step": 5, "label": "image/video", "sub_types": "image,video" }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Every Drop Saved 💧",
+      "desc": "Concepts: Water conservation (SDG 6), event-based programming, continuous loops, collision detection, variables and scoring system, sprite interaction, sensor-based control (tilt), sequencing and timing. Blocks/Functions: When Play, When Tap, Tilt to Move, Send, When Received, Go To, Hide, Show, Forever, Wait, When Touches, Set Variable, Change Variable.",
+      "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 104,
+          "nm": "Can you catch dripping water? 💧",
+          "desc": "Students will learn how to create an interactive game using OctoStudio to collect dripping water from taps, reinforcing the concept of water conservation. They will apply coding skills like using motion, broadcast, and sensing blocks while understanding the real-world relevance of SDG 6 – Clean Water and Sanitation. The activity promotes awareness that even small actions, like fixing leaks, can support a global cause. Through hands-on learning, students will combine creativity and problem-solving to build a meaningful digital solution.",
+          "yt": "O9m8fmfMa5k",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 107,
+        "nm": "Can a tap save water? 🚰",
+        "qs": [
+          {
+            "q": "ರಚಿಸಲಾದ ಸಂವಾದಾತ್ಮಕ ಆಟದ ಮುಖ್ಯ ಗುರಿ ಏನು?",
+            "opts": {
+              "1": "ಸೋರುವ ನಲ್ಲಿಗಳಿಂದ ತೊಟ್ಟಿಕ್ಕುವ ನೀರನ್ನು ಲೋಟದಲ್ಲಿ ಸಂಗ್ರಹಿಸಲು",
+              "2": "ವರ್ಚುವಲ್ ನಗರ ನಿರ್ಮಿಸಲು",
+              "3": "ಟ್ರ್ಯಾಕ್‌ನಲ್ಲಿ ಕಾರು ರೇಸ್ ಮಾಡಲು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಈ ಚಟುವಟಿಕೆ ಯಾವ SDG ಗೆ ಸಂಬಂಧಿಸಿದೆ?",
+            "opts": {
+              "1": "SDG 13 - ಹವಾಮಾನ ಕ್ರಿಯೆ",
+              "2": "SDG 6 - ಶುದ್ಧ ನೀರು ಮತ್ತು ನೈರ್ಮಲ್ಯ",
+              "3": "SDG 2 - ಶೂನ್ಯ ಹಸಿವು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಒಕ್ಟೋಸ್ಟುಡಿಯೋದಲ್ಲಿ ನಲ್ಲಿ ಸ್ಪ್ರೈಟ್ ಸರಿಯಾಗಿ ಇಡಲು ಯಾವ ಟೂಲ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+            "opts": { "1": "ರಿಸೈಜ್ ಟೂಲ್", "2": "ರೊಟೇಟ್ ಟೂಲ್", "3": "ಕ್ರಾಪ್ ಟೂಲ್" },
+            "ans": "3"
+          },
+          {
+            "q": "ನೀರು ಉಳಿಸುವ ಆಟವನ್ನು ಶಕ್ತಿ ಸಂರಕ್ಷಣೆ ಕಲಿಸಲು ಹೇಗೆ ವಿಸ್ತರಿಸಬಹುದು?",
+            "opts": {
+              "1": "ದೀಪ ಆರಿಸಿದಾಗ ಅಂಕ ಸಿಗುವ ವ್ಯವಸ್ಥೆ ಸೇರಿಸಿ",
+              "2": "ವರ್ಚುವಲ್ ಮರಗಳನ್ನು ನೆಡುವ ವೈಶಿಷ್ಟ್ಯ ಸೇರಿಸಿ",
+              "3": "ವಿವಿಧ ದೇಶಗಳ ಬಗ್ಗೆ ರಸಪ್ರಶ್ನೆ ರಚಿಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಜಾಗತಿಕ ನೀರಿನ ಕೊರತೆ ಬಗ್ಗೆ ಶೈಕ್ಷಣಿಕ ವಿಷಯ ಸೇರಿಸಲು ಸೃಜನಾತ್ಮಕ ವಿಧಾನ ಏನು?",
+            "opts": {
+              "1": "ಆಡುವಾಗ ನೀರಿನ ಕೊರತೆ ಬಗ್ಗೆ ಪಾಪ್-ಅಪ್ ಮಾಹಿತಿ ಸೇರಿಸಿ",
+              "2": "ಪರದೆಯ ಮೇಲೆ ನೃತ್ಯ ಮಾಡುವ ಹೊಸ ಪಾತ್ರ ರಚಿಸಿ",
+              "3": "ಸೂಪರ್‌ಹೀರೋಗಳ ಬಗ್ಗೆ ಕಾಮಿಕ್ ಸ್ಟ್ರಿಪ್ ವಿನ್ಯಾಸ ಮಾಡಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Water-Saving-Game-💧-Remedial",
+          "seq": 99,
+          "nm": "Build a Water Saving Game 💧",
+          "desc": "Students will learn how to create an interactive game using OctoStudio to collect dripping water from taps, reinforcing the concept of water conservation. They will apply coding skills like using motion, broadcast, and sensing blocks while understanding the real-world relevance of SDG 6 – Clean Water and Sanitation. The activity promotes awareness that even small actions, like fixing leaks, can support a global cause. Through hands-on learning, students will combine creativity and problem-solving to build a meaningful digital solution.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 'Save' ಎಂಬ ಪದವನ್ನು ಟೈಪ್ ಮಾಡಿ.",
+              "unguided_text": "ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "valid_criteria": "Response matching the word 'Save'.",
+              "invalid_criteria": "Anything other than the word 'Save'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಇರುವ ಮುಚ್ಚಿದ (ಆಫ್) ನಲ್ಲಿಯ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "valid_criteria": "Image contains a tap/faucet in closed (off) position with no water flowing.",
+              "invalid_criteria": "Anything other than a tap or a tap with water running/open position."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ವಾಯ್ಸ್ ನೋಟ್/ಪಠ್ಯ ಹಂಚಿಕೊಳ್ಳಿ ಮತ್ತು ಹೇಳಿ: ಈ ಚಟುವಟಿಕೆ SDG 6 ಜೊತೆ ಹೇಗೆ ಸಂಪರ್ಕ ಹೊಂದಿದೆ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನೀರು ತೊಟ್ಟಿಕ್ಕುವ ನಲ್ಲಿ ಆಟದ ಪ್ರೋಗ್ರಾಂ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Sun Powers the Bulb ☀️",
+      "desc": "Concepts: Renewable energy (solar energy), energy transformation, event-based programming, sequencing, synchronization, animation flow, visual effects (glow, colour change), sprite interaction. Blocks/Functions: When Play, Say, Wait, Send, When Received, Move, Hide, Show, Repeat, Glow, Change Colour, Text Block.",
+      "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 105,
+          "nm": "Can sunlight power your bulb? ☀️",
+          "desc": "Students will create a simple animation showing how sunlight is converted into usable energy. They will animate the sun, clouds, and a solar panel where sunlight reaching the panel triggers a light or colour change effect. This activity helps students visualize the flow of energy from the sun to the panel, reinforcing clean energy concepts (SDG 7) and climate action (SDG 13).",
+          "yt": "cX43A_PfPRc",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 108,
+        "nm": "Can sunlight power things? ☀️",
+        "qs": [
+          {
+            "q": "ಸ್ಪ್ರೈಟ್‌ನ ಮಾತನ್ನು ಪರದೆಯ ಮೇಲೆ ತೋರಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+            "opts": { "1": "ಸೇ ಬ್ಲಾಕ್", "2": "ಮೂವ್ ಬ್ಲಾಕ್", "3": "ಸೆಂಡ್ ಬ್ಲಾಕ್" },
+            "ans": "1"
+          },
+          {
+            "q": "ಸೆಂಡ್ ಮತ್ತು ವೆನ್ ರಿಸೀವ್ಡ್ ಬ್ಲಾಕ್‌ಗಳಲ್ಲಿ ಒಂದೇ ಸಂದೇಶ ಬಳಸುವುದು ಯಾಕೆ ಮುಖ್ಯ?",
+            "opts": {
+              "1": "ಸ್ಪ್ರೈಟ್ ವೇಗವಾಗಿ ಚಲಿಸಲು",
+              "2": "ಸ್ಪ್ರೈಟ್‌ನ ಬಣ್ಣ ಬದಲಾಯಿಸಲು",
+              "3": "ಸ್ವೀಕರಿಸುವ ಸ್ಪ್ರೈಟ್ ಸರಿಯಾದ ಕ್ರಿಯೆ ನಿರ್ವಹಿಸುವಂತೆ ಮಾಡಲು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಸಂದೇಶ ಸ್ವೀಕರಿಸಿದ ನಂತರ ಸ್ಪ್ರೈಟ್ ಪರದೆಯ ಮೇಲೆ ಕಾಣಿಸಿಕೊಳ್ಳಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಬೇಕು?",
+            "opts": { "1": "ಶೋ ಬ್ಲಾಕ್", "2": "ಗ್ಲೋ ಬ್ಲಾಕ್", "3": "ಹೈಡ್ ಬ್ಲಾಕ್" },
+            "ans": "1"
+          },
+          {
+            "q": "ಸೋಲಾರ್ ಪ್ಯಾನೆಲ್ ಚಾರ್ಜಿಂಗ್ ಪ್ರಕ್ರಿಯೆ ಸೃಜನಾತ್ಮಕವಾಗಿ ತೋರಿಸಲು ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಏನು ಮಾಡಬಹುದು?",
+            "opts": {
+              "1": "ಹಿನ್ನೆಲೆ ಹೊಳೆಯುವ ಬಣ್ಣಕ್ಕೆ ಬದಲಾಯಿಸಿ",
+              "2": "ದೃಶ್ಯಕ್ಕೆ ಹೆಚ್ಚಿನ ಸಂಭಾಷಣೆ ಸೇರಿಸಿ",
+              "3": "ಚಾರ್ಜಿಂಗ್ ಅನುಕರಿಸಲು ರಿಪೀಟ್ ಬ್ಲಾಕ್‌ನೊಂದಿಗೆ ಗ್ಲೋ ಬ್ಲಾಕ್ ಬಳಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಸೂರ್ಯನ ಬೆಳಕಿನ ಚಲನೆ ಸೃಜನಾತ್ಮಕವಾಗಿ ತೋರಿಸಲು ಏನು ಮಾಡಬಹುದು?",
+            "opts": {
+              "1": "ಹುಡುಗಿಯ ಉಡುಪು ಬದಲಾಯಿಸಿ",
+              "2": "ಹಿನ್ನೆಲೆ ಸಂಗೀತ ಬದಲಾಯಿಸಿ",
+              "3": "ಮೋಡ ಸರಿಸಿ ಸೂರ್ಯ ಕಾಣಿಸಲು ಮೂವ್ ಬ್ಲಾಕ್ ಬಳಸಿ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Code-Your-First-Big-Idea-💡-Intermediate",
+          "seq": 100,
+          "nm": "Code Your First Big Idea 💡",
+          "desc": "Students will create a simple animation showing how sunlight is converted into usable energy. They will animate the sun, clouds, and a solar panel where sunlight reaching the panel triggers a light or colour change effect. This activity helps students visualize the flow of energy from the sun to the panel, reinforcing clean energy concepts (SDG 7) and climate action (SDG 13).",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 'Power' ಎಂಬ ಪದವನ್ನು ಟೈಪ್ ಮಾಡಿ.",
+              "unguided_text": "ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "valid_criteria": "Response matching the word 'Power'.",
+              "invalid_criteria": "Anything other than the word 'Power'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಇರುವ ಬ್ಯಾಟರಿ ಸೆಲ್‌ನ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "valid_criteria": "Image contains a battery cell (like AA or AAA cell used in remotes).",
+              "invalid_criteria": "Anything other than a battery cell."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ವಾಯ್ಸ್ ನೋಟ್/ಪಠ್ಯ ಹಂಚಿಕೊಳ್ಳಿ ಮತ್ತು ಹೇಳಿ: ಅನಿಮೇಷನ್‌ನಲ್ಲಿ sprites ಹೇಗೆ ಸಂವಹನ ನಡೆಸುತ್ತವೆ"
+            },
+            { "step": 5, "label": "image/video", "sub_types": "image,video" }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Sun Powers the Road ☀️",
+      "desc": "Concepts: Renewable energy (solar energy), energy conversion, event-based programming, collision detection, sequencing, cause-and-effect in animations, environmental awareness (SDG 7 & SDG 13). Blocks/Functions: When Play, Move, When Touches, Send, When Received, Hide, Text Block.",
+      "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 106,
+          "nm": "Can Sunlight Make a Car Move? 🚗",
+          "desc": "Students will create a simple animation where a solar-powered car starts moving only when it receives energy from sunlight. Using OctoStudio, they will animate the sun, a solar panel attached to a car, and the car’s movement. This activity helps students understand how solar energy can be used in real-life applications like transport, while practising event-based coding and sequencing (SDG 7 & 13).",
+          "yt": "veLmNcxVNKQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 109,
+        "nm": "Did the Cloud Stop Your Car? ☁️",
+        "qs": [
+          {
+            "q": "ಅನಿಮೇಷನ್ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ ಕಾರಿಗೆ ಸೋಲಾರ್ ಪ್ಯಾನೆಲ್ ಸೇರಿಸುವ ಉದ್ದೇಶವೇನು?",
+            "opts": {
+              "1": "ಸೋಲಾರ್ ಪ್ಯಾನೆಲ್ ಹೇಗೆ ನಿರ್ಮಿಸಲಾಗುತ್ತದೆ ಎಂದು ತೋರಿಸಲು",
+              "2": "ಸ್ವಚ್ಛ ಶಕ್ತಿ ಕಾರನ್ನು ಓಡಿಸಬಹುದು ಎಂದು ತೋರಿಸಲು",
+              "3": "ಕಾರು ಹೆಚ್ಚು ಆಧುನಿಕವಾಗಿ ಕಾಣಿಸಲು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "'ವೆನ್ ಟಚಸ್' ಬ್ಲಾಕ್ ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಹೇಗೆ ಕಾರ್ಯ ನಿರ್ವಹಿಸುತ್ತದೆ?",
+            "opts": {
+              "1": "ಒಂದು ವಸ್ತು ಮತ್ತೊಂದನ್ನು ಮುಟ್ಟಿದಾಗ ಕ್ರಿಯೆ ಪ್ರಾರಂಭಿಸುತ್ತದೆ",
+              "2": "ಕ್ಲಿಕ್ ಮಾಡಿದಾಗ ಹಿನ್ನೆಲೆ ಬದಲಾಯಿಸುತ್ತದೆ",
+              "3": "ಪ್ರಾಜೆಕ್ಟ್ ತೆರೆದಾಗ ಅನಿಮೇಷನ್ ಪ್ರಾರಂಭಿಸುತ್ತದೆ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಮೋಡ ಸೂರ್ಯನ ಬೆಳಕು ತಡೆದಾಗ ಸೂರ್ಯಕಿರಣಗಳನ್ನು ಮರೆಮಾಡಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+            "opts": { "1": "ಹೈಡ್ ಬ್ಲಾಕ್", "2": "ಮೂವ್ ಬ್ಲಾಕ್", "3": "ಸೆಂಡ್ ಬ್ಲಾಕ್" },
+            "ans": "1"
+          },
+          {
+            "q": "ಸೂರ್ಯ ಕಾಣಿಸಿಕೊಂಡಾಗ ಹೂವುಗಳು ಅರಳುವ ದೃಶ್ಯ ರಚಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಮುಖ್ಯವಾಗಿ ಬಳಸಬೇಕು?",
+            "opts": { "1": "ವೆನ್ ರಿಸೀವ್ಡ್ ಬ್ಲಾಕ್", "2": "ಹೈಡ್ ಬ್ಲಾಕ್", "3": "ಟೆಕ್ಸ್ಟ್ ಬ್ಲಾಕ್" },
+            "ans": "1"
+          },
+          {
+            "q": "ಸೂರ್ಯ ಇದ್ದಾಗ ತಿರುಗುವ ಗಾಳಿಯಂತ್ರ ಸೇರಿಸಲು ಅನಿಮೇಷನ್ ಪ್ರಕ್ರಿಯೆಯ ಯಾವ ಭಾಗ ಸಂಬಂಧಿಸಿದೆ?",
+            "opts": {
+              "1": "ಪೇಂಟ್ ಎಡಿಟರ್‌ನಲ್ಲಿ ಸೂರ್ಯಕಿರಣ ಚಿತ್ರಿಸುವುದು",
+              "2": "ಹಿನ್ನೆಲೆ ಬದಲಾಯಿಸುವುದು",
+              "3": "ವೆನ್ ರಿಸೀವ್ಡ್ ಬ್ಲಾಕ್ ಬಳಸಿ ಕ್ರಿಯೆ ಕೋಡ್ ಮಾಡುವುದು"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Animate-a-Solar-Speedster-🚗-Remedial",
+          "seq": 101,
+          "nm": "Animate a Solar Speedster 🚗",
+          "desc": "Students will create a simple animation where a solar-powered car starts moving only when it receives energy from sunlight. Using OctoStudio, they will animate the sun, a solar panel attached to a car, and the car’s movement. This activity helps students understand how solar energy can be used in real-life applications like transport, while practising event-based coding and sequencing (SDG 7 & 13).",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 'Clean' ಎಂಬ ಪದವನ್ನು ಟೈಪ್ ಮಾಡಿ.",
+              "unguided_text": "ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "valid_criteria": "Response matching the word 'Clean'.",
+              "invalid_criteria": "Anything other than the word 'Clean'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಇರುವ ಗಿಡದ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "valid_criteria": "Image contains a real plant found at home or nearby.",
+              "invalid_criteria": "Anything other than a plant (e.g., toys, electronics, or unrelated objects)."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ವಾಯ್ಸ್ ನೋಟ್/ಪಠ್ಯ ಹಂಚಿಕೊಳ್ಳಿ ಮತ್ತು ಹೇಳಿ: ಅನಿಮೇಷನ್‌ನಲ್ಲಿ sprites ಹೇಗೆ ಸಂವಹನ ನಡೆಸುತ್ತವೆ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Clean Air Hero ಅನಿಮೇಷನ್ ಪ್ರಾಜೆಕ್ಟ್‌ನ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Three Bins Sorted 🗑️",
+      "desc": "Concepts Waste sorting, Environmental awareness, Recycling, Creative coding Blocks Set variable, Change variable, When play, When touches, Show, Hide, Move, Wait, Play sound, If-Else, Text",
+      "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 107,
+          "nm": "Can three bins sort waste? 🗑️",
+          "desc": "Students will drag items into the correct recycling bins; touching the right bin scores points and glows, while wrong bins subtract points with a “try again” sound. They will finish by restoring a clean park scene, reinforcing responsible consumption (SDG12) and ocean protection (SDG14).",
+          "yt": "Qc2pFkeEuLo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 110,
+        "nm": "Can you sort the trash? ♻️",
+        "qs": [
+          {
+            "q": "SDG 12 ಯಾವ ವಿಷಯದ ಬಗ್ಗೆ?",
+            "opts": {
+              "1": "ಜವಾಬ್ದಾರಿಯುತ ಬಳಕೆ ಮತ್ತು ಉತ್ಪಾದನೆ",
+              "2": "ಹಸಿವು ಕಡಿಮೆ ಮಾಡುವುದು",
+              "3": "ಗುಣಮಟ್ಟದ ಶಿಕ್ಷಣ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ತ್ಯಾಜ್ಯ ಸರಿಯಾಗಿ ವಿಂಗಡಿಸುವುದು ಯಾಕೆ ಮುಖ್ಯ?",
+            "opts": {
+              "1": "ತ್ಯಾಜ್ಯ ಸಂಗ್ರಹ ಸಮಯ ಉಳಿಸಲು",
+              "2": "ಪರಿಸರ ಹಾನಿ ಕಡಿಮೆ ಮಾಡಲು ಮತ್ತು ಜಾಗ ಸ್ವಚ್ಛ ಇಡಲು",
+              "3": "ಮೋಜಿನ ಚಟುವಟಿಕೆಯಾಗಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಆಟದಲ್ಲಿ ಸರಿಯಾಗಿ ವಿಂಗಡಿಸಿದ ನಂತರ ವಸ್ತು ಮರೆಮಾಡಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+            "opts": { "1": "ಸೆಟ್ ವೇರಿಯೇಬಲ್", "2": "ಹೈಡ್", "3": "ಚೇಂಜ್ ವೇರಿಯೇಬಲ್" },
+            "ans": "2"
+          },
+          {
+            "q": "ತ್ಯಾಜ್ಯ ವಿಂಗಡಣೆ ಆಟ ವಿನ್ಯಾಸ ಮಾಡಲು ಸೃಜನಾತ್ಮಕತೆ ಹೇಗೆ ಅಳವಡಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಕೇವಲ ಡೀಫಾಲ್ಟ್ ಸೆಟ್ಟಿಂಗ್ ಬಳಸಿ",
+              "2": "ನಿಖರವಾಗಿ ನಿರ್ದೇಶನಗಳನ್ನು ಅನುಸರಿಸಿ",
+              "3": "ಆಟಕ್ಕೆ ಅನನ್ಯ ಬಣ್ಣ, ಚಲನೆ ಮತ್ತು ಧ್ವನಿ ಆಯ್ಕೆ ಮಾಡಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ತ್ಯಾಜ್ಯ ವಿಂಗಡಣೆ ಆಟದಲ್ಲಿ ಬಳಕೆದಾರರ ತೊಡಗಿಸಿಕೊಳ್ಳುವಿಕೆ ಹೆಚ್ಚಿಸಲು ಸೃಜನಾತ್ಮಕ ವಿಧಾನ ಯಾವುದು?",
+            "opts": {
+              "1": "ಆಟ ಸರಳಗೊಳಿಸುವ ಮೂಲಕ",
+              "2": "ಅನಿಮೇಷನ್ ಮತ್ತು ಫೀಡ್‌ಬ್ಯಾಕ್ ಧ್ವನಿಗಳಂತಹ ಸಂವಾದಾತ್ಮಕ ಅಂಶ ಸೇರಿಸಿ",
+              "3": "ಎಲ್ಲ ಧ್ವನಿ ತೆಗೆದುಹಾಕಿ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Waste-Sorting-Game-🗑️-Intermediate",
+          "seq": 102,
+          "nm": "Build a Waste Sorting Game 🗑️",
+          "desc": "Students will drag items into the correct recycling bins; touching the right bin scores points and glows, while wrong bins subtract points with a “try again” sound. They will finish by restoring a clean park scene, reinforcing responsible consumption (SDG12) and ocean protection (SDG14).",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 'Sorting' ಎಂಬ ಪದವನ್ನು ಟೈಪ್ ಮಾಡಿ.",
+              "unguided_text": "ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "valid_criteria": "Response matching the word 'Sorting'.",
+              "invalid_criteria": "Anything other than the word 'Sorting'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ವಿಭಿನ್ನ ಬಣ್ಣಗಳ (ಕೆಂಪು, ಹಸಿರು ಅಥವಾ ನೀಲಿ) ವಸ್ತುಗಳ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "valid_criteria": "Image contains red, green, or blue colored objects.",
+              "invalid_criteria": "Anything other than red, green, or blue objects."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ವಾಯ್ಸ್ ನೋಟ್/ಪಠ್ಯ ಹಂಚಿಕೊಳ್ಳಿ ಮತ್ತು ಹೇಳಿ: ತ್ಯಾಜ್ಯ ವರ್ಗೀಕರಣ ಎಂದರೇನು ಮತ್ತು ಅದು ಏಕೆ ಮುಖ್ಯ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "OctoStudio ತ್ಯಾಜ್ಯ ವರ್ಗೀಕರಣ ಆಟದ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

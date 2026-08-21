@@ -1,0 +1,1122 @@
+{
+  "id": "Advanced-Electronics-science-lab-C4178",
+  "nm": "Advanced Electronics",
+  "lvl": "Level 3AK",
+  "vrt": "science-lab",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Buttons Run the Signals 🚦",
+      "desc": "Parallel Circuits",
+      "rwc": "Leds, Battery, Breadboard",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 31,
+          "nm": "Can buttons run traffic signals? 🚦",
+          "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਜਿਨ੍ਹਾਂ ਕੋਲ ਇਲੈਕਟ੍ਰਾਨਿਕ ਕਿੱਟ ਹੈ, ਉਹ ਇੱਕ ਸਧਾਰਨ ਸਰਕਿਟ ਨੂੰ ਡਿਜ਼ਾਈਨ ਕਰਕੇ ਐਲਈਡੀਜ਼ ਦੀ ਪੈਰਲੇਲ ਕਨੈਕਸ਼ਨ ਨਾਲ ਟ੍ਰੈਫਿਕ ਲਾਈਟ ਬਣਾਉਣਗੇ। ਜਿਨ੍ਹਾਂ ਵਿਦਿਆਰਥੀਆਂ ਕੋਲ ਕਿੱਟ ਨਹੀਂ ਹੈ, ਉਹ ਪ੍ਰੋਟੋ ਸਰਕਿਟ ਸਿਮੂਲੇਟਰ ਵਿੱਚ ਟ੍ਰੈਫਿਕ ਲਾਈਟ ਦੇ ਸਰਕਿਟ ਨੂੰ ਸਿਮੂਲੇਟ ਕਰਨਗੇ। ਉਹ ਸੜਕ ਹਾਦਸਿਆਂ ਦੇ ਕਾਰਨ ਚੋਟਾਂ ਅਤੇ ਮੌਤਾਂ ਤੋਂ ਬਚਣ ਲਈ ਟ੍ਰੈਫਿਕ ਨਿਯਮਾਂ ਦੀ ਪਾਲਣਾ ਕਰਨ ਦੀ ਮਹੱਤਤਾ ਨੂੰ ਸਮਝਣਗੇ, ਇਸ ਤਰ੍ਹਾਂ ਐਸਡੀਜੀ 3 ਦੀ ਚੰਗੀ ਸਿਹਤ ਅਤੇ ਭਲਾਈ ਦੇ ਟੀਚੇ ਨੂੰ ਹਾਸਲ ਕਰਨ ਵਿੱਚ ਯੋਗਦਾਨ ਪਾਉਣਗੇ।",
+          "yt": "Ld_gKEufSXk",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 32,
+        "nm": "Can you build a traffic light? 🚦",
+        "qs": [
+          {
+            "q": "ਟਰੈਫਿਕ ਲਾਈਟ ਬਣਾਉਣ ਵਿੱਚ ਕਿਹੜਾ ਪਹਿਲਾ ਕੰਪੋਨੈਂਟ ਵਰਤਣ ਲਈ ਦੱਸਿਆ ਗਿਆ ਹੈ?",
+            "opts": { "1": "Resistor", "2": "LED", "3": "Push button" },
+            "ans": "3"
+          },
+          {
+            "q": "ਸਕ੍ਰਿਪਟ ਅਨੁਸਾਰ ਟਰੈਫਿਕ ਲਾਈਟਾਂ ਕਿਉਂ ਮਹੱਤਵਪੂਰਨ ਹਨ?",
+            "opts": {
+              "1": "To prevent accidents",
+              "2": "To save electricity",
+              "3": "To control pollution"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਟਰੈਫਿਕ ਲਾਈਟ ਸਰਕਟ ਵਿੱਚ ਐਲਈਡੀ ਦਾ ਕਿਹੜਾ ਟਰਮਿਨਲ ਪਾਵਰ ਰੇਲ ਨਾਲ ਜੋੜਿਆ ਗਿਆ ਹੈ?",
+            "opts": { "1": "Positive terminal", "2": "Both terminals", "3": "Negative terminal" },
+            "ans": "1"
+          },
+          {
+            "q": "ਜੇਕਰ ਲਾਲ ਐਲਈਡੀ ਬਟਨ ਦਬਾਉਣ 'ਤੇ ਨਹੀਂ ਜਲਦੀ, ਤਾਂ ਸਕ੍ਰਿਪਟ ਅਨੁਸਾਰ ਸਭ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਨੂੰ ਕੀ ਚੈੱਕ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "Check the resistor connection",
+              "2": "Ensure the negative terminal is connected to the push button",
+              "3": "Replace the battery"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਜੇਕਰ ਹਰੀ ਐਲਈਡੀ ਨਹੀਂ ਜਲ ਰਹੀ ਹੈ, ਤਾਂ ਹਦਾਇਤਾਂ ਅਨੁਸਾਰ ਤੁਹਾਨੂੰ ਕਿਹੜੇ ਕੰਪੋਨੈਂਟ ਦੀ ਜਾਂਚ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ?",
+            "opts": {
+              "1": "The battery's connection",
+              "2": "The placement of the push buttons",
+              "3": "The connection between the push button and LED"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Push-Button-Traffic-Light-🚦-Basic",
+          "seq": 28,
+          "nm": "Traffic Lights",
+          "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਜਿਨ੍ਹਾਂ ਕੋਲ ਇਲੈਕਟ੍ਰਾਨਿਕ ਕਿੱਟ ਹੈ, ਉਹ ਇੱਕ ਸਧਾਰਨ ਸਰਕਿਟ ਨੂੰ ਡਿਜ਼ਾਈਨ ਕਰਕੇ ਐਲਈਡੀਜ਼ ਦੀ ਪੈਰਲੇਲ ਕਨੈਕਸ਼ਨ ਨਾਲ ਟ੍ਰੈਫਿਕ ਲਾਈਟ ਬਣਾਉਣਗੇ। ਜਿਨ੍ਹਾਂ ਵਿਦਿਆਰਥੀਆਂ ਕੋਲ ਕਿੱਟ ਨਹੀਂ ਹੈ, ਉਹ ਪ੍ਰੋਟੋ ਸਰਕਿਟ ਸਿਮੂਲੇਟਰ ਵਿੱਚ ਟ੍ਰੈਫਿਕ ਲਾਈਟ ਦੇ ਸਰਕਿਟ ਨੂੰ ਸਿਮੂਲੇਟ ਕਰਨਗੇ। ਉਹ ਸੜਕ ਹਾਦਸਿਆਂ ਦੇ ਕਾਰਨ ਚੋਟਾਂ ਅਤੇ ਮੌਤਾਂ ਤੋਂ ਬਚਣ ਲਈ ਟ੍ਰੈਫਿਕ ਨਿਯਮਾਂ ਦੀ ਪਾਲਣਾ ਕਰਨ ਦੀ ਮਹੱਤਤਾ ਨੂੰ ਸਮਝਣਗੇ, ਇਸ ਤਰ੍ਹਾਂ ਐਸਡੀਜੀ 3 ਦੀ ਚੰਗੀ ਸਿਹਤ ਅਤੇ ਭਲਾਈ ਦੇ ਟੀਚੇ ਨੂੰ ਹਾਸਲ ਕਰਨ ਵਿੱਚ ਯੋਗਦਾਨ ਪਾਉਣਗੇ।",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Traffic' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Traffic'.",
+              "invalid_criteria": "Anything other than the word 'Traffic'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "push button ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a push button switch.",
+              "invalid_criteria": "Anything other than a push button."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: ਤੁਸੀਂ ਕਿੰਨੇ LEDs ਵਰਤੇ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "traffic light ਕੰਮ ਕਰਦੇ ਹੋਏ ਦਾ video ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Rain Wakes the Circuit 🌧️",
+      "desc": "LDR",
+      "rwc": "Breadboard, Resistor, LED, Transistor, Motor, Battery",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 32,
+          "nm": "Can wetness trigger a wiper? 🌧️",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਸਰਕਿਟ ਬਣਾਉਂਦੇ ਹਨ ਜਿਸ ਵਿੱਚ ਇੱਕ ਐਲ.ਡੀ.ਆਰ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ ਜੋ ਕਿ ਇੱਕ ਗੀਲੇ-ਜੋਸ਼ੀਲੇ ਪਦਾਰਥ ਨਾਲ ਢੱਕਿਆ ਹੁੰਦਾ ਹੈ। ਜਦੋਂ ਪਾਣੀ ਦੀ ਪੱਧਰ ਵੱਧ ਜਾਂਦੀ ਹੈ (ਮੀਂਹ ਪੈਂਦਾ ਹੈ), ਤਾਂ ਰੌਸ਼ਨੀ ਦੀ ਤੀਬਰਤਾ ਘਟ ਜਾਂਦੀ ਹੈ, ਜਿਸ ਨਾਲ ਐਲ.ਈ.ਡੀ./ਮੋਟਰ (ਵਾਈਪਰ ਡੈਮੋ) ਚਲ ਪੈਂਦਾ ਹੈ।",
+          "yt": "kIcLDoNdHQQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 33,
+        "nm": "Can rain trigger a wiper? 🌧️",
+        "qs": [
+          {
+            "q": "ਰੇਨ-ਟਰਿੱਗਰਡ ਵਾਈਪਰ ਸਿਸਟਮ ਵਿੱਚ ਵਰਤਿਆ ਜਾਣ ਵਾਲਾ ਕਿਹੜਾ ਕੰਪੋਨੈਂਟ ਮੀਂਹ ਦੀ ਪਛਾਣ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+            "opts": { "1": "LED", "2": "LDR (Light Dependent Resistor)", "3": "BC547 Transistor" },
+            "ans": "2"
+          },
+          {
+            "q": "ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਵਰਣਨ ਕੀਤੇ ਗਏ ਰੇਨ-ਟਰਿੱਗਰਡ ਵਾਈਪਰ ਸਿਸਟਮ ਦਾ ਮੁੱਖ ਉਦੇਸ਼ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To automatically activate an LED or motor when it rains",
+              "2": "To detect sunlight intensity",
+              "3": "To save energy"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਸਰਕਟ ਨੂੰ ਪੂਰਾ ਕਰਨ ਲਈ ਟ੍ਰਾਂਜ਼ਿਸਟਰ ਦੇ ਬੇਸ ਨਾਲ ਕਿਹੜਾ ਕੰਪੋਨੈਂਟ ਜੋੜਨਾ ਪੈਂਦਾ ਹੈ?",
+            "opts": { "1": "9V battery", "2": "LED", "3": "LDR (Light Dependent Resistor)" },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇਕਰ ਰੇਨ-ਟਰਿੱਗਰਡ ਵਾਈਪਰ ਸਿਸਟਮ ਕੰਮ ਨਹੀਂ ਕਰਦਾ, ਤਾਂ ਕਿਹੜੀ ਸੰਭਾਵਿਤ ਸਮੱਸਿਆ ਚੈੱਕ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ?",
+            "opts": {
+              "1": "The connections are incorrect or loose",
+              "2": "The LED is too bright",
+              "3": "The breadboard is the wrong color"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਸ਼ਹਿਰੀ ਸਥਿਤੀ ਵਿੱਚ, ਰੇਨ-ਟਰਿੱਗਰਡ ਸਿਸਟਮ ਦੇ ਸੰਕਲਪ ਨੂੰ ਕਿਵੇਂ ਟਿਕਾਊਤਾ ਨੂੰ ਪ੍ਰੋਤਸਾਹਿਤ ਕਰਨ ਲਈ ਲਾਗੂ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ?",
+            "opts": {
+              "1": "By using more plastic",
+              "2": "By implementing rain-sensing irrigation systems to conserve water",
+              "3": "By installing more streetlights"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Rain-Triggered-Alert-🌧️-Remedial",
+          "seq": 29,
+          "nm": "Rain Triggered Alert",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਸਰਕਿਟ ਬਣਾਉਂਦੇ ਹਨ ਜਿਸ ਵਿੱਚ ਇੱਕ ਐਲ.ਡੀ.ਆਰ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ ਜੋ ਕਿ ਇੱਕ ਗੀਲੇ-ਜੋਸ਼ੀਲੇ ਪਦਾਰਥ ਨਾਲ ਢੱਕਿਆ ਹੁੰਦਾ ਹੈ। ਜਦੋਂ ਪਾਣੀ ਦੀ ਪੱਧਰ ਵੱਧ ਜਾਂਦੀ ਹੈ (ਮੀਂਹ ਪੈਂਦਾ ਹੈ), ਤਾਂ ਰੌਸ਼ਨੀ ਦੀ ਤੀਬਰਤਾ ਘਟ ਜਾਂਦੀ ਹੈ, ਜਿਸ ਨਾਲ ਐਲ.ਈ.ਡੀ./ਮੋਟਰ (ਵਾਈਪਰ ਡੈਮੋ) ਚਲ ਪੈਂਦਾ ਹੈ।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Wiper' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Wiper'.",
+              "invalid_criteria": "Anything other than the word 'Wiper'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "DC motor ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a DC motor.",
+              "invalid_criteria": "Anything other than a motor."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: LED ਨੂੰ ਕੀ trigger ਕਰਦਾ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "rain alert ਕੰਮ ਕਰਦੇ ਹੋਏ ਦਾ video ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Blades Catch Free Energy 🌬️",
+      "desc": "Clean Energy",
+      "rwc": "Scissors, Paper, Resistor, LED, Battery, Switch, Motor",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 33,
+          "nm": "Can paper blades generate power? 🌬️",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਡੀਸੀ ਮੋਟਰ ਅਤੇ ਐਲਈਡੀਜ਼ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਸਾਦੇ ਵਿੰਡ ਟਰਬਾਈਨ ਬਣਾ ਕੇ ਨਵੀਨੀਕਰਣਯੋਗ ਰਿਜ਼ੋਰਸਿਜ਼ ਦੇ ਕੰਮ ਕਰਨ ਦੇ ਤਰੀਕੇ ਨੂੰ ਜਾਚਣਗੇ। ਇਸ ਹੈਂਡਸ-ਓਨ ਐਕਟੀਵਟੀ ਰਾਹੀਂ, ਉਹ ਮਿਕੈਨਿਕਲ-ਟੂ-ਇਲੈਕਟ੍ਰਿਕਲ ਐਨਰਜੀ ਕਨਵਰਜ਼ਨ, ਸਥਿਰ ਤਕਨਾਲੋਜੀ ਦੀ ਭੂਮਿਕਾ, ਅਤੇ ਸਾਫ ਸਫਾਈ ਊਰਜਾ ਕਿਵੇਂ ਮੌਸਮੀ ਤਬਦੀਲੀ ਨੂੰ ਘਟਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਦੀ ਹੈ, ਨੂੰ ਸਮਝਣਗੇ। ਇਹ ਐਸ.ਡੀ.ਜੀ 7 (ਸਸਤੇ ਅਤੇ ਸਾਫ ਸਫਾਈ ਊਰਜਾ), ਐਸ.ਡੀ.ਜੀ 9 (ਉਦਯੋਗ, ਨਵੀਨਤਾ ਅਤੇ ਬੁਨਿਆਦੀ ਢਾਂਚਾ), ਅਤੇ ਐਸ.ਡੀ.ਜੀ 13 (ਮੌਸਮੇ ਅਮਲ) ਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ।",
+          "yt": "2mmqKjRxSbI",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 34,
+        "nm": "Can wind generate electricity? 🌬️",
+        "qs": [
+          {
+            "q": "DIY ਮਿਨੀ ਕਲਾਸਰੂਮ ਵਿੰਡਮਿਲ ਨੂੰ ਚਲਾਉਣ ਲਈ ਕਿਹੜਾ ਕੰਪੋਨੈਂਟ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+            "opts": { "1": "Solar panel", "2": "AA battery", "3": "9V battery" },
+            "ans": "3"
+          },
+          {
+            "q": "ਵਿੰਡਮਿਲ ਐਕਟਿਵਿਟੀ ਵਿੱਚ ਵੱਖ-ਵੱਖ ਬਲੇਡ ਡਿਜ਼ਾਈਨਾਂ ਦੀ ਪ੍ਰੀਖਿਆ ਕਰਨ ਦਾ ਕੀ ਉਦੇਸ਼ ਹੈ?",
+            "opts": {
+              "1": "To see which design provides the most air",
+              "2": "To make the windmill heavier",
+              "3": "To make the windmill more colorful"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਕਿਹੜਾ ਹਿੱਸਾ ਵਿੰਡਮਿਲ ਦਾ ਮੋਟਰ ਦੇ ਸ਼ਾਫਟ ਨਾਲ ਜੁੜਿਆ ਹੁੰਦਾ ਹੈ?",
+            "opts": { "1": "The switch", "2": "The pole", "3": "The fan" },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇ ਤੁਹਾਡੇ ਮਿਨੀ ਵਿੰਡਮਿਲ ਦਾ ਪੱਖਾ ਨਹੀਂ ਘੁੰਮ ਰਿਹਾ, ਤਾਂ ਪਹਿਲਾਂ ਤੁਹਾਡੀ ਕੀ ਸਮੱਸਿਆ ਹੋ ਸਕਦੀ ਹੈ?",
+            "opts": {
+              "1": "Increase the size of the battery",
+              "2": "Change the paper blades to metal ones",
+              "3": "Ensure the switch is in the 'on' position"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇ ਤੁਹਾਡੀ ਵਿੰਡਮਿਲ ਵਾਰ ਵਾਰ ਢਹਿ ਰਹੀ ਹੈ, ਤਾਂ ਇਸ ਨੂੰ ਸਥਿਰ ਕਰਨ ਲਈ ਤੁਸੀਂ ਕੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਸਕਦੇ ਹੋ?",
+            "opts": {
+              "1": "Ensure the base is properly secured with glue or tape",
+              "2": "Add more blades to the fan",
+              "3": "Use a larger motor"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Cardboard-Windmill-🌬️-Basic",
+          "seq": 30,
+          "nm": "Windmill",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਡੀਸੀ ਮੋਟਰ ਅਤੇ ਐਲਈਡੀਜ਼ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਸਾਦੇ ਵਿੰਡ ਟਰਬਾਈਨ ਬਣਾ ਕੇ ਨਵੀਨੀਕਰਣਯੋਗ ਰਿਜ਼ੋਰਸਿਜ਼ ਦੇ ਕੰਮ ਕਰਨ ਦੇ ਤਰੀਕੇ ਨੂੰ ਜਾਚਣਗੇ। ਇਸ ਹੈਂਡਸ-ਓਨ ਐਕਟੀਵਟੀ ਰਾਹੀਂ, ਉਹ ਮਿਕੈਨਿਕਲ-ਟੂ-ਇਲੈਕਟ੍ਰਿਕਲ ਐਨਰਜੀ ਕਨਵਰਜ਼ਨ, ਸਥਿਰ ਤਕਨਾਲੋਜੀ ਦੀ ਭੂਮਿਕਾ, ਅਤੇ ਸਾਫ ਸਫਾਈ ਊਰਜਾ ਕਿਵੇਂ ਮੌਸਮੀ ਤਬਦੀਲੀ ਨੂੰ ਘਟਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਦੀ ਹੈ, ਨੂੰ ਸਮਝਣਗੇ। ਇਹ ਐਸ.ਡੀ.ਜੀ 7 (ਸਸਤੇ ਅਤੇ ਸਾਫ ਸਫਾਈ ਊਰਜਾ), ਐਸ.ਡੀ.ਜੀ 9 (ਉਦਯੋਗ, ਨਵੀਨਤਾ ਅਤੇ ਬੁਨਿਆਦੀ ਢਾਂਚਾ), ਅਤੇ ਐਸ.ਡੀ.ਜੀ 13 (ਮੌਸਮੇ ਅਮਲ) ਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ।",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Energy' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Energy'.",
+              "invalid_criteria": "Anything other than the word 'Energy'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "DC motor ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a DC motor.",
+              "invalid_criteria": "Anything other than a motor."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: blades ਘੁੰਮਣ 'ਤੇ ਕੀ ਹੁੰਦਾ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ਆਪਣੀ windmill ਕੰਮ ਕਰਦੇ ਹੋਏ ਦਾ video ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Light Sets the Alarm 🔦",
+      "desc": "LDR",
+      "rwc": "Breadboard, Resistor, Battery, Transistor",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 34,
+          "nm": "Can light set off alarms? 🔦",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਪ੍ਰਕਾਸ਼-ਟ੍ਰਿਗਰ ਬਜ਼ਰ ਅਲਰਟ ਬਣਾਉਣਗੇ, ਜੋ ਕਿ ਇੱਕ ਬੁਨਿਆਦੀ ਸੁਰੱਖਿਆ ਪ੍ਰਣਾਲੀ ਦੀ ਨਕਲ ਕਰੇਗਾ।",
+          "yt": "kIcLDoNdHQQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 35,
+        "nm": "Can light trigger a buzzer? 🔔",
+        "qs": [
+          {
+            "q": "ਸਿਕਿਊਰਟੀ ਅਲਰਟ ਸਿਸਟਮ ਵਿੱਚ ਰੋਸ਼ਨੀ ਦਾ ਪਤਾ ਕਰਨ ਲਈ ਕਿਹੜਾ ਕੰਪੋਨੈਂਟ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+            "opts": {
+              "1": "LDR (Light Dependent Resistor)",
+              "2": "BC547 Transistor",
+              "3": "10kΩ Resistor"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਦੱਸੇ ਪ੍ਰੋਜੈਕਟ ਦਾ ਮੁੱਖ ਮਕਸਦ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To build a light-triggered security alert system",
+              "2": "To create a sound system",
+              "3": "To design a decorative lighting system"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਕਿਹੜਾ ਕੰਪੋਨੈਂਟ ਟ੍ਰਾਂਜ਼ਿਸਟਰ ਦੇ ਬੇਸ ਅਤੇ ਬ੍ਰੇਡਬੋਰਡ ਦੋਵਾਂ ਨਾਲ ਜੁੜਿਆ ਹੁੰਦਾ ਹੈ?",
+            "opts": { "1": "LED", "2": "LDR", "3": "10kΩ Resistor" },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇ ਤੁਸੀਂ ਆਪਣਾ ਸਿਕਿਊਰਟੀ ਸਿਸਟਮ ਹਨੇਰੇ ਇਲਾਕਿਆਂ ਵਿੱਚ ਕੰਮ ਕਰਨ ਲਈ ਅੱਪਗਰੇਡ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਤੁਸੀਂ ਕਿਹੜਾ ਕੰਪੋਨੈਂਟ ਸ਼ਾਮਲ ਕਰਨ ਦਾ ਵਿਚਾਰ ਕਰ ਸਕਦੇ ਹੋ?",
+            "opts": { "1": "Infrared sensors", "2": "More resistors", "3": "Additional buzzers" },
+            "ans": "1"
+          },
+          {
+            "q": "ਜਦੋਂ ਐਲਡੀਆਰ ਨੂੰ ਰੋਸ਼ਨੀ ਮਿਲਦੀ ਹੈ, ਤਾਂ ਤੁਹਾਡਾ ਸਿਕਿਊਰਟੀ ਸਿਸਟਮ ਬਜ਼ ਨਹੀਂ ਕਰ ਰਿਹਾ। ਤੁਹਾਨੂੰ ਪਹਿਲਾਂ ਕੀ ਚੈੱਕ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "Check the connections of the LDR and transistor",
+              "2": "Replace the battery",
+              "3": "Reposition the breadboard"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Light-Triggered-Burglar-Alert-🔦-Remedial",
+          "seq": 31,
+          "nm": "Burgler Alert",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਪ੍ਰਕਾਸ਼-ਟ੍ਰਿਗਰ ਬਜ਼ਰ ਅਲਰਟ ਬਣਾਉਣਗੇ, ਜੋ ਕਿ ਇੱਕ ਬੁਨਿਆਦੀ ਸੁਰੱਖਿਆ ਪ੍ਰਣਾਲੀ ਦੀ ਨਕਲ ਕਰੇਗਾ।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Alert' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Alert'.",
+              "invalid_criteria": "Anything other than the word 'Alert'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "buzzer ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a piezoelectric buzzer.",
+              "invalid_criteria": "Anything other than a buzzer."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: LDR ਢਕਣ 'ਤੇ ਕੀ ਹੁੰਦਾ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "alert ਦੀ ਆਵਾਜ਼ ਨਾਲ video ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Magnets Push Apart 🧲",
+      "desc": "Magnetic Levitation",
+      "rwc": "Pen, Straw, LED, Battery, Switch",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 35,
+          "nm": "Can opposite magnets really float? 🧲",
+          "desc": "ਇਸ ਐਕਟੀਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਇੱਕ*ਮੈਗਨੈਟਿਕ ਲੈਵੀਟੇਸ਼ਨ ਡਿਸਪਲੇ* ਬਣਾਉਣਗੇ, ਜਿੱਥੇ ਇੱਕ ਚੁੰਬਕ ਬਿਨਾਂ ਕਿਸੇ ਸਹਾਰੇ ਹਵਾ ਵਿੱਚ ਤੈਰਦਾ ਹੈ! ਚੁੰਬਕ, ਐਲਈਡੀ, ਤਾਰਾਂ ਅਤੇ ਬੈਟਰੀ ਵਰਗੇ ਸਾਦੇ ਘਟਕਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ, ਉਹ ਇੱਕ ਮਾਡਲ ਬਣਾਉਣਗੇ ਜੋ*ਚੁੰਬਕੀ ਵਿਕਰਸ਼ਣ ਅਤੇ ਸੰਤੁਲਨ* ਦੇ ਸੰਕਲਪ ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ। ਜਦੋਂ ਚੁੰਬਕ ਸਹੀ ਤੌਰ 'ਤੇ ਤੈਰਨਾ ਪ੍ਰਾਪਤ ਕਰ ਲੈਂਦਾ ਹੈ, ਤਾਂ ਐਲਈਡੀ ਚਮਕਣ ਲੱਗਦੀ ਹੈ। ਇਹ ਮਨੋਰੰਜਕ ਹੈਂਡਸ-ਆਨ ਪ੍ਰਾਜੈਕਟ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਭਵਿੱਖਵੀ ਤਕਨਾਲੋਜੀਆਂ, ਜਿਵੇਂ ਕਿ*ਮੈਗਲੇਵ ਰੇਲਗੱਡੀਆਂ*, ਜੋ ਕਿ ਤੇਜ਼, ਊਰਜਾ-ਕੁਸ਼ਲ ਅਤੇ ਪਰਿਆਵਰਣ ਮਿਤਰ ਹੁੰਦੀਆਂ ਹਨ, ਨੂੰ ਸਮਝਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ। ਐਕਟੀਵਿਟੀ ਉਨ੍ਹਾਂ ਦੀ ਰਚਨਾਤਮਕਤਾ ਅਤੇ ਸਮੱਸਿਆ-ਹਲ ਕਰਨ ਦੀਆਂ ਯੋਗਤਾਵਾਂ ਨੂੰ ਵੀ ਵਧਾਉਂਦੀ ਹੈ।",
+          "yt": "pUc7_eA2z0Y",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 36,
+        "nm": "Can magnets make things levitate? 🧲",
+        "qs": [
+          {
+            "q": "ਮੈਗਨੇਟਿਕ ਲੇਵੀਟੇਸ਼ਨ ਡਿਸਪਲੇ ਐਕਟਿਵਿਟੀ ਵਿੱਚ ਮੁੱਖ ਤੌਰ 'ਤੇ ਕਿਹੜਾ ਸੰਕਲਪ ਦਰਸਾਇਆ ਗਿਆ ਹੈ?",
+            "opts": {
+              "1": "Thermal expansion",
+              "2": "Electromagnetic induction",
+              "3": "Magnetic levitation"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਜਦੋਂ ਮੈਗਨੈਟ ਪੂਰੀ ਤਰ੍ਹਾਂ ਸੰਤੁਲਿਤ ਹੁੰਦਾ ਹੈ ਤਾਂ ਐਲਈਡੀ ਲਾਈਟ ਕਿਉਂ ਜਲਦੀ ਹੈ?",
+            "opts": {
+              "1": "Because the electrical circuit is complete",
+              "2": "Because of the heat produced by the magnets",
+              "3": "Because the magnets are aligned with the Earth's magnetic field"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਮੈਗਨੈਟ ਨੂੰ ਕਾਰਡਬੋਰਡ ਬੇਸ 'ਤੇ ਫਿਕਸ ਕਰਨ ਲਈ ਕਿਹੜਾ ਘਟਕਾ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+            "opts": { "1": "Rubber band", "2": "Double-sided tape", "3": "Glue stick" },
+            "ans": "2"
+          },
+          {
+            "q": "ਜੇ ਐਲਈਡੀ ਨਹੀਂ ਜਲ ਰਹੀ ਹੈ, ਤਾਂ ਪਹਿਲਾਂ ਕਿਹੜੇ ਸਮੱਸਿਆ-ਹਲ ਕਦਮ ਲੈਣੇ ਚਾਹੀਦੇ ਹਨ?",
+            "opts": {
+              "1": "Replace the battery",
+              "2": "Check all the connections",
+              "3": "Add more magnets"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਇੱਕ ਵਿਦਿਆਰਥੀ ਪਾਉਂਦਾ ਹੈ ਕਿ ਜਦੋਂ ਮੈਗਨੈਟਸ ਨੂੰ ਹਿਲਾਇਆ ਜਾਂਦਾ ਹੈ ਤਾਂ ਐਲਈਡੀ ਜਲਣ ਬੰਦ ਕਰ ਦਿੰਦੀ ਹੈ। ਇਹ ਕੀ ਦਰਸਾਉਂਦਾ ਹੈ?",
+            "opts": {
+              "1": "The battery is dead",
+              "2": "The magnets are too weak",
+              "3": "The circuit is broken"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Magnetic-Levitation-Display-🧲-Intermediate",
+          "seq": 32,
+          "nm": "Magnetic Levitation",
+          "desc": "ਇਸ ਐਕਟੀਵਿਟੀ ਵਿੱਚ ਵਿਦਿਆਰਥੀ ਇੱਕ *ਮੈਗਨੇਟਿਕ ਲੈਵੀਟੇਸ਼ਨ ਡਿਸਪਲੇ* ਬਣਾਉਣਗੇ, ਜਿੱਥੇ ਇੱਕ ਚੁੰਬਕ ਬਿਨਾਂ ਕਿਸੇ ਸਹਾਰੇ ਹਵਾ ਵਿੱਚ ਤੈਰਦਾ ਹੈ! ਚੁੰਬਕਾਂ, ਐਲਈਡੀ, ਤਾਰਾਂ ਅਤੇ ਬੈਟਰੀ ਵਰਗੇ ਸਧਾਰਨ ਘਟਕਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ, ਉਹ ਇੱਕ ਮਾਡਲ ਤਿਆਰ ਕਰਨਗੇ ਜੋ *ਚੁੰਬਕੀ ਵਿਕਰਸ਼ਣ ਅਤੇ ਸੰਤੁਲਨ* ਦੇ ਸੰਕਲਪ ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ। ਜਦੋਂ ਚੁੰਬਕ ਪੂਰੀ ਤਰ੍ਹਾਂ ਤੈਰਣ ਦੀ ਸਥਿਤੀ ਹਾਸਲ ਕਰ ਲੈਂਦਾ ਹੈ, ਤਾਂ ਐਲਈਡੀ ਚਮਕੇਗੀ। ਇਹ ਮਨੋਰੰਜਕ ਹੈਂਡਸ-ਆਨ ਪ੍ਰਾਜੈਕਟ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਭਵਿੱਖ ਦੀਆਂ ਤਕਨਾਲੋਜੀਆਂ ਜਿਵੇਂ ਕਿ *ਮੈਗਲੇਵ ਟਰੇਨ* ਸਮਝਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਤੇਜ਼, ਊਰਜਾ-ਕੁਸ਼ਲ ਅਤੇ ਵਾਤਾਵਰਣ-ਮਿੱਤ੍ਰ ਹਨ। ਇਹ ਐਕਟੀਵਿਟੀ ਉਨ੍ਹਾਂ ਦੀ ਸਿਰਜਣਾਤਮਕਤਾ ਅਤੇ ਸਮੱਸਿਆ-ਹਲ ਕਰਨ ਦੀਆਂ ਸਮਰਥਾਵਾਂ ਨੂੰ ਵੀ ਵਧਾਉਂਦੀ ਹੈ।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Balance' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Balance'.",
+              "invalid_criteria": "Anything other than the word 'Balance'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਤੁਸੀਂ ਜੋ magnets ਵਰਤੇ ਉਨ੍ਹਾਂ ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains 2–3 magnets.",
+              "invalid_criteria": "Anything other than magnets."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: LED ਕਦੋਂ ਜਗਦੀ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "balanced state ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Motor Lifts Again 🏗️",
+      "desc": "Mechanical Advantage, Pulley System Efficiency, Rotational Force, Torque, Data Analysis, Design Refinement",
+      "rwc": "Tape, Battery, Switch, Motor, A Small Object",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 36,
+          "nm": "Can a motor lift weight? 🏗️",
+          "desc": "ਵਿਦਿਆਰਥੀ ਮੋਟਰਾਈਜ਼ਡ ਪੁਲੀ ਚੈਲੈਂਜ ਤੋਂ ਅੰਤਿਮ ਨਿਰਮਾਣ ਅਤੇ ਪ੍ਰਦਰਸ਼ਨ ਡਾਟਾ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਦੇ ਹਨ। ਉਹ ਪ੍ਰਣਾਲੀ ਦੀ ਕੁਸ਼ਲਤਾ ਦਾ ਮੁਲਾਂਕਣ ਕਰਦੇ ਹਨ, ਪੁਲੀ ਦੁਆਰਾ ਪ੍ਰਾਪਤ ਮਕੈਨੀਕਲ ਫਾਇਦੇ ਦਾ ਅਨੁਮਾਨ ਲਗਾਉਂਦੇ ਹਨ, ਅਤੇ ਮੋਟਰ ਦੀ ਸਿਧਾਂਤਕ ਅਤੇ ਅਸਲ ਉਠਾਉਣ ਸਮਰੱਥਾ ਦੀ ਗਣਨਾ ਕਰਦੇ ਹਨ। ਉਹ ਇੱਕ ਅੰਤਿਮ ਡਿਜ਼ਾਈਨ ਸੁਧਾਰ ਦਾ ਪ੍ਰਸਤਾਵ ਅਤੇ ਨਿਆਂ ਕਰਨਗੇ।",
+          "yt": "rNFBw1xM-Vs",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 37,
+        "nm": "Can a motor lift heavy loads? 🏗️",
+        "qs": [
+          {
+            "q": "ਪੁਲੀ ਸਿਸਟਮ ਵਿੱਚ ਮੋਟਰ ਕਿਸ ਤਰ੍ਹਾਂ ਦੀ ਗਤੀ ਪੈਦਾ ਕਰਦਾ ਹੈ?",
+            "opts": { "1": "Vibrational motion", "2": "Rotational motion", "3": "Linear motion" },
+            "ans": "2"
+          },
+          {
+            "q": "ਵਰਣਿਤ ਮੋਟਰਾਈਜ਼ਡ ਪੁਲੀ ਸਿਸਟਮ ਵਿੱਚ ਮੋਟਰ ਦਾ ਮੁੱਖ ਕੰਮ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To generate sound",
+              "2": "To convert electrical energy into rotational motion",
+              "3": "To provide light"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਪੁਲੀ ਸਿਸਟਮ ਵਿੱਚ ਮੋਟਰ ਦੇ ਸੰਚਾਲਨ ਨੂੰ ਕੌਣਸਾ ਭਾਗ ਨਿਯੰਤ੍ਰਿਤ ਕਰਦਾ ਹੈ?",
+            "opts": { "1": "Pulley wheel", "2": "Switch", "3": "Rubber bands" },
+            "ans": "2"
+          },
+          {
+            "q": "ਜੇਕਰ ਪੁਲੀ ਸਿਸਟਮ ਵਸਤੂ ਨੂੰ ਨਹੀਂ ਉਠਾ ਰਿਹਾ ਹੈ, ਤਾਂ ਤੁਹਾਨੂੰ ਪਹਿਲਾਂ ਕਿਸ ਭਾਗ ਨੂੰ ਕਿਸੇ ਵੀ ਡਿਸਕਨੈਕਸ਼ਨ ਲਈ ਚੈਕ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "The object tied with the thread",
+              "2": "The tape securing the object",
+              "3": "The connections between the switch, motor, and battery"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਇੱਕ ਵਿਦਿਆਰਥੀ ਮੋਟਰਾਈਜ਼ਡ ਪੁਲੀ ਨਾਲ ਭਾਰੀ ਵਸਤੂਆਂ ਦੀ ਵਰਤੋਂ ਕਰਨਾ ਚਾਹੁੰਦਾ ਹੈ। ਉਨ੍ਹਾਂ ਨੂੰ ਸਿਸਟਮ ਫੇਲ੍ਹ ਤੋਂ ਬਚਾਉਣ ਲਈ ਕੀ ਯਕੀਨੀ ਬਣਾਉਣਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "The base is made of metal instead of cardboard",
+              "2": "The switch is placed closer to the battery",
+              "3": "The motor is strong enough to lift the heavier load"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Motorised-Pulley-System-🏗️-Remedial",
+          "seq": 33,
+          "nm": "Motorised pulley",
+          "desc": "ਵਿਦਿਆਰਥੀ ਮੋਟਰਾਈਜ਼ਡ ਪੁਲੀ ਚੈਲੈਂਜ ਤੋਂ ਅੰਤਿਮ ਨਿਰਮਾਣ ਅਤੇ ਪ੍ਰਦਰਸ਼ਨ ਡਾਟਾ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਦੇ ਹਨ। ਉਹ ਪ੍ਰਣਾਲੀ ਦੀ ਕੁਸ਼ਲਤਾ ਦਾ ਮੁਲਾਂਕਣ ਕਰਦੇ ਹਨ, ਪੁਲੀ ਦੁਆਰਾ ਪ੍ਰਾਪਤ ਮਕੈਨੀਕਲ ਫਾਇਦੇ ਦਾ ਅਨੁਮਾਨ ਲਗਾਉਂਦੇ ਹਨ, ਅਤੇ ਮੋਟਰ ਦੀ ਸਿਧਾਂਤਕ ਅਤੇ ਅਸਲ ਉਠਾਉਣ ਸਮਰੱਥਾ ਦੀ ਗਣਨਾ ਕਰਦੇ ਹਨ। ਉਹ ਇੱਕ ਅੰਤਿਮ ਡਿਜ਼ਾਈਨ ਸੁਧਾਰ ਦਾ ਪ੍ਰਸਤਾਵ ਅਤੇ ਨਿਆਂ ਕਰਨਗੇ।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Motor' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Motor'.",
+              "invalid_criteria": "Anything other than the word 'Motor'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "pulley wheel ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a pulley wheel or similar round object.",
+              "invalid_criteria": "Anything other than a pulley part."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: ਕੀ ਤੁਹਾਡੇ connections ਸੁਰੱਖਿਅਤ ਹਨ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "pulley ਭਾਰ ਚੁੱਕਦੇ ਹੋਏ ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Magnet Pulls the Metal 🔩",
+      "desc": "Trade-Offs in Design, Mechanical Advantage Calculation, Interface Optimization, Data Presentation",
+      "rwc": "Cardboard, Tape, Battery, Wire, Switch, Bottle",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 37,
+          "nm": "Can a magnet grab metal? 🔩",
+          "desc": "ਵਿਦਿਆਰਥੀ ਮੈਟਲ ਐਕਸਟ੍ਰੈਕਟਰ + ਪੁਲੀ ਚੈਲੈਂਜ ਲਈ ਅੰਤਿਮ, ਇਕੱਠੇ ਕੀਤੇ ਡਿਜ਼ਾਈਨ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਨਗੇ। ਉਹ ਇਲੈਕਟ੍ਰੋਮਕੈਨਿਕਲ ਸਿਸਟਮ ਦੀ ਕਾਰਗੁਜ਼ਾਰੀ ਦਾ ਮੁਲਾਂਕਣ ਕਰਨਗੇ, ਇਲੈਕਟ੍ਰੋਮੈਗਨੈਟ ਦੀ ਉਠਾਉਣ ਸ਼ਕਤੀ ਅਤੇ ਪੁਲੀ ਦੇ ਮਕੈਨਿਕਲ ਫਾਇਦੇ ਦੇ ਦਰਮਿਆਨ ਦੇ ਇੰਟਰਫੇਸ 'ਤੇ ਕੇਂਦਰਿਤ ਹੋ ਕੇ।",
+          "yt": "WKZTdohO_Ck",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 38,
+        "nm": "Can a nail become a magnet? 🔩",
+        "qs": [
+          {
+            "q": "ਇਲੈਕਟ੍ਰੋਮੈਗਨੈਟ ਬਣਾਉਣ ਲਈ ਲੋਹੇ ਦੀ ਕੀਲ ਦੇ ਆਲੇ-ਦੁਆਲੇ ਕੀ ਵਰਤੀ ਜਾਂਦੀ ਹੈ?",
+            "opts": { "1": "Insulated copper wire", "2": "Steel wool", "3": "Plastic string" },
+            "ans": "1"
+          },
+          {
+            "q": "ਇਸ ਸਿਸਟਮ ਵਿੱਚ ਪੁਲੀ ਦੀ ਪ੍ਰਧਾਨ ਉਦੇਸ਼ਤਾ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To cut the metal pieces",
+              "2": "To lift the metal easily",
+              "3": "To charge the battery"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਜੇਕਰ ਤੁਸੀਂ ਇਲੈਕਟ੍ਰੋਮੈਗਨੈਟ ਵਿੱਚ ਤਾਂਬੇ ਦੀ ਤਾਰ ਨੂੰ ਬਦਲਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਤੁਸੀਂ ਵਿਕਲਪ ਲੱਭਣ ਲਈ ਕਿਹੜੀ ਕੁਸ਼ਲਤਾ ਵਰਤੋਂਗੇ?",
+            "opts": { "1": "Time Management", "2": "Problem Solving", "3": "Communication" },
+            "ans": "2"
+          },
+          {
+            "q": "ਜੇਕਰ ਲੋਹੇ ਦੇ ਟੁਕੜੇ ਪ੍ਰਭਾਵਸ਼ਾਲੀ ਤਰੀਕੇ ਨਾਲ ਨਹੀਂ ਚੁੱਕੇ ਜਾ ਰਹੇ, ਤਾਂ ਤੁਹਾਨੂੰ ਸਭ ਤੋਂ ਪਹਿਲਾਂ ਕੀ ਕੋਸ਼ਿਸ਼ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ?",
+            "opts": {
+              "1": "Add more cardboard to the stand",
+              "2": "Use a bigger metal piece",
+              "3": "Check the connections between the battery and the copper wire"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇਕਰ ਪੁਲੀ ਸਿਸਟਮ ਸਹੀ ਤਰੀਕੇ ਨਾਲ ਕੰਮ ਨਹੀਂ ਕਰ ਰਿਹਾ, ਤਾਂ ਕਿਹੜੀਆਂ ਕਾਰਵਾਈਆਂ ਮਦਦਗਾਰ ਹੋ ਸਕਦੀਆਂ ਹਨ?",
+            "opts": {
+              "1": "Decrease the number of turns of copper wire",
+              "2": "Remove the cardboard stand entirely",
+              "3": "Ensure the pulley wheel is fixed properly and rotates freely"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Magnet-and-Pulley-Extractor-🔩-Intermediate",
+          "seq": 34,
+          "nm": "Metal Extractor",
+          "desc": "ਵਿਦਿਆਰਥੀ ਮੈਟਲ ਐਕਸਟ੍ਰੈਕਟਰ + ਪੁਲੀ ਚੈਲੈਂਜ ਲਈ ਅੰਤਿਮ, ਇਕੱਠੇ ਕੀਤੇ ਡਿਜ਼ਾਈਨ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਨਗੇ। ਉਹ ਇਲੈਕਟ੍ਰੋਮਕੈਨਿਕਲ ਸਿਸਟਮ ਦੀ ਕਾਰਗੁਜ਼ਾਰੀ ਦਾ ਮੁਲਾਂਕਣ ਕਰਨਗੇ, ਇਲੈਕਟ੍ਰੋਮੈਗਨੈਟ ਦੀ ਉਠਾਉਣ ਸ਼ਕਤੀ ਅਤੇ ਪੁਲੀ ਦੇ ਮਕੈਨਿਕਲ ਫਾਇਦੇ ਦੇ ਦਰਮਿਆਨ ਦੇ ਇੰਟਰਫੇਸ 'ਤੇ ਕੇਂਦਰਿਤ ਹੋ ਕੇ।",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Extractor' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Extractor'.",
+              "invalid_criteria": "Anything other than the word 'Extractor'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਲੋਹੇ ਦੀ ਕਿੱਲ ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a large iron nail.",
+              "invalid_criteria": "Anything other than an iron nail."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: ਇਹ ਧਾਤ ਨੂੰ ਕਿਵੇਂ ਚੁੱਕਦਾ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "extractor ਧਾਤ ਚੁੱਕਦੇ ਹੋਏ ਦਾ video ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Coils Generate Sparks ⚡",
+      "desc": "Induced Currents",
+      "rwc": "Scissors, Cardboard, Tape, Resistor, LED, Wire, Transistor, Pliers",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 38,
+          "nm": "Can coils generate real electricity? ⚡",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਦੂਸਰੀ ਕੁਇਲ ਵਿੱਚ ਕਰੰਟ ਪ੍ਰੇਰਿਤ ਕਰਨ ਲਈ ਪ੍ਰਾਇਮਰੀ ਕੁਇਲ ਅਤੇ ਬੀਸੀ੪੫੭ ਟ੍ਰਾਂਜ਼ਿਸਟਰ ਦੀ ਵਰਤੋਂ ਕਰਨਗੇ।",
+          "yt": "knMLXV_zf6U",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 39,
+        "nm": "Can coils generate electricity? ⚡",
+        "qs": [
+          {
+            "q": "ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਬਿਜਲੀ ਪੈਦਾ ਕਰਨ ਲਈ ਕੁਆਇਲ ਬਣਾਉਣ ਲਈ ਕੀ ਲੋੜੀਂਦਾ ਹੈ?",
+            "opts": { "1": "Copper wire", "2": "Plastic tube", "3": "Steel rod" },
+            "ans": "1"
+          },
+          {
+            "q": "ਜਦੋਂ ਕੁਆਇਲ ਨੂੰ ਐਲਈਡੀ ਸੈਟਅੱਪ ਤੋਂ ਦੂਰ ਕੀਤਿਆ ਜਾਂਦਾ ਹੈ ਤਾਂ ਕੀ ਹੁੰਦਾ ਹੈ?",
+            "opts": {
+              "1": "The LED glows brighter",
+              "2": "The LED stops glowing",
+              "3": "The coil generates more electricity"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਪਹਿਲੀ ਕੁਆਇਲ ਨੂੰ ਐਲਈਡੀ ਨਾਲ ਕਿਵੇਂ ਜੋੜਿਆ ਜਾਂਦਾ ਹੈ?",
+            "opts": {
+              "1": "Both ends of the coil are connected to the LED",
+              "2": "The first coil is connected to the LED through a transistor and resistor",
+              "3": "The coil is directly connected to the battery"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਜੇ ਤੁਹਾਡਾ ਐਲਈਡੀ ਸੈਟਅੱਪ ਕੰਮ ਕਰਨਾ ਬੰਦ ਕਰ ਦੇਵੇ, ਤਾਂ ਸਮੱਸਿਆ ਦਾ ਹੱਲ ਲੱਭਣ ਲਈ ਪਹਿਲਾ ਕਦਮ ਕੀ ਲੈਣਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "Check the connections and ensure the wire insulation is removed at the ends",
+              "2": "Use a larger LED",
+              "3": "Increase the number of turns in the coil"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਜੇ ਤੁਹਾਨੂੰ ਇਹ ਨਹੀਂ ਪਤਾ ਕਿ ਬਿਜਲੀ ਪੈਦਾ ਕਰਨ ਲਈ ਕੁਆਇਲ ਵਿੱਚ ਕਿੰਨੇ ਮੋੜਾਂ ਦੀ ਲੋੜ ਹੈ, ਤਾਂ ਤੁਹਾਨੂੰ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "Consult AI assistance like ChatGPT for guidance",
+              "2": "Randomly guess the number of turns",
+              "3": "Use more powerful magnets"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Demonstrate-Electromagnetic-Induction-⚡-Remedial",
+          "seq": 35,
+          "nm": "Electromagnetic Induction",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਦੂਸਰੀ ਕੁਇਲ ਵਿੱਚ ਕਰੰਟ ਪ੍ਰੇਰਿਤ ਕਰਨ ਲਈ ਪ੍ਰਾਇਮਰੀ ਕੁਇਲ ਅਤੇ ਬੀਸੀ੪੫੭ ਟ੍ਰਾਂਜ਼ਿਸਟਰ ਦੀ ਵਰਤੋਂ ਕਰਨਗੇ।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Field' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Field'.",
+              "invalid_criteria": "Anything other than the word 'Field'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "copper wire coil ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a coil of copper wire.",
+              "invalid_criteria": "Anything other than copper wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: LED ਕਦੋਂ ਜਗਦੀ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "induction ਕੰਮ ਕਰਦੇ ਹੋਏ ਦਾ video ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Copper Lights a Card 💌",
+      "desc": "LEDs, Battery, Copper Tape",
+      "rwc": "Handmade Gift Card, Tape, LED, Coin Cell",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 39,
+          "nm": "Can copper light a card? 💌",
+          "desc": "ਵਿਦਿਆਰਥੀ ਨੂੰ ਐਲਈਡੀਜ਼, ਸਿੱਕਾ ਸੈੱਲ ਅਤੇ ਤਾਰ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਜਨਮਦਿਨ ਕਾਰਡ ਬਣਾਉਣਾ ਹੈ।",
+          "yt": "wnlXUONB-RM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 40,
+        "nm": "Can copper light a greeting? 💌",
+        "qs": [
+          {
+            "q": "ਐਲਈਡੀ ਕਾਰਡ ਪ੍ਰੋਜੈਕਟ ਵਿੱਚ ਬਿਜਲੀ ਚਲਾਉਣ ਲਈ ਕੀ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+            "opts": { "1": "Rubber band", "2": "Copper tape", "3": "Plastic tape" },
+            "ans": "2"
+          },
+          {
+            "q": "ਐਲਈਡੀ ਕਾਰਡ ਵਿੱਚ ਕਾਇਨ ਸੈੱਲ ਦੇ ਵਰਤੋਂ ਦਾ ਮਕਸਦ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To attach the LED to the card",
+              "2": "To draw designs on the card",
+              "3": "To supply power to the LED"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਐਲਈਡੀ ਕਾਰਡ ਪ੍ਰੋਜੈਕਟ ਸ਼ੁਰੂ ਕਰਦੇ ਸਮੇਂ ਤੁਹਾਨੂੰ ਸਭ ਤੋਂ ਪਹਿਲਾਂ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "Draw an outline for the card",
+              "2": "Place the LED",
+              "3": "Color the card"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਜੇ ਤੁਹਾਡੀ ਐਲਈਡੀ ਨਹੀਂ ਜਲ ਰਹੀ, ਤਾਂ ਕੀ ਸਮੱਸਿਆ ਹੋ ਸਕਦੀ ਹੈ?",
+            "opts": {
+              "1": "The colors used are too dark",
+              "2": "The drawing sheet is too thick",
+              "3": "The LED legs are connected to the wrong sides of the coin cell"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਇੱਕ ਮੁਕੰਮਲ ਕਾਰਡ 'ਤੇ ਚਾਹੇ ਸਮੇਂ ਤੇ ਐਲਈਡੀ ਜਲੇ, ਇਹ ਕਿਵੇਂ ਯਕੀਨੀ ਬਣਾਇਆ ਜਾ ਸਕਦਾ ਹੈ?",
+            "opts": {
+              "1": "Attach more LEDs to the card",
+              "2": "Use more colorful designs",
+              "3": "Press the side of the card to complete the circuit"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Glowing-Birthday-Card-💌-Advanced",
+          "seq": 36,
+          "nm": "Birthday Card",
+          "desc": "ਵਿਦਿਆਰਥੀ ਨੂੰ ਐਲਈਡੀਜ਼, ਸਿੱਕਾ ਸੈੱਲ ਅਤੇ ਤਾਰ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਜਨਮਦਿਨ ਕਾਰਡ ਬਣਾਉਣਾ ਹੈ।",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Birthday' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Birthday'.",
+              "invalid_criteria": "Anything other than the word 'Birthday'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "copper tape ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains copper tape.",
+              "invalid_criteria": "Anything other than copper tape."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: ਤੁਸੀਂ battery ਕਿਵੇਂ ਜੋੜੀ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ਆਪਣੇ ਵਿਲੱਖਣ Birthday Card ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Magnets Float in Air 🧲",
+      "desc": "Repel Properties of magnet",
+      "rwc": "Pen, Cardboard, Tape, Straw, LED, Battery, Switch",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 40,
+          "nm": "Can magnets make things float? 🧲",
+          "desc": "ਇਸ ਐਕਟੀਵਿਟੀ ਵਿੱਚ ਵਿਦਿਆਰਥੀ ਇੱਕ *ਮੈਗਨੇਟਿਕ ਲੈਵੀਟੇਸ਼ਨ ਡਿਸਪਲੇ* ਬਣਾਉਣਗੇ, ਜਿੱਥੇ ਇੱਕ ਚੁੰਬਕ ਬਿਨਾਂ ਕਿਸੇ ਸਹਾਰੇ ਹਵਾ ਵਿੱਚ ਤੈਰਦਾ ਹੈ! ਚੁੰਬਕਾਂ, ਐਲਈਡੀ, ਤਾਰਾਂ ਅਤੇ ਬੈਟਰੀ ਵਰਗੇ ਸਧਾਰਨ ਘਟਕਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ, ਉਹ ਇੱਕ ਮਾਡਲ ਤਿਆਰ ਕਰਨਗੇ ਜੋ *ਚੁੰਬਕੀ ਵਿਕਰਸ਼ਣ ਅਤੇ ਸੰਤੁਲਨ* ਦੇ ਸੰਕਲਪ ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ। ਜਦੋਂ ਚੁੰਬਕ ਪੂਰੀ ਤਰ੍ਹਾਂ ਤੈਰਣ ਦੀ ਸਥਿਤੀ ਹਾਸਲ ਕਰ ਲੈਂਦਾ ਹੈ, ਤਾਂ ਐਲਈਡੀ ਚਮਕੇਗੀ। ਇਹ ਮਨੋਰੰਜਕ ਹੈਂਡਸ-ਆਨ ਪ੍ਰਾਜੈਕਟ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਭਵਿੱਖ ਦੀਆਂ ਤਕਨਾਲੋਜੀਆਂ ਜਿਵੇਂ ਕਿ *ਮੈਗਲੇਵ ਟਰੇਨ* ਸਮਝਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਤੇਜ਼, ਊਰਜਾ-ਕੁਸ਼ਲ ਅਤੇ ਵਾਤਾਵਰਣ-ਮਿੱਤ੍ਰ ਹਨ। ਇਹ ਐਕਟੀਵਿਟੀ ਉਨ੍ਹਾਂ ਦੀ ਸਿਰਜਣਾਤਮਕਤਾ ਅਤੇ ਸਮੱਸਿਆ-ਹਲ ਕਰਨ ਦੀਆਂ ਸਮਰਥਾਵਾਂ ਨੂੰ ਵੀ ਵਧਾਉਂਦੀ ਹੈ।",
+          "yt": "pUc7_eA2z0Y",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 41,
+        "nm": "Can magnets make things float? 🧲",
+        "qs": [
+          {
+            "q": "ਤੁਸੀਂ ਪਹਿਲੇ ਚੁੰਬਕ ਨੂੰ ਕਾਰਡਬੋਰਡ ਨਾਲ ਜੁੜਨ ਲਈ ਕੀ ਦੀ ਲੋੜ ਹੈ?",
+            "opts": { "1": "Double-sided tape", "2": "Nails", "3": "Glue" },
+            "ans": "1"
+          },
+          {
+            "q": "ਜਦੋਂ ਚੁੰਬਕ ਠੀਕ ਤਰੀਕੇ ਨਾਲ ਉਲਟੇ ਧਰਾਂ ਦੇ ਸਾਹਮਣੇ ਰੱਖੇ ਜਾਂਦੇ ਹਨ ਤਾਂ ਕੀ ਹੁੰਦਾ ਹੈ?",
+            "opts": {
+              "1": "The magnet floats above",
+              "2": "The magnets stick together",
+              "3": "The LED light glows immediately"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਐਲਈਡੀ ਨੂੰ ਚਮਕਣ ਲਈ ਕਿਹੜਾ ਪੁਰਜ਼ਾ ਲੋੜੀਂਦਾ ਹੈ?",
+            "opts": { "1": "A resistor", "2": "A capacitor", "3": "A switch" },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇ ਐਲਈਡੀ ਚਮਕਦੀ ਨਹੀਂ ਹੈ ਤਾਂ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "Replace the LED",
+              "2": "Check all the connections again",
+              "3": "Use more magnets"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਐਲਈਡੀ ਨੂੰ ਲਗਾਤਾਰ ਚਮਕਾਉਣ ਲਈ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "Maintain the perfect balance of the magnets",
+              "2": "Use stronger magnets",
+              "3": "Add more batteries"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Magnetic-Levitation-Display-🧲-Intermediate",
+          "seq": 37,
+          "nm": "Magnetic Levitation",
+          "desc": "ਇਸ ਐਕਟੀਵਿਟੀ ਵਿੱਚ ਵਿਦਿਆਰਥੀ ਇੱਕ *ਮੈਗਨੇਟਿਕ ਲੈਵੀਟੇਸ਼ਨ ਡਿਸਪਲੇ* ਬਣਾਉਣਗੇ, ਜਿੱਥੇ ਇੱਕ ਚੁੰਬਕ ਬਿਨਾਂ ਕਿਸੇ ਸਹਾਰੇ ਹਵਾ ਵਿੱਚ ਤੈਰਦਾ ਹੈ! ਚੁੰਬਕਾਂ, ਐਲਈਡੀ, ਤਾਰਾਂ ਅਤੇ ਬੈਟਰੀ ਵਰਗੇ ਸਧਾਰਨ ਘਟਕਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ, ਉਹ ਇੱਕ ਮਾਡਲ ਤਿਆਰ ਕਰਨਗੇ ਜੋ *ਚੁੰਬਕੀ ਵਿਕਰਸ਼ਣ ਅਤੇ ਸੰਤੁਲਨ* ਦੇ ਸੰਕਲਪ ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ। ਜਦੋਂ ਚੁੰਬਕ ਪੂਰੀ ਤਰ੍ਹਾਂ ਤੈਰਣ ਦੀ ਸਥਿਤੀ ਹਾਸਲ ਕਰ ਲੈਂਦਾ ਹੈ, ਤਾਂ ਐਲਈਡੀ ਚਮਕੇਗੀ। ਇਹ ਮਨੋਰੰਜਕ ਹੈਂਡਸ-ਆਨ ਪ੍ਰਾਜੈਕਟ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਭਵਿੱਖ ਦੀਆਂ ਤਕਨਾਲੋਜੀਆਂ ਜਿਵੇਂ ਕਿ *ਮੈਗਲੇਵ ਟਰੇਨ* ਸਮਝਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਤੇਜ਼, ਊਰਜਾ-ਕੁਸ਼ਲ ਅਤੇ ਵਾਤਾਵਰਣ-ਮਿੱਤ੍ਰ ਹਨ। ਇਹ ਐਕਟੀਵਿਟੀ ਉਨ੍ਹਾਂ ਦੀ ਸਿਰਜਣਾਤਮਕਤਾ ਅਤੇ ਸਮੱਸਿਆ-ਹਲ ਕਰਨ ਦੀਆਂ ਸਮਰਥਾਵਾਂ ਨੂੰ ਵੀ ਵਧਾਉਂਦੀ ਹੈ।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Balance' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Balance'.",
+              "invalid_criteria": "Anything other than the word 'Balance'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਤੁਸੀਂ ਜੋ magnets ਵਰਤੇ ਉਨ੍ਹਾਂ ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains 2–3 magnets.",
+              "invalid_criteria": "Anything other than magnets."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: LED ਕਦੋਂ ਜਗਦੀ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "balanced state ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

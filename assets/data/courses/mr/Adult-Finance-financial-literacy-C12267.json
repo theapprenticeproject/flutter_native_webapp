@@ -1,0 +1,1040 @@
+{
+  "id": "Adult-Finance-financial-literacy-C12267",
+  "nm": "Adult Finance",
+  "lvl": "Level 3AK",
+  "vrt": "financial-literacy",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Diary Tracks the Cash 📒",
+      "desc": "Cash Flow Statement, Business Finance",
+      "rwc": "Pencil, Eraser",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 1,
+          "nm": "Can a diary track profit? 📒",
+          "desc": "--- या अॅक्टिविटीमध्ये, विद्यार्थी व्यवसाय पैसे कसे व्यवस्थापित करतात याचा शोध घेतील, एक साधा रोख डायरी उदाहरणाच्या माध्यमातून उत्पन्न आणि खर्च यांचा मागोवा ठेवून. तसेच, पीएम मुद्रा योजना सारख्या कर्जांनी व्यवसायांना कसा वाढवायला मदत होते हे ते समजून घेतील.",
+          "yt": "jWTqH7Uf9SQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 1,
+        "nm": "Can a diary track your profits? 📒",
+        "qs": [
+          {
+            "q": "व्यवसायात रोख डायरी ठेवण्याचा मुख्य उद्देश काय आहे?",
+            "opts": {
+              "1": "To track money inflow and outflow",
+              "2": "To attract more customers",
+              "3": "To create a business logo"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "मनी आउट' या शब्दाचा व्यवसायाच्या संदर्भात काय अर्थ आहे?",
+            "opts": {
+              "1": "The money earned from sales",
+              "2": "The profit gained from the business",
+              "3": "The money spent on expenses"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "फिजाला दिवस 3 ला तिच्या व्यवसायात नफा झाला आहे का हे जाणून घ्यायचे असेल तर तिने काय गणना करावी?",
+            "opts": {
+              "1": "The number of customers she served",
+              "2": "The total expenses for the month",
+              "3": "The difference between Money In and Money Out"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "फिजाला तिचा लिंबूपाणी स्टॉल वाढवायचा आहे पण पुरेशा निधीचा अभाव आहे. तिने कोणत्या प्रकारच्या कर्जाचा विचार करावा?",
+            "opts": { "1": "A personal loan", "2": "A Mudra Loan", "3": "A credit card loan" },
+            "ans": "2"
+          },
+          {
+            "q": "कल्पना करा फिजा नवीन ग्राहकांना आकर्षित करण्यासाठी मुद्रा लोन वापरू इच्छिते. एक संभाव्य धोरण काय असू शकते?",
+            "opts": {
+              "1": "Decrease product quality",
+              "2": "Improve marketing and advertising",
+              "3": "Reduce working hours"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Fill-Your-Business-Cash-Diary-📒-Basic",
+          "seq": 1,
+          "nm": "Cash Diary Table",
+          "desc": "--- या अॅक्टिविटीमध्ये, विद्यार्थी व्यवसाय पैसे कसे व्यवस्थापित करतात याचा शोध घेतील, एक साधा रोख डायरी उदाहरणाच्या माध्यमातून उत्पन्न आणि खर्च यांचा मागोवा ठेवून. तसेच, पीएम मुद्रा योजना सारख्या कर्जांनी व्यवसायांना कसा वाढवायला मदत होते हे ते समजून घेतील.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "कॅश डायरीत नोंद केलेली एक गोष्ट सांगा, एका शब्दात टाइप करा किंवा व्हॉइस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "If the student types any one of the following words: Income / Expense, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Income / Expense, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Income / Expense, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "फुलांचा फोटो क्लिक करा आणि अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो क्लिक करा आणि शेअर करा!",
+              "valid_criteria": "Any Flower",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Flower"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि तुमची कॅश डायरी सांगा आणि तुमच्या व्यवसायाला नफा झाला की तोटा ते सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या कॅश डायरीचा एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Shop Logs Every Rupee 🧾",
+      "desc": "Cash Flow Statement, Business Finance",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 2,
+          "nm": "Can Fiza find her profit? 🧾",
+          "desc": "--- या ॲक्टिव्हिटीमध्ये, विद्यार्थी व्यवसाय पैसे कसे व्यवस्थापित करतात हे सोप्या पद्धतीने शिकतील, जे उत्पन्न आणि खर्चाची नोंद ठेवून केले जाते. विद्यार्थी पैसे येण्या-जाण्याची नोंद करण्यासाठी एक साधी कॅश डायरी टेबल तयार करतील. ते पीएम मुद्रा योजना सारखे कर्ज व्यवसाय वाढविण्यास कसे मदत करतात हे देखील सोप्या पद्धतीने समजून घेतील.",
+          "yt": "9zw9LUmoXoo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 2,
+        "nm": "Did your business make profit? 💰",
+        "qs": [
+          {
+            "q": "व्यवसायाच्या संदर्भात 'Money In' म्हणजे काय?",
+            "opts": {
+              "1": "The money received from sales",
+              "2": "The total profit made by the business",
+              "3": "The expenses incurred by the business"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "स्क्रिप्टनुसार व्यवसायात नफा कसा ठरवला जातो?",
+            "opts": {
+              "1": "When Money Out is greater than Money In",
+              "2": "When Money In is greater than Money Out",
+              "3": "When Money In and Money Out are equal"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "जर व्यवसायाचा Money In ₹४०० आणि Money Out ₹१५० असेल, तर आर्थिक परिणाम काय होईल?",
+            "opts": { "1": "Profit", "2": "Loss", "3": "No profit, no loss" },
+            "ans": "1"
+          },
+          {
+            "q": "जर तुम्हाला तुमचा लिंबूपाणी स्टॉल वाढवायचा असेल पण निधीची कमतरता असेल, तर स्क्रिप्टनुसार कोणता कर्ज मदत करू शकेल?",
+            "opts": { "1": "Personal Loan", "2": "Mudra Loan", "3": "Mortgage Loan" },
+            "ans": "2"
+          },
+          {
+            "q": "स्क्रिप्टनुसार विस्तार करणाऱ्या व्यवसायासाठी कोणता प्रकारचा मुद्रा कर्ज योग्य असेल?",
+            "opts": { "1": "Shishu Loan", "2": "Kishor Loan", "3": "Tarun Loan" },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Fill-Fiza's-Business-Cash-Diary-🧾-Remedial",
+          "seq": 2,
+          "nm": "My Simple Cash Diary",
+          "desc": "--- या ॲक्टिव्हिटीमध्ये, विद्यार्थी व्यवसाय पैसे कसे व्यवस्थापित करतात हे सोप्या पद्धतीने शिकतील, जे उत्पन्न आणि खर्चाची नोंद ठेवून केले जाते. विद्यार्थी पैसे येण्या-जाण्याची नोंद करण्यासाठी एक साधी कॅश डायरी टेबल तयार करतील. ते पीएम मुद्रा योजना सारखे कर्ज व्यवसाय वाढविण्यास कसे मदत करतात हे देखील सोप्या पद्धतीने समजून घेतील.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "तुमच्या साध्या कॅश डायरीत नोंद केलेली एक गोष्ट सांगा, एका शब्दात टाइप करा किंवा व्हॉइस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "If the student types any one of the following words: Income / Expense, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Income / Expense, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Income / Expense, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "झाडाचा किंवा वृक्षाचा फोटो क्लिक करा आणि अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो क्लिक करा आणि शेअर करा!",
+              "valid_criteria": "Plant / Tree",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Plant / Tree"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि मुद्रा कर्ज म्हणजे काय आणि ते तुमच्या व्यवसायाला कसे मदत करते ते सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या कॅश डायरीचा (मार्गदर्शित अ‍ॅक्टिव्हिटी) एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Direct or Indirect Sorted 📑",
+      "desc": "Types of Taxes",
+      "rwc": "Pencil, Eraser",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 3,
+          "nm": "Can chips bills hide taxes? 📑",
+          "desc": "या उपक्रमामध्ये विद्यार्थी Direct आणि Indirect कर प्रत्यक्ष आयुष्यात कसे काम करतात हे शिकतील. कोणता कर थेट दिला जातो आणि कोणता कर वस्तूंच्या किंमतीत जोडला जातो हे ते समजून घेतील. विद्यार्थी वेगवेगळे कर योग्य प्रकारे sort करतील, शहाण्या करदात्यांसारखे विचार करतील आणि कर आपल्या दैनंदिन जीवनावर आणि सरकारी सेवांवर कसा परिणाम करतो हे शिकतील.",
+          "yt": "cKYPW6PnKm0",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 3,
+        "nm": "Do you pay tax without knowing? 🧾",
+        "qs": [
+          {
+            "q": "थेट कर म्हणजे काय?",
+            "opts": {
+              "1": "A tax that is directly paid to the government by an individual or organization.",
+              "2": "A tax included in the price of goods and services.",
+              "3": "A tax that can be shifted to another person or entity."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "अप्रत्यक्ष कर कसा कार्य करतो?",
+            "opts": {
+              "1": "It is included in the price of goods and services and paid by the consumer.",
+              "2": "It is paid directly from an individual's income to the government.",
+              "3": "It cannot be shifted from the person who earns to someone else."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "खालीलपैकी कोणता अप्रत्यक्ष कराचा उदाहरण आहे?",
+            "opts": { "1": "Income Tax", "2": "Property Tax", "3": "Tax on biscuits" },
+            "ans": "3"
+          },
+          {
+            "q": "अनिकाच्या पालकांना मासिक पगार मिळतो, आणि ती त्यांच्या पगाराच्या पावतीवर \"उत्पन्न कर\" नावाचे कपात पाहते. या कपातीबद्दल अनिकाने काय समजून घ्यावे?",
+            "opts": {
+              "1": "It is a Direct Tax paid directly from her parents' income to the government.",
+              "2": "It is an Indirect Tax that her parents will recover through other purchases.",
+              "3": "It is a tax that can be shifted to someone else in her family."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "राज एक चिप्सचा पॅकेट विकत घेतो आणि तो एकूण बिलावर लहान कर रक्कम जोडलेली पाहतो. राजला या प्रकारच्या कराबद्दल हुशार आर्थिक निर्णय घ्यायचा आहे. राजने काय विचार करावा?",
+            "opts": {
+              "1": "Stop buying chips to avoid paying any tax at all.",
+              "2": "Understand that this is an Indirect Tax and consider it when budgeting.",
+              "3": "Ask the seller to reduce the tax amount on the bill."
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Sort-Direct-and-Indirect-Taxes-📑-Basic",
+          "seq": 3,
+          "nm": "Know Your Taxes",
+          "desc": "या उपक्रमामध्ये विद्यार्थी Direct आणि Indirect कर प्रत्यक्ष आयुष्यात कसे काम करतात हे शिकतील. कोणता कर थेट दिला जातो आणि कोणता कर वस्तूंच्या किंमतीत जोडला जातो हे ते समजून घेतील. विद्यार्थी वेगवेगळे कर योग्य प्रकारे sort करतील, शहाण्या करदात्यांसारखे विचार करतील आणि कर आपल्या दैनंदिन जीवनावर आणि सरकारी सेवांवर कसा परिणाम करतो हे शिकतील.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "आत्मविश्वास वाटत असल्यास ⭐ पाठवा, गोंधळ असल्यास 👎 पाठवा",
+              "unguided_text": "तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "एका प्रकारच्या कराचे नाव सांगा (प्रत्यक्ष किंवा अप्रत्यक्ष), मग एका शब्दात टाइप करा किंवा व्हॉईस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉईस नोट पाठवा",
+              "valid_criteria": "If the student types any one of the following words: Direct / Indirect, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Direct / Indirect, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Direct / Indirect, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "एका पुस्तकाचा फोटो काढा आणि अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो काढा आणि शेअर करा!",
+              "valid_criteria": "Book",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a book"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉईस नोट पाठवा आणि तुमच्या उपक्रमातून प्रत्यक्ष आणि अप्रत्यक्ष कर यांच्यातील फरक समजावा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या Tax Sorting चार्टचा एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Government Spends Wisely 🏛️",
+      "desc": "Tax",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 4,
+          "nm": "Can you spend taxes wisely? 🏛️",
+          "desc": "या उपक्रमात विद्यार्थी शिकतील की सरकार करातून मिळालेल्या पैशांचा वापर रस्ते, रुग्णालये आणि शाळा यांसारख्या सेवांसाठी कसा करते. ते सरकारप्रमाणे विचार करतील — मर्यादित पैशाचा योग्य वापर कसा करायचा, कराचा अर्थ समजून घेतील आणि सर्वांना उपयोगी ठरणारे निर्णय घेणे शिकतील.",
+          "yt": "APDClJweXfE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 4,
+        "nm": "How does tax money get spent? 🏗️",
+        "qs": [
+          {
+            "q": "सरकार कराचे पैसे कशासाठी वापरते?",
+            "opts": {
+              "1": "To run public services like roads and hospitals",
+              "2": "To pay extra money to rich people",
+              "3": "To give rewards to students"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "सरकारच्या प्रत्येक निवडीचे महत्त्व का आहे?",
+            "opts": {
+              "1": "Because choices can be changed anytime without impact",
+              "2": "Because only one service needs improvement",
+              "3": "Because each decision affects other needs and services"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "शाळेची छप्पर तुटल्यास, कोणत्या क्षेत्राला कराच्या पैशांची गरज आहे?",
+            "opts": {
+              "1": "Buying more computer",
+              "2": "Road development",
+              "3": "Education support and school repairs"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "संपूर्ण पैसा फक्त एका आवडत्या समस्येवर खर्च केल्यास काय होऊ शकते?",
+            "opts": {
+              "1": "Other important needs will not get support",
+              "2": "Everything in the area will get fixed",
+              "3": "The money will increase by itself"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "तुम्ही एक पोस्टर बनवत आहात. कोणता शीर्षक स्पष्ट निर्णय-निर्मिती दर्शवतो?",
+            "opts": {
+              "1": "My favourite colours and drawings",
+              "2": "How I divided ₹10,000 tax money for my community”",
+              "3": "Things I want to buy this month"
+            },
+            "ans": "2"
+          }
+        ]
+      }
+    },
+    {
+      "nm": "Wheel Spins the Investments 🎡",
+      "desc": "Investments Types of investments Diversification",
+      "rwc": "Pencil, Eraser",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 5,
+          "nm": "Can a wheel spread investments? 🎡",
+          "desc": "--- या अ‍ॅक्टिविटीमध्ये, विद्यार्थी पाच वेगवेगळ्या प्रकारच्या गुंतवणुकींची यादी बनवून त्यांना एसडीजी ४: गुणवत्ता शिक्षणाशी जोडून एक इन्व्हेस्टमेंट व्हील तयार करतील. ते शिकतील की गुंतवणूक कौशल्ये शिकणे भविष्यातील नोकऱ्या आणि उद्योजकतेसाठी कसे तयार करण्यास मदत करते.",
+          "yt": "_Ov7CQ8XrbY",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 5,
+        "nm": "Can smart investing reduce risk? 📊",
+        "qs": [
+          {
+            "q": "स्मार्ट इन्व्हेस्टिंग' अ‍ॅक्टिव्हिटीचा मुख्य उद्देश काय आहे?",
+            "opts": {
+              "1": "Financial Literacy",
+              "2": "Health and Wellness",
+              "3": "Environmental Conservation"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "इन्व्हेस्टमेंटच्या संदर्भात डायव्हर्सिफिकेशन म्हणजे काय?",
+            "opts": {
+              "1": "Spreading money across different investments",
+              "2": "Investing all money in one place",
+              "3": "Avoiding any type of investment"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "स्क्रिप्टनुसार रिटर्न्स आणि रिस्क कमी करण्याचे कसे संतुलन साधता येईल?",
+            "opts": {
+              "1": "By only choosing the safest investments",
+              "2": "By diversifying investments",
+              "3": "By investing solely in risky investments"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "तुमची रिस्क घेण्याची क्षमता जास्त असेल आणि रिटर्न्स वाढवायचे असतील तर तुम्ही काय करायला हवे?",
+            "opts": {
+              "1": "Invest more in risky investments",
+              "2": "Invest only in safe investments",
+              "3": "Avoid any investments"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "तुमच्याकडे 20,000 रुपये आहेत आणि तुम्हाला डायव्हर्सिफिकेशन करायचे आहे. संतुलित दृष्टिकोन काय आहे?",
+            "opts": {
+              "1": "Invest all in one risky investment",
+              "2": "Choose 3 safe and 2 risky investments",
+              "3": "Invest only in safe bank deposits"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-Your-Investment-Wheel-🎡-Intermediate",
+          "seq": 4,
+          "nm": "Smart Investing",
+          "desc": "--- या अ‍ॅक्टिविटीमध्ये, विद्यार्थी पाच वेगवेगळ्या प्रकारच्या गुंतवणुकींची यादी बनवून त्यांना एसडीजी ४: गुणवत्ता शिक्षणाशी जोडून एक इन्व्हेस्टमेंट व्हील तयार करतील. ते शिकतील की गुंतवणूक कौशल्ये शिकणे भविष्यातील नोकऱ्या आणि उद्योजकतेसाठी कसे तयार करण्यास मदत करते.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "गुंतवणुकीचा एक प्रकार सांगा, एका शब्दात टाइप करा किंवा व्हॉइस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "If the student types any one of the following words: FD / Stocks / PPF / Gold, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: FD / Stocks / PPF / Gold, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: FD / Stocks / PPF / Gold, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "पेन किंवा पेन्सिलचा फोटो क्लिक करा आणि अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो क्लिक करा आणि शेअर करा!",
+              "valid_criteria": "Pen / Pencil",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than Pen/Pencil"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि तुमचे गुंतवणूक निवडी (सुरक्षित आणि जोखमीचे) सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या इन्व्हेस्टमेंट व्हीलचा एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Risk Meets the Return 📈",
+      "desc": "Investments, Risk, Return",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 6,
+          "nm": "Can a truck lose money? 📈",
+          "desc": "विद्यार्थी समजून घेतील की खरे तर इन्व्हेस्टमेंट म्हणजे काय आणि पैसा कधी कधी कसा वाढू किंवा कमी होऊ शकतो. फूड ट्रक, झाडे आणि फुले यांसारख्या सोप्या उदाहरणांद्वारे ते गुंतवणूक, जोखीम आणि परतावा या संकल्पना शिकतील. ते एफडी आणि पीपीएफसारख्या सुरक्षित गुंतवणुकी आणि शेअर्स, बिझनेस व क्रिप्टोकरन्सी यांसारख्या जोखमीच्या गुंतवणुकीतील फरक पाहतील. उपक्रमात विद्यार्थी ₹25,000 च्या बजेटसाठी सुरक्षित आणि जोखमीच्या गुंतवणूक पर्यायांची निवड करतील, ज्यामुळे त्यांची निर्णय घेण्याची क्षमता मजबूत होईल आणि ते आपल्या उद्दिष्टांनुसार शहाणपणाने गुंतवणूक करायला शिकतील.",
+          "yt": "_A4XUYs6hRU",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 6,
+        "nm": "Can risk ever be worth it? 💹",
+        "qs": [
+          {
+            "q": "गुंतवणूक म्हणजे काय?",
+            "opts": {
+              "1": "Spending all your money on Wants",
+              "2": "Putting money in a place where it can grow in the future",
+              "3": "Keeping money under your pillow"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "जोखीम असतानाही लोक गुंतवणूक का करतात?",
+            "opts": {
+              "1": "Because investments give returns, which can be profit or loss",
+              "2": "Because investments never fail",
+              "3": "Because it is free to invest anywhere"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "जर तुम्ही पैसे फिक्स्ड डिपॉझिटमध्ये ठेवले, तर ती कोणत्या प्रकारची गुंतवणूक आहे?",
+            "opts": { "1": "Safe Investment", "2": "Risky Investment", "3": "No Investment" },
+            "ans": "1"
+          },
+          {
+            "q": "कल्पना करा की तुम्हाला 2 महिन्यांत तुमचे पैसे सुरक्षित परत हवे आहेत. तुम्ही कोणता पर्याय निवडाल?",
+            "opts": { "1": "Stocks", "2": "Savings account", "3": "Cryptocurrency" },
+            "ans": "2"
+          },
+          {
+            "q": "कल्पना करा की तुम्हाला तुमचे पैसे 10 वर्षांत वाढवायचे आहेत. यासाठी कोणता पर्याय हुशारीने निवडाल?",
+            "opts": {
+              "1": "Keep all money at home",
+              "2": "Put everything in one risky option",
+              "3": "Put most money in safe options and some in risky ones"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Choose-Your-Safe-and-Risky-Investments-📈-Remedial",
+          "seq": 5,
+          "nm": "Introduction to Investments",
+          "desc": "विद्यार्थी समजून घेतील की खरे तर इन्व्हेस्टमेंट म्हणजे काय आणि पैसा कधी कधी कसा वाढू किंवा कमी होऊ शकतो. फूड ट्रक, झाडे आणि फुले यांसारख्या सोप्या उदाहरणांद्वारे ते गुंतवणूक, जोखीम आणि परतावा या संकल्पना शिकतील. ते एफडी आणि पीपीएफसारख्या सुरक्षित गुंतवणुकी आणि शेअर्स, बिझनेस व क्रिप्टोकरन्सी यांसारख्या जोखमीच्या गुंतवणुकीतील फरक पाहतील. उपक्रमात विद्यार्थी ₹25,000 च्या बजेटसाठी सुरक्षित आणि जोखमीच्या गुंतवणूक पर्यायांची निवड करतील, ज्यामुळे त्यांची निर्णय घेण्याची क्षमता मजबूत होईल आणि ते आपल्या उद्दिष्टांनुसार शहाणपणाने गुंतवणूक करायला शिकतील.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "गुंतवणुकीचा एक प्रकार सांगा, एका शब्दात टाइप करा किंवा व्हॉइस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "If the student types any one of the following words: Safe / Risky, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Safe / Risky, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Safe / Risky, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "कागदावर काहीतरी काढा आणि त्याचा फोटो क्लिक करून अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो क्लिक करा आणि शेअर करा!",
+              "valid_criteria": "Clear drawing photo",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a drawing photo"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि तुमची गुंतवणूक योजना सांगा आणि तुम्ही जोखीम कशी कमी केली ते सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या इन्व्हेस्टमेंट सिलेक्शन अ‍ॅक्टिव्हिटीचा एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Puzzle Unlocks Payments 🧩",
+      "desc": "Digital Payments",
+      "rwc": "Pencil, Eraser",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 7,
+          "nm": "Can a puzzle unlock payments? 🧩",
+          "desc": "या activity मध्ये विद्यार्थी \"डिजिटल पेमेंट्स पझल\" पोस्टर तयार करतील, ज्यामध्ये डिजिटल पैसे हस्तांतरणाचे मुख्य प्रकार (क्यूआर/कॉन्टॅक्ट्सद्वारे यु.पी.आय., आय.एम.पी.एस., एन.ई.एफ.टी./आर.टी.जी.एस. इंटरनेट किंवा मोबाइल बँकिंगद्वारे) दाखवले जातील आणि प्रत्येक प्रकार एस.डी.जी. ८: सन्मानजनक काम आणि आर्थिक वाढ यांना कसे समर्थन देते हे दाखवले जाईल. ते एस.डी.जी. ८ चा विषय मध्यभागी दाखवतील, त्याचे मुख्य फायदे त्याच्या आजूबाजूला संक्षेपात मांडतील आणि अन्य पॅनेलमध्ये विविध डिजिटल पेमेंट पद्धती दर्शवतील.",
+          "yt": "ctGJuvEKxHg",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 7,
+        "nm": "Can UPI replace your wallet? 📲",
+        "qs": [
+          {
+            "q": "डिजिटल पेमेंट्सच्या संदर्भात UPI चा पूर्ण अर्थ काय आहे?",
+            "opts": {
+              "1": "Universal Payments Interface",
+              "2": "Unified Payments Interface",
+              "3": "Universal Payment Index"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "स्क्रिप्टनुसार डिजिटल पेमेंट्स SDG 8 ला कसा समर्थन करतात?",
+            "opts": {
+              "1": "By reducing the need for physical currency and promoting global trade",
+              "2": "By enabling instant payments that strengthen local economies and create jobs",
+              "3": "By supporting financial institutions in developing new banking products"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "स्क्रिप्टनुसार कोणती पद्धत तुम्हाला अचूक चेंजची चिंता न करता त्वरित पेमेंट करण्यास अनुमती देते?",
+            "opts": {
+              "1": "Scanning a QR code with your phone",
+              "2": "Writing a check",
+              "3": "Using coins and cash"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "तुम्ही एक दुकानदार आहात जो व्यस्त दिवसानंतर लवकर पुनर्भरण करू इच्छिता. जलद निधी उपलब्ध होण्यासाठी ग्राहकांना कोणत्या पेमेंट पद्धतीचा वापर करावा यासाठी प्रोत्साहन द्याल?",
+            "opts": {
+              "1": "Digital payments via UPI",
+              "2": "Credit card payments",
+              "3": "Cash payments"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "तुम्ही एका दैनिक वेतन कामगाराला त्याचे काम पूर्ण होताच पैसे देण्याचे नियोजन करत आहात. स्क्रिप्टनुसार सर्वात कार्यक्षम पेमेंट पद्धत कोणती आहे?",
+            "opts": { "1": "Paying in cash", "2": "Digital transfer", "3": "Writing a check" },
+            "ans": "2"
+          }
+        ]
+      }
+    },
+    {
+      "nm": "Chart Maps the Transfer 💳",
+      "desc": "Digital Payments",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 8,
+          "nm": "Can a scan replace cash? 💳",
+          "desc": "या Activity मध्ये, विद्यार्थी बचत, गुंतवणूक, कर नियोजन, निवृत्ती, आणि आर्थिक संरक्षण यासारख्या महत्त्वाच्या पैशाच्या विषयांबद्दल सोप्या पद्धतीने शिकतील. विद्यार्थी एक साधा \"फायनान्शियल प्लॅनिंग पोस्टर\" तयार करतील ज्यामध्ये या कल्पना पैशांचे व्यवस्थापन करण्यासाठी आणि भविष्याच्या उत्तम निर्णयांसाठी कशा मदत करतात हे दाखवतील. ते एसडीजी ४: गुणवत्तापूर्ण शिक्षणाशी या कौशल्यांचा संबंध कसा आहे हे देखील समजून घेतील.",
+          "yt": "6Y5jcmAFoUE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 8,
+        "nm": "Which payment is truly instant? ⚡",
+        "qs": [
+          {
+            "q": "UPI चा फुलफॉर्म काय आहे?",
+            "opts": {
+              "1": "Unified Payments Interface",
+              "2": "Universal Payment Integration",
+              "3": "United Payment Infrastructure"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "कोणता डिजिटल पेमेंट पद्धत सामान्यतः तत्काळ नसते आणि काही वेळ घेऊ शकते?",
+            "opts": { "1": "IMPS", "2": "UPI", "3": "NEFT" },
+            "ans": "3"
+          },
+          {
+            "q": "डिजिटल पेमेंट करण्याची पहिली पायरी कोणती आहे?",
+            "opts": {
+              "1": "Open the app or website",
+              "2": "Confirm using PIN or OTP",
+              "3": "Enter the amount"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "जर तुम्हाला त्वरित मोठी रक्कम ट्रान्सफर करायची असेल तर कोणती पद्धत निवडावी?",
+            "opts": { "1": "RTGS", "2": "NEFT", "3": "UPI" },
+            "ans": "1"
+          },
+          {
+            "q": "तुम्ही दुकानात आहात आणि तुमच्याकडे रोख पैसे नाहीत. मोबाइल ऍप वापरून त्वरीत पैसे कसे द्याल?",
+            "opts": {
+              "1": "Wait for NEFT transfer",
+              "2": "Use RTGS for immediate payment",
+              "3": "Scan using a payment app and pay instantly"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Complete-the-Digital-Payments-Chart-💳-Remedial",
+          "seq": 6,
+          "nm": "Simple Digital Payment Chart",
+          "desc": "या Activity मध्ये, विद्यार्थी बचत, गुंतवणूक, कर नियोजन, निवृत्ती, आणि आर्थिक संरक्षण यासारख्या महत्त्वाच्या पैशाच्या विषयांबद्दल सोप्या पद्धतीने शिकतील. विद्यार्थी एक साधा \"फायनान्शियल प्लॅनिंग पोस्टर\" तयार करतील ज्यामध्ये या कल्पना पैशांचे व्यवस्थापन करण्यासाठी आणि भविष्याच्या उत्तम निर्णयांसाठी कशा मदत करतात हे दाखवतील. ते एसडीजी ४: गुणवत्तापूर्ण शिक्षणाशी या कौशल्यांचा संबंध कसा आहे हे देखील समजून घेतील.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "जर तुम्हाला उपक्रम आवडला तर 👍 पाठवा, नाहीतर 👎 पाठवा",
+              "unguided_text": "तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "तुम्ही शिकलेल्या एका आर्थिक संकल्पनेचे नाव सांगा, मग एका शब्दात टाइप करा किंवा व्हॉईस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉईस नोट पाठवा",
+              "valid_criteria": "If the student types any one of the following words: Saving / Investing / Planning, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Saving / Investing / Planning, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Saving / Investing / Planning, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुमची शाळेची बॅग दाखवा आणि तिचा फोटो काढून अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो काढा आणि शेअर करा!",
+              "valid_criteria": "School bag",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a School bag"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉईस नोट पाठवा आणि समजावा की डिजिटल पेमेंट लोकांना आणि व्यवसायांना कसे मदत करते"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या डिजिटल पेमेंट चार्टचा एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Loan Funds the Dream 🎓",
+      "desc": "Education Loan Flowchart",
+      "rwc": "Pencil, Eraser",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 9,
+          "nm": "Can a loan fund dreams? 🎓",
+          "desc": "या Activity मध्ये, विद्यार्थी शिकतात की शिक्षण कर्ज तात्काळ निधी उपलब्ध नसताना उच्च शिक्षण सुरू ठेवण्यासाठी कसे मदत करते. रियाच्या प्रत्यक्ष जीवनाच्या कथेद्वारे, विद्यार्थी शिकतात शिक्षण कर्जासाठी अर्ज करण्याच्या पायऱ्या, मोरॅटोरियम कालावधीचे महत्त्व आणि अर्थ, आणि शिक्षण पूर्ण झाल्यानंतर कर्जाची परतफेड कशी कार्य करते. कर्जाच्या पर्यायांची तुलना करून आणि व्याजदर व मोरॅटोरियम कालावधीच्या आधारे उत्तम पर्याय ओळखून, विद्यार्थी शिक्षणाशी संबंधित आर्थिक व्यवस्थापनासाठी जबाबदारीने निर्णय घेण्याच्या कौशल्यांचा विकास करतात.",
+          "yt": "b7WNZ-S4cgg",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 9,
+        "nm": "Can a loan fund your studies? 🎓",
+        "qs": [
+          {
+            "q": "स्क्रिप्टनुसार शिक्षण कर्जाचा प्राथमिक हेतू काय आहे?",
+            "opts": {
+              "1": "To buy a new car",
+              "2": "To help cover expenses of higher studies",
+              "3": "To invest in the stock market"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "विविध शिक्षण कर्ज पर्यायांची तुलना करणे का महत्त्वाचे आहे?",
+            "opts": {
+              "1": "To avoid wrong decisions and reduce financial pressure",
+              "2": "To avoid filling out multiple applications",
+              "3": "To ensure the loan is approved quickly"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "शिक्षण कर्जासाठी आवश्यक कागदपत्रे गोळा केल्यानंतर रियाने काय करावे?",
+            "opts": {
+              "1": "Fill out the loan application form",
+              "2": "Wait for bank approval",
+              "3": "Submit them to the college"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "रिया दोन कर्जांमध्ये निवड करत आहे. कर्ज 1 मध्ये कमी व्याजदर आहे, पण कमी मोरॅटोरियम कालावधी आहे. कर्ज 2 मध्ये थोडा जास्त व्याजदर आहे, पण जास्त मोरॅटोरियम कालावधी आहे. जर तिला तात्काळ आर्थिक दबाव कमी करायचा असेल तर तिने कोणते कर्ज विचारात घ्यावे?",
+            "opts": { "1": "Loan 1", "2": "Both are equal", "3": "Loan 2" },
+            "ans": "3"
+          },
+          {
+            "q": "रियाच्या मैत्रिणीला तिचे शिक्षण कर्ज कधी परतफेड करायचे याबद्दल शंका आहे. मोरॅटोरियम कालावधी संकल्पनेच्या आधारे रियाने काय सल्ला द्यावा?",
+            "opts": {
+              "1": "Repay after course completion plus 6 months to 1 year",
+              "2": "Repay immediately after loan approval",
+              "3": "Repay before the course begins"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Map-the-Education-Loan-Steps-🎓-Advanced",
+          "seq": 7,
+          "nm": "The Education Loan Guide",
+          "desc": "या Activity मध्ये, विद्यार्थी शिकतात की शिक्षण कर्ज तात्काळ निधी उपलब्ध नसताना उच्च शिक्षण सुरू ठेवण्यासाठी कसे मदत करते. रियाच्या प्रत्यक्ष जीवनाच्या कथेद्वारे, विद्यार्थी शिकतात शिक्षण कर्जासाठी अर्ज करण्याच्या पायऱ्या, मोरॅटोरियम कालावधीचे महत्त्व आणि अर्थ, आणि शिक्षण पूर्ण झाल्यानंतर कर्जाची परतफेड कशी कार्य करते. कर्जाच्या पर्यायांची तुलना करून आणि व्याजदर व मोरॅटोरियम कालावधीच्या आधारे उत्तम पर्याय ओळखून, विद्यार्थी शिक्षणाशी संबंधित आर्थिक व्यवस्थापनासाठी जबाबदारीने निर्णय घेण्याच्या कौशल्यांचा विकास करतात.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "उच्च शिक्षणासाठी विद्यार्थ्यांना पैसे देण्यास काय मदत करते, एका शब्दात टाइप करा किंवा व्हॉइस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "If the student types the word: Loan, then the response is valid OR If the student sends a voice note and the response includes the word: Loan, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include the word: Loan, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "बाटलीचा फोटो क्लिक करा आणि अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो क्लिक करा आणि शेअर करा!",
+              "valid_criteria": "Bottle",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Bottle"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि तुमच्या उपक्रमातून शैक्षणिक कर्जाच्या पायऱ्या सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या एज्युकेशन लोन अ‍ॅक्टिव्हिटीचा एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Steps Open the Future 🚪",
+      "desc": "Education Loan Flowchart",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 10,
+          "nm": "Can Neha pay college later? 🚪",
+          "desc": "--- या अॅक्टिव्हिटीमध्ये, विद्यार्थ्यांना सोप्या पद्धतीने शिकवले जाईल की, जेव्हा त्यांच्या जवळ पुरेशी आर्थिक श्रोत नसतात तेव्हा शैक्षणिक कर्ज त्यांच्या अभ्यासाच्या पुढील प्रवासात कशी मदत करते. एका साध्या उदाहरणाद्वारे, विद्यार्थी शैक्षणिक कर्जासाठी अर्ज करण्याची मूलभूत पद्धत, मोरॅटोरियम कालावधी म्हणजे काय, आणि शिक्षण पूर्ण झाल्यानंतर कर्जाची परतफेड कशी कार्य करते हे समजून घेतील. ते चांगले आर्थिक निर्णय घेण्यासाठी सोप्या कर्जाच्या पर्यायांची तुलना देखील करतील.",
+          "yt": "RhgU0rEGqps",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 10,
+        "nm": "Which loan has better terms? 📝",
+        "qs": [
+          {
+            "q": "शिक्षण कर्जासाठी अर्ज करताना पहिला टप्पा कोणता आहे?",
+            "opts": { "1": "Check eligibility", "2": "Collect documents", "3": "Compare loans" },
+            "ans": "1"
+          },
+          {
+            "q": "मोरॅटोरियम कालावधी तुम्हाला काय करण्यास अनुमती देतो?",
+            "opts": {
+              "1": "Have a break time from repaying the loan",
+              "2": "Start repaying the loan immediately",
+              "3": "Increase the loan amount"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "सह-अर्जदाराच्या उत्पन्नाच्या पुराव्याची कोणती कागदपत्रे आवश्यक आहेत?",
+            "opts": {
+              "1": "Aadhaar and passport",
+              "2": "Salary slips and bank statements",
+              "3": "Admission letter and fee structure"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "जर तुम्ही कर्ज निवडत असाल, तर कोणता पर्याय चांगला आहे?",
+            "opts": {
+              "1": "Low interest + long moratorium",
+              "2": "High interest + long moratorium",
+              "3": "High interest + short moratorium"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "रिया आर्थिक दबावाशिवाय शिकू इच्छिते. तिने कोणत्या कर्ज वैशिष्ट्याला प्राधान्य द्यावे?",
+            "opts": {
+              "1": "High loan amount",
+              "2": "Long moratorium period",
+              "3": "Quick bank verification"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Complete-the-Education-Loan-Guide-🚪-Remedial",
+          "seq": 8,
+          "nm": "Simple Education Loan Guide",
+          "desc": "--- या अॅक्टिव्हिटीमध्ये, विद्यार्थ्यांना सोप्या पद्धतीने शिकवले जाईल की, जेव्हा त्यांच्या जवळ पुरेशी आर्थिक श्रोत नसतात तेव्हा शैक्षणिक कर्ज त्यांच्या अभ्यासाच्या पुढील प्रवासात कशी मदत करते. एका साध्या उदाहरणाद्वारे, विद्यार्थी शैक्षणिक कर्जासाठी अर्ज करण्याची मूलभूत पद्धत, मोरॅटोरियम कालावधी म्हणजे काय, आणि शिक्षण पूर्ण झाल्यानंतर कर्जाची परतफेड कशी कार्य करते हे समजून घेतील. ते चांगले आर्थिक निर्णय घेण्यासाठी सोप्या कर्जाच्या पर्यायांची तुलना देखील करतील.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "शैक्षणिक कर्जाचा एक फायदा सांगा, एका शब्दात टाइप करा किंवा व्हॉइस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "If the student types any one of the following words: Education / Access, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Education / Access, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Education / Access, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुम्हाला आवडणाऱ्या एखाद्या गोष्टीचा फोटो क्लिक करा आणि अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो क्लिक करा आणि शेअर करा!",
+              "valid_criteria": "Clear object photo",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Clear object photo"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि शैक्षणिक कर्ज आणि स्थगन कालावधी म्हणजे काय ते सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या एज्युकेशन लोन वर्कशीटचा एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

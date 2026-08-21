@@ -1,0 +1,1142 @@
+{
+  "id": "Basic-Electonics-Kit-less-science-lab-C3217",
+  "nm": "Basic Electonics Kit-less",
+  "lvl": "Level 3AK",
+  "vrt": "science-lab",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "The Circuit's Bodyguard 🛡️",
+      "desc": "Overcurrent protection, fuse working principle, voltage–current relationship, circuit breaking, safety in electrical circuits. DC power supply, fuse, LED, ammeter (series), connecting wires, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 51,
+          "nm": "Can a Tiny Wire Save Your Circuit? 🔥",
+          "desc": "Students will create a circuit using a 2.5V DC power supply, an 18 mA fuse, and an LED. They will understand what a fuse is and observe how it protects components by breaking the circuit when current exceeds a safe limit.",
+          "yt": "jEE56n55OkQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 52,
+        "nm": "When Does the Fuse Blow? ⚡",
+        "qs": [
+          {
+            "q": "ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ ಫ್ಯೂಸ್‌ನ ಮುಖ್ಯ ಕಾರ್ಯವೇನು?",
+            "opts": {
+              "1": "ಅತಿಯಾದ ವಿದ್ಯುತ್ ಪ್ರವಾಹದಿಂದ ಸಾಧನಗಳು ಹಾಳಾಗದಂತೆ ರಕ್ಷಿಸಲು",
+              "2": "ಸರ್ಕ್ಯೂಟ್‌ನ ವೋಲ್ಟೇಜ್ ಹೆಚ್ಚಿಸಲು",
+              "3": "ಸರ್ಕ್ಯೂಟ್‌ನ ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಕಡಿಮೆ ಮಾಡಲು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಫ್ಯೂಸ್ ತಂತಿ ಏಕೆ ಕರಗುತ್ತದೆ?",
+            "opts": {
+              "1": "ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಗರಿಷ್ಠ ಮಿತಿ ಮೀರಿದಾಗ",
+              "2": "LED ಗೆ ಸಂಪರ್ಕಗೊಂಡಿರುವ ಕಾರಣ",
+              "3": "ಕಳಪೆ ವಾಹಕದಿಂದ ತಯಾರಿಸಿರುವ ಕಾರಣ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "DC ಪೂರೈಕೆ ವೋಲ್ಟೇಜ್ 2.1V ಗೆ ಹೆಚ್ಚಿಸಿದಾಗ ಏನಾಗುತ್ತದೆ?",
+            "opts": {
+              "1": "ಸರ್ಕ್ಯೂಟ್ ಸಂಪೂರ್ಣ ನಿಲ್ಲುತ್ತದೆ",
+              "2": "LED ಹೆಚ್ಚು ಪ್ರಕಾಶಮಾನ ಹೊಳೆಯುತ್ತದೆ",
+              "3": "LED ರಕ್ಷಿಸಲು ಫ್ಯೂಸ್ ಹಾರಿ ಹೋಗುತ್ತದೆ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ LED ನಿರೀಕ್ಷಿತಂತೆ ಹೊಳೆಯದಿದ್ದರೆ ವಿದ್ಯಾರ್ಥಿ ಮೊದಲು ಏನು ಪರಿಶೀಲಿಸಬೇಕು?",
+            "opts": {
+              "1": "LED ಸರಿಯಾದ ಬಣ್ಣದ್ದಾಗಿದೆಯೇ",
+              "2": "ಫ್ಯೂಸ್ ದಿಕ್ಕು ಧ್ರುವೀಕೃತವಾಗಿ ಸರಿಯಾಗಿ ಇದೆಯೇ",
+              "3": "ಸುರಕ್ಷಿತ ಸೀಮೆಯಲ್ಲಿ ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಇದೆಯೇ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಫ್ಯೂಸ್ ಸಹಿತ ಸರ್ಕ್ಯೂಟ್ ಸ್ಥಾಪಿಸಿದ್ದರೂ LED ಹಾಳಾದರೆ ಕಾರಣ ಏನಾಗಿರಬಹುದು?",
+            "opts": {
+              "1": "LED ತಿರುವಾಗಿ ಸಂಪರ್ಕಗೊಂಡಿತ್ತು",
+              "2": "ಫ್ಯೂಸ್‌ನ ಗರಿಷ್ಠ ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಮಿತಿ ತುಂಬಾ ಹೆಚ್ಚಾಗಿ ಹೊಂದಿಸಲಾಗಿತ್ತು",
+              "3": "ಮೊದಲಿನಿಂದಲೇ ವೋಲ್ಟೇಜ್ ತುಂಬಾ ಕಡಿಮೆ ಇತ್ತು"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Blow-the-Fuse-Safely-💥-Basic",
+          "seq": 47,
+          "nm": "Blow the Fuse Safely 💥",
+          "desc": "Students will create a circuit using a 2.5V DC power supply, an 18 mA fuse, and an LED. They will understand what a fuse is and observe how it protects components by breaking the circuit when current exceeds a safe limit.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਚਟੁਵਟਿਕ੆ ಇಷ್ಟವಾದರೆ 'Fuse Protection' ಎಂದು ಟೈಪ್ ಮಾಡಿ।",
+              "unguided_text": "ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಸುತ್ತ charging cable ಅಥವಾ wire ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಒಂದು voice note/text ಶೇರ್ ಮಾಡಿ ಮತ್ತು ಹೇಳಿ: circuit ನಲ್ಲಿ fuse ನ ಪಾತ್ರ ಏನು?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ಕೆಲಸ ಮಾಡುವ video/ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "One Button to Rule the Light 💡",
+      "desc": "Current flow in a closed circuit, role of switches in circuit control, resistance limiting current, energy conservation in electrical systems. DC power supply, push button (switch), resistor, LED, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 52,
+          "nm": "Can One Button Save Energy? 🌱",
+          "desc": "Students will create a smart light control system using a push button to control electricity use. Through this hands-on project, they will learn the importance of saving energy and reducing waste. By connecting the activity to SDG 7 (Affordable and Clean Energy), students will understand how mindful energy use can contribute to a sustainable future. This project encourages students to adopt smart energy habits in their daily lives.",
+          "yt": "UQkoIwPECrU",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 53,
+        "nm": "Press It and See! 🔘",
+        "qs": [
+          {
+            "q": "ಚಟುವಟಿಕೆಯಲ್ಲಿ ನಿರ್ಮಿಸಿದ ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ 'ದ್ವಾರಪಾಲಕ' ಆಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುವ ಘಟಕ ಯಾವುದು?",
+            "opts": { "1": "LED", "2": "ಪುಶ್ ಬಟನ್", "3": "ರೆಸಿಸ್ಟರ್" },
+            "ans": "2"
+          },
+          {
+            "q": "ಚಟುವಟಿಕೆಯಲ್ಲಿ ಸ್ಮಾರ್ಟ್ ಕಂಟ್ರೋಲ್ ಸಿಸ್ಟಮ್ ಬಳಸುವ ಮುಖ್ಯ ಉದ್ದೇಶವೇನು?",
+            "opts": {
+              "1": "LED ಯ ಪ್ರಕಾಶ ಹೆಚ್ಚಿಸಲು",
+              "2": "ಸರ್ಕ್ಯೂಟ್ ಹೆಚ್ಚು ಸಂಕೀರ್ಣಗೊಳಿಸಲು",
+              "3": "ಅನಗತ್ಯ ಶಕ್ತಿ ವ್ಯಯ ತಡೆಯಲು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಪುಶ್ ಬಟನ್ ಒತ್ತಿದಾಗ ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ LED ಮೇಲೆ ಯಾವ ಪರಿಣಾಮ?",
+            "opts": { "1": "LED ಮಿನುಗುತ್ತದೆ", "2": "LED ಆಫ್ ಇರುತ್ತದೆ", "3": "LED ಹೊಳೆಯುತ್ತದೆ" },
+            "ans": "3"
+          },
+          {
+            "q": "ರಿಯಾ ಮನೆಯಲ್ಲಿ ಅನಗತ್ಯ ಶಕ್ತಿ ವ್ಯಯ ತಡೆಯಲು ಚಟುವಟಿಕೆ ಪರಿಕಲ್ಪನೆ ಆಧರಿಸಿ ಏನು ಅಳವಡಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಹೆಚ್ಚಿನ ದೀಪಗಳನ್ನು ಅಳವಡಿಸಿ",
+              "2": "ಇರುವ ಲೈಟ್ ಸ್ವಿಚ್‌ಗಳನ್ನು ತೆಗೆದುಹಾಕಿ",
+              "3": "ಮೋಷನ್ ಸೆನ್ಸರ್ ಮತ್ತು ಟೈಮರ್ ಬಳಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಸ್ಕ್ರಿಪ್ಟ್ ಪ್ರಕಾರ ಸರ್ಕ್ಯೂಟ್‌ನ LED ಹೊಳೆಯದಿದ್ದರೆ ಮೊದಲು ಏನು ಪರಿಶೀಲಿಸಬೇಕು?",
+            "opts": { "1": "LED ಧ್ರುವೀಯತೆ", "2": "ಸಿಮ್ಯುಲೇಷನ್ ವೇಗ", "3": "ರೆಸಿಸ್ಟರ್ ಮೌಲ್ಯ" },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Smart-Energy-Switch-🔘-Remedial",
+          "seq": 48,
+          "nm": "Build a Smart Energy Switch 🔘",
+          "desc": "Students will create a smart light control system using a push button to control electricity use. Through this hands-on project, they will learn the importance of saving energy and reducing waste. By connecting the activity to SDG 7 (Affordable and Clean Energy), students will understand how mindful energy use can contribute to a sustainable future. This project encourages students to adopt smart energy habits in their daily lives.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਚਟੁਵਟਿਕ੆ ಇಷ್ಟವಾದರೆ 'Fuse Protection' ಎಂದು ಟೈಪ್ ಮಾಡಿ।",
+              "unguided_text": "ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಸುತ್ತ charging cable ಅಥವಾ wire ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಒಂದು voice note/text ಶೇರ್ ಮಾಡಿ ಮತ್ತು ಹೇಳಿ: circuit ನಲ್ಲಿ fuse ನ ಪಾತ್ರ ಏನು?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ಕೆಲಸ ಮಾಡುವ video/ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Twist to Dim 🎚️",
+      "desc": "Variable resistance, voltage–current relationship, current–brightness relationship, energy efficiency. DC power supply, potentiometer, LED, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 53,
+          "nm": "Can You Control Light with a Knob? 🎛️",
+          "desc": "In this activity, students will simulate a circuit using a potentiometer to control the brightness of an LED and explore how different brightness levels affect energy usage. They will compare multiple settings (low, medium, high) and identify the most efficient level for everyday use. This helps students understand how adjusting energy consumption can reduce waste and supports SDG 12 – Responsible Consumption and Production.",
+          "yt": "skcS7T8pp1g",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 54,
+        "nm": "How Bright Can You Go? 💡",
+        "qs": [
+          {
+            "q": "ಪ್ರತಿರೋಧ ಬದಲಿಸುವ ಮೂಲಕ LED ಯ ಪ್ರಕಾಶ ನಿಯಂತ್ರಿಸಲು ಯಾವ ಘಟಕ ಬಳಸಬಹುದು?",
+            "opts": { "1": "ಕೆಪಾಸಿಟರ್", "2": "ಇಂಡಕ್ಟರ್", "3": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್" },
+            "ans": "3"
+          },
+          {
+            "q": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್‌ನ ಪ್ರತಿರೋಧ ಹೆಚ್ಚಿಸಿದಾಗ ವಿದ್ಯುತ್ ಪ್ರವಾಹಕ್ಕೆ ಏನಾಗುತ್ತದೆ?",
+            "opts": {
+              "1": "ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಯಥಾವತ್ ಇರುತ್ತದೆ",
+              "2": "ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಕಡಿಮೆಯಾಗುತ್ತದೆ",
+              "3": "ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಹೆಚ್ಚಾಗುತ್ತದೆ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "DC ಪವರ್ ಸಪ್ಲೈ, ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಮತ್ತು LED ಸಂಪರ್ಕಿಸಲು ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ವಿವರಿಸಿದ ಘಟಕ ಜೋಡಣೆ ಯಾವುದು?",
+            "opts": { "1": "ಸರಣಿ", "2": "ಯಾದೃಚ್ಛಿಕ", "3": "ಸಮಾನಾಂತರ" },
+            "ans": "1"
+          },
+          {
+            "q": "ಸರ್ಕ್ಯೂಟ್ ಸಿಮ್ಯುಲೇಷನ್‌ನಲ್ಲಿ LED ಮಂದವಾಗಿ ಹೊಳೆಯಲು ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್‌ನೊಂದಿಗೆ ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಪ್ರತಿರೋಧ ಹೆಚ್ಚಿಸಿ",
+              "2": "ಪ್ರತಿರೋಧ ಕಡಿಮೆ ಮಾಡಿ",
+              "3": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ತೆಗೆದುಹಾಕಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಬಳಸಿ LED ಯ ಗರಿಷ್ಠ ಪ್ರಕಾಶ ಹೇಗೆ ಸಾಧಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಕಡಿಮೆ ಪ್ರತಿರೋಧ ಸೆಟ್ಟಿಂಗ್‌ಗೆ ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಹೊಂದಿಸಿ",
+              "2": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಸಂಪರ್ಕ ಕಡಿತಗೊಳಿಸಿ",
+              "3": "ಹೆಚ್ಚಿನ ವೋಲ್ಟೇಜ್ ಪವರ್ ಸಪ್ಲೈ ಬಳಸಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Dial-Up-the-Glow-🎚️-Basic",
+          "seq": 49,
+          "nm": "Dial Up the Glow 🎚️",
+          "desc": "In this activity, students will simulate a circuit using a potentiometer to control the brightness of an LED and explore how different brightness levels affect energy usage. They will compare multiple settings (low, medium, high) and identify the most efficient level for everyday use. This helps students understand how adjusting energy consumption can reduce waste and supports SDG 12 – Responsible Consumption and Production.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਚਟੁਵਟਿਕ੆ ಇಷ್ಟವಾದರೆ 'Fuse Protection' ಎಂದು ಟೈಪ್ ಮಾಡಿ।",
+              "unguided_text": "ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಸುತ್ತ charging cable ಅಥವಾ wire ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಒಂದು voice note/text ಶೇರ್ ಮಾಡಿ ಮತ್ತು ಹೇಳಿ: circuit ನಲ್ಲಿ fuse ನ ಪಾತ್ರ ಏನು?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ಕೆಲಸ ಮಾಡುವ video/ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Dim Your Light, Save the Planet 🌍",
+      "desc": "Variable resistance, voltage–current relationship, current–brightness relationship, Ohm’s Law, energy efficiency. DC power supply, potentiometer, resistor, LED, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 54,
+          "nm": "Can Dimming a Light Save the Earth? 🌱",
+          "desc": "Students will be able to simulate a basic electronic circuit using ProtoCircuit to control the brightness of an LED with a potentiometer, and understand how adjusting energy consumption contributes to SDG 12 – Responsible Consumption and Production. Through this hands-on activity, students will learn how small, everyday actions like dimming lights can lead to smarter energy use and reduce environmental impact.",
+          "yt": "ys5xfiaw0Gs",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 55,
+        "nm": "Is Your Potentiometer Saving Power? ⚡",
+        "qs": [
+          {
+            "q": "ಚಟುವಟಿಕೆಯಲ್ಲಿ LED ಯ ಪ್ರಕಾಶ ಸರಿಹೊಂದಿಸಲು ಯಾವ ಘಟಕ ಬಳಸಲಾಗುತ್ತದೆ?",
+            "opts": { "1": "ರೆಸಿಸ್ಟರ್", "2": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್", "3": "DC ಪವರ್ ಸಪ್ಲೈ" },
+            "ans": "2"
+          },
+          {
+            "q": "'ದೀಪ ಮಂದ ಮಾಡಿ, ಭೂಮಿ ಉಳಿಸಿ' ಚಟುವಟಿಕೆಯ ಮುಖ್ಯ ಗುರಿ ಏನು?",
+            "opts": {
+              "1": "LED ಪ್ರಕಾಶ ನಿಯಂತ್ರಿಸಿ ಶಕ್ತಿ ಉಳಿತಾಯ",
+              "2": "ವಿವಿಧ ಬಗೆಯ LED ಗಳ ಬಗ್ಗೆ ತಿಳಿಯಲು",
+              "3": "LED ಪ್ರಕಾಶ ಹೆಚ್ಚಿಸಲು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಸಿಮ್ಯುಲೇಷನ್ ಸಮಯದಲ್ಲಿ LED ಹಾರಿ ಹೋದರೆ ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ತೆಗೆದುಹಾಕಿ",
+              "2": "ಪವರ್ ಸಪ್ಲೈ ವೋಲ್ಟೇಜ್ ಕಡಿಮೆ ಮಾಡಿ",
+              "3": "ರೆಸಿಸ್ಟರ್ ಮೌಲ್ಯ 300 ಓಮ್‌ಗೆ ಹೆಚ್ಚಿಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಸರಿಹೊಂದಿಸಿದ ನಂತರವೂ LED ಪ್ರಕಾಶದಲ್ಲಿ ಗಮನಾರ್ಹ ಬದಲಾವಣೆ ಕಾಣದಿದ್ದರೆ ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಪವರ್ ಸಪ್ಲೈ ವೋಲ್ಟೇಜ್ ಕಡಿಮೆ ಮಾಡಿ",
+              "2": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್‌ನ ಪ್ರತಿರೋಧ ಮೌಲ್ಯ 4 ಕಿಲೋ ಓಮ್‌ಗೆ ಹೆಚ್ಚಿಸಿ",
+              "3": "ಸರ್ಕ್ಯೂಟ್‌ನಿಂದ ರೆಸಿಸ್ಟರ್ ತೆಗೆದುಹಾಕಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಈ ಚಟುವಟಿಕೆಯ ಪರಿಕಲ್ಪನೆ ಮನೆಯಲ್ಲಿ ಅನ್ವಯಿಸಲು ಉದಾಹರಣೆ ಏನು?",
+            "opts": {
+              "1": "ಹೆಚ್ಚಿನ ಪ್ರಕಾಶಕ್ಕಾಗಿ ಹೆಚ್ಚಿನ ದೀಪಗಳನ್ನು ಅಳವಡಿಸಿ",
+              "2": "ಎಲ್ಲಾ ದೀಪಗಳಿಗೆ ವಿದ್ಯುತ್ ಪೂರೈಕೆ ಹೆಚ್ಚಿಸಿ",
+              "3": "ಕೋಣೆಯ ಬೆಳಕು ನಿಯಂತ್ರಿಸಲು ಡಿಮ್ಮರ್ ಸ್ವಿಚ್ ಬಳಸಿ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Smart-Dimmer-Challenge-🌍-Remedial",
+          "seq": 50,
+          "nm": "Smart Dimmer Challenge 🌍",
+          "desc": "Students will be able to simulate a basic electronic circuit using ProtoCircuit to control the brightness of an LED with a potentiometer, and understand how adjusting energy consumption contributes to SDG 12 – Responsible Consumption and Production. Through this hands-on activity, students will learn how small, everyday actions like dimming lights can lead to smarter energy use and reduce environmental impact.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਚਟੁਵਟਿਕ੆ ಇಷ್ಟವಾದರೆ 'Fuse Protection' ಎಂದು ಟೈಪ್ ಮಾಡಿ।",
+              "unguided_text": "ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಸುತ್ತ charging cable ಅಥವಾ wire ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಒಂದು voice note/text ಶೇರ್ ಮಾಡಿ ಮತ್ತು ಹೇಳಿ: circuit ನಲ್ಲಿ fuse ನ ಪಾತ್ರ ಏನು?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ಕೆಲಸ ಮಾಡುವ video/ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "One Way Only 🚦",
+      "desc": "One-way current flow, diode functionality, voltage–current relationship, circuit protection, basic clean energy systems. DC power supply, diode, resistor, LED, voltmeter, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 55,
+          "nm": "Can a Diode Guard Your Solar Panel? ☀️",
+          "desc": "In this activity, we’ll build a Clean Energy Indicator using a diode, LED, resistor, and voltmeter in the ProtoCircuit app. You’ll learn how a diode controls the direction of current flow — a key concept in protecting clean energy systems. This project supports SDG 13: Climate Action by helping us understand how simple circuits can make renewable energy safer and more efficient.",
+          "yt": "F-ArkHJuj60",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 56,
+        "nm": "Forward or Reverse? ⬅️",
+        "qs": [
+          {
+            "q": "ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ ಯಾವ ಘಟಕ ವಿದ್ಯುತ್ ಕೇವಲ ಒಂದು ದಿಕ್ಕಿನಲ್ಲಿ ಹರಿಯುವಂತೆ ಖಚಿತಪಡಿಸುತ್ತದೆ?",
+            "opts": { "1": "ವೋಲ್ಟ್‌ಮೀಟರ್", "2": "ರೆಸಿಸ್ಟರ್", "3": "ಡಯೋಡ್" },
+            "ans": "3"
+          },
+          {
+            "q": "ಸ್ವಚ್ಛ ಶಕ್ತಿ ವ್ಯವಸ್ಥೆಗಳಲ್ಲಿ ಡಯೋಡ್ ಏಕ ಮುಖ ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಖಚಿತಪಡಿಸುವುದು ಏಕೆ ಮುಖ್ಯ?",
+            "opts": {
+              "1": "ಶಕ್ತಿ ನಷ್ಟ ಮತ್ತು ಘಟಕ ಹಾನಿ ತಡೆಯಲು",
+              "2": "ವೋಲ್ಟೇಜ್ ಮಟ್ಟ ಕಡಿಮೆ ಮಾಡಲು",
+              "3": "ಶಕ್ತಿ ಬಳಕೆ ಹೆಚ್ಚಿಸಲು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಡಯೋಡ್ ತಿರುವಾದ ದಿಕ್ಕಿನಲ್ಲಿ ಸಂಪರ್ಕಿಸಿದರೆ ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ ಏನಾಗುತ್ತದೆ?",
+            "opts": {
+              "1": "ವೋಲ್ಟ್‌ಮೀಟರ್ ಓದುವಿಕೆ ತೋರಿಸುತ್ತದೆ",
+              "2": "ವಿದ್ಯುತ್ ಹರಿಯದು ಮತ್ತು LED ಹೊಳೆಯದು",
+              "3": "ವಿದ್ಯುತ್ ಹರಿಯುತ್ತದೆ ಮತ್ತು LED ಹೊಳೆಯುತ್ತದೆ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ರಾತ್ರಿ ಸೌರ ಫಲಕ ವ್ಯವಸ್ಥೆಯ ಬ್ಯಾಟರಿ ಖಾಲಿಯಾಗುತ್ತಿದ್ದರೆ ಯಾವ ಘಟಕ ಪರಿಶೀಲಿಸಬೇಕು ಅಥವಾ ಸೇರಿಸಬೇಕು?",
+            "opts": { "1": "ರೆಸಿಸ್ಟರ್", "2": "ಡಯೋಡ್", "3": "LED" },
+            "ans": "2"
+          },
+          {
+            "q": "ಸರ್ಕ್ಯೂಟ್ ಸಿಮ್ಯುಲೇಷನ್ ಸಮಯದಲ್ಲಿ ಎಲ್ಲಾ ಸಂಪರ್ಕಗಳು ಸರಿಯಾಗಿದ್ದರೂ LED ಹೊಳೆಯದಿದ್ದರೆ ಸಂಭಾವ್ಯ ಕಾರಣ ಏನು?",
+            "opts": {
+              "1": "ಡಯೋಡ್ ತಿರುವಾದ ದಿಕ್ಕಿನಲ್ಲಿ ಇರಬಹುದು",
+              "2": "ವೋಲ್ಟ್‌ಮೀಟರ್ ಸಂಪರ್ಕ ಕಡಿತಗೊಂಡಿದೆ",
+              "3": "ರೆಸಿಸ್ಟರ್ ಮೌಲ್ಯ ತುಂಬಾ ಕಡಿಮೆ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-the-One-Way-Gate-🚦-Intermediate",
+          "seq": 51,
+          "nm": "Build the One-Way Gate 🚦",
+          "desc": "In this activity, we’ll build a Clean Energy Indicator using a diode, LED, resistor, and voltmeter in the ProtoCircuit app. You’ll learn how a diode controls the direction of current flow — a key concept in protecting clean energy systems. This project supports SDG 13: Climate Action by helping us understand how simple circuits can make renewable energy safer and more efficient.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਚਟੁਵਟਿਕ੆ ಇಷ್ಟವಾದರೆ 'Fuse Protection' ಎಂದು ಟೈಪ್ ಮಾಡಿ।",
+              "unguided_text": "ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಸುತ್ತ charging cable ಅಥವಾ wire ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಒಂದು voice note/text ಶೇರ್ ಮಾಡಿ ಮತ್ತು ಹೇಳಿ: circuit ನಲ್ಲಿ fuse ನ ಪಾತ್ರ ಏನು?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ಕೆಲಸ ಮಾಡುವ video/ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "The Current's One-Way Street 🛣️",
+      "desc": "One-way current flow, forward bias, reverse bias, diode functionality, basic circuit behavior. DC power supply, diode, LED, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 56,
+          "nm": "What Happens When You Flip the Diode? 🔄",
+          "desc": "In this activity, students will build a simple circuit using a diode, LED, resistor, and power supply in the ProtoCircuit app to observe how current flows in only one direction. They will test what happens when the diode is connected correctly and when it is reversed. This helps students understand the basic function of a diode and how it controls the flow of electricity, connecting to the idea of safe and efficient energy use (SDG 13 – Climate Action",
+          "yt": "SU_NajyRc2k",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 57,
+        "nm": "Does the Diode Block or Allow? ⚡",
+        "qs": [
+          {
+            "q": "ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ ಡಯೋಡ್‌ನ ಮುಖ್ಯ ಕಾರ್ಯವೇನು?",
+            "opts": {
+              "1": "ಶಕ್ತಿ ಸಂಗ್ರಹಿಸಲು",
+              "2": "ಒಂದು ದಿಕ್ಕಿನಲ್ಲಿ ವಿದ್ಯುತ್ ಹರಿಯಲು ಅನುಮತಿಸಲು",
+              "3": "ವೋಲ್ಟೇಜ್ ಹೆಚ್ಚಿಸಲು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಡಯೋಡ್ ರಿವರ್ಸ್ ಬಯಾಸ್‌ನಲ್ಲಿ ಸಂಪರ್ಕಿಸಿದಾಗ ಏನಾಗುತ್ತದೆ?",
+            "opts": {
+              "1": "LED ಆಫ್ ಆಗುತ್ತದೆ",
+              "2": "LED ಹೊಳೆಯುತ್ತದೆ",
+              "3": "ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಹೆಚ್ಚಾಗುತ್ತದೆ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ProtoCircuit ನಲ್ಲಿ ಸರ್ಕ್ಯೂಟ್ ಸಿಮ್ಯುಲೇಟ್ ಮಾಡಲು ಘಟಕಗಳನ್ನು ಹೇಗೆ ಜೋಡಿಸಬೇಕು?",
+            "opts": {
+              "1": "ಸರಣಿಯಲ್ಲಿ, ಒಂದರ ನಂತರ ಒಂದು",
+              "2": "ಸಮಾನಾಂತರದಲ್ಲಿ, ಪಕ್ಕ ಪಕ್ಕ",
+              "3": "ತ್ರಿಕೋಣ ಆಕಾರದಲ್ಲಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "LED ಹೊಳೆಯದಿದ್ದರೆ ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ ಯಾವ ಸಮಸ್ಯೆ ಇರಬಹುದು?",
+            "opts": {
+              "1": "DC ಪವರ್ ಸಪ್ಲೈ ತುಂಬಾ ಹೆಚ್ಚಾಗಿದೆ",
+              "2": "ಡಯೋಡ್ ರಿವರ್ಸ್ ಬಯಾಸ್‌ನಲ್ಲಿದೆ",
+              "3": "ಡಯೋಡ್ ಫಾರ್ವರ್ಡ್ ಬಯಾಸ್‌ನಲ್ಲಿದೆ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ ಡಯೋಡ್ ಸರಿಯಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿದೆಯೇ ಎಂದು ಹೇಗೆ ಪರಿಶೀಲಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಡಯೋಡ್ ಫಾರ್ವರ್ಡ್ ಬಯಾಸ್‌ನಲ್ಲಿದ್ದಾಗ LED ಹೊಳೆಯುತ್ತದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ",
+              "2": "LED ಹೊಳೆಯುತ್ತದೆಯೇ ಎಂದು ನೋಡಲು ವೋಲ್ಟೇಜ್ ಹೆಚ್ಚಿಸಿ",
+              "3": "ಎರಡೂ ದಿಕ್ಕಿನಲ್ಲಿ ವಿದ್ಯುತ್ ಹರಿಯುತ್ತದೆಯೇ ಎಂದು ಗಮನಿಸಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Flip-the-Diode-and-Find-Out-🔄-Remedial",
+          "seq": 52,
+          "nm": "Flip the Diode and Find Out 🔄",
+          "desc": "In this activity, students will build a simple circuit using a diode, LED, resistor, and power supply in the ProtoCircuit app to observe how current flows in only one direction. They will test what happens when the diode is connected correctly and when it is reversed. This helps students understand the basic function of a diode and how it controls the flow of electricity, connecting to the idea of safe and efficient energy use (SDG 13 – Climate Action",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਚਟੁਵਟਿਕ੆ ಇಷ್ಟವಾದರೆ 'Fuse Protection' ಎಂದು ಟೈಪ್ ಮಾಡಿ।",
+              "unguided_text": "ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಸುತ್ತ charging cable ಅಥವಾ wire ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಒಂದು voice note/text ಶೇರ್ ಮಾಡಿ ಮತ್ತು ಹೇಳಿ: circuit ನಲ್ಲಿ fuse ನ ಪಾತ್ರ ಏನು?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ಕೆಲಸ ಮಾಡುವ video/ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Ohm's Law in Action 📐",
+      "desc": "Ohm’s Law (V = I × R), voltage–current relationship, resistance variation, current–brightness relationship, measurement and observation. DC power supply, potentiometer, LED, ammeter (series), voltmeter (parallel), simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 57,
+          "nm": "Can Math Predict Your LED's Brightness? 🔢",
+          "desc": "In this activity, students will design and analyze a circuit where a potentiometer controls the brightness of an LED by varying current. They will measure current at different resistance levels and use their observations to understand the relationship between voltage, current, and resistance. Students will also explore how adding a fixed resistor can help control excess current, making the circuit safer and more stable.",
+          "yt": "4H1wCaLc8mg",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 58,
+        "nm": "Voltage, Current, Resistance — Can You Crack It? 📐",
+        "qs": [
+          {
+            "q": "ಸ್ಥಿರ ವೋಲ್ಟೇಜ್ ಇದ್ದಾಗ ಸರ್ಕ್ಯೂಟ್‌ನ ಪ್ರತಿರೋಧ ಹೆಚ್ಚಿದರೆ ವಿದ್ಯುತ್ ಪ್ರವಾಹಕ್ಕೆ ಏನಾಗುತ್ತದೆ?",
+            "opts": {
+              "1": "ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಕಡಿಮೆಯಾಗುತ್ತದೆ",
+              "2": "ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಯಥಾವತ್ ಇರುತ್ತದೆ",
+              "3": "ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಹೆಚ್ಚಾಗುತ್ತದೆ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ವಿವರಿಸಿದ ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ LED ಯ ಪ್ರಕಾಶ ನಿಯಂತ್ರಿಸಲು ಯಾವ ಘಟಕ ಬಳಸಲಾಗುತ್ತದೆ?",
+            "opts": { "1": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್", "2": "ವೋಲ್ಟ್‌ಮೀಟರ್", "3": "ಆಮ್ಮೀಟರ್" },
+            "ans": "1"
+          },
+          {
+            "q": "ಸ್ಕ್ರಿಪ್ಟ್ ಪ್ರಕಾರ ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ 0.2 ಗೆ ಸರಿಹೊಂದಿಸಿದಾಗ ಪ್ರತಿರೋಧ ಎಷ್ಟು?",
+            "opts": { "1": "30 ಓಮ್", "2": "150 ಓಮ್", "3": "96 ಓಮ್" },
+            "ans": "1"
+          },
+          {
+            "q": "ಅದೇ ಸರ್ಕ್ಯೂಟ್ ನಿರ್ಮಿಸಿದಾಗ LED ಹೊಳೆಯದಿದ್ದರೆ ಯಾವ ಹಂತ ತಪ್ಪಿಸಿಕೊಂಡಿರಬಹುದು?",
+            "opts": {
+              "1": "LED ಉದ್ದಕ್ಕೂ ವೋಲ್ಟ್‌ಮೀಟರ್ ಸಂಪರ್ಕಿಸುವುದು",
+              "2": "ಆಮ್ಮೀಟರ್‌ಗೆ ಅಪೇಕ್ಷಿತ ದಿಕ್ಕಿನಲ್ಲಿ ವಿದ್ಯುತ್ ಹರಿಯುವಂತೆ ಖಚಿತಪಡಿಸುವುದು",
+              "3": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಪ್ರತಿರೋಧ 150 ಓಮ್‌ಗೆ ಬದಲಿಸುವುದು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಸರ್ಕ್ಯೂಟ್‌ನ LED ನಿರೀಕ್ಷಿತಂತೆ ಮಂದ ಆಗದಿದ್ದರೆ ಯಾವ ಘಟಕದ ಸೆಟ್ಟಿಂಗ್ ಸರಿಹೊಂದಿಸಬೇಕು?",
+            "opts": { "1": "ವೋಲ್ಟ್‌ಮೀಟರ್", "2": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್", "3": "ಆಮ್ಮೀಟರ್" },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Prove-Ohm's-Law-Yourself-📐-Intermediate",
+          "seq": 53,
+          "nm": "Prove Ohm's Law Yourself 📐",
+          "desc": "In this activity, students will design and analyze a circuit where a potentiometer controls the brightness of an LED by varying current. They will measure current at different resistance levels and use their observations to understand the relationship between voltage, current, and resistance. Students will also explore how adding a fixed resistor can help control excess current, making the circuit safer and more stable.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਚਟੁਵਟਿਕ੆ ಇಷ್ಟವಾದರೆ 'Fuse Protection' ಎಂದು ಟೈಪ್ ಮಾಡಿ।",
+              "unguided_text": "ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಸುತ್ತ charging cable ಅಥವಾ wire ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಒಂದು voice note/text ಶೇರ್ ಮಾಡಿ ಮತ್ತು ಹೇಳಿ: circuit ನಲ್ಲಿ fuse ನ ಪಾತ್ರ ಏನು?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ಕೆಲಸ ಮಾಡುವ video/ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "The Brightness Dial Experiment 🎛️",
+      "desc": "Potentiometer, LED, Variable resistor, Current measurement, Ammeter, Current limiting",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 58,
+          "nm": "Can a Spinning Knob Control Your LED? 🌀",
+          "desc": "Students will use a potentiometer as a variable resistor in series with an LED and sweep the knob to change brightness. They will record ammeter readings at low and high settings, using a fixed series resistor if needed to limit current.",
+          "yt": "mAKH9fLAcMM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 59,
+        "nm": "High Resistance or Low — What Wins? 🎚️",
+        "qs": [
+          {
+            "q": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಎಂದರೇನು?",
+            "opts": {
+              "1": "ಪರಿವರ್ತಕ ಪ್ರತಿರೋಧಕ",
+              "2": "ಒಂದು ರೀತಿಯ ಕೆಪಾಸಿಟರ್",
+              "3": "ಸ್ಥಿರ ಪ್ರತಿರೋಧಕ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್‌ನ ಪ್ರತಿರೋಧ ಹೆಚ್ಚಿಸಿದರೆ LED ಗೆ ಏನಾಗುತ್ತದೆ?",
+            "opts": {
+              "1": "LED ಮಿನುಗುತ್ತದೆ",
+              "2": "LED ಹೆಚ್ಚು ಪ್ರಕಾಶಮಾನ ಆಗುತ್ತದೆ",
+              "3": "LED ಮಂದ ಆಗುತ್ತದೆ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಕಡಿಮೆ ಪ್ರತಿರೋಧಕ್ಕೆ ಹೊಂದಿಸಿದ್ದರೆ ಸರ್ಕ್ಯೂಟ್‌ನ ವಿದ್ಯುತ್ ಪ್ರವಾಹಕ್ಕೆ ಏನಾಗುತ್ತದೆ?",
+            "opts": {
+              "1": "ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಹೆಚ್ಚಾಗುತ್ತದೆ",
+              "2": "ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಕಡಿಮೆಯಾಗುತ್ತದೆ",
+              "3": "ವಿದ್ಯುತ್ ಪ್ರವಾಹ ನಿಲ್ಲುತ್ತದೆ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ProtoCircuit ನಲ್ಲಿ ಆಮ್ಮೀಟರ್ ಋಣಾತ್ಮಕ ಓದುವಿಕೆ ತೋರಿಸಿದರೆ ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಆಮ್ಮೀಟರ್ ಬದಲಿಸಿ",
+              "2": "ಅದರ ದಿಕ್ಕು ತಿರುಗಿಸಿ",
+              "3": "ವೋಲ್ಟೇಜ್ ಹೆಚ್ಚಿಸಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ProtoCircuit ಅಪ್ಲಿಕೇಷನ್‌ನಲ್ಲಿ ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಸರ್ಕ್ಯೂಟ್ ಬಳಸಿ ಸಮಸ್ಯೆ ಪರಿಹಾರ ಕೌಶಲ ಹೇಗೆ ಪ್ರದರ್ಶಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಸರಿಹೊಂದಿಸಿ ಅಪೇಕ್ಷಿತ LED ಪ್ರಕಾಶ ಸಾಧಿಸಿ ಬದಲಾವಣೆಗಳನ್ನು ವಿಶ್ಲೇಷಿಸುವ ಮೂಲಕ",
+              "2": "ಸರ್ಕ್ಯೂಟ್ ರೇಖಾಚಿತ್ರ ಬಾಯಿಪಾಠ ಮಾಡುವ ಮೂಲಕ",
+              "3": "ಸರ್ಕ್ಯೂಟ್‌ಗೆ ಹೆಚ್ಚಿನ LED ಗಳನ್ನು ಸಂಪರ್ಕಿಸುವ ಮೂಲಕ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Spin-the-Knob,-Change-the-Glow-🎛️-Remedial",
+          "seq": 54,
+          "nm": "Spin the Knob, Change the Glow 🎛️",
+          "desc": "Students will use a potentiometer as a variable resistor in series with an LED and sweep the knob to change brightness. They will record ammeter readings at low and high settings, using a fixed series resistor if needed to limit current.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਚਟੁਵਟਿਕ੆ ಇಷ್ಟವಾದರೆ 'Fuse Protection' ಎಂದು ಟೈಪ್ ಮಾಡಿ।",
+              "unguided_text": "ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಸುತ್ತ charging cable ಅಥವಾ wire ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಒಂದು voice note/text ಶೇರ್ ಮಾಡಿ ಮತ್ತು ಹೇಳಿ: circuit ನಲ್ಲಿ fuse ನ ಪಾತ್ರ ಏನು?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ಕೆಲಸ ಮಾಡುವ video/ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "The Delay Game ⏳",
+      "desc": "Capacitance, charging and discharging of a capacitor, time delay in circuits, energy storage, relationship between capacitance and discharge time. DC power supply, resistor, polarized capacitor, LED, SPST switch, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 59,
+          "nm": "Can a Circuit Remember to Glow? ⏳",
+          "desc": "Students will design a circuit where they can control how long an LED stays ON after the switch is released by adjusting capacitance and resistance. They will compare multiple configurations and analyze how RC values affect delay time, helping them understand timing circuits used in real-world devices like automatic lights and alarms.",
+          "yt": "ELHfzOLPjtI",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 60,
+        "nm": "Which Capacitor Holds On Longer? ⏱️",
+        "qs": [
+          {
+            "q": "ಕೆಪಾಸಿಟರ್ ಚಾರ್ಜ್ ಆಗುವಾಗ ಸರ್ಕ್ಯೂಟ್‌ನ LED ಗೆ ಏನಾಗುತ್ತದೆ?",
+            "opts": {
+              "1": "LED ಮೊದಲು ಪ್ರಕಾಶಮಾನ ಹೊಳೆಯುತ್ತದೆ",
+              "2": "LED ಮೊದಲು ಹೊಳೆಯದು",
+              "3": "LED ಮೊದಲು ಮಿನುಗುತ್ತದೆ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಸ್ವಿಚ್ ಆಫ್ ಮಾಡಿದ ನಂತರ LED ತಡವಾಗಿ ಆಫ್ ಆಗಲು ಸರ್ಕ್ಯೂಟ್‌ನ ಯಾವ ಘಟಕ ಕಾರಣ?",
+            "opts": { "1": "ರೆಸಿಸ್ಟರ್", "2": "DC ಪವರ್ ಸಪ್ಲೈ", "3": "ಕೆಪಾಸಿಟರ್" },
+            "ans": "3"
+          },
+          {
+            "q": "ಸ್ವಿಚ್ ಆಫ್ ಮಾಡಿದ ನಂತರ LED ಹೆಚ್ಚು ಕಾಲ ಆನ್ ಇರಬೇಕಿದ್ದರೆ ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ರೆಸಿಸ್ಟರ್‌ನ ಪ್ರತಿರೋಧ ಕಡಿಮೆ ಮಾಡಿ",
+              "2": "ಹೆಚ್ಚು ಶಕ್ತಿಯ DC ಪವರ್ ಸಪ್ಲೈ ಬಳಸಿ",
+              "3": "ಕೆಪಾಸಿಟರ್‌ನ ಕೆಪಾಸಿಟ್ಯಾನ್ಸ್ ಹೆಚ್ಚಿಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ProtoCircuit ನಲ್ಲಿ ಸರ್ಕ್ಯೂಟ್ ಸಿಮ್ಯುಲೇಟ್ ಮಾಡಿ ಸ್ವಿಚ್ ಆಫ್ ಮಾಡಿದ ನಂತರ LED ತ್ವರಿತ ಆಫ್ ಆಗಿದ್ದರೆ ಅಡಿಸಿಕೊಂಬ ಅಡ್ಡಮಾರ್ಗ ಏನು?",
+            "opts": {
+              "1": "ಹೆಚ್ಚಿನ ಪ್ರತಿರೋಧದ ರೆಸಿಸ್ಟರ್ ಬಳಸಿ",
+              "2": "ಇರುವ LED ಗೆ ಸರಣಿಯಲ್ಲಿ ಮತ್ತೊಂದು LED ಸೇರಿಸಿ",
+              "3": "ಕೆಪಾಸಿಟರ್ ಅನ್ನು ಹೆಚ್ಚಿನ ಕೆಪಾಸಿಟ್ಯಾನ್ಸ್ ಮೌಲ್ಯದ ಒಂದರಿಂದ ಬದಲಿಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಸ್ವಿಚ್ ಆಫ್ ಮಾಡಿದ ನಂತರವೂ LED ಎಂದಿಗೂ ಆಫ್ ಆಗದಿದ್ದರೆ ಯಾವ ಸಮಸ್ಯೆ ಇರಬಹುದು?",
+            "opts": {
+              "1": "ಸ್ವಿಚ್ ಸರಿಯಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸದಿರಬಹುದು",
+              "2": "ಕೆಪಾಸಿಟರ್ ನಿರಂತರ LED ಗೆ ಡಿಸ್ಚಾರ್ಜ್ ಆಗುತ್ತಿದೆ",
+              "3": "ರೆಸಿಸ್ಟರ್ ಸರಿಯಾಗಿ ಸಂಪರ್ಕಗೊಂಡಿಲ್ಲ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Race-the-Capacitors-🏁-Advanced",
+          "seq": 55,
+          "nm": "Race the Capacitors 🏁",
+          "desc": "Students will design a circuit where they can control how long an LED stays ON after the switch is released by adjusting capacitance and resistance. They will compare multiple configurations and analyze how RC values affect delay time, helping them understand timing circuits used in real-world devices like automatic lights and alarms.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਚਟੁਵਟਿਕ੆ ಇಷ್ಟವಾದರೆ 'Fuse Protection' ಎಂದು ಟೈಪ್ ಮಾಡಿ।",
+              "unguided_text": "ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಸುತ್ತ charging cable ಅಥವಾ wire ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಒಂದು voice note/text ಶೇರ್ ಮಾಡಿ ಮತ್ತು ಹೇಳಿ: circuit ನಲ್ಲಿ fuse ನ ಪಾತ್ರ ಏನು?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ಕೆಲಸ ಮಾಡುವ video/ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Store It, Glow It! 🔋",
+      "desc": "Capacitors, voltage smoothing, energy storage, LED operation, push-to-charge circuits. DC power supply, LED, resistor, polarized capacitor, SPST switch.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 60,
+          "nm": "Can a Tiny Component Store Power? ⚡",
+          "desc": "Students will learn how to create and simulate a simple circuit using a capacitor to keep an LED glowing for a short time even after turning off the switch. They will also explore how to adjust the capacitor's capacitance to change the LED's discharge time.",
+          "yt": "vuk4Dl3NoC0",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 61,
+        "nm": "How Long Does Your Capacitor Last? 🔋",
+        "qs": [
+          {
+            "q": "ಕೆಪಾಸಿಟರ್‌ನ ಮುಖ್ಯ ಕಾರ್ಯವೇನು?",
+            "opts": {
+              "1": "ಸ್ವಿಚ್ ಆಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸಲು",
+              "2": "ಸ್ವಲ್ಪ ಸಮಯ ವಿದ್ಯುತ್ ಸಂಗ್ರಹಿಸಲು",
+              "3": "ಸರ್ಕ್ಯೂಟ್‌ಗೆ ನಿರಂತರ ವಿದ್ಯುತ್ ಪೂರೈಸಲು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಸ್ವಿಚ್ ಆಫ್ ಮಾಡಿದ ನಂತರವೂ LED ಸ್ವಲ್ಪ ಸಮಯ ಏಕೆ ಹೊಳೆಯುತ್ತಲೇ ಇರುತ್ತದೆ?",
+            "opts": {
+              "1": "ಕೆಪಾಸಿಟರ್ ಸಂಗ್ರಹಿಸಿದ ಶಕ್ತಿ ಡಿಸ್ಚಾರ್ಜ್ ಆಗುವ ಕಾರಣ",
+              "2": "ರೆಸಿಸ್ಟರ್ ವಿದ್ಯುತ್ ಪೂರೈಸುತ್ತಲೇ ಇರುವ ಕಾರಣ",
+              "3": "LED ಸ್ವಯಂ ಚಾಲಿತ ಘಟಕ ಆಗಿರುವ ಕಾರಣ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಕೆಪಾಸಿಟರ್ ಮೌಲ್ಯ ಹೆಚ್ಚಿಸಿದರೆ ಸ್ವಿಚ್ ತೆರೆದ ನಂತರ LED ಯ ಹೊಳೆಯುವ ಸಮಯದ ಮೇಲೆ ಯಾವ ಪರಿಣಾಮ?",
+            "opts": {
+              "1": "LED ತಕ್ಷಣ ಹೊಳೆಯದಂತಾಗುತ್ತದೆ",
+              "2": "LED ಕಡಿಮೆ ಸಮಯ ಹೊಳೆಯುತ್ತದೆ",
+              "3": "LED ಹೆಚ್ಚು ಸಮಯ ಹೊಳೆಯುತ್ತದೆ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ProtoCircuit ಸಿಮ್ಯುಲೇಷನ್‌ನಲ್ಲಿ ಸ್ವಿಚ್ ಆಫ್ ಮಾಡಿದ ನಂತರ LED ಆನ್ ಇರದಿದ್ದರೆ ಸಂಭಾವ್ಯ ಸಮಸ್ಯೆ ಏನು?",
+            "opts": {
+              "1": "DC ಪವರ್ ಸಪ್ಲೈ ಸಾಲದು",
+              "2": "ರೆಸಿಸ್ಟರ್ ಮೌಲ್ಯ ತುಂಬಾ ಹೆಚ್ಚಾಗಿದೆ",
+              "3": "ಕೆಪಾಸಿಟರ್ ಸರಿಯಾಗಿ ಸಂಪರ್ಕಗೊಂಡಿಲ್ಲದಿರಬಹುದು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಸಿಮ್ಯುಲೇಷನ್ ಸಮಯದಲ್ಲಿ LED ಏಕೇ ಹೊಳೆಯದಿದ್ದರೆ ಸಮಸ್ಯೆ ಪರಿಹಾರ ಕೌಶಲ ಬಳಸಿ ಯಾವ ಪರಿಹಾರ ಮಾಡಬಹುದು?",
+            "opts": {
+              "1": "ವಿವರಿಸಿದ ಸರ್ಕ್ಯೂಟ್‌ಗೆ ಹೊಂದುವಂತೆ ಎಲ್ಲಾ ಸಂಪರ್ಕಗಳನ್ನು ಪರಿಶೀಲಿಸಿ",
+              "2": "ಬೇರೆ ರೀತಿಯ LED ಬಳಸಿ",
+              "3": "DC ಪವರ್ ಸಪ್ಲೈ ವೋಲ್ಟೇಜ್ ಹೆಚ್ಚಿಸಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-the-Glow-After-Off-Circuit-🔋-Remedial",
+          "seq": 56,
+          "nm": "Build the Glow-After-Off Circuit 🔋",
+          "desc": "Students will learn how to create and simulate a simple circuit using a capacitor to keep an LED glowing for a short time even after turning off the switch. They will also explore how to adjust the capacitor's capacitance to change the LED's discharge time.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਚਟੁਵਟਿਕ੆ ಇಷ್ಟವಾದರೆ 'Fuse Protection' ಎಂದು ಟೈಪ್ ಮಾಡಿ।",
+              "unguided_text": "ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಸುತ್ತ charging cable ಅಥವಾ wire ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಒಂದು voice note/text ಶೇರ್ ಮಾಡಿ ಮತ್ತು ಹೇಳಿ: circuit ನಲ್ಲಿ fuse ನ ಪಾತ್ರ ಏನು?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "fuse protection circuit ಕೆಲಸ ಮಾಡುವ video/ಫೋಟೋ ಶೇರ್ ಮಾಡಿ!!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

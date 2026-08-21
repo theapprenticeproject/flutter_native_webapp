@@ -1,0 +1,8 @@
+[
+  { "id": "en", "code": "en", "name": "English", "glific_id": "1" },
+  { "id": "hi", "code": "hi", "name": "Hindi", "glific_id": "2" },
+  { "id": "hi-en", "code": "hi-en", "name": "Hinglish" },
+  { "id": "kn", "code": "kn", "name": "Kannada", "glific_id": "5" },
+  { "id": "mr", "code": "mr", "name": "Marathi", "glific_id": "3" },
+  { "id": "pa", "code": "pa", "name": "Punjabi", "glific_id": "4" }
+]

@@ -1,0 +1,796 @@
+{
+  "id": "OctoStudio-coding-C1567",
+  "nm": "OctoStudio",
+  "lvl": "Level 3AK",
+  "vrt": "coding",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Hero Clears the Air 🌿",
+      "desc": "Concepts: Animation sequencing, message passing (synchronization), scene transitions, cause-effect representation (pollution vs clean environment). Blocks: When Play, Say, Wait, Send, When Received, Hide, Show, Switch Backdrop",
+      "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 101,
+          "nm": "Can a hero clean the air? 🌿",
+          "desc": "इस गतिविधि में, छात्र एक एनीमेशन बनाएंगे जिसमें एक \"क्लीन एयर हीरो\" अपने आसपास के प्रदूषण को कम करने के लिए कदम उठाएगा। ऑक्टोस्टूडियो का उपयोग करते हुए, वे एक दृश्य डिज़ाइन करेंगे जहाँ प्रदूषित हवा को स्विच ऑफ स्मोक स्रोतों या पेड़ों या हवा जैसे स्वच्छ तत्वों को सक्रिय करके साफ किया जाता है। छात्र जलवायु परिवर्तन से लड़ने में स्वच्छ हवा के महत्व को समझेंगे जबकि इवेंट-आधारित कोडिंग, अनुक्रमण और सरल इंटरएक्टिविटी का अभ्यास करेंगे।",
+          "yt": "OUl1KF7JPtM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 104,
+        "nm": "Can code clean the air? 🌫️",
+        "qs": [
+          {
+            "q": "ऑक्टोस्टूडियो में एक प्रोजेक्ट में कई दृश्य बदलने के लिए कौन सा ब्लॉक उपयोग किया जाता है?",
+            "opts": { "1": "Say block", "2": "When Play block", "3": "Switch Backdrop block" },
+            "ans": "3"
+          },
+          {
+            "q": "एनीमेशन निर्माण प्रक्रिया में सेंड ब्लॉक का उपयोग करने का उद्देश्य क्या है?",
+            "opts": {
+              "1": "To send a message allowing another sprite to take action",
+              "2": "To switch backdrops",
+              "3": "To hide sprites from the screen"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "यदि आप चाहते हैं कि लड़की का संवाद एक निश्चित समय के लिए स्क्रीन पर दिखाई दे, तो आप कौन से ब्लॉक का उपयोग करेंगे?",
+            "opts": {
+              "1": "Send and Wait blocks",
+              "2": "Say and Wait blocks",
+              "3": "Switch Backdrop and Hide blocks"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "आप स्क्रिप्ट में बताए गए उपकरणों का उपयोग करके प्रदूषित से स्वच्छ पर्यावरण में परिवर्तन को रचनात्मक रूप से कैसे दिखा सकते हैं?",
+            "opts": {
+              "1": "Use a combination of Switch Backdrop, Say, and Send blocks to illustrate the change",
+              "2": "Use the Paint Editor to draw clouds",
+              "3": "Use only the Say block to describe the transition"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "कल्पना करें कि आप एक नया पात्र जोड़ना चाहते हैं जो धुएं को तेजी से साफ करता है। मौजूदा ब्लॉक का उपयोग करके आप इस पात्र को रचनात्मक रूप से कैसे एकीकृत करेंगे?",
+            "opts": {
+              "1": "Use the Send block to trigger the new character's action after smoke appears",
+              "2": "Use the Say block to introduce the character",
+              "3": "Use the Paint Editor to draw the character"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Animate-a-Clean-Air-Hero-🌿-Basic",
+          "seq": 96,
+          "nm": "Clean Air Mission",
+          "desc": "इस गतिविधि में, छात्र एक एनीमेशन बनाएंगे जिसमें एक \"क्लीन एयर हीरो\" अपने आसपास के प्रदूषण को कम करने के लिए कदम उठाएगा। ऑक्टोस्टूडियो का उपयोग करते हुए, वे एक दृश्य डिज़ाइन करेंगे जहाँ प्रदूषित हवा को स्विच ऑफ स्मोक स्रोतों या पेड़ों या हवा जैसे स्वच्छ तत्वों को सक्रिय करके साफ किया जाता है। छात्र जलवायु परिवर्तन से लड़ने में स्वच्छ हवा के महत्व को समझेंगे जबकि इवेंट-आधारित कोडिंग, अनुक्रमण और सरल इंटरएक्टिविटी का अभ्यास करेंगे।",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "👍 भेजें अगर आपको यह गतिविधि अच्छी लगी, या 👎 अगर नहीं लगी",
+              "unguided_text": "कृपया अपनी पसंद का कोई भी इमोजी भेजें!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "अगर आपको यह गतिविधि पसंद आई तो 'स्वच्छ' शब्द टाइप करें।",
+              "unguided_text": "आपने इस गतिविधि से क्या सीखा? एक शब्द में बताएं।",
+              "valid_criteria": "Response matching the word 'Clean'.",
+              "invalid_criteria": "Anything other than the word 'Clean'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "अपने आसपास के किसी पौधे की तस्वीर साझा करें!",
+              "unguided_text": "अपने आसपास की किसी भी चीज़ की तस्वीर साझा करें!!",
+              "valid_criteria": "Image contains a real plant found at home or nearby.",
+              "invalid_criteria": "Anything other than a plant (e.g., toys, electronics, or unrelated objects)."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "वॉयस नोट या टेक्स्ट भेजें और हमें बताएं: एनिमेशन में स्प्राइट्स आपस में कैसे बात करते हैं?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Clean Air Hero एनिमेशन प्रोजेक्ट का एक वीडियो या स्क्रीनशॉट साझा करें"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Seed Grows a Hero 🌱",
+      "desc": "Concepts: Animation, conditionals, events Blocks: When tapped, Move, When touching, Send, Hide, Show, Wait",
+      "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 102,
+          "nm": "Can a seed become a tree? 🌱",
+          "desc": "इस गतिविधि में, छात्र OctoStudio में एक \"Climate Hero\" एनीमेशन बनाएंगे। वे एक दृश्य डिज़ाइन करेंगे, जिसमें एक बच्चा, जिसे एक बुजुर्ग मार्गदर्शन करता है, एक बीज बोता है, उसे पानी देता है और उसे एक पेड़ में बढ़ते हुए देखता है। ये सभी कार्य वे शो/हाइड, से, और सेंड-एंड-रीसीव ब्लॉक्स का उपयोग करके करेंगे। इस गतिविधि के माध्यम से छात्र यह समझेंगे कि पेड़ जलवायु परिवर्तन को कम करने में कैसे मदद करते हैं और इवेंट-ड्रिवन कोडिंग और सीक्वेंसिंग का अभ्यास करेंगे।",
+          "yt": "wDW1RLUuB9g",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 105,
+        "nm": "Can a sprite speak? 🗣️",
+        "qs": [
+          {
+            "q": "इस एनीमेशन गतिविधि का मुख्य उद्देश्य क्या है?",
+            "opts": {
+              "1": "To animate a character watering the cars",
+              "2": "To animate a character talking about global warming",
+              "3": "To animate a character planting a tree to help the environment"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "इस गतिविधि में स्प्राइट को बोलने के लिए कौन सा ब्लॉक श्रेणी उपयोग की जाती है?",
+            "opts": { "1": "Words and Sounds", "2": "Motion", "3": "Control" },
+            "ans": "1"
+          },
+          {
+            "q": "इस गतिविधि में \"Say\" ब्लॉक क्या करता है?",
+            "opts": {
+              "1": "It makes the sprite jump",
+              "2": "It makes the sprite speak a message",
+              "3": "It moves the sprite forward"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "एनीमेशन में \"Old Man\" स्प्राइट कौन सा संदेश बोलता है?",
+            "opts": {
+              "1": "\"Planting trees helps our Earth.\"",
+              "2": "\"Water the plants daily.\"",
+              "3": "\"Let’s save the planet!\""
+            },
+            "ans": "1"
+          },
+          {
+            "q": "\"Seed\" स्प्राइट को “plant” संदेश मिलने पर क्या होता है?",
+            "opts": {
+              "1": "The seed disappears",
+              "2": "The water sprite disappears",
+              "3": "The seed grows into a plant and shows up on the screen"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Animate-a-Tree-Planting-Story-🌱-Remedial",
+          "seq": 97,
+          "nm": "Climate Hero Story Builder",
+          "desc": "इस गतिविधि में, छात्र OctoStudio में एक \"Climate Hero\" एनीमेशन बनाएंगे। वे एक दृश्य डिज़ाइन करेंगे, जिसमें एक बच्चा, जिसे एक बुजुर्ग मार्गदर्शन करता है, एक बीज बोता है, उसे पानी देता है और उसे एक पेड़ में बढ़ते हुए देखता है। ये सभी कार्य वे शो/हाइड, से, और सेंड-एंड-रीसीव ब्लॉक्स का उपयोग करके करेंगे। इस गतिविधि के माध्यम से छात्र यह समझेंगे कि पेड़ जलवायु परिवर्तन को कम करने में कैसे मदद करते हैं और इवेंट-ड्रिवन कोडिंग और सीक्वेंसिंग का अभ्यास करेंगे।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "👍 भेजें अगर आपको यह गतिविधि अच्छी लगी, या 👎 अगर नहीं लगी",
+              "unguided_text": "कृपया अपनी पसंद का कोई भी इमोजी भेजें!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "अगर आपको यह गतिविधि पसंद आई तो 'हीरो' शब्द टाइप करें।",
+              "unguided_text": "आपने इस गतिविधि से क्या सीखा? एक शब्द में बताएं।",
+              "valid_criteria": "Response matching the word 'Hero'.",
+              "invalid_criteria": "Anything other than the word 'Hero'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "अपने आसपास के किसी पौधे की तस्वीर साझा करें!",
+              "unguided_text": "अपने आसपास की किसी भी चीज़ की तस्वीर साझा करें!!",
+              "valid_criteria": "Image contains a real plant found at home or nearby.",
+              "invalid_criteria": "Anything other than a plant (e.g., toys, electronics, or unrelated objects)."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "वॉयस नोट या टेक्स्ट भेजें और हमें बताएं: जलवायु परिवर्तन क्या है और इसके क्या कारण हैं?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "OctoStudio के पेड़ लगाने वाले एनिमेशन का एक वीडियो या स्क्रीनशॉट साझा करें"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Share the Leftovers 🍱",
+      "desc": "Concepts: Event-based programming, message passing (broadcast & receive), sequencing of actions, social awareness through animation, sprite interaction, timing and synchronization. Blocks/Functions: When Play, Say, Wait, Send, When Received, Go To (motion), Text Block, Speed control.",
+      "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 103,
+          "nm": "Can sharing stop food waste? 🍱",
+          "desc": "इस गतिविधि में, छात्र OctoStudio का उपयोग करके एक छोटा एनिमेटेड संवाद बनाएंगे जिसमें एक बच्चा अपना बचा हुआ खाना किसी और के साथ साझा करता है। छात्र भोजन बर्बाद न करने के महत्व को समझेंगे और यह भी जानेंगे कि बचा हुआ भोजन साझा करना सतत विकास लक्ष्य 2: शून्य भूख में कैसे योगदान दे सकता है। वे OctoStudio के ब्लॉक्स जैसे \"send message\" और \"receive message\" का उपयोग करके एक इंटरएक्टिव संवाद बनाएंगे।",
+          "yt": "D9yqZG1liuo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 106,
+        "nm": "Does food waste matter? 🍱",
+        "qs": [
+          {
+            "q": "एनिमेशन एक्टिविटी का मुख्य संदेश क्या है?",
+            "opts": { "1": "Save Water", "2": "Recycle More", "3": "Say No to Food Waste" },
+            "ans": "3"
+          },
+          {
+            "q": "यह एक्टिविटी किस सस्टेनेबल डेवलपमेंट गोल (SDG) से जुड़ी है?",
+            "opts": {
+              "1": "SDG 3 - Good Health and Well-being",
+              "2": "SDG 2 - Zero Hunger",
+              "3": "SDG 1 - No Poverty"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "एनिमेशन में स्प्राइट्स के बीच संवाद के लिए कौन सा ब्लॉक उपयोग होता है?",
+            "opts": { "1": "Say block", "2": "Send block", "3": "Wait block" },
+            "ans": "2"
+          },
+          {
+            "q": "खाने की बर्बादी पर एनिमेशन को बेहतर बनाने के लिए आप क्रिएटिविटी का उपयोग कैसे कर सकते हैं?",
+            "opts": {
+              "1": "Use only black and white colors",
+              "2": "Remove all dialogues from the animation",
+              "3": "Add more characters to show a community sharing food"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "एनिमेशन का उपयोग करके 'खाना बर्बाद न करें' संदेश को एक अलग सेटिंग में क्रिएटिव तरीके से कैसे दर्शा सकते हैं?",
+            "opts": {
+              "1": "Focus only on the food items without showing any characters",
+              "2": "Create an animation set in a restaurant where patrons donate leftover food",
+              "3": "Make the animation silent without any text or sound"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Animate-a-Food-Sharing-Scene-🍱-Basic",
+          "seq": 98,
+          "nm": "Say No To FoodWaste Animation",
+          "desc": "इस गतिविधि में, छात्र OctoStudio का उपयोग करके एक छोटा एनिमेटेड संवाद बनाएंगे जिसमें एक बच्चा अपना बचा हुआ खाना किसी और के साथ साझा करता है। छात्र भोजन बर्बाद न करने के महत्व को समझेंगे और यह भी जानेंगे कि बचा हुआ भोजन साझा करना सतत विकास लक्ष्य 2: शून्य भूख में कैसे योगदान दे सकता है। वे OctoStudio के ब्लॉक्स जैसे \"send message\" और \"receive message\" का उपयोग करके एक इंटरएक्टिव संवाद बनाएंगे।",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "👍 भेजें अगर आपको यह गतिविधि अच्छी लगी, या 👎 अगर नहीं लगी",
+              "unguided_text": "कृपया अपनी पसंद का कोई भी इमोजी भेजें!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "अगर आपको यह गतिविधि पसंद आई तो 'एनिमेशन' शब्द टाइप करें।",
+              "unguided_text": "आपने इस गतिविधि से क्या सीखा? एक शब्द में बताएं।",
+              "valid_criteria": "Response matching the word 'Animation'.",
+              "invalid_criteria": "Anything other than the word 'Animation'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "अपने आसपास की किसी थाली की तस्वीर साझा करें!",
+              "unguided_text": "अपने आसपास की किसी भी चीज़ की तस्वीर साझा करें!!",
+              "valid_criteria": "Image contains a plate.",
+              "invalid_criteria": "Anything other than a plate (e.g., bowl, cup, utensil, or unrelated object)"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "वॉयस नोट या टेक्स्ट भेजें और हमें बताएं: एनिमेशन में अंत में कौन सा संदेश दिखाया जाता है?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "\"खाना बर्बाद न करें\" OctoStudio एनिमेशन का वीडियो या स्क्रीनशॉट भेजें"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Every Drop Saved 💧",
+      "desc": "Concepts: Water conservation (SDG 6), event-based programming, continuous loops, collision detection, variables and scoring system, sprite interaction, sensor-based control (tilt), sequencing and timing. Blocks/Functions: When Play, When Tap, Tilt to Move, Send, When Received, Go To, Hide, Show, Forever, Wait, When Touches, Set Variable, Change Variable.",
+      "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 104,
+          "nm": "Can you catch dripping water? 💧",
+          "desc": "छात्र OctoStudio का उपयोग करके एक इंटरैक्टिव गेम बनाना सीखेंगे, जिसमें वे टपकते नलों से पानी इकट्ठा करेंगे, जिससे जल संरक्षण की अवधारणा को मजबूती मिलेगी। वे मोशन, ब्रॉडकास्ट और सेंसिंग ब्लॉक्स जैसे कोडिंग कौशलों का उपयोग करेंगे और SDG 6 – स्वच्छ जल और स्वच्छता की वास्तविक दुनिया में प्रासंगिकता को समझेंगे। यह गतिविधि इस बात की जागरूकता बढ़ाती है कि छोटे-छोटे कार्य, जैसे रिसाव को ठीक करना, एक वैश्विक उद्देश्य में योगदान दे सकते हैं। इस व्यावहारिक सीख के माध्यम से छात्र रचनात्मकता और समस्या-समाधान को जोड़कर एक सार्थक डिजिटल समाधान तैयार करेंगे।",
+          "yt": "O9m8fmfMa5k",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 107,
+        "nm": "Can a tap save water? 🚰",
+        "qs": [
+          {
+            "q": "इंटरएक्टिव गेम बनाने का मुख्य लक्ष्य क्या है?",
+            "opts": {
+              "1": "To collect dripping water from leaking taps into a glass",
+              "2": "To build a virtual city",
+              "3": "To race cars on a track"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "यह एक्टिविटी किस सतत विकास लक्ष्य (SDG) से जुड़ी है?",
+            "opts": {
+              "1": "SDG 13 - Climate Action",
+              "2": "SDG 6 - Clean Water and Sanitation",
+              "3": "SDG 2 - Zero Hunger"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "टैप स्प्राइट को सही ढंग से स्थिति में लाने के लिए OctoStudio में कौन सा उपकरण उपयोग किया जाता है?",
+            "opts": { "1": "Resize tool", "2": "Rotate tool", "3": "Crop tool" },
+            "ans": "3"
+          },
+          {
+            "q": "ऊर्जा संरक्षण के बारे में सिखाने के लिए पानी बचाने वाले गेम को आप कैसे रचनात्मक रूप से बढ़ा सकते हैं?",
+            "opts": {
+              "1": "Include a mechanism where turning off lights earns points",
+              "2": "Add a feature to plant virtual trees",
+              "3": "Create a quiz about different countries"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "कल्पना करें कि आप गेम को वैश्विक जल संकट के बारे में शैक्षिक सामग्री से समृद्ध करना चाहते हैं। आप कौन सा रचनात्मक तरीका अपना सकते हैं?",
+            "opts": {
+              "1": "Include pop-up facts about water scarcity while playing",
+              "2": "Create a new character that dances on the screen",
+              "3": "Design a comic strip about superheroes"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Water-Saving-Game-💧-Remedial",
+          "seq": 99,
+          "nm": "Save Every Drop",
+          "desc": "छात्र OctoStudio का उपयोग करके एक इंटरैक्टिव गेम बनाना सीखेंगे, जिसमें वे टपकते नलों से पानी इकट्ठा करेंगे, जिससे जल संरक्षण की अवधारणा को मजबूती मिलेगी। वे मोशन, ब्रॉडकास्ट और सेंसिंग ब्लॉक्स जैसे कोडिंग कौशलों का उपयोग करेंगे और SDG 6 – स्वच्छ जल और स्वच्छता की वास्तविक दुनिया में प्रासंगिकता को समझेंगे। यह गतिविधि इस बात की जागरूकता बढ़ाती है कि छोटे-छोटे कार्य, जैसे रिसाव को ठीक करना, एक वैश्विक उद्देश्य में योगदान दे सकते हैं। इस व्यावहारिक सीख के माध्यम से छात्र रचनात्मकता और समस्या-समाधान को जोड़कर एक सार्थक डिजिटल समाधान तैयार करेंगे।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "👍 भेजें अगर आपको यह गतिविधि अच्छी लगी, या 👎 अगर नहीं लगी",
+              "unguided_text": "कृपया अपनी पसंद का कोई भी इमोजी भेजें!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "अगर आपको यह गतिविधि पसंद आई तो 'बचाओ' शब्द टाइप करें।",
+              "unguided_text": "आपने इस गतिविधि से क्या सीखा? एक शब्द में बताएं।",
+              "valid_criteria": "Response matching the word 'Save'.",
+              "invalid_criteria": "Anything other than the word 'Save'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "अपने आसपास बंद पानी के नल की तस्वीर साझा करें!",
+              "unguided_text": "अपने आसपास की किसी भी चीज़ की तस्वीर साझा करें!!",
+              "valid_criteria": "Image contains a tap/faucet in closed (off) position with no water flowing.",
+              "invalid_criteria": "Anything other than a tap or a tap with water running/open position."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "वॉयस नोट या टेक्स्ट भेजें और हमें बताएं: यह गतिविधि SDG 6 से कैसे जुड़ी है?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "पानी टपकने वाले नल के गेम प्रोग्राम का एक वीडियो या स्क्रीनशॉट साझा करें!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Sun Powers the Bulb ☀️",
+      "desc": "Concepts: Renewable energy (solar energy), energy transformation, event-based programming, sequencing, synchronization, animation flow, visual effects (glow, colour change), sprite interaction. Blocks/Functions: When Play, Say, Wait, Send, When Received, Move, Hide, Show, Repeat, Glow, Change Colour, Text Block.",
+      "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 105,
+          "nm": "Can sunlight power your bulb? ☀️",
+          "desc": "छात्र एक साधारण एनीमेशन बनाएंगे जो दिखाएगा कि सूर्य की रोशनी को उपयोगी ऊर्जा में कैसे परिवर्तित किया जाता है। वे सूर्य, बादल, और एक सौर पैनल को एनीमेट करेंगे जहाँ पैनल पर पहुँचने वाली सूर्य की रोशनी एक लाइट या रंग परिवर्तन प्रभाव को ट्रिगर करती है। यह एक्टिविटी छात्रों को सूर्य से पैनल तक ऊर्जा के प्रवाह को दृश्य रूप से समझने में मदद करती है, जो स्वच्छ ऊर्जा अवधारणाओं (एसडीजी 7) और जलवायु कार्रवाई (एसडीजी 13) को मजबूत करती है।",
+          "yt": "cX43A_PfPRc",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 108,
+        "nm": "Can sunlight power things? ☀️",
+        "qs": [
+          {
+            "q": "कौन सा ब्लॉक स्क्रीन पर स्प्राइट की बातें दिखाने के लिए उपयोग होता है?",
+            "opts": { "1": "Say block", "2": "Move block", "3": "Send block" },
+            "ans": "1"
+          },
+          {
+            "q": "सेंड और व्हेन रिसीव्ड ब्लॉक्स में एक ही संदेश का उपयोग करना क्यों महत्वपूर्ण है?",
+            "opts": {
+              "1": "To make the sprite move faster",
+              "2": "To change the sprite's color",
+              "3": "To ensure the correct action is triggered by the receiving sprite"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "किस ब्लॉक का उपयोग आप स्प्राइट को संदेश प्राप्त करने के बाद स्क्रीन पर दिखाने के लिए करेंगे?",
+            "opts": { "1": "Show block", "2": "Glow block", "3": "Hide block" },
+            "ans": "1"
+          },
+          {
+            "q": "आप अपनी एनीमेशन में सोलर पैनल चार्जिंग की प्रक्रिया को रचनात्मक रूप से कैसे दिखा सकते हैं?",
+            "opts": {
+              "1": "Change the backdrop to a brighter color",
+              "2": "Add more dialogue to the scene",
+              "3": "Use the Glow block with a Repeat block to simulate the charging effect"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "आप अपनी एनीमेशन में सूर्य की रोशनी की गति को रचनात्मक रूप से कैसे दर्शा सकते हैं?",
+            "opts": {
+              "1": "By changing the girl's costume",
+              "2": "By changing the background music",
+              "3": "By using a Move block to shift the cloud and reveal the sun"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Code-Your-First-Big-Idea-💡-Intermediate",
+          "seq": 100,
+          "nm": "Sunlight to Power – Solar Energy Animation",
+          "desc": "छात्र एक साधारण एनीमेशन बनाएंगे जो दिखाएगा कि सूर्य की रोशनी को उपयोगी ऊर्जा में कैसे परिवर्तित किया जाता है। वे सूर्य, बादल, और एक सौर पैनल को एनीमेट करेंगे जहाँ पैनल पर पहुँचने वाली सूर्य की रोशनी एक लाइट या रंग परिवर्तन प्रभाव को ट्रिगर करती है। यह एक्टिविटी छात्रों को सूर्य से पैनल तक ऊर्जा के प्रवाह को दृश्य रूप से समझने में मदद करती है, जो स्वच्छ ऊर्जा अवधारणाओं (एसडीजी 7) और जलवायु कार्रवाई (एसडीजी 13) को मजबूत करती है।",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "👍 भेजें अगर आपको यह गतिविधि अच्छी लगी, या 👎 अगर नहीं लगी",
+              "unguided_text": "कृपया अपनी पसंद का कोई भी इमोजी भेजें!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "अगर आपको यह गतिविधि पसंद आई तो 'शक्ति' शब्द टाइप करें।",
+              "unguided_text": "आपने इस गतिविधि से क्या सीखा? एक शब्द में बताएं।",
+              "valid_criteria": "Response matching the word 'Power'.",
+              "invalid_criteria": "Anything other than the word 'Power'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "अपने आसपास की किसी बैटरी सेल की तस्वीर साझा करें!!",
+              "unguided_text": "अपने आसपास की किसी भी चीज़ की तस्वीर साझा करें!!",
+              "valid_criteria": "Image contains a battery cell (like AA or AAA cell used in remotes).",
+              "invalid_criteria": "Anything other than a battery cell."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "वॉयस नोट या टेक्स्ट भेजें और हमें बताएं: एनिमेशन में स्प्राइट्स आपस में कैसे बात करते हैं?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "OctoStudio \"सूरज से सौर ऊर्जा\" एनिमेशन का वीडियो या स्क्रीनशॉट भेजें"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Sun Powers the Road ☀️",
+      "desc": "Concepts: Renewable energy (solar energy), energy conversion, event-based programming, collision detection, sequencing, cause-and-effect in animations, environmental awareness (SDG 7 & SDG 13). Blocks/Functions: When Play, Move, When Touches, Send, When Received, Hide, Text Block.",
+      "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 106,
+          "nm": "Can Sunlight Make a Car Move? 🚗",
+          "desc": "छात्र एक सरल एनीमेशन बनाएंगे जिसमें सौर ऊर्जा से चलने वाली एक कार केवल तब चलना शुरू करती है जब उसे सूर्य के प्रकाश से ऊर्जा मिलती है। OctoStudio का उपयोग करके, वे सूर्य को एनिमेट करेंगे, कार से जुड़े सोलर पैनल को दिखाएंगे, और कार की गति को प्रदर्शित करेंगे। यह गतिविधि छात्रों को यह समझने में मदद करती है कि सौर ऊर्जा का उपयोग वास्तविक जीवन में, जैसे परिवहन में, कैसे किया जा सकता है, साथ ही वे इवेंट-आधारित कोडिंग और अनुक्रमण (SDG 7 एवं 13) का अभ्यास भी करते हैं।",
+          "yt": "veLmNcxVNKQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 109,
+        "nm": "Did the Cloud Stop Your Car? ☁️",
+        "qs": [
+          {
+            "q": "एनिमेशन प्रोजेक्ट में कार में सोलर पैनल जोड़ने का क्या उद्देश्य है?",
+            "opts": {
+              "1": "To show how solar panels are built.",
+              "2": "To demonstrate how clean energy can power the car.",
+              "3": "To make the car look more futuristic."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "जब छूता है' ब्लॉक एनिमेशन में कैसे काम करता है?",
+            "opts": {
+              "1": "It triggers an action when one object touches another.",
+              "2": "It changes the background when clicked.",
+              "3": "It starts the animation when the project is opened."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "कौन सा ब्लॉक सूर्य की किरणों को छुपाने के लिए उपयोग किया जाता है जब बादल सूर्य की रोशनी को रोकता है?",
+            "opts": { "1": "Hide block", "2": "Move block", "3": "Send block" },
+            "ans": "1"
+          },
+          {
+            "q": "यदि आप एक दृश्य बनाना चाहते हैं जहाँ फूल खिलते हैं जब सूर्य दिखाई देता है, तो आप खिलने की क्रिया को ट्रिगर करने के लिए मुख्य रूप से कौन सा ब्लॉक उपयोग करेंगे?",
+            "opts": { "1": "When Received block", "2": "Hide block", "3": "Text block" },
+            "ans": "1"
+          },
+          {
+            "q": "कल्पना करें कि आप एक पवन चक्की जोड़ना चाहते हैं जो सूर्य के बाहर होने पर घूमती है। यह एनिमेशन प्रक्रिया के किस भाग से संबंधित होगा?",
+            "opts": {
+              "1": "Drawing sunrays with the Paint Editor.",
+              "2": "Changing the backdrop.",
+              "3": "Coding the action using the When Received block."
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Animate-a-Solar-Speedster-🚗-Remedial",
+          "seq": 101,
+          "nm": "Solar Car Start!",
+          "desc": "छात्र एक सरल एनीमेशन बनाएंगे जिसमें सौर ऊर्जा से चलने वाली एक कार केवल तब चलना शुरू करती है जब उसे सूर्य के प्रकाश से ऊर्जा मिलती है। OctoStudio का उपयोग करके, वे सूर्य को एनिमेट करेंगे, कार से जुड़े सोलर पैनल को दिखाएंगे, और कार की गति को प्रदर्शित करेंगे। यह गतिविधि छात्रों को यह समझने में मदद करती है कि सौर ऊर्जा का उपयोग वास्तविक जीवन में, जैसे परिवहन में, कैसे किया जा सकता है, साथ ही वे इवेंट-आधारित कोडिंग और अनुक्रमण (SDG 7 एवं 13) का अभ्यास भी करते हैं।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "👍 भेजें अगर आपको यह गतिविधि अच्छी लगी, या 👎 अगर नहीं लगी",
+              "unguided_text": "कृपया अपनी पसंद का कोई भी इमोजी भेजें!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "अगर आपको यह गतिविधि पसंद आई तो 'स्वच्छ' शब्द टाइप करें।",
+              "unguided_text": "आपने इस गतिविधि से क्या सीखा? एक शब्द में बताएं।",
+              "valid_criteria": "Response matching the word 'Clean'.",
+              "invalid_criteria": "Anything other than the word 'Clean'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "अपने आसपास के किसी पौधे की तस्वीर साझा करें!",
+              "unguided_text": "अपने आसपास की किसी भी चीज़ की तस्वीर साझा करें!!",
+              "valid_criteria": "Image contains a real plant found at home or nearby.",
+              "invalid_criteria": "Anything other than a plant (e.g., toys, electronics, or unrelated objects)."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "वॉयस नोट या टेक्स्ट भेजें और हमें बताएं: एनिमेशन में स्प्राइट्स आपस में कैसे बात करते हैं?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Clean Air Hero एनिमेशन प्रोजेक्ट का एक वीडियो या स्क्रीनशॉट साझा करें"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Three Bins Sorted 🗑️",
+      "desc": "Concepts Waste sorting, Environmental awareness, Recycling, Creative coding Blocks Set variable, Change variable, When play, When touches, Show, Hide, Move, Wait, Play sound, If-Else, Text",
+      "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 107,
+          "nm": "Can three bins sort waste? 🗑️",
+          "desc": "छात्र वस्तुओं को सही रीसाइक्लिंग डिब्बों में खींचकर डालेंगे। सही डिब्बे को छूने पर अंक मिलेंगे और वह चमकेगा, जबकि गलत डिब्बे चुनने पर अंक घटेंगे और “फिर से प्रयास करें” की ध्वनि आएगी। अंत में वे एक साफ़ पार्क दृश्य को पुनर्स्थापित करेंगे, जिससे जिम्मेदार उपभोग (SDG 12) और महासागर संरक्षण (SDG 14) को मज़बूती मिलेगी।",
+          "yt": "Qc2pFkeEuLo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 110,
+        "nm": "Can you sort the trash? ♻️",
+        "qs": [
+          {
+            "q": "एसडीजी 12 किस बारे में है?",
+            "opts": {
+              "1": "Responsible consumption and production",
+              "2": "Reducing hunger",
+              "3": "Quality education"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "कचरे को सही ढंग से छांटना क्यों महत्वपूर्ण है?",
+            "opts": {
+              "1": "It saves time during waste collection.",
+              "2": "It helps reduce environmental harm and keeps spaces clean.",
+              "3": "It is a fun activity to do."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "खेल में सही तरीके से छांटने के बाद किसी आइटम को छुपाने के लिए कौन सा ब्लॉक उपयोग किया जाता है?",
+            "opts": { "1": "Set Variable", "2": "Hide", "3": "Change Variable" },
+            "ans": "2"
+          },
+          {
+            "q": "वेस्ट सॉर्टिंग गेम को डिजाइन करते समय रचनात्मकता कैसे लागू की जा सकती है?",
+            "opts": {
+              "1": "By using only default settings.",
+              "2": "By following the instructions exactly as given.",
+              "3": "By choosing unique colors, movements, and sounds for the game."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "वेस्ट सॉर्टिंग गेम में उपयोगकर्ता की सहभागिता बढ़ाने के लिए आप किस तरह से रचनात्मकता का उपयोग कर सकते हैं?",
+            "opts": {
+              "1": "By making the game simpler.",
+              "2": "By adding interactive elements like animations and feedback sounds.",
+              "3": "By removing all sounds."
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Waste-Sorting-Game-🗑️-Intermediate",
+          "seq": 102,
+          "nm": "Waste Sorting Game (3 Bins)",
+          "desc": "छात्र वस्तुओं को सही रीसाइक्लिंग डिब्बों में खींचकर डालेंगे। सही डिब्बे को छूने पर अंक मिलेंगे और वह चमकेगा, जबकि गलत डिब्बे चुनने पर अंक घटेंगे और “फिर से प्रयास करें” की ध्वनि आएगी। अंत में वे एक साफ़ पार्क दृश्य को पुनर्स्थापित करेंगे, जिससे जिम्मेदार उपभोग (SDG 12) और महासागर संरक्षण (SDG 14) को मज़बूती मिलेगी।",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "👍 भेजें अगर आपको यह गतिविधि अच्छी लगी, या 👎 अगर नहीं लगी",
+              "unguided_text": "कृपया अपनी पसंद का कोई भी इमोजी भेजें!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "अगर आपको यह गतिविधि पसंद आई तो 'छंटाई' शब्द टाइप करें।",
+              "unguided_text": "आपने इस गतिविधि से क्या सीखा? एक शब्द में बताएं।",
+              "valid_criteria": "Response matching the word 'Sorting'.",
+              "invalid_criteria": "Anything other than the word 'Sorting'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "अलग-अलग रंगों वाली वस्तुओं की तस्वीर साझा करें (लाल, हरा या नीला)!!",
+              "unguided_text": "अपने आसपास की किसी भी चीज़ की तस्वीर साझा करें!!",
+              "valid_criteria": "Image contains red, green, or blue colored objects.",
+              "invalid_criteria": "Anything other than red, green, or blue objects."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "वॉयस नोट या टेक्स्ट भेजें और हमें बताएं: कचरे की छँटाई क्या होती है और यह क्यों ज़रूरी है?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "OctoStudio के वेस्ट सॉर्टिंग गेम का एक वीडियो या स्क्रीनशॉट साझा करें"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

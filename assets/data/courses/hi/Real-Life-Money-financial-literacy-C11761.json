@@ -1,0 +1,1103 @@
+{
+  "id": "Real-Life-Money-financial-literacy-C11761",
+  "nm": "Real-Life Money",
+  "lvl": "Level 3AK",
+  "vrt": "financial-literacy",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Shield Covers the Bill 🛡️",
+      "desc": "Health Insurance, Financial Protection",
+      "rwc": "Pencil, Eraser",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 108,
+          "nm": "Can insurance cover hospital bills? 🛡️",
+          "desc": "इस ऐक्टिविटी में, छात्र यह अन्वेषण करेंगे कि स्वास्थ्य बीमा कैसे चिकित्सा आपात स्थितियों के दौरान परिवारों की रक्षा करता है। छात्र एक \"हेल्थ प्रोटेक्शन शील्ड\" आरेख बनाएँगे, जो दिखाएगा कि बीमा कैसे अस्पताल के खर्चों को कवर करने में मदद करता है और वित्तीय तनाव को कम करता है, जिससे परिवार स्वास्थ्य संकटों के दौरान सुरक्षित रह सकते हैं।",
+          "yt": "gZcTay6_pLU",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 111,
+        "nm": "Can insurance save your family? 🏥",
+        "qs": [
+          {
+            "q": "स्क्रिप्ट के अनुसार स्वास्थ्य बीमा का मुख्य उद्देश्य क्या है?",
+            "opts": {
+              "1": "To avoid paying any medical bills.",
+              "2": "To help cover hospital expenses during emergencies.",
+              "3": "To increase savings by not paying premiums."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "स्वास्थ्य बीमा एसडीजी 3 का समर्थन कैसे करता है?",
+            "opts": {
+              "1": "By ensuring everyone gets free healthcare.",
+              "2": "By promoting timely treatment and good health.",
+              "3": "By providing funds for building hospitals."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "यदि किसी परिवार के पास स्वास्थ्य बीमा है, तो चिकित्सा आपात स्थिति के दौरान उनकी वित्तीय स्थिति पर इसका क्या प्रभाव पड़ता है?",
+            "opts": {
+              "1": "It increases financial burden due to high premiums.",
+              "2": "It has no impact on financial stress.",
+              "3": "It reduces financial stress and allows easy access to treatment."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "कल्पना कीजिए कि आप अपने परिवार के लिए स्वास्थ्य बीमा खरीदने का निर्णय ले रहे हैं। स्क्रिप्ट के आधार पर विचार करने के लिए एक प्रमुख कारक क्या है?",
+            "opts": {
+              "1": "The potential for emergencies and the financial protection offered.",
+              "2": "The availability of hospitals nearby.",
+              "3": "The cost of transportation to the hospital."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "आप एक स्वास्थ्य सुरक्षा योजना बना रहे हैं। स्क्रिप्ट के अनुसार पहला कदम क्या है?",
+            "opts": {
+              "1": "Choosing a medical emergency situation.",
+              "2": "Drawing the SDG 3 logo.",
+              "3": "Writing the benefits of health insurance."
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-Your-Health-Protection-Shield-🛡️-Basic",
+          "seq": 103,
+          "nm": "My Health Protection Shield",
+          "desc": "इस ऐक्टिविटी में, छात्र यह अन्वेषण करेंगे कि स्वास्थ्य बीमा कैसे चिकित्सा आपात स्थितियों के दौरान परिवारों की रक्षा करता है। छात्र एक \"हेल्थ प्रोटेक्शन शील्ड\" आरेख बनाएँगे, जो दिखाएगा कि बीमा कैसे अस्पताल के खर्चों को कवर करने में मदद करता है और वित्तीय तनाव को कम करता है, जिससे परिवार स्वास्थ्य संकटों के दौरान सुरक्षित रह सकते हैं।",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "⭐ भेजें अगर आप आश्वस्त महसूस करते हैं, या 👎 अगर उलझन है",
+              "unguided_text": "कृपया अपनी पसंद का कोई भी इमोजी भेजें!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "स्वास्थ्य बीमा का एक फ़ायदा बताएं, फिर या तो एक शब्द में जवाब टाइप करें या वॉइस नोट भेजें।",
+              "unguided_text": "इस गतिविधि के बारे में आप क्या सोचते हैं? एक शब्द में बताएं या वॉइस नोट भेजें",
+              "valid_criteria": "If the student types any one of the following words: Coverage / Safety / Support, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Coverage / Safety / Support, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Coverage / Safety / Support, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "फूलों की फ़ोटो खींचें और अपलोड करें",
+              "unguided_text": "अपने आसपास की कोई भी तस्वीर खींचें और साझा करें!",
+              "valid_criteria": "Any Flower",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Flower"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करें या वॉयस नोट भेजें और अपनी स्वास्थ्य सुरक्षा योजना समझाएं और बताएं कि बीमा कैसे मदद करता है"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "अपनी स्वास्थ्य सुरक्षा योजना की एक स्पष्ट फोटो लें और अपलोड करें"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Insurance Saves the Day 🏥",
+      "desc": "Health Insurance, Financial Protection",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 109,
+          "nm": "Can a plan protect families? 🏥",
+          "desc": "इस एक्टिविटी में, छात्र आसान तरीके से सीखेंगे कि स्वास्थ्य बीमा कैसे मेडिकल आपात स्थितियों के दौरान परिवारों की मदद करता है। छात्र एक सरल \"हेल्थ प्रोटेक्शन शील्ड\" आरेख बनाएंगे, जिससे दिखाया जाएगा कि बीमा कैसे अस्पताल के बिलों का भुगतान करने में मदद करता है और आपात स्थितियों के दौरान पैसे के तनाव को कम करता है।",
+          "yt": "qY_jXCRgZD8",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 112,
+        "nm": "Can diversification protect savings? 📊",
+        "qs": [
+          {
+            "q": "स्क्रिप्ट के अनुसार वित्तीय योजना की नींव क्या है?",
+            "opts": { "1": "Investing in stocks", "2": "Buying insurance", "3": "Saving money" },
+            "ans": "3"
+          },
+          {
+            "q": "वित्तीय योजना में विविधीकरण क्यों महत्वपूर्ण है?",
+            "opts": {
+              "1": "To maximize returns",
+              "2": "To increase risk",
+              "3": "To balance risks and returns"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "यदि आपके पास ₹10,000 हैं, तो स्क्रिप्ट के आधार पर विविधीकरण का उपयोग कैसे किया जा सकता है?",
+            "opts": {
+              "1": "Invest all in stocks",
+              "2": "Keep all in a savings account",
+              "3": "Divide into different asset classes"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "अंजलि ने आपातकालीन स्थिति की योजना नहीं बनाई और एक चिकित्सा संकट का सामना किया। वह इस स्थिति से कैसे बच सकती थी?",
+            "opts": {
+              "1": "By investing in high-risk stocks",
+              "2": "By saving all her money in a savings account",
+              "3": "By purchasing health insurance"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "अमन ने अपने सारे पैसे शेयरों में निवेश कर दिए और जब बाजार गिरा तो वह हार गया। उसे अलग तरीके से क्या करना चाहिए था?",
+            "opts": {
+              "1": "Diversified his investments",
+              "2": "Invested more in stocks",
+              "3": "Not invested at all"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-Your-Financial-Protection-Plan-🏥-Remedial",
+          "seq": 104,
+          "nm": "Simple Health Protection Shield",
+          "desc": "इस एक्टिविटी में, छात्र आसान तरीके से सीखेंगे कि स्वास्थ्य बीमा कैसे मेडिकल आपात स्थितियों के दौरान परिवारों की मदद करता है। छात्र एक सरल \"हेल्थ प्रोटेक्शन शील्ड\" आरेख बनाएंगे, जिससे दिखाया जाएगा कि बीमा कैसे अस्पताल के बिलों का भुगतान करने में मदद करता है और आपात स्थितियों के दौरान पैसे के तनाव को कम करता है।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "⭐ भेजें अगर आप आश्वस्त महसूस करते हैं, या 👎 अगर उलझन है",
+              "unguided_text": "कृपया अपनी पसंद का कोई भी इमोजी भेजें!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "स्वास्थ्य बीमा किसके भुगतान में मदद करता है, फिर या तो एक शब्द में जवाब टाइप करें या वॉइस नोट भेजें।",
+              "unguided_text": "इस गतिविधि के बारे में आप क्या सोचते हैं? एक शब्द में बताएं या वॉइस नोट भेजें",
+              "valid_criteria": "If the student types any one of the following words: Hospital / Treatment, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Hospital / Treatment, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Hospital / Treatment, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "एक पौधे या पेड़ की फ़ोटो खींचें और अपलोड करें",
+              "unguided_text": "अपने आसपास की कोई भी तस्वीर खींचें और साझा करें!",
+              "valid_criteria": "Plant / Tree",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Plant / Tree"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करें या वॉयस नोट भेजें और अपनी वित्तीय सुरक्षा योजना समझाएं"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "अपने वित्तीय सुरक्षा योजना की एक स्पष्ट फोटो लें और अपलोड करें"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Taxes Split Two Ways 📑",
+      "desc": "Types of Taxes",
+      "rwc": "Pencil, Eraser",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 110,
+          "nm": "Can chips bill hide taxes? 📑",
+          "desc": "इस गतिविधि में छात्र सीखेंगे कि Direct और Indirect टैक्स असल ज़िंदगी में कैसे काम करते हैं। वे समझेंगे कि कौन सा टैक्स वे सीधे भरते हैं और कौन सा टैक्स खरीदी गई चीज़ों की कीमत में जुड़ा होता है। छात्र अलग-अलग टैक्स को सही तरह से sort करेंगे, समझदार taxpayers की तरह सोचेंगे, और जानेंगे कि टैक्स कैसे हमारी रोज़मर्रा की ज़िंदगी और देश की सेवाओं को प्रभावित करता है।",
+          "yt": "aRuVUZHo7og",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 113,
+        "nm": "Do you pay tax without knowing? 🧾",
+        "qs": [
+          {
+            "q": "डायरेक्ट टैक्स क्या होता है?",
+            "opts": {
+              "1": "A tax that is directly paid to the government by an individual or organization.",
+              "2": "A tax included in the price of goods and services.",
+              "3": "A tax that can be shifted to another person or entity."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "इनडायरेक्ट टैक्स कैसे काम करता है?",
+            "opts": {
+              "1": "It is included in the price of goods and services and paid by the consumer.",
+              "2": "It is paid directly from an individual's income to the government.",
+              "3": "It cannot be shifted from the person who earns to someone else."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "इनमें से कौन सा इनडायरेक्ट टैक्स का उदाहरण है?",
+            "opts": { "1": "Income Tax", "2": "Property Tax", "3": "Tax on biscuits" },
+            "ans": "3"
+          },
+          {
+            "q": "अनिका के माता-पिता को मासिक वेतन मिलता है, और वह उनके वेतन पर्ची पर \"आयकर\" नाम की कटौती देखती है। अनिका को इस कटौती के बारे में क्या समझना चाहिए?",
+            "opts": {
+              "1": "It is a Direct Tax paid directly from her parents' income to the government.",
+              "2": "It is an Indirect Tax that her parents will recover through other purchases.",
+              "3": "It is a tax that can be shifted to someone else in her family."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "राज एक चिप्स का पैकेट खरीदता है और देखता है कि कुल बिल में एक छोटा टैक्स जोड़ा गया है। वह इस प्रकार के टैक्स के बारे में समझदारी से वित्तीय निर्णय लेना चाहता है। राज को क्या विचार करना चाहिए?",
+            "opts": {
+              "1": "Stop buying chips to avoid paying any tax at all.",
+              "2": "Understand that this is an Indirect Tax and consider it when budgeting.",
+              "3": "Ask the seller to reduce the tax amount on the bill."
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Sort-Direct-and-Indirect-Taxes-📑-Basic",
+          "seq": 105,
+          "nm": "Know Your Taxes",
+          "desc": "इस गतिविधि में छात्र सीखेंगे कि Direct और Indirect टैक्स असल ज़िंदगी में कैसे काम करते हैं। वे समझेंगे कि कौन सा टैक्स वे सीधे भरते हैं और कौन सा टैक्स खरीदी गई चीज़ों की कीमत में जुड़ा होता है। छात्र अलग-अलग टैक्स को सही तरह से sort करेंगे, समझदार taxpayers की तरह सोचेंगे, और जानेंगे कि टैक्स कैसे हमारी रोज़मर्रा की ज़िंदगी और देश की सेवाओं को प्रभावित करता है।",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "अगर आप आत्मविश्वास महसूस करते हैं तो ⭐ भेजें, उलझन हो तो 👎 भेजें",
+              "unguided_text": "अपनी पसंद का कोई भी इमोजी भेजें!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "एक प्रकार के कर (प्रत्यक्ष या अप्रत्यक्ष) का नाम बताएं, फिर एक शब्द में टाइप करें या वॉयस नोट भेजें।",
+              "unguided_text": "आप इस गतिविधि के बारे में क्या सोचते हैं? एक शब्द में बताएं या वॉयस नोट भेजें",
+              "valid_criteria": "If the student types any one of the following words: Direct / Indirect, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Direct / Indirect, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Direct / Indirect, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "एक किताब की फोटो क्लिक करें और अपलोड करें",
+              "unguided_text": "अपने आसपास कोई भी फोटो क्लिक करें और शेयर करें!",
+              "valid_criteria": "Book",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a book"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करें या वॉयस नोट भेजें और अपनी गतिविधि से प्रत्यक्ष और अप्रत्यक्ष कर के बीच का अंतर बताएं"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "अपने Tax Sorting चार्ट की एक स्पष्ट फोटो क्लिक करें और अपलोड करें"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Tax Money Serves All 🏗️",
+      "desc": "Tax",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 111,
+          "nm": "Can you spend tax money? 🏗️",
+          "desc": "इस गतिविधि में छात्र सीखेंगे कि सरकार टैक्स के पैसे का उपयोग सड़कों, अस्पतालों और स्कूलों जैसी सेवाओं के लिए कैसे करती है। वे सरकार की तरह सोचेंगे — सीमित पैसे का समझदारी से उपयोग कैसे करें, टैक्स का अर्थ समझेंगे, और ऐसे निर्णय लेना सीखेंगे जो सभी के लिए फायदेमंद हों।",
+          "yt": "up-7YvcUfaQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 114,
+        "nm": "How does tax money get spent? 🏗️",
+        "qs": [
+          {
+            "q": "सरकार टैक्स के पैसे का उपयोग किसके लिए करती है?",
+            "opts": {
+              "1": "To run public services like roads and hospitals",
+              "2": "To pay extra money to rich people",
+              "3": "To give rewards to students"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "सरकार के हर निर्णय का महत्व क्यों होता है?",
+            "opts": {
+              "1": "Because choices can be changed anytime without impact",
+              "2": "Because only one service needs improvement",
+              "3": "Because each decision affects other needs and services"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "अगर स्कूल की छत टूट जाती है, तो किस क्षेत्र को टैक्स के पैसे की जरूरत है?",
+            "opts": {
+              "1": "Buying more computer",
+              "2": "Road development",
+              "3": "Education support and school repairs"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "क्या हो सकता है अगर सारा पैसा केवल एक पसंदीदा समस्या पर खर्च हो जाए?",
+            "opts": {
+              "1": "Other important needs will not get support",
+              "2": "Everything in the area will get fixed",
+              "3": "The money will increase by itself"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "आप एक पोस्टर बना रहे हैं। कौन सा शीर्षक स्पष्ट निर्णय लेने को दर्शाता है?",
+            "opts": {
+              "1": "My favourite colours and drawings",
+              "2": "How I divided ₹10,000 tax money for my community”",
+              "3": "Things I want to buy this month"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Divide-Tax-Money-Across-Needs-🏗️-Remedial",
+          "seq": 106,
+          "nm": "The Power of Taxes",
+          "desc": "इस गतिविधि में छात्र सीखेंगे कि सरकार टैक्स के पैसे का उपयोग सड़कों, अस्पतालों और स्कूलों जैसी सेवाओं के लिए कैसे करती है। वे सरकार की तरह सोचेंगे — सीमित पैसे का समझदारी से उपयोग कैसे करें, टैक्स का अर्थ समझेंगे, और ऐसे निर्णय लेना सीखेंगे जो सभी के लिए फायदेमंद हों।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "⭐ भेजें अगर आप आश्वस्त महसूस करते हैं, या 👎 अगर उलझन है",
+              "unguided_text": "कृपया अपनी पसंद का कोई भी इमोजी भेजें!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "एक ऐसी चीज़ बताएं जिसके लिए करों का उपयोग किया जाता है, फिर या तो एक शब्द में जवाब टाइप करें या वॉइस नोट भेजें।",
+              "unguided_text": "इस गतिविधि के बारे में आप क्या सोचते हैं? एक शब्द में बताएं या वॉइस नोट भेजें",
+              "valid_criteria": "If the student types any one of the following words: Roads / Schools / Hospitals, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Roads / Schools / Hospitals, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Roads / Schools / Hospitals, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "वित्तीय साक्षरता नोटबुक की फ़ोटो खींचें और अपलोड करें",
+              "unguided_text": "अपने आसपास की कोई भी तस्वीर खींचें और साझा करें!",
+              "valid_criteria": "Notebook",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Notebook"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करें या वॉयस नोट भेजें और समझाएं कि आपकी गतिविधि में कर के पैसे का उपयोग कैसे होता है"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "अपनी टैक्स निर्णय गतिविधि की एक स्पष्ट फोटो लें और अपलोड करें"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Steps Shape the Future 🗺️",
+      "desc": "Saving and Investment Options",
+      "rwc": "Pencil, Eraser",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 112,
+          "nm": "Can planning secure your future? 🗺️",
+          "desc": "इस एक्टिविटी में, छात्र पाँच अलग-अलग बचत और निवेश विकल्पों को सूचीबद्ध करके एक इन्वेस्टमेंट व्हील बनाएँगे। वे अपने व्हील को एसडीजी 1: नो पॉवर्टी से जोड़ेंगे ताकि यह समझ सकें कि वित्तीय सेवाएँ सभी की मदद कैसे करती हैं।",
+          "yt": "HtD5qVdXtQk",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 115,
+        "nm": "Can saving fight poverty? 💪",
+        "qs": [
+          {
+            "q": "लिखित में एसडीजी 1 का मुख्य उद्देश्य क्या है?",
+            "opts": {
+              "1": "Promote gender equality",
+              "2": "Ensure clean water and sanitation",
+              "3": "End poverty"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ऐशा के माता-पिता ने पैसा क्यों बचाया और निवेश किया?",
+            "opts": {
+              "1": "To go on a vacation",
+              "2": "To buy a new house",
+              "3": "To support Aisha's dream of becoming a doctor"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "आइशा द्वारा बताए अनुसार बैंक या पोस्ट ऑफिस में पैसे रखने का क्या फायदा है?",
+            "opts": {
+              "1": "It helps in immediate spending",
+              "2": "Money is safe and earns interest",
+              "3": "Money is only safe"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "यदि आप आइशा की तरह एक रचनात्मक कार्यशाला डिजाइन करते हैं, तो इसे रोचक बनाने के लिए आप किस संसाधन का उपयोग करेंगे?",
+            "opts": {
+              "1": "Plain text documents",
+              "2": "Interactive activities and visuals",
+              "3": "Formal lectures"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "आप अपने समुदाय को वित्तीय साक्षरता समझने में मदद करना चाहते हैं। जागरूकता प्रभावी ढंग से फैलाने के लिए आप कौन सा निर्णय ले सकते हैं?",
+            "opts": {
+              "1": "Rely solely on social media posts",
+              "2": "Organize informative and interactive workshops",
+              "3": "Distribute pamphlets without explanation"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Financial-Planning-Poster-🗺️-Intermediate",
+          "seq": 107,
+          "nm": "Financial Planning Poster",
+          "desc": "इस एक्टिविटी में, छात्र पाँच अलग-अलग बचत और निवेश विकल्पों को सूचीबद्ध करके एक इन्वेस्टमेंट व्हील बनाएँगे। वे अपने व्हील को एसडीजी 1: नो पॉवर्टी से जोड़ेंगे ताकि यह समझ सकें कि वित्तीय सेवाएँ सभी की मदद कैसे करती हैं।",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "⭐ भेजें अगर आप आश्वस्त महसूस करते हैं, या 👎 अगर उलझन है",
+              "unguided_text": "कृपया अपनी पसंद का कोई भी इमोजी भेजें!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "अपने निवेश व्हील से एक वित्तीय विकल्प का नाम बताएं, फिर या तो एक शब्द में जवाब टाइप करें या वॉइस नोट भेजें।",
+              "unguided_text": "इस गतिविधि के बारे में आप क्या सोचते हैं? एक शब्द में बताएं या वॉइस नोट भेजें",
+              "valid_criteria": "If the student types any one of the following words: Savings / FD / RD / Stocks / Insurance, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Savings / FD / RD / Stocks / Insurance, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Savings / FD / RD / Stocks / Insurance, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "एक पेन या पेंसिल की फ़ोटो खींचें और अपलोड करें",
+              "unguided_text": "अपने आसपास की कोई भी तस्वीर खींचें और साझा करें!",
+              "valid_criteria": "Pen / Pencil",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than Pen/Pencil"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करें या वॉयस नोट भेजें और अपना वित्तीय योजना पोस्टर समझाएं"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "अपने वित्तीय योजना पोस्टर की एक स्पष्ट फोटो लें और अपलोड करें"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Plan Protects Your Wealth 🛡️",
+      "desc": "Financial Services",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 113,
+          "nm": "Can insurance protect your savings? 🛡️",
+          "desc": "--- इस ऐक्टिविटी में, छात्र एक वित्तीय योजना पोस्टर बनाएंगे जो बचत, निवेश, करों की योजना, सेवानिवृत्ति, और वित्तीय जोखिमों से सुरक्षा जैसे महत्वपूर्ण धन विषयों को कवर करेगा। वे सीखेंगे कि कैसे ये कौशल एसडीजी 4: गुणवत्तापूर्ण शिक्षा से जुड़ते हैं और वास्तविक जीवन में वित्तीय सफलता के लिए निर्णय-निर्माण और आलोचनात्मक सोच को विकसित करने में मदद करते हैं।",
+          "yt": "W9yGK0de08U",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 116,
+        "nm": "Can investing protect your future? 📊",
+        "qs": [
+          {
+            "q": "अमन ने अपनी पहली तनख्वाह से कितनी राशि बचाई?",
+            "opts": { "1": "₹5,000", "2": "₹15,000", "3": "₹10,000" },
+            "ans": "3"
+          },
+          {
+            "q": "पाठ का मुख्य उद्देश्य क्या है?",
+            "opts": {
+              "1": "Learn Smart Financial Planning",
+              "2": "To learn how to save money",
+              "3": "Understand insurance policies"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "यदि किसी व्यक्ति के पास निवेश के लिए ₹10,000 हैं, तो स्क्रिप्ट के विविधीकरण उदाहरण के अनुसार उन्हें इसे कैसे विभाजित करना चाहिए?",
+            "opts": {
+              "1": "₹5,000 in stocks, ₹3,000 in savings, ₹2,000 in mutual funds",
+              "2": "₹4,000 in gold, ₹4,000 in FD, ₹2,000 in savings",
+              "3": "₹5,000 in FD/Savings, ₹3,000 in Mutual Fund, ₹2,000 in Stocks"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "अमन अपनी बचत को वृद्धि और सुरक्षा दोनों के लिए निवेश करना चाहता है। उसे कौन से दो वित्तीय कदम उठाने चाहिए?",
+            "opts": {
+              "1": "Saving money in a fixed deposit only",
+              "2": "Investing and buying insurance",
+              "3": "Putting all money in mutual funds and stocks"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "अंजलि अपने वित्त की योजना बना रही है और अप्रत्याशित चिकित्सा आपात स्थितियों से सुरक्षित रहना चाहती है। उसे अपनी वित्तीय योजना में क्या प्राथमिकता देनी चाहिए?",
+            "opts": {
+              "1": "Saving money in a savings account",
+              "2": "Investing heavily in stocks",
+              "3": "Getting health insurance"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-Your-Financial-Protection-Plan-🛡️-Remedial",
+          "seq": 108,
+          "nm": "Financial Planning Simplified",
+          "desc": "--- इस ऐक्टिविटी में, छात्र एक वित्तीय योजना पोस्टर बनाएंगे जो बचत, निवेश, करों की योजना, सेवानिवृत्ति, और वित्तीय जोखिमों से सुरक्षा जैसे महत्वपूर्ण धन विषयों को कवर करेगा। वे सीखेंगे कि कैसे ये कौशल एसडीजी 4: गुणवत्तापूर्ण शिक्षा से जुड़ते हैं और वास्तविक जीवन में वित्तीय सफलता के लिए निर्णय-निर्माण और आलोचनात्मक सोच को विकसित करने में मदद करते हैं।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "⭐ भेजें अगर आप आश्वस्त महसूस करते हैं, या 👎 अगर उलझन है",
+              "unguided_text": "कृपया अपनी पसंद का कोई भी इमोजी भेजें!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "वित्तीय नियोजन का एक हिस्सा बताएं, फिर या तो एक शब्द में जवाब टाइप करें या वॉइस नोट भेजें।",
+              "unguided_text": "इस गतिविधि के बारे में आप क्या सोचते हैं? एक शब्द में बताएं या वॉइस नोट भेजें",
+              "valid_criteria": "If the student types any one of the following words: Saving / Investing / Tax / Insurance, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Saving / Investing / Tax / Insurance, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Saving / Investing / Tax / Insurance, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "कागज़ पर कुछ भी बनाएं और उसकी फ़ोटो खींचकर अपलोड करें",
+              "unguided_text": "अपने आसपास की कोई भी तस्वीर खींचें और साझा करें!",
+              "valid_criteria": "Clear drawing photo",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a drawing photo"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करें या वॉयस नोट भेजें और समझाएं कि ब्याज पैसों को बढ़ाने और अर्थव्यवस्था को सहारा देने में कैसे मदद करता है"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "अपनी वित्तीय सुरक्षा योजना (उन्नत) की एक स्पष्ट फोटो लें और अपलोड करें"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Formula Grows the Savings 🧮",
+      "desc": "Simple Interest",
+      "rwc": "Pencil, Eraser",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 114,
+          "nm": "Can a formula grow savings? 🧮",
+          "desc": "इस चुनौती में, छात्र यह गणना करने के लिए साधारण ब्याज सूत्र का उपयोग करते हैं कि उनकी बचत बैंक में कितना अतिरिक्त पैसा कमा सकती है। एक वास्तविक जीवन के उदाहरण के साथ — ₹1000 को 4% की दर से 1 वर्ष के लिए बचाना — छात्र सीखते हैं कि ब्याज कैसे बढ़ता है, $(\\text{P} \\times \\text{R} \\times \\text{T}) \\div 100$ का उपयोग करके इसकी गणना कैसे करें, और कुल राशि समय के साथ कैसे बढ़ती है। वे अपनी नोटबुक में एक गणना हल करके और यह जाँचकर भी ज्ञान लागू करते हैं कि क्या ब्याज हर साल समान रहता है।",
+          "yt": "uuNFphPQDaM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 117,
+        "nm": "Can simple interest grow savings? 📈",
+        "qs": [
+          {
+            "q": "साधारण ब्याज के फार्मूले में “P” का मतलब क्या होता है?",
+            "opts": { "1": "Payment", "2": "Profit", "3": "Principal" },
+            "ans": "3"
+          },
+          {
+            "q": "साधारण ब्याज हर साल एक जैसा क्यों रहता है?",
+            "opts": {
+              "1": "Because it is always calculated on the original savings",
+              "2": "Because the bank doubles the money every year",
+              "3": "Because the formula changes every year"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "यदि आप ₹1000 को 4% ब्याज पर 1 साल के लिए बचाते हैं, तो आप कितना ब्याज कमाएंगे?",
+            "opts": { "1": "₹20", "2": "₹40", "3": "₹60" },
+            "ans": "2"
+          },
+          {
+            "q": "यदि आप चाहते हैं कि आपके पैसे हर साल सुरक्षित रूप से बढ़ें, तो आपको क्या चुनना चाहिए?",
+            "opts": {
+              "1": "Simple Interest saving",
+              "2": "Lottery ticket",
+              "3": "Spending the money at once"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "साधारण ब्याज के बारे में जानने से आपको असली जीवन में कैसे मदद मिलती है?",
+            "opts": {
+              "1": "To spend money quickly",
+              "2": "To decide how much to save and for how long",
+              "3": "To avoid saving money"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Solve-the-Simple-Interest-Challenge-🧮-Intermediate",
+          "seq": 109,
+          "nm": "Simple  Interest",
+          "desc": "इस चुनौती में, छात्र यह गणना करने के लिए साधारण ब्याज सूत्र का उपयोग करते हैं कि उनकी बचत बैंक में कितना अतिरिक्त पैसा कमा सकती है। एक वास्तविक जीवन के उदाहरण के साथ — ₹1000 को 4% की दर से 1 वर्ष के लिए बचाना — छात्र सीखते हैं कि ब्याज कैसे बढ़ता है, $(\\text{P} \\times \\text{R} \\times \\text{T}) \\div 100$ का उपयोग करके इसकी गणना कैसे करें, और कुल राशि समय के साथ कैसे बढ़ती है। वे अपनी नोटबुक में एक गणना हल करके और यह जाँचकर भी ज्ञान लागू करते हैं कि क्या ब्याज हर साल समान रहता है।",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "⭐ भेजें अगर आप आश्वस्त महसूस करते हैं, या 👎 अगर उलझन है",
+              "unguided_text": "कृपया अपनी पसंद का कोई भी इमोजी भेजें!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "बचत पर अर्जित अतिरिक्त धनराशि को हम क्या कहते हैं, फिर या तो एक शब्द में जवाब टाइप करें या वॉइस नोट भेजें।",
+              "unguided_text": "इस गतिविधि के बारे में आप क्या सोचते हैं? एक शब्द में बताएं या वॉइस नोट भेजें",
+              "valid_criteria": "If the student types the word: Interest, then the response is valid OR If the student sends a voice note and the response includes the word: Interest, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include the word: Interest, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "एक मेज़ या कुर्सी की फ़ोटो खींचें और अपलोड करें",
+              "unguided_text": "अपने आसपास की कोई भी तस्वीर खींचें और साझा करें!",
+              "valid_criteria": "Table / Chair",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Table / Chair"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करें या वॉयस नोट भेजें और समझाएं कि आपने अपनी गतिविधि में साधारण ब्याज की गणना कैसे की"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "अपनी साधारण ब्याज गणना की एक स्पष्ट फोटो लें और अपलोड करें"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Interest Builds the Economy 🏗️",
+      "desc": "Interest, Banking",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 115,
+          "nm": "Can interest power job creation? 🏗️",
+          "desc": "इस एक्टिविटी में, छात्र यह जानेंगे कि बचत, उधार और निवेश में ब्याज कैसे काम करता है, और यह कैसे व्यापार वृद्धि, नौकरी सृजन और आर्थिक विकास को प्रेरित करता है, जो एसडीजी 8: डीसेंट वर्क और इकोनॉमिक ग्रोथ से जुड़ा हुआ है। वे एक आर्टिफैक्ट बनाएंगे ताकि यह प्रदर्शित कर सकें कि वित्तीय निर्णय अर्थव्यवस्था को कैसे प्रभावित करते हैं।",
+          "yt": "e7UtlmkBvqA",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 118,
+        "nm": "Can interest grow an economy? 📈",
+        "qs": [
+          {
+            "q": "वीडियो का मुख्य विषय क्या है?",
+            "opts": {
+              "1": "The Power of Interest",
+              "2": "The Importance of Saving",
+              "3": "The Basics of Banking"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "वीडियो के अनुसार इंटरेस्ट कैसे आर्थिक विकास में योगदान देता है?",
+            "opts": {
+              "1": "By reducing taxes",
+              "2": "By helping businesses grow and creating jobs",
+              "3": "By increasing inflation"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "यदि आप 3% वार्षिक ब्याज दर वाले बैंक में ₹1,000 बचाते हैं, तो एक वर्ष में कितना ब्याज मिलेगा?",
+            "opts": { "1": "₹10", "2": "₹50", "3": "₹30" },
+            "ans": "3"
+          },
+          {
+            "q": "एक व्यक्ति व्यवसाय शुरू करने के लिए ऋण लेता है। वीडियो में चर्चा किए गए निर्णय लेने के कौशल के आधार पर इस कदम का संभावित सकारात्मक परिणाम क्या हो सकता है?",
+            "opts": {
+              "1": "Decreasing the business's revenue",
+              "2": "Increasing the amount of debt",
+              "3": "Creating new job opportunities"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "एक सरकारी अधिकारी नई बुनियादी ढांचा परियोजना के लिए ब्याज का उपयोग करने की योजना बना रहा है। स्मार्ट निर्णय लेने के लिए उन्हें क्या विचार करना चाहिए?",
+            "opts": {
+              "1": "The popularity of the project",
+              "2": "The color of the infrastructure",
+              "3": "The long-term economic impact of the project"
+            },
+            "ans": "3"
+          }
+        ]
+      }
+    },
+    {
+      "nm": "QR Moves the Money 📲",
+      "desc": "Digital Payments",
+      "rwc": "Pencil, Eraser",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 116,
+          "nm": "Can QR codes pay instantly? 📲",
+          "desc": "इस ऐक्टिविटी में, छात्र एक \"डिजिटल पेमेंट्स पज़ल\" पोस्टर बनाएंगे जो डिजिटल मनी ट्रांसफर के प्रमुख मोड्स (क्यूआर/संपर्कों के माध्यम से यूपीआई, आईएमपीएस, इंटरनेट या मोबाइल बैंकिंग के माध्यम से एनईएफटी/आरटीजीएस) को दर्शाएगा और यह दिखाएगा कि कैसे प्रत्येक एसडीजी 8: उचित कार्य और आर्थिक विकास का समर्थन करता है। वे एसडीजी 8 थीम को केंद्र में चित्रित करेंगे, इसके प्रमुख लाभों को उसके चारों ओर संक्षेप में प्रस्तुत करेंगे, और अन्य पैनलों में विभिन्न डिजिटल भुगतान विधियों को चित्रित करेंगे।",
+          "yt": "irMDNUp3LkY",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 119,
+        "nm": "Can UPI replace your wallet? 📲",
+        "qs": [
+          {
+            "q": "डिजिटल भुगतान के संदर्भ में UPI का क्या मतलब होता है?",
+            "opts": {
+              "1": "Universal Payments Interface",
+              "2": "Unified Payments Interface",
+              "3": "Universal Payment Index"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "स्क्रिप्ट के अनुसार डिजिटल भुगतान SDG 8 का कैसे समर्थन करते हैं?",
+            "opts": {
+              "1": "By reducing the need for physical currency and promoting global trade",
+              "2": "By enabling instant payments that strengthen local economies and create jobs",
+              "3": "By supporting financial institutions in developing new banking products"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "स्क्रिप्ट के अनुसार कौन सी विधि आपको सटीक बदलाव की चिंता किए बिना तुरंत भुगतान करने देती है?",
+            "opts": {
+              "1": "Scanning a QR code with your phone",
+              "2": "Writing a check",
+              "3": "Using coins and cash"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "आप एक दुकानदार हैं जो व्यस्त दिन के बाद जल्दी स्टॉक भरना चाहते हैं। धन तक त्वरित पहुंच सुनिश्चित करने के लिए आप ग्राहकों को किस भुगतान विधि का उपयोग करने के लिए प्रोत्साहित करेंगे?",
+            "opts": {
+              "1": "Digital payments via UPI",
+              "2": "Credit card payments",
+              "3": "Cash payments"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "आप काम पूरा होते ही दैनिक मजदूरी वाले कार्यकर्ता को भुगतान करने की योजना बना रहे हैं। स्क्रिप्ट के अनुसार सबसे कुशल भुगतान विधि क्या है?",
+            "opts": { "1": "Paying in cash", "2": "Digital transfer", "3": "Writing a check" },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-the-Digital-Payments-Puzzle-📲-Advanced",
+          "seq": 110,
+          "nm": "Digital Payments Poster",
+          "desc": "इस ऐक्टिविटी में, छात्र एक \"डिजिटल पेमेंट्स पज़ल\" पोस्टर बनाएंगे जो डिजिटल मनी ट्रांसफर के प्रमुख मोड्स (क्यूआर/संपर्कों के माध्यम से यूपीआई, आईएमपीएस, इंटरनेट या मोबाइल बैंकिंग के माध्यम से एनईएफटी/आरटीजीएस) को दर्शाएगा और यह दिखाएगा कि कैसे प्रत्येक एसडीजी 8: उचित कार्य और आर्थिक विकास का समर्थन करता है। वे एसडीजी 8 थीम को केंद्र में चित्रित करेंगे, इसके प्रमुख लाभों को उसके चारों ओर संक्षेप में प्रस्तुत करेंगे, और अन्य पैनलों में विभिन्न डिजिटल भुगतान विधियों को चित्रित करेंगे।",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "⭐ भेजें अगर आप आश्वस्त महसूस करते हैं, या 👎 अगर उलझन है",
+              "unguided_text": "कृपया अपनी पसंद का कोई भी इमोजी भेजें!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "एक डिजिटल भुगतान विधि का नाम बताएं, फिर या तो एक शब्द में जवाब टाइप करें या वॉइस नोट भेजें।",
+              "unguided_text": "इस गतिविधि के बारे में आप क्या सोचते हैं? एक शब्द में बताएं या वॉइस नोट भेजें",
+              "valid_criteria": "If the student types any one of the following words: UPI / IMPS / NEFT / RTGS, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: UPI / IMPS / NEFT / RTGS, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: UPI / IMPS / NEFT / RTGS, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "एक बोतल की फ़ोटो खींचें और अपलोड करें",
+              "unguided_text": "अपने आसपास की कोई भी तस्वीर खींचें और साझा करें!",
+              "valid_criteria": "Bottle",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Bottle"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करें या वॉयस नोट भेजें और अपना डिजिटल भुगतान पोस्टर और उसके फायदे समझाएं"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "अपने डिजिटल पेमेंट पज़ल पोस्टर की एक स्पष्ट फोटो लें और अपलोड करें"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Transfer in Seconds 💳",
+      "desc": "Digital Payments",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 117,
+          "nm": "Can phones transfer money fast? 💳",
+          "desc": "इस एक्टिविटी में, छात्र महत्वपूर्ण धन संबंधी विषयों जैसे बचत, निवेश, कर योजना, सेवानिवृत्ति, और वित्तीय सुरक्षा के बारे में एक आसान तरीके से जानेंगे। छात्र एक सरल \"फाइनेंशियल प्लानिंग पोस्टर\" बनाएंगे ताकि यह दिखा सकें कि ये विचार पैसे प्रबंधन और भविष्य के लिए बेहतर निर्णय लेने में कैसे मदद करते हैं। वे यह भी समझेंगे कि ये कौशल एसडीजी 4: क्वालिटी एजुकेशन से कैसे जुड़े हैं।",
+          "yt": "OVS5iEAb9JM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 120,
+        "nm": "Which payment is truly instant? ⚡",
+        "qs": [
+          {
+            "q": "UPI का पूरा नाम क्या है?",
+            "opts": {
+              "1": "Unified Payments Interface",
+              "2": "Universal Payment Integration",
+              "3": "United Payment Infrastructure"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "कौन सा डिजिटल पेमेंट तरीका आमतौर पर तुरंत नहीं होता और इसमें कुछ समय लग सकता है?",
+            "opts": { "1": "IMPS", "2": "UPI", "3": "NEFT" },
+            "ans": "3"
+          },
+          {
+            "q": "डिजिटल भुगतान करने का पहला कदम क्या है?",
+            "opts": {
+              "1": "Open the app or website",
+              "2": "Confirm using PIN or OTP",
+              "3": "Enter the amount"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "यदि आपको तुरंत बड़ी राशि ट्रांसफर करनी है, तो आपको कौन सी विधि चुननी चाहिए?",
+            "opts": { "1": "RTGS", "2": "NEFT", "3": "UPI" },
+            "ans": "1"
+          },
+          {
+            "q": "आप एक दुकान पर हैं और आपके पास नकद नहीं है। मोबाइल ऐप का उपयोग करके जल्दी भुगतान करने के लिए आपको क्या करना चाहिए?",
+            "opts": {
+              "1": "Wait for NEFT transfer",
+              "2": "Use RTGS for immediate payment",
+              "3": "Scan using a payment app and pay instantly"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Complete-the-Digital-Payments-Chart-💳-Remedial",
+          "seq": 111,
+          "nm": "Simple Digital Payment Chart",
+          "desc": "इस ऐक्टिविटी में, छात्र महत्वपूर्ण धन विषयों जैसे बचत, निवेश, कर योजना, सेवानिवृत्ति, और वित्तीय सुरक्षा के बारे में आसान तरीके से सीखेंगे। छात्र एक साधारण \"वित्तीय योजना पोस्टर\" बनाएंगे ताकि यह दिखा सकें कि ये विचार पैसे का प्रबंधन करने और भविष्य के लिए बेहतर निर्णय लेने में कैसे मदद करते हैं। वे यह भी समझेंगे कि ये कौशल एसडीजी 4: गुणवत्तापूर्ण शिक्षा से कैसे जुड़े हैं।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "अगर आपको गतिविधि पसंद आई तो 👍 भेजें, या पसंद नहीं आई तो 👎 भेजें",
+              "unguided_text": "अपनी पसंद का कोई भी इमोजी भेजें!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "आपने जो एक वित्तीय अवधारणा सीखी, उसका नाम बताएं, फिर एक शब्द में टाइप करें या वॉयस नोट भेजें।",
+              "unguided_text": "आप इस गतिविधि के बारे में क्या सोचते हैं? एक शब्द में बताएं या वॉयस नोट भेजें",
+              "valid_criteria": "If the student types any one of the following words: Saving / Investing / Planning, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Saving / Investing / Planning, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Saving / Investing / Planning, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "अपना स्कूल बैग दिखाएं और उसकी फोटो क्लिक करके अपलोड करें",
+              "unguided_text": "अपने आसपास कोई भी फोटो क्लिक करें और शेयर करें!",
+              "valid_criteria": "School bag",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a School bag"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करें या वॉयस नोट भेजें और बताएं कि डिजिटल भुगतान लोगों और व्यवसायों की मदद कैसे करता है"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "अपने डिजिटल पेमेंट चार्ट की एक स्पष्ट फोटो क्लिक करें और अपलोड करें"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

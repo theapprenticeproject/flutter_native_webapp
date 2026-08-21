@@ -1,0 +1,1464 @@
+{
+  "id": "Scratch-Jr-coding-C0078",
+  "nm": "Scratch Jr",
+  "lvl": "Level 3AK",
+  "vrt": "coding",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "First Code Awakens 🐱",
+      "desc": "App installation and navigation (Google Play Store / App Store). Scratch Junior interface: Home icon, My Projects page, stage, programming area. Sprite management: adding and removing characters. Block categories: trigger blocks, motion blocks, end blocks.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 118,
+          "nm": "Can your phone build games? 📱",
+          "desc": "In this activity, students learn how to download and open the Scratch Junior app on their devices. They explore the home screen, understand the stage, add sprites, create a simple animated project, and experiment with basic blocks like motion and trigger blocks. Students also learn to customize their project with titles, colors, and backgrounds to create their first animation.",
+          "yt": "IlMdng38_7Q",
+          "pts": 10,
+          "pq": {
+            "id": 121,
+            "nm": "How do you start on Scratch Jr? 🐱",
+            "qs": [
+              {
+                "q": "How do you start a new project on Scratch Jr?",
+                "opts": {
+                  "1": "Click the House button, followed by the plus (+) sign",
+                  "2": "Click the Question mark (?) button followed by the play button",
+                  "3": "Click the Scratch Jr icon, followed by the House button"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "How do you add a new character to your Scratch Jr project?",
+                "opts": {
+                  "1": "Drag the character onto the screen",
+                  "2": "Select the character and click the tick button to add it",
+                  "3": "Tap the plus sign to the left of the stage and and click the tick button"
+                },
+                "ans": "2"
+              },
+              {
+                "q": "What does the ABC icon in Scratch Jr allow you to do?",
+                "opts": {
+                  "1": "Add sprites, change their color, and move them around",
+                  "2": "Add text, change the size of text, and change the color of text",
+                  "3": "Create new projects, change backgrounds, and add sounds"
+                },
+                "ans": "2"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 122,
+        "nm": "Can you code it? 🎮",
+        "qs": [
+          {
+            "q": "Which store do you use to download Scratch Jr on an Android phone?",
+            "opts": { "1": "Google Play Store", "2": "App Store", "3": "Scratch Website" },
+            "ans": "1"
+          },
+          {
+            "q": "Which icon allows you to add text to your project?",
+            "opts": { "1": "Reset icon", "2": "ABC icon", "3": "Green flag icon" },
+            "ans": "2"
+          },
+          {
+            "q": "If you want to start a new project, what should you tap after the house icon?",
+            "opts": {
+              "1": "The plus (+) sign",
+              "2": "The question mark (?)",
+              "3": "The green flag"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "You open Scratch Jr for the first time and see the default cat sprite. How can you make your project more creative?",
+            "opts": {
+              "1": "Keep it exactly the same as given",
+              "2": "Add new sprites and backgrounds",
+              "3": "Delete all sprites and leave it blank"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If you were to make your first project unique, what would be the best approach?",
+            "opts": {
+              "1": "Use only the default sprite and background",
+              "2": "Make everything the same as your friend’s project",
+              "3": "Combine different sprites, backgrounds, and movements to tell a story"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-Your-First-Animation-🐱-Basic",
+          "seq": 112,
+          "nm": "Build Your First Animation 🐱",
+          "desc": "In this activity, students learn how to download and open the Scratch Junior app on their devices. They explore the home screen, understand the stage, add sprites, create a simple animated project, and experiment with basic blocks like motion and trigger blocks. Students also learn to customize their project with titles, colors, and backgrounds to create their first animation.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "If you enjoyed the activity, send us any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voicenote saying the word \"Fun\" if you enjoyed the activity, or \"Boring\" if you didn’t",
+              "unguided_text": "Share your experience of today’s activity in one word (text or voice note)",
+              "valid_criteria": "fun, boring",
+              "invalid_criteria": "Any word other than fun, boring"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Take a picture of a gadget you use",
+              "unguided_text": "Take a picture of anything around you",
+              "valid_criteria": "Phone, TV, laptop, tablet or similar gadget",
+              "invalid_criteria": "Any object other than a gadget"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & share with us one new concept that you learnt in today’s coding activity"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot or video of your activity showing a butterfly in a green garden with code clearly visible in the programming area"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Butterfly Feeds the Garden 🌸",
+      "desc": "Students will be able to add backgrounds and sprites, duplicate and modify sprites as well as their colors using the Paint Editor , and using the ABC tool to add titles. Students will be able to apply coding concepts by using the Start on Green Flag block to start the animation, Motion (blue) blocks to move the butterfly, turn blocks to show direction change, and the Repeat Forever block to create continuous movement. In addition, they will understand that butterflies drink nectar from flowers, which provides them with energy and nutrition, and plays an important role in nature.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 119,
+          "nm": "Can butterflies drink flowers? 🦋",
+          "desc": "In this activity, students will create an animation in ScratchJr showing a butterfly flying across flowers and drinking nectar. They will design the scene by adding and duplicating flowers, using the Paint Editor, and animate the butterfly’s movement using trigger, motion and repeat forever blocks. Students will also add a title to their project, making it visually complete and meaningful.",
+          "yt": "QBzhkA8SDcg",
+          "pts": 10,
+          "pq": {
+            "id": 123,
+            "nm": "What makes the butterfly move? 🦋",
+            "qs": [
+              {
+                "q": "What should you do to start a new project in Scratch Junior?",
+                "opts": {
+                  "1": "Click the grid option",
+                  "2": "Click the home icon and then the plus sign",
+                  "3": "Click the pencil icon"
+                },
+                "ans": "2"
+              },
+              {
+                "q": "How can you make the leaves more visible in the animation?",
+                "opts": {
+                  "1": "Place the butterfly on the right",
+                  "2": "Use the fill tool to change color",
+                  "3": "Add more flowers"
+                },
+                "ans": "2"
+              },
+              {
+                "q": "What block is used to make the butterfly move continuously?",
+                "opts": {
+                  "1": "Start on green flag block",
+                  "2": "Repeat forever block",
+                  "3": "Turn right block"
+                },
+                "ans": "2"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 124,
+        "nm": "Why do butterflies fly? 🦋",
+        "qs": [
+          {
+            "q": "What do butterflies drink from flowers?",
+            "opts": { "1": "Water", "2": "Nectar", "3": "Juice" },
+            "ans": "2"
+          },
+          {
+            "q": "What is the purpose of using the 'repeat forever' block in the animation script?",
+            "opts": {
+              "1": "To make the butterfly fly only once",
+              "2": "To continuously repeat the butterfly's drinking motion",
+              "3": "To change the background color"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Which tool is used to add a text message in the animation?",
+            "opts": { "1": "Fill tool", "2": "Duplicate tool", "3": "ABC tool" },
+            "ans": "3"
+          },
+          {
+            "q": "If you want to show the butterfly to bend down to drink nector, instead of moving in a straight line, which additional block could you creatively use?",
+            "opts": {
+              "1": "Turn right and turn left blocks",
+              "2": "Move right and left blocks",
+              "3": "Reset block"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How could you creatively make the animation more interactive for viewers?",
+            "opts": {
+              "1": "Add more flowers",
+              "2": "Use a different background",
+              "3": "Add sound effects when the butterfly drinks nectar"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Animate-a-Hungry-Butterfly-🌸-Remedial",
+          "seq": 113,
+          "nm": "Animate a Hungry Butterfly 🌸",
+          "desc": "In this activity, students will create an animation in ScratchJr showing a butterfly flying across flowers and drinking nectar. They will design the scene by adding and duplicating flowers, using the Paint Editor, and animate the butterfly’s movement using trigger, motion and repeat forever blocks. Students will also add a title to their project, making it visually complete and meaningful.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "If you understood the activity, send us any emoji of your choice",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Which block made our butterfly bend towards the flowers - turn right or turn left? Send a text or voicenote with your answer",
+              "unguided_text": "Share in one word how you felt while creating today's activity (text or voice note)",
+              "valid_criteria": "turn right",
+              "invalid_criteria": "Any other word"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Take a picture of a flower or plant",
+              "unguided_text": "Click a picture of anything around you",
+              "valid_criteria": "Objects related to plants such as Flower, leaf, garden plant",
+              "invalid_criteria": "Objects not related to plants"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & share with us one new concept that you learnt in today’s coding activity"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot or video of your activity showing a butterfly in a garden and the code clearly visible in the programming area"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Worlds at Risk 🐘",
+      "desc": "Students will learn to add backgrounds and sprites, use the Paint Editor to modify sprites, and use the ABC tool to add titles. They will also learn to add new pages to create a multi-scene project. In coding, students will learn to use the Start on Green Flag block to begin the animation, Motion (blue) blocks to move sprites, and the Go to Page block to transition from one scene to the next. In addition, students will understand that some animals are endangered, meaning their numbers are decreasing. They will learn that different animals live in different habitats (Arctic, Savanna, Desert), and that loss of habitat affects animal survival.Ina ddition, students learn that some animals are endangered, meaning their numbers are decreasing, different animals live in different habitats (Arctic, Savanna, Desert) and loss of habitat affects animal survival.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 120,
+          "nm": "Can three animals share a home? 🐘",
+          "desc": "In this activity, students will create a multi-page animation in ScratchJr showcasing three endangered animals — a polar bear, an African elephant, and a Bactrian camel — in their natural habitats. They will design each scene using different backgrounds, modify sprites using the Paint Editor, and animate the animals moving across the screen using the blue motion blocks. Students will also connect multiple pages using the go to page end blocks to create a smooth transition between habitats, while understanding how human actions are affecting these animals' homes.",
+          "yt": "CvGomAMrZEc",
+          "pts": 10,
+          "pq": {
+            "id": 125,
+            "nm": "Which animal needs a cold home? 🐻‍❄️",
+            "qs": [
+              {
+                "q": "What background should you add for the polar bear scene in Scratch Junior?",
+                "opts": {
+                  "1": "Arctic background",
+                  "2": "Savanna background",
+                  "3": "Desert background"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "What color should be added to the African elephant using the paint editor?",
+                "opts": { "1": "Blue", "2": "Dark grey", "3": "Light grey" },
+                "ans": "2"
+              },
+              {
+                "q": "How many humps does a Bactrian camel have?",
+                "opts": { "1": "One", "2": "Two", "3": "Option C" },
+                "ans": "2"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 126,
+        "nm": "Can animals survive change? 🐘",
+        "qs": [
+          {
+            "q": "What is the initial step to start a new project in Scratch Junior ?",
+            "opts": {
+              "1": "Click on the home icon and then the plus to start a new project",
+              "2": "Click on the save icon and then the plus to start a new project",
+              "3": "Click on the settings icon and then the plus to start a new project"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What is the main reason for the decline in the number of African elephants, Bactrian camels, and polar bears?",
+            "opts": {
+              "1": "Lack of food",
+              "2": "Destruction of their homes",
+              "3": "Attack by other animals"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Which tool in paint editor is used to change the color of the African elephant?",
+            "opts": { "1": "The fill tool", "2": "The line tool", "3": "The paint tool" },
+            "ans": "1"
+          },
+          {
+            "q": "If you were to create a similar animation for a rainforest animal, which creative element could you add to make it realistic?",
+            "opts": {
+              "1": "Add multiple arctic backgrounds",
+              "2": "Include a desert background",
+              "3": "Use the paint editor to add rainforest-specific colors and details in background"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "How could you creatively depict the impact of deforestation on rainforest animals using Scratch Junior?",
+            "opts": {
+              "1": "By creating a scene where animals move away as trees disappear",
+              "2": "By adding more trees to the background",
+              "3": "By using a savanna background with no changes"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Code-Endangered-Animal-Scenes-🐘-Basic",
+          "seq": 114,
+          "nm": "Code Endangered Animal Scenes 🐘",
+          "desc": "In this activity, students will create a multi-page animation in ScratchJr showcasing three endangered animals — a polar bear, an African elephant, and a Bactrian camel — in their natural habitats. They will design each scene using different backgrounds, modify sprites using the Paint Editor, and animate the animals moving across the screen using the blue motion blocks. Students will also connect multiple pages using the go to page end blocks to create a smooth transition between habitats, while understanding how human actions are affecting these animals' homes.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send 💡 if you understood, or ❓ if you have a doubt",
+              "unguided_text": "If you understood the activity, send us any emoji of your choice",
+              "valid_criteria": "💡 or ❓",
+              "invalid_criteria": "Any emoji other than 💡 or ❓"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Animals are losing their homes because of us. Send a text or voicenote saying the word \"True\" if you agree or \"False\" if you disagree.",
+              "unguided_text": "Share the name of any one endangered animal from today's activity (text or voice note)",
+              "valid_criteria": "TRUE",
+              "invalid_criteria": "Any word, except True"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Take a picture of an animal (real or from a picture/drawing)",
+              "unguided_text": "Click a picture of anything around you",
+              "valid_criteria": "Images showing an animal or bird, such as pet, bird, animal photo, drawing of animal",
+              "invalid_criteria": "Objects not related to animals"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & share with us one new concept that you learnt in today’s coding activity"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot or video of your activity showing a camel on the stage with a desert-like background and the code clearly visible in the programming area"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Bear Finds the Igloo 🐻",
+      "desc": "ScratchJr interface (sprites, background, blocks) Motion blocks (move, hop, turn) Events block (start on green flag) Looks block (resize characters) Grid system for position and movement Basic sequencing and debugging",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 121,
+          "nm": "Can a bear find igloo? 🐻",
+          "desc": "In this activity, students explore motion blocks in ScratchJr to move characters across the screen. They learn how to control direction, steps, and positioning using a grid system. Through a fun challenge, they guide a polar bear to its igloo while applying logic, sequencing, and visualization skills.",
+          "yt": "JX1-D6xXBns",
+          "pts": 10,
+          "pq": {
+            "id": 127,
+            "nm": "Does the grid really help? 🔲",
+            "qs": [
+              {
+                "q": "What is the purpose of using the grid on the screen?",
+                "opts": {
+                  "1": "To change the color of the characters",
+                  "2": "To make the background brighter",
+                  "3": "To decide the exact steps for character movement"
+                },
+                "ans": "3"
+              },
+              {
+                "q": "How can you make a character smaller if it looks too big?",
+                "opts": {
+                  "1": "By using the shrink block in the looks category",
+                  "2": "By clicking the undo button",
+                  "3": "By adding more motion blocks"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "What should you click to run your code automatically?",
+                "opts": { "1": "The green flag", "2": "The purple star", "3": "The red button" },
+                "ans": "1"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 128,
+        "nm": "What does the grid do? 🔲",
+        "qs": [
+          {
+            "q": "What is the main focus of today's coding adventure?",
+            "opts": {
+              "1": "Learning to use motion blocks to move characters on the screen.",
+              "2": "Designing complex animations with multiple scenes.",
+              "3": "Creating new characters from scratch."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What role does the 'grid' play in coding on Scratch Jr ?",
+            "opts": {
+              "1": "It allows users to add more characters to the scene.",
+              "2": "It shelps calculate the exact location and steps of the character.",
+              "3": "It helps change the color of the characters."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "How can you ensure that the code runs automatically when the green flag is clicked?",
+            "opts": {
+              "1": "By adding the yellow start on green block from the trigger block section.",
+              "2": "By adding more motion blocks.",
+              "3": "By increasing the size of the characters."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "You want to add a character that can jump over obstacles when you tap it. What code will you use?",
+            "opts": {
+              "1": "Start on tap, jump block and end block",
+              "2": "Add character and copy previous code",
+              "3": "Start on green flag, move right, end block"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Imagine you want to create a story where a character travels through different environments. How can you use creativity to achieve this?",
+            "opts": {
+              "1": "Increase the speed of the character to simulate travel.",
+              "2": "Add more sprites of characters looking different.",
+              "3": "Add pages with different backgrounds and use go to page blocks to transition between them."
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Guide-Bear-to-Igloo-🐻-Remedial",
+          "seq": 115,
+          "nm": "Guide Bear to Igloo 🐻",
+          "desc": "In this activity, students explore motion blocks in ScratchJr to move characters across the screen. They learn how to control direction, steps, and positioning using a grid system. Through a fun challenge, they guide a polar bear to its igloo while applying logic, sequencing, and visualization skills.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send 💡 if you understood, or ❓ if you have a doubt",
+              "unguided_text": "If you want more activities, send us any emoji of your choice",
+              "valid_criteria": "💡 or ❓",
+              "invalid_criteria": "Any emoji other than 💡 or ❓"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voicenote naming the character you moved with blue motion blocks - polar bear, igloo or ice?",
+              "unguided_text": "Share the name of any character used in today's activity (text or voice note)",
+              "valid_criteria": "polar bear",
+              "invalid_criteria": "Any other word"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Take a picture of something that shows a cold place or keeps things cool",
+              "unguided_text": "Take a picture of anything around you",
+              "valid_criteria": "Objects related to cold such as Fridge, ice, cold drink, snow image",
+              "invalid_criteria": "Objects not related to cold"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & share with us one new concept that you learnt in today’s coding activity"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot or video of your activity showing a polar bear and an igloo visible in a white snow background and the code clearly visible in the programming area"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Dance Floor Goes Live 💃",
+      "desc": "Coordination and timing in animations How wait blocks control when an action begins How repeat blocks help actions occur multiple times How sound blocks can be combined with motion blocks That multiple scripts can start together using the green flag How changing wait values creates different rhythms and beats How camera feature in paint editor works",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 122,
+          "nm": "Can two characters sync dance? 💃",
+          "desc": "In this activity, students will create a coordinated dance animation in Scratch Junior by programming two characters to dance in sync with music. Students will design a dance floor, add characters, record music, and use wait block and repeat block to control when and how each character dances, helping them understand coordination and sequencing in animation.",
+          "yt": "8tNzyfHsm7E",
+          "pts": 10,
+          "pq": {
+            "id": 129,
+            "nm": "Can two characters share a stage? 🎭",
+            "qs": [
+              {
+                "q": "What is the first step to start the project in Scratch Junior?",
+                "opts": {
+                  "1": "Add background music",
+                  "2": "Click on the plus icon",
+                  "3": "Select a character"
+                },
+                "ans": "2"
+              },
+              {
+                "q": "How can you make the child character the same size as the rancher?",
+                "opts": {
+                  "1": "Use the grow block",
+                  "2": "Use the rotate block",
+                  "3": "Use the shrink block"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "How do you ensure the child character is the same size as the rancher?",
+                "opts": {
+                  "1": "Use the Wait block",
+                  "2": "Delete and re-add the character",
+                  "3": "Use the Grow block"
+                },
+                "ans": "3"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 130,
+        "nm": "Can you sync the dance? 💃",
+        "qs": [
+          {
+            "q": "What is the primary purpose of this activity?",
+            "opts": {
+              "1": "To learn a new programming language",
+              "2": "To create a coordinated dance scene on Scratch Junior",
+              "3": "To build a music player"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "What is the role of the Wait block in the Scratch Junior project?",
+            "opts": {
+              "1": "To change the background",
+              "2": "To increase the size of characters",
+              "3": "To delay actions for a specified time"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "How can you make two characters dance at different times in Scratch Junior?",
+            "opts": {
+              "1": "By changing the background",
+              "2": "By recording different music for each character",
+              "3": "By setting different Wait block times for each character"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If you want to make the dance moves more creative, what could you add to the Scratch Junior project?",
+            "opts": {
+              "1": "Add different motion and wait blocks to create a unique dance sequence",
+              "2": "Increase and decrease the size of the characters to create an interesting effect",
+              "3": "Change the background color to give a new look"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "To creatively enhance the dance scene, what is one simple thing you can do?",
+            "opts": {
+              "1": "Incorporate a third character that interacts with the music in a unique way",
+              "2": "Remove the music from the background and replace with pop sound",
+              "3": "Only use one character to dance"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Sync-Two-Dancers-Together-💃-Intermediate",
+          "seq": 116,
+          "nm": "Sync Two Dancers Together 💃",
+          "desc": "In this activity, students will create a coordinated dance animation in Scratch Junior by programming two characters to dance in sync with music. Students will design a dance floor, add characters, record music, and use wait block and repeat block to control when and how each character dances, helping them understand coordination and sequencing in animation.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send 😊 if it was easy, or 😕 if it was confusing",
+              "unguided_text": "If you want more activities, send us any emoji of your choice",
+              "valid_criteria": "😊 or 😕",
+              "invalid_criteria": "Any emoji other than 😊 or 😕"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voicenote of the correct block that adds music to your dance animation - wait, play recorded sound or end?",
+              "unguided_text": "Share the name of any block used in today's activity (text or voice note)",
+              "valid_criteria": "Play recorded sound",
+              "invalid_criteria": "Any other block"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Take a picture of someone dancing (real or from a picture/drawing)",
+              "unguided_text": "Take a picture of anything near you",
+              "valid_criteria": "Images showing dance such as person dancing or in pose",
+              "invalid_criteria": "Still objects with no action or pose"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & share with us one new concept that you learnt in today’s coding activity"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot or video of your activity showing atleast 2 persons (or characters) on the stage with background of a stage or dance floor and the code clearly visible in the programming area"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Water Runs Dry 💧",
+      "desc": "Add backgrounds and multiple sprites, and use the Say block to add dialogues. Aapply coding concepts by using the Start on Green Flag block to begin the animation, Send Message and Start on Message blocks to create communication between sprites, and the End block to control the flow of scripts. Understand that water is a limited resource, and careless usage can lead to water shortages. They will learn that saving water is important for everyday life.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 123,
+          "nm": "Can sprites talk about water? 💧",
+          "desc": "In this activity, students will create a conversation-based animation in ScratchJr where two characters discuss a water shortage problem. Using message blocks, students will program a sequence of dialogues between the characters to show how water wastage leads to scarcity and why it is important to save water.",
+          "yt": "cJZfjEr_ad0",
+          "pts": 10,
+          "pq": {
+            "id": 131,
+            "nm": "Where did Rahul's water go? 💧",
+            "qs": [
+              {
+                "q": "What problem did Rahul and Priya face?",
+                "opts": {
+                  "1": "They lost their pets.",
+                  "2": "Their houses were too cold.",
+                  "3": "They ran out of water."
+                },
+                "ans": "3"
+              },
+              {
+                "q": "What should you click to start a new project in Scratch Junior?",
+                "opts": { "1": "The exit icon.", "2": "The plus icon.", "3": "The settings icon." },
+                "ans": "2"
+              },
+              {
+                "q": "What is the final message in the animation?",
+                "opts": {
+                  "1": "Let's play together.",
+                  "2": "We need more water.",
+                  "3": "We must take care not to waste water."
+                },
+                "ans": "3"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 132,
+        "nm": "Where did the water go? 💧",
+        "qs": [
+          {
+            "q": "What is the main reason for the water shortage at Rahul and Priya's houses?",
+            "opts": {
+              "1": "Water was wasted and not used carefully.",
+              "2": "There was a technical fault in the water supply.",
+              "3": "The weather was extremely hot."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What is the primary purpose of creating this animation on Scratch Junior ?",
+            "opts": {
+              "1": "To practice dialogue writing skills.",
+              "2": "To learn how to use different colors in Scratch.",
+              "3": "To understand the importance of saving water."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "Which block is used to start the boy's code in the animation?",
+            "opts": {
+              "1": "Start on red message block.",
+              "2": "Start on green flag block.",
+              "3": "Start on orange message block."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If you were to add a new character that gives a solution to save water, what could be the character's first dialogue using a say block?",
+            "opts": {
+              "1": "“Let’s collect rainwater for plants.”",
+              "2": "“We should keep all taps open.”",
+              "3": "“Let’s move to a new place with more water.”"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Imagine you want to add a scene where a character shows how to fix a leaky tap. What creative dialogue could you add using a say block?",
+            "opts": {
+              "1": "“We should wait for a plumber to fix this.”",
+              "2": "“Here’s how you can fix a tap to save water.”",
+              "3": "“We need to buy a new tap immediately.”"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Code-a-Water-Conversation-💧-Remedial",
+          "seq": 117,
+          "nm": "Code a Water Conversation 💧",
+          "desc": "In this activity, students will create a conversation-based animation in ScratchJr where two characters discuss a water shortage problem. Using message blocks, students will program a sequence of dialogues between the characters to show how water wastage leads to scarcity and why it is important to save water.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send 😊 if it was easy, or 😕 if it was confusing",
+              "unguided_text": "If you feel confident about the activity, send us any emoji of your choice",
+              "valid_criteria": "😊 or 😕",
+              "invalid_criteria": "Any emoji other than 😊 or 😕"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Which block is used to add dialogues to characters - wait, say, end. Send a text or voicenote with your answer",
+              "unguided_text": "Share the name of any yellow block used in today's activity (text or voice note)",
+              "valid_criteria": "Say block",
+              "invalid_criteria": "Any other word"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Take a picture of two people facing each other",
+              "unguided_text": "Click a picture of anything around you",
+              "valid_criteria": "Two people talking and looking at each other",
+              "invalid_criteria": "Single object with no interaction"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & share with us one new concept that you learnt in today’s coding activity"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot or video of your activity showing atleast 2 characters standing on a street background and the code clearly visible in the programming area"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Jungle Cleans Up 🐰",
+      "desc": "ScratchJr interface (sprites, backgrounds, paint editor), Message blocks (send message, start on message) Motion blocks (move, hop), Looks blocks (resize, dialogue/say block), Events block (green flag start),Grid usage for movement planning and basic animation sequencing",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 124,
+          "nm": "Can a rabbit teach recycling? 🐰",
+          "desc": "In this activity, students create an interactive story using ScratchJr message blocks where characters communicate with each other. Through a jungle-based storyline, students learn about proper waste disposal and its impact on the environment while building a sequence of actions using coding blocks.",
+          "yt": "7GqaHIQzh1E",
+          "pts": 10,
+          "pq": {
+            "id": 133,
+            "nm": "What happens after the rabbit talks? 🐇",
+            "qs": [
+              {
+                "q": "What happens after the rabbit talks to the girl?",
+                "opts": {
+                  "1": "The girl will throw the stick in the bin",
+                  "2": "The girl eats another lollipop",
+                  "3": "The rabbit gives her a new lollipop"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "Why do we use message blocks in Scratch Junior?",
+                "opts": {
+                  "1": "To make characters bigger",
+                  "2": "To change character colors",
+                  "3": "To help characters communicate"
+                },
+                "ans": "3"
+              },
+              {
+                "q": "What happens when the girl receives the red message from the rabbit?",
+                "opts": {
+                  "1": "The girl jumps up and down",
+                  "2": "The girl gives the rabbit a gift",
+                  "3": "The girl says 'Oops, sorry!'"
+                },
+                "ans": "3"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 134,
+        "nm": "Can blocks send messages? 📨",
+        "qs": [
+          {
+            "q": "Which are the two important things taught in this activity?",
+            "opts": {
+              "1": "Using message blocks and proper waste disposal",
+              "2": "Drawing characters and coding events",
+              "3": "Playing music and creating backgrounds"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Why is it important to learn about message blocks in Scratch Junior?",
+            "opts": {
+              "1": "To make characters interact with each other",
+              "2": "To draw new characters",
+              "3": "To create colorful backgrounds"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How can the lollipop be created if it's not available in Scratch Junior?",
+            "opts": {
+              "1": "By editing a ball sprite to look like a lollipop",
+              "2": "By using a ball sprite",
+              "3": "By importing an image"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How would you creatively use Scratch Junior to promote environmental awareness among your friends?",
+            "opts": {
+              "1": "Create an interactive story where characters clean up a park",
+              "2": "Make an animation showing a picnic day",
+              "3": "Design a jungle game with different levels"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "If you wanted to encourage recycling in your neighborhood using Scratch Junior, what could you create?",
+            "opts": {
+              "1": "A dance party animation",
+              "2": "A project showing the journey of a recycled item",
+              "3": "A cooking show with animated characters"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-Characters-Pass-Messages-🐰-Intermediate",
+          "seq": 118,
+          "nm": "Make Characters Pass Messages 🐰",
+          "desc": "In this activity, students create an interactive story using ScratchJr message blocks where characters communicate with each other. Through a jungle-based storyline, students learn about proper waste disposal and its impact on the environment while building a sequence of actions using coding blocks.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send ✅ if ready, ⏳ if you need time, or ❌ if not ready",
+              "unguided_text": "If you feel confident about the activity, send us any emoji of your choice",
+              "valid_criteria": "✅ or ⏳ or ❌",
+              "invalid_criteria": "Any emoji other than ✅ or ⏳ or ❌"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voicenote of the correct block used to add dialogues to characters - wait, say or end?",
+              "unguided_text": "Share the message of today's activity (text or voice note)",
+              "valid_criteria": "Say block",
+              "invalid_criteria": "Any other word"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Take a picture of a clean or dirty place",
+              "unguided_text": "Click a picture of anything around you",
+              "valid_criteria": "Images related to clean or dirty surroundings such as  Clean desk, messy room, garbage dump, beautiful clean garden",
+              "invalid_criteria": "Random objects with no cleanliness context"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & share with us one new concept that you learnt in today’s coding activity"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot or video of your activity showing atleast 2 characters - a girl and rabbit in a background with trees, grass, greenery and the code clearly visible in the programming area"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Two Scripts Move Together 🏔️",
+      "desc": "Motion blocks like move right, hop, turn, up, down. Run two scripts simultaneously on a single sprite. How different combinations of blocks create new types of animation. Repeat Forever block to create looping movements.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 125,
+          "nm": "Can two codes move together? 🏃",
+          "desc": "In this activity, students will learn how to create new character movements by combining two scripts in Scratch Jr. They will apply their knowledge of basic motion blocks, such as move right, hop, and turn, to create more complex movements like a ball rolling forward or a penguin hopping forward on ice. Students will discover how the repeat forever block can help create continuous, repetitive movements, enabling their characters to perform dynamic actions.",
+          "yt": "W_iW1uKHXfw",
+          "pts": 10,
+          "pq": {
+            "id": 135,
+            "nm": "Can one sprite do two things? 🔀",
+            "qs": [
+              {
+                "q": "Which block makes a sprite start its instructions when you click the green flag?",
+                "opts": { "1": "Move Right", "2": "Start on Green Flag", "3": "Repeat Forever" },
+                "ans": "2"
+              },
+              {
+                "q": "How do you make a sprite perform two movements at the same time?",
+                "opts": {
+                  "1": "Use one code with two different motion blocks connected together for a combined effect",
+                  "2": "Click the green flag twice for a double effect",
+                  "3": "Use two codes each with same start block but different motion block and run them together for a combined effect"
+                },
+                "ans": "3"
+              },
+              {
+                "q": "Which block will make your entire code keep repeating forever?",
+                "opts": { "1": "Repeat Forever", "2": "Start on Green Flag", "3": "Move Right" },
+                "ans": "1"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 136,
+        "nm": "Can sprites move together? 🔀",
+        "qs": [
+          {
+            "q": "What happens when you attach two motion blocks to a single \"Start on Green Flag\" block for a sprite in Scratch Jr.?",
+            "opts": {
+              "1": "The sprite only performs one action",
+              "2": "The sprite performs both actions one after the other",
+              "3": "The sprite moves in random directions"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "How can you make a sprite move and turn at the same time?",
+            "opts": {
+              "1": "Add two “Start on Green Flag” blocks with different movements",
+              "2": "Add a “Repeat Forever” end block to code",
+              "3": "Add any one “Move” block followed by \"Repeat Forever\" end block"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What should you do if you want to keep the movement going forever?",
+            "opts": {
+              "1": "Add some more motion blocks",
+              "2": "Add the Start Forever block at the beginning of your code",
+              "3": "Add the repeat forever block at the end of the code"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "How does combining two scripts for one character in Scratch Jr help you?",
+            "opts": {
+              "1": "It lets you create more complicated movements with fewer blocks",
+              "2": "It allows you to experiment and create new movements for the character",
+              "3": "It’s a quick way to finish the project"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "You want your character to hop backwards. You’ve added the “Start on Green Flag” + “Hop” script. Which other script do you need to add to get the hop backwards movement?",
+            "opts": {
+              "1": "“Start on Green Flag” + “Move Right”",
+              "2": "Start on Green Flag” + “Turn Right”",
+              "3": "“Start on Green Flag” + “Move Left”"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Combine-Scripts-for-New-Moves-🏃-Remedial",
+          "seq": 119,
+          "nm": "Combine Scripts for New Moves 🏃",
+          "desc": "In this activity, students will learn how to create new character movements by combining two scripts in Scratch Jr. They will apply their knowledge of basic motion blocks, such as move right, hop, and turn, to create more complex movements like a ball rolling forward or a penguin hopping forward on ice. Students will discover how the repeat forever block can help create continuous, repetitive movements, enabling their characters to perform dynamic actions.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send ✅ if ready, ⏳ if you need time, or ❌ if not ready",
+              "unguided_text": "If you enjoyed the activity, send us any emoji of your choice!",
+              "valid_criteria": "✅ or ⏳ or ❌",
+              "invalid_criteria": "Any emoji other than ✅ or ⏳ or ❌"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voicenote of the block name that makes the ball roll forever - repeat, repeat forever or end block?",
+              "unguided_text": "Share the name of any blue block used in today's activity (text or voice note)",
+              "valid_criteria": "repeat forever block",
+              "invalid_criteria": "Any other word"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Take a picture of something in a different position or movement",
+              "unguided_text": "Take a picture of anything around you",
+              "valid_criteria": "Object in motion, person changing pose",
+              "invalid_criteria": "Objects with no visible movement or change"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & share with us one new concept that you learnt in today’s coding activity"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot or video of your activity showing a ball on the grass and the code clearly visible in the programming area"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Crab Jumps the Bag 🦀",
+      "desc": "Message blocks - to update score or trigger events. Role of Start on Tap, Start on Bump, and End Block in gaming Animate continuous movement using Repeat Forever. Run two scripts on the same character for special movement effects. Page navigation blocks to build multi-page Scratch Jr games. Basic environmental awareness: impact of plastic on sea animals.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 126,
+          "nm": "Can a crab dodge plastic? 🦀",
+          "desc": "In this activity, students will make a fun game using Scratch Jr. In the game, a crab needs to jump over a flying plastic bag to safely reach the water. Students will design a beach background, draw the plastic bag, and make it move. They will also program the crab to jump and move forward. Students will add a scoring system, and create screens for winning and losing. Through this project, students will learn how pollution affects sea animals and how to make an interactive game using coding blocks.",
+          "yt": "OYyUUCVEbrw",
+          "pts": 10,
+          "pq": {
+            "id": 137,
+            "nm": "Can a crab reach the sea? 🌊",
+            "qs": [
+              {
+                "q": "What is the main goal of the game?",
+                "opts": {
+                  "1": "To help the crab reach the sea",
+                  "2": "To collect plastic bags",
+                  "3": "To win a score"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "What happens when the crab touches the plastic bag?",
+                "opts": {
+                  "1": "The crab moves faster",
+                  "2": "The crab gets stuck",
+                  "3": "The crab jumps higher"
+                },
+                "ans": "2"
+              },
+              {
+                "q": "What message does the crab say when it reaches the sea?",
+                "opts": {
+                  "1": "\"Thank you for helping me!\"",
+                  "2": "\"I love the beach!\"",
+                  "3": "\"Help, I’m stuck!\""
+                },
+                "ans": "1"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 138,
+        "nm": "Can a crab save the sea? 🦀",
+        "qs": [
+          {
+            "q": "What tool is used to create the beach background in the Scratch Junior game?",
+            "opts": { "1": "Text tool", "2": "Paint tool", "3": "Shape tool" },
+            "ans": "2"
+          },
+          {
+            "q": "Why does the script suggest using two different codes for the crab's movements?",
+            "opts": {
+              "1": "To avoid using the green flag",
+              "2": "To simplify the code",
+              "3": "To achieve simultaneous actions"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "What happens when the crab touches the polybag during the game?",
+            "opts": {
+              "1": "The game restarts",
+              "2": "The crab gets stuck and the bag stops moving",
+              "3": "The crab jumps higher"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "How can you enhance the game creatively by adding a new feature?",
+            "opts": {
+              "1": "Change the background to a cityscape",
+              "2": "Add more crabs to the game",
+              "3": "Include a sound effect each time the crab jumps"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "What creative solution can be implemented to make the game more challenging?",
+            "opts": {
+              "1": "Increase the size of the polybag",
+              "2": "Reduce the size of the crab",
+              "3": "Add obstacles like rocks that the crab must jump over"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-the-Crab-Jump-Game-🦀-Advanced",
+          "seq": 120,
+          "nm": "Build the Crab Jump Game 🦀",
+          "desc": "In this activity, students will make a fun game using Scratch Jr. In the game, a crab needs to jump over a flying plastic bag to safely reach the water. Students will design a beach background, draw the plastic bag, and make it move. They will also program the crab to jump and move forward. Students will add a scoring system, and create screens for winning and losing. Through this project, students will learn how pollution affects sea animals and how to make an interactive game using coding blocks.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send 💪 if you can do it, 🤔 if you will try, or 😬 if you are not sure",
+              "unguided_text": "If you enjoyed the activity, send us any emoji of your choice!",
+              "valid_criteria": "💪 or 🤔 or 😬",
+              "invalid_criteria": "Any emoji other than💪 or 🤔 or 😬"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voice note of 1 word that best describes what you made in today's activity - story, game or dance?",
+              "unguided_text": "Share in one word what you created in today's activity (text or voice note)",
+              "valid_criteria": "game",
+              "invalid_criteria": "Any word other than game"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Take a picture of something from nature (water, sand, plants)",
+              "unguided_text": "Take a picture of anything around you",
+              "valid_criteria": "Objects from nature such as Plants, soil, water, natural surroundings",
+              "invalid_criteria": "Indoor or Outdoor objects not related to nature"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & share with us one new concept that you learnt in today’s coding activity"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot or video of your activity showing a crab on a beach background and the code clearly visible in the programming area"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Lizard Runs the Desert 🦎",
+      "desc": "Trigger Blocks: Start on Green Flag, Start on Tap Motion Blocks: Move Right, Move Left, Repeat Forever Look Blocks: Grow/Shrink, Change Colors Sound Blocks: Pop sound Paint Editor: Create and modify sprites and backgrounds Game Design: How to set up a playable game with obstacles and interactions",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 127,
+          "nm": "Can a lizard outrun cactus? 🦎",
+          "desc": "In this activity, students will be walked through the steps to create a desert game in Scratch Jr. They will learn how to modify the desert background, create and resize sprites like the cactus and lizard, change sprite colors and then code them using motion, trigger, and sound blocks. By the end, they will have a fully functional game where to avoid the cactus and they must tap the lizard to make it hop forward without touching the cactus.",
+          "yt": "oDhKqAf4_dU",
+          "pts": 10,
+          "pq": {
+            "id": 139,
+            "nm": "Can Lizzy dodge the cactus? 🌵",
+            "qs": [
+              {
+                "q": "Which tool do you use to change the color of the sky in the game?",
+                "opts": { "1": "Fill tool", "2": "Color tool", "3": "Palette tool" },
+                "ans": "2"
+              },
+              {
+                "q": "What is the main goal of the game?",
+                "opts": {
+                  "1": "To help the crab reach the sea",
+                  "2": "To collect plastic bags",
+                  "3": "To win a score"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "What happens when you tap on Lizzy the Lizard in the game?",
+                "opts": {
+                  "1": "She turns into a cactus",
+                  "2": "She hops forward and a pop sound plays",
+                  "3": "She disappears from the screen"
+                },
+                "ans": "2"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 140,
+        "nm": "Can Lizzy dodge it? 🦎",
+        "qs": [
+          {
+            "q": "What does Lizzy the lizard need to avoid in the desert game?",
+            "opts": { "1": "Tigers", "2": "Cactus", "3": "Rocks" },
+            "ans": "2"
+          },
+          {
+            "q": "Why do we need to tap on Lizzy the lizard in the game?",
+            "opts": {
+              "1": "To help her hop forward without hitting the cactus",
+              "2": "To make her sleep",
+              "3": "To change her color"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "If Lizzy hops low and hits the cactus, what should we change in the game?",
+            "opts": {
+              "1": "Make the cactus bigger",
+              "2": "Adjust the hop number to be bigger",
+              "3": "Change Lizzy's color"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Priya wants to make her lizard hop over a moving cactus in her desert game. What is the best way for her to create this fun challenge?",
+            "opts": {
+              "1": "Use two scripts on the lizard, one to hop up and one to move forward, and run them together using the same start block.",
+              "2": "Use the \"shrink\" block to make the cactus disappear",
+              "3": "Use the \"sound\" block to add music"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Arjun wants his game to look like daytime. Which is the best decision for him to make his desert game bright and sunny?",
+            "opts": {
+              "1": "Add more cactus",
+              "2": "Change the sky color to blue and the sand color to yellow",
+              "3": "Make the lizard bigger"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-the-Desert-Lizard-Game-🦎-Remedial",
+          "seq": 121,
+          "nm": "Build the Desert Lizard Game 🦎",
+          "desc": "In this activity, students will be walked through the steps to create a desert game in Scratch Jr. They will learn how to modify the desert background, create and resize sprites like the cactus and lizard, change sprite colors and then code them using motion, trigger, and sound blocks. By the end, they will have a fully functional game where to avoid the cactus and they must tap the lizard to make it hop forward without touching the cactus.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send 💪 if you can do it, 🤔 if you will try, or 😬 if you are not sure",
+              "unguided_text": "If you understood the activity, send us any emoji of your choice",
+              "valid_criteria": "💪 or 🤔 or 😬",
+              "invalid_criteria": "Any emoji other than💪 or 🤔 or 😬"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voice note of what you made in today's activity - story, game or dance.",
+              "unguided_text": "Share in one word what you created in today's activity (text or voice note)",
+              "valid_criteria": "game",
+              "invalid_criteria": "Any word other than game"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Take a picture of something related to a hot place",
+              "unguided_text": "Click a picture of anything around you",
+              "valid_criteria": "Sun, sand, bright outdoor area",
+              "invalid_criteria": "Objects not related to heat or desert"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note & share with us one new concept that you learnt in today’s coding activity"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot or video of your activity showing a lizard in a desert background and the code clearly visible in the programming area"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

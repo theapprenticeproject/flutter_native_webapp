@@ -1,0 +1,1014 @@
+{
+  "id": "Master-Art-&-Expression-arts-C8933",
+  "nm": "Master Art & Expression",
+  "lvl": "Level 3AK",
+  "vrt": "arts",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Shirt Carries a Message 👕",
+      "desc": "Upcycling",
+      "rwc": "Old T-Shirt, Scissors, Colors, Fabric, Markers",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 81,
+          "nm": "Can a shirt carry messages? 👕",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਪੁਰਾਣੀ ਟੀ-ਸ਼ਰਟ ਲੈਣਗੇ ਅਤੇ ਕੱਟ ਕੇ ਅਤੇ ਬੰਨ ਕੇ ਇਸਨੂੰ ਦੁਬਾਰਾ ਵਰਤਣ ਯੋਗ ਟੋਟ-ਬੈਗ ਵਿੱਚ ਬਦਲਣਗੇ। ਉਹ ਕਪੜੇ ਦੇ ਰੰਗਾਂ ਜਾਂ ਮਾਰਕਰਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਬੈਗ ਨੂੰ ਕਲਾਇਮੇਟ ਜਾਗਰੂਕਤਾ ਸੰਦੇਸ਼ਾਂ ਜਾਂ ਚਿੱਤਰਾਂ ਨਾਲ ਸਜਾਉਣਗੇ। ਇਹ ਬੈਗ ਰੋਜ਼ਾਨਾ ਵਰਤੀ ਜਾ ਸਕਦੀ ਹੈ, ਜੋ ਕਿ ਪਲਾਸਟਿਕ ਦੇ ਬੈਗਾਂ ਦੀ ਲੋੜ ਨੂੰ ਘਟਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਦੀ ਹੈ।",
+          "yt": "34KqvH9E44I",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 83,
+        "nm": "Can a T-shirt carry groceries? 👕",
+        "qs": [
+          {
+            "q": "ਐਕਟਿਵਿਟੀ ਦਾ ਮੁੱਖ ਮਕਸਦ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To promote climate action and reuse",
+              "2": "To improve sewing skills",
+              "3": "To make a fashion statement"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਸਕ੍ਰਿਪਟ ਪੁਰਾਣੀਆਂ ਟੀ-ਸ਼ਰਟਾਂ ਨੂੰ ਟੋਟ ਬੈਗ ਬਣਾਉਣ ਲਈ ਕਿਉਂ ਸੁਝਾਅ ਦਿੰਦਾ ਹੈ?",
+            "opts": {
+              "1": "To reduce waste and support sustainable practices",
+              "2": "To create a collection of designer bags",
+              "3": "To follow the latest fashion trends"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਪੁਰਾਣੀ ਟੀ-ਸ਼ਰਟ ਨੂੰ ਟੋਟ ਬੈਗ ਵਿੱਚ ਬਦਲਣ ਦੇ ਪਹਿਲੇ ਕਦਮ ਕੀ ਹਨ?",
+            "opts": {
+              "1": "Sewing the bottom of the T-shirt",
+              "2": "Painting and decorating the T-shirt",
+              "3": "Cutting off the sleeves and top collar"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਟੋਟ ਬੈਗ 'ਤੇ ਮੌਸਮ ਕਾਰਵਾਈ ਲਈ ਸੁਨੇਹਾ ਕਿਵੇਂ ਸृਜਨਾਤਮਕ ਢੰਗ ਨਾਲ ਪ੍ਰਗਟ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ?",
+            "opts": {
+              "1": "By using bright, non-recyclable materials",
+              "2": "By adding extra pockets to the bag",
+              "3": "By decorating it with climate art and messages like 'Protect Earth'"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਜਦੋਂ ਟੀ-ਸ਼ਰਟ ਦੇ ਫਿੰਜਾਂ ਨੂੰ ਬੰਨ੍ਹਣ ਤੋਂ ਬਾਅਦ ਅੰਦਰ ਬਾਹਰ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਤਾਂ ਕਿਹੜੀ 21ਵੀਂ ਸਦੀ ਦੀ ਕੁਸ਼ਲਤਾ ਉਭਾਰੀ ਜਾਂਦੀ ਹੈ?",
+            "opts": {
+              "1": "Speed and efficiency",
+              "2": "Transformation and growth",
+              "3": "Technical sewing expertise"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Turn-a-T-Shirt-Into-a-Tote-Bag-👕-Basic",
+          "seq": 77,
+          "nm": "Tote bag",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਪੁਰਾਣੀ ਟੀ-ਸ਼ਰਟ ਲੈਣਗੇ ਅਤੇ ਕੱਟ ਕੇ ਅਤੇ ਬੰਨ ਕੇ ਇਸਨੂੰ ਦੁਬਾਰਾ ਵਰਤਣ ਯੋਗ ਟੋਟ-ਬੈਗ ਵਿੱਚ ਬਦਲਣਗੇ। ਉਹ ਕਪੜੇ ਦੇ ਰੰਗਾਂ ਜਾਂ ਮਾਰਕਰਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਬੈਗ ਨੂੰ ਕਲਾਇਮੇਟ ਜਾਗਰੂਕਤਾ ਸੰਦੇਸ਼ਾਂ ਜਾਂ ਚਿੱਤਰਾਂ ਨਾਲ ਸਜਾਉਣਗੇ। ਇਹ ਬੈਗ ਰੋਜ਼ਾਨਾ ਵਰਤੀ ਜਾ ਸਕਦੀ ਹੈ, ਜੋ ਕਿ ਪਲਾਸਟਿਕ ਦੇ ਬੈਗਾਂ ਦੀ ਲੋੜ ਨੂੰ ਘਟਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਦੀ ਹੈ।",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "👍 ਭੇਜੋ ਜੇ ਗਤੀਵਿਧੀ ਚੰਗੀ ਲੱਗੀ, ਜਾਂ 👎 ਜੇ ਚੰਗੀ ਨਹੀਂ ਲੱਗੀ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਟੈਕਸਟ ਜਾਂ ਵੌਇਸ ਨੋਟ ਭੇਜੋ — ਜੇ ਪਸੰਦ ਆਇਆ ਤਾਂ \"Useful\" ਕਹੋ, ਨਹੀਂ ਆਇਆ ਤਾਂ \"Waste\" ਕਹੋ",
+              "unguided_text": "ਤੁਸੀਂ ਇਸ ਗਤੀਵਿਧੀ ਬਾਰੇ ਕੀ ਸੋਚਦੇ ਹੋ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ ਜਾਂ ਟੈਕਸਟ ਭੇਜੋ",
+              "valid_criteria": "Useful, Waste",
+              "invalid_criteria": "Any word other than useful, waste"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਪਲਾਸਟਿਕ ਦੇ ਥੈਲੇ ਦੀ ਫ਼ੋਟੋ ਭੇਜੋ",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਫ਼ੋਟੋ ਸਾਂਝੀ ਕਰੋ",
+              "valid_criteria": "A clear picture of a plastic bag",
+              "invalid_criteria": "No plastic bag, unclear image, or blank image"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਤੁਸੀਂ ਆਪਣਾ ਟੋਟ ਬੈਗ ਬਣਾਉਣ ਲਈ ਕਿਹੜੀਆਂ ਸਮੱਗਰੀਆਂ ਵਰਤੀਆਂ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ਆਪਣੇ ਟੋਟ ਬੈਗ ਦੀ ਇੱਕ ਤਸਵੀਰ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Old Tee Gets Purpose 🧵",
+      "desc": "Upcycling",
+      "rwc": "Old T-Shirt, Scissors, Colors, Fabric",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 82,
+          "nm": "Can old tees become bags? 🧵",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਪੁਰਾਣੀ ਟੀ-ਸ਼ਰਟ ਲੈਣਗੇ ਅਤੇ ਕੱਟ ਕੇ ਅਤੇ ਗੰਢ ਕੇ ਇਸਨੂੰ ਇੱਕ ਵਾਪਰਣਯੋਗ ਥੈਲਾ ਬਣਾਉਣਗੇ। ਉਹ ਕਪੜੇ ਦੇ ਰੰਗਾਂ ਜਾਂ ਮਾਰਕਰਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇਸ ਥੈਲੇ ਨੂੰ ਜਲਵਾਯੂ ਜਾਗਰੂਕਤਾ ਸੰਦੇਸ਼ਾਂ ਜਾਂ ਚਿੱਤਰਾਂ ਨਾਲ ਸਜਾਣਗੇ। ਇਹ ਥੈਲਾ ਰੋਜ਼ਾਨਾ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ, ਜੋ ਕਿ ਪਲਾਸਟਿਕ ਦੇ ਥੈਲਿਆਂ ਦੀ ਲੋੜ ਨੂੰ ਘਟਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ।",
+          "yt": "Ik2m_a7m1hg",
+          "pts": 10,
+          "pq": {
+            "id": 84,
+            "nm": "Can an old shirt become a bag? 🛍️",
+            "qs": [
+              {
+                "q": "ਪੁਰਾਣੀ ਟੀ-ਸ਼ਰਟ ਨੂੰ ਦੁਬਾਰਾ ਵਰਤਣ ਯੋਗ ਬੈਗ ਵਿੱਚ ਬਦਲਣ ਦਾ ਪਹਿਲਾ ਕਦਮ ਕੀ ਹੈ?",
+                "opts": {
+                  "1": "Cut the sleeves of the T-shirt.",
+                  "2": "Decorate the T-shirt with fabric paint.",
+                  "3": "Place the T-shirt on a flat surface."
+                },
+                "ans": "3"
+              },
+              {
+                "q": "ਟੀ-ਸ਼ਰਟ ਦੇ ਗਲੇ ਨੂੰ ਉਸਦੀ ਅਸਲ ਸਾਈਜ਼ ਤੋਂ ਵੱਡਾ ਕਿਉਂ ਕੱਟਣਾ ਚਾਹੀਦਾ ਹੈ?",
+                "opts": {
+                  "1": "To improve the appearance of the T-shirt.",
+                  "2": "To create fringes at the bottom.",
+                  "3": "To make handles for the bag."
+                },
+                "ans": "3"
+              },
+              {
+                "q": "ਟੀ-ਸ਼ਰਟ ਦੇ ਹੇਠਲੇ ਹਿੱਸੇ ਤੇ ਪੱਟੀਆਂ ਬੰਨ੍ਹਣ ਦਾ ਮਕਸਦ ਕੀ ਹੈ?",
+                "opts": {
+                  "1": "To form the base of the bag.",
+                  "2": "To add decoration to the bag.",
+                  "3": "To create the bag handles."
+                },
+                "ans": "1"
+              },
+              {
+                "q": "ਜੇ ਤੁਸੀਂ ਆਪਣੇ ਬੈਗ ਲਈ ਵੱਡੀ ਲਿਫਟਿੰਗ ਸਮਰੱਥਾ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਤੁਸੀਂ ਕੀ ਚਲਾਕੀ ਕਰ ਸਕਦੇ ਹੋ?",
+                "opts": {
+                  "1": "Add more decorative elements with fabric paint.",
+                  "2": "Use a larger T-shirt to start with.",
+                  "3": "Cut the fringes longer than 2 inches."
+                },
+                "ans": "2"
+              },
+              {
+                "q": "ਆਪਣੇ ਬੈਗ ਨੂੰ ਆਪਣੇ ਵਿਲੱਖਣ ਅੰਦਾਜ਼ ਨੂੰ ਦਰਸਾਉਣ ਲਈ ਤੁਸੀਂ ਕਿਵੇਂ ਨਿੱਜੀਕ੍ਰਿਤ ਕਰ ਸਕਦੇ ਹੋ?",
+                "opts": {
+                  "1": "By choosing a brightly colored T-shirt.",
+                  "2": "By decorating it with unique designs using fabric paint or markers.",
+                  "3": "By making the bag handles extra wide."
+                },
+                "ans": "2"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 85,
+        "nm": "Can an old shirt become a bag? 🛍️",
+        "qs": [
+          {
+            "q": "ਪੁਰਾਣੀ ਟੀ-ਸ਼ਰਟ ਨੂੰ ਦੁਬਾਰਾ ਵਰਤਣ ਯੋਗ ਬੈਗ ਵਿੱਚ ਬਦਲਣ ਦਾ ਪਹਿਲਾ ਕਦਮ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "Cut the sleeves of the T-shirt.",
+              "2": "Decorate the T-shirt with fabric paint.",
+              "3": "Place the T-shirt on a flat surface."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਟੀ-ਸ਼ਰਟ ਦੇ ਗਲੇ ਨੂੰ ਉਸਦੀ ਅਸਲ ਸਾਈਜ਼ ਤੋਂ ਵੱਡਾ ਕਿਉਂ ਕੱਟਣਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "To improve the appearance of the T-shirt.",
+              "2": "To create fringes at the bottom.",
+              "3": "To make handles for the bag."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਟੀ-ਸ਼ਰਟ ਦੇ ਹੇਠਲੇ ਹਿੱਸੇ ਤੇ ਪੱਟੀਆਂ ਬੰਨ੍ਹਣ ਦਾ ਮਕਸਦ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To form the base of the bag.",
+              "2": "To add decoration to the bag.",
+              "3": "To create the bag handles."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਜੇ ਤੁਸੀਂ ਆਪਣੇ ਬੈਗ ਲਈ ਵੱਡੀ ਲਿਫਟਿੰਗ ਸਮਰੱਥਾ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਤੁਸੀਂ ਕੀ ਚਲਾਕੀ ਕਰ ਸਕਦੇ ਹੋ?",
+            "opts": {
+              "1": "Add more decorative elements with fabric paint.",
+              "2": "Use a larger T-shirt to start with.",
+              "3": "Cut the fringes longer than 2 inches."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਆਪਣੇ ਬੈਗ ਨੂੰ ਆਪਣੇ ਵਿਲੱਖਣ ਅੰਦਾਜ਼ ਨੂੰ ਦਰਸਾਉਣ ਲਈ ਤੁਸੀਂ ਕਿਵੇਂ ਨਿੱਜੀਕ੍ਰਿਤ ਕਰ ਸਕਦੇ ਹੋ?",
+            "opts": {
+              "1": "By choosing a brightly colored T-shirt.",
+              "2": "By decorating it with unique designs using fabric paint or markers.",
+              "3": "By making the bag handles extra wide."
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Reusable-Tote-Bag-🧵-Remedial",
+          "seq": 78,
+          "nm": "Tote Bag",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਪੁਰਾਣੀ ਟੀ-ਸ਼ਰਟ ਲੈਣਗੇ ਅਤੇ ਕੱਟ ਕੇ ਅਤੇ ਗੰਢ ਕੇ ਇਸਨੂੰ ਇੱਕ ਵਾਪਰਣਯੋਗ ਥੈਲਾ ਬਣਾਉਣਗੇ। ਉਹ ਕਪੜੇ ਦੇ ਰੰਗਾਂ ਜਾਂ ਮਾਰਕਰਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇਸ ਥੈਲੇ ਨੂੰ ਜਲਵਾਯੂ ਜਾਗਰੂਕਤਾ ਸੰਦੇਸ਼ਾਂ ਜਾਂ ਚਿੱਤਰਾਂ ਨਾਲ ਸਜਾਣਗੇ। ਇਹ ਥੈਲਾ ਰੋਜ਼ਾਨਾ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ, ਜੋ ਕਿ ਪਲਾਸਟਿਕ ਦੇ ਥੈਲਿਆਂ ਦੀ ਲੋੜ ਨੂੰ ਘਟਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ।",
+          "type": "Written",
+          "diff": "Remedial"
+        }
+      ]
+    },
+    {
+      "nm": "Threads Build a Mat 🪡",
+      "desc": "Weaving technique",
+      "rwc": "Cardboard, Yarn, Paper, Glue, Scissors",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 83,
+          "nm": "Can threads weave a coaster? 🪡",
+          "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ ਵਿਦਿਆਰਥੀ ਵੀਂਵਿੰਗ ਤਕਨੀਕ ਸਿੱਖਣਗੇ ਅਤੇ ਇਸਦਾ ਪ੍ਰਯੋਗ ਕਰਦੇ ਹੋਏ ਇੱਕ ਸਧਾਰਨ ਹੱਥੋਂ ਬਣਾਇਆ ਹੋਇਆ ਕੋਸਟਰ ਤਿਆਰ ਕਰਨਗੇ।",
+          "yt": "1QuJ3FW5O0c",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 86,
+        "nm": "Can cardboard become a coaster? 🧵",
+        "qs": [
+          {
+            "q": "ਬੁਣਾਈ ਪ੍ਰੋਜੈਕਟ ਦੇ ਅਧਾਰ ਲਈ ਮੁੱਖ ਸਮੱਗਰੀ ਕਿਹੜੀ ਵਰਤੀ ਜਾਂਦੀ ਹੈ?",
+            "opts": { "1": "A piece of cardboard", "2": "A plastic frame", "3": "A piece of wood" },
+            "ans": "1"
+          },
+          {
+            "q": "ਕਾਰਡਬੋਰਡ 'ਤੇ ਖੁੱਲ੍ਹੇ ਬਰਾਬਰ ਕਿਉਂ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ?",
+            "opts": {
+              "1": "For neat weaving later",
+              "2": "To save materials",
+              "3": "To make it easier to cut"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਬੁਣਾਈ ਕਰਦੇ ਸਮੇਂ ਵਿਰੁੱਧ ਪਾਸੇ ਪਹੁੰਚਣ ਤੋਂ ਬਾਅਦ ਤੁਸੀਂ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "Cut the thread immediately",
+              "2": "Turn around and do the opposite weaving pattern",
+              "3": "Remove the thread and start over"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਤੁਹਾਡੀ ਕੋਸਟਰ ਡਿਜ਼ਾਇਨ ਨੂੰ ਕਿਵੇਂ ਵਿਅਕਤੀਗਤ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ?",
+            "opts": {
+              "1": "Reduce the number of threads used",
+              "2": "Increase the size of the cardboard",
+              "3": "Use different colors and patterns"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਪਿੱਛੇ ਧਾਗੇ ਕੱਟਣ ਤੋਂ ਬਾਅਦ ਆਪਣੀ ਕੋਸਟਰ ਨੂੰ ਸਮਾਪਤ ਕਰਨ ਦਾ ਰਚਨਾਤਮਕ ਤਰੀਕਾ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "Glue the threads to the cardboard",
+              "2": "Fold the cardboard in half",
+              "3": "Tie the loose ends in pairs to secure the coaster"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Weave-a-Handmade-Coaster-🪡-Basic",
+          "seq": 79,
+          "nm": "Handmade Coaster",
+          "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ ਵਿਦਿਆਰਥੀ ਵੀਂਵਿੰਗ ਤਕਨੀਕ ਸਿੱਖਣਗੇ ਅਤੇ ਇਸਦਾ ਪ੍ਰਯੋਗ ਕਰਦੇ ਹੋਏ ਇੱਕ ਸਧਾਰਨ ਹੱਥੋਂ ਬਣਾਇਆ ਹੋਇਆ ਕੋਸਟਰ ਤਿਆਰ ਕਰਨਗੇ।",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "👍 ਭੇਜੋ ਜੇ ਗਤੀਵਿਧੀ ਚੰਗੀ ਲੱਗੀ, ਜਾਂ 👎 ਜੇ ਚੰਗੀ ਨਹੀਂ ਲੱਗੀ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਟੈਕਸਟ ਜਾਂ ਵੌਇਸ ਨੋਟ ਭੇਜੋ — ਜੇ ਪਸੰਦ ਆਇਆ ਤਾਂ \"Creative\" ਕਹੋ, ਨਹੀਂ ਆਇਆ ਤਾਂ \"Simple\" ਕਹੋ",
+              "unguided_text": "ਤੁਸੀਂ ਇਸ ਗਤੀਵਿਧੀ ਬਾਰੇ ਕੀ ਸੋਚਦੇ ਹੋ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ ਜਾਂ ਟੈਕਸਟ ਭੇਜੋ",
+              "valid_criteria": "Creative, Simple",
+              "invalid_criteria": "Any word other than creative, simple"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਕੱਪ ਜਾਂ ਗਿਲਾਸ ਦੀ ਫ਼ੋਟੋ ਭੇਜੋ",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਫ਼ੋਟੋ ਸਾਂਝੀ ਕਰੋ",
+              "valid_criteria": "A clear picture of a cup or glass",
+              "invalid_criteria": "No cup/glass, unclear image, or blank image"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਤੁਸੀਂ ਆਪਣਾ ਕੋਸਟਰ ਬਣਾਉਣ ਲਈ ਕਿਹੜੀਆਂ ਸਮੱਗਰੀਆਂ ਵਰਤੀਆਂ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ਆਪਣੇ ਹੱਥ ਨਾਲ ਬਣਾਏ ਕੋਸਟਰ ਦੀ ਇੱਕ ਤਸਵੀਰ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Yarn Finds Its Pattern 🧶",
+      "desc": "Weaving",
+      "rwc": "Cardboard, Yarn, Paper, Glue",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 84,
+          "nm": "Can yarn make a mat? 🧶",
+          "desc": "--- ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ ਵਿਦਿਆਰਥੀ ਰੀਵਨਿਊਅਬਲ ਰਿਸੋਰਸਿਜ਼ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਬੁਣਾਈ ਦੀ ਤਕਨਾਲੋਜੀ ਸਿੱਖਣਗੇ ਅਤੇ ਇਸਦਾ ਇਸਤੇਮਾਲ ਕਰਦਿਆਂ ਇੱਕ ਸਧਾਰਨ ਹੱਥੋਂ ਬਣਿਆ ਕੋਸਟਰ ਤਿਆਰ ਕਰਨਗੇ।",
+          "yt": "g_KyWR_-T3s",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 87,
+        "nm": "Can thread weave into a coaster? 🎨",
+        "qs": [
+          {
+            "q": "ਹੱਥੋਂ ਬਣੇ ਕੋਸਟਰ ਨੂੰ ਬਣਾਉਣ ਲਈ ਕਿਸ ਸਮਾਨ ਦੀ ਲੋੜ ਹੈ?",
+            "opts": {
+              "1": "A paintbrush",
+              "2": "A glue stick",
+              "3": "A square piece of cardboard"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਕਾਰਡਬੋਰਡ ਦੇ ਕਿਨਾਰਿਆਂ 'ਤੇ ਛੋਟੇ ਕੱਟੇ ਕਰਨ ਦਾ ਮਕਸਦ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To help with threading and spacing",
+              "2": "To attach the coaster to a table",
+              "3": "To make it look decorative"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਕਿਹੜੇ ਕਦਮ ਵਿੱਚ ਧਾਗੇ ਨਾਲ ਆਗੇ-ਪਿੱਛੇ ਦੀ ਗਤੀਵਿਧੀ ਵਰਤੀ ਜਾਂਦੀ ਹੈ?",
+            "opts": { "1": "Cutting", "2": "Setting the Base", "3": "Weaving" },
+            "ans": "2"
+          },
+          {
+            "q": "ਜੇ ਤੁਸੀਂ ਆਪਣੇ ਕੋਸਟਰ ਨੂੰ ਨਿੱਜੀ ਸਪਰਸ਼ ਦੇਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਤੁਸੀਂ ਹੇਠਾਂ ਦਿੱਤੇ ਵਿੱਚੋਂ ਕੀ ਕਰ ਸਕਦੇ ਹੋ?",
+            "opts": {
+              "1": "Use only one color of thread for a uniform look",
+              "2": "Skip the weaving step entirely",
+              "3": "Incorporate different colors of thread as you weave"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਤੁਸੀਂ ਆਪਣੇ ਕੋਸਟਰ ਦੇ ਅੰਤਿਮ ਦ੍ਰਿਸ਼ਟੀਕੋਣ ਨੂੰ ਰਚਨਾਤਮਕ ਤਰੀਕੇ ਨਾਲ ਕਿਵੇਂ ਵਧਾ ਸਕਦੇ ਹੋ?",
+            "opts": {
+              "1": "Leave the threads loose for a casual look",
+              "2": "Tighten the weave and incorporate a color pattern",
+              "3": "Use mismatched materials for a unique texture"
+            },
+            "ans": "2"
+          }
+        ]
+      }
+    },
+    {
+      "nm": "Warli Saves the Earth 🌿",
+      "desc": "Warli art",
+      "rwc": "Paper, Pen, Paint, Brush",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 85,
+          "nm": "Can Warli show sustainability? 🌿",
+          "desc": "--- ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਵਾਰਲੀ ਕਲਾ ਦੀਆਂ ਮੁੱਢਲੀਆਂ ਖਾਸੀਅਤਾਂ ਦਾ ਵੇਰਵਾ ਦੇਣਗੇ ਅਤੇ ਇਸ ਗਿਆਨ ਨੂੰ ਵਰਤ ਕੇ ਇੱਕ ਕਲਾ ਕ੍ਰਿਤੀ ਬਣਾਉਣਗੇ ਜੋ ਉਹਨਾਂ ਦੇ ਆਸ-ਪਾਸ (ਪਿੰਡਾਂ/ਸ਼ਹਿਰਾਂ/ਸਕੂਲ ਆਦਿ) ਵਿੱਚ ਦੇਖੇ ਗਏ ਸਥਿਰ ਪ੍ਰਵਿਰਤੀਆਂ ਨੂੰ ਦਰਸਾਏਗੀ।",
+          "yt": "Z65Ich_uEe4",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 88,
+        "nm": "Can matchsticks draw Warli art? 🔥",
+        "qs": [
+          {
+            "q": "ਵਾਰਲੀ ਕਲਾ ਦੇ ਮੁੱਖ ਖਾਸੀਅਤਾਂ ਕੀ ਹਨ ਜਿਵੇਂ ਕਿ ਵੀਡੀਓ ਵਿੱਚ ਵਰਣਨ ਕੀਤਾ ਗਿਆ ਹੈ?",
+            "opts": {
+              "1": "Geometric shapes and eco-friendly colors",
+              "2": "Bright colors and intricate designs",
+              "3": "Abstract forms and modern techniques"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਵਾਰਲੀ ਕਲਾ ਬਣਾਉਣ ਵਿੱਚ ਮੈਚਸਟਿਕ ਅਤੇ ਕੰਨ ਵਾਲੇ ਲੱਕੜਾਂ ਦੀ ਵਰਤੋਂ ਦਾ ਕੀ ਉਦੇਸ਼ ਹੈ?",
+            "opts": {
+              "1": "To create a more colorful artwork",
+              "2": "To make the art process more complex",
+              "3": "To experiment with art and minimize waste"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਵਾਰਲੀ ਕਲਾ ਨੂੰ ਆਧੁਨਿਕ ਟਿਕਾਊ ਪ੍ਰਥਾਵਾਂ ਨੂੰ ਦਰਸਾਉਣ ਲਈ ਕਿਵੇਂ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ?",
+            "opts": {
+              "1": "By incorporating themes like rainwater harvesting and solar energy",
+              "2": "By using bright, synthetic paints",
+              "3": "By focusing on urban landscapes and architecture"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਜੇਕਰ ਤੁਸੀਂ ਰੀਸਾਈਕਲਿੰਗ ਦੇ ਵਿਸ਼ੇ ਨੂੰ ਉਜਾਗਰ ਕਰਨ ਵਾਲੀ ਵਾਰਲੀ ਕਲਾ ਦੀ ਰਚਨਾ ਕਰਨੀ ਹੈ, ਤਾਂ ਕਿਹੜੇ ਰਚਨਾਤਮਕ ਸਮੱਗਰੀਆਂ ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹੋ?",
+            "opts": {
+              "1": "High-end acrylic paints and canvases",
+              "2": "Digital tools to create virtual art",
+              "3": "Used paper and cardboard instead of new materials"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਕਲਪਨਾ ਕਰੋ ਕਿ ਤੁਸੀਂ ਜੈਵ ਵਿਭਿੰਨਤਾ ਦੀ ਮਹੱਤਤਾ ਨੂੰ ਉਜਾਗਰ ਕਰਨ ਵਾਲਾ ਇੱਕ ਵਿਲੱਖਣ ਵਾਰਲੀ ਕਲਾ ਪ੍ਰੋਜੈਕਟ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ। ਤੁਸੀਂ ਕਿਹੜਾ ਨਵੀਂਨ ਸਿੱਧਾਂਤ ਲੈ ਸਕਦੇ ਹੋ?",
+            "opts": {
+              "1": "Focus solely on depicting human activities",
+              "2": "Include diverse plant and animal shapes using natural dyes",
+              "3": "Use only geometric shapes without any context"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Sustainable-Warli-Artwork-🌿-Intermediate",
+          "seq": 80,
+          "nm": "Sustainable Warli Art",
+          "desc": "--- ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਵਾਰਲੀ ਕਲਾ ਦੀਆਂ ਮੁੱਢਲੀਆਂ ਖਾਸੀਅਤਾਂ ਦਾ ਵੇਰਵਾ ਦੇਣਗੇ ਅਤੇ ਇਸ ਗਿਆਨ ਨੂੰ ਵਰਤ ਕੇ ਇੱਕ ਕਲਾ ਕ੍ਰਿਤੀ ਬਣਾਉਣਗੇ ਜੋ ਉਹਨਾਂ ਦੇ ਆਸ-ਪਾਸ (ਪਿੰਡਾਂ/ਸ਼ਹਿਰਾਂ/ਸਕੂਲ ਆਦਿ) ਵਿੱਚ ਦੇਖੇ ਗਏ ਸਥਿਰ ਪ੍ਰਵਿਰਤੀਆਂ ਨੂੰ ਦਰਸਾਏਗੀ।",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "👍 ਭੇਜੋ ਜੇ ਗਤੀਵਿਧੀ ਚੰਗੀ ਲੱਗੀ, ਜਾਂ 👎 ਜੇ ਚੰਗੀ ਨਹੀਂ ਲੱਗੀ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਟੈਕਸਟ ਜਾਂ ਵੌਇਸ ਨੋਟ ਭੇਜੋ — ਜੇ ਪਸੰਦ ਆਇਆ ਤਾਂ \"Traditional\" ਕਹੋ, ਨਹੀਂ ਆਇਆ ਤਾਂ \"Difficult\" ਕਹੋ",
+              "unguided_text": "ਤੁਸੀਂ ਇਸ ਗਤੀਵਿਧੀ ਬਾਰੇ ਕੀ ਸੋਚਦੇ ਹੋ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ ਜਾਂ ਟੈਕਸਟ ਭੇਜੋ",
+              "valid_criteria": "Traditional, Difficult",
+              "invalid_criteria": "Any word other than traditional, difficult"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਪੌਦੇ ਜਾਂ ਪੱਤੇ ਦੀ ਫ਼ੋਟੋ ਭੇਜੋ",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਫ਼ੋਟੋ ਸਾਂਝੀ ਕਰੋ",
+              "valid_criteria": "A clear picture of a plant or leaf",
+              "invalid_criteria": "No plant/leaf, unclear image, or blank image"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਤੁਸੀਂ ਆਪਣੀ ਵਾਰਲੀ ਕਲਾ ਵਿੱਚ ਕੀ ਬਣਾਇਆ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ਆਪਣੇ ਟਿਕਾਊ ਵਾਰਲੀ ਕਲਾ ਦੀ ਇੱਕ ਤਸਵੀਰ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Triangles Tell Life 🏕️",
+      "desc": "Warli art",
+      "rwc": "Paper, Pen, Paint",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 86,
+          "nm": "Can triangles tell village life? 🏕️",
+          "desc": "--- ਵਿਦਿਆਰਥੀ ਮਹਾਰਾਸ਼ਟਰ, ਭਾਰਤ ਦੇ ਇਸ ਪਰੰਪਰਾਗਤ ਕਬੀਲਾਈ ਕਲਾ ਦੇ ਵਿਚਾਰ ਨੂੰ ਸਮਝਣ ਅਤੇ ਪ੍ਰਸ਼ੰਸਾ ਕਰਨ ਯੋਗ ਹੋਣਗੇ। ਵਿਦਿਆਰਥੀ ਜਿਆਮਿਤੀ ਆਕਰਤੀਆਂ ਜਿਵੇਂ ਕਿ ਗੋਲਕ, ਤਿਕੋਣ ਅਤੇ ਰੇਖਾਵਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਕੁਦਰਤ, ਜਾਨਵਰਾਂ ਅਤੇ ਰੋਜ਼ਾਨਾ ਜੀਵਨ ਦੀ ਤਸਵੀਰ ਬਣਾਉਣ ਲਈ ਸਾਦੇ, ਪ੍ਰਤੀਕਾਤਮਕ ਡਿਜ਼ਾਈਨ ਬਣਾਉਣਾ ਸਿੱਖਣਗੇ।",
+          "yt": "zC5Mr0ZoLl8",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 89,
+        "nm": "Can shapes tell tribal stories? 🔺",
+        "qs": [
+          {
+            "q": "ਵਾਰਲੀ ਕਲਾ ਵਿੱਚ ਮੁੱਖ ਰੂਪ ਕਿਹੜੇ ਹੁੰਦੇ ਹਨ?",
+            "opts": {
+              "1": "Circles, triangles, and lines",
+              "2": "Hexagons, pentagons, and stars",
+              "3": "Squares, rectangles, and ovals"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਵਾਰਲੀ ਕਲਾ ਵਿੱਚ ਗੋਲ ਆਮ ਤੌਰ ਤੇ ਕੀਤਾ ਦਰਸਾਉਂਦਾ ਹੈ?",
+            "opts": {
+              "1": "The sun and moon",
+              "2": "People and activities",
+              "3": "Mountains and trees"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਵਾਰਲੀ ਕਲਾ ਵਿੱਚ ਪਾਤਰਾਂ ਨੂੰ ਵਿਲੱਖਣ ਕਿਵੇਂ ਬਣਾ ਸਕਦੇ ਹੋ?",
+            "opts": {
+              "1": "By adding detailed facial features",
+              "2": "By using vibrant colors",
+              "3": "By showing their size, pose, and activity"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇ ਤੁਸੀਂ ਇੱਕ ਤਿਉਹਾਰ ਨੂੰ ਦਰਸਾਉਣ ਵਾਲੀ ਵਾਰਲੀ ਕਲਾ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਤੁਸੀਂ ਕਿਹੜੇ ਤੱਤ ਰਚਨਾਤਮਕ ਢੰਗ ਨਾਲ ਸ਼ਾਮਲ ਕਰ ਸਕਦੇ ਹੋ?",
+            "opts": {
+              "1": "People dancing, musical instruments, and decorations",
+              "2": "Skyscrapers and cars",
+              "3": "Spacecraft and aliens"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਕਲਪਨਾ ਕਰੋ ਕਿ ਤੁਸੀਂ ਵਾਰਲੀ ਕਲਾ ਵਿੱਚ ਮੱਛੀ ਪਕੜਨ ਦਾ ਦ੍ਰਿਸ਼ ਦਰਸਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ। ਤੁਸੀਂ ਕਿਹੜੇ ਰਚਨਾਤਮਕ ਤੱਤ ਸ਼ਾਮਲ ਕਰ ਸਕਦੇ ਹੋ?",
+            "opts": {
+              "1": "Mountains and trees with animals",
+              "2": "Fishermen, boats, and water waves",
+              "3": "A city skyline and traffic"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Warli-Celebration-Scene-🏕️-Remedial",
+          "seq": 81,
+          "nm": "Warli Art",
+          "desc": "--- ਵਿਦਿਆਰਥੀ ਮਹਾਰਾਸ਼ਟਰ, ਭਾਰਤ ਦੇ ਇਸ ਪਰੰਪਰਾਗਤ ਕਬੀਲਾਈ ਕਲਾ ਦੇ ਵਿਚਾਰ ਨੂੰ ਸਮਝਣ ਅਤੇ ਪ੍ਰਸ਼ੰਸਾ ਕਰਨ ਯੋਗ ਹੋਣਗੇ। ਵਿਦਿਆਰਥੀ ਜਿਆਮਿਤੀ ਆਕਰਤੀਆਂ ਜਿਵੇਂ ਕਿ ਗੋਲਕ, ਤਿਕੋਣ ਅਤੇ ਰੇਖਾਵਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਕੁਦਰਤ, ਜਾਨਵਰਾਂ ਅਤੇ ਰੋਜ਼ਾਨਾ ਜੀਵਨ ਦੀ ਤਸਵੀਰ ਬਣਾਉਣ ਲਈ ਸਾਦੇ, ਪ੍ਰਤੀਕਾਤਮਕ ਡਿਜ਼ਾਈਨ ਬਣਾਉਣਾ ਸਿੱਖਣਗੇ।",
+          "type": "Written",
+          "diff": "Remedial"
+        }
+      ]
+    },
+    {
+      "nm": "One Color Holds Emotion 💙",
+      "desc": "Color gradation",
+      "rwc": "Paper, Pencil, Colors",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 87,
+          "nm": "Can one color hold emotions? 💙",
+          "desc": "--- ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਇੱਕ ਮੋਨੋਕ੍ਰੋਮ ਮੂਡ ਕਲਾ ਰਚਨਾਵਾਂ ਹੀ ਇਕ ਰੰਗ ਦੀਆਂ ਛਾਵਾਂ ਅਤੇ ਇੱਕ ਹੀ ਆਕਾਰ ਰਾਹੀਂ ਭਾਵਨਾਵਾਂ ਦਾ ਪ੍ਰਗਟਾਵਾ ਕਰਨਗੇ। ਕੇਂਦਰੀ ਪਰਤਾਂ ਅਤੇ ਹਨੇਰੇ ਤੋਂ ਰੌਸ਼ਨਾਈ ਤੱਕ ਦੇ ਗ੍ਰੇਡੀਐਂਟ ਦੀ ਵਰਤੋਂ ਕਰਕੇ, ਉਹ ਵੇਖਣਗੇ ਕਿ ਕਿਵੇਂ ਆਕਾਰ ਅਤੇ ਰੰਗ ਦੀ ਤੀਬਰਤਾ ਭਾਵਨਾਵਾਂ ਦੇ ਬਦਲਣ ਨੂੰ ਦਰਸਾ ਸਕਦੇ ਹਨ, ਕਲਾ ਨੂੰ ਸਵੈ-ਅਭਿਵਿਕਤੀ ਨਾਲ ਜੋੜਦੇ ਹੋਏ।",
+          "yt": "JTvj3682tyI",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 90,
+        "nm": "Can one color show all moods? 🎭",
+        "qs": [
+          {
+            "q": "ਮੋਨੋਕ੍ਰੋਮ ਮੂਡ ਕਲਾ ਵਿੱਚ ਵੱਖ-ਵੱਖ ਸ਼ੇਡ ਵਰਤਣ ਦਾ ਮਕਸਦ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To show how an emotion transitions from strong to mild",
+              "2": "To create a rainbow effect",
+              "3": "To use all colors of the spectrum"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਕਲਾਕਾਰੀ ਵਿੱਚ ਖੁਸ਼ੀ ਅਤੇ ਸ਼ਾਂਤੀ ਵਰਗੀਆਂ ਭਾਵਨਾਵਾਂ ਨੂੰ ਆਮ ਤੌਰ 'ਤੇ ਕਿਵੇਂ ਦਰਸਾਇਆ ਜਾਂਦਾ ਹੈ?",
+            "opts": {
+              "1": "Using sharp shapes like triangles",
+              "2": "Using dark colors only",
+              "3": "Using curves and rounded shapes"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਮੋਨੋਕ੍ਰੋਮ ਮੂਡ ਕਲਾ ਬਣਾਉਣ ਦਾ ਪਹਿਲਾ ਕਦਮ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "Choose an emotion and draw a shape representing it",
+              "2": "Choose a color for your emotion",
+              "3": "Create tones by adding white and black"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਜੇਕਰ ਤੁਸੀਂ ਮੋਨੋਕ੍ਰੋਮ ਮੂਡ ਕਲਾ ਰਾਹੀਂ ਰਚਨਾਤਮਕਤਾ ਪ੍ਰਗਟ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਤੁਸੀਂ ਕੀ ਕਰ ਸਕਦੇ ਹੋ?",
+            "opts": {
+              "1": "Follow a strict guideline of shapes and colors provided by others",
+              "2": "Use only primary colors and geometric shapes",
+              "3": "Choose a unique shape that symbolizes creativity for you and experiment with unusual shades"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਕਲਾਕਾਰੀ ਵਿੱਚ ਤਾਜ਼ਬੀ ਦਾ ਭਾਵਨਾ ਰਚਨਾਤਮਕ ਤੌਰ 'ਤੇ ਦਰਸਾਉਣ ਲਈ ਤੁਹਾਡੇ ਕੋਲ ਕੀ ਨਵੀਆਂ ਪਹੁੰਚ ਹੋ ਸਕਦੀ ਹੈ?",
+            "opts": {
+              "1": "Use only one shade of blue without any shapes",
+              "2": "Use a burst-like shape with varying shades of a surprising color like neon green",
+              "3": "Stick to traditional shapes like squares and circles with pastel colors"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Monochrome-Mood-Artwork-💙-Intermediate",
+          "seq": 82,
+          "nm": "Monochrome mood",
+          "desc": "--- ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਇੱਕ ਮੋਨੋਕ੍ਰੋਮ ਮੂਡ ਕਲਾ ਰਚਨਾਵਾਂ ਹੀ ਇਕ ਰੰਗ ਦੀਆਂ ਛਾਵਾਂ ਅਤੇ ਇੱਕ ਹੀ ਆਕਾਰ ਰਾਹੀਂ ਭਾਵਨਾਵਾਂ ਦਾ ਪ੍ਰਗਟਾਵਾ ਕਰਨਗੇ। ਕੇਂਦਰੀ ਪਰਤਾਂ ਅਤੇ ਹਨੇਰੇ ਤੋਂ ਰੌਸ਼ਨਾਈ ਤੱਕ ਦੇ ਗ੍ਰੇਡੀਐਂਟ ਦੀ ਵਰਤੋਂ ਕਰਕੇ, ਉਹ ਵੇਖਣਗੇ ਕਿ ਕਿਵੇਂ ਆਕਾਰ ਅਤੇ ਰੰਗ ਦੀ ਤੀਬਰਤਾ ਭਾਵਨਾਵਾਂ ਦੇ ਬਦਲਣ ਨੂੰ ਦਰਸਾ ਸਕਦੇ ਹਨ, ਕਲਾ ਨੂੰ ਸਵੈ-ਅਭਿਵਿਕਤੀ ਨਾਲ ਜੋੜਦੇ ਹੋਏ।",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "👍 ਭੇਜੋ ਜੇ ਗਤੀਵਿਧੀ ਚੰਗੀ ਲੱਗੀ, ਜਾਂ 👎 ਜੇ ਚੰਗੀ ਨਹੀਂ ਲੱਗੀ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਟੈਕਸਟ ਜਾਂ ਵੌਇਸ ਨੋਟ ਭੇਜੋ — ਜੇ ਪਸੰਦ ਆਇਆ ਤਾਂ \"Calm\" ਕਹੋ, ਨਹੀਂ ਆਇਆ ਤਾਂ \"Boring\" ਕਹੋ",
+              "unguided_text": "ਤੁਸੀਂ ਇਸ ਗਤੀਵਿਧੀ ਬਾਰੇ ਕੀ ਸੋਚਦੇ ਹੋ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ ਜਾਂ ਟੈਕਸਟ ਭੇਜੋ",
+              "valid_criteria": "Calm, Boring",
+              "invalid_criteria": "Any word other than calm, boring"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਕਾਲੇ ਅਤੇ ਚਿੱਟੇ ਰੰਗ ਦੀ ਚੀਜ਼ ਦੀ ਫ਼ੋਟੋ ਭੇਜੋ",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਫ਼ੋਟੋ ਸਾਂਝੀ ਕਰੋ",
+              "valid_criteria": "A clear picture of a black & white object",
+              "invalid_criteria": "Colored object, unclear image, or blank image"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਤੁਸੀਂ ਆਪਣੀ ਮੋਨੋਕ੍ਰੋਮ ਕਲਾ ਵਿੱਚ ਕਿਹੜੇ ਰੰਗ ਵਰਤੇ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ਆਪਣੀ ਮੋਨੋਕ੍ਰੋਮ ਮੂਡ ਕਲਾਕਾਰੀ ਦੀ ਇੱਕ ਤਸਵੀਰ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Shades Paint a Landscape 🌄",
+      "desc": "Color gradation",
+      "rwc": "Paper, Colors, Pencil",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 88,
+          "nm": "Can shades paint a mountain? 🌄",
+          "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ ਵਿਦਿਆਰਥੀ ਰੰਗ ਦੇ ਮੁੱਲਾਂ ਬਾਰੇ ਸਿੱਖਣਗੇ ਅਤੇ ਰੰਗ ਦੇ ਗ੍ਰੇਡੀਏਸ਼ਨ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਵਿਲੱਖਣ ਦ੍ਰਿਸ਼ ਬਣਾਉਣਗੇ।",
+          "yt": "B4vavazHPkM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 91,
+        "nm": "Can gray show every feeling? 🩶",
+        "qs": [
+          {
+            "q": "ਕਲਾ ਵਿੱਚ ਗਰੇਸਕੇਲ ਦਾ ਕੀ ਅਰਥ ਹੈ?",
+            "opts": {
+              "1": "It refers to the combination of complementary colors to enhance contrast.",
+              "2": "It shows the value of a color, meaning how light or dark a color can be.",
+              "3": "It is the use of different primary colors to create new shades."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਅਚਰੋਮੈਟਿਕ ਅਤੇ ਮੋਨੋਕਰੋਮੈਟਿਕ ਰੰਗ ਸਕੀਮਾਂ ਵਿੱਚ ਕੀ ਅੰਤਰ ਹੈ?",
+            "opts": {
+              "1": "Achromatic uses warm colors, while Monochromatic uses cool colors.",
+              "2": "Achromatic uses black, white, and grey, while Monochromatic uses different shades of a single color.",
+              "3": "Achromatic uses various colors, while Monochromatic uses only black and white."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਕਿਸ ਕਦਮ ਵਿਚ ਕਲਰਸਕੇਪ ਐਕਟਿਵਿਟੀ ਵਿੱਚ ਟਿੰਟ ਅਤੇ ਸ਼ੇਡ ਬਣਾਉਣ ਸ਼ਾਮਲ ਹੈ?",
+            "opts": {
+              "1": "Choosing one main color for the artwork.",
+              "2": "Drawing a simple landscape and numbering its elements.",
+              "3": "Creating 5 tints by adding white and 5 shades by adding black to the main color."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਇੱਕ ਟੈਕ ਕੰਪਨੀ ਲਈ ਲੋਗੋ ਡਿਜ਼ਾਇਨ ਵਿੱਚ ਮੋਨੋਕਰੋਮੈਟਿਕ ਰੰਗ ਸਕੀਮ ਨੂੰ ਕ੍ਰੀਏਟਿਵ ਤਰੀਕੇ ਨਾਲ ਕਿਵੇਂ ਲਾਗੂ ਕਰੋਗੇ?",
+            "opts": {
+              "1": "Mix black and white exclusively to keep it minimalistic.",
+              "2": "Use various shades and tints of blue to convey innovation and trust.",
+              "3": "Combine bright primary colors for a vibrant and energetic look."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਜੇ ਤੁਹਾਨੂੰ ਅਚਰੋਮੈਟਿਕ ਸਕੀਮ ਵਰਤ ਕੇ ਫੈਸ਼ਨ ਪੀਸ ਬਣਾਉਣ ਦਾ ਕੰਮ ਦਿੱਤਾ ਜਾਵੇ, ਤਾਂ ਕ੍ਰੀਏਟਿਵ ਤਰੀਕਾ ਕੀ ਹੋਵੇਗਾ?",
+            "opts": {
+              "1": "Use only primary colors to make it appealing and lively.",
+              "2": "Design a garment using different textures and patterns in black, white, and grey.",
+              "3": "Incorporate various bright colors to showcase versatility."
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Paint-a-Gradation-Landscape-🌄-Remedial",
+          "seq": 83,
+          "nm": "Gradation Landscape",
+          "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ ਵਿਦਿਆਰਥੀ ਰੰਗ ਦੇ ਮੁੱਲਾਂ ਬਾਰੇ ਸਿੱਖਣਗੇ ਅਤੇ ਰੰਗ ਦੇ ਗ੍ਰੇਡੀਏਸ਼ਨ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਵਿਲੱਖਣ ਦ੍ਰਿਸ਼ ਬਣਾਉਣਗੇ।",
+          "type": "Written",
+          "diff": "Remedial"
+        }
+      ]
+    },
+    {
+      "nm": "Faces Speak Every Feeling 😶",
+      "desc": "Facial expressions",
+      "rwc": "Paper, Pencil, Colors",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 89,
+          "nm": "Can faces show all feelings? 😶",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ 4-ਫਰੇਮ ਵਾਲਾ ਕਾਮਿਕ ਸਟ੍ਰਿਪ ਬਣਾਉਣਗੇ ਜੋ ਸਿਰਫ ਮੂਹਰਾਂ ਅਤੇ ਰੰਗਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਚਾਰ ਵੱਖ-ਵੱਖ ਭਾਵਨਾਵਾਂ ਨੂੰ ਦਰਸਾਵੇਗਾ। ਉਹ ਹਰ ਫਰੇਮ ਵਿੱਚ ਅੱਖਾਂ, ਭਰਵਾਂ, ਅਤੇ ਮੂੰਹ ਨੂੰ ਬਦਲਣਗੇ ਤਾਂ ਜੋ ਇੱਕ ਨਵੀਂ ਭਾਵਨਾ ਦਿਖਾਈ ਜਾ ਸਕੇ ਅਤੇ ਭਾਵਨਾ ਦੇ ਅਨੁਸਾਰ ਰੰਗਾਂ ਦੀ ਵਰਤੋਂ ਕਰਨਗੇ। ਅੰਤ ਵਿੱਚ, ਉਹ ਸਾਰੇ ਚਾਰ ਫਰੇਮਾਂ ਨੂੰ ਰੂਪ-ਰੇਖਾ ਦੇਣਗੇ, ਸਾਫ਼-ਸੁਥਰਾ ਰੰਗ ਕਰਨਗੇ, ਅਤੇ ਭਾਵਨਾਵਾਂ ਦੇ ਬਦਲਾਅ ਦੀ ਇੱਕ ਛੋਟੀ ਕਹਾਣੀ ਪੂਰੀ ਕਰਨਗੇ।",
+          "yt": "JU76fvlKDfg",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 92,
+        "nm": "Can colors express your emotions? 😄",
+        "qs": [
+          {
+            "q": "ਕਿਹੜੇ ਰੰਗ ਖੁਸ਼ੀ ਦਰਸਾਉਣ ਲਈ ਕਾਮਿਕ ਸਟ੍ਰਿਪ ਐਕਟਿਵਿਟੀ ਵਿੱਚ ਸੁਝਾਏ ਗਏ ਹਨ?",
+            "opts": { "1": "Red and grey", "2": "Blue and purple", "3": "Yellow and orange" },
+            "ans": "3"
+          },
+          {
+            "q": "ਸਕ੍ਰਿਪਟ ਦੇ ਅਨੁਸਾਰ, ਸ਼ਬਦਾਂ ਦੇ ਬਿਨਾ ਭਾਵਨਾਵਾਂ ਨੂੰ ਕਿਵੇਂ ਦਰਸਾਇਆ ਜਾ ਸਕਦਾ ਹੈ?",
+            "opts": {
+              "1": "By writing a detailed description",
+              "2": "Through facial expressions, body posture, and colors",
+              "3": "By making loud sounds"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਜੇ ਤੁਸੀਂ ਕਿਰਦਾਰ ਦੇ ਚਿਹਰੇ 'ਤੇ ਹੈਰਾਨੀ ਦਿਖਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਤੁਹਾਨੂੰ ਕਿਹੜੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ 'ਤੇ ਜ਼ੋਰ ਦੇਣਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "Wide eyes and a smiling mouth",
+              "2": "Big round eyes and an open mouth",
+              "3": "Tight lips and furrowed brows"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਤੁਹਾਡਾ ਕਿਰਦਾਰ ਇੱਕ ਅਣਪਛਾਤਾ ਜਨਮਦਿਨ ਤੋਹਫ਼ਾ ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ। ਤੁਸੀਂ ਆਪਣੇ ਕਾਮਿਕ ਸਟ੍ਰਿਪ ਵਿੱਚ ਉਨ੍ਹਾਂ ਦੀ ਭਾਵਨਾ ਨੂੰ ਕਿਵੇਂ ਰਚਨਾਤਮਕ ਤਰੀਕੇ ਨਾਲ ਦਰਸਾਉਣਾ ਚਾਹੋਗੇ?",
+            "opts": {
+              "1": "Use dark colors to show their confusion",
+              "2": "Draw the character with a bored expression",
+              "3": "Show the character with wide eyes, an open mouth, and use pale yellow colors"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਇੱਕ ਦਰਸ਼ ਦਾ ਕਲਪਨਾ ਕਰੋ ਜਿੱਥੇ ਤੁਹਾਡਾ ਕਿਰਦਾਰ ਖੇਡ ਹਾਰਣ ਤੇ ਗੁੱਸੇ ਹੁੰਦਾ ਹੈ। ਇਸ ਭਾਵਨਾ ਨੂੰ ਦਰਸਾਉਣ ਲਈ ਤੁਸੀਂ ਕਿਹੜਾ ਰਚਨਾਤਮਕ ਤਰੀਕਾ ਵਰਤ ਸਕਦੇ ਹੋ?",
+            "opts": {
+              "1": "Show the character with droopy eyes and a curved-down mouth",
+              "2": "Draw furrowed brows with tight lips and use red colors",
+              "3": "Use bright colors and depict a smiling character"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Draw-a-Four-Emotion-Comic-Strip-😶-Advanced",
+          "seq": 84,
+          "nm": "If feelings could talk",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ 4-ਫਰੇਮ ਵਾਲਾ ਕਾਮਿਕ ਸਟ੍ਰਿਪ ਬਣਾਉਣਗੇ ਜੋ ਸਿਰਫ ਮੂਹਰਾਂ ਅਤੇ ਰੰਗਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਚਾਰ ਵੱਖ-ਵੱਖ ਭਾਵਨਾਵਾਂ ਨੂੰ ਦਰਸਾਵੇਗਾ। ਉਹ ਹਰ ਫਰੇਮ ਵਿੱਚ ਅੱਖਾਂ, ਭਰਵਾਂ, ਅਤੇ ਮੂੰਹ ਨੂੰ ਬਦਲਣਗੇ ਤਾਂ ਜੋ ਇੱਕ ਨਵੀਂ ਭਾਵਨਾ ਦਿਖਾਈ ਜਾ ਸਕੇ ਅਤੇ ਭਾਵਨਾ ਦੇ ਅਨੁਸਾਰ ਰੰਗਾਂ ਦੀ ਵਰਤੋਂ ਕਰਨਗੇ। ਅੰਤ ਵਿੱਚ, ਉਹ ਸਾਰੇ ਚਾਰ ਫਰੇਮਾਂ ਨੂੰ ਰੂਪ-ਰੇਖਾ ਦੇਣਗੇ, ਸਾਫ਼-ਸੁਥਰਾ ਰੰਗ ਕਰਨਗੇ, ਅਤੇ ਭਾਵਨਾਵਾਂ ਦੇ ਬਦਲਾਅ ਦੀ ਇੱਕ ਛੋਟੀ ਕਹਾਣੀ ਪੂਰੀ ਕਰਨਗੇ।",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "👍 ਭੇਜੋ ਜੇ ਗਤੀਵਿਧੀ ਚੰਗੀ ਲੱਗੀ, ਜਾਂ 👎 ਜੇ ਚੰਗੀ ਨਹੀਂ ਲੱਗੀ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਟੈਕਸਟ ਜਾਂ ਵੌਇਸ ਨੋਟ ਭੇਜੋ — ਜੇ ਪਸੰਦ ਆਇਆ ਤਾਂ \"Expressive\" ਕਹੋ, ਨਹੀਂ ਆਇਆ ਤਾਂ \"Confusing\" ਕਹੋ",
+              "unguided_text": "ਤੁਸੀਂ ਇਸ ਗਤੀਵਿਧੀ ਬਾਰੇ ਕੀ ਸੋਚਦੇ ਹੋ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ ਜਾਂ ਟੈਕਸਟ ਭੇਜੋ",
+              "valid_criteria": "Expressive, Confusing",
+              "invalid_criteria": "Any word other than expressive, confusing"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਖੁਸ਼ ਚਿਹਰੇ ਦੀ ਫ਼ੋਟੋ ਭੇਜੋ",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਫ਼ੋਟੋ ਸਾਂਝੀ ਕਰੋ",
+              "valid_criteria": "A clear picture showing a happy face/expression",
+              "invalid_criteria": "No happy face, unclear image, or blank image"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਤੁਸੀਂ ਆਪਣੀ ਕਲਾਕਾਰੀ ਵਿੱਚ ਕਿਹੜੀ ਭਾਵਨਾ ਦਿਖਾਉਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ਆਪਣੀ ਕਾਮਿਕ ਸਟ੍ਰਿਪ (ਜੇ ਭਾਵਨਾਵਾਂ ਬੋਲ ਸਕਦੀਆਂ) ਦੀ ਇੱਕ ਤਸਵੀਰ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Features Express the Soul 🎭",
+      "desc": "Facial expressions",
+      "rwc": "Paper, Pencil, Eraser, Colors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 90,
+          "nm": "Can lines express every emotion? 🎭",
+          "desc": "ਵਿਦਿਆਰਥੀ ਸਟਾਈਲਾਈਜ਼ਡ ਚਿਹਰੇ ਬਣਾਉਣ ਲਈ ਚਿਹਰੇ ਦੀ ਸਰਚਨਾ ਅਤੇ ਅਨੁਪਾਤਾਂ ਦੇ ਮੂਲ ਸਿਧਾਂਤਾਂ ਨੂੰ ਸਿੱਖਣਗੇ।",
+          "yt": "Eh0uPbW_Htw",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 93,
+        "nm": "Can a drawing show feelings? 😲",
+        "qs": [
+          {
+            "q": "ਅੱਜ ਦੀ ਕਲਾ ਦੀ ਐਕਟਿਵਿਟੀ ਲਈ ਕਿਹੜੀਆਂ ਵਸਤਾਂ ਦੀ ਲੋੜ ਹੈ?",
+            "opts": {
+              "1": "Clay, sculpting tools, and glaze",
+              "2": "Canvas, paints, brushes, and palette",
+              "3": "Paper, pencil, eraser, markers, and colors"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਅਸਲ ਜ਼ਿੰਦਗੀ ਵਿੱਚ ਚਿਹਰੇ ਦੇ ਹਾਵ-ਭਾਵ ਨੂੰ ਸਮਝਣੀ ਕਿਉਂ ਜਰੂਰੀ ਹੈ?",
+            "opts": {
+              "1": "It improves communication skills",
+              "2": "It helps in becoming a professional artist",
+              "3": "It allows for better artistic creativity"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਡ੍ਰਾਇੰਗ ਐਕਟਿਵਿਟੀ ਵਿੱਚ ਖੁਸ਼ੀ ਦੇ ਹਾਵ-ਭਾਵ ਕਿਵੇਂ ਬਣਾਏ ਜਾਂਦੇ ਹਨ?",
+            "opts": {
+              "1": "By raising the eyebrows and making the eyes smaller with a big smile",
+              "2": "By slanting the eyebrows and making the mouth oval",
+              "3": "By making the eyes bigger and the mouth frowny"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਜੇ ਤੁਸੀਂ ਹੈਰਾਨੀ ਵਾਲੇ ਹਾਵ-ਭਾਵ ਵਾਲਾ کردار ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਕਿਹੜਾ ਸਿਰਜਣਾਤਮਕ ਤਰੀਕਾ ਵਰਤੋਗੇ?",
+            "opts": {
+              "1": "Draw the eyebrows raised and eyes big, with an oval mouth",
+              "2": "Draw the eyebrows slanted down and eyes small, with a frown",
+              "3": "Draw the eyebrows curved up and eyes closed, with a neutral mouth"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਆਪਣੀ ਸਿਰਜਣਾਤਮਕਤਾ ਨਾਲ, ਤੁਸੀਂ ਆਪਣੇ کردار ਦੀ ਵਾਲਾਂ ਦੀ ਸਟਾਈਲ ਕਿਵੇਂ ਬਦਲ ਸਕਦੇ ਹੋ?",
+            "opts": {
+              "1": "By keeping it the same as shown in the example",
+              "2": "By giving it a unique style that reflects the character's personality",
+              "3": "By using only straight lines for the hairstyle"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Draw-Faces-Showing-Four-Emotions-🎭-Remedial",
+          "seq": 85,
+          "nm": "Express a face",
+          "desc": "ਵਿਦਿਆਰਥੀ ਸਟਾਈਲਾਈਜ਼ਡ ਚਿਹਰੇ ਬਣਾਉਣ ਲਈ ਚਿਹਰੇ ਦੀ ਸਰਚਨਾ ਅਤੇ ਅਨੁਪਾਤਾਂ ਦੇ ਮੂਲ ਸਿਧਾਂਤਾਂ ਨੂੰ ਸਿੱਖਣਗੇ।",
+          "type": "Written",
+          "diff": "Remedial"
+        }
+      ]
+    }
+  ]
+}

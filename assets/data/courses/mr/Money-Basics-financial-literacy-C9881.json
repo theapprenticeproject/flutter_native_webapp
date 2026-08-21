@@ -1,0 +1,1130 @@
+{
+  "id": "Money-Basics-financial-literacy-C9881",
+  "nm": "Money Basics",
+  "lvl": "Level 3AK",
+  "vrt": "financial-literacy",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Money Gets a Plan 💰",
+      "desc": "Needs, Wants, Budgeting",
+      "rwc": "Pencil, Eraser",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 91,
+          "nm": "Can Ravi save fifty rupees? 💰",
+          "desc": "विद्यार्थी गरजा (Needs), इच्छा (Wants) आणि बचत लक्ष्य (Savings Goal) लिहून एक साधा बजेट तयार करतील, ज्यामुळे पैसे शहाणपणाने कसे व्यवस्थापित करायचे हे शिकतील.",
+          "yt": "kwbfdIwA69A",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 94,
+        "nm": "Can you budget your money? 💰",
+        "qs": [
+          {
+            "q": "बजेट म्हणजे काय?",
+            "opts": {
+              "1": "A list of games you like",
+              "2": "A plan for using money",
+              "3": "A box to keep money"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "यापैकी गरज कोणती आहे?",
+            "opts": { "1": "Notebook for school", "2": "Ice cream", "3": "Movie ticket" },
+            "ans": "1"
+          },
+          {
+            "q": "तुमचे उत्पन्न ₹200 आहे आणि तुम्हाला ₹50 वाचवायचे आहेत, तर तुम्ही किती खर्च करू शकता?",
+            "opts": { "1": "₹250", "2": "₹150", "3": "₹50" },
+            "ans": "2"
+          },
+          {
+            "q": "तुमच्याकडे ₹10 आहेत. तुम्ही शाळेसाठी बसचे तिकीट किंवा चॉकलेट घेऊ शकता. तुम्ही आधी काय निवडाल?",
+            "opts": { "1": "Chocolate", "2": "Both together", "3": "Bus ticket" },
+            "ans": "3"
+          },
+          {
+            "q": "तुमचे पैसे वापरण्याची योग्य क्रमवारी काय आहे?",
+            "opts": {
+              "1": "Save money first → Spend on Needs → Spend on Wants",
+              "2": "Spend on Wants → Save money → Spend on Needs",
+              "3": "Spend on Needs → Spend on Wants → Then think about saving"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-Ravi's-Weekly-Budget-Plan-💰-Basic",
+          "seq": 86,
+          "nm": "Budget Smart",
+          "desc": "विद्यार्थी गरजा (Needs), इच्छा (Wants) आणि बचत लक्ष्य (Savings Goal) लिहून एक साधा बजेट तयार करतील, ज्यामुळे पैसे शहाणपणाने कसे व्यवस्थापित करायचे हे शिकतील.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "आत्मविश्वास वाटत असेल तर ⭐ पाठवा, किंवा गोंधळलेलं वाटत असेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "तुमच्या बजेटमधील एक श्रेणीचे नाव सांगा, एका शब्दात टाइप करा किंवा व्हॉइस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "If the student types any one of the following words: Needs / Wants / Savings, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Needs / Wants / Savings, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words (e.g., \"car\", \"blue\") OR If the voice note does not include any of the following words: Needs / Wants / Savings, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "फुलांचा फोटो क्लिक करा आणि अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो क्लिक करा आणि शेअर करा!",
+              "valid_criteria": "Any Flower",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Flower"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि तुमची बजेट योजना सांगा आणि तुम्ही गरजा आणि इच्छा म्हणून काय निवडले ते सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या बजेटचा एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Needs vs Wants Sorted 🛒",
+      "desc": "Needs and Wants",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 92,
+          "nm": "Can needs beat your wants? 🛒",
+          "desc": "विद्यार्थी उदाहरणांना “गरज (Needs)” आणि “इच्छा (Wants)” या दोन स्तंभांत योग्य प्रकारे वर्गीकृत करतील आणि प्रत्येक उदाहरणासोबत छोटे-छोटे चित्र / आयकॉन काढतील, ज्यामुळे पैसे शहाणपणाने कसे वापरायचे हे समजेल.",
+          "yt": "4cgaOXNMmT4",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 95,
+        "nm": "Need or want — which wins? 🤔",
+        "qs": [
+          {
+            "q": "\"उत्पन्न\" म्हणजे काय?",
+            "opts": {
+              "1": "Money paid to buy something",
+              "2": "Money people earn by working",
+              "3": "Money borrowed from friends"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "त्यांच्या गरजा आणि इच्छा समजून घेणे का महत्त्वाचे आहे?",
+            "opts": {
+              "1": "To buy more wants",
+              "2": "To increase their total income directly",
+              "3": "To reduce unnecessary expenses and save more"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "तुमच्याकडे ₹50 आहेत आणि तुम्हाला ₹40 ची औषधे हवी आहेत पण ₹20 चे चिप्स पण हवे आहेत, तर तुम्ही काय खरेदी कराल?",
+            "opts": { "1": "Medicine first", "2": "Chips first", "3": "Nothing, just save it" },
+            "ans": "1"
+          },
+          {
+            "q": "कमी खर्च करण्यापूर्वी गरज आणि इच्छा यामध्ये निवड करताना तुम्ही कोणते कौशल्य वापरत आहात?",
+            "opts": { "1": "Creativity", "2": "Decision making", "3": "Communication" },
+            "ans": "2"
+          },
+          {
+            "q": "खर्चाचे जबाबदार वर्तन कोणते दाखवते?",
+            "opts": {
+              "1": "Spending more on video games and movies",
+              "2": "Buying expensive things only to look cool",
+              "3": "Thinking about your needs before spending"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Sort-Your-Needs-and-Wants-🛒-Remedial",
+          "seq": 87,
+          "nm": "Needs and Wants",
+          "desc": "विद्यार्थी उदाहरणांना “गरज (Needs)” आणि “इच्छा (Wants)” या दोन स्तंभांत योग्य प्रकारे वर्गीकृत करतील आणि प्रत्येक उदाहरणासोबत छोटे-छोटे चित्र / आयकॉन काढतील, ज्यामुळे पैसे शहाणपणाने कसे वापरायचे हे समजेल.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "आत्मविश्वास वाटत असेल तर ⭐ पाठवा, किंवा गोंधळलेलं वाटत असेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "एक गरज किंवा इच्छेचे उदाहरण सांगा, एका शब्दात टाइप करा किंवा व्हॉइस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "If the student types any one of the following words: Food / Toy, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Food / Toy, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Food / Toy, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "झाडाचा किंवा वृक्षाचा फोटो क्लिक करा आणि अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो क्लिक करा आणि शेअर करा!",
+              "valid_criteria": "Plant / Tree",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Plant / Tree"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि तुमच्या उपक्रमातील एक गरज आणि एक इच्छा सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या गरजा आणि इच्छा यांच्या तक्त्याचा एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Account Opens the Door 🏦",
+      "desc": "Process of opening a bank account",
+      "rwc": "Pencil, Eraser",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 93,
+          "nm": "Can five steps open accounts? 🏦",
+          "desc": "विद्यार्थी अनन्या यांच्या कथेद्वारे बँक खाते उघडण्याची टप्प्याटप्प्याने प्रक्रिया शिकतील. ते शिकतील की बँक कशी निवडावी, खाते उघडण्याचा फॉर्म कसा भरावा, आवश्यक कागदपत्रे कशी जमा करावी, KYC कशी पूर्ण करावी आणि वेलकम किट कशी मिळते. हा धडा विद्यार्थ्यांना निर्णय घेण्याच्या कौशल्यांचा वापर करून योग्य खाते प्रकार निवडण्यात आणि आवश्यक कागदपत्रे तयार करण्यात मदत करतो. उपक्रमामध्ये ते पाच टप्पे आणि आवश्यक कागदपत्रे लिहतील, ज्यामुळे ते प्रत्यक्ष आयुष्यात आत्मविश्वासाने बँक खाते उघडू शकतील.",
+          "yt": "4nVtjBhtK4M",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 96,
+        "nm": "Can you open a bank account? 🏦",
+        "qs": [
+          {
+            "q": "सामान्य लोक कोणत्या प्रकारच्या खात्यासाठी बचत करतात?",
+            "opts": {
+              "1": "Current Account",
+              "2": "Savings Account",
+              "3": "Fixed Deposit Account"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "बँक आधार कार्डासारखी कागदपत्रे का मागते?",
+            "opts": {
+              "1": "To complete KYC and confirm identity",
+              "2": "To decorate the account opening form",
+              "3": "To give extra money for free"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "तुम्हाला बँकेत खाते उघडायचे असेल तर कोणते कागदपत्र घेऊन जाल?",
+            "opts": { "1": "School ID card", "2": "Aadhaar card", "3": "Library card" },
+            "ans": "2"
+          },
+          {
+            "q": "अनन्या खाते उघडू इच्छिते. तिला बचत खाते आणि चालू खात्यामध्ये गोंधळ आहे. तिच्यासाठी कोणते चांगले आहे?",
+            "opts": {
+              "1": "Current Account, because she is a student",
+              "2": "Both are the same",
+              "3": "Savings Account, because it is for personal use"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "तुमच्या घराजवळ दोन बँका आहेत, तर तुम्ही खाते कुठे उघडावे हे कसे ठरवाल?",
+            "opts": {
+              "1": "Choose randomly",
+              "2": "Go to the bank that has the bigger building",
+              "3": "Ask family and check which bank gives better services"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Map-the-Bank-Account-Steps-🏦-Basic",
+          "seq": 88,
+          "nm": "Account Opening Guide",
+          "desc": "विद्यार्थी अनन्या यांच्या कथेद्वारे बँक खाते उघडण्याची टप्प्याटप्प्याने प्रक्रिया शिकतील. ते शिकतील की बँक कशी निवडावी, खाते उघडण्याचा फॉर्म कसा भरावा, आवश्यक कागदपत्रे कशी जमा करावी, KYC कशी पूर्ण करावी आणि वेलकम किट कशी मिळते. हा धडा विद्यार्थ्यांना निर्णय घेण्याच्या कौशल्यांचा वापर करून योग्य खाते प्रकार निवडण्यात आणि आवश्यक कागदपत्रे तयार करण्यात मदत करतो. उपक्रमामध्ये ते पाच टप्पे आणि आवश्यक कागदपत्रे लिहतील, ज्यामुळे ते प्रत्यक्ष आयुष्यात आत्मविश्वासाने बँक खाते उघडू शकतील.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "आत्मविश्वास वाटत असेल तर ⭐ पाठवा, किंवा गोंधळलेलं वाटत असेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "बँक खाते उघडण्याची एक पायरी सांगा, एका शब्दात टाइप करा किंवा व्हॉइस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "If the student types any one of the following words: KYC / Form / Documents / Visit, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: KYC / Form / Documents / Visit, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: KYC / Form / Documents / Visit, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "पुस्तकाचा फोटो क्लिक करा आणि अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो क्लिक करा आणि शेअर करा!",
+              "valid_criteria": "Book",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a book"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि बँक खाते उघडण्याच्या पायऱ्या सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या बँक खाते उघडण्याच्या पायऱ्यांच्या अ‍ॅक्टिव्हिटीचा एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Steps to the Bank 🏧",
+      "desc": "How to open a bank account?",
+      "rwc": "Pencil, Eraser, Colors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 94,
+          "nm": "Can eight steps get savings? 🏧",
+          "desc": "या उपक्रमात, विद्यार्थी बँक खाते कसे उघडायचे आणि पैशांची सुरक्षितपणे बचत करण्याचे महत्त्व शिकतील। 8 सोप्या पायऱ्यांचे पालन करून, ते समजून घेतील की बँका आपले पैसे सुरक्षित ठेवण्यास कशी मदत करतात, आपल्याला पैसे जमा करण्याची किंवा काढण्याची परवानगी देतात, आणि पासबुक व एटीएम कार्ड सारखी उपयुक्त साधने प्रदान करतात। या पाठाद्वारे, विद्यार्थी बचत (saving) आणि चालू (current) खात्यांमधील फरक समजून घेतील आणि त्यांच्या पालकांच्या मदतीने जबाबदार आर्थिक निर्णय घेणे शिकतील।",
+          "yt": "v_SeaCLc08g",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 97,
+        "nm": "Is your ATM PIN safe? 🔐",
+        "qs": [
+          {
+            "q": "एटीएम मशीनमधून पैसे काढण्यासाठी मदत करणाऱ्या कार्डचे नाव काय आहे?",
+            "opts": { "1": "Smart Card", "2": "Debit Card", "3": "Money Card" },
+            "ans": "2"
+          },
+          {
+            "q": "बचत खाते चालू खात्यापेक्षा कसे वेगळे आहे?",
+            "opts": {
+              "1": "Both are the same",
+              "2": "Saving accounts help us earn interest; current accounts are for businesses",
+              "3": "Saving accounts are only for children"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "प्रिया तिचे पहिले बँक खाते उघडू इच्छिते. बँकेत जाण्यापूर्वी तिने काय करावे?",
+            "opts": {
+              "1": "Collect her documents like Aadhaar card and photo",
+              "2": "Go to the bank and fill the form without any documents",
+              "3": "Wait for the bank staff to come home and open the account for her"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "एटीएममधील एक अनोळखी व्यक्ती तुमच्याकडून PIN विचारतो आणि म्हणतो, \"मी तुम्हाला मदत करतो.\" तुम्ही काय कराल?",
+            "opts": {
+              "1": "Share it because he seems nice",
+              "2": "Ask him to press the buttons for you",
+              "3": "Politely refuse and Call your parents"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "तुमच्या कुटुंबाला नवीन फ्रिजसाठी बचत करायची आहे, तर तुम्ही कशी मदत करू शकता?",
+            "opts": {
+              "1": "Suggest opening a saving account and adding small amounts regularly",
+              "2": "Borrow from a friend",
+              "3": "Keep the money at home in a box without tracking it"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Complete-the-Eight-Step-Guide-🏧-Remedial",
+          "seq": 89,
+          "nm": "Let’s Open a Bank Account!",
+          "desc": "या उपक्रमात, विद्यार्थी बँक खाते कसे उघडायचे आणि पैशांची सुरक्षितपणे बचत करण्याचे महत्त्व शिकतील। 8 सोप्या पायऱ्यांचे पालन करून, ते समजून घेतील की बँका आपले पैसे सुरक्षित ठेवण्यास कशी मदत करतात, आपल्याला पैसे जमा करण्याची किंवा काढण्याची परवानगी देतात, आणि पासबुक व एटीएम कार्ड सारखी उपयुक्त साधने प्रदान करतात। या पाठाद्वारे, विद्यार्थी बचत (saving) आणि चालू (current) खात्यांमधील फरक समजून घेतील आणि त्यांच्या पालकांच्या मदतीने जबाबदार आर्थिक निर्णय घेणे शिकतील।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "आत्मविश्वास वाटत असेल तर ⭐ पाठवा, किंवा गोंधळलेलं वाटत असेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "बँक खाते उघडल्यानंतर मिळणारी एक गोष्ट सांगा, एका शब्दात टाइप करा किंवा व्हॉइस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "If the student types any one of the following words: Card / Passbook / Account, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Card / Passbook / Account, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Card / Passbook / Account, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "आर्थिक साक्षरता वहीचा फोटो क्लिक करा आणि अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो क्लिक करा आणि शेअर करा!",
+              "valid_criteria": "Notebook",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Notebook"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि तुमच्या कामातून बँक खाते उघडण्याची एक पायरी सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या बँक खाते पोस्टर अ‍ॅक्टिव्हिटीचा एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "RBI Runs the Show 🏛️",
+      "desc": "Central Bank and Commercial Banks",
+      "rwc": "Pencil, Eraser",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 95,
+          "nm": "Can RBI control all banks? 🏛️",
+          "desc": "विद्यार्थी केंद्रीय बँक आणि व्यावसायिक बँक यांच्यातील फरक शाळेच्या मुख्याध्यापक आणि शिक्षक या सोप्या उदाहरणांद्वारे समजून घेतील. ते शिकतील की भारतीय रिझर्व्ह बँक (RBI) सर्व बँकांचे नियमन करते, पैसे छापते आणि बँकिंग व्यवस्था सुरक्षित ठेवते. विद्यार्थी व्यावसायिक बँका लोकांना पैसे बचत करण्यास आणि कर्ज मिळविण्यास कशाप्रकारे मदत करतात हेही जाणून घेतील. उपक्रमाद्वारे ते बँकांची ओळख करतील, लोगो काढतील आणि त्यांच्या कार्यांची यादी तयार करून पैशांबद्दल सुज्ञ निर्णय घेणे शिकतील.",
+          "yt": "Y524xgtZwvA",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 98,
+        "nm": "Who controls all the banks? 🏛️",
+        "qs": [
+          {
+            "q": "भारताचा केंद्रीय बँक कोणती आहे?",
+            "opts": {
+              "1": "State Bank of India (SBI)",
+              "2": "Reserve Bank of India (RBI)",
+              "3": "ICICI Bank"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "तुम्हाला पैसे वाचवायचे असतील किंवा दुकानासाठी कर्ज घ्यायचे असेल तर कुठे जाल?",
+            "opts": { "1": "Commercial Bank", "2": "Central Bank", "3": "Go to friends" },
+            "ans": "1"
+          },
+          {
+            "q": "केंद्रीय आणि वाणिज्य बँक यामध्ये काय फरक आहे?",
+            "opts": {
+              "1": "Commercial banks manage money, central bank provide loans",
+              "2": "Both provide services to businesses",
+              "3": "Central bank controls the country's money, commercial banks provide services to people"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "तुम्ही पैसे वाचवण्यासाठी सुरक्षित बँक निवडताना कोणता कौशल्याचा वापर करता?",
+            "opts": { "1": "Decision-making", "2": "Spending", "3": "Creativity" },
+            "ans": "1"
+          },
+          {
+            "q": "खालीलपैकी कोणते जबाबदार वर्तन दर्शवते?",
+            "opts": {
+              "1": "Giving your money to a stranger to keep safe",
+              "2": "Spending all your money quickly without saving",
+              "3": "Saving money in a trusted commercial bank that follows RBI rules"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Map-Central-and-Commercial-Banks-🏛️-Intermediate",
+          "seq": 90,
+          "nm": "Central and Commercial Banks",
+          "desc": "विद्यार्थी केंद्रीय बँक आणि व्यावसायिक बँक यांच्यातील फरक शाळेच्या मुख्याध्यापक आणि शिक्षक या सोप्या उदाहरणांद्वारे समजून घेतील. ते शिकतील की भारतीय रिझर्व्ह बँक (RBI) सर्व बँकांचे नियमन करते, पैसे छापते आणि बँकिंग व्यवस्था सुरक्षित ठेवते. विद्यार्थी व्यावसायिक बँका लोकांना पैसे बचत करण्यास आणि कर्ज मिळविण्यास कशाप्रकारे मदत करतात हेही जाणून घेतील. उपक्रमाद्वारे ते बँकांची ओळख करतील, लोगो काढतील आणि त्यांच्या कार्यांची यादी तयार करून पैशांबद्दल सुज्ञ निर्णय घेणे शिकतील.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "आत्मविश्वास वाटत असेल तर ⭐ पाठवा, किंवा गोंधळलेलं वाटत असेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "बँकेचा एक प्रकार सांगा, एका शब्दात टाइप करा किंवा व्हॉइस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "If the student types any one of the following words: Central / Commercial, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Central / Commercial, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Central / Commercial, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "पेन किंवा पेन्सिलचा फोटो क्लिक करा आणि अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो क्लिक करा आणि शेअर करा!",
+              "valid_criteria": "Pen / Pencil",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than Pen/Pencil"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि मध्यवर्ती बँक आणि व्यापारी बँक यांच्यातील एक फरक सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या सेंट्रल विरुद्ध कमर्शियल बँक अ‍ॅक्टिव्हिटीचा एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Spot the Fake Signal 🚨",
+      "desc": "Central Bank and Commercial Banks",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 96,
+          "nm": "Can you spot a fraud? 🚨",
+          "desc": "विद्यार्थी सेंट्रल बँक आणि कमर्शिअल बँक यांमधील फरक शिकतील — त्यांच्या कार्यांशी जुळवून आणि खर्‍या जीवनातील उदाहरणे ओळखून।",
+          "yt": "9GiEvCI3mVA",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 99,
+        "nm": "Which bank should you pick? 🏦",
+        "qs": [
+          {
+            "q": "भारताच्या केंद्रीय बँकेचे नाव काय आहे?",
+            "opts": {
+              "1": "Reserve Bank of India",
+              "2": "State Bank of India",
+              "3": "Bank of Baroda"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "केंद्रीय बँकेची एक मुख्य कामगिरी कोणती आहे?",
+            "opts": {
+              "1": "Give loans for homes and businesses",
+              "2": "Help people open personal bank accounts",
+              "3": "Make new notes and decide how much money should be in the country"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "तुमचे पैसे सुरक्षित ठेवण्यासाठी आणि गरजेनुसार काढण्यासाठी तुम्ही कोणत्या प्रकारच्या बँकेत जाल?",
+            "opts": { "1": "Commercial Bank", "2": "Central Bank", "3": "Local shop" },
+            "ans": "1"
+          },
+          {
+            "q": "राजूला सायकलसाठी पैसे जमवायला सुरुवात करायची आहे. त्याला ऐकले की बँका त्याचे पैसे सुरक्षित ठेवू शकतात. त्याने बचत खाते उघडण्यासाठी कोणती बँक निवडावी?",
+            "opts": { "1": "Central Bank", "2": "Commercial Bank", "3": "Toy Bank" },
+            "ans": "2"
+          },
+          {
+            "q": "नेहा बँकांबद्दल शिकत आहे आणि ती तिच्या पालकांना व्यवसाय कर्जासाठी बँक निवडण्यात मदत करू इच्छिते. त्यांना कोणता घटक सर्वात जास्त विचारात घ्यावा?",
+            "opts": {
+              "1": "The color of the bank building",
+              "2": "The number of branches the bank has",
+              "3": "The interest rate offered by the Commercial Bank for loans"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Identify-Real-and-Fake-Messages-🚨-Remedial",
+          "seq": 91,
+          "nm": "My Central and Commercial Banks",
+          "desc": "विद्यार्थी सेंट्रल बँक आणि कमर्शिअल बँक यांमधील फरक शिकतील — त्यांच्या कार्यांशी जुळवून आणि खर्‍या जीवनातील उदाहरणे ओळखून।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "आत्मविश्वास वाटत असेल तर ⭐ पाठवा, किंवा गोंधळलेलं वाटत असेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "बँकेचे एक कार्य सांगा, एका शब्दात टाइप करा किंवा व्हॉइस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "If the student types any one of the following words: Saving / Loans / Safety, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Saving / Loans / Safety, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Saving / Loans / Safety, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "कागदावर काहीतरी काढा आणि त्याचा फोटो क्लिक करून अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो क्लिक करा आणि शेअर करा!",
+              "valid_criteria": "Clear drawing photo",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a drawing photo"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि बँकेचे एक कार्य सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या सेंट्रल आणि कमर्शियल बँक सॉर्टिंग अ‍ॅक्टिव्हिटीचा एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Fraud Gets Caught 🕵️",
+      "desc": "Identify banking frauds",
+      "rwc": "Pencil, Eraser, Colors",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 97,
+          "nm": "Can fake calls steal money? 🕵️",
+          "desc": "विद्यार्थी छोटे गुप्तहेर बनून बँकिंग फसवणुकीपासून कसे सुरक्षित राहावे हे शिकतील. खऱ्या उदाहरणांद्वारे ते जाणून घेतील की बनावट कॉल, मेसेज आणि लिंक्स लोकांना कसे फसवतात. PIN, OTP किंवा बँक माहिती कधीही शेअर करू नये हे ते समजून घेतील. निर्णय-क्षमतेचा वापर करून ते कोणता मेसेज खरा आहे आणि कोणता फसवा आहे हे ओळखू शकतील. शेवटी, ते स्वत:ला आणि आपल्या कुटुंबाला फसवणुकीपासून सुरक्षित ठेवण्याचे मार्ग शिकतील.",
+          "yt": "yyFjUDPLXfM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 100,
+        "nm": "Can a call steal your money? 📞",
+        "qs": [
+          {
+            "q": "फ्रॉड कॉल म्हणजे काय?",
+            "opts": {
+              "1": "A call from a friend asking for help.",
+              "2": "A call pretending to be from a bank asking for your PIN.",
+              "3": "A call from your teacher reminding about homework."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "बँकेच्या तपशीलासाठी विचारणाऱ्या संदेशातील लिंकवर क्लिक का करू नये?",
+            "opts": {
+              "1": "It might take you to a fun game.",
+              "2": "It might connect you to your friend.",
+              "3": "It might be a trick to steal your information."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "कोणी तुम्हाला फोनवरून तुमचा एटीएम पिन विचारला तर तुम्ही काय कराल?",
+            "opts": {
+              "1": "Do not share it and tell an adult.",
+              "2": "Write it down and keep it in your bag.",
+              "3": "Share it quickly to keep your account safe."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "तुमच्या मित्राला एक संदेश येतो की त्यांनी एक बक्षीस जिंकले आहे आणि ते मिळविण्यासाठी लिंकवर क्लिक करणे आवश्यक आहे. सुरक्षित राहण्यासाठी त्याने काय करावे?",
+            "opts": {
+              "1": "Click the link right away to claim the prize.",
+              "2": "Ask a trusted adult if the message is real before clicking.",
+              "3": "Share the message with as many friends as possible."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "कोणी तरी तुम्हाला कॉल करून सांगतो की ते तुमच्या बँकेतून आहेत आणि समस्या सोडवण्यासाठी त्यांना तुमचा खात्याचा क्रमांक हवा आहे. सर्वोत्तम निर्णय काय आहे?",
+            "opts": {
+              "1": "Hang up and tell a trusted adult about the call.",
+              "2": "Give them the information quickly.",
+              "3": "Ignore the call and continue playing."
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-a-Fraud-Awareness-Poster-🕵️-Intermediate",
+          "seq": 92,
+          "nm": "Be Smart, Stay Safe!",
+          "desc": "विद्यार्थी छोटे गुप्तहेर बनून बँकिंग फसवणुकीपासून कसे सुरक्षित राहावे हे शिकतील. खऱ्या उदाहरणांद्वारे ते जाणून घेतील की बनावट कॉल, मेसेज आणि लिंक्स लोकांना कसे फसवतात. PIN, OTP किंवा बँक माहिती कधीही शेअर करू नये हे ते समजून घेतील. निर्णय-क्षमतेचा वापर करून ते कोणता मेसेज खरा आहे आणि कोणता फसवा आहे हे ओळखू शकतील. शेवटी, ते स्वत:ला आणि आपल्या कुटुंबाला फसवणुकीपासून सुरक्षित ठेवण्याचे मार्ग शिकतील.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "आत्मविश्वास वाटत असेल तर ⭐ पाठवा, किंवा गोंधळलेलं वाटत असेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "सुरक्षिततेसाठी जी गोष्ट शेअर करू नये ती एक गोष्ट सांगा, एका शब्दात टाइप करा किंवा व्हॉइस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "If the student types any one of the following words: PIN / OTP / Password, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: PIN / OTP / Password, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: PIN / OTP / Password, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "टेबल किंवा खुर्चीचा फोटो क्लिक करा आणि अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो क्लिक करा आणि शेअर करा!",
+              "valid_criteria": "Table / Chair",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Table / Chair"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि बँकिंग फसवणुकीपासून सुरक्षित राहण्यासाठी एक नियम सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या फ्रॉड डिटेक्शन अ‍ॅक्टिव्हिटीचा एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Poster Warns the World 📢",
+      "desc": "Banking Safety",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 98,
+          "nm": "Can a poster warn people? 📢",
+          "desc": "--- या ॲक्टिविटीमध्ये, विद्यार्थी बँक फसवणुकीपासून सुरक्षित राहण्यासाठी सोपे नियम शिकतील. अनोळखी कॉल किंवा संदेशांसारख्या दैनंदिन उदाहरणांद्वारे, ते सुरक्षित आणि असुरक्षित काय आहे हे ओळखतील. ते त्यांच्या पैशांचे संरक्षण कसे करावे हे समजून घेण्यासाठी एक मूलभूत काय करावे आणि काय करू नये अशी क्रमवारी लावण्याची ॲक्टिविटी पूर्ण करतील.",
+          "yt": "8H19CylX2nw",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 101,
+        "nm": "Can a message be a scam? 📱",
+        "qs": [
+          {
+            "q": "आजच्या स्क्रिप्टमध्ये सांगितलेले मुख्य उद्दिष्ट काय आहे?",
+            "opts": {
+              "1": "To identify fraud and make the right decision",
+              "2": "To learn how to earn money online",
+              "3": "To understand how bank transactions work"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "फोनवर आपला एटीएम पिन किंवा कार्ड तपशील का शेअर करू नये?",
+            "opts": {
+              "1": "Because banks never ask for these details over the phone",
+              "2": "Because it is illegal",
+              "3": "Because it is not necessary"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "संशयास्पद कॉल किंवा संदेश प्राप्त झाल्यावर आपण स्वतःचे संरक्षण कसे करू शकता?",
+            "opts": {
+              "1": "Respond quickly to avoid missing out",
+              "2": "Stop, Think, Check before taking any action",
+              "3": "Immediately hang up or delete the message"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "रोहितच्या वडिलांना एक संदेश मिळाला की त्यांनी पैसे जिंकले आणि त्यांनी लिंकवर क्लिक केले. त्याऐवजी त्यांनी काय करायला हवे होते?",
+            "opts": {
+              "1": "Call the bank to confirm his prize",
+              "2": "Share the message with friends to get their opinion",
+              "3": "Stop, Think, and Check before clicking anything"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "कल्पना करा की तुम्हाला तुमच्या बँकेचा असल्याचा दावा करणाऱ्या नंबरवरून एक संदेश येतो आणि तुमच्या CVV ची विचारणा होते. सर्वोत्तम कृती काय आहे?",
+            "opts": {
+              "1": "Reply to the message to verify its authenticity",
+              "2": "Ignore the message and report it as spam",
+              "3": "Visit your bank in person to discuss the message"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-a-Banking-Safety-Poster-📢-Remedial",
+          "seq": 93,
+          "nm": "Banking Frauds Poster",
+          "desc": "--- या ॲक्टिविटीमध्ये, विद्यार्थी बँक फसवणुकीपासून सुरक्षित राहण्यासाठी सोपे नियम शिकतील. अनोळखी कॉल किंवा संदेशांसारख्या दैनंदिन उदाहरणांद्वारे, ते सुरक्षित आणि असुरक्षित काय आहे हे ओळखतील. ते त्यांच्या पैशांचे संरक्षण कसे करावे हे समजून घेण्यासाठी एक मूलभूत काय करावे आणि काय करू नये अशी क्रमवारी लावण्याची ॲक्टिविटी पूर्ण करतील.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "आत्मविश्वास वाटत असेल तर ⭐ पाठवा, किंवा गोंधळलेलं वाटत असेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Do's and Don'ts मधून एक सुरक्षित कृती सांगा — एका शब्दात टाईप करा किंवा व्हॉइस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "If the student types any one of the following words: Check / Verify, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Check / Verify, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Check / Verify, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुमची शाळेची बॅग दाखवा आणि तिचा फोटो क्लिक करून अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो क्लिक करा आणि शेअर करा!",
+              "valid_criteria": "School bag",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a School bag"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि फसवणूक उपक्रमात तुम्ही निवडलेली एक सुरक्षित कृती सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या फ्रॉड अवेअरनेस पोस्टरचा एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Interest Grows Your Money 📈",
+      "desc": "Simple and compound interest.",
+      "rwc": "Pencil, Eraser",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 99,
+          "nm": "Can interest beat simple savings? 📈",
+          "desc": "या activity मध्ये, विद्यार्थी Interest Investigators बनतात आणि जिनलला बँकेत पैसे कसे वाढतात हे समजायला मदत करतात. विद्यार्थी व्याजाचा अर्थ शिकतात आणि सूत्रे तसेच प्रत्यक्ष जीवनातील उदाहरणांचा वापर करून साध्या व्याज आणि चक्रवाढ व्याजातील फरक शोधतात. ₹1000 कसे दोन्ही प्रकारच्या व्याजाखाली वेळोवेळी वाढते हे तुलना करून, विद्यार्थी शोधतात की चक्रवाढ व्याजाने दीर्घकालीनमध्ये अधिक कसे मिळते. गणना, तुलना, आणि निर्णय घेण्याच्या प्रक्रियेतून, विद्यार्थी जिनलला तिच्या बचतीला वाढवण्यासाठी चांगला पर्याय निवडायला मदत करतात.",
+          "yt": "U3RD7_q4H5E",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 102,
+        "nm": "Can interest grow your savings? 📈",
+        "qs": [
+          {
+            "q": "बँकिंगच्या संदर्भात व्याजाची व्याख्या काय आहे?",
+            "opts": {
+              "1": "The money you withdraw from your bank account.",
+              "2": "The extra money earned by keeping money in a bank account.",
+              "3": "The fee charged by the bank for maintaining your account."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "साध्या व्याज आणि संयोजित व्याज यामध्ये मुख्य फरक काय आहे?",
+            "opts": {
+              "1": "Simple interest is only applicable to savings accounts, while compound interest is for fixed deposits.",
+              "2": "Compound interest earns interest on interest, while simple interest does not.",
+              "3": "Simple interest is calculated annually, while compound interest is calculated monthly."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "साधे व्याज सूत्र वापरून, एका वर्षासाठी १०% दराने रु १००० वर किती व्याज मिळते?",
+            "opts": { "1": "Rs 100", "2": "Rs 100", "3": "Rs 10" },
+            "ans": "1"
+          },
+          {
+            "q": "जिनाल तीन वर्षांत तिची कमाई वाढवू इच्छिते. उदाहरणानुसार तिने कोणत्या प्रकारच्या व्याजाची निवड करावी?",
+            "opts": { "1": "Simple interest", "2": "No interest", "3": "Compound interest" },
+            "ans": "3"
+          },
+          {
+            "q": "जिनालला एका वर्षाच्या अल्पकालीन गुंतवणुकीसाठी साध्या आणि संयोजित व्याजामध्ये निवड करायची असल्यास, कोणते फायदेशीर आहे?",
+            "opts": {
+              "1": "Neither, both provide the same interest for one year.",
+              "2": "Compound interest because it accumulates more over time.",
+              "3": "Simple interest because it is easier to calculate."
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Compare-Simple-and-Compound-Interest-📈-Advanced",
+          "seq": 94,
+          "nm": "Simple Vs Compound Interest",
+          "desc": "या activity मध्ये, विद्यार्थी Interest Investigators बनतात आणि जिनलला बँकेत पैसे कसे वाढतात हे समजायला मदत करतात. विद्यार्थी व्याजाचा अर्थ शिकतात आणि सूत्रे तसेच प्रत्यक्ष जीवनातील उदाहरणांचा वापर करून साध्या व्याज आणि चक्रवाढ व्याजातील फरक शोधतात. ₹1000 कसे दोन्ही प्रकारच्या व्याजाखाली वेळोवेळी वाढते हे तुलना करून, विद्यार्थी शोधतात की चक्रवाढ व्याजाने दीर्घकालीनमध्ये अधिक कसे मिळते. गणना, तुलना, आणि निर्णय घेण्याच्या प्रक्रियेतून, विद्यार्थी जिनलला तिच्या बचतीला वाढवण्यासाठी चांगला पर्याय निवडायला मदत करतात.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "आत्मविश्वास वाटत असेल तर ⭐ पाठवा, किंवा गोंधळलेलं वाटत असेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "व्याजाचा एक प्रकार सांगा, एका शब्दात टाइप करा किंवा व्हॉइस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "If the student types any one of the following words: Simple / Compound, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Simple / Compound, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Simple / Compound, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "बाटलीचा फोटो क्लिक करा आणि अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो क्लिक करा आणि शेअर करा!",
+              "valid_criteria": "Bottle",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Bottle"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि सांगा कोणत्या प्रकारचे व्याज जास्त देते आणि का"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या व्याज गणनाच्या कामाचा एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Bank Gives Extra Back 🏦",
+      "desc": "Simple Interest",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 100,
+          "nm": "Can a bank grow money? 🏦",
+          "desc": "या अ‍ॅक्टिविटी मध्ये, विद्यार्थी व्याजाच्या संकल्पनेची ओळख करून घेतात—बचत केल्यावर बँक देणारे अतिरिक्त पैसे. एका बालसुलभ उदाहरणाद्वारे जेव्हा ते एक पिगी बँक आणि एक खऱ्या बँकेची तुलना करतात, तेव्हा विद्यार्थी समजतात की सिम्पल इंटरेस्ट एका निश्चित रकमेप्रमाणे दरवर्षी मिळते. यानंतर विद्यार्थी एक रिकाम्या जागा भरण्याचा व्यायाम पूर्ण करतात आणि त्यांनी कशासाठी बचत करायची आहे त्याचे चित्र काढतात, ज्यामुळे त्यांना व्याजाची जोड प्रत्यक्ष जीवनातील उद्दिष्टांशी करण्यास मदत होते, ते देखील एका मजेदार आणि सर्जनशील पद्धतीने.",
+          "yt": "UJ0EXN7emrY",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 103,
+        "nm": "Does a piggy bank earn interest? 🐷",
+        "qs": [
+          {
+            "q": "₹100 एका पिगी बँकेत ठेवल्यास काय होते?",
+            "opts": {
+              "1": "It stays as ₹100 only.",
+              "2": "It becomes ₹200.",
+              "3": "It grows by ₹10 every month."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "तुम्ही तुमचे पैसे बँकेत ठेवल्यास मिळणाऱ्या अतिरिक्त पैशाला काय म्हणतात?",
+            "opts": { "1": "Interest", "2": "Bonus", "3": "Allowance" },
+            "ans": "1"
+          },
+          {
+            "q": "जर तुम्ही ₹100 बँकेत ठेवले आणि त्यावर दरवर्षी ₹4 साधे व्याज मिळाले तर 1 वर्षानंतर तुमच्याकडे किती पैसे असतील?",
+            "opts": { "1": "₹104", "2": "₹100", "3": "₹110" },
+            "ans": "1"
+          },
+          {
+            "q": "अनायाकडे ₹500 आहेत. ती ते पिगी बँकेत ठेवू शकते किंवा व्याज मिळवण्यासाठी बँक खात्यात ठेवू शकते. जर तिला तिचे पैसे वाढवायचे असतील तर तिने काय करावे?",
+            "opts": {
+              "1": "Save it in a bank account to earn interest.",
+              "2": "Keep it in the piggy bank.",
+              "3": "Spend it on toys."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "रोहनला नवीन सायकल घ्यायची आहे आणि तो व्याज मिळवण्यासाठी बँकेत पैसे साठवायचा विचार करतो. त्याचा मित्र आता पैसे खर्च करण्याचा सल्ला देतो. रोहनसाठी सर्वोत्तम निर्णय काय आहे?",
+            "opts": {
+              "1": "Spend the money on something else.",
+              "2": "Save the money in the bank to earn interest for the bike.",
+              "3": "Lend the money to a friend."
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Complete-the-Simple-Interest-Activity-🏦-Remedial",
+          "seq": 95,
+          "nm": "Understanding Interest",
+          "desc": "या अ‍ॅक्टिविटी मध्ये, विद्यार्थी व्याजाच्या संकल्पनेची ओळख करून घेतात—बचत केल्यावर बँक देणारे अतिरिक्त पैसे. एका बालसुलभ उदाहरणाद्वारे जेव्हा ते एक पिगी बँक आणि एक खऱ्या बँकेची तुलना करतात, तेव्हा विद्यार्थी समजतात की सिम्पल इंटरेस्ट एका निश्चित रकमेप्रमाणे दरवर्षी मिळते. यानंतर विद्यार्थी एक रिकाम्या जागा भरण्याचा व्यायाम पूर्ण करतात आणि त्यांनी कशासाठी बचत करायची आहे त्याचे चित्र काढतात, ज्यामुळे त्यांना व्याजाची जोड प्रत्यक्ष जीवनातील उद्दिष्टांशी करण्यास मदत होते, ते देखील एका मजेदार आणि सर्जनशील पद्धतीने.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "आत्मविश्वास वाटत असेल तर ⭐ पाठवा, किंवा गोंधळलेलं वाटत असेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "पैसे बचत केल्यावर बँकेकडून काय मिळते, एका शब्दात टाइप करा किंवा व्हॉइस नोट पाठवा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "If the student types the word: Interest, then the response is valid OR If the student sends a voice note and the response includes the word: Interest, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include the word: Interest, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुम्हाला आवडणाऱ्या एखाद्या गोष्टीचा फोटो क्लिक करा आणि अपलोड करा",
+              "unguided_text": "तुमच्या आजूबाजूचा कोणताही फोटो क्लिक करा आणि शेअर करा!",
+              "valid_criteria": "Clear object photo",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Clear object photo"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि व्याज म्हणजे काय ते सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या व्याज अ‍ॅक्टिव्हिटीच्या कामाचा एक स्पष्ट फोटो काढा आणि अपलोड करा"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

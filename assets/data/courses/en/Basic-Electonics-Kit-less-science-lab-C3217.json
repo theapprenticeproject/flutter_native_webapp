@@ -1,0 +1,1024 @@
+{
+  "id": "Basic-Electonics-Kit-less-science-lab-C3217",
+  "nm": "Basic Electonics Kit-less",
+  "lvl": "Level 3AK",
+  "vrt": "science-lab",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "The Circuit's Bodyguard 🛡️",
+      "desc": "Overcurrent protection, fuse working principle, voltage–current relationship, circuit breaking, safety in electrical circuits. DC power supply, fuse, LED, ammeter (series), connecting wires, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 51,
+          "nm": "Can a Tiny Wire Save Your Circuit? 🔥",
+          "desc": "Students will create a circuit using a 2.5V DC power supply, an 18 mA fuse, and an LED. They will understand what a fuse is and observe how it protects components by breaking the circuit when current exceeds a safe limit.",
+          "yt": "jEE56n55OkQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 52,
+        "nm": "When Does the Fuse Blow? ⚡",
+        "qs": [
+          {
+            "q": "What is the main function of a fuse in a circuit?",
+            "opts": {
+              "1": "To protect devices from getting damaged by overcurrent",
+              "2": "To increase the voltage in the circuit",
+              "3": "To decrease the current in the circuit"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Why does the fuse wire melt?",
+            "opts": {
+              "1": "Because the current exceeds its maximum limit",
+              "2": "Because it is connected to the LED",
+              "3": "Because it is made of a poor conductor"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What happens when the DC supply voltage is increased to 2.1V?",
+            "opts": {
+              "1": "The circuit stops working entirely",
+              "2": "The LED shines brighter",
+              "3": "The fuse blows to protect the LED"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If a student notices that their LED is not glowing as expected in the circuit, what should they check first?",
+            "opts": {
+              "1": "The color of the LED to ensure it is correct",
+              "2": "The direction of the fuse to make sure it is polarized correctly",
+              "3": "The current flow to ensure it is within a safe range"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "A student sets up a circuit with a fuse but the LED still gets damaged. What might be the reason?",
+            "opts": {
+              "1": "The LED was connected backwards",
+              "2": "The fuse’s maximum current limit was set too high",
+              "3": "The voltage was set too low from the beginning"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Blow-the-Fuse-Safely-💥-Basic",
+          "seq": 47,
+          "nm": "Blow the Fuse Safely 💥",
+          "desc": "Students will create a circuit using a 2.5V DC power supply, an 18 mA fuse, and an LED. They will understand what a fuse is and observe how it protects components by breaking the circuit when current exceeds a safe limit.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Fuse Protection' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a charging cable or wire around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            }
+           
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "One Button to Rule the Light 💡",
+      "desc": "Current flow in a closed circuit, role of switches in circuit control, resistance limiting current, energy conservation in electrical systems. DC power supply, push button (switch), resistor, LED, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 52,
+          "nm": "Can One Button Save Energy? 🌱",
+          "desc": "Students will create a smart light control system using a push button to control electricity use. Through this hands-on project, they will learn the importance of saving energy and reducing waste. By connecting the activity to SDG 7 (Affordable and Clean Energy), students will understand how mindful energy use can contribute to a sustainable future. This project encourages students to adopt smart energy habits in their daily lives.",
+          "yt": "UQkoIwPECrU",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 53,
+        "nm": "Press It and See! 🔘",
+        "qs": [
+          {
+            "q": "What component acts as the 'gatekeeper' in the circuit built during the activity?",
+            "opts": { "1": "LED", "2": "Push button", "3": "Resistor" },
+            "ans": "2"
+          },
+          {
+            "q": "What is the main purpose of using a smart control system in the activity?",
+            "opts": {
+              "1": "To increase the brightness of the LED",
+              "2": "To make the circuit more complex",
+              "3": "To prevent unnecessary energy usage"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "How does the push button affect the LED in the circuit when pressed?",
+            "opts": { "1": "The LED blinks", "2": "The LED remains off", "3": "The LED glows" },
+            "ans": "3"
+          },
+          {
+            "q": "Riya wants to prevent unnecessary energy use in her home. What can she implement based on the activity's concept?",
+            "opts": {
+              "1": "Install more lights",
+              "2": "Remove existing light switches",
+              "3": "Use motion sensors and timers"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If the LED in your circuit does not glow, what should you check first according to the script?",
+            "opts": { "1": "LED polarity", "2": "Simulation speed", "3": "Resistor value" },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Smart-Energy-Switch-🔘-Remedial",
+          "seq": 48,
+          "nm": "Build a Smart Energy Switch 🔘",
+          "desc": "Students will create a smart light control system using a push button to control electricity use. Through this hands-on project, they will learn the importance of saving energy and reducing waste. By connecting the activity to SDG 7 (Affordable and Clean Energy), students will understand how mindful energy use can contribute to a sustainable future. This project encourages students to adopt smart energy habits in their daily lives.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Fuse Protection' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a charging cable or wire around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            }
+           
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Twist to Dim 🎚️",
+      "desc": "Variable resistance, voltage–current relationship, current–brightness relationship, energy efficiency. DC power supply, potentiometer, LED, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 53,
+          "nm": "Can You Control Light with a Knob? 🎛️",
+          "desc": "In this activity, students will simulate a circuit using a potentiometer to control the brightness of an LED and explore how different brightness levels affect energy usage. They will compare multiple settings (low, medium, high) and identify the most efficient level for everyday use. This helps students understand how adjusting energy consumption can reduce waste and supports SDG 12 – Responsible Consumption and Production.",
+          "yt": "skcS7T8pp1g",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 54,
+        "nm": "How Bright Can You Go? 💡",
+        "qs": [
+          {
+            "q": "What component can be used to control the brightness of an LED by changing resistance?",
+            "opts": { "1": "Capacitor", "2": "Inductor", "3": "Potentiometer" },
+            "ans": "3"
+          },
+          {
+            "q": "What happens to the current flow when the resistance of a potentiometer is increased?",
+            "opts": {
+              "1": "The current flow remains unchanged",
+              "2": "The current flow decreases",
+              "3": "The current flow increases"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Which component arrangement is described in the script for connecting a DC power supply, a potentiometer, and an LED?",
+            "opts": { "1": "Series", "2": "Random", "3": "Parallel" },
+            "ans": "1"
+          },
+          {
+            "q": "If you want the LED to glow dimly in your circuit simulation, what should you do with the potentiometer?",
+            "opts": {
+              "1": "Increase the resistance",
+              "2": "Decrease the resistance",
+              "3": "Remove the potentiometer"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "In the script's activity, how can you achieve maximum brightness of the LED using a potentiometer?",
+            "opts": {
+              "1": "Set the potentiometer to a low resistance setting",
+              "2": "Disconnect the potentiometer",
+              "3": "Use a higher voltage power supply"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Dial-Up-the-Glow-🎚️-Basic",
+          "seq": 49,
+          "nm": "Dial Up the Glow 🎚️",
+          "desc": "In this activity, students will simulate a circuit using a potentiometer to control the brightness of an LED and explore how different brightness levels affect energy usage. They will compare multiple settings (low, medium, high) and identify the most efficient level for everyday use. This helps students understand how adjusting energy consumption can reduce waste and supports SDG 12 – Responsible Consumption and Production.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Fuse Protection' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a charging cable or wire around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Dim Your Light, Save the Planet 🌍",
+      "desc": "Variable resistance, voltage–current relationship, current–brightness relationship, Ohm’s Law, energy efficiency. DC power supply, potentiometer, resistor, LED, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 54,
+          "nm": "Can Dimming a Light Save the Earth? 🌱",
+          "desc": "Students will be able to simulate a basic electronic circuit using ProtoCircuit to control the brightness of an LED with a potentiometer, and understand how adjusting energy consumption contributes to SDG 12 – Responsible Consumption and Production. Through this hands-on activity, students will learn how small, everyday actions like dimming lights can lead to smarter energy use and reduce environmental impact.",
+          "yt": "ys5xfiaw0Gs",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 55,
+        "nm": "Is Your Potentiometer Saving Power? ⚡",
+        "qs": [
+          {
+            "q": "What component is used in the activity to adjust the brightness of an LED?",
+            "opts": { "1": "Resistor", "2": "Potentiometer", "3": "DC power supply" },
+            "ans": "2"
+          },
+          {
+            "q": "What is the main goal of the 'Dim Your Light, Save the Planet' activity?",
+            "opts": {
+              "1": "To save energy by controlling LED brightness",
+              "2": "To learn about different types of LEDs",
+              "3": "To increase LED brightness"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What should you do if the LED blows during the simulation?",
+            "opts": {
+              "1": "Remove the potentiometer",
+              "2": "Decrease the power supply voltage",
+              "3": "Increase the resistor value to 300 ohms"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "You notice no significant change in LED brightness after adjusting the potentiometer. What should you do to fix this?",
+            "opts": {
+              "1": "Decrease the power supply voltage",
+              "2": "Increase the potentiometer’s resistance value to 4 kilo ohms",
+              "3": "Remove the resistor from the circuit"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "You are trying to apply the concept from this activity in your home. What is an example of doing this?",
+            "opts": {
+              "1": "Installing additional lights to enhance brightness",
+              "2": "Increasing the power supply to all lights",
+              "3": "Using a dimmer switch to control room lighting"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Smart-Dimmer-Challenge-🌍-Remedial",
+          "seq": 50,
+          "nm": "Smart Dimmer Challenge 🌍",
+          "desc": "Students will be able to simulate a basic electronic circuit using ProtoCircuit to control the brightness of an LED with a potentiometer, and understand how adjusting energy consumption contributes to SDG 12 – Responsible Consumption and Production. Through this hands-on activity, students will learn how small, everyday actions like dimming lights can lead to smarter energy use and reduce environmental impact.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Fuse Protection' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a charging cable or wire around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "One Way Only 🚦",
+      "desc": "One-way current flow, diode functionality, voltage–current relationship, circuit protection, basic clean energy systems. DC power supply, diode, resistor, LED, voltmeter, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 55,
+          "nm": "Can a Diode Guard Your Solar Panel? ☀️",
+          "desc": "In this activity, we’ll build a Clean Energy Indicator using a diode, LED, resistor, and voltmeter in the ProtoCircuit app. You’ll learn how a diode controls the direction of current flow — a key concept in protecting clean energy systems. This project supports SDG 13: Climate Action by helping us understand how simple circuits can make renewable energy safer and more efficient.",
+          "yt": "F-ArkHJuj60",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 56,
+        "nm": "Forward or Reverse? ⬅️",
+        "qs": [
+          {
+            "q": "What component in the circuit ensures that current flows in only one direction?",
+            "opts": { "1": "Voltmeter", "2": "Resistor", "3": "Diode" },
+            "ans": "3"
+          },
+          {
+            "q": "Why is it important for a diode to ensure unidirectional current flow in clean energy systems?",
+            "opts": {
+              "1": "To prevent energy loss and component damage",
+              "2": "To decrease voltage levels",
+              "3": "To increase energy consumption"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What happens when the diode is connected in the reverse direction in the circuit?",
+            "opts": {
+              "1": "The voltmeter shows a reading",
+              "2": "The current doesn't flow and the LED doesn't glow",
+              "3": "The current flows and the LED glows"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If you notice that your solar panel system's battery is draining overnight, which component would you check or add to solve this issue?",
+            "opts": { "1": "Resistor", "2": "Diode", "3": "LED" },
+            "ans": "2"
+          },
+          {
+            "q": "While simulating the circuit, the LED does not glow. What could be the probable reason if all connections are correct?",
+            "opts": {
+              "1": "The diode might be in reverse direction",
+              "2": "The voltmeter is disconnected",
+              "3": "The resistor value is too low"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-the-One-Way-Gate-🚦-Intermediate",
+          "seq": 51,
+          "nm": "Build the One-Way Gate 🚦",
+          "desc": "In this activity, we’ll build a Clean Energy Indicator using a diode, LED, resistor, and voltmeter in the ProtoCircuit app. You’ll learn how a diode controls the direction of current flow — a key concept in protecting clean energy systems. This project supports SDG 13: Climate Action by helping us understand how simple circuits can make renewable energy safer and more efficient.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Fuse Protection' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a charging cable or wire around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "The Current's One-Way Street 🛣️",
+      "desc": "One-way current flow, forward bias, reverse bias, diode functionality, basic circuit behavior. DC power supply, diode, LED, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 56,
+          "nm": "What Happens When You Flip the Diode? 🔄",
+          "desc": "In this activity, students will build a simple circuit using a diode, LED, resistor, and power supply in the ProtoCircuit app to observe how current flows in only one direction. They will test what happens when the diode is connected correctly and when it is reversed. This helps students understand the basic function of a diode and how it controls the flow of electricity, connecting to the idea of safe and efficient energy use (SDG 13 – Climate Action",
+          "yt": "SU_NajyRc2k",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 57,
+        "nm": "Does the Diode Block or Allow? ⚡",
+        "qs": [
+          {
+            "q": "What is the main function of a diode in a circuit?",
+            "opts": {
+              "1": "To store energy",
+              "2": "To allow current in one direction",
+              "3": "To increase voltage"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "What happens when a diode is connected in reverse bias?",
+            "opts": {
+              "1": "The LED turns off",
+              "2": "The LED glows",
+              "3": "The current increases"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How should components be arranged to simulate the circuit in ProtoCircuit?",
+            "opts": {
+              "1": "In series, one after another",
+              "2": "In parallel, side by side",
+              "3": "In a triangular configuration"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "If the LED is not glowing, what could be a possible issue in the circuit?",
+            "opts": {
+              "1": "The DC power supply is too high",
+              "2": "The diode is in reverse bias",
+              "3": "The diode is in forward bias"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "How can you verify if the diode is functioning correctly in the circuit?",
+            "opts": {
+              "1": "Check if the LED glows with the diode in forward bias",
+              "2": "Increase the voltage to see if the LED glows",
+              "3": "Observe if the current flows in both directions"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Flip-the-Diode-and-Find-Out-🔄-Remedial",
+          "seq": 52,
+          "nm": "Flip the Diode and Find Out 🔄",
+          "desc": "In this activity, students will build a simple circuit using a diode, LED, resistor, and power supply in the ProtoCircuit app to observe how current flows in only one direction. They will test what happens when the diode is connected correctly and when it is reversed. This helps students understand the basic function of a diode and how it controls the flow of electricity, connecting to the idea of safe and efficient energy use (SDG 13 – Climate Action",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Fuse Protection' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a charging cable or wire around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Ohm's Law in Action 📐",
+      "desc": "Ohm’s Law (V = I × R), voltage–current relationship, resistance variation, current–brightness relationship, measurement and observation. DC power supply, potentiometer, LED, ammeter (series), voltmeter (parallel), simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 57,
+          "nm": "Can Math Predict Your LED's Brightness? 🔢",
+          "desc": "In this activity, students will design and analyze a circuit where a potentiometer controls the brightness of an LED by varying current. They will measure current at different resistance levels and use their observations to understand the relationship between voltage, current, and resistance. Students will also explore how adding a fixed resistor can help control excess current, making the circuit safer and more stable.",
+          "yt": "4H1wCaLc8mg",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 58,
+        "nm": "Voltage, Current, Resistance — Can You Crack It? 📐",
+        "qs": [
+          {
+            "q": "What happens to the current when the resistance in a circuit increases, assuming constant voltage?",
+            "opts": {
+              "1": "The current decreases",
+              "2": "The current remains the same",
+              "3": "The current increases"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Which of the following components is used to control the brightness of an LED in the described circuit?",
+            "opts": { "1": "Potentiometer", "2": "Voltmeter", "3": "Ammeter" },
+            "ans": "1"
+          },
+          {
+            "q": "According to the script, what is the resistance when the potentiometer is adjusted to 0.2?",
+            "opts": { "1": "30 ohms", "2": "150 ohms", "3": "96 ohms" },
+            "ans": "1"
+          },
+          {
+            "q": "You are tasked with building the same circuit, but the LED does not glow. Which step might you have missed?",
+            "opts": {
+              "1": "Connecting the voltmeter across the LED",
+              "2": "Ensuring the current flows in the expected direction for the ammeter",
+              "3": "Changing the potentiometer resistance to 150 ohms"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If the LED in your circuit is not dimming as expected, which component's setting should you adjust?",
+            "opts": { "1": "The voltmeter", "2": "The potentiometer", "3": "The ammeter" },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Prove-Ohm's-Law-Yourself-📐-Intermediate",
+          "seq": 53,
+          "nm": "Prove Ohm's Law Yourself 📐",
+          "desc": "In this activity, students will design and analyze a circuit where a potentiometer controls the brightness of an LED by varying current. They will measure current at different resistance levels and use their observations to understand the relationship between voltage, current, and resistance. Students will also explore how adding a fixed resistor can help control excess current, making the circuit safer and more stable.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Fuse Protection' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a charging cable or wire around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "The Brightness Dial Experiment 🎛️",
+      "desc": "Potentiometer, LED, Variable resistor, Current measurement, Ammeter, Current limiting",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 58,
+          "nm": "Can a Spinning Knob Control Your LED? 🌀",
+          "desc": "Students will use a potentiometer as a variable resistor in series with an LED and sweep the knob to change brightness. They will record ammeter readings at low and high settings, using a fixed series resistor if needed to limit current.",
+          "yt": "mAKH9fLAcMM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 59,
+        "nm": "High Resistance or Low — What Wins? 🎚️",
+        "qs": [
+          {
+            "q": "What is a potentiometer?",
+            "opts": {
+              "1": "A variable resistor",
+              "2": "A type of capacitor",
+              "3": "A fixed resistor"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How does increasing the resistance of the potentiometer affect the LED?",
+            "opts": {
+              "1": "The LED flickers",
+              "2": "The LED becomes brighter",
+              "3": "The LED becomes dimmer"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If the potentiometer is set to low resistance, what happens to the current in the circuit?",
+            "opts": {
+              "1": "The current increases",
+              "2": "The current decreases",
+              "3": "The current stops"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "In ProtoCircuit, what should you do if the ammeter shows a negative reading?",
+            "opts": {
+              "1": "Replace the ammeter",
+              "2": "Rotate its orientation",
+              "3": "Increase the voltage"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "How can you demonstrate problem-solving skills using the potentiometer circuit in the ProtoCircuit app?",
+            "opts": {
+              "1": "By adjusting the potentiometer to achieve desired LED brightness and analyzing the changes",
+              "2": "By memorizing the circuit diagram",
+              "3": "By connecting additional LEDs to the circuit"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Spin-the-Knob,-Change-the-Glow-🎛️-Remedial",
+          "seq": 54,
+          "nm": "Spin the Knob, Change the Glow 🎛️",
+          "desc": "Students will use a potentiometer as a variable resistor in series with an LED and sweep the knob to change brightness. They will record ammeter readings at low and high settings, using a fixed series resistor if needed to limit current.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Fuse Protection' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a charging cable or wire around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "The Delay Game ⏳",
+      "desc": "Capacitance, charging and discharging of a capacitor, time delay in circuits, energy storage, relationship between capacitance and discharge time. DC power supply, resistor, polarized capacitor, LED, SPST switch, simulate.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 59,
+          "nm": "Can a Circuit Remember to Glow? ⏳",
+          "desc": "Students will design a circuit where they can control how long an LED stays ON after the switch is released by adjusting capacitance and resistance. They will compare multiple configurations and analyze how RC values affect delay time, helping them understand timing circuits used in real-world devices like automatic lights and alarms.",
+          "yt": "ELHfzOLPjtI",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 60,
+        "nm": "Which Capacitor Holds On Longer? ⏱️",
+        "qs": [
+          {
+            "q": "What happens to the LED in the circuit when the capacitor is charging?",
+            "opts": {
+              "1": "The LED glows brightly at first.",
+              "2": "The LED does not glow at first.",
+              "3": "The LED flickers at first."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Which component in the circuit is responsible for the delayed turning off of the LED?",
+            "opts": { "1": "The resistor", "2": "The DC power supply", "3": "The capacitor" },
+            "ans": "3"
+          },
+          {
+            "q": "If you want the LED to stay on longer after switching off, what should you do?",
+            "opts": {
+              "1": "Decrease the resistance of the resistor",
+              "2": "Use a stronger DC power supply",
+              "3": "Increase the capacitance of the capacitor"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "You simulate a circuit in ProtoCircuit and notice the LED turns off too quickly after switching off. What could be a solution to increase the delay?",
+            "opts": {
+              "1": "Use a resistor with higher resistance.",
+              "2": "Add another LED in series with the existing one.",
+              "3": "Replace the capacitor with one that has a higher capacitance value."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "While troubleshooting, you find that the LED in your circuit never turns off even after switching off. What could be the problem?",
+            "opts": {
+              "1": "The switch is malfunctioning.",
+              "2": "The capacitor is constantly discharging into the LED.",
+              "3": "The resistor is not properly connected."
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Race-the-Capacitors-🏁-Advanced",
+          "seq": 55,
+          "nm": "Race the Capacitors 🏁",
+          "desc": "Students will design a circuit where they can control how long an LED stays ON after the switch is released by adjusting capacitance and resistance. They will compare multiple configurations and analyze how RC values affect delay time, helping them understand timing circuits used in real-world devices like automatic lights and alarms.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Fuse Protection' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a charging cable or wire around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Store It, Glow It! 🔋",
+      "desc": "Capacitors, voltage smoothing, energy storage, LED operation, push-to-charge circuits. DC power supply, LED, resistor, polarized capacitor, SPST switch.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 60,
+          "nm": "Can a Tiny Component Store Power? ⚡",
+          "desc": "Students will learn how to create and simulate a simple circuit using a capacitor to keep an LED glowing for a short time even after turning off the switch. They will also explore how to adjust the capacitor's capacitance to change the LED's discharge time.",
+          "yt": "vuk4Dl3NoC0",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 61,
+        "nm": "How Long Does Your Capacitor Last? 🔋",
+        "qs": [
+          {
+            "q": "What is the main function of a capacitor ?",
+            "opts": {
+              "1": "To act as a switch",
+              "2": "To store electricity for a short time",
+              "3": "To supply power to the circuit continuously"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Why does an LED continue to glow for a short time even after the switch is turned off?",
+            "opts": {
+              "1": "Because the capacitor discharges its stored energy",
+              "2": "Because the resistor keeps supplying power",
+              "3": "Because the LED is a self-powered component"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What effect does increasing the capacitor value have on the LED's glow time after the switch is opened?",
+            "opts": {
+              "1": "The LED stops glowing immediately",
+              "2": "The LED glows for a shorter time",
+              "3": "The LED glows for a longer time"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "You notice that the LED in your ProtoCircuit simulation does not stay on after turning off the switch. What could be a potential problem ?",
+            "opts": {
+              "1": "The DC power supply is insufficient",
+              "2": "The resistor value is too high",
+              "3": "The capacitor might not be properly connected"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "During the simulation, if the LED does not glow at all, what could be a possible solution using problem-solving skills?",
+            "opts": {
+              "1": "Check all connections to ensure they match the described circuit",
+              "2": "Use a different type of LED",
+              "3": "Increase the DC power supply voltage"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-the-Glow-After-Off-Circuit-🔋-Remedial",
+          "seq": 56,
+          "nm": "Build the Glow-After-Off Circuit 🔋",
+          "desc": "Students will learn how to create and simulate a simple circuit using a capacitor to keep an LED glowing for a short time even after turning off the switch. They will also explore how to adjust the capacitor's capacitance to change the LED's discharge time.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Fuse Protection' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Fuse'.",
+              "invalid_criteria": "Anything other than the word 'Fuse'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a charging cable or wire around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains a charging cable or any electrical wire.",
+              "invalid_criteria": "Anything other than a charging cable or wire."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

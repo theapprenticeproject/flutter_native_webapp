@@ -1,0 +1,116 @@
+{
+  "courses": [
+    {
+      "id": "Adult-Finance-financial-literacy-C12267",
+      "nm": "Adult Finance",
+      "lvl": "Level 3AK",
+      "vrt": "financial-literacy",
+      "kit_less": false,
+      "units_count": 10
+    },
+    {
+      "id": "Advanced-Art-Techniques-arts-C7982",
+      "nm": "Advanced Art Techniques",
+      "lvl": "Level 3AK",
+      "vrt": "arts",
+      "kit_less": false,
+      "units_count": 10
+    },
+    {
+      "id": "Advanced-Electronics-Kit-Less-science-lab-C5125",
+      "nm": "Advanced Electronics Kit-Less",
+      "lvl": "Level 3AK",
+      "vrt": "science-lab",
+      "kit_less": false,
+      "units_count": 10
+    },
+    {
+      "id": "Advanced-Electronics-science-lab-C4178",
+      "nm": "Advanced Electronics",
+      "lvl": "Level 3AK",
+      "vrt": "science-lab",
+      "kit_less": false,
+      "units_count": 10
+    },
+    {
+      "id": "Basic-Art-Skills-arts-C6083",
+      "nm": "Basic Art Skills",
+      "lvl": "Level 3AK",
+      "vrt": "arts",
+      "kit_less": false,
+      "units_count": 10
+    },
+    {
+      "id": "Basic-Electonics-Kit-less-science-lab-C3217",
+      "nm": "Basic Electonics Kit-less",
+      "lvl": "Level 3AK",
+      "vrt": "science-lab",
+      "kit_less": false,
+      "units_count": 10
+    },
+    {
+      "id": "Basic-Electronics-science-lab-C2258",
+      "nm": "Basic Electronics",
+      "lvl": "Level 3AK",
+      "vrt": "science-lab",
+      "kit_less": false,
+      "units_count": 10
+    },
+    {
+      "id": "Intermediate-Art-arts-C7031",
+      "nm": "Intermediate Art",
+      "lvl": "Level 3AK",
+      "vrt": "arts",
+      "kit_less": false,
+      "units_count": 10
+    },
+    {
+      "id": "Master-Art-&-Expression-arts-C8933",
+      "nm": "Master Art & Expression",
+      "lvl": "Level 3AK",
+      "vrt": "arts",
+      "kit_less": false,
+      "units_count": 10
+    },
+    {
+      "id": "Money-Basics-financial-literacy-C9881",
+      "nm": "Money Basics",
+      "lvl": "Level 3AK",
+      "vrt": "financial-literacy",
+      "kit_less": false,
+      "units_count": 10
+    },
+    {
+      "id": "OctoStudio-coding-C1567",
+      "nm": "OctoStudio",
+      "lvl": "Level 3AK",
+      "vrt": "coding",
+      "kit_less": false,
+      "units_count": 7
+    },
+    {
+      "id": "Real-Life-Money-financial-literacy-C11761",
+      "nm": "Real-Life Money",
+      "lvl": "Level 3AK",
+      "vrt": "financial-literacy",
+      "kit_less": false,
+      "units_count": 10
+    },
+    {
+      "id": "Scratch-Jr-coding-C0078",
+      "nm": "Scratch Jr",
+      "lvl": "Level 3AK",
+      "vrt": "coding",
+      "kit_less": false,
+      "units_count": 10
+    },
+    {
+      "id": "Smart-Savings-financial-literacy-C10813",
+      "nm": "Smart Savings",
+      "lvl": "Level 3AK",
+      "vrt": "financial-literacy",
+      "kit_less": false,
+      "units_count": 10
+    }
+  ]
+}

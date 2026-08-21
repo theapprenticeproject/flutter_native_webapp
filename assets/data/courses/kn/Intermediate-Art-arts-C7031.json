@@ -1,0 +1,1180 @@
+{
+  "id": "Intermediate-Art-arts-C7031",
+  "nm": "Intermediate Art",
+  "lvl": "Level 3AK",
+  "vrt": "arts",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Lines Make a Mandala 🔵",
+      "desc": "Lines Mandala art",
+      "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 71,
+          "nm": "Can lines build a mandala? 🔵",
+          "desc": "In this activity, students will learn about the first element of art, line, and create a mandala using different types of lines.",
+          "yt": "zOUtn4wSEuE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 72,
+        "nm": "Can circles become mandalas? 🔵",
+        "qs": [
+          {
+            "q": "ಸಂಸ್ಕೃತದಲ್ಲಿ 'ಮಂಡಲ' ಪದದ ಅರ್ಥ ಏನು?",
+            "opts": { "1": "ಕಲೆ", "2": "ಮಾದರಿ", "3": "ವೃತ್ತ" },
+            "ans": "3"
+          },
+          {
+            "q": "ಮಂಡಲ ಕಲೆ ವ್ಯಕ್ತಿಗಳಿಗೆ ಹೇಗೆ ಪ್ರಯೋಜನಕಾರಿ?",
+            "opts": {
+              "1": "ತಾಳ್ಮೆ ಮತ್ತು ಏಕಾಗ್ರತೆ ಹೆಚ್ಚಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ",
+              "2": "ಗಣಿತ ಕೌಶಲ್ಯ ಸುಧಾರಿಸುತ್ತದೆ",
+              "3": "ಮುಂದುವರಿದ ಚಿತ್ರಕಲೆ ತಂತ್ರಗಳನ್ನು ಕಲಿಸುತ್ತದೆ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಈ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಮುಖ್ಯವಾಗಿ ಯಾವ ಕಲಾ ಅಂಶಕ್ಕೆ ಗಮನ ನೀಡಲಾಗಿದೆ?",
+            "opts": { "1": "ಬಣ್ಣಗಳು", "2": "ರೇಖೆಗಳು", "3": "ಟೆಕ್ಸ್ಚರ್‌ಗಳು" },
+            "ans": "2"
+          },
+          {
+            "q": "ಮೀನಿನ ಆಕಾರದ ಮಂಡಲ ಕಲಾಕೃತಿ ರಚಿಸಬೇಕಿದ್ದರೆ, ಮೊದಲ ಹಂತ ಯಾವುದು?",
+            "opts": {
+              "1": "ವಿನ್ಯಾಸವನ್ನು ಮಾದರಿಗಳಿಂದ ತುಂಬಿ",
+              "2": "ರೇಖಾಚಿತ್ರವನ್ನು ಪ್ರಕಾಶಮಾನ ಬಣ್ಣಗಳಿಂದ ಬಣ್ಣಿಸಿ",
+              "3": "ಪೆನ್ಸಿಲ್‌ನಿಂದ ರೂಪರೇಖೆ ಬಿಡಿಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಶಾಂತಿ ಭಾವ ಪ್ರತಿನಿಧಿಸುವ ಮಂಡಲ ಕಲಾಕೃತಿ ರಚಿಸಬೇಕಿದ್ದರೆ, ಸೃಜನಾತ್ಮಕವಾಗಿ ಯಾವ ಅಂಶಗಳಿಗೆ ಗಮನ ನೀಡುವಿರಿ?",
+            "opts": {
+              "1": "ದಟ್ಟ ಟೆಕ್ಸ್ಚರ್ ಮತ್ತು ಗಾಢ ನೆರಳು",
+              "2": "ಮೃದು, ಬಾಗಿದ ರೇಖೆಗಳು ಮತ್ತು ತಂಪು ಬಣ್ಣಗಳು",
+              "3": "ಪ್ರಕಾಶಮಾನ, ವಿರೋಧಾಭಾಸ ಬಣ್ಣಗಳು ಮತ್ತು ಜಿಗ್-ಜ್ಯಾಗ್ ರೇಖೆಗಳು"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Bird-Mandala-Art-🔵-Basic",
+          "seq": 67,
+          "nm": "Create a Bird Mandala Art 🔵",
+          "desc": "In this activity, students will learn about the first element of art, line, and create a mandala using different types of lines.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಮಂಡಲದಲ್ಲಿ ಬಳಸಿದ ಒಂದು ಬಗೆಯ ರೇಖೆಯ ಹೆಸರು ಹೇಳಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mention of any type of line like Straight, Curved, Zig-zag (Typed or spoken)",
+              "invalid_criteria": "Mention of any unrelated words (e.g., “flower”, “color”) \nOR\nAny other word apart from the ones related to line"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "arts",
+              "unguided_text": "Synced",
+              "valid_criteria": "A clear photo of any object showing visible patterns (like checks on clothes, flowers on tiles, vines on leaves, etc.)",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of an object without visible patterns"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನೀವು ಕಲಿತ ಒಂದು ಹೊಸ ಪರಿಕಲ್ಪನೆ ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ವಿಭಿನ್ನ ರೇಖೆಗಳನ್ನು ಬಳಸಿ ನೀವು ರಚಿಸಿದ ಮಂಡಲದ ಸ್ಪಷ್ಟ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Circles Grow Outward 🌀",
+      "desc": "Lines Mandala art",
+      "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 72,
+          "nm": "Can circles grow into mandalas? 🌀",
+          "desc": "In this activity, students will observe and use at least three patterns to create simple circular mandalas.",
+          "yt": "Qwq4fr4VEnU",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 73,
+        "nm": "Can you draw a perfect mandala? ⭕",
+        "qs": [
+          {
+            "q": "ಸರಳ ಮಂಡಲ ಪ್ರಾರಂಭಿಸಲು ಬಳಸುವ ಆರಂಭಿಕ ಆಕಾರ ಯಾವುದು?",
+            "opts": { "1": "ತ್ರಿಕೋಣ", "2": "ಚೌಕ", "3": "ವೃತ್ತ" },
+            "ans": "3"
+          },
+          {
+            "q": "ಮಂಡಲ ರಚಿಸುವಾಗ ಏಕರೂಪತೆ ಕಾಪಾಡುವುದು ಯಾಕೆ ಮುಖ್ಯ?",
+            "opts": {
+              "1": "ಮಂಡಲ ಬಣ್ಣದಾಯಕ ಆಗಿರಲಿ ಎಂದು",
+              "2": "ಕಡಿಮೆ ಬಣ್ಣಗಳ ಬಳಕೆಗೆ ಸಹಾಯ ಮಾಡಲು",
+              "3": "ಮಾದರಿಗಳು ಒಂದೇ ದೂರ ಮತ್ತು ಗಾತ್ರದಲ್ಲಿ ಇರಲು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಮಂಡಲದಲ್ಲಿ ಅನೇಕ ವೃತ್ತಗಳನ್ನು ಬಿಡಿಸಲು ಯಾವ ಸಾಧನ ಬಳಸಬಹುದು?",
+            "opts": { "1": "ಕಂಪಾಸ್", "2": "ರೂಲರ್", "3": "ಪ್ರೊಟ್ರ್ಯಾಕ್ಟರ್" },
+            "ans": "1"
+          },
+          {
+            "q": "ನೈಸರ್ಗಿಕ ಅಂಶಗಳಿಂದ ಪ್ರೇರಿತ ಮಂಡಲ ರಚಿಸಬೇಕಿದ್ದರೆ, ಯಾವುದನ್ನು ಸೇರಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಡಿಜಿಟಲ್ ಮಾದರಿಗಳು",
+              "2": "ಎಲೆಯಂತಹ ಬಳ್ಳಿ ಬಾಗಿದ ರೇಖೆಗಳು",
+              "3": "ಜ್ಯಾಮಿತೀಯ ಆಕಾರಗಳು ಮಾತ್ರ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ನಿಮ್ಮ ಮಂಡಲ ವಿನ್ಯಾಸದಲ್ಲಿ 'ಕಾಜು ಕತ್ಲಿ' ಪರಿಕಲ್ಪನೆ ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೇಗೆ ಸೇರಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಮಂಡಲ ಸುತ್ತ ಚೌಕ ಗಡಿ ಸೇರಿಸಿ",
+              "2": "ಒಂದು ಪದರಕ್ಕೆ ಅರ್ಧ-ವಜ್ರ ಆಕಾರ ಬಳಸಿ",
+              "3": "ಪ್ರತಿ ವಿಭಾಗವನ್ನು ಒಂದೇ ಬಣ್ಣದಿಂದ ಬಣ್ಣಿಸಿ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Draw-a-Patterned-Circle-Mandala-🌀-Remedial",
+          "seq": 68,
+          "nm": "Draw a Patterned Circle Mandala 🌀",
+          "desc": "In this activity, students will observe and use at least three patterns to create simple circular mandalas.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಮಂಡಲ ಕಲೆ ನಿಮಗೆ ಯಾವ ಭಾವನೆ ಉಂಟು ಮಾಡಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ ಎಂದು ಹಂಚಿಕೊಳ್ಳಿ.",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mentions calm / relaxed / peaceful / focused",
+              "invalid_criteria": "Mention of any unrelated/vague answers like \"good\", \"art & drawing\" etc"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "arts",
+              "unguided_text": "Synced",
+              "valid_criteria": "A clear photo of any object showing visible patterns (like checks on clothes, flowers on tiles, vines on leaves, etc.)",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of an object without visible patterns"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಮಂಡಲದಲ್ಲಿ ಮಾದರಿಗಳನ್ನು ಹೇಗೆ ರಚಿಸಬಹುದು ಎಂದು ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಮಂಡಲ ಕಲಾಕೃತಿಯ ಸ್ಪಷ್ಟ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Paper Folds into Life 🍃",
+      "desc": "Origami Paper Craft",
+      "rwc": "Origami Papers, Sketchpens, Glue",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 73,
+          "nm": "Can paper fold into flowers? 🍃",
+          "desc": "In this activity, students will create an attractive bookmark using origami techniques.",
+          "yt": "-sIhmVit5G4",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 74,
+        "nm": "Can craft become a message? 🎀",
+        "qs": [
+          {
+            "q": "ಹ್ಯಾಂಗಿಂಗ್ ಡೆಕರ್ ಯೋಜನೆಯ ಮುಖ್ಯ ವಿಷಯ ಯಾವುದು?",
+            "opts": { "1": "ಪ್ರಕೃತಿ", "2": "ಬಾಹ್ಯಾಕಾಶ", "3": "ತಂತ್ರಜ್ಞಾನ" },
+            "ans": "1"
+          },
+          {
+            "q": "ಅಲಂಕಾರ ರಚಿಸುವಲ್ಲಿ ಮುಖ್ಯವಾಗಿ ಯಾವ ಕೌಶಲ್ಯ ಒತ್ತಿ ಹೇಳಲಾಗಿದೆ?",
+            "opts": { "1": "ಗಣಿತ", "2": "ಇತಿಹಾಸ", "3": "ಸೃಜನಾತ್ಮಕತೆ" },
+            "ans": "3"
+          },
+          {
+            "q": "ಈ ಚಟುವಟಿಕೆಯ ಭಾಗವಲ್ಲದ ತಂತ್ರ ಯಾವುದು?",
+            "opts": { "1": "ಕಾಗದ ಮಡಿಸುವುದು", "2": "ಕಾಗದ ಕತ್ತರಿಸುವುದು", "3": "ಮರ ಕೆತ್ತನೆ" },
+            "ans": "3"
+          },
+          {
+            "q": "ವಿದ್ಯಾರ್ಥಿ ತಮ್ಮ ಕಲ್ಪನೆ ಬಳಸಿ ಅಲಂಕಾರ ರಚಿಸಬೇಕಿದ್ದರೆ ಮುಖ್ಯವಾಗಿ ಯಾವ ಕೌಶಲ್ಯ ಬಳಸಬೇಕು?",
+            "opts": { "1": "ಸಂವಹನ", "2": "ಸೃಜನಾತ್ಮಕತೆ", "3": "ವಿಶ್ಲೇಷಣೆ" },
+            "ans": "2"
+          },
+          {
+            "q": "ನಾಚಿಕೆಪಡುವ ವಿದ್ಯಾರ್ಥಿ ತಮ್ಮ ಕಲಾಕೃತಿಯನ್ನು ವೀಡಿಯೊದಲ್ಲಿ ಪರಿಣಾಮಕಾರಿಯಾಗಿ ತಿಳಿಸಲು ಹೇಗೆ?",
+            "opts": {
+              "1": "ಕೆಲಸದ ಐತಿಹಾಸಿಕ ಸಂದರ್ಭ ಚರ್ಚಿಸಿ",
+              "2": "ತಮ್ಮ ಹೆಸರು, ತರಗತಿ ಮತ್ತು ಹ್ಯಾಂಗಿಂಗ್‌ನ ನೆಚ್ಚಿನ ಭಾಗ ಉಲ್ಲೇಖಿಸಿ",
+              "3": "ಮಾತನಾಡದೆ ಇರಿ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Nature-Inspired-Wall-Hanging-🍃-Basic",
+          "seq": 69,
+          "nm": "Make a Nature Inspired Wall Hanging 🍃",
+          "desc": "In this activity, students will create an attractive bookmark using origami techniques.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mentions folding / cutting / creativity / paper folding",
+              "invalid_criteria": "Mention of any unrelated or vague words like “art”, “fun”"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "arts",
+              "unguided_text": "Synced",
+              "valid_criteria": "A clear photo of any book",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of an object which is not a book"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಇಂದಿನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನೀವು ಕಲಿತ ಒಂದು ಹೊಸ ಪರಿಕಲ್ಪನೆ ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ origami bookmark ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Tulips Rise from Folds 🌷",
+      "desc": "Origami Paper Craft",
+      "rwc": "Origami Papers, Sketchpens, Glue",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 74,
+          "nm": "Can folds make tulips bloom? 🌷",
+          "desc": "In this activity, students will learn the technique of folding origami paper and create three flowers using different colors and combinations.",
+          "yt": "c34PaTD9Y78",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 75,
+        "nm": "Can old paper become origami? 🌷",
+        "qs": [
+          {
+            "q": "ಒರಿಗಾಮಿ ವಸ್ತುಗಳು ರಚಿಸಲು ಅಗತ್ಯವಾದ ಮುಖ್ಯ ವಸ್ತು ಯಾವುದು?",
+            "opts": { "1": "ಕತ್ತರಿ", "2": "ಗೋಂದು", "3": "ಕಾಗದ" },
+            "ans": "3"
+          },
+          {
+            "q": "SDG 12 ರ ಪ್ರಾಥಮಿಕ ಗುರಿ ಯಾವುದು?",
+            "opts": {
+              "1": "ತ್ಯಾಜ್ಯ ಕಡಿಮೆ ಮಾಡಿ ಸರಳ ವಸ್ತುಗಳಿಂದ ಸೃಜನಾತ್ಮಕ ವಸ್ತುಗಳನ್ನು ರಚಿಸಿ",
+              "2": "ಸಂಕೀರ್ಣ ವಸ್ತುಗಳ ಬಳಕೆ ಉತ್ತೇಜಿಸಿ",
+              "3": "ಹೊಸ ಉತ್ಪನ್ನಗಳ ಬಳಕೆ ಹೆಚ್ಚಿಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಒರಿಗಾಮಿ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿ ಮಡಿಕೆಗಳು ಅಚ್ಚುಕಟ್ಟಾಗಿ ಮತ್ತು ವಾಸ್ತವಿಕವಾಗಿ ಕಾಣಿಸಲು ಏನು ಮಹತ್ವಪೂರ್ಣ?",
+            "opts": {
+              "1": "ಮಡಿಕೆಗಳನ್ನು ಅಚ್ಚುಕಟ್ಟಾಗಿ ಒತ್ತಿ",
+              "2": "ತುದಿಗಳನ್ನು ಕತ್ತರಿಸಲು ಕತ್ತರಿ ಬಳಸಿ",
+              "3": "ಹೆಚ್ಚಿನ ಗೋಂದನ್ನು ಸೇರಿಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಟ್ಯೂಲಿಪ್ ಮೀರಿ ಅನನ್ಯ ಒರಿಗಾಮಿ ಆಕಾರ ರಚಿಸಬೇಕಿದ್ದರೆ, ಯಾವ ಕೌಶಲ್ಯ ಅತ್ಯಂತ ಸಹಾಯಕ?",
+            "opts": {
+              "1": "ದುಬಾರಿ ವಸ್ತುಗಳ ಬಳಕೆ",
+              "2": "ಅದೇ ಹಂತಗಳನ್ನು ಕಟ್ಟುನಿಟ್ಟಾಗಿ ಅನುಸರಿಸಿ",
+              "3": "ಮಡಿಕೆ ತಂತ್ರಗಳಲ್ಲಿ ಸೃಜನಾತ್ಮಕತೆ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನ ತತ್ವಗಳ ಆಧಾರದ ಮೇಲೆ ಹಳೆಯ ನಿಯತಕಾಲಿಕೆ ಕಾಗದವನ್ನು ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೇಗೆ ಬಳಸಬಹುದು?",
+            "opts": {
+              "1": "ಜಾಗ ಮಾಡಲು ಬಿಸಾಡಿ",
+              "2": "ಕಾನ್ಫೆಟ್ಟಿಯಾಗಿ ಕತ್ತರಿಸಿ",
+              "3": "ಒರಿಗಾಮಿ ಕಲೆಯಾಗಿ ಮಡಿಸಿ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Fold-Three-Origami-Tulips-🌷-Remedial",
+          "seq": 70,
+          "nm": "Fold Three Origami Tulips 🌷",
+          "desc": "In this activity, students will learn the technique of folding origami paper and create three flowers using different colors and combinations.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ನಿಮ್ಮ ಹೂವು ತಯಾರಿಸಲು ನೀವು ಯಾವ ತಂತ್ರ ಬಳಸಿದಿರಿ?",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mention of origami / paper folding / folding technique",
+              "invalid_criteria": "Mention of any unrelated words\nExample: “drawing”, “coloring”, random words"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "arts",
+              "unguided_text": "Synced",
+              "valid_criteria": "A clear photo of any flower",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of an object which is not a flower"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು - origami ಅನ್ನು ವಿಶೇಷಗೊಳಿಸುವುದು ಏನು ಎಂದು ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ origami ಹೂವುಗಳ ಸ್ಪಷ್ಟ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Objects Turn to Characters 🤖",
+      "desc": "Figure study",
+      "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 75,
+          "nm": "Can a cup become character? 🤖",
+          "desc": "In this activity, students will find inspiration for figure drawing in everyday objects and explore creative connections between shapes, forms, and human anatomy.",
+          "yt": "hC4f21IYkOM",
+          "pts": 10,
+          "pq": {
+            "id": 76,
+            "nm": "Can a spoon become a character? 🥄",
+            "qs": [
+              {
+                "q": "ಈ ಕಲಾ ಚಟುವಟಿಕೆಯ ಮುಖ್ಯ ಗಮನ ಏನೆಂದು ನಿಮಗೆ ಅನಿಸುತ್ತದೆ?",
+                "opts": { "1": "ಕಲೆ ಪರಿವರ್ತನೆ", "2": "ಕಾರ್ಟೂನ್ ವಿನ್ಯಾಸ", "3": "ರೇಖಾಚಿತ್ರ" },
+                "ans": "3"
+              },
+              {
+                "q": "ದೈನಂದಿನ ವಸ್ತುಗಳನ್ನು ಆಕೃತಿಗಳು ಅಥವಾ ಪಾತ್ರಗಳಾಗಿ ಪರಿವರ್ತಿಸುವ ಉದ್ದೇಶ ಏನು?",
+                "opts": {
+                  "1": "ಸೃಜನಾತ್ಮಕತೆ ಮತ್ತು ಸಮಸ್ಯೆ ಪರಿಹಾರ ಕೌಶಲ್ಯ ಹೆಚ್ಚಿಸಲು",
+                  "2": "ಐತಿಹಾಸಿಕ ಕಲಾ ಶೈಲಿಗಳ ಬಗ್ಗೆ ತಿಳಿಯಲು",
+                  "3": "ತಾಂತ್ರಿಕ ರೇಖಾಚಿತ್ರ ಕೌಶಲ್ಯ ಸುಧಾರಿಸಲು"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "ಪಾತ್ರ ವಿನ್ಯಾಸ ಮಾಡಲು ಯಾವ ವಸ್ತುಗಳು ಬೇಕು?",
+                "opts": {
+                  "1": "ಕಲಾ ಪುಸ್ತಕ, ರಬ್ಬರ್, ಬಣ್ಣಗಳು ಮತ್ತು ಸ್ಕೆಚ್ ಪೆನ್ಸಿಲ್‌ಗಳು",
+                  "2": "ಮಣ್ಣು ಮತ್ತು ಬಣ್ಣ",
+                  "3": "ಮಾರ್ಕರ್‌ಗಳು ಮತ್ತು ಕ್ಯಾನ್ವಾಸ್"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "ಒಂದು ಚಮಚ ಇದ್ದರೆ ಅದನ್ನು ಪಾತ್ರವಾಗಿ ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೇಗೆ ಪರಿವರ್ತಿಸಬಹುದು?",
+                "opts": {
+                  "1": "ಹಿನ್ನೆಲೆ ಅಂಶವಾಗಿ ಬಳಸಿ",
+                  "2": "ಮರವಾಗಿ ಪರಿವರ್ತಿಸಿ",
+                  "3": "ಚಮಚವನ್ನು ದೇಹವಾಗಿ ಬಳಸಿ ಚಾಕು ರಚಿಸಿ"
+                },
+                "ans": "3"
+              },
+              {
+                "q": "ತರಗತಿ ಯೋಜನೆಗಾಗಿ ಒಂದು ಪುಸ್ತಕವನ್ನು ಕಾಲ್ಪನಿಕ ಪಾತ್ರವಾಗಿ ಪರಿವರ್ತಿಸಲು ನಿಮ್ಮ ಸೃಜನಾತ್ಮಕತೆ ಹೇಗೆ ಅನ್ವಯಿಸಬಹುದು?",
+                "opts": {
+                  "1": "ಪುಸ್ತಕವನ್ನು ಬುದ್ಧಿವಂತ ವೃದ್ಧ ಮಾಂತ್ರಿಕವಾಗಿ ಪರಿವರ್ತಿಸಿ",
+                  "2": "ಮಾದರಿ ಮನೆ ನಿರ್ಮಿಸಲು ಬಳಸಿ",
+                  "3": "ಅದರ ಮೇಲೆ ಯಾದೃಚ್ಛಿಕ ಮಾದರಿಗಳನ್ನು ಬಿಡಿಸಿ"
+                },
+                "ans": "1"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 77,
+        "nm": "Can a spoon become a character? 🥄",
+        "qs": [
+          {
+            "q": "ಈ ಕಲಾ ಚಟುವಟಿಕೆಯ ಮುಖ್ಯ ಗಮನ ಏನೆಂದು ನಿಮಗೆ ಅನಿಸುತ್ತದೆ?",
+            "opts": { "1": "ಕಲೆ ಪರಿವರ್ತನೆ", "2": "ಕಾರ್ಟೂನ್ ವಿನ್ಯಾಸ", "3": "ರೇಖಾಚಿತ್ರ" },
+            "ans": "3"
+          },
+          {
+            "q": "ದೈನಂದಿನ ವಸ್ತುಗಳನ್ನು ಆಕೃತಿಗಳು ಅಥವಾ ಪಾತ್ರಗಳಾಗಿ ಪರಿವರ್ತಿಸುವ ಉದ್ದೇಶ ಏನು?",
+            "opts": {
+              "1": "ಸೃಜನಾತ್ಮಕತೆ ಮತ್ತು ಸಮಸ್ಯೆ ಪರಿಹಾರ ಕೌಶಲ್ಯ ಹೆಚ್ಚಿಸಲು",
+              "2": "ಐತಿಹಾಸಿಕ ಕಲಾ ಶೈಲಿಗಳ ಬಗ್ಗೆ ತಿಳಿಯಲು",
+              "3": "ತಾಂತ್ರಿಕ ರೇಖಾಚಿತ್ರ ಕೌಶಲ್ಯ ಸುಧಾರಿಸಲು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಪಾತ್ರ ವಿನ್ಯಾಸ ಮಾಡಲು ಯಾವ ವಸ್ತುಗಳು ಬೇಕು?",
+            "opts": {
+              "1": "ಕಲಾ ಪುಸ್ತಕ, ರಬ್ಬರ್, ಬಣ್ಣಗಳು ಮತ್ತು ಸ್ಕೆಚ್ ಪೆನ್ಸಿಲ್‌ಗಳು",
+              "2": "ಮಣ್ಣು ಮತ್ತು ಬಣ್ಣ",
+              "3": "ಮಾರ್ಕರ್‌ಗಳು ಮತ್ತು ಕ್ಯಾನ್ವಾಸ್"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಒಂದು ಚಮಚ ಇದ್ದರೆ ಅದನ್ನು ಪಾತ್ರವಾಗಿ ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೇಗೆ ಪರಿವರ್ತಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಹಿನ್ನೆಲೆ ಅಂಶವಾಗಿ ಬಳಸಿ",
+              "2": "ಮರವಾಗಿ ಪರಿವರ್ತಿಸಿ",
+              "3": "ಚಮಚವನ್ನು ದೇಹವಾಗಿ ಬಳಸಿ ಚಾಕು ರಚಿಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ತರಗತಿ ಯೋಜನೆಗಾಗಿ ಒಂದು ಪುಸ್ತಕವನ್ನು ಕಾಲ್ಪನಿಕ ಪಾತ್ರವಾಗಿ ಪರಿವರ್ತಿಸಲು ನಿಮ್ಮ ಸೃಜನಾತ್ಮಕತೆ ಹೇಗೆ ಅನ್ವಯಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಪುಸ್ತಕವನ್ನು ಬುದ್ಧಿವಂತ ವೃದ್ಧ ಮಾಂತ್ರಿಕವಾಗಿ ಪರಿವರ್ತಿಸಿ",
+              "2": "ಮಾದರಿ ಮನೆ ನಿರ್ಮಿಸಲು ಬಳಸಿ",
+              "3": "ಅದರ ಮೇಲೆ ಯಾದೃಚ್ಛಿಕ ಮಾದರಿಗಳನ್ನು ಬಿಡಿಸಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Transform-an-Object-Into-a-Character-🤖-Intermediate",
+          "seq": 71,
+          "nm": "Transform an Object Into a Character 🤖",
+          "desc": "In this activity, students will find inspiration for figure drawing in everyday objects and explore creative connections between shapes, forms, and human anatomy.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ನಿಮ್ಮ ವಸ್ತುವನ್ನು ಪಾತ್ರವಾಗಿ ಪರಿವರ್ತಿಸಲು ನೀವು ಬಳಸಿದ ಒಂದು ವಿಷಯ ಹಂಚಿಕೊಳ್ಳಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mentions imagination / shapes / face / expressions / creativity\nExample: “I used imagination”, “I added face and expressions”",
+              "invalid_criteria": "Mention of any unrelated/vague words like “art”, “drawing”"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "arts",
+              "unguided_text": "Synced",
+              "valid_criteria": "Shows any everyday object (cup, bottle, chair, toy, etc.)\nObject is clearly visible",
+              "invalid_criteria": "No object / unclear image\nOnly drawings (instead of real object)\nAny person/animal"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಸರಳ ವಸ್ತುಗಳನ್ನು ಪಾತ್ರಗಳಾಗಿ ಹೇಗೆ ಪರಿವರ್ತಿಸಬಹುದು ಎಂದು ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ಒಂದು ವಸ್ತುವನ್ನು ಪಾತ್ರವಾಗಿ ಹೇಗೆ ಪರಿವರ್ತಿಸಿದಿರಿ ಎಂದು ತೋರಿಸುವ ನಿಮ್ಮ ಕಲಾಕೃತಿಯ ಸ್ಪಷ್ಟ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Shapes Build a Face 🎭",
+      "desc": "Character Designing Geometrical Figures",
+      "rwc": "Paper, Pencil, Ruler, Colors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 76,
+          "nm": "Can shapes draw a face? 🎭",
+          "desc": "In this activity, students will explore the art of character design by using and manipulating basic geometric shapes.",
+          "yt": "9lm-BECZTEc",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 78,
+        "nm": "Can shapes build a face? 🔷",
+        "qs": [
+          {
+            "q": "ಈ ಚಟುವಟಿಕೆಗೆ ಯಾವ ವಸ್ತುಗಳು ಬೇಕು?",
+            "opts": {
+              "1": "ಇದ್ದಿಲು ಮತ್ತು ಸ್ಕೆಚ್‌ಬುಕ್‌ಗಳು",
+              "2": "ನೀರು ಬಣ್ಣಗಳು ಮತ್ತು ಕ್ಯಾನ್ವಾಸ್",
+              "3": "ಪೆನ್ಸಿಲ್‌ಗಳು, ರಬ್ಬರ್‌ಗಳು, ಕಪ್ಪು ಮಾರ್ಕರ್ ಮತ್ತು ಕ್ರೇಯಾನ್‌ಗಳು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಪಾತ್ರ ವಿನ್ಯಾಸದಲ್ಲಿ ಜ್ಯಾಮಿತೀಯ ಆಕಾರಗಳನ್ನು ಬಳಸುವ ಪ್ರಯೋಜನ ಯಾವುದು?",
+            "opts": {
+              "1": "ರೇಖಾಚಿತ್ರ ಪ್ರಕ್ರಿಯೆ ಸರಳಗೊಳಿಸುತ್ತದೆ",
+              "2": "ಪಾತ್ರಗಳಿಗೆ ಬಣ್ಣ ಸೇರಿಸುತ್ತದೆ",
+              "3": "ಪಾತ್ರಗಳು ವಾಸ್ತವಿಕ ಕಾಣಿಸುತ್ತದೆ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಪಾಠದಲ್ಲಿ ಪಾತ್ರದ ಮುಖದ ಬೇಸ್ ರಚಿಸಲು ಯಾವ ಆಕಾರಗಳನ್ನು ಸೂಚಿಸಲಾಗಿದೆ?",
+            "opts": { "1": "ದುಂಡಾದ ಮೂಲೆಗಳಿರುವ ಚೌಕ", "2": "ವೃತ್ತಗಳು", "3": "ಆಯತಗಳು" },
+            "ans": "1"
+          },
+          {
+            "q": "ನೈಜ ಜೀವನದ ಸಮಸ್ಯೆ ಪರಿಹರಿಸಲು ಪಾಠದ ತಂತ್ರ ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೇಗೆ ಅನ್ವಯಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಸಮಸ್ಯೆಯ ಬಗ್ಗೆ ಕಾಮಿಕ್ ಸ್ಟ್ರಿಪ್ ರಚಿಸಿ",
+              "2": "ಸಮಸ್ಯೆ ನಕ್ಷೆ ಮಾಡಲು ನೀರು ಬಣ್ಣ ಬಳಸಿ",
+              "3": "ಸಮಸ್ಯೆಯನ್ನು ಸಣ್ಣ, ನಿರ್ವಹಿಸಬಹುದಾದ ಭಾಗಗಳಾಗಿ ವಿಭಜಿಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಪಾಠದ ತಂತ್ರ ಬಳಸಿ ಹೊಸ ಪಾತ್ರ ರಚಿಸಬೇಕಿದ್ದರೆ, ಅದರ ವಿಶಿಷ್ಟತೆ ಹೇಗೆ ಹೆಚ್ಚಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಅನಿರೀಕ್ಷಿತ ರೀತಿಯಲ್ಲಿ ಬೇರೆ ಬೇರೆ ಜ್ಯಾಮಿತೀಯ ಆಕಾರಗಳನ್ನು ಸಂಯೋಜಿಸಿ",
+              "2": "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಪಾತ್ರವನ್ನು ನಿಖರವಾಗಿ ನಕಲಿಸಿ",
+              "3": "ಇಡೀ ಪಾತ್ರಕ್ಕೆ ಕೇವಲ ವೃತ್ತಗಳನ್ನು ಬಳಸಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-a-Geometric-Character-🎭-Remedial",
+          "seq": 72,
+          "nm": "Design a Geometric Character 🎭",
+          "desc": "In this activity, students will explore the art of character design by using and manipulating basic geometric shapes.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ನಿಮ್ಮ ಪಾತ್ರ ರಚಿಸಲು ಬಳಸಿದ ಒಂದು ಆಕಾರ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mention of circle / square / triangle / rectangle",
+              "invalid_criteria": "Mention of any unrelated words\nExample: Answers like “shape”, “design”"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "arts",
+              "unguided_text": "Synced",
+              "valid_criteria": "A clear photo of any (person/animal) character (cartoon, also) from any movie or book.",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of any random place/thing other than a character"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಆಕಾರಗಳು ಪಾತ್ರ ಬಿಡಿಸಲು ಹೇಗೆ ಸಹಾಯ ಮಾಡುತ್ತವೆ ಎಂದು ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಆಕಾರ ಆಧಾರಿತ ಪಾತ್ರದ ಸ್ಪಷ್ಟ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Sticks and Strings Dream 🌙",
+      "desc": "Craft",
+      "rwc": "Cardboard, Fevicol, Scissors, Glue, Colors, Rope",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 77,
+          "nm": "Can sticks catch your dreams? 🌙",
+          "desc": "In this activity, students will craft their own dream catcher using recyclable natural materials like twigs, shells, feathers, petals, and ice cream sticks.",
+          "yt": "k7_BVxSB6v0",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 79,
+        "nm": "What do dream catchers catch? 🕸️",
+        "qs": [
+          {
+            "q": "ಅಮೆರಿಕನ್ ಮೂಲ ಬುಡಕಟ್ಟು ಜನರು ಡ್ರೀಮ್ ಕ್ಯಾಚರ್ ಅನ್ನು ಯಾವ ಉದ್ದೇಶಕ್ಕೆ ಬಳಸುತ್ತಿದ್ದರು?",
+            "opts": { "1": "ಅವರ ಕನಸುಗಳನ್ನು ರಕ್ಷಿಸಲು", "2": "ಮನೆ ಅಲಂಕರಿಸಲು", "3": "ಮೀನು ಹಿಡಿಯಲು" },
+            "ans": "1"
+          },
+          {
+            "q": "ಡ್ರೀಮ್ ಕ್ಯಾಚರ್‌ನಲ್ಲಿ ಹೂಪ್ ಯಾವುದನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತದೆ?",
+            "opts": { "1": "ಜೇಡರ ಬಲೆ", "2": "ಜೀವನ ಚಕ್ರ", "3": "ಒಂದು ಕನಸು" },
+            "ans": "2"
+          },
+          {
+            "q": "ಡ್ರೀಮ್ ಕ್ಯಾಚರ್‌ನ ಹೂಪ್ ತಯಾರಿಸಲು ಯಾವ ವಸ್ತುಗಳನ್ನು ಬಳಸಬಹುದು?",
+            "opts": {
+              "1": "ಲೋಹ ಮಾತ್ರ",
+              "2": "ಪ್ಲಾಸ್ಟಿಕ್ ಮಾತ್ರ",
+              "3": "ಮರ, ಲೋಹ ಅಥವಾ ಕಾರ್ಡ್‌ಬೋರ್ಡ್"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಬಣ್ಣದ ಕಾಗದ ಇಲ್ಲದಿದ್ದರೆ ಡ್ರೀಮ್ ಕ್ಯಾಚರ್‌ಗೆ ಗರಿಗಳು ತಯಾರಿಸಲು ಯಾವ ಸೃಜನಾತ್ಮಕ ವಿಧಾನ ಬಳಸಬಹುದು?",
+            "opts": {
+              "1": "ಬಿಳಿ ಕಾಗದ ಬಣ್ಣಿಸಿ ಗರಿ ಆಕಾರದಲ್ಲಿ ಕತ್ತರಿಸಿ",
+              "2": "ಹಳೆಯ ಆಟಿಕೆಗಳಿಂದ ಪ್ಲಾಸ್ಟಿಕ್ ಗರಿಗಳನ್ನು ಬಳಸಿ",
+              "3": "ಗೋಡೆಯ ಮೇಲೆ ಗರಿಗಳನ್ನು ಬಿಡಿಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಸಾಂಪ್ರದಾಯಿಕ ವಸ್ತುಗಳಿಲ್ಲದಿದ್ದರೆ ಸಾಮಾನ್ಯ ವಸ್ತುಗಳನ್ನು ಸೃಜನಾತ್ಮಕವಾಗಿ ಬಳಸಿ ಡ್ರೀಮ್ ಕ್ಯಾಚರ್ ಹೇಗೆ ತಯಾರಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಹೂಪ್‌ಗೆ ಗಾಜಿನ ಬಾಟಲ್ ಬಳಸಿ",
+              "2": "ಹೂಪ್‌ಗೆ ಮರದ ಚಮಚ ಬಳಸಿ",
+              "3": "ಹೂಪ್ ತಯಾರಿಸಲು ಕಾಗದದ ತಟ್ಟೆ ಬಳಸಿ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Nature-Inspired-Dream-Catcher-🌙-Intermediate",
+          "seq": 73,
+          "nm": "Build a Nature Inspired Dream Catcher 🌙",
+          "desc": "In this activity, students will craft their own dream catcher using recyclable natural materials like twigs, shells, feathers, petals, and ice cream sticks.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ನಿಮ್ಮ dream catcher ತಯಾರಿಸಲು ಬಳಸಿದ ಒಂದು ವಸ್ತು ಹಂಚಿಕೊಳ್ಳಿ.",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mentions thread / ring / paper / leaves / feathers / shells / sticks",
+              "invalid_criteria": "Mention of any unrelated/ vague answers like “things”, “materials”"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "arts",
+              "unguided_text": "Synced",
+              "valid_criteria": "Shows natural/recycled items (leaves, sticks, paper, cardboard, thread, etc.)",
+              "invalid_criteria": "Unrelated objects (mobile, TV, etc.)"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ನಿಮ್ಮ dream catcher ಅನ್ನು ವಿಶೇಷಗೊಳಿಸುವುದು ಏನು ಎಂದು ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ dream catcher ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Paper City Dreams Big 🏙️",
+      "desc": "Exploring the use of Shapes",
+      "rwc": "Colorful, Texture, Paper, Glue, Scissors, Marker",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 78,
+          "nm": "Can shapes build dream cities? 🏙️",
+          "desc": "In this activity, students will create an imaginary dream city using paper cut-out shapes inspired by the artist Paul Klee.",
+          "yt": "isrOnW7D698",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 80,
+        "nm": "Can you build a dream city? 🏙️",
+        "qs": [
+          {
+            "q": "ಡ್ರೀಮ್ ಸಿಟಿ ಚಟುವಟಿಕೆಗೆ ಯಾವ ಕಲಾಕಾರ ಸ್ಫೂರ್ತಿ ನೀಡಿದ್ದಾರೆ?",
+            "opts": { "1": "ವಿನ್ಸೆಂಟ್ ವ್ಯಾನ್ ಗಾಗ್", "2": "ಪಾಬ್ಲೋ ಪಿಕಾಸೊ", "3": "ಪಾಲ್ ಕ್ಲೀ" },
+            "ans": "3"
+          },
+          {
+            "q": "ಪಾಲ್ ಕ್ಲೀ ಯಾವ ಕಲಾ ಶೈಲಿಗೆ ಹೆಸರುವಾಸಿ?",
+            "opts": {
+              "1": "ವಾಸ್ತವಿಕ ಭಾವಚಿತ್ರಗಳು ಮತ್ತು ಭೂದೃಶ್ಯಗಳು",
+              "2": "ಅಮೂರ್ತ ಶಿಲ್ಪಗಳು ಮತ್ತು ಪ್ರತಿಷ್ಠಾಪನೆಗಳು",
+              "3": "ಜ್ಯಾಮಿತೀಯ ಆಕಾರಗಳು, ದಪ್ಪ ರೇಖೆಗಳು ಮತ್ತು ಪ್ರಕಾಶಮಾನ ಬಣ್ಣಗಳ ಬಳಕೆ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಡ್ರೀಮ್ ಸಿಟಿ ರಚಿಸಲು ಯಾವ ವಸ್ತುಗಳನ್ನು ಸೂಚಿಸಲಾಗಿದೆ?",
+            "opts": {
+              "1": "ಬಣ್ಣದ ಕಾಗದಗಳು, ಕತ್ತರಿ, ಗೋಂದು ಮತ್ತು ಮಾರ್ಕರ್‌ಗಳು",
+              "2": "ಮಣ್ಣು ಮತ್ತು ಶಿಲ್ಪ ಸಾಧನಗಳು",
+              "3": "ಎಣ್ಣೆ ಬಣ್ಣಗಳು ಮತ್ತು ಕ್ಯಾನ್ವಾಸ್"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಡ್ರೀಮ್ ಸಿಟಿ ರಚಿಸುವಾಗ ಅದನ್ನು ಅನನ್ಯ ಮಾಡಲು ಹೇಗೆ?",
+            "opts": {
+              "1": "ಕಟ್ಟುನಿಟ್ಟಾದ ನೀಲನಕ್ಷೆ ಅನುಸರಿಸಿ",
+              "2": "ಇನ್ನೊಬ್ಬ ಕಲಾಕಾರರ ಕೆಲಸ ನಿಖರವಾಗಿ ನಕಲಿಸಿ",
+              "3": "ಆಕಾರಗಳು ಮತ್ತು ಬಣ್ಣಗಳನ್ನು ನಿಮ್ಮದೇ ಸೃಜನಾತ್ಮಕ ರೀತಿಯಲ್ಲಿ ಜೋಡಿಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಚಟುವಟಿಕೆಗೆ ನಿರ್ದಿಷ್ಟ ಬಣ್ಣದ ಕಾಗದಗಳಿಲ್ಲದಿದ್ದರೆ ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಪರ್ಯಾಯ ಕಾಗದಗಳು ಅಥವಾ ಪತ್ರಿಕೆ ತುಂಡುಗಳನ್ನು ಬಳಸಿ",
+              "2": "ಕೇವಲ ಕಪ್ಪು ಮತ್ತು ಬಿಳಿ ಕಾಗದ ಬಳಸಿ",
+              "3": "ಚಟುವಟಿಕೆ ರದ್ದು ಮಾಡಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Dream-City-Collage-🏙️-Remedial",
+          "seq": 74,
+          "nm": "Build a Dream City Collage 🏙️",
+          "desc": "In this activity, students will create an imaginary dream city using paper cut-out shapes inspired by the artist Paul Klee.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ನಿಮ್ಮ dream city ನಲ್ಲಿ ಬಳಸಿದ ಒಂದು ಆಕಾರ ಹಂಚಿಕೊಳ್ಳಿ.",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mentions square / rectangle / triangle / any shape",
+              "invalid_criteria": "Mention of any unrelated words\nExample: Answers like “shape”, “design”"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "arts",
+              "unguided_text": "Synced",
+              "valid_criteria": "A clear photo of any city",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of any random person/animal/thing or a place which is not a city"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಆಕಾರಗಳನ್ನು ಕತ್ತರಿಸಿದ ನಂತರ ನೀವು ಏನು ಮಾಡಿದಿರಿ ಎಂದು ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ dream city ಕಲಾಕೃತಿಯ ಸ್ಪಷ್ಟ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Bottles Bloom into Flowers 🌺",
+      "desc": "Plastic Pollution, Sustainable Development",
+      "rwc": "Plastic Bottles, Waste Papers, Markers, Paints, Brushes, Thread, Scissors, Tape",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 79,
+          "nm": "Can bottles bloom into flowers? 🌺",
+          "desc": "In this activity, students will identify and describe how plastic harms ocean creatures and use collected materials to create vibrant flower hangings from plastic bottles.",
+          "yt": "6EzwKKBDJDo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 81,
+        "nm": "Can plastic become painted art? 🎨",
+        "qs": [
+          {
+            "q": "ಇಂದಿನ ಕಲಾ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನಾವು ಏನು ಕಲಿಯುತ್ತಿದ್ದೇವೆ?",
+            "opts": {
+              "1": "ರೇಖಾಚಿತ್ರ ಮತ್ತು ಸ್ಕೆಚ್ ಕೌಶಲ್ಯಗಳನ್ನು ಅಭ್ಯಾಸ ಮಾಡುತ್ತಿದ್ದೇವೆ",
+              "2": "ಬೇರೆ ಬೇರೆ ರೀತಿಯ ಬಣ್ಣಗಳ ಬಗ್ಗೆ ತಿಳಿಯುತ್ತಿದ್ದೇವೆ",
+              "3": "ಮರುಬಳಕೆ ವಸ್ತುಗಳನ್ನು ಬಳಸಿ ಕಲಾಕೃತಿ ರಚಿಸುತ್ತಿದ್ದೇವೆ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ವಿಘಟನೆ ಎಂದರೇನು?",
+            "opts": {
+              "1": "ಶಾಖದಿಂದ ಕರಗುವಿಕೆ",
+              "2": "ಕಾಲಕ್ರಮೇಣ ಬಣ್ಣ ಬದಲಾಗುವಿಕೆ",
+              "3": "ಕೊಳೆತದಿಂದ ಸಣ್ಣ ಭಾಗಗಳಾಗಿ ಒಡೆಯುವಿಕೆ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಪ್ಲಾಸ್ಟಿಕ್ ಮೇಲೆ ಚಿತ್ರ ಬಿಡಿಸುವಾಗ ಬಣ್ಣ ಚೆನ್ನಾಗಿ ಅಂಟಿಕೊಳ್ಳಲು ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ತುಂಬಾ ತೆಳುವಾದ ಬಣ್ಣ ಬಳಸಿ",
+              "2": "ಕೇವಲ ದಪ್ಪ ಪದರಗಳಲ್ಲಿ ಬಿಡಿಸಿ",
+              "3": "ಬಣ್ಣಕ್ಕೆ ಹೆಚ್ಚು ನೀರು ಸೇರಿಸದಿರಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಮರುಬಳಕೆ ವಸ್ತುಗಳನ್ನು ಬಳಸಿ ಹೊಸ ರೀತಿಯ ಕಲಾಕೃತಿ ರಚಿಸಬೇಕಿದ್ದರೆ ಏನು ಮಾಡಬಹುದು?",
+            "opts": {
+              "1": "ಹೊಸ ಕ್ಯಾನ್ವಾಸ್ ಮೇಲೆ ಬಿಡಿಸಿ",
+              "2": "ಕಾಲಾಜ್ ರಚಿಸಲು ಹಳೆಯ ನಿಯತಕಾಲಿಕೆಗಳನ್ನು ಬಳಸಿ",
+              "3": "ಹೊಸ ಕಲಾ ಸಾಮಗ್ರಿಗಳನ್ನು ಖರೀದಿಸಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ನಿಮ್ಮ ಸಮುದಾಯದಲ್ಲಿ ಪ್ಲಾಸ್ಟಿಕ್ ಮಾಲಿನ್ಯ ಸಮಸ್ಯೆ ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೇಗೆ ಪರಿಹರಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಸಂಗ್ರಹಿಸಿದ ಪ್ಲಾಸ್ಟಿಕ್ ತ್ಯಾಜ್ಯ ಬಳಸಿ ಸಮುದಾಯ ಕಲಾ ಯೋಜನೆ ಆಯೋಜಿಸಿ",
+              "2": "ಏಕ-ಬಳಕೆ ಪ್ಲಾಸ್ಟಿಕ್ ಮರುಬಳಕೆ ಖಚಿತಪಡಿಸಲು ಯಾವಾಗಲೂ ಲಭ್ಯವಾಗಿರುವಂತೆ ಖರೀದಿಸಿ",
+              "3": "ಯಾವಾಗಲೂ ಮರುಬಳಕೆ ಆಗುವಂತೆ ಹೆಚ್ಚು ಪ್ಲಾಸ್ಟಿಕ್ ಚೀಲ ಖರೀದಿಸಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Plastic-Bottle-Flower-Hanging-🌺-Advanced",
+          "seq": 75,
+          "nm": "Make a Plastic Bottle Flower Hanging 🌺",
+          "desc": "In this activity, students will identify and describe how plastic harms ocean creatures and use collected materials to create vibrant flower hangings from plastic bottles.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಪರಿಸರಕ್ಕೆ ಹಾನಿ ಮಾಡುವ ಒಂದು ವಸ್ತು ಹಂಚಿಕೊಳ್ಳಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mentions plastic / polythene / waste material",
+              "invalid_criteria": "Mention of any unrelated answers like “things”, “garbage”"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "arts",
+              "unguided_text": "Synced",
+              "valid_criteria": "A clear photo of any flower",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of an object which is not a flower"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಮರುಬಳಕೆ ಮಾಡಿದ ಪ್ಲಾಸ್ಟಿಕ್ ಅನ್ನು ಹೇಗೆ ಅಲಂಕರಿಸಬಹುದು ಎಂದು ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಪ್ಲಾಸ್ಟಿಕ್ ಬಾಟಲಿ ಗೋಡೆ ಆಭರಣದ ಸ್ಪಷ್ಟ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Scraps Hang as Art 🎑",
+      "desc": "Plastic Pollution, Sustainable Development",
+      "rwc": "Plastic Bottles, Waste Papers, Markers, Paints, Brushes, Thread, Scissors, Tape",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 80,
+          "nm": "Can waste hang as art? 🎑",
+          "desc": "In this activity, students will use recycled materials to create a decorative wall hanging.",
+          "yt": "OBQKrXlS9ro",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 82,
+        "nm": "Can waste become wall art? 🖼️",
+        "qs": [
+          {
+            "q": "ಚಟುವಟಿಕೆಗೆ ಸಂಬಂಧಿಸಿದ ಸಮರ್ಥನೀಯ ಅಭಿವೃದ್ಧಿ ಗುರಿ ಯಾವುದು?",
+            "opts": {
+              "1": "SDG 15: ಭೂಮಿಯ ಮೇಲಿನ ಜೀವನ",
+              "2": "SDG 12: ಜವಾಬ್ದಾರಿಯುತ ಬಳಕೆ ಮತ್ತು ಉತ್ಪಾದನೆ",
+              "3": "SDG 4: ಗುಣಮಟ್ಟದ ಶಿಕ್ಷಣ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಚಟುವಟಿಕೆಯ ಮುಖ್ಯ ಉದ್ದೇಶ ಯಾವುದು?",
+            "opts": {
+              "1": "ರೇಖಾಚಿತ್ರ ತಂತ್ರಗಳನ್ನು ಅಭ್ಯಾಸ ಮಾಡಲು",
+              "2": "ಮರುಬಳಕೆ ವಸ್ತುಗಳನ್ನು ಬಳಸಿ ಕಲೆ ರಚಿಸಲು",
+              "3": "ಭೂದೃಶ್ಯ ಚಿತ್ರಿಸಲು ಕಲಿಯಲು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ನಿಯತಕಾಲಿಕೆ ಕಾಗದ ಮತ್ತು ಹಳೆಯ ಪ್ಯಾಕೇಜಿಂಗ್ ಡಬ್ಬಿಗಳಿದ್ದರೆ ಗೋಡೆ ಹ್ಯಾಂಗಿಂಗ್ ರಚಿಸಲು ಮೊದಲ ಹಂತ ಯಾವುದು?",
+            "opts": {
+              "1": "ಕಾಗದ ಅನ್ನು ಕಾರ್ಡ್‌ಬೋರ್ಡ್ ಬೇಸ್‌ಗೆ ಅಂಟಿಸಿ",
+              "2": "ಯಾವುದೇ ಆಕಾರದಲ್ಲಿ ಕಾರ್ಡ್‌ಬೋರ್ಡ್ ಬೇಸ್ ಕತ್ತರಿಸಿ",
+              "3": "ಕಲೆ ನೇತಾಡಿಸಲು ದಾರ ಜೋಡಿಸಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಮರುಬಳಕೆ ಗೋಡೆ ಹ್ಯಾಂಗಿಂಗ್‌ಗೆ ಸೃಜನಾತ್ಮಕವಾಗಿ ಟೆಕ್ಸ್ಚರ್ ಹೇಗೆ ಸೇರಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಕೇವಲ ಮಸೃಣ, ಸಂಪೂರ್ಣ ಕತ್ತರಿಸಿದ ಕಾಗದ ತುಂಡುಗಳನ್ನು ಬಳಸಿ",
+              "2": "ಪದರೀಕರಣಕ್ಕಾಗಿ ಕಾಗದ ತ್ಯಾಜ್ಯವನ್ನು ಬೇರೆ ಬೇರೆ ಆಕಾರಗಳಲ್ಲಿ ಹರಿದು",
+              "3": "ಯಾವುದೇ ಅತಿಕ್ರಮಿಸುವ ಅಂಶಗಳನ್ನು ತಪ್ಪಿಸಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ನಿಯಮಗಳ ಪ್ರಕಾರ ವಿನ್ಯಾಸದಲ್ಲಿ ಕಡ್ಡಾಯವಾಗಿ ಸೇರಿಸಬೇಕಾದ ಸೃಜನಾತ್ಮಕ ಅಂಶ ಯಾವುದು?",
+            "opts": {
+              "1": "ಚಿತ್ರಿಸಿದ ಗಡಿ",
+              "2": "ದಾರ ಅಥವಾ ಹಗ್ಗ ಬಳಸಿ ನೇತಾಡಿಸುವ ಅಂಶ",
+              "3": "ಲೋಹದ ಚೌಕಟ್ಟು"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Recycled-Wall-Hanging-🎑-Remedial",
+          "seq": 76,
+          "nm": "Make a Recycled Wall Hanging 🎑",
+          "desc": "In this activity, students will use recycled materials to create a decorative wall hanging.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ನಿಮ್ಮ ಕಲಾಕೃತಿಯಲ್ಲಿ ಬಳಸಿದ ಒಂದು ತ್ಯಾಜ್ಯ ವಸ್ತು ಹಂಚಿಕೊಳ್ಳಿ.",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mentions cardboard / newspaper / paper scraps / thread / wool",
+              "invalid_criteria": "Mention of any unrelated words or items like bottle, cap, apple which are not waste"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಇಷ್ಟದ ಹೂವಿನ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "A clear photo of any flower",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of an object which is not a flower"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ತಳ ತಯಾರಿಸಿದ ನಂತರ ವೀಡಿಯೊದಲ್ಲಿ ಮುಂದಿನ ಹಂತ ಏನಾಗಿತ್ತು ಎಂದು ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಮರುಬಳಕೆ ಆಭರಣದ ಸ್ಪಷ್ಟ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

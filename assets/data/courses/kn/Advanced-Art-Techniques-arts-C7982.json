@@ -1,0 +1,1209 @@
+{
+  "id": "Advanced-Art-Techniques-arts-C7982",
+  "nm": "Advanced Art Techniques",
+  "lvl": "Level 3AK",
+  "vrt": "arts",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Lines Trick Your Eyes 👁️",
+      "desc": "Optical Art",
+      "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 11,
+          "nm": "Can lines trick your eyes? 👁️",
+          "desc": "In this activity, students will learn about optical illusions and create optical art using basic lines and patterns.",
+          "yt": "p-M4qFoKqT0",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 11,
+        "nm": "Can your eyes be tricked? 👀",
+        "qs": [
+          {
+            "q": "ಈ ಕಲಾ ಚಟುವಟಿಕೆಯ ಮುಖ್ಯ ವಿಷಯ ಯಾವುದು?",
+            "opts": { "1": "ಅಮೂರ್ತ ಕಲೆ", "2": "ವಾಸ್ತವಿಕ ಚಿತ್ರಕಲೆ", "3": "ದೃಷ್ಟಿ ಭ್ರಮೆಗಳು" },
+            "ans": "3"
+          },
+          {
+            "q": "ದೃಷ್ಟಿ ಭ್ರಮೆಗಳು ನಮ್ಮ ಮನಸ್ಸನ್ನು ಯಾಕೆ ಮೋಸಗೊಳಿಸುತ್ತವೆ?",
+            "opts": {
+              "1": "ಅವು ವಾಸ್ತವದಲ್ಲಿ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲದ ವಿನ್ಯಾಸಗಳನ್ನು ರಚಿಸುವುದರಿಂದ",
+              "2": "ಅವು ಪ್ರಕಾಶಮಾನ ಬಣ್ಣಗಳನ್ನು ಬಳಸುವುದರಿಂದ",
+              "3": "ಅವು ತುಂಬಾ ವಿವರವಾಗಿರುವುದರಿಂದ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಆಪ್ಟಿಕಲ್ ಕಲೆ ರಚಿಸಲು ಯಾವ ವಸ್ತುಗಳನ್ನು ಸೂಚಿಸಲಾಗಿದೆ?",
+            "opts": {
+              "1": "ಕ್ಯಾನ್ವಾಸ್ ಮತ್ತು ಎಣ್ಣೆ ಬಣ್ಣ",
+              "2": "ಮಣ್ಣು ಮತ್ತು ಬಣ್ಣ",
+              "3": "ಡ್ರಾಯಿಂಗ್ ಶೀಟ್, ರಬ್ಬರ್, ಪೆನ್ಸಿಲ್, ಬಣ್ಣಗಳು ಮತ್ತು ಸ್ಕೆಚ್ ಪೆನ್‌ಗಳು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಚಲನೆಯ ಭಾವ ನೀಡುವ ಆಪ್ಟಿಕಲ್ ಕಲಾಕೃತಿ ರಚಿಸಬೇಕಿದ್ದರೆ, ಯಾವ ಅಂಶಕ್ಕೆ ಗಮನ ನೀಡಬೇಕು?",
+            "opts": {
+              "1": "ಪುನರಾವರ್ತಿತ ರೇಖೆಗಳು ಮತ್ತು ಮಾದರಿಗಳು",
+              "2": "ವಾಸ್ತವಿಕ ಟೆಕ್ಸ್ಚರ್‌ಗಳು",
+              "3": "ಕೇವಲ ಪ್ರಕಾಶಮಾನ ಬಣ್ಣಗಳು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ಸೂಚಿಸಿದ ಪ್ರಕಾರ ಆಪ್ಟಿಕಲ್ ಕಲೆ ಯೋಜನೆಯಲ್ಲಿ ಸೃಜನಾತ್ಮಕತೆ ಹೇಗೆ ಬಳಸಬಹುದು?",
+            "opts": {
+              "1": "ಪ್ರಸಿದ್ಧ ಚಿತ್ರಕಲೆ ನಕಲಿಸಿ",
+              "2": "ಒಂದೇ ಬಣ್ಣ ಮಾತ್ರ ಬಳಸಿ",
+              "3": "ಬೇರೆ ಬೇರೆ ರೇಖೆಗಳು ಮತ್ತು ಆಕಾರಗಳ ಮಾದರಿಗಳನ್ನು ಕಲ್ಪಿಸಿ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-an-Optical-Illusion-Artwork-👁️-Basic",
+          "seq": 9,
+          "nm": "Create an Optical Illusion Artwork 👁️",
+          "desc": "In this activity, students will learn about optical illusions and create optical art using basic lines and patterns.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Optical Illusion Art ರಚಿಸಲು ನಿಮಗೆ ಬೇಕಾಗುವ ವಸ್ತುಗಳ ಪಟ್ಟಿ ಹಂಚಿಕೊಳ್ಳಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mention of materials like ruler, pencil, drawing sheet, colors",
+              "invalid_criteria": "Mention of any other materials apart from ruler, pencil, drawing sheet, colors"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ರೇಖೆಗಳು ಅಥವಾ ಆಕಾರಗಳಿಂದ ಮಾಡಿದ ಮಾದರಿಯ ಫೋಟೋ ತೆಗೆಯಿರಿ.",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "A clear photo of things with pattern & lines/shapes like tiles, grills, notebook lines, fabric design, floor design",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of an object without visible patterns"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Optical Illusions ರಚಿಸುವಾಗ ಕಲೆಯ ಯಾವ ಅಂಶದ ಮೇಲೆ ಗಮನ ಹರಿಸಲಾಗುತ್ತದೆ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Optical Illusion ಕಲಾಕೃತಿಯ ಸ್ಪಷ್ಟ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Square Twists in Place 🔲",
+      "desc": "Contrast, Pattern Construction",
+      "rwc": "Art Sheet, Pencil, Ruler, Pen, Marker",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 12,
+          "nm": "Can squares twist and float? 🔲",
+          "desc": "In this activity, students will create an optical illusion by dividing a square into layered black-and-white patterns using lines and shapes.",
+          "yt": "ZuyI6hZYEj0",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 12,
+        "nm": "Can squares create illusions? 🔲",
+        "qs": [
+          {
+            "q": "ಭ್ರಮೆಯ ಚೌಕ ತಯಾರಿಸಲು ಯಾವ ವಸ್ತುಗಳು ಬೇಕು?",
+            "opts": {
+              "1": "ಕಾಗದ, ಕ್ರಯಾನ್, ಕತ್ತರಿ, ಗಮ್ ಮತ್ತು ಸ್ಕೇಲ್",
+              "2": "ಕ್ಯಾನ್ವಾಸ್, ಬ್ರಶ್, ಬಣ್ಣ ಮತ್ತು ಸ್ಕೇಲ್",
+              "3": "ಕಾಗದ, ಪೆನ್ಸಿಲ್, ರಬ್ಬರ್, ಸ್ಕೇಲ್ ಮತ್ತು ಕಪ್ಪು ಬಣ್ಣ ಅಥವಾ ಮಾರ್ಕರ್"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಚೌಕಗಳಲ್ಲಿ ಪರ್ಯಾಯ ಜಾಗಗಳಿಗೆ ಬಣ್ಣ ಹಾಕುವ ಉದ್ದೇಶ ಏನು?",
+            "opts": {
+              "1": "ಭ್ರಮೆ ಪರಿಣಾಮ ಹೆಚ್ಚಿಸುವ ಮಾದರಿ ರಚಿಸಲು",
+              "2": "ಇಡೀ ಚೌಕ ಕಪ್ಪಾಗಿ ಕಾಣಲು",
+              "3": "ಎಲ್ಲಾ ಚೌಕಗಳು ಸ್ಪಷ್ಟವಾಗಿ ಕಾಣಲು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಭ್ರಮೆಯ ಚೌಕ ರಚಿಸುವ ಮೊದಲ ಹಂತ ಏನು?",
+            "opts": {
+              "1": "ಪರ್ಯಾಯ ಜಾಗಗಳಿಗೆ ಬಣ್ಣ ಹಾಕಿ",
+              "2": "ವಾಲಿದ ಚೌಕಗಳನ್ನು ಬಿಡಿ",
+              "3": "ಕಾಗದದ ಮಧ್ಯದಲ್ಲಿ ಒಂದು ಚಿಕ್ಕ ಚೌಕ ಬಿಡಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಚೌಕಗಳ ಬದಲು ವೃತ್ತಗಳನ್ನು ಬಳಸಿ ಭ್ರಮೆ ರಚಿಸಲು ಸೃಜನಾತ್ಮಕತೆ ಹೇಗೆ ಅನ್ವಯಿಸಬಹುದು?",
+            "opts": {
+              "1": "ವೃತ್ತಗಳ ಗಾತ್ರ ಮತ್ತು ಕೋನಗಳನ್ನು ಬದಲಿಸಿ ಚಲನಶೀಲ ಪರಿಣಾಮ ಸೃಷ್ಟಿಸಿ",
+              "2": "ಎಲ್ಲಾ ವೃತ್ತಗಳಿಗೆ ಒಂದೇ ಬಣ್ಣ ಹಾಕಿ",
+              "3": "ಯಾವ ಮಾದರಿಯೂ ಇಲ್ಲದೇ ದೊಡ್ಡ ವೃತ್ತಗಳನ್ನು ಮಾತ್ರ ಬಿಡಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಚೌಕಗಳ ಬದಲು ತ್ರಿಕೋಣಗಳನ್ನು ಬಳಸಿ ಅನನ್ಯ ಭ್ರಮೆ ರಚಿಸಲು ಯಾವ ಸೃಜನಾತ್ಮಕ ವಿಧಾನ ತೆಗೆದುಕೊಳ್ಳಬಹುದು?",
+            "opts": {
+              "1": "ಒಂದೇ ತ್ರಿಕೋಣ ಬಿಟ್ಟು ಯಾದೃಚ್ಛಿಕ ಬಣ್ಣಗಳಿಂದ ತುಂಬಿ",
+              "2": "ತ್ರಿಕೋಣಗಳನ್ನು ವಿವಿಧ ಕೋನಗಳಲ್ಲಿ ವಾಲಿಸಿ ಮತ್ತು ಭ್ರಮೆ ಒತ್ತಿಸಲು ವಿಪರೀತ ಬಣ್ಣಗಳನ್ನು ಬಳಸಿ",
+              "3": "ತ್ರಿಕೋಣಗಳನ್ನು ಅಂತರವಿಲ್ಲದೇ ನೇರ ಗೆರೆಯಲ್ಲಿ ಜೋಡಿಸಿ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Square-of-Illusions-🔲-Remedial",
+          "seq": 10,
+          "nm": "Create a Square of Illusions 🔲",
+          "desc": "In this activity, students will create an optical illusion by dividing a square into layered black-and-white patterns using lines and shapes.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದಾದರೂ ಎಮೋಜಿ ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಕಣ್ಣುಗಳನ್ನು ಮೋಸ ಮಾಡುವ ಕಲಾಕೃತಿಯನ್ನು ಏನೆಂದು ಕರೆಯುತ್ತಾರೆ?",
+              "unguided_text": "ಈ ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮಗೆ ಏನನಿಸುತ್ತದೆ? ಒಂದು ಪದದಲ್ಲಿ ಹೇಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mention of optical, illusion or optical illusion",
+              "invalid_criteria": "Mention of any other word than optical, illusion or optical illusion"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಯಾವುದಾದರೂ ಚೌಕ ಆಕಾರದ ವಸ್ತುವಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ.",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಲಿನ ಯಾವುದಾದರೂ ವಸ್ತುವಿನ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "A clear image of real objects showing square shape",
+              "invalid_criteria": "- Objects without square shape\n- Selfie or unrelated items"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಚೌಕವನ್ನು ಚಲಿಸುತ್ತಿರುವಂತೆ ಅಥವಾ ಆಳ ಇರುವಂತೆ ಕಾಣಿಸಲು ಏನು ಮಾಡಲಾಗುತ್ತದೆ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ಆಪ್ಟಿಕಲ್ ಇಲ್ಯೂಷನ್ ಕಲಾಕೃತಿಯ ಸ್ಪಷ್ಟ ಚಿತ್ರ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Ocean Gets a Voice 🌊",
+      "desc": "Visual communication Poster making",
+      "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 13,
+          "nm": "Can collage save the ocean? 🌊",
+          "desc": "In this activity, students will create an impactful collage promoting ocean cleanliness using images, text, and design to communicate their message creatively while understanding sustainability.",
+          "yt": "l0wR3H5xUp4",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 13,
+        "nm": "Can collage save the ocean? 🌊",
+        "qs": [
+          {
+            "q": "ಈ ಕಲಾ ಚಟುವಟಿಕೆಯ ಮುಖ್ಯ ಉದ್ದೇಶ ಏನು?",
+            "opts": {
+              "1": "ಸಮುದ್ರ ಜೀವಶಾಸ್ತ್ರದ ಬಗ್ಗೆ ತಿಳಿಯಲು",
+              "2": "ಗಣಿತ ಕೌಶಲ ಅಭ್ಯಾಸ ಮಾಡಲು",
+              "3": "ಕಲೆಯ ಮೂಲಕ ಪರಿಣಾಮಕಾರಿ ಸಂದೇಶಗಳನ್ನು ವ್ಯಕ್ತಪಡಿಸಲು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಸ್ಥಿರತೆ ಬಗ್ಗೆ ಸಂದೇಶ ಪ್ರಚಾರ ಮಾಡುವುದು ಏಕೆ ಮುಖ್ಯ?",
+            "opts": {
+              "1": "ಇಂದಿನ ಜಗತ್ತಿನಲ್ಲಿ ಇದು ಅತ್ಯಂತ ಮುಖ್ಯ",
+              "2": "ಶಾಲೆಗಳಲ್ಲಿ ಇದು ಕಡ್ಡಾಯ",
+              "3": "ಇದು ಟ್ರೆಂಡಿ ವಿಷಯ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಚಟುವಟಿಕೆಯಲ್ಲಿ ಕೊಲಾಜ್ ರಚಿಸಲು ಯಾವ ವಸ್ತುಗಳು ಸೂಚಿಸಲಾಗಿದೆ?",
+            "opts": {
+              "1": "ಬಣ್ಣ ಮತ್ತು ಕ್ಯಾನ್ವಾಸ್",
+              "2": "ಹಳೆ ಪತ್ರಿಕೆ, ನಿಯತಕಾಲಿಕೆ, ಗಮ್, ಕತ್ತರಿ, ಬಣ್ಣದ ಕಾಗದ, ಮಾರ್ಕರ್ ಮತ್ತು ಕಾರ್ಡ್ಬೋರ್ಡ್",
+              "3": "ಮಣ್ಣು ಮತ್ತು ಮರ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಈ ಅಧಿವೇಶನದಲ್ಲಿ ಕಲಿತ ಕೌಶಲಗಳನ್ನು ಬಳಸಿ ಕೊಲಾಜ್ ಬದಲಾಗಿ 3D ಮಾದರಿ ತಯಾರಿಸಿದರೆ ಹೇಗೆ ಸೃಜನಾತ್ಮಕತೆ ಬಳಸಬಹುದು?",
+            "opts": {
+              "1": "ಸಮುದ್ರ ಮಾಲಿನ್ಯ ಮತ್ತು ಸ್ವಚ್ಛತಾ ವಿಧಾನಗಳ ಪ್ರತಿನಿಧಿ ರಚಿಸಲು ಮರುಬಳಕೆ ವಸ್ತುಗಳನ್ನು ಬಳಸಿ",
+              "2": "ಎಲ್ಲಾ ವೃತ್ತಗಳಿಗೆ ಒಂದೇ ಬಣ್ಣ ಹಾಕಿ",
+              "3": "ಸಮುದ್ರ ಸಂರಕ್ಷಣೆ ಬಗ್ಗೆ ಪ್ರಬಂಧ ಬರೆಯಿರಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಸಮುದ್ರ ಸ್ವಚ್ಛತೆ ಉತ್ತೇಜಿಸಲು 3D ಮಾದರಿ ತಯಾರಿಸಿದರೆ ಅದರಲ್ಲಿ ಏನು ಸೇರಿಸಬೇಕು?",
+            "opts": {
+              "1": "ಕಸದ ಡಬ್ಬಿ ಮತ್ತು ಸ್ವಚ್ಛ ಸಮುದ್ರದ ಮಿನಿ ಮಾದರಿ",
+              "2": "ಆಟಿಕೆ ಮತ್ತು ಬಲೂನ್",
+              "3": "ಮನೆಯ ಯಾದೃಚ್ಛಿಕ ವಸ್ತುಗಳು"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-an-Ocean-Cleanliness-Collage-🌊-Basic",
+          "seq": 11,
+          "nm": "Create an Ocean Cleanliness Collage 🌊",
+          "desc": "In this activity, students will create an impactful collage promoting ocean cleanliness using images, text, and design to communicate their message creatively while understanding sustainability.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಸಮುದ್ರ ಮಾಲಿನ್ಯಕ್ಕೆ ಕಾರಣವಾಗುವ ಯಾವುದಾದರೊಂದು ವಸ್ತು ಹಂಚಿಕೊಳ್ಳಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mention of objects causing ocean pollution like plastic bottles, cans, plastic waste",
+              "invalid_criteria": "Mention of any other object which do not cause ocean pollution"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಮಾಲಿನ್ಯ ಉಂಟು ಮಾಡುವ ಯಾವುದಾದರೊಂದು ವಸ್ತುವಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "A clear photo of things like plastic bottles, cans, plastic waste",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of an object which do not cause ocean pollution"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ನಿಮ್ಮ eco collage ನಲ್ಲಿ ನೀವು ಯಾವ ಸಂದೇಶ ಬರೆದಿರಿ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ eco collage ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Poster Carries a Cause 📢",
+      "desc": "Poster making",
+      "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 14,
+          "nm": "Can your poster change minds? 📢",
+          "desc": "In this activity, students will create an impactful collage promoting ocean cleanliness using creative visual communication techniques.",
+          "yt": "l6VQO5IRcco",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 14,
+        "nm": "Can a poster change minds? 📢",
+        "qs": [
+          {
+            "q": "ಪೋಸ್ಟರ್ ತಯಾರಿಕೆ ಪಾಠದ ಮುಖ್ಯ ಉದ್ದೇಶ ಏನು?",
+            "opts": {
+              "1": "ಮರ ಬಿಡಿಸಲು ಕಲಿಯಲು",
+              "2": "ಆಲೋಚನೆಗಳನ್ನು ಸೃಜನಾತ್ಮಕವಾಗಿ ಸಂವಹಿಸಲು",
+              "3": "ಬಣ್ಣಗಳ ಹೆಸರು ಕಂಠಪಾಠ ಮಾಡಲು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಪೋಸ್ಟರ್ ತಯಾರಿಕೆಯಲ್ಲಿ ಫಾಂಟ್ ಆಯ್ಕೆ ಏಕೆ ಮುಖ್ಯ?",
+            "opts": {
+              "1": "ಇದು ಧ್ವನಿ ಸೃಷ್ಟಿಸಿ ಸಂವಹನ ಕೌಶಲ ಹೆಚ್ಚಿಸುತ್ತದೆ",
+              "2": "ವಸ್ತುಗಳ ವೆಚ್ಚ ಕಡಿಮೆ ಮಾಡುತ್ತದೆ",
+              "3": "ಪೋಸ್ಟರ್ ಕತ್ತರಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಪೋಸ್ಟರ್‌ನಲ್ಲಿ ಶಾಂತತೆ ಮತ್ತು ಗಂಭೀರತೆ ಪ್ರತಿನಿಧಿಸಲು ಯಾವ ಬಣ್ಣ ಬಳಸಬೇಕು?",
+            "opts": { "1": "ಕೆಂಪು", "2": "ಹಸಿರು", "3": "ನೀಲಿ" },
+            "ans": "3"
+          },
+          {
+            "q": "ವಿಜ್ಞಾನ ಪ್ರದರ್ಶನಕ್ಕಾಗಿ ರಿಯಾ ಪೋಸ್ಟರ್ ಗಮನ ಸೆಳೆಯಲು ಏನು ಮಾಡಬಹುದು?",
+            "opts": {
+              "1": "ಕೇವಲ ಕಪ್ಪು ಬಿಳುಪು ಬಣ್ಣ ಬಳಸಿ",
+              "2": "ಅಕ್ಷರಗಳನ್ನು ಸಾಧ್ಯವಾದಷ್ಟು ಚಿಕ್ಕದಾಗಿ ಮಾಡಿ",
+              "3": "ಅನನ್ಯ ವಿನ್ಯಾಸ, ಫಾಂಟ್ ಮತ್ತು ಬಣ್ಣಗಳನ್ನು ಅನ್ವೇಷಿಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "'ಜೇನ್ನೊಣ ಉಳಿಸಿ' ಅಭಿಯಾನಕ್ಕೆ ಪೋಸ್ಟರ್ ರಚಿಸಿದರೆ ಸೃಜನಾತ್ಮಕತೆ ಉತ್ತಮ ಬಳಸುವ ವಿಧಾನ ಯಾವುದು?",
+            "opts": {
+              "1": "ಯಾವ ಚಿತ್ರ ಅಥವಾ ಬಣ್ಣ ಬಳಸದೇ ಇರಿ",
+              "2": "ಜೇನ್ನೊಣ ಚಿತ್ರ ಸೇರಿಸಿ ಹಳದಿ ಮತ್ತು ಕಪ್ಪು ಬಣ್ಣ ಬಳಸಿ ಪ್ರಭಾವ ಹೆಚ್ಚಿಸಿ",
+              "3": "ಸಂದೇಶ ತಿಳಿಸಲು ಕೇವಲ ಪಠ್ಯ ಬಳಸಿ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-a-Save-the-Ocean-Poster-📢-Remedial",
+          "seq": 12,
+          "nm": "Design a Save the Ocean Poster 📢",
+          "desc": "In this activity, students will create an impactful collage promoting ocean cleanliness using creative visual communication techniques.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದಾದರೂ ಎಮೋಜಿ ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಇಂದಿನ ತರಗತಿಯಲ್ಲಿ ನಾವು ಯಾವ ಪರಿಸರ ಸಮಸ್ಯೆಯ ಮೇಲೆ ಗಮನ ಕೇಂದ್ರೀಕರಿಸುತ್ತಿದ್ದೇವೆ?",
+              "unguided_text": "ಈ ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮಗೆ ಏನನಿಸುತ್ತದೆ? ಒಂದು ಪದದಲ್ಲಿ ಹೇಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mention of \"water/ocean pollution\"",
+              "invalid_criteria": "Mention of any other word than \"water/ocean pollution\""
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನೀರಿನ ಮಾಲಿನ್ಯಕ್ಕೆ ಕಾರಣವಾಗುವ ಒಂದು ವಸ್ತುವಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಲಿನ ಯಾವುದಾದರೂ ವಸ್ತುವಿನ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "A clear image of real objects linked to the causes of water/pollution like:\n\nwater bottle\ntin cans \nplastic waste",
+              "invalid_criteria": "- Selfie or unrelated object\n- Images of objects that do not cause or has no direct relation to the problem of water/ocean pollution"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ನಿಮ್ಮ ಪೋಸ್ಟರ್‌ನ ಶೀರ್ಷಿಕೆ ಏನಾಗಿರಬೇಕು?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನೀರಿನ ಮಾಲಿನ್ಯ ಪೋಸ್ಟರ್‌ನ ಸ್ಪಷ್ಟ ಚಿತ್ರ ಹಂಚಿಕೊಳ್ಳಿ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Hallway Goes Deep 🏛️",
+      "desc": "Perspective Art, Space Design",
+      "rwc": "Pencil, Eraser, Colors, Ruler",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 15,
+          "nm": "Can a hallway go deep? 🏛️",
+          "desc": "In this activity, students will learn to use one-point perspective to draw scenes with depth, such as roads, houses, and trees moving into the distance.",
+          "yt": "ASSBR9zttPQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 15,
+        "nm": "Can lines show depth? 📐",
+        "qs": [
+          {
+            "q": "ಚಟುವಟಿಕೆಯ ಮುಖ್ಯ ಗಮನ ಏನು?",
+            "opts": {
+              "1": "ಚಿತ್ರಗಳಲ್ಲಿ ಒನ್-ಪಾಯಿಂಟ್ ಪರ್ಸ್ಪೆಕ್ಟಿವ್ ಬಳಸಲು ಕಲಿಯಲು",
+              "2": "ಚಿತ್ರಗಳಲ್ಲಿ ಬಣ್ಣ ಬಳಸಲು ಕಲಿಯಲು",
+              "3": "ಪ್ರಾಣಿಗಳನ್ನು ಬಿಡಿಸಲು ಕಲಿಯಲು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಒನ್-ಪಾಯಿಂಟ್ ಪರ್ಸ್ಪೆಕ್ಟಿವ್‌ನಲ್ಲಿ ವ್ಯಾನಿಶಿಂಗ್ ಪಾಯಿಂಟ್‌ನ ಉದ್ದೇಶ ಏನು?",
+            "opts": {
+              "1": "ಚಿತ್ರಕ್ಕೆ ಬಣ್ಣ ಸೇರಿಸಲು",
+              "2": "ಚಿತ್ರ ಚಿಕ್ಕದಾಗಿ ಕಾಣಲು",
+              "3": "ಎಲ್ಲಾ ಗೆರೆಗಳು ಒಮ್ಮುಖವಾಗುವ ಬಿಂದು ಆಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸಲು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ನಿಖರತೆ ಖಚಿತಪಡಿಸಲು ಒನ್-ಪಾಯಿಂಟ್ ಪರ್ಸ್ಪೆಕ್ಟಿವ್‌ನಲ್ಲಿ ಗೆರೆಗಳನ್ನು ಹೇಗೆ ಬಿಡಿಸಬೇಕು?",
+            "opts": {
+              "1": "ಕಾಗದದ ಅಂಚಿಗೆ ಸಮಾನಾಂತರವಾಗಿ",
+              "2": "ವ್ಯಾನಿಶಿಂಗ್ ಪಾಯಿಂಟ್‌ಗೆ ಹೊಂದಿಕೆಯಾಗುವಂತೆ",
+              "3": "ಯಾದೃಚ್ಛಿಕವಾಗಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಒನ್-ಪಾಯಿಂಟ್ ಪರ್ಸ್ಪೆಕ್ಟಿವ್ ಬಳಸಿ ಶಾಲೆಯ ಕಾರಿಡಾರ್ ಮರು ವಿನ್ಯಾಸ ಮಾಡಿದರೆ ಸೃಜನಾತ್ಮಕತೆ ಪ್ರದರ್ಶಿಸಲು ಯಾವ ಅಂಶ ಸಹಾಯ ಮಾಡುತ್ತದೆ?",
+            "opts": {
+              "1": "ಒಂದೇ ನೇರ ಗೆರೆ ಬಿಡಿಸಿ",
+              "2": "ಅನನ್ಯ ಮಾದರಿ ಮತ್ತು ಜೀವಂತ ಬಣ್ಣಗಳನ್ನು ಸೇರಿಸಿ",
+              "3": "ಕೇವಲ ಮೂಲ ಕಪ್ಪು ಬಿಳಿ ಗೆರೆಗಳನ್ನು ಬಳಸಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಒನ್-ಪಾಯಿಂಟ್ ಪರ್ಸ್ಪೆಕ್ಟಿವ್ ಬಳಸಿ ಶಾಲೆಯ ಕಾರಿಡಾರ್‌ಗೆ ಭವಿಷ್ಯದ ಥೀಮ್ ರಚಿಸಿದರೆ ಆಳ ಮತ್ತು ಆಸಕ್ತಿ ಹೇಗೆ ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೆಚ್ಚಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಹೆಚ್ಚಿನ ವಿವರ ಇಲ್ಲದೇ ಕೇವಲ ಪೆನ್ಸಿಲ್ ರೇಖಾಚಿತ್ರ ಬಳಸಿ",
+              "2": "ಕಡಿಮೆ ಗ್ರಹಿಕೆ ಒತ್ತಿಸಲು ಕಾರಿಡಾರ್ ಖಾಲಿಯಾಗಿ ಇಡಿ",
+              "3": "ತೇಲುವ ಡಿಜಿಟಲ್ ಪರದೆ ಮತ್ತು ಹೊಳೆಯುವ ನೆಲ ಅಳವಡಿಸಿ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Draw-Your-School-in-Perspective-🏛️-Intermediate",
+          "seq": 13,
+          "nm": "Draw Your School in Perspective 🏛️",
+          "desc": "In this activity, students will learn to use one-point perspective to draw scenes with depth, such as roads, houses, and trees moving into the distance.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಏಕ-ಬಿಂದು ದೃಷ್ಟಿಕೋನ ರೇಖಾಚಿತ್ರಗಳಲ್ಲಿ ಯಾವ ಬಿಂದು ಬಳಸಲಾಗುತ್ತದೆ?",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mention of \"vanishing point\"",
+              "invalid_criteria": "Mention of any other word than \"vanishing point\""
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಆಳ ಅಥವಾ ದೂರ ತೋರಿಸುವ ಯಾವುದಾದರೊಂದು ಸ್ಥಳದ ಫೋಟೋ ತೆಗೆಯಿರಿ.",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "A clear photo of places showing depth like:road going far, corridor, railway track, long hallway, stairs",
+              "invalid_criteria": "Images of flat objects (book, table, toy, face, etc."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ನೇರ ದೃಷ್ಟಿಕೋನ ರೇಖೆಗಳನ್ನು ಎಳೆಯಲು ಏನು ಬೇಕು?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ಏಕ ಬಿಂದು ದೃಷ್ಟಿಕೋನ ಕಲಾಕೃತಿಯ ಸ್ಪಷ್ಟ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Roads Vanish in Distance 🛤️",
+      "desc": "Perspective",
+      "rwc": "Pencil, Scale, Eraser, Colors, Drawing Book, Paper",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 16,
+          "nm": "Can roads vanish in distance? 🛤️",
+          "desc": "In this activity, students will understand the concept of perspective and create a one-point perspective artwork.",
+          "yt": "KB5ZA-b25Po",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 16,
+        "nm": "Can perspective fool your brain? 🤯",
+        "qs": [
+          {
+            "q": "ಚಿತ್ರಗಳಲ್ಲಿ ಕಂಡ ಕಡ್ಡಿಗಳ ಸಂಖ್ಯೆ ಬಗ್ಗೆ ಸರಿಯಾದ ಉತ್ತರ ಏನು?",
+            "opts": { "1": "ಒಂದೇ ಚಿತ್ರ ಸರಿ", "2": "ಎರಡೂ ಚಿತ್ರಗಳು ಸರಿ", "3": "ಯಾವ ಚಿತ್ರವೂ ಸರಿಯಲ್ಲ" },
+            "ans": "2"
+          },
+          {
+            "q": "ದೃಷ್ಟಿಕೋನ ಪರಿಕಲ್ಪನೆ ಏನನ್ನು ಸೂಚಿಸುತ್ತದೆ?",
+            "opts": {
+              "1": "ದೃಷ್ಟಿಕೋನ ಕೇವಲ ಕಲೆಗೆ ಅನ್ವಯಿಸುತ್ತದೆ",
+              "2": "ದೃಷ್ಟಿಕೋನ ಕೇವಲ ಛಾಯಾಗ್ರಹಣದಲ್ಲಿ ಬಳಸಲಾಗುತ್ತದೆ",
+              "3": "ದೃಷ್ಟಿಕೋನ ಒಂದೇ ವಸ್ತು ಬೇರೆ ಬೇರೆ ಸ್ಥಳದಿಂದ ಬೇರೆ ರೀತಿ ಕಾಣಲು ಅನುವು ಮಾಡುತ್ತದೆ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "1-ಪಾಯಿಂಟ್ ಪರ್ಸ್ಪೆಕ್ಟಿವ್ ಚಿತ್ರ ರಚಿಸುವ ಮೊದಲ ಹಂತ ಏನು?",
+            "opts": {
+              "1": "ರಸ್ತೆ ರಚಿಸಲು ಎರಡು ಗೆರೆ ಬಿಡಿಸಿ",
+              "2": "ಕಟ್ಟಡ ರಚಿಸಲು ಗೆರೆಗಳನ್ನು ಸೇರಿಸಿ",
+              "3": "ಕಾಗದದ ಮಧ್ಯದಲ್ಲಿ ಒಂದು ಬಿಂದು ಇಡಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ನಗರ ರಸ್ತೆಯ 1-ಪಾಯಿಂಟ್ ಪರ್ಸ್ಪೆಕ್ಟಿವ್ ಚಿತ್ರ ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೆಚ್ಚಿಸಲು ಹೇಗೆ?",
+            "opts": {
+              "1": "ಅನನ್ಯ ರೀತಿಯಲ್ಲಿ ಕಾರನ್ನು ಅಲಂಕರಿಸಿ ಬಣ್ಣ ಹಾಕಿ",
+              "2": "ಇಡೀ ಚಿತ್ರಕ್ಕೆ ಕೇವಲ ಪೆನ್ಸಿಲ್ ಬಳಸಿ",
+              "3": "ಯಾವ ವಾಹನವೂ ಇಲ್ಲದೇ ಕೇವಲ ಕಟ್ಟಡಗಳನ್ನು ಬಿಡಿಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಅನನ್ಯ ಕಲಾಕೃತಿ ರಚಿಸಲು ದೃಷ್ಟಿಕೋನ ಪರಿಕಲ್ಪನೆ ಹೇಗೆ ಅನ್ವಯಿಸಬಹುದು?",
+            "opts": {
+              "1": "ವಿವಿಧ ವಸ್ತುಗಳನ್ನು ಪ್ರಯೋಗಿಸಿ ವಿವಿಧ ದೃಷ್ಟಿಕೋನ ದೃಶ್ಯಗಳನ್ನು ರಚಿಸಿ",
+              "2": "ಇರುವ ದೃಷ್ಟಿಕೋನ ಚಿತ್ರ ಯಥಾವತ್ ನಕಲಿಸಿ",
+              "3": "ಕೇವಲ ನೇರ ಗೆರೆ ಮತ್ತು ಜ್ಯಾಮಿತೀಯ ಆಕಾರಗಳನ್ನು ಬಿಡಿಸಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Draw-a-One-Point-Perspective-Road-🛤️-Remedial",
+          "seq": 14,
+          "nm": "Draw a One Point Perspective Road 🛤️",
+          "desc": "In this activity, students will understand the concept of perspective and create a one-point perspective artwork.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದಾದರೂ ಎಮೋಜಿ ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಏಕ-ಬಿಂದು ದೃಷ್ಟಿಕೋನ ಚಿತ್ರಗಳಲ್ಲಿ ಯಾವ ಬಿಂದು ಬಳಸಲಾಗುತ್ತದೆ?",
+              "unguided_text": "ಈ ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮಗೆ ಏನನಿಸುತ್ತದೆ? ಒಂದು ಪದದಲ್ಲಿ ಹೇಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mention of \"vanishing point\"",
+              "invalid_criteria": "Mention of any other word than \"vanishing point\""
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಆಳ ಅಥವಾ ದೂರವನ್ನು ತೋರಿಸುವ ಯಾವುದಾದರೂ ಸ್ಥಳದ ಫೋಟೋ ತೆಗೆಯಿರಿ.",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಲಿನ ಯಾವುದಾದರೂ ವಸ್ತುವಿನ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "A clear photo of places showing depth like:road going far, corridor, railway track, long hallway, stairs",
+              "invalid_criteria": "Images of flat objects (book, table, toy, face, etc."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ನೇರ ದೃಷ್ಟಿಕೋನ ರೇಖೆಗಳನ್ನು ಎಳೆಯಲು ಏನು ಬೇಕು?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ಏಕ-ಬಿಂದು ದೃಷ್ಟಿಕೋನ ಕಲಾಕೃತಿಯ ಸ್ಪಷ್ಟ ಚಿತ್ರ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Shadow Gives it Depth 🌒",
+      "desc": "Collage Making Shading, Depth",
+      "rwc": "\"- Drawing Sheet, Paper, Old Magazines - Fevicol - Sketch Pens \"",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 17,
+          "nm": "Can shadows give paper depth? 🌒",
+          "desc": "In this activity, students will explore the use of light and shadow to create depth, dimension, and drama using a variety of papers in a collage.",
+          "yt": "hIUSYyEA0E8",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 17,
+        "nm": "Can shading show emotions? 🎭",
+        "qs": [
+          {
+            "q": "ಕಾರ್ತಿಕ್ ಕಲಾಕೃತಿ ರಚಿಸಲು ಮನೆಯಲ್ಲಿ ಯಾವ ವಸ್ತುಗಳಿದ್ದವು?",
+            "opts": {
+              "1": "ಪತ್ರಿಕೆ, ಹಳೆ ನಿಯತಕಾಲಿಕೆ ಮತ್ತು ಗಮ್",
+              "2": "ಗ್ಲಿಟರ್, ಬಣ್ಣದ ಚಾರ್ಟ್ ಪೇಪರ್, ಬಣ್ಣಗಳು",
+              "3": "ಪೆನ್, ಬ್ರಶ್, ಬಣ್ಣದ ಕಾಗದ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಕೊಲಾಜ್‌ನಲ್ಲಿ ವಿವಿಧ ಛಾಯೆಗಳ ಉದ್ದೇಶ ಏನು?",
+            "opts": {
+              "1": "ಬೆಳಕು, ನೆರಳು ಮತ್ತು ಆಳ ತೋರಿಸಲು",
+              "2": "ಹೆಚ್ಚಿನ ವಸ್ತುಗಳನ್ನು ಬಳಸಲು",
+              "3": "ಕೊಲಾಜ್ ಹೆಚ್ಚು ಬಣ್ಣದಾಗಿ ಮಾಡಲು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಕಾರ್ತಿಕ್ ತನ್ನ ಕೊಲಾಜ್ ಅನನ್ಯಗೊಳಿಸಲು ಏನು ಮಾಡಿದ?",
+            "opts": {
+              "1": "ಕೇವಲ ಪ್ರಕಾಶಮಾನ ಬಣ್ಣ ಬಳಸಿ",
+              "2": "ಟೋನಲ್ ಮೌಲ್ಯಗಳಿಂದ ಛಾಯೆ ಸೇರಿಸಿ",
+              "3": "ಗ್ಲಿಟರ್ ಮತ್ತು ಮಿಂಚು ಬಳಸಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಮರುಬಳಕೆ ವಸ್ತುಗಳನ್ನು ಬಳಸಿ ಅನನ್ಯ ಕಲಾಕೃತಿ ರಚಿಸಿದರೆ ವಿನ್ಯಾಸ ಸೇರಿಸಲು ಏನು ಬಳಸಬಹುದು?",
+            "opts": {
+              "1": "ಕೇವಲ ಹೊಳಪಿನ ಪತ್ರಿಕೆ ಪುಟಗಳು",
+              "2": "ವಿವಿಧ ರೀತಿಯ ಬಟ್ಟೆ ಅಥವಾ ಬನಾವಟು ಕಾಗದ",
+              "3": "ಸಾದಾ ಬಿಳಿ ಕಾಗದ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ನೈಜ ಜಗತ್ತಿನ ಉದಾಹರಣೆ ಬಳಸಿ ಗೆಳೆಯರಿಗೆ ಛಾಯೆ ವಿವರಿಸಿದರೆ ಯಾವ ಉದಾಹರಣೆ ಬಳಸಬಹುದು?",
+            "opts": {
+              "1": "ಸಂಪೂರ್ಣ ಹಳದಿ ಲಿಂಬೆ",
+              "2": "ಸೂರ್ಯನ ಬೆಳಕು ನೆಲದ ಮೇಲೆ ನೆರಳು ಸೃಷ್ಟಿಸುವ ಮರ",
+              "3": "ಯಾವ ನೆರಳೂ ಇಲ್ಲದ ಫೋಟೋ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Shaded-Newspaper-Collage-🌒-Intermediate",
+          "seq": 15,
+          "nm": "Create a Shaded Newspaper Collage 🌒",
+          "desc": "In this activity, students will explore the use of light and shadow to create depth, dimension, and drama using a variety of papers in a collage.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಇಂದಿನ ತರಗತಿಯಲ್ಲಿ ನಾವು ಯಾವ ಕಲಾ ತಂತ್ರದ ಮೇಲೆ ಗಮನ ಹರಿಸುತ್ತಿದ್ದೇವೆ?",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mention of \"collage/collage making\"",
+              "invalid_criteria": "Mention of any other word than \"collage/collage making\""
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಯಾವುದಾದರೊಂದು ವಸ್ತುವಿನ ನೆರಳಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "A clear photo showing a shadow of a real object\n(e.g., bottle shadow, chair shadow, hand shadow, tree shadow)",
+              "invalid_criteria": "- No shadow visible\n- Selfie or object without shadow\n- Random object not showing light–shadow effect"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಕೊಲಾಜ್ ತಯಾರಿಸಲು ಬೇಕಾದ ಕನಿಷ್ಠ 2 ವಸ್ತುಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಕೊಲಾಜ್‌ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Paper Tells the Object 📰",
+      "desc": "Collage, Landscape, recycled art",
+      "rwc": "Paper, Glue, Pencil, Pen, Sketchpen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 18,
+          "nm": "Can newspaper become a vase? 📰",
+          "desc": "In this activity, students will explore the use of old and waste paper to understand recycling by creating a collage of an object around them.",
+          "yt": "9AI2S9_aqKg",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 18,
+        "nm": "Can old news become art? 📰",
+        "qs": [
+          {
+            "q": "ಪತ್ರಿಕೆ ಕೊಲಾಜ್ ರಚಿಸಲು ಯಾವ ವಸ್ತುಗಳು ಬೇಕು?",
+            "opts": {
+              "1": "ಹಳೆ ಪತ್ರಿಕೆ, ಪೆನ್ಸಿಲ್, ಸ್ಕೆಚ್ ಪೆನ್, ಗಮ್, ಡ್ರಾಯಿಂಗ್ ಶೀಟ್",
+              "2": "ಜೇಡಿ ಮಣ್ಣು ಮತ್ತು ಶಿಲ್ಪಕಾರ ಉಪಕರಣಗಳು",
+              "3": "ಬಣ್ಣ ಮತ್ತು ಬ್ರಶ್"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಹಳೆ ಪತ್ರಿಕೆಗಳ ಬಳಕೆ ಬಗ್ಗೆ ಮುಖ್ಯ ಸಂದೇಶ ಏನು?",
+            "opts": {
+              "1": "ಹಳೆ ಪತ್ರಿಕೆ ಕೇವಲ ವಸ್ತುಗಳನ್ನು ಸುತ್ತಲು ಉಪಯೋಗಕರ",
+              "2": "ಹಳೆ ಪತ್ರಿಕೆ ಮರುಬಳಕೆ ಮಾಡಬಹುದು ಅಥವಾ ಕೊಲಾಜ್‌ನಂತಹ ಕಲೆ ರಚಿಸಲು ಬಳಸಬಹುದು",
+              "3": "ಹಳೆ ಪತ್ರಿಕೆ ಓದಿದ ನಂತರ ಎಸೆಯಬೇಕು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಪತ್ರಿಕೆಯಲ್ಲಿ ಬಣ್ಣ ಇಲ್ಲದಿದ್ದರೆ ಕೊಲಾಜ್‌ಗೆ ಬಣ್ಣ ಹೇಗೆ ಸೇರಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಬಣ್ಣದ ಪೆನ್ಸಿಲ್ ಬಳಸಿ",
+              "2": "ಪತ್ರಿಕೆಯಿಂದ ಬಣ್ಣದ ಭಾಗಗಳನ್ನು ಹುಡುಕಿ ಕತ್ತರಿಸಿ",
+              "3": "ಪತ್ರಿಕೆ ಮೇಲೆ ಬಣ್ಣ ಬಳಿದು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಪತ್ರಿಕೆ ಬದಲು ಹಳೆ ನಿಯತಕಾಲಿಕೆ ಇದ್ದರೆ ಕೊಲಾಜ್‌ಗೆ ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೇಗೆ ಬಳಸಬಹುದು?",
+            "opts": {
+              "1": "ಬಣ್ಣದ ಚಿತ್ರ ಮತ್ತು ಪಠ್ಯ ಕತ್ತರಿಸಿ ವಿಷಯ ಆಧಾರಿತ ಕೊಲಾಜ್ ರಚಿಸಿ",
+              "2": "ಯಾವ ಬದಲಾವಣೆಯೂ ಇಲ್ಲದೇ ಅದನ್ನೇ ಬಳಸಿ",
+              "3": "ಪತ್ರಿಕೆ ಅಲ್ಲ ಎಂದು ತ್ಯಜಿಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಈ ಸ್ಕ್ರಿಪ್ಟ್‌ನಿಂದ ಪ್ರೇರಣೆ ಪಡೆದು ಮನೆಯ ಇತರ ವಸ್ತುಗಳನ್ನು ಸೃಜನಾತ್ಮಕವಾಗಿ ಮರುಬಳಕೆ ಮಾಡಿದರೆ ಹೇಗೆ?",
+            "opts": {
+              "1": "ಜಾಗ ಮಾಡಲು ಎಸೆಯಿರಿ",
+              "2": "ಭವಿಷ್ಯದ ಬಳಕೆಗಾಗಿ ಅದೇ ರೀತಿ ಸಂಗ್ರಹಿಸಿ",
+              "3": "ಸೃಜನಾತ್ಮಕ ಯೋಜನೆಗಾಗಿ ಭಾಗಗಳನ್ನು ಬಳಸಿ ಕಲೆಯಾಗಿ ಪರಿವರ್ತಿಸಿ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Newspaper-Flower-Pot-Collage-📰-Remedial",
+          "seq": 16,
+          "nm": "Make a Newspaper Flower Pot Collage 📰",
+          "desc": "In this activity, students will explore the use of old and waste paper to understand recycling by creating a collage of an object around them.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದಾದರೂ ಎಮೋಜಿ ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಇಂದಿನ ತರಗತಿಯಲ್ಲಿ ನಾವು ಯಾವ ಕಲಾ ತಂತ್ರದ ಮೇಲೆ ಗಮನ ಕೇಂದ್ರೀಕರಿಸುತ್ತಿದ್ದೇವೆ?",
+              "unguided_text": "ಈ ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮಗೆ ಏನನಿಸುತ್ತದೆ? ಒಂದು ಪದದಲ್ಲಿ ಹೇಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mention of \"collage/collage making\"",
+              "invalid_criteria": "Mention of any other word than \"collage/collage making\""
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಕಾಗದದಿಂದ ಮಾಡಿದ ಯಾವುದಾದರೂ ವಸ್ತುವಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ.",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಲಿನ ಯಾವುದಾದರೂ ವಸ್ತುವಿನ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "A clear photo of any paper-based objects like:\n\nnewspaper\nbook\nmagazine\ncardboard box\npaper sheet",
+              "invalid_criteria": "- Non-paper objects (toy, food, clothes, etc.)\n- Selfie or human face"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಈ ಕೊಲಾಜ್‌ನಲ್ಲಿ ಬಣ್ಣಗಳ ಬದಲು ಏನನ್ನು ಬಳಸಲಾಗುತ್ತದೆ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಕೊಲಾಜ್‌ನ ಸ್ಪಷ್ಟ ಚಿತ್ರ ಹಂಚಿಕೊಳ್ಳಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Pop Art Fights Climate 🌏",
+      "desc": "Pop Art",
+      "rwc": "Artbook, Pencil, Eraser, Paints, Brushes, Markers",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 19,
+          "nm": "Can pop art fight climate? 🌏",
+          "desc": "In this activity, students will create a Pop Art–style climate action poster using bold outlines, contrasting colors, and strong messages to spread environmental awareness.",
+          "yt": "Voe9armQR9A",
+          "pts": 10,
+          "pq": {
+            "id": 19,
+            "nm": "Can pop art fight climate change? 🌍",
+            "qs": [
+              {
+                "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ಚರ್ಚಿಸಿದ ಕಲೆಯ ಮುಖ್ಯ ಶೈಲಿ ಏನು?",
+                "opts": { "1": "ಪಾಪ್ ಆರ್ಟ್", "2": "ಕ್ಯೂಬಿಸಮ್", "3": "ಇಂಪ್ರೆಷನಿಸಮ್" },
+                "ans": "1"
+              },
+              {
+                "q": "ಪಾಪ್ ಆರ್ಟ್ ಶೈಲಿಯ ಹವಾಮಾನ ಕ್ರಿಯಾ ಪೋಸ್ಟರ್ ರಚಿಸುವ ಮುಖ್ಯ ಉದ್ದೇಶ ಏನು?",
+                "opts": {
+                  "1": "ವಿವಿಧ ಕಲಾ ಶೈಲಿಗಳ ಬಗ್ಗೆ ತಿಳಿಯಲು",
+                  "2": "ಹವಾಮಾನ ಬದಲಾವಣೆ ಬಗ್ಗೆ ಜಾಗೃತಿ ಮೂಡಿಸಲು",
+                  "3": "ಚಿತ್ರ ಬಿಡಿಸುವ ಕೌಶಲ ಅಭ್ಯಾಸ ಮಾಡಲು"
+                },
+                "ans": "2"
+              },
+              {
+                "q": "ಪೋಸ್ಟರ್ ರಚಿಸಲು ಉಲ್ಲೇಖಿಸದ ವಸ್ತು ಯಾವುದು?",
+                "opts": { "1": "ಪೆನ್ಸಿಲ್", "2": "ಜಲ ಬಣ್ಣ", "3": "ಡ್ರಾಯಿಂಗ್ ಶೀಟ್" },
+                "ans": "2"
+              },
+              {
+                "q": "ಅರಣ್ಯ ನಾಶದ ಬಗ್ಗೆ ಪಾಪ್ ಆರ್ಟ್ ಪೋಸ್ಟರ್ ರಚಿಸಿದರೆ ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ಚರ್ಚಿಸಿದ ಶೈಲಿಗೆ ಯಾವ ವಿಧಾನ ಹೆಚ್ಚು ಸೂಕ್ತ?",
+                "opts": {
+                  "1": "ಅರಣ್ಯ ನಾಶದ ಪರಿಣಾಮಗಳ ಬಗ್ಗೆ ಪ್ರಬಂಧ ಬರೆಯಿರಿ",
+                  "2": "ಮರ ನಷ್ಟದ ಪ್ರಭಾವ ಒತ್ತಿಸಲು ವಿಪರೀತ ಬಣ್ಣ ಮತ್ತು ದಿಟ್ಟ ಘೋಷಣೆ ಬಳಸಿ",
+                  "3": "ಅರಣ್ಯದ ವಿವರ ಭೂದೃಶ್ಯ ಚಿತ್ರ ರಚಿಸಿ"
+                },
+                "ans": "2"
+              },
+              {
+                "q": "ಸಮುದ್ರ ಮಾಲಿನ್ಯದ ಪಾಪ್ ಆರ್ಟ್ ಪೋಸ್ಟರ್‌ನಲ್ಲಿ ಸೃಜನಾತ್ಮಕತೆ ಹೇಗೆ ಸೇರಿಸಬಹುದು?",
+                "opts": {
+                  "1": "ಪ್ಲಾಸ್ಟಿಕ್‌ನಲ್ಲಿ ಸಿಲುಕಿದ ಸಮುದ್ರ ಜೀವಿ ಚಿತ್ರ ಬಿಡಿಸಿ ಸಮಸ್ಯೆ ಉಜ್ಜ್ವಲಗೊಳಿಸಲು ಪ್ರಕಾಶಮಾನ ಬಣ್ಣ ಮತ್ತು ದಿಟ್ಟ ಮಾದರಿ ಬಳಸಿ",
+                  "2": "ಸಮುದ್ರ ಮಾತ್ರ ಚಿತ್ರಿಸಲು ಕಪ್ಪು ಬಿಳಿ ಚಿತ್ರ ಬಳಸಿ",
+                  "3": "ಮಾಲಿನ್ಯ ಬಗ್ಗೆ ಕೇವಲ ಪಠ್ಯ ಮಾಹಿತಿ ನೀಡಿ"
+                },
+                "ans": "1"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 20,
+        "nm": "Can pop art fight climate change? 🌍",
+        "qs": [
+          {
+            "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ಚರ್ಚಿಸಿದ ಕಲೆಯ ಮುಖ್ಯ ಶೈಲಿ ಏನು?",
+            "opts": { "1": "ಪಾಪ್ ಆರ್ಟ್", "2": "ಕ್ಯೂಬಿಸಮ್", "3": "ಇಂಪ್ರೆಷನಿಸಮ್" },
+            "ans": "1"
+          },
+          {
+            "q": "ಪಾಪ್ ಆರ್ಟ್ ಶೈಲಿಯ ಹವಾಮಾನ ಕ್ರಿಯಾ ಪೋಸ್ಟರ್ ರಚಿಸುವ ಮುಖ್ಯ ಉದ್ದೇಶ ಏನು?",
+            "opts": {
+              "1": "ವಿವಿಧ ಕಲಾ ಶೈಲಿಗಳ ಬಗ್ಗೆ ತಿಳಿಯಲು",
+              "2": "ಹವಾಮಾನ ಬದಲಾವಣೆ ಬಗ್ಗೆ ಜಾಗೃತಿ ಮೂಡಿಸಲು",
+              "3": "ಚಿತ್ರ ಬಿಡಿಸುವ ಕೌಶಲ ಅಭ್ಯಾಸ ಮಾಡಲು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಪೋಸ್ಟರ್ ರಚಿಸಲು ಉಲ್ಲೇಖಿಸದ ವಸ್ತು ಯಾವುದು?",
+            "opts": { "1": "ಪೆನ್ಸಿಲ್", "2": "ಜಲ ಬಣ್ಣ", "3": "ಡ್ರಾಯಿಂಗ್ ಶೀಟ್" },
+            "ans": "2"
+          },
+          {
+            "q": "ಅರಣ್ಯ ನಾಶದ ಬಗ್ಗೆ ಪಾಪ್ ಆರ್ಟ್ ಪೋಸ್ಟರ್ ರಚಿಸಿದರೆ ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ಚರ್ಚಿಸಿದ ಶೈಲಿಗೆ ಯಾವ ವಿಧಾನ ಹೆಚ್ಚು ಸೂಕ್ತ?",
+            "opts": {
+              "1": "ಅರಣ್ಯ ನಾಶದ ಪರಿಣಾಮಗಳ ಬಗ್ಗೆ ಪ್ರಬಂಧ ಬರೆಯಿರಿ",
+              "2": "ಮರ ನಷ್ಟದ ಪ್ರಭಾವ ಒತ್ತಿಸಲು ವಿಪರೀತ ಬಣ್ಣ ಮತ್ತು ದಿಟ್ಟ ಘೋಷಣೆ ಬಳಸಿ",
+              "3": "ಅರಣ್ಯದ ವಿವರ ಭೂದೃಶ್ಯ ಚಿತ್ರ ರಚಿಸಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಸಮುದ್ರ ಮಾಲಿನ್ಯದ ಪಾಪ್ ಆರ್ಟ್ ಪೋಸ್ಟರ್‌ನಲ್ಲಿ ಸೃಜನಾತ್ಮಕತೆ ಹೇಗೆ ಸೇರಿಸಬಹುದು?",
+            "opts": {
+              "1": "ಪ್ಲಾಸ್ಟಿಕ್‌ನಲ್ಲಿ ಸಿಲುಕಿದ ಸಮುದ್ರ ಜೀವಿ ಚಿತ್ರ ಬಿಡಿಸಿ ಸಮಸ್ಯೆ ಉಜ್ಜ್ವಲಗೊಳಿಸಲು ಪ್ರಕಾಶಮಾನ ಬಣ್ಣ ಮತ್ತು ದಿಟ್ಟ ಮಾದರಿ ಬಳಸಿ",
+              "2": "ಸಮುದ್ರ ಮಾತ್ರ ಚಿತ್ರಿಸಲು ಕಪ್ಪು ಬಿಳಿ ಚಿತ್ರ ಬಳಸಿ",
+              "3": "ಮಾಲಿನ್ಯ ಬಗ್ಗೆ ಕೇವಲ ಪಠ್ಯ ಮಾಹಿತಿ ನೀಡಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-a-Pop-Art-Climate-Poster-🌏-Advanced",
+          "seq": 17,
+          "nm": "Design a Pop Art Climate Poster 🌏",
+          "desc": "In this activity, students will create a Pop Art–style climate action poster using bold outlines, contrasting colors, and strong messages to spread environmental awareness.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಇಂದಿನ ತರಗತಿಯಲ್ಲಿ ನಾವು ಯಾವ ಕಲಾ ಶೈಲಿಯ ಮೇಲೆ ಗಮನ ಹರಿಸುತ್ತಿದ್ದೇವೆ?",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mention of \"pop art\"",
+              "invalid_criteria": "Mention of any other word than \"pop art\""
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಇರುವ ಯಾವುದಾದರೊಂದು ಪರಿಸರ ಸಮಸ್ಯೆಯ ಫೋಟೋ ತೆಗೆಯಿರಿ.",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "A clear image of environmental issue like:\n\nplastic waste\ngarbage\npolluted water\nsmoke/pollution\ndeforestation/trees being cut (or related scene)",
+              "invalid_criteria": "- Selfie or unrelated object\n- Clean object with no environmental relevance\n- Indoor random items (book, pen, toy, etc.)"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Pop art ನ ಕನಿಷ್ಠ ಒಂದು ಮೂಲಭೂತ ಲಕ್ಷಣ ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ Pop Art ಹವಾಮಾನ ಕ್ರಿಯಾ ಪೋಸ್ಟರ್‌ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Object Becomes a Star ⭐",
+      "desc": "Pop Art",
+      "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 20,
+          "nm": "Can a bottle become art? ⭐",
+          "desc": "In this activity, students will identify an everyday object and create a Pop Art–inspired artwork based on it.",
+          "yt": "bukTX3rrN-c",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 21,
+        "nm": "Can repetition make art pop? 🎨",
+        "qs": [
+          {
+            "q": "ಪಾಪ್ ಆರ್ಟ್ ರಚಿಸಲು ಉಲ್ಲೇಖಿಸಿದ ಮುಖ್ಯ ಅಂಶ ಯಾವುದು?",
+            "opts": { "1": "ವಾಸ್ತವಿಕ ವಿವರಗಳು", "2": "ಪ್ರಕಾಶಮಾನ ಬಣ್ಣಗಳು", "3": "ಕಪ್ಪು ಹಿನ್ನೆಲೆ" },
+            "ans": "2"
+          },
+          {
+            "q": "ಸ್ಕ್ರಿಪ್ಟ್ ಪ್ರಕಾರ ಪಾಪ್ ಆರ್ಟ್‌ನಲ್ಲಿ ಪುನರಾವರ್ತನೆ ಬಳಸುವ ಮುಖ್ಯ ಉದ್ದೇಶ ಏನು?",
+            "opts": {
+              "1": "ವಾಸ್ತವಿಕತೆ ಸಾಧಿಸಲು",
+              "2": "ವಸ್ತುಗಳನ್ನು ಉಳಿಸಲು",
+              "3": "ಕಲಾಕೃತಿ ಹೆಚ್ಚು ಆಕರ್ಷಕ ಮಾಡಲು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಕಾಫಿ ಮಗ್‌ನ ಪಾಪ್ ಆರ್ಟ್ ರಚಿಸಿದರೆ ದಪ್ಪ ಕಪ್ಪು ಗೆರೆ ಬಳಸುವ ಹಂತ ಯಾವುದು?",
+            "opts": {
+              "1": "ವಸ್ತು ಆಯ್ಕೆ",
+              "2": "ಪಾಪ್ ಆರ್ಟ್ ಶೈಲಿಗೆ ಪರಿವರ್ತಿಸುವಾಗ",
+              "3": "ಮೂಲ ಆಕಾರ ಬಿಡಿಸುವಾಗ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ದೈನಂದಿನ ವಸ್ತು ಕಲಾತ್ಮಕ ಮಾಡಲು ಹೇಗೆ?",
+            "opts": {
+              "1": "ಸೂಕ್ಷ್ಮ ನೋಟಕ್ಕಾಗಿ ಪೇಸ್ಟಲ್ ಬಣ್ಣ ಬಳಸಿ",
+              "2": "ಗಾತ್ರ ಉತ್ಪ್ರೇಕ್ಷಿಸಿ ದಿಟ್ಟ ಬಣ್ಣ ಸೇರಿಸಿ",
+              "3": "ನಾಟಕೀಯ ಪರಿಣಾಮಕ್ಕಾಗಿ ಕೇವಲ ಕಪ್ಪು ಬಿಳಿ ಬಣ್ಣ ಬಳಸಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಹೊಸ ಶೂ ಲೈನ್‌ಗೆ ಪಾಪ್ ಆರ್ಟ್ ಪೋಸ್ಟರ್ ವಿನ್ಯಾಸ ಮಾಡಿದರೆ ಗಮನ ಸೆಳೆಯಲು ಯಾವ ಸೃಜನಾತ್ಮಕ ವಿಧಾನ ತೆಗೆದುಕೊಳ್ಳಬಹುದು?",
+            "opts": {
+              "1": "ಪ್ರಕಾಶಮಾನ ವಿಪರೀತ ಬಣ್ಣ ಬಳಸಿ ಶೂ ವಿನ್ಯಾಸ ಪುನರಾವರ್ತಿಸಿ",
+              "2": "ಪೇಸ್ಟಲ್ ಛಾಯೆ ಮತ್ತು ತೆಳು ಗೆರೆ ಬಳಸಿ",
+              "3": "ಶೂ ಮರೆಮಾಡಿ ಬ್ರ್ಯಾಂಡ್ ಲೋಗೋ ಮೇಲೆ ಗಮನ ಕೇಂದ್ರೀಕರಿಸಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Favourite-Object-Pop-Art-⭐-Remedial",
+          "seq": 18,
+          "nm": "Create a Favourite Object Pop Art ⭐",
+          "desc": "In this activity, students will identify an everyday object and create a Pop Art–inspired artwork based on it.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದಾದರೂ ಎಮೋಜಿ ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಇಂದಿನ ತರಗತಿಯಲ್ಲಿ ನಾವು ಯಾವ ಕಲಾ ಶೈಲಿಯ ಮೇಲೆ ಗಮನ ಕೇಂದ್ರೀಕರಿಸುತ್ತಿದ್ದೇವೆ?",
+              "unguided_text": "ಈ ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮಗೆ ಏನನಿಸುತ್ತದೆ? ಒಂದು ಪದದಲ್ಲಿ ಹೇಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "Mention of \"pop art\"",
+              "invalid_criteria": "Mention of any other word than \"pop art\""
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಯಾವುದಾದರೂ ದೈನಂದಿನ ವಸ್ತುವಿನ ಫೋಟೋ ತೆಗೆಯಿರಿ.",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಲಿನ ಯಾವುದಾದರೂ ವಸ್ತುವಿನ ಫೋಟೋ ಹಂಚಿಕೊಳ್ಳಿ",
+              "valid_criteria": "A clear photo of any common daily object like:\n\nbottle\nchips packet\nsunglasses\nmobile\npen\nshoes",
+              "invalid_criteria": "- Selfie or human face\n- Nature scenes only (tree, sky, etc.)"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Pop Art ನಲ್ಲಿ ಯಾವ ಬಣ್ಣಗಳನ್ನು ಬಳಸಲಾಗುತ್ತದೆ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ Pop Art ಕಲಾಕೃತಿಯ ಸ್ಪಷ್ಟ ಚಿತ್ರ ಹಂಚಿಕೊಳ್ಳಿ!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

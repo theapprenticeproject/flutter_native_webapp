@@ -1,0 +1,1464 @@
+{
+  "id": "Scratch-Jr-coding-C0078",
+  "nm": "Scratch Jr",
+  "lvl": "Level 3AK",
+  "vrt": "coding",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "First Code Awakens 🐱",
+      "desc": "App installation and navigation (Google Play Store / App Store). Scratch Junior interface: Home icon, My Projects page, stage, programming area. Sprite management: adding and removing characters. Block categories: trigger blocks, motion blocks, end blocks.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 118,
+          "nm": "Can your phone build games? 📱",
+          "desc": "या गतीविधीत, विद्यार्थी त्यांच्या उपकरणांवर स्क्रॅच ज्युनिअर अ‍ॅप डाउनलोड करून ते उघडणे शिकतील. ते होम स्क्रीन पाहतील, स्टेज समजून घेतील, स्प्राइट्स जोडतील, एक साधा अ‍ॅनिमेटेड प्रोजेक्ट तयार करतील आणि मोशन व ट्रिगर ब्लॉक्ससारख्या मूलभूत ब्लॉक्ससह प्रयोग करतील. विद्यार्थी त्यांच्या प्रोजेक्टला शीर्षक, रंग आणि पार्श्वभूमी जोडून कस्टमाईज करणे देखील शिकतील, ज्यामुळे ते आपली पहिली अ‍ॅनिमेशन तयार करू शकतील.",
+          "yt": "cXXsW5fk2QY",
+          "pts": 10,
+          "pq": {
+            "id": 121,
+            "nm": "How do you start on Scratch Jr? 🐱",
+            "qs": [
+              {
+                "q": "तुम्ही Scratch Jr वर नवीन प्रकल्प कसा सुरू कराल?",
+                "opts": {
+                  "1": "Click the House button, followed by the plus (+) sign",
+                  "2": "Click the Question mark (?) button followed by the play button",
+                  "3": "Click the Scratch Jr icon, followed by the House button"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "तुमच्या स्क्रॅच ज्युनियर प्रकल्पात नवीन पात्र कसे जोडाल?",
+                "opts": {
+                  "1": "Drag the character onto the screen",
+                  "2": "Select the character and click the tick button to add it",
+                  "3": "Tap the plus sign to the left of the stage and and click the tick button"
+                },
+                "ans": "2"
+              },
+              {
+                "q": "Scratch Jr मध्ये ABC चिन्ह तुम्हाला काय करू देते?",
+                "opts": {
+                  "1": "Add sprites, change their color, and move them around",
+                  "2": "Add text, change the size of text, and change the color of text",
+                  "3": "Create new projects, change backgrounds, and add sounds"
+                },
+                "ans": "2"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 122,
+        "nm": "Can you code it? 🎮",
+        "qs": [
+          {
+            "q": "तुम्ही Android फोनवर Scratch Jr डाउनलोड करण्यासाठी कोणते स्टोअर वापरता?",
+            "opts": { "1": "Google Play Store", "2": "App Store", "3": "Scratch Website" },
+            "ans": "1"
+          },
+          {
+            "q": "तुमच्या प्रकल्पात मजकूर जोडण्यासाठी कोणते चिन्ह वापरता येईल?",
+            "opts": { "1": "Reset icon", "2": "ABC icon", "3": "Green flag icon" },
+            "ans": "2"
+          },
+          {
+            "q": "जर तुम्हाला नवीन प्रकल्प सुरू करायचा असेल, तर घराच्या चिन्हानंतर काय टॅप कराल?",
+            "opts": {
+              "1": "The plus (+) sign",
+              "2": "The question mark (?)",
+              "3": "The green flag"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "तुम्ही Scratch Jr प्रथमच उघडता आणि तुम्हाला डिफॉल्ट मांजर स्प्राइट दिसतो. तुमचा प्रकल्प अधिक सर्जनशील कसा बनवाल?",
+            "opts": {
+              "1": "Keep it exactly the same as given",
+              "2": "Add new sprites and backgrounds",
+              "3": "Delete all sprites and leave it blank"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "तुमचा पहिला प्रकल्प वेगळा करण्यासाठी सर्वोत्तम पद्धत कोणती असेल?",
+            "opts": {
+              "1": "Use only the default sprite and background",
+              "2": "Make everything the same as your friend’s project",
+              "3": "Combine different sprites, backgrounds, and movements to tell a story"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-Your-First-Animation-🐱-Basic",
+          "seq": 112,
+          "nm": "GetReadyForScratchJr",
+          "desc": "या गतीविधीत, विद्यार्थी त्यांच्या उपकरणांवर स्क्रॅच ज्युनिअर अ‍ॅप डाउनलोड करून ते उघडणे शिकतील. ते होम स्क्रीन पाहतील, स्टेज समजून घेतील, स्प्राइट्स जोडतील, एक साधा अ‍ॅनिमेटेड प्रोजेक्ट तयार करतील आणि मोशन व ट्रिगर ब्लॉक्ससारख्या मूलभूत ब्लॉक्ससह प्रयोग करतील. विद्यार्थी त्यांच्या प्रोजेक्टला शीर्षक, रंग आणि पार्श्वभूमी जोडून कस्टमाईज करणे देखील शिकतील, ज्यामुळे ते आपली पहिली अ‍ॅनिमेशन तयार करू शकतील.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "जर तुम्हाला हा उपक्रम आवडला असेल, तर तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "टेक्स्ट किंवा व्हॉइस नोट पाठवा — उपक्रम आवडला असेल तर \"Fun\" म्हणा, नाही आवडला तर \"Boring\" म्हणा",
+              "unguided_text": "आजच्या उपक्रमाचा अनुभव एका शब्दात सांगा (मजकूर किंवा व्हॉइस नोट)",
+              "valid_criteria": "fun, boring",
+              "invalid_criteria": "Any word other than fun, boring"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुम्ही वापरत असलेल्या एखाद्या गॅजेटचा फोटो काढा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो काढा",
+              "valid_criteria": "Phone, TV, laptop, tablet or similar gadget",
+              "invalid_criteria": "Any object other than a gadget"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाईप करा किंवा व्हॉइस नोट पाठवा — आजच्या कोडिंग उपक्रमात शिकलेली एक नवीन गोष्ट सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या अ‍ॅक्टिव्हिटीचा एक स्पष्ट स्क्रीनशॉट किंवा व्हिडिओ शेअर करा ज्यामध्ये हिरव्या बागेत एक फुलपाखरू दिसत असेल आणि प्रोग्रामिंग एरियामध्ये कोड स्पष्टपणे दिसत असेल"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Butterfly Feeds the Garden 🌸",
+      "desc": "Students will be able to add backgrounds and sprites, duplicate and modify sprites as well as their colors using the Paint Editor , and using the ABC tool to add titles. Students will be able to apply coding concepts by using the Start on Green Flag block to start the animation, Motion (blue) blocks to move the butterfly, turn blocks to show direction change, and the Repeat Forever block to create continuous movement. In addition, they will understand that butterflies drink nectar from flowers, which provides them with energy and nutrition, and plays an important role in nature.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 119,
+          "nm": "Can butterflies drink flowers? 🦋",
+          "desc": "या अॅक्टिव्हिटीमध्ये, विद्यार्थी स्क्रॅच ज्युनिअर मध्ये एक अ‍ॅनिमेशन तयार करतील ज्यामध्ये फुलांमधून उडणारी आणि मधपान करणारी फुलपाखरू दाखवली जाईल. ते पेंट एडिटरचा वापर करून आणि फुलं जोडून आणि डुप्लिकेट करून दृश्य डिझाइन करतील आणि ट्रिगर, मोशन आणि रिपीट फॉरएव्हर ब्लॉक्स वापरून फुलपाखराच्या हालचालींना अ‍ॅनिमेट करतील. विद्यार्थी त्यांच्या प्रकल्पाला एक शीर्षक देखील देतील, ज्यामुळे तो दृश्यात्मकदृष्ट्या पूर्ण आणि अर्थपूर्ण बनेल.",
+          "yt": "K2rzKDO40D8",
+          "pts": 10,
+          "pq": {
+            "id": 123,
+            "nm": "What makes the butterfly move? 🦋",
+            "qs": [
+              {
+                "q": "स्क्रॅच ज्युनियर मध्ये नवीन प्रकल्प सुरू करण्यासाठी तुम्ही काय करावे?",
+                "opts": {
+                  "1": "Click the grid option",
+                  "2": "Click the home icon and then the plus sign",
+                  "3": "Click the pencil icon"
+                },
+                "ans": "2"
+              },
+              {
+                "q": "अ‍ॅनिमेशनमध्ये पानांना अधिक दृश्यमान बनवण्यासाठी तुम्ही काय करू शकता?",
+                "opts": {
+                  "1": "Place the butterfly on the right",
+                  "2": "Use the fill tool to change color",
+                  "3": "Add more flowers"
+                },
+                "ans": "2"
+              },
+              {
+                "q": "फुलपाखराला सतत हलवण्यासाठी कोणता ब्लॉक वापरला जातो?",
+                "opts": {
+                  "1": "Start on green flag block",
+                  "2": "Repeat forever block",
+                  "3": "Turn right block"
+                },
+                "ans": "2"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 124,
+        "nm": "Why do butterflies fly? 🦋",
+        "qs": [
+          {
+            "q": "फुलांमधून फुलपाखरं काय पितात?",
+            "opts": { "1": "Water", "2": "Nectar", "3": "Juice" },
+            "ans": "2"
+          },
+          {
+            "q": "अ‍ॅनिमेशन स्क्रिप्टमध्ये 'रिपीट फॉरेव्हर' ब्लॉकचा उपयोग कशासाठी करतात?",
+            "opts": {
+              "1": "To make the butterfly fly only once",
+              "2": "To continuously repeat the butterfly's drinking motion",
+              "3": "To change the background color"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "अ‍ॅनिमेशनमध्ये मजकूर संदेश जोडण्यासाठी कोणते टूल वापरतात?",
+            "opts": { "1": "Fill tool", "2": "Duplicate tool", "3": "ABC tool" },
+            "ans": "3"
+          },
+          {
+            "q": "जर फुलपाखराला मध पिण्यासाठी वाकवायचे असेल, सरळ रेषेत जाण्याऐवजी, तर कोणता अतिरिक्त ब्लॉक क्रिएटिव्हली वापरू शकता?",
+            "opts": {
+              "1": "Turn right and turn left blocks",
+              "2": "Move right and left blocks",
+              "3": "Reset block"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "प्रेक्षकांसाठी अ‍ॅनिमेशन अधिक इंटरॅक्टिव्ह कसे बनवू शकता?",
+            "opts": {
+              "1": "Add more flowers",
+              "2": "Use a different background",
+              "3": "Add sound effects when the butterfly drinks nectar"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Animate-a-Hungry-Butterfly-🌸-Remedial",
+          "seq": 113,
+          "nm": "Busy butterfly",
+          "desc": "या अॅक्टिव्हिटीमध्ये, विद्यार्थी स्क्रॅच ज्युनिअर मध्ये एक अ‍ॅनिमेशन तयार करतील ज्यामध्ये फुलांमधून उडणारी आणि मधपान करणारी फुलपाखरू दाखवली जाईल. ते पेंट एडिटरचा वापर करून आणि फुलं जोडून आणि डुप्लिकेट करून दृश्य डिझाइन करतील आणि ट्रिगर, मोशन आणि रिपीट फॉरएव्हर ब्लॉक्स वापरून फुलपाखराच्या हालचालींना अ‍ॅनिमेट करतील. विद्यार्थी त्यांच्या प्रकल्पाला एक शीर्षक देखील देतील, ज्यामुळे तो दृश्यात्मकदृष्ट्या पूर्ण आणि अर्थपूर्ण बनेल.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "जर तुम्हाला हा उपक्रम समजला असेल, तर तुमच्या आवडीचा कोणताही इमोजी पाठवा",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "कोणत्या ब्लॉकमुळे आपली फुलपाखरू फुलांकडे वळली - turn right किंवा turn left? तुमचे उत्तर मजकूर किंवा व्हॉइस नोटने पाठवा",
+              "unguided_text": "आजचा उपक्रम करताना तुम्हाला कसं वाटलं ते एका शब्दात सांगा (मजकूर किंवा व्हॉइस नोट)",
+              "valid_criteria": "turn right",
+              "invalid_criteria": "Any other word"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "एखाद्या फुलाचा किंवा वनस्पतीचा फोटो काढा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो क्लिक करा",
+              "valid_criteria": "Objects related to plants such as Flower, leaf, garden plant",
+              "invalid_criteria": "Objects not related to plants"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाईप करा किंवा व्हॉइस नोट पाठवा — आजच्या कोडिंग उपक्रमात शिकलेली एक नवीन गोष्ट सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या अ‍ॅक्टिव्हिटीचा एक स्पष्ट स्क्रीनशॉट किंवा व्हिडिओ शेअर करा ज्यामध्ये बागेत एक फुलपाखरू दिसत असेल आणि प्रोग्रामिंग एरियामध्ये कोड स्पष्टपणे दिसत असेल"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Worlds at Risk 🐘",
+      "desc": "Students will learn to add backgrounds and sprites, use the Paint Editor to modify sprites, and use the ABC tool to add titles. They will also learn to add new pages to create a multi-scene project. In coding, students will learn to use the Start on Green Flag block to begin the animation, Motion (blue) blocks to move sprites, and the Go to Page block to transition from one scene to the next. In addition, students will understand that some animals are endangered, meaning their numbers are decreasing. They will learn that different animals live in different habitats (Arctic, Savanna, Desert), and that loss of habitat affects animal survival.Ina ddition, students learn that some animals are endangered, meaning their numbers are decreasing, different animals live in different habitats (Arctic, Savanna, Desert) and loss of habitat affects animal survival.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 120,
+          "nm": "Can three animals share a home? 🐘",
+          "desc": "या अॅक्टिव्हिटीमध्ये, विद्यार्थी स्क्रॅच ज्युनियरमध्ये एक बहुपृष्ठीय अॅनिमेशन तयार करतील, ज्यामध्ये तीन संकटग्रस्त प्राण्यांचे — एक ध्रुवीय अस्वल, एक आफ्रिकन हत्ती, आणि एक बॅक्ट्रीयन उंट — त्यांच्या नैसर्गिक अधिवासांमध्ये दर्शन होईल. ते प्रत्येक दृश्य वेगवेगळ्या पार्श्वभूमींचा वापर करून डिझाइन करतील, पेंट एडिटर चा वापर करून स्प्राइटमध्ये बदल करतील, आणि निळ्या मोशन ब्लॉक चा वापर करून प्राण्यांना स्क्रीनवर हालचाल करण्यासाठी अॅनिमेट करतील. विद्यार्थी अनेक पृष्ठांना गो टू पेज एन्ड ब्लॉक चा वापर करून जोडतील, ज्यामुळे अधिवासांमधील गुळगुळीत संक्रमण तयार होईल, तसेच मानवाच्या क्रिया या प्राण्यांच्या घरांवर कशा परिणाम करत आहेत हे समजतील.",
+          "yt": "NYZExez98ow",
+          "pts": 10,
+          "pq": {
+            "id": 125,
+            "nm": "Which animal needs a cold home? 🐻‍❄️",
+            "qs": [
+              {
+                "q": "स्क्रॅच ज्युनियर मध्ये ध्रुवीय अस्वलाच्या दृश्यासाठी कोणता पार्श्वभूमी जोडावी?",
+                "opts": {
+                  "1": "Arctic background",
+                  "2": "Savanna background",
+                  "3": "Desert background"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "पेंट एडिटरचा वापर करून आफ्रिकन हत्तीला कोणता रंग जोडावा?",
+                "opts": { "1": "Blue", "2": "Dark grey", "3": "Light grey" },
+                "ans": "2"
+              },
+              {
+                "q": "बॅक्ट्रीयन उंटाला किती कूबड असतात?",
+                "opts": { "1": "One", "2": "Two", "3": "Option C" },
+                "ans": "2"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 126,
+        "nm": "Can animals survive change? 🐘",
+        "qs": [
+          {
+            "q": "स्क्रॅच ज्युनियर मध्ये नवीन प्रोजेक्ट सुरू करण्यासाठी सुरुवातीचा टप्पा काय आहे?",
+            "opts": {
+              "1": "Click on the home icon and then the plus to start a new project",
+              "2": "Click on the save icon and then the plus to start a new project",
+              "3": "Click on the settings icon and then the plus to start a new project"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "अफ्रिकन हत्ती, बॅक्ट्रीन उंट, आणि ध्रुवीय अस्वलांच्या संख्या कमी होण्याचे मुख्य कारण काय आहे?",
+            "opts": {
+              "1": "Lack of food",
+              "2": "Destruction of their homes",
+              "3": "Attack by other animals"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "पेंट एडिटरमधील कोणते साधन अफ्रिकन हत्तीचा रंग बदलण्यासाठी वापरले जाते?",
+            "opts": { "1": "The fill tool", "2": "The line tool", "3": "The paint tool" },
+            "ans": "1"
+          },
+          {
+            "q": "जर तुम्ही रेनफॉरेस्ट प्राण्यासाठी समान अ‍ॅनिमेशन तयार केले, तर त्याला वास्तववादी बनवण्यासाठी कोणता सर्जनशील घटक जोडू शकता?",
+            "opts": {
+              "1": "Add multiple arctic backgrounds",
+              "2": "Include a desert background",
+              "3": "Use the paint editor to add rainforest-specific colors and details in background"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "स्क्रॅच ज्युनियर वापरून रेनफॉरेस्ट प्राण्यांवर जंगलतोडीचा परिणाम सर्जनशीलपणे कसा दर्शवू शकता?",
+            "opts": {
+              "1": "By creating a scene where animals move away as trees disappear",
+              "2": "By adding more trees to the background",
+              "3": "By using a savanna background with no changes"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Code-Endangered-Animal-Scenes-🐘-Basic",
+          "seq": 114,
+          "nm": "Endangered animals",
+          "desc": "या अॅक्टिव्हिटीमध्ये, विद्यार्थी स्क्रॅच ज्युनियरमध्ये एक बहुपृष्ठीय अॅनिमेशन तयार करतील, ज्यामध्ये तीन संकटग्रस्त प्राण्यांचे — एक ध्रुवीय अस्वल, एक आफ्रिकन हत्ती, आणि एक बॅक्ट्रीयन उंट — त्यांच्या नैसर्गिक अधिवासांमध्ये दर्शन होईल. ते प्रत्येक दृश्य वेगवेगळ्या पार्श्वभूमींचा वापर करून डिझाइन करतील, पेंट एडिटर चा वापर करून स्प्राइटमध्ये बदल करतील, आणि निळ्या मोशन ब्लॉक चा वापर करून प्राण्यांना स्क्रीनवर हालचाल करण्यासाठी अॅनिमेट करतील. विद्यार्थी अनेक पृष्ठांना गो टू पेज एन्ड ब्लॉक चा वापर करून जोडतील, ज्यामुळे अधिवासांमधील गुळगुळीत संक्रमण तयार होईल, तसेच मानवाच्या क्रिया या प्राण्यांच्या घरांवर कशा परिणाम करत आहेत हे समजतील.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "समजलं असेल तर 💡 पाठवा, किंवा शंका असेल तर ❓ पाठवा",
+              "unguided_text": "जर तुम्हाला हा उपक्रम समजला असेल, तर तुमच्या आवडीचा कोणताही इमोजी पाठवा",
+              "valid_criteria": "💡 or ❓",
+              "invalid_criteria": "Any emoji other than 💡 or ❓"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "आपल्यामुळे प्राण्यांची घरे नष्ट होत आहेत. सहमत असाल तर \"True\" हा शब्द मजकूर किंवा व्हॉइस नोटने पाठवा किंवा असहमत असाल तर \"False\" पाठवा.",
+              "unguided_text": "आजच्या उपक्रमातील कोणत्याही एका धोक्यात असलेल्या प्राण्याचे नाव सांगा (मजकूर किंवा व्हॉइस नोट)",
+              "valid_criteria": "TRUE",
+              "invalid_criteria": "Any word, except True"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "एखाद्या प्राण्याचा फोटो काढा (खरा किंवा चित्रातून/रेखाचित्रातून)",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो क्लिक करा",
+              "valid_criteria": "Images showing an animal or bird, such as pet, bird, animal photo, drawing of animal",
+              "invalid_criteria": "Objects not related to animals"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाईप करा किंवा व्हॉइस नोट पाठवा — आजच्या कोडिंग उपक्रमात शिकलेली एक नवीन गोष्ट सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या अ‍ॅक्टिव्हिटीचा एक स्पष्ट स्क्रीनशॉट किंवा व्हिडिओ शेअर करा ज्यामध्ये वाळवंटासारख्या पार्श्वभूमीसह स्टेजवर एक उंट दिसत असेल आणि प्रोग्रामिंग एरियामध्ये कोड स्पष्टपणे दिसत असेल"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Bear Finds the Igloo 🐻",
+      "desc": "ScratchJr interface (sprites, background, blocks) Motion blocks (move, hop, turn) Events block (start on green flag) Looks block (resize characters) Grid system for position and movement Basic sequencing and debugging",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 121,
+          "nm": "Can a bear find igloo? 🐻",
+          "desc": "या ॲक्टिव्हिटीमध्ये, विद्यार्थी स्क्रॅच ज्युनियर मधील मोशन ब्लॉक्सचा अभ्यास करून कॅरेक्टर्सना स्क्रीनवर हलवतात. ते ग्रीड सिस्टीमचा वापर करून दिशा, पावले आणि स्थानीकरण कसे नियंत्रित करायचे हे शिकतात. एका मजेदार आव्हानाद्वारे, ते ध्रुवीय अस्वलाला त्याच्या इग्लूपर्यंत मार्गदर्शन करतात आणि यासाठी लॉजिक, सिक्वेन्सिंग आणि व्हिज्युअलायझेशन कौशल्यांचा वापर करतात.",
+          "yt": "aTBW6UXpays",
+          "pts": 10,
+          "pq": {
+            "id": 127,
+            "nm": "Does the grid really help? 🔲",
+            "qs": [
+              {
+                "q": "स्क्रीनवर ग्रिड वापरण्याचा उद्देश काय आहे?",
+                "opts": {
+                  "1": "To change the color of the characters",
+                  "2": "To make the background brighter",
+                  "3": "To decide the exact steps for character movement"
+                },
+                "ans": "3"
+              },
+              {
+                "q": "जर कॅरेक्टर खूप मोठं दिसत असेल तर ते छोटे कसे कराल?",
+                "opts": {
+                  "1": "By using the shrink block in the looks category",
+                  "2": "By clicking the undo button",
+                  "3": "By adding more motion blocks"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "तुमचा कोड आपोआप चालवण्यासाठी तुम्ही काय क्लिक कराल?",
+                "opts": { "1": "The green flag", "2": "The purple star", "3": "The red button" },
+                "ans": "1"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 128,
+        "nm": "What does the grid do? 🔲",
+        "qs": [
+          {
+            "q": "आजच्या कोडिंग अ‍ॅडव्हेंचरचा मुख्य फोकस काय आहे?",
+            "opts": {
+              "1": "Learning to use motion blocks to move characters on the screen.",
+              "2": "Designing complex animations with multiple scenes.",
+              "3": "Creating new characters from scratch."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "स्क्रॅच ज्युनियर मध्ये कोडिंग करताना 'ग्रिड' काय भूमिका बजावते?",
+            "opts": {
+              "1": "It allows users to add more characters to the scene.",
+              "2": "It shelps calculate the exact location and steps of the character.",
+              "3": "It helps change the color of the characters."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "हिरवा झेंडा क्लिक केल्यावर कोड आपोआप चालेल याची खात्री कशी कराल?",
+            "opts": {
+              "1": "By adding the yellow start on green block from the trigger block section.",
+              "2": "By adding more motion blocks.",
+              "3": "By increasing the size of the characters."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "तुम्हाला अशा कॅरेक्टरची जोडणी करायची आहे की ते टॅप केल्यावर अडथळ्यांवरून उडी मारेल. तुम्ही कोणता कोड वापराल?",
+            "opts": {
+              "1": "Start on tap, jump block and end block",
+              "2": "Add character and copy previous code",
+              "3": "Start on green flag, move right, end block"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "तुम्हाला एक कथा तयार करायची आहे ज्यात एक कॅरेक्टर वेगवेगळी वातावरणे पार करते. तुम्ही हे साध्य करण्यासाठी सर्जनशीलता कशी वापराल?",
+            "opts": {
+              "1": "Increase the speed of the character to simulate travel.",
+              "2": "Add more sprites of characters looking different.",
+              "3": "Add pages with different backgrounds and use go to page blocks to transition between them."
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Guide-Bear-to-Igloo-🐻-Remedial",
+          "seq": 115,
+          "nm": "Polar bear to Igloo",
+          "desc": "या ॲक्टिव्हिटीमध्ये, विद्यार्थी स्क्रॅच ज्युनियर मधील मोशन ब्लॉक्सचा अभ्यास करून कॅरेक्टर्सना स्क्रीनवर हलवतात. ते ग्रीड सिस्टीमचा वापर करून दिशा, पावले आणि स्थानीकरण कसे नियंत्रित करायचे हे शिकतात. एका मजेदार आव्हानाद्वारे, ते ध्रुवीय अस्वलाला त्याच्या इग्लूपर्यंत मार्गदर्शन करतात आणि यासाठी लॉजिक, सिक्वेन्सिंग आणि व्हिज्युअलायझेशन कौशल्यांचा वापर करतात.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "समजलं असेल तर 💡 पाठवा, किंवा शंका असेल तर ❓ पाठवा",
+              "unguided_text": "जर तुम्हाला अजून उपक्रम हवे असतील, तर तुमच्या आवडीचा कोणताही इमोजी पाठवा",
+              "valid_criteria": "💡 or ❓",
+              "invalid_criteria": "Any emoji other than 💡 or ❓"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "निळ्या मोशन ब्लॉक्सने हलवलेल्या पात्राचे नाव मजकूर किंवा व्हॉइस नोटने पाठवा - polar bear, igloo किंवा ice?",
+              "unguided_text": "आजच्या उपक्रमात वापरलेल्या कोणत्याही पात्राचे नाव सांगा (मजकूर किंवा व्हॉइस नोट)",
+              "valid_criteria": "polar bear",
+              "invalid_criteria": "Any other word"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "थंड ठिकाण दर्शवणाऱ्या किंवा गोष्टी थंड ठेवणाऱ्या एखाद्या गोष्टीचा फोटो काढा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो काढा",
+              "valid_criteria": "Objects related to cold such as Fridge, ice, cold drink, snow image",
+              "invalid_criteria": "Objects not related to cold"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाईप करा किंवा व्हॉइस नोट पाठवा — आजच्या कोडिंग उपक्रमात शिकलेली एक नवीन गोष्ट सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या अ‍ॅक्टिव्हिटीचा एक स्पष्ट स्क्रीनशॉट किंवा व्हिडिओ शेअर करा ज्यामध्ये पांढऱ्या बर्फाच्या पार्श्वभूमीवर एक ध्रुवीय अस्वल आणि एक इग्लू दिसत असेल आणि प्रोग्रामिंग एरियामध्ये कोड स्पष्टपणे दिसत असेल"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Dance Floor Goes Live 💃",
+      "desc": "Coordination and timing in animations How wait blocks control when an action begins How repeat blocks help actions occur multiple times How sound blocks can be combined with motion blocks That multiple scripts can start together using the green flag How changing wait values creates different rhythms and beats How camera feature in paint editor works",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 122,
+          "nm": "Can two characters sync dance? 💃",
+          "desc": "या ऐक्टिविटी मध्ये, विद्यार्थी स्क्रॅच ज्युनियर मध्ये दोन कॅरेक्टर्स ना संगीतासोबत समन्वय साधून नृत्य करण्यासाठी प्रोग्राम करून एक समन्वित नृत्य animation तयार करतील. विद्यार्थी एक नृत्य-मंच डिझाइन करतील, कॅरेक्टर्स जोडतील, संगीत रेकॉर्ड करतील, आणि वेट ब्लॉक आणि रिपीट ब्लॉक चा वापर करून प्रत्येक कॅरेक्टर कधी आणि कसा नृत्य करेल हे नियंत्रित करतील, ज्यामुळे त्यांना animation मधील समन्वय आणि अनुक्रम समजण्यास मदत होईल.",
+          "yt": "OXZqj-9FnE0",
+          "pts": 10,
+          "pq": {
+            "id": 129,
+            "nm": "Can two characters share a stage? 🎭",
+            "qs": [
+              {
+                "q": "स्क्रॅच ज्युनियरमध्ये नवीन प्रोजेक्ट सुरू करण्यासाठी तुम्ही प्रथम काय करता?",
+                "opts": {
+                  "1": "Add background music",
+                  "2": "Click on the plus icon",
+                  "3": "Select a character"
+                },
+                "ans": "2"
+              },
+              {
+                "q": "संगीत सतत वाजण्यासाठी कोणता ब्लॉक वापरला जातो?",
+                "opts": {
+                  "1": "Use the grow block",
+                  "2": "Use the rotate block",
+                  "3": "Use the shrink block"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "रांचर सारखं चाइल्ड कॅरेक्टरला समान आकारात कसे ठेवता?",
+                "opts": {
+                  "1": "Use the Wait block",
+                  "2": "Delete and re-add the character",
+                  "3": "Use the Grow block"
+                },
+                "ans": "3"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 130,
+        "nm": "Can you sync the dance? 💃",
+        "qs": [
+          {
+            "q": "या अ‍ॅक्टिव्हिटीचा प्राथमिक उद्देश काय आहे?",
+            "opts": {
+              "1": "To learn a new programming language",
+              "2": "To create a coordinated dance scene on Scratch Junior",
+              "3": "To build a music player"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "स्क्रॅच ज्युनियर प्रकल्पात वेट ब्लॉकची भूमिका काय आहे?",
+            "opts": {
+              "1": "To change the background",
+              "2": "To increase the size of characters",
+              "3": "To delay actions for a specified time"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "स्क्रॅच ज्युनियरमध्ये दोन पात्रांना वेगवेगळ्या वेळेला नाचवण्यासाठी तुम्ही काय करू शकता?",
+            "opts": {
+              "1": "By changing the background",
+              "2": "By recording different music for each character",
+              "3": "By setting different Wait block times for each character"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "जर तुम्हाला नृत्याच्या हालचालींना अधिक सर्जनशील बनवायचे असेल तर तुम्ही स्क्रॅच ज्युनियर प्रकल्पात काय जोडू शकता?",
+            "opts": {
+              "1": "Add different motion and wait blocks to create a unique dance sequence",
+              "2": "Increase and decrease the size of the characters to create an interesting effect",
+              "3": "Change the background color to give a new look"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "नृत्य दृश्याला सर्जनशीलतेने सुधारण्यासाठी तुम्ही काय साधे करू शकता?",
+            "opts": {
+              "1": "Incorporate a third character that interacts with the music in a unique way",
+              "2": "Remove the music from the background and replace with pop sound",
+              "3": "Only use one character to dance"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Sync-Two-Dancers-Together-💃-Intermediate",
+          "seq": 116,
+          "nm": "Dance Moves",
+          "desc": "या ऐक्टिविटी मध्ये, विद्यार्थी स्क्रॅच ज्युनियर मध्ये दोन कॅरेक्टर्स ना संगीतासोबत समन्वय साधून नृत्य करण्यासाठी प्रोग्राम करून एक समन्वित नृत्य animation तयार करतील. विद्यार्थी एक नृत्य-मंच डिझाइन करतील, कॅरेक्टर्स जोडतील, संगीत रेकॉर्ड करतील, आणि वेट ब्लॉक आणि रिपीट ब्लॉक चा वापर करून प्रत्येक कॅरेक्टर कधी आणि कसा नृत्य करेल हे नियंत्रित करतील, ज्यामुळे त्यांना animation मधील समन्वय आणि अनुक्रम समजण्यास मदत होईल.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "सोपं वाटलं असेल तर 😊 पाठवा, किंवा गोंधळ झाला असेल तर 😕 पाठवा",
+              "unguided_text": "जर तुम्हाला अजून उपक्रम हवे असतील, तर तुमच्या आवडीचा कोणताही इमोजी पाठवा",
+              "valid_criteria": "😊 or 😕",
+              "invalid_criteria": "Any emoji other than 😊 or 😕"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "तुमच्या डान्स अॅनिमेशनमध्ये संगीत जोडणाऱ्या योग्य ब्लॉकचे नाव मजकूर किंवा व्हॉइस नोटने पाठवा - wait, play recorded sound किंवा end?",
+              "unguided_text": "आजच्या उपक्रमात वापरलेल्या कोणत्याही ब्लॉकचे नाव सांगा (मजकूर किंवा व्हॉइस नोट)",
+              "valid_criteria": "Play recorded sound",
+              "invalid_criteria": "Any other block"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "नृत्य करणाऱ्या एखाद्या व्यक्तीचा फोटो काढा (खरा किंवा चित्रातून/रेखाचित्रातून)",
+              "unguided_text": "तुमच्याजवळ असलेल्या कोणत्याही गोष्टीचा फोटो काढा",
+              "valid_criteria": "Images showing dance such as person dancing or in pose",
+              "invalid_criteria": "Still objects with no action or pose"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाईप करा किंवा व्हॉइस नोट पाठवा — आजच्या कोडिंग उपक्रमात शिकलेली एक नवीन गोष्ट सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या अ‍ॅक्टिव्हिटीचा एक स्पष्ट स्क्रीनशॉट किंवा व्हिडिओ शेअर करा ज्यामध्ये स्टेज किंवा डान्स फ्लोअरच्या पार्श्वभूमीवर किमान २ व्यक्ती (किंवा पात्रे) दिसत असतील आणि प्रोग्रामिंग एरियामध्ये कोड स्पष्टपणे दिसत असेल"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Water Runs Dry 💧",
+      "desc": "Add backgrounds and multiple sprites, and use the Say block to add dialogues. Aapply coding concepts by using the Start on Green Flag block to begin the animation, Send Message and Start on Message blocks to create communication between sprites, and the End block to control the flow of scripts. Understand that water is a limited resource, and careless usage can lead to water shortages. They will learn that saving water is important for everyday life.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 123,
+          "nm": "Can sprites talk about water? 💧",
+          "desc": "--- --- या अ‍ॅक्टिविटीमध्ये, विद्यार्थी स्क्रॅच ज्युनिअरमध्ये संवाद-आधारित अ‍ॅनिमेशन तयार करतील जिथे दोन पात्रे पाणी टंचाईच्या समस्येवर चर्चा करतात. विद्यार्थी मेसेज ब्लॉक्सचा वापर करून पात्रांमधील संवादांचे अनुक्रम प्रोग्राम करतील ज्यामुळे पाणी वाया घालवल्याने टंचाई कशी होते आणि पाणी वाचवणे का महत्त्वाचे आहे हे दाखवले जाईल.",
+          "yt": "KnHet864DD0",
+          "pts": 10,
+          "pq": {
+            "id": 131,
+            "nm": "Where did Rahul's water go? 💧",
+            "qs": [
+              {
+                "q": "राहुल आणि प्रिया कोणत्या समस्येला सामोरे गेले?",
+                "opts": {
+                  "1": "They lost their pets.",
+                  "2": "Their houses were too cold.",
+                  "3": "They ran out of water."
+                },
+                "ans": "3"
+              },
+              {
+                "q": "स्क्रॅच ज्युनियरमध्ये नवीन प्रकल्प सुरू करण्यासाठी तुम्हाला काय क्लिक करावे लागेल?",
+                "opts": { "1": "The exit icon.", "2": "The plus icon.", "3": "The settings icon." },
+                "ans": "2"
+              },
+              {
+                "q": "अ‍ॅनिमेशनमधील अंतिम संदेश काय आहे?",
+                "opts": {
+                  "1": "Let's play together.",
+                  "2": "We need more water.",
+                  "3": "We must take care not to waste water."
+                },
+                "ans": "3"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 132,
+        "nm": "Where did the water go? 💧",
+        "qs": [
+          {
+            "q": "राहुल आणि प्रिया यांच्या घरात पाण्याची कमतरता होण्याचे मुख्य कारण काय आहे?",
+            "opts": {
+              "1": "Water was wasted and not used carefully.",
+              "2": "There was a technical fault in the water supply.",
+              "3": "The weather was extremely hot."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "स्क्रॅच ज्युनियरवर हे अ‍ॅनिमेशन तयार करण्याचा मुख्य उद्देश काय आहे?",
+            "opts": {
+              "1": "To practice dialogue writing skills.",
+              "2": "To learn how to use different colors in Scratch.",
+              "3": "To understand the importance of saving water."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "अ‍ॅनिमेशनमध्ये मुलाचा कोड सुरू करण्यासाठी कोणता ब्लॉक वापरला जातो?",
+            "opts": {
+              "1": "Start on red message block.",
+              "2": "Start on green flag block.",
+              "3": "Start on orange message block."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "जर तुम्हाला पाणी वाचवण्यासाठी उपाय सांगणारा नवीन पात्र जोडायचा असेल, तर 'से ब्लॉक' वापरून पात्राचा पहिला संवाद काय असू शकतो?",
+            "opts": {
+              "1": "“Let’s collect rainwater for plants.”",
+              "2": "“We should keep all taps open.”",
+              "3": "“Let’s move to a new place with more water.”"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "कल्पना करा की तुम्हाला एक द्रश्य जोडायचे आहे जिथे पात्र गळती नळ कसे दुरुस्त करायचे ते दाखवते. 'से ब्लॉक' वापरून तुम्ही कोणता सर्जनशील संवाद जोडू शकता?",
+            "opts": {
+              "1": "“We should wait for a plumber to fix this.”",
+              "2": "“Here’s how you can fix a tap to save water.”",
+              "3": "“We need to buy a new tap immediately.”"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Code-a-Water-Conversation-💧-Remedial",
+          "seq": 117,
+          "nm": "Chit chat",
+          "desc": "--- --- या अ‍ॅक्टिविटीमध्ये, विद्यार्थी स्क्रॅच ज्युनिअरमध्ये संवाद-आधारित अ‍ॅनिमेशन तयार करतील जिथे दोन पात्रे पाणी टंचाईच्या समस्येवर चर्चा करतात. विद्यार्थी मेसेज ब्लॉक्सचा वापर करून पात्रांमधील संवादांचे अनुक्रम प्रोग्राम करतील ज्यामुळे पाणी वाया घालवल्याने टंचाई कशी होते आणि पाणी वाचवणे का महत्त्वाचे आहे हे दाखवले जाईल.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "सोपं वाटलं असेल तर 😊 पाठवा, किंवा गोंधळ झाला असेल तर 😕 पाठवा",
+              "unguided_text": "जर तुम्हाला या उपक्रमाबद्दल आत्मविश्वास वाटत असेल, तर तुमच्या आवडीचा कोणताही इमोजी पाठवा",
+              "valid_criteria": "😊 or 😕",
+              "invalid_criteria": "Any emoji other than 😊 or 😕"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "पात्रांना संवाद जोडण्यासाठी कोणता ब्लॉक वापरतात - wait, say, end. तुमचे उत्तर मजकूर किंवा व्हॉइस नोटने पाठवा",
+              "unguided_text": "आजच्या उपक्रमात वापरलेल्या कोणत्याही पिवळ्या ब्लॉकचे नाव सांगा (मजकूर किंवा व्हॉइस नोट)",
+              "valid_criteria": "Say block",
+              "invalid_criteria": "Any other word"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "एकमेकांसमोर उभ्या असलेल्या दोन व्यक्तींचा फोटो काढा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो क्लिक करा",
+              "valid_criteria": "Two people talking and looking at each other",
+              "invalid_criteria": "Single object with no interaction"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाईप करा किंवा व्हॉइस नोट पाठवा — आजच्या कोडिंग उपक्रमात शिकलेली एक नवीन गोष्ट सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या अ‍ॅक्टिव्हिटीचा एक स्पष्ट स्क्रीनशॉट किंवा व्हिडिओ शेअर करा ज्यामध्ये रस्त्याच्या पार्श्वभूमीवर किमान २ पात्रे उभी असतील आणि प्रोग्रामिंग एरियामध्ये कोड स्पष्टपणे दिसत असेल"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Jungle Cleans Up 🐰",
+      "desc": "ScratchJr interface (sprites, backgrounds, paint editor), Message blocks (send message, start on message) Motion blocks (move, hop), Looks blocks (resize, dialogue/say block), Events block (green flag start),Grid usage for movement planning and basic animation sequencing",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 124,
+          "nm": "Can a rabbit teach recycling? 🐰",
+          "desc": "--- --- या अ‍ॅक्टिविटी मध्ये, विद्यार्थी स्क्रॅच ज्युनियर च्या मेसेज ब्लॉक्सचा वापर करून एक परस्परसंवादी कथा तयार करतात जिथे पात्रे एकमेकांशी संवाद साधतात. जंगलावर आधारित कथानकाच्या माध्यमातून, विद्यार्थी योग्य कचरा विल्हेवाटीबद्दल आणि त्याचा पर्यावरणावर होणारा परिणाम याबद्दल शिकतात, तसेच कोडिंग ब्लॉक्सचा वापर करून क्रियांचा क्रम तयार करतात.",
+          "yt": "AKkziFOMKLM",
+          "pts": 10,
+          "pq": {
+            "id": 133,
+            "nm": "What happens after the rabbit talks? 🐇",
+            "qs": [
+              {
+                "q": "ससा मुलीशी बोलल्यानंतर काय होते?",
+                "opts": {
+                  "1": "The girl will throw the stick in the bin",
+                  "2": "The girl eats another lollipop",
+                  "3": "The rabbit gives her a new lollipop"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "स्क्रॅच ज्युनियर मध्ये आपण मेसेज ब्लॉक्स का वापरतो?",
+                "opts": {
+                  "1": "To make characters bigger",
+                  "2": "To change character colors",
+                  "3": "To help characters communicate"
+                },
+                "ans": "3"
+              },
+              {
+                "q": "जेव्हा ससा मुलीला लाल मेसेज देतो तेव्हा काय होते?",
+                "opts": {
+                  "1": "The girl jumps up and down",
+                  "2": "The girl gives the rabbit a gift",
+                  "3": "The girl says 'Oops, sorry!'"
+                },
+                "ans": "3"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 134,
+        "nm": "Can blocks send messages? 📨",
+        "qs": [
+          {
+            "q": "या अ‍ॅक्टिव्हिटीमध्ये शिकवलेल्या दोन महत्त्वाच्या गोष्टी कोणत्या आहेत?",
+            "opts": {
+              "1": "Using message blocks and proper waste disposal",
+              "2": "Drawing characters and coding events",
+              "3": "Playing music and creating backgrounds"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "स्क्रॅच ज्युनियरमध्ये मेसज ब्लॉक्स शिकणे का महत्त्वाचे आहे?",
+            "opts": {
+              "1": "To make characters interact with each other",
+              "2": "To draw new characters",
+              "3": "To create colorful backgrounds"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "स्क्रॅच ज्युनियरमध्ये लॉलीपॉप उपलब्ध नसल्यास ते कसे तयार करू शकता?",
+            "opts": {
+              "1": "By editing a ball sprite to look like a lollipop",
+              "2": "By using a ball sprite",
+              "3": "By importing an image"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "तुमच्या मित्रांमध्ये पर्यावरणाची जाणीव वाढवण्यासाठी स्क्रॅच ज्युनियरचा सर्जनशील वापर कसा कराल?",
+            "opts": {
+              "1": "Create an interactive story where characters clean up a park",
+              "2": "Make an animation showing a picnic day",
+              "3": "Design a jungle game with different levels"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "जर तुम्हाला तुमच्या परिसरात पुनर्वापराला प्रोत्साहन द्यायचे असेल तर स्क्रॅच ज्युनियर वापरून काय तयार करू शकता?",
+            "opts": {
+              "1": "A dance party animation",
+              "2": "A project showing the journey of a recycled item",
+              "3": "A cooking show with animated characters"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-Characters-Pass-Messages-🐰-Intermediate",
+          "seq": 118,
+          "nm": "Clean up message",
+          "desc": "--- --- या अ‍ॅक्टिविटी मध्ये, विद्यार्थी स्क्रॅच ज्युनियर च्या मेसेज ब्लॉक्सचा वापर करून एक परस्परसंवादी कथा तयार करतात जिथे पात्रे एकमेकांशी संवाद साधतात. जंगलावर आधारित कथानकाच्या माध्यमातून, विद्यार्थी योग्य कचरा विल्हेवाटीबद्दल आणि त्याचा पर्यावरणावर होणारा परिणाम याबद्दल शिकतात, तसेच कोडिंग ब्लॉक्सचा वापर करून क्रियांचा क्रम तयार करतात.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "तयार असाल तर ✅ पाठवा, वेळ लागणार असेल तर ⏳ पाठवा, किंवा तयार नसाल तर ❌ पाठवा",
+              "unguided_text": "जर तुम्हाला या उपक्रमाबद्दल आत्मविश्वास वाटत असेल, तर तुमच्या आवडीचा कोणताही इमोजी पाठवा",
+              "valid_criteria": "✅ or ⏳ or ❌",
+              "invalid_criteria": "Any emoji other than ✅ or ⏳ or ❌"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "पात्रांना संवाद जोडण्यासाठी वापरण्यात येणाऱ्या योग्य ब्लॉकचे नाव मजकूर किंवा व्हॉइस नोटने पाठवा - wait, say किंवा end?",
+              "unguided_text": "आजच्या उपक्रमाचा संदेश सांगा (मजकूर किंवा व्हॉइस नोट)",
+              "valid_criteria": "Say block",
+              "invalid_criteria": "Any other word"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "स्वच्छ किंवा घाण ठिकाणाचा फोटो काढा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो क्लिक करा",
+              "valid_criteria": "Images related to clean or dirty surroundings such as  Clean desk, messy room, garbage dump, beautiful clean garden",
+              "invalid_criteria": "Random objects with no cleanliness context"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाईप करा किंवा व्हॉइस नोट पाठवा — आजच्या कोडिंग उपक्रमात शिकलेली एक नवीन गोष्ट सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या अ‍ॅक्टिव्हिटीचा एक स्पष्ट स्क्रीनशॉट किंवा व्हिडिओ शेअर करा ज्यामध्ये झाडे, गवत, हिरवळ असलेल्या पार्श्वभूमीवर किमान २ पात्रे - एक मुलगी आणि एक ससा दिसत असतील आणि प्रोग्रामिंग एरियामध्ये कोड स्पष्टपणे दिसत असेल"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Two Scripts Move Together 🏔️",
+      "desc": "Motion blocks like move right, hop, turn, up, down. Run two scripts simultaneously on a single sprite. How different combinations of blocks create new types of animation. Repeat Forever block to create looping movements.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 125,
+          "nm": "Can two codes move together? 🏃",
+          "desc": "या क्रियाकलापात, विद्यार्थी स्क्रॅच जूनियर (Scratch Jr) मध्ये दोन स्क्रिप्ट्स एकत्र करून नवीन पात्रांची हालचाल कशी तयार करायची हे शिकतील. ते मूव राईट (Move Right), हॉप (Hop), टर्न (Turn) सारख्या बेसिक मोशन ब्लॉक्सचा वापर करून जास्त क्लिष्ट हालचाली तयार करतील — जसे की बॉल पुढे फिरणे किंवा पेंग्विनचा बर्फावर पुढे उडी मारणे. विद्यार्थींना हे देखील समजेल की रिपीट फॉरएवर (Repeat Forever) ब्लॉक कसा सतत आणि वारंवार हालचाल तयार करण्यात मदत करतो, ज्यामुळे त्यांच्या पात्रांना डायनामिक आणि मजेदार क्रिया करता येतात.",
+          "yt": "d-dg2peglnE",
+          "pts": 10,
+          "pq": {
+            "id": 135,
+            "nm": "Can one sprite do two things? 🔀",
+            "qs": [
+              {
+                "q": "कोणता ब्लॉक हिरवा झेंडा क्लिक केल्यावर स्प्राइटच्या सूचना सुरू करतो?",
+                "opts": { "1": "Move Right", "2": "Start on Green Flag", "3": "Repeat Forever" },
+                "ans": "2"
+              },
+              {
+                "q": "तुम्ही एका वेळेस दोन हालचाली कशा कराल?",
+                "opts": {
+                  "1": "Use one code with two different motion blocks connected together for a combined effect",
+                  "2": "Click the green flag twice for a double effect",
+                  "3": "Use two codes each with same start block but different motion block and run them together for a combined effect"
+                },
+                "ans": "3"
+              },
+              {
+                "q": "कुठला ब्लॉक तुमचा पूर्ण कोड कायमसाठी पुनरावृत्ती करेल?",
+                "opts": { "1": "Repeat Forever", "2": "Start on Green Flag", "3": "Move Right" },
+                "ans": "1"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 136,
+        "nm": "Can sprites move together? 🔀",
+        "qs": [
+          {
+            "q": "स्क्रॅच ज्युनियर मधील स्प्राईटसाठी एकाच \"स्टार्ट ऑन ग्रीन फ्लॅग\" ब्लॉकला दोन मोशन ब्लॉक्स जोडल्यास काय होते?",
+            "opts": {
+              "1": "The sprite only performs one action",
+              "2": "The sprite performs both actions one after the other",
+              "3": "The sprite moves in random directions"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "तुम्ही एका स्प्राइटला एकाच वेळी कसे हलवू आणि वळवू शकता?",
+            "opts": {
+              "1": "Add two “Start on Green Flag” blocks with different movements",
+              "2": "Add a “Repeat Forever” end block to code",
+              "3": "Add any one “Move” block followed by \"Repeat Forever\" end block"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "जर तुम्हाला ही हालचाल कायमची चालू ठेवायची असेल तर तुम्ही काय करावे?",
+            "opts": {
+              "1": "Add some more motion blocks",
+              "2": "Add the Start Forever block at the beginning of your code",
+              "3": "Add the repeat forever block at the end of the code"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "Scratch Jr मध्ये एका पात्रासाठी दोन स्क्रिप्ट्स एकत्र केल्याने तुम्हाला कशी मदत होते?",
+            "opts": {
+              "1": "It lets you create more complicated movements with fewer blocks",
+              "2": "It allows you to experiment and create new movements for the character",
+              "3": "It’s a quick way to finish the project"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "तुम्हाला तुमचे पात्र मागे उडी मारावे असे वाटते. तुम्ही \"स्टार्ट ऑन ग्रीन फ्लॅग\" + \"हॉप\" स्क्रिप्ट जोडली आहे. उडी मारण्याची हालचाल करण्यासाठी तुम्हाला आणखी कोणती स्क्रिप्ट जोडावी लागेल?",
+            "opts": {
+              "1": "“Start on Green Flag” + “Move Right”",
+              "2": "Start on Green Flag” + “Turn Right”",
+              "3": "“Start on Green Flag” + “Move Left”"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Combine-Scripts-for-New-Moves-🏃-Remedial",
+          "seq": 119,
+          "nm": "Discovering New Moves",
+          "desc": "या क्रियाकलापात, विद्यार्थी स्क्रॅच जूनियर (Scratch Jr) मध्ये दोन स्क्रिप्ट्स एकत्र करून नवीन पात्रांची हालचाल कशी तयार करायची हे शिकतील. ते मूव राईट (Move Right), हॉप (Hop), टर्न (Turn) सारख्या बेसिक मोशन ब्लॉक्सचा वापर करून जास्त क्लिष्ट हालचाली तयार करतील — जसे की बॉल पुढे फिरणे किंवा पेंग्विनचा बर्फावर पुढे उडी मारणे. विद्यार्थींना हे देखील समजेल की रिपीट फॉरएवर (Repeat Forever) ब्लॉक कसा सतत आणि वारंवार हालचाल तयार करण्यात मदत करतो, ज्यामुळे त्यांच्या पात्रांना डायनामिक आणि मजेदार क्रिया करता येतात.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "तयार असाल तर ✅ पाठवा, वेळ लागणार असेल तर ⏳ पाठवा, किंवा तयार नसाल तर ❌ पाठवा",
+              "unguided_text": "जर तुम्हाला हा उपक्रम आवडला असेल, तर तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "✅ or ⏳ or ❌",
+              "invalid_criteria": "Any emoji other than ✅ or ⏳ or ❌"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "बॉल सतत रोल करणाऱ्या ब्लॉकचे नाव मजकूर किंवा व्हॉइस नोटने पाठवा - repeat, repeat forever किंवा end ब्लॉक?",
+              "unguided_text": "आजच्या उपक्रमात वापरलेल्या कोणत्याही निळ्या ब्लॉकचे नाव सांगा (मजकूर किंवा व्हॉइस नोट)",
+              "valid_criteria": "repeat forever block",
+              "invalid_criteria": "Any other word"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "वेगळ्या स्थितीत किंवा हालचालीत असलेल्या एखाद्या गोष्टीचा फोटो काढा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो काढा",
+              "valid_criteria": "Object in motion, person changing pose",
+              "invalid_criteria": "Objects with no visible movement or change"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाईप करा किंवा व्हॉइस नोट पाठवा — आजच्या कोडिंग उपक्रमात शिकलेली एक नवीन गोष्ट सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या अ‍ॅक्टिव्हिटीचा एक स्पष्ट स्क्रीनशॉट किंवा व्हिडिओ शेअर करा ज्यामध्ये गवतावर एक चेंडू दिसत असेल आणि प्रोग्रामिंग एरियामध्ये कोड स्पष्टपणे दिसत असेल"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Crab Jumps the Bag 🦀",
+      "desc": "Message blocks - to update score or trigger events. Role of Start on Tap, Start on Bump, and End Block in gaming Animate continuous movement using Repeat Forever. Run two scripts on the same character for special movement effects. Page navigation blocks to build multi-page Scratch Jr games. Basic environmental awareness: impact of plastic on sea animals.",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 126,
+          "nm": "Can a crab dodge plastic? 🦀",
+          "desc": "या अ‍ॅक्टिव्हिटीमध्ये, विद्यार्थी स्क्रॅच जूनियरवर एक अ‍ॅनिमेटेड गेम तयार करतील जिथे एका खेकड्याला उडणाऱ्या प्लास्टिकच्या पिशवीवरून उडी मारून सुरक्षितपणे पाण्यात पोहोचावे लागेल. विद्यार्थी बीच पार्श्वभूमी डिझाइन करतील, प्लास्टिकची पिशवी काढतील, तिचे हालचाल अ‍ॅनिमेट करतील आणि खेकड्याला एकाच वेळी उडी मारायला आणि पुढे जाणार्या हालचालींना कोड करतील. ते मेसेज ब्लॉक्स वापरून एक स्कोरिंग सिस्टीम देखील जोडतील आणि दोन्ही विजयी आणि गेम-ओव्हर पेज तयार करतील. याच्या माध्यमातून, विद्यार्थी शिकतात की प्रदूषण समुद्री प्राण्यांना कसे हानी पोहोचवते आणि कोडींग ब्लॉक्स वापरून एक परस्परशील गेम कसा डिझाइन करायचा.",
+          "yt": "QC0MpGVt4-g",
+          "pts": 10,
+          "pq": {
+            "id": 137,
+            "nm": "Can a crab reach the sea? 🌊",
+            "qs": [
+              {
+                "q": "खेळाचा मुख्य उद्देश काय आहे?",
+                "opts": {
+                  "1": "To help the crab reach the sea",
+                  "2": "To collect plastic bags",
+                  "3": "To win a score"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "खेकड्याने प्लास्टिक पिशवीला स्पर्श केल्यावर काय होते?",
+                "opts": {
+                  "1": "The crab moves faster",
+                  "2": "The crab gets stuck",
+                  "3": "The crab jumps higher"
+                },
+                "ans": "2"
+              },
+              {
+                "q": "खेकडा समुद्रात पोहोचल्यावर तो कोणता संदेश देतो?",
+                "opts": {
+                  "1": "\"Thank you for helping me!\"",
+                  "2": "\"I love the beach!\"",
+                  "3": "\"Help, I’m stuck!\""
+                },
+                "ans": "1"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 138,
+        "nm": "Can a crab save the sea? 🦀",
+        "qs": [
+          {
+            "q": "स्क्रॅच ज्युनियर गेममध्ये बीच पार्श्वभूमी तयार करण्यासाठी कोणते साधन वापरले जाते?",
+            "opts": { "1": "Text tool", "2": "Paint tool", "3": "Shape tool" },
+            "ans": "2"
+          },
+          {
+            "q": "खेकड्याच्या हालचालींसाठी दोन वेगवेगळे कोड वापरण्याची स्क्रिप्ट का सुचवते?",
+            "opts": {
+              "1": "To avoid using the green flag",
+              "2": "To simplify the code",
+              "3": "To achieve simultaneous actions"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "गेममध्ये खेकडा पॉलिबॅगला स्पर्श केल्यावर काय होते?",
+            "opts": {
+              "1": "The game restarts",
+              "2": "The crab gets stuck and the bag stops moving",
+              "3": "The crab jumps higher"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "नवीन वैशिष्ट्य जोडून गेमला अधिक सर्जनशील कसे बनवता येईल?",
+            "opts": {
+              "1": "Change the background to a cityscape",
+              "2": "Add more crabs to the game",
+              "3": "Include a sound effect each time the crab jumps"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "गेम अधिक आव्हानात्मक बनवण्यासाठी कोणते सर्जनशील समाधान लागू करता येईल?",
+            "opts": {
+              "1": "Increase the size of the polybag",
+              "2": "Reduce the size of the crab",
+              "3": "Add obstacles like rocks that the crab must jump over"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-the-Crab-Jump-Game-🦀-Advanced",
+          "seq": 120,
+          "nm": "Save the Crab",
+          "desc": "या अ‍ॅक्टिव्हिटीमध्ये, विद्यार्थी स्क्रॅच जूनियरवर एक अ‍ॅनिमेटेड गेम तयार करतील जिथे एका खेकड्याला उडणाऱ्या प्लास्टिकच्या पिशवीवरून उडी मारून सुरक्षितपणे पाण्यात पोहोचावे लागेल. विद्यार्थी बीच पार्श्वभूमी डिझाइन करतील, प्लास्टिकची पिशवी काढतील, तिचे हालचाल अ‍ॅनिमेट करतील आणि खेकड्याला एकाच वेळी उडी मारायला आणि पुढे जाणार्या हालचालींना कोड करतील. ते मेसेज ब्लॉक्स वापरून एक स्कोरिंग सिस्टीम देखील जोडतील आणि दोन्ही विजयी आणि गेम-ओव्हर पेज तयार करतील. याच्या माध्यमातून, विद्यार्थी शिकतात की प्रदूषण समुद्री प्राण्यांना कसे हानी पोहोचवते आणि कोडींग ब्लॉक्स वापरून एक परस्परशील गेम कसा डिझाइन करायचा.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "जमेल असं वाटत असेल तर 💪 पाठवा, प्रयत्न करणार असाल तर 🤔 पाठवा, किंवा खात्री नसेल तर 😬 पाठवा",
+              "unguided_text": "जर तुम्हाला हा उपक्रम आवडला असेल, तर तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "💪 or 🤔 or 😬",
+              "invalid_criteria": "Any emoji other than💪 or 🤔 or 😬"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "आजच्या उपक्रमात तुम्ही जे तयार केले त्याचे सर्वोत्तम वर्णन करणारा १ शब्द मजकूर किंवा व्हॉइस नोटने पाठवा - story, game किंवा dance?",
+              "unguided_text": "आजच्या उपक्रमात तुम्ही काय तयार केले ते एका शब्दात सांगा (मजकूर किंवा व्हॉइस नोट)",
+              "valid_criteria": "game",
+              "invalid_criteria": "Any word other than game"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "निसर्गातील एखाद्या गोष्टीचा फोटो काढा (पाणी, वाळू, वनस्पती)",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो काढा",
+              "valid_criteria": "Objects from nature such as Plants, soil, water, natural surroundings",
+              "invalid_criteria": "Indoor or Outdoor objects not related to nature"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाईप करा किंवा व्हॉइस नोट पाठवा — आजच्या कोडिंग उपक्रमात शिकलेली एक नवीन गोष्ट सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या अ‍ॅक्टिव्हिटीचा एक स्पष्ट स्क्रीनशॉट किंवा व्हिडिओ शेअर करा ज्यामध्ये समुद्रकिनाऱ्याच्या पार्श्वभूमीवर एक खेकडा दिसत असेल आणि प्रोग्रामिंग एरियामध्ये कोड स्पष्टपणे दिसत असेल"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Lizard Runs the Desert 🦎",
+      "desc": "Trigger Blocks: Start on Green Flag, Start on Tap Motion Blocks: Move Right, Move Left, Repeat Forever Look Blocks: Grow/Shrink, Change Colors Sound Blocks: Pop sound Paint Editor: Create and modify sprites and backgrounds Game Design: How to set up a playable game with obstacles and interactions",
+      "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 127,
+          "nm": "Can a lizard outrun cactus? 🦎",
+          "desc": "या क्रियेत, विद्यार्थ्यांना Scratch Jr. मध्ये रेगिस्तान गेम तयार करण्याचे पाऊल-दर-पाऊल मार्गदर्शन केले जाईल. ते शिकतील की रेगिस्तानाचा बैकग्राऊंड कसा बदलायचा, कॅक्टस आणि सरडा सारख्या स्प्राइट्स तयार करायच्या आणि त्यांचा आकार बदलायचा, स्प्राइटचे रंग बदलायचे आणि Motion, Trigger आणि Sound ब्लॉक्स वापरून त्यांना कोड करायचे. शेवटी, त्यांच्याकडे एक पूर्णपणे कार्यक्षम गेम असेल ज्यामध्ये सरड्याने कॅक्टस टाळण्यासाठी टॅप करणे आवश्यक आहे जेणेकरून ती कॅक्टसला स्पर्श न करता पुढे हॉप करू शकेल.",
+          "yt": "du0fir30CGQ",
+          "pts": 10,
+          "pq": {
+            "id": 139,
+            "nm": "Can Lizzy dodge the cactus? 🌵",
+            "qs": [
+              {
+                "q": "वाळवंटाच्या खेळात लिझी सरड्याचे मुख्य लक्ष्य काय आहे?",
+                "opts": { "1": "Fill tool", "2": "Color tool", "3": "Palette tool" },
+                "ans": "2"
+              },
+              {
+                "q": "खेळाचा मुख्य उद्देश काय आहे?",
+                "opts": {
+                  "1": "To help the crab reach the sea",
+                  "2": "To collect plastic bags",
+                  "3": "To win a score"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "तुम्ही खेळात लिझी गिरगिटावर टॅप केल्यास काय होते?",
+                "opts": {
+                  "1": "She turns into a cactus",
+                  "2": "She hops forward and a pop sound plays",
+                  "3": "She disappears from the screen"
+                },
+                "ans": "2"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 140,
+        "nm": "Can Lizzy dodge it? 🦎",
+        "qs": [
+          {
+            "q": "लिझी सरड्याला वाळवंटाच्या खेळात कोणत्या गोष्टी टाळायला हव्यात?",
+            "opts": { "1": "Tigers", "2": "Cactus", "3": "Rocks" },
+            "ans": "2"
+          },
+          {
+            "q": "आपल्याला खेळात लिझी सरड्यावर टॅप का करावे लागते?",
+            "opts": {
+              "1": "To help her hop forward without hitting the cactus",
+              "2": "To make her sleep",
+              "3": "To change her color"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "जर लिझी कमी उडी मारून कॅक्टस ला धडकली, तर खेळात काय बदल करायला हवा?",
+            "opts": {
+              "1": "Make the cactus bigger",
+              "2": "Adjust the hop number to be bigger",
+              "3": "Change Lizzy's color"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "प्रिया तिच्या वाळवंटाच्या खेळात सरड्याला हलणाऱ्या कॅक्टस वर उडी मारायला लावू इच्छिते. हा मजेदार आव्हान तयार करण्याचा सर्वोत्तम मार्ग कोणता आहे?",
+            "opts": {
+              "1": "Use two scripts on the lizard, one to hop up and one to move forward, and run them together using the same start block.",
+              "2": "Use the \"shrink\" block to make the cactus disappear",
+              "3": "Use the \"sound\" block to add music"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "अर्जुनला त्याचा खेळ दिवसासारखा दिसायला हवा आहे. त्याचा वाळवंटाचा खेळ उजळ आणि उन्हाळा बनवण्यासाठी सर्वोत्तम निर्णय कोणता आहे?",
+            "opts": {
+              "1": "Add more cactus",
+              "2": "Change the sky color to blue and the sand color to yellow",
+              "3": "Make the lizard bigger"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-the-Desert-Lizard-Game-🦎-Remedial",
+          "seq": 121,
+          "nm": "The Desert Game",
+          "desc": "या क्रियेत, विद्यार्थ्यांना Scratch Jr. मध्ये रेगिस्तान गेम तयार करण्याचे पाऊल-दर-पाऊल मार्गदर्शन केले जाईल. ते शिकतील की रेगिस्तानाचा बैकग्राऊंड कसा बदलायचा, कॅक्टस आणि सरडा सारख्या स्प्राइट्स तयार करायच्या आणि त्यांचा आकार बदलायचा, स्प्राइटचे रंग बदलायचे आणि Motion, Trigger आणि Sound ब्लॉक्स वापरून त्यांना कोड करायचे. शेवटी, त्यांच्याकडे एक पूर्णपणे कार्यक्षम गेम असेल ज्यामध्ये सरड्याने कॅक्टस टाळण्यासाठी टॅप करणे आवश्यक आहे जेणेकरून ती कॅक्टसला स्पर्श न करता पुढे हॉप करू शकेल.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "जमेल असं वाटत असेल तर 💪 पाठवा, प्रयत्न करणार असाल तर 🤔 पाठवा, किंवा खात्री नसेल तर 😬 पाठवा",
+              "unguided_text": "जर तुम्हाला हा उपक्रम समजला असेल, तर तुमच्या आवडीचा कोणताही इमोजी पाठवा",
+              "valid_criteria": "💪 or 🤔 or 😬",
+              "invalid_criteria": "Any emoji other than💪 or 🤔 or 😬"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "आजच्या उपक्रमात तुम्ही काय तयार केले ते मजकूर किंवा व्हॉइस नोटने पाठवा - story, game किंवा dance.",
+              "unguided_text": "आजच्या उपक्रमात तुम्ही काय तयार केले ते एका शब्दात सांगा (मजकूर किंवा व्हॉइस नोट)",
+              "valid_criteria": "game",
+              "invalid_criteria": "Any word other than game"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "उष्ण ठिकाणाशी संबंधित एखाद्या गोष्टीचा फोटो काढा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो क्लिक करा",
+              "valid_criteria": "Sun, sand, bright outdoor area",
+              "invalid_criteria": "Objects not related to heat or desert"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाईप करा किंवा व्हॉइस नोट पाठवा — आजच्या कोडिंग उपक्रमात शिकलेली एक नवीन गोष्ट सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या अ‍ॅक्टिव्हिटीचा एक स्पष्ट स्क्रीनशॉट किंवा व्हिडिओ शेअर करा ज्यामध्ये वाळवंटाच्या पार्श्वभूमीवर एक सरडा दिसत असेल आणि प्रोग्रामिंग एरियामध्ये कोड स्पष्टपणे दिसत असेल"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

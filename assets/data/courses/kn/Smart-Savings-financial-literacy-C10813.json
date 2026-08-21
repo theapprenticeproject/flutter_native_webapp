@@ -1,0 +1,1134 @@
+{
+  "id": "Smart-Savings-financial-literacy-C10813",
+  "nm": "Smart Savings",
+  "lvl": "Level 3AK",
+  "vrt": "financial-literacy",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Idea Becomes a Business 💼",
+      "desc": "Entrepreneurship, Business Loans",
+      "rwc": "Pencil, Eraser",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 128,
+          "nm": "Can a small idea grow? 💼",
+          "desc": "In this activity, students will learn how the Pradhan Mantri Mudra Yojana (PMMY) helps small businesses start and grow. Students will design a small “Business Idea Card” and explain how a Mudra loan could support that business and create jobs in the community.",
+          "yt": "ekk-wNiaJfU",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 141,
+        "nm": "Can a loan start your business? 💼",
+        "qs": [
+          {
+            "q": "ಪ್ರಧಾನ ಮಂತ್ರಿ ಮುದ್ರಾ ಯೋಜನೆ (PMMY) ಯನ್ನು ಯಾವ ಉದ್ದೇಶಕ್ಕಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ?",
+            "opts": {
+              "1": "ಶಿಕ್ಷಣಕ್ಕೆ ವಿದ್ಯಾರ್ಥಿವೇತನ ನೀಡಲು",
+              "2": "ಸಾಲ ನೀಡುವ ಮೂಲಕ ಸಣ್ಣ ವ್ಯವಹಾರ ಪ್ರಾರಂಭಿಸಲು ಜನರಿಗೆ ಸಹಾಯ ಮಾಡಲು",
+              "3": "ಸಣ್ಣ ವ್ಯವಹಾರಗಳಿಗೆ ವಿಮೆ ನೀಡಲು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "PMMY ಅಡಿಯಲ್ಲಿ ಸಾಲಕ್ಕೆ ಯಾವ ಜಾಮೀನು ಅವಶ್ಯಕವಿಲ್ಲ ಏಕೆ?",
+            "opts": {
+              "1": "ದೊಡ್ಡ ಕಾರ್ಪೊರೇಶನ್‌ಗಳನ್ನು ಅರ್ಜಿ ಸಲ್ಲಿಸಲು ಪ್ರೋತ್ಸಾಹಿಸಲು",
+              "2": "ಜನರು ವ್ಯವಹಾರ ಪ್ರಾರಂಭಿಸಲು ಸುಲಭಗೊಳಿಸಲು",
+              "3": "ಸಾಲ ಸಮಯಕ್ಕೆ ತೀರಿಸಲ್ಪಡುವುದನ್ನು ಖಚಿತಪಡಿಸಲು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ನಿಮ್ಮ ವ್ಯವಹಾರಕ್ಕೆ ₹3 ಲಕ್ಷ ಸಾಲ ಬೇಕಿದ್ದರೆ PMMY ಯ ಯಾವ ವರ್ಗ ಆರಿಸಬೇಕು?",
+            "opts": { "1": "ಕಿಶೋರ್", "2": "ತರುಣ್", "3": "ಶಿಶು" },
+            "ans": "1"
+          },
+          {
+            "q": "ನೀವು ಸ್ಟೇಷನರಿ ಅಂಗಡಿ ತೆರೆಯಲು ಬಯಸುತ್ತೀರಿ ಆದರೆ ಹಣದ ಕೊರತೆ ಇದೆ. ಸ್ಕ್ರಿಪ್ಟ್ ಆಧಾರದ ಮೇಲೆ ಸ್ಮಾರ್ಟ್ ಮೊದಲ ಹೆಜ್ಜೆ ಯಾವುದು?",
+            "opts": {
+              "1": "ಉತ್ತಮ ಯೋಜನೆಯೊಂದಿಗೆ PMMY ಸಾಲಕ್ಕೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ",
+              "2": "ಸಾಕಷ್ಟು ಹಣ ಉಳಿಸುವವರೆಗೂ ಕಾಯಿರಿ",
+              "3": "ತಕ್ಷಣ ಉದ್ಯೋಗಿಗಳನ್ನು ನೇಮಿಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಆನ್‌ಲೈನ್ ಕ್ರಾಫ್ಟ್ ಅಂಗಡಿ ಪ್ರಾರಂಭಿಸಲು PMMY ಬಳಸಿ ಸ್ಕ್ರಿಪ್ಟ್ ಪ್ರಕಾರ ಉದ್ಯೋಗ ಸೃಷ್ಟಿ ಹೇಗೆ ಮಾಡಬಹುದು?",
+            "opts": {
+              "1": "ಡೆಲಿವರಿ ವ್ಯಕ್ತಿ ಅಥವಾ ಸಹಾಯಕನನ್ನು ನೇಮಿಸಿ",
+              "2": "ಎಲ್ಲ ಹಣವನ್ನು ಮಾರ್ಕೆಟಿಂಗ್‌ನಲ್ಲಿ ಹೂಡಿ",
+              "3": "ಕೇವಲ ಉತ್ಪನ್ನ ಅಭಿವೃದ್ಧಿಯ ಮೇಲೆ ಗಮನ ಕೊಡಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-Your-Own-Business-Idea-Card-💼-Basic",
+          "seq": 122,
+          "nm": "Design Your Own Business Idea Card 💼",
+          "desc": "In this activity, students will learn how the Pradhan Mantri Mudra Yojana (PMMY) helps small businesses start and grow. Students will design a small “Business Idea Card” and explain how a Mudra loan could support that business and create jobs in the community.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Mudra ಸಾಲಿನ ಒಂದು ಪ್ರಯೋಜನ ಹೆಸರಿಸಿ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: Growth / Jobs / Business, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Growth / Jobs / Business, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Growth / Jobs / Business, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಹೂವುಗಳ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "Any Flower",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Flower"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ನಿಮ್ಮ ವ್ಯಾಪಾರ ಆಲೋಚನೆ ಕಾರ್ಡ್ ಮತ್ತು Mudra ಸಾಲು ಹೇಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ ಎಂದು ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ವ್ಯಾಪಾರ ಆಲೋಚನೆ ಕಾರ್ಡ್‌ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Small Shop Starts Here 🏪",
+      "desc": "Entrepreneurship, Business Loans",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 129,
+          "nm": "Can Ravi start printing shop? 🏪",
+          "desc": "In this activity, students will learn in a simple way how small businesses work and how government schemes like Pradhan Mantri Mudra Yojana (PMMY) help people start earning. Students will think of a small business idea (like a food stall or shop) and draw it in their notebook. They will also write how this business can help them earn money and support their family.",
+          "yt": "nr4HuGYyqMI",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 142,
+        "nm": "Which loan fits your business? 🏪",
+        "qs": [
+          {
+            "q": "ಪ್ರಧಾನ ಮಂತ್ರಿ ಮುದ್ರಾ ಯೋಜನೆ (PMMY) ಯ ಉದ್ದೇಶ ಏನು?",
+            "opts": {
+              "1": "ಅಂತರರಾಷ್ಟ್ರೀಯ ಅಧ್ಯಯನಕ್ಕೆ ವಿದ್ಯಾರ್ಥಿವೇತನ ನೀಡಲು",
+              "2": "ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಉಚಿತ ಶಿಕ್ಷಣ ನೀಡಲು",
+              "3": "ಜನರು ಸಣ್ಣ ವ್ಯವಹಾರ ಪ್ರಾರಂಭಿಸಿ ಬೆಳೆಸಲು ಸಹಾಯ ಮಾಡಲು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "SDG 8 ಗಾಗಿ ಪ್ರಧಾನ ಮಂತ್ರಿ ಮುದ್ರಾ ಯೋಜನೆ ಏಕೆ ಮುಖ್ಯ?",
+            "opts": {
+              "1": "ಇದು ಪರಿಸರ ಸಂರಕ್ಷಣೆಯ ಮೇಲೆ ಗಮನ ಕೊಡುತ್ತದೆ",
+              "2": "ಇದು ತಾಂತ್ರಿಕ ಪ್ರಗತಿಯನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ",
+              "3": "ಇದು ಘನ ಕೆಲಸ ಮತ್ತು ಆರ್ಥಿಕ ಬೆಳವಣಿಗೆಯನ್ನು ಉತ್ತೇಜಿಸುತ್ತದೆ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ರವಿ ತನ್ನ ಮುದ್ರಣ ವ್ಯವಹಾರ ಪ್ರಾರಂಭಿಸುತ್ತಿದ್ದರೆ ಆರಂಭದಲ್ಲಿ ಯಾವ ಸಾಲ ವರ್ಗಕ್ಕೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಬೇಕು?",
+            "opts": { "1": "ತರುಣ್", "2": "ಕಿಶೋರ್", "3": "ಶಿಶು" },
+            "ans": "3"
+          },
+          {
+            "q": "ರವಿ ಹೊಸ ಮುದ್ರಣ ಅಂಗಡಿ ಹಣದ ವ್ಯವಸ್ಥೆ ಮಾಡಬೇಕಿದ್ದಾನೆ. ಅವನು ಏನು ಪರಿಗಣಿಸಬೇಕು?",
+            "opts": {
+              "1": "PMMY ಅಡಿ ಶಿಶು ಸಾಲಕ್ಕೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ",
+              "2": "ತಕ್ಷಣ ದುಬಾರಿ ಉಪಕರಣ ಖರೀದಿಸಿ",
+              "3": "ಪ್ರಾರಂಭಿಸುವ ಮೊದಲೇ ಹೆಚ್ಚು ಸಿಬ್ಬಂದಿ ನೇಮಿಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಒಂದು ವರ್ಷ ಯಶಸ್ವಿ ಕಾರ್ಯಾಚರಣೆಯ ನಂತರ ರವಿ ವ್ಯವಹಾರ ವಿಸ್ತರಿಸಲು ಯಾವ ಸಾಲ ವರ್ಗ ಪರಿಗಣಿಸಬೇಕು?",
+            "opts": { "1": "ತರುಣ್ ಪ್ಲಸ್", "2": "ಕಿಶೋರ್", "3": "ಶಿಶು" },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-a-Simple-Business-Card-🏪-Remedial",
+          "seq": 123,
+          "nm": "Design a Simple Business Card 🏪",
+          "desc": "In this activity, students will learn in a simple way how small businesses work and how government schemes like Pradhan Mantri Mudra Yojana (PMMY) help people start earning. Students will think of a small business idea (like a food stall or shop) and draw it in their notebook. They will also write how this business can help them earn money and support their family.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ನಿಮ್ಮ ವ್ಯಾಪಾರ ಆಲೋಚನೆ ಹೆಸರಿಸಿ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: Food / Shop / Service, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Food / Shop / Service, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Food / Shop / Service, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಗಿಡ ಅಥವಾ ಮರದ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "Plant / Tree",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Plant / Tree"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ನಿಮ್ಮ ವ್ಯಾಪಾರ ಆಲೋಚನೆ ಮತ್ತು ಅದು ಇತರರಿಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ ಎಂದು ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ವ್ಯಾಪಾರ ಆಲೋಚನೆ ಕಾರ್ಡ್ (Mudra Basics) ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Future Gets Saved Early 🌸",
+      "desc": "Sukanya Samriddhi Yojana",
+      "rwc": "Pencil, Eraser",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 130,
+          "nm": "Can girls save for future? 🌸",
+          "desc": "In this activity, students will be able to explain how the Sukanya Samriddhi Yojana helps girls with education and money, supporting equality and future opportunities.",
+          "yt": "ASCU2dasN6g",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 143,
+        "nm": "Can you save for your daughter? 👧",
+        "qs": [
+          {
+            "q": "ಸುಕನ್ಯಾ ಸಮೃದ್ಧಿ ಖಾತೆ ಎಂದರೇನು?",
+            "opts": {
+              "1": "ನಿವೃತ್ತಿಗಾಗಿ ಖಾಸಗಿ ಹೂಡಿಕೆ ಯೋಜನೆ",
+              "2": "ಹೆಣ್ಣು ಮಗುವಿನ ಭವಿಷ್ಯಕ್ಕಾಗಿ ಸರ್ಕಾರಿ ಉಳಿತಾಯ ಯೋಜನೆ",
+              "3": "ಮನೆ ಖರೀದಿಗೆ ಸಾಲ ಯೋಜನೆ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಸುಕನ್ಯಾ ಸಮೃದ್ಧಿ ಖಾತೆ ತೆರೆಯಲು ಯಾರು ಅರ್ಹರು?",
+            "opts": {
+              "1": "ಯಾವುದೇ ವ್ಯಕ್ತಿ ಅಥವಾ ಸಂಸ್ಥೆ",
+              "2": "10 ವರ್ಷಕ್ಕಿಂದ ಕಡಿಮೆ ವಯಸ್ಸಿನ ಹೆಣ್ಣು ಮಗುವಿನ ಪೋಷಕರು ಅಥವಾ ಕಾನೂನು ಪೋಷಕರು",
+              "3": "ಕೇವಲ ಹೆಣ್ಣು ಮಗು ಸ್ವತಃ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಸುಕನ್ಯಾ ಸಮೃದ್ಧಿ ಖಾತೆಗೆ ಕನಿಷ್ಠ ವಾರ್ಷಿಕ ಠೇವಣಿ ಎಷ್ಟು?",
+            "opts": { "1": "500 ರೂಪಾಯಿ", "2": "1,000 ರೂಪಾಯಿ", "3": "250 ರೂಪಾಯಿ" },
+            "ans": "3"
+          },
+          {
+            "q": "ಪೋಷಕರು ತಮ್ಮ ಇಬ್ಬರು ಹೆಣ್ಣು ಮಕ್ಕಳಿಗೆ ಸುಕನ್ಯಾ ಸಮೃದ್ಧಿ ಖಾತೆ ತೆರೆಯಲು ಗರಿಷ್ಠ ಎಷ್ಟು ಖಾತೆ ತೆರೆಯಬಹುದು?",
+            "opts": { "1": "ಮೂರು ಖಾತೆಗಳು", "2": "ಎರಡು ಖಾತೆಗಳು", "3": "ಒಂದು ಖಾತೆ" },
+            "ans": "2"
+          },
+          {
+            "q": "ಒಂದು ಕುಟುಂಬ ಸರ್ಕಾರಿ ಯೋಜನೆ ಮೂಲಕ ತಮ್ಮ ಮಗಳ ಶಿಕ್ಷಣ ಮತ್ತು ಮದುವೆಗೆ ಉಳಿಸಲು ಬಯಸುತ್ತಿದ್ದರೆ ಯಾವ ಖಾತೆ ಪರಿಗಣಿಸಬೇಕು?",
+            "opts": {
+              "1": "ಸುಕನ್ಯಾ ಸಮೃದ್ಧಿ ಖಾತೆ",
+              "2": "ಆವರ್ತಿ ಠೇವಣಿ ಖಾತೆ",
+              "3": "ಸ್ಥಿರ ಠೇವಣಿ ಖಾತೆ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Answer-the-Sukanya-Scheme-Questions-🌸-Basic",
+          "seq": 124,
+          "nm": "Answer the Sukanya Scheme Questions 🌸",
+          "desc": "In this activity, students will be able to explain how the Sukanya Samriddhi Yojana helps girls with education and money, supporting equality and future opportunities.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Sukanya Samriddhi Yojana ನ ಒಂದು ಪ್ರಯೋಜನ ಹೆಸರಿಸಿ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: Education / Savings / Security, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Education / Savings / Security, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Education / Savings / Security, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಪುಸ್ತಕದ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "Book",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a book"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ನಿಮ್ಮ ಚಟುವಟಿಕೆಯಿಂದ Sukanya Samriddhi Yojana ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ Sukanya Samriddhi ಉತ್ತರಗಳ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Girl's Goal Has a Plan 🎯",
+      "desc": "Government Savings Schemes",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 131,
+          "nm": "Can Sneha become a doctor? 🎯",
+          "desc": "In this activity, students will learn in an easy way about Sukanya Samriddhi Yojana and how it helps families save money for a girl’s education and future needs. Students will create a simple “Future Plan Poster” to show how saving money early can help in achieving education goals and better opportunities for girls.",
+          "yt": "XZkZB2WHET0",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 144,
+        "nm": "Can a scheme build her future? 🌟",
+        "qs": [
+          {
+            "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ಉಲ್ಲೇಖಿಸಲಾದ ಸರ್ಕಾರಿ ಉಳಿತಾಯ ಯೋಜನೆಯ ಹೆಸರು ಏನು?",
+            "opts": {
+              "1": "ಸುಕನ್ಯಾ ಸಮೃದ್ಧಿ ಯೋಜನೆ",
+              "2": "ಬೇಟಿ ಬಚಾವೋ ಬೇಟಿ ಪಢಾವೋ",
+              "3": "ಕನ್ಯಾಶ್ರೀ ಪ್ರಕಲ್ಪ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಸುಕನ್ಯಾ ಸಮೃದ್ಧಿ ಯೋಜನೆಯಿಂದ ಯಾರು ಲಾಭ ಪಡೆಯಲು ಅರ್ಹರು?",
+            "opts": {
+              "1": "10 ವರ್ಷ ಅಥವಾ ಅದಕ್ಕಿಂತ ಕಡಿಮೆ ವಯಸ್ಸಿನ ಹೆಣ್ಣು ಮಕ್ಕಳು",
+              "2": "18 ವರ್ಷದೊಳಗಿನ ಎಲ್ಲ ಮಕ್ಕಳು",
+              "3": "ಕೇವಲ ಕಾಲೇಜಿಗೆ ಹೋಗುವ ವಿದ್ಯಾರ್ಥಿಗಳು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಸ್ನೇಹಾ ಅವರ ಪೋಷಕರು ಯೋಜನೆ ಮೂಲಕ ಅವಳ ಭವಿಷ್ಯದ ಶಿಕ್ಷಣಕ್ಕಾಗಿ ಉಳಿತಾಯ ಹೇಗೆ ಪ್ರಾರಂಭಿಸಬಹುದು?",
+            "opts": {
+              "1": "ನಿಯಮಿತ ಉಳಿತಾಯ ಖಾತೆ ತೆರೆಯುವ ಮೂಲಕ",
+              "2": "ಷೇರು ಮಾರುಕಟ್ಟೆಯಲ್ಲಿ ಹೂಡಿಕೆ ಮಾಡುವ ಮೂಲಕ",
+              "3": "ಸುಕನ್ಯಾ ಸಮೃದ್ಧಿ ಯೋಜನೆ ಖಾತೆ ತೆರೆಯುವ ಮೂಲಕ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಒಂದು ಕುಟುಂಬದಲ್ಲಿ ಇಬ್ಬರು ಹೆಣ್ಣು ಮಕ್ಕಳಿದ್ದರೆ ಸುಕನ್ಯಾ ಸಮೃದ್ಧಿ ಯೋಜನೆಯಲ್ಲಿ ಇಬ್ಬರಿಗೂ ವರ್ಷಕ್ಕೆ ಗರಿಷ್ಠ ಎಷ್ಟು ಠೇವಣಿ ಮಾಡಬಹುದು?",
+            "opts": { "1": "1,50,000 ರೂಪಾಯಿ", "2": "2,50,000 ರೂಪಾಯಿ", "3": "3,00,000 ರೂಪಾಯಿ" },
+            "ans": "2"
+          },
+          {
+            "q": "ಸುಕನ್ಯಾ ಸಮೃದ್ಧಿ ಯೋಜನೆ ಪಿಗ್ಗಿ ಬ್ಯಾಂಕ್‌ಗಿಂತ ಹೇಗೆ ಭಿನ್ನ?",
+            "opts": {
+              "1": "ಸರ್ಕಾರ ವಾರ್ಷಿಕ ಬಡ್ಡಿ ನೀಡುತ್ತದೆ, ಉಳಿತಾಯ ಹೆಚ್ಚುತ್ತದೆ",
+              "2": "ಯಾವ ದಾಖಲೆಗಳೂ ಅವಶ್ಯವಿಲ್ಲ",
+              "3": "ಅಪರಿಮಿತ ಹಿಂಪಡೆಯುವಿಕೆ ಅನುಮತಿಸುತ್ತದೆ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Sukanya-Future-Plan-Poster-🎯-Remedial",
+          "seq": 125,
+          "nm": "Build a Sukanya Future Plan Poster 🎯",
+          "desc": "In this activity, students will learn in an easy way about Sukanya Samriddhi Yojana and how it helps families save money for a girl’s education and future needs. Students will create a simple “Future Plan Poster” to show how saving money early can help in achieving education goals and better opportunities for girls.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಹೆಣ್ಣು ಮಕ್ಕಳಿಗಾಗಿ ಉಳಿತಾಯ ಮಾಡುವ ಗುರಿ ಏನು, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: Education / Future, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Education / Future, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Education / Future, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಆರ್ಥಿಕ ಸಾಕ್ಷರತೆ ನೋಟ್‌ಬುಕ್‌ನ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "Notebook",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Notebook"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ನಿಮ್ಮ Sukanya ಪೋಸ್ಟರ್ ಮತ್ತು ಅದರ ಪ್ರಯೋಜನ ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ Sukanya Future ಪೋಸ್ಟರ್‌ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Money Plans the Future 🗺️",
+      "desc": "Saving and Investment Options",
+      "rwc": "Pencil, Eraser",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 132,
+          "nm": "Can planning protect your future? 🗺️",
+          "desc": "In this activity, students will create an Investment Wheel by listing five different savings and investment options. They will link their wheel to SDG 1: No Poverty by understanding how financial services help everyone.",
+          "yt": "4Xo1B-Ihi9U",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 145,
+        "nm": "Can saving fight poverty? 💪",
+        "qs": [
+          {
+            "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ಉಲ್ಲೇಖಿಸಿದ SDG 1 ರ ಮುಖ್ಯ ಉದ್ದೇಶ ಏನು?",
+            "opts": {
+              "1": "ಲಿಂಗ ಸಮಾನತೆ ಉತ್ತೇಜಿಸಿ",
+              "2": "ಶುದ್ಧ ನೀರು ಮತ್ತು ನೈರ್ಮಲ್ಯ ಖಚಿತಪಡಿಸಿ",
+              "3": "ಬಡತನ ನಿರ್ಮೂಲನೆ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಐಶಾ ಅವರ ಪೋಷಕರು ಏಕೆ ಹಣ ಉಳಿಸಿ ಹೂಡಿಕೆ ಮಾಡಿದರು?",
+            "opts": {
+              "1": "ರಜೆ ಹೋಗಲು",
+              "2": "ಹೊಸ ಮನೆ ಕೊಳ್ಳಲು",
+              "3": "ಐಶಾ ವೈದ್ಯರಾಗಬೇಕೆಂಬ ಕನಸು ಈಡೇರಿಸಲು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಐಶಾ ವಿವರಿಸಿದಂತೆ ಬ್ಯಾಂಕ್ ಅಥವಾ ಅಂಚೆ ಕಚೇರಿಯಲ್ಲಿ ಹಣ ಇಡುವ ಪ್ರಯೋಜನ ಏನು?",
+            "opts": {
+              "1": "ತಕ್ಷಣ ಖರ್ಚು ಮಾಡಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ",
+              "2": "ಹಣ ಸುರಕ್ಷಿತ ಮತ್ತು ಬಡ್ಡಿ ಗಳಿಸುತ್ತದೆ",
+              "3": "ಹಣ ಕೇವಲ ಸುರಕ್ಷಿತ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಐಶಾ ರೀತಿ ಸೃಜನಾತ್ಮಕ ಕಾರ್ಯಾಗಾರ ವಿನ್ಯಾಸ ಮಾಡಲು ಯಾವ ಸಂಪನ್ಮೂಲ ಬಳಸಬಹುದು?",
+            "opts": {
+              "1": "ಸರಳ ಪಠ್ಯ ದಾಖಲೆಗಳು",
+              "2": "ಸಂವಾದಾತ್ಮಕ ಚಟುವಟಿಕೆಗಳು ಮತ್ತು ದೃಶ್ಯ ಸಾಧನಗಳು",
+              "3": "ಔಪಚಾರಿಕ ಉಪನ್ಯಾಸಗಳು"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಸಮುದಾಯಕ್ಕೆ ಹಣಕಾಸು ಸಾಕ್ಷರತೆ ಅರ್ಥ ಮಾಡಿಸಲು ಪರಿಣಾಮಕಾರಿ ಜಾಗೃತಿ ಹರಡಲು ಯಾವ ನಿರ್ಧಾರ ತೆಗೆದುಕೊಳ್ಳಬಹುದು?",
+            "opts": {
+              "1": "ಕೇವಲ ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ ಪೋಸ್ಟ್‌ಗಳ ಮೇಲೆ ಅವಲಂಬಿಸಿ",
+              "2": "ಮಾಹಿತಿಪ್ರದ ಮತ್ತು ಸಂವಾದಾತ್ಮಕ ಕಾರ್ಯಾಗಾರಗಳನ್ನು ಆಯೋಜಿಸಿ",
+              "3": "ವಿವರಣೆ ಇಲ್ಲದೆ ಕರಪತ್ರಗಳನ್ನು ವಿತರಿಸಿ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Financial-Planning-Poster-🗺️-Intermediate",
+          "seq": 126,
+          "nm": "Build a Financial Planning Poster 🗺️",
+          "desc": "In this activity, students will create an Investment Wheel by listing five different savings and investment options. They will link their wheel to SDG 1: No Poverty by understanding how financial services help everyone.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಆತ್ಮವಿಶ್ವಾಸ ಇದ್ದರೆ ⭐ ಕಳುಹಿಸಿ, ಗೊಂದಲವಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ನಿಮ್ಮ ಹೂಡಿಕೆ ಚಕ್ರದಿಂದ ಒಂದು ಆರ್ಥಿಕ ಆಯ್ಕೆ ಹೆಸರಿಸಿ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: Savings / FD / RD / Stocks / Insurance, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Savings / FD / RD / Stocks / Insurance, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Savings / FD / RD / Stocks / Insurance, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಪೆನ್ ಅಥವಾ ಪೆನ್ಸಿಲ್‌ನ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "Pen / Pencil",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than Pen/Pencil"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ನಿಮ್ಮ ಆರ್ಥಿಕ ಯೋಜನೆ ಪೋಸ್ಟರ್ ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಆರ್ಥಿಕ ಯೋಜನೆ ಪೋಸ್ಟರ್‌ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Plans Protect the Future 🛡️",
+      "desc": "Financial Services",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 133,
+          "nm": "Can saving protect from loss? 🛡️",
+          "desc": "In this activity, students will create a Financial Planning poster covering important money topics like saving, investing, planning for taxes, retirement, and protecting against financial risks. They will learn how these skills connect to SDG 4: Quality Education by helping develop decision-making and critical thinking for real-life financial success.",
+          "yt": "gUlvSIRomUo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 146,
+        "nm": "Can investing protect your future? 📊",
+        "qs": [
+          {
+            "q": "ಅಮನ್ ತನ್ನ ಮೊದಲ ಸಂಬಳದಿಂದ ಎಷ್ಟು ಉಳಿಸಿದ?",
+            "opts": { "1": "₹5,000", "2": "₹15,000", "3": "₹10,000" },
+            "ans": "3"
+          },
+          {
+            "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನ ಪಾಠದ ಮುಖ್ಯ ಗುರಿ ಏನು?",
+            "opts": {
+              "1": "ಸ್ಮಾರ್ಟ್ ಹಣಕಾಸು ಯೋಜನೆ ಕಲಿಯಿರಿ",
+              "2": "ಹಣ ಉಳಿಸುವ ವಿಧಾನ ಕಲಿಯಲು",
+              "3": "ವಿಮಾ ನೀತಿಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "₹10,000 ಹೂಡಿಕೆ ಮಾಡಬೇಕಿದ್ದರೆ ಸ್ಕ್ರಿಪ್ಟ್‌ನ ವೈವಿಧ್ಯಮಯ ಉದಾಹರಣೆ ಪ್ರಕಾರ ಹೇಗೆ ವಿಭಜಿಸಬೇಕು?",
+            "opts": {
+              "1": "₹5,000 ಷೇರು, ₹3,000 ಉಳಿತಾಯ, ₹2,000 ಮ್ಯೂಚುಯಲ್ ಫಂಡ್",
+              "2": "₹4,000 ಚಿನ್ನ, ₹4,000 FD, ₹2,000 ಉಳಿತಾಯ",
+              "3": "₹5,000 FD/ಉಳಿತಾಯ, ₹3,000 ಮ್ಯೂಚುಯಲ್ ಫಂಡ್, ₹2,000 ಷೇರು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಅಮನ್ ತನ್ನ ಉಳಿತಾಯವನ್ನು ಬೆಳವಣಿಗೆ ಮತ್ತು ರಕ್ಷಣೆ ಎರಡಕ್ಕೂ ಹೂಡಿಕೆ ಮಾಡಲು ಬಯಸಿದರೆ ಯಾವ ಎರಡು ಹಣಕಾಸು ಕ್ರಮಗಳನ್ನು ಪರಿಗಣಿಸಬೇಕು?",
+            "opts": {
+              "1": "ಕೇವಲ ಸ್ಥಿರ ಠೇವಣಿಯಲ್ಲಿ ಹಣ ಉಳಿಸಿ",
+              "2": "ಹೂಡಿಕೆ ಮತ್ತು ವಿಮೆ ಖರೀದಿ",
+              "3": "ಎಲ್ಲ ಹಣವನ್ನು ಮ್ಯೂಚುಯಲ್ ಫಂಡ್ ಮತ್ತು ಷೇರುಗಳಲ್ಲಿ ಹಾಕಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಅಂಜಲಿ ತನ್ನ ಹಣಕಾಸು ಯೋಜಿಸುತ್ತಿದ್ದು ಅನಿರೀಕ್ಷಿತ ವೈದ್ಯಕೀಯ ತುರ್ತು ಪರಿಸ್ಥಿತಿಗಳಿಂದ ರಕ್ಷಿಸಿಕೊಳ್ಳಬೇಕೆಂದಿದ್ದಾಳೆ. ಅವಳ ಹಣಕಾಸು ಯೋಜನೆಯಲ್ಲಿ ಯಾವುದಕ್ಕೆ ಆದ್ಯತೆ ನೀಡಬೇಕು?",
+            "opts": {
+              "1": "ಉಳಿತಾಯ ಖಾತೆಯಲ್ಲಿ ಹಣ ಉಳಿಸಿ",
+              "2": "ಷೇರುಗಳಲ್ಲಿ ಹೆಚ್ಚು ಹೂಡಿಕೆ ಮಾಡಿ",
+              "3": "ಆರೋಗ್ಯ ವಿಮೆ ಪಡೆಯಿರಿ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-Your-Financial-Protection-Plan-🛡️-Remedial",
+          "seq": 127,
+          "nm": "Build Your Financial Protection Plan 🛡️",
+          "desc": "In this activity, students will create a Financial Planning poster covering important money topics like saving, investing, planning for taxes, retirement, and protecting against financial risks. They will learn how these skills connect to SDG 4: Quality Education by helping develop decision-making and critical thinking for real-life financial success.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಆತ್ಮವಿಶ್ವಾಸ ಇದ್ದರೆ ⭐ ಕಳುಹಿಸಿ, ಗೊಂದಲವಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಆರ್ಥಿಕ ಯೋಜನೆಯ ಒಂದು ಭಾಗ ಹೆಸರಿಸಿ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: Saving / Investing / Tax / Insurance, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Saving / Investing / Tax / Insurance, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Saving / Investing / Tax / Insurance, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಕಾಗದದ ಮೇಲೆ ಏನಾದರೂ ಬಿಡಿಸಿ ಮತ್ತು ಅದರ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "Clear drawing photo",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a drawing photo"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಬಡ್ಡಿ ಹಣ ಬೆಳೆಯಲು ಹೇಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ ಎಂದು ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಆರ್ಥಿಕ ರಕ್ಷಣಾ ಯೋಜನೆ (ಮುಂದುವರಿದ) ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Interest Earns Extra Back 🧮",
+      "desc": "Simple Interest",
+      "rwc": "Pencil, Eraser",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 134,
+          "nm": "Can interest grow Ankit's money? 🧮",
+          "desc": "In this activity, students solve two Simple Interest questions using the given values, compare which one gives higher interest, and share a photo of their work before taking the quiz.",
+          "yt": "u8Cqxvw85j0",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 147,
+        "nm": "Which bank gives more interest? 🏦",
+        "qs": [
+          {
+            "q": "ಸರಳ ಬಡ್ಡಿ ಸೂತ್ರದಲ್ಲಿ 'P' ಏನನ್ನು ಸೂಚಿಸುತ್ತದೆ?",
+            "opts": { "1": "ಲಾಭ", "2": "ಮೂಲಧನ", "3": "ಶೇಕಡಾವಾರು" },
+            "ans": "2"
+          },
+          {
+            "q": "ಜನರು ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ಹಣ ಏಕೆ ಇಡುತ್ತಾರೆ?",
+            "opts": {
+              "1": "ಸುರಕ್ಷಿತವಾಗಿ ಇಡಲು ಮತ್ತು ಬಡ್ಡಿ ಗಳಿಸಲು",
+              "2": "ಕೇವಲ ಖರ್ಚು ಮಾಡಲು",
+              "3": "ಅದನ್ನು ಮರೆಮಾಚಲು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "₹200 ಗೆ 6% ದರದಲ್ಲಿ 1 ವರ್ಷದ ಸರಳ ಬಡ್ಡಿ ಎಷ್ಟು?",
+            "opts": { "1": "₹10", "2": "₹8", "3": "₹12" },
+            "ans": "3"
+          },
+          {
+            "q": "ನೀವು ಹೆಚ್ಚು ಬಡ್ಡಿ ಗಳಿಸಬೇಕಿದ್ದರೆ ಯಾವ ಬ್ಯಾಂಕ್ ಆರಿಸುತ್ತೀರಿ?",
+            "opts": { "1": "5% ನೀಡುವ ಬ್ಯಾಂಕ್", "2": "3% ನೀಡುವ ಬ್ಯಾಂಕ್", "3": "0% ನೀಡುವ ಬ್ಯಾಂಕ್" },
+            "ans": "1"
+          },
+          {
+            "q": "ಹಣ ಬೆಳೆಸಲು ಯಾವ ನಿಯಮ ಒಳ್ಳೆಯದು?",
+            "opts": {
+              "1": "ಎಂದಿಗೂ ಹಣ ಉಳಿಸಬೇಡಿ",
+              "2": "ಬಡ್ಡಿ ಗಳಿಸಲು ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ಉಳಿಸಿ",
+              "3": "ಮೊದಲು ಖರ್ಚು ಮಾಡಿ, ನಂತರ ಉಳಿಸಿ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Solve-Two-Interest-Calculations-🧮-Intermediate",
+          "seq": 128,
+          "nm": "Solve Two Interest Calculations 🧮",
+          "desc": "In this activity, students solve two Simple Interest questions using the given values, compare which one gives higher interest, and share a photo of their work before taking the quiz.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಯಾವ ಆಯ್ಕೆ ಹೆಚ್ಚು ಬಡ್ಡಿ ನೀಡುತ್ತದೆ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: Simple / Compund, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: One / Two, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Simple/ Compund, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಮೇಜು ಅಥವಾ ಕುರ್ಚಿಯ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "Table / Chair",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Table / Chair"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ನಿಮ್ಮ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಸರಳ ಬಡ್ಡಿ ಹೇಗೆ ಲೆಕ್ಕ ಹಾಕಿದಿರಿ ಎಂದು ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಸರಳ ಬಡ್ಡಿ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Growth Powers the Economy 📊",
+      "desc": "Interest, Banking",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 135,
+          "nm": "Can interest build an economy? 📊",
+          "desc": "In this activity, students will explore how interest works in saving, borrowing, and investing, and how it drives business growth, job creation, and economic development, all linked to SDG 8: Decent Work and Economic Growth. They will create an artifact to demonstrate their understanding of how financial decisions impact the economy.",
+          "yt": "6e_wZF_hjGo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 148,
+        "nm": "Can interest grow an economy? 📈",
+        "qs": [
+          {
+            "q": "ವೀಡಿಯೋದ ಮುಖ್ಯ ವಿಷಯ ಏನು?",
+            "opts": {
+              "1": "ಬಡ್ಡಿಯ ಶಕ್ತಿ",
+              "2": "ಉಳಿತಾಯದ ಮಹತ್ವ",
+              "3": "ಬ್ಯಾಂಕಿಂಗ್‌ನ ಮೂಲಭೂತ ಅಂಶಗಳು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ವೀಡಿಯೋ ಪ್ರಕಾರ ಬಡ್ಡಿ ಆರ್ಥಿಕ ಬೆಳವಣಿಗೆಗೆ ಹೇಗೆ ಕೊಡುಗೆ ನೀಡುತ್ತದೆ?",
+            "opts": {
+              "1": "ತೆರಿಗೆ ಕಡಿಮೆ ಮಾಡುವ ಮೂಲಕ",
+              "2": "ವ್ಯವಹಾರಗಳ ಬೆಳವಣಿಗೆಗೆ ಸಹಾಯ ಮಾಡಿ ಉದ್ಯೋಗ ಸೃಷ್ಟಿಸುವ ಮೂಲಕ",
+              "3": "ಹಣದುಬ್ಬರ ಹೆಚ್ಚಿಸುವ ಮೂಲಕ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "3% ವಾರ್ಷಿಕ ಬಡ್ಡಿ ದರದ ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ₹1,000 ಉಳಿಸಿದರೆ ಒಂದು ವರ್ಷದಲ್ಲಿ ಎಷ್ಟು ಬಡ್ಡಿ ಗಳಿಸುತ್ತೀರಿ?",
+            "opts": { "1": "₹10", "2": "₹50", "3": "₹30" },
+            "ans": "3"
+          },
+          {
+            "q": "ಒಬ್ಬ ವ್ಯಕ್ತಿ ವ್ಯವಹಾರ ಪ್ರಾರಂಭಿಸಲು ಸಾಲ ತೆಗೆದುಕೊಳ್ಳುತ್ತಾರೆ. ವೀಡಿಯೋದಲ್ಲಿ ಚರ್ಚಿಸಿದ ನಿರ್ಧಾರ ಕೌಶಲ್ಯ ಆಧಾರದ ಮೇಲೆ ಸಂಭವನೀಯ ಸಕಾರಾತ್ಮಕ ಫಲಿತಾಂಶ ಯಾವುದು?",
+            "opts": {
+              "1": "ವ್ಯವಹಾರದ ಆದಾಯ ಕಡಿಮೆ ಮಾಡುವುದು",
+              "2": "ಸಾಲದ ಮೊತ್ತ ಹೆಚ್ಚಿಸುವುದು",
+              "3": "ಹೊಸ ಉದ್ಯೋಗ ಸೃಷ್ಟಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಸರ್ಕಾರಿ ಅಧಿಕಾರಿ ಹೊಸ ಮೂಲಸೌಕರ್ಯ ಯೋಜನೆ ಹಣ ಸಂಗ್ರಹಿಸಲು ಬಡ್ಡಿ ಬಳಸಲು ಯೋಜಿಸುತ್ತಿದ್ದಾರೆ. ಸ್ಮಾರ್ಟ್ ನಿರ್ಧಾರ ತೆಗೆದುಕೊಳ್ಳಲು ಏನು ಪರಿಗಣಿಸಬೇಕು?",
+            "opts": {
+              "1": "ಯೋಜನೆಯ ಜನಪ್ರಿಯತೆ",
+              "2": "ಮೂಲಸೌಕರ್ಯದ ಬಣ್ಣ",
+              "3": "ಯೋಜನೆಯ ದೀರ್ಘಕಾಲಿಕ ಆರ್ಥಿಕ ಪ್ರಭಾವ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Draw-the-Interest-Growth-Panels-📊-Remedial",
+          "seq": 129,
+          "nm": "Draw the Interest Growth Panels 📊",
+          "desc": "In this activity, students will explore how interest works in saving, borrowing, and investing, and how it drives business growth, job creation, and economic development, all linked to SDG 8: Decent Work and Economic Growth. They will create an artifact to demonstrate their understanding of how financial decisions impact the economy.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗಲಿಲ್ಲದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಕಾಲಾನಂತರದಲ್ಲಿ ಹಣ ಬೆಳೆಯಲು ಏನು ಸಹಾಯ ಮಾಡುತ್ತದೆ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types the word: Interest, then the response is valid OR If the student sends a voice note and the response includes the word: Interest, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include the word: Interest, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಶಾಲಾ ಚೀಲ ತೋರಿಸಿ ಮತ್ತು ಅದರ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "School bag",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a School bag"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಬಡ್ಡಿ ಹಣ ಬೆಳೆಯಲು ಹೇಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ ಎಂದು ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಬಡ್ಡಿ ಪೋಸ್ಟರ್‌ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Scan Pay Done 📲",
+      "desc": "Digital Payments",
+      "rwc": "Pencil, Eraser",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 136,
+          "nm": "Can a QR replace cash? 📲",
+          "desc": "In this activity, students will create a “Digital Payments Puzzle” poster that illustrates the key modes of digital money transfer (UPI via QR/contacts, IMPS, NEFT/RTGS via internet or mobile banking) and shows how each supports SDG 8: Decent Work & Economic Growth. They will illustrate the SDG 8 theme in the centre, summarize its key benefits around it, and depict various digital payment methods in the other panels.",
+          "yt": "bzPVpR9pUvo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 149,
+        "nm": "Can UPI replace your wallet? 📲",
+        "qs": [
+          {
+            "q": "ಡಿಜಿಟಲ್ ಪಾವತಿ ಸಂದರ್ಭದಲ್ಲಿ UPI ಯ ಪೂರ್ಣ ರೂಪ ಏನು?",
+            "opts": {
+              "1": "ಯೂನಿವರ್ಸಲ್ ಪೇಮೆಂಟ್ಸ್ ಇಂಟರ್‌ಫೇಸ್",
+              "2": "ಯೂನಿಫೈಡ್ ಪೇಮೆಂಟ್ಸ್ ಇಂಟರ್‌ಫೇಸ್",
+              "3": "ಯೂನಿವರ್ಸಲ್ ಪೇಮೆಂಟ್ ಇಂಡೆಕ್ಸ್"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಸ್ಕ್ರಿಪ್ಟ್ ಪ್ರಕಾರ ಡಿಜಿಟಲ್ ಪಾವತಿ SDG 8 ಅನ್ನು ಹೇಗೆ ಬೆಂಬಲಿಸುತ್ತದೆ?",
+            "opts": {
+              "1": "ಭೌತಿಕ ಕರೆನ್ಸಿಯ ಅಗತ್ಯ ಕಡಿಮೆ ಮಾಡಿ ಜಾಗತಿಕ ವ್ಯಾಪಾರ ಉತ್ತೇಜಿಸುವ ಮೂಲಕ",
+              "2": "ಸ್ಥಳೀಯ ಆರ್ಥಿಕತೆ ಬಲಪಡಿಸಿ ಉದ್ಯೋಗ ಸೃಷ್ಟಿಸುವ ತ್ವರಿತ ಪಾವತಿ ಸಾಧ್ಯಗೊಳಿಸುವ ಮೂಲಕ",
+              "3": "ಬ್ಯಾಂಕಿಂಗ್ ಸಂಸ್ಥೆಗಳು ಹೊಸ ಉತ್ಪನ್ನ ಅಭಿವೃದ್ಧಿಪಡಿಸಲು ಬೆಂಬಲಿಸುವ ಮೂಲಕ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಸ್ಕ್ರಿಪ್ಟ್ ಪ್ರಕಾರ ನಿಖರ ಚಿಲ್ಲರೆ ಚಿಂತೆ ಇಲ್ಲದೆ ತಕ್ಷಣ ಪಾವತಿ ಮಾಡಲು ಯಾವ ವಿಧಾನ ಅನುಮತಿಸುತ್ತದೆ?",
+            "opts": {
+              "1": "ಫೋನ್‌ನಿಂದ QR ಕೋಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ",
+              "2": "ಚೆಕ್ ಬರೆದು",
+              "3": "ನಾಣ್ಯ ಮತ್ತು ನಗದು ಬಳಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ನೀವು ಅಂಗಡಿಕಾರರಾಗಿದ್ದು ಹಣ ಬೇಗ ಪಡೆಯಲು ಗ್ರಾಹಕರು ಯಾವ ಪಾವತಿ ವಿಧಾನ ಬಳಸಲು ಉತ್ತೇಜಿಸಬೇಕು?",
+            "opts": {
+              "1": "UPI ಮೂಲಕ ಡಿಜಿಟಲ್ ಪಾವತಿ",
+              "2": "ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್ ಪಾವತಿ",
+              "3": "ನಗದು ಪಾವತಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ದಿನಗೂಲಿ ಕೆಲಸ ಮುಗಿದ ತಕ್ಷಣ ಕೆಲಸಗಾರರಿಗೆ ಪಾವತಿ ಮಾಡಲು ಸ್ಕ್ರಿಪ್ಟ್ ಪ್ರಕಾರ ಅತ್ಯಂತ ಪರಿಣಾಮಕಾರಿ ಪಾವತಿ ವಿಧಾನ ಯಾವುದು?",
+            "opts": { "1": "ನಗದು ಕೊಡಿ", "2": "ಡಿಜಿಟಲ್ ವರ್ಗಾವಣೆ", "3": "ಚೆಕ್ ಬರೆದು" },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-the-Digital-Payments-Puzzle-📲-Advanced",
+          "seq": 130,
+          "nm": "Build the Digital Payments Puzzle 📲",
+          "desc": "In this activity, students will create a “Digital Payments Puzzle” poster that illustrates the key modes of digital money transfer (UPI via QR/contacts, IMPS, NEFT/RTGS via internet or mobile banking) and shows how each supports SDG 8: Decent Work & Economic Growth. They will illustrate the SDG 8 theme in the centre, summarize its key benefits around it, and depict various digital payment methods in the other panels.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಆತ್ಮವಿಶ್ವಾಸ ಇದ್ದರೆ ⭐ ಕಳುಹಿಸಿ, ಗೊಂದಲವಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಒಂದು ಡಿಜಿಟಲ್ ಪಾವತಿ ವಿಧಾನ ಹೆಸರಿಸಿ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: UPI / IMPS / NEFT / RTGS, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: UPI / IMPS / NEFT / RTGS, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: UPI / IMPS / NEFT / RTGS, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಬಾಟಲಿಯ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "Bottle",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Bottle"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ನಿಮ್ಮ ಡಿಜಿಟಲ್ ಪಾವತಿ ಪೋಸ್ಟರ್ ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಡಿಜಿಟಲ್ ಪಾವತಿ ಒಗಟು ಪೋಸ್ಟರ್‌ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Payments Go Digital 💳",
+      "desc": "Digital Payments",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 137,
+          "nm": "Can apps move your money? 💳",
+          "desc": "In this activity, students will learn in an easy way about important money topics like saving, investing, tax planning, retirement, and financial protection. Students will create a simple “Financial Planning Poster” to show how these ideas help in managing money and making better decisions for the future. They will also understand how these skills connect to SDG 4: Quality Education.",
+          "yt": "MWqfInivuaE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 150,
+        "nm": "Which payment is truly instant? ⚡",
+        "qs": [
+          {
+            "q": "UPI ಯ ಪೂರ್ಣ ರೂಪ ಏನು?",
+            "opts": {
+              "1": "ಯೂನಿಫೈಡ್ ಪೇಮೆಂಟ್ಸ್ ಇಂಟರ್‌ಫೇಸ್",
+              "2": "ಯೂನಿವರ್ಸಲ್ ಪೇಮೆಂಟ್ ಇಂಟಿಗ್ರೇಶನ್",
+              "3": "ಯುನೈಟೆಡ್ ಪೇಮೆಂಟ್ ಇನ್‌ಫ್ರಾಸ್ಟ್ರಕ್ಚರ್"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಯಾವ ಡಿಜಿಟಲ್ ಪಾವತಿ ವಿಧಾನ ಸಾಮಾನ್ಯವಾಗಿ ತಕ್ಷಣ ಆಗುವುದಿಲ್ಲ ಮತ್ತು ಸ್ವಲ್ಪ ಸಮಯ ತೆಗೆದುಕೊಳ್ಳಬಹುದು?",
+            "opts": { "1": "IMPS", "2": "UPI", "3": "NEFT" },
+            "ans": "3"
+          },
+          {
+            "q": "ಡಿಜಿಟಲ್ ಪಾವತಿ ಮಾಡಲು ಮೊದಲ ಹೆಜ್ಜೆ ಏನು?",
+            "opts": {
+              "1": "ಅಪ್ಲಿಕೇಶನ್ ಅಥವಾ ವೆಬ್‌ಸೈಟ್ ತೆರೆಯಿರಿ",
+              "2": "ಪಿನ್ ಅಥವಾ OTP ಮೂಲಕ ದೃಢೀಕರಿಸಿ",
+              "3": "ಮೊತ್ತ ನಮೂದಿಸಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ತಕ್ಷಣ ದೊಡ್ಡ ಮೊತ್ತ ವರ್ಗಾಯಿಸಬೇಕಿದ್ದರೆ ಯಾವ ವಿಧಾನ ಆರಿಸಬೇಕು?",
+            "opts": { "1": "RTGS", "2": "NEFT", "3": "UPI" },
+            "ans": "1"
+          },
+          {
+            "q": "ನೀವು ಅಂಗಡಿಯಲ್ಲಿದ್ದು ನಗದು ಇಲ್ಲ. ಮೊಬೈಲ್ ಅಪ್ಲಿಕೇಶನ್ ಬಳಸಿ ತ್ವರಿತವಾಗಿ ಪಾವತಿಸಲು ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "NEFT ವರ್ಗಾವಣೆಗಾಗಿ ಕಾಯಿರಿ",
+              "2": "ತಕ್ಷಣ ಪಾವತಿಗೆ RTGS ಬಳಸಿ",
+              "3": "ಪಾವತಿ ಅಪ್ಲಿಕೇಶನ್ ಬಳಸಿ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ ತಕ್ಷಣ ಪಾವತಿಸಿ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Complete-the-Digital-Payments-Chart-💳-Remedial",
+          "seq": 131,
+          "nm": "Complete the Digital Payments Chart 💳",
+          "desc": "In this activity, students will learn in an easy way about important money topics like saving, investing, tax planning, retirement, and financial protection. Students will create a simple “Financial Planning Poster” to show how these ideas help in managing money and making better decisions for the future. They will also understand how these skills connect to SDG 4: Quality Education.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಚಟುವಟಿಕೆ ಇಷ್ಟವಾದರೆ 👍 ಕಳುಹಿಸಿ, ಇಷ್ಟವಾಗದಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದಾದರೂ ಎಮೋಜಿ ಕಳುಹಿಸಿ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ನೀವು ಕಲಿತ ಒಂದು ಆರ್ಥಿಕ ಪರಿಕಲ್ಪನೆ ಹೆಸರಿಸಿ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ.",
+              "unguided_text": "ಈ ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮಗೆ ಏನನಿಸುತ್ತದೆ? ಒಂದು ಪದದಲ್ಲಿ ಹೇಳಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: Saving / Investing / Planning, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Saving / Investing / Planning, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Saving / Investing / Planning, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಶಾಲಾ ಚೀಲ ತೋರಿಸಿ ಮತ್ತು ಅದರ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಲಿನ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "School bag",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a School bag"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಡಿಜಿಟಲ್ ಪಾವತಿ ಜನರಿಗೆ ಮತ್ತು ವ್ಯಾಪಾರಗಳಿಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ ಎಂದು ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಡಿಜಿಟಲ್ ಪೇಮೆಂಟ್ಸ್ ಚಾರ್ಟ್‌ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

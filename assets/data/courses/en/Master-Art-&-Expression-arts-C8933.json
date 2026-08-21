@@ -1,0 +1,1014 @@
+{
+  "id": "Master-Art-&-Expression-arts-C8933",
+  "nm": "Master Art & Expression",
+  "lvl": "Level 3AK",
+  "vrt": "arts",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Shirt Carries a Message 👕",
+      "desc": "Upcycling",
+      "rwc": "Old T-Shirt, Scissors, Colors, Fabric, Markers",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 81,
+          "nm": "Can a shirt carry messages? 👕",
+          "desc": "Students will take an old T-shirt and turn it into a reusable tote bag by cutting and tying. They will decorate the bag using fabric paints or markers with climate awareness messages or images. This bag can be used daily, helping reduce the need for plastic bags.",
+          "yt": "T664t_MeFFo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 83,
+        "nm": "Can a T-shirt carry groceries? 👕",
+        "qs": [
+          {
+            "q": "What is the primary goal of the activity ?",
+            "opts": {
+              "1": "To promote climate action and reuse",
+              "2": "To improve sewing skills",
+              "3": "To make a fashion statement"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Why does the script suggest using old T-shirts to make tote bags?",
+            "opts": {
+              "1": "To reduce waste and support sustainable practices",
+              "2": "To create a collection of designer bags",
+              "3": "To follow the latest fashion trends"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What are the first steps in transforming an old T-shirt into a tote bag?",
+            "opts": {
+              "1": "Sewing the bottom of the T-shirt",
+              "2": "Painting and decorating the T-shirt",
+              "3": "Cutting off the sleeves and top collar"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "How can you creatively express a message for climate action on the tote bag?",
+            "opts": {
+              "1": "By using bright, non-recyclable materials",
+              "2": "By adding extra pockets to the bag",
+              "3": "By decorating it with climate art and messages like 'Protect Earth'"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "Which 21st-century skill is emphasized when turning the T-shirt inside out after tying the fringes?",
+            "opts": {
+              "1": "Speed and efficiency",
+              "2": "Transformation and growth",
+              "3": "Technical sewing expertise"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Turn-a-T-Shirt-Into-a-Tote-Bag-👕-Basic",
+          "seq": 77,
+          "nm": "Turn a T-Shirt Into a Tote Bag 👕",
+          "desc": "Students will take an old T-shirt and turn it into a reusable tote bag by cutting and tying. They will decorate the bag using fabric paints or markers with climate awareness messages or images. This bag can be used daily, helping reduce the need for plastic bags.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voice note saying \"Useful\" if you liked it, or \"Waste\" if you didn’t.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a text",
+              "valid_criteria": "Useful, Waste",
+              "invalid_criteria": "Any word other than useful, waste"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Send a picture of a plastic bag around you",
+              "unguided_text": "Share a picture of anything around you",
+              "valid_criteria": "A clear picture of a plastic bag",
+              "invalid_criteria": "No plastic bag, unclear image, or blank image"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "What materials did you use to make your tote bag?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a picture or video of your tote bag"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Old Tee Gets Purpose 🧵",
+      "desc": "Upcycling",
+      "rwc": "Old T-Shirt, Scissors, Colors, Fabric",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 82,
+          "nm": "Can old tees become bags? 🧵",
+          "desc": "Students will take an old T-shirt and turn it into a reusable tote bag by cutting and tying. They will decorate the bag using fabric paints or markers with climate awareness messages or images. This bag can be used daily, helping reduce the need for plastic bags.",
+          "yt": "zF3pyKmx0Wo",
+          "pts": 10,
+          "pq": {
+            "id": 84,
+            "nm": "Can an old shirt become a bag? 🛍️",
+            "qs": [
+              {
+                "q": "What is the first step in converting an old T-shirt into a reusable bag?",
+                "opts": {
+                  "1": "Cut the sleeves of the T-shirt.",
+                  "2": "Decorate the T-shirt with fabric paint.",
+                  "3": "Place the T-shirt on a flat surface."
+                },
+                "ans": "3"
+              },
+              {
+                "q": "Why should the neck of the T-shirt be cut larger than its original size?",
+                "opts": {
+                  "1": "To improve the appearance of the T-shirt.",
+                  "2": "To create fringes at the bottom.",
+                  "3": "To make handles for the bag."
+                },
+                "ans": "3"
+              },
+              {
+                "q": "What is the purpose of tying the strips at the bottom of the T-shirt?",
+                "opts": {
+                  "1": "To form the base of the bag.",
+                  "2": "To add decoration to the bag.",
+                  "3": "To create the bag handles."
+                },
+                "ans": "1"
+              },
+              {
+                "q": "If you want to create a larger carrying capacity for your bag, what creative adjustment could you make?",
+                "opts": {
+                  "1": "Add more decorative elements with fabric paint.",
+                  "2": "Use a larger T-shirt to start with.",
+                  "3": "Cut the fringes longer than 2 inches."
+                },
+                "ans": "2"
+              },
+              {
+                "q": "How can you personalize your reusable bag to reflect your unique style?",
+                "opts": {
+                  "1": "By choosing a brightly colored T-shirt.",
+                  "2": "By decorating it with unique designs using fabric paint or markers.",
+                  "3": "By making the bag handles extra wide."
+                },
+                "ans": "2"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 85,
+        "nm": "Can an old shirt become a bag? 🛍️",
+        "qs": [
+          {
+            "q": "What is the first step in converting an old T-shirt into a reusable bag?",
+            "opts": {
+              "1": "Cut the sleeves of the T-shirt.",
+              "2": "Decorate the T-shirt with fabric paint.",
+              "3": "Place the T-shirt on a flat surface."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "Why should the neck of the T-shirt be cut larger than its original size?",
+            "opts": {
+              "1": "To improve the appearance of the T-shirt.",
+              "2": "To create fringes at the bottom.",
+              "3": "To make handles for the bag."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "What is the purpose of tying the strips at the bottom of the T-shirt?",
+            "opts": {
+              "1": "To form the base of the bag.",
+              "2": "To add decoration to the bag.",
+              "3": "To create the bag handles."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "If you want to create a larger carrying capacity for your bag, what creative adjustment could you make?",
+            "opts": {
+              "1": "Add more decorative elements with fabric paint.",
+              "2": "Use a larger T-shirt to start with.",
+              "3": "Cut the fringes longer than 2 inches."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "How can you personalize your reusable bag to reflect your unique style?",
+            "opts": {
+              "1": "By choosing a brightly colored T-shirt.",
+              "2": "By decorating it with unique designs using fabric paint or markers.",
+              "3": "By making the bag handles extra wide."
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Reusable-Tote-Bag-🧵-Remedial",
+          "seq": 78,
+          "nm": "Make a Reusable Tote Bag 🧵",
+          "desc": "Students will take an old T-shirt and turn it into a reusable tote bag by cutting and tying. They will decorate the bag using fabric paints or markers with climate awareness messages or images. This bag can be used daily, helping reduce the need for plastic bags.",
+          "type": "Written",
+          "diff": "Remedial"
+        }
+      ]
+    },
+    {
+      "nm": "Threads Build a Mat 🪡",
+      "desc": "Weaving technique",
+      "rwc": "Cardboard, Yarn, Paper, Glue, Scissors",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 83,
+          "nm": "Can threads weave a coaster? 🪡",
+          "desc": "In this activity students will learn weaving technique and create a simple handmade coaster using the same.",
+          "yt": "YDU4YNXdCbc",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 86,
+        "nm": "Can cardboard become a coaster? 🧵",
+        "qs": [
+          {
+            "q": "What is the primary material used to create the base for the weaving project?",
+            "opts": { "1": "A piece of cardboard", "2": "A plastic frame", "3": "A piece of wood" },
+            "ans": "1"
+          },
+          {
+            "q": "Why is it important to ensure that the gaps on the cardboard are evenly spaced?",
+            "opts": {
+              "1": "For neat weaving later",
+              "2": "To save materials",
+              "3": "To make it easier to cut"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What should you do after reaching the opposite side while weaving?",
+            "opts": {
+              "1": "Cut the thread immediately",
+              "2": "Turn around and do the opposite weaving pattern",
+              "3": "Remove the thread and start over"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "How can you personalize your coaster design?",
+            "opts": {
+              "1": "Reduce the number of threads used",
+              "2": "Increase the size of the cardboard",
+              "3": "Use different colors and patterns"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "What is a creative way to finish your coaster after cutting the threads on the back?",
+            "opts": {
+              "1": "Glue the threads to the cardboard",
+              "2": "Fold the cardboard in half",
+              "3": "Tie the loose ends in pairs to secure the coaster"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Weave-a-Handmade-Coaster-🪡-Basic",
+          "seq": 79,
+          "nm": "Weave a Handmade Coaster 🪡",
+          "desc": "In this activity students will learn weaving technique and create a simple handmade coaster using the same.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voice note saying \"Creative\" if you liked it, or \"Simple\" if you didn’t.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a text",
+              "valid_criteria": "Creative, Simple",
+              "invalid_criteria": "Any word other than creative, simple"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Send a picture of a cup or glass around you",
+              "unguided_text": "Share a picture of anything around you",
+              "valid_criteria": "A clear picture of a cup or glass",
+              "invalid_criteria": "No cup/glass, unclear image, or blank image"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "What materials did you use to make your coaster?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a picture or video of your handmade coaster"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Yarn Finds Its Pattern 🧶",
+      "desc": "Weaving",
+      "rwc": "Cardboard, Yarn, Paper, Glue",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 84,
+          "nm": "Can yarn make a mat? 🧶",
+          "desc": "In this activity students will learn weaving technique and create a simple handmade coaster using the same.",
+          "yt": "zRRQx3UpOqE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 87,
+        "nm": "Can thread weave into a coaster? 🎨",
+        "qs": [
+          {
+            "q": "What is one of the materials needed to make the handmade coaster?",
+            "opts": {
+              "1": "A paintbrush",
+              "2": "A glue stick",
+              "3": "A square piece of cardboard"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "What is the purpose of making small cuts on the sides of the cardboard?",
+            "opts": {
+              "1": "To help with threading and spacing",
+              "2": "To attach the coaster to a table",
+              "3": "To make it look decorative"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Which step involves using a back-and-forth motion with the thread?",
+            "opts": { "1": "Cutting", "2": "Setting the Base", "3": "Weaving" },
+            "ans": "2"
+          },
+          {
+            "q": "If you wanted to add a personal touch to your coaster, which of the following could you do?",
+            "opts": {
+              "1": "Use only one color of thread for a uniform look",
+              "2": "Skip the weaving step entirely",
+              "3": "Incorporate different colors of thread as you weave"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "How can you enhance the final appearance of your coaster creatively?",
+            "opts": {
+              "1": "Leave the threads loose for a casual look",
+              "2": "Tighten the weave and incorporate a color pattern",
+              "3": "Use mismatched materials for a unique texture"
+            },
+            "ans": "2"
+          }
+        ]
+      }
+    },
+    {
+      "nm": "Warli Saves the Earth 🌿",
+      "desc": "Warli art",
+      "rwc": "Paper, Pen, Paint, Brush",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 85,
+          "nm": "Can Warli show sustainability? 🌿",
+          "desc": "In this activity, student will describe the basic features of Warli art & utilise this knowledge to create an artwork showcasing sustainable practicses that they have observed in their surroundings (villages/cities/school, etc)",
+          "yt": "KUx_R3x69ws",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 88,
+        "nm": "Can matchsticks draw Warli art? 🔥",
+        "qs": [
+          {
+            "q": "What are the main features of Warli Art as described in the video ?",
+            "opts": {
+              "1": "Geometric shapes and eco-friendly colors",
+              "2": "Bright colors and intricate designs",
+              "3": "Abstract forms and modern techniques"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What is the purpose of using matchsticks and earbuds in creating Warli Art?",
+            "opts": {
+              "1": "To create a more colorful artwork",
+              "2": "To make the art process more complex",
+              "3": "To experiment with art and minimize waste"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "How can Warli Art be used to demonstrate modern sustainable practices?",
+            "opts": {
+              "1": "By incorporating themes like rainwater harvesting and solar energy",
+              "2": "By using bright, synthetic paints",
+              "3": "By focusing on urban landscapes and architecture"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "If you were to create a Warli Art piece highlighting the theme of recycling, which creative materials could you use?",
+            "opts": {
+              "1": "High-end acrylic paints and canvases",
+              "2": "Digital tools to create virtual art",
+              "3": "Used paper and cardboard instead of new materials"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "Imagine you want to create a unique Warli Art project that highlights the importance of biodiversity. What innovative approach could you take?",
+            "opts": {
+              "1": "Focus solely on depicting human activities",
+              "2": "Include diverse plant and animal shapes using natural dyes",
+              "3": "Use only geometric shapes without any context"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Sustainable-Warli-Artwork-🌿-Intermediate",
+          "seq": 80,
+          "nm": "Create a Sustainable Warli Artwork 🌿",
+          "desc": "In this activity, student will describe the basic features of Warli art & utilise this knowledge to create an artwork showcasing sustainable practicses that they have observed in their surroundings (villages/cities/school, etc)",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voice note saying \"Traditional\" if you liked it, or \"Difficult\" if you didn’t.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a text",
+              "valid_criteria": "Traditional, Difficult",
+              "invalid_criteria": "Any word other than traditional, difficult"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Send a picture of a plant or leaf around you",
+              "unguided_text": "Share a picture of anything around you",
+              "valid_criteria": "A clear picture of a plant or leaf",
+              "invalid_criteria": "No plant/leaf, unclear image, or blank image"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "What did you draw in your Warli art?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a picture or video of your sustainable Warli art"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Triangles Tell Life 🏕️",
+      "desc": "Warli art",
+      "rwc": "Paper, Pen, Paint",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 86,
+          "nm": "Can triangles tell village life? 🏕️",
+          "desc": "SWABT understand and appreciate this traditional tribal art from Maharashtra, India. Students will learn to create simple, symbolic designs using geometric shapes like circles, triangles, and lines to depict nature, animals, and daily life.",
+          "yt": "rE5bzAmi03s",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 89,
+        "nm": "Can shapes tell tribal stories? 🔺",
+        "qs": [
+          {
+            "q": "What are the primary shapes used in Warli Art?",
+            "opts": {
+              "1": "Circles, triangles, and lines",
+              "2": "Hexagons, pentagons, and stars",
+              "3": "Squares, rectangles, and ovals"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What does a circle typically represent in Warli Art?",
+            "opts": {
+              "1": "The sun and moon",
+              "2": "People and activities",
+              "3": "Mountains and trees"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How can you make characters unique in Warli Art?",
+            "opts": {
+              "1": "By adding detailed facial features",
+              "2": "By using vibrant colors",
+              "3": "By showing their size, pose, and activity"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If you were to create a Warli Art piece depicting a festival, which elements might you include using creativity?",
+            "opts": {
+              "1": "People dancing, musical instruments, and decorations",
+              "2": "Skyscrapers and cars",
+              "3": "Spacecraft and aliens"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Imagine you want to depict a fishing scene in Warli Art. Which creative elements could you incorporate?",
+            "opts": {
+              "1": "Mountains and trees with animals",
+              "2": "Fishermen, boats, and water waves",
+              "3": "A city skyline and traffic"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Warli-Celebration-Scene-🏕️-Remedial",
+          "seq": 81,
+          "nm": "Create a Warli Celebration Scene 🏕️",
+          "desc": "SWABT understand and appreciate this traditional tribal art from Maharashtra, India. Students will learn to create simple, symbolic designs using geometric shapes like circles, triangles, and lines to depict nature, animals, and daily life.",
+          "type": "Written",
+          "diff": "Remedial"
+        }
+      ]
+    },
+    {
+      "nm": "One Color Holds Emotion 💙",
+      "desc": "Color gradation",
+      "rwc": "Paper, Pencil, Colors",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 87,
+          "nm": "Can one color hold emotions? 💙",
+          "desc": "In this activity, students will create a Monochrome Mood Artwork by expressing an emotion through a single shape and shades of one color. Using concentric layers and gradation from dark to light, they’ll explore how shapes and color intensity can show changing emotions, connecting art with self-expression.",
+          "yt": "c2uNOao8QW4",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 90,
+        "nm": "Can one color show all moods? 🎭",
+        "qs": [
+          {
+            "q": "What is the purpose of using different shades in the Monochrome Mood Artwork?",
+            "opts": {
+              "1": "To show how an emotion transitions from strong to mild",
+              "2": "To create a rainbow effect",
+              "3": "To use all colors of the spectrum"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How are emotions like happiness and peace typically represented in the artwork?",
+            "opts": {
+              "1": "Using sharp shapes like triangles",
+              "2": "Using dark colors only",
+              "3": "Using curves and rounded shapes"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "What is the first step in creating a Monochrome Mood Artwork?",
+            "opts": {
+              "1": "Choose an emotion and draw a shape representing it",
+              "2": "Choose a color for your emotion",
+              "3": "Create tones by adding white and black"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "If you were to express creativity through Monochrome Mood Artwork, which of the following might you do?",
+            "opts": {
+              "1": "Follow a strict guideline of shapes and colors provided by others",
+              "2": "Use only primary colors and geometric shapes",
+              "3": "Choose a unique shape that symbolizes creativity for you and experiment with unusual shades"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "Imagine you want to depict the emotion of surprise creatively in your artwork. What could be an innovative approach?",
+            "opts": {
+              "1": "Use only one shade of blue without any shapes",
+              "2": "Use a burst-like shape with varying shades of a surprising color like neon green",
+              "3": "Stick to traditional shapes like squares and circles with pastel colors"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Monochrome-Mood-Artwork-💙-Intermediate",
+          "seq": 82,
+          "nm": "Create a Monochrome Mood Artwork 💙",
+          "desc": "In this activity, students will create a Monochrome Mood Artwork by expressing an emotion through a single shape and shades of one color. Using concentric layers and gradation from dark to light, they’ll explore how shapes and color intensity can show changing emotions, connecting art with self-expression.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voice note saying \"Calm\" if you liked it, or \"Boring\" if you didn’t.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a text",
+              "valid_criteria": "Calm, Boring",
+              "invalid_criteria": "Any word other than calm, boring"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Send a picture of a black and white object around you",
+              "unguided_text": "Share a picture of anything around you",
+              "valid_criteria": "A clear picture of a black & white object",
+              "invalid_criteria": "Colored object, unclear image, or blank image"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Which colors did you use in your monochrome art?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a picture or video of your monochrome mood artwork"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Shades Paint a Landscape 🌄",
+      "desc": "Color gradation",
+      "rwc": "Paper, Colors, Pencil",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 88,
+          "nm": "Can shades paint a mountain? 🌄",
+          "desc": "In this activity students will laern about Color values and use color gradations to create a unique landscape",
+          "yt": "wUMkM5FLjJA",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 91,
+        "nm": "Can gray show every feeling? 🩶",
+        "qs": [
+          {
+            "q": "What is the concept of Greyscale in art?",
+            "opts": {
+              "1": "It refers to the combination of complementary colors to enhance contrast.",
+              "2": "It shows the value of a color, meaning how light or dark a color can be.",
+              "3": "It is the use of different primary colors to create new shades."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "What is the difference between Achromatic and Monochromatic color schemes?",
+            "opts": {
+              "1": "Achromatic uses warm colors, while Monochromatic uses cool colors.",
+              "2": "Achromatic uses black, white, and grey, while Monochromatic uses different shades of a single color.",
+              "3": "Achromatic uses various colors, while Monochromatic uses only black and white."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Which step involves creating tints and shades in the Colorscape activity?",
+            "opts": {
+              "1": "Choosing one main color for the artwork.",
+              "2": "Drawing a simple landscape and numbering its elements.",
+              "3": "Creating 5 tints by adding white and 5 shades by adding black to the main color."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "How would you apply a Monochromatic color scheme creatively in designing a logo for a tech company?",
+            "opts": {
+              "1": "Mix black and white exclusively to keep it minimalistic.",
+              "2": "Use various shades and tints of blue to convey innovation and trust.",
+              "3": "Combine bright primary colors for a vibrant and energetic look."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If tasked with creating a fashion piece using an Achromatic scheme, what would be a creative approach?",
+            "opts": {
+              "1": "Use only primary colors to make it appealing and lively.",
+              "2": "Design a garment using different textures and patterns in black, white, and grey.",
+              "3": "Incorporate various bright colors to showcase versatility."
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Paint-a-Gradation-Landscape-🌄-Remedial",
+          "seq": 83,
+          "nm": "Paint a Gradation Landscape 🌄",
+          "desc": "In this activity students will laern about Color values and use color gradations to create a unique landscape",
+          "type": "Written",
+          "diff": "Remedial"
+        }
+      ]
+    },
+    {
+      "nm": "Faces Speak Every Feeling 😶",
+      "desc": "Facial expressions",
+      "rwc": "Paper, Pencil, Colors",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 89,
+          "nm": "Can faces show all feelings? 😶",
+          "desc": "Students will draw a 4-frame comic strip that shows four different emotions using only faces and colors. They will change the eyes, eyebrows, and mouth in each frame to show a new feeling and use colors that match the emotion. In the end, they will outline, color neatly, and complete all four frames to tell a small story of changing emotions.",
+          "yt": "E4VuWTC2QpI",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 92,
+        "nm": "Can colors express your emotions? 😄",
+        "qs": [
+          {
+            "q": "What colors are suggested to express happiness in the comic strip activity?",
+            "opts": { "1": "Red and grey", "2": "Blue and purple", "3": "Yellow and orange" },
+            "ans": "3"
+          },
+          {
+            "q": "According to the script, how can emotions be conveyed without using words?",
+            "opts": {
+              "1": "By writing a detailed description",
+              "2": "Through facial expressions, body posture, and colors",
+              "3": "By making loud sounds"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If you want to show surprise in a character's face, what features should you emphasize?",
+            "opts": {
+              "1": "Wide eyes and a smiling mouth",
+              "2": "Big round eyes and an open mouth",
+              "3": "Tight lips and furrowed brows"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Your character receives an unexpected birthday gift. How might you creatively depict their emotion in your comic strip?",
+            "opts": {
+              "1": "Use dark colors to show their confusion",
+              "2": "Draw the character with a bored expression",
+              "3": "Show the character with wide eyes, an open mouth, and use pale yellow colors"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "Imagine a scene where your character is angry at losing a game. What creative approach might you use to illustrate this emotion?",
+            "opts": {
+              "1": "Show the character with droopy eyes and a curved-down mouth",
+              "2": "Draw furrowed brows with tight lips and use red colors",
+              "3": "Use bright colors and depict a smiling character"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Draw-a-Four-Emotion-Comic-Strip-😶-Advanced",
+          "seq": 84,
+          "nm": "Draw a Four Emotion Comic Strip 😶",
+          "desc": "Students will draw a 4-frame comic strip that shows four different emotions using only faces and colors. They will change the eyes, eyebrows, and mouth in each frame to show a new feeling and use colors that match the emotion. In the end, they will outline, color neatly, and complete all four frames to tell a small story of changing emotions.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voice note saying \"Expressive\" if you liked it, or \"Confusing\" if you didn’t.",
+              "unguided_text": "What do you think of the activity? Share in one word or send a text",
+              "valid_criteria": "Expressive, Confusing",
+              "invalid_criteria": "Any word other than expressive, confusing"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Send a picture of a happy face around you",
+              "unguided_text": "Share a picture of anything around you",
+              "valid_criteria": "A clear picture showing a happy face/expression",
+              "invalid_criteria": "No happy face, unclear image, or blank image"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Which feeling did you try to show in your artwork?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a picture or video of your comic strip (If feelings could talk)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Features Express the Soul 🎭",
+      "desc": "Facial expressions",
+      "rwc": "Paper, Pencil, Eraser, Colors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 90,
+          "nm": "Can lines express every emotion? 🎭",
+          "desc": "Students will learn the foundational principles of facial anatomy and proportions to create stylized faces",
+          "yt": "xWsCkxwOgZs",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 93,
+        "nm": "Can a drawing show feelings? 😲",
+        "qs": [
+          {
+            "q": "What materials are needed for today's art activity?",
+            "opts": {
+              "1": "Clay, sculpting tools, and glaze",
+              "2": "Canvas, paints, brushes, and palette",
+              "3": "Paper, pencil, eraser, markers, and colors"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "Why is understanding facial expressions important in real life ?",
+            "opts": {
+              "1": "It improves communication skills",
+              "2": "It helps in becoming a professional artist",
+              "3": "It allows for better artistic creativity"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How is a happy expression created in the drawing activity?",
+            "opts": {
+              "1": "By raising the eyebrows and making the eyes smaller with a big smile",
+              "2": "By slanting the eyebrows and making the mouth oval",
+              "3": "By making the eyes bigger and the mouth frowny"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "If you want to create a character with a surprised expression, which creative approach should you use?",
+            "opts": {
+              "1": "Draw the eyebrows raised and eyes big, with an oval mouth",
+              "2": "Draw the eyebrows slanted down and eyes small, with a frown",
+              "3": "Draw the eyebrows curved up and eyes closed, with a neutral mouth"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Using your creativity, how might you modify the hairstyle of your character?",
+            "opts": {
+              "1": "By keeping it the same as shown in the example",
+              "2": "By giving it a unique style that reflects the character's personality",
+              "3": "By using only straight lines for the hairstyle"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Draw-Faces-Showing-Four-Emotions-🎭-Remedial",
+          "seq": 85,
+          "nm": "Draw Faces Showing Four Emotions 🎭",
+          "desc": "Students will learn the foundational principles of facial anatomy and proportions to create stylized faces",
+          "type": "Written",
+          "diff": "Remedial"
+        }
+      ]
+    }
+  ]
+}

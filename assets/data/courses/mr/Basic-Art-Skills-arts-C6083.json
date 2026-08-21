@@ -1,0 +1,1111 @@
+{
+  "id": "Basic-Art-Skills-arts-C6083",
+  "nm": "Basic Art Skills",
+  "lvl": "Level 3AK",
+  "vrt": "arts",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Waste Becomes a Holder ♻️",
+      "desc": "Recycling art",
+      "rwc": "Boxes, Bottles, Paper, Glue, Scissors, Colors, Decorative Items",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 41,
+          "nm": "Can waste become a holder? ♻️",
+          "desc": "या ॲक्टिव्हिटीमध्ये, विद्यार्थी कचऱ्यातील साहित्य वापरून एक पेन होल्डर तयार करतील! ते रिकामे बॉक्स, बाटल्या, आणि उरलेले कागद वापरून काहीतरी उपयुक्त तयार करतील. ही ॲक्टिव्हिटी विद्यार्थ्यांना सृजनशील बनण्यास मदत करेल आणि पर्यावरणाची काळजी कशी घ्यावी हे शिकवेल. ते त्यांच्या पद्धतीने त्यांच्या पेन होल्डरची सजावट करतील आणि ते वेगळे बनवतील!",
+          "yt": "bzL63fOrk4k",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 42,
+        "nm": "Can trash become a holder? 🗑️",
+        "qs": [
+          {
+            "q": "अ‍ॅक्टिव्हिटी मध्ये पेन होल्डर तयार करण्यासाठी मुख्य सामग्री कोणती सुचवली आहे?",
+            "opts": {
+              "1": "Cardboard tubes",
+              "2": "Waste or empty bottles and boxes",
+              "3": "Newspaper"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "व्हिडिओनुसार कचरा सामग्री पुनर्वापर का महत्त्वाचे आहे?",
+            "opts": {
+              "1": "It reduces the cost of new products",
+              "2": "It enhances creativity",
+              "3": "It helps protect our Earth"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "कचरा बॉक्सला पेन होल्डरमध्ये बदलण्यासाठी पहिला चरण कोणता आहे?",
+            "opts": {
+              "1": "Marking where to cut with a pen",
+              "2": "Covering the box with paper",
+              "3": "Gluing the paper to the box"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "बेस पेपरने कव्हर केल्यानंतर तुमचा पेन होल्डर सर्जनशीलपणे कसा सजवू शकता?",
+            "opts": {
+              "1": "By attaching stickers and ribbons",
+              "2": "By cutting out shapes like eyes and wings from colored paper",
+              "3": "By painting it with different colors"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "तुमच्याकडे कागदाऐवजी उरलेला फॅब्रिक असेल तर ते पेन होल्डरसाठी कसे सर्जनशीलपणे वापरू शकता?",
+            "opts": {
+              "1": "Use it to wrap the pens inside the holder",
+              "2": "Glue it to the holder as a unique decorative cover",
+              "3": "Cut it into small strips and tie them around the holder"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Waste-Material-Pen-Holder-♻️-Basic",
+          "seq": 38,
+          "nm": "Pen Holder",
+          "desc": "या ॲक्टिव्हिटीमध्ये, विद्यार्थी कचऱ्यातील साहित्य वापरून एक पेन होल्डर तयार करतील! ते रिकामे बॉक्स, बाटल्या, आणि उरलेले कागद वापरून काहीतरी उपयुक्त तयार करतील. ही ॲक्टिव्हिटी विद्यार्थ्यांना सृजनशील बनण्यास मदत करेल आणि पर्यावरणाची काळजी कशी घ्यावी हे शिकवेल. ते त्यांच्या पद्धतीने त्यांच्या पेन होल्डरची सजावट करतील आणि ते वेगळे बनवतील!",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "टेक्स्ट किंवा व्हॉइस नोट पाठवा — आवडला असेल तर \"Useful\" म्हणा, नाही आवडला तर \"Waste\" म्हणा",
+              "unguided_text": "पेन होल्डर उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "Useful, Waste",
+              "invalid_criteria": "Any word other than useful, waste"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुम्ही वापरत असलेल्या पेनचा फोटो शेअर करा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "Picture of a pen",
+              "invalid_criteria": "Anything other than picture of a pen"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि सांगा तुम्ही पेन स्टँडच्या तळासाठी कोणती सामग्री वापरली"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुम्ही तयार केलेल्या पेन होल्डरचे एक स्पष्ट चित्र किंवा व्हिडिओ शेअर करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Box Becomes a Stand 📦",
+      "desc": "Recycling art",
+      "rwc": "Boxes, Bottles, Paper, Glue, Scissors, Colors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 42,
+          "nm": "Can a box become stand? 📦",
+          "desc": "या ऍक्टिविटीमध्ये, विद्यार्थी कचऱ्यातून एक पेन होल्डर बनवतील. ते बॉक्स, बाटल्या आणि कागदाचा वापर करतील. यामुळे त्यांना सर्जनशील होण्यास आणि पर्यावरणाची काळजी घेण्यास मदत होईल. ते त्यांच्या स्वतःच्या पद्धतीने पेन होल्डर सजवतील.",
+          "yt": "SvsSYDZurzo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 43,
+        "nm": "What makes your holder unique? ✨",
+        "qs": [
+          {
+            "q": "पेन होल्डर तयार करण्यासाठी कोणत्या साहित्याची आवश्यकता आहे?",
+            "opts": {
+              "1": "An empty box, waste paper, scissors, and glue",
+              "2": "A plastic bottle, colored paper, scissors, and tape",
+              "3": "A cardboard tube, wrapping paper, glue, and string"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "बॉक्स कव्हर करण्यासाठी दोन कागद वापरण्याचा सल्ला का दिला आहे?",
+            "opts": {
+              "1": "To ensure the paper does not tear easily",
+              "2": "Because the papers might be small and need to cover the box completely",
+              "3": "To make the pen holder more colorful"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "पेन होल्डर डिझाइन करताना गोंद कागदावर मार्क्स सोडल्यास काय करावे?",
+            "opts": {
+              "1": "Cover the marks with more paper",
+              "2": "Start over with new paper",
+              "3": "Consider it as part of the design"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "आपला पेन होल्डर सजवण्यासाठी आपण सर्जनशीलता कशी लागू करू शकता?",
+            "opts": {
+              "1": "Follow the exact design shown in the video",
+              "2": "Add shapes, faces, or characters to the design",
+              "3": "Use only one color to cover the box"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "तुमच्या पेन होल्डरला अद्वितीय शैलीचे प्रतिबिंबित करायचे असल्यास काय करणार?",
+            "opts": {
+              "1": "Only use plain paper and avoid patterns",
+              "2": "Incorporate different patterns like stripes or dots",
+              "3": "Use a single material for simplicity"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Box-Pen-Stand-📦-Remedial",
+          "seq": 39,
+          "nm": "Pen stand",
+          "desc": "या ऍक्टिविटीमध्ये, विद्यार्थी कचऱ्यातून एक पेन होल्डर बनवतील. ते बॉक्स, बाटल्या आणि कागदाचा वापर करतील. यामुळे त्यांना सर्जनशील होण्यास आणि पर्यावरणाची काळजी घेण्यास मदत होईल. ते त्यांच्या स्वतःच्या पद्धतीने पेन होल्डर सजवतील.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "टेक्स्ट किंवा व्हॉइस नोट पाठवा — आवडला असेल तर \"Useful\" म्हणा, नाही आवडला तर \"Waste\" म्हणा",
+              "unguided_text": "पेन स्टँड उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "Useful, Waste",
+              "invalid_criteria": "Any word other than useful, waste"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुम्ही वापरत असलेल्या पेनचा फोटो शेअर करा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "Picture of a pen",
+              "invalid_criteria": "Anything other than picture of a pen"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि सांगा तुम्ही पेन स्टँडच्या तळासाठी कोणती सामग्री वापरली"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुम्ही तयार केलेल्या पेन होल्डरचे एक स्पष्ट चित्र किंवा व्हिडिओ शेअर करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Everyday Things Pop 🎨",
+      "desc": "PopArt",
+      "rwc": "Paper, Pencil, Markers, Crayons, Oil Pastels, Marker",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 43,
+          "nm": "Can chips become pop art? 🎨",
+          "desc": "या ॲक्टिव्हिटीमध्ये, विद्यार्थी पॉप आर्ट संस्कृतीची मुख्य वैशिष्ट्ये ओळखतील आणि अँडी वॉरहोल द्वारे प्रेरित पॉप आर्ट शैलीतील जाहिरात तयार करतील.",
+          "yt": "ISWQNMVcTtg",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 44,
+        "nm": "Who invented Pop Art anyway? 🎨",
+        "qs": [
+          {
+            "q": "पॉप आर्टचे जनक कोण मानले जातात?",
+            "opts": { "1": "Andy Warhol", "2": "Roy Lichtenstein", "3": "Pablo Picasso" },
+            "ans": "1"
+          },
+          {
+            "q": "पॉप आर्टचा मुख्य उद्देश काय आहे?",
+            "opts": {
+              "1": "Transforming everyday objects into art",
+              "2": "Impressionist landscapes",
+              "3": "Complex and serious themes"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "खालीलपैकी पॉप आर्टची विशेष वैशिष्ट्ये कोणती आहेत?",
+            "opts": {
+              "1": "Complex geometric patterns",
+              "2": "Monochrome colors",
+              "3": "Bold outlines"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "जर तुम्ही एखाद्या साध्या वस्तूसाठी पॉप आर्ट प्रेरित जाहिरात तयार करणार असाल, तर खालीलपैकी कोणता दृष्टिकोन सर्जनशीलतेला सर्वोत्तम प्रदर्शित करेल?",
+            "opts": {
+              "1": "Using bright colors and unique patterns to make the object eye-catching",
+              "2": "Keeping the design plain and simple without any colors",
+              "3": "Using only black and white tones with no patterns"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "कल्पना करा तुमच्याकडे पेन्सिलसारखी एक साधी वस्तू आहे. जाहिरातीत ती उठावदार बनवण्यासाठी पॉप आर्ट तंत्रांचा सर्जनशीलपणे वापर कसा करू शकाल?",
+            "opts": {
+              "1": "Draw it in a realistic style with subtle shades",
+              "2": "Depict it in a detailed sketch with intricate shading",
+              "3": "Use vibrant colors with bold lines and playful patterns"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-a-Pop-Art-Advertisement-🎨-Basic",
+          "seq": 40,
+          "nm": "Pop Art Advertisement",
+          "desc": "या ॲक्टिव्हिटीमध्ये, विद्यार्थी पॉप आर्ट संस्कृतीची मुख्य वैशिष्ट्ये ओळखतील आणि अँडी वॉरहोल द्वारे प्रेरित पॉप आर्ट शैलीतील जाहिरात तयार करतील.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "टेक्स्ट किंवा व्हॉइस नोट पाठवा — आवडला असेल तर \"Creative\" म्हणा, नाही आवडला तर \"Boring\" म्हणा",
+              "unguided_text": "पॉप आर्ट जाहिरात उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "Creative, Boring",
+              "invalid_criteria": "Any word other than creative, boring"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "एखाद्या बाटलीचा फोटो शेअर करा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "Picture of a bottle",
+              "invalid_criteria": "Anything other than picture of a bottle"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि एक पूरक रंगांची जोडी सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुम्ही कॉम्प्लिमेंटरी रंग आणि पॅटर्न वापरून तयार केलेल्या पॉप आर्ट कलाकृतीचे एक स्पष्ट चित्र किंवा व्हिडिओ शेअर करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "One Object Four Colors 🖼️",
+      "desc": "PopArt",
+      "rwc": "Paper, Pencil, Markers, Crayons, Oil Pastels, Marker",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 44,
+          "nm": "Can one object pop four? 🖼️",
+          "desc": "विद्यार्थी अँडी वॉर्होल यांच्या प्रेरणेने पॉप आर्ट–शैलीतील कलाकृती तयार करतील. ते त्यांच्या कागदावर एक साधे वस्त्र चार वेळा काढतील आणि प्रत्येक आवृत्तीला पूरक रंगांच्या वेगवेगळ्या जोड्यांचा वापर करून रंगवतील. त्यांचे कलाकृती तेजस्वी आणि संतुलित दिसण्यासाठी ते ठळक रेषा, चमकदार विरोधाभास आणि साधे पार्श्वभूमी नमुने याबरोबर प्रयोग करतील.",
+          "yt": "I6iA7TDRb_Q",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 45,
+        "nm": "Can objects become pop art? 🍌",
+        "qs": [
+          {
+            "q": "सामान्य वस्तूंना पॉप आर्टमध्ये रूपांतरित करण्यासाठी कोण प्रसिद्ध आहे?",
+            "opts": { "1": "Andy Warhol", "2": "Pablo Picasso", "3": "Vincent van Gogh" },
+            "ans": "1"
+          },
+          {
+            "q": "व्हिडिओमध्ये वर्णन केल्याप्रमाणे पॉप आर्ट तयार करण्याची मुख्य कल्पना काय आहे?",
+            "opts": {
+              "1": "To draw complex and realistic portraits",
+              "2": "To transform simple objects with bold colors",
+              "3": "To use expensive materials"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "कला निर्मितीसाठी कोणत्या चरणात तुमच्या कागदाला विभागांमध्ये विभागणे समाविष्ट आहे?",
+            "opts": {
+              "1": "Create an outline",
+              "2": "Choose color pairs",
+              "3": "Divide your paper"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "तुमच्या पॉप आर्टमध्ये अधिक सर्जनशीलता जोडण्यासाठी, ठळक सीमा बनवण्याशिवाय तुम्ही काय करू शकता?",
+            "opts": {
+              "1": "Draw multiple objects in one section",
+              "2": "Add patterns like dots or zig-zags in the background",
+              "3": "Use only one color for the entire artwork"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "पूरक रंगांचा वापर करताना तुमच्या पॉप आर्टच्या प्रत्येक विभागाला वेगळे कसे बनवता येईल?",
+            "opts": {
+              "1": "Avoid using any colors",
+              "2": "Use the same color pair in each section",
+              "3": "Use different pairs like red-green and blue-orange in separate sections"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Four-Panel-Pop-Art-🖼️-Remedial",
+          "seq": 41,
+          "nm": "Pop Art",
+          "desc": "विद्यार्थी अँडी वॉर्होल यांच्या प्रेरणेने पॉप आर्ट–शैलीतील कलाकृती तयार करतील. ते त्यांच्या कागदावर एक साधे वस्त्र चार वेळा काढतील आणि प्रत्येक आवृत्तीला पूरक रंगांच्या वेगवेगळ्या जोड्यांचा वापर करून रंगवतील. त्यांचे कलाकृती तेजस्वी आणि संतुलित दिसण्यासाठी ते ठळक रेषा, चमकदार विरोधाभास आणि साधे पार्श्वभूमी नमुने याबरोबर प्रयोग करतील.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "टेक्स्ट किंवा व्हॉइस नोट पाठवा — आवडला असेल तर \"Creative\" म्हणा, नाही आवडला तर \"Boring\" म्हणा",
+              "unguided_text": "पॉप आर्ट उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "Creative, Boring",
+              "invalid_criteria": "Any word other than creative, boring"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "लाल रंगातील कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "Picture of anything in red color",
+              "invalid_criteria": "Anything other which is not red in color"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि एक पूरक रंगांची जोडी सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुम्ही तयार केलेल्या पॉप आर्टचे एक स्पष्ट चित्र किंवा व्हिडिओ शेअर करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Strips Weave a Story 🧵",
+      "desc": "Kente weaving technique",
+      "rwc": "Base Sheet, Paper, Glue, Scissors",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 45,
+          "nm": "Can paper strips weave stories? 🧵",
+          "desc": "या activity मध्ये विद्यार्थी केंटे विणकामाच्या सांस्कृतिक संदर्भांबद्दल शिकतील आणि नमुने आणि पुनरावृत्ती कसे वापरता येऊ शकतात याबद्दल जाणून घेतील ज्यामुळे एक अभिव्यक्तीशील कलाकृती तयार करता येईल.",
+          "yt": "LI-BPWuKn5k",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 46,
+        "nm": "What story does Kente tell? 🧵",
+        "qs": [
+          {
+            "q": "घानाच्या कपड्याचे नाव काय आहे?",
+            "opts": { "1": "Ankara", "2": "Dashiki", "3": "Kente" },
+            "ans": "3"
+          },
+          {
+            "q": "केंते विणकामामध्ये पॅटर्नची पुनरावृत्ती का महत्त्वाची आहे?",
+            "opts": {
+              "1": "It makes the cloth more expensive.",
+              "2": "It helps in using fewer materials.",
+              "3": "It creates a rhythm and cultural identity."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "जर तुम्हाला केंते-शैलीचे विणकाम सुरू करायचे असेल, तर तुम्ही पहिले काय कराल?",
+            "opts": {
+              "1": "Paint the base sheet with colors.",
+              "2": "Cut strips of equal width for the base.",
+              "3": "Draw patterns on the base sheet."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "तुम्ही केंते-प्रेरित कला निर्मित करत असल्याचे कल्पना करा. सर्जनशीलतेचा वापर करून तुम्ही तुमच्या कथेत कोणता अनोखा वळण देऊ शकता?",
+            "opts": {
+              "1": "Use only one color to keep it simple.",
+              "2": "Assign personal meanings to the colors used in the weave.",
+              "3": "Follow the exact traditional patterns without changes."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "तुमच्या केंते-प्रेरित पिशवीची कथा इतरांसोबत सर्जनशीलतेने कशी शेअर करू शकता?",
+            "opts": {
+              "1": "Share its story and meaning on TAP Buddy to connect globally.",
+              "2": "Keep it as a personal secret.",
+              "3": "Write a detailed essay about its history."
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Weave-a-Kente-Inspired-Bookmark-🧵-Intermediate",
+          "seq": 42,
+          "nm": "Kente Weaving",
+          "desc": "या activity मध्ये विद्यार्थी केंटे विणकामाच्या सांस्कृतिक संदर्भांबद्दल शिकतील आणि नमुने आणि पुनरावृत्ती कसे वापरता येऊ शकतात याबद्दल जाणून घेतील ज्यामुळे एक अभिव्यक्तीशील कलाकृती तयार करता येईल.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "टेक्स्ट किंवा व्हॉइस नोट पाठवा — आवडला असेल तर \"Interesting\" म्हणा, नाही आवडला तर \"Hard\" म्हणा",
+              "unguided_text": "केंटे विणकाम उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "Interesting, Hard",
+              "invalid_criteria": "Any word other than interesting, hard"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "एखाद्या कपड्याचा फोटो शेअर करा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "Picture of any cloth",
+              "invalid_criteria": "Anything other than a picture of clothes"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि उपक्रमाचे नाव सांगा"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुम्ही विणकाम तंत्र आणि पॅटर्न वापरून तयार केलेल्या केंटे विविंग कलाकृतीचे एक स्पष्ट चित्र किंवा व्हिडिओ शेअर करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Ghana Lives in Paper 🪡",
+      "desc": "Kente weaving technique",
+      "rwc": "Base Sheet, Colored Strips, Glue, Scissors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 46,
+          "nm": "Can Ghana's art use paper? 🪡",
+          "desc": "या activity मध्ये, विद्यार्थी रंगीत कागदी पट्ट्यांचा वापर करून एक पारंपारिक आफ्रिकन विणकाम तंत्र शिकतील.",
+          "yt": "jrmz2KT9OtI",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 47,
+        "nm": "Can strips become a weave? 🎨",
+        "qs": [
+          {
+            "q": "दोन धाग्याच्या संच किंवा कागदी पट्ट्या ओलांडण्याची प्रक्रिया काय म्हणतात?",
+            "opts": { "1": "Sewing", "2": "Weaving", "3": "Knitting" },
+            "ans": "2"
+          },
+          {
+            "q": "केंटे विणण्यात सांस्कृतिक महत्त्व काय आहे?",
+            "opts": {
+              "1": "It is a modern art form.",
+              "2": "It is primarily used for making furniture.",
+              "3": "It holds great importance in Ghanaian culture."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "कुठल्या चरणामध्ये पट्ट्या जोडण्यासाठी गोंद वापरले जाते?",
+            "opts": {
+              "1": "Making rough sketches for the final artwork",
+              "2": "Gluing a strip at the top to keep them in place",
+              "3": "Cutting the paper strips"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "केंटे विणण्यासाठी नवीन नमुना तयार करायचा असल्यास तुम्ही कोणती कौशल्य वापरता?",
+            "opts": { "1": "Collaboration", "2": "Critical Thinking", "3": "Creativity" },
+            "ans": "3"
+          },
+          {
+            "q": "तुम्ही विणकाम करत असताना पट्ट्या हलू नयेत म्हणून सर्जनशीलतेने काय करू शकता?",
+            "opts": {
+              "1": "By weaving faster",
+              "2": "By using heavier paper",
+              "3": "By gluing a strip at the ends"
+            },
+            "ans": "3"
+          }
+        ]
+      }
+    },
+    {
+      "nm": "Dots Tell Nature's Tale 🌿",
+      "desc": "Gond art",
+      "rwc": "Paper, Pencil, Pen, Colors",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 47,
+          "nm": "Can nature merge into art? 🌿",
+          "desc": "या ॲक्टिविटीमध्ये, विद्यार्थी निसर्ग संवर्धन आणि टिकाऊपणाला प्रोत्साहन देण्यासाठी गोंड आर्ट प्रेरित कलाकृती तयार करतील.",
+          "yt": "PHH4IL29Yc0",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 48,
+        "nm": "What does Gond art say? 🌳",
+        "qs": [
+          {
+            "q": "गोंड कला मुख्यत्वे मध्य भारताच्या आदिवासी समुदायात कशासाठी वापरली जाते?",
+            "opts": {
+              "1": "To decorate their homes",
+              "2": "To share old stories and traditions",
+              "3": "To sell in international markets"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "गोंड कलामध्ये कोणते मुख्य घटक दिसून येतात?",
+            "opts": {
+              "1": "Modern architecture",
+              "2": "Use of digital techniques",
+              "3": "Vibrant colors, dots, and line patterns"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "पर्यावरण संरक्षणाबद्दल संदेश देण्यासाठी आपण गोंड कला कशी लागू करू शकता?",
+            "opts": {
+              "1": "By drawing nature-themed artwork with patterns and bright colors",
+              "2": "By writing essays about environmental issues",
+              "3": "By creating sculptures of endangered animals"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "जर आपण गोंड कलासाठी हार्मनीचे प्रतीक असलेला नवीन नमुना शोधू शकला तर खालीलपैकी कोणता सर्वात सर्जनशील ठरेल?",
+            "opts": {
+              "1": "A series of disconnected dots",
+              "2": "A zig-zag pattern",
+              "3": "Interlocking circles representing unity"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "पाणी संवर्धनाचे महत्त्व सांगणारी गोंड कला तयार करण्यासाठी कोणत्या वस्तूंचा समन्वय सर्वात सर्जनशील ठरेल?",
+            "opts": {
+              "1": "A mountain with animals",
+              "2": "A river and a fish merged into a flowing design",
+              "3": "A tree with branches"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Gond-Art-Nature-Scene-🌿-Intermediate",
+          "seq": 43,
+          "nm": "Gond Art",
+          "desc": "या ॲक्टिविटीमध्ये, विद्यार्थी निसर्ग संवर्धन आणि टिकाऊपणाला प्रोत्साहन देण्यासाठी गोंड आर्ट प्रेरित कलाकृती तयार करतील.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "टेक्स्ट किंवा व्हॉइस नोट पाठवा — आवडला असेल तर \"Detailed\" म्हणा, नाही आवडला तर \"Confusing\" म्हणा",
+              "unguided_text": "गोंड कला उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "Detailed, Confusing",
+              "invalid_criteria": "Any word other than detailed, confusing"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "एखाद्या पुस्तकाचा फोटो शेअर करा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "Picture of a book",
+              "invalid_criteria": "Anything other than a picture of book"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि सांगा तुम्ही कोणती कलाशैली शिकलात"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुम्ही तयार केलेल्या गोंड कलेचे एक स्पष्ट चित्र किंवा व्हिडिओ शेअर करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Animal Wears Patterns 🐘",
+      "desc": "Gond art",
+      "rwc": "Paper, Cardboard, Pencil, Pen, Colors, Scissors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 48,
+          "nm": "Can patterns dress an animal? 🐘",
+          "desc": "विद्यार्थी गोंड कला शैलीचा वापर करून एक रंगीबेरंगी प्राणी कोस्टर तयार करतात. ते एक साधा प्राणी काढतात, त्याला चमकदार रंगांनी भरतात आणि नंतर रेषा, ठिपके आणि नैसर्गिक प्रेरित आकारांसारख्या सोप्या नमुन्यांनी सजवतात. ही ॲक्टिव्हिटी दाखवते की कसे साधे रेखाचित्र सुंदर पारंपारिक कलाकृती बनू शकतात.",
+          "yt": "jiQ72zyQAGw",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 49,
+        "nm": "Can animals become coasters? 🐾",
+        "qs": [
+          {
+            "q": "गोंड कलेचा उगम स्क्रिप्टमध्ये कुठे सांगितला आहे?",
+            "opts": {
+              "1": "Madhya Pradesh and Central India",
+              "2": "Rajasthan and Gujarat",
+              "3": "Kerala and Tamil Nadu"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "गोंड शैलीतील पशू कोस्टर तयार करण्याच्या प्रक्रियेतील पहिला टप्पा काय आहे?",
+            "opts": {
+              "1": "Outline with a dark marker",
+              "2": "Add Gond patterns",
+              "3": "Draw a simple animal shape"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "गोंड कला प्रक्रियेत पशू आकृती काढल्यानंतर काय करावे?",
+            "opts": {
+              "1": "Add patterns inspired by nature",
+              "2": "Mix patterns and change shapes",
+              "3": "Outline with black or dark marker"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "जर तुम्हाला माशाचा वापर करून गोंड शैलीतील पॅटर्न तयार करायचा असेल, तर खालीलपैकी कोणता घटक तुम्ही सर्जनशीलतेने समाविष्ट करू शकता?",
+            "opts": {
+              "1": "Wave lines and leaf shapes",
+              "2": "Dotted spirals and zigzags",
+              "3": "Straight lines and geometric shapes"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "कल्पना करा की तुम्ही गोंड शैलीतील कासव कोस्टर तयार करत आहात. व्हिडिओमध्ये वर्णन केल्यानुसार सर्जनशीलतेच्या कौशल्याशी सुसंगत कोणती सर्जनशील पद्धत आहे?",
+            "opts": {
+              "1": "Mixing patterns like dots and curves to give a natural vibe",
+              "2": "Drawing abstract shapes unrelated to nature",
+              "3": "Using only one color to maintain simplicity"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Gond-Art-Animal-Coaster-🐘-Remedial",
+          "seq": 44,
+          "nm": "Gond Art Coaster",
+          "desc": "विद्यार्थी गोंड कला शैलीचा वापर करून एक रंगीबेरंगी प्राणी कोस्टर तयार करतात. ते एक साधा प्राणी काढतात, त्याला चमकदार रंगांनी भरतात आणि नंतर रेषा, ठिपके आणि नैसर्गिक प्रेरित आकारांसारख्या सोप्या नमुन्यांनी सजवतात. ही ॲक्टिव्हिटी दाखवते की कसे साधे रेखाचित्र सुंदर पारंपारिक कलाकृती बनू शकतात.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "टेक्स्ट किंवा व्हॉइस नोट पाठवा — आवडला असेल तर \"Neat\" म्हणा, नाही आवडला तर \"Messy\" म्हणा",
+              "unguided_text": "गोंड आर्ट कोस्टर उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "Neat, Messy",
+              "invalid_criteria": "Any word other than neat, messy"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "एखाद्या कपाचा फोटो शेअर करा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "Picture of a cup",
+              "invalid_criteria": "Anything other which is not a cup"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि सांगा गोंड कलेत साध्या रंगानंतर तुम्ही काय जोडता"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुम्ही तयार केलेल्या गोंड आर्ट कोस्टरचे एक स्पष्ट चित्र किंवा व्हिडिओ शेअर करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Shapes Speak Without Words 🌍",
+      "desc": "Warli art",
+      "rwc": "Paper, Paint, Pen, Brush, Pencil",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 49,
+          "nm": "Can shapes protect our earth? 🌍",
+          "desc": "विद्यार्थी एक साधा वारली-शैलीतील पोस्टर तयार करतात ज्यामध्ये पर्यावरणीय संदेश शब्दांशिवाय दाखविला जातो. ते पाणी वाचवणे, झाडे लावणे किंवा कचरा न टाकणे यासारखे एक नियम निवडतात आणि गडद कागदावर वर्तुळे, त्रिकोण, रेषा यांसारख्या मूलभूत आकारांचा वापर करून काढतात. निसर्गातील घटक जोडले जातात आणि अंतिम चित्र सफेद रंगाने रेखाटले जाते ज्यामुळे संदेश स्पष्टपणे दिसतो.",
+          "yt": "HyAx04lQS-g",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 50,
+        "nm": "Can shapes tell a story? 🔺",
+        "qs": [
+          {
+            "q": "वारली कला पोस्टर बनवण्यासाठी कोणत्या प्रकारच्या कागदाचा वापर करावा?",
+            "opts": {
+              "1": "Bright white paper",
+              "2": "Transparent paper",
+              "3": "Dark brown/black paper"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "वारली कलेत निसर्ग घटक का जोडणे महत्त्वाचे आहे?",
+            "opts": {
+              "1": "To emphasize that nature is central to the theme",
+              "2": "To make the painting colorful",
+              "3": "To depict modern life"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "वारली कलेत संदेश पोहोचवण्यासाठी कोणत्या आकारांचा वापर होतो?",
+            "opts": {
+              "1": "Squares, diamonds, and hexagons",
+              "2": "Circles, triangles, and lines",
+              "3": "Stars, hearts, and ovals"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "जर तुम्ही 'पाणी वाचवा' ही थीम निवडली तर वारली आकारांचा वापर करून कोणते दृश्य दाखवू शकाल?",
+            "opts": {
+              "1": "A person reading a book by the river",
+              "2": "Figures collecting water with a vessel and others pouring water on plants",
+              "3": "A figure sleeping under the sun"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "जर तुम्ही 'कचरा फेकू नका' या विषयावर वारली कला पोस्टर बनवले तर हालचाल कशी दाखवू शकाल?",
+            "opts": {
+              "1": "Draw a static figure standing beside a dustbin",
+              "2": "Use lines to depict a figure throwing trash into a dustbin",
+              "3": "Illustrate figures sitting around a clean area"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-a-Warli-Environment-Poster-🌍-Advanced",
+          "seq": 45,
+          "nm": "Warli Poster",
+          "desc": "विद्यार्थी एक साधा वारली-शैलीतील पोस्टर तयार करतात ज्यामध्ये पर्यावरणीय संदेश शब्दांशिवाय दाखविला जातो. ते पाणी वाचवणे, झाडे लावणे किंवा कचरा न टाकणे यासारखे एक नियम निवडतात आणि गडद कागदावर वर्तुळे, त्रिकोण, रेषा यांसारख्या मूलभूत आकारांचा वापर करून काढतात. निसर्गातील घटक जोडले जातात आणि अंतिम चित्र सफेद रंगाने रेखाटले जाते ज्यामुळे संदेश स्पष्टपणे दिसतो.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "टेक्स्ट किंवा व्हॉइस नोट पाठवा — आवडला असेल तर \"Fun\" म्हणा, नाही आवडला तर \"Boring\" म्हणा",
+              "unguided_text": "वारली पोस्टर उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "Fun, Boring",
+              "invalid_criteria": "Any word other than fun, boring"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "वारली कलेत सामान्यतः वापरल्या जाणाऱ्या रंगाचा फोटो शेअर करा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "Picture of white or brown color",
+              "invalid_criteria": "Anything other than a picture of white or brown color"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "2026-05-29 06:43:58"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुम्ही तयार केलेल्या वारली पोस्टरचे एक स्पष्ट चित्र किंवा व्हिडिओ शेअर करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Triangles Build Villages 🏕️",
+      "desc": "Warli",
+      "rwc": "Paper, Pen, Paint, Brush, Pencil",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 50,
+          "nm": "Can triangles build a village? 🏕️",
+          "desc": "एसडब्ल्यूएबीटी महाराष्ट्र, भारतातील या पारंपरिक आदिवासी कलेची समज आणि प्रशंसा करू शकतील. विद्यार्थी निसर्ग, प्राणी आणि दैनंदिन जीवनाचे चित्रण करण्यासाठी वर्तुळे, त्रिकोण आणि रेषांसारख्या भूमितीय आकारांचा वापर करून साधे, प्रतीकात्मक डिझाइन तयार करायला शिकतील.",
+          "yt": "iJnWI9EIFYI",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 51,
+        "nm": "What does Warli art show? 🏡",
+        "qs": [
+          {
+            "q": "वारली कलेचा मुख्य लक्ष कोणत्या गोष्टीवर असतो?",
+            "opts": {
+              "1": "Balance and simplicity",
+              "2": "Complexity and detail",
+              "3": "Vibrant colors"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "वारली कला पारंपारिकरित्या कोणत्या प्रकारच्या पृष्ठभागावर तयार केली जाते?",
+            "opts": { "1": "Wooden panels", "2": "Canvas", "3": "Red mud walls" },
+            "ans": "3"
+          },
+          {
+            "q": "वारली कलेतील कोणता भूमितीय आकार सूर्य आणि चंद्राचे प्रतिनिधित्व करतो?",
+            "opts": { "1": "Circle", "2": "Line", "3": "Triangle" },
+            "ans": "1"
+          },
+          {
+            "q": "तुम्हाला एका सणाचे चित्रण करताना वारली कला तयार करायची असल्यास, तुम्ही कोणत्या घटकावर सर्जनशीलतेने लक्ष केंद्रित कराल?",
+            "opts": {
+              "1": "People dancing and celebrating",
+              "2": "Animals only",
+              "3": "Mountains and trees"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "वारली कला तयार करताना, तुमच्या कलाकृतीला सर्जनशीलतेने कसे वाढवू शकता?",
+            "opts": {
+              "1": "By focusing only on geometric shapes",
+              "2": "By adding more elements and colors",
+              "3": "By using only black and white colors"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Warli-Village-Scene-🏕️-Remedial",
+          "seq": 46,
+          "nm": "Warli art",
+          "desc": "एसडब्ल्यूएबीटी महाराष्ट्र, भारतातील या पारंपरिक आदिवासी कलेची समज आणि प्रशंसा करू शकतील. विद्यार्थी निसर्ग, प्राणी आणि दैनंदिन जीवनाचे चित्रण करण्यासाठी वर्तुळे, त्रिकोण आणि रेषांसारख्या भूमितीय आकारांचा वापर करून साधे, प्रतीकात्मक डिझाइन तयार करायला शिकतील.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "टेक्स्ट किंवा व्हॉइस नोट पाठवा — आवडला असेल तर \"Cultural\" म्हणा, नाही आवडला तर \"Difficult\" म्हणा",
+              "unguided_text": "वारली कला उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा व्हॉइस नोट पाठवा",
+              "valid_criteria": "Cultural, Difficult",
+              "invalid_criteria": "Any word other than cultural, difficult"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "वारली कलेत सामान्यतः वापरल्या जाणाऱ्या रंगाचा फोटो शेअर करा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "Picture of white or brown color",
+              "invalid_criteria": "Anything other than a picture of white or brown color"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "2026-05-29 06:44:40"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुम्ही तयार केलेल्या वारली कलेचे एक स्पष्ट चित्र किंवा व्हिडिओ शेअर करा"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

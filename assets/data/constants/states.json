@@ -1,0 +1,12 @@
+[
+  { "id": "Delhi", "name": "Delhi", "country": "India" },
+  { "id": "Gujarat", "name": "Gujarat", "country": "India" },
+  { "id": "Karnataka", "name": "Karnataka", "country": "India" },
+  { "id": "Madhya Pradesh", "name": "Madhya Pradesh", "country": "India" },
+  { "id": "Maharashtra", "name": "Maharashtra", "country": "India" },
+  { "id": "Punjab", "name": "Punjab", "country": "India" },
+  { "id": "Rajasthan", "name": "Rajasthan", "country": "India" },
+  { "id": "Tamil Nadu", "name": "Tamil Nadu", "country": "India" },
+  { "id": "Uttar Pradesh", "name": "Uttar Pradesh", "country": "India" },
+  { "id": "West Bengal", "name": "West Bengal", "country": "India" }
+]

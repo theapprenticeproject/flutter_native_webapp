@@ -1,0 +1,1103 @@
+{
+  "id": "Advanced-Electronics-Kit-Less-science-lab-C5125",
+  "nm": "Advanced Electronics Kit-Less",
+  "lvl": "Level 3AK",
+  "vrt": "science-lab",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "The Lights-Out Lab 🏠",
+      "desc": "Electric circuit, series connection, current flow, open and closed circuit, energy consumption, basic measurement of current. DC power supply, switch, LED, ammeter (series), connecting wires, simulate.",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 21,
+          "nm": "Can a Circuit Teach You to Save Energy? 🌱",
+          "desc": "In this activity, students will build a smart room circuit using a switch, LED, and ammeter in the EveryCircuit app to monitor how energy is used in different situations. They will simulate turning the light ON and OFF and observe how current changes, helping them understand how simple actions like switching off unused devices can reduce energy consumption. This activity connects to SDG 7 – Affordable and Clean Energy by promoting mindful and efficient use of electricity in daily life.",
+          "yt": "i7Vlovjit80",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 22,
+        "nm": "Is Your Room Wasting Power? 💡",
+        "qs": [
+          {
+            "q": "What happens when the switch is turned off in the circuit simulation?",
+            "opts": {
+              "1": "The LED turns off but the ammeter still shows 20 mA.",
+              "2": "The LED remains on and the ammeter shows 20 mA.",
+              "3": "The LED turns off and the ammeter shows 0 A."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "What message is given about electricity usage?",
+            "opts": {
+              "1": "Leaving lights on has no significant impact on electricity consumption.",
+              "2": "Turning off unnecessary lights helps reduce energy waste and protect the environment.",
+              "3": "Using more electricity is beneficial for the environment."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Which component is used to measure the current flowing through the circuit?",
+            "opts": { "1": "LED", "2": "Switch", "3": "Ammeter" },
+            "ans": "3"
+          },
+          {
+            "q": "If you notice that your electricity bill is unusually high, what action can you take based on the script's advice?",
+            "opts": {
+              "1": "Turn off unnecessary lights and devices to reduce energy waste.",
+              "2": "Use more devices to balance the electricity load.",
+              "3": "Increase the voltage of all appliances."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How can you contribute to SDG 7 - Affordable and Clean Energy?",
+            "opts": {
+              "1": "By using more energy to support power companies.",
+              "2": "By building more electrical circuits without consideration of energy use.",
+              "3": "By using electricity wisely and efficiently, such as turning off lights when not needed."
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Simulate-a-Smart-Room-🏠-Basic",
+          "seq": 19,
+          "nm": "Simulate a Smart Room 🏠",
+          "desc": "In this activity, students will build a smart room circuit using a switch, LED, and ammeter in the EveryCircuit app to monitor how energy is used in different situations. They will simulate turning the light ON and OFF and observe how current changes, helping them understand how simple actions like switching off unused devices can reduce energy consumption. This activity connects to SDG 7 – Affordable and Clean Energy by promoting mindful and efficient use of electricity in daily life.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Smart' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a switch around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note/text and tell us: What happens when the switch is OFF?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Video / Picture of the switch-controlled LED circuit!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Toggle to Save the Planet 🔦",
+      "desc": "Electric circuit, current flow, open and closed circuit, current measurement, energy consumption, Ohm’s Law (basic application). DC power supply, resistor, ammeter (series), switch, LED, connecting wires, simulate.",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 22,
+          "nm": "Can One Flip of a Switch Change Everything? 🌍",
+          "desc": "In this activity, students will build a smart room light circuit using a toggle switch and an ammeter to monitor current flow. They will understand how simple switching and monitoring support SDG 7: Affordable and Clean Energy by promoting energy conservation.",
+          "yt": "MG2jFEi_4IQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 23,
+        "nm": "Does Your Ammeter Agree? ⚡",
+        "qs": [
+          {
+            "q": "What component is used to monitor current in the circuit built in the EveryCircuit app?",
+            "opts": { "1": "Resistor", "2": "Toggle switch", "3": "Ammeter" },
+            "ans": "3"
+          },
+          {
+            "q": "What is the primary goal of the project related to SDG 7 ?",
+            "opts": {
+              "1": "To ensure clean and reliable electricity for all and to use energy smartly",
+              "2": "To learn basic circuit connections",
+              "3": "To calculate power consumption"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What should you do if the ammeter shows a negative current value during simulation?",
+            "opts": {
+              "1": "Rotate the ammeter",
+              "2": "Increase the voltage",
+              "3": "Replace the LED"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "If a student forgets to turn off a light at home, leading to unnecessary power consumption, which circuit component from the activity can help prevent this?",
+            "opts": { "1": "Resistor", "2": "LED", "3": "Toggle switch" },
+            "ans": "3"
+          },
+          {
+            "q": "A school wants to implement energy-saving lights that turn off when not needed. Which skill from the activity would be most helpful in designing such a system?",
+            "opts": {
+              "1": "Calculating voltage and current",
+              "2": "Using a toggle switch to control lighting",
+              "3": "Taking notes on circuit design"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Wire-the-Energy-Saving-Room-🔦-Remedial",
+          "seq": 20,
+          "nm": "Wire the Energy-Saving Room 🔦",
+          "desc": "In this activity, students will build a smart room light circuit using a toggle switch and an ammeter to monitor current flow. They will understand how simple switching and monitoring support SDG 7: Affordable and Clean Energy by promoting energy conservation.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Smart' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a switch around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note/text and tell us: What happens when the switch is OFF?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Video / Picture of the switch-controlled LED circuit!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Knob in Charge 🎚️",
+      "desc": "Resistance, variable resistance (potentiometer), current flow, brightness control, energy efficiency, series circuit. DC power supply, potentiometer, LED, connecting wires, simulate.",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 23,
+          "nm": "Can a Resistor Decide How Bright Your Room Is? 💡",
+          "desc": "In this activity, students use a potentiometer to control LED brightness and a transistor to simulate automatic dimming when ambient light increases (using LDR). Promotes energy-efficient indoor lighting.",
+          "yt": "UKFMVVo135g",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 24,
+        "nm": "More Resistance, More Dark? 🌑",
+        "qs": [
+          {
+            "q": "What is the main component used to control the current flow in an electric circuit?",
+            "opts": { "1": "Resistor", "2": "Potentiometer", "3": "Capacitor" },
+            "ans": "2"
+          },
+          {
+            "q": "Why does the brightness of the LED change when the potentiometer's resistance is adjusted?",
+            "opts": {
+              "1": "Because altering resistance changes the current flow through the LED.",
+              "2": "Because the potentiometer directly powers the LED.",
+              "3": "Because the LED has a built-in dimming function."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Which sequence of steps is correct for connecting components in EveryCircuit?",
+            "opts": {
+              "1": "Connect power supply to potentiometer, potentiometer to LED, and LED to ground.",
+              "2": "Connect power supply to LED, then potentiometer to ground.",
+              "3": "Connect potentiometer to LED, then LED to power supply."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "If you want to reduce energy consumption at home using the circuit setup described, what would you do?",
+            "opts": {
+              "1": "Remove the LED from the circuit.",
+              "2": "Decrease the voltage of the power supply to 1V.",
+              "3": "Increase the resistance of the potentiometer to decrease current flow."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "How can you simulate a real-life circuit model based on the instructions ?",
+            "opts": {
+              "1": "By using EveryCircuit to create and test the circuit virtually.",
+              "2": "By manually adjusting each circuit component physically.",
+              "3": "By drawing the circuit on paper and calculating values manually."
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Master-the-Brightness-Knob-🎚️-Basic",
+          "seq": 21,
+          "nm": "Master the Brightness Knob 🎚️",
+          "desc": "In this activity, students use a potentiometer to control LED brightness and a transistor to simulate automatic dimming when ambient light increases (using LDR). Promotes energy-efficient indoor lighting.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Smart' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a switch around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note/text and tell us: What happens when the switch is OFF?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Video / Picture of the switch-controlled LED circuit!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Why Does the Resistor Get Hot? 🔥",
+      "desc": "Power dissipation, voltage–current relationship, Ohm’s Law, unit conversion (mA to A). DC power supply, resistor, ammeter (series), voltmeter (parallel), simulate.",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 24,
+          "nm": "Why Does Your Charger Warm Up? 🔌",
+          "desc": "Students will explore how power is dissipated in resistors and learn how to calculate the power dissipated in a simple resistive circuit. This activity will also encourage discussion on how power dissipation relates to the efficiency of electronic devices and why understanding power is crucial for designing energy-efficient circuits.",
+          "yt": "Ovqv49JmoDk",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 25,
+        "nm": "Can You Calculate the Heat? 🔥",
+        "qs": [
+          {
+            "q": "What is the formula used to calculate power dissipation in a resistor?",
+            "opts": {
+              "1": "Power = Voltage × Current",
+              "2": "Power = Current × Resistance",
+              "3": "Power = Voltage × Resistance"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Why does a mobile charger become warm after being plugged in for a long time?",
+            "opts": {
+              "1": "Due to power dissipation as heat from electrical energy.",
+              "2": "Because the charger is charging faster.",
+              "3": "Because the phone is using too much battery."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "If the voltage is 9 V and the current is 0.09 A, what is the power dissipation in the resistor?",
+            "opts": { "1": "0.9 Watts", "2": "0.09 Watts", "3": "0.81 Watts" },
+            "ans": "3"
+          },
+          {
+            "q": "Rahul notices that the resistor in his circuit is getting very hot. He knows that using a resistor with a higher resistance can reduce power dissipation. What is the best action Rahul should take to cool down the resistor?",
+            "opts": {
+              "1": "Replace the current resistor with one that has a higher resistance value.",
+              "2": "Increase the voltage supply to the circuit.",
+              "3": "Add more resistors in parallel to the circuit."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Neha wants to design a safe circuit for a school project, ensuring the power dissipation does not exceed the safe limit for her resistors. She has a fixed voltage supply of 9 V. What should Neha do to maintain safe power levels?",
+            "opts": {
+              "1": "Use a resistor with a very low resistance value.",
+              "2": "Choose a resistor with a higher resistance value to reduce current.",
+              "3": "Increase the voltage supply to 12 V to reduce power dissipation."
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Calculate-the-Power-Burn-🔥-Remedial",
+          "seq": 22,
+          "nm": "Calculate the Power Burn 🔥",
+          "desc": "Students will explore how power is dissipated in resistors and learn how to calculate the power dissipated in a simple resistive circuit. This activity will also encourage discussion on how power dissipation relates to the efficiency of electronic devices and why understanding power is crucial for designing energy-efficient circuits.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Smart' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a switch around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note/text and tell us: What happens when the switch is OFF?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Video / Picture of the switch-controlled LED circuit!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Light Up a Number 🔢",
+      "desc": "7-segment display structure, segment control (ON/OFF), common pin connection, digit formation, multi-digit display logic. DC power supply, 7-segment display, connecting wires, ground, simulate.",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 25,
+          "nm": "Can 7 Segments Display Any Number? 🎰",
+          "desc": "In this activity, students will design and simulate a multi-digit display system using a EveryCircuit. They will control a 7-segment display to show different numbers by applying correct segment combinations and basic logic. Students will extend their understanding by displaying two-digit numbers (e.g., 23, 45) and exploring how different segment patterns create each digit. This activity helps them connect digital displays used in real life—such as clocks, scoreboards, and counters—with circuit design.",
+          "yt": "PKNie8JdISE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 26,
+        "nm": "Which Segments Make Your Digit? 🔢",
+        "qs": [
+          {
+            "q": "What is the primary purpose of a 7-segment display in electronics?",
+            "opts": {
+              "1": "To store data",
+              "2": "To amplify sound",
+              "3": "To display numerical digits"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "What must be done to form the digit '7' on a 7-segment display?",
+            "opts": {
+              "1": "Connect segments a, b, and c",
+              "2": "Connect segments b, c, and d",
+              "3": "Connect segments a, d, and e"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "When creating a multi-digit display, what is the first step in the process ?",
+            "opts": {
+              "1": "Connect the segments to form the digit '1'",
+              "2": "Display the digit '7' on a single 7-segment display",
+              "3": "Increase the voltage of the DC power supply"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If a student encounters issues with their 7-segment display not showing the correct digit, what should they verify first ?",
+            "opts": {
+              "1": "Check if the correct segments are connected based on the chart",
+              "2": "Ensure the DC power supply voltage is set to 5 volts",
+              "3": "Make sure the simulation software is updated"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "A student wants to display the number '25' using two 7-segment displays, what is a crucial step they should take ?",
+            "opts": {
+              "1": "Set the DC power supply to 1.5 volts for each segment",
+              "2": "Use three displays for better accuracy",
+              "3": "Connect the correct segments for each digit and ground the common pin"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Wire-Your-Own-Scoreboard-🔢-Intermediate",
+          "seq": 23,
+          "nm": "Wire Your Own Scoreboard 🔢",
+          "desc": "In this activity, students will design and simulate a multi-digit display system using a EveryCircuit. They will control a 7-segment display to show different numbers by applying correct segment combinations and basic logic. Students will extend their understanding by displaying two-digit numbers (e.g., 23, 45) and exploring how different segment patterns create each digit. This activity helps them connect digital displays used in real life—such as clocks, scoreboards, and counters—with circuit design.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Smart' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a switch around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note/text and tell us: What happens when the switch is OFF?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Video / Picture of the switch-controlled LED circuit!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Digits Come Alive 🖥️",
+      "desc": "Seven-segment display, segment control, binary logic for digit formation, circuit connections. DC power supply, 7-segment display.",
+      "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 26,
+          "nm": "Can You Make a Circuit Show 41? 🎯",
+          "desc": "Students will crerate a circuit to display a number on a Seven Segments Display.",
+          "yt": "2nPmMcNTI8s",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 27,
+        "nm": "Is Your Display Showing the Right Number? 🔢",
+        "qs": [
+          {
+            "q": "What is the voltage set for the DC power supply in the activity?",
+            "opts": { "1": "12V", "2": "3V", "3": "5V" },
+            "ans": "3"
+          },
+          {
+            "q": "What is the primary function of a seven-segment display ?",
+            "opts": {
+              "1": "To power the entire circuit",
+              "2": "To display numbers and some letters by turning ON/OFF LED segments",
+              "3": "To connect multiple circuits together"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "How do you connect the common pin of the 7-segment displays according to the instructions?",
+            "opts": {
+              "1": "To the positive terminal of the DC power supply",
+              "2": "To ground",
+              "3": "To another 7-segment display"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If one of the seven-segment displays does not show the correct number, what should you check first?",
+            "opts": {
+              "1": "Ensure all necessary LED segments are connected according to the number you want to display",
+              "2": "Replace the DC power supply",
+              "3": "Restart EveryCircuit"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How can you check if the number \"41\" is displayed correctly on the 7-segment display?",
+            "opts": {
+              "1": "By adjusting the voltage of the power supply",
+              "2": "By checking which segments are lit for each digit",
+              "3": "By randomly connecting the segments"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Display-Your-Lucky-Number-🖥️-Remedial",
+          "seq": 24,
+          "nm": "Display Your Lucky Number 🖥️",
+          "desc": "Students will crerate a circuit to display a number on a Seven Segments Display.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Smart' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a switch around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note/text and tell us: What happens when the switch is OFF?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Video / Picture of the switch-controlled LED circuit!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "The Solar Panel's Gatekeeper ☀️",
+      "desc": "Directional current flow, diode (forward & reverse bias), voltage measurement, circuit protection, energy efficiency in clean energy systems. DC power supply, diode, resistor, LED, voltmeter (parallel), connecting wires, simulate.",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 27,
+          "nm": "Can a Diode Make Solar Power Safer? 🌍",
+          "desc": "In this activity, we’ll build a Clean Energy Indicator using a diode, LED, and voltmeter in the EveryCircuit app. You’ll learn how a diode allows current to flow in only one direction — a key concept for protecting clean energy systems. This project supports SDG 13: Climate Action by showing how simple electronics help prevent energy loss in solar panels and batteries.",
+          "yt": "hqOyB-yCuzk",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 28,
+        "nm": "Does Your Diode Keep the Current Safe? 🚦",
+        "qs": [
+          {
+            "q": "What is the primary function of a diode in a circuit?",
+            "opts": {
+              "1": "To allow current to flow in only one direction",
+              "2": "To store electrical energy",
+              "3": "To increase voltage"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Why is it important to ensure current flows in only one direction in clean energy systems?",
+            "opts": {
+              "1": "To increase the speed of electrical flow",
+              "2": "To prevent energy loss and component damage",
+              "3": "To reduce the cost of components"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If the diode is connected correctly in the circuit, what should happen?",
+            "opts": {
+              "1": "The circuit will short and stop working",
+              "2": "The LED glows and voltmeter shows a voltage reading",
+              "3": "The LED does not glow and voltmeter shows 0 volts"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "You notice that a solar panel system's battery is discharging rapidly overnight. What could you do to prevent this?",
+            "opts": {
+              "1": "Increase the number of solar panels",
+              "2": "Install a diode to prevent reverse current flow",
+              "3": "Reduce the voltage of the system"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "In a circuit simulation, the LED does not glow and the voltmeter shows 0 volts. What might be the issue?",
+            "opts": {
+              "1": "The diode is connected in the wrong direction",
+              "2": "The resistor value is too high",
+              "3": "The power supply voltage is too low"
+            },
+            "ans": "1"
+          }
+        ]
+      }
+    },
+    {
+      "nm": "No Reverse, No Waste 🔋",
+      "desc": "Directional current flow, diode behavior (forward bias & reverse blocking), circuit protection, energy loss prevention, basic power flow in circuits. DC power supply (2), diode, LED, switch, connecting wires, ground, simulate.",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 28,
+          "nm": "Can a Tiny Diode Protect a Solar Battery? 🌞",
+          "desc": "In this activity, students will build a simple circuit using a diode, LED, and voltmeter in the EveryCircuit app to simulate a solar charging system. They will explore how a diode prevents reverse current flow, ensuring that stored energy (like in a battery) does not flow back and get wasted. This helps students understand how diodes are used in solar panels and battery systems to improve efficiency and safety. The activity connects to SDG 13 – Climate Action by highlighting how small electronic components support clean energy systems.",
+          "yt": "ohIj_TY_M30",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 29,
+        "nm": "What Blocks the Reverse Flow? ⬅️",
+        "qs": [
+          {
+            "q": "What component prevents the reverse flow of energy in a solar panel system?",
+            "opts": { "1": "Capacitor", "2": "Diode", "3": "Resistor" },
+            "ans": "2"
+          },
+          {
+            "q": "Why is a diode important in a solar charging system?",
+            "opts": {
+              "1": "It changes the direction of the current.",
+              "2": "It increases the voltage.",
+              "3": "It prevents energy from flowing back and getting wasted."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "What happens when the diode is removed from the circuit ?",
+            "opts": {
+              "1": "The LED will not light up.",
+              "2": "The circuit will stop working.",
+              "3": "Energy can flow back and get wasted."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "In a situation where a battery discharges back into the solar panel at night, what problem does this create?",
+            "opts": {
+              "1": "Improved circuit connectivity.",
+              "2": "Increased solar panel efficiency.",
+              "3": "Energy waste and potential battery damage."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If a solar charging system is not working efficiently, what component could be missing based on the script's description?",
+            "opts": { "1": "Switch", "2": "LED", "3": "Diode" },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Simulate-a-Solar-Charging-Shield-🔋-Remedial",
+          "seq": 25,
+          "nm": "Simulate a Solar Charging Shield 🔋",
+          "desc": "In this activity, students will build a simple circuit using a diode, LED, and voltmeter in the EveryCircuit app to simulate a solar charging system. They will explore how a diode prevents reverse current flow, ensuring that stored energy (like in a battery) does not flow back and get wasted. This helps students understand how diodes are used in solar panels and battery systems to improve efficiency and safety. The activity connects to SDG 13 – Climate Action by highlighting how small electronic components support clean energy systems.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Smart' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a switch around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note/text and tell us: What happens when the switch is OFF?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Video / Picture of the switch-controlled LED circuit!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Bins That Speak in Color 🗑️",
+      "desc": "RGB LED color mixing, circuit control using switches, parallel connections, state indication system, voltage and brightness relationship. DC power supply, toggle switches, RGB LED, connecting wires, ground, simulate.",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 29,
+          "nm": "Can LEDs Tell You When to Take Out the Trash? 🌆",
+          "desc": "In this activity, students simulate a bin-level detection circuit using toggle switches and RGB LEDs. Different colors indicate empty, half-full, and full states, promoting smart city waste management.",
+          "yt": "sW3q7QTe0Zk",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 30,
+        "nm": "What Color is the Full Bin? 🌈",
+        "qs": [
+          {
+            "q": "What is the purpose of the Smart Bin Indicator?",
+            "opts": {
+              "1": "To improve the aesthetic of waste bins.",
+              "2": "To automatically clean waste bins when full.",
+              "3": "To show the fullness level of waste bins using color indicators."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "What role does the RGB LED play in the Smart Bin Indicator?",
+            "opts": {
+              "1": "It indicates the fullness level of the bin through different colors.",
+              "2": "It provides a sound alert when the bin is full.",
+              "3": "It powers the entire circuit."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How do you simulate the circuit in EveryCircuit ?",
+            "opts": {
+              "1": "By creating a model of the circuit and observing its operation.",
+              "2": "By connecting the RGB LED directly to a power outlet.",
+              "3": "By using a smartphone application unrelated to EveryCircuit."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "If the Smart Bin Indicator's RGB LED does not light up, which step should you check first ?",
+            "opts": {
+              "1": "Remove the RGB LED and replace it with a regular LED.",
+              "2": "Turn off all switches and restart the circuit.",
+              "3": "Ensure the voltage of the DC power supply is set to 3V."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "In a smart city, if the bins are not being cleaned efficiently, how might the Smart Bin Indicator be applied to solve this problem?",
+            "opts": {
+              "1": "By integrating a camera to monitor the bins.",
+              "2": "By assigning more personnel to manually check the bins.",
+              "3": "By using sensors to automatically indicate when the bin is full and needs cleaning."
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-the-Smart-City-Bin-Indicator-🗑️-Advanced",
+          "seq": 26,
+          "nm": "Build the Smart City Bin Indicator 🗑️",
+          "desc": "In this activity, students simulate a bin-level detection circuit using toggle switches and RGB LEDs. Different colors indicate empty, half-full, and full states, promoting smart city waste management.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Smart' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a switch around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note/text and tell us: What happens when the switch is OFF?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Video / Picture of the switch-controlled LED circuit!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Mix the Colors of Light 🌈",
+      "desc": "RGB LED, LED color control, Switch mechanism, Circuit design, Troubleshooting",
+      "rwc": "Mobile, Internet, Everycircuit App",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 30,
+          "nm": "Can One LED Glow in Every Color? 🌈",
+          "desc": "Students will create a circuit on Every Circuit App to learn what an RGB LED is and how it works. They will control the colors of the RGB LED using switches.",
+          "yt": "5lBDEnDuJko",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 31,
+        "nm": "Can You Mix Red, Green and Blue? 🌈",
+        "qs": [
+          {
+            "q": "What type of LED is used to create colorful glowing effects in devices like gaming keyboards and stage lights?",
+            "opts": { "1": "UV LED", "2": "IR LED", "3": "RGB LED" },
+            "ans": "3"
+          },
+          {
+            "q": "Why does the RGB LED not glow when only the Green and Blue switches are turned on at 2V?",
+            "opts": {
+              "1": "Because the LED is faulty",
+              "2": "Because Green and Blue LEDs need 3V to glow",
+              "3": "Because the voltage is too high"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "In the EveryCircuit app, how should the components be arranged to control an RGB LED with switches?",
+            "opts": {
+              "1": "Connect the RGB LED directly to the DC supply",
+              "2": "Connect all switches in parallel to the RGB LED",
+              "3": "Connect each switch’s output terminal to one of the RGB LED’s color inputs"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If the power supply is set to 3.2V, how can you safely make only the Red LED glow without burning it out?",
+            "opts": {
+              "1": "Turn off the DC power supply",
+              "2": "Use a resistor to reduce the voltage to the Red LED",
+              "3": "Use a higher voltage DC supply"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Why does the RGB LED get damaged when the Red switch is turned ON at 3.3V?",
+            "opts": {
+              "1": "Red LED needs only about 2V, so excess voltage damages it",
+              "2": "Red LED needs higher voltage",
+              "3": "Red LED works only with AC supply"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Control-the-Color-Mixer-🌈-Remedial",
+          "seq": 27,
+          "nm": "Control the Color Mixer 🌈",
+          "desc": "Students will create a circuit on Every Circuit App to learn what an RGB LED is and how it works. They will control the colors of the RGB LED using switches.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Type the word 'Smart' if you liked the activity.",
+              "unguided_text": "What did you learn from the activity? Share in one word.",
+              "valid_criteria": "Response matching the word 'Smart'.",
+              "invalid_criteria": "Anything other than the word 'Smart'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a Picture of a switch around you!!",
+              "unguided_text": "Share a picture of anything around you!!",
+              "valid_criteria": "Image contains an electrical switch (ON/OFF switch).",
+              "invalid_criteria": "Anything other than a switch."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Share a voice note/text and tell us: What happens when the switch is OFF?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a Video / Picture of the switch-controlled LED circuit!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

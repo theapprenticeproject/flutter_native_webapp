@@ -1,0 +1,1125 @@
+{
+  "id": "Money-Basics-financial-literacy-C9881",
+  "nm": "Money Basics",
+  "lvl": "Level 3AK",
+  "vrt": "financial-literacy",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Money Gets a Plan 💰",
+      "desc": "Needs, Wants, Budgeting",
+      "rwc": "Pencil, Eraser",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 91,
+          "nm": "Can Ravi save fifty rupees? 💰",
+          "desc": "Students will create a basic budget by listing needs, wants, and a savings goal to learn how to manage money wisely.",
+          "yt": "3z_7ckQYScQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 94,
+        "nm": "Can you budget your money? 💰",
+        "qs": [
+          {
+            "q": "ಬಜೆಟ್ ಎಂದರೇನು?",
+            "opts": {
+              "1": "ನಿಮಗೆ ಇಷ್ಟವಾದ ಆಟಗಳ ಪಟ್ಟಿ",
+              "2": "ಹಣ ಬಳಸುವ ಯೋಜನೆ",
+              "3": "ಹಣ ಇಡಲು ಪೆಟ್ಟಿಗೆ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಇವುಗಳಲ್ಲಿ ಅವಶ್ಯಕತೆ ಯಾವುದು?",
+            "opts": { "1": "ಶಾಲೆಯ ನೋಟ್‌ಬುಕ್", "2": "ಐಸ್‌ಕ್ರೀಂ", "3": "ಸಿನೆಮಾ ಟಿಕೆಟ್" },
+            "ans": "1"
+          },
+          {
+            "q": "ನಿಮ್ಮ ಆದಾಯ ₹200 ಮತ್ತು ₹50 ಉಳಿಸಲು ಬಯಸಿದರೆ ಎಷ್ಟು ಖರ್ಚು ಮಾಡಬಹುದು?",
+            "opts": { "1": "₹250", "2": "₹150", "3": "₹50" },
+            "ans": "2"
+          },
+          {
+            "q": "ನಿಮ್ಮ ಬಳಿ ₹10 ಇದೆ. ಬಸ್ ಟಿಕೆಟ್ ಅಥವಾ ಚಾಕಲೇಟ್ ಖರೀದಿಸಬಹುದು. ಮೊದಲು ಏನು ಆಯ್ಕೆ ಮಾಡಬೇಕು?",
+            "opts": { "1": "ಚಾಕಲೇಟ್", "2": "ಎರಡೂ ಒಟ್ಟಿಗೆ", "3": "ಬಸ್ ಟಿಕೆಟ್" },
+            "ans": "3"
+          },
+          {
+            "q": "ಹಣ ಬಳಸುವ ಸರಿಯಾದ ಕ್ರಮ ಯಾವುದು?",
+            "opts": {
+              "1": "ಮೊದಲು ಹಣ ಉಳಿಸಿ → ಅವಶ್ಯಕತೆಗಳಿಗೆ ಖರ್ಚು ಮಾಡಿ → ಬಯಕೆಗಳಿಗೆ ಖರ್ಚು ಮಾಡಿ",
+              "2": "ಬಯಕೆಗಳಿಗೆ ಖರ್ಚು ಮಾಡಿ → ಹಣ ಉಳಿಸಿ → ಅವಶ್ಯಕತೆಗಳಿಗೆ ಖರ್ಚು ಮಾಡಿ",
+              "3": "ಅವಶ್ಯಕತೆಗಳಿಗೆ ಖರ್ಚು ಮಾಡಿ → ಬಯಕೆಗಳಿಗೆ ಖರ್ಚು ಮಾಡಿ → ನಂತರ ಉಳಿತಾಯದ ಬಗ್ಗೆ ಯೋಚಿಸಿ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-Ravi's-Weekly-Budget-Plan-💰-Basic",
+          "seq": 86,
+          "nm": "Build Ravi's Weekly Budget Plan 💰",
+          "desc": "Students will create a basic budget by listing needs, wants, and a savings goal to learn how to manage money wisely.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಆತ್ಮವಿಶ್ವಾಸ ಇದ್ದರೆ ⭐ ಕಳುಹಿಸಿ, ಗೊಂದಲವಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ನಿಮ್ಮ ಬಜೆಟ್‌ನಿಂದ ಒಂದು ವರ್ಗ ಹೆಸರಿಸಿ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: Needs / Wants / Savings, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Needs / Wants / Savings, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words (e.g., \"car\", \"blue\") OR If the voice note does not include any of the following words: Needs / Wants / Savings, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಹೂವುಗಳ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "Any Flower",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Flower"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ನಿಮ್ಮ ಬಜೆಟ್ ಯೋಜನೆ ಮತ್ತು ನೀವು ಅಗತ್ಯತೆಗಳು ಎಂದು ಆಯ್ಕೆ ಮಾಡಿದ್ದನ್ನು ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಬಜೆಟ್‌ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Needs vs Wants Sorted 🛒",
+      "desc": "Needs and Wants",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 92,
+          "nm": "Can needs beat your wants? 🛒",
+          "desc": "Students will sort examples into ‘Needs’ and ‘Wants’ columns and illustrate them with small icons to understand smart money choices.",
+          "yt": "EpW1pyS8JIg",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 95,
+        "nm": "Need or want — which wins? 🤔",
+        "qs": [
+          {
+            "q": "ಆದಾಯ ಎಂದರೆ ಏನು?",
+            "opts": {
+              "1": "ಏನಾದರೂ ಖರೀದಿಸಲು ಪಾವತಿಸಿದ ಹಣ",
+              "2": "ಕೆಲಸ ಮಾಡಿ ಗಳಿಸಿದ ಹಣ",
+              "3": "ಸ್ನೇಹಿತರಿಂದ ಎರವಲು ಪಡೆದ ಹಣ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ನಮ್ಮ ಅವಶ್ಯಕತೆಗಳು ಮತ್ತು ಬಯಕೆಗಳನ್ನು ಅರ್ಥ ಮಾಡಿಕೊಳ್ಳುವುದು ಏಕೆ ಮುಖ್ಯ?",
+            "opts": {
+              "1": "ಹೆಚ್ಚು ಬಯಕೆಗಳನ್ನು ಖರೀದಿಸಲು",
+              "2": "ಒಟ್ಟು ಆದಾಯ ನೇರವಾಗಿ ಹೆಚ್ಚಿಸಲು",
+              "3": "ಅನಗತ್ಯ ಖರ್ಚು ಕಡಿಮೆ ಮಾಡಿ ಹೆಚ್ಚು ಉಳಿಸಲು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ನಿಮ್ಮ ಬಳಿ ₹50 ಇದ್ದು ₹40 ಔಷಧ ಮತ್ತು ₹20 ಚಿಪ್ಸ್ ಬೇಕಾದರೆ ಏನು ಕೊಳ್ಳಬೇಕು?",
+            "opts": { "1": "ಮೊದಲು ಔಷಧ", "2": "ಮೊದಲು ಚಿಪ್ಸ್", "3": "ಏನೂ ಬೇಡ, ಉಳಿಸಿ" },
+            "ans": "1"
+          },
+          {
+            "q": "ಹಣ ಖರ್ಚು ಮಾಡುವ ಮೊದಲು ಅವಶ್ಯಕತೆ ಮತ್ತು ಬಯಕೆ ನಡುವೆ ಆಯ್ಕೆ ಮಾಡುವಾಗ ಯಾವ ಕೌಶಲ ಬಳಸುತ್ತೀರಿ?",
+            "opts": { "1": "ಸೃಜನಶೀಲತೆ", "2": "ನಿರ್ಧಾರ ತೆಗೆದುಕೊಳ್ಳುವಿಕೆ", "3": "ಸಂವಹನ" },
+            "ans": "2"
+          },
+          {
+            "q": "ಇವುಗಳಲ್ಲಿ ಯಾವುದು ಜವಾಬ್ದಾರಿಯುತ ಹಣಕಾಸು ನಡವಳಿಕೆ ತೋರಿಸುತ್ತದೆ?",
+            "opts": {
+              "1": "ವಿಡಿಯೋ ಗೇಮ್‌ಗಳು ಮತ್ತು ಚಲನಚಿತ್ರಗಳಿಗೆ ಹೆಚ್ಚು ಖರ್ಚು ಮಾಡುವುದು",
+              "2": "ಬಾಹ್ಯ ಗೌರವ ಪಡೆಯಲು ಮಾತ್ರ ದುಬಾರಿ ವಸ್ತುಗಳು ಖರೀದಿಸುವುದು",
+              "3": "ಖರ್ಚು ಮಾಡುವ ಮೊದಲು ಅವಶ್ಯಕತೆಗಳ ಬಗ್ಗೆ ಯೋಚಿಸುವುದು"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Sort-Your-Needs-and-Wants-🛒-Remedial",
+          "seq": 87,
+          "nm": "Sort Your Needs and Wants 🛒",
+          "desc": "Students will sort examples into ‘Needs’ and ‘Wants’ columns and illustrate them with small icons to understand smart money choices.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಆತ್ಮವಿಶ್ವಾಸ ಇದ್ದರೆ ⭐ ಕಳುಹಿಸಿ, ಗೊಂದಲವಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಒಂದು ಅಗತ್ಯ ಅಥವಾ ಇಚ್ಛೆಯ ಉದಾಹರಣೆ ಹೆಸರಿಸಿ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: Food / Toy, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Food / Toy, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Food / Toy, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಗಿಡ ಅಥವಾ ಮರದ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "Plant / Tree",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Plant / Tree"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ನಿಮ್ಮ ಚಟುವಟಿಕೆಯಿಂದ ಒಂದು ಅಗತ್ಯ ಮತ್ತು ಒಂದು ಇಚ್ಛೆ ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಅಗತ್ಯಗಳು ಮತ್ತು ಇಚ್ಛೆಗಳ ಕೋಷ್ಟಕದ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Account Opens the Door 🏦",
+      "desc": "Process of opening a bank account",
+      "rwc": "Pencil, Eraser",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 93,
+          "nm": "Can five steps open accounts? 🏦",
+          "desc": "Students will learn the step-by-step process of opening a bank account through the story of Ananya. They will understand how to choose a bank, fill out an account opening form, submit important documents, complete KYC, and receive a welcome kit. This lesson also teaches students how to use decision-making skills to pick the right account type and get the correct documents ready. Through a simple activity, they will list the five steps and required documents, helping them feel confident about opening a bank account in real life.",
+          "yt": "G1ZBJnIzao4",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 96,
+        "nm": "Can you open a bank account? 🏦",
+        "qs": [
+          {
+            "q": "ಸಾಮಾನ್ಯ ಜನರು ಉಳಿತಾಯಕ್ಕಾಗಿ ಯಾವ ರೀತಿಯ ಖಾತೆ ಬಳಸುತ್ತಾರೆ?",
+            "opts": { "1": "ಚಾಲ್ತಿ ಖಾತೆ", "2": "ಉಳಿತಾಯ ಖಾತೆ", "3": "ಸ್ಥಿರ ಠೇವಣಿ ಖಾತೆ" },
+            "ans": "2"
+          },
+          {
+            "q": "ಬ್ಯಾಂಕ್ ಆಧಾರ್ ಕಾರ್ಡ್‌ನಂತಹ ದಾಖಲೆಗಳನ್ನು ಏಕೆ ಕೇಳುತ್ತದೆ?",
+            "opts": {
+              "1": "KYC ಪೂರ್ಣಗೊಳಿಸಿ ಗುರುತು ದೃಢೀಕರಿಸಲು",
+              "2": "ಖಾತೆ ತೆರೆಯುವ ಫಾರ್ಮ್ ಅಲಂಕರಿಸಲು",
+              "3": "ಉಚಿತ ಹಣ ನೀಡಲು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಬ್ಯಾಂಕ್ ಖಾತೆ ತೆರೆಯಲು ಯಾವ ದಾಖಲೆ ತೆಗೆದುಕೊಳ್ಳುತ್ತೀರಿ?",
+            "opts": { "1": "ಶಾಲಾ ಗುರುತು ಚೀಟಿ", "2": "ಆಧಾರ್ ಕಾರ್ಡ್", "3": "ಲೈಬ್ರರಿ ಕಾರ್ಡ್" },
+            "ans": "2"
+          },
+          {
+            "q": "ಅನನ್ಯ ಖಾತೆ ತೆರೆಯಲು ಬಯಸುತ್ತಾಳೆ. ಉಳಿತಾಯ ಖಾತೆ ಮತ್ತು ಚಾಲ್ತಿ ಖಾತೆ ನಡುವೆ ಗೊಂದಲಕ್ಕೊಳಗಾಗಿದ್ದಾಳೆ. ಅವಳಿಗೆ ಯಾವುದು ಉತ್ತಮ?",
+            "opts": {
+              "1": "ಚಾಲ್ತಿ ಖಾತೆ ಏಕೆಂದರೆ ಅವಳು ವಿದ್ಯಾರ್ಥಿ",
+              "2": "ಎರಡೂ ಒಂದೇ",
+              "3": "ಉಳಿತಾಯ ಖಾತೆ ಏಕೆಂದರೆ ಅದು ವೈಯಕ್ತಿಕ ಬಳಕೆಗಾಗಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಮನೆ ಹತ್ತಿರ ಎರಡು ಬ್ಯಾಂಕ್‌ಗಳಿದ್ದರೆ ಖಾತೆ ಎಲ್ಲಿ ತೆರೆಯಬೇಕು ಎಂದು ಹೇಗೆ ನಿರ್ಧರಿಸುತ್ತೀರಿ?",
+            "opts": {
+              "1": "ಯಾದೃಚ್ಛಿಕವಾಗಿ ಆಯ್ಕೆ ಮಾಡಿ",
+              "2": "ದೊಡ್ಡ ಕಟ್ಟಡ ಇರುವ ಬ್ಯಾಂಕ್‌ಗೆ ಹೋಗಿ",
+              "3": "ಕುಟುಂಬ ಕೇಳಿ ಮತ್ತು ಯಾವ ಬ್ಯಾಂಕ್ ಉತ್ತಮ ಸೇವೆ ನೀಡುತ್ತದೆ ಎಂದು ಪರಿಶೀಲಿಸಿ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Map-the-Bank-Account-Steps-🏦-Basic",
+          "seq": 88,
+          "nm": "Map the Bank Account Steps 🏦",
+          "desc": "Students will learn the step-by-step process of opening a bank account through the story of Ananya. They will understand how to choose a bank, fill out an account opening form, submit important documents, complete KYC, and receive a welcome kit. This lesson also teaches students how to use decision-making skills to pick the right account type and get the correct documents ready. Through a simple activity, they will list the five steps and required documents, helping them feel confident about opening a bank account in real life.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಆತ್ಮವಿಶ್ವಾಸ ಇದ್ದರೆ ⭐ ಕಳುಹಿಸಿ, ಗೊಂದಲವಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಬ್ಯಾಂಕ್ ಖಾತೆ ತೆರೆಯುವ ಒಂದು ಹಂತ ಹೆಸರಿಸಿ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: KYC / Form / Documents / Visit, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: KYC / Form / Documents / Visit, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: KYC / Form / Documents / Visit, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಪುಸ್ತಕದ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "Book",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a book"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಬ್ಯಾಂಕ್ ಖಾತೆ ತೆರೆಯುವ ಹಂತಗಳನ್ನು ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ಖಾತೆ ಹಂತಗಳ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Steps to the Bank 🏧",
+      "desc": "How to open a bank account?",
+      "rwc": "Pencil, Eraser, Colors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 94,
+          "nm": "Can eight steps get savings? 🏧",
+          "desc": "In this activity, students will learn about how to open a bank account and the importance of saving money safely. By following simple 8 steps, they will understand how banks help us keep money secure, allow us to deposit or withdraw money, and provide useful tools like passbooks and ATM cards. Through this lesson, students will explore the difference between saving and current accounts and learn how to make responsible financial decisions with the help of their parents.",
+          "yt": "W9ByAn0eO88",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 97,
+        "nm": "Is your ATM PIN safe? 🔐",
+        "qs": [
+          {
+            "q": "ATM ಯಂತ್ರದಿಂದ ಹಣ ತೆಗೆಯಲು ಸಹಾಯ ಮಾಡುವ ಕಾರ್ಡ್‌ನ ಹೆಸರು ಏನು?",
+            "opts": { "1": "ಸ್ಮಾರ್ಟ್ ಕಾರ್ಡ್", "2": "ಡೆಬಿಟ್ ಕಾರ್ಡ್", "3": "ಮನಿ ಕಾರ್ಡ್" },
+            "ans": "2"
+          },
+          {
+            "q": "ಉಳಿತಾಯ ಖಾತೆ ಚಾಲ್ತಿ ಖಾತೆಗಿಂತ ಹೇಗೆ ಭಿನ್ನ?",
+            "opts": {
+              "1": "ಎರಡೂ ಒಂದೇ",
+              "2": "ಉಳಿತಾಯ ಖಾತೆ ಬಡ್ಡಿ ಗಳಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ; ಚಾಲ್ತಿ ಖಾತೆ ವ್ಯಾಪಾರಗಳಿಗಾಗಿ",
+              "3": "ಉಳಿತಾಯ ಖಾತೆ ಕೇವಲ ಮಕ್ಕಳಿಗಾಗಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಪ್ರಿಯಾ ಮೊದಲ ಬ್ಯಾಂಕ್ ಖಾತೆ ತೆರೆಯಲು ಬಯಸುತ್ತಾಳೆ. ಬ್ಯಾಂಕ್‌ಗೆ ಹೋಗುವ ಮೊದಲು ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಆಧಾರ್ ಕಾರ್ಡ್ ಮತ್ತು ಫೋಟೋದಂತಹ ದಾಖಲೆಗಳು ಸಂಗ್ರಹಿಸಿ",
+              "2": "ಯಾವುದೇ ದಾಖಲೆ ಇಲ್ಲದೆ ಬ್ಯಾಂಕ್‌ಗೆ ಹೋಗಿ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ",
+              "3": "ಬ್ಯಾಂಕ್ ಸಿಬ್ಬಂದಿ ಮನೆಗೆ ಬಂದು ಖಾತೆ ತೆರೆಯಲು ಕಾಯಿರಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ATM ನಲ್ಲಿ ಅಪರಿಚಿತರು ಸಹಾಯ ಮಾಡುತ್ತೇನೆ ಎಂದು PIN ಕೇಳಿದರೆ ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಅವರು ಒಳ್ಳೆಯವರಾಗಿ ಕಾಣುವುದರಿಂದ ಹೇಳಿ",
+              "2": "ಅವರಿಗೆ ಬಟನ್‌ಗಳನ್ನು ಒತ್ತಲು ಹೇಳಿ",
+              "3": "ಸಭ್ಯವಾಗಿ ನಿರಾಕರಿಸಿ ಮತ್ತು ಪಾಲಕರಿಗೆ ಕರೆ ಮಾಡಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಕುಟುಂಬ ಹೊಸ ರೆಫ್ರಿಜರೇಟರ್‌ಗಾಗಿ ಉಳಿಸಲು ಬಯಸಿದರೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?",
+            "opts": {
+              "1": "ಉಳಿತಾಯ ಖಾತೆ ತೆರೆದು ನಿಯಮಿತವಾಗಿ ಸಣ್ಣ ಮೊತ್ತ ಸೇರಿಸಲು ಸೂಚಿಸಿ",
+              "2": "ಸ್ನೇಹಿತರಿಂದ ಎರವಲು ಪಡೆಯಿರಿ",
+              "3": "ಹಣ ಮನೆಯಲ್ಲಿ ಪೆಟ್ಟಿಗೆಯಲ್ಲಿ ಇಡಿ ಟ್ರ್ಯಾಕ್ ಮಾಡದೆ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Complete-the-Eight-Step-Guide-🏧-Remedial",
+          "seq": 89,
+          "nm": "Complete the Eight Step Guide 🏧",
+          "desc": "In this activity, students will learn about how to open a bank account and the importance of saving money safely. By following simple 8 steps, they will understand how banks help us keep money secure, allow us to deposit or withdraw money, and provide useful tools like passbooks and ATM cards. Through this lesson, students will explore the difference between saving and current accounts and learn how to make responsible financial decisions with the help of their parents.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಆತ್ಮವಿಶ್ವಾಸ ಇದ್ದರೆ ⭐ ಕಳುಹಿಸಿ, ಗೊಂದಲವಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಬ್ಯಾಂಕ್ ಖಾತೆ ತೆರೆದ ನಂತರ ನೀವು ಪಡೆಯುವ ಒಂದು ವಿಷಯ ಹೆಸರಿಸಿ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: Card / Passbook / Account, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Card / Passbook / Account, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Card / Passbook / Account, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಆರ್ಥಿಕ ಸಾಕ್ಷರತೆ ನೋಟ್‌ಬುಕ್‌ನ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "Notebook",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Notebook"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ನಿಮ್ಮ ಚಟುವಟಿಕೆಯಿಂದ ಬ್ಯಾಂಕ್ ಖಾತೆ ತೆರೆಯುವ ಒಂದು ಹಂತ ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ಖಾತೆ ಪೋಸ್ಟರ್ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "RBI Runs the Show 🏛️",
+      "desc": "Central Bank and Commercial Banks",
+      "rwc": "Pencil, Eraser",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 95,
+          "nm": "Can RBI control all banks? 🏛️",
+          "desc": "Students will learn the difference between the Central Bank and Commercial Banks using simple examples like a school principal and teachers. They will understand how the Reserve Bank of India (RBI) regulates all banks, prints money, and keeps the banking system safe. Students will also explore how commercial banks help people save money and take loans. Through a creative activity, they will identify banks, draw logos, and list their functions, helping them make smart decisions about saving money.",
+          "yt": "NRKA6eb6c2M",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 98,
+        "nm": "Who controls all the banks? 🏛️",
+        "qs": [
+          {
+            "q": "ಭಾರತದ ಕೇಂದ್ರ ಬ್ಯಾಂಕ್ ಯಾವುದು?",
+            "opts": {
+              "1": "ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್ ಆಫ್ ಇಂಡಿಯಾ (SBI)",
+              "2": "ಭಾರತೀಯ ರಿಸರ್ವ್ ಬ್ಯಾಂಕ್ (RBI)",
+              "3": "ICICI ಬ್ಯಾಂಕ್"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಹಣ ಉಳಿಸಲು ಅಥವಾ ಅಂಗಡಿಗಾಗಿ ಸಾಲ ತೆಗೆಯಲು ಎಲ್ಲಿಗೆ ಹೋಗಬೇಕು?",
+            "opts": { "1": "ವಾಣಿಜ್ಯ ಬ್ಯಾಂಕ್", "2": "ಕೇಂದ್ರ ಬ್ಯಾಂಕ್", "3": "ಸ್ನೇಹಿತರ ಬಳಿ ಹೋಗಿ" },
+            "ans": "1"
+          },
+          {
+            "q": "ಕೇಂದ್ರ ಮತ್ತು ವಾಣಿಜ್ಯ ಬ್ಯಾಂಕ್‌ಗಳ ನಡುವಿನ ವ್ಯತ್ಯಾಸ ಏನು?",
+            "opts": {
+              "1": "ವಾಣಿಜ್ಯ ಬ್ಯಾಂಕ್ ಹಣ ನಿರ್ವಹಿಸುತ್ತದೆ, ಕೇಂದ್ರ ಬ್ಯಾಂಕ್ ಸಾಲ ನೀಡುತ್ತದೆ",
+              "2": "ಎರಡೂ ವ್ಯಾಪಾರಗಳಿಗೆ ಸೇವೆ ನೀಡುತ್ತವೆ",
+              "3": "ಕೇಂದ್ರ ಬ್ಯಾಂಕ್ ದೇಶದ ಹಣ ನಿಯಂತ್ರಿಸುತ್ತದೆ, ವಾಣಿಜ್ಯ ಬ್ಯಾಂಕ್ ಜನರಿಗೆ ಸೇವೆ ನೀಡುತ್ತದೆ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಹಣ ಉಳಿಸಲು ಸುರಕ್ಷಿತ ಬ್ಯಾಂಕ್ ಆಯ್ಕೆ ಮಾಡುವಾಗ ಯಾವ ಕೌಶಲ ಬಳಸುತ್ತೀರಿ?",
+            "opts": { "1": "ನಿರ್ಧಾರ ತೆಗೆದುಕೊಳ್ಳುವಿಕೆ", "2": "ಖರ್ಚು ಮಾಡುವಿಕೆ", "3": "ಸೃಜನಶೀಲತೆ" },
+            "ans": "1"
+          },
+          {
+            "q": "ಇವುಗಳಲ್ಲಿ ಯಾವುದು ಜವಾಬ್ದಾರಿಯುತ ನಡವಳಿಕೆ ತೋರಿಸುತ್ತದೆ?",
+            "opts": {
+              "1": "ಅಪರಿಚಿತರಿಗೆ ಹಣ ಸುರಕ್ಷಿತ ಇಡಲು ನೀಡುವುದು",
+              "2": "ಉಳಿಸದೆ ಎಲ್ಲ ಹಣ ಬೇಗ ಖರ್ಚು ಮಾಡುವುದು",
+              "3": "RBI ನಿಯಮ ಪಾಲಿಸುವ ನಂಬಿಕಾರ್ಹ ವಾಣಿಜ್ಯ ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ಹಣ ಉಳಿಸುವುದು"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Map-Central-and-Commercial-Banks-🏛️-Intermediate",
+          "seq": 90,
+          "nm": "Map Central and Commercial Banks 🏛️",
+          "desc": "Students will learn the difference between the Central Bank and Commercial Banks using simple examples like a school principal and teachers. They will understand how the Reserve Bank of India (RBI) regulates all banks, prints money, and keeps the banking system safe. Students will also explore how commercial banks help people save money and take loans. Through a creative activity, they will identify banks, draw logos, and list their functions, helping them make smart decisions about saving money.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಆತ್ಮವಿಶ್ವಾಸ ಇದ್ದರೆ ⭐ ಕಳುಹಿಸಿ, ಗೊಂದಲವಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಒಂದು ಬಗೆಯ ಬ್ಯಾಂಕ್ ಹೆಸರಿಸಿ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: Central / Commercial, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Central / Commercial, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Central / Commercial, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಪೆನ್ ಅಥವಾ ಪೆನ್ಸಿಲ್‌ನ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "Pen / Pencil",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than Pen/Pencil"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಕೇಂದ್ರ ಮತ್ತು ವಾಣಿಜ್ಯ ಬ್ಯಾಂಕ್‌ಗಳ ನಡುವಿನ ಒಂದು ವ್ಯತ್ಯಾಸ ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಕೇಂದ್ರ ಬ್ಯಾಂಕ್ ವಿರುದ್ಧ ವಾಣಿಜ್ಯ ಬ್ಯಾಂಕ್ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Spot the Fake Signal 🚨",
+      "desc": "Central Bank and Commercial Banks",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 96,
+          "nm": "Can you spot a fraud? 🚨",
+          "desc": "Students will explore the difference between the Central Bank and Commercial Banks by matching their functions and identifying real-life examples.",
+          "yt": "tjxmKuKoips",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 99,
+        "nm": "Which bank should you pick? 🏦",
+        "qs": [
+          {
+            "q": "ಭಾರತದ ಕೇಂದ್ರ ಬ್ಯಾಂಕ್‌ನ ಹೆಸರು ಏನು?",
+            "opts": {
+              "1": "ಭಾರತೀಯ ರಿಸರ್ವ್ ಬ್ಯಾಂಕ್",
+              "2": "ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್ ಆಫ್ ಇಂಡಿಯಾ",
+              "3": "ಬ್ಯಾಂಕ್ ಆಫ್ ಬರೋಡಾ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಕೇಂದ್ರ ಬ್ಯಾಂಕ್‌ನ ಮುಖ್ಯ ಕಾರ್ಯಗಳಲ್ಲಿ ಒಂದು ಯಾವುದು?",
+            "opts": {
+              "1": "ಮನೆ ಮತ್ತು ವ್ಯಾಪಾರಕ್ಕೆ ಸಾಲ ನೀಡುವುದು",
+              "2": "ಜನರಿಗೆ ವೈಯಕ್ತಿಕ ಬ್ಯಾಂಕ್ ಖಾತೆ ತೆರೆಯಲು ಸಹಾಯ ಮಾಡುವುದು",
+              "3": "ಹೊಸ ನೋಟುಗಳನ್ನು ಮಾಡುವುದು ಮತ್ತು ದೇಶದಲ್ಲಿ ಎಷ್ಟು ಹಣ ಇರಬೇಕು ಎಂದು ನಿರ್ಧರಿಸುವುದು"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಹಣ ಸುರಕ್ಷಿತ ಇಟ್ಟು ಬೇಕಾದಾಗ ತೆಗೆಯಲು ಯಾವ ರೀತಿಯ ಬ್ಯಾಂಕ್‌ಗೆ ಹೋಗಬೇಕು?",
+            "opts": { "1": "ವಾಣಿಜ್ಯ ಬ್ಯಾಂಕ್", "2": "ಕೇಂದ್ರ ಬ್ಯಾಂಕ್", "3": "ಸ್ಥಳೀಯ ಅಂಗಡಿ" },
+            "ans": "1"
+          },
+          {
+            "q": "ರಾಜು ಸೈಕಲ್‌ಗಾಗಿ ಹಣ ಉಳಿಸಲು ಬಯಸುತ್ತಾನೆ. ಬ್ಯಾಂಕ್‌ಗಳು ಅವನ ಹಣ ಸುರಕ್ಷಿತ ಇಡಬಲ್ಲವು ಎಂದು ಕೇಳಿದ್ದಾನೆ. ಉಳಿತಾಯ ಖಾತೆ ತೆರೆಯಲು ಯಾವ ಬ್ಯಾಂಕ್ ಆಯ್ಕೆ ಮಾಡಬೇಕು?",
+            "opts": { "1": "ಕೇಂದ್ರ ಬ್ಯಾಂಕ್", "2": "ವಾಣಿಜ್ಯ ಬ್ಯಾಂಕ್", "3": "ಆಟಿಕೆ ಬ್ಯಾಂಕ್" },
+            "ans": "2"
+          },
+          {
+            "q": "ನೇಹಾ ಬ್ಯಾಂಕ್‌ಗಳ ಬಗ್ಗೆ ಕಲಿಯುತ್ತಿದ್ದಾಳೆ ಮತ್ತು ವ್ಯಾಪಾರ ಸಾಲಕ್ಕೆ ಬ್ಯಾಂಕ್ ಆಯ್ಕೆ ಮಾಡಲು ಪಾಲಕರಿಗೆ ಸಹಾಯ ಮಾಡಲು ಬಯಸುತ್ತಾಳೆ. ಯಾವ ಅಂಶ ಹೆಚ್ಚು ಪರಿಗಣಿಸಬೇಕು?",
+            "opts": {
+              "1": "ಬ್ಯಾಂಕ್ ಕಟ್ಟಡದ ಬಣ್ಣ",
+              "2": "ಬ್ಯಾಂಕ್‌ಗೆ ಇರುವ ಶಾಖೆಗಳ ಸಂಖ್ಯೆ",
+              "3": "ಸಾಲಕ್ಕೆ ವಾಣಿಜ್ಯ ಬ್ಯಾಂಕ್ ನೀಡುವ ಬಡ್ಡಿ ದರ"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Identify-Real-and-Fake-Messages-🚨-Remedial",
+          "seq": 91,
+          "nm": "Identify Real and Fake Messages 🚨",
+          "desc": "Students will explore the difference between the Central Bank and Commercial Banks by matching their functions and identifying real-life examples.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಆತ್ಮವಿಶ್ವಾಸ ಇದ್ದರೆ ⭐ ಕಳುಹಿಸಿ, ಗೊಂದಲವಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಬ್ಯಾಂಕ್‌ನ ಒಂದು ಕಾರ್ಯ ಹೆಸರಿಸಿ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: Saving / Loans / Safety, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Saving / Loans / Safety, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Saving / Loans / Safety, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಕಾಗದದ ಮೇಲೆ ಏನಾದರೂ ಬಿಡಿಸಿ ಮತ್ತು ಅದರ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "Clear drawing photo",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a drawing photo"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಬ್ಯಾಂಕ್‌ನ ಒಂದು ಕಾರ್ಯ ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಕೇಂದ್ರ ಮತ್ತು ವಾಣಿಜ್ಯ ಬ್ಯಾಂಕ್ ವಿಂಗಡಣೆ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Fraud Gets Caught 🕵️",
+      "desc": "Identify banking frauds",
+      "rwc": "Pencil, Eraser, Colors",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 97,
+          "nm": "Can fake calls steal money? 🕵️",
+          "desc": "Students will become young detectives and learn how to stay safe from banking frauds. Through real-life examples, they will understand how fake calls, messages, and links trick people into sharing personal information. Students will learn the golden rule — never share PINs, OTPs, or bank details — and use decision-making skills to check whether a message is real or fake. By the end, they will know how to protect themselves and their families from fraud.",
+          "yt": "JoKgeeuc8po",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 100,
+        "nm": "Can a call steal your money? 📞",
+        "qs": [
+          {
+            "q": "ವಂಚನೆ ಕರೆ ಎಂದರೇನು?",
+            "opts": {
+              "1": "ಸಹಾಯ ಕೇಳುವ ಸ್ನೇಹಿತರ ಕರೆ.",
+              "2": "ನಿಮ್ಮ PIN ಕೇಳಿ ಬ್ಯಾಂಕ್ ಎಂದು ನಟಿಸುವ ಕರೆ.",
+              "3": "ಹೋಮ್‌ವರ್ಕ್ ನೆನಪಿಸುವ ಶಿಕ್ಷಕರ ಕರೆ."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಬ್ಯಾಂಕ್ ವಿವರಗಳು ಕೇಳುವ ಸಂದೇಶದಲ್ಲಿ ಲಿಂಕ್ ಕ್ಲಿಕ್ ಮಾಡಬಾರದು ಏಕೆ?",
+            "opts": {
+              "1": "ಅದು ಮೋಜಿನ ಆಟಕ್ಕೆ ಕರೆದುಕೊಂಡು ಹೋಗಬಹುದು.",
+              "2": "ಅದು ಸ್ನೇಹಿತರೊಂದಿಗೆ ಸಂಪರ್ಕ ಕಲ್ಪಿಸಬಹುದು.",
+              "3": "ಅದು ನಿಮ್ಮ ಮಾಹಿತಿ ಕದಿಯುವ ಉಪಾಯ ಆಗಿರಬಹುದು."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ಯಾರಾದರೂ ಫೋನ್‌ನಲ್ಲಿ ATM PIN ಕೇಳಿದರೆ ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಹೇಳಬೇಡಿ ಮತ್ತು ದೊಡ್ಡವರಿಗೆ ತಿಳಿಸಿ.",
+              "2": "ಅದನ್ನು ಬರೆದು ಬ್ಯಾಗ್‌ನಲ್ಲಿ ಇಡಿ.",
+              "3": "ಖಾತೆ ಸುರಕ್ಷಿತ ಇಡಲು ಬೇಗ ಹೇಳಿ."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ನಿಮ್ಮ ಸ್ನೇಹಿತರಿಗೆ ಬಹುಮಾನ ಗೆದ್ದಿದ್ದಾರೆ ಎಂದು ಸಂದೇಶ ಬಂದು ಲಿಂಕ್ ಕ್ಲಿಕ್ ಮಾಡಿ ಪಡೆದುಕೊಳ್ಳಲು ಹೇಳಿದರೆ ಸುರಕ್ಷಿತ ಇರಲು ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಬಹುಮಾನ ಪಡೆಯಲು ತಕ್ಷಣ ಲಿಂಕ್ ಕ್ಲಿಕ್ ಮಾಡಿ.",
+              "2": "ಕ್ಲಿಕ್ ಮಾಡುವ ಮೊದಲು ಸಂದೇಶ ನಿಜವೇ ಎಂದು ನಂಬಿಕಾರ್ಹ ದೊಡ್ಡವರನ್ನು ಕೇಳಿ.",
+              "3": "ಸಂದೇಶ ಸಾಧ್ಯದಷ್ಟು ಸ್ನೇಹಿತರಿಗೆ ಹಂಚಿ."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಬ್ಯಾಂಕ್‌ನಿಂದ ಎಂದು ಹೇಳಿ ಸಮಸ್ಯೆ ಸರಿಪಡಿಸಲು ಖಾತೆ ಸಂಖ್ಯೆ ಕೇಳಿ ಕರೆ ಬಂದರೆ ಉತ್ತಮ ನಿರ್ಧಾರ ಯಾವುದು?",
+            "opts": {
+              "1": "ಕರೆ ಕಡಿತ ಮಾಡಿ ನಂಬಿಕಾರ್ಹ ದೊಡ್ಡವರಿಗೆ ಕರೆ ಬಗ್ಗೆ ಹೇಳಿ.",
+              "2": "ಮಾಹಿತಿ ಬೇಗ ನೀಡಿ.",
+              "3": "ಕರೆ ನಿರ್ಲಕ್ಷಿಸಿ ಆಟ ಮುಂದುವರಿಸಿ."
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-a-Fraud-Awareness-Poster-🕵️-Intermediate",
+          "seq": 92,
+          "nm": "Design a Fraud Awareness Poster 🕵️",
+          "desc": "Students will become young detectives and learn how to stay safe from banking frauds. Through real-life examples, they will understand how fake calls, messages, and links trick people into sharing personal information. Students will learn the golden rule — never share PINs, OTPs, or bank details — and use decision-making skills to check whether a message is real or fake. By the end, they will know how to protect themselves and their families from fraud.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಆತ್ಮವಿಶ್ವಾಸ ಇದ್ದರೆ ⭐ ಕಳುಹಿಸಿ, ಗೊಂದಲವಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಸುರಕ್ಷತೆಗಾಗಿ ನೀವು ಹಂಚಿಕೊಳ್ಳಬಾರದ ಒಂದು ವಿಷಯ ಹೇಳಿ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: PIN / OTP / Password, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: PIN / OTP / Password, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: PIN / OTP / Password, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಮೇಜು ಅಥವಾ ಕುರ್ಚಿಯ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "Table / Chair",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Table / Chair"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಬ್ಯಾಂಕಿಂಗ್ ವಂಚನೆಯಿಂದ ಸುರಕ್ಷಿತವಾಗಿ ಇರಲು ಒಂದು ನಿಯಮ ಹಂಚಿಕೊಳ್ಳಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ವಂಚನೆ ಪತ್ತೆ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Poster Warns the World 📢",
+      "desc": "Banking Safety",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 98,
+          "nm": "Can a poster warn people? 📢",
+          "desc": "In this activity, students will learn simple rules to stay safe from banking fraud. Through everyday examples like unknown calls or messages, they will identify what is safe and unsafe. They will complete a basic Do’s and Don’ts sorting activity to understand how to protect their money.",
+          "yt": "jvuVST37Qs8",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 101,
+        "nm": "Can a message be a scam? 📱",
+        "qs": [
+          {
+            "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ಇಂದಿನ ಮುಖ್ಯ ಗುರಿ ಏನು?",
+            "opts": {
+              "1": "ವಂಚನೆಯನ್ನು ಗುರುತಿಸಿ ಸರಿಯಾದ ನಿರ್ಧಾರ ತೆಗೆದುಕೊಳ್ಳಲು",
+              "2": "ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಹಣ ಗಳಿಸುವ ವಿಧಾನ ಕಲಿಯಲು",
+              "3": "ಬ್ಯಾಂಕ್ ವ್ಯವಹಾರಗಳು ಹೇಗೆ ನಡೆಯುತ್ತವೆ ಎಂದು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಫೋನ್‌ನಲ್ಲಿ ಎಂದಿಗೂ ನಿಮ್ಮ ATM ಪಿನ್ ಅಥವಾ ಕಾರ್ಡ್ ವಿವರಗಳನ್ನು ಏಕೆ ಹಂಚಿಕೊಳ್ಳಬಾರದು?",
+            "opts": {
+              "1": "ಏಕೆಂದರೆ ಬ್ಯಾಂಕ್‌ಗಳು ಫೋನ್‌ನಲ್ಲಿ ಎಂದಿಗೂ ಈ ವಿವರಗಳನ್ನು ಕೇಳುವುದಿಲ್ಲ",
+              "2": "ಏಕೆಂದರೆ ಇದು ಕಾನೂನುಬಾಹಿರ",
+              "3": "ಏಕೆಂದರೆ ಇದು ಅವಶ್ಯಕವಲ್ಲ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಅನುಮಾನಾಸ್ಪದ ಕರೆ ಅಥವಾ ಸಂದೇಶ ಬಂದಾಗ ನಿಮ್ಮನ್ನು ಹೇಗೆ ರಕ್ಷಿಸಿಕೊಳ್ಳಬಹುದು?",
+            "opts": {
+              "1": "ಮಿಸ್ ಆಗದಂತೆ ತ್ವರಿತವಾಗಿ ಪ್ರತಿಕ್ರಿಯಿಸಿ",
+              "2": "ಯಾವುದಾದರೂ ಕ್ರಮ ತೆಗೆದುಕೊಳ್ಳುವ ಮೊದಲು ನಿಲ್ಲಿ, ಯೋಚಿಸಿ, ಪರಿಶೀಲಿಸಿ",
+              "3": "ತಕ್ಷಣ ಕರೆ ಕಟ್ ಮಾಡಿ ಅಥವಾ ಸಂದೇಶ ಅಳಿಸಿ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ರೋಹಿತ್‌ನ ತಂದೆ ಹಣ ಗೆದ್ದಿದ್ದೀರಿ ಎಂದು ಹೇಳುವ ಸಂದೇಶ ಪಡೆದು ಲಿಂಕ್ ಕ್ಲಿಕ್ ಮಾಡಿದರು. ಅವರು ಬದಲಾಗಿ ಏನು ಮಾಡಬೇಕಿತ್ತು?",
+            "opts": {
+              "1": "ಬಹುಮಾನ ದೃಢಪಡಿಸಲು ಬ್ಯಾಂಕ್‌ಗೆ ಕರೆ ಮಾಡಿ",
+              "2": "ಅವರ ಅಭಿಪ್ರಾಯ ಪಡೆಯಲು ಸ್ನೇಹಿತರೊಂದಿಗೆ ಸಂದೇಶ ಹಂಚಿಕೊಳ್ಳಿ",
+              "3": "ಏನನ್ನಾದರೂ ಕ್ಲಿಕ್ ಮಾಡುವ ಮೊದಲು ನಿಲ್ಲಿ, ಯೋಚಿಸಿ ಮತ್ತು ಪರಿಶೀಲಿಸಿ"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ಎಂದು ಹೇಳಿಕೊಳ್ಳುವ ಸಂಖ್ಯೆಯಿಂದ CVV ಕೇಳುವ ಸಂದೇಶ ಬಂದರೆ ಉತ್ತಮ ಕ್ರಮ ಯಾವುದು?",
+            "opts": {
+              "1": "ಅದರ ನಿಜತ್ವ ಪರಿಶೀಲಿಸಲು ಸಂದೇಶಕ್ಕೆ ಉತ್ತರಿಸಿ",
+              "2": "ಸಂದೇಶ ನಿರ್ಲಕ್ಷಿಸಿ ಸ್ಪ್ಯಾಮ್ ಎಂದು ವರದಿ ಮಾಡಿ",
+              "3": "ಸಂದೇಶ ಚರ್ಚಿಸಲು ಸ್ವತಃ ಬ್ಯಾಂಕ್‌ಗೆ ಭೇಟಿ ನೀಡಿ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-a-Banking-Safety-Poster-📢-Remedial",
+          "seq": 93,
+          "nm": "Design a Banking Safety Poster 📢",
+          "desc": "In this activity, students will learn simple rules to stay safe from banking fraud. Through everyday examples like unknown calls or messages, they will identify what is safe and unsafe. They will complete a basic Do’s and Don’ts sorting activity to understand how to protect their money.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಆತ್ಮವಿಶ್ವಾಸ ಇದ್ದರೆ ⭐ ಕಳುಹಿಸಿ, ಗೊಂದಲವಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: Check / Verify, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Check / Verify, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Check / Verify, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮ್ಮ ಶಾಲಾ ಚೀಲ ತೋರಿಸಿ ಮತ್ತು ಅದರ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "School bag",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a School bag"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ವಂಚನೆ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಒಂದು ಸುರಕ್ಷತಾ ಕ್ರಿಯೆ ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ವಂಚನೆ ಜಾಗೃತಿ ಪೋಸ್ಟರ್‌ನ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Interest Grows Your Money 📈",
+      "desc": "Simple and compound interest.",
+      "rwc": "Pencil, Eraser",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 99,
+          "nm": "Can interest beat simple savings? 📈",
+          "desc": "In this activity, students become Interest Investigators and help Jinal understand how money grows in a bank. Students learn the meaning of interest and explore the difference between Simple Interest and Compound Interest using formulas and real-life examples. By comparing how ₹1000 grows over time under both types of interest, students discover why compound interest earns more in the long run. Through calculation, comparison, and decision-making, students help Jinal choose the better option for growing her savings.",
+          "yt": "_u11xXG6kqc",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 102,
+        "nm": "Can interest grow your savings? 📈",
+        "qs": [
+          {
+            "q": "ಬ್ಯಾಂಕಿಂಗ್ ಸಂದರ್ಭದಲ್ಲಿ ಬಡ್ಡಿಯ ವ್ಯಾಖ್ಯಾನ ಏನು?",
+            "opts": {
+              "1": "ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ಖಾತೆಯಿಂದ ನೀವು ಹಿಂಪಡೆಯುವ ಹಣ",
+              "2": "ಬ್ಯಾಂಕ್ ಖಾತೆಯಲ್ಲಿ ಹಣ ಇಟ್ಟುಕೊಳ್ಳುವುದರಿಂದ ಹೆಚ್ಚುವರಿಯಾಗಿ ಗಳಿಸಿದ ಹಣ",
+              "3": "ಖಾತೆ ನಿರ್ವಹಣೆಗಾಗಿ ಬ್ಯಾಂಕ್ ವಿಧಿಸುವ ಶುಲ್ಕ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಸರಳ ಬಡ್ಡಿ ಮತ್ತು ಚಕ್ರಬಡ್ಡಿ ನಡುವಿನ ಮುಖ್ಯ ವ್ಯತ್ಯಾಸ ಏನು?",
+            "opts": {
+              "1": "ಸರಳ ಬಡ್ಡಿ ಉಳಿತಾಯ ಖಾತೆಗಳಿಗೆ ಮಾತ್ರ, ಚಕ್ರಬಡ್ಡಿ ಸ್ಥಿರ ಠೇವಣಿಗಳಿಗೆ",
+              "2": "ಚಕ್ರಬಡ್ಡಿ ಬಡ್ಡಿ ಮೇಲೆ ಬಡ್ಡಿ ಗಳಿಸುತ್ತದೆ, ಸರಳ ಬಡ್ಡಿ ಗಳಿಸುವುದಿಲ್ಲ",
+              "3": "ಸರಳ ಬಡ್ಡಿ ವಾರ್ಷಿಕವಾಗಿ ಲೆಕ್ಕ ಮಾಡಲಾಗುತ್ತದೆ, ಚಕ್ರಬಡ್ಡಿ ಮಾಸಿಕ"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ಸರಳ ಬಡ್ಡಿ ಸೂತ್ರ ಬಳಸಿ ₹1000 ಗೆ 10% ದರದಲ್ಲಿ ಒಂದು ವರ್ಷದ ಬಡ್ಡಿ ಎಷ್ಟು?",
+            "opts": { "1": "₹100", "2": "₹100", "3": "₹10" },
+            "ans": "1"
+          },
+          {
+            "q": "ಜಿನಲ್ ಮೂರು ವರ್ಷಗಳಲ್ಲಿ ತನ್ನ ಗಳಿಕೆ ಗರಿಷ್ಠಗೊಳಿಸಲು ಬಯಸುತ್ತಾಳೆ. ಉದಾಹರಣೆ ಆಧಾರದ ಮೇಲೆ ಯಾವ ಬಡ್ಡಿ ವಿಧ ಆರಿಸಬೇಕು?",
+            "opts": { "1": "ಸರಳ ಬಡ್ಡಿ", "2": "ಬಡ್ಡಿ ಇಲ್ಲ", "3": "ಚಕ್ರಬಡ್ಡಿ" },
+            "ans": "3"
+          },
+          {
+            "q": "ಜಿನಲ್ ಒಂದು ವರ್ಷದ ಅಲ್ಪಾವಧಿ ಹೂಡಿಕೆಗೆ ಸರಳ ಮತ್ತು ಚಕ್ರಬಡ್ಡಿ ನಡುವೆ ನಿರ್ಧರಿಸಬೇಕಿದ್ದರೆ ಸ್ಕ್ರಿಪ್ಟ್ ಪ್ರಕಾರ ಯಾವುದು ಹೆಚ್ಚು ಲಾಭದಾಯಕ?",
+            "opts": {
+              "1": "ಎರಡೂ ಒಂದೇ, ಒಂದು ವರ್ಷಕ್ಕೆ ಒಂದೇ ಬಡ್ಡಿ ನೀಡುತ್ತವೆ",
+              "2": "ಚಕ್ರಬಡ್ಡಿ ಏಕೆಂದರೆ ಕಾಲಾನಂತರದಲ್ಲಿ ಹೆಚ್ಚು ಸಂಗ್ರಹಗೊಳ್ಳುತ್ತದೆ",
+              "3": "ಸರಳ ಬಡ್ಡಿ ಏಕೆಂದರೆ ಲೆಕ್ಕ ಮಾಡಲು ಸುಲಭ"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Compare-Simple-and-Compound-Interest-📈-Advanced",
+          "seq": 94,
+          "nm": "Compare Simple and Compound Interest 📈",
+          "desc": "In this activity, students become Interest Investigators and help Jinal understand how money grows in a bank. Students learn the meaning of interest and explore the difference between Simple Interest and Compound Interest using formulas and real-life examples. By comparing how ₹1000 grows over time under both types of interest, students discover why compound interest earns more in the long run. Through calculation, comparison, and decision-making, students help Jinal choose the better option for growing her savings.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಆತ್ಮವಿಶ್ವಾಸ ಇದ್ದರೆ ⭐ ಕಳುಹಿಸಿ, ಗೊಂದಲವಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಒಂದು ಬಗೆಯ ಬಡ್ಡಿ ಹೆಸರಿಸಿ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types any one of the following words: Simple / Compound, then the response is valid OR If the student sends a voice note and the response includes any one of the following words: Simple / Compound, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include any of the following words: Simple / Compound, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ಬಾಟಲಿಯ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "Bottle",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Bottle"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಯಾವ ಬಗೆಯ ಬಡ್ಡಿ ಹೆಚ್ಚು ನೀಡುತ್ತದೆ ಮತ್ತು ಏಕೆ ಎಂದು ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಬಡ್ಡಿ ಲೆಕ್ಕಾಚಾರದ ಕೆಲಸದ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Bank Gives Extra Back 🏦",
+      "desc": "Simple Interest",
+      "rwc": "Pencil, Eraser",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 100,
+          "nm": "Can a bank grow money? 🏦",
+          "desc": "In this activity, students learn the concept of interest—the extra money a bank gives when they save. Through a child-friendly example comparing a piggy bank to a real bank, students understand how Simple Interest works as a fixed amount earned every year. Students then complete a fill-in-the-blank exercise and draw a picture of something they want to save for, helping them connect interest to real-life goals in a fun and creative way.",
+          "yt": "NgAlPuFnuBg",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 103,
+        "nm": "Does a piggy bank earn interest? 🐷",
+        "qs": [
+          {
+            "q": "ಪಿಗ್ಗಿ ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ₹100 ಹಾಕಿದರೆ ಏನಾಗುತ್ತದೆ?",
+            "opts": {
+              "1": "ಅದು ₹100 ರಂತೆಯೇ ಉಳಿಯುತ್ತದೆ",
+              "2": "ಅದು ₹200 ಆಗುತ್ತದೆ",
+              "3": "ಪ್ರತಿ ತಿಂಗಳು ₹10 ರಂತೆ ಬೆಳೆಯುತ್ತದೆ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ಉಳಿತಾಯ ಮಾಡಿದಾಗ ಸಿಗುವ ಹೆಚ್ಚುವರಿ ಹಣವನ್ನು ಏನೆಂದು ಕರೆಯಲಾಗುತ್ತದೆ?",
+            "opts": { "1": "ಬಡ್ಡಿ", "2": "ಬೋನಸ್", "3": "ಭತ್ತ್ಯ" },
+            "ans": "1"
+          },
+          {
+            "q": "ವರ್ಷಕ್ಕೆ ₹4 ಸರಳ ಬಡ್ಡಿಯ ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ₹100 ಉಳಿಸಿದರೆ 1 ವರ್ಷದ ನಂತರ ಎಷ್ಟು ಇರುತ್ತದೆ?",
+            "opts": { "1": "₹104", "2": "₹100", "3": "₹110" },
+            "ans": "1"
+          },
+          {
+            "q": "ಅನಾಯಾ ಬಳಿ ₹500 ಇದೆ. ಅವಳು ಅದನ್ನು ಪಿಗ್ಗಿ ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ಅಥವಾ ಬಡ್ಡಿ ಗಳಿಸುವ ಬ್ಯಾಂಕ್ ಖಾತೆಯಲ್ಲಿ ಇಡಬಹುದು. ಕಾಲಾನಂತರದಲ್ಲಿ ಹಣ ಬೆಳೆಯಬೇಕಿದ್ದರೆ ಏನು ಮಾಡಬೇಕು?",
+            "opts": {
+              "1": "ಬಡ್ಡಿ ಗಳಿಸಲು ಬ್ಯಾಂಕ್ ಖಾತೆಯಲ್ಲಿ ಉಳಿಸಿ",
+              "2": "ಪಿಗ್ಗಿ ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ಇಡಿ",
+              "3": "ಆಟಿಕೆಗಳಿಗೆ ಖರ್ಚು ಮಾಡಿ"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ರೋಹನ್ ಹೊಸ ಬೈಕ್ ಕೊಳ್ಳಲು ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ಹಣ ಉಳಿಸಿ ಬಡ್ಡಿ ಗಳಿಸಲು ಯೋಜಿಸುತ್ತಾನೆ. ಅವನ ಗೆಳೆಯ ಈಗಲೇ ಖರ್ಚು ಮಾಡಲು ಸಲಹೆ ನೀಡುತ್ತಾನೆ. ರೋಹನ್‌ಗೆ ಉತ್ತಮ ನಿರ್ಧಾರ ಯಾವುದು?",
+            "opts": {
+              "1": "ಬೇರೆ ಯಾವುದಾದರೂ ಖರ್ಚು ಮಾಡಿ",
+              "2": "ಬೈಕ್‌ಗಾಗಿ ಬಡ್ಡಿ ಗಳಿಸಲು ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ಉಳಿಸಿ",
+              "3": "ಸ್ನೇಹಿತನಿಗೆ ಹಣ ಸಾಲ ಕೊಡಿ"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Complete-the-Simple-Interest-Activity-🏦-Remedial",
+          "seq": 95,
+          "nm": "Complete the Simple Interest Activity 🏦",
+          "desc": "In this activity, students learn the concept of interest—the extra money a bank gives when they save. Through a child-friendly example comparing a piggy bank to a real bank, students understand how Simple Interest works as a fixed amount earned every year. Students then complete a fill-in-the-blank exercise and draw a picture of something they want to save for, helping them connect interest to real-life goals in a fun and creative way.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ಆತ್ಮವಿಶ್ವಾಸ ಇದ್ದರೆ ⭐ ಕಳುಹಿಸಿ, ಗೊಂದಲವಿದ್ದರೆ 👎 ಕಳುಹಿಸಿ",
+              "unguided_text": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಯಾವುದೇ emoji ಕಳುಹಿಸಿ!",
+              "valid_criteria": "⭐ or 👎",
+              "invalid_criteria": "Any emoji other than ⭐ or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ಹಣ ಉಳಿಸಿದಾಗ ಬ್ಯಾಂಕ್‌ನಿಂದ ನಿಮಗೆ ಏನು ಸಿಗುತ್ತದೆ, ನಂತರ ಒಂದು ಪದದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ",
+              "unguided_text": "ಚಟುವಟಿಕೆಯ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು? ಒಂದು ಪದದಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಪಠ್ಯ ಕಳುಹಿಸಿ",
+              "valid_criteria": "If the student types the word: Interest, then the response is valid OR If the student sends a voice note and the response includes the word: Interest, then the response is valid → Any 1 of the above criteria must be fulfilled",
+              "invalid_criteria": "If the response contains unrelated words OR If the voice note does not include the word: Interest, then the response is invalid"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ನಿಮಗೆ ಇಷ್ಟವಾದ ಯಾವುದಾದರೊಂದರ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+              "unguided_text": "ನಿಮ್ಮ ಸುತ್ತಮುತ್ತ ಯಾವುದಾದರೂ ಫೋಟೋ ತೆಗೆದು ಹಂಚಿಕೊಳ್ಳಿ!",
+              "valid_criteria": "Clear object photo",
+              "invalid_criteria": "Blur image / blank / no photo\n\nAnything other than a Clear object photo"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ವಾಯ್ಸ್ ನೋಟ್ ಕಳುಹಿಸಿ ಮತ್ತು ಬಡ್ಡಿ ಎಂದರೇನು ಎಂದು ವಿವರಿಸಿ"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ನಿಮ್ಮ ಬಡ್ಡಿ ಚಟುವಟಿಕೆಯ ಕೆಲಸದ ಸ್ಪಷ್ಟ ಫೋಟೋ ತೆಗೆದು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

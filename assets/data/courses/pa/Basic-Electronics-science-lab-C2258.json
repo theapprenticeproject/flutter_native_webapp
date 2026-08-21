@@ -1,0 +1,1142 @@
+{
+  "id": "Basic-Electronics-science-lab-C2258",
+  "nm": "Basic Electronics",
+  "lvl": "Level 3AK",
+  "vrt": "science-lab",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "LEDs Speak Emotions 💡",
+      "desc": "LED",
+      "rwc": "Diy Card, LED, Coin Cell",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 61,
+          "nm": "Can LEDs express your emotions? 💡",
+          "desc": "ਵਿਦਿਆਰਥੀ ਪੇਪਰ ਸਰਕਟ ਬਣਾ ਸਕਣਗੇ ਅਤੇ ਸਿੱਖਣਗੇ ਕਿ ਉਹ ਤਕਨਾਲੋਜੀ ਵਿੱਚ ਸਥਿਰਤਾ ਦਾ ਕਿਵੇਂ ਇਸਤੇਮਾਲ ਕਰ ਸਕਦੇ ਹਨ। ਉਹ ਬਿਜਲੀ, ਸਰਕਟਾਂ ਅਤੇ ਇਲੈਕਟ੍ਰਾਨਿਕਸ ਦੇ ਬੁਨਿਆਦੀ ਸਿਧਾਂਤਾਂ ਬਾਰੇ ਸਿੱਖਣ ਦੇ ਨਵੇਂ ਢੰਗਾਂ ਨੂੰ ਪਛਾਣਣਗੇ, ਇਸ ਤਰ੍ਹਾਂ ਗੁਣਵੱਤਾ ਵਾਲੀ ਸਿੱਖਿਆ ਦੇ ਐਸ.ਡੀ.ਜੀ 4 ਨੂੰ ਹੱਲ ਕਰਨਗੇ।",
+          "yt": "JODK7I1ji0I",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 62,
+        "nm": "Can copper light a card? 💡",
+        "qs": [
+          {
+            "q": "ਇਹ ਸਕ੍ਰਿਪਟ ਬੱਚਿਆਂ ਨੂੰ ਕੀ ਬਣਾਉਣ ਲਈ ਉਤਸ਼ਾਹਿਤ ਕਰਦਾ ਹੈ?",
+            "opts": {
+              "1": "A birthday cake",
+              "2": "A glowing LED card",
+              "3": "A digital photo album"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਐਲਈਡੀ ਕਾਰਡ ਪ੍ਰੋਜੈਕਟ ਵਿੱਚ ਤਾਂਬੇ ਵਾਲੀ ਟੇਪ ਕਿਉਂ ਵਰਤੀ ਜਾਂਦੀ ਹੈ?",
+            "opts": {
+              "1": "To add weight to the card",
+              "2": "To conduct electricity like wire",
+              "3": "To decorate the card"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਰੋਬੋਟ ਡਿਜ਼ਾਈਨ ਵਾਲੇ ਕਾਰਡ 'ਤੇ ਐਲਈਡੀ ਕਿੱਥੇ ਰੱਖਣੀ ਚਾਹੀਦੀ ਹੈ?",
+            "opts": {
+              "1": "On the robot's arm",
+              "2": "On the robot's heart",
+              "3": "On the robot's head"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਜੇ ਐਲਈਡੀ ਨਹੀਂ ਚਮਕਦੀ, ਤਾਂ ਸਭ ਤੋਂ ਪਹਿਲਾਂ ਕਿਹੜਾ ਸਮੱਸਿਆ ਹਲ ਕਰਨ ਵਾਲਾ ਕਦਮ ਲੈਣਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "Check the LED connections to the coin cell",
+              "2": "Replace the drawing sheet",
+              "3": "Change the LED color"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਤੁਸੀਂ ਕਿਵੇਂ ਯਕੀਨੀ ਬਣਾ ਸਕਦੇ ਹੋ ਕਿ ਕਾਰਡ ਦਬਾਉਣ 'ਤੇ ਐਲਈਡੀ ਚਮਕੇ?",
+            "opts": {
+              "1": "Make sure the circuit is completed by pressing the side",
+              "2": "Use a larger coin cell",
+              "3": "Use more colors on the card"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Glowing-LED-Card-💡-Basic",
+          "seq": 57,
+          "nm": "Glowing Card",
+          "desc": "ਵਿਦਿਆਰਥੀ ਪੇਪਰ ਸਰਕਟ ਬਣਾ ਸਕਣਗੇ ਅਤੇ ਸਿੱਖਣਗੇ ਕਿ ਉਹ ਤਕਨਾਲੋਜੀ ਵਿੱਚ ਸਥਿਰਤਾ ਦਾ ਕਿਵੇਂ ਇਸਤੇਮਾਲ ਕਰ ਸਕਦੇ ਹਨ। ਉਹ ਬਿਜਲੀ, ਸਰਕਟਾਂ ਅਤੇ ਇਲੈਕਟ੍ਰਾਨਿਕਸ ਦੇ ਬੁਨਿਆਦੀ ਸਿਧਾਂਤਾਂ ਬਾਰੇ ਸਿੱਖਣ ਦੇ ਨਵੇਂ ਢੰਗਾਂ ਨੂੰ ਪਛਾਣਣਗੇ, ਇਸ ਤਰ੍ਹਾਂ ਗੁਣਵੱਤਾ ਵਾਲੀ ਸਿੱਖਿਆ ਦੇ ਐਸ.ਡੀ.ਜੀ 4 ਨੂੰ ਹੱਲ ਕਰਨਗੇ।",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Glowing' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Glowing'.",
+              "invalid_criteria": "Anything other than the word 'Glowing'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "copper tape ਜਾਂ coin cell ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains copper tape or a coin cell.",
+              "invalid_criteria": "Anything other than the target objects."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: card ਕਿਵੇਂ ਜਗਦਾ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ਆਪਣੇ ਵਿਲੱਖਣ Glowing Card ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Lamp and Fan Born 🔌",
+      "desc": "DC Motors",
+      "rwc": "Breadboard, Resistor, LED, Battery, Switch, Motor",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 62,
+          "nm": "Can one circuit light and fan? 🔌",
+          "desc": "ਵਿਦਿਆਰਥੀ ਮੂਲ ਭੂਤਕ ਇਲੈਕਟ੍ਰਾਨਿਕਸ ਆਈਟਮਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਅਧਿਐਨ ਦੀ ਲੈਂਪ ਅਤੇ ਫੈਨ ਬਣਾਉਣਗੇ।",
+          "yt": "jQVrbt-No5g",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 63,
+        "nm": "Can light control a lamp? 🔦",
+        "qs": [
+          {
+            "q": "ਸਟਡੀ ਲੈਂਪ + ਫੈਨ ਪ੍ਰੋਜੈਕਟ ਵਿੱਚ ਰੌਸ਼ਨੀ ਦੇਣ ਲਈ ਕਿਹੜਾ ਕਮਪੋਨੈਂਟ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+            "opts": { "1": "LED", "2": "Fluorescent tube", "3": "Incandescent bulb" },
+            "ans": "1"
+          },
+          {
+            "q": "ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਵਰਣਿਤ ਪ੍ਰੋਜੈਕਟ ਵਿੱਚ ਡੀਸੀ ਮੋਟਰ ਦਾ ਮੁੱਖ ਉਦੇਸ਼ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To generate electricity",
+              "2": "To turn the fan blade",
+              "3": "To power the LED"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਰਿਸਿਸਟਰ ਨੂੰ ਸਰਕਿਟ ਵਿੱਚ ਕਿਵੇਂ ਜੋੜਿਆ ਜਾਂਦਾ ਹੈ?",
+            "opts": {
+              "1": "Between the motor and the battery",
+              "2": "Between the switch and the battery",
+              "3": "Between the positive leg of the LED and the positive terminal of the battery"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇ ਐਲਈਡੀ ਨਹੀਂ ਜਲ ਰਹੀ, ਤਾਂ ਹੱਲ ਕਰਨ ਲਈ ਸੰਭਾਵਿਤ ਸਮੱਸਿਆ ਕੀ ਹੋ ਸਕਦੀ ਹੈ?",
+            "opts": {
+              "1": "The switch is turned on",
+              "2": "The fan blade is attached to the motor",
+              "3": "The resistor might not be properly connected"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇਕਰ ਫੈਨ ਚੱਲ ਰਿਹਾ ਹੈ ਪਰ ਰੌਸ਼ਨੀ ਨਹੀਂ ਜਲ ਰਹੀ, ਤਾਂ ਜਾਂਚ ਕਰਨ ਲਈ ਸੰਭਾਵਿਤ ਸਮੱਸਿਆ ਕੀ ਹੋ ਸਕਦੀ ਹੈ?",
+            "opts": {
+              "1": "The fan blade might be loose",
+              "2": "The switch might be off",
+              "3": "The LED might be faulty or not connected properly"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Study-Lamp-and-Fan-🔌-Remedial",
+          "seq": 58,
+          "nm": "Study Lamp+Fan",
+          "desc": "ਵਿਦਿਆਰਥੀ ਮੂਲ ਭੂਤਕ ਇਲੈਕਟ੍ਰਾਨਿਕਸ ਆਈਟਮਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਅਧਿਐਨ ਦੀ ਲੈਂਪ ਅਤੇ ਫੈਨ ਬਣਾਉਣਗੇ।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Student' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Student'.",
+              "invalid_criteria": "Anything other than the word 'Student'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਸਾਡੇ ਨਾਲ DC motor ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a DC motor.",
+              "invalid_criteria": "Anything other than a motor."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: ਕੀ fan ਅਤੇ light ਇੱਕੱਠੇ ਕੰਮ ਕਰ ਸਕਦੇ ਹਨ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Lamp + Fan setup ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Darkness Triggers Light 🌑",
+      "desc": "LDR",
+      "rwc": "Ldr, Transistor, LED, Resistors, Wires, Battery",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 63,
+          "nm": "Can darkness flip a switch? 🌑",
+          "desc": "ਵਿਦਿਆਰਥੀ ਲਾਈਟ ਸੈਂਸਰ ਅਤੇ ਬੁਨਿਆਦੀ ਇਲੈਕਟ੍ਰਾਨਿਕਸ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਆਟੋਮੈਟਿਕ ਸਟ੍ਰੀਟਲਾਈਟ ਸਿਸਟਮ ਤਿਆਰ ਕਰਨਗੇ। ਇਸ ਹੈਂਡਜ਼-ਆਨ ਪ੍ਰੋਜੈਕਟ ਰਾਹੀਂ, ਉਹ ਅਨੁਸੰਦਾਨ ਕਰਨਗੇ ਕਿ ਕਿਵੇਂ ਸਮਾਰਟ ਇਨਫਰਾਸਟ੍ਰਕਚਰ ਊਰਜਾ ਦੀ ਬਰਬਾਦੀ ਨੂੰ ਘਟਾ ਸਕਦਾ ਹੈ ਅਤੇ ਸ਼ਹਿਰੀ ਜੀਵਨ ਨੂੰ ਸੁਧਾਰ ਸਕਦਾ ਹੈ। ਇਸ ਨਾਲ ਉਹ ਸਮਝਣਗੇ ਕਿ ਸੈਂਸਰ ਆਧਾਰਿਤ ਆਟੋਮੇਸ਼ਨ ਦਾ ਸਥਿਰਤਾ 'ਤੇ ਕੀ ਅਸਰ ਹੁੰਦਾ ਹੈ, ਜੋ ਐਸਡੀਜੀ 7 (ਸਸਤੇ ਅਤੇ ਸਾਫ ਸੂਤਰੇ ਊਰਜਾ) ਅਤੇ ਐਸਡੀਜੀ 11 (ਸਥਿਰ ਸ਼ਹਿਰ ਅਤੇ ਸਮੁਦਾਇ) ਨੂੰ ਸਮਰਥਨ ਦਿੰਦਾ ਹੈ।",
+          "yt": "9e-tt0PWDiU",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 64,
+        "nm": "Can darkness switch lights on? 🌃",
+        "qs": [
+          {
+            "q": "ਸਮਾਰਟ ਸਟਰੀਟ ਲਾਈਟ ਸਿਸਟਮ ਵਿੱਚ ਰੌਸ਼ਨੀ ਦੇ ਪੱਧਰਾਂ ਨੂੰ ਪਤਾ ਕਰਨ ਲਈ ਕਿਹੜਾ ਹਿੱਸਾ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+            "opts": { "1": "LED", "2": "Transistor", "3": "LDR" },
+            "ans": "3"
+          },
+          {
+            "q": "ਦਿਨ ਦੇ ਸਮੇਂ ਦੌਰਾਨ ਸਟਰੀਟ ਲਾਈਟਾਂ ਦੇ ਆਟੋਮੈਟਿਕ ਤੌਰ 'ਤੇ ਬੰਦ ਹੋਣ ਨਾਲ ਕੀ ਫਾਇਦਾ ਹੈ?",
+            "opts": {
+              "1": "It makes the street lights last longer",
+              "2": "It prevents the lights from overheating",
+              "3": "It conserves electricity and prevents waste"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਜਦੋਂ ਐਲ.ਡੀ.ਆਰ. 'ਤੇ ਰੌਸ਼ਨੀ ਘੱਟ ਹੁੰਦੀ ਹੈ ਤਾਂ ਐਲ.ਈ.ਡੀ. ਦੇ ਨਾਲ ਕੀ ਹੁੰਦਾ ਹੈ?",
+            "opts": { "1": "The LED turns ON", "2": "The LED turns OFF", "3": "The LED blinks" },
+            "ans": "1"
+          },
+          {
+            "q": "ਜੇਕਰ ਕਿਸੇ ਸ਼ਹਿਰ ਦੀਆਂ ਸਟਰੀਟ ਲਾਈਟਾਂ ਰਾਤ ਨੂੰ ਆਟੋਮੈਟਿਕ ਤੌਰ 'ਤੇ ਚਾਲੂ ਨਹੀਂ ਹੁੰਦੀਆਂ, ਤਾਂ ਸਭ ਤੋਂ ਪਹਿਲਾਂ ਕਿਸ ਹਿੱਸੇ ਦੀ ਜਾਂਚ ਕੀਤੀ ਜਾਣੀ ਚਾਹੀਦੀ ਹੈ?",
+            "opts": { "1": "Battery", "2": "LDR", "3": "Wires" },
+            "ans": "2"
+          },
+          {
+            "q": "ਇੱਕ ਵਿਦਿਆਰਥੀ ਸਰਕਟ ਬਣਾ ਰਿਹਾ ਹੈ ਅਤੇ ਨੋਟ ਕਰਦਾ ਹੈ ਕਿ ਐਲ.ਈ.ਡੀ. ਰਾਤ ਨੂੰ ਚਾਲੂ ਨਹੀਂ ਹੁੰਦੀ। ਇਸ ਦਾ ਸੰਭਾਵਿਤ ਕਾਰਨ ਕੀ ਹੋ ਸਕਦਾ ਹੈ?",
+            "opts": {
+              "1": "The battery is overcharged",
+              "2": "The LED is connected to the wrong terminal of the battery",
+              "3": "The LDR is not properly connected to the base of the transistor"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-Automatic-Street-Lights-🌑-Basic",
+          "seq": 59,
+          "nm": "Automatic Street Lights",
+          "desc": "ਵਿਦਿਆਰਥੀ ਲਾਈਟ ਸੈਂਸਰ ਅਤੇ ਬੁਨਿਆਦੀ ਇਲੈਕਟ੍ਰਾਨਿਕਸ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਆਟੋਮੈਟਿਕ ਸਟ੍ਰੀਟਲਾਈਟ ਸਿਸਟਮ ਤਿਆਰ ਕਰਨਗੇ। ਇਸ ਹੈਂਡਜ਼-ਆਨ ਪ੍ਰੋਜੈਕਟ ਰਾਹੀਂ, ਉਹ ਅਨੁਸੰਦਾਨ ਕਰਨਗੇ ਕਿ ਕਿਵੇਂ ਸਮਾਰਟ ਇਨਫਰਾਸਟ੍ਰਕਚਰ ਊਰਜਾ ਦੀ ਬਰਬਾਦੀ ਨੂੰ ਘਟਾ ਸਕਦਾ ਹੈ ਅਤੇ ਸ਼ਹਿਰੀ ਜੀਵਨ ਨੂੰ ਸੁਧਾਰ ਸਕਦਾ ਹੈ। ਇਸ ਨਾਲ ਉਹ ਸਮਝਣਗੇ ਕਿ ਸੈਂਸਰ ਆਧਾਰਿਤ ਆਟੋਮੇਸ਼ਨ ਦਾ ਸਥਿਰਤਾ 'ਤੇ ਕੀ ਅਸਰ ਹੁੰਦਾ ਹੈ, ਜੋ ਐਸਡੀਜੀ 7 (ਸਸਤੇ ਅਤੇ ਸਾਫ ਸੂਤਰੇ ਊਰਜਾ) ਅਤੇ ਐਸਡੀਜੀ 11 (ਸਥਿਰ ਸ਼ਹਿਰ ਅਤੇ ਸਮੁਦਾਇ) ਨੂੰ ਸਮਰਥਨ ਦਿੰਦਾ ਹੈ।",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Light' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Light'.",
+              "invalid_criteria": "Anything other than the word 'Light'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਸਾਡੇ ਨਾਲ LDR ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains an LDR (Light Dependent Resistor).",
+              "invalid_criteria": "Anything other than an LDR."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: LED ਕਦੋਂ ਜਗਦੀ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ਹਨੇਰੇ ਵਿੱਚ circuit ਕੰਮ ਕਰਦੇ ਹੋਏ ਦਾ video ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Buttons Control Traffic 🚦",
+      "desc": "Parallel Circuits",
+      "rwc": "Motor, Wire, Battery, Switch, Tape, Glue, Cardboard, Scale, Pencil, Scissors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 64,
+          "nm": "Can buttons control traffic lights? 🚦",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਟ੍ਰੈਫਿਕ ਲਾਈਟ ਸਰਕਿਟ ਬਣਾਉਣਗੇ। ਇਸ ਸਰਕਿਟ ਵਿੱਚ ਤਿੰਨ ਐਲਈਡੀ ਲਾਈਟਾਂ ਹੋਣਗੀਆਂ: ਲਾਲ, ਪੀਲੀ ਅਤੇ ਹਰੀ। ਉਹ ਤਿੰਨ ਪੁਸ਼ ਬਟਨਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਵੱਖ-ਵੱਖ ਐਲਈਡੀ ਨੂੰ ਆਨ ਅਤੇ ਆਫ ਕਰਨਗੇ।",
+          "yt": "G5y0E6o-iv0",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 65,
+        "nm": "Can a button control traffic? 🚦",
+        "qs": [
+          {
+            "q": "ਮੈਨੁਅਲ ਟ੍ਰੈਫਿਕ ਸਿਸਟਮ ਵਿੱਚ ਵਰਤੇ ਜਾਣ ਵਾਲੇ ਐਲਈਡੀਜ਼ ਦੇ ਰੰਗ ਕੀ ਹਨ?",
+            "opts": {
+              "1": "Red, Blue, Green",
+              "2": "Red, Yellow, Green",
+              "3": "Blue, Yellow, Green"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਜਦੋਂ ਤੁਸੀਂ ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਵਰਣਨ ਕੀਤੇ ਸਰਕਿਟ ਵਿੱਚ ਬਟਨ ਦਬਾਉਂਦੇ ਹੋ ਤਾਂ ਕੀ ਹੁੰਦਾ ਹੈ?",
+            "opts": {
+              "1": "The corresponding LED turns on",
+              "2": "All LEDs turn on",
+              "3": "The circuit disconnects"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਸਰਕਿਟ ਵਿੱਚ ਕਰੰਟ ਸਪਲਾਈ ਨੂੰ ਸੀਮਿਤ ਕਰਨ ਲਈ ਕਿਹੜਾ ਕੰਪੋਨੈਂਟ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+            "opts": { "1": "Transistor", "2": "Resistor", "3": "Capacitor" },
+            "ans": "2"
+          },
+          {
+            "q": "ਜੇਕਰ ਲਾਲ ਐਲਈਡੀ ਨਹੀਂ ਜਲ ਰਹੀ, ਤਾਂ ਤੁਹਾਡੇ ਸਰਕਿਟ ਵਿੱਚ ਸਮਭਾਵਿਤ ਸਮੱਸਿਆ ਕੀ ਹੋ ਸਕਦੀ ਹੈ?",
+            "opts": {
+              "1": "The resistor is connected to the yellow LED",
+              "2": "The positive terminal of the battery is not connected to the power rail",
+              "3": "The negative terminal of the red LED is not connected to the push button"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇ ਤੁਸੀਂ ਚਾਹੁੰਦੇ ਹੋ ਕਿ ਹਰੀ ਐਲਈਡੀ ਉਸਦਾ ਬਟਨ ਛੱਡਣ ਤੋਂ ਬਾਅਦ ਵੀ ਜਲਦੀ ਰਹੇ, ਤਾਂ ਤੁਸੀਂ ਸੈਟਅੱਪ ਵਿੱਚ ਕਿਵੇਂ ਸੋਧ ਕਰ ਸਕਦੇ ਹੋ?",
+            "opts": {
+              "1": "Connect a second push button in parallel with the green LED",
+              "2": "Add a latch circuit to the green LED",
+              "3": "Remove the resistor from the circuit"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Manual-Traffic-Simulator-🚦-Remedial",
+          "seq": 60,
+          "nm": "Traffic simulator",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਟ੍ਰੈਫਿਕ ਲਾਈਟ ਸਰਕਿਟ ਬਣਾਉਣਗੇ। ਇਸ ਸਰਕਿਟ ਵਿੱਚ ਤਿੰਨ ਐਲਈਡੀ ਲਾਈਟਾਂ ਹੋਣਗੀਆਂ: ਲਾਲ, ਪੀਲੀ ਅਤੇ ਹਰੀ। ਉਹ ਤਿੰਨ ਪੁਸ਼ ਬਟਨਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਵੱਖ-ਵੱਖ ਐਲਈਡੀ ਨੂੰ ਆਨ ਅਤੇ ਆਫ ਕਰਨਗੇ।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Traffic' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Traffic'.",
+              "invalid_criteria": "Anything other than the word 'Traffic'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "push button ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a push button switch.",
+              "invalid_criteria": "Anything other than a push button."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: ਤੁਸੀਂ ਕਿੰਨੇ LEDs ਵਰਤੇ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "simulator ਕੰਮ ਕਰਦੇ ਹੋਏ ਦਾ video ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Plants Get Their Light 🌿",
+      "desc": "LDR",
+      "rwc": "Ldr, Transistor, LED, Resistors, Wires, Battery",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 65,
+          "nm": "Can a plant get auto-light? 🌿",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਆਟੋਮੈਟਿਕ ਐਲਈਡੀ ਸਿਸਟਮ ਤਿਆਰ ਕਰਨਗੇ ਜੋ ਸੂਰਜ ਦੀ ਰੌਸ਼ਨੀ ਘਟਣ 'ਤੇ ਪੌਦਿਆਂ ਦੇ ਗਮਲੇ ਜਗਮਗ ਕਰੇਗਾ।",
+          "yt": "4ZdzWrspEsw",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 66,
+        "nm": "Can darkness trigger a light? 🌙",
+        "qs": [
+          {
+            "q": "ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਦਰਸਾਏ ਗਏ ਸਮਾਰਟ ਸਿਸਟਮ ਨੂੰ ਬਣਾਉਣ ਲਈ ਕਿਹੜੇ ਭਾਗਾਂ ਦੀ ਲੋੜ ਹੈ?",
+            "opts": {
+              "1": "Capacitors, diodes, resistors, and a solar panel.",
+              "2": "LDR, transistor, LED, resistors, wires, and a battery.",
+              "3": "Microcontroller, sensors, and a display."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਜਦੋਂ ਰੌਸ਼ਨੀ ਘਟਦੀ ਹੈ ਤਾਂ ਐਲਡੀਆਰ ਦੀ ਰੇਜ਼ਿਸਟੈਂਸ ਨਾਲ ਕੀ ਹੁੰਦਾ ਹੈ?",
+            "opts": {
+              "1": "The resistance increases.",
+              "2": "The resistance decreases.",
+              "3": "The resistance remains the same."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਸਮਾਰਟ ਸਿਸਟਮ ਵਿੱਚ ਐਲਈਡੀ ਕਿਵੇਂ ਜੋੜੀ ਜਾਂਦੀ ਹੈ?",
+            "opts": {
+              "1": "The anode to the collector of the transistor and the cathode to the positive terminal of the battery.",
+              "2": "The anode to the negative terminal of the battery and the cathode to the collector of the transistor.",
+              "3": "The anode to the positive terminal of the battery and the cathode to the collector of the transistor."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇ ਤੁਸੀਂ ਇਸ ਸਿਸਟਮ ਨੂੰ ਬਗੀਚੇ ਵਿੱਚ ਰਾਤ ਨੂੰ ਲਾਈਟਾਂ ਆਟੋਮੈਟਿਕ ਚਾਲੂ ਕਰਨ ਲਈ ਲਗਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਰੌਸ਼ਨੀ ਵਿੱਚ ਬਦਲਾਅ ਨੂੰ ਪਛਾਣਣ ਲਈ ਕਿਹੜਾ ਭਾਗ ਜ਼ਰੂਰੀ ਹੈ?",
+            "opts": { "1": "LDR (Light Dependent Resistor).", "2": "Battery.", "3": "Transistor." },
+            "ans": "1"
+          },
+          {
+            "q": "ਸਮਾਰਟ ਘਰ ਸੈਟਅਪ ਵਿੱਚ ਊਰਜਾ ਬਚਤ ਯਕੀਨੀ ਬਣਾਉਣ ਲਈ, ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਸਿਸਟਮ ਘਰੇਲੂ ਲਾਈਟਿੰਗ ਨਾਲ ਕਿਹੜਾ ਕੰਮ ਕਰਦਾ ਹੈ?",
+            "opts": {
+              "1": "It requires manual operation to turn lights on and off.",
+              "2": "It keeps lights on constantly regardless of ambient light conditions.",
+              "3": "It automatically turns lights on when it's dark and off when there's enough light."
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-an-Automatic-Plant-Light-🌿-Intermediate",
+          "seq": 61,
+          "nm": "Automatic Plant Light",
+          "desc": "ਵਿਦਿਆਰਥੀ ਇੱਕ ਆਟੋਮੈਟਿਕ ਐਲਈਡੀ ਸਿਸਟਮ ਤਿਆਰ ਕਰਨਗੇ ਜੋ ਸੂਰਜ ਦੀ ਰੌਸ਼ਨੀ ਘਟਣ 'ਤੇ ਪੌਦਿਆਂ ਦੇ ਗਮਲੇ ਜਗਮਗ ਕਰੇਗਾ।",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Plant' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Plant'.",
+              "invalid_criteria": "Anything other than the word 'Plant'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਸਾਡੇ ਨਾਲ transistor ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a transistor.",
+              "invalid_criteria": "Anything other than a transistor."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: ਕਿਹੜਾ component ਰੋਸ਼ਨੀ ਪਛਾਣਦਾ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ਆਪਣੇ Plant Light circuit ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Motor Lifts the Weight 🏗️",
+      "desc": "Mechanical Advantage, Pulley System Efficiency, Rotational Force, Torque, Data Analysis, Design Refinement",
+      "rwc": "Tape, Battery, Switch, Motor, A Small Object",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 66,
+          "nm": "Can a motor lift objects? 🏗️",
+          "desc": "ਵਿਦਿਆਰਥੀ ਮੋਟਰਾਈਜ਼ਡ ਪੁਲੀ ਚੈਲੈਂਜ ਤੋਂ ਅੰਤਿਮ ਨਿਰਮਾਣ ਅਤੇ ਪ੍ਰਦਰਸ਼ਨ ਡਾਟਾ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਦੇ ਹਨ। ਉਹ ਸਿਸਟਮ ਦੀ ਕੁਸ਼ਲਤਾ ਦਾ ਮੁਲਾਂਕਣ ਕਰਦੇ ਹਨ, ਪੁਲੀ ਦੁਆਰਾ ਪ੍ਰਾਪਤ ਮਕੈਨਿਕਲ ਲਾਭ ਦਾ ਅਨੁਮਾਨ ਲਗਾਉਂਦੇ ਹਨ, ਅਤੇ ਮੋਟਰ ਦੀ ਸਿਧਾਂਤਕ ਬਨਾਮ ਅਸਲ ਉਠਾਉਣ ਸਮਰੱਥਾ ਦੀ ਗਿਣਤੀ ਕਰਦੇ ਹਨ। ਉਹ ਇੱਕ ਅੰਤਿਮ ਡਿਜ਼ਾਈਨ ਸੁਧਾਰ ਦਾ ਸੁਝਾਅ ਅਤੇ ਜਸਟਿਫਾਈ ਕਰਨਗੇ।",
+          "yt": "rNFBw1xM-Vs",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 67,
+        "nm": "Can a motor lift things up? 🏋️",
+        "qs": [
+          {
+            "q": "ਪੁਲੀ ਸਿਸਟਮ ਵਿੱਚ ਮੋਟਰ ਕਿਹੜੀ ਕਿਸਮ ਦੀ ਚਲਹਿ ਕਰਦਾ ਹੈ?",
+            "opts": { "1": "Linear motion", "2": "Rotational motion", "3": "Oscillatory motion" },
+            "ans": "2"
+          },
+          {
+            "q": "ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਵਰਨਿਤ ਪੁਲੀ ਸਿਸਟਮ ਵਿੱਚ ਮੋਟਰ ਦਾ ਮੁੱਖ ਕਾਰਜ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To convert electrical energy into rotational motion",
+              "2": "To provide support for the pulley",
+              "3": "To store electrical energy"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਕਿਹੜਾ ਹਿੱਸਾ ਮੋਟਰ ਅਤੇ ਬੈਟਰੀ ਦੋਨੋ ਨਾਲ ਜੋੜਨਾ ਚਾਹੀਦਾ ਹੈ ਤਾਂ ਜੋ ਪੁਲੀ ਸਿਸਟਮ ਨੂੰ ਕੰਟਰੋਲ ਕੀਤਾ ਜਾ ਸਕੇ?",
+            "opts": { "1": "Pulley wheel", "2": "Switch", "3": "Rubber bands" },
+            "ans": "2"
+          },
+          {
+            "q": "ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਘਰ ਵਿੱਚ ਸਿਰਫ ਇੱਕ ਪੈਂਸਲ ਅਤੇ ਬੋਤਲ ਹੈ, ਤਾਂ ਪੁਲੀ ਸਿਸਟਮ ਬਣਾਉਣ ਵਿੱਚ ਉਨ੍ਹਾਂ ਦਾ ਸੰਭਾਵਿਤ ਵਰਤੋਂ ਕੀ ਹੋ ਸਕਦੀ ਹੈ?",
+            "opts": {
+              "1": "To replace the battery",
+              "2": "To act as columns for support",
+              "3": "To connect the wires"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਜਦੋਂ ਵਸਤੂਆਂ ਨੂੰ ਉਠਾਉਣ ਦਾ ਮੋਟਰਾਈਜ਼ਡ ਪੁਲੀ ਕਿਹੜੀ ਸਮਸਿਆ ਦਾ ਹੱਲ ਕਰਦਾ ਹੈ?",
+            "opts": {
+              "1": "It simplifies lifting by using electrical energy",
+              "2": "It requires multiple people to operate",
+              "3": "It uses manual effort to lift objects"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Motorised-Pulley-System-🏗️-Remedial",
+          "seq": 62,
+          "nm": "Motorised pulley",
+          "desc": "ਵਿਦਿਆਰਥੀ ਮੋਟਰਾਈਜ਼ਡ ਪੁਲੀ ਚੈਲੈਂਜ ਤੋਂ ਅੰਤਿਮ ਨਿਰਮਾਣ ਅਤੇ ਪ੍ਰਦਰਸ਼ਨ ਡਾਟਾ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਦੇ ਹਨ। ਉਹ ਪ੍ਰਣਾਲੀ ਦੀ ਕੁਸ਼ਲਤਾ ਦਾ ਮੁਲਾਂਕਣ ਕਰਦੇ ਹਨ, ਪੁਲੀ ਦੁਆਰਾ ਪ੍ਰਾਪਤ ਮਕੈਨੀਕਲ ਫਾਇਦੇ ਦਾ ਅਨੁਮਾਨ ਲਗਾਉਂਦੇ ਹਨ, ਅਤੇ ਮੋਟਰ ਦੀ ਸਿਧਾਂਤਕ ਅਤੇ ਅਸਲ ਉਠਾਉਣ ਸਮਰੱਥਾ ਦੀ ਗਣਨਾ ਕਰਦੇ ਹਨ। ਉਹ ਇੱਕ ਅੰਤਿਮ ਡਿਜ਼ਾਈਨ ਸੁਧਾਰ ਦਾ ਪ੍ਰਸਤਾਵ ਅਤੇ ਨਿਆਂ ਕਰਨਗੇ।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Motor' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Motor'.",
+              "invalid_criteria": "Anything other than the word 'Motor'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "pulley wheel ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a pulley wheel or similar round object.",
+              "invalid_criteria": "Anything other than a pulley part."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: ਕੀ ਤੁਹਾਡੇ connections ਸੁਰੱਖਿਅਤ ਹਨ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "pulley ਭਾਰ ਚੁੱਕਦੇ ਹੋਏ ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Coin Cell Glows Small 🔋",
+      "desc": "Coin Cell Power Source, Low-Voltage Circuitry, Power Source Comparison, Miniaturization, Safe Current Limiting",
+      "rwc": "Resistor, LED, Wire, Battery, Tape, Cardboard",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 67,
+          "nm": "Can one cell light badges? 🔋",
+          "desc": "ਵਿਦਿਆਰਥੀ 470 ਓਮ (ਜੋ ਸੁਰੱਖਿਅਤ ਹੈ ਅਤੇ ਲੰਬੀ ਉਮਰ ਦੇ ਲਈ ਹੈ) ਦੀ ਵਰਤੋਂ ਕਰਕੇ 3 ਵੀ ਕੌਇਨ ਸੈੱਲ ਤੋਂ ਇੱਕ ਐਲਈਡੀ ਚਲਾਉਣਗੇ। ਇਕ ਛੋਟਾ \"ਬੈਜ\" ਬਣਾਓ: ਕੌਇਨ ਸੈੱਲ ਨੂੰ ਪਿੱਛੇ ਵਾਲੇ ਹਿੱਸੇ 'ਤੇ ਟੇਪ ਕਰੋ, ਤਾਰਾਂ ਨੂੰ ਐਲਈਡੀ ਦੇ ਪੈਰਾਂ ਨਾਲ ਜੋੜੋ। 9 ਵੀ ਵਰਜਨ ਦੇ ਮੁਕਾਬਲੇ ਚਮਕ ਦੀ ਤੁਲਨਾ ਕਰੋ।",
+          "yt": "8gnTt1b6zQs",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 68,
+        "nm": "Can a badge actually glow? ✨",
+        "qs": [
+          {
+            "q": "ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਮਿਨੀ LED ਬੈਜ ਨੂੰ ਚਲਾਉਣ ਲਈ ਕੀ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+            "opts": { "1": "A 5V USB charger", "2": "A 3V coin cell", "3": "A 12V car battery" },
+            "ans": "2"
+          },
+          {
+            "q": "9V ਬੈਟਰੀ ਨਾਲ ਜੁੜਿਆ LED 3V ਕੋਇਨ ਸੈੱਲ ਨਾਲ ਜੁੜੇ LED ਨਾਲੋਂ ਚਮਕਦਾਰ ਕਿਉਂ ਲੱਗਦਾ ਹੈ?",
+            "opts": {
+              "1": "Because the LED is larger",
+              "2": "Because higher voltage results in more brightness",
+              "3": "Because the LED is of a different color"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "LED ਬੈਜ ਪ੍ਰੋਜੈਕਟ ਵਿੱਚ ਇਲੈਕਟ੍ਰਿਕਲ ਟੇਪ ਦੇ ਪ੍ਰਯੋਗ ਦਾ ਕੀ ਉਦੇਸ਼ ਹੈ?",
+            "opts": {
+              "1": "To change the color of the LED",
+              "2": "To secure the connections",
+              "3": "To decorate the badge"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਜੇਕਰ ਇੱਕ ਵਿਦਿਆਰਥੀ ਚਾਹੁੰਦਾ ਹੈ ਕਿ ਬੈਟਰੀ ਤੇ ਲੰਮੇ ਸਮੇਂ ਤੱਕ ਚੱਲਣ ਵਾਲਾ ਬੈਜ ਬਣਾਇਆ ਜਾਵੇ, ਤਾਂ ਕਿਹੜਾ ਕੰਪੋਨੇਟ ਉਹ ਮੁੜ ਵਿਚਾਰੇ?",
+            "opts": {
+              "1": "The type of battery used",
+              "2": "The type of LED used",
+              "3": "The shape of the cardboard"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਇੱਕ ਵਿਦਿਆਰਥੀ ਨੋਟ ਕਰਦਾ ਹੈ ਕਿ ਉਨ੍ਹਾਂ ਦਾ LED ਬੈਜ ਚਲ ਨਹੀਂ ਰਿਹਾ। ਸਕ੍ਰਿਪਟ ਦੇ ਅਧਾਰ 'ਤੇ ਉਹ ਪਹਿਲਾਂ ਕੀ ਚੈੱਕ ਕਰਨ?",
+            "opts": {
+              "1": "If the cardboard shape is correct",
+              "2": "If the LED is colorful enough",
+              "3": "If the connections are secure and not loose"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Coin-Cell-Gadget-🔋-Intermediate",
+          "seq": 63,
+          "nm": "Coin cell gadget",
+          "desc": "ਵਿਦਿਆਰਥੀ 470 ਓਮ (ਜੋ ਸੁਰੱਖਿਅਤ ਹੈ ਅਤੇ ਲੰਬੀ ਉਮਰ ਦੇ ਲਈ ਹੈ) ਦੀ ਵਰਤੋਂ ਕਰਕੇ 3 ਵੀ ਕੌਇਨ ਸੈੱਲ ਤੋਂ ਇੱਕ ਐਲਈਡੀ ਚਲਾਉਣਗੇ। ਇਕ ਛੋਟਾ \"ਬੈਜ\" ਬਣਾਓ: ਕੌਇਨ ਸੈੱਲ ਨੂੰ ਪਿੱਛੇ ਵਾਲੇ ਹਿੱਸੇ 'ਤੇ ਟੇਪ ਕਰੋ, ਤਾਰਾਂ ਨੂੰ ਐਲਈਡੀ ਦੇ ਪੈਰਾਂ ਨਾਲ ਜੋੜੋ। 9 ਵੀ ਵਰਜਨ ਦੇ ਮੁਕਾਬਲੇ ਚਮਕ ਦੀ ਤੁਲਨਾ ਕਰੋ।",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Gadget' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Gadget'.",
+              "invalid_criteria": "Anything other than the word 'Gadget'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "coin cell battery ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a 3V coin cell battery.",
+              "invalid_criteria": "Anything other than a coin cell."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: ਤੁਹਾਡੇ gadget ਦਾ design ਕੀ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ਆਪਣੇ ਵਿਲੱਖਣ Gadget ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Tank Signals Its Full 💧",
+      "desc": "Touch Sensor",
+      "rwc": "Breadboard, Resistor, LED, Battery, Transistor, Cardboard",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 68,
+          "nm": "Can a finger sense water? 💧",
+          "desc": "ਟਚ (ਗਿੱਲੀ ਉਂਗਲ) ਅਤੇ ਐਲਈਡੀਜ਼ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਪਾਣੀ ਦੇ ਪੱਧਰ ਸੈਂਸਰ ਦਾ ਨਕਲ ਬਣਾਓ, ਤਾਂ ਜੋ ਦਿਖਾਇਆ ਜਾ ਸਕੇ ਕਿ \"ਟੈਂਕ\" ਕਦੋਂ ਭਰਿਆ ਹੋਇਆ ਹੈ।",
+          "yt": "CpOj_wVF8Eo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 69,
+        "nm": "Is your water tank full? 💧",
+        "qs": [
+          {
+            "q": "ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਚਰਚਿਤ ਪਾਣੀ ਦੇ ਪੱਧਰ ਦੇ ਡਿਟੈਕਟਰ ਦਾ ਮੁੱਖ ਮਕਸਦ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To improve the taste of water",
+              "2": "To prevent water tank overflow",
+              "3": "To increase the water temperature"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਸਕ੍ਰਿਪਟ ਦੇ ਅਨੁਸਾਰ ਪਾਣੀ ਦੇ ਪੱਧਰ ਦੇ ਡਿਟੈਕਟਰ ਬਣਾਉਣਾ ਕਿਉਂ ਜਰੂਰੀ ਹੈ?",
+            "opts": {
+              "1": "It accelerates water flow in pipes",
+              "2": "It helps in conserving water and reducing human error",
+              "3": "It makes water colder"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਐਕਟਿਵਿਟੀ ਵਿੱਚ ਪਾਣੀ ਨਾਲ ਸੰਪਰਕ ਦਾ ਅਨੁਕਰਣ ਕਰਨ ਲਈ ਕਿਹੜਾ ਘਟਕਾ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+            "opts": { "1": "A wet finger", "2": "A piece of cloth", "3": "A pencil" },
+            "ans": "1"
+          },
+          {
+            "q": "ਜੇ ਤੁਸੀਂ ਵੇਖਦੇ ਹੋ ਕਿ ਟੈਂਕ ਪੂਰਾ ਹੋਣ ਤੇ ਐਲਈਡੀ ਚਮਕ ਨਹੀਂ ਰਹੀ, ਤਾਂ ਸੈਟਅੱਪ ਹਦਾਇਤਾਂ ਅਨੁਸਾਰ ਤੁਹਾਨੂੰ ਪਹਿਲਾਂ ਕੀ ਚੈੱਕ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "Replace the LED with a new one",
+              "2": "Increase the battery voltage",
+              "3": "Ensure all connections are secure and correct"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਮੰਨ ਲਵੋ ਕਿ ਮੋਟਰ ਵਸਤੂ ਨੂੰ ਉਸ ਤਰ੍ਹਾਂ ਨਹੀਂ ਚੁੱਕ ਰਿਹਾ ਜਿਵੇਂ ਉਮੀਦ ਸੀ। ਸੰਭਾਵਿਤ ਹੱਲ ਕੀ ਹੋ ਸਕਦਾ ਹੈ?",
+            "opts": {
+              "1": "Remove the battery and use direct current from a power outlet",
+              "2": "Use a heavier object",
+              "3": "Check if the thread is properly attached to the pulley"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Water-Level-Indicator-💧-Remedial",
+          "seq": 64,
+          "nm": "Water Level Indicator",
+          "desc": "ਟਚ (ਗਿੱਲੀ ਉਂਗਲ) ਅਤੇ ਐਲਈਡੀਜ਼ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਪਾਣੀ ਦੇ ਪੱਧਰ ਸੈਂਸਰ ਦਾ ਨਕਲ ਬਣਾਓ, ਤਾਂ ਜੋ ਦਿਖਾਇਆ ਜਾ ਸਕੇ ਕਿ \"ਟੈਂਕ\" ਕਦੋਂ ਭਰਿਆ ਹੋਇਆ ਹੈ।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Indicator' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Indicator'.",
+              "invalid_criteria": "Anything other than the word 'Indicator'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "ਸਾਡੇ ਨਾਲ ਲੋਹੇ ਦੀ ਕਿੱਲ ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a large iron nail.",
+              "invalid_criteria": "Anything other than an iron nail."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: ਕਿੱਲ magnetic ਕਿਵੇਂ ਬਣਦੀ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "electromagnet ਕੰਮ ਕਰਦੇ ਹੋਏ ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Knob Dims the Torch 🔦",
+      "desc": "Current Control, Ohm's Law Application",
+      "rwc": "Potentiometer, LED, Battery, Resistor",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 69,
+          "nm": "Can a knob dim light? 🔦",
+          "desc": "ਵਿਦਿਆਰਥੀ ਆਪਣੀ ਪਿਛਲੀ ਭਾਗਾਂ ਵਿੱਚ ਵਿਕਸਿਤ ਕੀਤੀ ਗਈ ਪੋਟੇਂਸ਼ੀਓਮੀਟਰ ਜਾਣਕਾਰੀ ਦੀ ਜਾਂਚ ਕਰਨਗੇ।",
+          "yt": "AKi24ryUmcM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 70,
+        "nm": "Can you control light brightness? 🔆",
+        "qs": [
+          {
+            "q": "ਕਿਹੜਾ ਕੰਪੋਨੈਂਟ ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਫਲੈਸ਼ਲਾਈਟ ਦੀ ਚਮਕ ਨੂੰ ਸਮੈਤਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ?",
+            "opts": { "1": "Resistor", "2": "Potentiometer", "3": "Breadboard" },
+            "ans": "2"
+          },
+          {
+            "q": "ਸਕ੍ਰਿਪਟ ਦੇ ਅਨੁਸਾਰ ਫਲੈਸ਼ਲਾਈਟ ਸਰਕਟ ਵਿੱਚ ਪੋਟੈਂਸ਼ੀਓਮੀਟਰ ਦੀ ਮੁੱਖ ਭੂਮਿਕਾ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To supply power",
+              "2": "To connect components",
+              "3": "To adjust brightness"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਸਾਰੇ ਕੰਪੋਨੈਂਟਸ ਹਨ ਪਰ ਜੰਪਰ ਵਾਇਰਜ਼ ਨਹੀਂ ਹਨ, ਤਾਂ ਸਕ੍ਰਿਪਟ ਦੇ ਅਨੁਸਾਰ ਤੁਸੀਂ ਇਸ ਦੇ ਬਦਲੇ ਕੀ ਵਰਤ ਸਕਦੇ ਹੋ?",
+            "opts": { "1": "Simple connecting wires", "2": "Resistor", "3": "Breadboard" },
+            "ans": "1"
+          },
+          {
+            "q": "ਜੇ ਤੁਸੀਂ ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਵਰਣਨ ਕੀਤੀ ਫਲੈਸ਼ਲਾਈਟ ਦੀ ਚਮਕ ਬਦਲਣੀ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਤੁਹਾਨੂੰ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "Use a different resistor",
+              "2": "Change the LED",
+              "3": "Adjust the potentiometer"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇ ਤੁਹਾਡੀ ਐਲਈਡੀ ਸਕ੍ਰਿਪਟ ਦੇ ਨਿਰਦੇਸ਼ਾਂ ਦੀ ਪਾਲਣਾ ਕਰਨ ਤੋਂ ਬਾਅਦ ਨਹੀਂ ਚਮਕਦੀ, ਤਾਂ ਸੰਭਵ ਤੌਰ 'ਤੇ ਸਮੱਸਿਆ ਕੀ ਹੋ ਸਕਦੀ ਹੈ?",
+            "opts": {
+              "1": "The LED is too bright",
+              "2": "The LED is connected incorrectly",
+              "3": "The battery is too strong"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Potentiometer-Flashlight-🔦-Advanced",
+          "seq": 65,
+          "nm": "Potentiometer DIY Flashlight",
+          "desc": "ਵਿਦਿਆਰਥੀ ਆਪਣੀ ਪਿਛਲੀ ਭਾਗਾਂ ਵਿੱਚ ਵਿਕਸਿਤ ਕੀਤੀ ਗਈ ਪੋਟੇਂਸ਼ੀਓਮੀਟਰ ਜਾਣਕਾਰੀ ਦੀ ਜਾਂਚ ਕਰਨਗੇ।",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Brightness' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Brightness'.",
+              "invalid_criteria": "Anything other than the word 'Brightness'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "potentiometer ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a potentiometer (dial/knob).",
+              "invalid_criteria": "Anything other than a potentiometer."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: potentiometer ਕੀ ਕਰਦਾ ਹੈ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ਤੁਸੀਂ light ਕੰਟਰੋਲ ਕਰਦੇ ਹੋਏ ਦਾ video ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Hull Finds Its Speed 🚤",
+      "desc": "Design Trade-Offs, Hull Drag, Propeller Pitch,",
+      "rwc": "Pen, Paper",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 70,
+          "nm": "Can a bottle boat race? 🚤",
+          "desc": "ਇੱਕ ਸਥਿਰ ਨੌਕਾ-ਹਿੱਸਾ, ਕੇਂਦਰੀ ਭਾਰ, ਅਤੇ ਸੰਤੁਲਿਤ ਪ੍ਰੋਪ ਨੂੰ ਦਿਖਾਓ। ਸਮਝਾਓ ਕਿ ਵੱਡਾ ਹਮੇਸ਼ਾ ਬਿਹਤਰ ਨਹੀਂ ਹੁੰਦਾ (ਭਾਰ = ਹੌਲੀ ਸ਼ੁਰੂਆਤ)। 3 ਟ੍ਰਾਇਲਾਂ ਤੋਂ ਔਸਤ ਡਾਟਾ ਸਾਂਝਾ ਕਰੋ ਅਤੇ ਇੱਕ ਸੁਝਾਅ ਦਿਓ (ਪ੍ਰੋਪ ਪਿੱਚ ਜਾਂ ਨੌਕਾ-ਹਿੱਸੇ ਦਾ ਘਸੀਟ)।",
+          "yt": "2tFzj7IvBhA",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 71,
+        "nm": "Can a motor sail a boat? ⛵",
+        "qs": [
+          {
+            "q": "ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਦਰਸਾਈ ਗਈ ਬੋਟ ਐਕਟਿਵਿਟੀ ਦਾ ਮੁੱਖ ਉਦਦੇਸ਼ ਕੀ ਹੈ?",
+            "opts": {
+              "1": "To build the largest boat possible.",
+              "2": "To take the boat the farthest distance in 10 seconds.",
+              "3": "To make the boat float for the longest time."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "ਬੈਟਰੀ ਨੂੰ ਬੋਟ ਦੇ ਕੇਂਦਰ ਵਿੱਚ ਰੱਖਣਾ ਕਿਉਂ ਮਹੱਤਵਪੂਰਨ ਹੈ?",
+            "opts": {
+              "1": "To ensure better balance and stability.",
+              "2": "To make the boat faster.",
+              "3": "To make the boat look symmetrical."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਬੋਟ ਲਈ ਸਭ ਤੋਂ ਪ੍ਰਭਾਵਸ਼ਾਲੀ ਪ੍ਰੋਪੈਲਰ ਆਕਾਰ ਕਿਹੜਾ ਪਾਇਆ ਗਿਆ?",
+            "opts": {
+              "1": "A small propeller.",
+              "2": "A large propeller.",
+              "3": "A medium-sized propeller."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ਜੇਕਰ ਇੱਕ ਵਿਦਿਆਰਥੀ ਆਪਣੀ ਬੋਟ ਨੂੰ ਜਿਗ-ਜੈਗ ਪੈਟਰਨ ਵਿੱਚ ਹਿਲਦੇ ਹੋਏ ਵੇਖਦਾ ਹੈ, ਤਾਂ ਸਮੱਸਿਆ ਨੂੰ ਹੱਲ ਕਰਨ ਲਈ ਸਭ ਤੋਂ ਪਹਿਲਾਂ ਕੀ ਚੈੱਕ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+            "opts": {
+              "1": "The placement of the battery.",
+              "2": "The material of the boat hull.",
+              "3": "The size of the propeller."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ਇੱਕ ਵਿਦਿਆਰਥੀ ਵੇਖਦਾ ਹੈ ਕਿ ਬਲਵਾਨ ਮੋਟਰ ਦੇ ਬਾਵਜੂਦ ਉਸ ਦੀ ਬੋਟ ਵੱਧ ਦੂਰੀ ਤੱਕ ਨਹੀਂ ਜਾ ਰਹੀ। ਐਕਟਿਵਿਟੀ ਦੇ ਆਧਾਰ 'ਤੇ ਸੰਭਾਵਿਤ ਹੱਲ ਕੀ ਹੋ ਸਕਦਾ ਹੈ?",
+            "opts": {
+              "1": "Increase the size of the battery.",
+              "2": "Change the propeller to a medium-sized one with a medium blade angle.",
+              "3": "Add more weight to the boat for stability."
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Optimise-Your-Bottle-Boat-🚤-Remedial",
+          "seq": 66,
+          "nm": "Boat distance instructor",
+          "desc": "ਇੱਕ ਸਥਿਰ ਨੌਕਾ-ਹਿੱਸਾ, ਕੇਂਦਰੀ ਭਾਰ, ਅਤੇ ਸੰਤੁਲਿਤ ਪ੍ਰੋਪ ਨੂੰ ਦਿਖਾਓ। ਸਮਝਾਓ ਕਿ ਵੱਡਾ ਹਮੇਸ਼ਾ ਬਿਹਤਰ ਨਹੀਂ ਹੁੰਦਾ (ਭਾਰ = ਹੌਲੀ ਸ਼ੁਰੂਆਤ)। 3 ਟ੍ਰਾਇਲਾਂ ਤੋਂ ਔਸਤ ਡਾਟਾ ਸਾਂਝਾ ਕਰੋ ਅਤੇ ਇੱਕ ਸੁਝਾਅ ਦਿਓ (ਪ੍ਰੋਪ ਪਿੱਚ ਜਾਂ ਨੌਕਾ-ਹਿੱਸੇ ਦਾ ਘਸੀਟ)।",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 👍 ਭੇਜੋ, ਪਸੰਦ ਨਹੀਂ ਆਈ ਤਾਂ 👎 ਭੇਜੋ",
+              "unguided_text": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਇਮੋਜੀ ਭੇਜੋ!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "ਜੇ ਤੁਹਾਨੂੰ ਗਤੀਵਿਧੀ ਪਸੰਦ ਆਈ ਤਾਂ 'Propeller' ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ।",
+              "unguided_text": "ਤੁਸੀਂ ਗਤੀਵਿਧੀ ਤੋਂ ਕੀ ਸਿੱਖਿਆ? ਇੱਕ ਸ਼ਬਦ ਵਿੱਚ ਦੱਸੋ।",
+              "valid_criteria": "Response matching the word 'Propeller'.",
+              "invalid_criteria": "Anything other than the word 'Propeller'."
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "plastic propeller ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!",
+              "unguided_text": "ਆਪਣੇ ਆਲੇ-ਦੁਆਲੇ ਕਿਸੇ ਵੀ ਚੀਜ਼ ਦੀ ਤਸਵੀਰ ਸਾਂਝੀ ਕਰੋ!!",
+              "valid_criteria": "Image contains a boat propeller.",
+              "invalid_criteria": "Anything other than a propeller."
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "ਇੱਕ voice note ਸ਼ੇਅਰ ਕਰੋ ਅਤੇ ਦੱਸੋ: ਕਿਸ ਬਦਲਾਅ ਨੇ ਸਭ ਤੋਂ ਵੱਧ ਮਦਦ ਕੀਤੀ?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "ਆਪਣਾ Reading Table ਅਤੇ boat ਦੀ ਫੋਟੋ ਸ਼ੇਅਰ ਕਰੋ!!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

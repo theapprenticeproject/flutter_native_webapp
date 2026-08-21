@@ -1,0 +1,1181 @@
+{
+  "id": "Intermediate-Art-arts-C7031",
+  "nm": "Intermediate Art",
+  "lvl": "Level 3AK",
+  "vrt": "arts",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Lines Make a Mandala 🔵",
+      "desc": "Lines Mandala art",
+      "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 71,
+          "nm": "Can lines build a mandala? 🔵",
+          "desc": "या क्रियाकलाप मध्ये, विद्यार्थी कला विषयातील पहिला घटक, म्हणजेच रेषा, याविषयी शिकतील आणि विविध प्रकारच्या रेषांचा वापर करून एक मंडळ तयार करतील.",
+          "yt": "Jbtb5Ne00Wg",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 72,
+        "nm": "Can circles become mandalas? 🔵",
+        "qs": [
+          {
+            "q": "मंडल' या संस्कृत शब्दाचा अर्थ काय आहे?",
+            "opts": { "1": "Art", "2": "Pattern", "3": "Circle" },
+            "ans": "3"
+          },
+          {
+            "q": "मंडल कला व्यक्तींना कशी फायद्याची ठरते?",
+            "opts": {
+              "1": "It helps in building patience and focus.",
+              "2": "It improves mathematical skills.",
+              "3": "It teaches advanced painting techniques."
+            },
+            "ans": "1"
+          },
+          {
+            "q": "या अ‍ॅक्टिव्हिटीमध्ये कोणत्या कला घटकावर मुख्यतः लक्ष केंद्रित केले जाते?",
+            "opts": { "1": "Colors", "2": "Lines", "3": "Textures" },
+            "ans": "2"
+          },
+          {
+            "q": "जर तुम्ही मासा आकाराचे मंडल कला तुकडा तयार करायचा असेल, तर प्रथम कोणता पाऊल उचलेला जाईल?",
+            "opts": {
+              "1": "Fill the design with patterns.",
+              "2": "Color the sketch with vibrant colors.",
+              "3": "Sketch the outline with a pencil."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "तुम्हाला शांततेची भावना दर्शवणारा मंडल कला तुकडा तयार करायचा असेल, तर सर्जनशीलतेने हे साध्य करण्यासाठी कोणत्या घटकांवर लक्ष केंद्रित करावे?",
+            "opts": {
+              "1": "Dense textures and dark shades.",
+              "2": "Soft, curvy lines and cool colors.",
+              "3": "Bright, contrasting colors and zigzag lines."
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Bird-Mandala-Art-🔵-Basic",
+          "seq": 67,
+          "nm": "Line Exploration",
+          "desc": "या क्रियाकलाप मध्ये, विद्यार्थी कला विषयातील पहिला घटक, म्हणजेच रेषा, याविषयी शिकतील आणि विविध प्रकारच्या रेषांचा वापर करून एक मंडळ तयार करतील.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "मंडलामध्ये वापरलेल्या एका प्रकारच्या रेषेचे नाव सांगा",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा मजकूर पाठवा",
+              "valid_criteria": "Mention of any type of line like Straight, Curved, Zig-zag (Typed or spoken)",
+              "invalid_criteria": "Mention of any unrelated words (e.g., “flower”, “color”) \nOR\nAny other word apart from the ones related to line"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "नमुने असलेल्या कोणत्याही वस्तूचा फोटो शेअर करा उदाहरण: गोल ठिपके, सरळ किंवा वाकड्या रेषा, झिग झॅग रेषा, चौकडे, टाइलवरील फुले किंवा अशाच इतर नमुने",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "A clear photo of any object showing visible patterns (like checks on clothes, flowers on tiles, vines on leaves, etc.)",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of an object without visible patterns"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "2026-05-29 06:45:20"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुम्ही वेगवेगळ्या प्रकारच्या रेषा वापरून तयार केलेल्या मंडळाचे एक स्पष्ट चित्र शेअर करा 🎨"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Circles Grow Outward 🌀",
+      "desc": "Lines Mandala art",
+      "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 72,
+          "nm": "Can circles grow into mandalas? 🌀",
+          "desc": "--- या अॅक्टिव्हिटीमध्ये, विद्यार्थी साधे वर्तुळाकार मंडळे तयार करण्यासाठी किमान तीन पॅटर्न्सचे निरीक्षण आणि वापर करतील.",
+          "yt": "VqgNKldKpgo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 73,
+        "nm": "Can you draw a perfect mandala? ⭕",
+        "qs": [
+          {
+            "q": "साधा मंडला सुरू करण्यासाठी कोणता प्रारंभिक आकार वापरला जातो?",
+            "opts": { "1": "A triangle", "2": "A square", "3": "A circle" },
+            "ans": "3"
+          },
+          {
+            "q": "मंडला तयार करताना एकसमानता राखणे का महत्त्वाचे आहे?",
+            "opts": {
+              "1": "It ensures the mandala is colorful",
+              "2": "It helps in using fewer colors",
+              "3": "It keeps the patterns at the same distance and size"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "मंडलामध्ये अनेक वर्तुळे काढण्यासाठी कोणते साधन वापरले जाऊ शकते?",
+            "opts": { "1": "Compass", "2": "Ruler", "3": "Protractor" },
+            "ans": "1"
+          },
+          {
+            "q": "जर तुम्हाला नैसर्गिक घटकांनी प्रेरित झालेला मंडला तयार करायचा असेल, तर तुम्ही काय समाविष्ट करू शकता?",
+            "opts": {
+              "1": "Digital patterns",
+              "2": "Leaf-like vine curves",
+              "3": "Geometric shapes only"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "काजू कतली' च्या संकल्पनेला तुमच्या मंडला डिझाइनमध्ये सर्जनशीलतेने कसे समाविष्ट करू शकता?",
+            "opts": {
+              "1": "By adding a square border around the mandala",
+              "2": "By using a half-diamond shape for a layer",
+              "3": "By coloring each section with a single color"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Draw-a-Patterned-Circle-Mandala-🌀-Remedial",
+          "seq": 68,
+          "nm": "Simple Mandalas",
+          "desc": "--- या अॅक्टिव्हिटीमध्ये, विद्यार्थी साधे वर्तुळाकार मंडळे तयार करण्यासाठी किमान तीन पॅटर्न्सचे निरीक्षण आणि वापर करतील.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "मंडला कलेमुळे तुम्हाला काय वाटते ते एक गोष्ट सांगा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा मजकूर पाठवा",
+              "valid_criteria": "Mentions calm / relaxed / peaceful / focused",
+              "invalid_criteria": "Mention of any unrelated/vague answers like \"good\", \"art & drawing\" etc"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "नमुने असलेल्या कोणत्याही वस्तूचा फोटो शेअर करा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "A clear photo of any object showing visible patterns (like checks on clothes, flowers on tiles, vines on leaves, etc.)",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of an object without visible patterns"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "2026-05-29 06:46:02"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या मंडळ कलाकृतीचे एक स्पष्ट चित्र शेअर करा."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Paper Folds into Life 🍃",
+      "desc": "Origami Paper Craft",
+      "rwc": "Origami Papers, Sketchpens, Glue",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 73,
+          "nm": "Can paper fold into flowers? 🍃",
+          "desc": "--- --- या ऍक्टिव्हिटी मध्ये, विद्यार्थी ओरिगामी तंत्रांचा वापर करून आकर्षक पुस्तकखूण तयार करतील.",
+          "yt": "0OAXdyRqfzo",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 74,
+        "nm": "Can craft become a message? 🎀",
+        "qs": [
+          {
+            "q": "फडकणाऱ्या सजावटीच्या प्रकल्पाचा मुख्य विषय काय आहे?",
+            "opts": { "1": "Nature", "2": "Space", "3": "Technology" },
+            "ans": "1"
+          },
+          {
+            "q": "सजावट तयार करताना कोणत्या कौशल्यावर मुख्यतः भर दिला जातो?",
+            "opts": { "1": "Mathematics", "2": "History", "3": "Creativity" },
+            "ans": "3"
+          },
+          {
+            "q": "या अ‍ॅक्टिव्हिटीचा एक भाग म्हणून कोणती तंत्र उल्लेखित नाही?",
+            "opts": { "1": "Paper folding", "2": "Paper cutting", "3": "Wood carving" },
+            "ans": "3"
+          },
+          {
+            "q": "विद्यार्थी त्यांच्या कल्पनाशक्तीचा वापर करून सजावट तयार करू इच्छित असल्यास, कोणते कौशल्य वापरावे?",
+            "opts": { "1": "Communication", "2": "Creativity", "3": "Analysis" },
+            "ans": "2"
+          },
+          {
+            "q": "लाजाळू विद्यार्थी त्यांच्या कलेचा तुकडा व्हिडिओमध्ये प्रभावीपणे कसा सादर करू शकतो?",
+            "opts": {
+              "1": "By discussing the historical context of their work",
+              "2": "By mentioning their name, class, and favorite part of their hanging",
+              "3": "By not talking"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Nature-Inspired-Wall-Hanging-🍃-Basic",
+          "seq": 69,
+          "nm": "Origami Bookmarks",
+          "desc": "--- --- या ऍक्टिव्हिटी मध्ये, विद्यार्थी ओरिगामी तंत्रांचा वापर करून आकर्षक पुस्तकखूण तयार करतील.",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "आजच्या उपक्रमात वापरलेली एक कौशल्य सांगा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा मजकूर पाठवा",
+              "valid_criteria": "Mentions folding / cutting / creativity / paper folding",
+              "invalid_criteria": "Mention of any unrelated or vague words like “art”, “fun”"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुम्हाला आवडणाऱ्या पुस्तकाचा फोटो शेअर करा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "A clear photo of any book",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of an object which is not a book"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "2026-05-29 06:46:43"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या ओरिगामी बुकमार्कचे एक स्पष्ट चित्र शेअर करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Tulips Rise from Folds 🌷",
+      "desc": "Origami Paper Craft",
+      "rwc": "Origami Papers, Sketchpens, Glue",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 74,
+          "nm": "Can folds make tulips bloom? 🌷",
+          "desc": "या ऍक्टिव्हिटी मध्ये, विद्यार्थी ओरिगामी कागदाची घडी घालण्याची तंत्र शिकतील आणि विविध रंग व संयोजन वापरून तीन फुले तयार करतील.",
+          "yt": "otbzG-kBrfU",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 75,
+        "nm": "Can old paper become origami? 🌷",
+        "qs": [
+          {
+            "q": "ओरिगामी वस्तू तयार करण्यासाठी मुख्य साहित्य कोणते आवश्यक आहे?",
+            "opts": { "1": "Scissors", "2": "Glue", "3": "Paper" },
+            "ans": "3"
+          },
+          {
+            "q": "एसडीजी १२ चे प्राथमिक उद्दिष्ट काय आहे?",
+            "opts": {
+              "1": "Reduce waste and create creative things from simple materials",
+              "2": "Promote the use of complex materials",
+              "3": "Increase consumption of new products"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ओरिगामी प्रक्रियेदरम्यान, फोल्ड्स नीट आणि वास्तववादी दिसण्यासाठी काय महत्त्वाचे आहे?",
+            "opts": {
+              "1": "Pressing the folds neatly",
+              "2": "Using scissors to cut edges",
+              "3": "Adding more glue"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "जर तुम्हाला ट्यूलिपच्या पलीकडे एक अद्वितीय ओरिगामी आकृती तयार करायची असेल, तर कोणती कौशल्य तुम्हाला सर्वाधिक मदत करेल?",
+            "opts": {
+              "1": "Using expensive materials",
+              "2": "Following the same steps strictly",
+              "3": "Creativity in folding techniques"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "स्क्रिप्टमधील तत्त्वांनुसार जुने मासिक कागद सर्जनशीलतेने कसे वापरू शकतो?",
+            "opts": {
+              "1": "Throw it away to make space",
+              "2": "Cut it into confetti",
+              "3": "Fold it into origami art"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Fold-Three-Origami-Tulips-🌷-Remedial",
+          "seq": 70,
+          "nm": "Origami Flowers",
+          "desc": "या ऍक्टिव्हिटी मध्ये, विद्यार्थी ओरिगामी कागदाची घडी घालण्याची तंत्र शिकतील आणि विविध रंग व संयोजन वापरून तीन फुले तयार करतील.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "तुमचे फूल बनवण्यासाठी तुम्ही कोणते तंत्र वापरले?",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा मजकूर पाठवा",
+              "valid_criteria": "Mention of origami / paper folding / folding technique",
+              "invalid_criteria": "Mention of any unrelated words\nExample: “drawing”, “coloring”, random words"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुमच्या आवडत्या फुलाचा फोटो शेअर करा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "A clear photo of any flower",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of an object which is not a flower"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "2026-05-29 06:47:24"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या ओरिगामी फुलांचे एक स्पष्ट चित्र शेअर करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Objects Turn to Characters 🤖",
+      "desc": "Figure study",
+      "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 75,
+          "nm": "Can a cup become character? 🤖",
+          "desc": "--- या ऍक्टिविटीमध्ये, विद्यार्थी रोजच्या वस्तूंमध्ये आकृती रेखाटनासाठी प्रेरणा शोधतील आणि आकार, स्वरूप आणि मानवी शरीरशास्त्र यांच्यामधील सृजनशील संबंधांचा शोध घेतील.",
+          "yt": "KnEQgHYPDE4",
+          "pts": 10,
+          "pq": {
+            "id": 76,
+            "nm": "Can a spoon become a character? 🥄",
+            "qs": [
+              {
+                "q": "या कला अ‍ॅक्टिव्हिटीमध्ये तुमच्या मते मुख्य लक्ष काय आहे?",
+                "opts": { "1": "Art Transformation", "2": "Cartoon Designing", "3": "Skecthing" },
+                "ans": "3"
+              },
+              {
+                "q": "दैनंदिन वस्तूंना आकृती किंवा पात्रांमध्ये रूपांतर करण्याचे उद्दिष्ट काय आहे?",
+                "opts": {
+                  "1": "To enhance creativity and problem-solving skills",
+                  "2": "To learn about historical art styles",
+                  "3": "To improve technical drawing skills"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "पात्र डिझाइन करण्यासाठी कोणते साहित्य आवश्यक आहे?",
+                "opts": {
+                  "1": "Art book, eraser, colors, and sketch pencils",
+                  "2": "Clay and paint",
+                  "3": "Markers and canvas"
+                },
+                "ans": "1"
+              },
+              {
+                "q": "जर तुम्हाला एक चमचा दिला असेल, तर तुम्ही ते पात्रात कसे सर्जनशीलपणे रूपांतर कराल?",
+                "opts": {
+                  "1": "Use it as a background element",
+                  "2": "Turn it into a tree",
+                  "3": "Create a knife with the spoon as the body"
+                },
+                "ans": "3"
+              },
+              {
+                "q": "वर्गाच्या प्रकल्पासाठी, तुम्ही पुस्तकाचे काल्पनिक पात्रात रूपांतर करण्यासाठी तुमची सर्जनशीलता कशी वापरू शकता?",
+                "opts": {
+                  "1": "Turn the book into a wise old wizard",
+                  "2": "Use it to build a model house",
+                  "3": "Draw random patterns on it"
+                },
+                "ans": "1"
+              }
+            ]
+          }
+        }
+      ],
+      "quiz": {
+        "id": 77,
+        "nm": "Can a spoon become a character? 🥄",
+        "qs": [
+          {
+            "q": "या कला अ‍ॅक्टिव्हिटीमध्ये तुमच्या मते मुख्य लक्ष काय आहे?",
+            "opts": { "1": "Art Transformation", "2": "Cartoon Designing", "3": "Skecthing" },
+            "ans": "3"
+          },
+          {
+            "q": "दैनंदिन वस्तूंना आकृती किंवा पात्रांमध्ये रूपांतर करण्याचे उद्दिष्ट काय आहे?",
+            "opts": {
+              "1": "To enhance creativity and problem-solving skills",
+              "2": "To learn about historical art styles",
+              "3": "To improve technical drawing skills"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "पात्र डिझाइन करण्यासाठी कोणते साहित्य आवश्यक आहे?",
+            "opts": {
+              "1": "Art book, eraser, colors, and sketch pencils",
+              "2": "Clay and paint",
+              "3": "Markers and canvas"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "जर तुम्हाला एक चमचा दिला असेल, तर तुम्ही ते पात्रात कसे सर्जनशीलपणे रूपांतर कराल?",
+            "opts": {
+              "1": "Use it as a background element",
+              "2": "Turn it into a tree",
+              "3": "Create a knife with the spoon as the body"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "वर्गाच्या प्रकल्पासाठी, तुम्ही पुस्तकाचे काल्पनिक पात्रात रूपांतर करण्यासाठी तुमची सर्जनशीलता कशी वापरू शकता?",
+            "opts": {
+              "1": "Turn the book into a wise old wizard",
+              "2": "Use it to build a model house",
+              "3": "Draw random patterns on it"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Transform-an-Object-Into-a-Character-🤖-Intermediate",
+          "seq": 71,
+          "nm": "Form to Fiction",
+          "desc": "--- या ऍक्टिविटीमध्ये, विद्यार्थी रोजच्या वस्तूंमध्ये आकृती रेखाटनासाठी प्रेरणा शोधतील आणि आकार, स्वरूप आणि मानवी शरीरशास्त्र यांच्यामधील सृजनशील संबंधांचा शोध घेतील.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "तुमच्या वस्तूला पात्रात रूपांतरित करण्यासाठी वापरलेली एक गोष्ट सांगा",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा मजकूर पाठवा",
+              "valid_criteria": "Mentions imagination / shapes / face / expressions / creativity\nExample: “I used imagination”, “I added face and expressions”",
+              "invalid_criteria": "Mention of any unrelated/vague words like “art”, “drawing”"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुम्ही पात्रात रूपांतरित करू शकता अशा एखाद्या साध्या वस्तूचा फोटो काढा.",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "Shows any everyday object (cup, bottle, chair, toy, etc.)\nObject is clearly visible",
+              "invalid_criteria": "No object / unclear image\nOnly drawings (instead of real object)\nAny person/animal"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "2026-05-29 06:48:05"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या कलाकृतीचे एक स्पष्ट चित्र शेअर करा जे दाखवते की तुम्ही एखाद्या वस्तूला पात्रात कसे रूपांतरित केले"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Shapes Build a Face 🎭",
+      "desc": "Character Designing Geometrical Figures",
+      "rwc": "Paper, Pencil, Ruler, Colors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 76,
+          "nm": "Can shapes draw a face? 🎭",
+          "desc": "--- या अॅक्टिव्हिटीमध्ये, विद्यार्थी मूलभूत भूमितीय आकारांचा वापर करून आणि त्यांचे रूपांतर करून पात्र डिझाइनच्या कलेचा अभ्यास करतील.",
+          "yt": "zBHpflhGoIk",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 78,
+        "nm": "Can shapes build a face? 🔷",
+        "qs": [
+          {
+            "q": "या अ‍ॅक्टिव्हिटी साठी कोणती सामग्री आवश्यक आहे?",
+            "opts": {
+              "1": "Charcoal and sketchbooks",
+              "2": "Watercolors and canvas",
+              "3": "Pencils, erasers, a black marker, and crayons"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "कॅरेक्टर डिझायनिंग मध्ये जियोमेट्रिक आकार वापरणे का फायदेशीर आहे?",
+            "opts": {
+              "1": "They simplify the drawing process",
+              "2": "They add color to the characters",
+              "3": "They make characters look realistic"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "पाठामध्ये कॅरेक्टरच्या चेहर्‍याचा आधार तयार करण्यासाठी कोणते आकार सुचवले गेले होते?",
+            "opts": { "1": "Square with rounded corners", "2": "Circles", "3": "Rectangles" },
+            "ans": "1"
+          },
+          {
+            "q": "पाठातील तंत्राने आपण प्रत्यक्ष जीवनातील समस्या कशी सर्जनशीलपणे सोडवू शकता?",
+            "opts": {
+              "1": "Create a comic strip about the problem",
+              "2": "Use watercolors to map out the problem",
+              "3": "Break down the problem into smaller, manageable parts"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "पाठातील तंत्रांचा वापर करून नवीन कॅरेक्टर तयार करायचा असल्यास, त्याची अनोखता कशी वाढवता येईल?",
+            "opts": {
+              "1": "Combine different geometric shapes in unexpected ways",
+              "2": "Copy an existing character exactly",
+              "3": "Use only circles for the entire character"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-a-Geometric-Character-🎭-Remedial",
+          "seq": 72,
+          "nm": "Character Design",
+          "desc": "--- या अॅक्टिव्हिटीमध्ये, विद्यार्थी मूलभूत भूमितीय आकारांचा वापर करून आणि त्यांचे रूपांतर करून पात्र डिझाइनच्या कलेचा अभ्यास करतील.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "तुमचे पात्र तयार करण्यासाठी वापरलेला एक आकार सांगा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा मजकूर पाठवा",
+              "valid_criteria": "Mention of circle / square / triangle / rectangle",
+              "invalid_criteria": "Mention of any unrelated words\nExample: Answers like “shape”, “design”"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुमच्या आवडत्या पात्राचा फोटो शेअर करा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "A clear photo of any (person/animal) character (cartoon, also) from any movie or book.",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of any random place/thing other than a character"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "2026-05-29 06:48:44"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या आकारांवर आधारित पात्राचे एक स्पष्ट चित्र शेअर करा"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Sticks and Strings Dream 🌙",
+      "desc": "Craft",
+      "rwc": "Cardboard, Fevicol, Scissors, Glue, Colors, Rope",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 77,
+          "nm": "Can sticks catch your dreams? 🌙",
+          "desc": "--- --- या Activity मध्ये, विद्यार्थी ट्विग्स, शेल्स, फेदर्स, पेटल्स, आणि आईस क्रीम स्टिक्स सारख्या पुनर्वापरयोग्य नैसर्गिक पदार्थांचा वापर करून स्वतःचा स्वप्न पकडणारा बनवतील.",
+          "yt": "FegwmPFB7JQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 79,
+        "nm": "What do dream catchers catch? 🕸️",
+        "qs": [
+          {
+            "q": "नेटिव्ह अमेरिकन जमाती ड्रीम कॅचर्स कशासाठी वापरत?",
+            "opts": {
+              "1": "To protect their dreams",
+              "2": "To decorate their homes",
+              "3": "To catch fish"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ड्रीम कॅचरमधील वर्तुळ काय दर्शवते?",
+            "opts": { "1": "A spider web", "2": "The circle of life", "3": "A dream" },
+            "ans": "2"
+          },
+          {
+            "q": "ड्रीम कॅचरच्या वर्तुळासाठी कोणते साहित्य वापरता येतील?",
+            "opts": { "1": "Metal only", "2": "Plastic only", "3": "Wood, metal, or cardboard" },
+            "ans": "3"
+          },
+          {
+            "q": "जर तुमच्याकडे रंगीत कागद नसेल तर ड्रीम कॅचरच्या पंखांसाठी कोणती सृजनशील पद्धत वापरू शकता?",
+            "opts": {
+              "1": "Color white paper and cut it into feather shapes",
+              "2": "Use plastic feathers from old toys",
+              "3": "Draw feathers on the wall"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "जर पारंपारिक साहित्य नसेल तर सामान्य सामग्रीचा वापर करून ड्रीम कॅचर कसे तयार करू शकता?",
+            "opts": {
+              "1": "Use a glass bottle as the hoop",
+              "2": "Use a wooden spoon as the hoop",
+              "3": "Use a paper plate to make the hoop"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Nature-Inspired-Dream-Catcher-🌙-Intermediate",
+          "seq": 73,
+          "nm": "Dream Catcher",
+          "desc": "--- --- या Activity मध्ये, विद्यार्थी ट्विग्स, शेल्स, फेदर्स, पेटल्स, आणि आईस क्रीम स्टिक्स सारख्या पुनर्वापरयोग्य नैसर्गिक पदार्थांचा वापर करून स्वतःचा स्वप्न पकडणारा बनवतील.",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "तुमचा ड्रीम कॅचर बनवण्यासाठी वापरलेले एक साहित्य सांगा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा मजकूर पाठवा",
+              "valid_criteria": "Mentions thread / ring / paper / leaves / feathers / shells / sticks",
+              "invalid_criteria": "Mention of any unrelated/ vague answers like “things”, “materials”"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुमच्या ड्रीम कॅचरसाठी वापरता येईल अशा एका नैसर्गिक किंवा पुनर्वापर केलेल्या साहित्याचा फोटो काढा.",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "Shows natural/recycled items (leaves, sticks, paper, cardboard, thread, etc.)",
+              "invalid_criteria": "Unrelated objects (mobile, TV, etc.)"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "2026-05-29 06:49:24"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या ड्रीम कॅचरचे एक स्पष्ट चित्र शेअर करा."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Paper City Dreams Big 🏙️",
+      "desc": "Exploring the use of Shapes",
+      "rwc": "Colorful, Texture, Paper, Glue, Scissors, Marker",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 78,
+          "nm": "Can shapes build dream cities? 🏙️",
+          "desc": "या ऍक्टिव्हिटीमध्ये, विद्यार्थी कलाकार पॉल क्ली यांच्यापासून प्रेरित कागदाच्या कापलेल्या आकारांचा वापर करून एक काल्पनिक स्वप्न नगरी तयार करतील.",
+          "yt": "wDGkcoAlMQU",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 80,
+        "nm": "Can you build a dream city? 🏙️",
+        "qs": [
+          {
+            "q": "ड्रीम सिटी अ‍ॅक्टिव्हिटीला प्रेरणा देणारा कलाकार कोण आहे?",
+            "opts": { "1": "Vincent van Gogh", "2": "Pablo Picasso", "3": "Paul Klee" },
+            "ans": "3"
+          },
+          {
+            "q": "पॉल क्ली कोणत्या कलाशैलीसाठी ओळखले जातात?",
+            "opts": {
+              "1": "Realistic portraits and landscapes",
+              "2": "Abstract sculptures and installations",
+              "3": "Using geometrical shapes, bold lines, and bright colors"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "ड्रीम सिटी तयार करण्यासाठी कोणत्या साहित्यांचा वापर सुचवला जातो?",
+            "opts": {
+              "1": "Colored papers, scissors, glue, and markers",
+              "2": "Clay and sculpting tools",
+              "3": "Oil paints and canvas"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "ड्रीम सिटी तयार करताना ती अनोखी कशी बनवू शकता?",
+            "opts": {
+              "1": "By following a strict blueprint",
+              "2": "By copying another artist's work exactly",
+              "3": "By arranging shapes and colors in your own creative way"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "अ‍ॅक्टिव्हिटीसाठी विशिष्ट रंगांचे कागद नसल्यास काय करावे?",
+            "opts": {
+              "1": "Use alternative papers or magazine cutouts",
+              "2": "Use only black and white paper",
+              "3": "Cancel the activity"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Build-a-Dream-City-Collage-🏙️-Remedial",
+          "seq": 74,
+          "nm": "My Dream City",
+          "desc": "या ऍक्टिव्हिटीमध्ये, विद्यार्थी कलाकार पॉल क्ली यांच्यापासून प्रेरित कागदाच्या कापलेल्या आकारांचा वापर करून एक काल्पनिक स्वप्न नगरी तयार करतील.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "तुमच्या स्वप्नातील शहरात वापरलेला एक आकार सांगा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा मजकूर पाठवा",
+              "valid_criteria": "Mentions square / rectangle / triangle / any shape",
+              "invalid_criteria": "Mention of any unrelated words\nExample: Answers like “shape”, “design”"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुम्ही राहत असलेल्या शहराचा फोटो शेअर करा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "A clear photo of any city",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of any random person/animal/thing or a place which is not a city"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "2026-05-29 06:50:04"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या स्वप्नातील शहराच्या कलाकृतीचे एक स्पष्ट चित्र शेअर करा."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Bottles Bloom into Flowers 🌺",
+      "desc": "Plastic Pollution, Sustainable Development",
+      "rwc": "Plastic Bottles, Waste Papers, Markers, Paints, Brushes, Thread, Scissors, Tape",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 79,
+          "nm": "Can bottles bloom into flowers? 🌺",
+          "desc": "--- या ॲक्टिविटीमध्ये, विद्यार्थी प्लास्टिक समुद्री जीवांना कसे हानी पोहोचवते हे ओळखतील आणि वर्णन करतील आणि संकलित केलेल्या साहित्याचा वापर करून प्लास्टिकच्या बाटल्यांपासून रंगीत फुलांचे लटकन तयार करतील.",
+          "yt": "VjtWMq1X_e8",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 81,
+        "nm": "Can plastic become painted art? 🎨",
+        "qs": [
+          {
+            "q": "आजच्या कला अ‍ॅक्टिव्हिटी मध्ये आपण काय शिकत आहोत?",
+            "opts": {
+              "1": "Practicing drawing and sketching skills",
+              "2": "Learning about different types of paint",
+              "3": "Creating artwork using recycled materials"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "विघटन म्हणजे काय?",
+            "opts": {
+              "1": "Melting due to heat",
+              "2": "Changing color over time",
+              "3": "Breaking into smaller parts due to rotting"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "रंग प्लास्टिकवर चांगला चिकटावा यासाठी तुम्ही काय करू शकता?",
+            "opts": {
+              "1": "By using very thin paint",
+              "2": "By painting in thick layers only",
+              "3": "By not adding too much water to the paint"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "जर तुम्हाला रिसायकल्ड मटेरियलचा वापर करून नवीन प्रकारची कला निर्मिती करायची असेल, तर तुम्ही काय वेगळं करू शकता?",
+            "opts": {
+              "1": "Paint on new canvases",
+              "2": "Use old magazines to create a collage",
+              "3": "Purchase new art supplies"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "तुमच्या समुदायामध्ये प्लास्टिक प्रदूषणाचा प्रश्न सर्जनशीलपणे कसा सोडवू शकता?",
+            "opts": {
+              "1": "Organize a community art project using collected plastic waste",
+              "2": "Encourage people to use single-use plastics",
+              "3": "Buy more plastic bags to ensure they are always reused"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Plastic-Bottle-Flower-Hanging-🌺-Advanced",
+          "seq": 75,
+          "nm": "Plastic Hanging Flowers",
+          "desc": "--- या ॲक्टिविटीमध्ये, विद्यार्थी प्लास्टिक समुद्री जीवांना कसे हानी पोहोचवते हे ओळखतील आणि वर्णन करतील आणि संकलित केलेल्या साहित्याचा वापर करून प्लास्टिकच्या बाटल्यांपासून रंगीत फुलांचे लटकन तयार करतील.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "पर्यावरणास हानी पोहोचवणारे एक साहित्य सांगा",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा मजकूर पाठवा",
+              "valid_criteria": "Mentions plastic / polythene / waste material",
+              "invalid_criteria": "Mention of any unrelated answers like “things”, “garbage”"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुमच्या आवडत्या फुलाचा फोटो शेअर करा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "A clear photo of any flower",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of an object which is not a flower"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "2026-05-29 06:50:45"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या प्लास्टिक बाटलीपासून बनवलेल्या वॉल हँगिंगचे एक स्पष्ट चित्र शेअर करा."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Scraps Hang as Art 🎑",
+      "desc": "Plastic Pollution, Sustainable Development",
+      "rwc": "Plastic Bottles, Waste Papers, Markers, Paints, Brushes, Thread, Scissors, Tape",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 80,
+          "nm": "Can waste hang as art? 🎑",
+          "desc": "--- या अ‍ॅक्टिविटीमध्ये, विद्यार्थी पुनर्वापर केलेल्या साहित्याचा वापर करून एक सजावटी भिंतीवर लटकवण्यायोग्य वस्तू तयार करतील.",
+          "yt": "X_9Y8a5rW-Q",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 82,
+        "nm": "Can waste become wall art? 🖼️",
+        "qs": [
+          {
+            "q": "अ‍ॅक्टिव्हिटीशी संबंधित शाश्वत विकास लक्ष्य कोणते आहे?",
+            "opts": {
+              "1": "SDG 15: Life on Land",
+              "2": "SDG 12: Responsible Consumption and Production",
+              "3": "SDG 4: Quality Education"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "अ‍ॅक्टिव्हिटीचा मुख्य उद्देश काय आहे?",
+            "opts": {
+              "1": "To practice drawing techniques",
+              "2": "To create art using recycled materials",
+              "3": "To learn how to paint landscapes"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "तुमच्याकडे मासिकाचे कागद आणि जुन्या पॅकेजिंग बॉक्सेस असतील तर कार्डबोर्ड भिंतीचे लटकणारे बनवण्यासाठी पहिले पाऊल कोणते असेल?",
+            "opts": {
+              "1": "Glue the paper to the cardboard base",
+              "2": "Cut a cardboard base in any shape",
+              "3": "Attach a string to hang the art"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "तुमच्या रिसायकल्ड भिंतीच्या लटकणाऱ्यात कसे सर्जनशीलपणे पोत जोडता येईल?",
+            "opts": {
+              "1": "Use only smooth, perfectly cut pieces of paper",
+              "2": "Tear paper scraps into different shapes for layering",
+              "3": "Avoid using any overlapping elements"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "नियमांनुसार डिझाइनमध्ये कोणता सर्जनशील घटक समाविष्ट केला पाहिजे?",
+            "opts": {
+              "1": "A painted border",
+              "2": "A hanging element using thread or rope",
+              "3": "A metallic frame"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Recycled-Wall-Hanging-🎑-Remedial",
+          "seq": 76,
+          "nm": "Recycled Wall Hanging",
+          "desc": "--- या अ‍ॅक्टिविटीमध्ये, विद्यार्थी पुनर्वापर केलेल्या साहित्याचा वापर करून एक सजावटी भिंतीवर लटकवण्यायोग्य वस्तू तयार करतील.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "उपक्रम आवडला असेल तर 👍 पाठवा, किंवा आवडला नसेल तर 👎 पाठवा",
+              "unguided_text": "कृपया तुमच्या आवडीचा कोणताही इमोजी पाठवा!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "तुमच्या कलाकृतीत वापरलेले एक टाकाऊ साहित्य सांगा.",
+              "unguided_text": "या उपक्रमाबद्दल तुम्हाला काय वाटते? एका शब्दात सांगा किंवा मजकूर पाठवा",
+              "valid_criteria": "Mentions cardboard / newspaper / paper scraps / thread / wool",
+              "invalid_criteria": "Mention of any unrelated words or items like bottle, cap, apple which are not waste"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "तुमच्या आवडत्या फुलाचा फोटो शेअर करा",
+              "unguided_text": "तुमच्या आजूबाजूच्या कोणत्याही गोष्टीचा फोटो शेअर करा",
+              "valid_criteria": "A clear photo of any flower",
+              "invalid_criteria": "No image, unclear/blurry image, or a photo of an object which is not a flower"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "टाइप करा किंवा व्हॉइस नोट पाठवा आणि सांगा व्हिडिओमध्ये कागदाचे तुकडे चिकटवल्यानंतर पुढची पायरी काय होती?"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "तुमच्या रिसायकल केलेल्या हँगिंगचे एक स्पष्ट चित्र शेअर करा"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1111 @@
+{
+  "id": "Basic-Art-Skills-arts-C6083",
+  "nm": "Basic Art Skills",
+  "lvl": "Level 3AK",
+  "vrt": "arts",
+  "kit_less": false,
+  "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
+  "units": [
+    {
+      "nm": "Waste Becomes a Holder ♻️",
+      "desc": "Recycling art",
+      "rwc": "Boxes, Bottles, Paper, Glue, Scissors, Colors, Decorative Items",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 41,
+          "nm": "Can waste become a holder? ♻️",
+          "desc": "In this activity, students will make a pen holder using waste materials!They will use empty boxes, bottles, and leftover paper to create something useful. This activity will help students be creative and learn how to care for the environment. They will decorate their pen holder in their own way and make it unique!",
+          "yt": "536z1WXxcPU",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 42,
+        "nm": "Can trash become a holder? 🗑️",
+        "qs": [
+          {
+            "q": "What is the main material suggested for creating a pen holder in the activity?",
+            "opts": {
+              "1": "Cardboard tubes",
+              "2": "Waste or empty bottles and boxes",
+              "3": "Newspaper"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Why is reusing waste materials important, according to the video?",
+            "opts": {
+              "1": "It reduces the cost of new products",
+              "2": "It enhances creativity",
+              "3": "It helps protect our Earth"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "What is the first step in transforming a waste box into a pen holder?",
+            "opts": {
+              "1": "Marking where to cut with a pen",
+              "2": "Covering the box with paper",
+              "3": "Gluing the paper to the box"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "How can you creatively decorate your pen holder after covering it with base paper?",
+            "opts": {
+              "1": "By attaching stickers and ribbons",
+              "2": "By cutting out shapes like eyes and wings from colored paper",
+              "3": "By painting it with different colors"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If you have leftover fabric instead of paper, how can you creatively use it for your pen holder?",
+            "opts": {
+              "1": "Use it to wrap the pens inside the holder",
+              "2": "Glue it to the holder as a unique decorative cover",
+              "3": "Cut it into small strips and tie them around the holder"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Waste-Material-Pen-Holder-♻️-Basic",
+          "seq": 38,
+          "nm": "Make a Waste Material Pen Holder ♻️",
+          "desc": "In this activity, students will make a pen holder using waste materials!They will use empty boxes, bottles, and leftover paper to create something useful. This activity will help students be creative and learn how to care for the environment. They will decorate their pen holder in their own way and make it unique!",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voice note saying \"Useful\" if you liked it, or \"Waste\" if you didn’t.",
+              "unguided_text": "What do you think of the Pen Holder activity? Share in one word or send a voice note",
+              "valid_criteria": "Useful, Waste",
+              "invalid_criteria": "Any word other than useful, waste"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a picture of a pen you use",
+              "unguided_text": "Share a picture of anything around you",
+              "valid_criteria": "Picture of a pen",
+              "invalid_criteria": "Anything other than picture of a pen"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note and tell us what material you used for the base of your pen stand"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear picture or video of the pen holder you created"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Box Becomes a Stand 📦",
+      "desc": "Recycling art",
+      "rwc": "Boxes, Bottles, Paper, Glue, Scissors, Colors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 42,
+          "nm": "Can a box become stand? 📦",
+          "desc": "In this activity, students will make a pen holder using waste materials.They will use boxes, bottles, and paper. This will help them be creative and care for the environment. They will decorate their pen holder in their own way.",
+          "yt": "c85HQBXDEzs",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 43,
+        "nm": "What makes your holder unique? ✨",
+        "qs": [
+          {
+            "q": "What materials are needed to create the pen holder?",
+            "opts": {
+              "1": "An empty box, waste paper, scissors, and glue",
+              "2": "A plastic bottle, colored paper, scissors, and tape",
+              "3": "A cardboard tube, wrapping paper, glue, and string"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Why is it suggested to use two papers for covering the box?",
+            "opts": {
+              "1": "To ensure the paper does not tear easily",
+              "2": "Because the papers might be small and need to cover the box completely",
+              "3": "To make the pen holder more colorful"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "What should you do if glue leaves marks on the paper when designing the pen holder?",
+            "opts": {
+              "1": "Cover the marks with more paper",
+              "2": "Start over with new paper",
+              "3": "Consider it as part of the design"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "How can you apply creativity to decorate your pen holder?",
+            "opts": {
+              "1": "Follow the exact design shown in the video",
+              "2": "Add shapes, faces, or characters to the design",
+              "3": "Use only one color to cover the box"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If you want your pen holder to reflect a unique style, what should you consider doing?",
+            "opts": {
+              "1": "Only use plain paper and avoid patterns",
+              "2": "Incorporate different patterns like stripes or dots",
+              "3": "Use a single material for simplicity"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Box-Pen-Stand-📦-Remedial",
+          "seq": 39,
+          "nm": "Make a Box Pen Stand 📦",
+          "desc": "In this activity, students will make a pen holder using waste materials.They will use boxes, bottles, and paper. This will help them be creative and care for the environment. They will decorate their pen holder in their own way.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voice note saying \"Useful\" if you liked it, or \"Waste\" if you didn’t.",
+              "unguided_text": "What do you think of the Pen Stand activity? Share in one word or send a voice note",
+              "valid_criteria": "Useful, Waste",
+              "invalid_criteria": "Any word other than useful, waste"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a picture of a pen you use",
+              "unguided_text": "Share a picture of anything around you",
+              "valid_criteria": "Picture of a pen",
+              "invalid_criteria": "Anything other than picture of a pen"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note and tell us what material you used for the base of your pen stand"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear picture or video of the pen holder you created"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Everyday Things Pop 🎨",
+      "desc": "PopArt",
+      "rwc": "Paper, Pencil, Markers, Crayons, Oil Pastels, Marker",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 43,
+          "nm": "Can chips become pop art? 🎨",
+          "desc": "In this activity, students will recognise the main features of pop art culture and create a pop art style advertisement inspired by Andy Warhol",
+          "yt": "rTS294bRhq8",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 44,
+        "nm": "Who invented Pop Art anyway? 🎨",
+        "qs": [
+          {
+            "q": "Who is considered the father of Pop Art?",
+            "opts": { "1": "Andy Warhol", "2": "Roy Lichtenstein", "3": "Pablo Picasso" },
+            "ans": "1"
+          },
+          {
+            "q": "What is the main focus of Pop Art?",
+            "opts": {
+              "1": "Transforming everyday objects into art",
+              "2": "Impressionist landscapes",
+              "3": "Complex and serious themes"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Which of the following is a special feature of Pop Art?",
+            "opts": {
+              "1": "Complex geometric patterns",
+              "2": "Monochrome colors",
+              "3": "Bold outlines"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If you were to create a Pop Art-inspired advertisement for a simple object, which of the following approaches would best demonstrate creativity?",
+            "opts": {
+              "1": "Using bright colors and unique patterns to make the object eye-catching",
+              "2": "Keeping the design plain and simple without any colors",
+              "3": "Using only black and white tones with no patterns"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Imagine you have a simple object like a pencil. How could you creatively apply Pop Art techniques to make it stand out in an advertisement?",
+            "opts": {
+              "1": "Draw it in a realistic style with subtle shades",
+              "2": "Depict it in a detailed sketch with intricate shading",
+              "3": "Use vibrant colors with bold lines and playful patterns"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-a-Pop-Art-Advertisement-🎨-Basic",
+          "seq": 40,
+          "nm": "Design a Pop Art Advertisement 🎨",
+          "desc": "In this activity, students will recognise the main features of pop art culture and create a pop art style advertisement inspired by Andy Warhol",
+          "type": "Written",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voice note saying \"Creative\" if you liked it, or \"Boring\" if you didn’t.",
+              "unguided_text": "What do you think of the Pop Art Advertisement activity? Share in one word or send a voice note",
+              "valid_criteria": "Creative, Boring",
+              "invalid_criteria": "Any word other than creative, boring"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a picture of a bottle",
+              "unguided_text": "Share a picture of anything around you",
+              "valid_criteria": "Picture of a bottle",
+              "invalid_criteria": "Anything other than picture of a bottle"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note and tell us one pair of complementary colors"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear picture or video of the pop art artwork you created using complementary colors and patterns"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "One Object Four Colors 🖼️",
+      "desc": "PopArt",
+      "rwc": "Paper, Pencil, Markers, Crayons, Oil Pastels, Marker",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 44,
+          "nm": "Can one object pop four? 🖼️",
+          "desc": "Students will create a Pop Art–style artwork inspired by Andy Warhol by drawing one simple object four times on their paper and coloring each version using different pairs of complementary colors. They will experiment with bold outlines, bright contrasts, and simple background patterns to make their artwork look vibrant and balanced.",
+          "yt": "tSPs21lu7uA",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 45,
+        "nm": "Can objects become pop art? 🍌",
+        "qs": [
+          {
+            "q": "Who is known for transforming ordinary objects into pop art?",
+            "opts": { "1": "Andy Warhol", "2": "Pablo Picasso", "3": "Vincent van Gogh" },
+            "ans": "1"
+          },
+          {
+            "q": "What is the main idea of creating pop art as described in the video?",
+            "opts": {
+              "1": "To draw complex and realistic portraits",
+              "2": "To transform simple objects with bold colors",
+              "3": "To use expensive materials"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Which step involves dividing your paper into sections for the artwork?",
+            "opts": {
+              "1": "Create an outline",
+              "2": "Choose color pairs",
+              "3": "Divide your paper"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If you wanted to add more creativity to your pop art, what could you do besides boldening the outline?",
+            "opts": {
+              "1": "Draw multiple objects in one section",
+              "2": "Add patterns like dots or zig-zags in the background",
+              "3": "Use only one color for the entire artwork"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "How can you make each section of your pop art look different while using complementary colors?",
+            "opts": {
+              "1": "Avoid using any colors",
+              "2": "Use the same color pair in each section",
+              "3": "Use different pairs like red-green and blue-orange in separate sections"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Four-Panel-Pop-Art-🖼️-Remedial",
+          "seq": 41,
+          "nm": "Create a Four Panel Pop Art 🖼️",
+          "desc": "Students will create a Pop Art–style artwork inspired by Andy Warhol by drawing one simple object four times on their paper and coloring each version using different pairs of complementary colors. They will experiment with bold outlines, bright contrasts, and simple background patterns to make their artwork look vibrant and balanced.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voice note saying \"Creative\" if you liked it, or \"Boring\" if you didn’t.",
+              "unguided_text": "What do you think of the Pop Art activity? Share in one word or send a voice note",
+              "valid_criteria": "Creative, Boring",
+              "invalid_criteria": "Any word other than creative, boring"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a picture of anything in red color",
+              "unguided_text": "Share a picture of anything around you",
+              "valid_criteria": "Picture of anything in red color",
+              "invalid_criteria": "Anything other which is not red in color"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note and tell us one complementary color pair"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear picture or video of the pop art you created"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Strips Weave a Story 🧵",
+      "desc": "Kente weaving technique",
+      "rwc": "Base Sheet, Paper, Glue, Scissors",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 45,
+          "nm": "Can paper strips weave stories? 🧵",
+          "desc": "In this activity students will learn about the cultural references of Kente Weaving and how patterns and repetitions can be used in order to create a expressive artwork",
+          "yt": "l496hk5P0eE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 46,
+        "nm": "What story does Kente tell? 🧵",
+        "qs": [
+          {
+            "q": "What is the name of the cloth from Ghana ?",
+            "opts": { "1": "Ankara", "2": "Dashiki", "3": "Kente" },
+            "ans": "3"
+          },
+          {
+            "q": "Why is pattern repetition important in Kente weaving?",
+            "opts": {
+              "1": "It makes the cloth more expensive.",
+              "2": "It helps in using fewer materials.",
+              "3": "It creates a rhythm and cultural identity."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If you were to start a Kente-style weave, what would you do first?",
+            "opts": {
+              "1": "Paint the base sheet with colors.",
+              "2": "Cut strips of equal width for the base.",
+              "3": "Draw patterns on the base sheet."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "Imagine you are creating a Kente-inspired artwork. What unique twist can you add to your story using creativity?",
+            "opts": {
+              "1": "Use only one color to keep it simple.",
+              "2": "Assign personal meanings to the colors used in the weave.",
+              "3": "Follow the exact traditional patterns without changes."
+            },
+            "ans": "2"
+          },
+          {
+            "q": "How can you creatively share the story of your Kente-inspired bag with others?",
+            "opts": {
+              "1": "Share its story and meaning on TAP Buddy to connect globally.",
+              "2": "Keep it as a personal secret.",
+              "3": "Write a detailed essay about its history."
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Weave-a-Kente-Inspired-Bookmark-🧵-Intermediate",
+          "seq": 42,
+          "nm": "Weave a Kente Inspired Bookmark 🧵",
+          "desc": "In this activity students will learn about the cultural references of Kente Weaving and how patterns and repetitions can be used in order to create a expressive artwork",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voice note saying \"Interesting\" if you liked it, or \"Hard\" if you didn’t.",
+              "unguided_text": "What do you think of the Kente Weaving activity? Share in one word or send a voice note",
+              "valid_criteria": "Interesting, Hard",
+              "invalid_criteria": "Any word other than interesting, hard"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a picture of a cloth",
+              "unguided_text": "Share a picture of anything around you",
+              "valid_criteria": "Picture of any cloth",
+              "invalid_criteria": "Anything other than a picture of clothes"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note and tell us the name of the activity"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear picture or video of the Kente weaving artifact you created using the weaving technique and patterns"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Ghana Lives in Paper 🪡",
+      "desc": "Kente weaving technique",
+      "rwc": "Base Sheet, Colored Strips, Glue, Scissors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 46,
+          "nm": "Can Ghana's art use paper? 🪡",
+          "desc": "In this activity, students will learn about a traditional African weaving technique using colorful strips of paper.",
+          "yt": "umwsEeBvTXE",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 47,
+        "nm": "Can strips become a weave? 🎨",
+        "qs": [
+          {
+            "q": "What is the process of crossing two sets of threads or paper strips called?",
+            "opts": { "1": "Sewing", "2": "Weaving", "3": "Knitting" },
+            "ans": "2"
+          },
+          {
+            "q": "What is one cultural significance of Kente weaving mentioned in the script?",
+            "opts": {
+              "1": "It is a modern art form.",
+              "2": "It is primarily used for making furniture.",
+              "3": "It holds great importance in Ghanaian culture."
+            },
+            "ans": "3"
+          },
+          {
+            "q": "Which step involves using glue to secure the strips during the weaving process?",
+            "opts": {
+              "1": "Making rough sketches for the final artwork",
+              "2": "Gluing a strip at the top to keep them in place",
+              "3": "Cutting the paper strips"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If you want to design a new pattern for your Kente weaving, which skill are you primarily using?",
+            "opts": { "1": "Collaboration", "2": "Critical Thinking", "3": "Creativity" },
+            "ans": "3"
+          },
+          {
+            "q": "How can you creatively ensure that your weaving strips do not move while you work?",
+            "opts": {
+              "1": "By weaving faster",
+              "2": "By using heavier paper",
+              "3": "By gluing a strip at the ends"
+            },
+            "ans": "3"
+          }
+        ]
+      }
+    },
+    {
+      "nm": "Dots Tell Nature's Tale 🌿",
+      "desc": "Gond art",
+      "rwc": "Paper, Pencil, Pen, Colors",
+      "diff": "Intermediate",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 47,
+          "nm": "Can nature merge into art? 🌿",
+          "desc": "In this activity, students will create a Gond Art inspired art work to promote nature conservation & sustainability",
+          "yt": "q6SkgecztXk",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 48,
+        "nm": "What does Gond art say? 🌳",
+        "qs": [
+          {
+            "q": "What is Gond Art primarily used for in the tribal community of central India?",
+            "opts": {
+              "1": "To decorate their homes",
+              "2": "To share old stories and traditions",
+              "3": "To sell in international markets"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "What are the key elements observed in Gond Art?",
+            "opts": {
+              "1": "Modern architecture",
+              "2": "Use of digital techniques",
+              "3": "Vibrant colors, dots, and line patterns"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "How can you apply Gond Art to convey a message about environmental protection?",
+            "opts": {
+              "1": "By drawing nature-themed artwork with patterns and bright colors",
+              "2": "By writing essays about environmental issues",
+              "3": "By creating sculptures of endangered animals"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "If you could invent a new pattern for Gond Art that symbolizes harmony, which of the following would be most creative?",
+            "opts": {
+              "1": "A series of disconnected dots",
+              "2": "A zig-zag pattern",
+              "3": "Interlocking circles representing unity"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "To create a Gond Art piece that communicates the importance of water conservation, which combination of objects would be most creative?",
+            "opts": {
+              "1": "A mountain with animals",
+              "2": "A river and a fish merged into a flowing design",
+              "3": "A tree with branches"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Gond-Art-Nature-Scene-🌿-Intermediate",
+          "seq": 43,
+          "nm": "Create a Gond Art Nature Scene 🌿",
+          "desc": "In this activity, students will create a Gond Art inspired art work to promote nature conservation & sustainability",
+          "type": "Written",
+          "diff": "Intermediate",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voice note saying \"Detailed\" if you liked it, or \"Confusing\" if you didn’t.",
+              "unguided_text": "What do you think of the Gond Art activity? Share in one word or send a voice note",
+              "valid_criteria": "Detailed, Confusing",
+              "invalid_criteria": "Any word other than detailed, confusing"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a picture of a book",
+              "unguided_text": "Share a picture of anything around you",
+              "valid_criteria": "Picture of a book",
+              "invalid_criteria": "Anything other than a picture of book"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note and tell us which art form you learned"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear picture or video of the Gond art you created"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Animal Wears Patterns 🐘",
+      "desc": "Gond art",
+      "rwc": "Paper, Cardboard, Pencil, Pen, Colors, Scissors",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 48,
+          "nm": "Can patterns dress an animal? 🐘",
+          "desc": "Students make a colourful animal coaster using Gond art style. They draw a simple animal, fill it with bright colours, and then decorate it with easy patterns like lines, dots, and shapes inspired by nature. This activity shows how simple drawings can become beautiful traditional artworks.",
+          "yt": "5NTumpiyGBc",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 49,
+        "nm": "Can animals become coasters? 🐾",
+        "qs": [
+          {
+            "q": "What is the origin of Gond art as mentioned in the script?",
+            "opts": {
+              "1": "Madhya Pradesh and Central India",
+              "2": "Rajasthan and Gujarat",
+              "3": "Kerala and Tamil Nadu"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "What is the first step in creating a Gond-style animal coaster?",
+            "opts": {
+              "1": "Outline with a dark marker",
+              "2": "Add Gond patterns",
+              "3": "Draw a simple animal shape"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "What should be done after drawing the animal shape in the Gond art process?",
+            "opts": {
+              "1": "Add patterns inspired by nature",
+              "2": "Mix patterns and change shapes",
+              "3": "Outline with black or dark marker"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "If you wanted to create a Gond-style pattern using a fish as your animal, which of the following could you creatively incorporate?",
+            "opts": {
+              "1": "Wave lines and leaf shapes",
+              "2": "Dotted spirals and zigzags",
+              "3": "Straight lines and geometric shapes"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Imagine you are creating a Gond-style turtle coaster. Which creative approach aligns with the skill of creativity as described in the video?",
+            "opts": {
+              "1": "Mixing patterns like dots and curves to give a natural vibe",
+              "2": "Drawing abstract shapes unrelated to nature",
+              "3": "Using only one color to maintain simplicity"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Make-a-Gond-Art-Animal-Coaster-🐘-Remedial",
+          "seq": 44,
+          "nm": "Make a Gond Art Animal Coaster 🐘",
+          "desc": "Students make a colourful animal coaster using Gond art style. They draw a simple animal, fill it with bright colours, and then decorate it with easy patterns like lines, dots, and shapes inspired by nature. This activity shows how simple drawings can become beautiful traditional artworks.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voice note saying \"Neat\" if you liked it, or \"Messy\" if you didn’t.",
+              "unguided_text": "What do you think of the Gond Art Coaster activity? Share in one word or send a voice note",
+              "valid_criteria": "Neat, Messy",
+              "invalid_criteria": "Any word other than neat, messy"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a picture of a cup",
+              "unguided_text": "Share a picture of anything around you",
+              "valid_criteria": "Picture of a cup",
+              "invalid_criteria": "Anything other which is not a cup"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Type or send a voice note and tell us what you add after plain coloring in Gond art"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear picture or video of the Gond art coaster you created"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Shapes Speak Without Words 🌍",
+      "desc": "Warli art",
+      "rwc": "Paper, Paint, Pen, Brush, Pencil",
+      "diff": "Advanced",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 49,
+          "nm": "Can shapes protect our earth? 🌍",
+          "desc": "Students create a simple Warli-style poster to show an environmental message without using words. They choose one rule like saving water, planting trees, or not littering, and draw using basic shapes such as circles, triangles, and lines on dark paper. Nature elements are added, and the final drawing is outlined with white paint to clearly show the message.",
+          "yt": "UUu8VFxpZnQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 50,
+        "nm": "Can shapes tell a story? 🔺",
+        "qs": [
+          {
+            "q": "What type of paper is recommended for creating a Warli art poster?",
+            "opts": {
+              "1": "Bright white paper",
+              "2": "Transparent paper",
+              "3": "Dark brown/black paper"
+            },
+            "ans": "3"
+          },
+          {
+            "q": "Why is it important to add nature elements in Warli art?",
+            "opts": {
+              "1": "To emphasize that nature is central to the theme",
+              "2": "To make the painting colorful",
+              "3": "To depict modern life"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Which shapes are primarily used in Warli art to convey messages?",
+            "opts": {
+              "1": "Squares, diamonds, and hexagons",
+              "2": "Circles, triangles, and lines",
+              "3": "Stars, hearts, and ovals"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "If you chose the theme 'Save Water', which creative scene could you depict using Warli shapes?",
+            "opts": {
+              "1": "A person reading a book by the river",
+              "2": "Figures collecting water with a vessel and others pouring water on plants",
+              "3": "A figure sleeping under the sun"
+            },
+            "ans": "2"
+          },
+          {
+            "q": "How can you creatively show movement in a Warli art poster about 'Don’t Litter'?",
+            "opts": {
+              "1": "Draw a static figure standing beside a dustbin",
+              "2": "Use lines to depict a figure throwing trash into a dustbin",
+              "3": "Illustrate figures sitting around a clean area"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Design-a-Warli-Environment-Poster-🌍-Advanced",
+          "seq": 45,
+          "nm": "Design a Warli Environment Poster 🌍",
+          "desc": "Students create a simple Warli-style poster to show an environmental message without using words. They choose one rule like saving water, planting trees, or not littering, and draw using basic shapes such as circles, triangles, and lines on dark paper. Nature elements are added, and the final drawing is outlined with white paint to clearly show the message.",
+          "type": "Written",
+          "diff": "Advanced",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voice note saying \"Fun\" if you liked it, or \"Boring\" if you didn’t.",
+              "unguided_text": "What do you think of the Warli Poster activity? Share in one word or send a voice note",
+              "valid_criteria": "Fun, Boring",
+              "invalid_criteria": "Any word other than fun, boring"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a picture of a color used commonly in warli art",
+              "unguided_text": "Share a picture of anything around you",
+              "valid_criteria": "Picture of white or brown color",
+              "invalid_criteria": "Anything other than a picture of white or brown color"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Shapes Speak Without Words 🌍-Lesson-course_level-Advanced-9"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear picture or video of the Warli poster you created"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nm": "Triangles Build Villages 🏕️",
+      "desc": "Warli",
+      "rwc": "Paper, Pen, Paint, Brush, Pencil",
+      "diff": "Remedial",
+      "xp": 20,
+      "vids": [
+        {
+          "id": 50,
+          "nm": "Can triangles build a village? 🏕️",
+          "desc": "SWABT understand and appreciate this traditional tribal art from Maharashtra, India. Students will learn to create simple, symbolic designs using geometric shapes like circles, triangles, and lines to depict nature, animals, and daily life.",
+          "yt": "CnTrMn-y9DM",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "id": 51,
+        "nm": "What does Warli art show? 🏡",
+        "qs": [
+          {
+            "q": "What is the primary focus of Warli Art?",
+            "opts": {
+              "1": "Balance and simplicity",
+              "2": "Complexity and detail",
+              "3": "Vibrant colors"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "Warli art is traditionally created on which type of surface?",
+            "opts": { "1": "Wooden panels", "2": "Canvas", "3": "Red mud walls" },
+            "ans": "3"
+          },
+          {
+            "q": "Which geometric shape in Warli Art represents the sun and moon?",
+            "opts": { "1": "Circle", "2": "Line", "3": "Triangle" },
+            "ans": "1"
+          },
+          {
+            "q": "If you were tasked with creating a Warli art piece depicting a festival, which element would you creatively focus on?",
+            "opts": {
+              "1": "People dancing and celebrating",
+              "2": "Animals only",
+              "3": "Mountains and trees"
+            },
+            "ans": "1"
+          },
+          {
+            "q": "While creating Warli Art, how can you creatively enhance your artwork?",
+            "opts": {
+              "1": "By focusing only on geometric shapes",
+              "2": "By adding more elements and colors",
+              "3": "By using only black and white colors"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "id": "Create-a-Warli-Village-Scene-🏕️-Remedial",
+          "seq": 46,
+          "nm": "Create a Warli Village Scene 🏕️",
+          "desc": "SWABT understand and appreciate this traditional tribal art from Maharashtra, India. Students will learn to create simple, symbolic designs using geometric shapes like circles, triangles, and lines to depict nature, animals, and daily life.",
+          "type": "Written",
+          "diff": "Remedial",
+          "steps": [
+            {
+              "step": 1,
+              "label": "Emoji response",
+              "sub_types": "emoji",
+              "guided_text": "Send a 👍 if you enjoyed the activity, or 👎 if you did not enjoy it",
+              "unguided_text": "Please send any emoji of your choice!",
+              "valid_criteria": "👍 or 👎",
+              "invalid_criteria": "Any emoji other than 👍 or 👎"
+            },
+            {
+              "step": 2,
+              "label": "Word/voice reflection",
+              "sub_types": "text,audio",
+              "guided_text": "Send a text or voice note saying \"Cultural\" if you liked it, or \"Difficult\" if you didn’t.",
+              "unguided_text": "What do you think of the Warli Art activity? Share in one word or send a voice note",
+              "valid_criteria": "Cultural, Difficult",
+              "invalid_criteria": "Any word other than cultural, difficult"
+            },
+            {
+              "step": 3,
+              "label": "Observation/image",
+              "sub_types": "image",
+              "guided_text": "Share a picture of a color used commonly in warli art",
+              "unguided_text": "Share a picture of anything around you",
+              "valid_criteria": "Picture of white or brown color",
+              "invalid_criteria": "Anything other than a picture of white or brown color"
+            },
+            {
+              "step": 4,
+              "label": "Voice/text",
+              "sub_types": "text,audio",
+              "unguided_text": "Triangles Build Villages 🏕️-Lesson-course_level-Remedial-10"
+            },
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear picture or video of the Warli art you created"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

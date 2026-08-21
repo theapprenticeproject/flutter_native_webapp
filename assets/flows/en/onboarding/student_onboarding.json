@@ -1,0 +1,297 @@
+{
+  "flow_id": "onboarding_flow",
+  "version": "4.0.0",
+  "language": "en",
+  "steps": [
+    {
+      "step_id": "OF-001",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "static",
+      "audio_id": "aud_of_001",
+      "display_text": "Hi {{name}} 👋 Great to have you here — let's get you set up!",
+      "voice_text": "Hi {{name}}! Great to have you here. Let's get you set up!",
+      "next_step": "OF-002",
+      "back_step": null
+    },
+    {
+      "step_id": "OF-002",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "buttons_only",
+      "component": "VerticalSelectCard",
+      "audio_id": "aud_of_002",
+      "display_text": "What do you want to learn? Pick a track below 👇",
+      "voice_text": "So, what do you want to learn? Take a look below and pick whichever track feels right.",
+      "cache_fields": ["selected_vertical"],
+      "back_step": "OF-001",
+      "fallback_guide": "Hey {{name}}, just tap one of the track cards above — that's all you need to do! 😊"
+    },
+    {
+      "step_id": "OF-002-COURSE",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "buttons_only",
+      "component": "CourseSelectCard",
+      "audio_id": "aud_of_002_course",
+      "display_text": "Nice pick! Now choose a course in {{vertical_display}} 👇",
+      "voice_text": "Nice pick! Now choose a course in {{vertical_display}}.",
+      "cache_fields": ["selected_course"],
+      "back_step": "OF-002",
+      "fallback_guide": "Tap one of the course cards above — that's all you need to do! 😊"
+    },
+    {
+      "step_id": "OF-003",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "buttons_only",
+      "audio_id": "aud_of_003",
+      "display_text": "Ayyyy {{course_display}}?! That's amazing 🎉 Are you sure you want to lock in {{course_display}}? Just so you know, your course can't be changed once you confirm.",
+      "voice_text": "Ooooh, {{course_display}}? That's amazing — I love it! Just double checking though, once you lock this in, it's staying locked. So, are you sure?",
+      "options": [
+        {
+          "label": "✅ Yes, I'm sure!",
+          "value": "confirm",
+          "next_step": "OF-004"
+        },
+        {
+          "label": "🔄 Let me re-pick",
+          "value": "repick",
+          "next_step": "OF-002"
+        }
+      ],
+      "back_step": "OF-002-COURSE",
+      "fallback_guide": "Tap '✅ Yes, I'm sure!' to confirm your course or '🔄 Let me re-pick' to go back — it's that simple!"
+    },
+    {
+      "step_id": "OF-004",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "static",
+      "audio_id": "aud_of_004",
+      "display_text": "[confetti] Woohoo! You're officially enrolled in {{course_display}} 🎉 Let's make it count.",
+      "voice_text": "Woohoo! You're officially enrolled — let's make it count!",
+      "next_step": "OF-005",
+      "back_step": null
+    },
+    {
+      "step_id": "OF-005",
+      "type": "dynamic",
+      "sender": "bot",
+      "input_mode": "buttons_only",
+      "component": "ProfileVerifyCard",
+      "audio_id": "aud_of_005",
+      "display_text": "Let's just confirm your details are correct ✅",
+      "voice_text": "Alright, let's just double check your details are correct.",
+      "content_ref": {
+        "source": "student_profile",
+        "fields": ["name", "phone", "language", "school", "class", "subject"]
+      },
+      "options": [
+        {
+          "label": "Looks good 👍",
+          "value": "confirm",
+          "next_step": "OF-006"
+        },
+        {
+          "label": "✏️ Something's wrong",
+          "value": "edit",
+          "next_step": "OF-005-EDIT"
+        }
+      ],
+      "back_step": "OF-004",
+      "fallback_guide": "Tap 'Looks good 👍' if everything is correct, or '✏️ Something's wrong' to flag a fix."
+    },
+    {
+      "step_id": "OF-005-EDIT",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "buttons_only",
+      "audio_id": "aud_of_005_edit",
+      "display_text": "No worries! Which detail should we fix?",
+      "voice_text": "No worries at all, happens to everyone. Which detail should we fix?",
+      "options": [
+        {
+          "label": "Name",
+          "value": "edit_name",
+          "next_step": "OF-005-EDIT-NAME"
+        },
+        {
+          "label": "Phone",
+          "value": "edit_phone",
+          "next_step": "OF-005-EDIT-PHONE"
+        },
+        {
+          "label": "Language",
+          "value": "edit_language",
+          "next_step": "OF-005-EDIT-LANG"
+        },
+        {
+          "label": "School / Class / Subject",
+          "value": "edit_academic",
+          "next_step": "OF-005-EDIT-ACADEMIC"
+        }
+      ],
+      "back_step": "OF-005",
+      "fallback_guide": "Pick one of the fields above to fix it."
+    },
+    {
+      "step_id": "OF-005-EDIT-NAME",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "free_text",
+      "audio_id": "aud_of_005_edit_name",
+      "display_text": "What should I call you instead? Just type the correct name below 😊",
+      "voice_text": "What should I call you instead? Go ahead and type the correct name below.",
+      "cache_fields": ["name"],
+      "next_step": "OF-005",
+      "back_step": "OF-005-EDIT",
+      "fallback_guide": null
+    },
+    {
+      "step_id": "OF-005-EDIT-PHONE",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "free_text",
+      "audio_id": "aud_of_005_edit_phone",
+      "display_text": "What's the correct phone number?",
+      "voice_text": "What's the correct phone number?",
+      "validation": "phone",
+      "cache_fields": ["phone"],
+      "next_step": "OF-005",
+      "back_step": "OF-005-EDIT",
+      "fallback_guide": "Please enter a valid phone number."
+    },
+    {
+      "step_id": "OF-005-EDIT-LANG",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "buttons_only",
+      "audio_id": "aud_of_005_edit_lang",
+      "display_text": "Pick your preferred language 🌐",
+      "voice_text": "Pick your preferred language from the options below.",
+      "options": [
+        {
+          "label": "English",
+          "value": "English",
+          "next_step": "OF-005"
+        },
+        {
+          "label": "Hindi",
+          "value": "Hindi",
+          "next_step": "OF-005"
+        },
+        {
+          "label": "Marathi",
+          "value": "Marathi",
+          "next_step": "OF-005"
+        },
+        {
+          "label": "Punjabi",
+          "value": "Punjabi",
+          "next_step": "OF-005"
+        },
+        {
+          "label": "Kannada",
+          "value": "Kannada",
+          "next_step": "OF-005"
+        }
+      ],
+      "cache_fields": ["language"],
+      "back_step": "OF-005-EDIT",
+      "fallback_guide": "Tap your preferred language from the buttons above."
+    },
+    {
+      "step_id": "OF-005-EDIT-ACADEMIC",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "form",
+      "audio_id": "aud_of_005_edit_academic",
+      "display_text": "Update whichever of these need fixing 🚀",
+      "voice_text": "Go ahead and update whichever of these need fixing.",
+      "form_fields": [
+        {
+          "key": "school",
+          "label": "School",
+          "input_mode": "free_text",
+          "cache_field": "school",
+          "pre_fill_from_cache": true
+        },
+        {
+          "key": "class",
+          "label": "Class / Grade",
+          "input_mode": "free_text",
+          "cache_field": "class",
+          "pre_fill_from_cache": true
+        },
+        {
+          "key": "subject",
+          "label": "Favourite Subject",
+          "input_mode": "free_text",
+          "cache_field": "subject",
+          "pre_fill_from_cache": true
+        }
+      ],
+      "cache_fields": ["school", "class", "subject"],
+      "next_step": "OF-005",
+      "back_step": "OF-005-EDIT",
+      "fallback_guide": "Update the fields above and hit submit!"
+    },
+    {
+      "step_id": "OF-006",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "radio",
+      "audio_id": "aud_of_006",
+      "display_text": "Do you have a sibling? 👫",
+      "voice_text": "Quick question — do you have a sibling?",
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "next_step": "OF-007"
+        },
+        {
+          "label": "No",
+          "value": "no",
+          "next_step": "OF-007"
+        }
+      ],
+      "cache_fields": ["has_sibling"],
+      "back_step": "OF-005",
+      "fallback_guide": "Tap Yes or No — just one tap!"
+    },
+    {
+      "step_id": "OF-007",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "static",
+      "component": "SkillPassportCard",
+      "audio_id": "aud_of_007",
+      "display_text": "",
+      "voice_text": "Congratulations! You just earned five hundred points for completing your profile. You're crushing it already!",
+      "points_awarded": 500,
+      "next_step": "OF-008",
+      "back_step": null
+    },
+    {
+      "step_id": "OF-008",
+      "type": "static",
+      "sender": "bot",
+      "input_mode": "buttons_only",
+      "audio_id": "aud_of_008",
+      "display_text": "Check out your points from the “Passport” tab|Click start learning 👇",
+      "voice_text": "Check out your points from the Passport tab. Click start learning.",
+      "options": [
+        {
+          "label": "Start Learning",
+          "value": "start_learning",
+          "next_flow": "activity_flow",
+          "next_step": "AF-001"
+        }
+      ],
+      "back_step": null,
+      "fallback_guide": "Tap 'Start Learning' and let's go! 💪"
+    }
+  ]
+}
