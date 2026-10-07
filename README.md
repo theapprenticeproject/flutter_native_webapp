@@ -1,151 +1,226 @@
-# TapApp 📚⚡
+# TapApp
 
-A learning app for students, built like every network request is personally costing us money — because on a school Wi-Fi in 2026, it kind of is.
+TapApp is a learning app for students. It has two parts:
 
-TapApp is a Flutter frontend + Cloudflare Worker backend that teaches kids stuff (science, coding, money, art) through bite-sized video → submit-your-work → quiz loops, with an AI buddy (TapBuddy) hanging around to answer questions and grade homework. It's built for spotty connectivity, cheap devices, and the eternal question: *"why did that just refetch the entire roster to show one avatar?"* — the answer here, mostly, is "it doesn't."
+- A **Flutter app** (the screens students use).
+- A **Cloudflare Worker** (the backend that sits between the app and other services).
 
----
+Students learn science, coding, money skills and art. Each lesson follows the same steps: **watch a video → submit your work → take a quiz**. An AI helper called **TapBuddy** answers questions and gives feedback on submitted work.
 
-## The one-sentence philosophy
-
-**Fetch it once. Cache it forever. Patch it locally. Only go back to the network when you have no other choice, or when the user did something that actually needs a server to know about it.**
-
-That's it. That's the whole architectural personality of this repo. Everything below is just that sentence, wearing different clothes.
+The app is built for slow or unstable internet and low-cost phones, so it tries to make as few network requests as possible.
 
 ---
 
-## 🗂️ Repo structure
+## Main idea
+
+> Fetch data once. Save it on the device. Update it locally. Use the network only when it is really needed.
+
+Most design choices in this project follow this idea.
+
+---
+
+## Folder structure
 
 ```
-worker/                    → Cloudflare Worker (the entire backend)
+worker/                     Cloudflare Worker (the backend)
   src/
-    worker.js               → HTTP entrypoint, routes 3 special paths + delegates rest
-    routes.js                → Generic route table → proxies to Frappe (the real backend)
-    auth.js / jwt.js         → Hand-rolled JWT (HMAC-SHA256, access + reset tokens)
-    cors.js                  → Origin allow-listing
-    ratelimit.js             → KV-backed sliding-window-ish rate limiter
-    groq.js                  → Groq API client (chat completions, vision, whisper)
-    tapbuddy.js               → "/tapbuddy/chat" — the AI study buddy
-    submission_review.js      → "/submission-review/review" — AI grades homework
+    worker.js               Entry point. Handles CORS, rate limits and special routes.
+    routes.js               Table of routes. Sends requests on to the Frappe backend.
+    auth.js, jwt.js         Login tokens (JWT, signed with HMAC-SHA256)
+    cors.js                 Checks which websites may call the API
+    ratelimit.js            Limits how many requests one IP address can make
+    groq.js                 Client for the Groq AI API (chat, image, speech-to-text)
+    tapbuddy.js             POST /tapbuddy/chat: the AI study helper
+    submission_review.js    POST /submission-review/review: AI feedback on student work
 
-lib/                        → Flutter app
+lib/                        Flutter app
   core/
-    cache/                    → THE most important folder in this repo (see below)
-    router/                    → go_router with auth-aware redirects
-    theme/                     → colors, fonts, one ThemeData to rule them all
+    cache/                  Local storage and cache keys (the most important folder)
+    router/                 Page navigation (go_router) and login checks
+    theme/                  Colors and fonts
   data/
-    remote/                     → Dio HTTP client + typed API endpoints
-    repositories/                → Cache-first repositories (fetch → cache → serve)
-  data_loader/                 → Same cache-first pattern but for bundled JSON assets
-  models/                     → Plain Dart data classes, hand-written toJson/fromJson
-  providers/                   → Riverpod providers wiring repos → UI
-  screens/                    → Feature screens (auth, onboarding, class, home, ...)
-  widgets/                    → Shared UI (header, bottom nav, TapBuddy chat panel)
+    remote/                 HTTP client (Dio) and API endpoints
+    repositories/           Code that loads data and saves it in the cache
+  data_loader/              Loads JSON files that are bundled inside the app
+  models/                   Plain data classes (toJson / fromJson written by hand)
+  providers/                Riverpod providers that connect data to screens
+  screens/                  Screens: auth, onboarding, class, home, settings, ...
+  widgets/                  Shared widgets (header, bottom bar, TapBuddy panel)
+
+assets/                     Courses (en, hi, kn, mr, pa), lesson flows, images
+documentation/              Full documentation (see below)
+scripts/export_content.py   Script that exports course content
+test/                       Flutter tests
 ```
 
-The Worker is a thin, opinionated proxy. It does **auth, rate-limiting, CORS, and AI calls** — and forwards everything else to a Frappe/ERPNext backend (`tap_lms.tapapp.api.*`). It does not own the domain model. It's a bouncer with a translator earpiece, not the club.
-
 ---
 
-## 🧠 The caching model (a.k.a. "why does this feel instant")
+## How the Worker works
 
-### `LocalCache` — the forever box
+The Worker does not store student data. It does these jobs:
 
-`lib/core/cache/local_cache.dart` wraps Hive (falling back to an in-memory store if IndexedDB is having a bad day on web) and exposes exactly one philosophy: `getForever` / `setForever`. There is no TTL. There is no "stale after 5 minutes." Once something is fetched, it lives in the box until something **specific and known** tells the app it's wrong.
+1. **CORS**: allows only approved websites (set in `ALLOWED_ORIGINS`).
+2. **Rate limiting**: limits requests per IP address.
+3. **Login checks**: verifies the token on each protected request.
+4. **AI calls**: talks to Groq for TapBuddy and for submission review.
+5. **Proxy**: sends all other requests to the Frappe backend (`tap_lms.tapapp.api.*`).
 
-```dart
-T? getForever<T>(String key, T Function(Map<String, dynamic>) fromJson)
-Future<void> setForever<T>(String key, T value, ...)
-```
-
-No expiry timestamps to manage, no cache-invalidation-is-one-of-the-two-hard-problems hand-wringing. Just: did we fetch this before? Yes → use it. No → fetch, then never ask again (until told otherwise).
-
-### The "cached-first, refresh-in-background" pattern
-
-Repositories generally do this dance (see `learner_state_provider.dart`, `profile_provider.dart`):
-
-1. Return the cached value **immediately** — UI paints instantly, zero spinner.
-2. Kick off a network refresh **in the background**, unawaited.
-3. If the fresh data differs, quietly swap it into the provider state.
-
-The user never watches a loading spinner for data they already have. They watch it once, on first load ever, and that's the deal.
-
-### Local-first progress, server-eventually
-
-The really spicy bit lives in `learner_state_repository.dart`: when a kid watches a video or submits an assignment, progress is written to `LocalCache` **first** (`applyLocalProgress`), the UI updates immediately, and the actual "hey server, log this" call (`submitProgress`) only fires when a whole unit is complete — batched, not per-click. If the network is bad mid-lesson, the kid doesn't notice; the sync just catches up later via `syncCompletedLocalProgress`.
-
-Combine that with `ClassSessionWindowRepository` tracking weekly activity limits **client-side against a window key**, and you get an app that behaves correctly offline-ish, without a sync engine you'd need a PhD to debug.
-
-### Invalidation is a scalpel, not a nuke
-
-There's no "clear cache and refetch everything" button hiding in here (well — `clearAll()` exists, but it's reserved for logout). Instead:
-
-- `invalidateLearner(id)` — nukes just that learner's state/achievements/progress
-- `invalidateRosterAndProfiles(phone)` — clears roster/profile search pages for one account
-- `RosterCacheSync.patchRow(...)` — updates *a single row* inside a *cached list* in place, so renaming a kid doesn't blow away the entire class roster cache just to fix one name
-
-Precision invalidation everywhere. Cache keys are versioned (`v2:...`) so a schema change just orphans old keys instead of requiring a migration script nobody wants to write on a Friday.
-
-### Assets get the same treatment
-
-`FlowManifestRepository`, `FlowRepository`, and `ProgramContentRepository` all apply the exact same "cache forever" logic to **bundled JSON assets** (onboarding flow scripts, course content). Why re-parse `activity_flow.json` every time you open a class session? You don't. Load once, memory-cache it, done — with an in-memory `Map` on top of the `LocalCache` layer for good measure, because apparently once wasn't enough of a flex.
-
----
-
-## 🌐 Minimal API calls, on purpose
-
-A few deliberate design choices that all point the same direction:
-
-- **Auth token refresh is opportunistic, not scheduled.** `tokenNeedsRefresh()` checks expiry only when a request is already happening (`auth.js`), and the Worker quietly stuffs a new token into the response body. No separate "refresh token" round trip, ever.
-- **The Worker unwraps Frappe's `{message: {...}}` envelope** so the Flutter side gets clean JSON without needing its own normalization pass on every single response.
-- **Rate limits are bucketed by route, not global** (`ratelimit.js`) — OTP requests get a tight 5/hour, Groq-backed AI routes get 20/hour, everything else gets a generous default. You spend your limited quota where it actually costs money (LLM calls), not on cheap CRUD.
-- **Submission reviews get cached by content hash** (`CacheKeys.submissionReview`) — resubmit the exact same answer, get the same AI verdict back instantly, no second Groq call, no second bill.
-- **The onboarding/class flows are declarative JSON state machines**, walked entirely client-side (`ActivityFlowModel`, `OnboardingFlowStep`). The server isn't polled for "what's the next screen" — the client already knows, because it fetched the flow *once* and cached it *forever*.
-
-The net effect: open the app twice and the second time is nearly all cache hits. The network is treated as an expensive, unreliable friend you call only when you genuinely need something from them — not someone you text "wyd" to every 30 seconds.
-
----
-
-## 🏗️ Backend: Worker as a very opinionated proxy
-
-`worker/src/worker.js` is deliberately tiny:
+Order of work in `worker.js`:
 
 ```
-OPTIONS          → CORS preflight, short-circuit
-/tapbuddy/chat            → Groq chat completion, streaming personality-as-system-prompt
-/submission-review/review  → Groq (text/vision) grades homework against a rubric
-everything else            → routes.js → Frappe backend, JWT-checked, CORS-wrapped
+OPTIONS request              → answer the CORS preflight and stop
+rate limit check             → return 429 if the limit is reached
+POST /tapbuddy/chat          → TapBuddy (Groq chat)
+POST /submission-review/review → AI review of student work
+anything else                → routes.js → Frappe
 ```
 
-`routes.js` is a route **table**, not a route **framework** — each entry says which Frappe method it maps to and whether it needs an access token, a reset token, or nothing. Auth middleware runs once, centrally, before any proxying happens. Adding an endpoint is adding one object to an array, not writing a new handler.
+`routes.js` is a simple list. Each item names the Frappe method to call and the login type it needs: an access token, a reset token, or none. To add an endpoint, add one item to the list.
 
-The JWT implementation (`jwt.js`) is hand-rolled Web Crypto (`HMAC-SHA256`), because Cloudflare Workers don't get to just `npm install jsonwebtoken` and call it a day — everything here runs on V8 isolates, not Node. Two token types: `access` (90-day, because re-logging in a 9-year-old in every week is a UX crime) and `reset` (10-minute, for password resets, because security still matters).
+### Login tokens
 
----
+`jwt.js` creates and checks tokens with the Web Crypto API, because Workers do not run on Node.js. There are two token types:
 
-## 📱 Frontend: Flutter + Riverpod, no ceremony
+- **access**: valid for 90 days. Used for normal requests.
+- **reset**: valid for 10 minutes. Used only to reset a password.
 
-- **State**: Riverpod `FutureProvider`/`Notifier`, mostly `.autoDispose` so screen state doesn't leak memory when you navigate away.
-- **Routing**: `go_router` with a single `redirect` function acting as the entire auth gate — logged out → login, logged in but not onboarded → onboarding, first session → welcome-back screen, otherwise → wherever you're going. One function, one source of truth, no scattered `if (!loggedIn) Navigator.push(...)` landmines.
-- **Models**: hand-written `fromJson`/`toJson`, no codegen. Verbose? A little. Debuggable at 2am without running `build_runner`? Absolutely.
-- **The class session** (`ClassChatController`) is a chat-style state machine driving video → submission → quiz → reward, archetype-aware (a kid who's been dormant for 3 weeks gets gentler copy than a submission streak machine — see `ArchetypeStepSelector` and `LocalArchetypeCalculator`, which computes a fallback archetype client-side if the server hasn't sent one yet, because waiting on the network to decide "how do I talk to this kid" is a bad look).
+The token refreshes itself. When a request arrives and the token has less than 30 days left, the Worker adds a new token to the response body. The app saves it. There is no separate refresh request.
 
----
+### Rate limits
 
-## 🤖 The AI bits
+Limits are counted per IP address and per route group, using Cloudflare KV:
 
-Two Groq-backed features, both prompt-engineered to return **strict JSON**, both with a retry path if the model gets chatty and blows the token budget mid-JSON (`STRICT_RETRY_SUFFIX` in `submission_review.js` — basically "no, seriously, just the JSON, we don't need your feelings about it"):
+| Route group | Limit |
+|---|---|
+| Send OTP (`/auth/forgot-password/send-otp`) | 5 per hour |
+| AI routes (TapBuddy, submission review) | 20 per hour |
+| Everything else | 60 per minute |
 
-- **TapBuddy** (`tapbuddy.js`) — a study-buddy chat, told explicitly to guide rather than hand out homework answers, and to stay on-topic (no, TapBuddy will not discuss your fantasy football league).
-- **Submission review** (`submission_review.js`) — grades text, images, or transcribed voice notes against a rubric, tone-adjusted by learner archetype, always emitting `{score, verdict, feedback, sms_text, strengths, improvements}`.
+These limits are approximate. Many students on one school network share one IP address, so they also share the limit.
 
----
+### Response shape
 
-## Running it
-
-- **Worker**: standard Cloudflare Workers dev flow (`wrangler dev`), needs `JWT_SECRET`, `GROQ_API_KEY`, `FRAPPE_BASE_URL`, `KV` binding, `ALLOWED_ORIGINS`.
-- **Flutter**: `flutter run`, points at `AppConstants.workerBaseUrl`. Hive initializes lazily and falls back gracefully on web if a stale IndexedDB connection is being clingy about a previous session — see `LocalCacheOpenTimeoutException` for the world's most specific error message.
+Frappe wraps its answers in `{ "message": ... }`. The Worker removes this wrapper, so the app receives plain JSON.
 
 ---
 
-*Built with the unshakeable belief that the fastest API call is the one you never make. 🐢💨 (the turtle wins here, don't ask)*
+## How the app saves data
+
+### LocalCache
+
+`lib/core/cache/local_cache.dart` uses Hive for storage. On web it uses an in-memory store if IndexedDB does not work. It has **no expiry time**. Data stays until the app knows it is out of date. Main methods: `getForever` and `setForever`.
+
+Cache keys include a version (`v2:...`). When the data format changes, the app uses new keys and the old ones are ignored.
+
+### Local progress first, server later
+
+> **Important:** this works well only if browser storage survives between visits. The WhatsApp in-app browser may start fresh on every visit. In that case progress that is not yet on the server can be lost. See `documentation/known-gaps.md` (P3, P7, P8) and `documentation/whatsapp-link-login.md`.
+
+When a student watches a video or submits work, the app saves the progress on the device first (`applyLocalProgress`). The screen updates at once. The app tells the server (`submitProgress`) when a whole unit is complete. If the network fails, `syncCompletedLocalProgress` sends the data later.
+
+The app also counts weekly activity limits on the device (`ClassSessionWindowRepository`).
+
+### Precise cache clearing
+
+The app does not clear the whole cache to fix one problem:
+
+- `invalidateLearner(id)` clears the data of one learner.
+- `invalidateRosterAndProfiles(phone)` clears the roster and profile lists of one account.
+- `RosterCacheSync.patchRow(...)` changes one row inside a cached list. For example, renaming one student does not remove the whole class list.
+- `clearAll()` exists, but it is used only when the user logs out.
+
+### Bundled files
+
+Course content and lesson flows are JSON files inside the app. `FlowManifestRepository`, `FlowRepository` and `ProgramContentRepository` read each file once and keep it in memory and in `LocalCache`.
+
+The onboarding and class flows are JSON "state machines". The app reads them from the device and decides the next step itself. It does not ask the server.
+
+### AI review cache
+
+The app saves each AI review on the device. The key is built from the learner, the question and the answer text. If a student sends the same answer again, the app shows the saved review and does not call the AI again. This cache is in the app only. The Worker does not cache reviews.
+
+---
+
+## How the app is built
+
+- **State**: Riverpod (`FutureProvider` and `Notifier`). Most providers use `.autoDispose`.
+- **Navigation**: `go_router` with one `redirect` function that does all login checks. Not logged in → login. Logged in but not onboarded → onboarding. First session → welcome screen. Otherwise → the page the user asked for.
+- **Models**: `toJson` and `fromJson` are written by hand. There is no code generation.
+- **Class session**: `ClassChatController` runs a chat-style lesson: video → submission → quiz → reward. The wording changes by learner "archetype" (for example, a student who has been away for weeks gets softer wording). `LocalArchetypeCalculator` works out an archetype on the device if the server has not sent one yet.
+
+---
+
+## AI features
+
+Both features use Groq. Both ask the model to return strict JSON. If the answer is cut off or is not valid JSON, `submission_review.js` asks again with `STRICT_RETRY_SUFFIX`.
+
+- **TapBuddy** (`tapbuddy.js`): a short chat helper for students. It uses the last 12 messages and some learner context (course, unit, XP, streak). It is told to guide students and not to give homework answers, and to stay on learning topics. The reply is returned in one response (no streaming).
+- **Submission review** (`submission_review.js`): checks text, images, or voice notes (converted to text) against a rubric. The tone depends on the learner archetype. The result has this shape: `{ score, verdict, feedback, sms_text, strengths, improvements }`.
+
+---
+
+## Run the project
+
+You need Flutter (Dart `^3.11.5`), Node.js and npm. Chrome is used for web development.
+
+```bash
+flutter pub get
+npm ci
+cd worker && npm ci && cd ..
+```
+
+**Flutter app**
+
+```bash
+flutter run -d chrome
+```
+
+The app calls the Worker at `AppConstants.workerBaseUrl` (`lib/core/constants/app_constants.dart`). Change it to test with another Worker.
+
+If the app shows `LocalCacheOpenTimeoutException` on web, an old IndexedDB connection is blocking it. Clear the site data and reload.
+
+**Worker**
+
+```bash
+cd worker
+npm run dev
+```
+
+The Worker reads these settings:
+
+| Name | Purpose |
+|---|---|
+| `JWT_SECRET` | Signs and checks login tokens. Must match the secret used by the Frappe backend. |
+| `GROQ_API_KEY` | Key for the Groq AI API |
+| `GROQ_MODEL` | AI model used for text review of submissions |
+| `FRAPPE_BASE_URL` | Address of the Frappe backend |
+| `ALLOWED_ORIGINS` | Websites allowed to call the API, separated by commas |
+| `KV` | Cloudflare KV binding used for rate limits |
+
+Keep secrets out of git. Use `wrangler secret put` or a local `.env` file that is listed in `.gitignore`. See `documentation/deployment.md` for the full list.
+
+**Checks**
+
+```bash
+flutter analyze
+flutter test
+npm run format:check
+```
+
+---
+
+## More documentation
+
+The `documentation/` folder has more detail. Start with `documentation/index.md`. To read it as a website, run `mkdocs serve` (see `documentation/getting-started.md`).
+
+| Topic | File |
+|---|---|
+| Setup | `documentation/getting-started.md` |
+| System design | `documentation/architecture.md` |
+| Flutter code and caching | `documentation/frontend.md` |
+| Onboarding and class rules | `documentation/learning-flows.md` |
+| API endpoints | `documentation/api-reference.md` |
+| Frappe backend | `documentation/frappe-backend.md` |
+| Courses, languages, images | `documentation/content-and-assets.md` |
+| Release steps | `documentation/deployment.md` |
+| Testing and operations | `documentation/testing-and-operations.md` |

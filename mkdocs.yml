@@ -35,3 +35,5 @@ nav:
   - Content and Assets: content-and-assets.md
   - Deployment: deployment.md
   - Testing and Operations: testing-and-operations.md
+  - Known Gaps: known-gaps.md
+  - WhatsApp Link Login: whatsapp-link-login.md

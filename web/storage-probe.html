@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Storage probe</title>
+  <style>
+    body { font-family: sans-serif; margin: 16px; line-height: 1.4; }
+    h1 { font-size: 20px; }
+    table { border-collapse: collapse; width: 100%; }
+    td, th { border: 1px solid #999; padding: 6px; text-align: left; vertical-align: top; word-break: break-all; }
+    .yes { background: #cfc; }
+    .no { background: #fcc; }
+    button { padding: 10px 14px; font-size: 16px; margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <h1>Storage probe (temporary test page)</h1>
+  <p>
+    Open this page from the WhatsApp button. Take a screenshot. Close the browser
+    and open it again from the same button. Compare the "Found from before?" column.
+  </p>
+  <table id="out"></table>
+  <button id="reset">Clear all probe data</button>
+  <script>
+    (function () {
+      var KEY = 'probe_first_seen';
+      var COUNT = 'probe_launch_count';
+      var rows = [];
+      var table = document.getElementById('out');
+
+      function add(name, value, found) {
+        rows.push([name, value, found]);
+        var tr = document.createElement('tr');
+        [name, String(value), found === undefined ? '' : (found ? 'YES' : 'NO')].forEach(function (text, i) {
+          var td = document.createElement(i === 2 && found !== undefined ? 'td' : 'td');
+          td.textContent = text;
+          if (i === 2 && found !== undefined) td.className = found ? 'yes' : 'no';
+          tr.appendChild(td);
+        });
+        table.appendChild(tr);
+      }
+
+      var head = document.createElement('tr');
+      ['Check', 'Value', 'Found from before?'].forEach(function (t) {
+        var th = document.createElement('th');
+        th.textContent = t;
+        head.appendChild(th);
+      });
+      table.appendChild(head);
+
+      var now = new Date().toISOString();
+      add('Page URL (full, with # part)', location.href);
+      add('Referrer', document.referrer || '(empty)');
+      add('User agent', navigator.userAgent);
+      add('Screen / window', screen.width + 'x' + screen.height + ' / ' + innerWidth + 'x' + innerHeight);
+      add('Time now', now);
+
+      try {
+        var nav = performance.getEntriesByType('navigation')[0];
+        if (nav) add('Page transfer size (bytes)', nav.transferSize + ' (0 = from HTTP cache)');
+      } catch (e) {}
+
+      // localStorage
+      try {
+        var first = localStorage.getItem(KEY);
+        var n = parseInt(localStorage.getItem(COUNT) || '0', 10) + 1;
+        localStorage.setItem(COUNT, String(n));
+        if (!first) localStorage.setItem(KEY, now);
+        add('localStorage', first ? 'first seen ' + first + ', launch #' + n : 'empty, now written', !!first);
+      } catch (e) { add('localStorage', 'error: ' + e.message, false); }
+
+      // sessionStorage
+      try {
+        var s = sessionStorage.getItem(KEY);
+        if (!s) sessionStorage.setItem(KEY, now);
+        add('sessionStorage', s ? 'first seen ' + s : 'empty, now written', !!s);
+      } catch (e) { add('sessionStorage', 'error: ' + e.message, false); }
+
+      // cookie
+      try {
+        var hasCookie = document.cookie.indexOf('probe=') !== -1;
+        document.cookie = 'probe=1; max-age=31536000; path=/; SameSite=Lax; Secure';
+        add('Cookie', hasCookie ? 'present' : 'empty, now written', hasCookie);
+      } catch (e) { add('Cookie', 'error: ' + e.message, false); }
+
+      // IndexedDB (Hive uses this on web)
+      try {
+        var req = indexedDB.open('probe_db', 1);
+        req.onupgradeneeded = function () { req.result.createObjectStore('kv'); };
+        req.onsuccess = function () {
+          var db = req.result;
+          var tx = db.transaction('kv', 'readwrite');
+          var store = tx.objectStore('kv');
+          var get = store.get(KEY);
+          get.onsuccess = function () {
+            var found = !!get.result;
+            if (!found) store.put(now, KEY);
+            add('IndexedDB (used by Hive)', found ? 'first seen ' + get.result : 'empty, now written', found);
+          };
+        };
+        req.onerror = function () { add('IndexedDB (used by Hive)', 'error: ' + (req.error && req.error.message), false); };
+      } catch (e) { add('IndexedDB (used by Hive)', 'error: ' + e.message, false); }
+
+      // Cache API
+      if (window.caches) {
+        caches.has('probe_cache').then(function (found) {
+          if (!found) caches.open('probe_cache');
+          add('Cache API', found ? 'present' : 'empty, now created', found);
+        });
+      } else {
+        add('Cache API', 'not available', false);
+      }
+
+      // Persistent storage and quota
+      if (navigator.storage && navigator.storage.persisted) {
+        navigator.storage.persisted().then(function (p) { add('navigator.storage.persisted()', p); });
+      } else {
+        add('navigator.storage.persisted()', 'not available');
+      }
+      if (navigator.storage && navigator.storage.estimate) {
+        navigator.storage.estimate().then(function (e) {
+          add('Storage quota / usage (bytes)', e.quota + ' / ' + e.usage);
+        });
+      }
+
+      document.getElementById('reset').onclick = function () {
+        localStorage.clear();
+        sessionStorage.clear();
+        document.cookie = 'probe=; max-age=0; path=/';
+        indexedDB.deleteDatabase('probe_db');
+        if (window.caches) caches.delete('probe_cache');
+        location.reload();
+      };
+    })();
+  </script>
+</body>
+</html>
