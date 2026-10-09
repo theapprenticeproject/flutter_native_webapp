@@ -155,7 +155,7 @@ The app saves each AI review on the device. The key is built from the learner, t
 Both features use Groq. Both ask the model to return strict JSON. If the answer is cut off or is not valid JSON, `submission_review.js` asks again with `STRICT_RETRY_SUFFIX`.
 
 - **TapBuddy** (`tapbuddy.js`): a short chat helper for students. It uses the last 12 messages and some learner context (course, unit, XP, streak). It is told to guide students and not to give homework answers, and to stay on learning topics. The reply is returned in one response (no streaming).
-- **Submission review** (`submission_review.js`): checks text, images, or voice notes (converted to text) against a rubric. The tone depends on the learner archetype. The result has this shape: `{ score, verdict, feedback, sms_text, strengths, improvements }`.
+- **Submission review** (`submission_review.js`, a prototype that will be replaced by the existing submission pipeline): checks text, images, or voice notes (converted to text) against a rubric. The tone depends on the learner archetype. The result has this shape: `{ score, verdict, feedback, sms_text, strengths, improvements }`.
 
 ---
 
