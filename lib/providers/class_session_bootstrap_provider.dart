@@ -2,12 +2,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/classroom_progress_stage.dart';
 import '../domain/learner/learner_state_model.dart';
-import '../models/program_content/course_detail_model.dart';
+import '../domain/program_content/course_detail_model.dart';
 import 'class_session_window_repository.dart';
 import '../domain/learner/learner_state_provider.dart';
 import '../core/cache/local_cache_provider.dart';
 import '../domain/profile/profile_provider.dart';
-import 'program_content_provider.dart';
+import '../domain/program_content/program_content_provider.dart';
 
 class NoActiveEnrollmentException implements Exception {
   const NoActiveEnrollmentException();

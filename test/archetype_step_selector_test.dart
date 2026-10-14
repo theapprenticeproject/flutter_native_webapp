@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:tapapp/models/archetype_step_selector.dart';
 import 'package:tapapp/models/learner_archetype.dart';
-import 'package:tapapp/models/program_content/course_detail_model.dart';
+import 'package:tapapp/domain/program_content/course_detail_model.dart';
 
 void main() {
   const steps = [

@@ -1,4 +1,4 @@
-import 'program_content/course_detail_model.dart';
+import '../domain/program_content/course_detail_model.dart';
 import 'classroom_progress_stage.dart';
 
 enum LearningStage { startActivity, sendProject, quizPending, completed }

@@ -1,10 +1,10 @@
-import '../../core/cache/domain_cache/program_content_cache.dart';
+import 'program_content_cache.dart';
 import '../../core/cache/local_cache.dart';
 import '../../data_loader/asset_data_source.dart';
 import '../../core/assets/data_loader.dart';
-import '../../models/program_content/course_detail_model.dart';
-import '../../models/program_content/course_index_entry_model.dart';
-import '../../models/program_content/export_program_content_error_model.dart';
+import 'course_detail_model.dart';
+import 'course_index_entry_model.dart';
+import 'export_program_content_error_model.dart';
 
 class ProgramContentRepository {
   ProgramContentRepository(this._dataLoader, this._assetDataSource);
