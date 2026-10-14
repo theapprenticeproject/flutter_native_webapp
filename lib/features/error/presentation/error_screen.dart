@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import '../../core/router/app_routes.dart';
-import '../../shared/widgets/error_view.dart';
+import '../../../core/router/app_routes.dart';
+import '../../../shared/widgets/error_view.dart';
 
 class ErrorScreen extends StatelessWidget {
   const ErrorScreen({super.key});

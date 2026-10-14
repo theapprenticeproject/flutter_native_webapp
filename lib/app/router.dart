@@ -2,8 +2,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import '../screens/splash/splash_screen.dart';
-import '../screens/error/error_screen.dart';
+import '../features/splash/presentation/splash_screen.dart';
+import '../features/error/presentation/error_screen.dart';
 import '../features/auth/presentation/auth_screen.dart';
 import '../features/auth/presentation/profile_select_screen.dart';
 import '../features/onboarding/presentation/onboarding_screen.dart';
@@ -11,7 +11,7 @@ import '../screens/home/home_screen.dart';
 import '../screens/class/class_screen.dart';
 import '../screens/passport/passport_screen.dart';
 import '../screens/settings/settings_screen.dart';
-import '../screens/welcome/welcome_screen.dart';
+import '../features/welcome/presentation/welcome_screen.dart';
 import '../domain/profile/profile_provider.dart';
 import '../core/router/app_routes.dart';
 
