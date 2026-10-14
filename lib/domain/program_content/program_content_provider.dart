@@ -2,7 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/assets/asset_loader.dart';
 import 'program_content_repository.dart';
-import '../../data_loader/asset_data_source.dart';
+import '../reference_data/asset_data_source.dart';
 import 'course_detail_model.dart';
 import '../../core/cache/local_cache_provider.dart';
 

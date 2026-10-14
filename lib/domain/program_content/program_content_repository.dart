@@ -1,6 +1,6 @@
 import 'program_content_cache.dart';
 import '../../core/cache/local_cache.dart';
-import '../../data_loader/asset_data_source.dart';
+import '../reference_data/asset_data_source.dart';
 import '../../core/assets/data_loader.dart';
 import 'course_detail_model.dart';
 import 'course_index_entry_model.dart';
