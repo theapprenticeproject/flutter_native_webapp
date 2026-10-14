@@ -28,6 +28,7 @@ nav:
   - Overview: index.md
   - Getting Started: getting-started.md
   - Architecture: architecture.md
+  - Architecture Tenets: architecture-tenets.md
   - Frontend: frontend.md
   - Learning Flows: learning-flows.md
   - API Reference: api-reference.md
