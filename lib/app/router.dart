@@ -9,7 +9,7 @@ import '../features/auth/presentation/profile_select_screen.dart';
 import '../features/onboarding/presentation/onboarding_screen.dart';
 import '../features/home/presentation/home_screen.dart';
 import '../screens/class/class_screen.dart';
-import '../screens/passport/passport_screen.dart';
+import '../features/passport/presentation/passport_screen.dart';
 import '../screens/settings/settings_screen.dart';
 import '../features/welcome/presentation/welcome_screen.dart';
 import '../domain/profile/profile_provider.dart';
