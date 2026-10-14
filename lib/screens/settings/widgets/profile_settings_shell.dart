@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/theme/app_theme.dart';
-import '../../../widgets/app_nav.dart';
+import '../../../shared/widgets/app_nav.dart';
 import '../models/profile_tab.dart';
 import 'profile_side_nav.dart';
 import 'profile_switcher.dart';

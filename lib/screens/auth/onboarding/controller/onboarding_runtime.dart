@@ -3,8 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../core/router/app_routes.dart';
-import '../../../../widgets/error_view.dart';
-import '../../../../widgets/loading_view.dart';
+import '../../../../shared/widgets/error_view.dart';
+import '../../../../shared/widgets/loading_view.dart';
 import '../widgets/onboarding_shell.dart';
 import 'onboarding_flow_controller.dart';
 

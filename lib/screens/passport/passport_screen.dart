@@ -7,9 +7,9 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../core/theme/app_theme.dart';
 import '../../domain/learning_progress/activity_models.dart';
 import '../../domain/learning_progress/home_dashboard_provider.dart';
-import '../../widgets/app_header.dart';
-import '../../widgets/app_nav.dart';
-import '../../widgets/loading_view.dart';
+import '../../shared/widgets/app_header.dart';
+import '../../shared/widgets/app_nav.dart';
+import '../../shared/widgets/loading_view.dart';
 
 class PassportScreen extends ConsumerWidget {
   const PassportScreen({super.key});

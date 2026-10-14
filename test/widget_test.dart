@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:tapapp/widgets/error_view.dart';
+import 'package:tapapp/shared/widgets/error_view.dart';
 
 void main() {
   Widget buildTestableWidget(Size size) {
