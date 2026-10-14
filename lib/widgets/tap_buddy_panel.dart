@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../models/chat_turn_model.dart';
+import '../domain/tapbuddy/chat_turn_model.dart';
 import '../core/localization/language_provider.dart';
 import '../domain/profile/profile_provider.dart';
-import '../providers/tap_buddy_context_provider.dart';
-import '../providers/tapbuddy_chat_provider.dart';
+import '../domain/tapbuddy/tap_buddy_context_provider.dart';
+import '../domain/tapbuddy/tapbuddy_chat_provider.dart';
 
 class TapBuddyPanel extends ConsumerStatefulWidget {
   final VoidCallback onClose;

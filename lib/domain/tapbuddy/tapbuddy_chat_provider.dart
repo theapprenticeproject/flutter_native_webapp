@@ -1,9 +1,9 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../models/chat_turn_model.dart';
-import '../data/repositories/tapbuddy_chat_repository.dart';
-import '../core/network/http_client_provider.dart';
-import '../core/cache/local_cache_provider.dart';
+import 'chat_turn_model.dart';
+import 'tapbuddy_chat_repository.dart';
+import '../../core/network/http_client_provider.dart';
+import '../../core/cache/local_cache_provider.dart';
 
 final tapbuddyChatRepositoryProvider = FutureProvider<TapbuddyChatRepository>((
   ref,
