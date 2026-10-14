@@ -18,6 +18,9 @@ lib/
               One folder per concept (auth, learner, profile, program_content,
               flows, ...) holding its models, repository and providers.
   shared/     UI used by more than one feature (header, nav, error view, ...).
+  app/        Composition root: the router wiring that connects every screen
+              and the auth redirects. Imports everything; nothing imports it
+              except main.dart and app.dart.
   features/   One folder per user-facing feature (home, classroom, onboarding,
               passport, settings, tap_buddy, ...).
               Each holds its screens, widgets and its own UI state.
@@ -29,7 +32,7 @@ Inside a feature, create only the subfolders you need. Typical ones are
 Dependencies point one way:
 
 ```
-features  →  shared  →  domain  →  core
+app  →  features  →  shared  →  domain  →  core
 ```
 
 A layer may import itself and anything to its right. It must never import
@@ -45,7 +48,7 @@ core of the app. Screens come and go.
 *Test: if a screen is deleted, does anything in `domain/` have to change? It
 shouldn't.*
 
-### 2. Dependencies point one way: `features → shared → domain → core`
+### 2. Dependencies point one way: `app → features → shared → domain → core`
 
 - `core/` knows nothing about the app's domain.
 - `domain/` knows nothing about screens, and imports no widget toolkit
@@ -121,8 +124,7 @@ reason here.
 
 | Path | Allowed | Why |
 |---|---|---|
-| `core/router/` | Import `features/` | The router wires every screen to a route. |
-| `core/router/`, `core/theme/` | Import Flutter widget packages | They are Flutter by nature (`GoRouter`, `ThemeData`). |
+| `core/router/`, `core/theme/` | Import Flutter widget packages | Route constants build a `Page`, and the theme is `ThemeData`. |
 
 ## Enforcement
 

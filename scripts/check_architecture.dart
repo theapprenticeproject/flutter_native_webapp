@@ -9,7 +9,7 @@
 import 'dart:io';
 
 const packageName = 'tapapp';
-const targetLayers = {'core', 'domain', 'shared', 'features'};
+const targetLayers = {'core', 'domain', 'shared', 'features', 'app'};
 
 /// Layers each layer may import. Anything else is a violation.
 const allowedImports = {
@@ -17,6 +17,8 @@ const allowedImports = {
   'domain': {'core', 'domain'},
   'shared': {'core', 'domain', 'shared'},
   'features': {'core', 'domain', 'shared', 'features'},
+  // The composition root wires everything together; nothing imports it.
+  'app': {'core', 'domain', 'shared', 'features', 'app'},
 };
 
 /// Tenet 2: core/ and domain/ are UI-free.
@@ -32,9 +34,7 @@ final ioImport = RegExp(
 
 /// Documented exceptions: files under `prefix` may also do `allows`.
 const exceptions = [
-  // The router wires every screen, so it must see every feature.
-  (prefix: 'core/router/', allows: 'features'),
-  // Router and theme are Flutter by nature (GoRouter, ThemeData).
+  // Route constants and theme are Flutter by nature (Page, ThemeData).
   (prefix: 'core/router/', allows: 'flutter-ui'),
   (prefix: 'core/theme/', allows: 'flutter-ui'),
 ];

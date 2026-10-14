@@ -2,34 +2,18 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../screens/splash/splash_screen.dart';
-import '../../screens/error/error_screen.dart';
-import '../../screens/auth/auth_screen.dart';
-import '../../screens/auth/profile_select/profile_select_screen.dart';
-import '../../screens/auth/onboarding/onboarding_screen.dart';
-import '../../screens/home/home_screen.dart';
-import '../../screens/class/class_screen.dart';
-import '../../screens/passport/passport_screen.dart';
-import '../../screens/settings/settings_screen.dart';
-import '../../screens/welcome/welcome_screen.dart';
-import '../../providers/profile_provider.dart';
-
-class AppRoutes {
-  AppRoutes._();
-
-  static const String splash = '/';
-  static const String login = '/login';
-  static const String onboarding = '/onboarding';
-  static const String profileSelect = '/profile-select';
-  static const String welcome = '/welcome';
-  static const String home = '/home';
-  static const String classroom = '/classroom';
-  static const String passport = '/passport';
-  static const String profile = '/profile';
-  static const String error = '/error';
-
-  static Page<void> page(Widget child) => NoTransitionPage<void>(child: child);
-}
+import '../screens/splash/splash_screen.dart';
+import '../screens/error/error_screen.dart';
+import '../screens/auth/auth_screen.dart';
+import '../screens/auth/profile_select/profile_select_screen.dart';
+import '../screens/auth/onboarding/onboarding_screen.dart';
+import '../screens/home/home_screen.dart';
+import '../screens/class/class_screen.dart';
+import '../screens/passport/passport_screen.dart';
+import '../screens/settings/settings_screen.dart';
+import '../screens/welcome/welcome_screen.dart';
+import '../providers/profile_provider.dart';
+import '../core/router/app_routes.dart';
 
 class _AuthRefreshListenable extends ChangeNotifier {
   _AuthRefreshListenable(this._ref) {
