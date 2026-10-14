@@ -99,7 +99,7 @@ void _check(String rel, String layer, String uri, List<Violation> out) {
   // Tenet 6: presentation does no I/O.
   if (layer == 'features' &&
       rel.contains('/presentation/') &&
-      (ioImport.hasMatch(uri) || _isCoreIo(uri))) {
+      (ioImport.hasMatch(uri) || _isCoreIo(_resolve(rel, uri)))) {
     out.add(Violation(rel, 'T6 presentation-does-io', uri));
   }
 
@@ -129,10 +129,11 @@ void _check(String rel, String layer, String uri, List<Violation> out) {
   }
 }
 
-bool _isCoreIo(String uri) =>
-    uri.startsWith('package:$packageName/core/cache/') ||
-    uri.startsWith('package:$packageName/core/network/') ||
-    uri.startsWith('package:$packageName/core/storage/');
+bool _isCoreIo(String? target) =>
+    target != null &&
+    (target.startsWith('core/cache/') ||
+        target.startsWith('core/network/') ||
+        target.startsWith('core/storage/'));
 
 bool _hasException(String rel, String what) =>
     exceptions.any((e) => rel.startsWith(e.prefix) && e.allows == what);
