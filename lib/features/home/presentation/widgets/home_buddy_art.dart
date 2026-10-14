@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../domain/learning_progress/activity_models.dart';
+import '../../../../domain/learning_progress/activity_models.dart';
 
 class HomeBuddyArt extends StatelessWidget {
   final LearningStage stage;

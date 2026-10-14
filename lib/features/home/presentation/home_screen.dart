@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../core/router/app_routes.dart';
-import '../../domain/learning_progress/activity_models.dart';
-import '../../domain/learning_progress/home_dashboard_provider.dart';
-import '../../shared/widgets/app_header.dart';
-import '../../shared/widgets/app_nav.dart';
-import '../../shared/widgets/loading_view.dart';
+import '../../../core/router/app_routes.dart';
+import '../../../domain/learning_progress/activity_models.dart';
+import '../../../domain/learning_progress/home_dashboard_provider.dart';
+import '../../../shared/widgets/app_header.dart';
+import '../../../shared/widgets/app_nav.dart';
+import '../../../shared/widgets/loading_view.dart';
 import 'widgets/completed_card.dart';
 import 'widgets/home_buddy_art.dart';
 import 'widgets/quiz_pending_card.dart';
