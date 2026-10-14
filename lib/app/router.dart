@@ -12,7 +12,7 @@ import '../screens/class/class_screen.dart';
 import '../screens/passport/passport_screen.dart';
 import '../screens/settings/settings_screen.dart';
 import '../screens/welcome/welcome_screen.dart';
-import '../providers/profile_provider.dart';
+import '../domain/profile/profile_provider.dart';
 import '../core/router/app_routes.dart';
 
 class _AuthRefreshListenable extends ChangeNotifier {

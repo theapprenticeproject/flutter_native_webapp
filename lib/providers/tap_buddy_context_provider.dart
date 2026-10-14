@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/learner_state_model.dart';
 import 'class_session_bootstrap_provider.dart';
 import 'learner_state_provider.dart';
-import 'profile_provider.dart';
+import '../domain/profile/profile_provider.dart';
 
 class TapBuddyContext {
   const TapBuddyContext({

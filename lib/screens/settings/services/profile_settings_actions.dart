@@ -1,10 +1,10 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../models/active_profile_model.dart';
+import '../../../domain/profile/active_profile_model.dart';
 import '../../../models/learner_state_model.dart';
-import '../../../models/profile_summary_model.dart';
+import '../../../domain/profile/profile_summary_model.dart';
 import '../../../providers/learner_state_provider.dart';
-import '../../../providers/profile_provider.dart';
+import '../../../domain/profile/profile_provider.dart';
 
 class ProfileSettingsSnapshot {
   const ProfileSettingsSnapshot({this.activeProfile, this.learnerState});

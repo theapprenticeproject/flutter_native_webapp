@@ -5,9 +5,9 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/router/app_routes.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../models/active_profile_model.dart';
-import '../../../models/profile_summary_model.dart';
-import '../../../providers/profile_provider.dart';
+import '../../../domain/profile/active_profile_model.dart';
+import '../../../domain/profile/profile_summary_model.dart';
+import '../../../domain/profile/profile_provider.dart';
 
 class ProfileSelectScreen extends ConsumerStatefulWidget {
   const ProfileSelectScreen({super.key, required this.phone});

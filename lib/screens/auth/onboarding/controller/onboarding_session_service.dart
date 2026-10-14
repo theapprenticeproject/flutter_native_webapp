@@ -1,12 +1,12 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../data/repositories/learner_state_repository.dart';
-import '../../../../data/repositories/profile_repository.dart';
-import '../../../../models/active_profile_model.dart';
+import '../../../../domain/profile/profile_repository.dart';
+import '../../../../domain/profile/active_profile_model.dart';
 import '../../../../models/learner_state_model.dart';
 import '../../../../models/program_content/course_index_entry_model.dart';
 import '../../../../providers/learner_state_provider.dart';
-import '../../../../providers/profile_provider.dart';
+import '../../../../domain/profile/profile_provider.dart';
 import '../../../../providers/program_content_provider.dart';
 import '../data/onboarding_flow_repository.dart';
 import '../models/onboarding_flow_step.dart';

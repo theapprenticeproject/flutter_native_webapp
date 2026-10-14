@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../models/chat_turn_model.dart';
 import '../core/localization/language_provider.dart';
-import '../providers/profile_provider.dart';
+import '../domain/profile/profile_provider.dart';
 import '../providers/tap_buddy_context_provider.dart';
 import '../providers/tapbuddy_chat_provider.dart';
 

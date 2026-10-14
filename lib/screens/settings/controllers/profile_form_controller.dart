@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../models/active_profile_model.dart';
+import '../../../domain/profile/active_profile_model.dart';
 import '../../../models/learner_state_model.dart';
 
 class ProfileFormController {

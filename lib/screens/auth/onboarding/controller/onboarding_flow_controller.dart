@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../../models/active_profile_model.dart';
+import '../../../../domain/profile/active_profile_model.dart';
 import '../../../../models/learner_state_model.dart';
 import '../../../../models/program_content/course_index_entry_model.dart';
 import 'onboarding_component_registry.dart';

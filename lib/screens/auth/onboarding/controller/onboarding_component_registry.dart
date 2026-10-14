@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-import '../../../../models/active_profile_model.dart';
+import '../../../../domain/profile/active_profile_model.dart';
 import '../../../../models/learner_state_model.dart';
 import '../../../../models/program_content/course_index_entry_model.dart';
 import '../models/onboarding_flow_step.dart';

@@ -1,6 +1,6 @@
 import 'achievement_model.dart';
 import 'enrollment_model.dart';
-import 'learner_profile_fields_model.dart';
+import '../domain/profile/learner_profile_fields_model.dart';
 
 const int weeklyActivityLimit = 2;
 

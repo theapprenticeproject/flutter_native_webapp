@@ -13,7 +13,7 @@ import '../../providers/class_chat_provider.dart';
 import '../../providers/class_session_bootstrap_provider.dart';
 import '../../providers/home_dashboard_provider.dart';
 import '../../providers/learner_state_provider.dart';
-import '../../providers/profile_provider.dart';
+import '../../domain/profile/profile_provider.dart';
 import '../../widgets/app_header.dart';
 import '../../widgets/app_nav.dart';
 import 'widgets/class_chat_row.dart';

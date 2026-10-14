@@ -1,5 +1,5 @@
 import '../../core/cache/local_cache.dart';
-import '../../models/profile_summary_model.dart';
+import 'profile_summary_model.dart';
 
 class RosterCacheSync {
   RosterCacheSync._();

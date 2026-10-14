@@ -3,8 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/theme/app_theme.dart';
-import '../../../models/profile_summary_model.dart';
-import '../../../providers/profile_provider.dart';
+import '../../../domain/profile/profile_summary_model.dart';
+import '../../../domain/profile/profile_provider.dart';
 
 class SwitchProfileBar extends StatelessWidget {
   const SwitchProfileBar({

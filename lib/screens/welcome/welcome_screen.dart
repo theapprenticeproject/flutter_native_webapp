@@ -6,7 +6,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../core/router/app_routes.dart';
-import '../../providers/profile_provider.dart';
+import '../../domain/profile/profile_provider.dart';
 
 class WelcomeBackScreen extends ConsumerStatefulWidget {
   const WelcomeBackScreen({super.key, this.onDone});
