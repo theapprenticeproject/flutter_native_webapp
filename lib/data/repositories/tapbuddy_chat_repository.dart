@@ -1,8 +1,8 @@
 import '../../core/cache/cache_keys.dart';
 import '../../core/cache/local_cache.dart';
 import '../../models/chat_turn_model.dart';
-import '../remote/api_endpoints.dart';
-import '../remote/http_client.dart';
+import '../../core/network/api_endpoints.dart';
+import '../../core/network/http_client.dart';
 
 class TapbuddyChatRepository {
   TapbuddyChatRepository(this._http, this._localCache);

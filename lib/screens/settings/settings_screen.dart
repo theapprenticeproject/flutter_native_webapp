@@ -5,7 +5,7 @@ import '../../core/theme/app_theme.dart';
 import '../../models/active_profile_model.dart';
 import '../../models/learner_state_model.dart';
 import '../../models/profile_summary_model.dart';
-import '../../providers/http_client_provider.dart';
+import '../../core/network/http_client_provider.dart';
 import '../../providers/learner_state_provider.dart';
 import '../../providers/profile_provider.dart';
 import 'controllers/profile_form_controller.dart';

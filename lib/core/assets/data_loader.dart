@@ -1,4 +1,4 @@
-import '../core/cache/local_cache.dart';
+import '../cache/local_cache.dart';
 
 class DataLoader {
   DataLoader(this._localCache);

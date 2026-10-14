@@ -1,8 +1,8 @@
 import '../../core/cache/cache_keys.dart';
 import '../../core/cache/local_cache.dart';
 import '../../models/learner_state_model.dart';
-import '../remote/api_endpoints.dart';
-import '../remote/http_client.dart';
+import '../../core/network/api_endpoints.dart';
+import '../../core/network/http_client.dart';
 
 const completedUnitStateFields =
     'profile,xp,level,streak,window,archetype,submission,enrollment,achievements';

@@ -2,8 +2,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/learner_state_model.dart';
 import '../data/repositories/learner_state_repository.dart';
-import 'http_client_provider.dart';
-import 'local_cache_provider.dart';
+import '../core/network/http_client_provider.dart';
+import '../core/cache/local_cache_provider.dart';
 
 final learnerStateRepositoryProvider = FutureProvider<LearnerStateRepository>((
   ref,

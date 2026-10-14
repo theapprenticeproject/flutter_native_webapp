@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 
-import '../../core/cache/secure_token_store.dart';
-import '../../core/constants/app_constants.dart';
+import '../cache/secure_token_store.dart';
+import '../constants/app_constants.dart';
 
 class AuthException implements Exception {
   AuthException(this.code);
