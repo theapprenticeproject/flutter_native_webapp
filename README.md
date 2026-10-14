@@ -207,6 +207,14 @@ npm run format:check
 
 ---
 
+## Folder rules
+
+Code in `lib/` follows the rules in [`documentation/architecture-tenets.md`](documentation/architecture-tenets.md). Check them before opening a pull request:
+
+```bash
+dart run scripts/check_architecture.dart
+```
+
 ## More documentation
 
 The `documentation/` folder has more detail. Start with `documentation/index.md`. To read it as a website, run `mkdocs serve` (see `documentation/getting-started.md`).
