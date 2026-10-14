@@ -14,6 +14,8 @@ class AuthRepository {
   final LocalCache _localCache;
   final SecureTokenStore _secureTokenStore;
 
+  Future<String?> readStoredPhone() => _secureTokenStore.readPhone();
+
   Future<Map<String, dynamic>> checkPhone(String phone) async {
     final data = await _http.post(
       ApiEndpoints.checkPhone,

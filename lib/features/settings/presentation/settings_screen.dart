@@ -5,7 +5,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../domain/profile/active_profile_model.dart';
 import '../../../domain/learner/learner_state_model.dart';
 import '../../../domain/profile/profile_summary_model.dart';
-import '../../../core/network/http_client_provider.dart';
+import '../../../domain/auth/auth_provider.dart';
 import '../../../domain/learner/learner_state_provider.dart';
 import '../../../domain/profile/profile_provider.dart';
 import '../controllers/profile_form_controller.dart';
@@ -264,8 +264,8 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   }
 
   Future<String> _resolvePhone() async {
-    final tokenStore = ref.read(secureTokenStoreProvider);
-    final storedPhone = await tokenStore.readPhone();
+    final authRepository = await ref.read(authRepositoryProvider.future);
+    final storedPhone = await authRepository.readStoredPhone();
     if (storedPhone != null && storedPhone.isNotEmpty) return storedPhone;
     return _activeProfile?.phone ?? '';
   }
