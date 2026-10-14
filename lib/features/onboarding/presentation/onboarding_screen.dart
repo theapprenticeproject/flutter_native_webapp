@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-import 'controller/onboarding_runtime.dart';
+import '../controller/onboarding_runtime.dart';
 
 class ConversationalOnboardingScreen extends StatelessWidget {
   const ConversationalOnboardingScreen({super.key});

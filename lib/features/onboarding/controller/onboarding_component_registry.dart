@@ -1,11 +1,11 @@
 import 'package:flutter/widgets.dart';
 
-import '../../../../domain/profile/active_profile_model.dart';
-import '../../../../domain/learner/learner_state_model.dart';
-import '../../../../domain/program_content/course_index_entry_model.dart';
+import '../../../domain/profile/active_profile_model.dart';
+import '../../../domain/learner/learner_state_model.dart';
+import '../../../domain/program_content/course_index_entry_model.dart';
 import '../models/onboarding_flow_step.dart';
-import '../widgets/onboarding_chat_widgets.dart';
-import '../widgets/onboarding_flow_widgets.dart';
+import '../presentation/widgets/onboarding_chat_widgets.dart';
+import '../presentation/widgets/onboarding_flow_widgets.dart';
 
 class OnboardingResolvedContent {
   const OnboardingResolvedContent({required this.text, this.content});

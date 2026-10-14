@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_theme.dart';
 import '../../../../shared/widgets/app_header.dart';
-import '../models/onboarding_models.dart';
+import '../../models/onboarding_models.dart';
 import 'onboarding_chat_widgets.dart';
 
 class OnboardingShell extends StatelessWidget {

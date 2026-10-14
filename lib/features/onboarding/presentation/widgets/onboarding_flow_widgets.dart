@@ -5,7 +5,7 @@ import '../../../../core/theme/app_theme.dart';
 import '../../../../domain/profile/active_profile_model.dart';
 import '../../../../domain/learner/learner_state_model.dart';
 import '../../../../domain/program_content/course_index_entry_model.dart';
-import '../models/onboarding_models.dart';
+import '../../models/onboarding_models.dart';
 
 String onboardingCourseThumbnail(String courseId) =>
     'assets/data/courses/thumbnail/$courseId.webp';

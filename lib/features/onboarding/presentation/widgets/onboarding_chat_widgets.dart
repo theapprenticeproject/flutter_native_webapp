@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/theme/app_theme.dart';
-import '../models/onboarding_models.dart';
+import '../../models/onboarding_models.dart';
 
 class OnboardingMessageTile extends StatelessWidget {
   const OnboardingMessageTile({

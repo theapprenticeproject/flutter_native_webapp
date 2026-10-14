@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:tapapp/screens/auth/onboarding/models/onboarding_flow_step.dart';
+import 'package:tapapp/features/onboarding/models/onboarding_flow_step.dart';
 
 void main() {
   test('parses a component step and its options', () {

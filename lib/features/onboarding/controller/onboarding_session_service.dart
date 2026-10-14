@@ -1,13 +1,13 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../../domain/learner/learner_state_repository.dart';
-import '../../../../domain/profile/profile_repository.dart';
-import '../../../../domain/profile/active_profile_model.dart';
-import '../../../../domain/learner/learner_state_model.dart';
-import '../../../../domain/program_content/course_index_entry_model.dart';
-import '../../../../domain/learner/learner_state_provider.dart';
-import '../../../../domain/profile/profile_provider.dart';
-import '../../../../domain/program_content/program_content_provider.dart';
+import '../../../domain/learner/learner_state_repository.dart';
+import '../../../domain/profile/profile_repository.dart';
+import '../../../domain/profile/active_profile_model.dart';
+import '../../../domain/learner/learner_state_model.dart';
+import '../../../domain/program_content/course_index_entry_model.dart';
+import '../../../domain/learner/learner_state_provider.dart';
+import '../../../domain/profile/profile_provider.dart';
+import '../../../domain/program_content/program_content_provider.dart';
 import '../data/onboarding_flow_repository.dart';
 import '../models/onboarding_flow_step.dart';
 

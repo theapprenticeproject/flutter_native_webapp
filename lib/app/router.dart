@@ -6,7 +6,7 @@ import '../screens/splash/splash_screen.dart';
 import '../screens/error/error_screen.dart';
 import '../features/auth/presentation/auth_screen.dart';
 import '../features/auth/presentation/profile_select_screen.dart';
-import '../screens/auth/onboarding/onboarding_screen.dart';
+import '../features/onboarding/presentation/onboarding_screen.dart';
 import '../screens/home/home_screen.dart';
 import '../screens/class/class_screen.dart';
 import '../screens/passport/passport_screen.dart';
