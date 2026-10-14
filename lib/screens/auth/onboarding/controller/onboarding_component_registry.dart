@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
 import '../../../../domain/profile/active_profile_model.dart';
-import '../../../../models/learner_state_model.dart';
+import '../../../../domain/learner/learner_state_model.dart';
 import '../../../../models/program_content/course_index_entry_model.dart';
 import '../models/onboarding_flow_step.dart';
 import '../widgets/onboarding_chat_widgets.dart';

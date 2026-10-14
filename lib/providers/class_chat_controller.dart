@@ -2,14 +2,14 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 
-import '../models/learner_state_model.dart';
-import '../data/repositories/learner_state_repository.dart';
+import '../domain/learner/learner_state_model.dart';
+import '../domain/learner/learner_state_repository.dart';
 import '../data/repositories/submission_review_repository.dart';
 import '../models/activity_flow_model.dart';
 import '../models/archetype_step_selector.dart';
 import '../models/class_chat_message_model.dart';
 import '../models/classroom_progress_stage.dart';
-import '../models/enrollment_model.dart';
+import '../domain/learner/enrollment_model.dart';
 import '../models/learner_archetype.dart';
 import '../models/local_archetype_calculator.dart';
 import '../models/program_content/course_detail_model.dart';

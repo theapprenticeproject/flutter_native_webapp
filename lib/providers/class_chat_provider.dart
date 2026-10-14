@@ -5,7 +5,7 @@ import 'class_chat_controller.dart';
 import 'class_session_bootstrap_provider.dart';
 import 'home_dashboard_provider.dart';
 import '../core/localization/language_provider.dart';
-import 'learner_state_provider.dart';
+import '../domain/learner/learner_state_provider.dart';
 import 'submission_review_provider.dart';
 
 class NoUnitAvailableException implements Exception {

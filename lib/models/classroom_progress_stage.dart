@@ -1,4 +1,4 @@
-import 'enrollment_model.dart';
+import '../domain/learner/enrollment_model.dart';
 import 'program_content/course_detail_model.dart';
 
 enum ClassroomProgressStage {

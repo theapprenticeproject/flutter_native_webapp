@@ -3,11 +3,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../domain/profile/active_profile_model.dart';
 import '../models/activity_models.dart';
 import '../models/classroom_progress_stage.dart';
-import '../models/enrollment_model.dart';
-import '../models/learner_state_model.dart';
+import '../domain/learner/enrollment_model.dart';
+import '../domain/learner/learner_state_model.dart';
 import '../models/program_content/course_detail_model.dart';
 import 'class_session_bootstrap_provider.dart';
-import 'learner_state_provider.dart';
+import '../domain/learner/learner_state_provider.dart';
 import '../domain/profile/profile_provider.dart';
 import 'program_content_provider.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:tapapp/models/learner_state_model.dart';
+import 'package:tapapp/domain/learner/learner_state_model.dart';
 
 void main() {
   test('parses weekly activity field names returned by the backend', () {

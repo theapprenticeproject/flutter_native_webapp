@@ -3,10 +3,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/theme/app_theme.dart';
 import '../../domain/profile/active_profile_model.dart';
-import '../../models/learner_state_model.dart';
+import '../../domain/learner/learner_state_model.dart';
 import '../../domain/profile/profile_summary_model.dart';
 import '../../core/network/http_client_provider.dart';
-import '../../providers/learner_state_provider.dart';
+import '../../domain/learner/learner_state_provider.dart';
 import '../../domain/profile/profile_provider.dart';
 import 'controllers/profile_form_controller.dart';
 import 'models/profile_tab.dart';

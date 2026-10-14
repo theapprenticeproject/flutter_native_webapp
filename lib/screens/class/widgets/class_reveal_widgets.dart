@@ -9,7 +9,7 @@ import '../../../core/router/app_routes.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../models/activity_models.dart';
 import '../../../providers/class_chat_controller.dart';
-import '../../../providers/learner_state_provider.dart';
+import '../../../domain/learner/learner_state_provider.dart';
 import '../../../providers/reveal_asset_resolver.dart';
 
 class ClassContinueBar extends StatelessWidget {

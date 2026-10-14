@@ -1,11 +1,11 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'active_profile_model.dart';
-import '../../models/learner_state_model.dart';
+import '../learner/learner_state_model.dart';
 import 'profile_summary_model.dart';
 import 'profile_repository.dart';
 import '../../core/network/http_client_provider.dart';
-import '../../providers/learner_state_provider.dart';
+import '../learner/learner_state_provider.dart';
 import '../../core/cache/local_cache_provider.dart';
 
 final profileRepositoryProvider = FutureProvider<ProfileRepository>((

@@ -1,11 +1,11 @@
 import '../../core/cache/cache_keys.dart';
 import '../../core/cache/local_cache.dart';
 import 'active_profile_model.dart';
-import '../../models/learner_state_model.dart';
+import '../learner/learner_state_model.dart';
 import 'profile_summary_model.dart';
 import '../../core/network/api_endpoints.dart';
 import '../../core/network/http_client.dart';
-import '../../data/repositories/learner_state_repository.dart';
+import '../learner/learner_state_repository.dart';
 import 'roster_cache_sync.dart';
 
 class ProfileRepository {

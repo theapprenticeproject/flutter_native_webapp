@@ -1,6 +1,6 @@
 import '../../core/cache/cache_keys.dart';
 import '../../core/cache/local_cache.dart';
-import '../../models/learner_state_model.dart';
+import 'learner_state_model.dart';
 import '../../core/network/api_endpoints.dart';
 import '../../core/network/http_client.dart';
 

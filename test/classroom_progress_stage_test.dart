@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:tapapp/models/classroom_progress_stage.dart';
-import 'package:tapapp/models/enrollment_model.dart';
+import 'package:tapapp/domain/learner/enrollment_model.dart';
 import 'package:tapapp/models/program_content/course_detail_model.dart';
 
 void main() {
