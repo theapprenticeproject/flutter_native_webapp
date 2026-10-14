@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../core/theme/app_theme.dart';
-import '../models/profile_tab.dart';
+import '../../../../core/theme/app_theme.dart';
+import '../../models/profile_tab.dart';
 
 class ProfileSideNav extends StatelessWidget {
   const ProfileSideNav({
