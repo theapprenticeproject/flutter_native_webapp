@@ -1,9 +1,9 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../core/assets/asset_loader.dart';
-import '../data/repositories/flow_manifest_repository.dart';
-import '../data/repositories/flow_repository.dart';
-import '../core/cache/local_cache_provider.dart';
+import '../../../core/assets/asset_loader.dart';
+import '../data/flow_manifest_repository.dart';
+import '../data/flow_repository.dart';
+import '../../../core/cache/local_cache_provider.dart';
 
 final assetLoaderProvider = Provider<AssetLoader>((ref) => const AssetLoader());
 

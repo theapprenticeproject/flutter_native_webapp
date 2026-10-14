@@ -2,10 +2,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'activity_flow_provider.dart';
 import 'class_chat_controller.dart';
-import '../domain/learning_progress/class_session_bootstrap_provider.dart';
-import '../domain/learning_progress/home_dashboard_provider.dart';
-import '../core/localization/language_provider.dart';
-import '../domain/learner/learner_state_provider.dart';
+import '../../../domain/learning_progress/class_session_bootstrap_provider.dart';
+import '../../../domain/learning_progress/home_dashboard_provider.dart';
+import '../../../core/localization/language_provider.dart';
+import '../../../domain/learner/learner_state_provider.dart';
 import 'submission_review_provider.dart';
 
 class NoUnitAvailableException implements Exception {

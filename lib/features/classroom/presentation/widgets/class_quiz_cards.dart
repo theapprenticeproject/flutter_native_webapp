@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../core/theme/app_theme.dart';
-import '../../../models/class_chat_message_model.dart';
-import '../../../providers/class_chat_controller.dart';
+import '../../../../core/theme/app_theme.dart';
+import '../../models/class_chat_message_model.dart';
+import '../../providers/class_chat_controller.dart';
 import 'class_card_shell.dart';
 
 class ClassQuizQuestionCard extends StatefulWidget {

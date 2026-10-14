@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/theme/app_theme.dart';
+import '../../../../core/theme/app_theme.dart';
 
 class ClassCardShell extends StatelessWidget {
   const ClassCardShell({required this.child, super.key});

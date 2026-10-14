@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-import '../../../core/theme/app_theme.dart';
-import '../../../models/class_chat_message_model.dart';
-import '../../../providers/class_chat_controller.dart';
+import '../../../../core/theme/app_theme.dart';
+import '../../models/class_chat_message_model.dart';
+import '../../providers/class_chat_controller.dart';
 import 'youtube_embed_stub.dart'
     if (dart.library.html) 'youtube_embed_web.dart';
 

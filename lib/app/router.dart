@@ -8,7 +8,7 @@ import '../features/auth/presentation/auth_screen.dart';
 import '../features/auth/presentation/profile_select_screen.dart';
 import '../features/onboarding/presentation/onboarding_screen.dart';
 import '../features/home/presentation/home_screen.dart';
-import '../screens/class/class_screen.dart';
+import '../features/classroom/presentation/class_screen.dart';
 import '../features/passport/presentation/passport_screen.dart';
 import '../features/settings/presentation/settings_screen.dart';
 import '../features/welcome/presentation/welcome_screen.dart';

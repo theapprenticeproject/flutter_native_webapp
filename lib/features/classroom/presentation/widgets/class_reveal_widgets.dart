@@ -5,12 +5,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../core/router/app_routes.dart';
-import '../../../core/theme/app_theme.dart';
-import '../../../domain/learning_progress/activity_models.dart';
-import '../../../providers/class_chat_controller.dart';
-import '../../../domain/learner/learner_state_provider.dart';
-import '../../../providers/reveal_asset_resolver.dart';
+import '../../../../core/router/app_routes.dart';
+import '../../../../core/theme/app_theme.dart';
+import '../../../../domain/learning_progress/activity_models.dart';
+import '../../providers/class_chat_controller.dart';
+import '../../../../domain/learner/learner_state_provider.dart';
+import '../../providers/reveal_asset_resolver.dart';
 
 class ClassContinueBar extends StatelessWidget {
   const ClassContinueBar({super.key, required this.onContinue});
