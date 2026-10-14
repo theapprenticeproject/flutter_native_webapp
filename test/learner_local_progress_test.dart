@@ -8,7 +8,7 @@ import 'package:tapapp/core/cache/local_cache.dart';
 import 'package:tapapp/core/cache/secure_token_store.dart';
 import 'package:tapapp/core/network/http_client.dart';
 import 'package:tapapp/domain/learner/learner_state_repository.dart';
-import 'package:tapapp/models/classroom_progress_stage.dart';
+import 'package:tapapp/domain/learning_progress/classroom_progress_stage.dart';
 import 'package:tapapp/domain/learner/learner_state_model.dart';
 
 void main() {

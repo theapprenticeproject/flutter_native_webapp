@@ -8,13 +8,13 @@ import '../data/repositories/submission_review_repository.dart';
 import '../models/activity_flow_model.dart';
 import '../models/archetype_step_selector.dart';
 import '../models/class_chat_message_model.dart';
-import '../models/classroom_progress_stage.dart';
+import '../domain/learning_progress/classroom_progress_stage.dart';
 import '../domain/learner/enrollment_model.dart';
 import '../models/learner_archetype.dart';
 import '../models/local_archetype_calculator.dart';
 import '../domain/program_content/course_detail_model.dart';
 import '../models/submission_answer_model.dart';
-import 'class_session_window_repository.dart';
+import '../domain/learning_progress/class_session_window_repository.dart';
 
 enum ClassSessionOutcome { none, choice, weeklyCapReached }
 

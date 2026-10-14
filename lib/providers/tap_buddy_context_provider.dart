@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../domain/learner/learner_state_model.dart';
-import 'class_session_bootstrap_provider.dart';
+import '../domain/learning_progress/class_session_bootstrap_provider.dart';
 import '../domain/learner/learner_state_provider.dart';
 import '../domain/profile/profile_provider.dart';
 

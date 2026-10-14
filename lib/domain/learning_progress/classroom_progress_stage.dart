@@ -1,5 +1,5 @@
-import '../domain/learner/enrollment_model.dart';
-import '../domain/program_content/course_detail_model.dart';
+import '../learner/enrollment_model.dart';
+import '../program_content/course_detail_model.dart';
 
 enum ClassroomProgressStage {
   watchVideo,

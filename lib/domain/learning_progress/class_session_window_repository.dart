@@ -1,6 +1,6 @@
-import '../core/cache/cache_keys.dart';
-import '../core/cache/local_cache.dart';
-import '../models/class_session_window_model.dart';
+import '../../core/cache/cache_keys.dart';
+import '../../core/cache/local_cache.dart';
+import 'class_session_window_model.dart';
 
 class ClassSessionWindowRepository {
   ClassSessionWindowRepository(this._localCache);

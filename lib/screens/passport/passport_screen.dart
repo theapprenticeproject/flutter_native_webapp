@@ -5,8 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../core/theme/app_theme.dart';
-import '../../models/activity_models.dart';
-import '../../providers/home_dashboard_provider.dart';
+import '../../domain/learning_progress/activity_models.dart';
+import '../../domain/learning_progress/home_dashboard_provider.dart';
 import '../../widgets/app_header.dart';
 import '../../widgets/app_nav.dart';
 import '../../widgets/loading_view.dart';
