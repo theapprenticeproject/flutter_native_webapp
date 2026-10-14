@@ -12,6 +12,13 @@ For now, WhatsApp stays as the channel for **notifications**: reminders, escalat
 
 Because WhatsApp will go away later, the link is only a bridge. The design keeps the link creation in one function. A later version can send the link through another channel.
 
+## Scope
+
+- **Version 1 (this spec):** the web app, opened from a WhatsApp link. The link logs the child in. There is **no PIN** and no name picker.
+- **Version 2 (not in this spec):** a PIN, the name picker for shared phones, and the Android app. The teacher-created accounts and the school (shared device) login belong here too.
+
+The design should not block version 2. For example, the login token should not assume that a link was used.
+
 ## Words used in this document
 
 | Word | Meaning |
