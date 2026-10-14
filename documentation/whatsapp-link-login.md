@@ -359,7 +359,7 @@ Please ask the client what "seamless" means. We propose B for the pilot. After t
 
 ### Flutter app
 
-- Add a route `/l/:token` in `router.dart`. It must run **before** the login check.
+- Add a route `/l/:token` in `lib/app/router.dart`. It must run **before** the login check.
 - Add the "Enter your phone number" screen and the "we sent a link" message.
 - After login with the link, call `history.replaceState` to remove the token from the address bar.
 - Go straight to the student's home screen (or onboarding). Show "Hi <name>" with a "Not you?" button.

@@ -42,7 +42,7 @@ The Flutter app calls the Worker URL defined in `lib/core/constants/app_constant
 When documentation and code disagree, use this order:
 
 1. Worker routes in `worker/src/routes.js` for the public HTTP contract.
-2. Flutter repositories in `lib/data/repositories/` for payloads consumed by the app.
+2. Flutter repositories in the repositories under `lib/domain/` and `lib/features/*/data/` for payloads consumed by the app.
 3. Deployed Frappe methods for backend behavior.
 4. This documentation.
 

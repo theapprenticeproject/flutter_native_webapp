@@ -2,7 +2,7 @@
 
 ## Navigation
 
-Routes are defined in `lib/core/router/router.dart`.
+Routes are defined in `lib/app/router.dart` (route names are constants in `lib/core/router/app_routes.dart`).
 
 | Route             | Screen            | Access rule                    |
 | ----------------- | ----------------- | ------------------------------ |

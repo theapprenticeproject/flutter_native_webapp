@@ -34,18 +34,16 @@ worker/                     Cloudflare Worker (the backend)
     submission_review.js    POST /submission-review/review: AI feedback on student work
 
 lib/                        Flutter app
+  app/                      Router wiring and login redirects (go_router)
+  features/                 One folder per feature: auth, onboarding, home, classroom, ...
+  shared/widgets/           Widgets used by several features (header, bottom bar, TapBuddy panel)
+  domain/                   Data used by many screens: models, repositories, providers
+                            (auth, profile, learner, program_content, learning_progress, ...)
   core/
     cache/                  Local storage and cache keys (the most important folder)
-    router/                 Page navigation (go_router) and login checks
-    theme/                  Colors and fonts
-  data/
-    remote/                 HTTP client (Dio) and API endpoints
-    repositories/           Code that loads data and saves it in the cache
-  data_loader/              Loads JSON files that are bundled inside the app
-  models/                   Plain data classes (toJson / fromJson written by hand)
-  providers/                Riverpod providers that connect data to screens
-  screens/                  Screens: auth, onboarding, class, home, settings, ...
-  widgets/                  Shared widgets (header, bottom bar, TapBuddy panel)
+    network/                HTTP client (Dio) and API endpoints
+    assets/                 Loads JSON files that are bundled inside the app
+    router/, theme/         Route names, colors and fonts
 
 assets/                     Courses (en, hi, kn, mr, pa), lesson flows, images
 documentation/              Full documentation (see below)
