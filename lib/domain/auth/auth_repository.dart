@@ -1,7 +1,7 @@
 import '../../core/cache/cache_keys.dart';
 import '../../core/cache/local_cache.dart';
 import '../../core/cache/secure_token_store.dart';
-import '../../models/auth_session_model.dart';
+import 'auth_session_model.dart';
 import '../../models/learner_state_model.dart';
 import '../../models/profile_summary_model.dart';
 import '../../core/network/api_endpoints.dart';
