@@ -56,3 +56,6 @@ app.*.map.json
 /android/app/release
 
 .*/
+
+# Firebase CLI local deploy cache (regenerated on every deploy)
+.firebase/
