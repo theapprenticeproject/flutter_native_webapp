@@ -37,4 +37,5 @@ nav:
   - Deployment: deployment.md
   - Testing and Operations: testing-and-operations.md
   - Known Gaps: known-gaps.md
+  - Engineering TODO: todo.md
   - WhatsApp Link Login: whatsapp-link-login.md
