@@ -159,7 +159,7 @@ Both features use Groq. Both ask the model to return strict JSON. If the answer 
 
 ## Run the project
 
-You need Flutter (Dart `^3.11.5`), Node.js and npm. Chrome is used for web development.
+You need Flutter **3.47.1** (Dart `^3.11.5`), Node.js and npm. `pubspec.yaml` rejects other Flutter versions, see [Flutter version](documentation/deployment.md#flutter-version). Chrome is used for web development.
 
 ```bash
 flutter pub get
