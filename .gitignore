@@ -56,6 +56,8 @@ app.*.map.json
 /android/app/release
 
 .*/
+# ...but keep CI workflows trackable
+!.github/
 
 # Firebase CLI local deploy cache (regenerated on every deploy)
 .firebase/
