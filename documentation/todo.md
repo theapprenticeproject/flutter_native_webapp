@@ -22,6 +22,14 @@ Priority: **P1** do before the next release or merge, **P2** soon, **P3** when c
 - [ ] **P2** Flutter's service worker is marked deprecated in the build output ("will be removed in a future Flutter release"). Decide the offline and caching approach before an upgrade removes it.
 - [ ] **P3** Delete the `webview-rendering-test` branch, or keep it for diagnosing future WebView problems. Its `web/flutter_bootstrap.js` (the `?cpu=1` switch) must not go to production.
 
+## Data and content
+
+- [ ] **P1** Find out why the backend enrolls a test account in course `CAATA3`. The app only bundles the 14 courses in `assets/data/courses/<lang>/index.json` (ids like `Basic-Electronics-science-lab-C2258`), so the home screen fails with `courseNotFound` for that account. This reproduces in a clean browser on the old structure too, so it is not caused by the restructure. Either the backend's course id is wrong for the account, or the bundled content needs re-exporting (`scripts/export_content.py`).
+- [ ] **P2** Check that every course id the backend can return exists in the bundled index, for example with a small script that CI can run against the Frappe course list.
+- [ ] **P2** Cached enrollment can hide server changes. The live test site kept showing a working home screen because it used old cached data, while a clean browser got the new data and failed. Decide how and when cached learner state and enrollments are refreshed from the server, since the plan treats the server as the source of truth.
+- [ ] **P2** A learner whose course id is unknown sees only "Failed to load dashboard" and a Retry button, which cannot help. Decide on a clearer message or a fallback, which is a product decision.
+- [ ] **P3** `CourseDetailModel.fromJson` is lenient: JSON with the wrong keys becomes an empty course (`id: ''`, no units) instead of an error. Consider failing loudly when `id` or `units` is missing.
+
 ## Structure and code
 
 - [ ] **P2** Split the large files, one commit each, with no logic changes in the same commit. `classroom/providers/class_chat_controller.dart` (1,151 lines), `class_submission_card.dart` (1,016), `onboarding_flow_widgets.dart` (911), `class_reveal_widgets.dart` (728), `passport_screen.dart` (710), `auth_screen.dart` (679), `profile_details_view.dart` (613), `shared/widgets/tap_buddy_panel.dart` (541).
