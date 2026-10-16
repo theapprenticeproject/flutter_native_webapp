@@ -17,6 +17,7 @@ Priority: **P1** do before the next release or merge, **P2** soon, **P3** when c
 
 - [ ] **P1** Ask whoever built the live site with Flutter 3.41 which machine and process they use, so everyone builds with 3.47.1. The pin in `pubspec.yaml` blocks other versions, but it only helps people who run `flutter pub get`.
 - [ ] **P2** Add a CI workflow (`.github/` is no longer ignored). First version, on each pull request: `flutter pub get`, `flutter analyze`, `flutter test`, `dart run scripts/check_architecture.dart`, using Flutter 3.47.1.
+- [ ] **P2** Make `scripts/build_web.sh` hard to skip. A deploy made with plain `flutter build web` shows `unknown` in the login screen's build line (long-press the logos), which was seen once already. Option: a `predeploy` hook in `firebase.json` that runs the script before every `firebase deploy`. Also check the long-press on real phones inside WhatsApp's browser, including that it does not clash with text selection.
 - [ ] **P3** Consider FVM so each project pins the SDK itself, if more people build releases.
 - [ ] **P2** Flutter's service worker is marked deprecated in the build output ("will be removed in a future Flutter release"). Decide the offline and caching approach before an upgrade removes it.
 - [ ] **P3** Delete the `webview-rendering-test` branch, or keep it for diagnosing future WebView problems. Its `web/flutter_bootstrap.js` (the `?cpu=1` switch) must not go to production.
