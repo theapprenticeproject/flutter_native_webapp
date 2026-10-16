@@ -26,6 +26,27 @@ Add tests when changing cache behavior, progress indexes, archetype mapping, wee
 9. Restart during a unit and confirm local stage recovery.
 10. Test phone and desktop widths.
 
+## Inspecting and repairing dev test learners
+
+`scripts/frappe/dev_learner_tools.py` helps when a test account shows the wrong course or needs to run onboarding again. It is for the **dev** Frappe site only. Copy it to the server, then in the bench directory:
+
+```bash
+bench --site <site-name> console
+```
+```python
+exec(open("/path/to/dev_learner_tools.py").read())
+show_phone("9123456780")                      # profiles, learners, enrollments (read only)
+set_course("TL00017435", "Basic-Electronics-science-lab-C2258")              # dry run
+set_course("TL00017435", "Basic-Electronics-science-lab-C2258", apply=True)  # saves
+reset_for_onboarding("9123456780", "TL00017435", apply=True)  # run onboarding again
+```
+
+- Every function prints the site name first. Check it before you apply anything.
+- Writing functions only print what they would change until you pass `apply=True`.
+- `set_course(..., ignore_links=True)` skips Frappe's check that the course exists as a record of the linked doctype. The dev site's working enrollments store the app's bundled course ids (like `Basic-Electronics-science-lab-C2258`), so a plain save may be refused.
+- After a change, log out and back in (or use a private window), because the app reads cached learner state first.
+- `show_schema()` and `course_names()` print the doctypes and fields the script depends on, if the backend changes.
+
 ## Rate limits
 
 Worker limits are per Cloudflare client IP:
