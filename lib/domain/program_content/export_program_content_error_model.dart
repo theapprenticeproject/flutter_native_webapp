@@ -8,16 +8,24 @@ class ExportProgramContentErrorModel implements Exception {
   const ExportProgramContentErrorModel({
     required this.reason,
     required this.detail,
+    this.cause,
   });
 
   final ProgramContentErrorReason reason;
   final String detail;
 
-  factory ExportProgramContentErrorModel.courseNotFound(String courseId) =>
-      ExportProgramContentErrorModel(
-        reason: ProgramContentErrorReason.courseNotFound,
-        detail: 'No course found for id "$courseId"',
-      );
+  /// The underlying error, when this one wraps another (for example a failed
+  /// asset load or cache write).
+  final Object? cause;
+
+  factory ExportProgramContentErrorModel.courseNotFound(
+    String courseId, [
+    Object? cause,
+  ]) => ExportProgramContentErrorModel(
+    reason: ProgramContentErrorReason.courseNotFound,
+    detail: 'No course found for id "$courseId"',
+    cause: cause,
+  );
 
   factory ExportProgramContentErrorModel.languageNotAvailable(String lang) =>
       ExportProgramContentErrorModel(
@@ -25,13 +33,17 @@ class ExportProgramContentErrorModel implements Exception {
         detail: 'No content bundle available for language "$lang"',
       );
 
-  factory ExportProgramContentErrorModel.malformed(String source) =>
-      ExportProgramContentErrorModel(
-        reason: ProgramContentErrorReason.malformedContent,
-        detail: 'Malformed content at "$source"',
-      );
+  factory ExportProgramContentErrorModel.malformed(
+    String source, [
+    Object? cause,
+  ]) => ExportProgramContentErrorModel(
+    reason: ProgramContentErrorReason.malformedContent,
+    detail: 'Malformed content at "$source"',
+    cause: cause,
+  );
 
   @override
   String toString() =>
-      'ExportProgramContentErrorModel(${reason.name}: $detail)';
+      'ExportProgramContentErrorModel(${reason.name}: $detail'
+      '${cause == null ? '' : '; cause: $cause'})';
 }

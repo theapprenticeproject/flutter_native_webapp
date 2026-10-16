@@ -41,15 +41,16 @@ class ProgramContentRepository {
         fetch: () => _assetDataSource.fetchCourseDetail(courseId, lang: lang),
         forceRefresh: forceRefresh,
       );
-    } catch (_) {
-      throw ExportProgramContentErrorModel.courseNotFound(courseId);
+    } catch (e) {
+      throw ExportProgramContentErrorModel.courseNotFound(courseId, e);
     }
 
     try {
       return CourseDetailModel.fromJson(json);
-    } catch (_) {
+    } catch (e) {
       throw ExportProgramContentErrorModel.malformed(
         ProgramContentCache.courseDetail(courseId, lang),
+        e,
       );
     }
   }
