@@ -7,7 +7,7 @@ flutter clean
 flutter pub get
 flutter analyze
 flutter test
-flutter build web --release
+scripts/build_web.sh
 firebase deploy --only hosting
 ```
 
@@ -17,14 +17,21 @@ Build releases with the Flutter version pinned in `pubspec.yaml` (currently 3.47
 
 This matters because the web renderer (CanvasKit) is downloaded from the Flutter engine revision the app was built with. A build made with Flutter 3.41 rendered the login screen zoomed and stretched in WhatsApp's in-app browser on some Android phones (Redmi Note 13 and Samsung A31). The same code built with 3.47.1 rendered correctly.
 
-After building, check which engine the build uses before deploying:
+`scripts/build_web.sh` builds with the build details baked in. On the login screen, **long-press the logos** to show a line like:
 
-```bash
-flutter --version | head -3
-grep -o '"engineRevision":"[a-f0-9]*"' build/web/flutter_bootstrap.js
+```text
+Build 2026-10-16T10:42Z · 9462206 · Flutter 3.47.1 (engine 5d531788)
 ```
 
-The second line must show the engine revision from the first (for 3.47.1 it begins `5d531788`). To change the version, upgrade on a branch, build, test the login screen on real phones inside the WhatsApp browser, then update the range in `pubspec.yaml`.
+Use it to check what a deployment is made from: the build time (UTC), the git commit (`-dirty` means there were uncommitted changes), the Flutter version and the engine. Long-press again to hide it. A build made without the script shows `unknown`. Do not deploy such a build.
+
+You can also check the engine from outside the app:
+
+```bash
+curl -s https://<host>/flutter_bootstrap.js | grep -o '"engineRevision":"[a-f0-9]\{8\}'
+```
+
+To change the version, upgrade on a branch, build, test the login screen on real phones inside the WhatsApp browser, then update the range in `pubspec.yaml`.
 
 `firebase.json` serves `build/web` and rewrites all routes to `index.html`, which is required for `go_router` browser navigation.
 
@@ -68,7 +75,7 @@ Never commit production JWT, Groq, Frappe API, or analytics secrets. If a secret
 
 - No secrets or learner data in the commit.
 - Flutter analysis and tests pass.
-- Built with the pinned Flutter version, and `engineRevision` in `build/web/flutter_bootstrap.js` matches it.
+- Built with `scripts/build_web.sh` on the pinned Flutter version, and the build line on the login screen shows the expected commit and Flutter version.
 - Worker dry run/deploy succeeds.
 - `mkdocs build --strict` succeeds.
 - All bundled assets load in a release build.

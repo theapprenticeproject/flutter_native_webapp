@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../../core/constants/build_info.dart';
 import '../../../core/router/app_routes.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../domain/profile/active_profile_model.dart';
@@ -32,6 +33,7 @@ class _AuthCheckScreenState extends ConsumerState<AuthCheckScreen> {
   String _phone = '';
   bool _obscurePassword = true;
   bool _obscureConfirmPassword = true;
+  bool _showBuildInfo = false;
 
   @override
   void dispose() {
@@ -258,9 +260,19 @@ class _AuthCheckScreenState extends ConsumerState<AuthCheckScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      _Logos(isDesktop: isDesktop),
+                      // Hidden: long-press the logos to show or hide the build line.
+                      GestureDetector(
+                        behavior: HitTestBehavior.opaque,
+                        onLongPress: () =>
+                            setState(() => _showBuildInfo = !_showBuildInfo),
+                        child: _Logos(isDesktop: isDesktop),
+                      ),
                       SizedBox(height: isDesktop ? 48 : 36),
                       _buildCard(isDesktop),
+                      if (_showBuildInfo) ...[
+                        const SizedBox(height: 16),
+                        const _BuildInfoLine(),
+                      ],
                     ],
                   ),
                 ),
@@ -474,6 +486,19 @@ class _Logos extends StatelessWidget {
           errorBuilder: (_, _, _) => const SizedBox.shrink(),
         ),
       ],
+    );
+  }
+}
+
+class _BuildInfoLine extends StatelessWidget {
+  const _BuildInfoLine();
+
+  @override
+  Widget build(BuildContext context) {
+    return SelectableText(
+      BuildInfo.label,
+      textAlign: TextAlign.center,
+      style: GoogleFonts.inter(fontSize: 11, color: AppTheme.faintText),
     );
   }
 }
