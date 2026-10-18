@@ -13,17 +13,22 @@ firebase deploy --only hosting
 
 ### Flutter version
 
-Build releases with the Flutter version pinned in `pubspec.yaml` (currently 3.47.1). `flutter pub get` fails on any other version.
+Build releases with the Flutter version in `pubspec.yaml` (now 3.47.1). `flutter pub get` fails if you use another version.
 
-This matters because the web renderer (CanvasKit) is downloaded from the Flutter engine revision the app was built with. A build made with Flutter 3.41 rendered the login screen zoomed and stretched in WhatsApp's in-app browser on some Android phones (Redmi Note 13 and Samsung A31). The same code built with 3.47.1 rendered correctly.
+This is important because the web drawing code (CanvasKit) comes from the Flutter engine that built the app. A build made with Flutter 3.41 showed the login screen zoomed and stretched in the WhatsApp browser on some Android phones (Redmi Note 13 and Samsung A31). The same code built with 3.47.1 looked correct.
 
-`scripts/build_web.sh` builds with the build details baked in. On the login screen, **long-press the logos** to show a line like:
+`scripts/build_web.sh` builds the app and saves build details inside it. On the login screen, **long-press the logos** to show a line like this:
 
 ```text
 Build 2026-10-16T10:42Z · 9462206 · Flutter 3.47.1 (engine 5d531788)
 ```
 
-Use it to check what a deployment is made from: the build time (UTC), the git commit (`-dirty` means there were uncommitted changes), the Flutter version and the engine. Long-press again to hide it. A build made without the script shows `unknown`. Do not deploy such a build.
+The line shows:
+- the build time (UTC),
+- the git commit (`-dirty` means there were changes that were not committed),
+- the Flutter version and the engine.
+
+Long-press again to hide the line. A build made without the script shows `unknown`. Do not deploy that build.
 
 You can also check the engine from outside the app:
 
@@ -31,7 +36,10 @@ You can also check the engine from outside the app:
 curl -s https://<host>/flutter_bootstrap.js | grep -o '"engineRevision":"[a-f0-9]\{8\}'
 ```
 
-To change the version, upgrade on a branch, build, test the login screen on real phones inside the WhatsApp browser, then update the range in `pubspec.yaml`.
+To change the Flutter version:
+1. Upgrade on a separate branch and build.
+2. Test the login screen on real phones inside the WhatsApp browser.
+3. Then change the version range in `pubspec.yaml`.
 
 `firebase.json` serves `build/web` and rewrites all routes to `index.html`, which is required for `go_router` browser navigation.
 

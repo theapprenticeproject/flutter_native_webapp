@@ -1,130 +1,107 @@
 # Architecture Tenets
 
-These tenets guide how code in `lib/` is organised. When you are unsure where
-something belongs, or a change feels awkward, check it against them.
+These tenets are rules for how we organize the code in `lib/`. Use them when you are not sure where a file belongs, or when a change feels wrong.
 
-Two of them are enforced by a script (see [Enforcement](#enforcement)). The rest
-rely on review. If a tenet gets in your way, change the tenet in a pull request.
-Do not quietly break it.
+A script checks three of the tenets (2, 3 and 6). People check the others in code review. If a tenet blocks you, change the tenet in a pull request. Do not break it quietly.
 
-## Target layout
+## Folder layout
 
 ```
 lib/
   main.dart, app.dart
-  core/       Infrastructure with no knowledge of the app's domain.
-              router, theme, constants, network (http), cache, storage.
-  domain/     The app's data concepts, shared by many screens.
-              One folder per concept (auth, learner, profile, program_content,
-              flows, ...) holding its models, repository and providers.
-  shared/     UI used by more than one feature (header, nav, error view, ...).
-  app/        Composition root: the router wiring that connects every screen
-              and the auth redirects. Imports everything; nothing imports it
-              except main.dart and app.dart.
-  features/   One folder per user-facing feature (home, classroom, onboarding,
-              passport, settings, tap_buddy, ...).
-              Each holds its screens, widgets and its own UI state.
+  core/       Basic tools that know nothing about our app's data.
+              Route names, theme, constants, network (HTTP), cache, storage.
+  domain/     The data of our app, used by many screens.
+              One folder for each topic: auth, profile, learner, program_content,
+              learning_progress, tapbuddy, reference_data.
+              Each folder has its models, repository and providers.
+  shared/     Screen parts used by more than one feature
+              (header, bottom bar, TapBuddy panel, loading and error views).
+  app/        The place that connects everything: the router and the login
+              redirects. It can use every other layer. Only main.dart and
+              app.dart use it.
+  features/   One folder for each part the user sees: auth, onboarding, welcome,
+              splash, home, classroom, passport, settings, error.
+              Each has its screens, widgets and its own screen state.
 ```
 
-Inside a feature, create only the subfolders you need. Typical ones are
-`presentation/` (screens and widgets), `providers/` and `models/`.
+Inside a feature, make only the subfolders you need. Common ones are `presentation/` (screens and widgets), `providers/` and `models/`.
 
-Dependencies point one way:
+Code can only use other code in one direction:
 
 ```
 app  →  features  →  shared  →  domain  →  core
 ```
 
-A layer may import itself and anything to its right. It must never import
-anything to its left.
+A layer can use itself and the layers to its right. It must never use a layer to its left.
 
 ## Tenets
 
-### 1. Organise by domain concept first, screen second
+### 1. Group by data topic first, screen second
 
-Data concepts (auth, learner state, profile, program content) are the stable
-core of the app. Screens come and go.
+Data topics (auth, learner state, profile, course content) stay the same for a long time. Screens change often.
 
-*Test: if a screen is deleted, does anything in `domain/` have to change? It
-shouldn't.*
+*Test: if you delete a screen, does anything in `domain/` need to change? It should not.*
 
-### 2. Dependencies point one way: `app → features → shared → domain → core`
+### 2. Dependencies go in one direction: `app → features → shared → domain → core`
 
-- `core/` knows nothing about the app's domain.
-- `domain/` knows nothing about screens, and imports no widget toolkit
-  (`flutter/material`, `widgets`, `cupertino`).
-- `shared/` may use `domain/` and `core/`, never `features/`.
+- `core/` knows nothing about the data of our app.
+- `domain/` knows nothing about screens. It does not use widget packages (`flutter/material`, `widgets`, `cupertino`).
+- `shared/` can use `domain/` and `core/`, but never `features/`.
 
-*Test: `dart run scripts/check_architecture.dart` reports no `T2` violations.*
+*Test: `dart run scripts/check_architecture.dart` shows no `T2` problems.*
 
-### 3. Features never import other features
+### 3. A feature never uses another feature
 
-If feature A needs something from feature B, it is in the wrong place. Pick one:
+Feature A needs something from feature B? Then the code is in the wrong place. Choose one:
 
 - It is **data or logic** → move it to `domain/`.
-- It is **UI** → move it to `shared/`.
-- The two features keep needing each other → they are one feature. Merge them.
+- It is **screen code** → move it to `shared/`.
+- The two features always need each other → they are one feature. Join them.
 
-*Test: the script reports no `T3` violations.*
+*Test: the script shows no `T3` problems.*
 
-### 4. Promote on the second use, not the first
+### 4. Share code when a second feature needs it, not before
 
-Code starts in the feature that needs it. When a second feature needs it, move it
-to `domain/` or `shared/` in the same pull request. Do not pre-share, and do not
-let the second feature reach into the first.
+Code starts in the feature that needs it. When a second feature needs it, move it to `domain/` or `shared/` in the same pull request. Do not share code early. Do not let the second feature reach into the first one.
 
-### 5. A feature owns its UI state, the domain owns shared state
+### 5. A feature owns its screen state. The domain owns shared state.
 
-A form controller or a chat scroll position belongs to the feature. Learner
-state, the active profile and the auth session are shared, so they live in
-`domain/`. Features read them through providers.
+A form controller or a chat scroll position belongs to the feature. Learner state, the active profile and the login session are shared, so they live in `domain/`. Features read them through providers.
 
-### 6. Screens are thin
+### 6. Screens stay thin
 
-A screen composes widgets and reads providers. Logic goes in a controller or
-provider, and I/O goes in a repository. A `presentation/` file has no HTTP calls,
-no cache keys, no JSON parsing.
+A screen puts widgets together and reads providers. Logic goes in a controller or a provider. Network and storage work goes in a repository. A file in `presentation/` has no HTTP calls, no cache keys and no JSON parsing.
 
-*Test: the script reports no `T6` violations (presentation importing `dio`,
-`hive`, secure storage, or `core/cache`, `core/network`, `core/storage`).*
+*Test: the script shows no `T6` problems. A problem is when a file in `presentation/` uses `dio`, `hive`, secure storage, `core/cache`, `core/network` or `core/storage`.*
 
-### 7. Repositories are the only door to data
+### 7. Repositories are the only way to data
 
-Providers and screens never touch the HTTP client, the cache or bundled assets
-directly. This keeps offline and caching behaviour in one place, which matters
-for the app's "fetch once, save, update locally" design.
+Providers and screens never use the HTTP client, the cache or the bundled assets directly. This keeps the offline and cache rules in one place. That matters for our plan: "fetch once, save on the device, update locally".
 
-### 8. Models are plain and boring
+### 8. Models are simple
 
-Models hold data, parsing and simple derived values. No Flutter imports, no I/O.
-That keeps them testable and safe to share.
+A model holds data, parsing and simple values worked out from its data. It has no Flutter imports and no network or storage work. This makes models easy to test and safe to share.
 
-### 9. Name it for what it is, put it where you would look
+### 9. Use clear names, and put files where people look
 
-`<concept>_model.dart`, `<concept>_repository.dart`, `<concept>_provider.dart`,
-`<concept>_screen.dart`. If you cannot guess where a file lives from its name,
-move or rename it.
+Use `<topic>_model.dart`, `<topic>_repository.dart`, `<topic>_provider.dart` and `<topic>_screen.dart`. If you cannot guess where a file is from its name, move it or rename it.
 
-### 10. Prefer a small, boring move over a clever abstraction
+### 10. Choose a small simple change, not a clever design
 
-Duplicating 20 lines in two features is cheaper than the wrong shared
-abstraction. Share after the third near-copy, or when the concept is clearly the
-same.
+Copying 20 lines into two features costs less than a wrong shared design. Share code after the third copy, or when it is clearly the same idea.
 
-### 11. Move code or change code, never both in one commit
+### 11. Move code or change code. Do not do both in one commit.
 
-A refactor commit moves files and fixes imports only. Logic changes go in a
-separate commit. This keeps behaviour from being lost silently, and keeps diffs
-reviewable. `flutter analyze` and `flutter test` stay green after every commit.
+A commit that restructures code only moves files and fixes imports. Put logic changes in a different commit. This way no behavior is lost without notice, and reviewers can read the changes. `flutter analyze` and `flutter test` must pass after every commit.
 
-## Documented exceptions
+## Allowed exceptions
 
-Exceptions are listed in `scripts/check_architecture.dart`. Adding one needs a
-reason here.
+The exceptions are listed in `scripts/check_architecture.dart`. To add one, write the reason here.
 
-| Path | Allowed | Why |
+| Path | What is allowed | Reason |
 |---|---|---|
-| `core/router/`, `core/theme/` | Import Flutter widget packages | Route constants build a `Page`, and the theme is `ThemeData`. |
+| `core/router/`, `core/theme/` | Use Flutter widget packages | The route names build a `Page`, and the theme is `ThemeData`. |
 
 ## Enforcement
 
@@ -132,21 +109,16 @@ reason here.
 dart run scripts/check_architecture.dart
 ```
 
-It exits `1` and lists each violation with the rule it broke. It resolves both
-`package:` and relative imports, so import style does not matter.
+The script stops with exit code `1` if a rule is broken. It lists each problem and the rule that was broken. It understands both `package:` imports and relative imports.
 
-During the migration, files outside `core/`, `domain/`, `shared/` and `features/`
-(the old `models/`, `providers/`, `screens/`, `data/`, `widgets/`,
-`data_loader/`) are counted and printed but not checked. The count reaching zero
-is the sign the migration is done.
+Files outside `app/`, `core/`, `domain/`, `shared/` and `features/` are counted and printed, but not checked. If you add a new top-level folder in `lib/`, the script will show it.
 
-Run it before every pull request. There is no CI workflow in this repository yet.
-When one is added, run the script there so the rules do not depend on memory.
+Run the script before every pull request. We do not have a CI workflow yet. When we add one, run the script there too, so the rules do not depend on people remembering.
 
 ## Checklist for a new file
 
-1. Is it a data concept shared by several screens? → `domain/<concept>/`
-2. Is it UI used by one feature? → that feature's `presentation/`
-3. Is it UI used by two or more features? → `shared/`
-4. Is it infrastructure with no app knowledge? → `core/`
-5. Does it import another feature? → stop. See tenet 3.
+1. Is it a data topic that several screens use? → `domain/<topic>/`
+2. Is it screen code that one feature uses? → `presentation/` of that feature
+3. Is it screen code that two or more features use? → `shared/`
+4. Is it a basic tool that knows nothing about our app? → `core/`
+5. Does it use another feature? → Stop. Read tenet 3.

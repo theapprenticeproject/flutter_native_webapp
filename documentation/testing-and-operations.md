@@ -28,7 +28,7 @@ Add tests when changing cache behavior, progress indexes, archetype mapping, wee
 
 ## Inspecting and repairing dev test learners
 
-`scripts/frappe/dev_learner_tools.py` helps when a test account shows the wrong course or needs to run onboarding again. It is for the **dev** Frappe site only. Copy it to the server, then in the bench directory:
+The file `scripts/frappe/dev_learner_tools.py` helps when a test account shows the wrong course, or when it must run onboarding again. Use it on the **dev** Frappe site only. Copy the file to the server. Then, in the bench folder, run:
 
 ```bash
 bench --site <site-name> console
@@ -41,11 +41,11 @@ set_course("TL00017435", "Basic-Electronics-science-lab-C2258", apply=True)  # s
 reset_for_onboarding("9123456780", "TL00017435", apply=True)  # run onboarding again
 ```
 
-- Every function prints the site name first. Check it before you apply anything.
-- Writing functions only print what they would change until you pass `apply=True`.
-- `set_course(..., ignore_links=True)` skips Frappe's check that the course exists as a record of the linked doctype. The dev site's working enrollments store the app's bundled course ids (like `Basic-Electronics-science-lab-C2258`), so a plain save may be refused.
-- After a change, log out and back in (or use a private window), because the app reads cached learner state first.
-- `show_schema()` and `course_names()` print the doctypes and fields the script depends on, if the backend changes.
+- Every function prints the site name first. Check it before you change anything.
+- A function that writes only shows what it would change, until you add `apply=True`.
+- `set_course(..., ignore_links=True)` skips the Frappe check that the course exists in the linked list. On the dev site, working enrollments store the app's course ids (like `Basic-Electronics-science-lab-C2258`). Frappe may refuse to save such a value without this option.
+- After a change, log out and log in again, or use a private window. The app reads saved learner data first.
+- `show_schema()` and `course_names()` show the doctypes and fields that the script needs. Use them if the backend changes.
 
 ## Rate limits
 
