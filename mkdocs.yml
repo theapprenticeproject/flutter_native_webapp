@@ -28,6 +28,7 @@ nav:
   - Overview: index.md
   - Getting Started: getting-started.md
   - Architecture: architecture.md
+  - Architecture Tenets: architecture-tenets.md
   - Frontend: frontend.md
   - Learning Flows: learning-flows.md
   - API Reference: api-reference.md
@@ -36,4 +37,5 @@ nav:
   - Deployment: deployment.md
   - Testing and Operations: testing-and-operations.md
   - Known Gaps: known-gaps.md
+  - Engineering TODO: todo.md
   - WhatsApp Link Login: whatsapp-link-login.md
