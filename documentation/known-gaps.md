@@ -2,6 +2,23 @@
 
 TapApp (this repo) and the Frappe `tapapp` module are **prototypes**. They were built quickly to show how the product will work. This page lists the gaps found in a review. Fix the **High** items before real students use the app.
 
+**Codes used in these documents**
+
+| Code | Meaning | Defined in |
+|---|---|---|
+| R-n | A requirement | `v1-requirements.md` |
+| O-n | An open decision for the product team | `v1-requirements.md`, section 11 |
+| F-n | A Figma frame to correct | `v1-requirements.md` |
+| A1 to A17 | Approved login decisions | `whatsapp-link-login.md` |
+| Q1 to Q11 | Open questions about the login | `whatsapp-link-login.md` |
+| O1 to O6 | Login settings, with proposed values | `whatsapp-link-login.md` |
+| AP1 to AP9 | App fixes | `production-readiness.md` |
+| B1 to B8 | Backend fixes | `production-readiness.md` |
+| PL-1 to PL-13 | Findings in the existing pipeline | `production-readiness.md`, section 8 |
+| S1 to S13 | Security issues | `known-gaps.md` |
+| P1 to P12 | Product and design gaps | `known-gaps.md` |
+| P1 to P3 | Priorities, high to low (not the product gaps) | `todo.md`, `production-readiness.md` |
+
 ## What was reviewed
 
 - **This repo:** `worker/src/*`, `wrangler.toml`, part of `lib/`, `README.md`.
@@ -23,7 +40,7 @@ TapApp (this repo) and the Frappe `tapapp` module are **prototypes**. They were 
 
 | # | Sev | Where | Issue | Suggested fix |
 |---|---|---|---|---|
-| S1 | High | Frappe `login_with_password` | If a phone has no password yet, the first password sent becomes the password, and the caller is logged in. Anyone who knows a registered phone can take over the account. | Do not set a password at login. Students log in with a WhatsApp link instead (see [WhatsApp link login](whatsapp-link-login.md), D9). |
+| S1 | High | Frappe `login_with_password` | If a phone has no password yet, the first password sent becomes the password, and the caller is logged in. Anyone who knows a registered phone can take over the account. | Do not set a password at login. Students log in with a WhatsApp link instead (see [WhatsApp link login](whatsapp-link-login.md), A9). |
 | S2 | High | Frappe `forgot_password_send_otp` and `forgot_password_verify_otp` | The OTP is always `"000000"` and nothing is sent. Anyone can reset the password of any registered phone. | Lock or remove these methods for students. If any user keeps passwords, use a random OTP sent through Glific, limit the tries, and store only a hash. |
 | S3 | High | Frappe (all `allow_guest=True` methods) | If the Frappe host can be reached from the internet, callers can skip the Worker and its rate limits. The server setup guide (`docs/server_setup.md`, a dev setup) shows a standard bench nginx in front of Frappe, Let's Encrypt, and a GCP firewall rule that opens ports 80 and 443. It shows **no** IP allow-list, no authenticating proxy and no gateway. GCP opens such a rule to all addresses unless a source range is set. This is the dev guide. Production uses a different, larger setup (OQ-2), and the proxy question is open (OQ-3). So it is **not verified** for production. | Let only the Worker reach these methods (network rule, or a secret header that Frappe checks). Add limits in Frappe too. |
 | S4 | High | Frappe `check_phone` and `forgot_password_send_otp` | The answers show whether a phone is registered and whether it has a password (`exists`, `has_password`, `phone_not_registered`). Someone can use this to list registered phone numbers. | Give the same answer for every phone. |

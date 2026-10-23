@@ -2,19 +2,36 @@
 
 The Flutter app, the Worker and the Frappe `tapapp` module are prototypes. This page lists what must change before real students use them.
 
+**Codes used in these documents**
+
+| Code | Meaning | Defined in |
+|---|---|---|
+| R-n | A requirement | `v1-requirements.md` |
+| O-n | An open decision for the product team | `v1-requirements.md`, section 11 |
+| F-n | A Figma frame to correct | `v1-requirements.md` |
+| A1 to A17 | Approved login decisions | `whatsapp-link-login.md` |
+| Q1 to Q11 | Open questions about the login | `whatsapp-link-login.md` |
+| O1 to O6 | Login settings, with proposed values | `whatsapp-link-login.md` |
+| AP1 to AP9 | App fixes | `production-readiness.md` |
+| B1 to B8 | Backend fixes | `production-readiness.md` |
+| PL-1 to PL-13 | Findings in the existing pipeline | `production-readiness.md`, section 8 |
+| S1 to S13 | Security issues | `known-gaps.md` |
+| P1 to P12 | Product and design gaps | `known-gaps.md` |
+| P1 to P3 | Priorities, high to low (not the product gaps) | `todo.md`, `production-readiness.md` |
+
 It adds to [Known Gaps](known-gaps.md) and [TODO](todo.md). It does not repeat them. Items there (OTP `000000`, `allow_guest`, 90-day tokens, large files, few tests) still apply.
 
 **How it was made.** Two code reviews, one for the Frappe `tapapp` module and one for `lib/`. Then we spot-checked the most serious findings in the code. Nothing was run against a live site or a phone. "Checked" below means we confirmed it by reading the code. Later we also read parts of `frappe_tap`, `tap_plg` and `rag_service` (section 8).
 
 **Requirement update (2026-10-22).** The prototype keeps progress on the phone and syncs it later. That is **no longer the requirement**. Every step must be saved to the server at once, so a child can continue on WhatsApp or an installed app (see [v1 requirements](v1-requirements.md), R-40, R-48). This changes the items below:
-- **A2 and A3** (weekly cap never lifts, a failed sync blocks class) come from the local-first design. They go away with a design that saves each step to the server and reads the state from the server. Fix them in that design, not one by one.
+- **AP2 and AP3** (weekly cap never lifts, a failed sync blocks class) come from the local-first design. They go away with a design that saves each step to the server and reads the state from the server. Fix them in that design, not one by one.
 - **Known gaps P7 and P8** (progress and the weekly count are kept only on the device) are now **must fix**.
 - **The "cache forever" learner state and the local weekly window count** must go. The server's numbers are the only ones.
 - **Backend:** the server must store the child's exact step. Today it stores counts per course (`videos_completed`, `quizzes_completed`, `submission_index`) and the point calls fire at unit completion. We did not check if a position inside a unit (for example quiz question 3) can be stored. The backend items B5 and B7 (races, repeats, half-saved steps) now matter more, because there will be many small writes.
 
-**Scope update (2026-10-22).** v1 has **no teacher role** and no installed app. It uses the same student-only flow as WhatsApp. So the teacher and roster parts of the prototype are not needed in v1: the `teacher` and `admin_code` fields, the `/students/*` endpoints, the roster cache, and the client-side `checkAdminCode`. Remove or switch them off. This also removes an attack surface and the plain-text `admin_code` in the browser cache (M11).
+**Scope update (2026-10-22).** v1 has **no teacher role** and no installed app. It uses the same student-only flow as WhatsApp. So the teacher and roster parts of the prototype are not needed in v1: the `teacher` and `admin_code` fields, the `/students/*` endpoints, the roster cache, and the client-side `checkAdminCode`. Remove or switch them off. This also removes an attack surface and the plain-text `admin_code` in the browser cache (section 4, Storage).
 
-**Constraint and code-review update (2026-10-22).** `frappe_tap` is in production, so we do not change its existing logic without the client's approval (see [v1 requirements](v1-requirements.md), "Rules for our changes"). If the client accepts the WhatsApp system's `ProgramEnrollment` as the single progress record (D-8), most of the `tapapp` backend is not needed: `Tapapp Learner`, `Tapapp Enroll`, `Tapapp Learner Achievements`, the XP, streak and window code, and the nightly jobs. Then backend items B1 to B7 are not fixes to make, but code to drop. B8 stays only if the content export stays. The ownership check in the Worker (R-81) stays in every case. The new backend problems now come from the existing pipeline: see section 8.
+**Constraint and code-review update (2026-10-22).** `frappe_tap` is in production, so we do not change its existing logic without the client's approval (see [v1 requirements](v1-requirements.md), "Rules for our changes"). If the client accepts the WhatsApp system's `ProgramEnrollment` as the single progress record (O-8), most of the `tapapp` backend is not needed: `Tapapp Learner`, `Tapapp Enroll`, `Tapapp Learner Achievements`, the XP, streak and window code, and the nightly jobs. Then backend items B1 to B7 are not fixes to make, but code to drop. B8 stays only if the content export stays. The ownership check in the Worker (R-81) stays in every case. The new backend problems now come from the existing pipeline: see section 8.
 
 Priority: **P1** fix before real students. **P2** fix soon after. **P3** cleanup.
 
@@ -37,15 +54,15 @@ Priority: **P1** fix before real students. **P2** fix soon after. **P3** cleanup
 
 | # | Problem | Why it matters | Fix |
 |---|---|---|---|
-| A1 | **Login errors are never handled.** Checked: nothing catches `AuthException`, nothing calls `logout()`, there is no log-out button. | After a token expires or is rejected, every screen shows an error and Retry does nothing. The learner is stuck. | One place (a Dio interceptor) clears the session and sends the learner to login. Add a visible log-out. Show a friendly message for 429. |
-| A2 | **Weekly cap never lifts.** Cached learner state is used forever. `windowResetsOn` is saved but never compared with today. The cap is a fixed `2` (checked), and the server value `maxWeeklyUnits` is ignored. | A learner capped this week still sees "cap reached" next week. | Refresh on app start and on each Home visit, and use the cache only when offline. Use the server's cap. |
-| A3 | **A failed progress sync can lock a learner out of class** (`class_session_bootstrap_provider.dart`). No try/catch around the sync. A conflict is not cleared. | Every visit repeats the failed sync and shows "Something went wrong". Offline learners with a finished unit are blocked the same way. | Catch errors. On a conflict, reconcile or drop the local progress. On a network error, continue with local state. |
-| A4 | **Photo and video submissions always pass** and are never uploaded (`class_chat_controller.dart`, checked). | Any picture, even a blank one, earns XP and a gem. Nothing is stored. | Needs the real submission pipeline (known gap P10). Until then, do not call it reviewed. |
-| A5 | **If the AI review call fails, the learner is told their work was not good enough.** | A correct answer gets "try again" when the network drops or the limit is hit. | Separate "not accepted" from "could not reach the reviewer". Offer Retry for the second and keep the answer. |
-| A6 | **Onboarding can finish with failed saves** (checked: a failed "mark complete" is only printed). Enrolling can send an empty course id. | The learner is sent back to onboarding with no message. | Do not move on after a failure. Show Retry and block the step. |
-| A7 | **Splash image is 7.6 MB** and it is the first screen. The `.mp4`, `.webm` and `.html` next to it (about 2.4 MB) are never used. | On a slow connection inside WhatsApp, the first paint waits for it. | Use a small WebP or a static splash in `index.html`. Delete the unused files. |
-| A8 | **Fonts come from Google at runtime** (30 files use `GoogleFonts.inter`, nothing is bundled). | On a slow or filtered network, text is late or in a fallback font, especially Hindi, Marathi, Kannada and Punjabi. | Bundle Inter and one Noto font per script. Set `GoogleFonts.config.allowRuntimeFetching = false`. |
-| A9 | **Child data stays on shared phones.** Hive holds chats, birthdate, school and name. Only `logout()` wipes it. The phone number is also in the URL (`?phone=`). | Another child on the same phone can see the data. The number stays in browser history. | Log-out clears everything. Pass the phone through state, not the URL. |
+| AP1 | **Login errors are never handled.** Checked: nothing catches `AuthException`, nothing calls `logout()`, there is no log-out button. | After a token expires or is rejected, every screen shows an error and Retry does nothing. The learner is stuck. | One place (a Dio interceptor) clears the session and sends the learner to login. Add a visible log-out. Show a friendly message for 429. |
+| AP2 | **Weekly cap never lifts.** Cached learner state is used forever. `windowResetsOn` is saved but never compared with today. The cap is a fixed `2` (checked), and the server value `maxWeeklyUnits` is ignored. | A learner capped this week still sees "cap reached" next week. | Refresh on app start and on each Home visit, and use the cache only when offline. Use the server's cap. |
+| AP3 | **A failed progress sync can lock a learner out of class** (`class_session_bootstrap_provider.dart`). No try/catch around the sync. A conflict is not cleared. | Every visit repeats the failed sync and shows "Something went wrong". Offline learners with a finished unit are blocked the same way. | Catch errors. On a conflict, reconcile or drop the local progress. On a network error, continue with local state. |
+| AP4 | **Photo and video submissions always pass** and are never uploaded (`class_chat_controller.dart`, checked). | Any picture, even a blank one, earns XP and a gem. Nothing is stored. | Needs the real submission pipeline (known gap P10). Until then, do not call it reviewed. |
+| AP5 | **If the AI review call fails, the learner is told their work was not good enough.** | A correct answer gets "try again" when the network drops or the limit is hit. | Separate "not accepted" from "could not reach the reviewer". Offer Retry for the second and keep the answer. |
+| AP6 | **Onboarding can finish with failed saves** (checked: a failed "mark complete" is only printed). Enrolling can send an empty course id. | The learner is sent back to onboarding with no message. | Do not move on after a failure. Show Retry and block the step. |
+| AP7 | **Splash image is 7.6 MB** and it is the first screen. The `.mp4`, `.webm` and `.html` next to it (about 2.4 MB) are never used. | On a slow connection inside WhatsApp, the first paint waits for it. | Use a small WebP or a static splash in `index.html`. Delete the unused files. |
+| AP8 | **Fonts come from Google at runtime** (30 files use `GoogleFonts.inter`, nothing is bundled). | On a slow or filtered network, text is late or in a fallback font, especially Hindi, Marathi, Kannada and Punjabi. | Bundle Inter and one Noto font per script. Set `GoogleFonts.config.allowRuntimeFetching = false`. |
+| AP9 | **Child data stays on shared phones.** Hive holds chats, birthdate, school and name. Only `logout()` wipes it. The phone number is also in the URL (`?phone=`). | Another child on the same phone can see the data. The number stays in browser history. | Log-out clears everything. Pass the phone through state, not the URL. |
 
 ## 2. Make content central (replace hardcoded and bundled data)
 
@@ -122,9 +139,9 @@ Priority: **P1** fix before real students. **P2** fix soon after. **P3** cleanup
 ## 6. Suggested order
 
 1. **Safety on the backend (B1–B5, B7).** One change set, with tests that call the endpoints with another learner's id.
-2. **Login and recovery in the app (A1, A2, A3, A5, A6).** These are the cases that strand learners.
+2. **Login and recovery in the app (AP1, AP2, AP3, AP5, AP6).** These are the cases that strand learners.
 3. **Content API and remote source (section 2).** Start with the version and the fail-safe, then move courses, then images.
-4. **Weight and fonts (A7, A8, images).** Quick wins for slow phones.
+4. **Weight and fonts (AP7, AP8, images).** Quick wins for slow phones.
 5. **Nightly jobs and time zones (B6, queue, IST helper).**
 6. **Localisation and settings (section 3).**
 7. **Cleanup (section 5).** One small commit per item.
@@ -151,23 +168,23 @@ The backend review read the `tapapp` code in the fork `frappe_tap_dd`, branch `p
 
 ## 8. Findings in the existing pipeline (`frappe_tap`, `tap_plg`, `rag_service`)
 
-These came from read-only reviews of the code on `pal-v2-health`, `integ-health-mon` and `va-health-mon`. They are not checked live, and the branches may differ from production. All of this is production code. We do not change it without the client's approval. The decisions are in the v1 requirements (D-13, D-22, D-24 to D-26).
+These came from read-only reviews of the code on `pal-v2-health`, `integ-health-mon` and `va-health-mon`. They are not checked live, and the branches may differ from production. All of this is production code. We do not change it without the client's approval. The decisions are in the v1 requirements (O-13, O-22, O-24 to O-26).
 
 | # | Finding | Why it matters |
 |---|---|---|
-| P-1 | If the AI evaluation fails, the result is published as "Valid" with grade 0, and the points step looks only at the plagiarism flags. | A failed run can earn on-time points and looks like a good result. |
-| P-2 | If `tap_plg` cannot download a photo, it passes it on as "original" and drops the failure flag. | A photo nobody checked looks fine. |
-| P-3 | An unopenable file (HEIC, corrupt) is retried 3 times and then dead-lettered. Nothing goes to the student or to `frappe_tap`. | The student waits for ever. |
-| P-4 | Nothing enforces the "12 hours", and no code looks for submissions that never get feedback. The plan for watching dead letter queues (docs, sections 16 and 17) is written, but we did not see it wired in `hooks.py`. | The app needs a "taking longer than expected" state. |
-| P-5 | `save_submission`, `get_submission_feedback` and `ready_to_receive_feedback` accept calls with no key and check nothing per student. `update_batch_week` and `admin_drop_student` check no role. | The Worker must do all checks. A service key can do more than we intend. |
-| P-6 | The quiz sends the correct answer to the client with each question, enforces no time limit and allows unlimited retakes. | Fine in WhatsApp, where Glific shows only the text. A browser can read the answer. |
-| P-7 | No idempotency key: every call to `save_submission` creates a record, and repeated messages are published again downstream. | Retries from the app create extra records and duplicate feedback. |
-| P-8 | `tap_plg` can mark flat or low-noise drawings and screenshots as AI-generated, and compares a photo's small fingerprint with all other students across assignments. | Original work can get 0 points and an "invalid" message. |
-| P-9 | The system is designed for 100,000 students. `tap_plg` runs one process. `rag_service` handles one message at a time. `Submission` and `StudentContentLog` have no index on `student_id`, `assign_id` or `week`. | The roadmap expects 500,000 children by July 2027. |
-| P-10 | The child's photo, voice and text go as raw files to Google Vertex AI. Nothing filters personal information. Logs contain the prompts and results. Request logs hold phone and name as `student_id`. | Data protection (D-13). |
-| P-11 | The file type comes from the URL extension first (`.webm` counts as video). HEIC cannot be opened. There is no size limit. | The app must convert photos to JPEG and voice notes to WAV or MP3 (R-12, R-14). |
-| P-12 | `phone` is not unique and the data holds 10-digit and 12-digit forms. `resolve_student` picks an arbitrary student when several share a phone. | The app must always use the student id, never a phone, for calls. |
-| P-13 | Some documents are wrong: they say the dispatcher handles 100,000 students per cycle (the code does 1,000 per run), and that `save_submission` checks an API key (the code does not). | Do not trust those two statements. |
+| PL-1 | If the AI evaluation fails, the result is published as "Valid" with grade 0, and the points step looks only at the plagiarism flags. | A failed run can earn on-time points and looks like a good result. |
+| PL-2 | If `tap_plg` cannot download a photo, it passes it on as "original" and drops the failure flag. | A photo nobody checked looks fine. |
+| PL-3 | An unopenable file (HEIC, corrupt) is retried 3 times and then dead-lettered. Nothing goes to the student or to `frappe_tap`. | The student waits for ever. |
+| PL-4 | Nothing enforces the "12 hours", and no code looks for submissions that never get feedback. The plan for watching dead letter queues (docs, sections 16 and 17) is written, but we did not see it wired in `hooks.py`. | The app needs a "taking longer than expected" state. |
+| PL-5 | `save_submission`, `get_submission_feedback` and `ready_to_receive_feedback` accept calls with no key and check nothing per student. `update_batch_week` and `admin_drop_student` check no role. | The Worker must do all checks. A service key can do more than we intend. |
+| PL-6 | The quiz sends the correct answer to the client with each question, enforces no time limit and allows unlimited retakes. | Fine in WhatsApp, where Glific shows only the text. A browser could read the answer, so the Worker removes that field before the question reaches the app. |
+| PL-7 | No idempotency key: every call to `save_submission` creates a record, and repeated messages are published again downstream. | Retries from the app create extra records and duplicate feedback. |
+| PL-8 | `tap_plg` can mark flat or low-noise drawings and screenshots as AI-generated, and compares a photo's small fingerprint with all other students across assignments. | Original work can get 0 points and an "invalid" message. |
+| PL-9 | The system is designed for 100,000 students. `tap_plg` runs one process. `rag_service` handles one message at a time. `Submission` and `StudentContentLog` have no index on `student_id`, `assign_id` or `week`. | The roadmap expects 500,000 children by July 2027. |
+| PL-10 | The child's photo, voice and text go as raw files to Google Vertex AI. Nothing filters personal information. Logs contain the prompts and results. Request logs hold phone and name as `student_id`. | Data protection (O-13). |
+| PL-11 | The file type comes from the URL extension first (`.webm` counts as video). HEIC cannot be opened. There is no size limit. | The app must convert photos to JPEG and voice notes to WAV or MP3 (R-12, R-14). |
+| PL-12 | `phone` is not unique and the data holds 10-digit and 12-digit forms. `resolve_student` picks an arbitrary student when several share a phone. | The app must always use the student id, never a phone, for calls. |
+| PL-13 | Some documents are wrong: they say the dispatcher handles 100,000 students per cycle (the code does 1,000 per run), and that `save_submission` checks an API key (the code does not). | Do not trust those two statements. |
 
 ## Not checked
 
