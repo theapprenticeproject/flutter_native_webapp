@@ -2,22 +2,7 @@
 
 The Flutter app, the Worker and the Frappe `tapapp` module are prototypes. This page lists what must change before real students use them.
 
-**Codes used in these documents**
-
-| Code | Meaning | Defined in |
-|---|---|---|
-| R-n | A requirement | `v1-requirements.md` |
-| O-n | An open decision for the product team | `v1-requirements.md`, section 11 |
-| F-n | A Figma frame to correct | `v1-requirements.md` |
-| A1 to A17 | Approved login decisions | `whatsapp-link-login.md` |
-| Q1 to Q11 | Open questions about the login | `whatsapp-link-login.md` |
-| O1 to O6 | Login settings, with proposed values | `whatsapp-link-login.md` |
-| AP1 to AP9 | App fixes | `production-readiness.md` |
-| B1 to B8 | Backend fixes | `production-readiness.md` |
-| PL-1 to PL-13 | Findings in the existing pipeline | `production-readiness.md`, section 8 |
-| S1 to S13 | Security issues | `known-gaps.md` |
-| P1 to P12 | Product and design gaps | `known-gaps.md` |
-| P1 to P3 | Priorities, high to low (not the product gaps) | `todo.md`, `production-readiness.md` |
+**Codes used in these documents:** see [codes.md](codes.md).
 
 It adds to [Known Gaps](known-gaps.md) and [TODO](todo.md). It does not repeat them. Items there (OTP `000000`, `allow_guest`, 90-day tokens, large files, few tests) still apply.
 
@@ -25,7 +10,7 @@ It adds to [Known Gaps](known-gaps.md) and [TODO](todo.md). It does not repeat t
 
 **Requirement update (2026-10-22).** The prototype keeps progress on the phone and syncs it later. That is **no longer the requirement**. Every step must be saved to the server at once, so a child can continue on WhatsApp or an installed app (see [v1 requirements](v1-requirements.md), R-40, R-48). This changes the items below:
 - **AP2 and AP3** (weekly cap never lifts, a failed sync blocks class) come from the local-first design. They go away with a design that saves each step to the server and reads the state from the server. Fix them in that design, not one by one.
-- **Known gaps P7 and P8** (progress and the weekly count are kept only on the device) are now **must fix**.
+- **Known gaps GP7 and GP8** (progress and the weekly count are kept only on the device) are now **must fix**.
 - **The "cache forever" learner state and the local weekly window count** must go. The server's numbers are the only ones.
 - **Backend:** the server must store the child's exact step. Today it stores counts per course (`videos_completed`, `quizzes_completed`, `submission_index`) and the point calls fire at unit completion. We did not check if a position inside a unit (for example quiz question 3) can be stored. The backend items B5 and B7 (races, repeats, half-saved steps) now matter more, because there will be many small writes.
 
@@ -57,7 +42,7 @@ Priority: **P1** fix before real students. **P2** fix soon after. **P3** cleanup
 | AP1 | **Login errors are never handled.** Checked: nothing catches `AuthException`, nothing calls `logout()`, there is no log-out button. | After a token expires or is rejected, every screen shows an error and Retry does nothing. The learner is stuck. | One place (a Dio interceptor) clears the session and sends the learner to login. Add a visible log-out. Show a friendly message for 429. |
 | AP2 | **Weekly cap never lifts.** Cached learner state is used forever. `windowResetsOn` is saved but never compared with today. The cap is a fixed `2` (checked), and the server value `maxWeeklyUnits` is ignored. | A learner capped this week still sees "cap reached" next week. | Refresh on app start and on each Home visit, and use the cache only when offline. Use the server's cap. |
 | AP3 | **A failed progress sync can lock a learner out of class** (`class_session_bootstrap_provider.dart`). No try/catch around the sync. A conflict is not cleared. | Every visit repeats the failed sync and shows "Something went wrong". Offline learners with a finished unit are blocked the same way. | Catch errors. On a conflict, reconcile or drop the local progress. On a network error, continue with local state. |
-| AP4 | **Photo and video submissions always pass** and are never uploaded (`class_chat_controller.dart`, checked). | Any picture, even a blank one, earns XP and a gem. Nothing is stored. | Needs the real submission pipeline (known gap P10). Until then, do not call it reviewed. |
+| AP4 | **Photo and video submissions always pass** and are never uploaded (`class_chat_controller.dart`, checked). | Any picture, even a blank one, earns XP and a gem. Nothing is stored. | Needs the real submission pipeline (known gap GP10). Until then, do not call it reviewed. |
 | AP5 | **If the AI review call fails, the learner is told their work was not good enough.** | A correct answer gets "try again" when the network drops or the limit is hit. | Separate "not accepted" from "could not reach the reviewer". Offer Retry for the second and keep the answer. |
 | AP6 | **Onboarding can finish with failed saves** (checked: a failed "mark complete" is only printed). Enrolling can send an empty course id. | The learner is sent back to onboarding with no message. | Do not move on after a failure. Show Retry and block the step. |
 | AP7 | **Splash image is 7.6 MB** and it is the first screen. The `.mp4`, `.webm` and `.html` next to it (about 2.4 MB) are never used. | On a slow connection inside WhatsApp, the first paint waits for it. | Use a small WebP or a static splash in `index.html`. Delete the unused files. |

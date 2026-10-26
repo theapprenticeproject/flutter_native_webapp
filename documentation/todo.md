@@ -66,5 +66,5 @@ Priority: **P1** do before the next release or merge. **P2** do soon. **P3** do 
 
 ## Documentation
 
-- [ ] **P2** Add the WhatsApp browser storage result to known gap P3. On a Samsung A31 (Android 12), local storage, IndexedDB and the Cache API were still there after about 20 hours and four launches. We did not test the Redmi Note 13 or iPhones.
+- [ ] **P2** Add the WhatsApp browser storage result to known gap GP3. On a Samsung A31 (Android 12), local storage, IndexedDB and the Cache API were still there after about 20 hours and four launches. We did not test the Redmi Note 13 or iPhones.
 - [ ] **P3** The table "Important providers" in `documentation/frontend.md` has two wrong names. `authProvider` and `programContentProvider` do not exist in the code. They were already wrong on `main`. The real names are `authRepositoryProvider` and `authSessionDataProvider` (in `lib/domain/auth/`), and `programContentRepositoryProvider` and `courseDetailDataProvider` (in `lib/domain/program_content/`). The other six names are correct.

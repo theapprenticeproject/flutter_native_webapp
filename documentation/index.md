@@ -29,6 +29,7 @@ The Flutter app calls the Worker URL defined in `lib/core/constants/app_constant
 | ----------------------------------------- | --------------------------------------------------- |
 | Run the project locally                   | [Getting Started](getting-started.md)               |
 | Understand ownership and data flow        | [Architecture](architecture.md)                     |
+| Look up a code such as R-40, O-8 or GP3   | [Codes](codes.md)                                   |
 | Change screens, providers, or caching     | [Frontend](frontend.md)                             |
 | Understand onboarding and classroom rules | [Learning Flows](learning-flows.md)                 |
 | Call endpoints from Postman               | [API Reference](api-reference.md)                   |

@@ -2,22 +2,7 @@
 
 TapApp (this repo) and the Frappe `tapapp` module are **prototypes**. They were built quickly to show how the product will work. This page lists the gaps found in a review. Fix the **High** items before real students use the app.
 
-**Codes used in these documents**
-
-| Code | Meaning | Defined in |
-|---|---|---|
-| R-n | A requirement | `v1-requirements.md` |
-| O-n | An open decision for the product team | `v1-requirements.md`, section 11 |
-| F-n | A Figma frame to correct | `v1-requirements.md` |
-| A1 to A17 | Approved login decisions | `whatsapp-link-login.md` |
-| Q1 to Q11 | Open questions about the login | `whatsapp-link-login.md` |
-| O1 to O6 | Login settings, with proposed values | `whatsapp-link-login.md` |
-| AP1 to AP9 | App fixes | `production-readiness.md` |
-| B1 to B8 | Backend fixes | `production-readiness.md` |
-| PL-1 to PL-13 | Findings in the existing pipeline | `production-readiness.md`, section 8 |
-| S1 to S13 | Security issues | `known-gaps.md` |
-| P1 to P12 | Product and design gaps | `known-gaps.md` |
-| P1 to P3 | Priorities, high to low (not the product gaps) | `todo.md`, `production-readiness.md` |
+**Codes used in these documents:** see [codes.md](codes.md).
 
 ## What was reviewed
 
@@ -58,15 +43,15 @@ TapApp (this repo) and the Frappe `tapapp` module are **prototypes**. They were 
 
 | # | Sev | Area | Gap |
 |---|---|---|---|
-| P1 | High | Login | Students have no passwords, but the current login flow asks for one (see S1). A new login path is needed. See [WhatsApp link login](whatsapp-link-login.md). |
-| P2 | Medium | Data model | `Tapapp Auth` has `teacher` and `admin_code` fields. Profiles have grade, division and roll number. It looks designed for teacher rosters. We have not confirmed that it fits parents with several children. |
-| P3 | Medium | Web storage | The app depends on a long-lived local cache and a saved token. On two Samsung phones, the WhatsApp browser kept saved data for at least 22 hours. iPhone and other Android makers are **not tested**. If a device does not keep saved data, the student needs a new link on each visit. |
-| P4 | Medium | Web routing | The app uses Flutter's default `#` web addresses (`/#/login`). Links from WhatsApp need a route that works with this. |
-| P5 | Low | Dependencies | `isar`, `isar_generator`, `shared_preferences` and `riverpod_generator` are listed in `pubspec.yaml`. We have not confirmed that `lib/` uses them. |
-| P6 | Low | Docs | `documentation/deployment.md` says the Worker does not read `FRAPPE_API_KEY` and `FRAPPE_API_SECRET`. Remove them from the configuration if nothing else uses them. |
-| P7 | High | Progress | Video, submission and quiz points are saved only on the device (`applyLocalProgress`). They go to the server when the unit is complete (`submitProgress`, `unit_complete`) or at the start of the next session. If saved data is lost during a unit, that progress is lost. |
-| P8 | Medium | Weekly limit | The number of units completed in a week is counted on the device (`ClassSessionWindowRepository`). If saved data is lost, the count becomes 0. We have **not checked** whether the server also enforces the limit. |
-| P9 | Low | AI cost | Saved AI reviews and the TapBuddy chat history exist only on the device. If saved data is lost, the same answer calls the AI again and the chat starts empty. The AI review feature will be replaced (see P10), so this applies mainly to TapBuddy. |
-| P10 | Medium | Submission review | The prototype sends text and images to an AI model (Groq) through the Worker (`/submission-review/review`). It has no plagiarism check, no storage of the submission, and no `Submission` record in Frappe. It will not be carried forward. TapApp will use the existing pipeline (`save_submission`, plagiarism check, AI feedback). |
-| P11 | Medium | Progress models | WhatsApp uses `ProgramEnrollment` (a state machine). TapApp uses `Tapapp Learner` with its own XP, streak, gems and weekly counters. The two have not been compared. See [WhatsApp link login](whatsapp-link-login.md), "Progress between WhatsApp and the app". |
-| P12 | Medium | Shared and teacher phones | The code has roster, `teacher` and `admin_code` parts. A phone may belong to a teacher with a whole class. The login-by-link plan assumes one phone belongs to a parent. Not decided. |
+| GP1 | High | Login | Students have no passwords, but the current login flow asks for one (see S1). A new login path is needed. See [WhatsApp link login](whatsapp-link-login.md). |
+| GP2 | Medium | Data model | `Tapapp Auth` has `teacher` and `admin_code` fields. Profiles have grade, division and roll number. It looks designed for teacher rosters. We have not confirmed that it fits parents with several children. |
+| GP3 | Medium | Web storage | The app depends on a long-lived local cache and a saved token. On two Samsung phones, the WhatsApp browser kept saved data for at least 22 hours. iPhone and other Android makers are **not tested**. If a device does not keep saved data, the student needs a new link on each visit. |
+| GP4 | Medium | Web routing | The app uses Flutter's default `#` web addresses (`/#/login`). Links from WhatsApp need a route that works with this. |
+| GP5 | Low | Dependencies | `isar`, `isar_generator`, `shared_preferences` and `riverpod_generator` are listed in `pubspec.yaml`. We have not confirmed that `lib/` uses them. |
+| GP6 | Low | Docs | `documentation/deployment.md` says the Worker does not read `FRAPPE_API_KEY` and `FRAPPE_API_SECRET`. Remove them from the configuration if nothing else uses them. |
+| GP7 | High | Progress | Video, submission and quiz points are saved only on the device (`applyLocalProgress`). They go to the server when the unit is complete (`submitProgress`, `unit_complete`) or at the start of the next session. If saved data is lost during a unit, that progress is lost. |
+| GP8 | Medium | Weekly limit | The number of units completed in a week is counted on the device (`ClassSessionWindowRepository`). If saved data is lost, the count becomes 0. We have **not checked** whether the server also enforces the limit. |
+| GP9 | Low | AI cost | Saved AI reviews and the TapBuddy chat history exist only on the device. If saved data is lost, the same answer calls the AI again and the chat starts empty. The AI review feature will be replaced (see GP10), so this applies mainly to TapBuddy. |
+| GP10 | Medium | Submission review | The prototype sends text and images to an AI model (Groq) through the Worker (`/submission-review/review`). It has no plagiarism check, no storage of the submission, and no `Submission` record in Frappe. It will not be carried forward. TapApp will use the existing pipeline (`save_submission`, plagiarism check, AI feedback). |
+| GP11 | Medium | Progress models | WhatsApp uses `ProgramEnrollment` (a state machine). TapApp uses `Tapapp Learner` with its own XP, streak, gems and weekly counters. The two have not been compared. See [WhatsApp link login](whatsapp-link-login.md), "Progress between WhatsApp and the app". |
+| GP12 | Medium | Shared and teacher phones | The code has roster, `teacher` and `admin_code` parts. A phone may belong to a teacher with a whole class. The login-by-link plan assumes one phone belongs to a parent. Not decided. |
