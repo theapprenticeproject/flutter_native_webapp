@@ -12,7 +12,7 @@
 
 Today, students use TAP through WhatsApp (with the Glific platform). We want to move students eventually to the TapApp web app and native app. The initial goals are to find gaps, to measure where students stop (drop-offs), and, finally, to stop using WhatsApp completely.
 
-To make the move easy, we add a button to a WhatsApp message. When the student taps it, TapApp opens inside WhatsApp's own browser, and the student is **logged in automatically**. The student does not type a phone number or a password. The student is already in TAP's records, so the first tap needs no sign-up. (This is the plan if the client accepts `ProgramEnrollment` as the one progress record, O-8. The prototype instead created a `Tapapp Learner` on the first tap. See the appendix at the end.)
+To make the move easy, we add a button to a WhatsApp message. When the student taps it, TapApp opens inside WhatsApp's own browser, and the student is **logged in automatically**. The student does not type a phone number or a password. The student is already in TAP's records, so the first tap needs no sign-up. (This is the plan if the client accepts `ProgramEnrollment` as the one progress record, O-8. The prototype instead created a `Tapapp Learner` on the first tap.)
 
 For now, WhatsApp stays as the channel for **notifications**: reminders, escalations (extra nudges when a student is quiet), and notes that feedback is ready. Each of these messages carries a link that opens the web app. The lessons and the feedback are shown in the web app.
 
@@ -164,7 +164,7 @@ Rules:
 - Brothers and sisters share a phone. The first call creates the `Tapapp Auth` record. Each child's pick only returns that child.
 - A link preview should not log anyone in. The token is after `#`, which is not sent to the server, and preview tools do not run the app. We should test this.
 
-**If O-8 is not accepted** (the prototype model, see the appendix), `select_student` also gets or creates a `Tapapp Learner` and its profile row. That must be safe against a second tap or two taps at the same time (A17).
+**If O-8 is not accepted** (the prototype model), `select_student` also gets or creates a `Tapapp Learner` and its profile row. That must be safe against a second tap or two taps at the same time (A17).
 
 ## Login token
 

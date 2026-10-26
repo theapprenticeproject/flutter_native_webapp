@@ -5,7 +5,7 @@ Short codes appear in many documents. This page is the one place that explains t
 | Code | Meaning | Defined in |
 |---|---|---|
 | R-n | A requirement | `v1-requirements.md` |
-| O-n | An open decision for the product team | `v1-requirements.md`, section 11 |
+| O-n | An open decision for the product or tech team | `v1-requirements.md`, section 11 |
 | F-n | A Figma frame to correct | `v1-requirements.md` |
 | A1 to A17 | Approved login decisions | `whatsapp-link-login.md` |
 | Q1 to Q11 | Open questions about the login | `whatsapp-link-login.md` |
