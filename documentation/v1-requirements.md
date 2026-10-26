@@ -140,13 +140,13 @@ The Figma design ("Student App Direction") has 6 groups of screens.
 | R-1 | The bottom bar has **3 items: Home, Gallery, Me**. There is no "Class" tab. The designer confirmed this after the meeting. The old mockups still show 4 tabs. | Decided |
 | R-2 | The activity flow (Watch, Make, Quiz, Results) opens from Home. It is not a tab. | Decided |
 | R-3 | **Who is learning**: choose a student profile, confirm, then a "Welcome back" screen. | Decided (in the Figma design) |
-| R-4 | **Home**: greeting, points, "Ask TAP", the announcement banner (R-5) and the activity cards. Each card shows the activity name, the points and a "Start activity" button. The card changes with the state: start, submission pending, send submission. | Decided (in the Figma design). The designer described two cards: please confirm which two. |
+| R-4 | **Home**: greeting, points, "Ask TAP", the announcement banner (R-5) and the activity cards. Each card shows the activity name, the points and a "Start activity" button. The card changes with the state: start, submission pending, send submission. | Decided (in the Figma design). In the meeting the designer said Home shows **two cards**, but the Figma frame shows one. Which two activities are shown is open: see O-30. |
 | R-5 | **Announcement banner and events:** TAP switches a banner on or off for an event (for example a summer program). It shows the event name, a countdown to the start or the end, what the student has to do, and a **Join** button. Join opens an overview, an "I want to take part" button and a choice of when to start. For now the banner stays at the top of Home. A pop-up was suggested, because the banner takes space in the WhatsApp browser. | Decided (product team meeting): banner at the top for now. Open: the switch and the event data, see O-2 |
-| R-6 | **Gallery**: this week's activity with its timer and points, the student's own work (or an empty box with a "Share your work" button), a grid of other students' finished work from the same class level and activity ("From TAP students like you"), "Load more", and a full-screen viewer that you swipe through. | Decided (in the Figma design). Open: who sees whose work, see O-3 |
+| R-6 | **Gallery**: this week's activity with its timer and points, the student's own work (or an empty box with a "Share your work" button), a grid of other students' finished work ("From TAP students like you"; which students: R-85), "Load more", and a full-screen viewer that you swipe through. | Decided (in the Figma design). Which work is shown, and the check before it is shown: see R-85, R-59 and O-3. |
 | R-7 | **Me**: profile, level, points, "My projects this year", project feedback screens, edit profile, settings and switch profile. This replaces today's Passport and Profile screens. | Decided (in the Figma design). The data for "My projects" and feedback is open: see O-4. |
 | R-8 | The look follows the Figma design: colors, fonts, spacing and shared parts such as buttons, chips and the header. | Decided (in the Figma design). The accent color (purple now) may change to green: not decided. |
 | R-58 | The curriculum team's **exemplar works** for each assignment (what a good submission looks like) are part of the central content (R-18), stored in the CRM. They are not other students' work. They are shown in the Make step, and they can seed the Gallery at first. | Decided (product team meeting) |
-| R-59 | A student's finished work is shown to other students only after it has passed a check. Who checks it, and how, is open. | Proposed. Open: see O-3 |
+| R-59 | A student's finished work is shown to other students only after it has passed a check. Who checks it, and how, is open. Proposal: Only pictures and videos are shown. Text and voice work stays in the student's own "My projects". | Proposed. Open: see O-3 |
 | R-85 | Which students' work the Gallery shows (same grade, school, district, cluster or all of India) is a **setting**, because TAP wants to test different choices through the year. The Gallery shows each work with the student's **first name only** until legal counsel answers O-3 (the first draft showed the full name). If there is no work yet, the curriculum team's examples fill it. | Proposed (from the meeting). See O-3 |
 | R-60 | The app shows no photos of the students themselves. The TAP Buddy picture is used where a profile picture would go. | Decided |
 
@@ -172,7 +172,7 @@ The Figma "Class" frames show the activity flow in detail. These requirements co
 | R-72 | An activity has a **deadline**, shown as a timer ("Ends in 2 days 15 hrs", in the Gallery and Home frames, and mentioned by the designer in the meeting). Work shared before the deadline earns points (+25 in the design). | Open: no document says how long an activity lasts or what happens after the deadline. See O-20. |
 | R-73 | **Settings:** app language, "Read messages aloud" (off by default), and account options. **There is no theme switch in v1.** | Decided. The Settings items are placeholders and may change. There is no theme switch in v1. |
 | R-74 | **Edit profile:** first name, last name, language, "Is a brother or sister also using TAP?", and the phone number (hidden in part, marked verified). | Decided (in the Figma design) |
-| R-75 | **Points for the submitted work come after the feedback, and only if the work is valid.** Points for the video and the quiz come at once. Until the feedback arrives, the project shows "Points after feedback". | Decided. Today's WhatsApp rules work differently: see "Rules for our changes", O-22 and O-25. |
+| R-75 | **Points for the submitted work come after the feedback, and only if the work is valid.** Points for the video and the quiz come at once. Until the feedback arrives, the project shows "Points will be provided after feedback". No Figma frame shows this yet (F-6). | Decided. Today's WhatsApp rules work differently: see "Rules for our changes", O-22 and O-25. |
 | R-76 | If the work is **not valid** (wrong format, wrong work or unclear), the student gets 0 points, is told why, and is asked to **send corrected work**. The feedback tells the app whether the work is valid. | Decided (product team meeting). New behavior: the WhatsApp system has no "send again". See O-22. |
 | R-83 | The **next project opens only after the feedback for the previous one is valid.** If it is not valid, the student sees the feedback and must send corrected work first. After valid feedback, the student can go straight to the next project. | Decided (product team meeting) |
 
@@ -187,6 +187,7 @@ We found these when we compared the Figma design with the decisions above. Pleas
 | F-3 | Bottom bar in the Home, Gallery and Event frames | They show a "Class" tab. The bar has only Home, Gallery and Me (R-1). |
 | F-4 | Settings: Theme (Default, Light, Dark) | There is no theme switch in v1 (R-73). |
 | F-5 | Quiz and results frames: points such as "+15 points" for a correct answer and "earned 5 points in total" | The numbers do not agree with each other. Please confirm the point rules (O-20). |
+| F-6 | The project card and "My projects", while the student waits for feedback | No frame shows the waiting state. The app shows "Points will be provided after feedback" (R-75). The designer has to add it. |
 
 ## 4. Photos and voice recordings
 
@@ -197,7 +198,7 @@ We found these when we compared the Figma design with the decisions above. Pleas
 | R-11 | **Tech:** If the student does not allow the camera or microphone, the app shows a clear message and says what to do next. | Proposed |
 | R-12 | **Tech:** Photos are made smaller on the phone and saved as JPEG before upload. This helps slow connections. The checking service has no size limit and no resize, and it cannot open HEIC photos. | Proposed |
 | R-13 | **Tech:** A failed upload does not lose the work. The student can try again. | Proposed |
-| R-14 | If voice is in v1 (O-27), the voice note must be in a format the whole pipeline accepts. Android phones record `webm/opus`. No service names `webm`, and the AI model receives the raw file, so we cannot be sure it accepts `webm`. We propose that the app converts the voice note to WAV or MP3 before sending. iPhone is not planned for year one in the roadmap. | Proposed. Open: see O-17 |
+| R-14 | **Tech:** If voice is in v1 (O-27), the voice note must be in a format the whole pipeline accepts. Android phones record `webm/opus`. No service names `webm`, and the AI model receives the raw file, so we cannot be sure it accepts `webm`. We propose that the app converts the voice note to WAV or MP3 before sending. iPhone is not planned for year one in the roadmap. | Proposed. Open: see O-17 |
 | R-15 | The submitted photo or recording enters the **same evaluation process that WhatsApp uses today** (plagiarism check, AI feedback). | Proposed |
 | R-16 | The evaluation feedback (text and audio) is **shown in the app**, in the Results step (R-68) and in "My projects". The student gets a **WhatsApp message with a link** that opens the feedback page directly, where the student can read it and listen to it. | Decided (client). The WhatsApp message with the link needs the product team's approval: see O-21 and O-28 |
 
@@ -248,7 +249,7 @@ Steps 1, 2 and 5 are new code in the app, the Worker and `tapapp`. Steps 3 and 4
 
 | # | Requirement | Status |
 |---|---|---|
-| R-18 | Courses, flows, pictures and audio are **downloaded from one central place**. They are not bundled inside the app. | Decided |
+| R-18 | **Tech:** Courses, flows, pictures and audio are **downloaded from one central place**. They are not bundled inside the app. | Decided |
 | R-19 | **Tech:** Each piece of content has a **version**. The app checks the version and downloads what changed. | Proposed |
 | R-20 | **Tech:** A small first-run copy stays in the app, so the first visit still works with a weak connection. | Proposed |
 | R-21 | **Tech:** If the content changes while a student is in the middle of a unit, the student finishes that unit on the old copy. | Proposed |
@@ -283,7 +284,7 @@ Glific describes the web channel as a **proposal**. The message format may chang
 
 | # | Requirement | Status |
 |---|---|---|
-| R-31 | A student can only see and change **their own** profile and progress. | Decided |
+| R-31 | A student can only see and change the profiles of the children **on the signed-in phone**. | Decided. Open: which of them can open each other's profile (O-6). |
 | R-32 | **v1 has no teacher role and no parent access.** The student uses the same student-only flow as WhatsApp. The student signs in through a WhatsApp link that carries the **phone**. The app then shows the children of that phone, and the student picks their name (the Figma "Who is learning"). The roadmap's account with a password and PIN is a later route for the installed app. The sign-in must not let a student reach another student's data. | Decided: no teacher, no parent access, WhatsApp link with a name picker. Open: PIN, see O-6 |
 | R-33 | **Tech:** The app never signs a student in because of a phone number that the student types. The phone for a login comes only from the WhatsApp link or from the `Student` record. (A typed number may only ask for a new link. The link goes to that number's WhatsApp, so it proves nothing about the person who typed it.) The link itself proves that the person has that WhatsApp number, so v1 needs no other check, such as an OTP. | Proposed |
 | R-34 | One phone can have **several children** (for example brothers and sisters who share one phone). The student can switch profile without signing in again. | Decided (the Figma has "Who is learning" and "Switch profile"). Open: does switching need a PIN, and how the app finds all the children of one phone (see O-6) |
@@ -385,6 +386,7 @@ The below items need a decision:
 | O-27 | **Voice or video submissions:** the designer said v1 submissions are mainly a photo or a video, and voice is for a future version. We had planned voice recording in v1. Is voice in v1? How large and how long may a video be? | Video files are large and upload slowly on weak connections. We tested photo and voice on the phones, not the video camera. |
 | O-28 | **App students and WhatsApp-only students:** the shared Glific "feedback" flow serves every student. To tell them apart, we propose that the flow asks `tapapp` (a webhook) whether the submission came from the app. If yes, the flow sends "Your feedback is ready" with a signed link. If no, or if the webhook fails, it sends the message as today. Is this acceptable? The check is per submission, so a student who uses both channels gets the right message for each submission. Is that what the product team wants? The flow also needs the student's Glific ID (the existing step skips the message without one), and the webhook must answer fast and must fail safe to the old path. | The flow is shared with WhatsApp-only students, so a change to it must not break their feedback. It needs the product team's approval. |
 | O-29 | **Weekly limit:** in the WhatsApp system a student gets one video, one quiz and one submission a week, and cannot go past `max_allowed_week` (the batch's calendar week + 1). An operator can move the batch's calendar week forward (`update_batch_week`, one week at a time) or change `max_allowed_week` for one student. The designer said the app has no limit on activities per week. The product team decided that the next project opens only after valid feedback (R-83), which takes about 12 hours. Should app students keep the week cap, or only the feedback gate? Can a student do more than one project in a week? | The shared enrollment record assumes one activity per week, so a student who does two projects in a week would hit the cap. |
+| O-30 | **Home cards:** in the meeting the designer said Home shows **two activity cards**. The Figma Home frame shows one. Which two activities does Home show (for example this week's and the next one, or two that can be done now)? The answer must fit the weekly limit and the next-project rule (O-29, R-83). | It decides how many activities Home loads and what the second card shows. |
 
 ### To confirm
 
@@ -409,9 +411,9 @@ These are already decided, or proposed by the TAP team. Please confirm them or t
 - **Curriculum content.** The curriculum team must supply the videos, the exemplar works, the submission messages (for example "Champ, I'm looking forward to your pencil holder") and the evaluation guidelines. It takes about 2 weeks after they finish, to put it into the CRM and test it. Anand coordinates it.
 - **Data protection.** Children's names, photos and voices pass through several services.
 
-## 13. How we will check it is done (proposed)
+## 13. QA: How we will check it is done (proposed)
 
-- A student cannot read or change another student's data, even by trying other ids.
+- A student cannot read or change the data of a child on **another phone**, even by trying other ids. Children who share one phone can switch between themselves (O-6) until the PIN is added.
 - Sending the same completion twice does not give extra points.
 - The weekly limit resets at the start of a new week without clearing the cache.
 - If the connection drops, the app stops at the offline screen. After Retry, the student continues from the same step, and no progress is lost.
