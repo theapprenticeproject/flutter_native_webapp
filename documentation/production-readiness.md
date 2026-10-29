@@ -16,7 +16,7 @@ It adds to [Known Gaps](known-gaps.md) and [TODO](todo.md). It does not repeat t
 
 **Scope update (2026-10-22).** v1 has **no teacher role** and no installed app. It uses the same student-only flow as WhatsApp. So the teacher and roster parts of the prototype are not needed in v1: the `teacher` and `admin_code` fields, the `/students/*` endpoints, the roster cache, and the client-side `checkAdminCode`. Remove or switch them off. This also removes an attack surface and the plain-text `admin_code` in the browser cache (section 4, Storage).
 
-**Constraint and code-review update (2026-10-22).** `frappe_tap` is in production, so we do not change its existing logic without the client's approval (see [v1 requirements](v1-requirements.md), "Rules for our changes"). If the client accepts the WhatsApp system's `ProgramEnrollment` as the single progress record (O-8), most of the `tapapp` backend is not needed: `Tapapp Learner`, `Tapapp Enroll`, `Tapapp Learner Achievements`, the XP, streak and window code, and the nightly jobs. Then backend items B1 to B7 are not fixes to make, but code to drop. B8 stays only if the content export stays. The ownership check in the Worker (R-81) stays in every case. The new backend problems now come from the existing pipeline: see section 8.
+**Constraint and code-review update (2026-10-22).** `frappe_tap` is in production, so we do not change its existing logic without the client's approval (see [v1 requirements](v1-requirements.md), "Rules for our changes"). Because the WhatsApp system's `ProgramEnrollment` is the single progress record (R-48), most of the `tapapp` backend is not needed: `Tapapp Learner`, `Tapapp Enroll`, `Tapapp Learner Achievements`, the XP, streak and window code, and the nightly jobs. Then backend items B1 to B7 are not fixes to make, but code to drop. B8 stays only if the content export stays. The ownership check in the Worker (R-81) stays in every case. The new backend problems now come from the existing pipeline: see section 8.
 
 Priority: **P1** fix before real students. **P2** fix soon after. **P3** cleanup.
 
@@ -153,7 +153,7 @@ The backend review read the `tapapp` code in the fork `frappe_tap_dd`, branch `p
 
 ## 8. Findings in the existing pipeline (`frappe_tap`, `tap_plg`, `rag_service`)
 
-These came from read-only reviews of the code on `pal-v2-health`, `integ-health-mon` and `va-health-mon`. They are not checked live, and the branches may differ from production. All of this is production code. We do not change it without the client's approval. The decisions are in the v1 requirements (O-13, O-22, O-24 to O-26).
+These came from read-only reviews of the code on `pal-v2-health`, `integ-health-mon` and `va-health-mon`. They are not checked live, and the branches may differ from production. All of this is production code. We do not change it without the client's approval. The decisions are in the v1 requirements (O-13 and O-22, and R-91 for the quiz and R-92 for the pipeline).
 
 | # | Finding | Why it matters |
 |---|---|---|
