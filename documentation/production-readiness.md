@@ -155,6 +155,8 @@ The backend review read the `tapapp` code in the fork `frappe_tap_dd`, branch `p
 
 These came from read-only reviews of the code on `pal-v2-health`, `integ-health-mon` and `va-health-mon`. They are not checked live, and the branches may differ from production. All of this is production code. We do not change it without the client's approval. The decisions are in the v1 requirements (O-13 and O-22, and R-91 for the quiz and R-92 for the pipeline).
 
+**Update (2026-10-29):** we now assume the deployed branch is `journey_2026`. Where a finding below names `save_submission`, `ready_to_receive_feedback`, `pe_dispatcher` or `ProgramEnrollment`, those belong to the Summer Program engine, which is switched off there. The matching live call is `submit_artwork`, which has the same gaps (the code requires no key, and there is no duplicate check). The findings have not been re-checked one by one. See `system-understanding.md`, section 8.
+
 | # | Finding | Why it matters |
 |---|---|---|
 | PL-1 | If the AI evaluation fails, the result is published as "Valid" with grade 0, and the points step looks only at the plagiarism flags. | A failed run can earn on-time points and looks like a good result. |
