@@ -31,7 +31,6 @@ The redirect checks the cached authentication session, active profile, and onboa
 | `learningDashboardProvider`     | Home stage, unit card, weekly cap, completion marker |
 | `classSessionBootstrapProvider` | First incomplete unit and weekly limit check         |
 | `classChatControllerProvider`   | Video, submission, quiz, and completion state        |
-| `tapBuddyContextProvider`       | Learner/course context for Tapbuddy                  |
 | `programContentProvider`        | Bundled course indexes and course JSON               |
 
 ## Cache policy (today)
@@ -89,8 +88,8 @@ Changes from today:
 
 Changes from today:
 - **Remove** the weekly-cap logic (R-39), and the streak and gems (streaks are paused in section 2 of the requirements, and gems are not in the design) (D0).
-- **Remove** `tapBuddyContextProvider` and the AI calls. Ask TAP in v1 shows prepopulated questions only (R-70, D10, P2).
-- **Remove** the Groq and AI review code (D0).
+- **Removed in M0 (2026-11-06):** `tapBuddyContextProvider`, the TapBuddy chat code (`lib/domain/tapbuddy/`), the Ask TAP panel (`tap_buddy_panel.dart`) and the "Ask TAP Buddy" button in the header. The app has **no Ask TAP** until the prepared-question panel is built (R-70, D10, P2). The animated TAP Buddy character in the classroom stays.
+- **Removed in M0 (2026-11-06):** the Groq and AI review code, in the Worker (C1) and in the app (D0). Submissions are no longer reviewed by an AI. See `known-gaps.md`, GP10.
 - The learner state no longer comes from the old `/learner/submit-progress`. The calls are the ones in `api-contract.md`, through the Worker. The app never calls Frappe directly.
 
 ## Saving and the cache (v1)

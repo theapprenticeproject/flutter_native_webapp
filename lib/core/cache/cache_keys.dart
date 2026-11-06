@@ -61,9 +61,6 @@ class CacheKeys {
 
   static String achievements(String learnerId) => _k('achievements:$learnerId');
 
-  static String chatTranscript(String phone, String learnerId) =>
-      _k('chat:$phone:$learnerId');
-
   static String languageSetting() => _k('settings:language_code');
 
   static String activityProgress(String learnerId) =>

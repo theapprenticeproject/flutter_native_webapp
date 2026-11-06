@@ -4,19 +4,11 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../core/router/app_routes.dart';
 import '../../core/theme/app_theme.dart';
-import 'tap_buddy_panel.dart';
 
-class AppNav extends StatefulWidget {
+class AppNav extends StatelessWidget {
   final Widget child;
 
   const AppNav({super.key, required this.child});
-
-  @override
-  State<AppNav> createState() => _AppNavState();
-}
-
-class _AppNavState extends State<AppNav> {
-  bool _tapBuddyOpen = false;
 
   static const _items = [
     _NavDestination(AppRoutes.home, Icons.home_outlined, 'Home'),
@@ -33,49 +25,9 @@ class _AppNavState extends State<AppNav> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF7F7FA),
-      body: TapBuddyScope(
-        openPanel: () => setState(() => _tapBuddyOpen = true),
-        child: Stack(
-          children: [
-            Positioned.fill(child: widget.child),
-            if (_tapBuddyOpen) ...[
-              Positioned.fill(
-                child: GestureDetector(
-                  onTap: () => setState(() => _tapBuddyOpen = false),
-                  child: Container(color: Colors.black.withValues(alpha: 0.48)),
-                ),
-              ),
-              TapBuddyPanel(
-                onClose: () => setState(() => _tapBuddyOpen = false),
-              ),
-            ],
-          ],
-        ),
-      ),
+      body: child,
       bottomNavigationBar: const _BottomNav(items: _items),
     );
-  }
-}
-
-class TapBuddyScope extends InheritedWidget {
-  final VoidCallback openPanel;
-
-  const TapBuddyScope({
-    super.key,
-    required this.openPanel,
-    required super.child,
-  });
-
-  static VoidCallback? maybeOpenOf(BuildContext context) {
-    final scope = context
-        .getElementForInheritedWidgetOfExactType<TapBuddyScope>()
-        ?.widget;
-    return scope is TapBuddyScope ? scope.openPanel : null;
-  }
-
-  @override
-  bool updateShouldNotify(TapBuddyScope oldWidget) {
-    return openPanel != oldWidget.openPanel;
   }
 }
 

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../core/theme/app_theme.dart';
-import 'app_nav.dart';
 
 class AppHeader extends StatelessWidget {
   final String title;
@@ -10,8 +9,6 @@ class AppHeader extends StatelessWidget {
   final String subtitle;
   final int points;
   final int streakDay;
-  final VoidCallback? onAskBuddy;
-  final bool showAskBuddy;
   final bool showStudentSummary;
   final bool showBack;
   final bool showPoints;
@@ -24,8 +21,6 @@ class AppHeader extends StatelessWidget {
     this.subtitle = "Ready for today's class?",
     this.points = 0,
     this.streakDay = 0,
-    this.onAskBuddy,
-    this.showAskBuddy = false,
     this.showStudentSummary = false,
     this.showBack = false,
     this.showPoints = false,
@@ -87,17 +82,7 @@ class AppHeader extends StatelessWidget {
                 label: '$points',
               ),
             ],
-            if (showAskBuddy) ...[
-              const SizedBox(width: 14),
-              _AskBuddyButton(
-                onPressed:
-                    onAskBuddy ??
-                    () {
-                      TapBuddyScope.maybeOpenOf(context)?.call();
-                    },
-              ),
-            ],
-            if (showPoints || showAskBuddy) ...[
+            if (showPoints) ...[
               const SizedBox(width: 18),
               Container(width: 1, height: 32, color: AppTheme.borderColor),
             ],
@@ -121,15 +106,6 @@ class AppHeader extends StatelessWidget {
       child: LayoutBuilder(
         builder: (context, constraints) {
           final compact = constraints.maxWidth < 620;
-          void openBuddy() {
-            final openPanel = TapBuddyScope.maybeOpenOf(context);
-            if (onAskBuddy != null) {
-              onAskBuddy!();
-            } else {
-              openPanel?.call();
-            }
-          }
-
           final topRow = Row(
             children: [
               Expanded(
@@ -138,10 +114,6 @@ class AppHeader extends StatelessWidget {
                   child: _PostOnboardingBrand(compact: compact),
                 ),
               ),
-              if (showAskBuddy) ...[
-                const SizedBox(width: 12),
-                _AskBuddyButton(onPressed: openBuddy),
-              ],
             ],
           );
           final greeting = Column(
@@ -210,10 +182,6 @@ class AppHeader extends StatelessWidget {
                       ),
                     ),
                   ),
-                  if (showAskBuddy) ...[
-                    const SizedBox(width: 12),
-                    _AskBuddyButton(onPressed: openBuddy),
-                  ],
                 ],
               ),
             );
@@ -275,49 +243,6 @@ class _PostOnboardingBrand extends StatelessWidget {
           height: compact ? 26 : 30,
         ),
       ],
-    );
-  }
-}
-
-class _AskBuddyButton extends StatelessWidget {
-  final VoidCallback onPressed;
-
-  const _AskBuddyButton({required this.onPressed});
-
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onPressed,
-      borderRadius: BorderRadius.circular(999),
-      child: Container(
-        height: 28,
-        padding: const EdgeInsets.symmetric(horizontal: 11),
-        decoration: BoxDecoration(
-          color: const Color(0xFFF4F2FF),
-          borderRadius: BorderRadius.circular(999),
-          border: Border.all(color: const Color(0xFF8A82EB)),
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Icon(
-              Icons.chat_bubble_outline_rounded,
-              size: 13,
-              color: Color(0xFF5B5BD6),
-            ),
-            const SizedBox(width: 5),
-            Text(
-              'Ask TAP Buddy',
-              style: GoogleFonts.inter(
-                fontSize: 12,
-                fontWeight: FontWeight.w600,
-                color: const Color(0xFF3A3A46),
-                letterSpacing: 0,
-              ),
-            ),
-          ],
-        ),
-      ),
     );
   }
 }

@@ -309,7 +309,6 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
               points: widget.controller.displayedTotalPoints,
               showBack: true,
               showPoints: true,
-              showAskBuddy: true,
               onBack: () => context.go(AppRoutes.home),
             ),
             Expanded(

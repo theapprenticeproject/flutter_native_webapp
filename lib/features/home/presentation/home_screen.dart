@@ -105,7 +105,6 @@ class _HomeDashboard extends StatelessWidget {
                     studentName: progress.studentName,
                     points: progress.points,
                     streakDay: progress.streakDay,
-                    showAskBuddy: true,
                     showStudentSummary: true,
                   ),
                   Expanded(

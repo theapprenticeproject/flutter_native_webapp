@@ -26,7 +26,5 @@ class ApiEndpoints {
   static const String achievements = '/achievements';
   static const String achievementsAward = '/achievements/award';
 
-  static const String tapbuddyChat = '/tapbuddy/chat';
-
   static const String onboardingComplete = '/onboarding/complete';
 }

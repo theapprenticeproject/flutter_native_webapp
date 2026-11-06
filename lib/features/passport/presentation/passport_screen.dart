@@ -63,7 +63,6 @@ class _PassportDashboard extends StatelessWidget {
                     subtitle: 'Have a look at your progress',
                     points: progress.points,
                     streakDay: progress.streakDay,
-                    showAskBuddy: true,
                     showStudentSummary: true,
                   ),
                   Expanded(
