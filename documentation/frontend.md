@@ -88,7 +88,7 @@ Changes from today:
 | Interaction events | Collects every interaction (taps, screens, steps, quiz answers, chat messages, typed text, errors) and sends them in batches (R-84, D18). |
 
 Changes from today:
-- **Remove** the weekly-cap logic and the streak and gems (R-39, D0).
+- **Remove** the weekly-cap logic (R-39), and the streak and gems (streaks are paused in section 2 of the requirements, and gems are not in the design) (D0).
 - **Remove** `tapBuddyContextProvider` and the AI calls. Ask TAP in v1 shows prepopulated questions only (R-70, D10, P2).
 - **Remove** the Groq and AI review code (D0).
 - The learner state no longer comes from the old `/learner/submit-progress`. The calls are the ones in `api-contract.md`, through the Worker. The app never calls Frappe directly.
@@ -97,8 +97,8 @@ Changes from today:
 
 - **Every step is saved to the server at once** (R-40): the video is marked as watched, the work is sent, the quiz is finished. Each write has an idempotency key, so a repeat is saved once.
 - **The exception is the quiz.** Once it has started, the student can finish it without a network. The answers stay on the phone and are sent when the quiz ends, or when the connection is back. If the student leaves the app, the quiz continues from the saved answers. The points, the picture badge (R-69) and the Results step use the **server's result**, not the local one.
-- **The phone is the only waiting place for the interaction events.** The app keeps each event until the backend confirms that it is saved, and sends it again after a "not saved" answer (D18).
-- **A failed upload does not lose the work.** The student can try again (R-13). The photo is made smaller and saved as a JPEG before upload (R-12). The video is limited to 90 seconds (R-9).
+- **The phone is the only waiting place for the interaction events.** The app keeps each event until the Worker confirms that it is in the queue, and sends it again after a "not saved" answer (D18). The events do not go to Frappe.
+- **A failed upload does not lose the work.** The student can try again (R-13). The photo is made smaller and saved as WebP before upload, with JPEG as the fallback (R-12). The video is limited to 90 seconds (R-9).
 - **Offline:** the app shows "I am not able to talk to you. Looks like you're offline" and a Retry button. The student cannot go on until the connection is back, and then continues from the same step (R-71). The quiz exception is above.
 - **Content** comes from the CDN (R-18, `build-bootstrap.md`). Bundling the content in the app for the first test is only a way to cut work. It needs the tech lead's agreement (`v1-task-breakdown.md`, "How to cut", item 2). Quiz answers are **not** in the content files. They come with the quiz start call.
 - **Switching profile** asks the Worker for a new student token (R-34).

@@ -17,7 +17,7 @@ Check them in Figma before you build.
 - **The v1 test release is mid-November** for 30 to 100 kids. The flow is hardcoded and linear (R-61).
 - **No deadline in v1** (R-72). Remove the countdown and the "time left" pills (F-8).
 - **No theme switch in v1** (R-73, F-4). The app stays light.
-- **No streaks, gems or weekly limit in v1** (R-39).
+- **No weekly limit in v1** (R-39). **Streaks are paused** (section 2 of the requirements), and **gems are not in the design**.
 - **Points follow R-75**, not the numbers in the frames (F-5): video +10, work shared +25, each correct quiz answer +1, correct work +10 after valid feedback.
 - **Events and the announcement banner are later (v1.1)** (R-5, R-86). Home keeps an empty place for a banner (R-94).
 - **Edit profile is later** (R-74). Voice notes are later (R-10, R-65). Text submissions are later (R-63).
@@ -184,7 +184,7 @@ About 30 frames. This is the biggest design.
   - The designer says the Gallery design is still being shaped (R-6).
   - The Gallery content is **P2**: it can follow the first test.
 - **To do**: the tab and an empty state with the examples first. Then the grid, the viewer and a provider (task D9). The data side is the risk.
-- **Passport content**: Passport is replaced by Me (R-7). Gems and streaks are dropped (R-39).
+- **Passport content**: Passport is replaced by Me (R-7). Streaks are paused (section 2) and gems are not in the design.
 
 ## Screen 6: Me
 
@@ -254,7 +254,7 @@ Answered since the first version:
 - Dark theme: not in v1 (R-73).
 - Events: v1.1 (R-86).
 - Gallery data: the Worker reads copies in R2 (R-85, R-88).
-- Passport content: replaced by Me. Gems and streaks are dropped (R-7, R-39).
+- Passport content: replaced by Me. Streaks are paused (section 2) and gems are not in the design (R-7).
 
 Still open:
 1. Can we get edit access to the Figma file? It gives exact colors, sizes and fonts (task A4).

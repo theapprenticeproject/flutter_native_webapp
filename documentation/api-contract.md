@@ -12,7 +12,7 @@
 | Credential | The Worker sends `Authorization: token <key>:<secret>` on every call. A call with no credential, or a wrong one, is refused. No method is open to guests. |
 | Who is the student | Every call about a student takes `student_id`. The Worker takes it from the student token. The backend uses only this `student_id`. It never uses a phone number, and it never reads a `student_id` from anywhere else (R-81). |
 | Answer shape | Success: `{"ok": true, "data": {...}}`. Failure: `{"ok": false, "error": {"code": "...", "message": "..."}}`. Frappe puts this inside its own `message` field. Do not raise exceptions for expected failures. |
-| Safe repeats | Calls that write take an `idempotency_key` (a key made by the app for one action). The same key sent twice does the work **once** and returns the **same answer** as the first time, with `"repeat": true`. It is not an error. |
+| Safe repeats | Calls that write must be safe to repeat. The same call sent twice does the work **once** and returns the **same answer** as the first time, with `"repeat": true`. It is not an error. Where the key is kept: **`create_submission`** takes an `idempotency_key`, stored in the `upload_key` field of the Unit Progress row. **`quiz_submit`** uses the `attempt_id` from `quiz_start`, stored in `quiz_json` of the row. **`save_step`** needs no key: the time field of the step in the row says it is done. |
 | Time | All times are ISO 8601 with a time zone, for example `2026-11-04T16:00:00+05:30`. |
 | Secrets | Never put a key, a token or a phone number in an answer or a log. |
 
@@ -25,8 +25,8 @@
 | `INVALID_INPUT` | A field is missing, has the wrong type or is too big. `message` names the field. | A friendly error. |
 | `NOT_FOUND` | The unit, the attempt or the submission does not exist **for this student**. | A friendly error. |
 | `NOT_READY` | The feedback is not ready yet. This is normal, not a failure. | The waiting screen. |
-| `UPSTREAM_ERROR` | A call inside the backend failed (`submit_artwork`, BigQuery, Glific). Safe to retry with the same key. | Retry button. |
-| `NOT_SAVED` | The interaction events were not written to BigQuery. The app keeps them and sends them again. | Nothing (silent). |
+| `UPSTREAM_ERROR` | A call inside the backend failed (`submit_artwork`, Glific). Safe to retry with the same key. | Retry button. |
+| `NOT_SAVED` | The Worker could not put the interaction events in its queue (section 3.7). The app keeps them and sends them again. | Nothing (silent). |
 | `SERVER_ERROR` | Anything else. | Retry button. |
 
 The messages are for developers and logs. The Worker maps each code to a friendly text and never sends `message` to the app.
@@ -76,10 +76,10 @@ The backend is the only place that gives points. It answers with the points for 
 
 ### 3.3 Steps
 
-**`save_step(student_id, unit_id, step_type, idempotency_key, client_time)`**
+**`save_step(student_id, unit_id, step_type, client_time)`**
 - `step_type` in v1: `video_watched`. (The quiz and the submission have their own calls below.)
-- Out: `data: {step_id, points_awarded, points_total, repeat}`.
-- Notes: a repeat returns the first answer with `points_awarded` of the first call.
+- Out: `data: {points_awarded, points_total, repeat}`.
+- Notes: a repeat returns the first answer with `points_awarded` of the first call. **There are no watch seconds.** The app does not check that the video was watched (R-90), so it sends and stores no watch time.
 
 ### 3.4 Quiz (R-91)
 
@@ -95,7 +95,7 @@ The backend is the only place that gives points. It answers with the points for 
   ```
 - Notes: all questions come together. The answer key must **not** be in the CDN files. A retake is a new attempt. The app gives right or wrong at once, also without a network.
 
-**`quiz_submit(student_id, attempt_id, answers, idempotency_key)`**
+**`quiz_submit(student_id, attempt_id, answers)`**
 - In: `answers`: a list of `{question_id, selected_key, answered_at}`. The app sends **no score**.
 - Out:
   ```
@@ -105,17 +105,17 @@ The backend is the only place that gives points. It answers with the points for 
     correct_count, points_awarded, points_total, repeat
   }
   ```
-- Notes: the server checks every answer again with its own key and stores every answer. Any score sent by the app is ignored. The server's result is the one that counts. The points, the picture badge (R-69) and the Results step use this answer, not the local one.
+- Notes: the server **stores every answer first**, then checks them again with its own key and answers **at once** (no queue, no Redis cache in v1; it reads the key from Frappe each time). The server checks every answer again and stores every answer. Any score sent by the app is ignored. The server's result is the one that counts. The points, the picture badge (R-69) and the Results step use this answer, not the local one.
 
 ### 3.5 Submission (R-64, R-92)
 
 The Worker makes the short upload link (task C5). The app uploads the file straight to storage. Then the Worker calls:
 
 **`create_submission(student_id, unit_id, assignment_id, media_type, file_ref, idempotency_key)`**
-- `media_type`: `image` or `video`. `file_ref`: the storage path of the uploaded file (never a public link).
+- `media_type`: `image` or `video`. `file_ref`: the storage path of the uploaded file (never a public link). **Allowed file types:** `image/webp` (the usual photo, R-12), `image/jpeg` (the fallback when the phone cannot make WebP), and `video/mp4`. HEIC is never accepted. Other video types are to be checked with the pipeline (B0, E2). Any other type gives `INVALID_INPUT`.
 - Out: `data: {submission_id, points_awarded, points_total, repeat}`.
 - Errors: `UPSTREAM_ERROR` if `submit_artwork` fails. Safe to retry with the same key.
-- Notes: one upload makes one `submit_artwork` call. A new attempt after a not-valid result has a new key and makes a new `Submission`. The call also sets `feedback_flow_id` for app students (task B14, O-28 approved on 2026-11-05).
+- Notes: one upload makes one `submit_artwork` call. A new attempt after a not-valid result has a new key and makes a new `Submission`. The call also sets `submission_context` = `program` and `sources` = `tapapp` on the new `Submission` (two new fields, added as Custom Fields by a `tapapp` patch and set after `submit_artwork` returns), and it stores the key in `upload_key` and the link to the new `Submission` in the Unit Progress row, and `feedback_flow_id` for app students (task B14, O-28 approved on 2026-11-05).
 
 ### 3.6 Feedback and projects
 
@@ -133,24 +133,25 @@ The Worker makes the short upload link (task C5). The app uploads the file strai
 - Notes: feedback comes in the daily windows (15:00, 16:30, 21:00 IST). This call only **reports** the points. It must not be the only place that gives the `+10`. The `+10` is given once for each submission, with a guard in the database, so a repeated read never gives it twice. Task B7 decides if a hook, a job or the first read gives it. `audio_url` is a link the Worker can turn into a short-lived one.
 
 **`get_projects(student_id)`**
-- Out: `data.projects`: a list of `{submission_id, unit_id, title, status, valid, submitted_at, media_ref}`, newest first. `media_ref` is a storage path. The Worker makes the short-lived link (R-88).
+- Out: `data.projects`: a list of `{submission_id, unit_id, title, status, valid, submitted_at, media_ref}`, newest first. The backend reads the list through the Unit Progress rows (which link to the `Submission`), so event and challenge submissions are not shown. `media_ref` is a storage path. The Worker makes the short-lived link (R-88).
 
-### 3.7 Interaction events (R-84, tasks B15 and B16)
+### 3.7 Interaction events (R-84): a Worker route, **not a Frappe call**
 
-**`submit_events(student_id, events)`**
-- In: `events`: a list of at most 100 events (the Worker and the backend both check this):
+Decided on 2026-11-05: the events do not go to `frappe_tap` (R-78). The app sends a batch to a Worker route. The Worker checks it and puts it in a Cloudflare Queue. A consumer writes the events to BigQuery (tasks C9 and C10). This section is here only so everyone knows the event shape.
+
+**Batch from the app** (the student token gives the `student_id`; a `student_id` in the body is ignored):
+- A list of at most 100 events:
   ```
   {event_id,            // unique, made by the app
-   type,                // for example "screen_opened", "tap", "step_done", "quiz_answer", "chat_message", "error"
+   type,                // for example "screen_opened", "screen_closed", "tap", "step_done", "quiz_answer", "chat_message", "error"
    at,                  // when it happened on the phone
    screen,              // optional
-   data}                // a small object: ids, taps, and any text the student typed
+   data}                // a small object: ids, any text the student typed, the tap position (x, y) for "tap", the time open in milliseconds for "screen_closed"
   ```
-- Out: `data: {accepted: [event_id], rejected: [{event_id, code}]}`.
-- Errors: `NOT_SAVED` if BigQuery did not take the batch. The phone keeps the events and sends them again.
+- Answer: `{accepted: [event_id], rejected: [{event_id, code}]}`. `NOT_SAVED` if the queue did not take the batch.
 - Notes:
-  - The backend writes accepted events straight to BigQuery. It keeps **nothing** in `frappe_tap`.
-  - The `event_id` is the row id. A repeated batch makes no second row. Every row keeps `event_id`, because BigQuery's own duplicate check works only for a short time.
+  - The phone keeps each event until the Worker confirms that it is in the queue, and sends it again after a `NOT_SAVED` answer.
+  - The `event_id` is the row id in BigQuery. A repeated batch makes no second row. Every row keeps `event_id`, because BigQuery's own duplicate check works only for a short time.
   - Events carry `student_id`. Never the phone number. Never a name field. Text typed by the student is allowed and is stored as typed.
   - The final table format comes from the WhatsApp events (A15). Until then, use this shape.
 
@@ -177,8 +178,9 @@ The Worker makes the short upload link (task C5). The app uploads the file strai
 2. **"I watched it" after 5 minutes (R-90):** does the server check the 5 minutes in `save_step`, or does the app only turn the button on? Suggestion: the app only. Check on the server later.
 3. **Where the quiz questions and the answer key come from** (task B0): Frappe or the Google Sheet. The shape of `quiz_start` does not change.
 4. **`unit_id` and `assignment_id`:** are they the same value for each activity? Check with the content (B0).
-5. **The format of the events** in BigQuery (A15) and which service account writes (A19).
-6. **Steps storage:** the steps are stored in `Tapapp Step` or in a child table (open decision). This contract does not depend on it.
+5. **The format of the events** in BigQuery (A15) and which service account key the Worker uses (A19).
+6. **Steps storage:** decided on 2026-11-05. The steps are stored in the Unit Progress child table of Program Enrollment, one row for each unit. This contract does not depend on it.
+7. **Quiz retakes and points:** a retake is a new attempt (R-91), and the Unit Progress row keeps one set of quiz points. **Decided on 2026-11-05:** the first scored attempt gives the +1 points and a retake gives none.
 
 ## 6. How we keep this file true
 
