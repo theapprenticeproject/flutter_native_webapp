@@ -61,12 +61,6 @@ class CacheKeys {
 
   static String achievements(String learnerId) => _k('achievements:$learnerId');
 
-  static String submissionReview(
-    String learnerId,
-    String question,
-    String submissionText,
-  ) => _k('review:$learnerId:${Object.hash(question, submissionText)}');
-
   static String chatTranscript(String phone, String learnerId) =>
       _k('chat:$phone:$learnerId');
 

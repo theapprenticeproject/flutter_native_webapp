@@ -81,10 +81,6 @@ Inspect the cached Home continuation marker. It must be cleared only by **Let's 
 
 Check bearer format, token type, phone ownership, expiry, and whether Worker/Frappe JWT secrets match. A token returned in a successful response is a refresh and should replace the old token.
 
-### AI endpoint returns 502
-
-Check Groq credentials/model access and payload size. Image/audio URLs must be externally reachable. The Worker returns `invalid_model_response` when review JSON is invalid.
-
 ## Production signals
 
-Monitor Worker request count, `401`, `429`, and `5xx` rates; Frappe method latency and job failures; progress conflicts; Groq failures; and frontend asset errors. Never log passwords, OTPs, bearer tokens, full student submissions, or secret values.
+Monitor Worker request count, `401`, `429`, and `5xx` rates; Frappe method latency and job failures; progress conflicts; and frontend asset errors. Never log passwords, OTPs, bearer tokens, full student submissions, or secret values.

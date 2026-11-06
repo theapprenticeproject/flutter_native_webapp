@@ -4,7 +4,6 @@ import 'package:flutter/foundation.dart';
 
 import '../../../domain/learner/learner_state_model.dart';
 import '../../../domain/learner/learner_state_repository.dart';
-import '../data/submission_review_repository.dart';
 import '../models/activity_flow_model.dart';
 import '../models/archetype_step_selector.dart';
 import '../models/class_chat_message_model.dart';
@@ -46,14 +45,12 @@ class ClassChatController extends ChangeNotifier {
     required this.unitIndex,
     required LearnerStateModel initialLearnerState,
     required LearnerStateRepository learnerStateRepository,
-    required SubmissionReviewRepository submissionReviewRepository,
     required ClassSessionWindowRepository sessionWindowRepository,
     VoidCallback? onProgressSaved,
   }) : _flow = flow,
        _unit = unit,
        _nextUnit = nextUnit,
        _learnerStateRepository = learnerStateRepository,
-       _submissionReviewRepository = submissionReviewRepository,
        _sessionWindowRepository = sessionWindowRepository,
        _learnerState = initialLearnerState,
        _startingPoints = initialLearnerState.xp ?? 0,
@@ -76,7 +73,6 @@ class ClassChatController extends ChangeNotifier {
   final CourseUnitModel _unit;
   final CourseUnitModel? _nextUnit;
   final LearnerStateRepository _learnerStateRepository;
-  final SubmissionReviewRepository _submissionReviewRepository;
   final ClassSessionWindowRepository _sessionWindowRepository;
   final VoidCallback? _onProgressSaved;
 
@@ -453,85 +449,29 @@ class ClassChatController extends ChangeNotifier {
       ),
     );
 
+    // The prototype AI review is gone (M0). Photos and videos are accepted here
+    // for now. The real upload and the valid or not-valid check come later
+    // (M4, M5, R-27, R-76). Other answers are checked against the flow criteria.
     final isMediaSubmission =
         answer.kind == SubmissionKind.image ||
         answer.kind == SubmissionKind.video ||
         answer.kind == SubmissionKind.imageVideo;
-    final needsAiReview =
-        !isMediaSubmission &&
-        SubmissionKindResolver.requiresAiReview(answer.kind);
-
-    if (!needsAiReview) {
-      final passed = isMediaSubmission
-          ? true
-          : answer.matchesCriteria(step.validCriteria);
-      _push(
-        ClassChatMessage(
-          id: _newId(),
-          stepId: 'AF-008',
-          sender: ClassChatSender.bot,
-          contentType: ClassChatContentType.submissionReview,
-          text: passed
-              ? _finalSubmissionPraise()
-              : "That's a good try — let's keep practicing this one.",
-          data: {'passed': passed, 'isFinalStep': passed},
-        ),
-      );
-      await _finishAssignmentStep(accepted: passed);
-      return;
-    }
-
+    final passed = isMediaSubmission
+        ? true
+        : answer.matchesCriteria(step.validCriteria);
     _push(
       ClassChatMessage(
         id: _newId(),
-        stepId: 'AF-008-REVIEWING',
+        stepId: 'AF-008',
         sender: ClassChatSender.bot,
-        contentType: ClassChatContentType.submissionReviewing,
+        contentType: ClassChatContentType.submissionReview,
+        text: passed
+            ? _finalSubmissionPraise()
+            : "That's a good try — let's keep practicing this one.",
+        data: {'passed': passed, 'isFinalStep': passed},
       ),
     );
-    notifyListeners();
-
-    try {
-      final data = await _submissionReviewRepository.reviewSubmission(
-        phone: phone,
-        learnerId: learnerId,
-        submissionText: answer.text ?? step.unguidedText,
-        question: assignment.description,
-        expectedAnswer: step.validCriteria,
-        rubric: null,
-      );
-      _messages.removeWhere((m) => m.stepId == 'AF-008-REVIEWING');
-      final review = data['review'];
-      final reviewMap = review is Map
-          ? Map<String, dynamic>.from(review)
-          : const <String, dynamic>{};
-      final passed = data['success'] == true && reviewMap['verdict'] == 'pass';
-      _push(
-        ClassChatMessage(
-          id: _newId(),
-          stepId: 'AF-008',
-          sender: ClassChatSender.bot,
-          contentType: ClassChatContentType.submissionReview,
-          text: passed
-              ? _finalSubmissionPraise()
-              : (reviewMap['feedback'] as String?) ??
-                    "That submission didn't quite pass this time — let's try again.",
-          data: {
-            'score': (reviewMap['score'] as num?)?.toInt(),
-            'passed': passed,
-            'isFinalStep': passed,
-            'feedback': reviewMap['feedback'],
-            'smsText': reviewMap['sms_text'],
-            'strengths': reviewMap['strengths'],
-            'improvements': reviewMap['improvements'],
-          },
-        ),
-      );
-      await _finishAssignmentStep(accepted: passed);
-    } catch (_) {
-      _messages.removeWhere((m) => m.stepId == 'AF-008-REVIEWING');
-      await _finishAssignmentStep(accepted: false);
-    }
+    await _finishAssignmentStep(accepted: passed);
   }
 
   Future<void> _finishAssignmentStep({required bool accepted}) async {

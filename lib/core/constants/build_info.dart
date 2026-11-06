@@ -1,3 +1,5 @@
+import 'app_constants.dart';
+
 /// Build details, passed in by `scripts/build_web.sh` with `--dart-define`.
 /// A build made without the script shows "unknown".
 class BuildInfo {
@@ -20,6 +22,11 @@ class BuildInfo {
     defaultValue: 'unknown',
   );
 
+  /// The host of the Worker this build talks to, so a dev build cannot be
+  /// mistaken for a production build.
+  static String get workerHost => Uri.parse(AppConstants.workerBaseUrl).host;
+
   static String get label =>
-      'Build $time · $commit · Flutter $flutterVersion (engine $engineRevision)';
+      'Build $time · $commit · Flutter $flutterVersion (engine $engineRevision)'
+      ' · API $workerHost';
 }

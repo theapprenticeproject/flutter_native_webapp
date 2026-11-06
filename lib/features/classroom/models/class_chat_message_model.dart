@@ -7,7 +7,6 @@ enum ClassChatContentType {
   submission,
 
   submissionAnswerEcho,
-  submissionReviewing,
   submissionReview,
   submissionReward,
   quizQuestion,

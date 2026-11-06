@@ -44,12 +44,6 @@ class ClassMessageContent extends StatelessWidget {
         );
       case ClassChatContentType.submissionAnswerEcho:
         return ClassTextBubble(text: message.text ?? '', isUser: true);
-      case ClassChatContentType.submissionReviewing:
-        return const ClassTextBubble(
-          text: 'Reviewing your submission...',
-          isUser: false,
-          isMuted: true,
-        );
       case ClassChatContentType.submissionReview:
         return ClassSubmissionReviewCard(message: message);
       case ClassChatContentType.submissionReward:

@@ -6,7 +6,6 @@ import '../../../domain/learning_progress/class_session_bootstrap_provider.dart'
 import '../../../domain/learning_progress/home_dashboard_provider.dart';
 import '../../../core/localization/language_provider.dart';
 import '../../../domain/learner/learner_state_provider.dart';
-import 'submission_review_provider.dart';
 
 class NoUnitAvailableException implements Exception {
   const NoUnitAvailableException();
@@ -28,9 +27,6 @@ final classChatControllerProvider = FutureProvider.autoDispose
       final learnerStateRepository = await ref.watch(
         learnerStateRepositoryProvider.future,
       );
-      final submissionReviewRepository = await ref.watch(
-        submissionReviewRepositoryProvider.future,
-      );
       final sessionWindowRepository = await ref.watch(
         classSessionWindowRepositoryProvider.future,
       );
@@ -49,7 +45,6 @@ final classChatControllerProvider = FutureProvider.autoDispose
         unitIndex: bootstrap.unitIndex,
         initialLearnerState: bootstrap.learnerState,
         learnerStateRepository: learnerStateRepository,
-        submissionReviewRepository: submissionReviewRepository,
         sessionWindowRepository: sessionWindowRepository,
         onProgressSaved: () {
           if (!providerIsActive) return;

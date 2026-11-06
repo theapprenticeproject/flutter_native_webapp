@@ -43,6 +43,7 @@ flutter:
   assets:
     - assets/logos/
     - assets/splash-screen/
+    - assets/google_fonts/
     - assets/error-screen-assets/
     - assets/onboarding/
     - assets/home-screen/

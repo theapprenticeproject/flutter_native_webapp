@@ -11,8 +11,13 @@ class AppLanguage {
 }
 
 class AppConstants {
-  static const String workerBaseUrl =
-      'https://tapapp-worker.tapapp-middleware.workers.dev';
+  /// The Worker the app talks to. `scripts/build_web.sh` sets it from the
+  /// `WORKER_URL` environment variable (for example the dev Worker). A build
+  /// without it uses the production Worker.
+  static const String workerBaseUrl = String.fromEnvironment(
+    'WORKER_URL',
+    defaultValue: 'https://tapapp-worker.tapapp-middleware.workers.dev',
+  );
 
   static const String defaultLanguageCode = 'en';
 

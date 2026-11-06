@@ -1,24 +1,18 @@
 const OTP_ROUTE_PREFIXES = ['/auth/forgot-password/send-otp'];
-const GROQ_ROUTE_PREFIXES = ['/tapbuddy/chat', '/submission-review/review'];
 
 const OTP_LIMIT = 5;
 const OTP_WINDOW_SECONDS = 3600;
-
-const GROQ_LIMIT = 20;
-const GROQ_WINDOW_SECONDS = 3600;
 
 const DEFAULT_LIMIT = 60;
 const DEFAULT_WINDOW_SECONDS = 60;
 
 function bucketFor(pathname) {
   if (OTP_ROUTE_PREFIXES.some((p) => pathname.startsWith(p))) return 'otp';
-  if (GROQ_ROUTE_PREFIXES.some((p) => pathname.startsWith(p))) return 'groq';
   return 'default';
 }
 
 function limitsFor(bucket) {
   if (bucket === 'otp') return { limit: OTP_LIMIT, windowSeconds: OTP_WINDOW_SECONDS };
-  if (bucket === 'groq') return { limit: GROQ_LIMIT, windowSeconds: GROQ_WINDOW_SECONDS };
   return { limit: DEFAULT_LIMIT, windowSeconds: DEFAULT_WINDOW_SECONDS };
 }
 

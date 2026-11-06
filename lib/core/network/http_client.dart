@@ -20,10 +20,6 @@ class RateLimitedException implements Exception {
 
   static String bucketForPath(String path) {
     if (path.startsWith('/auth/forgot-password/send-otp')) return 'otp';
-    if (path.startsWith('/tapbuddy/chat') ||
-        path.startsWith('/submission-review/review')) {
-      return 'groq';
-    }
     return 'default';
   }
 

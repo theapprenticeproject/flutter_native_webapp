@@ -5,7 +5,7 @@ TapApp is a Flutter learning application for shared-device student accounts. A s
 This documentation covers the complete system implemented in this repository:
 
 - **Flutter app:** screens, Riverpod providers, repositories, local cache, and bundled learning content.
-- **Cloudflare Worker:** public API gateway, JWT validation, CORS, rate limiting, Tapbuddy, and AI submission review.
+- **Cloudflare Worker:** public API gateway, JWT validation, CORS, and rate limiting.
 - **Frappe backend:** authentication, profiles, learner progress, achievements, weekly windows, jobs, and DocTypes.
 
 ## System at a glance
@@ -15,13 +15,12 @@ flowchart LR
   S[Student] --> F[Flutter app]
   F -->|HTTPS + bearer token| W[Cloudflare Worker]
   W -->|Proxy request| B[Frappe API]
-  W -->|AI requests| G[Groq]
   F -->|Hive cache| C[Device storage]
   F -->|Bundled JSON and images| A[Flutter assets]
   B --> D[(Frappe database)]
 ```
 
-The Flutter app calls the Worker URL defined in `lib/core/constants/app_constants.dart`. It does not call Frappe or Groq directly.
+The Flutter app calls the Worker URL defined in `lib/core/constants/app_constants.dart`. It does not call Frappe directly.
 
 ## Read this first
 

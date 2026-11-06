@@ -1,6 +1,6 @@
 # API Reference (prototype Worker)
 
-> **Old: this page describes the prototype Worker, before the v1 changes.** It still shows the password login, the OTP routes and `phone` as the identity. Tasks B2, C1 and C2 remove or change these. For v1, see [api-contract.md](api-contract.md) (Worker to backend). The new routes between the app and the Worker are listed in `build-bootstrap.md`, section 7. Do not copy the old model. Rewrite or delete this page after task C4.
+> **Old: this page describes the prototype Worker, before the v1 changes.** It still shows the password login, the OTP routes and `phone` as the identity. Tasks B2 and C2 remove or change these. **The two AI routes (`/tapbuddy/chat` and `/submission-review/review`) were removed from the Worker in M0 (task C1, 2026-11-06), and from this page.** For v1, see [api-contract.md](api-contract.md) (Worker to backend). The new routes between the app and the Worker are listed in `build-bootstrap.md`, section 7. Do not copy the old model. Rewrite or delete this page after task C4.
 
 This page documents the **Cloudflare Worker API called by Flutter**. Use the Worker base URL, not the Frappe URL, in Postman.
 
@@ -39,8 +39,6 @@ The Worker also accepts `X-Flutter-Authorization`. Protected endpoints derive `p
 | GET    | `/achievements`                    | Access token | List achievements                     |
 | POST   | `/achievements/award`              | Access token | Award/update achievement              |
 | POST   | `/onboarding/complete`             | Access token | Save onboarding profile/course        |
-| POST   | `/tapbuddy/chat`                   | Access token | Context-aware learning chat           |
-| POST   | `/submission-review/review`        | Access token | AI review for text/image/audio        |
 
 ## Postman sequence
 
@@ -104,53 +102,6 @@ Authorization: Bearer {{token}}
 
 The frontend expects `progress_recorded: true`. A conflict with no recorded progress triggers an authoritative state refresh.
 
-### 5. Ask Tapbuddy
-
-```http
-POST {{worker_url}}/tapbuddy/chat
-Authorization: Bearer {{token}}
-```
-
-```json
-{
-  "phone": "9999999999",
-  "learner_id": "TL00017423",
-  "message": "Can you explain this lesson?",
-  "grade": "6",
-  "language": "English",
-  "context": {
-    "course_name": "Basic Electronics",
-    "unit_name": "Simple circuits",
-    "xp": 120,
-    "streak": 2,
-    "has_reached_weekly_cap": false,
-    "has_active_class_session": true
-  },
-  "history": []
-}
-```
-
-### 6. Review a text submission
-
-```http
-POST {{worker_url}}/submission-review/review
-Authorization: Bearer {{token}}
-```
-
-```json
-{
-  "phone": "9999999999",
-  "learner_id": "TL00017423",
-  "submission_type": "text",
-  "submission_text": "A circuit needs a closed path for current to flow.",
-  "question": "When does current flow?",
-  "expected_answer": "The circuit must be closed.",
-  "rubric": "Mentions a complete or closed path."
-}
-```
-
-Image review accepts `image_url`; audio review accepts `audio_url`. URLs must be reachable by Groq, or an image may be a `data:image/...` URI.
-
 ## Common responses
 
 | Status | Meaning                                                             |
@@ -160,4 +111,4 @@ Image review accepts `image_url`; audio review accepts `audio_url`. URLs must be
 | 401    | Invalid, expired, mismatched, or wrong-type token                   |
 | 404    | Worker route or Frappe record not found                             |
 | 429    | Worker rate limit reached                                           |
-| 502    | Frappe/Groq unavailable or invalid AI response                      |
+| 502    | Frappe unavailable or invalid response                              |

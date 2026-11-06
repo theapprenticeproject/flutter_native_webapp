@@ -95,7 +95,4 @@ class SubmissionKindResolver {
     if (hasAudio) return SubmissionKind.audio;
     return SubmissionKind.text;
   }
-
-  static bool requiresAiReview(SubmissionKind kind) =>
-      kind != SubmissionKind.emoji;
 }

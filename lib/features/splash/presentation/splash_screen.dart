@@ -95,7 +95,7 @@ class _SplashScreenState extends State<SplashScreen>
                     decoration: const BoxDecoration(shape: BoxShape.circle),
                     child: ClipOval(
                       child: Image.asset(
-                        'assets/splash-screen/tap-buddy-loader.gif',
+                        'assets/splash-screen/tap-buddy-loader.webp',
                         fit: BoxFit.cover,
                         errorBuilder: (context, error, stackTrace) {
                           return const Icon(
