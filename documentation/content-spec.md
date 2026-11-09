@@ -1,6 +1,6 @@
 # Content specification (draft)
 
-**Status:** proposal, for later. The v1 test release uses a hardcoded flow with content from the curriculum team (v1 requirements R-61 and O-9). The current-activity file (section 6a) is not needed in v1. Two points are open (section 8). Nothing here is decided until the team agrees.
+**Status:** proposal, for later. **The v1 test release bundles the course files in the app** (decided on 2026-11-09, R-18). It uses the hardcoded flow with content from the curriculum team (v1 requirements R-61 and O-9). Section 10 below describes the bundled files and their ids. The current-activity file (section 6a) is not needed in v1. Two points are open (section 8). Nothing here is decided until the team agrees.
 **For:** the TapApp team and the curriculum team. It supports R-18 to R-25, R-52, R-54, R-55, R-57, R-58, R-79 and R-91 in the [v1 requirements](v1-requirements.md), and open decision O-9.
 
 ## 1. The idea
@@ -159,3 +159,23 @@ Rules:
 - How the publish job reads the existing Frappe doctypes (`Course Level`, `Learning Unit`, `VideoClass`, `Quiz`, `Assignment`) and their translations. That needs a mapping table once the points above are answered.
 - Events (R-86): the file shape is listed in the layout but not specified.
 - Picture pieces (R-69): only the count is in the unit file.
+
+## 10. The bundled files in v1
+
+For the v1 test release the course content is **bundled in the app**, in `assets/data/courses/<language>/<course-id>.json`, with an `index.json` for each language. There are 14 courses in 5 languages (en, hi, kn, mr, pa). Each course has about 10 units. A unit has one video (a YouTube id), one assignment and a quiz of about 5 questions. The quiz questions carry the correct answer (`ans`: "1", "2" or "3"). The app maps "1", "2", "3" to the API's `a`, `b`, `c`.
+
+**Ids for the API.** The API needs a `unit_id`, a `question_id` and an `assignment_id`. The files carry them as:
+
+| Key | On | The API calls it |
+|---|---|---|
+| `uid` | every unit | `unit_id` |
+| `qid` | every quiz question, and every practice-quiz question of a video | `question_id` |
+| `aid` | every assignment | `assignment_id` |
+
+The ids are the same in every language. Until the real ids are known, the files carry clearly marked **dummy ids** (`LU-DUMMY-…`, `QN-DUMMY-…`, `AS-DUMMY-…`).
+
+**The script** `scripts/content_ids.py` adds, checks and replaces the ids. It edits the files as text, so the formatting does not change. See the top of the script for the commands. Replacing the dummy ids with the real ones is task B19. Run `python3 scripts/content_ids.py --check --no-dummy` before a deployment: it fails while a dummy id is left. The test `test/domain/program_content/content_ids_test.dart` checks that every id is there, unique, and the same in every language.
+
+**Why the files stay one file for each course and language.** The loader (`AssetDataSource`) reads them that way, all five languages have the same structure and the same answer keys (checked on 2026-11-09), and a change would touch the app code. If the content is later served from the CDN (sections 3 to 5), the layout can change then.
+
+**The export script.** `scripts/export_content.py` rewrites these files from Frappe (it writes compact JSON, so a re-run changes the formatting). It keeps any id that the backend sends, adds a DUMMY id only where one is missing, and prints a warning if it added any. It also no longer deletes the thumbnail folders. The better long-term step is a backend change: the export (`export_program_content` in `tapapp`) should send the real `uid`, `qid` and `aid` (the Frappe names). Then no dummy id is ever added, and the check `python3 scripts/content_ids.py --check --no-dummy` passes straight after an export. I have not run the export against a server, because it needs the Frappe key.

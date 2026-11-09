@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C7031-U01",
       "nm": "Lines Make a Mandala 🔵",
       "desc": "Lines Mandala art",
       "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
@@ -26,11 +27,13 @@
         "nm": "Can circles become mandalas? 🔵",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U01-Q01",
             "q": "ਸੰਸਕ੍ਰਿਤ ਵਿੱਚ 'ਮੰਡਲਾ' ਸ਼ਬਦ ਦਾ ਕੀ ਅਰਥ ਹੈ?",
             "opts": { "1": "Art", "2": "Pattern", "3": "Circle" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U01-Q02",
             "q": "ਮੰਡਲਾ ਕਲਾ ਵਿਅਕਤੀਆਂ ਲਈ ਕਿਵੇਂ ਲਾਭਕਾਰੀ ਹੈ?",
             "opts": {
               "1": "It helps in building patience and focus.",
@@ -40,11 +43,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U01-Q03",
             "q": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ ਕਿਹੜੇ ਕਲਾ ਦੇ ਤੱਤ 'ਤੇ ਮੁੱਖ ਤੌਰ ਤੇ ਧਿਆਨ ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ?",
             "opts": { "1": "Colors", "2": "Lines", "3": "Textures" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U01-Q04",
             "q": "ਜੇ ਤੁਸੀਂ ਇੱਕ ਮੱਛੀ ਦੇ ਆਕਾਰ ਵਾਲਾ ਮੰਡਲਾ ਕਲਾ ਦੇਖਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਪਹਿਲਾ ਕਿਹੜਾ ਕਦਮ ਕਰਦੇ ਹੋ?",
             "opts": {
               "1": "Fill the design with patterns.",
@@ -54,6 +59,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U01-Q05",
             "q": "ਤੁਸੀਂ ਇੱਕ ਮੰਡਲਾ ਕਲਾ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ ਜੋ ਸ਼ਾਂਤੀ ਦਾ ਅਹਿਸਾਸ ਪ੍ਰਦਰਸ਼ਤ ਕਰਦਾ ਹੈ। ਇਸਨੂੰ ਰਚਨਾਤਮਕ ਤਰੀਕੇ ਨਾਲ ਹਾਸਲ ਕਰਨ ਲਈ ਤੁਸੀਂ ਕਿਹੜੇ ਤੱਤਾਂ 'ਤੇ ਧਿਆਨ ਦਿੰਦੇ ਹੋ?",
             "opts": {
               "1": "Dense textures and dark shades.",
@@ -66,6 +72,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U01-A01",
           "id": "Create-a-Bird-Mandala-Art-🔵-Basic",
           "seq": 67,
           "nm": "Line Exploration",
@@ -117,6 +124,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U02",
       "nm": "Circles Grow Outward 🌀",
       "desc": "Lines Mandala art",
       "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
@@ -136,11 +144,13 @@
         "nm": "Can you draw a perfect mandala? ⭕",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U02-Q01",
             "q": "ਸਧਾਰਨ ਮੰਡਲਾ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਕਿਹੜੀ ਆਰੰਭਿਕ ਸ਼ਕਲ ਵਰਤੀ ਜਾਂਦੀ ਹੈ?",
             "opts": { "1": "A triangle", "2": "A square", "3": "A circle" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U02-Q02",
             "q": "ਮੰਡਲਾ ਬਣਾਉਣ ਵਿੱਚ ਸਮਾਨਤਾ ਬਣਾਈ ਰੱਖਣਾ ਕਿਉਂ ਮਹੱਤਵਪੂਰਨ ਹੈ?",
             "opts": {
               "1": "It ensures the mandala is colorful",
@@ -150,11 +160,13 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U02-Q03",
             "q": "ਮੰਡਲੇ ਵਿੱਚ ਕਈ ਗੋਲ ਬਣਾਉਣ ਲਈ ਕਿਹੜਾ ਸੰਦ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ?",
             "opts": { "1": "Compass", "2": "Ruler", "3": "Protractor" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U02-Q04",
             "q": "ਜੇ ਤੁਸੀਂ ਕੁਦਰਤੀ ਤੱਤਾਂ ਤੋਂ ਪ੍ਰੇਰਿਤ ਮੰਡਲਾ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਤੁਸੀਂ ਕੀ ਸ਼ਾਮਲ ਕਰ ਸਕਦੇ ਹੋ?",
             "opts": {
               "1": "Digital patterns",
@@ -164,6 +176,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U02-Q05",
             "q": "ਤੁਹਾਡੇ ਮੰਡਲਾ ਡਿਜ਼ਾਈਨ ਵਿੱਚ 'ਕਾਜੂ ਕਤਲੀ' ਦੇ ਸੰਕਲਪ ਨੂੰ ਰਚਨਾਤਮਕ ਤਰੀਕੇ ਨਾਲ ਕਿਵੇਂ ਸ਼ਾਮਲ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ?",
             "opts": {
               "1": "By adding a square border around the mandala",
@@ -176,6 +189,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U02-A01",
           "id": "Draw-a-Patterned-Circle-Mandala-🌀-Remedial",
           "seq": 68,
           "nm": "Simple Mandalas",
@@ -227,6 +241,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U03",
       "nm": "Paper Folds into Life 🍃",
       "desc": "Origami Paper Craft",
       "rwc": "Origami Papers, Sketchpens, Glue",
@@ -246,26 +261,31 @@
         "nm": "Can craft become a message? 🎀",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U03-Q01",
             "q": "ਲਟਕਦੇ ਸਜਾਵਟੀ ਪ੍ਰਾਜੈਕਟ ਲਈ ਮੁੱਖ ਥੀਮ ਕੀ ਹੈ?",
             "opts": { "1": "Nature", "2": "Space", "3": "Technology" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U03-Q02",
             "q": "ਸਜਾਵਟ ਬਣਾਉਣ ਵਿੱਚ ਕਿਹੜੀ ਹੁਨਰ ਮੁੱਖ ਤੌਰ ਤੇ ਜ਼ੋਰ ਦਿੱਤਾ ਗਿਆ ਹੈ?",
             "opts": { "1": "Mathematics", "2": "History", "3": "Creativity" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U03-Q03",
             "q": "ਕਿਹੜੀ ਤਕਨੀਕ ਇਸ ਐਕਟਿਵਿਟੀ ਦਾ ਹਿੱਸਾ ਨਹੀਂ ਦੱਸੀ ਗਈ?",
             "opts": { "1": "Paper folding", "2": "Paper cutting", "3": "Wood carving" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U03-Q04",
             "q": "ਜੇਕਰ ਕੋਈ ਵਿਦਿਆਰਥੀ ਆਪਣੇ ਕਲਪਨਾ ਨਾਲ ਸਜਾਵਟੀ ਟੁਕੜਾ ਬਣਾਉਣਾ ਚਾਹੁੰਦਾ ਹੈ ਤਾਂ ਉਸਨੂੰ ਕਿਹੜੀ ਮੁੱਖ ਕੌਸ਼ਲ ਵਰਤਣੀ ਚਾਹੀਦੀ ਹੈ?",
             "opts": { "1": "Communication", "2": "Creativity", "3": "Analysis" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U03-Q05",
             "q": "ਜੇਕਰ ਇੱਕ ਲੱਜਾਲੂ ਵਿਦਿਆਰਥੀ ਆਪਣੇ ਕਲਾ ਪੀਸ ਨੂੰ ਵੀਡੀਓ ਵਿੱਚ ਪ੍ਰਭਾਵਸ਼ਾਲੀ ਢੰਗ ਨਾਲ ਸੰਚਾਰਿਤ ਕਰਨਾ ਚਾਹੁੰਦਾ ਹੈ ਤਾਂ ਉਹ ਕਿਵੇਂ ਕਰ ਸਕਦਾ ਹੈ?",
             "opts": {
               "1": "By discussing the historical context of their work",
@@ -278,6 +298,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U03-A01",
           "id": "Make-a-Nature-Inspired-Wall-Hanging-🍃-Basic",
           "seq": 69,
           "nm": "Origami Bookmarks",
@@ -329,6 +350,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U04",
       "nm": "Tulips Rise from Folds 🌷",
       "desc": "Origami Paper Craft",
       "rwc": "Origami Papers, Sketchpens, Glue",
@@ -348,11 +370,13 @@
         "nm": "Can old paper become origami? 🌷",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U04-Q01",
             "q": "ਤੁਸੀਂ ਓਰਿਗਾਮੀ ਚੀਜ਼ਾਂ ਬਣਾਉਣ ਲਈ ਮੁੱਖ ਸਮੱਗਰੀ ਕਿਹੜੀ ਚਾਹੀਦੀ ਹੈ?",
             "opts": { "1": "Scissors", "2": "Glue", "3": "Paper" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U04-Q02",
             "q": "SDG 12 ਦਾ ਮੁੱਖ ਮਕਸਦ ਕੀ ਹੈ?",
             "opts": {
               "1": "Reduce waste and create creative things from simple materials",
@@ -362,6 +386,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U04-Q03",
             "q": "ਓਰਿਗਾਮੀ ਪ੍ਰਕਿਰਿਆ ਦੌਰਾਨ, ਕਿਨਾਰਿਆਂ ਨੂੰ ਸੁੰਦਰ ਅਤੇ ਹਕੀਕਤ ਵਰਗਾ ਬਣਾਉਣ ਲਈ ਕੀ ਜ਼ਰੂਰੀ ਹੈ?",
             "opts": {
               "1": "Pressing the folds neatly",
@@ -371,6 +396,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U04-Q04",
             "q": "ਜੇ ਤੁਸੀਂ ਟਿਊਲਿਪ ਤੋਂ ਵੱਖਰਾ ਇੱਕ ਵਿਲੱਖਣ ਓਰਿਗਾਮੀ ਆਕਾਰ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਕਿਹੜੀ ਹੁਨਰ ਤੁਹਾਨੂੰ ਸਭ ਤੋਂ ਵੱਧ ਮਦਦ ਕਰੇਗੀ?",
             "opts": {
               "1": "Using expensive materials",
@@ -380,6 +406,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U04-Q05",
             "q": "ਕਿਸੇ ਸਕ੍ਰਿਪਟ ਦੇ ਸਿਧਾਂਤਾਂ ਦੇ ਅਧਾਰ 'ਤੇ ਪੁਰਾਣੇ ਮੈਗਜ਼ੀਨ ਪੇਪਰ ਨੂੰ ਰਚਨਾਤਮਕ ਤਰੀਕੇ ਨਾਲ ਕਿਵੇਂ ਵਰਤ ਸਕਦੇ ਹੋ?",
             "opts": {
               "1": "Throw it away to make space",
@@ -392,6 +419,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U04-A01",
           "id": "Fold-Three-Origami-Tulips-🌷-Remedial",
           "seq": 70,
           "nm": "Origami Flowers",
@@ -443,6 +471,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U05",
       "nm": "Objects Turn to Characters 🤖",
       "desc": "Figure study",
       "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
@@ -460,11 +489,13 @@
             "nm": "Can a spoon become a character? 🥄",
             "qs": [
               {
+                "qid": "QN-DUMMY-C7031-U05-V01-Q01",
                 "q": "ਤੁਸੀਂ ਸੋਚਦੇ ਹੋ ਕਿ ਇਸ ਕਲਾ ਐਕਟਿਵਿਟੀ ਵਿੱਚ ਮੁਖ ਸਿਰਜਣਧਾਰੀ ਕੀ ਹੈ?",
                 "opts": { "1": "Art Transformation", "2": "Cartoon Designing", "3": "Skecthing" },
                 "ans": "3"
               },
               {
+                "qid": "QN-DUMMY-C7031-U05-V01-Q02",
                 "q": "ਰੋਜ਼ਾਨਾ ਦੀਆਂ ਚੀਜ਼ਾਂ ਨੂੰ ਅੰਕੜਿਆਂ ਜਾਂ ਪਾਤਰਾਂ ਵਿੱਚ ਬਦਲਣ ਦਾ ਉਦੇਸ਼ ਕੀ ਹੈ?",
                 "opts": {
                   "1": "To enhance creativity and problem-solving skills",
@@ -474,6 +505,7 @@
                 "ans": "1"
               },
               {
+                "qid": "QN-DUMMY-C7031-U05-V01-Q03",
                 "q": "ਇੱਕ ਪਾਤਰ ਡਿਜ਼ਾਇਨ ਕਰਨ ਲਈ ਕੀ ਸਮੱਗਰੀ ਲੋੜੀਂਦੀ ਹੈ?",
                 "opts": {
                   "1": "Art book, eraser, colors, and sketch pencils",
@@ -483,6 +515,7 @@
                 "ans": "1"
               },
               {
+                "qid": "QN-DUMMY-C7031-U05-V01-Q04",
                 "q": "ਜੇ ਤੁਹਾਨੂੰ ਇੱਕ ਚਮਚ ਦਿੱਤਾ ਗਿਆ, ਤਾਂ ਤੁਸੀਂ ਇਸਨੂੰ ਸਿਰਜਣਾਤਮਕ ਤਰੀਕੇ ਨਾਲ ਕਿਸ ਤਰ੍ਹਾਂ ਇੱਕ ਪਾਤਰ ਵਿੱਚ ਬਦਲ ਸਕਦੇ ਹੋ?",
                 "opts": {
                   "1": "Use it as a background element",
@@ -492,6 +525,7 @@
                 "ans": "3"
               },
               {
+                "qid": "QN-DUMMY-C7031-U05-V01-Q05",
                 "q": "ਇੱਕ ਕਲਾਸਰੂਮ ਪ੍ਰੋਜੈਕਟ ਲਈ, ਤੁਸੀਂ ਕਿਵੇਂ ਆਪਣੀ ਸਿਰਜਣਾਤਮਕਤਾ ਨੂੰ ਵਰਤ ਕੇ ਇੱਕ ਕਿਤਾਬ ਨੂੰ ਕਲਪਨਾਤਮਕ ਪਾਤਰ ਵਿੱਚ ਬਦਲ ਸਕਦੇ ਹੋ?",
                 "opts": {
                   "1": "Turn the book into a wise old wizard",
@@ -509,11 +543,13 @@
         "nm": "Can a spoon become a character? 🥄",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U05-Q01",
             "q": "ਤੁਸੀਂ ਸੋਚਦੇ ਹੋ ਕਿ ਇਸ ਕਲਾ ਐਕਟਿਵਿਟੀ ਵਿੱਚ ਮੁਖ ਸਿਰਜਣਧਾਰੀ ਕੀ ਹੈ?",
             "opts": { "1": "Art Transformation", "2": "Cartoon Designing", "3": "Skecthing" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U05-Q02",
             "q": "ਰੋਜ਼ਾਨਾ ਦੀਆਂ ਚੀਜ਼ਾਂ ਨੂੰ ਅੰਕੜਿਆਂ ਜਾਂ ਪਾਤਰਾਂ ਵਿੱਚ ਬਦਲਣ ਦਾ ਉਦੇਸ਼ ਕੀ ਹੈ?",
             "opts": {
               "1": "To enhance creativity and problem-solving skills",
@@ -523,6 +559,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U05-Q03",
             "q": "ਇੱਕ ਪਾਤਰ ਡਿਜ਼ਾਇਨ ਕਰਨ ਲਈ ਕੀ ਸਮੱਗਰੀ ਲੋੜੀਂਦੀ ਹੈ?",
             "opts": {
               "1": "Art book, eraser, colors, and sketch pencils",
@@ -532,6 +569,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U05-Q04",
             "q": "ਜੇ ਤੁਹਾਨੂੰ ਇੱਕ ਚਮਚ ਦਿੱਤਾ ਗਿਆ, ਤਾਂ ਤੁਸੀਂ ਇਸਨੂੰ ਸਿਰਜਣਾਤਮਕ ਤਰੀਕੇ ਨਾਲ ਕਿਸ ਤਰ੍ਹਾਂ ਇੱਕ ਪਾਤਰ ਵਿੱਚ ਬਦਲ ਸਕਦੇ ਹੋ?",
             "opts": {
               "1": "Use it as a background element",
@@ -541,6 +579,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U05-Q05",
             "q": "ਇੱਕ ਕਲਾਸਰੂਮ ਪ੍ਰੋਜੈਕਟ ਲਈ, ਤੁਸੀਂ ਕਿਵੇਂ ਆਪਣੀ ਸਿਰਜਣਾਤਮਕਤਾ ਨੂੰ ਵਰਤ ਕੇ ਇੱਕ ਕਿਤਾਬ ਨੂੰ ਕਲਪਨਾਤਮਕ ਪਾਤਰ ਵਿੱਚ ਬਦਲ ਸਕਦੇ ਹੋ?",
             "opts": {
               "1": "Turn the book into a wise old wizard",
@@ -553,6 +592,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U05-A01",
           "id": "Transform-an-Object-Into-a-Character-🤖-Intermediate",
           "seq": 71,
           "nm": "Form to Fiction",
@@ -604,6 +644,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U06",
       "nm": "Shapes Build a Face 🎭",
       "desc": "Character Designing Geometrical Figures",
       "rwc": "Paper, Pencil, Ruler, Colors",
@@ -623,6 +664,7 @@
         "nm": "Can shapes build a face? 🔷",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U06-Q01",
             "q": "ਇਸ ਐਕਟਿਵਿਟੀ ਲਈ ਕਿਸ ਸਮੱਗਰੀ ਦੀ ਲੋੜ ਹੈ?",
             "opts": {
               "1": "Charcoal and sketchbooks",
@@ -632,6 +674,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U06-Q02",
             "q": "ਕਿਰਦਾਰ ਡਿਜ਼ਾਇਨ ਕਰਨ ਵਿੱਚ ਜਿਆਮਿਤੀ ਆਕਾਰ ਵਰਤਣ ਦਾ ਕੀ ਲਾਭ ਹੈ?",
             "opts": {
               "1": "They simplify the drawing process",
@@ -641,11 +684,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U06-Q03",
             "q": "ਪਾਠ ਵਿੱਚ ਕਿਰਦਾਰ ਦੇ ਚਿਹਰੇ ਦੇ ਆਧਾਰ ਲਈ ਕਿਹੜੇ ਆਕਾਰ ਸੁਝਾਏ ਗਏ ਸਨ?",
             "opts": { "1": "Square with rounded corners", "2": "Circles", "3": "Rectangles" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U06-Q04",
             "q": "ਅਸਲ ਜ਼ਿੰਦਗੀ ਦੀ ਸਮੱਸਿਆ ਨੂੰ ਹੱਲ ਕਰਨ ਲਈ ਪਾਠ ਦੀ ਤਕਨੀਕ ਨੂੰ ਰਚਨਾਤਮਕ ਤਰੀਕੇ ਨਾਲ ਕਿਵੇਂ ਲਾਗੂ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ?",
             "opts": {
               "1": "Create a comic strip about the problem",
@@ -655,6 +700,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U06-Q05",
             "q": "ਜੇ ਤੁਸੀਂ ਪਾਠ ਵਿੱਚੋਂ ਤਕਨੀਕਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਨਵਾਂ ਕਿਰਦਾਰ ਬਣਾਉਣਾ ਹੋਵੇ, ਤਾਂ ਤੁਸੀਂ ਉਸਦੀ ਵਿਲੱਖਣਤਾ ਨੂੰ ਕਿਵੇਂ ਵਧਾ ਸਕਦੇ ਹੋ?",
             "opts": {
               "1": "Combine different geometric shapes in unexpected ways",
@@ -667,6 +713,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U06-A01",
           "id": "Design-a-Geometric-Character-🎭-Remedial",
           "seq": 72,
           "nm": "Character Design",
@@ -718,6 +765,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U07",
       "nm": "Sticks and Strings Dream 🌙",
       "desc": "Craft",
       "rwc": "Cardboard, Fevicol, Scissors, Glue, Colors, Rope",
@@ -737,6 +785,7 @@
         "nm": "What do dream catchers catch? 🕸️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U07-Q01",
             "q": "ਨੈਟਿਵ ਅਮਰੀਕਨ ਕਬੀਲਿਆਂ ਨੇ ਡ੍ਰੀਮ ਕੈਚਰਾਂ ਦਾ ਕੀਹ ਉਪਯੋਗ ਕੀਤਾ?",
             "opts": {
               "1": "To protect their dreams",
@@ -746,16 +795,19 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U07-Q02",
             "q": "ਡ੍ਰੀਮ ਕੈਚਰ ਵਿੱਚ ਚੱਕਰ ਕਿਸਦੀ ਨੁਮਾਇੰਦਗੀ ਕਰਦਾ ਹੈ?",
             "opts": { "1": "A spider web", "2": "The circle of life", "3": "A dream" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U07-Q03",
             "q": "ਡ੍ਰੀਮ ਕੈਚਰ ਦਾ ਚੱਕਰ ਬਣਾਉਣ ਲਈ ਕਿਹੜੇ ਸਮੱਗਰੀਆਂ ਵਰਤੀ ਜਾ ਸਕਦੀਆਂ ਹਨ?",
             "opts": { "1": "Metal only", "2": "Plastic only", "3": "Wood, metal, or cardboard" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U07-Q04",
             "q": "ਜੇਕਰ ਤੁਹਾਡੇ ਕੋਲ ਰੰਗੀਨ ਕਾਗਜ਼ ਨਹੀਂ ਹੈ, ਤਾਂ ਡ੍ਰੀਮ ਕੈਚਰ ਲਈ ਪੰਖ ਬਣਾਉਣ ਦਾ ਕੀਹ ਰਚਨਾਤਮਕ ਤਰੀਕਾ ਹੈ?",
             "opts": {
               "1": "Color white paper and cut it into feather shapes",
@@ -765,6 +817,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U07-Q05",
             "q": "ਜੇਕਰ ਤੁਹਾਡੇ ਕੋਲ ਰਵਾਇਤੀ ਸਮੱਗਰੀਆਂ ਦੀ ਘਾਟ ਹੈ ਤਾਂ ਡ੍ਰੀਮ ਕੈਚਰ ਬਣਾਉਣ ਲਈ ਆਮ ਸਮੱਗਰੀਆਂ ਨੂੰ ਕਿਵੇਂ ਰਚਨਾਤਮਕ ਤਰੀਕੇ ਨਾਲ ਵਰਤ ਸਕਦੇ ਹੋ?",
             "opts": {
               "1": "Use a glass bottle as the hoop",
@@ -777,6 +830,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U07-A01",
           "id": "Build-a-Nature-Inspired-Dream-Catcher-🌙-Intermediate",
           "seq": 73,
           "nm": "Dream Catcher",
@@ -828,6 +882,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U08",
       "nm": "Paper City Dreams Big 🏙️",
       "desc": "Exploring the use of Shapes",
       "rwc": "Colorful, Texture, Paper, Glue, Scissors, Marker",
@@ -847,11 +902,13 @@
         "nm": "Can you build a dream city? 🏙️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U08-Q01",
             "q": "ਡ੍ਰੀਮ ਸਿਟੀ ਐਕਟਿਵਿਟੀ ਨੂੰ ਕਿਹੜੇ ਕਲਾਕਾਰ ਨੇ ਪ੍ਰੇਰਿਤ ਕੀਤਾ?",
             "opts": { "1": "Vincent van Gogh", "2": "Pablo Picasso", "3": "Paul Klee" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U08-Q02",
             "q": "ਪੌਲ ਕਲੀ ਕਿਸ ਕਲਾਤਮਕ ਸਟਾਈਲ ਲਈ ਜਾਣੇ ਜਾਂਦੇ ਹਨ?",
             "opts": {
               "1": "Realistic portraits and landscapes",
@@ -861,6 +918,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U08-Q03",
             "q": "ਡ੍ਰੀਮ ਸਿਟੀ ਬਣਾਉਣ ਲਈ ਕਿਹੜੀਆਂ ਸਮੱਗਰੀਆਂ ਸਿਫ਼ਾਰਸ਼ ਕੀਤੀਆਂ ਗਈਆਂ ਹਨ?",
             "opts": {
               "1": "Colored papers, scissors, glue, and markers",
@@ -870,6 +928,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U08-Q04",
             "q": "ਡ੍ਰੀਮ ਸਿਟੀ ਨੂੰ ਬਣਾਉਂਦੇ ਸਮੇਂ ਇਸ ਨੂੰ ਵਿਲੱਖਣ ਕਿਵੇਂ ਬਣਾਇਆ ਜਾ ਸਕਦਾ ਹੈ?",
             "opts": {
               "1": "By following a strict blueprint",
@@ -879,6 +938,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U08-Q05",
             "q": "ਜੇਕਰ ਤੁਹਾਡੇ ਕੋਲ ਇਸ ਐਕਟਿਵਿਟੀ ਲਈ ਖਾਸ ਰੰਗਾਂ ਵਾਲੇ ਕਾਗਜ਼ ਨਹੀਂ ਹਨ ਤਾਂ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
             "opts": {
               "1": "Use alternative papers or magazine cutouts",
@@ -891,6 +951,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U08-A01",
           "id": "Build-a-Dream-City-Collage-🏙️-Remedial",
           "seq": 74,
           "nm": "My Dream City",
@@ -942,6 +1003,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U09",
       "nm": "Bottles Bloom into Flowers 🌺",
       "desc": "Plastic Pollution, Sustainable Development",
       "rwc": "Plastic Bottles, Waste Papers, Markers, Paints, Brushes, Thread, Scissors, Tape",
@@ -961,6 +1023,7 @@
         "nm": "Can plastic become painted art? 🎨",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U09-Q01",
             "q": "ਅਸੀਂ ਅੱਜ ਦੀਆਂ ਕਲਾ ਐਕਟਿਵਿਟੀ ਵਿੱਚ ਕੀ ਸਿੱਖ ਰਹੇ ਹਾਂ?",
             "opts": {
               "1": "Practicing drawing and sketching skills",
@@ -970,6 +1033,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U09-Q02",
             "q": "ਸੜਨ ਦਾ ਕੀ ਅਰਥ ਹੈ?",
             "opts": {
               "1": "Melting due to heat",
@@ -979,6 +1043,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U09-Q03",
             "q": "ਜਦੋਂ ਤੁਸੀਂ ਪਲਾਸਟਿਕ ਤੇ ਰੰਗ ਕਰ ਰਹੇ ਹੋ ਤਾਂ ਰੰਗ ਚੰਗੀ ਤਰ੍ਹਾਂ ਚਿਪਕਣ ਲਈ ਤੁਸੀਂ ਕੀ ਕਰ ਸਕਦੇ ਹੋ?",
             "opts": {
               "1": "By using very thin paint",
@@ -988,6 +1053,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U09-Q04",
             "q": "ਜੇ ਤੁਸੀਂ ਰੀਸਾਈਕਲ ਕੀਤੇ ਸਮੱਗਰੀ ਨਾਲ ਨਵੀਂ ਕਿਸਮ ਦੀ ਕਲਾ ਰਚਨਾ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਤੁਸੀਂ ਕੀ ਵੱਖਰਾ ਕਰ ਸਕਦੇ ਹੋ?",
             "opts": {
               "1": "Paint on new canvases",
@@ -997,6 +1063,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U09-Q05",
             "q": "ਤੁਸੀਂ ਆਪਣੇ ਸਮੁਦਾਇ ਵਿੱਚ ਪਲਾਸਟਿਕ ਪ੍ਰਦੂਸ਼ਣ ਦੀ ਸਮੱਸਿਆ ਨੂੰ ਸ੍ਰਜਨਾਤਮਕ ਤਰੀਕੇ ਨਾਲ ਕਿਵੇਂ ਹੱਲ ਕਰ ਸਕਦੇ ਹੋ?",
             "opts": {
               "1": "Organize a community art project using collected plastic waste",
@@ -1009,6 +1076,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U09-A01",
           "id": "Make-a-Plastic-Bottle-Flower-Hanging-🌺-Advanced",
           "seq": 75,
           "nm": "Plastic Hanging Flowers",
@@ -1060,6 +1128,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U10",
       "nm": "Scraps Hang as Art 🎑",
       "desc": "Plastic Pollution, Sustainable Development",
       "rwc": "Plastic Bottles, Waste Papers, Markers, Paints, Brushes, Thread, Scissors, Tape",
@@ -1079,6 +1148,7 @@
         "nm": "Can waste become wall art? 🖼️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U10-Q01",
             "q": "ਐਕਟਿਵਿਟੀ ਨਾਲ ਸੰਬੰਧਿਤ ਕਿਹੜਾ ਸਸਤੇਨਬਲ ਡਿਵੈਲਪਮੈਟ ਗੋਲ ਹੈ?",
             "opts": {
               "1": "SDG 15: Life on Land",
@@ -1088,6 +1158,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U10-Q02",
             "q": "ਐਕਟਿਵਿਟੀ ਦਾ ਮੁੱਖ ਉਦੇਸ਼ ਕੀ ਹੈ?",
             "opts": {
               "1": "To practice drawing techniques",
@@ -1097,6 +1168,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U10-Q03",
             "q": "ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਮੈਗਜ਼ੀਨ ਪੇਪਰ ਅਤੇ ਪੁਰਾਣੇ ਪੈਕੇਜਿੰਗ ਬਾਕਸ ਹਨ, ਤਾਂ ਕੰਧ ਦੀ ਲਟਕਣੀ ਬਣਾਉਣ ਲਈ ਪਹਿਲਾ ਕਿਹੜਾ ਕਦਮ ਚੁੱਕੋਗੇ?",
             "opts": {
               "1": "Glue the paper to the cardboard base",
@@ -1106,6 +1178,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U10-Q04",
             "q": "ਤੁਸੀਂ ਆਪਣੇ ਰੀਸਾਇਕਲ ਕੀਤੇ ਕੰਧ ਦੇ ਲਟਕਣ ਵਿੱਚ ਕਿਵੇਂ ਸਰਗਰਮ ਤਰੀਕੇ ਨਾਲ ਟੈਕਸਚਰ ਸ਼ਾਮਲ ਕਰ ਸਕਦੇ ਹੋ?",
             "opts": {
               "1": "Use only smooth, perfectly cut pieces of paper",
@@ -1115,6 +1188,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U10-Q05",
             "q": "ਨਿਯਮਾਂ ਅਨੁਸਾਰ ਡਿਜ਼ਾਇਨ ਵਿੱਚ ਕਿਹੜਾ ਰਚਨਾਤਮਕ ਤੱਤ ਸ਼ਾਮਲ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ?",
             "opts": {
               "1": "A painted border",
@@ -1127,6 +1201,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U10-A01",
           "id": "Make-a-Recycled-Wall-Hanging-🎑-Remedial",
           "seq": 76,
           "nm": "Recycled Wall Hanging",

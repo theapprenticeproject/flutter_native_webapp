@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C5125-U01",
       "nm": "The Lights-Out Lab 🏠",
       "desc": "Electric circuit, series connection, current flow, open and closed circuit, energy consumption, basic measurement of current. DC power supply, switch, LED, ammeter (series), connecting wires, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -26,6 +27,7 @@
         "nm": "Is Your Room Wasting Power? 💡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U01-Q01",
             "q": "What happens when the switch is turned off in the circuit simulation?",
             "opts": {
               "1": "The LED turns off but the ammeter still shows 20 mA.",
@@ -35,6 +37,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U01-Q02",
             "q": "What message is given about electricity usage?",
             "opts": {
               "1": "Leaving lights on has no significant impact on electricity consumption.",
@@ -44,11 +47,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U01-Q03",
             "q": "Which component is used to measure the current flowing through the circuit?",
             "opts": { "1": "LED", "2": "Switch", "3": "Ammeter" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U01-Q04",
             "q": "If you notice that your electricity bill is unusually high, what action can you take based on the script's advice?",
             "opts": {
               "1": "Turn off unnecessary lights and devices to reduce energy waste.",
@@ -58,6 +63,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U01-Q05",
             "q": "How can you contribute to SDG 7 - Affordable and Clean Energy?",
             "opts": {
               "1": "By using more energy to support power companies.",
@@ -70,6 +76,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U01-A01",
           "id": "Simulate-a-Smart-Room-🏠-Basic",
           "seq": 19,
           "nm": "Simulate a Smart Room 🏠",
@@ -121,6 +128,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U02",
       "nm": "Toggle to Save the Planet 🔦",
       "desc": "Electric circuit, current flow, open and closed circuit, current measurement, energy consumption, Ohm’s Law (basic application). DC power supply, resistor, ammeter (series), switch, LED, connecting wires, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -140,11 +148,13 @@
         "nm": "Does Your Ammeter Agree? ⚡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U02-Q01",
             "q": "What component is used to monitor current in the circuit built in the EveryCircuit app?",
             "opts": { "1": "Resistor", "2": "Toggle switch", "3": "Ammeter" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U02-Q02",
             "q": "What is the primary goal of the project related to SDG 7 ?",
             "opts": {
               "1": "To ensure clean and reliable electricity for all and to use energy smartly",
@@ -154,6 +164,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U02-Q03",
             "q": "What should you do if the ammeter shows a negative current value during simulation?",
             "opts": {
               "1": "Rotate the ammeter",
@@ -163,11 +174,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U02-Q04",
             "q": "If a student forgets to turn off a light at home, leading to unnecessary power consumption, which circuit component from the activity can help prevent this?",
             "opts": { "1": "Resistor", "2": "LED", "3": "Toggle switch" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U02-Q05",
             "q": "A school wants to implement energy-saving lights that turn off when not needed. Which skill from the activity would be most helpful in designing such a system?",
             "opts": {
               "1": "Calculating voltage and current",
@@ -180,6 +193,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U02-A01",
           "id": "Wire-the-Energy-Saving-Room-🔦-Remedial",
           "seq": 20,
           "nm": "Wire the Energy-Saving Room 🔦",
@@ -231,6 +245,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U03",
       "nm": "Knob in Charge 🎚️",
       "desc": "Resistance, variable resistance (potentiometer), current flow, brightness control, energy efficiency, series circuit. DC power supply, potentiometer, LED, connecting wires, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -250,11 +265,13 @@
         "nm": "More Resistance, More Dark? 🌑",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U03-Q01",
             "q": "What is the main component used to control the current flow in an electric circuit?",
             "opts": { "1": "Resistor", "2": "Potentiometer", "3": "Capacitor" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U03-Q02",
             "q": "Why does the brightness of the LED change when the potentiometer's resistance is adjusted?",
             "opts": {
               "1": "Because altering resistance changes the current flow through the LED.",
@@ -264,6 +281,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U03-Q03",
             "q": "Which sequence of steps is correct for connecting components in EveryCircuit?",
             "opts": {
               "1": "Connect power supply to potentiometer, potentiometer to LED, and LED to ground.",
@@ -273,6 +291,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U03-Q04",
             "q": "If you want to reduce energy consumption at home using the circuit setup described, what would you do?",
             "opts": {
               "1": "Remove the LED from the circuit.",
@@ -282,6 +301,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U03-Q05",
             "q": "How can you simulate a real-life circuit model based on the instructions ?",
             "opts": {
               "1": "By using EveryCircuit to create and test the circuit virtually.",
@@ -294,6 +314,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U03-A01",
           "id": "Master-the-Brightness-Knob-🎚️-Basic",
           "seq": 21,
           "nm": "Master the Brightness Knob 🎚️",
@@ -345,6 +366,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U04",
       "nm": "Why Does the Resistor Get Hot? 🔥",
       "desc": "Power dissipation, voltage–current relationship, Ohm’s Law, unit conversion (mA to A). DC power supply, resistor, ammeter (series), voltmeter (parallel), simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -364,6 +386,7 @@
         "nm": "Can You Calculate the Heat? 🔥",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U04-Q01",
             "q": "What is the formula used to calculate power dissipation in a resistor?",
             "opts": {
               "1": "Power = Voltage × Current",
@@ -373,6 +396,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U04-Q02",
             "q": "Why does a mobile charger become warm after being plugged in for a long time?",
             "opts": {
               "1": "Due to power dissipation as heat from electrical energy.",
@@ -382,11 +406,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U04-Q03",
             "q": "If the voltage is 9 V and the current is 0.09 A, what is the power dissipation in the resistor?",
             "opts": { "1": "0.9 Watts", "2": "0.09 Watts", "3": "0.81 Watts" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U04-Q04",
             "q": "Rahul notices that the resistor in his circuit is getting very hot. He knows that using a resistor with a higher resistance can reduce power dissipation. What is the best action Rahul should take to cool down the resistor?",
             "opts": {
               "1": "Replace the current resistor with one that has a higher resistance value.",
@@ -396,6 +422,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U04-Q05",
             "q": "Neha wants to design a safe circuit for a school project, ensuring the power dissipation does not exceed the safe limit for her resistors. She has a fixed voltage supply of 9 V. What should Neha do to maintain safe power levels?",
             "opts": {
               "1": "Use a resistor with a very low resistance value.",
@@ -408,6 +435,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U04-A01",
           "id": "Calculate-the-Power-Burn-🔥-Remedial",
           "seq": 22,
           "nm": "Calculate the Power Burn 🔥",
@@ -459,6 +487,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U05",
       "nm": "Light Up a Number 🔢",
       "desc": "7-segment display structure, segment control (ON/OFF), common pin connection, digit formation, multi-digit display logic. DC power supply, 7-segment display, connecting wires, ground, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -478,6 +507,7 @@
         "nm": "Which Segments Make Your Digit? 🔢",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U05-Q01",
             "q": "What is the primary purpose of a 7-segment display in electronics?",
             "opts": {
               "1": "To store data",
@@ -487,6 +517,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U05-Q02",
             "q": "What must be done to form the digit '7' on a 7-segment display?",
             "opts": {
               "1": "Connect segments a, b, and c",
@@ -496,6 +527,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U05-Q03",
             "q": "When creating a multi-digit display, what is the first step in the process ?",
             "opts": {
               "1": "Connect the segments to form the digit '1'",
@@ -505,6 +537,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U05-Q04",
             "q": "If a student encounters issues with their 7-segment display not showing the correct digit, what should they verify first ?",
             "opts": {
               "1": "Check if the correct segments are connected based on the chart",
@@ -514,6 +547,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U05-Q05",
             "q": "A student wants to display the number '25' using two 7-segment displays, what is a crucial step they should take ?",
             "opts": {
               "1": "Set the DC power supply to 1.5 volts for each segment",
@@ -526,6 +560,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U05-A01",
           "id": "Wire-Your-Own-Scoreboard-🔢-Intermediate",
           "seq": 23,
           "nm": "Wire Your Own Scoreboard 🔢",
@@ -577,6 +612,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U06",
       "nm": "Digits Come Alive 🖥️",
       "desc": "Seven-segment display, segment control, binary logic for digit formation, circuit connections. DC power supply, 7-segment display.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -596,11 +632,13 @@
         "nm": "Is Your Display Showing the Right Number? 🔢",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U06-Q01",
             "q": "What is the voltage set for the DC power supply in the activity?",
             "opts": { "1": "12V", "2": "3V", "3": "5V" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U06-Q02",
             "q": "What is the primary function of a seven-segment display ?",
             "opts": {
               "1": "To power the entire circuit",
@@ -610,6 +648,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U06-Q03",
             "q": "How do you connect the common pin of the 7-segment displays according to the instructions?",
             "opts": {
               "1": "To the positive terminal of the DC power supply",
@@ -619,6 +658,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U06-Q04",
             "q": "If one of the seven-segment displays does not show the correct number, what should you check first?",
             "opts": {
               "1": "Ensure all necessary LED segments are connected according to the number you want to display",
@@ -628,6 +668,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U06-Q05",
             "q": "How can you check if the number \"41\" is displayed correctly on the 7-segment display?",
             "opts": {
               "1": "By adjusting the voltage of the power supply",
@@ -640,6 +681,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U06-A01",
           "id": "Display-Your-Lucky-Number-🖥️-Remedial",
           "seq": 24,
           "nm": "Display Your Lucky Number 🖥️",
@@ -691,6 +733,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U07",
       "nm": "The Solar Panel's Gatekeeper ☀️",
       "desc": "Directional current flow, diode (forward & reverse bias), voltage measurement, circuit protection, energy efficiency in clean energy systems. DC power supply, diode, resistor, LED, voltmeter (parallel), connecting wires, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -710,6 +753,7 @@
         "nm": "Does Your Diode Keep the Current Safe? 🚦",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U07-Q01",
             "q": "What is the primary function of a diode in a circuit?",
             "opts": {
               "1": "To allow current to flow in only one direction",
@@ -719,6 +763,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U07-Q02",
             "q": "Why is it important to ensure current flows in only one direction in clean energy systems?",
             "opts": {
               "1": "To increase the speed of electrical flow",
@@ -728,6 +773,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U07-Q03",
             "q": "If the diode is connected correctly in the circuit, what should happen?",
             "opts": {
               "1": "The circuit will short and stop working",
@@ -737,6 +783,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U07-Q04",
             "q": "You notice that a solar panel system's battery is discharging rapidly overnight. What could you do to prevent this?",
             "opts": {
               "1": "Increase the number of solar panels",
@@ -746,6 +793,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U07-Q05",
             "q": "In a circuit simulation, the LED does not glow and the voltmeter shows 0 volts. What might be the issue?",
             "opts": {
               "1": "The diode is connected in the wrong direction",
@@ -758,6 +806,7 @@
       }
     },
     {
+      "uid": "LU-DUMMY-C5125-U08",
       "nm": "No Reverse, No Waste 🔋",
       "desc": "Directional current flow, diode behavior (forward bias & reverse blocking), circuit protection, energy loss prevention, basic power flow in circuits. DC power supply (2), diode, LED, switch, connecting wires, ground, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -777,11 +826,13 @@
         "nm": "What Blocks the Reverse Flow? ⬅️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U08-Q01",
             "q": "What component prevents the reverse flow of energy in a solar panel system?",
             "opts": { "1": "Capacitor", "2": "Diode", "3": "Resistor" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U08-Q02",
             "q": "Why is a diode important in a solar charging system?",
             "opts": {
               "1": "It changes the direction of the current.",
@@ -791,6 +842,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U08-Q03",
             "q": "What happens when the diode is removed from the circuit ?",
             "opts": {
               "1": "The LED will not light up.",
@@ -800,6 +852,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U08-Q04",
             "q": "In a situation where a battery discharges back into the solar panel at night, what problem does this create?",
             "opts": {
               "1": "Improved circuit connectivity.",
@@ -809,6 +862,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U08-Q05",
             "q": "If a solar charging system is not working efficiently, what component could be missing based on the script's description?",
             "opts": { "1": "Switch", "2": "LED", "3": "Diode" },
             "ans": "3"
@@ -817,6 +871,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U08-A01",
           "id": "Simulate-a-Solar-Charging-Shield-🔋-Remedial",
           "seq": 25,
           "nm": "Simulate a Solar Charging Shield 🔋",
@@ -868,6 +923,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U09",
       "nm": "Bins That Speak in Color 🗑️",
       "desc": "RGB LED color mixing, circuit control using switches, parallel connections, state indication system, voltage and brightness relationship. DC power supply, toggle switches, RGB LED, connecting wires, ground, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -887,6 +943,7 @@
         "nm": "What Color is the Full Bin? 🌈",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U09-Q01",
             "q": "What is the purpose of the Smart Bin Indicator?",
             "opts": {
               "1": "To improve the aesthetic of waste bins.",
@@ -896,6 +953,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U09-Q02",
             "q": "What role does the RGB LED play in the Smart Bin Indicator?",
             "opts": {
               "1": "It indicates the fullness level of the bin through different colors.",
@@ -905,6 +963,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U09-Q03",
             "q": "How do you simulate the circuit in EveryCircuit ?",
             "opts": {
               "1": "By creating a model of the circuit and observing its operation.",
@@ -914,6 +973,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U09-Q04",
             "q": "If the Smart Bin Indicator's RGB LED does not light up, which step should you check first ?",
             "opts": {
               "1": "Remove the RGB LED and replace it with a regular LED.",
@@ -923,6 +983,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U09-Q05",
             "q": "In a smart city, if the bins are not being cleaned efficiently, how might the Smart Bin Indicator be applied to solve this problem?",
             "opts": {
               "1": "By integrating a camera to monitor the bins.",
@@ -935,6 +996,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U09-A01",
           "id": "Build-the-Smart-City-Bin-Indicator-🗑️-Advanced",
           "seq": 26,
           "nm": "Build the Smart City Bin Indicator 🗑️",
@@ -986,6 +1048,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U10",
       "nm": "Mix the Colors of Light 🌈",
       "desc": "RGB LED, LED color control, Switch mechanism, Circuit design, Troubleshooting",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -1005,11 +1068,13 @@
         "nm": "Can You Mix Red, Green and Blue? 🌈",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U10-Q01",
             "q": "What type of LED is used to create colorful glowing effects in devices like gaming keyboards and stage lights?",
             "opts": { "1": "UV LED", "2": "IR LED", "3": "RGB LED" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U10-Q02",
             "q": "Why does the RGB LED not glow when only the Green and Blue switches are turned on at 2V?",
             "opts": {
               "1": "Because the LED is faulty",
@@ -1019,6 +1084,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U10-Q03",
             "q": "In the EveryCircuit app, how should the components be arranged to control an RGB LED with switches?",
             "opts": {
               "1": "Connect the RGB LED directly to the DC supply",
@@ -1028,6 +1094,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U10-Q04",
             "q": "If the power supply is set to 3.2V, how can you safely make only the Red LED glow without burning it out?",
             "opts": {
               "1": "Turn off the DC power supply",
@@ -1037,6 +1104,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U10-Q05",
             "q": "Why does the RGB LED get damaged when the Red switch is turned ON at 3.3V?",
             "opts": {
               "1": "Red LED needs only about 2V, so excess voltage damages it",
@@ -1049,6 +1117,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U10-A01",
           "id": "Control-the-Color-Mixer-🌈-Remedial",
           "seq": 27,
           "nm": "Control the Color Mixer 🌈",

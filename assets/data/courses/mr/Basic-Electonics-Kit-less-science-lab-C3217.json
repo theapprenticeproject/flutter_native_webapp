@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C3217-U01",
       "nm": "The Circuit's Bodyguard 🛡️",
       "desc": "Overcurrent protection, fuse working principle, voltage–current relationship, circuit breaking, safety in electrical circuits. DC power supply, fuse, LED, ammeter (series), connecting wires, simulate.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -26,6 +27,7 @@
         "nm": "When Does the Fuse Blow? ⚡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U01-Q01",
             "q": "सर्किटमधील फ्यूजचे मुख्य कार्य काय आहे?",
             "opts": {
               "1": "To protect devices from getting damaged by overcurrent",
@@ -35,6 +37,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U01-Q02",
             "q": "फ्यूज वायर का वितळते?",
             "opts": {
               "1": "Because the current exceeds its maximum limit",
@@ -44,6 +47,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U01-Q03",
             "q": "जेव्हा DC सप्लाय व्होल्टेज 2.1V पर्यंत वाढवले ​​जाते तेव्हा काय होते?",
             "opts": {
               "1": "The circuit stops working entirely",
@@ -53,6 +57,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U01-Q04",
             "q": "जर एखाद्या विद्यार्थ्याला त्यांच्या सर्किटमध्ये LED अपेक्षेप्रमाणे चमकत नाही असे दिसून आले, तर त्यांना प्रथम काय तपासावे?",
             "opts": {
               "1": "The color of the LED to ensure it is correct",
@@ -62,6 +67,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U01-Q05",
             "q": "एका विद्यार्थ्याने फ्यूजसह सर्किट सेट केले परंतु LED तरीही खराब झाले. याचे कारण काय असू शकते?",
             "opts": {
               "1": "The LED was connected backwards",
@@ -74,6 +80,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U01-A01",
           "id": "Blow-the-Fuse-Safely-💥-Basic",
           "seq": 47,
           "nm": "FuseProtectionCircuitSavetheLED",
@@ -125,6 +132,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U02",
       "nm": "One Button to Rule the Light 💡",
       "desc": "Current flow in a closed circuit, role of switches in circuit control, resistance limiting current, energy conservation in electrical systems. DC power supply, push button (switch), resistor, LED, simulate.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -144,11 +152,13 @@
         "nm": "Press It and See! 🔘",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U02-Q01",
             "q": "अ‍ॅक्टिव्हिटी दरम्यान बनवलेल्या सर्किटमध्ये कोणता घटक 'गेटकीपर' म्हणून काम करतो?",
             "opts": { "1": "LED", "2": "Push button", "3": "Resistor" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U02-Q02",
             "q": "अ‍ॅक्टिव्हिटी मध्ये स्मार्ट कंट्रोल सिस्टीमचा मुख्य उद्देश काय आहे?",
             "opts": {
               "1": "To increase the brightness of the LED",
@@ -158,11 +168,13 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U02-Q03",
             "q": "पुश बटण दाबल्यावर सर्किटमधील एलईडीवर कसा परिणाम होतो?",
             "opts": { "1": "The LED blinks", "2": "The LED remains off", "3": "The LED glows" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U02-Q04",
             "q": "रिया आपल्या घरात अनावश्यक ऊर्जा वापर टाळू इच्छिते. अ‍ॅक्टिव्हिटीच्या संकल्पनेवर आधारित ती काय अंमलात आणू शकते?",
             "opts": {
               "1": "Install more lights",
@@ -172,6 +184,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U02-Q05",
             "q": "जर तुमच्या सर्किटमधील एलईडी उजळत नसेल, तर स्क्रिप्टनुसार तुम्ही प्रथम काय तपासाल?",
             "opts": { "1": "LED polarity", "2": "Simulation speed", "3": "Resistor value" },
             "ans": "1"
@@ -180,6 +193,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U02-A01",
           "id": "Build-a-Smart-Energy-Switch-🔘-Remedial",
           "seq": 48,
           "nm": "SmartLightControlSystem",
@@ -231,6 +245,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U03",
       "nm": "Twist to Dim 🎚️",
       "desc": "Variable resistance, voltage–current relationship, current–brightness relationship, energy efficiency. DC power supply, potentiometer, LED, simulate.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -250,11 +265,13 @@
         "nm": "How Bright Can You Go? 💡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U03-Q01",
             "q": "LED ची चमक कमी करण्यासाठी कोणता घटक प्रतिकार बदलून वापरला जाऊ शकतो?",
             "opts": { "1": "Capacitor", "2": "Inductor", "3": "Potentiometer" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U03-Q02",
             "q": "पोटेंशिओमीटर ची प्रतिकार वाढवल्यावर विद्युत प्रवाहाला काय होते?",
             "opts": {
               "1": "The current flow remains unchanged",
@@ -264,11 +281,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U03-Q03",
             "q": "डीसी पॉवर सप्लाय, पोटेंशिओमीटर आणि एलईडी जोडण्यासाठी कोणत्या घटकांची व्यवस्था स्क्रिप्टमध्ये वर्णन केली आहे?",
             "opts": { "1": "Series", "2": "Random", "3": "Parallel" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U03-Q04",
             "q": "तुमच्या सर्किट सिम्युलेशनमध्ये LED ला मंदपणे चमकवायचे असेल तर पोटेंशिओमीटरसह काय करावे?",
             "opts": {
               "1": "Increase the resistance",
@@ -278,6 +297,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U03-Q05",
             "q": "स्क्रिप्टच्या अ‍ॅक्टिव्हिटीमध्ये पोटेंशिओमीटर वापरून LED ची जास्तीत जास्त चमक कशी मिळवता येईल?",
             "opts": {
               "1": "Set the potentiometer to a low resistance setting",
@@ -290,6 +310,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U03-A01",
           "id": "Dial-Up-the-Glow-🎚️-Basic",
           "seq": 49,
           "nm": "Smart Light Efficiency Controller",
@@ -341,6 +362,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U04",
       "nm": "Dim Your Light, Save the Planet 🌍",
       "desc": "Variable resistance, voltage–current relationship, current–brightness relationship, Ohm’s Law, energy efficiency. DC power supply, potentiometer, resistor, LED, simulate.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -360,11 +382,13 @@
         "nm": "Is Your Potentiometer Saving Power? ⚡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U04-Q01",
             "q": "LED ची ब्राइटनेस समायोजित करण्यासाठी अ‍ॅक्टिव्हिटी मध्ये कोणता घटक वापरला जातो?",
             "opts": { "1": "Resistor", "2": "Potentiometer", "3": "DC power supply" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U04-Q02",
             "q": "आपला प्रकाश कमी करा, ग्रह वाचवा' अ‍ॅक्टिव्हिटीचा मुख्य उद्देश काय आहे?",
             "opts": {
               "1": "To save energy by controlling LED brightness",
@@ -374,6 +398,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U04-Q03",
             "q": "सिम्युलेशन दरम्यान LED उडाला तर तुम्ही काय कराल?",
             "opts": {
               "1": "Remove the potentiometer",
@@ -383,6 +408,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U04-Q04",
             "q": "पोटेंशिओमीटर समायोजित केल्यावर LED च्या ब्राइटनेस मध्ये कोणताही लक्षणीय बदल दिसत नाही. हे दुरुस्त करण्यासाठी तुम्ही काय कराल?",
             "opts": {
               "1": "Decrease the power supply voltage",
@@ -392,6 +418,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U04-Q05",
             "q": "तुम्ही तुमच्या घरात या अ‍ॅक्टिव्हिटीमधील संकल्पना लागू करण्याचा प्रयत्न करत आहात. याचे एक उदाहरण काय आहे?",
             "opts": {
               "1": "Installing additional lights to enhance brightness",
@@ -404,6 +431,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U04-A01",
           "id": "Smart-Dimmer-Challenge-🌍-Remedial",
           "seq": 50,
           "nm": "DimYourLight",
@@ -455,6 +483,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U05",
       "nm": "One Way Only 🚦",
       "desc": "One-way current flow, diode functionality, voltage–current relationship, circuit protection, basic clean energy systems. DC power supply, diode, resistor, LED, voltmeter, simulate.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -474,11 +503,13 @@
         "nm": "Forward or Reverse? ⬅️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U05-Q01",
             "q": "सर्किटमध्ये कोणता घटक विद्युतीय प्रवाह फक्त एका दिशेने वाहण्याची खात्री करतो?",
             "opts": { "1": "Voltmeter", "2": "Resistor", "3": "Diode" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U05-Q02",
             "q": "स्वच्छ ऊर्जा प्रणालींमध्ये डायोडचे एकदिशात्मक प्रवाह सुनिश्चित करणे का महत्वाचे आहे?",
             "opts": {
               "1": "To prevent energy loss and component damage",
@@ -488,6 +519,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U05-Q03",
             "q": "जेव्हा डायोड सर्किटमध्ये उलट दिशेने जोडले जाते तेव्हा काय होते?",
             "opts": {
               "1": "The voltmeter shows a reading",
@@ -497,11 +529,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U05-Q04",
             "q": "जर आपणास आपल्या सोलर पॅनल प्रणालीच्या बॅटरीचा चार्ज रात्री संपत असल्याचे दिसले, तर कोणता घटक तपासावा किंवा जोडावा?",
             "opts": { "1": "Resistor", "2": "Diode", "3": "LED" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U05-Q05",
             "q": "सर्किटचे सिमुलेशन करताना एलईडी उजळत नाही. सर्व जोडण्या बरोबर असतील तर संभाव्य कारण काय असू शकते?",
             "opts": {
               "1": "The diode might be in reverse direction",
@@ -514,6 +548,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U05-A01",
           "id": "Build-the-One-Way-Gate-🚦-Intermediate",
           "seq": 51,
           "nm": "CleanEnergyIndicator",
@@ -565,6 +600,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U06",
       "nm": "The Current's One-Way Street 🛣️",
       "desc": "One-way current flow, forward bias, reverse bias, diode functionality, basic circuit behavior. DC power supply, diode, LED, simulate.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -584,6 +620,7 @@
         "nm": "Does the Diode Block or Allow? ⚡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U06-Q01",
             "q": "सर्किटमध्ये डायोडचे मुख्य कार्य काय आहे?",
             "opts": {
               "1": "To store energy",
@@ -593,6 +630,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U06-Q02",
             "q": "डायोडला रिव्हर्स बायस मध्ये जोडल्यास काय होते?",
             "opts": {
               "1": "The LED turns off",
@@ -602,6 +640,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U06-Q03",
             "q": "प्रोटोसर्किटमध्ये सर्किटचे अनुकरण करण्यासाठी घटक कसे मांडायला हवेत?",
             "opts": {
               "1": "In series, one after another",
@@ -611,6 +650,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U06-Q04",
             "q": "जर एलईडी पेटत नसेल, तर सर्किटमध्ये कोणती समस्या असू शकते?",
             "opts": {
               "1": "The DC power supply is too high",
@@ -620,6 +660,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U06-Q05",
             "q": "सर्किटमध्ये डायोड नीट कार्यरत आहे का हे कसे तपासता येईल?",
             "opts": {
               "1": "Check if the LED glows with the diode in forward bias",
@@ -632,6 +673,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U06-A01",
           "id": "Flip-the-Diode-and-Find-Out-🔄-Remedial",
           "seq": 52,
           "nm": "One-Way Current Indicator",
@@ -683,6 +725,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U07",
       "nm": "Ohm's Law in Action 📐",
       "desc": "Ohm’s Law (V = I × R), voltage–current relationship, resistance variation, current–brightness relationship, measurement and observation. DC power supply, potentiometer, LED, ammeter (series), voltmeter (parallel), simulate.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -702,6 +745,7 @@
         "nm": "Voltage, Current, Resistance — Can You Crack It? 📐",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U07-Q01",
             "q": "सर्किटमधील प्रतिकार वाढल्यास, निर्धारित व्होल्टेज धरून, प्रवाहाचे काय होते?",
             "opts": {
               "1": "The current decreases",
@@ -711,16 +755,19 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U07-Q02",
             "q": "सर्किटमध्ये एलईडीच्या ब्राइटनेसला नियंत्रित करण्यासाठी कोणता घटक वापरला जातो?",
             "opts": { "1": "Potentiometer", "2": "Voltmeter", "3": "Ammeter" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U07-Q03",
             "q": "स्क्रिप्टनुसार, पोटेंशिओमीटर 0.2 वर सेट केल्यावर प्रतिकार किती आहे?",
             "opts": { "1": "30 ohms", "2": "150 ohms", "3": "96 ohms" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U07-Q04",
             "q": "तुमच्यावर समान सर्किट तयार करण्याचे काम आहे, पण एलईडी चमकत नाही. कोणता टप्पा तुम्ही चुकवला असेल?",
             "opts": {
               "1": "Connecting the voltmeter across the LED",
@@ -730,6 +777,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U07-Q05",
             "q": "तुमच्या सर्किटमधील एलईडी अपेक्षेप्रमाणे कमी होत नाही, तर कोणत्या घटकाची सेटिंग तुम्ही समायोजित करावी?",
             "opts": { "1": "The voltmeter", "2": "The potentiometer", "3": "The ammeter" },
             "ans": "2"
@@ -738,6 +786,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U07-A01",
           "id": "Prove-Ohm's-Law-Yourself-📐-Intermediate",
           "seq": 53,
           "nm": "Precision LED Control using Potentiometer",
@@ -789,6 +838,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U08",
       "nm": "The Brightness Dial Experiment 🎛️",
       "desc": "Potentiometer, LED, Variable resistor, Current measurement, Ammeter, Current limiting",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -808,6 +858,7 @@
         "nm": "High Resistance or Low — What Wins? 🎚️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U08-Q01",
             "q": "पोटेंशिओमीटर म्हणजे काय?",
             "opts": {
               "1": "A variable resistor",
@@ -817,6 +868,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U08-Q02",
             "q": "पोटेंशिओमीटरची रेझिस्टन्स वाढवल्याने LED वर काय परिणाम होतो?",
             "opts": {
               "1": "The LED flickers",
@@ -826,6 +878,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U08-Q03",
             "q": "पोटेंशिओमीटर कमी रेझिस्टन्सवर सेट केल्यास सर्किटमधील प्रवाहावर काय परिणाम होतो?",
             "opts": {
               "1": "The current increases",
@@ -835,6 +888,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U08-Q04",
             "q": "प्रोटोसर्किटमध्ये, जर अॅमीटर नकारात्मक रीडिंग दाखवत असेल तर काय करावे?",
             "opts": {
               "1": "Replace the ammeter",
@@ -844,6 +898,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U08-Q05",
             "q": "प्रोटोसर्किट अ‍ॅपमध्ये पोटेंशिओमीटर सर्किट वापरून समस्या सोडवण्याची कौशल्ये कशी दाखवता येतील?",
             "opts": {
               "1": "By adjusting the potentiometer to achieve desired LED brightness and analyzing the changes",
@@ -856,6 +911,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U08-A01",
           "id": "Spin-the-Knob,-Change-the-Glow-🎛️-Remedial",
           "seq": 54,
           "nm": "Potentiometer Dimmer (Simple)",
@@ -907,6 +963,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U09",
       "nm": "The Delay Game ⏳",
       "desc": "Capacitance, charging and discharging of a capacitor, time delay in circuits, energy storage, relationship between capacitance and discharge time. DC power supply, resistor, polarized capacitor, LED, SPST switch, simulate.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -926,6 +983,7 @@
         "nm": "Which Capacitor Holds On Longer? ⏱️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U09-Q01",
             "q": "सर्किटमध्ये कॅपेसिटर चार्ज होत असताना LED ला काय होते?",
             "opts": {
               "1": "The LED glows brightly at first.",
@@ -935,11 +993,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U09-Q02",
             "q": "सर्किटमध्ये LED च्या उशीराने बंद होण्यासाठी कोणता घटक जबाबदार आहे?",
             "opts": { "1": "The resistor", "2": "The DC power supply", "3": "The capacitor" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U09-Q03",
             "q": "स्विच बंद केल्यावर LED अधिक वेळ चालू ठेवायचा असेल तर काय करावे?",
             "opts": {
               "1": "Decrease the resistance of the resistor",
@@ -949,6 +1009,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U09-Q04",
             "q": "तुम्ही प्रोटोसर्किटमध्ये सर्किट अनुकरण करता आणि स्विच बंद केल्यावर LED खूप जलद बंद होते. विलंब वाढवण्यासाठी काय उपाय होऊ शकतो?",
             "opts": {
               "1": "Use a resistor with higher resistance.",
@@ -958,6 +1019,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U09-Q05",
             "q": "समस्या सोडवताना, तुम्हाला आढळते की तुमच्या सर्किटमधील LED स्विच बंद केल्यानंतर कधीच बंद होत नाही. समस्या काय असू शकते?",
             "opts": {
               "1": "The switch is malfunctioning.",
@@ -970,6 +1032,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U09-A01",
           "id": "Race-the-Capacitors-🏁-Advanced",
           "seq": 55,
           "nm": "Adjustable Delay Timer Circuit",
@@ -1021,6 +1084,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U10",
       "nm": "Store It, Glow It! 🔋",
       "desc": "Capacitors, voltage smoothing, energy storage, LED operation, push-to-charge circuits. DC power supply, LED, resistor, polarized capacitor, SPST switch.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -1040,6 +1104,7 @@
         "nm": "How Long Does Your Capacitor Last? 🔋",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U10-Q01",
             "q": "कॅपॅसिटरचे मुख्य कार्य काय आहे?",
             "opts": {
               "1": "To act as a switch",
@@ -1049,6 +1114,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U10-Q02",
             "q": "स्विच बंद केल्यानंतर एलईडी थोडा वेळ का चमकतो?",
             "opts": {
               "1": "Because the capacitor discharges its stored energy",
@@ -1058,6 +1124,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U10-Q03",
             "q": "स्विच उघडल्यावर कॅपॅसिटरचे मूल्य वाढवल्यास एलईडीच्या चमकण्याच्या वेळेवर काय परिणाम होतो?",
             "opts": {
               "1": "The LED stops glowing immediately",
@@ -1067,6 +1134,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U10-Q04",
             "q": "आपल्या प्रोटोसर्किट सिम्युलेशनमध्ये स्विच बंद केल्यानंतर एलईडी चालू राहत नाही, याचे संभाव्य कारण काय असू शकते?",
             "opts": {
               "1": "The DC power supply is insufficient",
@@ -1076,6 +1144,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U10-Q05",
             "q": "सिम्युलेशन दरम्यान, जर एलईडी अजिबात चमकत नसेल, तर समस्या सोडवण्याच्या कौशल्यांचा वापर करून काय उपाय असू शकतो?",
             "opts": {
               "1": "Check all connections to ensure they match the described circuit",
@@ -1088,6 +1157,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U10-A01",
           "id": "Build-the-Glow-After-Off-Circuit-🔋-Remedial",
           "seq": 56,
           "nm": "Press-to-Hold Delay Light",

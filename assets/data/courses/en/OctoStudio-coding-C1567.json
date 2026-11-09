@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C1567-U01",
       "nm": "Hero Clears the Air 🌿",
       "desc": "Concepts: Animation sequencing, message passing (synchronization), scene transitions, cause-effect representation (pollution vs clean environment). Blocks: When Play, Say, Wait, Send, When Received, Hide, Show, Switch Backdrop",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -26,11 +27,13 @@
         "nm": "Can code clean the air? 🌫️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U01-Q01",
             "q": "Which block is used to change multiple scenes in one project in Octostudio?",
             "opts": { "1": "Say block", "2": "When Play block", "3": "Switch Backdrop block" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U01-Q02",
             "q": "What is the purpose of using the Send block in the animation creation process?",
             "opts": {
               "1": "To send a message allowing another sprite to take action",
@@ -40,6 +43,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U01-Q03",
             "q": "If you want the girl's dialogue to appear on the screen for a specific time, which blocks would you use?",
             "opts": {
               "1": "Send and Wait blocks",
@@ -49,6 +53,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U01-Q04",
             "q": "How can you creatively show the transition from a polluted to a clean environment using the tools mentioned in the script?",
             "opts": {
               "1": "Use a combination of Switch Backdrop, Say, and Send blocks to illustrate the change",
@@ -58,6 +63,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U01-Q05",
             "q": "Imagine you want to add a new character that cleans the smoke faster. How would you creatively integrate this character using the existing blocks?",
             "opts": {
               "1": "Use the Send block to trigger the new character's action after smoke appears",
@@ -70,6 +76,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U01-A01",
           "id": "Animate-a-Clean-Air-Hero-🌿-Basic",
           "seq": 96,
           "nm": "Animate a Clean Air Hero 🌿",
@@ -121,6 +128,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U02",
       "nm": "Seed Grows a Hero 🌱",
       "desc": "Concepts: Animation, conditionals, events Blocks: When tapped, Move, When touching, Send, Hide, Show, Wait",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -140,6 +148,7 @@
         "nm": "Can a sprite speak? 🗣️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U02-Q01",
             "q": "What is the main goal of this animation activity?",
             "opts": {
               "1": "To animate a character watering the cars",
@@ -149,11 +158,13 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U02-Q02",
             "q": "Which block category is used to make the sprite speak in this activity?",
             "opts": { "1": "Words and Sounds", "2": "Motion", "3": "Control" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U02-Q03",
             "q": "What does the Say block do in this activity?",
             "opts": {
               "1": "It makes the sprite jump",
@@ -163,6 +174,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U02-Q04",
             "q": "What message does the Old Man sprite say in the animation?",
             "opts": {
               "1": "\"Planting trees helps our Earth.\"",
@@ -172,6 +184,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U02-Q05",
             "q": "What happens when the Seed sprite receives the message “plant”?",
             "opts": {
               "1": "The seed disappears",
@@ -184,6 +197,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U02-A01",
           "id": "Animate-a-Tree-Planting-Story-🌱-Remedial",
           "seq": 97,
           "nm": "Animate a Tree Planting Story 🌱",
@@ -235,6 +249,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U03",
       "nm": "Share the Leftovers 🍱",
       "desc": "Concepts: Event-based programming, message passing (broadcast & receive), sequencing of actions, social awareness through animation, sprite interaction, timing and synchronization. Blocks/Functions: When Play, Say, Wait, Send, When Received, Go To (motion), Text Block, Speed control.",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -254,11 +269,13 @@
         "nm": "Does food waste matter? 🍱",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U03-Q01",
             "q": "What is the main message of the animation activity?",
             "opts": { "1": "Save Water", "2": "Recycle More", "3": "Say No to Food Waste" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U03-Q02",
             "q": "What Sustainable Development Goal (SDG) is linked to the activity ?",
             "opts": {
               "1": "SDG 3 - Good Health and Well-being",
@@ -268,11 +285,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U03-Q03",
             "q": "Which block is used to communicate between sprites in the animation?",
             "opts": { "1": "Say block", "2": "Send block", "3": "Wait block" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U03-Q04",
             "q": "How could you use creativity to enhance the animation about food waste?",
             "opts": {
               "1": "Use only black and white colors",
@@ -282,6 +301,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U03-Q05",
             "q": "How can you creatively convey the 'Do not waste food' message in a different setting using animation?",
             "opts": {
               "1": "Focus only on the food items without showing any characters",
@@ -294,6 +314,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U03-A01",
           "id": "Animate-a-Food-Sharing-Scene-🍱-Basic",
           "seq": 98,
           "nm": "Animate a Food Sharing Scene 🍱",
@@ -345,6 +366,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U04",
       "nm": "Every Drop Saved 💧",
       "desc": "Concepts: Water conservation (SDG 6), event-based programming, continuous loops, collision detection, variables and scoring system, sprite interaction, sensor-based control (tilt), sequencing and timing. Blocks/Functions: When Play, When Tap, Tilt to Move, Send, When Received, Go To, Hide, Show, Forever, Wait, When Touches, Set Variable, Change Variable.",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -364,6 +386,7 @@
         "nm": "Can a tap save water? 🚰",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U04-Q01",
             "q": "What is the main goal of the interactive game created ?",
             "opts": {
               "1": "To collect dripping water from leaking taps into a glass",
@@ -373,6 +396,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U04-Q02",
             "q": "Which Sustainable Development Goal (SDG) does the activity  connect to?",
             "opts": {
               "1": "SDG 13 - Climate Action",
@@ -382,11 +406,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U04-Q03",
             "q": "What tool is used in OctoStudio to position the tap sprite correctly?",
             "opts": { "1": "Resize tool", "2": "Rotate tool", "3": "Crop tool" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U04-Q04",
             "q": "How might you creatively extend the water-saving game to teach about energy conservation?",
             "opts": {
               "1": "Include a mechanism where turning off lights earns points",
@@ -396,6 +422,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U04-Q05",
             "q": "Imagine you want to enhance the game by adding educational content about global water scarcity. What creative approach could you take?",
             "opts": {
               "1": "Include pop-up facts about water scarcity while playing",
@@ -408,6 +435,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U04-A01",
           "id": "Build-a-Water-Saving-Game-💧-Remedial",
           "seq": 99,
           "nm": "Build a Water Saving Game 💧",
@@ -459,6 +487,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U05",
       "nm": "Sun Powers the Bulb ☀️",
       "desc": "Concepts: Renewable energy (solar energy), energy transformation, event-based programming, sequencing, synchronization, animation flow, visual effects (glow, colour change), sprite interaction. Blocks/Functions: When Play, Say, Wait, Send, When Received, Move, Hide, Show, Repeat, Glow, Change Colour, Text Block.",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -478,11 +507,13 @@
         "nm": "Can sunlight power things? ☀️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U05-Q01",
             "q": "What block is used to display a sprite's speech on the screen?",
             "opts": { "1": "Say block", "2": "Move block", "3": "Send block" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U05-Q02",
             "q": "Why is it important to use the same message in both Send and When Received blocks?",
             "opts": {
               "1": "To make the sprite move faster",
@@ -492,11 +523,13 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U05-Q03",
             "q": "Which block would you use to make a sprite appear on the screen after receiving a message?",
             "opts": { "1": "Show block", "2": "Glow block", "3": "Hide block" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U05-Q04",
             "q": "How can you creatively show the process of the solar panel charging in your animation?",
             "opts": {
               "1": "Change the backdrop to a brighter color",
@@ -506,6 +539,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U05-Q05",
             "q": "How might you creatively represent the movement of sunlight in your animation?",
             "opts": {
               "1": "By changing the girl's costume",
@@ -518,6 +552,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U05-A01",
           "id": "Code-Your-First-Big-Idea-💡-Intermediate",
           "seq": 100,
           "nm": "Code Your First Big Idea 💡",
@@ -569,6 +604,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U06",
       "nm": "Sun Powers the Road ☀️",
       "desc": "Concepts: Renewable energy (solar energy), energy conversion, event-based programming, collision detection, sequencing, cause-and-effect in animations, environmental awareness (SDG 7 & SDG 13). Blocks/Functions: When Play, Move, When Touches, Send, When Received, Hide, Text Block.",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -588,6 +624,7 @@
         "nm": "Did the Cloud Stop Your Car? ☁️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U06-Q01",
             "q": "What is the purpose of adding a solar panel to the car in the animation project?",
             "opts": {
               "1": "To show how solar panels are built.",
@@ -597,6 +634,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U06-Q02",
             "q": "How does the 'When Touches' block function in the animation?",
             "opts": {
               "1": "It triggers an action when one object touches another.",
@@ -606,16 +644,19 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U06-Q03",
             "q": "Which block is used to hide the sunrays when the cloud blocks the sunlight?",
             "opts": { "1": "Hide block", "2": "Move block", "3": "Send block" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U06-Q04",
             "q": "If you wanted to create a scene where flowers bloom when the sun appears, which block would you primarily use to trigger the blooming action?",
             "opts": { "1": "When Received block", "2": "Hide block", "3": "Text block" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U06-Q05",
             "q": "Imagine you want to add a wind turbine that spins when the sun is out. Which part of the animation process would this relate to?",
             "opts": {
               "1": "Drawing sunrays with the Paint Editor.",
@@ -628,6 +669,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U06-A01",
           "id": "Animate-a-Solar-Speedster-🚗-Remedial",
           "seq": 101,
           "nm": "Animate a Solar Speedster 🚗",
@@ -679,6 +721,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U07",
       "nm": "Three Bins Sorted 🗑️",
       "desc": "Concepts Waste sorting, Environmental awareness, Recycling, Creative coding Blocks Set variable, Change variable, When play, When touches, Show, Hide, Move, Wait, Play sound, If-Else, Text",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -698,6 +741,7 @@
         "nm": "Can you sort the trash? ♻️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U07-Q01",
             "q": "What is SDG 12 about?",
             "opts": {
               "1": "Responsible consumption and production",
@@ -707,6 +751,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U07-Q02",
             "q": "Why is it important to sort waste correctly?",
             "opts": {
               "1": "It saves time during waste collection.",
@@ -716,11 +761,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U07-Q03",
             "q": "Which block is used to hide an item after it is sorted correctly in the game?",
             "opts": { "1": "Set Variable", "2": "Hide", "3": "Change Variable" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U07-Q04",
             "q": "How can creativity be applied when designing the Waste Sorting Game?",
             "opts": {
               "1": "By using only default settings.",
@@ -730,6 +777,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U07-Q05",
             "q": "In what way could you use creativity to improve user engagement in the Waste Sorting Game?",
             "opts": {
               "1": "By making the game simpler.",
@@ -742,6 +790,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U07-A01",
           "id": "Build-a-Waste-Sorting-Game-🗑️-Intermediate",
           "seq": 102,
           "nm": "Build a Waste Sorting Game 🗑️",

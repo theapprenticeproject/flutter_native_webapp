@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C0078-U01",
       "nm": "First Code Awakens 🐱",
       "desc": "App installation and navigation (Google Play Store / App Store). Scratch Junior interface: Home icon, My Projects page, stage, programming area. Sprite management: adding and removing characters. Block categories: trigger blocks, motion blocks, end blocks.",
       "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
@@ -24,6 +25,7 @@
             "nm": "How do you start on Scratch Jr? 🐱",
             "qs": [
               {
+                "qid": "QN-DUMMY-C0078-U01-V01-Q01",
                 "q": "आप Scratch Jr पर नया प्रोजेक्ट कैसे शुरू करते हैं?",
                 "opts": {
                   "1": "Click the House button, followed by the plus (+) sign",
@@ -33,6 +35,7 @@
                 "ans": "1"
               },
               {
+                "qid": "QN-DUMMY-C0078-U01-V01-Q02",
                 "q": "आप अपने स्क्रैच जूनियर प्रोजेक्ट में नया चरित्र कैसे जोड़ते हैं?",
                 "opts": {
                   "1": "Drag the character onto the screen",
@@ -42,6 +45,7 @@
                 "ans": "2"
               },
               {
+                "qid": "QN-DUMMY-C0078-U01-V01-Q03",
                 "q": "Scratch Jr में ABC आइकन आपको क्या करने की अनुमति देता है?",
                 "opts": {
                   "1": "Add sprites, change their color, and move them around",
@@ -59,16 +63,19 @@
         "nm": "Can you code it? 🎮",
         "qs": [
           {
+            "qid": "QN-DUMMY-C0078-U01-Q01",
             "q": "आप Android फोन पर Scratch Jr डाउनलोड करने के लिए किस स्टोर का उपयोग करते हैं?",
             "opts": { "1": "Google Play Store", "2": "App Store", "3": "Scratch Website" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U01-Q02",
             "q": "कौन सा आइकन आपको अपने प्रोजेक्ट में टेक्स्ट जोड़ने की अनुमति देता है?",
             "opts": { "1": "Reset icon", "2": "ABC icon", "3": "Green flag icon" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C0078-U01-Q03",
             "q": "अगर आप एक नया प्रोजेक्ट शुरू करना चाहते हैं, तो हाउस आइकन के बाद आपको क्या टैप करना चाहिए?",
             "opts": {
               "1": "The plus (+) sign",
@@ -78,6 +85,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U01-Q04",
             "q": "आप पहली बार Scratch Jr खोलते हैं और डिफ़ॉल्ट बिल्ली स्प्राइट देखते हैं। आप अपने प्रोजेक्ट को अधिक रचनात्मक कैसे बना सकते हैं?",
             "opts": {
               "1": "Keep it exactly the same as given",
@@ -87,6 +95,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C0078-U01-Q05",
             "q": "अगर आप अपना पहला प्रोजेक्ट अनोखा बनाना चाहते हैं, तो सबसे अच्छा तरीका क्या होगा?",
             "opts": {
               "1": "Use only the default sprite and background",
@@ -99,6 +108,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C0078-U01-A01",
           "id": "Build-Your-First-Animation-🐱-Basic",
           "seq": 112,
           "nm": "GetReadyForScratchJr",
@@ -150,6 +160,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C0078-U02",
       "nm": "Butterfly Feeds the Garden 🌸",
       "desc": "Students will be able to add backgrounds and sprites, duplicate and modify sprites as well as their colors using the Paint Editor , and using the ABC tool to add titles. Students will be able to apply coding concepts by using the Start on Green Flag block to start the animation, Motion (blue) blocks to move the butterfly, turn blocks to show direction change, and the Repeat Forever block to create continuous movement. In addition, they will understand that butterflies drink nectar from flowers, which provides them with energy and nutrition, and plays an important role in nature.",
       "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
@@ -167,6 +178,7 @@
             "nm": "What makes the butterfly move? 🦋",
             "qs": [
               {
+                "qid": "QN-DUMMY-C0078-U02-V01-Q01",
                 "q": "आपको स्क्रैच जूनियर में नया प्रोजेक्ट शुरू करने के लिए क्या करना चाहिए?",
                 "opts": {
                   "1": "Click the grid option",
@@ -176,6 +188,7 @@
                 "ans": "2"
               },
               {
+                "qid": "QN-DUMMY-C0078-U02-V01-Q02",
                 "q": "आप एनिमेशन में पत्तियों को अधिक दिखाने के लिए क्या कर सकते हैं?",
                 "opts": {
                   "1": "Place the butterfly on the right",
@@ -185,6 +198,7 @@
                 "ans": "2"
               },
               {
+                "qid": "QN-DUMMY-C0078-U02-V01-Q03",
                 "q": "तितली को लगातार चलाने के लिए कौन सा ब्लॉक उपयोग किया जाता है?",
                 "opts": {
                   "1": "Start on green flag block",
@@ -202,11 +216,13 @@
         "nm": "Why do butterflies fly? 🦋",
         "qs": [
           {
+            "qid": "QN-DUMMY-C0078-U02-Q01",
             "q": "तितलियाँ फूलों से क्या पीती हैं?",
             "opts": { "1": "Water", "2": "Nectar", "3": "Juice" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C0078-U02-Q02",
             "q": "एनिमेशन स्क्रिप्ट में 'रिपीट फॉरएवर' ब्लॉक का उपयोग करने का उद्देश्य क्या है?",
             "opts": {
               "1": "To make the butterfly fly only once",
@@ -216,11 +232,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C0078-U02-Q03",
             "q": "एनिमेशन में टेक्स्ट संदेश जोड़ने के लिए कौन सा टूल उपयोग किया जाता है?",
             "opts": { "1": "Fill tool", "2": "Duplicate tool", "3": "ABC tool" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C0078-U02-Q04",
             "q": "यदि आप तितली को अमृत पीने के लिए नीचे झुकाना चाहते हैं, बजाय सीधी रेखा में चलने के, तो आप किस अतिरिक्त ब्लॉक का रचनात्मक रूप से उपयोग कर सकते हैं?",
             "opts": {
               "1": "Turn right and turn left blocks",
@@ -230,6 +248,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U02-Q05",
             "q": "दर्शकों के लिए एनिमेशन को और अधिक इंटरैक्टिव बनाने के लिए आप रचनात्मक रूप से क्या कर सकते हैं?",
             "opts": {
               "1": "Add more flowers",
@@ -242,6 +261,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C0078-U02-A01",
           "id": "Animate-a-Hungry-Butterfly-🌸-Remedial",
           "seq": 113,
           "nm": "Busy butterfly",
@@ -293,6 +313,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C0078-U03",
       "nm": "Worlds at Risk 🐘",
       "desc": "Students will learn to add backgrounds and sprites, use the Paint Editor to modify sprites, and use the ABC tool to add titles. They will also learn to add new pages to create a multi-scene project. In coding, students will learn to use the Start on Green Flag block to begin the animation, Motion (blue) blocks to move sprites, and the Go to Page block to transition from one scene to the next. In addition, students will understand that some animals are endangered, meaning their numbers are decreasing. They will learn that different animals live in different habitats (Arctic, Savanna, Desert), and that loss of habitat affects animal survival.Ina ddition, students learn that some animals are endangered, meaning their numbers are decreasing, different animals live in different habitats (Arctic, Savanna, Desert) and loss of habitat affects animal survival.",
       "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
@@ -310,6 +331,7 @@
             "nm": "Which animal needs a cold home? 🐻‍❄️",
             "qs": [
               {
+                "qid": "QN-DUMMY-C0078-U03-V01-Q01",
                 "q": "स्क्रैच जूनियर में ध्रुवीय भालू के दृश्य के लिए आपको कौन सा पृष्ठभूमि जोड़नी चाहिए?",
                 "opts": {
                   "1": "Arctic background",
@@ -319,11 +341,13 @@
                 "ans": "1"
               },
               {
+                "qid": "QN-DUMMY-C0078-U03-V01-Q02",
                 "q": "पेंट एडिटर का उपयोग करके अफ्रीकी हाथी में कौन सा रंग जोड़ा जाना चाहिए?",
                 "opts": { "1": "Blue", "2": "Dark grey", "3": "Light grey" },
                 "ans": "2"
               },
               {
+                "qid": "QN-DUMMY-C0078-U03-V01-Q03",
                 "q": "बैक्ट्रियन ऊंट की कितनी कूबड़ होती हैं?",
                 "opts": { "1": "One", "2": "Two", "3": "Option C" },
                 "ans": "2"
@@ -337,6 +361,7 @@
         "nm": "Can animals survive change? 🐘",
         "qs": [
           {
+            "qid": "QN-DUMMY-C0078-U03-Q01",
             "q": "स्क्रैच जूनियर में नया प्रोजेक्ट शुरू करने का प्रारंभिक कदम क्या है?",
             "opts": {
               "1": "Click on the home icon and then the plus to start a new project",
@@ -346,6 +371,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U03-Q02",
             "q": "अफ्रीकी हाथियों, बैक्ट्रियन ऊंटों, और ध्रुवीय भालुओं की संख्या में गिरावट का मुख्य कारण क्या है?",
             "opts": {
               "1": "Lack of food",
@@ -355,11 +381,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C0078-U03-Q03",
             "q": "पेंट एडिटर में कौन सा टूल अफ्रीकी हाथी के रंग को बदलने के लिए उपयोग किया जाता है?",
             "opts": { "1": "The fill tool", "2": "The line tool", "3": "The paint tool" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U03-Q04",
             "q": "यदि आप वर्षावन के जानवर के लिए एक समान एनीमेशन बनाना चाहते हैं, तो आप इसे वास्तविक बनाने के लिए कौन सा रचनात्मक तत्व जोड़ सकते हैं?",
             "opts": {
               "1": "Add multiple arctic backgrounds",
@@ -369,6 +397,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C0078-U03-Q05",
             "q": "स्क्रैच जूनियर का उपयोग करके वर्षावन के जानवरों पर वनों की कटाई के प्रभाव को आप रचनात्मक तरीके से कैसे चित्रित कर सकते हैं?",
             "opts": {
               "1": "By creating a scene where animals move away as trees disappear",
@@ -381,6 +410,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C0078-U03-A01",
           "id": "Code-Endangered-Animal-Scenes-🐘-Basic",
           "seq": 114,
           "nm": "Endangered animals",
@@ -432,6 +462,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C0078-U04",
       "nm": "Bear Finds the Igloo 🐻",
       "desc": "ScratchJr interface (sprites, background, blocks) Motion blocks (move, hop, turn) Events block (start on green flag) Looks block (resize characters) Grid system for position and movement Basic sequencing and debugging",
       "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
@@ -449,6 +480,7 @@
             "nm": "Does the grid really help? 🔲",
             "qs": [
               {
+                "qid": "QN-DUMMY-C0078-U04-V01-Q01",
                 "q": "स्क्रीन पर ग्रिड का उपयोग करने का उद्देश्य क्या है?",
                 "opts": {
                   "1": "To change the color of the characters",
@@ -458,6 +490,7 @@
                 "ans": "3"
               },
               {
+                "qid": "QN-DUMMY-C0078-U04-V01-Q02",
                 "q": "अगर कोई कैरेक्टर बहुत बड़ा दिख रहा है तो उसे छोटा कैसे करें?",
                 "opts": {
                   "1": "By using the shrink block in the looks category",
@@ -467,6 +500,7 @@
                 "ans": "1"
               },
               {
+                "qid": "QN-DUMMY-C0078-U04-V01-Q03",
                 "q": "अपने कोड को अपने आप चलाने के लिए आपको किस पर क्लिक करना चाहिए?",
                 "opts": { "1": "The green flag", "2": "The purple star", "3": "The red button" },
                 "ans": "1"
@@ -480,6 +514,7 @@
         "nm": "What does the grid do? 🔲",
         "qs": [
           {
+            "qid": "QN-DUMMY-C0078-U04-Q01",
             "q": "आज के कोडिंग एडवेंचर का मुख्य फोकस क्या है?",
             "opts": {
               "1": "Learning to use motion blocks to move characters on the screen.",
@@ -489,6 +524,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U04-Q02",
             "q": "स्क्रैच जूनियर पर कोडिंग में 'ग्रिड' की क्या भूमिका है?",
             "opts": {
               "1": "It allows users to add more characters to the scene.",
@@ -498,6 +534,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C0078-U04-Q03",
             "q": "आप कैसे सुनिश्चित कर सकते हैं कि जब ग्रीन फ्लैग क्लिक किया जाए तो कोड अपने आप रन हो?",
             "opts": {
               "1": "By adding the yellow start on green block from the trigger block section.",
@@ -507,6 +544,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U04-Q04",
             "q": "आप ऐसा कैरेक्टर जोड़ना चाहते हैं जो अवरोधों के ऊपर कूद सके जब आप उसे टैप करें। आप कौन सा कोड उपयोग करेंगे?",
             "opts": {
               "1": "Start on tap, jump block and end block",
@@ -516,6 +554,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U04-Q05",
             "q": "कल्पना करें कि आप एक कहानी बनाना चाहते हैं जहां एक कैरेक्टर विभिन्न वातावरणों के माध्यम से यात्रा करता है। आप इसे प्राप्त करने के लिए रचनात्मकता का उपयोग कैसे कर सकते हैं?",
             "opts": {
               "1": "Increase the speed of the character to simulate travel.",
@@ -528,6 +567,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C0078-U04-A01",
           "id": "Guide-Bear-to-Igloo-🐻-Remedial",
           "seq": 115,
           "nm": "Polar bear to Igloo",
@@ -579,6 +619,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C0078-U05",
       "nm": "Dance Floor Goes Live 💃",
       "desc": "Coordination and timing in animations How wait blocks control when an action begins How repeat blocks help actions occur multiple times How sound blocks can be combined with motion blocks That multiple scripts can start together using the green flag How changing wait values creates different rhythms and beats How camera feature in paint editor works",
       "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
@@ -596,6 +637,7 @@
             "nm": "Can two characters share a stage? 🎭",
             "qs": [
               {
+                "qid": "QN-DUMMY-C0078-U05-V01-Q01",
                 "q": "आप स्क्रैच जूनियर में नया प्रोजेक्ट शुरू करने के लिए सबसे पहले क्या करते हैं?",
                 "opts": {
                   "1": "Add background music",
@@ -605,6 +647,7 @@
                 "ans": "2"
               },
               {
+                "qid": "QN-DUMMY-C0078-U05-V01-Q02",
                 "q": "संगीत को लगातार चलाने के लिए कौन-सा ब्लॉक उपयोग किया जाता है?",
                 "opts": {
                   "1": "Use the grow block",
@@ -614,6 +657,7 @@
                 "ans": "1"
               },
               {
+                "qid": "QN-DUMMY-C0078-U05-V01-Q03",
                 "q": "आप कैसे सुनिश्चित करते हैं कि बच्चे का कैरेक्टर रैंचर के बराबर आकार का है?",
                 "opts": {
                   "1": "Use the Wait block",
@@ -631,6 +675,7 @@
         "nm": "Can you sync the dance? 💃",
         "qs": [
           {
+            "qid": "QN-DUMMY-C0078-U05-Q01",
             "q": "इस एक्टिविटी का मुख्य उद्देश्य क्या है?",
             "opts": {
               "1": "To learn a new programming language",
@@ -640,6 +685,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C0078-U05-Q02",
             "q": "स्क्रैच जूनियर प्रोजेक्ट में वेट ब्लॉक का क्या रोल है?",
             "opts": {
               "1": "To change the background",
@@ -649,6 +695,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C0078-U05-Q03",
             "q": "स्क्रैच जूनियर में दो कॅरेक्टर्स को अलग-अलग समय पर नृत्य कैसे करवा सकते हैं?",
             "opts": {
               "1": "By changing the background",
@@ -658,6 +705,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C0078-U05-Q04",
             "q": "यदि आप नृत्य के मूव्स को अधिक क्रिएटिव बनाना चाहते हैं, तो आप स्क्रैच जूनियर प्रोजेक्ट में क्या जोड़ सकते हैं?",
             "opts": {
               "1": "Add different motion and wait blocks to create a unique dance sequence",
@@ -667,6 +715,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U05-Q05",
             "q": "नृत्य दृश्य को क्रिएटिव रूप से बढ़ाने के लिए, आप एक सरल चीज़ क्या कर सकते हैं?",
             "opts": {
               "1": "Incorporate a third character that interacts with the music in a unique way",
@@ -679,6 +728,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C0078-U05-A01",
           "id": "Sync-Two-Dancers-Together-💃-Intermediate",
           "seq": 116,
           "nm": "Dance Moves",
@@ -730,6 +780,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C0078-U06",
       "nm": "Water Runs Dry 💧",
       "desc": "Add backgrounds and multiple sprites, and use the Say block to add dialogues. Aapply coding concepts by using the Start on Green Flag block to begin the animation, Send Message and Start on Message blocks to create communication between sprites, and the End block to control the flow of scripts. Understand that water is a limited resource, and careless usage can lead to water shortages. They will learn that saving water is important for everyday life.",
       "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
@@ -747,6 +798,7 @@
             "nm": "Where did Rahul's water go? 💧",
             "qs": [
               {
+                "qid": "QN-DUMMY-C0078-U06-V01-Q01",
                 "q": "राहुल और प्रिया को किस समस्या का सामना करना पड़ा?",
                 "opts": {
                   "1": "They lost their pets.",
@@ -756,11 +808,13 @@
                 "ans": "3"
               },
               {
+                "qid": "QN-DUMMY-C0078-U06-V01-Q02",
                 "q": "स्क्रैच जूनियर में नया प्रोजेक्ट शुरू करने के लिए आपको क्या क्लिक करना चाहिए?",
                 "opts": { "1": "The exit icon.", "2": "The plus icon.", "3": "The settings icon." },
                 "ans": "2"
               },
               {
+                "qid": "QN-DUMMY-C0078-U06-V01-Q03",
                 "q": "एनीमेशन में अंतिम संदेश क्या है?",
                 "opts": {
                   "1": "Let's play together.",
@@ -778,6 +832,7 @@
         "nm": "Where did the water go? 💧",
         "qs": [
           {
+            "qid": "QN-DUMMY-C0078-U06-Q01",
             "q": "राहुल और प्रिया के घरों में पानी की कमी का मुख्य कारण क्या है?",
             "opts": {
               "1": "Water was wasted and not used carefully.",
@@ -787,6 +842,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U06-Q02",
             "q": "स्क्रैच जूनियर पर यह एनीमेशन बनाने का मुख्य उद्देश्य क्या है?",
             "opts": {
               "1": "To practice dialogue writing skills.",
@@ -796,6 +852,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C0078-U06-Q03",
             "q": "एनीमेशन में लड़के के कोड को शुरू करने के लिए कौन सा ब्लॉक इस्तेमाल होता है?",
             "opts": {
               "1": "Start on red message block.",
@@ -805,6 +862,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C0078-U06-Q04",
             "q": "यदि आप एक नया चरित्र जोड़ते हैं जो पानी बचाने का समाधान देता है, तो एक कहने वाले ब्लॉक का उपयोग करके चरित्र का पहला संवाद क्या हो सकता है?",
             "opts": {
               "1": "“Let’s collect rainwater for plants.”",
@@ -814,6 +872,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U06-Q05",
             "q": "कल्पना करें कि आप एक दृश्य जोड़ना चाहते हैं जहाँ एक चरित्र दिखाता है कि रिसाव नल को कैसे ठीक करें। एक कहने वाले ब्लॉक का उपयोग करके आप कौन सा रचनात्मक संवाद जोड़ सकते हैं?",
             "opts": {
               "1": "“We should wait for a plumber to fix this.”",
@@ -826,6 +885,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C0078-U06-A01",
           "id": "Code-a-Water-Conversation-💧-Remedial",
           "seq": 117,
           "nm": "Chit chat",
@@ -877,6 +937,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C0078-U07",
       "nm": "Jungle Cleans Up 🐰",
       "desc": "ScratchJr interface (sprites, backgrounds, paint editor), Message blocks (send message, start on message) Motion blocks (move, hop), Looks blocks (resize, dialogue/say block), Events block (green flag start),Grid usage for movement planning and basic animation sequencing",
       "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
@@ -894,6 +955,7 @@
             "nm": "What happens after the rabbit talks? 🐇",
             "qs": [
               {
+                "qid": "QN-DUMMY-C0078-U07-V01-Q01",
                 "q": "खरगोश के लड़की से बात करने के बाद क्या होता है?",
                 "opts": {
                   "1": "The girl will throw the stick in the bin",
@@ -903,6 +965,7 @@
                 "ans": "1"
               },
               {
+                "qid": "QN-DUMMY-C0078-U07-V01-Q02",
                 "q": "हम स्क्रैच जूनियर में मैसेज ब्लॉक्स का उपयोग क्यों करते हैं?",
                 "opts": {
                   "1": "To make characters bigger",
@@ -912,6 +975,7 @@
                 "ans": "3"
               },
               {
+                "qid": "QN-DUMMY-C0078-U07-V01-Q03",
                 "q": "जब लड़की को खरगोश से लाल संदेश मिलता है तो क्या होता है?",
                 "opts": {
                   "1": "The girl jumps up and down",
@@ -929,6 +993,7 @@
         "nm": "Can blocks send messages? 📨",
         "qs": [
           {
+            "qid": "QN-DUMMY-C0078-U07-Q01",
             "q": "इस एक्टिविटी में कौन सी दो महत्वपूर्ण बातें सिखाई गई हैं?",
             "opts": {
               "1": "Using message blocks and proper waste disposal",
@@ -938,6 +1003,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U07-Q02",
             "q": "स्क्रैच जूनियर में मैसेज ब्लॉक्स के बारे में सीखना क्यों जरूरी है?",
             "opts": {
               "1": "To make characters interact with each other",
@@ -947,6 +1013,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U07-Q03",
             "q": "अगर स्क्रैच जूनियर में लॉलीपॉप उपलब्ध नहीं है तो इसे कैसे बनाया जा सकता है?",
             "opts": {
               "1": "By editing a ball sprite to look like a lollipop",
@@ -956,6 +1023,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U07-Q04",
             "q": "आप अपने दोस्तों के बीच पर्यावरण जागरूकता को बढ़ावा देने के लिए स्क्रैच जूनियर का रचनात्मक रूप से उपयोग कैसे करेंगे?",
             "opts": {
               "1": "Create an interactive story where characters clean up a park",
@@ -965,6 +1033,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U07-Q05",
             "q": "यदि आप अपने पड़ोस में रीसाइक्लिंग को बढ़ावा देने के लिए स्क्रैच जूनियर का उपयोग करना चाहते हैं, तो आप क्या बना सकते हैं?",
             "opts": {
               "1": "A dance party animation",
@@ -977,6 +1046,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C0078-U07-A01",
           "id": "Make-Characters-Pass-Messages-🐰-Intermediate",
           "seq": 118,
           "nm": "Clean up message",
@@ -1028,6 +1098,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C0078-U08",
       "nm": "Two Scripts Move Together 🏔️",
       "desc": "Motion blocks like move right, hop, turn, up, down. Run two scripts simultaneously on a single sprite. How different combinations of blocks create new types of animation. Repeat Forever block to create looping movements.",
       "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
@@ -1045,11 +1116,13 @@
             "nm": "Can one sprite do two things? 🔀",
             "qs": [
               {
+                "qid": "QN-DUMMY-C0078-U08-V01-Q01",
                 "q": "कौन सा ब्लॉक हरे झंडे पर क्लिक करने पर स्प्राइट को उसके निर्देश शुरू करने के लिए कहता है?",
                 "opts": { "1": "Move Right", "2": "Start on Green Flag", "3": "Repeat Forever" },
                 "ans": "2"
               },
               {
+                "qid": "QN-DUMMY-C0078-U08-V01-Q02",
                 "q": "आप एक स्प्राइट को एक साथ दो मूवमेंट कैसे करवाते हैं?",
                 "opts": {
                   "1": "Use one code with two different motion blocks connected together for a combined effect",
@@ -1059,6 +1132,7 @@
                 "ans": "3"
               },
               {
+                "qid": "QN-DUMMY-C0078-U08-V01-Q03",
                 "q": "कौन सा ब्लॉक आपके पूरे कोड को हमेशा के लिए दोहराएगा?",
                 "opts": { "1": "Repeat Forever", "2": "Start on Green Flag", "3": "Move Right" },
                 "ans": "1"
@@ -1072,6 +1146,7 @@
         "nm": "Can sprites move together? 🔀",
         "qs": [
           {
+            "qid": "QN-DUMMY-C0078-U08-Q01",
             "q": "जब आप Scratch Jr में एक स्प्राइट के लिए दो मूवमेंट ब्लॉक को \"Start on Green Flag\" ब्लॉक से जोड़ते हैं, तो क्या होता है?",
             "opts": {
               "1": "The sprite only performs one action",
@@ -1081,6 +1156,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C0078-U08-Q02",
             "q": "आप स्प्राइट को एक ही समय में कैसे घुमा और हिला सकते हैं?",
             "opts": {
               "1": "Add two “Start on Green Flag” blocks with different movements",
@@ -1090,6 +1166,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U08-Q03",
             "q": "यदि आप मूवमेंट को हमेशा जारी रखना चाहते हैं तो आपको क्या करना चाहिए?",
             "opts": {
               "1": "Add some more motion blocks",
@@ -1099,6 +1176,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C0078-U08-Q04",
             "q": "Scratch Jr में एक कैरेक्टर के लिए दो स्क्रिप्ट को मिलाने से आपको कैसे मदद मिलती है?",
             "opts": {
               "1": "It lets you create more complicated movements with fewer blocks",
@@ -1108,6 +1186,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C0078-U08-Q05",
             "q": "आप चाहते हैं कि आपका कैरेक्टर पीछे की ओर कूदे। आपने “Start on Green Flag” + “Hop” स्क्रिप्ट जोड़ दी है। पिछे की ओर कूदने के लिए आपको कौन सी अन्य स्क्रिप्ट जोड़ने की आवश्यकता है?",
             "opts": {
               "1": "“Start on Green Flag” + “Move Right”",
@@ -1120,6 +1199,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C0078-U08-A01",
           "id": "Combine-Scripts-for-New-Moves-🏃-Remedial",
           "seq": 119,
           "nm": "Discovering New Moves",
@@ -1171,6 +1251,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C0078-U09",
       "nm": "Crab Jumps the Bag 🦀",
       "desc": "Message blocks - to update score or trigger events. Role of Start on Tap, Start on Bump, and End Block in gaming Animate continuous movement using Repeat Forever. Run two scripts on the same character for special movement effects. Page navigation blocks to build multi-page Scratch Jr games. Basic environmental awareness: impact of plastic on sea animals.",
       "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
@@ -1188,6 +1269,7 @@
             "nm": "Can a crab reach the sea? 🌊",
             "qs": [
               {
+                "qid": "QN-DUMMY-C0078-U09-V01-Q01",
                 "q": "खेल का मुख्य लक्ष्य क्या है?",
                 "opts": {
                   "1": "To help the crab reach the sea",
@@ -1197,6 +1279,7 @@
                 "ans": "1"
               },
               {
+                "qid": "QN-DUMMY-C0078-U09-V01-Q02",
                 "q": "जब केकड़ा प्लास्टिक बैग को छूता है तो क्या होता है?",
                 "opts": {
                   "1": "The crab moves faster",
@@ -1206,6 +1289,7 @@
                 "ans": "2"
               },
               {
+                "qid": "QN-DUMMY-C0078-U09-V01-Q03",
                 "q": "जब केकड़ा समुद्र तक पहुँचता है तो वह क्या संदेश कहता है?",
                 "opts": {
                   "1": "\"Thank you for helping me!\"",
@@ -1223,11 +1307,13 @@
         "nm": "Can a crab save the sea? 🦀",
         "qs": [
           {
+            "qid": "QN-DUMMY-C0078-U09-Q01",
             "q": "स्क्रैच जूनियर खेल में समुद्र तट की पृष्ठभूमि बनाने के लिए कौन सा उपकरण उपयोग किया जाता है?",
             "opts": { "1": "Text tool", "2": "Paint tool", "3": "Shape tool" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C0078-U09-Q02",
             "q": "कहानी में केकड़े की गतियों के लिए दो अलग-अलग कोड का उपयोग करने का सुझाव क्यों दिया गया है?",
             "opts": {
               "1": "To avoid using the green flag",
@@ -1237,6 +1323,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C0078-U09-Q03",
             "q": "खेल के दौरान जब केकड़ा पॉलीबैग को छूता है तो क्या होता है?",
             "opts": {
               "1": "The game restarts",
@@ -1246,6 +1333,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C0078-U09-Q04",
             "q": "खेल को रचनात्मक रूप से कैसे बढ़ाया जा सकता है?",
             "opts": {
               "1": "Change the background to a cityscape",
@@ -1255,6 +1343,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C0078-U09-Q05",
             "q": "खेल को अधिक चुनौतीपूर्ण बनाने के लिए कौन सा रचनात्मक समाधान लागू किया जा सकता है?",
             "opts": {
               "1": "Increase the size of the polybag",
@@ -1267,6 +1356,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C0078-U09-A01",
           "id": "Build-the-Crab-Jump-Game-🦀-Advanced",
           "seq": 120,
           "nm": "Save the Crab",
@@ -1318,6 +1408,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C0078-U10",
       "nm": "Lizard Runs the Desert 🦎",
       "desc": "Trigger Blocks: Start on Green Flag, Start on Tap Motion Blocks: Move Right, Move Left, Repeat Forever Look Blocks: Grow/Shrink, Change Colors Sound Blocks: Pop sound Paint Editor: Create and modify sprites and backgrounds Game Design: How to set up a playable game with obstacles and interactions",
       "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
@@ -1335,11 +1426,13 @@
             "nm": "Can Lizzy dodge the cactus? 🌵",
             "qs": [
               {
+                "qid": "QN-DUMMY-C0078-U10-V01-Q01",
                 "q": "रेगिस्तान खेल में लिजी द लिज़र्ड का मुख्य लक्ष्य क्या है?",
                 "opts": { "1": "Fill tool", "2": "Color tool", "3": "Palette tool" },
                 "ans": "2"
               },
               {
+                "qid": "QN-DUMMY-C0078-U10-V01-Q02",
                 "q": "खेल का मुख्य लक्ष्य क्या है?",
                 "opts": {
                   "1": "To help the crab reach the sea",
@@ -1349,6 +1442,7 @@
                 "ans": "1"
               },
               {
+                "qid": "QN-DUMMY-C0078-U10-V01-Q03",
                 "q": "जब तुम खेल में लिज़ी द लिज़र्ड पर टैप करते हो तो क्या होता है?",
                 "opts": {
                   "1": "She turns into a cactus",
@@ -1366,11 +1460,13 @@
         "nm": "Can Lizzy dodge it? 🦎",
         "qs": [
           {
+            "qid": "QN-DUMMY-C0078-U10-Q01",
             "q": "रेगिस्तान खेल में लिज़ी छिपकली को किससे बचना चाहिए?",
             "opts": { "1": "Tigers", "2": "Cactus", "3": "Rocks" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C0078-U10-Q02",
             "q": "खेल में लिज़ी छिपकली पर हमें क्यों टैप करना चाहिए?",
             "opts": {
               "1": "To help her hop forward without hitting the cactus",
@@ -1380,6 +1476,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U10-Q03",
             "q": "अगर लिज़ी नीचे कूदती है और कैक्टस से टकराती है, तो खेल में हमें क्या बदलना चाहिए?",
             "opts": {
               "1": "Make the cactus bigger",
@@ -1389,6 +1486,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C0078-U10-Q04",
             "q": "प्रिया अपने रेगिस्तान के खेल में चलते हुए कैक्टस के ऊपर से छिपकली को कूदाना चाहती है। इस मजेदार चुनौती को बनाने का सबसे अच्छा तरीका क्या है?",
             "opts": {
               "1": "Use two scripts on the lizard, one to hop up and one to move forward, and run them together using the same start block.",
@@ -1398,6 +1496,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C0078-U10-Q05",
             "q": "अर्जुन चाहता है कि उसका खेल दिन के समय जैसा दिखे। उसके रेगिस्तान के खेल को चमकीला और धूप वाला बनाने का सबसे अच्छा निर्णय क्या है?",
             "opts": {
               "1": "Add more cactus",
@@ -1410,6 +1509,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C0078-U10-A01",
           "id": "Build-the-Desert-Lizard-Game-🦎-Remedial",
           "seq": 121,
           "nm": "The Desert Game",

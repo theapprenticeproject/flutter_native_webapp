@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C6083-U01",
       "nm": "Waste Becomes a Holder ♻️",
       "desc": "Recycling art",
       "rwc": "Boxes, Bottles, Paper, Glue, Scissors, Colors, Decorative Items",
@@ -26,6 +27,7 @@
         "nm": "Can trash become a holder? 🗑️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U01-Q01",
             "q": "What is the main material suggested for creating a pen holder in the activity?",
             "opts": {
               "1": "Cardboard tubes",
@@ -35,6 +37,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U01-Q02",
             "q": "Why is reusing waste materials important, according to the video?",
             "opts": {
               "1": "It reduces the cost of new products",
@@ -44,6 +47,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U01-Q03",
             "q": "What is the first step in transforming a waste box into a pen holder?",
             "opts": {
               "1": "Marking where to cut with a pen",
@@ -53,6 +57,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U01-Q04",
             "q": "How can you creatively decorate your pen holder after covering it with base paper?",
             "opts": {
               "1": "By attaching stickers and ribbons",
@@ -62,6 +67,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U01-Q05",
             "q": "If you have leftover fabric instead of paper, how can you creatively use it for your pen holder?",
             "opts": {
               "1": "Use it to wrap the pens inside the holder",
@@ -74,6 +80,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U01-A01",
           "id": "Make-a-Waste-Material-Pen-Holder-♻️-Basic",
           "seq": 38,
           "nm": "Make a Waste Material Pen Holder ♻️",
@@ -125,6 +132,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C6083-U02",
       "nm": "Box Becomes a Stand 📦",
       "desc": "Recycling art",
       "rwc": "Boxes, Bottles, Paper, Glue, Scissors, Colors",
@@ -144,6 +152,7 @@
         "nm": "What makes your holder unique? ✨",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U02-Q01",
             "q": "What materials are needed to create the pen holder?",
             "opts": {
               "1": "An empty box, waste paper, scissors, and glue",
@@ -153,6 +162,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U02-Q02",
             "q": "Why is it suggested to use two papers for covering the box?",
             "opts": {
               "1": "To ensure the paper does not tear easily",
@@ -162,6 +172,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U02-Q03",
             "q": "What should you do if glue leaves marks on the paper when designing the pen holder?",
             "opts": {
               "1": "Cover the marks with more paper",
@@ -171,6 +182,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U02-Q04",
             "q": "How can you apply creativity to decorate your pen holder?",
             "opts": {
               "1": "Follow the exact design shown in the video",
@@ -180,6 +192,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U02-Q05",
             "q": "If you want your pen holder to reflect a unique style, what should you consider doing?",
             "opts": {
               "1": "Only use plain paper and avoid patterns",
@@ -192,6 +205,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U02-A01",
           "id": "Make-a-Box-Pen-Stand-📦-Remedial",
           "seq": 39,
           "nm": "Make a Box Pen Stand 📦",
@@ -243,6 +257,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C6083-U03",
       "nm": "Everyday Things Pop 🎨",
       "desc": "PopArt",
       "rwc": "Paper, Pencil, Markers, Crayons, Oil Pastels, Marker",
@@ -262,11 +277,13 @@
         "nm": "Who invented Pop Art anyway? 🎨",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U03-Q01",
             "q": "Who is considered the father of Pop Art?",
             "opts": { "1": "Andy Warhol", "2": "Roy Lichtenstein", "3": "Pablo Picasso" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U03-Q02",
             "q": "What is the main focus of Pop Art?",
             "opts": {
               "1": "Transforming everyday objects into art",
@@ -276,6 +293,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U03-Q03",
             "q": "Which of the following is a special feature of Pop Art?",
             "opts": {
               "1": "Complex geometric patterns",
@@ -285,6 +303,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U03-Q04",
             "q": "If you were to create a Pop Art-inspired advertisement for a simple object, which of the following approaches would best demonstrate creativity?",
             "opts": {
               "1": "Using bright colors and unique patterns to make the object eye-catching",
@@ -294,6 +313,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U03-Q05",
             "q": "Imagine you have a simple object like a pencil. How could you creatively apply Pop Art techniques to make it stand out in an advertisement?",
             "opts": {
               "1": "Draw it in a realistic style with subtle shades",
@@ -306,6 +326,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U03-A01",
           "id": "Design-a-Pop-Art-Advertisement-🎨-Basic",
           "seq": 40,
           "nm": "Design a Pop Art Advertisement 🎨",
@@ -357,6 +378,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C6083-U04",
       "nm": "One Object Four Colors 🖼️",
       "desc": "PopArt",
       "rwc": "Paper, Pencil, Markers, Crayons, Oil Pastels, Marker",
@@ -376,11 +398,13 @@
         "nm": "Can objects become pop art? 🍌",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U04-Q01",
             "q": "Who is known for transforming ordinary objects into pop art?",
             "opts": { "1": "Andy Warhol", "2": "Pablo Picasso", "3": "Vincent van Gogh" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U04-Q02",
             "q": "What is the main idea of creating pop art as described in the video?",
             "opts": {
               "1": "To draw complex and realistic portraits",
@@ -390,6 +414,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U04-Q03",
             "q": "Which step involves dividing your paper into sections for the artwork?",
             "opts": {
               "1": "Create an outline",
@@ -399,6 +424,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U04-Q04",
             "q": "If you wanted to add more creativity to your pop art, what could you do besides boldening the outline?",
             "opts": {
               "1": "Draw multiple objects in one section",
@@ -408,6 +434,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U04-Q05",
             "q": "How can you make each section of your pop art look different while using complementary colors?",
             "opts": {
               "1": "Avoid using any colors",
@@ -420,6 +447,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U04-A01",
           "id": "Create-a-Four-Panel-Pop-Art-🖼️-Remedial",
           "seq": 41,
           "nm": "Create a Four Panel Pop Art 🖼️",
@@ -471,6 +499,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C6083-U05",
       "nm": "Strips Weave a Story 🧵",
       "desc": "Kente weaving technique",
       "rwc": "Base Sheet, Paper, Glue, Scissors",
@@ -490,11 +519,13 @@
         "nm": "What story does Kente tell? 🧵",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U05-Q01",
             "q": "What is the name of the cloth from Ghana ?",
             "opts": { "1": "Ankara", "2": "Dashiki", "3": "Kente" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U05-Q02",
             "q": "Why is pattern repetition important in Kente weaving?",
             "opts": {
               "1": "It makes the cloth more expensive.",
@@ -504,6 +535,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U05-Q03",
             "q": "If you were to start a Kente-style weave, what would you do first?",
             "opts": {
               "1": "Paint the base sheet with colors.",
@@ -513,6 +545,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U05-Q04",
             "q": "Imagine you are creating a Kente-inspired artwork. What unique twist can you add to your story using creativity?",
             "opts": {
               "1": "Use only one color to keep it simple.",
@@ -522,6 +555,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U05-Q05",
             "q": "How can you creatively share the story of your Kente-inspired bag with others?",
             "opts": {
               "1": "Share its story and meaning on TAP Buddy to connect globally.",
@@ -534,6 +568,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U05-A01",
           "id": "Weave-a-Kente-Inspired-Bookmark-🧵-Intermediate",
           "seq": 42,
           "nm": "Weave a Kente Inspired Bookmark 🧵",
@@ -585,6 +620,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C6083-U06",
       "nm": "Ghana Lives in Paper 🪡",
       "desc": "Kente weaving technique",
       "rwc": "Base Sheet, Colored Strips, Glue, Scissors",
@@ -604,11 +640,13 @@
         "nm": "Can strips become a weave? 🎨",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U06-Q01",
             "q": "What is the process of crossing two sets of threads or paper strips called?",
             "opts": { "1": "Sewing", "2": "Weaving", "3": "Knitting" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U06-Q02",
             "q": "What is one cultural significance of Kente weaving mentioned in the script?",
             "opts": {
               "1": "It is a modern art form.",
@@ -618,6 +656,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U06-Q03",
             "q": "Which step involves using glue to secure the strips during the weaving process?",
             "opts": {
               "1": "Making rough sketches for the final artwork",
@@ -627,11 +666,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U06-Q04",
             "q": "If you want to design a new pattern for your Kente weaving, which skill are you primarily using?",
             "opts": { "1": "Collaboration", "2": "Critical Thinking", "3": "Creativity" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U06-Q05",
             "q": "How can you creatively ensure that your weaving strips do not move while you work?",
             "opts": {
               "1": "By weaving faster",
@@ -644,6 +685,7 @@
       }
     },
     {
+      "uid": "LU-DUMMY-C6083-U07",
       "nm": "Dots Tell Nature's Tale 🌿",
       "desc": "Gond art",
       "rwc": "Paper, Pencil, Pen, Colors",
@@ -663,6 +705,7 @@
         "nm": "What does Gond art say? 🌳",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U07-Q01",
             "q": "What is Gond Art primarily used for in the tribal community of central India?",
             "opts": {
               "1": "To decorate their homes",
@@ -672,6 +715,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U07-Q02",
             "q": "What are the key elements observed in Gond Art?",
             "opts": {
               "1": "Modern architecture",
@@ -681,6 +725,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U07-Q03",
             "q": "How can you apply Gond Art to convey a message about environmental protection?",
             "opts": {
               "1": "By drawing nature-themed artwork with patterns and bright colors",
@@ -690,6 +735,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U07-Q04",
             "q": "If you could invent a new pattern for Gond Art that symbolizes harmony, which of the following would be most creative?",
             "opts": {
               "1": "A series of disconnected dots",
@@ -699,6 +745,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U07-Q05",
             "q": "To create a Gond Art piece that communicates the importance of water conservation, which combination of objects would be most creative?",
             "opts": {
               "1": "A mountain with animals",
@@ -711,6 +758,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U07-A01",
           "id": "Create-a-Gond-Art-Nature-Scene-🌿-Intermediate",
           "seq": 43,
           "nm": "Create a Gond Art Nature Scene 🌿",
@@ -762,6 +810,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C6083-U08",
       "nm": "Animal Wears Patterns 🐘",
       "desc": "Gond art",
       "rwc": "Paper, Cardboard, Pencil, Pen, Colors, Scissors",
@@ -781,6 +830,7 @@
         "nm": "Can animals become coasters? 🐾",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U08-Q01",
             "q": "What is the origin of Gond art as mentioned in the script?",
             "opts": {
               "1": "Madhya Pradesh and Central India",
@@ -790,6 +840,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U08-Q02",
             "q": "What is the first step in creating a Gond-style animal coaster?",
             "opts": {
               "1": "Outline with a dark marker",
@@ -799,6 +850,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U08-Q03",
             "q": "What should be done after drawing the animal shape in the Gond art process?",
             "opts": {
               "1": "Add patterns inspired by nature",
@@ -808,6 +860,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U08-Q04",
             "q": "If you wanted to create a Gond-style pattern using a fish as your animal, which of the following could you creatively incorporate?",
             "opts": {
               "1": "Wave lines and leaf shapes",
@@ -817,6 +870,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U08-Q05",
             "q": "Imagine you are creating a Gond-style turtle coaster. Which creative approach aligns with the skill of creativity as described in the video?",
             "opts": {
               "1": "Mixing patterns like dots and curves to give a natural vibe",
@@ -829,6 +883,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U08-A01",
           "id": "Make-a-Gond-Art-Animal-Coaster-🐘-Remedial",
           "seq": 44,
           "nm": "Make a Gond Art Animal Coaster 🐘",
@@ -880,6 +935,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C6083-U09",
       "nm": "Shapes Speak Without Words 🌍",
       "desc": "Warli art",
       "rwc": "Paper, Paint, Pen, Brush, Pencil",
@@ -899,6 +955,7 @@
         "nm": "Can shapes tell a story? 🔺",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U09-Q01",
             "q": "What type of paper is recommended for creating a Warli art poster?",
             "opts": {
               "1": "Bright white paper",
@@ -908,6 +965,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U09-Q02",
             "q": "Why is it important to add nature elements in Warli art?",
             "opts": {
               "1": "To emphasize that nature is central to the theme",
@@ -917,6 +975,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U09-Q03",
             "q": "Which shapes are primarily used in Warli art to convey messages?",
             "opts": {
               "1": "Squares, diamonds, and hexagons",
@@ -926,6 +985,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U09-Q04",
             "q": "If you chose the theme 'Save Water', which creative scene could you depict using Warli shapes?",
             "opts": {
               "1": "A person reading a book by the river",
@@ -935,6 +995,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U09-Q05",
             "q": "How can you creatively show movement in a Warli art poster about 'Don’t Litter'?",
             "opts": {
               "1": "Draw a static figure standing beside a dustbin",
@@ -947,6 +1008,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U09-A01",
           "id": "Design-a-Warli-Environment-Poster-🌍-Advanced",
           "seq": 45,
           "nm": "Design a Warli Environment Poster 🌍",
@@ -998,6 +1060,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C6083-U10",
       "nm": "Triangles Build Villages 🏕️",
       "desc": "Warli",
       "rwc": "Paper, Pen, Paint, Brush, Pencil",
@@ -1017,6 +1080,7 @@
         "nm": "What does Warli art show? 🏡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U10-Q01",
             "q": "What is the primary focus of Warli Art?",
             "opts": {
               "1": "Balance and simplicity",
@@ -1026,16 +1090,19 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U10-Q02",
             "q": "Warli art is traditionally created on which type of surface?",
             "opts": { "1": "Wooden panels", "2": "Canvas", "3": "Red mud walls" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U10-Q03",
             "q": "Which geometric shape in Warli Art represents the sun and moon?",
             "opts": { "1": "Circle", "2": "Line", "3": "Triangle" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U10-Q04",
             "q": "If you were tasked with creating a Warli art piece depicting a festival, which element would you creatively focus on?",
             "opts": {
               "1": "People dancing and celebrating",
@@ -1045,6 +1112,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U10-Q05",
             "q": "While creating Warli Art, how can you creatively enhance your artwork?",
             "opts": {
               "1": "By focusing only on geometric shapes",
@@ -1057,6 +1125,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U10-A01",
           "id": "Create-a-Warli-Village-Scene-🏕️-Remedial",
           "seq": 46,
           "nm": "Create a Warli Village Scene 🏕️",

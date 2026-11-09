@@ -48,6 +48,7 @@ lib/                        Flutter app
 assets/                     Courses (en, hi, kn, mr, pa), lesson flows, images
 documentation/              Full documentation (see below)
 scripts/export_content.py   Script that exports course content
+scripts/content_ids.py      Adds, checks and replaces the unit, question and assignment ids in the bundled course files
 test/                       Flutter tests
 ```
 

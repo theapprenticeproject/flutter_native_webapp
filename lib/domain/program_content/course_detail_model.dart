@@ -4,12 +4,31 @@ class CourseQuizQuestionModel {
     required this.options,
     required this.answerKey,
     this.explanation,
+    this.questionId = '',
   });
 
   final String question;
   final Map<String, String> options;
   final String answerKey;
   final String? explanation;
+
+  /// The id the API calls `question_id` (`qid` in the content file).
+  final String questionId;
+
+  /// The answer key as the API's letter: "1" is "a", "2" is "b", and so on.
+  /// Empty when the key is not a number from 1 to 26.
+  String get answerLetter {
+    final n = int.tryParse(answerKey);
+    if (n == null || n < 1 || n > 26) return '';
+    return String.fromCharCode(0x60 + n);
+  }
+
+  /// The API's letter for an option key such as "2" (see [answerLetter]).
+  static String letterForOptionKey(String optionKey) {
+    final n = int.tryParse(optionKey);
+    if (n == null || n < 1 || n > 26) return '';
+    return String.fromCharCode(0x60 + n);
+  }
 
   factory CourseQuizQuestionModel.fromJson(Map<String, dynamic> json) =>
       CourseQuizQuestionModel(
@@ -23,6 +42,7 @@ class CourseQuizQuestionModel {
             : const {},
         answerKey: json['ans']?.toString() ?? '',
         explanation: json['exp'] as String?,
+        questionId: json['qid'] as String? ?? '',
       );
 
   static List<CourseQuizQuestionModel> listFromJson(dynamic raw) {
@@ -146,9 +166,13 @@ class CourseAssignmentModel {
     required this.type,
     required this.difficulty,
     required this.steps,
+    this.assignmentId = '',
   });
 
   final String id;
+
+  /// The id the API calls `assignment_id` (`aid` in the content file).
+  final String assignmentId;
   final int sequence;
   final String name;
   final String description;
@@ -165,6 +189,7 @@ class CourseAssignmentModel {
         type: json['type'] as String? ?? '',
         difficulty: json['diff'] as String? ?? '',
         steps: CourseAssignmentStepModel.listFromJson(json['steps']),
+        assignmentId: json['aid'] as String? ?? '',
       );
 
   static List<CourseAssignmentModel> listFromJson(dynamic raw) {
@@ -188,8 +213,11 @@ class CourseUnitModel {
     required this.videos,
     this.quiz,
     required this.assignments,
+    this.unitId = '',
   });
 
+  /// The id the API calls `unit_id` (`uid` in the content file).
+  final String unitId;
   final String name;
   final String description;
   final String requiredComponents;
@@ -213,6 +241,7 @@ class CourseUnitModel {
               )
             : null,
         assignments: CourseAssignmentModel.listFromJson(json['assigns']),
+        unitId: json['uid'] as String? ?? '',
       );
 
   static List<CourseUnitModel> listFromJson(dynamic raw) {

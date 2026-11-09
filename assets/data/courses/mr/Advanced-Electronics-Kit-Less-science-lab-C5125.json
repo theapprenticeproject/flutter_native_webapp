@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C5125-U01",
       "nm": "The Lights-Out Lab 🏠",
       "desc": "Electric circuit, series connection, current flow, open and closed circuit, energy consumption, basic measurement of current. DC power supply, switch, LED, ammeter (series), connecting wires, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -26,6 +27,7 @@
         "nm": "Is Your Room Wasting Power? 💡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U01-Q01",
             "q": "सर्किट सिमुलेशनमध्ये स्विच बंद केल्यावर काय होते?",
             "opts": {
               "1": "The LED turns off but the ammeter still shows 20 mA.",
@@ -35,6 +37,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U01-Q02",
             "q": "विजेच्या वापराबद्दल कोणता संदेश दिला जातो?",
             "opts": {
               "1": "Leaving lights on has no significant impact on electricity consumption.",
@@ -44,11 +47,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U01-Q03",
             "q": "सर्किटमधून वाहणारी वीज मोजण्यासाठी कोणता घटक वापरला जातो?",
             "opts": { "1": "LED", "2": "Switch", "3": "Ammeter" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U01-Q04",
             "q": "जर तुमचे विजेचे बिल अनपेक्षितपणे जास्त आले तर, स्क्रिप्टच्या सल्ल्यानुसार तुम्ही कोणती कृती करू शकता?",
             "opts": {
               "1": "Turn off unnecessary lights and devices to reduce energy waste.",
@@ -58,6 +63,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U01-Q05",
             "q": "एसडीजी ७ - परवडणारी आणि स्वच्छ ऊर्जा यामध्ये तुम्ही कसा योगदान देऊ शकता?",
             "opts": {
               "1": "By using more energy to support power companies.",
@@ -70,6 +76,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U01-A01",
           "id": "Simulate-a-Smart-Room-🏠-Basic",
           "seq": 19,
           "nm": "Smart Room Energy Monitor",
@@ -121,6 +128,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U02",
       "nm": "Toggle to Save the Planet 🔦",
       "desc": "Electric circuit, current flow, open and closed circuit, current measurement, energy consumption, Ohm’s Law (basic application). DC power supply, resistor, ammeter (series), switch, LED, connecting wires, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -140,11 +148,13 @@
         "nm": "Does Your Ammeter Agree? ⚡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U02-Q01",
             "q": "EveryCircuit अ‍ॅपमध्ये तयार केलेल्या सर्किटमधील चालू स्थिती पाहण्यासाठी कोणता घटक वापरला जातो?",
             "opts": { "1": "Resistor", "2": "Toggle switch", "3": "Ammeter" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U02-Q02",
             "q": "SDG 7 संबंधित प्रकल्पाचा मुख्य उद्दिष्ट काय आहे?",
             "opts": {
               "1": "To ensure clean and reliable electricity for all and to use energy smartly",
@@ -154,6 +164,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U02-Q03",
             "q": "सिम्युलेशन दरम्यान अ‍ॅमीटर नकारात्मक चालू मुल्य दर्शवित असल्यास आपल्याला काय करावे?",
             "opts": {
               "1": "Rotate the ammeter",
@@ -163,11 +174,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U02-Q04",
             "q": "जर एखादा विद्यार्थी घरातील लाईट बंद करायला विसरला आणि अनावश्यक वीज वापर झाला, तर अ‍ॅक्टिव्हिटीमधील कोणता सर्किट घटक याला टाळण्यासाठी मदत करू शकतो?",
             "opts": { "1": "Resistor", "2": "LED", "3": "Toggle switch" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U02-Q05",
             "q": "शाळेला ऊर्जा बचत करणारे दिवे बसवायचे आहेत जे आवश्यक नसल्यास बंद होतील. असे प्रणाली डिझाइन करताना अ‍ॅक्टिव्हिटीमधील कोणती कौशल्य सर्वात उपयुक्त ठरेल?",
             "opts": {
               "1": "Calculating voltage and current",
@@ -180,6 +193,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U02-A01",
           "id": "Wire-the-Energy-Saving-Room-🔦-Remedial",
           "seq": 20,
           "nm": "EnergyEfficientLight",
@@ -231,6 +245,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U03",
       "nm": "Knob in Charge 🎚️",
       "desc": "Resistance, variable resistance (potentiometer), current flow, brightness control, energy efficiency, series circuit. DC power supply, potentiometer, LED, connecting wires, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -250,11 +265,13 @@
         "nm": "More Resistance, More Dark? 🌑",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U03-Q01",
             "q": "विद्युत सर्किटमध्ये विद्युत प्रवाह नियंत्रित करण्यासाठी कोणता मुख्य घटक वापरला जातो?",
             "opts": { "1": "Resistor", "2": "Potentiometer", "3": "Capacitor" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U03-Q02",
             "q": "पोटेंशिओमीटरचा प्रतिकार बदलल्यावर एलईडीचे तेजस्वीत बदलते का?",
             "opts": {
               "1": "Because altering resistance changes the current flow through the LED.",
@@ -264,6 +281,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U03-Q03",
             "q": "एव्हरीसर्किटमध्ये घटक जोडण्यासाठी कोणते पाऊल क्रम योग्य आहे?",
             "opts": {
               "1": "Connect power supply to potentiometer, potentiometer to LED, and LED to ground.",
@@ -273,6 +291,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U03-Q04",
             "q": "वर्णन केलेल्या सर्किट सेटअप वापरून घरातील ऊर्जा वापर कमी करायचा असल्यास काय कराल?",
             "opts": {
               "1": "Remove the LED from the circuit.",
@@ -282,6 +301,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U03-Q05",
             "q": "निर्देशांवर आधारित प्रत्यक्ष जीवनातील सर्किट मॉडेल कसे अनुकरण कराल?",
             "opts": {
               "1": "By using EveryCircuit to create and test the circuit virtually.",
@@ -294,6 +314,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U03-A01",
           "id": "Master-the-Brightness-Knob-🎚️-Basic",
           "seq": 21,
           "nm": "Smart Desk Lamp with Automatic Dimming",
@@ -345,6 +366,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U04",
       "nm": "Why Does the Resistor Get Hot? 🔥",
       "desc": "Power dissipation, voltage–current relationship, Ohm’s Law, unit conversion (mA to A). DC power supply, resistor, ammeter (series), voltmeter (parallel), simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -364,6 +386,7 @@
         "nm": "Can You Calculate the Heat? 🔥",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U04-Q01",
             "q": "प्रतिरोधकातील शक्ती नष्ट होण्याचे गणन करणाऱ्या सूत्राचे नाव काय आहे?",
             "opts": {
               "1": "Power = Voltage × Current",
@@ -373,6 +396,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U04-Q02",
             "q": "मोबाइल चार्जर खूप वेळासाठी प्लगमध्ये लावल्यावर गरम का होतो?",
             "opts": {
               "1": "Due to power dissipation as heat from electrical energy.",
@@ -382,11 +406,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U04-Q03",
             "q": "जर विद्युतदाब 9 V आणि प्रवाह 0.09 A असेल, तर प्रतिरोधकातील शक्ती नष्ट होण्याचे प्रमाण किती आहे?",
             "opts": { "1": "0.9 Watts", "2": "0.09 Watts", "3": "0.81 Watts" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U04-Q04",
             "q": "राहुलला त्याच्या सर्किटमधील प्रतिरोधक खूप गरम होत असल्याचे दिसते. त्याला माहित आहे की जास्त प्रतिकार असणारा प्रतिरोधक वापरल्यास शक्ती नष्ट होणे कमी होऊ शकते. प्रतिरोधक थंड करण्यासाठी राहुलने काय करावे?",
             "opts": {
               "1": "Replace the current resistor with one that has a higher resistance value.",
@@ -396,6 +422,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U04-Q05",
             "q": "नेहा शाळेतील प्रकल्पासाठी सुरक्षित सर्किट तयार करू इच्छिते, ज्यामुळे तिच्या प्रतिरोधकांसाठी सुरक्षित मर्यादेपेक्षा जास्त शक्ती नष्ट होणार नाही. तिच्याकडे 9 V निश्चित विद्युतदाब पुरवठा आहे. सुरक्षित शक्ती पातळी राखण्यासाठी नेहाने काय करावे?",
             "opts": {
               "1": "Use a resistor with a very low resistance value.",
@@ -408,6 +435,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U04-A01",
           "id": "Calculate-the-Power-Burn-🔥-Remedial",
           "seq": 22,
           "nm": "Power Dissipation in Resistors",
@@ -459,6 +487,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U05",
       "nm": "Light Up a Number 🔢",
       "desc": "7-segment display structure, segment control (ON/OFF), common pin connection, digit formation, multi-digit display logic. DC power supply, 7-segment display, connecting wires, ground, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -478,6 +507,7 @@
         "nm": "Which Segments Make Your Digit? 🔢",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U05-Q01",
             "q": "इलेक्ट्रॉनिक्समध्ये ७-सेगमेंट डिस्प्लेका मुख्य उद्देश काय आहे?",
             "opts": {
               "1": "To store data",
@@ -487,6 +517,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U05-Q02",
             "q": "७-सेगमेंट डिस्प्लेमध्ये अंक '७' तयार करण्यासाठी काय करणे आवश्यक आहे?",
             "opts": {
               "1": "Connect segments a, b, and c",
@@ -496,6 +527,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U05-Q03",
             "q": "मल्टी-डिजिट डिस्प्ले तयार करताना, प्रक्रियेतील पहिला टप्पा कोणता आहे?",
             "opts": {
               "1": "Connect the segments to form the digit '1'",
@@ -505,6 +537,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U05-Q04",
             "q": "जर एखाद्या विद्यार्थ्याला त्यांच्या ७-सेगमेंट डिस्प्लेवर बरोबर अंक न दाखवण्याची समस्या आली, तर त्याने पहिल्यांदा काय तपासावे?",
             "opts": {
               "1": "Check if the correct segments are connected based on the chart",
@@ -514,6 +547,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U05-Q05",
             "q": "विद्यार्थ्याला दोन ७-सेगमेंट डिस्प्ले वापरून '२५' अंक दाखवायचा आहे, तर कोणता महत्वाचा टप्पा तो घ्यायला हवा?",
             "opts": {
               "1": "Set the DC power supply to 1.5 volts for each segment",
@@ -526,6 +560,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U05-A01",
           "id": "Wire-Your-Own-Scoreboard-🔢-Intermediate",
           "seq": 23,
           "nm": "Digit Output (7-Segment) Intermediate",
@@ -577,6 +612,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U06",
       "nm": "Digits Come Alive 🖥️",
       "desc": "Seven-segment display, segment control, binary logic for digit formation, circuit connections. DC power supply, 7-segment display.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -596,11 +632,13 @@
         "nm": "Is Your Display Showing the Right Number? 🔢",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U06-Q01",
             "q": "अ‍ॅक्टिव्हिटीमध्ये डीसी पॉवर सप्लायसाठी काय व्होल्टेज सेट केले आहे?",
             "opts": { "1": "12V", "2": "3V", "3": "5V" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U06-Q02",
             "q": "सेव्हन-सिगमेंट डिस्प्लेमध्ये मुख्य कार्य काय आहे?",
             "opts": {
               "1": "To power the entire circuit",
@@ -610,6 +648,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U06-Q03",
             "q": "सूचनांनुसार ७-सिगमेंट डिस्प्लेमध्ये कॉमन पिन कसा जोडावा?",
             "opts": {
               "1": "To the positive terminal of the DC power supply",
@@ -619,6 +658,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U06-Q04",
             "q": "जर एका ७-सिगमेंट डिस्प्लेमध्ये योग्य संख्या दिसत नसेल, तर तुम्ही प्रथम काय तपासावे?",
             "opts": {
               "1": "Ensure all necessary LED segments are connected according to the number you want to display",
@@ -628,6 +668,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U06-Q05",
             "q": "७-सिगमेंट डिस्प्लेमध्ये \"४१\" संख्या योग्यरित्या दाखवली आहे का हे तुम्ही कसे तपासू शकता?",
             "opts": {
               "1": "By adjusting the voltage of the power supply",
@@ -640,6 +681,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U06-A01",
           "id": "Display-Your-Lucky-Number-🖥️-Remedial",
           "seq": 24,
           "nm": "DigitOutput(7-Segment )",
@@ -691,6 +733,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U07",
       "nm": "The Solar Panel's Gatekeeper ☀️",
       "desc": "Directional current flow, diode (forward & reverse bias), voltage measurement, circuit protection, energy efficiency in clean energy systems. DC power supply, diode, resistor, LED, voltmeter (parallel), connecting wires, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -710,6 +753,7 @@
         "nm": "Does Your Diode Keep the Current Safe? 🚦",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U07-Q01",
             "q": "सर्किटमध्ये डायोडचे प्राथमिक कार्य काय आहे?",
             "opts": {
               "1": "To allow current to flow in only one direction",
@@ -719,6 +763,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U07-Q02",
             "q": "स्वच्छ ऊर्जा प्रणालींमध्ये विद्युत प्रवाह फक्त एका दिशेने वाहणे महत्त्वाचे का आहे?",
             "opts": {
               "1": "To increase the speed of electrical flow",
@@ -728,6 +773,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U07-Q03",
             "q": "जर सर्किटमध्ये डायोड योग्यरित्या जोडलेला असेल तर काय होईल?",
             "opts": {
               "1": "The circuit will short and stop working",
@@ -737,6 +783,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U07-Q04",
             "q": "तुम्हाला लक्षात येते की सोलर पॅनल सिस्टमची बॅटरी रात्री झपाट्याने डिस्चार्ज होत आहे. हे टाळण्यासाठी तुम्ही काय करू शकाल?",
             "opts": {
               "1": "Increase the number of solar panels",
@@ -746,6 +793,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U07-Q05",
             "q": "सर्किट सिम्युलेशनमध्ये, एलईडी उजळत नाही आणि व्होल्टमीटर 0 व्होल्ट दाखवतो. समस्या काय असू शकते?",
             "opts": {
               "1": "The diode is connected in the wrong direction",
@@ -758,6 +806,7 @@
       }
     },
     {
+      "uid": "LU-DUMMY-C5125-U08",
       "nm": "No Reverse, No Waste 🔋",
       "desc": "Directional current flow, diode behavior (forward bias & reverse blocking), circuit protection, energy loss prevention, basic power flow in circuits. DC power supply (2), diode, LED, switch, connecting wires, ground, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -776,11 +825,13 @@
         "nm": "What Blocks the Reverse Flow? ⬅️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U08-Q01",
             "q": "सोलर पॅनल प्रणालीमध्ये उलट प्रवाह रोखण्यासाठी कोणता घटक वापरला जातो?",
             "opts": { "1": "Capacitor", "2": "Diode", "3": "Resistor" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U08-Q02",
             "q": "सोलर चार्जिंग प्रणालीमध्ये डायोड का महत्त्वाचा आहे?",
             "opts": {
               "1": "It changes the direction of the current.",
@@ -790,6 +841,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U08-Q03",
             "q": "सर्किटमधून डायोड काढल्यावर काय होते?",
             "opts": {
               "1": "The LED will not light up.",
@@ -799,6 +851,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U08-Q04",
             "q": "रात्री बॅटरी सोलर पॅनेलमध्ये डिस्चार्ज झाल्यास कोणती समस्या निर्माण होते?",
             "opts": {
               "1": "Improved circuit connectivity.",
@@ -808,6 +861,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U08-Q05",
             "q": "जर सोलर चार्जिंग प्रणाली कार्यक्षमतेने काम करत नसेल, तर स्क्रिप्टच्या वर्णनानुसार कोणता घटक गायब असू शकतो?",
             "opts": { "1": "Switch", "2": "LED", "3": "Diode" },
             "ans": "3"
@@ -816,6 +870,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U08-A01",
           "id": "Simulate-a-Solar-Charging-Shield-🔋-Remedial",
           "seq": 25,
           "nm": "Solar Charging Protector",
@@ -867,6 +922,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U09",
       "nm": "Bins That Speak in Color 🗑️",
       "desc": "RGB LED color mixing, circuit control using switches, parallel connections, state indication system, voltage and brightness relationship. DC power supply, toggle switches, RGB LED, connecting wires, ground, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -886,6 +942,7 @@
         "nm": "What Color is the Full Bin? 🌈",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U09-Q01",
             "q": "स्मार्ट बिन इंडिकेटरचा उद्देश काय आहे?",
             "opts": {
               "1": "To improve the aesthetic of waste bins.",
@@ -895,6 +952,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U09-Q02",
             "q": "स्मार्ट बिन इंडिकेटरमध्ये आरजीबी एलईडीची भूमिका काय आहे?",
             "opts": {
               "1": "It indicates the fullness level of the bin through different colors.",
@@ -904,6 +962,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U09-Q03",
             "q": "एव्हरीसर्किटमध्ये सर्किट कसे सिम्युलेट करता?",
             "opts": {
               "1": "By creating a model of the circuit and observing its operation.",
@@ -913,6 +972,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U09-Q04",
             "q": "जर स्मार्ट बिन इंडिकेटरचा आरजीबी एलईडी उजळत नसेल, तर तुम्ही कोणती पायरी प्रथम तपासाल?",
             "opts": {
               "1": "Remove the RGB LED and replace it with a regular LED.",
@@ -922,6 +982,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U09-Q05",
             "q": "स्मार्ट सिटीमध्ये, जर डबे कार्यक्षमतेने साफ होत नसतील तर स्मार्ट बिन इंडिकेटर कसा लागू करता येईल?",
             "opts": {
               "1": "By integrating a camera to monitor the bins.",
@@ -934,6 +995,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U09-A01",
           "id": "Build-the-Smart-City-Bin-Indicator-🗑️-Advanced",
           "seq": 26,
           "nm": "Smart Waste Bin with Full-Level Indicator and Color Feedback",
@@ -985,6 +1047,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U10",
       "nm": "Mix the Colors of Light 🌈",
       "desc": "RGB LED, LED color control, Switch mechanism, Circuit design, Troubleshooting",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -1004,11 +1067,13 @@
         "nm": "Can You Mix Red, Green and Blue? 🌈",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U10-Q01",
             "q": "कसल्या प्रकारचा LED रंगीत चमकणारे प्रभाव तयार करण्यासाठी वापरला जातो जसे की गेमिंग कीबोर्ड आणि स्टेज लाईट्समध्ये?",
             "opts": { "1": "UV LED", "2": "IR LED", "3": "RGB LED" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U10-Q02",
             "q": "RGB LED का चमकत नाही जेव्हा फक्त ग्रीन आणि ब्लू स्विचेस 2V वर चालू केले जातात?",
             "opts": {
               "1": "Because the LED is faulty",
@@ -1018,6 +1083,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U10-Q03",
             "q": "EveryCircuit अ‍ॅपमध्ये, स्विचेससह RGB LED नियंत्रित करण्यासाठी घटक कसे व्यवस्थीत करावे?",
             "opts": {
               "1": "Connect the RGB LED directly to the DC supply",
@@ -1027,6 +1093,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U10-Q04",
             "q": "जर पॉवर सप्लाय 3.2V वर सेट केले असेल, तर फक्त रेड LED सुरक्षितपणे कसे चमकवावे ज्यामुळे ते जळणार नाही?",
             "opts": {
               "1": "Turn off the DC power supply",
@@ -1036,6 +1103,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U10-Q05",
             "q": "RGB LED का खराब होते जेव्हा रेड स्विच 3.3V वर चालू केला जातो?",
             "opts": {
               "1": "Red LED needs only about 2V, so excess voltage damages it",
@@ -1048,6 +1116,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U10-A01",
           "id": "Control-the-Color-Mixer-🌈-Remedial",
           "seq": 27,
           "nm": "RGB LED",

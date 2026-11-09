@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C12267-U01",
       "nm": "Diary Tracks the Cash 📒",
       "desc": "Cash Flow Statement, Business Finance",
       "rwc": "Pencil, Eraser",
@@ -26,6 +27,7 @@
         "nm": "Can a diary track your profits? 📒",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U01-Q01",
             "q": "ਵਪਾਰ ਵਿੱਚ ਨਕਦ ਡਾਇਰੀ ਬਣਾਉਣ ਦਾ ਮੁੱਖ ਮਕਸਦ ਕੀ ਹੈ?",
             "opts": {
               "1": "To track money inflow and outflow",
@@ -35,6 +37,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U01-Q02",
             "q": "ਮਨੀ ਆਉਟ' ਦਾ ਵਪਾਰਕ ਸੰਦਰਭ ਵਿੱਚ ਕੀ ਅਰਥ ਹੈ?",
             "opts": {
               "1": "The money earned from sales",
@@ -44,6 +47,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C12267-U01-Q03",
             "q": "ਜੇ ਫਿਜ਼ਾ ਨੂੰ ਪਤਾ ਕਰਨਾ ਹੋਵੇ ਕਿ ਉਸਦੇ ਵਪਾਰ ਨੇ ਤੀਜੇ ਦਿਨ ਮੋਟਾ ਲਾਭ ਕਮਾਇਆ ਹੈ, ਤਾਂ ਉਸ ਨੂੰ ਕੀ ਗਣਨਾ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ?",
             "opts": {
               "1": "The number of customers she served",
@@ -53,11 +57,13 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C12267-U01-Q04",
             "q": "ਫਿਜ਼ਾ ਆਪਣਾ ਲੇਮੋਨੇਡ ਸਟਾਲ ਵਧਾਉਣਾ ਚਾਹੁੰਦੀ ਹੈ ਪਰ ਕੋਸ਼ੀਸ਼ ਲਈ ਪੈਸੇ ਨਹੀਂ ਹਨ। ਉਸਨੂੰ ਕਿਹੜੀ ਕਿਸਮ ਦੀ ਲੋਨ ਦੇਖਣੀ ਚਾਹੀਦੀ ਹੈ?",
             "opts": { "1": "A personal loan", "2": "A Mudra Loan", "3": "A credit card loan" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U01-Q05",
             "q": "ਕਲਪਨਾ ਕਰੋ ਕਿ ਫਿਜ਼ਾ ਨਵੇਂ ਗਾਹਕਾਂ ਨੂੰ ਆਕਰਸ਼ਿਤ ਕਰਨ ਲਈ ਮੁਦਰਾ ਲੋਨ ਦੀ ਵਰਤੋਂ ਕਰਨਾ ਚਾਹੁੰਦੀ ਹੈ। ਕੀ ਕੋਈ ਸੰਭਾਵੀ ਰਣਨੀਤੀ ਹੋ ਸਕਦੀ ਹੈ?",
             "opts": {
               "1": "Decrease product quality",
@@ -70,6 +76,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C12267-U01-A01",
           "id": "Fill-Your-Business-Cash-Diary-📒-Basic",
           "seq": 1,
           "nm": "Cash Diary Table",
@@ -121,6 +128,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C12267-U02",
       "nm": "Shop Logs Every Rupee 🧾",
       "desc": "Cash Flow Statement, Business Finance",
       "rwc": "Pencil, Eraser",
@@ -140,6 +148,7 @@
         "nm": "Did your business make profit? 💰",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U02-Q01",
             "q": "ਵਪਾਰ ਦੇ ਸੰਦਰਭ ਵਿੱਚ 'ਮਨੀ ਇਨ' ਦਾ ਕੀ ਅਰਥ ਹੈ?",
             "opts": {
               "1": "The money received from sales",
@@ -149,6 +158,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U02-Q02",
             "q": "ਸਕ੍ਰਿਪਟ ਅਨੁਸਾਰ ਵਪਾਰ ਵਿੱਚ ਨਫਾ ਕਿਵੇਂ ਨਿਰਧਾਰਿਤ ਕੀਤਾ ਜਾਂਦਾ ਹੈ?",
             "opts": {
               "1": "When Money Out is greater than Money In",
@@ -158,16 +168,19 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U02-Q03",
             "q": "ਜੇਕਰ ਵਪਾਰ ਵਿੱਚ ਮਨੀ ਇਨ ₹400 ਅਤੇ ਮਨੀ ਆਉਟ ₹150 ਹੈ, ਤਾਂ ਵਿੱਤੀ ਨਤੀਜਾ ਕੀ ਹੈ?",
             "opts": { "1": "Profit", "2": "Loss", "3": "No profit, no loss" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U02-Q04",
             "q": "ਜੇ ਤੁਸੀਂ ਆਪਣੀ ਲੇਮੋਨੇਡ ਸਟਾਲ ਵਧਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ ਪਰ ਫੰਡ ਦੀ ਘਾਟ ਹੈ, ਤਾਂ ਸਕ੍ਰਿਪਟ ਅਨੁਸਾਰ ਕਿਹੜਾ ਲੋਨ ਮਦਦ ਕਰ ਸਕਦਾ ਹੈ?",
             "opts": { "1": "Personal Loan", "2": "Mudra Loan", "3": "Mortgage Loan" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U02-Q05",
             "q": "ਸਕ੍ਰਿਪਟ ਅਨੁਸਾਰ ਵਧ ਰਹੇ ਵਪਾਰ ਲਈ ਕਿਹੜਾ ਮੁਦਰਾ ਲੋਨ ਉਚਿਤ ਹੋਵੇਗਾ?",
             "opts": { "1": "Shishu Loan", "2": "Kishor Loan", "3": "Tarun Loan" },
             "ans": "3"
@@ -176,6 +189,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C12267-U02-A01",
           "id": "Fill-Fiza's-Business-Cash-Diary-🧾-Remedial",
           "seq": 2,
           "nm": "My Simple Cash Diary",
@@ -227,6 +241,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C12267-U03",
       "nm": "Direct or Indirect Sorted 📑",
       "desc": "Types of Taxes",
       "rwc": "Pencil, Eraser",
@@ -246,6 +261,7 @@
         "nm": "Do you pay tax without knowing? 🧾",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U03-Q01",
             "q": "ਡਾਇਰੈਕਟ ਟੈਕਸ ਕੀ ਹੈ?",
             "opts": {
               "1": "A tax that is directly paid to the government by an individual or organization.",
@@ -255,6 +271,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U03-Q02",
             "q": "ਪਰੋਖ ਟੈਕਸ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ?",
             "opts": {
               "1": "It is included in the price of goods and services and paid by the consumer.",
@@ -264,11 +281,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U03-Q03",
             "q": "ਹੇਠ ਲਿਖੀਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਪ੍ਰੋਖ ਟੈਕਸ ਦਾ ਉਦਾਹਰਨ ਹੈ?",
             "opts": { "1": "Income Tax", "2": "Property Tax", "3": "Tax on biscuits" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C12267-U03-Q04",
             "q": "ਅਨਿਕਾ ਦੇ ਮਾਤਾ-ਪਿਤਾ ਨੂੰ ਮਹੀਨਾਵਾਰੀ ਤਨਖਾਹ ਮਿਲਦੀ ਹੈ, ਅਤੇ ਉਹਨਾਂ ਦੇ ਪੇਸਲਿਪ 'ਤੇ \"ਆਮਦਨੀ ਟੈਕਸ\" ਲੇਬਲ ਵਾਲੀ ਕਟੌਤੀ ਵੇਖਦੀ ਹੈ। ਅਨਿਕਾ ਨੂੰ ਇਸ ਕਟੌਤੀ ਬਾਰੇ ਕੀ ਸਮਝਣਾ ਚਾਹੀਦਾ ਹੈ?",
             "opts": {
               "1": "It is a Direct Tax paid directly from her parents' income to the government.",
@@ -278,6 +297,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U03-Q05",
             "q": "ਰਾਜ ਇੱਕ ਚਿੱਪਸ ਦਾ ਪੈਕਟ ਖਰੀਦਦਾ ਹੈ ਅਤੇ ਕੁੱਲ ਬਿੱਲ 'ਤੇ ਇੱਕ ਛੋਟੀ ਜਿਹੀ ਟੈਕਸ ਰਕਮ ਦੇਖਦਾ ਹੈ। ਉਹ ਇਸ ਕਿਸਮ ਦੇ ਟੈਕਸ ਨੂੰ ਲੈ ਕੇ ਸਮਾਰਟ ਵਿੱਤੀ ਫੈਸਲਾ ਲੈਣਾ ਚਾਹੁੰਦਾ ਹੈ। ਰਾਜ ਨੂੰ ਕੀ ਵਿਚਾਰਣਾ ਚਾਹੀਦਾ ਹੈ?",
             "opts": {
               "1": "Stop buying chips to avoid paying any tax at all.",
@@ -290,6 +310,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C12267-U03-A01",
           "id": "Sort-Direct-and-Indirect-Taxes-📑-Basic",
           "seq": 3,
           "nm": "Know Your Taxes",
@@ -341,6 +362,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C12267-U04",
       "nm": "Government Spends Wisely 🏛️",
       "desc": "Tax",
       "rwc": "Pencil, Eraser",
@@ -360,6 +382,7 @@
         "nm": "How does tax money get spent? 🏗️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U04-Q01",
             "q": "ਸਰਕਾਰ ਟੈਕਸ ਦੇ ਪੈਸੇ ਦਾ ਕੀ ਇਸਤੇਮਾਲ ਕਰਦੀ ਹੈ?",
             "opts": {
               "1": "To run public services like roads and hospitals",
@@ -369,6 +392,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U04-Q02",
             "q": "ਸਰਕਾਰ ਦੇ ਹਰ ਫੈਸਲੇ ਨੂੰ ਕਿਉਂ ਮਾਅਤਵਪੂਰਨ ਸਮਝਿਆ ਜਾਂਦਾ ਹੈ?",
             "opts": {
               "1": "Because choices can be changed anytime without impact",
@@ -378,6 +402,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C12267-U04-Q03",
             "q": "ਜੇਕਰ ਸਕੂਲ ਦੀ ਛੱਤ ਟੁੱਟੀ ਹੋਵੇ ਤਾਂ ਕਿਹੜੇ ਖੇਤਰ ਨੂੰ ਟੈਕਸ ਪੈਸੇ ਦੀ ਲੋੜ ਹੈ?",
             "opts": {
               "1": "Buying more computer",
@@ -387,6 +412,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C12267-U04-Q04",
             "q": "ਜੇ ਸਾਰੇ ਪੈਸੇ ਸਿਰਫ਼ ਇੱਕ ਮਨਪਸੰਦ ਸਮੱਸਿਆ 'ਤੇ ਖਰਚ ਕੀਤੇ ਜਾਣ ਤਾਂ ਕੀ ਹੋ ਸਕਦਾ ਹੈ?",
             "opts": {
               "1": "Other important needs will not get support",
@@ -396,6 +422,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U04-Q05",
             "q": "ਤੁਸੀਂ ਇੱਕ ਪੋਸਟਰ ਬਣਾ ਰਹੇ ਹੋ। ਕਿਹੜਾ ਸਿਰਲੇਖ ਸਪਸ਼ਟ ਫੈਸਲਾ ਲੈਣ ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ?",
             "opts": {
               "1": "My favourite colours and drawings",
@@ -408,6 +435,7 @@
       }
     },
     {
+      "uid": "LU-DUMMY-C12267-U05",
       "nm": "Wheel Spins the Investments 🎡",
       "desc": "Investments Types of investments Diversification",
       "rwc": "Pencil, Eraser",
@@ -427,6 +455,7 @@
         "nm": "Can smart investing reduce risk? 📊",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U05-Q01",
             "q": "ਐਕਟਿਵਿਟੀ 'ਸਮਾਰਟ ਇਨਵੈਸਟਿੰਗ' ਦਾ ਮੁੱਖ ਧਿਆਨ ਕੀ ਹੈ?",
             "opts": {
               "1": "Financial Literacy",
@@ -436,6 +465,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U05-Q02",
             "q": "ਨਿਵੇਸ਼ਾਂ ਦੇ ਸੰਦਰਭ ਵਿੱਚ ਵਿਭਿੰਨਤਾ ਕੀ ਹੈ?",
             "opts": {
               "1": "Spreading money across different investments",
@@ -445,6 +475,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U05-Q03",
             "q": "ਸਕ੍ਰਿਪਟ ਮੁਤਾਬਕ ਵਾਪਸੀ ਨੂੰ ਸੰਤੁਲਿਤ ਅਤੇ ਖਤਰਾ ਘਟਾਉਣ ਦਾ ਕੀ ਤਰੀਕਾ ਹੈ?",
             "opts": {
               "1": "By only choosing the safest investments",
@@ -454,6 +485,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U05-Q04",
             "q": "ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਖਤਰੇ ਲਈ ਉੱਚ ਸਹਿਨਸ਼ੀਲਤਾ ਹੈ ਅਤੇ ਵਾਪਸੀ ਨੂੰ ਵਧਾਉਣੀ ਹੈ, ਤਾਂ ਤੁਹਾਨੂੰ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
             "opts": {
               "1": "Invest more in risky investments",
@@ -463,6 +495,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U05-Q05",
             "q": "ਤੁਹਾਡੇ ਕੋਲ 20,000 ਰੁਪਏ ਹਨ ਜੋ ਤੁਸੀਂ ਨਿਵੇਸ਼ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ ਅਤੇ ਵਿਭਿੰਨਤਾ ਅਭਿਆਸ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ। ਇੱਕ ਸੰਤੁਲਿਤ ਪਹੁੰਚ ਕੀ ਹੈ?",
             "opts": {
               "1": "Invest all in one risky investment",
@@ -475,6 +508,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C12267-U05-A01",
           "id": "Build-Your-Investment-Wheel-🎡-Intermediate",
           "seq": 4,
           "nm": "Smart Investing",
@@ -526,6 +560,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C12267-U06",
       "nm": "Risk Meets the Return 📈",
       "desc": "Investments, Risk, Return",
       "rwc": "Pencil, Eraser",
@@ -545,6 +580,7 @@
         "nm": "Can risk ever be worth it? 💹",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U06-Q01",
             "q": "ਨਿਵੇਸ਼ ਦਾ ਕੀ ਮਤਲਬ ਹੈ?",
             "opts": {
               "1": "Spending all your money on Wants",
@@ -554,6 +590,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U06-Q02",
             "q": "ਲੋਕ ਨਿਵੇਸ਼ ਕਿਉਂ ਕਰਦੇ ਹਨ ਜਦੋਂ ਕਿ ਇਸ ਵਿੱਚ ਖਤਰਾ ਹੈ?",
             "opts": {
               "1": "Because investments give returns, which can be profit or loss",
@@ -563,16 +600,19 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U06-Q03",
             "q": "ਜੇ ਤੁਸੀਂ ਪੈਸਾ ਫਿਕਸਡ ਡਿਪਾਜ਼ਿਟ ਵਿੱਚ ਪਾਉਂਦੇ ਹੋ, ਤਾਂ ਇਹ ਕਿਸ ਕਿਸਮ ਦਾ ਨਿਵੇਸ਼ ਹੈ?",
             "opts": { "1": "Safe Investment", "2": "Risky Investment", "3": "No Investment" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U06-Q04",
             "q": "ਕਲਪਨਾ ਕਰੋ ਕਿ ਤੁਹਾਨੂੰ 2 ਮਹੀਨਿਆਂ ਵਿੱਚ ਆਪਣੇ ਪੈਸੇ ਸੁਰੱਖਿਅਤ ਤਰੀਕੇ ਨਾਲ ਵਾਪਸ ਲੋੜ ਹਨ। ਤੁਹਾਨੂੰ ਕਿਹੜਾ ਵਿਕਲਪ ਚੁਣਨਾ ਚਾਹੀਦਾ ਹੈ?",
             "opts": { "1": "Stocks", "2": "Savings account", "3": "Cryptocurrency" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U06-Q05",
             "q": "ਕਲਪਨਾ ਕਰੋ ਕਿ ਤੁਸੀਂ ਆਪਣੇ ਪੈਸੇ ਨੂੰ 10 ਸਾਲਾਂ ਵਿੱਚ ਵਧਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ। ਸਮਾਰਟ ਚੋਣ ਕਿਹੜੀ ਹੈ?",
             "opts": {
               "1": "Keep all money at home",
@@ -585,6 +625,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C12267-U06-A01",
           "id": "Choose-Your-Safe-and-Risky-Investments-📈-Remedial",
           "seq": 5,
           "nm": "Introduction to Investments",
@@ -636,6 +677,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C12267-U07",
       "nm": "Puzzle Unlocks Payments 🧩",
       "desc": "Digital Payments",
       "rwc": "Pencil, Eraser",
@@ -655,6 +697,7 @@
         "nm": "Can UPI replace your wallet? 📲",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U07-Q01",
             "q": "ਡਿਜੀਟਲ ਭੁਗਤਾਨਾਂ ਦੇ ਸੰਦਰਭ ਵਿੱਚ ਯੂ.ਪੀ.ਆਈ ਦਾ ਕੀ ਮਤਲਬ ਹੈ?",
             "opts": {
               "1": "Universal Payments Interface",
@@ -664,6 +707,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U07-Q02",
             "q": "ਸਕ੍ਰਿਪਟ ਦੇ ਅਨੁਸਾਰ ਡਿਜੀਟਲ ਭੁਗਤਾਨ ਐਸ.ਡੀ.ਜੀ 8 ਨੂੰ ਕਿਵੇਂ ਸਹਾਇਤਾ ਕਰਦੇ ਹਨ?",
             "opts": {
               "1": "By reducing the need for physical currency and promoting global trade",
@@ -673,6 +717,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U07-Q03",
             "q": "ਕਿਹੜਾ ਤਰੀਕਾ ਤੁਰੰਤ ਭੁਗਤਾਨ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ ਬਿਨਾਂ ਸਹੀ ਰੁੱਖ ਦੀ ਚਿੰਤਾ ਕੀਤੇ, ਸਕ੍ਰਿਪਟ ਦੇ ਅਨੁਸਾਰ?",
             "opts": {
               "1": "Scanning a QR code with your phone",
@@ -682,6 +727,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U07-Q04",
             "q": "ਤੁਸੀਂ ਇੱਕ ਦੁਕਾਨਦਾਰ ਹੋ ਜੋ ਇੱਕ ਵਿਆਸਤ ਦਿਨ ਦੇ ਬਾਅਦ ਜਲਦੀ ਸਟਾਕ ਮੁੜ ਭਰਨਾ ਚਾਹੁੰਦੇ ਹੋ। ਤੁਸੀਂ ਗਾਹਕਾਂ ਨੂੰ ਕਿਹੜੀ ਭੁਗਤਾਨ ਵਿਧੀ ਦੀ ਪ੍ਰੋਤਸਾਹਨਾ ਦੇਣੀ ਚਾਹੀਦੀ ਹੈ ਤਾਂ ਕਿ ਫੰਡਾਂ ਤੱਕ ਜਲਦੀ ਪਹੁੰਚ ਯਕੀਨੀ ਬਣਾਈ ਜਾ ਸਕੇ?",
             "opts": {
               "1": "Digital payments via UPI",
@@ -691,6 +737,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U07-Q05",
             "q": "ਤੁਸੀਂ ਇੱਕ ਦਿਹਾੜੀਦਾਰ ਮਜ਼ਦੂਰ ਨੂੰ ਭੁਗਤਾਨ ਕਰਨ ਦੀ ਯੋਜਨਾ ਬਣਾ ਰਹੇ ਹੋ ਜਿਵੇਂ ਹੀ ਉਹ ਆਪਣਾ ਕੰਮ ਖਤਮ ਕਰ ਲੈਂਦੇ ਹਨ। ਸਕ੍ਰਿਪਟ ਦੇ ਅਨੁਸਾਰ ਸਭ ਤੋਂ ਕੁਸ਼ਲ ਭੁਗਤਾਨ ਵਿਧੀ ਕੀ ਹੈ?",
             "opts": { "1": "Paying in cash", "2": "Digital transfer", "3": "Writing a check" },
             "ans": "2"
@@ -699,6 +746,7 @@
       }
     },
     {
+      "uid": "LU-DUMMY-C12267-U08",
       "nm": "Chart Maps the Transfer 💳",
       "desc": "Digital Payments",
       "rwc": "Pencil, Eraser",
@@ -718,6 +766,7 @@
         "nm": "Which payment is truly instant? ⚡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U08-Q01",
             "q": "UPI ਦਾ ਕੀ ਮਤਲਬ ਹੈ?",
             "opts": {
               "1": "Unified Payments Interface",
@@ -727,11 +776,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U08-Q02",
             "q": "ਕਿਹੜੀ ਡਿਜ਼ੀਟਲ ਭੁਗਤਾਨ ਵਿਧੀ ਆਮ ਤੌਰ 'ਤੇ ਤੁਰੰਤ ਨਹੀਂ ਹੁੰਦੀ ਅਤੇ ਕੁਝ ਸਮਾਂ ਲੱਗ ਸਕਦਾ ਹੈ?",
             "opts": { "1": "IMPS", "2": "UPI", "3": "NEFT" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C12267-U08-Q03",
             "q": "ਡਿਜ਼ੀਟਲ ਭੁਗਤਾਨ ਕਰਨ ਲਈ ਪਹਿਲਾ ਕਦਮ ਕੀ ਹੁੰਦਾ ਹੈ?",
             "opts": {
               "1": "Open the app or website",
@@ -741,11 +792,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U08-Q04",
             "q": "ਜੇ ਤੁਹਾਨੂੰ ਵੱਡੀ ਰਕਮ ਤੁਰੰਤ ਟਰਾਂਸਫਰ ਕਰਨ ਦੀ ਲੋੜ ਹੈ, ਤਾਂ ਕਿਹੜੀ ਵਿਧੀ ਚੁਣੋ?",
             "opts": { "1": "RTGS", "2": "NEFT", "3": "UPI" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U08-Q05",
             "q": "ਤੁਸੀਂ ਇਕ ਦੁਕਾਨ 'ਤੇ ਹੋ ਜੋ ਕਿ ਨਕਦ ਨਹੀਂ ਲੈਂਦੀ। ਜਲਦੀ ਭੁਗਤਾਨ ਕਰਨ ਲਈ ਸਮਾਰਟਫੋਨ ਐਪ ਨੂੰ ਕਿਵੇਂ ਵਰਤਣਾ ਹੈ?",
             "opts": {
               "1": "Wait for NEFT transfer",
@@ -758,6 +811,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C12267-U08-A01",
           "id": "Complete-the-Digital-Payments-Chart-💳-Remedial",
           "seq": 6,
           "nm": "Simple Digital Payment Chart",
@@ -809,6 +863,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C12267-U09",
       "nm": "Loan Funds the Dream 🎓",
       "desc": "Education Loan Flowchart",
       "rwc": "Pencil, Eraser",
@@ -828,6 +883,7 @@
         "nm": "Can a loan fund your studies? 🎓",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U09-Q01",
             "q": "ਸਕ੍ਰਿਪਟ ਅਨੁਸਾਰ ਸਿੱਖਿਆ ਲੋਨ ਦਾ ਮੁਖ ਉਦੇਸ਼ ਕੀ ਹੈ?",
             "opts": {
               "1": "To buy a new car",
@@ -837,6 +893,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U09-Q02",
             "q": "ਵੱਖ-ਵੱਖ ਸਿੱਖਿਆ ਲੋਨ ਵਿਕਲਪਾਂ ਦੀ ਤੁਲਨਾ ਕਰਨੀ ਕਿਉਂ ਮਹੱਤਵਪੂਰਨ ਹੈ?",
             "opts": {
               "1": "To avoid wrong decisions and reduce financial pressure",
@@ -846,6 +903,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U09-Q03",
             "q": "ਸਿੱਖਿਆ ਲੋਨ ਲਈ ਜ਼ਰੂਰੀ ਦਸਤਾਵੇਜ਼ ਇਕੱਠੇ ਕਰਨ ਤੋਂ ਬਾਅਦ ਰੀਆ ਨੂੰ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
             "opts": {
               "1": "Fill out the loan application form",
@@ -855,11 +913,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U09-Q04",
             "q": "ਰੀਆ ਦੋ ਲੋਨ ਦੇ ਵਿਚਕਾਰ ਚੋਣ ਕਰ ਰਹੀ ਹੈ। ਲੋਨ 1 ਵਿੱਚ ਘੱਟ ਵਿਆਜ ਦਰ ਹੈ, ਪਰ ਛੋਟੀ ਮੋਰਾਟੋਰੀਅਮ ਅਵਧੀ ਹੈ। ਲੋਨ 2 ਵਿੱਚ ਥੋੜ੍ਹੀ ਵੱਧ ਵਿਆਜ ਦਰ ਹੈ, ਪਰ ਲੰਮੀ ਮੋਰਾਟੋਰੀਅਮ ਅਵਧੀ ਹੈ। ਜੇਕਰ ਉਹ ਤਤਕਾਲ ਵਿੱਤੀ ਦਬਾਅ ਘਟਾਉਣਾ ਚਾਹੁੰਦੀ ਹੈ, ਤਾਂ ਉਸਨੂੰ ਕਿਹੜਾ ਲੋਨ ਵਿਚਾਰਣਾ ਚਾਹੀਦਾ ਹੈ?",
             "opts": { "1": "Loan 1", "2": "Both are equal", "3": "Loan 2" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C12267-U09-Q05",
             "q": "ਰੀਆ ਦੀ ਦੋਸਤ ਇਹ ਨਹੀਂ ਜਾਣਦੀ ਕਿ ਉਸਦਾ ਸਿੱਖਿਆ ਲੋਨ ਕਦੋਂ ਵਾਪਸ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰਨਾ ਹੈ। ਮੋਰਾਟੋਰੀਅਮ ਅਵਧੀ ਧਾਰਣਾ ਦੇ ਅਧਾਰ 'ਤੇ ਰੀਆ ਨੂੰ ਕੀ ਸਲਾਹ ਦੇਣੀ ਚਾਹੀਦੀ ਹੈ?",
             "opts": {
               "1": "Repay after course completion plus 6 months to 1 year",
@@ -872,6 +932,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C12267-U09-A01",
           "id": "Map-the-Education-Loan-Steps-🎓-Advanced",
           "seq": 7,
           "nm": "The Education Loan Guide",
@@ -923,6 +984,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C12267-U10",
       "nm": "Steps Open the Future 🚪",
       "desc": "Education Loan Flowchart",
       "rwc": "Pencil, Eraser",
@@ -942,11 +1004,13 @@
         "nm": "Which loan has better terms? 📝",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U10-Q01",
             "q": "ਸਿੱਖਿਆ ਲੋਣ ਲਈ ਅਰਜ਼ੀ ਦੇਣ ਦੀ ਪਹਿਲੀ ਕਦਮ ਕੀ ਹੈ?",
             "opts": { "1": "Check eligibility", "2": "Collect documents", "3": "Compare loans" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U10-Q02",
             "q": "ਮੋਰਾਟੋਰੀਅਮ ਪੀਰੀਅਡ ਤੁਹਾਨੂੰ ਕੀ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ?",
             "opts": {
               "1": "Have a break time from repaying the loan",
@@ -956,6 +1020,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U10-Q03",
             "q": "ਕੋ-ਐਪਲੀਕੈਂਟ ਦੀ ਆਮਦਨ ਸਬੂਤ ਲਈ ਕਿਹੜੇ ਦਸਤਾਵੇਜ਼ ਲੋੜੀਂਦੇ ਹਨ?",
             "opts": {
               "1": "Aadhaar and passport",
@@ -965,6 +1030,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U10-Q04",
             "q": "ਜੇ ਤੁਸੀਂ ਲੋਣ ਚੁਣ ਰਹੇ ਹੋ, ਤਾਂ ਕਿਹੜਾ ਵਿਕਲਪ ਬਿਹਤਰ ਹੈ?",
             "opts": {
               "1": "Low interest + long moratorium",
@@ -974,6 +1040,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U10-Q05",
             "q": "ਰੀਆ ਬਿਨਾ ਵਿੱਤੀ ਦਬਾਅ ਦੇ ਪੜਾਈ ਕਰਨਾ ਚਾਹੁੰਦੀ ਹੈ। ਉਹਨਾਂ ਨੂੰ ਕਿਹੜੀ ਲੋਣ ਵਿਸ਼ੇਸ਼ਤਾ ਨੂੰ ਮਹੱਤਵ ਦੇਣਾ ਚਾਹੀਦਾ ਹੈ?",
             "opts": {
               "1": "High loan amount",
@@ -986,6 +1053,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C12267-U10-A01",
           "id": "Complete-the-Education-Loan-Guide-🚪-Remedial",
           "seq": 8,
           "nm": "Simple Education Loan Guide",

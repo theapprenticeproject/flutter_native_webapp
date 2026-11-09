@@ -5,6 +5,8 @@ import requests
 from pathlib import Path
 from dotenv import load_dotenv
 
+import content_ids
+
 load_dotenv(Path(__file__).parent / ".env")
 
 BASE_URL   = os.environ["FRAPPE_BASE_URL"].rstrip("/")
@@ -58,10 +60,17 @@ def main():
 
     payload = result["payload"]
 
-    for d in (COURSES_DIR, CONSTANTS_DIR, STATES_DIR, DISTRICTS_DIR):
+    for d in (CONSTANTS_DIR, STATES_DIR, DISTRICTS_DIR):
         if d.exists():
             shutil.rmtree(d)
         d.mkdir(parents=True, exist_ok=True)
+
+    # Remove only the language folders. The thumbnail pictures in
+    # assets/data/courses/thumbnail are not made by this script.
+    COURSES_DIR.mkdir(parents=True, exist_ok=True)
+    for child in COURSES_DIR.iterdir():
+        if child.is_dir() and child.name != "thumbnail":
+            shutil.rmtree(child)
 
     write(CONSTANTS_DIR / "constants.json", {**payload["constants"], "grades": GRADES})
     write(CONSTANTS_DIR / "languages.json", payload["languages"])
@@ -72,6 +81,7 @@ def main():
             continue
         write(DISTRICTS_DIR / f"{_slug(state_id)}.json", districts)
 
+    dummy_ids_added = 0
     for lang, lang_data in payload["langs"].items():
         index = lang_data["index"]
         for entry in index.get("courses", []):
@@ -80,6 +90,8 @@ def main():
 
         for cid, course_data in lang_data["courses"].items():
             course_data["id"] = _slug(cid)
+            # Keep the ids from the backend. Add a DUMMY id only where one is missing.
+            dummy_ids_added += content_ids.add_ids_to_course(course_data)
             write(COURSES_DIR / lang / f"{_slug(cid)}.json", course_data)
 
     print(f"\nExporting citizenship content from {BASE_URL} ...")
@@ -91,9 +103,10 @@ def main():
 
     content_items = content_result["payload"]["content"]
 
-    if CONTENT_DIR.exists():
-        shutil.rmtree(CONTENT_DIR)
+    # Replace only the three files. The thumbnail pictures stay.
     CONTENT_DIR.mkdir(parents=True, exist_ok=True)
+    for name in ("event.json", "knowledge-centre.json", "project.json"):
+        (CONTENT_DIR / name).unlink(missing_ok=True)
 
     events = [item for item in content_items if item.get("type") == "Event"]
     knowledge = [item for item in content_items if item.get("type") == "Knowledge Center"]
@@ -103,6 +116,12 @@ def main():
     write(CONTENT_DIR / "knowledge-centre.json", knowledge)
     write(CONTENT_DIR / "project.json", projects)
 
+    if dummy_ids_added:
+        print(
+            f"\nWARNING: {dummy_ids_added} DUMMY id(s) were added because the backend "
+            "did not send them. Do not deploy with them: replace them with real ids "
+            "(task B19, python3 scripts/content_ids.py --check --no-dummy)."
+        )
     print(f"\nDone — {DATA_DIR}")
 
 

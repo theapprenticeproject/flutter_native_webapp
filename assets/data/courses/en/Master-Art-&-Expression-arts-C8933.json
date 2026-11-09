@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C8933-U01",
       "nm": "Shirt Carries a Message 👕",
       "desc": "Upcycling",
       "rwc": "Old T-Shirt, Scissors, Colors, Fabric, Markers",
@@ -26,6 +27,7 @@
         "nm": "Can a T-shirt carry groceries? 👕",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U01-Q01",
             "q": "What is the primary goal of the activity ?",
             "opts": {
               "1": "To promote climate action and reuse",
@@ -35,6 +37,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U01-Q02",
             "q": "Why does the script suggest using old T-shirts to make tote bags?",
             "opts": {
               "1": "To reduce waste and support sustainable practices",
@@ -44,6 +47,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U01-Q03",
             "q": "What are the first steps in transforming an old T-shirt into a tote bag?",
             "opts": {
               "1": "Sewing the bottom of the T-shirt",
@@ -53,6 +57,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U01-Q04",
             "q": "How can you creatively express a message for climate action on the tote bag?",
             "opts": {
               "1": "By using bright, non-recyclable materials",
@@ -62,6 +67,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U01-Q05",
             "q": "Which 21st-century skill is emphasized when turning the T-shirt inside out after tying the fringes?",
             "opts": {
               "1": "Speed and efficiency",
@@ -74,6 +80,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U01-A01",
           "id": "Turn-a-T-Shirt-Into-a-Tote-Bag-👕-Basic",
           "seq": 77,
           "nm": "Turn a T-Shirt Into a Tote Bag 👕",
@@ -125,6 +132,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C8933-U02",
       "nm": "Old Tee Gets Purpose 🧵",
       "desc": "Upcycling",
       "rwc": "Old T-Shirt, Scissors, Colors, Fabric",
@@ -142,6 +150,7 @@
             "nm": "Can an old shirt become a bag? 🛍️",
             "qs": [
               {
+                "qid": "QN-DUMMY-C8933-U02-V01-Q01",
                 "q": "What is the first step in converting an old T-shirt into a reusable bag?",
                 "opts": {
                   "1": "Cut the sleeves of the T-shirt.",
@@ -151,6 +160,7 @@
                 "ans": "3"
               },
               {
+                "qid": "QN-DUMMY-C8933-U02-V01-Q02",
                 "q": "Why should the neck of the T-shirt be cut larger than its original size?",
                 "opts": {
                   "1": "To improve the appearance of the T-shirt.",
@@ -160,6 +170,7 @@
                 "ans": "3"
               },
               {
+                "qid": "QN-DUMMY-C8933-U02-V01-Q03",
                 "q": "What is the purpose of tying the strips at the bottom of the T-shirt?",
                 "opts": {
                   "1": "To form the base of the bag.",
@@ -169,6 +180,7 @@
                 "ans": "1"
               },
               {
+                "qid": "QN-DUMMY-C8933-U02-V01-Q04",
                 "q": "If you want to create a larger carrying capacity for your bag, what creative adjustment could you make?",
                 "opts": {
                   "1": "Add more decorative elements with fabric paint.",
@@ -178,6 +190,7 @@
                 "ans": "2"
               },
               {
+                "qid": "QN-DUMMY-C8933-U02-V01-Q05",
                 "q": "How can you personalize your reusable bag to reflect your unique style?",
                 "opts": {
                   "1": "By choosing a brightly colored T-shirt.",
@@ -195,6 +208,7 @@
         "nm": "Can an old shirt become a bag? 🛍️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U02-Q01",
             "q": "What is the first step in converting an old T-shirt into a reusable bag?",
             "opts": {
               "1": "Cut the sleeves of the T-shirt.",
@@ -204,6 +218,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U02-Q02",
             "q": "Why should the neck of the T-shirt be cut larger than its original size?",
             "opts": {
               "1": "To improve the appearance of the T-shirt.",
@@ -213,6 +228,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U02-Q03",
             "q": "What is the purpose of tying the strips at the bottom of the T-shirt?",
             "opts": {
               "1": "To form the base of the bag.",
@@ -222,6 +238,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U02-Q04",
             "q": "If you want to create a larger carrying capacity for your bag, what creative adjustment could you make?",
             "opts": {
               "1": "Add more decorative elements with fabric paint.",
@@ -231,6 +248,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C8933-U02-Q05",
             "q": "How can you personalize your reusable bag to reflect your unique style?",
             "opts": {
               "1": "By choosing a brightly colored T-shirt.",
@@ -243,6 +261,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U02-A01",
           "id": "Make-a-Reusable-Tote-Bag-🧵-Remedial",
           "seq": 78,
           "nm": "Make a Reusable Tote Bag 🧵",
@@ -253,6 +272,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C8933-U03",
       "nm": "Threads Build a Mat 🪡",
       "desc": "Weaving technique",
       "rwc": "Cardboard, Yarn, Paper, Glue, Scissors",
@@ -272,11 +292,13 @@
         "nm": "Can cardboard become a coaster? 🧵",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U03-Q01",
             "q": "What is the primary material used to create the base for the weaving project?",
             "opts": { "1": "A piece of cardboard", "2": "A plastic frame", "3": "A piece of wood" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U03-Q02",
             "q": "Why is it important to ensure that the gaps on the cardboard are evenly spaced?",
             "opts": {
               "1": "For neat weaving later",
@@ -286,6 +308,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U03-Q03",
             "q": "What should you do after reaching the opposite side while weaving?",
             "opts": {
               "1": "Cut the thread immediately",
@@ -295,6 +318,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C8933-U03-Q04",
             "q": "How can you personalize your coaster design?",
             "opts": {
               "1": "Reduce the number of threads used",
@@ -304,6 +328,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U03-Q05",
             "q": "What is a creative way to finish your coaster after cutting the threads on the back?",
             "opts": {
               "1": "Glue the threads to the cardboard",
@@ -316,6 +341,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U03-A01",
           "id": "Weave-a-Handmade-Coaster-🪡-Basic",
           "seq": 79,
           "nm": "Weave a Handmade Coaster 🪡",
@@ -367,6 +393,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C8933-U04",
       "nm": "Yarn Finds Its Pattern 🧶",
       "desc": "Weaving",
       "rwc": "Cardboard, Yarn, Paper, Glue",
@@ -386,6 +413,7 @@
         "nm": "Can thread weave into a coaster? 🎨",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U04-Q01",
             "q": "What is one of the materials needed to make the handmade coaster?",
             "opts": {
               "1": "A paintbrush",
@@ -395,6 +423,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U04-Q02",
             "q": "What is the purpose of making small cuts on the sides of the cardboard?",
             "opts": {
               "1": "To help with threading and spacing",
@@ -404,11 +433,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U04-Q03",
             "q": "Which step involves using a back-and-forth motion with the thread?",
             "opts": { "1": "Cutting", "2": "Setting the Base", "3": "Weaving" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C8933-U04-Q04",
             "q": "If you wanted to add a personal touch to your coaster, which of the following could you do?",
             "opts": {
               "1": "Use only one color of thread for a uniform look",
@@ -418,6 +449,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U04-Q05",
             "q": "How can you enhance the final appearance of your coaster creatively?",
             "opts": {
               "1": "Leave the threads loose for a casual look",
@@ -430,6 +462,7 @@
       }
     },
     {
+      "uid": "LU-DUMMY-C8933-U05",
       "nm": "Warli Saves the Earth 🌿",
       "desc": "Warli art",
       "rwc": "Paper, Pen, Paint, Brush",
@@ -449,6 +482,7 @@
         "nm": "Can matchsticks draw Warli art? 🔥",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U05-Q01",
             "q": "What are the main features of Warli Art as described in the video ?",
             "opts": {
               "1": "Geometric shapes and eco-friendly colors",
@@ -458,6 +492,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U05-Q02",
             "q": "What is the purpose of using matchsticks and earbuds in creating Warli Art?",
             "opts": {
               "1": "To create a more colorful artwork",
@@ -467,6 +502,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U05-Q03",
             "q": "How can Warli Art be used to demonstrate modern sustainable practices?",
             "opts": {
               "1": "By incorporating themes like rainwater harvesting and solar energy",
@@ -476,6 +512,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U05-Q04",
             "q": "If you were to create a Warli Art piece highlighting the theme of recycling, which creative materials could you use?",
             "opts": {
               "1": "High-end acrylic paints and canvases",
@@ -485,6 +522,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U05-Q05",
             "q": "Imagine you want to create a unique Warli Art project that highlights the importance of biodiversity. What innovative approach could you take?",
             "opts": {
               "1": "Focus solely on depicting human activities",
@@ -497,6 +535,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U05-A01",
           "id": "Create-a-Sustainable-Warli-Artwork-🌿-Intermediate",
           "seq": 80,
           "nm": "Create a Sustainable Warli Artwork 🌿",
@@ -548,6 +587,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C8933-U06",
       "nm": "Triangles Tell Life 🏕️",
       "desc": "Warli art",
       "rwc": "Paper, Pen, Paint",
@@ -567,6 +607,7 @@
         "nm": "Can shapes tell tribal stories? 🔺",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U06-Q01",
             "q": "What are the primary shapes used in Warli Art?",
             "opts": {
               "1": "Circles, triangles, and lines",
@@ -576,6 +617,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U06-Q02",
             "q": "What does a circle typically represent in Warli Art?",
             "opts": {
               "1": "The sun and moon",
@@ -585,6 +627,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U06-Q03",
             "q": "How can you make characters unique in Warli Art?",
             "opts": {
               "1": "By adding detailed facial features",
@@ -594,6 +637,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U06-Q04",
             "q": "If you were to create a Warli Art piece depicting a festival, which elements might you include using creativity?",
             "opts": {
               "1": "People dancing, musical instruments, and decorations",
@@ -603,6 +647,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U06-Q05",
             "q": "Imagine you want to depict a fishing scene in Warli Art. Which creative elements could you incorporate?",
             "opts": {
               "1": "Mountains and trees with animals",
@@ -615,6 +660,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U06-A01",
           "id": "Create-a-Warli-Celebration-Scene-🏕️-Remedial",
           "seq": 81,
           "nm": "Create a Warli Celebration Scene 🏕️",
@@ -625,6 +671,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C8933-U07",
       "nm": "One Color Holds Emotion 💙",
       "desc": "Color gradation",
       "rwc": "Paper, Pencil, Colors",
@@ -644,6 +691,7 @@
         "nm": "Can one color show all moods? 🎭",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U07-Q01",
             "q": "What is the purpose of using different shades in the Monochrome Mood Artwork?",
             "opts": {
               "1": "To show how an emotion transitions from strong to mild",
@@ -653,6 +701,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U07-Q02",
             "q": "How are emotions like happiness and peace typically represented in the artwork?",
             "opts": {
               "1": "Using sharp shapes like triangles",
@@ -662,6 +711,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U07-Q03",
             "q": "What is the first step in creating a Monochrome Mood Artwork?",
             "opts": {
               "1": "Choose an emotion and draw a shape representing it",
@@ -671,6 +721,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U07-Q04",
             "q": "If you were to express creativity through Monochrome Mood Artwork, which of the following might you do?",
             "opts": {
               "1": "Follow a strict guideline of shapes and colors provided by others",
@@ -680,6 +731,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U07-Q05",
             "q": "Imagine you want to depict the emotion of surprise creatively in your artwork. What could be an innovative approach?",
             "opts": {
               "1": "Use only one shade of blue without any shapes",
@@ -692,6 +744,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U07-A01",
           "id": "Create-a-Monochrome-Mood-Artwork-💙-Intermediate",
           "seq": 82,
           "nm": "Create a Monochrome Mood Artwork 💙",
@@ -743,6 +796,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C8933-U08",
       "nm": "Shades Paint a Landscape 🌄",
       "desc": "Color gradation",
       "rwc": "Paper, Colors, Pencil",
@@ -762,6 +816,7 @@
         "nm": "Can gray show every feeling? 🩶",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U08-Q01",
             "q": "What is the concept of Greyscale in art?",
             "opts": {
               "1": "It refers to the combination of complementary colors to enhance contrast.",
@@ -771,6 +826,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C8933-U08-Q02",
             "q": "What is the difference between Achromatic and Monochromatic color schemes?",
             "opts": {
               "1": "Achromatic uses warm colors, while Monochromatic uses cool colors.",
@@ -780,6 +836,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C8933-U08-Q03",
             "q": "Which step involves creating tints and shades in the Colorscape activity?",
             "opts": {
               "1": "Choosing one main color for the artwork.",
@@ -789,6 +846,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U08-Q04",
             "q": "How would you apply a Monochromatic color scheme creatively in designing a logo for a tech company?",
             "opts": {
               "1": "Mix black and white exclusively to keep it minimalistic.",
@@ -798,6 +856,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C8933-U08-Q05",
             "q": "If tasked with creating a fashion piece using an Achromatic scheme, what would be a creative approach?",
             "opts": {
               "1": "Use only primary colors to make it appealing and lively.",
@@ -810,6 +869,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U08-A01",
           "id": "Paint-a-Gradation-Landscape-🌄-Remedial",
           "seq": 83,
           "nm": "Paint a Gradation Landscape 🌄",
@@ -820,6 +880,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C8933-U09",
       "nm": "Faces Speak Every Feeling 😶",
       "desc": "Facial expressions",
       "rwc": "Paper, Pencil, Colors",
@@ -839,11 +900,13 @@
         "nm": "Can colors express your emotions? 😄",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U09-Q01",
             "q": "What colors are suggested to express happiness in the comic strip activity?",
             "opts": { "1": "Red and grey", "2": "Blue and purple", "3": "Yellow and orange" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U09-Q02",
             "q": "According to the script, how can emotions be conveyed without using words?",
             "opts": {
               "1": "By writing a detailed description",
@@ -853,6 +916,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C8933-U09-Q03",
             "q": "If you want to show surprise in a character's face, what features should you emphasize?",
             "opts": {
               "1": "Wide eyes and a smiling mouth",
@@ -862,6 +926,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C8933-U09-Q04",
             "q": "Your character receives an unexpected birthday gift. How might you creatively depict their emotion in your comic strip?",
             "opts": {
               "1": "Use dark colors to show their confusion",
@@ -871,6 +936,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U09-Q05",
             "q": "Imagine a scene where your character is angry at losing a game. What creative approach might you use to illustrate this emotion?",
             "opts": {
               "1": "Show the character with droopy eyes and a curved-down mouth",
@@ -883,6 +949,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U09-A01",
           "id": "Draw-a-Four-Emotion-Comic-Strip-😶-Advanced",
           "seq": 84,
           "nm": "Draw a Four Emotion Comic Strip 😶",
@@ -934,6 +1001,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C8933-U10",
       "nm": "Features Express the Soul 🎭",
       "desc": "Facial expressions",
       "rwc": "Paper, Pencil, Eraser, Colors",
@@ -953,6 +1021,7 @@
         "nm": "Can a drawing show feelings? 😲",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U10-Q01",
             "q": "What materials are needed for today's art activity?",
             "opts": {
               "1": "Clay, sculpting tools, and glaze",
@@ -962,6 +1031,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U10-Q02",
             "q": "Why is understanding facial expressions important in real life ?",
             "opts": {
               "1": "It improves communication skills",
@@ -971,6 +1041,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U10-Q03",
             "q": "How is a happy expression created in the drawing activity?",
             "opts": {
               "1": "By raising the eyebrows and making the eyes smaller with a big smile",
@@ -980,6 +1051,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U10-Q04",
             "q": "If you want to create a character with a surprised expression, which creative approach should you use?",
             "opts": {
               "1": "Draw the eyebrows raised and eyes big, with an oval mouth",
@@ -989,6 +1061,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U10-Q05",
             "q": "Using your creativity, how might you modify the hairstyle of your character?",
             "opts": {
               "1": "By keeping it the same as shown in the example",
@@ -1001,6 +1074,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U10-A01",
           "id": "Draw-Faces-Showing-Four-Emotions-🎭-Remedial",
           "seq": 85,
           "nm": "Draw Faces Showing Four Emotions 🎭",

@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C7982-U01",
       "nm": "Lines Trick Your Eyes 👁️",
       "desc": "Optical Art",
       "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen",
@@ -26,11 +27,13 @@
         "nm": "Can your eyes be tricked? 👀",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7982-U01-Q01",
             "q": "इस कला गतिविधि का मुख्य विषय क्या है?",
             "opts": { "1": "Abstract art", "2": "Realistic painting", "3": "Optical illusions" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7982-U01-Q02",
             "q": "ऑप्टिकल भ्रम हमारे मन को क्यों धोखा देते हैं?",
             "opts": {
               "1": "Because they create designs that don't exist in reality",
@@ -40,6 +43,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7982-U01-Q03",
             "q": "ऑप्टिकल आर्ट बनाने के लिए कौन सी सामग्री सुझाई गई है?",
             "opts": {
               "1": "Canvas and oil paint",
@@ -49,6 +53,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7982-U01-Q04",
             "q": "यदि आप गति की अनुभूति देने वाली ऑप्टिकल आर्ट बनाना चाहते हैं, तो किस तत्व पर ध्यान देना चाहिए?",
             "opts": {
               "1": "Repetitive lines and patterns",
@@ -58,6 +63,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7982-U01-Q05",
             "q": "स्क्रिप्ट में सुझाए अनुसार आप अपने ऑप्टिकल आर्ट प्रोजेक्ट में रचनात्मकता कैसे उपयोग कर सकते हैं?",
             "opts": {
               "1": "By copying a famous painting",
@@ -70,6 +76,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7982-U01-A01",
           "id": "Create-an-Optical-Illusion-Artwork-👁️-Basic",
           "seq": 9,
           "nm": "OP Art",
@@ -121,6 +128,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7982-U02",
       "nm": "Square Twists in Place 🔲",
       "desc": "Contrast, Pattern Construction",
       "rwc": "Art Sheet, Pencil, Ruler, Pen, Marker",
@@ -140,6 +148,7 @@
         "nm": "Can squares create illusions? 🔲",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7982-U02-Q01",
             "q": "स्क्वेयर ऑफ इल्यूजन बनाने के लिए कौन सी सामग्री की आवश्यकता है?",
             "opts": {
               "1": "Paper, crayons, scissors, glue, and ruler",
@@ -149,6 +158,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7982-U02-Q02",
             "q": "वर्गों में वैकल्पिक स्थानों को रंगने का उद्देश्य क्या है?",
             "opts": {
               "1": "To create a pattern that enhances the illusion effect",
@@ -158,6 +168,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7982-U02-Q03",
             "q": "स्क्वेयर ऑफ इल्यूजन बनाने का पहला कदम क्या है?",
             "opts": {
               "1": "Color alternate spaces",
@@ -167,6 +178,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7982-U02-Q04",
             "q": "यदि आप वर्गों की जगह वृत्तों का उपयोग करके भ्रम बढ़ाना चाहते हैं, तो रचनात्मक रूप से क्या करेंगे?",
             "opts": {
               "1": "By varying the sizes and angles of the circles to create a dynamic effect",
@@ -176,6 +188,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7982-U02-Q05",
             "q": "आप वर्गों की जगह त्रिभुजों का उपयोग करके एक अनोखा भ्रम बनाना चाहते हैं। आप कौन सा रचनात्मक तरीका अपनाएंगे?",
             "opts": {
               "1": "Draw a single triangle and fill it with random colors",
@@ -188,6 +201,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7982-U02-A01",
           "id": "Create-a-Square-of-Illusions-🔲-Remedial",
           "seq": 10,
           "nm": "Square of Illusions",
@@ -239,6 +253,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7982-U03",
       "nm": "Ocean Gets a Voice 🌊",
       "desc": "Visual communication Poster making",
       "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
@@ -258,6 +273,7 @@
         "nm": "Can collage save the ocean? 🌊",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7982-U03-Q01",
             "q": "इस कला गतिविधि का मुख्य उद्देश्य क्या है?",
             "opts": {
               "1": "To learn about marine biology",
@@ -267,6 +283,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7982-U03-Q02",
             "q": "स्थिरता के बारे में संदेश फैलाना क्यों महत्वपूर्ण है?",
             "opts": {
               "1": "It is crucial in today’s world",
@@ -276,6 +293,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7982-U03-Q03",
             "q": "गतिविधि में कोलाज बनाने के लिए कौन सी सामग्री सुझाई गई है?",
             "opts": {
               "1": "Paint and canvas",
@@ -285,6 +303,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7982-U03-Q04",
             "q": "यदि आप कोलाज की जगह 3D मॉडल बनाते हैं, तो इस सत्र में सीखे कौशल का उपयोग रचनात्मक रूप से कैसे करेंगे?",
             "opts": {
               "1": "By using recycled materials to build a representation of ocean pollution and cleaning methods",
@@ -294,6 +313,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7982-U03-Q05",
             "q": "यदि आप समुद्र की स्वच्छता को बढ़ावा देने के लिए 3D मॉडल बनाते हैं, तो उसमें क्या शामिल होना चाहिए?",
             "opts": {
               "1": "Mini models of trash bins and clean oceans",
@@ -306,6 +326,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7982-U03-A01",
           "id": "Create-an-Ocean-Cleanliness-Collage-🌊-Basic",
           "seq": 11,
           "nm": "Eco Collage",
@@ -357,6 +378,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7982-U04",
       "nm": "Poster Carries a Cause 📢",
       "desc": "Poster making",
       "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
@@ -376,6 +398,7 @@
         "nm": "Can a poster change minds? 📢",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7982-U04-Q01",
             "q": "पोस्टर बनाने के पाठ का मुख्य उद्देश्य क्या है?",
             "opts": {
               "1": "To learn how to draw trees",
@@ -385,6 +408,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7982-U04-Q02",
             "q": "पोस्टर बनाने में फ़ॉन्ट का चुनाव क्यों महत्वपूर्ण है?",
             "opts": {
               "1": "It sets the tone and enhances communication skills",
@@ -394,11 +418,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7982-U04-Q03",
             "q": "पोस्टर में शांति और गंभीरता दर्शाने के लिए कौन सा रंग उपयोग करना चाहिए?",
             "opts": { "1": "Red", "2": "Green", "3": "Blue" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7982-U04-Q04",
             "q": "रिया विज्ञान प्रदर्शनी के लिए अपना पोस्टर돋보이게 बनाना चाहती है। वह इसकी रचनात्मकता कैसे बढ़ा सकती है?",
             "opts": {
               "1": "Use only black and white colors",
@@ -408,6 +434,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7982-U04-Q05",
             "q": "कल्पना करें कि आप 'मधुमक्खियां बचाओ' अभियान के लिए पोस्टर बना रहे हैं। रचनात्मकता का सर्वोत्तम उपयोग कौन सा होगा?",
             "opts": {
               "1": "Avoid using any graphics or colors",
@@ -420,6 +447,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7982-U04-A01",
           "id": "Design-a-Save-the-Ocean-Poster-📢-Remedial",
           "seq": 12,
           "nm": "Poster Making",
@@ -471,6 +499,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7982-U05",
       "nm": "Hallway Goes Deep 🏛️",
       "desc": "Perspective Art, Space Design",
       "rwc": "Pencil, Eraser, Colors, Ruler",
@@ -490,6 +519,7 @@
         "nm": "Can lines show depth? 📐",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7982-U05-Q01",
             "q": "गतिविधि का मुख्य विषय क्या है?",
             "opts": {
               "1": "Learning to use one-point perspective in drawings",
@@ -499,6 +529,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7982-U05-Q02",
             "q": "एक-बिंदु परिप्रेक्ष्य में लुप्त बिंदु का उद्देश्य क्या है?",
             "opts": {
               "1": "To add color to the drawing",
@@ -508,6 +539,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7982-U05-Q03",
             "q": "एक-बिंदु परिप्रेक्ष्य में सटीकता सुनिश्चित करने के लिए रेखाएं कैसे खींची जानी चाहिए?",
             "opts": {
               "1": "Lines should be parallel to the edge of the paper",
@@ -517,6 +549,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7982-U05-Q04",
             "q": "यदि आप एक-बिंदु परिप्रेक्ष्य का उपयोग करके अपने स्कूल के गलियारे को फिर से डिजाइन करते हैं, तो रचनात्मकता दिखाने के लिए कौन सा तत्व सहायक होगा?",
             "opts": {
               "1": "Drawing a single straight line",
@@ -526,6 +559,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7982-U05-Q05",
             "q": "कल्पना करें कि आप एक-बिंदु परिप्रेक्ष्य का उपयोग करके अपने स्कूल के गलियारे के लिए भविष्यवादी थीम बना रहे हैं। आप गहराई और रुचि कैसे बढ़ाएंगे?",
             "opts": {
               "1": "Use only pencil sketches without any additional details",
@@ -538,6 +572,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7982-U05-A01",
           "id": "Draw-Your-School-in-Perspective-🏛️-Intermediate",
           "seq": 13,
           "nm": "My School In One Point Perspective \n\nhttps://www.youtube.com/watch?v=7ttuRKkVDjA",
@@ -589,6 +624,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7982-U06",
       "nm": "Roads Vanish in Distance 🛤️",
       "desc": "Perspective",
       "rwc": "Pencil, Scale, Eraser, Colors, Drawing Book, Paper",
@@ -608,6 +644,7 @@
         "nm": "Can perspective fool your brain? 🤯",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7982-U06-Q01",
             "q": "छवियों में दिखाई देने वाली लाठियों की संख्या के बारे में सही उत्तर क्या है?",
             "opts": {
               "1": "Only one image is correct.",
@@ -617,6 +654,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7982-U06-Q02",
             "q": "परिप्रेक्ष्य की अवधारणा क्या बताती है?",
             "opts": {
               "1": "Perspective is a concept that applies only to art.",
@@ -626,6 +664,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7982-U06-Q03",
             "q": "1-पॉइंट परिप्रेक्ष्य ड्राइंग बनाने का पहला कदम क्या है?",
             "opts": {
               "1": "Draw two lines to create a road.",
@@ -635,6 +674,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7982-U06-Q04",
             "q": "आप शहर की सड़क के 1-पॉइंट परिप्रेक्ष्य ड्राइंग को रचनात्मक रूप से कैसे बढ़ाएंगे?",
             "opts": {
               "1": "By decorating and coloring a car in a unique way.",
@@ -644,6 +684,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7982-U06-Q05",
             "q": "आप परिप्रेक्ष्य की अवधारणा को एक अनोखी कलाकृति बनाने के लिए कैसे लागू करेंगे?",
             "opts": {
               "1": "By experimenting with different materials and creating various perspective scenes.",
@@ -656,6 +697,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7982-U06-A01",
           "id": "Draw-a-One-Point-Perspective-Road-🛤️-Remedial",
           "seq": 14,
           "nm": "Perspective Drawing",
@@ -707,6 +749,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7982-U07",
       "nm": "Shadow Gives it Depth 🌒",
       "desc": "Collage Making Shading, Depth",
       "rwc": "\"- Drawing Sheet, Paper, Old Magazines - Fevicol - Sketch Pens \"",
@@ -726,6 +769,7 @@
         "nm": "Can shading show emotions? 🎭",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7982-U07-Q01",
             "q": "कार्तिक के पास घर पर अपनी कलाकृति बनाने के लिए कौन सी सामग्री उपलब्ध थी?",
             "opts": {
               "1": "Newspapers, old magazines, and glue",
@@ -735,6 +779,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7982-U07-Q02",
             "q": "कोलाज में अलग-अलग शेड्स का उपयोग करने का उद्देश्य क्या है?",
             "opts": {
               "1": "To show light, shadow, and depth",
@@ -744,6 +789,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7982-U07-Q03",
             "q": "कार्तिक ने अपने कोलाज को अनोखा कैसे बनाया?",
             "opts": {
               "1": "By using only bright colors",
@@ -753,6 +799,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7982-U07-Q04",
             "q": "यदि आप पुनर्नवीनीकृत सामग्री का उपयोग करके एक अनोखी कलाकृति बनाते हैं, तो बनावट जोड़ने के लिए क्या उपयोग कर सकते हैं?",
             "opts": {
               "1": "Only glossy magazine pages",
@@ -762,6 +809,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7982-U07-Q05",
             "q": "कल्पना करें कि आपको एक वास्तविक उदाहरण का उपयोग करके किसी मित्र को शेडिंग समझानी है। आप कौन सा उदाहरण उपयोग करेंगे?",
             "opts": {
               "1": "A lemon that is completely yellow",
@@ -774,6 +822,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7982-U07-A01",
           "id": "Create-a-Shaded-Newspaper-Collage-🌒-Intermediate",
           "seq": 15,
           "nm": "Collage Making",
@@ -825,6 +874,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7982-U08",
       "nm": "Paper Tells the Object 📰",
       "desc": "Collage, Landscape, recycled art",
       "rwc": "Paper, Glue, Pencil, Pen, Sketchpen",
@@ -844,6 +894,7 @@
         "nm": "Can old news become art? 📰",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7982-U08-Q01",
             "q": "अखबार कोलाज बनाने के लिए कौन सी सामग्री चाहिए?",
             "opts": {
               "1": "Old newspapers, pencil, sketch pens, glue, drawing sheet",
@@ -853,6 +904,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7982-U08-Q02",
             "q": "पुराने अखबारों के उपयोग के बारे में मुख्य संदेश क्या है?",
             "opts": {
               "1": "Old newspapers are only useful for wrapping items.",
@@ -862,6 +914,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7982-U08-Q03",
             "q": "यदि अखबार में रंग की कमी है तो कोलाज में रंग कैसे जोड़ सकते हैं?",
             "opts": {
               "1": "By using colored pencils",
@@ -871,6 +924,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7982-U08-Q04",
             "q": "कल्पना करें कि आपके पास अखबारों की जगह पुरानी पत्रिकाएं हैं। आप उन्हें कोलाज के लिए रचनात्मक रूप से कैसे उपयोग करेंगे?",
             "opts": {
               "1": "Cut out colorful images and text to create a thematic collage.",
@@ -880,6 +934,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7982-U08-Q05",
             "q": "यदि आप इस स्क्रिप्ट से प्रेरित हैं, तो आप घर की अन्य वस्तुओं को रचनात्मक रूप से कैसे पुनः उपयोग करेंगे?",
             "opts": {
               "1": "Throw them away to make space.",
@@ -892,6 +947,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7982-U08-A01",
           "id": "Make-a-Newspaper-Flower-Pot-Collage-📰-Remedial",
           "seq": 16,
           "nm": "What is a Collage",
@@ -943,6 +999,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7982-U09",
       "nm": "Pop Art Fights Climate 🌏",
       "desc": "Pop Art",
       "rwc": "Artbook, Pencil, Eraser, Paints, Brushes, Markers",
@@ -960,11 +1017,13 @@
             "nm": "Can pop art fight climate change? 🌍",
             "qs": [
               {
+                "qid": "QN-DUMMY-C7982-U09-V01-Q01",
                 "q": "स्क्रिप्ट में चर्चा की गई कला की मुख्य शैली क्या है?",
                 "opts": { "1": "Pop Art", "2": "Cubism", "3": "Impressionism" },
                 "ans": "1"
               },
               {
+                "qid": "QN-DUMMY-C7982-U09-V01-Q02",
                 "q": "पॉप आर्ट स्टाइल क्लाइमेट एक्शन पोस्टर बनाने का मुख्य उद्देश्य क्या है?",
                 "opts": {
                   "1": "To learn about different art styles",
@@ -974,11 +1033,13 @@
                 "ans": "2"
               },
               {
+                "qid": "QN-DUMMY-C7982-U09-V01-Q03",
                 "q": "निम्नलिखित में से कौन सी सामग्री पोस्टर बनाने के लिए आवश्यक नहीं बताई गई है?",
                 "opts": { "1": "Pencil", "2": "Watercolor paints", "3": "Drawing sheet" },
                 "ans": "2"
               },
               {
+                "qid": "QN-DUMMY-C7982-U09-V01-Q04",
                 "q": "यदि आपको वनों की कटाई पर पॉप आर्ट पोस्टर बनाना हो, तो कौन सा दृष्टिकोण स्क्रिप्ट में चर्चा की गई शैली के लिए सबसे उपयुक्त होगा?",
                 "opts": {
                   "1": "Write an essay on the effects of deforestation",
@@ -988,6 +1049,7 @@
                 "ans": "2"
               },
               {
+                "qid": "QN-DUMMY-C7982-U09-V01-Q05",
                 "q": "आप समुद्री प्रदूषण पर पॉप आर्ट पोस्टर में रचनात्मकता कैसे शामिल करेंगे?",
                 "opts": {
                   "1": "Draw marine life entangled in plastic, using bright colors and bold patterns to highlight the issue",
@@ -1005,11 +1067,13 @@
         "nm": "Can pop art fight climate change? 🌍",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7982-U09-Q01",
             "q": "स्क्रिप्ट में चर्चा की गई कला की मुख्य शैली क्या है?",
             "opts": { "1": "Pop Art", "2": "Cubism", "3": "Impressionism" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7982-U09-Q02",
             "q": "पॉप आर्ट स्टाइल क्लाइमेट एक्शन पोस्टर बनाने का मुख्य उद्देश्य क्या है?",
             "opts": {
               "1": "To learn about different art styles",
@@ -1019,11 +1083,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7982-U09-Q03",
             "q": "निम्नलिखित में से कौन सी सामग्री पोस्टर बनाने के लिए आवश्यक नहीं बताई गई है?",
             "opts": { "1": "Pencil", "2": "Watercolor paints", "3": "Drawing sheet" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7982-U09-Q04",
             "q": "यदि आपको वनों की कटाई पर पॉप आर्ट पोस्टर बनाना हो, तो कौन सा दृष्टिकोण स्क्रिप्ट में चर्चा की गई शैली के लिए सबसे उपयुक्त होगा?",
             "opts": {
               "1": "Write an essay on the effects of deforestation",
@@ -1033,6 +1099,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7982-U09-Q05",
             "q": "आप समुद्री प्रदूषण पर पॉप आर्ट पोस्टर में रचनात्मकता कैसे शामिल करेंगे?",
             "opts": {
               "1": "Draw marine life entangled in plastic, using bright colors and bold patterns to highlight the issue",
@@ -1045,6 +1112,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7982-U09-A01",
           "id": "Design-a-Pop-Art-Climate-Poster-🌏-Advanced",
           "seq": 17,
           "nm": "Pop Art Revolution",
@@ -1096,6 +1164,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7982-U10",
       "nm": "Object Becomes a Star ⭐",
       "desc": "Pop Art",
       "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
@@ -1115,11 +1184,13 @@
         "nm": "Can repetition make art pop? 🎨",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7982-U10-Q01",
             "q": "पॉप आर्ट पीस बनाने के लिए उल्लिखित प्रमुख तत्वों में से एक क्या है?",
             "opts": { "1": "Realistic details", "2": "Bright colors", "3": "Dark backgrounds" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7982-U10-Q02",
             "q": "स्क्रिप्ट के अनुसार पॉप आर्ट में दोहराव का उपयोग करने का मुख्य उद्देश्य क्या है?",
             "opts": {
               "1": "To achieve realism",
@@ -1129,6 +1200,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7982-U10-Q03",
             "q": "यदि आप कॉफी मग का पॉप आर्ट पीस बनाते हैं, तो किस चरण में मोटी काली रूपरेखा का उपयोग होगा?",
             "opts": {
               "1": "Choosing the object",
@@ -1138,6 +1210,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7982-U10-Q04",
             "q": "आप किसी रोजमर्रा की वस्तु को कलात्मक कैसे बना सकते हैं?",
             "opts": {
               "1": "Use pastel colors for a subtle look",
@@ -1147,6 +1220,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7982-U10-Q05",
             "q": "आपको एक नई शू लाइन के लिए पॉप आर्ट पोस्टर डिजाइन करना है। इसे돋보이게 बनाने के लिए आप कौन सा रचनात्मक दृष्टिकोण अपनाएंगे?",
             "opts": {
               "1": "Use bright, contrasting colors and repeat the shoe design",
@@ -1159,6 +1233,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7982-U10-A01",
           "id": "Create-a-Favourite-Object-Pop-Art-⭐-Remedial",
           "seq": 18,
           "nm": "Favourite Pop Art Object",

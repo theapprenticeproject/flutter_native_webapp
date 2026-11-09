@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C5125-U01",
       "nm": "The Lights-Out Lab 🏠",
       "desc": "Electric circuit, series connection, current flow, open and closed circuit, energy consumption, basic measurement of current. DC power supply, switch, LED, ammeter (series), connecting wires, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -26,6 +27,7 @@
         "nm": "Is Your Room Wasting Power? 💡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U01-Q01",
             "q": "ಸರ್ಕ್ಯೂಟ್ ಸಿಮ್ಯುಲೇಶನ್‌ನಲ್ಲಿ ಸ್ವಿಚ್ ಆಫ್ ಮಾಡಿದಾಗ ಏನಾಗುತ್ತದೆ?",
             "opts": {
               "1": "LED ಆಫ್ ಆಗುತ್ತದೆ ಆದರೆ ಅಮ್ಮೀಟರ್ ಇನ್ನೂ 20 mA ತೋರಿಸುತ್ತದೆ",
@@ -35,6 +37,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U01-Q02",
             "q": "ವಿದ್ಯುತ್ ಬಳಕೆಯ ಬಗ್ಗೆ ಯಾವ ಸಂದೇಶ ನೀಡಲಾಗಿದೆ?",
             "opts": {
               "1": "ದೀಪಗಳನ್ನು ಆನ್ ಬಿಡುವುದು ವಿದ್ಯುತ್ ಬಳಕೆಯ ಮೇಲೆ ಗಮನಾರ್ಹ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ",
@@ -44,11 +47,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U01-Q03",
             "q": "ಸರ್ಕ್ಯೂಟ್ ಮೂಲಕ ಹರಿಯುವ ವಿದ್ಯುತ್ ಅಳೆಯಲು ಯಾವ ಘಟಕ ಬಳಸಲಾಗುತ್ತದೆ?",
             "opts": { "1": "LED", "2": "ಸ್ವಿಚ್", "3": "ಅಮ್ಮೀಟರ್" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U01-Q04",
             "q": "ನಿಮ್ಮ ವಿದ್ಯುತ್ ಬಿಲ್ ಅಸಾಮಾನ್ಯವಾಗಿ ಹೆಚ್ಚಿದ್ದರೆ, ಸ್ಕ್ರಿಪ್ಟ್ ಸಲಹೆ ಆಧಾರದ ಮೇಲೆ ಯಾವ ಕ್ರಮ ತೆಗೆದುಕೊಳ್ಳಬಹುದು?",
             "opts": {
               "1": "ಶಕ್ತಿ ಅಪವ್ಯಯ ಕಡಿಮೆ ಮಾಡಲು ಅನಗತ್ಯ ದೀಪ ಮತ್ತು ಸಾಧನಗಳನ್ನು ಆಫ್ ಮಾಡಿ",
@@ -58,6 +63,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U01-Q05",
             "q": "SDG 7 - ಕೈಗೆಟಕುವ ಮತ್ತು ಸ್ವಚ್ಛ ಶಕ್ತಿಗೆ ನೀವು ಹೇಗೆ ಕೊಡುಗೆ ನೀಡಬಹುದು?",
             "opts": {
               "1": "ವಿದ್ಯುತ್ ಕಂಪನಿಗಳನ್ನು ಬೆಂಬಲಿಸಲು ಹೆಚ್ಚು ಶಕ್ತಿ ಬಳಸಿ",
@@ -70,6 +76,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U01-A01",
           "id": "Simulate-a-Smart-Room-🏠-Basic",
           "seq": 19,
           "nm": "Simulate a Smart Room 🏠",
@@ -121,6 +128,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U02",
       "nm": "Toggle to Save the Planet 🔦",
       "desc": "Electric circuit, current flow, open and closed circuit, current measurement, energy consumption, Ohm’s Law (basic application). DC power supply, resistor, ammeter (series), switch, LED, connecting wires, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -140,11 +148,13 @@
         "nm": "Does Your Ammeter Agree? ⚡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U02-Q01",
             "q": "EveryCircuit ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ನಿರ್ಮಿಸಿದ ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಲು ಯಾವ ಘಟಕ ಬಳಸಲಾಗುತ್ತದೆ?",
             "opts": { "1": "ರೆಸಿಸ್ಟರ್", "2": "ಟಾಗಲ್ ಸ್ವಿಚ್", "3": "ಅಮ್ಮೀಟರ್" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U02-Q02",
             "q": "SDG 7 ಗೆ ಸಂಬಂಧಿಸಿದ ಯೋಜನೆಯ ಪ್ರಾಥಮಿಕ ಗುರಿ ಏನು?",
             "opts": {
               "1": "ಎಲ್ಲರಿಗೂ ಸ್ವಚ್ಛ ಮತ್ತು ವಿಶ್ವಾಸಾರ್ಹ ವಿದ್ಯುತ್ ಖಚಿತಪಡಿಸಲು ಮತ್ತು ಶಕ್ತಿಯನ್ನು ಸ್ಮಾರ್ಟ್ ಆಗಿ ಬಳಸಲು",
@@ -154,16 +164,19 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U02-Q03",
             "q": "ಸಿಮ್ಯುಲೇಶನ್ ಸಮಯದಲ್ಲಿ ಅಮ್ಮೀಟರ್ ಋಣಾತ್ಮಕ ವಿದ್ಯುತ್ ಮೌಲ್ಯ ತೋರಿಸಿದರೆ ಏನು ಮಾಡಬೇಕು?",
             "opts": { "1": "ಅಮ್ಮೀಟರ್ ತಿರುಗಿಸಿ", "2": "ವೋಲ್ಟೇಜ್ ಹೆಚ್ಚಿಸಿ", "3": "LED ಬದಲಾಯಿಸಿ" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U02-Q04",
             "q": "ವಿದ್ಯಾರ್ಥಿ ಮನೆಯಲ್ಲಿ ದೀಪ ಆಫ್ ಮಾಡಲು ಮರೆತರೆ ಅನಗತ್ಯ ವಿದ್ಯುತ್ ಬಳಕೆ ಆಗುತ್ತದೆ. ಚಟುವಟಿಕೆಯ ಯಾವ ಸರ್ಕ್ಯೂಟ್ ಘಟಕ ಇದನ್ನು ತಡೆಯಲು ಸಹಾಯ ಮಾಡಬಹುದು?",
             "opts": { "1": "ರೆಸಿಸ್ಟರ್", "2": "LED", "3": "ಟಾಗಲ್ ಸ್ವಿಚ್" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U02-Q05",
             "q": "ಅಗತ್ಯವಿಲ್ಲದಾಗ ಆಫ್ ಆಗುವ ಶಕ್ತಿ ಉಳಿತಾಯ ದೀಪಗಳನ್ನು ಅಳವಡಿಸಲು ಶಾಲೆ ಬಯಸುತ್ತದೆ. ಚಟುವಟಿಕೆಯ ಯಾವ ಕೌಶಲ್ಯ ಅಂತಹ ವ್ಯವಸ್ಥೆ ವಿನ್ಯಾಸಗೊಳಿಸಲು ಅತ್ಯಂತ ಸಹಾಯಕಾರಿ?",
             "opts": {
               "1": "ವೋಲ್ಟೇಜ್ ಮತ್ತು ವಿದ್ಯುತ್ ಲೆಕ್ಕಹಾಕುವುದು",
@@ -176,6 +189,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U02-A01",
           "id": "Wire-the-Energy-Saving-Room-🔦-Remedial",
           "seq": 20,
           "nm": "Wire the Energy-Saving Room 🔦",
@@ -227,6 +241,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U03",
       "nm": "Knob in Charge 🎚️",
       "desc": "Resistance, variable resistance (potentiometer), current flow, brightness control, energy efficiency, series circuit. DC power supply, potentiometer, LED, connecting wires, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -246,11 +261,13 @@
         "nm": "More Resistance, More Dark? 🌑",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U03-Q01",
             "q": "ವಿದ್ಯುತ್ ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ ವಿದ್ಯುತ್ ಪ್ರವಾಹ ನಿಯಂತ್ರಿಸಲು ಬಳಸುವ ಮುಖ್ಯ ಘಟಕ ಯಾವುದು?",
             "opts": { "1": "ರೆಸಿಸ್ಟರ್", "2": "ಪೊಟೆನ್ಶಿಯೋಮೀಟರ್", "3": "ಕೆಪ್ಯಾಸಿಟರ್" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U03-Q02",
             "q": "ಪೊಟೆನ್ಶಿಯೋಮೀಟರ್‌ನ ರೆಸಿಸ್ಟೆನ್ಸ್ ಬದಲಾಯಿಸಿದಾಗ LED ಯ ಪ್ರಕಾಶ ಯಾಕೆ ಬದಲಾಗುತ್ತದೆ?",
             "opts": {
               "1": "ರೆಸಿಸ್ಟೆನ್ಸ್ ಬದಲಾವಣೆ LED ಮೂಲಕ ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಬದಲಾಯಿಸುವುದರಿಂದ",
@@ -260,6 +277,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U03-Q03",
             "q": "EveryCircuit ನಲ್ಲಿ ಘಟಕಗಳನ್ನು ಸಂಪರ್ಕಿಸಲು ಸರಿಯಾದ ಅನುಕ್ರಮ ಯಾವುದು?",
             "opts": {
               "1": "ವಿದ್ಯುತ್ ಸರಬರಾಜನ್ನು ಪೊಟೆನ್ಶಿಯೋಮೀಟರ್‌ಗೆ, ಪೊಟೆನ್ಶಿಯೋಮೀಟರ್ ಅನ್ನು LED ಗೆ, LED ಅನ್ನು ಗ್ರೌಂಡ್‌ಗೆ ಸಂಪರ್ಕಿಸಿ",
@@ -269,6 +287,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U03-Q04",
             "q": "ವಿವರಿಸಿದ ಸರ್ಕ್ಯೂಟ್ ಸೆಟಪ್ ಬಳಸಿ ಮನೆಯಲ್ಲಿ ಶಕ್ತಿ ಬಳಕೆ ಕಡಿಮೆ ಮಾಡಬೇಕಿದ್ದರೆ ಏನು ಮಾಡುವಿರಿ?",
             "opts": {
               "1": "ಸರ್ಕ್ಯೂಟ್‌ನಿಂದ LED ತೆಗೆದುಹಾಕಿ",
@@ -278,6 +297,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U03-Q05",
             "q": "ಸೂಚನೆಗಳ ಆಧಾರದ ಮೇಲೆ ನೈಜ ಜೀವನದ ಸರ್ಕ್ಯೂಟ್ ಮಾದರಿ ಹೇಗೆ ಸಿಮ್ಯುಲೇಟ್ ಮಾಡಬಹುದು?",
             "opts": {
               "1": "EveryCircuit ಬಳಸಿ ವಾಸ್ತವಿಕವಾಗಿ ಸರ್ಕ್ಯೂಟ್ ರಚಿಸಿ ಮತ್ತು ಪರೀಕ್ಷಿಸಿ",
@@ -290,6 +310,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U03-A01",
           "id": "Master-the-Brightness-Knob-🎚️-Basic",
           "seq": 21,
           "nm": "Master the Brightness Knob 🎚️",
@@ -341,6 +362,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U04",
       "nm": "Why Does the Resistor Get Hot? 🔥",
       "desc": "Power dissipation, voltage–current relationship, Ohm’s Law, unit conversion (mA to A). DC power supply, resistor, ammeter (series), voltmeter (parallel), simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -360,6 +382,7 @@
         "nm": "Can You Calculate the Heat? 🔥",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U04-Q01",
             "q": "ರೆಸಿಸ್ಟರ್‌ನಲ್ಲಿ ವಿದ್ಯುತ್ ಅಪವ್ಯಯ ಲೆಕ್ಕಹಾಕಲು ಬಳಸುವ ಸೂತ್ರ ಯಾವುದು?",
             "opts": {
               "1": "ವಿದ್ಯುತ್ = ವೋಲ್ಟೇಜ್ × ವಿದ್ಯುತ್ ಪ್ರವಾಹ",
@@ -369,6 +392,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U04-Q02",
             "q": "ದೀರ್ಘಕಾಲ ಸೂಕ್ಷ್ಮದರ್ಶಕ ಚಾರ್ಜರ್ ಹಾಕಿದ ನಂತರ ಬೆಚ್ಚಗಾಗುವುದು ಯಾಕೆ?",
             "opts": {
               "1": "ವಿದ್ಯುತ್ ಶಕ್ತಿಯಿಂದ ಶಾಖವಾಗಿ ವಿದ್ಯುತ್ ಅಪವ್ಯಯದಿಂದ",
@@ -378,11 +402,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U04-Q03",
             "q": "ವೋಲ್ಟೇಜ್ 9V ಮತ್ತು ವಿದ್ಯುತ್ ಪ್ರವಾಹ 0.09A ಆದರೆ ರೆಸಿಸ್ಟರ್‌ನಲ್ಲಿ ವಿದ್ಯುತ್ ಅಪವ್ಯಯ ಎಷ್ಟು?",
             "opts": { "1": "0.9 ವ್ಯಾಟ್", "2": "0.09 ವ್ಯಾಟ್", "3": "0.81 ವ್ಯಾಟ್" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U04-Q04",
             "q": "ರಾಹುಲ್‌ನ ಸರ್ಕ್ಯೂಟ್‌ನ ರೆಸಿಸ್ಟರ್ ತುಂಬಾ ಬಿಸಿಯಾಗುತ್ತಿದೆ. ಹೆಚ್ಚಿನ ರೆಸಿಸ್ಟೆನ್ಸ್‌ನ ರೆಸಿಸ್ಟರ್ ವಿದ್ಯುತ್ ಅಪವ್ಯಯ ಕಡಿಮೆ ಮಾಡುತ್ತದೆ ಎಂದು ತಿಳಿದ ರಾಹುಲ್ ರೆಸಿಸ್ಟರ್ ತಣ್ಣಗಾಗಿಸಲು ಅತ್ಯುತ್ತಮ ಕ್ರಮ ಯಾವುದು?",
             "opts": {
               "1": "ಪ್ರಸ್ತುತ ರೆಸಿಸ್ಟರ್ ಅನ್ನು ಹೆಚ್ಚಿನ ರೆಸಿಸ್ಟೆನ್ಸ್ ಮೌಲ್ಯದ ರೆಸಿಸ್ಟರ್‌ನಿಂದ ಬದಲಾಯಿಸಿ",
@@ -392,6 +418,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U04-Q05",
             "q": "ನೇಹಾ ಶಾಲಾ ಯೋಜನೆಗೆ ಸುರಕ್ಷಿತ ಸರ್ಕ್ಯೂಟ್ ವಿನ್ಯಾಸಗೊಳಿಸಲು ಬಯಸುತ್ತಾಳೆ. 9V ಸ್ಥಿರ ವೋಲ್ಟೇಜ್ ಸರಬರಾಜು ಇದೆ. ಸುರಕ್ಷಿತ ವಿದ್ಯುತ್ ಮಟ್ಟ ಕಾಪಾಡಲು ನೇಹಾ ಏನು ಮಾಡಬೇಕು?",
             "opts": {
               "1": "ತುಂಬಾ ಕಡಿಮೆ ರೆಸಿಸ್ಟೆನ್ಸ್ ಮೌಲ್ಯದ ರೆಸಿಸ್ಟರ್ ಬಳಸಿ",
@@ -404,6 +431,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U04-A01",
           "id": "Calculate-the-Power-Burn-🔥-Remedial",
           "seq": 22,
           "nm": "Calculate the Power Burn 🔥",
@@ -455,6 +483,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U05",
       "nm": "Light Up a Number 🔢",
       "desc": "7-segment display structure, segment control (ON/OFF), common pin connection, digit formation, multi-digit display logic. DC power supply, 7-segment display, connecting wires, ground, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -474,6 +503,7 @@
         "nm": "Which Segments Make Your Digit? 🔢",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U05-Q01",
             "q": "ಎಲೆಕ್ಟ್ರಾನಿಕ್ಸ್‌ನಲ್ಲಿ 7-ಸೆಗ್ಮೆಂಟ್ ಡಿಸ್ಪ್ಲೇಯ ಪ್ರಾಥಮಿಕ ಉದ್ದೇಶ ಯಾವುದು?",
             "opts": {
               "1": "ಮಾಹಿತಿ ಸಂಗ್ರಹಿಸಲು",
@@ -483,6 +513,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U05-Q02",
             "q": "7-ಸೆಗ್ಮೆಂಟ್ ಡಿಸ್ಪ್ಲೇಯಲ್ಲಿ '7' ಅಂಕೆ ರಚಿಸಲು ಏನು ಮಾಡಬೇಕು?",
             "opts": {
               "1": "a, b ಮತ್ತು c ಸೆಗ್ಮೆಂಟ್‌ಗಳನ್ನು ಸಂಪರ್ಕಿಸಿ",
@@ -492,6 +523,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U05-Q03",
             "q": "ಬಹು-ಅಂಕೆ ಡಿಸ್ಪ್ಲೇ ರಚಿಸುವಾಗ ಮೊದಲ ಹಂತ ಯಾವುದು?",
             "opts": {
               "1": "'1' ಅಂಕೆ ತೋರಿಸಲು ಸೆಗ್ಮೆಂಟ್‌ಗಳನ್ನು ಸಂಪರ್ಕಿಸಿ",
@@ -501,6 +533,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U05-Q04",
             "q": "7-ಸೆಗ್ಮೆಂಟ್ ಡಿಸ್ಪ್ಲೇ ಸರಿಯಾದ ಅಂಕೆ ತೋರಿಸದಿದ್ದರೆ ಮೊದಲು ಏನು ಪರಿಶೀಲಿಸಬೇಕು?",
             "opts": {
               "1": "ಚಾರ್ಟ್ ಆಧಾರದ ಮೇಲೆ ಸರಿಯಾದ ಸೆಗ್ಮೆಂಟ್‌ಗಳು ಸಂಪರ್ಕಗೊಂಡಿವೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ",
@@ -510,6 +543,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U05-Q05",
             "q": "ಎರಡು 7-ಸೆಗ್ಮೆಂಟ್ ಡಿಸ್ಪ್ಲೇ ಬಳಸಿ '25' ಪ್ರದರ್ಶಿಸಬೇಕಿದ್ದರೆ ಮಹತ್ವದ ಹಂತ ಯಾವುದು?",
             "opts": {
               "1": "ಪ್ರತಿ ಸೆಗ್ಮೆಂಟ್‌ಗೆ DC ವಿದ್ಯುತ್ ಸರಬರಾಜನ್ನು 1.5 ವೋಲ್ಟ್‌ಗೆ ಹೊಂದಿಸಿ",
@@ -522,6 +556,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U05-A01",
           "id": "Wire-Your-Own-Scoreboard-🔢-Intermediate",
           "seq": 23,
           "nm": "Wire Your Own Scoreboard 🔢",
@@ -573,6 +608,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U06",
       "nm": "Digits Come Alive 🖥️",
       "desc": "Seven-segment display, segment control, binary logic for digit formation, circuit connections. DC power supply, 7-segment display.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -592,11 +628,13 @@
         "nm": "Is Your Display Showing the Right Number? 🔢",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U06-Q01",
             "q": "ಚಟುವಟಿಕೆಯಲ್ಲಿ DC ವಿದ್ಯುತ್ ಸರಬರಾಜಿಗೆ ಯಾವ ವೋಲ್ಟೇಜ್ ಹೊಂದಿಸಲಾಗಿದೆ?",
             "opts": { "1": "12V", "2": "3V", "3": "5V" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U06-Q02",
             "q": "ಏಳು-ಸೆಗ್ಮೆಂಟ್ ಡಿಸ್ಪ್ಲೇಯ ಪ್ರಾಥಮಿಕ ಕಾರ್ಯ ಯಾವುದು?",
             "opts": {
               "1": "ಇಡೀ ಸರ್ಕ್ಯೂಟ್‌ಗೆ ವಿದ್ಯುತ್ ಸರಬರಾಜು ಮಾಡಲು",
@@ -606,6 +644,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U06-Q03",
             "q": "ಸೂಚನೆಗಳ ಪ್ರಕಾರ 7-ಸೆಗ್ಮೆಂಟ್ ಡಿಸ್ಪ್ಲೇಗಳ ಕಾಮನ್ ಪಿನ್ ಅನ್ನು ಹೇಗೆ ಸಂಪರ್ಕಿಸಬೇಕು?",
             "opts": {
               "1": "DC ವಿದ್ಯುತ್ ಸರಬರಾಜಿನ ಧನಾತ್ಮಕ ಟರ್ಮಿನಲ್‌ಗೆ",
@@ -615,6 +654,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U06-Q04",
             "q": "ಏಳು-ಸೆಗ್ಮೆಂಟ್ ಡಿಸ್ಪ್ಲೇಗಳಲ್ಲಿ ಒಂದು ಸರಿಯಾದ ಸಂಖ್ಯೆ ತೋರಿಸದಿದ್ದರೆ ಮೊದಲು ಏನು ಪರಿಶೀಲಿಸಬೇಕು?",
             "opts": {
               "1": "ಪ್ರದರ್ಶಿಸಬೇಕಾದ ಸಂಖ್ಯೆಗೆ ಅನುಗುಣವಾಗಿ ಅಗತ್ಯ LED ಸೆಗ್ಮೆಂಟ್‌ಗಳು ಸಂಪರ್ಕಗೊಂಡಿವೆಯೇ ಎಂದು ಖಚಿತಪಡಿಸಿ",
@@ -624,6 +664,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U06-Q05",
             "q": "7-ಸೆಗ್ಮೆಂಟ್ ಡಿಸ್ಪ್ಲೇಯಲ್ಲಿ '41' ಸಂಖ್ಯೆ ಸರಿಯಾಗಿ ಪ್ರದರ್ಶಿಸಲಾಗಿದೆಯೇ ಎಂದು ಹೇಗೆ ಪರಿಶೀಲಿಸಬಹುದು?",
             "opts": {
               "1": "ವಿದ್ಯುತ್ ಸರಬರಾಜಿನ ವೋಲ್ಟೇಜ್ ಹೊಂದಿಸುವ ಮೂಲಕ",
@@ -636,6 +677,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U06-A01",
           "id": "Display-Your-Lucky-Number-🖥️-Remedial",
           "seq": 24,
           "nm": "Display Your Lucky Number 🖥️",
@@ -687,6 +729,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U07",
       "nm": "The Solar Panel's Gatekeeper ☀️",
       "desc": "Directional current flow, diode (forward & reverse bias), voltage measurement, circuit protection, energy efficiency in clean energy systems. DC power supply, diode, resistor, LED, voltmeter (parallel), connecting wires, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -706,6 +749,7 @@
         "nm": "Does Your Diode Keep the Current Safe? 🚦",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U07-Q01",
             "q": "ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ ಡಯೋಡ್‌ನ ಪ್ರಾಥಮಿಕ ಕಾರ್ಯ ಯಾವುದು?",
             "opts": {
               "1": "ವಿದ್ಯುತ್ ಒಂದೇ ದಿಕ್ಕಿನಲ್ಲಿ ಹರಿಯಲು ಅನುಮತಿಸಲು",
@@ -715,6 +759,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U07-Q02",
             "q": "ಸ್ವಚ್ಛ ಶಕ್ತಿ ವ್ಯವಸ್ಥೆಗಳಲ್ಲಿ ವಿದ್ಯುತ್ ಒಂದೇ ದಿಕ್ಕಿನಲ್ಲಿ ಹರಿಯುವುದು ಯಾಕೆ ಮುಖ್ಯ?",
             "opts": {
               "1": "ವಿದ್ಯುತ್ ಹರಿವಿನ ವೇಗ ಹೆಚ್ಚಿಸಲು",
@@ -724,6 +769,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U07-Q03",
             "q": "ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ ಡಯೋಡ್ ಸರಿಯಾಗಿ ಸಂಪರ್ಕಗೊಂಡರೆ ಏನಾಗಬೇಕು?",
             "opts": {
               "1": "ಸರ್ಕ್ಯೂಟ್ ಶಾರ್ಟ್ ಆಗಿ ನಿಲ್ಲುತ್ತದೆ",
@@ -733,6 +779,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U07-Q04",
             "q": "ಸೌರ ಫಲಕ ವ್ಯವಸ್ಥೆಯ ಬ್ಯಾಟರಿ ರಾತ್ರಿ ಬೇಗ ಡಿಸ್ಚಾರ್ಜ್ ಆಗುತ್ತಿದ್ದರೆ ಏನು ಮಾಡಬಹುದು?",
             "opts": {
               "1": "ಸೌರ ಫಲಕಗಳ ಸಂಖ್ಯೆ ಹೆಚ್ಚಿಸಿ",
@@ -742,6 +789,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U07-Q05",
             "q": "ಸರ್ಕ್ಯೂಟ್ ಸಿಮ್ಯುಲೇಶನ್‌ನಲ್ಲಿ LED ಉರಿಯುತ್ತಿಲ್ಲ ಮತ್ತು ವೋಲ್ಟ್‌ಮೀಟರ್ 0 ವೋಲ್ಟ್ ತೋರಿಸುತ್ತಿದ್ದರೆ ಸಮಸ್ಯೆ ಏನಿರಬಹುದು?",
             "opts": {
               "1": "ಡಯೋಡ್ ತಪ್ಪು ದಿಕ್ಕಿನಲ್ಲಿ ಸಂಪರ್ಕಗೊಂಡಿದೆ",
@@ -754,6 +802,7 @@
       }
     },
     {
+      "uid": "LU-DUMMY-C5125-U08",
       "nm": "No Reverse, No Waste 🔋",
       "desc": "Directional current flow, diode behavior (forward bias & reverse blocking), circuit protection, energy loss prevention, basic power flow in circuits. DC power supply (2), diode, LED, switch, connecting wires, ground, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -773,11 +822,13 @@
         "nm": "What Blocks the Reverse Flow? ⬅️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U08-Q01",
             "q": "ಸೌರ ಫಲಕ ವ್ಯವಸ್ಥೆಯಲ್ಲಿ ಶಕ್ತಿಯ ವಿರುದ್ಧ ಹರಿವನ್ನು ತಡೆಯುವ ಘಟಕ ಯಾವುದು?",
             "opts": { "1": "ಕೆಪ್ಯಾಸಿಟರ್", "2": "ಡಯೋಡ್", "3": "ರೆಸಿಸ್ಟರ್" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U08-Q02",
             "q": "ಸೌರ ಚಾರ್ಜಿಂಗ್ ವ್ಯವಸ್ಥೆಯಲ್ಲಿ ಡಯೋಡ್ ಯಾಕೆ ಮುಖ್ಯ?",
             "opts": {
               "1": "ಅದು ವಿದ್ಯುತ್ ದಿಕ್ಕನ್ನು ಬದಲಾಯಿಸುತ್ತದೆ",
@@ -787,6 +838,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U08-Q03",
             "q": "ಸರ್ಕ್ಯೂಟ್‌ನಿಂದ ಡಯೋಡ್ ತೆಗೆದರೆ ಏನಾಗುತ್ತದೆ?",
             "opts": {
               "1": "LED ಉರಿಯುವುದಿಲ್ಲ",
@@ -796,6 +848,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U08-Q04",
             "q": "ರಾತ್ರಿ ಬ್ಯಾಟರಿ ಸೌರ ಫಲಕಕ್ಕೆ ವಾಪಸ್ ಡಿಸ್ಚಾರ್ಜ್ ಆದರೆ ಯಾವ ಸಮಸ್ಯೆ ಉಂಟಾಗುತ್ತದೆ?",
             "opts": {
               "1": "ಸರ್ಕ್ಯೂಟ್ ಸಂಪರ್ಕ ಸುಧಾರಿಸುತ್ತದೆ",
@@ -805,6 +858,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U08-Q05",
             "q": "ಸ್ಕ್ರಿಪ್ಟ್ ವಿವರಣೆ ಆಧಾರದ ಮೇಲೆ ಸೌರ ಚಾರ್ಜಿಂಗ್ ವ್ಯವಸ್ಥೆ ದಕ್ಷವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸದಿದ್ದರೆ ಯಾವ ಘಟಕ ಕಾಣೆಯಾಗಿರಬಹುದು?",
             "opts": { "1": "ಸ್ವಿಚ್", "2": "LED", "3": "ಡಯೋಡ್" },
             "ans": "3"
@@ -813,6 +867,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U08-A01",
           "id": "Simulate-a-Solar-Charging-Shield-🔋-Remedial",
           "seq": 25,
           "nm": "Simulate a Solar Charging Shield 🔋",
@@ -864,6 +919,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U09",
       "nm": "Bins That Speak in Color 🗑️",
       "desc": "RGB LED color mixing, circuit control using switches, parallel connections, state indication system, voltage and brightness relationship. DC power supply, toggle switches, RGB LED, connecting wires, ground, simulate.",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -883,6 +939,7 @@
         "nm": "What Color is the Full Bin? 🌈",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U09-Q01",
             "q": "ಸ್ಮಾರ್ಟ್ ಬಿನ್ ಸೂಚಕದ ಉದ್ದೇಶ ಏನು?",
             "opts": {
               "1": "ತ್ಯಾಜ್ಯ ಡಬ್ಬಿಗಳ ಸೌಂದರ್ಯ ಸುಧಾರಿಸಲು",
@@ -892,6 +949,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U09-Q02",
             "q": "ಸ್ಮಾರ್ಟ್ ಬಿನ್ ಸೂಚಕದಲ್ಲಿ RGB LED ಯ ಪಾತ್ರ ಯಾವುದು?",
             "opts": {
               "1": "ಬೇರೆ ಬಣ್ಣಗಳ ಮೂಲಕ ಡಬ್ಬಿಯ ಭರ್ತಿ ಮಟ್ಟ ಸೂಚಿಸಲು",
@@ -901,6 +959,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U09-Q03",
             "q": "EveryCircuit ನಲ್ಲಿ ಸರ್ಕ್ಯೂಟ್ ಹೇಗೆ ಸಿಮ್ಯುಲೇಟ್ ಮಾಡಬಹುದು?",
             "opts": {
               "1": "ಸರ್ಕ್ಯೂಟ್ ಮಾದರಿ ರಚಿಸಿ ಅದರ ಕಾರ್ಯ ಗಮನಿಸಿ",
@@ -910,6 +969,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C5125-U09-Q04",
             "q": "ಸ್ಮಾರ್ಟ್ ಬಿನ್ ಸೂಚಕದ RGB LED ಬೆಳಗದಿದ್ದರೆ ಮೊದಲು ಯಾವ ಹಂತ ಪರಿಶೀಲಿಸಬೇಕು?",
             "opts": {
               "1": "RGB LED ತೆಗೆದು ಸಾಮಾನ್ಯ LED ಇರಿಸಿ",
@@ -919,6 +979,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U09-Q05",
             "q": "ಸ್ಮಾರ್ಟ್ ನಗರದಲ್ಲಿ ಡಬ್ಬಿಗಳನ್ನು ದಕ್ಷತೆಯಿಂದ ಸ್ವಚ್ಛಗೊಳಿಸದಿದ್ದರೆ ಸ್ಮಾರ್ಟ್ ಬಿನ್ ಸೂಚಕ ಈ ಸಮಸ್ಯೆ ಪರಿಹರಿಸಲು ಹೇಗೆ ಅನ್ವಯಿಸಬಹುದು?",
             "opts": {
               "1": "ಡಬ್ಬಿಗಳನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಲು ಕ್ಯಾಮೆರಾ ಸಂಯೋಜಿಸಿ",
@@ -931,6 +992,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U09-A01",
           "id": "Build-the-Smart-City-Bin-Indicator-🗑️-Advanced",
           "seq": 26,
           "nm": "Build the Smart City Bin Indicator 🗑️",
@@ -982,6 +1044,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C5125-U10",
       "nm": "Mix the Colors of Light 🌈",
       "desc": "RGB LED, LED color control, Switch mechanism, Circuit design, Troubleshooting",
       "rwc": "Mobile, Internet, Everycircuit App",
@@ -1001,11 +1064,13 @@
         "nm": "Can You Mix Red, Green and Blue? 🌈",
         "qs": [
           {
+            "qid": "QN-DUMMY-C5125-U10-Q01",
             "q": "ಗೇಮಿಂಗ್ ಕೀಬೋರ್ಡ್ ಮತ್ತು ವೇದಿಕೆ ದೀಪಗಳಂತಹ ಸಾಧನಗಳಲ್ಲಿ ವರ್ಣಮಯ ಹೊಳೆಯುವ ಪರಿಣಾಮಗಳು ರಚಿಸಲು ಯಾವ ರೀತಿಯ LED ಬಳಸಲಾಗುತ್ತದೆ?",
             "opts": { "1": "UV LED", "2": "IR LED", "3": "RGB LED" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U10-Q02",
             "q": "2V ನಲ್ಲಿ ಹಸಿರು ಮತ್ತು ನೀಲಿ ಸ್ವಿಚ್‌ಗಳು ಮಾತ್ರ ಆನ್ ಮಾಡಿದಾಗ RGB LED ಯಾಕೆ ಬೆಳಗುವುದಿಲ್ಲ?",
             "opts": {
               "1": "LED ದೋಷಪೂರಿತವಾಗಿರುವುದರಿಂದ",
@@ -1015,6 +1080,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U10-Q03",
             "q": "EveryCircuit ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ಸ್ವಿಚ್‌ಗಳ ಮೂಲಕ RGB LED ನಿಯಂತ್ರಿಸಲು ಘಟಕಗಳನ್ನು ಹೇಗೆ ಜೋಡಿಸಬೇಕು?",
             "opts": {
               "1": "RGB LED ಅನ್ನು ನೇರವಾಗಿ DC ಸರಬರಾಜಿಗೆ ಸಂಪರ್ಕಿಸಿ",
@@ -1024,6 +1090,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C5125-U10-Q04",
             "q": "ವಿದ್ಯುತ್ ಸರಬರಾಜು 3.2V ಆದರೆ ಕೆಂಪು LED ಮಾತ್ರ ಸುರಕ್ಷಿತವಾಗಿ ಬೆಳಗಲು ಹೇಗೆ ಮಾಡಬಹುದು?",
             "opts": {
               "1": "DC ವಿದ್ಯುತ್ ಸರಬರಾಜನ್ನು ಆಫ್ ಮಾಡಿ",
@@ -1033,6 +1100,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C5125-U10-Q05",
             "q": "3.3V ನಲ್ಲಿ ಕೆಂಪು ಸ್ವಿಚ್ ಆನ್ ಮಾಡಿದಾಗ RGB LED ಹಾನಿಗೊಳಗಾಗುವುದು ಯಾಕೆ?",
             "opts": {
               "1": "ಕೆಂಪು LED ಗೆ ಸುಮಾರು 2V ಮಾತ್ರ ಬೇಕು, ಹೆಚ್ಚಿನ ವೋಲ್ಟೇಜ್ ಅದನ್ನು ಹಾನಿಗೊಳಿಸುತ್ತದೆ",
@@ -1045,6 +1113,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C5125-U10-A01",
           "id": "Control-the-Color-Mixer-🌈-Remedial",
           "seq": 27,
           "nm": "Control the Color Mixer 🌈",

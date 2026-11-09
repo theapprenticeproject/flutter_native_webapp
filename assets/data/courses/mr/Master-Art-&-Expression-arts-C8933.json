@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C8933-U01",
       "nm": "Shirt Carries a Message 👕",
       "desc": "Upcycling",
       "rwc": "Old T-Shirt, Scissors, Colors, Fabric, Markers",
@@ -26,6 +27,7 @@
         "nm": "Can a T-shirt carry groceries? 👕",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U01-Q01",
             "q": "या अ‍ॅक्टिव्हिटीचा प्रमुख उद्देश काय आहे?",
             "opts": {
               "1": "To promote climate action and reuse",
@@ -35,6 +37,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U01-Q02",
             "q": "जुने टी-शर्ट्स वापरून टोट बॅग्स का बनवाव्यात असे स्क्रिप्ट का सुचवते?",
             "opts": {
               "1": "To reduce waste and support sustainable practices",
@@ -44,6 +47,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U01-Q03",
             "q": "जुना टी-शर्ट टोट बॅगमध्ये बदलण्यासाठी पहिले पाऊल कोणते आहे?",
             "opts": {
               "1": "Sewing the bottom of the T-shirt",
@@ -53,6 +57,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U01-Q04",
             "q": "क्लायमेट अ‍ॅक्शनसाठी संदेश टोट बॅगवर कसे सर्जनशीलपणे व्यक्त करू शकता?",
             "opts": {
               "1": "By using bright, non-recyclable materials",
@@ -62,6 +67,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U01-Q05",
             "q": "फ्रिंजेस बांधल्यानंतर टी-शर्ट उलटा करताना कोणता २१व्या शतकातील कौशल्यावर भर दिला जातो?",
             "opts": {
               "1": "Speed and efficiency",
@@ -74,6 +80,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U01-A01",
           "id": "Turn-a-T-Shirt-Into-a-Tote-Bag-👕-Basic",
           "seq": 77,
           "nm": "Tote bag",
@@ -125,6 +132,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C8933-U02",
       "nm": "Old Tee Gets Purpose 🧵",
       "desc": "Upcycling",
       "rwc": "Old T-Shirt, Scissors, Colors, Fabric",
@@ -142,6 +150,7 @@
             "nm": "Can an old shirt become a bag? 🛍️",
             "qs": [
               {
+                "qid": "QN-DUMMY-C8933-U02-V01-Q01",
                 "q": "जुन्या टी-शर्टला पुनर्वापर करता येणाऱ्या पिशवीत रुपांतरित करण्यासाठी पहिला टप्पा कोणता आहे?",
                 "opts": {
                   "1": "Cut the sleeves of the T-shirt.",
@@ -151,6 +160,7 @@
                 "ans": "3"
               },
               {
+                "qid": "QN-DUMMY-C8933-U02-V01-Q02",
                 "q": "टी-शर्टच्या गळ्याला मूळ आकारापेक्षा मोठा का कापावा?",
                 "opts": {
                   "1": "To improve the appearance of the T-shirt.",
@@ -160,6 +170,7 @@
                 "ans": "3"
               },
               {
+                "qid": "QN-DUMMY-C8933-U02-V01-Q03",
                 "q": "टी-शर्टच्या तळाशी पट्ट्या बांधण्याचा उद्देश काय आहे?",
                 "opts": {
                   "1": "To form the base of the bag.",
@@ -169,6 +180,7 @@
                 "ans": "1"
               },
               {
+                "qid": "QN-DUMMY-C8933-U02-V01-Q04",
                 "q": "आपल्या पिशवीसाठी अधिक वहन क्षमता तयार करण्यासाठी कोणते सर्जनशील समायोजन करू शकता?",
                 "opts": {
                   "1": "Add more decorative elements with fabric paint.",
@@ -178,6 +190,7 @@
                 "ans": "2"
               },
               {
+                "qid": "QN-DUMMY-C8933-U02-V01-Q05",
                 "q": "आपली पुनर्वापर करता येणारी पिशवी आपल्या अनोख्या शैलीसाठी कशी वैयक्तिकृत करू शकता?",
                 "opts": {
                   "1": "By choosing a brightly colored T-shirt.",
@@ -195,6 +208,7 @@
         "nm": "Can an old shirt become a bag? 🛍️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U02-Q01",
             "q": "जुन्या टी-शर्टला पुनर्वापर करता येणाऱ्या पिशवीत रुपांतरित करण्यासाठी पहिला टप्पा कोणता आहे?",
             "opts": {
               "1": "Cut the sleeves of the T-shirt.",
@@ -204,6 +218,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U02-Q02",
             "q": "टी-शर्टच्या गळ्याला मूळ आकारापेक्षा मोठा का कापावा?",
             "opts": {
               "1": "To improve the appearance of the T-shirt.",
@@ -213,6 +228,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U02-Q03",
             "q": "टी-शर्टच्या तळाशी पट्ट्या बांधण्याचा उद्देश काय आहे?",
             "opts": {
               "1": "To form the base of the bag.",
@@ -222,6 +238,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U02-Q04",
             "q": "आपल्या पिशवीसाठी अधिक वहन क्षमता तयार करण्यासाठी कोणते सर्जनशील समायोजन करू शकता?",
             "opts": {
               "1": "Add more decorative elements with fabric paint.",
@@ -231,6 +248,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C8933-U02-Q05",
             "q": "आपली पुनर्वापर करता येणारी पिशवी आपल्या अनोख्या शैलीसाठी कशी वैयक्तिकृत करू शकता?",
             "opts": {
               "1": "By choosing a brightly colored T-shirt.",
@@ -243,6 +261,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U02-A01",
           "id": "Make-a-Reusable-Tote-Bag-🧵-Remedial",
           "seq": 78,
           "nm": "Tote Bag",
@@ -253,6 +272,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C8933-U03",
       "nm": "Threads Build a Mat 🪡",
       "desc": "Weaving technique",
       "rwc": "Cardboard, Yarn, Paper, Glue, Scissors",
@@ -272,11 +292,13 @@
         "nm": "Can cardboard become a coaster? 🧵",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U03-Q01",
             "q": "विणकाम प्रकल्पासाठी बेस तयार करण्यासाठी मुख्यतः कोणती सामग्री वापरली जाते?",
             "opts": { "1": "A piece of cardboard", "2": "A plastic frame", "3": "A piece of wood" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U03-Q02",
             "q": "कार्डबोर्डवरील अंतर समान का असणे महत्त्वाचे आहे?",
             "opts": {
               "1": "For neat weaving later",
@@ -286,6 +308,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U03-Q03",
             "q": "विणकाम करताना विरुद्ध बाजूला पोहोचल्यावर तुम्ही काय करावे?",
             "opts": {
               "1": "Cut the thread immediately",
@@ -295,6 +318,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C8933-U03-Q04",
             "q": "तुमचा कोस्टर डिझाइन वैयक्तिकृत कसे करता येईल?",
             "opts": {
               "1": "Reduce the number of threads used",
@@ -304,6 +328,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U03-Q05",
             "q": "पाठीमागील तारा कापल्यानंतर तुमचा कोस्टर पूर्ण करण्याचा सर्जनशील मार्ग कोणता आहे?",
             "opts": {
               "1": "Glue the threads to the cardboard",
@@ -316,6 +341,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U03-A01",
           "id": "Weave-a-Handmade-Coaster-🪡-Basic",
           "seq": 79,
           "nm": "Handmade Coaster",
@@ -367,6 +393,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C8933-U04",
       "nm": "Yarn Finds Its Pattern 🧶",
       "desc": "Weaving",
       "rwc": "Cardboard, Yarn, Paper, Glue",
@@ -386,6 +413,7 @@
         "nm": "Can thread weave into a coaster? 🎨",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U04-Q01",
             "q": "हॅन्डमेड कोस्टर बनवण्यासाठी कोणती सामग्री आवश्यक आहे?",
             "opts": {
               "1": "A paintbrush",
@@ -395,6 +423,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U04-Q02",
             "q": "कार्डबोर्डच्या बाजूंवर छोटे कट्स का करतात?",
             "opts": {
               "1": "To help with threading and spacing",
@@ -404,11 +433,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U04-Q03",
             "q": "कुठल्या स्टेपमध्ये थ्रेडचा फॉरवर्ड आणि बॅकवर्ड मोशन वापरला जातो?",
             "opts": { "1": "Cutting", "2": "Setting the Base", "3": "Weaving" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C8933-U04-Q04",
             "q": "तुमच्या कोस्टरला वैयक्तिक स्पर्श देण्यासाठी तुम्ही काय करू शकता?",
             "opts": {
               "1": "Use only one color of thread for a uniform look",
@@ -418,6 +449,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U04-Q05",
             "q": "तुमच्या कोस्टरचे अंतिम स्वरूप कसे क्रिएटिव्हली वाढवू शकता?",
             "opts": {
               "1": "Leave the threads loose for a casual look",
@@ -430,6 +462,7 @@
       }
     },
     {
+      "uid": "LU-DUMMY-C8933-U05",
       "nm": "Warli Saves the Earth 🌿",
       "desc": "Warli art",
       "rwc": "Paper, Pen, Paint, Brush",
@@ -449,6 +482,7 @@
         "nm": "Can matchsticks draw Warli art? 🔥",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U05-Q01",
             "q": "व्हिडिओमध्ये वर्णन केल्याप्रमाणे वारली आर्टची मुख्य वैशिष्ट्ये कोणती आहेत?",
             "opts": {
               "1": "Geometric shapes and eco-friendly colors",
@@ -458,6 +492,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U05-Q02",
             "q": "वारली आर्ट तयार करण्यासाठी मॅचस्टिक्स आणि इअरबड्सचा वापर करण्याचा उद्देश काय आहे?",
             "opts": {
               "1": "To create a more colorful artwork",
@@ -467,6 +502,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U05-Q03",
             "q": "आधुनिक शाश्वत पद्धती दर्शवण्यासाठी वारली आर्टचा वापर कसा करता येईल?",
             "opts": {
               "1": "By incorporating themes like rainwater harvesting and solar energy",
@@ -476,6 +512,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U05-Q04",
             "q": "जर तुम्हाला रीसायकलिंगच्या थीमवर आधारित वारली आर्ट तयार करायचे असेल, तर कोणती क्रिएटिव्ह मटेरियल्स वापरू शकता?",
             "opts": {
               "1": "High-end acrylic paints and canvases",
@@ -485,6 +522,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U05-Q05",
             "q": "कल्पना करा की तुम्हाला जैवविविधतेचे महत्त्व दर्शविणारे अनोखे वारली आर्ट प्रोजेक्ट तयार करायचे आहे. कोणता नाविन्यपूर्ण दृष्टिकोन घेऊ शकता?",
             "opts": {
               "1": "Focus solely on depicting human activities",
@@ -497,6 +535,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U05-A01",
           "id": "Create-a-Sustainable-Warli-Artwork-🌿-Intermediate",
           "seq": 80,
           "nm": "Sustainable Warli Art",
@@ -548,6 +587,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C8933-U06",
       "nm": "Triangles Tell Life 🏕️",
       "desc": "Warli art",
       "rwc": "Paper, Pen, Paint",
@@ -567,6 +607,7 @@
         "nm": "Can shapes tell tribal stories? 🔺",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U06-Q01",
             "q": "वारली चित्रकलेतील मुख्य आकार कोणते आहेत?",
             "opts": {
               "1": "Circles, triangles, and lines",
@@ -576,6 +617,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U06-Q02",
             "q": "वारली चित्रकलेतील गोल साधारणतः काय दर्शवतो?",
             "opts": {
               "1": "The sun and moon",
@@ -585,6 +627,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U06-Q03",
             "q": "वारली चित्रकलेतील व्यक्तींना अनोखा कसा बनवता येईल?",
             "opts": {
               "1": "By adding detailed facial features",
@@ -594,6 +637,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U06-Q04",
             "q": "जर तुम्ही एखाद्या सणाचे वारली चित्र तयार करणार असाल, तर सर्जनशीलतेने कोणते घटक समाविष्ट कराल?",
             "opts": {
               "1": "People dancing, musical instruments, and decorations",
@@ -603,6 +647,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U06-Q05",
             "q": "वारली चित्रकलेत मासेमारीचे दृश्य दाखवायचे असल्यास, कोणते सर्जनशील घटक समाविष्ट करू शकता?",
             "opts": {
               "1": "Mountains and trees with animals",
@@ -615,6 +660,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U06-A01",
           "id": "Create-a-Warli-Celebration-Scene-🏕️-Remedial",
           "seq": 81,
           "nm": "Warli Art",
@@ -625,6 +671,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C8933-U07",
       "nm": "One Color Holds Emotion 💙",
       "desc": "Color gradation",
       "rwc": "Paper, Pencil, Colors",
@@ -644,6 +691,7 @@
         "nm": "Can one color show all moods? 🎭",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U07-Q01",
             "q": "मोनोक्रोम मूड आर्टवर्कमध्ये वेगवेगळ्या छटा वापरण्याचा उद्देश काय आहे?",
             "opts": {
               "1": "To show how an emotion transitions from strong to mild",
@@ -653,6 +701,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U07-Q02",
             "q": "आनंद आणि शांतता यांसारख्या भावना कलाकृतीत कशा प्रकारे दर्शवल्या जातात?",
             "opts": {
               "1": "Using sharp shapes like triangles",
@@ -662,6 +711,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U07-Q03",
             "q": "मोनोक्रोम मूड आर्टवर्क तयार करण्याची पहिली पायरी काय आहे?",
             "opts": {
               "1": "Choose an emotion and draw a shape representing it",
@@ -671,6 +721,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U07-Q04",
             "q": "तुम्ही मोनोक्रोम मूड आर्टवर्कद्वारे सर्जनशीलता व्यक्त करायची असल्यास, तुम्ही खालीलपैकी काय करू शकता?",
             "opts": {
               "1": "Follow a strict guideline of shapes and colors provided by others",
@@ -680,6 +731,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U07-Q05",
             "q": "कल्पना करा की तुम्हाला तुमच्या कलाकृतीत आश्चर्याची भावना सर्जनशीलतेने दर्शवायची आहे. एक नाविन्यपूर्ण दृष्टिकोन काय असू शकतो?",
             "opts": {
               "1": "Use only one shade of blue without any shapes",
@@ -692,6 +744,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U07-A01",
           "id": "Create-a-Monochrome-Mood-Artwork-💙-Intermediate",
           "seq": 82,
           "nm": "Monochrome mood",
@@ -743,6 +796,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C8933-U08",
       "nm": "Shades Paint a Landscape 🌄",
       "desc": "Color gradation",
       "rwc": "Paper, Colors, Pencil",
@@ -762,6 +816,7 @@
         "nm": "Can gray show every feeling? 🩶",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U08-Q01",
             "q": "आर्टमधील ग्रेस्केलची संकल्पना काय आहे?",
             "opts": {
               "1": "It refers to the combination of complementary colors to enhance contrast.",
@@ -771,6 +826,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C8933-U08-Q02",
             "q": "अक्रोमॅटिक आणि मोनोक्रोमॅटिक रंग योजना यामध्ये काय फरक आहे?",
             "opts": {
               "1": "Achromatic uses warm colors, while Monochromatic uses cool colors.",
@@ -780,6 +836,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C8933-U08-Q03",
             "q": "कलरसकेप अ‍ॅक्टिव्हिटीमध्ये कोणता टप्पा टिंट्स आणि शेड्स तयार करण्यास समाविष्ट आहे?",
             "opts": {
               "1": "Choosing one main color for the artwork.",
@@ -789,6 +846,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U08-Q04",
             "q": "टेक कंपनीसाठी लोगो डिझाईन करताना मोनोक्रोमॅटिक रंग योजना कशी सर्जनशीलपणे लागू कराल?",
             "opts": {
               "1": "Mix black and white exclusively to keep it minimalistic.",
@@ -798,6 +856,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C8933-U08-Q05",
             "q": "अक्रोमॅटिक योजना वापरून फॅशन पीस तयार करण्याच्या कामासाठी क्रिएटिव्ह दृष्टिकोन काय असेल?",
             "opts": {
               "1": "Use only primary colors to make it appealing and lively.",
@@ -810,6 +869,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U08-A01",
           "id": "Paint-a-Gradation-Landscape-🌄-Remedial",
           "seq": 83,
           "nm": "Gradation Landscape",
@@ -820,6 +880,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C8933-U09",
       "nm": "Faces Speak Every Feeling 😶",
       "desc": "Facial expressions",
       "rwc": "Paper, Pencil, Colors",
@@ -839,11 +900,13 @@
         "nm": "Can colors express your emotions? 😄",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U09-Q01",
             "q": "कॉमिक स्ट्रिप अ‍ॅक्टिव्हिटीमध्ये आनंद व्यक्त करण्यासाठी कोणते रंग सूचित केले आहेत?",
             "opts": { "1": "Red and grey", "2": "Blue and purple", "3": "Yellow and orange" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U09-Q02",
             "q": "स्क्रिप्टनुसार, शब्दांशिवाय भावना कशा व्यक्त करता येतात?",
             "opts": {
               "1": "By writing a detailed description",
@@ -853,6 +916,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C8933-U09-Q03",
             "q": "जर तुम्हाला पात्राच्या चेहऱ्यावर आश्चर्य दाखवायचे असेल, तर कोणत्या वैशिष्ट्यांवर जोर द्यावा?",
             "opts": {
               "1": "Wide eyes and a smiling mouth",
@@ -862,6 +926,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C8933-U09-Q04",
             "q": "तुमच्या पात्राला अनपेक्षित वाढदिवसाचे भेट मिळते. तुमच्या कॉमिक स्ट्रिपमध्ये त्यांच्या भावनांना सर्जनशीलपणे कसे दर्शवू शकता?",
             "opts": {
               "1": "Use dark colors to show their confusion",
@@ -871,6 +936,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U09-Q05",
             "q": "कल्पना करा की तुमचे पात्र खेळ हरवल्यावर रागावले आहे. हे भावना दर्शवण्यासाठी कोणता सर्जनशील दृष्टिकोन वापरू शकता?",
             "opts": {
               "1": "Show the character with droopy eyes and a curved-down mouth",
@@ -883,6 +949,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U09-A01",
           "id": "Draw-a-Four-Emotion-Comic-Strip-😶-Advanced",
           "seq": 84,
           "nm": "If feelings could talk",
@@ -934,6 +1001,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C8933-U10",
       "nm": "Features Express the Soul 🎭",
       "desc": "Facial expressions",
       "rwc": "Paper, Pencil, Eraser, Colors",
@@ -953,6 +1021,7 @@
         "nm": "Can a drawing show feelings? 😲",
         "qs": [
           {
+            "qid": "QN-DUMMY-C8933-U10-Q01",
             "q": "आजच्या कला अ‍ॅक्टिव्हिटीसाठी कोणती साहित्ये आवश्यक आहेत?",
             "opts": {
               "1": "Clay, sculpting tools, and glaze",
@@ -962,6 +1031,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C8933-U10-Q02",
             "q": "खऱ्या आयुष्यात चेहऱ्याच्या भावनांची समजूत का महत्त्वाची आहे?",
             "opts": {
               "1": "It improves communication skills",
@@ -971,6 +1041,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U10-Q03",
             "q": "आनंदी भावनेचा चित्र काढण्याच्या अ‍ॅक्टिव्हिटीमध्ये कसा तयार होतो?",
             "opts": {
               "1": "By raising the eyebrows and making the eyes smaller with a big smile",
@@ -980,6 +1051,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U10-Q04",
             "q": "जर तुम्हाला आश्चर्यचकित व्यक्तिमत्त्व तयार करायचे असेल, तर कोणती सर्जनशील पद्धत वापरावी?",
             "opts": {
               "1": "Draw the eyebrows raised and eyes big, with an oval mouth",
@@ -989,6 +1061,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C8933-U10-Q05",
             "q": "तुमच्या व्यक्तिमत्त्वाच्या हेअरस्टाइलला कसे बदलाल?",
             "opts": {
               "1": "By keeping it the same as shown in the example",
@@ -1001,6 +1074,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C8933-U10-A01",
           "id": "Draw-Faces-Showing-Four-Emotions-🎭-Remedial",
           "seq": 85,
           "nm": "Express a face",

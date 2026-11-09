@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C11761-U01",
       "nm": "Shield Covers the Bill 🛡️",
       "desc": "Health Insurance, Financial Protection",
       "rwc": "Pencil, Eraser",
@@ -26,6 +27,7 @@
         "nm": "Can insurance save your family? 🏥",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U01-Q01",
             "q": "What is the main purpose of health insurance according to the script?",
             "opts": {
               "1": "To avoid paying any medical bills.",
@@ -35,6 +37,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U01-Q02",
             "q": "How does health insurance support SDG 3?",
             "opts": {
               "1": "By ensuring everyone gets free healthcare.",
@@ -44,6 +47,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U01-Q03",
             "q": "If a family has health insurance, how does it impact their financial situation during a medical emergency?",
             "opts": {
               "1": "It increases financial burden due to high premiums.",
@@ -53,6 +57,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U01-Q04",
             "q": "Imagine you are deciding whether to buy health insurance for your family. What is a key factor to consider based on the script?",
             "opts": {
               "1": "The potential for emergencies and the financial protection offered.",
@@ -62,6 +67,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U01-Q05",
             "q": "You are creating a Health Protection Plan. What is the first step according to the script?",
             "opts": {
               "1": "Choosing a medical emergency situation.",
@@ -74,6 +80,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U01-A01",
           "id": "Build-Your-Health-Protection-Shield-🛡️-Basic",
           "seq": 103,
           "nm": "Build Your Health Protection Shield 🛡️",
@@ -125,6 +132,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C11761-U02",
       "nm": "Insurance Saves the Day 🏥",
       "desc": "Health Insurance, Financial Protection",
       "rwc": "Pencil, Eraser",
@@ -144,11 +152,13 @@
         "nm": "Can diversification protect savings? 📊",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U02-Q01",
             "q": "What is the foundation of financial planning according to the script?",
             "opts": { "1": "Investing in stocks", "2": "Buying insurance", "3": "Saving money" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U02-Q02",
             "q": "Why is diversification important in financial planning?",
             "opts": {
               "1": "To maximize returns",
@@ -158,6 +168,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U02-Q03",
             "q": "If you have ₹10,000, how can diversification be applied based on the script?",
             "opts": {
               "1": "Invest all in stocks",
@@ -167,6 +178,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U02-Q04",
             "q": "Anjali did not plan for emergencies and faced a medical crisis. How could she have avoided this situation?",
             "opts": {
               "1": "By investing in high-risk stocks",
@@ -176,6 +188,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U02-Q05",
             "q": "Aman invested all his money in stocks and lost it when the market went down. What should he have done differently?",
             "opts": {
               "1": "Diversified his investments",
@@ -188,6 +201,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U02-A01",
           "id": "Build-Your-Financial-Protection-Plan-🏥-Remedial",
           "seq": 104,
           "nm": "Build Your Financial Protection Plan 🏥",
@@ -239,6 +253,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C11761-U03",
       "nm": "Taxes Split Two Ways 📑",
       "desc": "Types of Taxes",
       "rwc": "Pencil, Eraser",
@@ -258,6 +273,7 @@
         "nm": "Do you pay tax without knowing? 🧾",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U03-Q01",
             "q": "What is a Direct Tax?",
             "opts": {
               "1": "A tax that is directly paid to the government by an individual or organization.",
@@ -267,6 +283,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U03-Q02",
             "q": "How does an Indirect Tax work?",
             "opts": {
               "1": "It is included in the price of goods and services and paid by the consumer.",
@@ -276,11 +293,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U03-Q03",
             "q": "Which of the following is an example of an Indirect Tax?",
             "opts": { "1": "Income Tax", "2": "Property Tax", "3": "Tax on biscuits" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U03-Q04",
             "q": "Anika's parents receive a monthly salary, and she sees a deduction labeled \"Income Tax\" on their payslip. What should Anika understand about this deduction?",
             "opts": {
               "1": "It is a Direct Tax paid directly from her parents' income to the government.",
@@ -290,6 +309,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U03-Q05",
             "q": "Raj buys a packet of chips and notices a small tax amount added to the total bill. He wants to make a smart financial decision regarding this type of tax. What should Raj consider?",
             "opts": {
               "1": "Stop buying chips to avoid paying any tax at all.",
@@ -302,6 +322,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U03-A01",
           "id": "Sort-Direct-and-Indirect-Taxes-📑-Basic",
           "seq": 105,
           "nm": "Sort Direct and Indirect Taxes 📑",
@@ -353,6 +374,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C11761-U04",
       "nm": "Tax Money Serves All 🏗️",
       "desc": "Tax",
       "rwc": "Pencil, Eraser",
@@ -372,6 +394,7 @@
         "nm": "How does tax money get spent? 🏗️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U04-Q01",
             "q": "What does the government use tax money for?",
             "opts": {
               "1": "To run public services like roads and hospitals",
@@ -381,6 +404,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U04-Q02",
             "q": "Why does every choice of the government matter?",
             "opts": {
               "1": "Because choices can be changed anytime without impact",
@@ -390,6 +414,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U04-Q03",
             "q": "If a school roof is broken, which area needs tax money?",
             "opts": {
               "1": "Buying more computer",
@@ -399,6 +424,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U04-Q04",
             "q": "What can happen if all the money is spent only on one favourite problem?",
             "opts": {
               "1": "Other important needs will not get support",
@@ -408,6 +434,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U04-Q05",
             "q": "You are making a poster. Which title shows clear decision-making?",
             "opts": {
               "1": "My favourite colours and drawings",
@@ -420,6 +447,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U04-A01",
           "id": "Divide-Tax-Money-Across-Needs-🏗️-Remedial",
           "seq": 106,
           "nm": "Divide Tax Money Across Needs 🏗️",
@@ -471,6 +499,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C11761-U05",
       "nm": "Steps Shape the Future 🗺️",
       "desc": "Saving and Investment Options",
       "rwc": "Pencil, Eraser",
@@ -490,6 +519,7 @@
         "nm": "Can saving fight poverty? 💪",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U05-Q01",
             "q": "What is the main objective of SDG 1 mentioned in the script?",
             "opts": {
               "1": "Promote gender equality",
@@ -499,6 +529,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U05-Q02",
             "q": "Why did Aisha's parents save and invest money?",
             "opts": {
               "1": "To go on a vacation",
@@ -508,6 +539,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U05-Q03",
             "q": "What is the benefit of keeping money in a bank or post office as explained by Aisha?",
             "opts": {
               "1": "It helps in immediate spending",
@@ -517,6 +549,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U05-Q04",
             "q": "If you were to design a creative workshop like Aisha, what resource could you use to make it engaging?",
             "opts": {
               "1": "Plain text documents",
@@ -526,6 +559,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U05-Q05",
             "q": "You want to help your community understand financial literacy. What decision can you make to effectively spread awareness?",
             "opts": {
               "1": "Rely solely on social media posts",
@@ -538,6 +572,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U05-A01",
           "id": "Build-a-Financial-Planning-Poster-🗺️-Intermediate",
           "seq": 107,
           "nm": "Build a Financial Planning Poster 🗺️",
@@ -589,6 +624,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C11761-U06",
       "nm": "Plan Protects Your Wealth 🛡️",
       "desc": "Financial Services",
       "rwc": "Pencil, Eraser",
@@ -608,11 +644,13 @@
         "nm": "Can investing protect your future? 📊",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U06-Q01",
             "q": "What was the amount Aman saved from his first salary?",
             "opts": { "1": "₹5,000", "2": "₹15,000", "3": "₹10,000" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U06-Q02",
             "q": "What is the main goal of the lesson in the script?",
             "opts": {
               "1": "Learn Smart Financial Planning",
@@ -622,6 +660,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U06-Q03",
             "q": "If a person has ₹10,000 to invest, how should they divide it according to the diversification example in the script?",
             "opts": {
               "1": "₹5,000 in stocks, ₹3,000 in savings, ₹2,000 in mutual funds",
@@ -631,6 +670,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U06-Q04",
             "q": "Aman wants to invest his savings for both growth and protection. Which two financial actions should he consider?",
             "opts": {
               "1": "Saving money in a fixed deposit only",
@@ -640,6 +680,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U06-Q05",
             "q": "Anjali is planning her finances and wants to ensure she is protected against unexpected medical emergencies. What should she prioritize in her financial plan?",
             "opts": {
               "1": "Saving money in a savings account",
@@ -652,6 +693,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U06-A01",
           "id": "Build-Your-Financial-Protection-Plan-🛡️-Remedial",
           "seq": 108,
           "nm": "Build Your Financial Protection Plan 🛡️",
@@ -703,6 +745,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C11761-U07",
       "nm": "Formula Grows the Savings 🧮",
       "desc": "Simple Interest",
       "rwc": "Pencil, Eraser",
@@ -722,11 +765,13 @@
         "nm": "Can simple interest grow savings? 📈",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U07-Q01",
             "q": "What does the “P” in the simple interest formula stand for?",
             "opts": { "1": "Payment", "2": "Profit", "3": "Principal" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U07-Q02",
             "q": "Why does Simple Interest remain the same every year?",
             "opts": {
               "1": "Because it is always calculated on the original savings",
@@ -736,11 +781,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U07-Q03",
             "q": "If you save ₹1000 at 4% interest for 1 year, how much interest will you earn?",
             "opts": { "1": "₹20", "2": "₹40", "3": "₹60" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U07-Q04",
             "q": "If you want your money to grow safely with fixed returns every year, what should you choose?",
             "opts": {
               "1": "Simple Interest saving",
@@ -750,6 +797,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U07-Q05",
             "q": "How does knowing about Simple Interest help you in real life?",
             "opts": {
               "1": "To spend money quickly",
@@ -762,6 +810,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U07-A01",
           "id": "Solve-the-Simple-Interest-Challenge-🧮-Intermediate",
           "seq": 109,
           "nm": "Solve the Simple Interest Challenge 🧮",
@@ -813,6 +862,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C11761-U08",
       "nm": "Interest Builds the Economy 🏗️",
       "desc": "Interest, Banking",
       "rwc": "Pencil, Eraser",
@@ -832,6 +882,7 @@
         "nm": "Can interest grow an economy? 📈",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U08-Q01",
             "q": "What is the main topic of the video?",
             "opts": {
               "1": "The Power of Interest",
@@ -841,6 +892,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U08-Q02",
             "q": "How does interest contribute to economic growth according to the video?",
             "opts": {
               "1": "By reducing taxes",
@@ -850,11 +902,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U08-Q03",
             "q": "If you save ₹1,000 in a bank with an interest rate of 3% per year, how much interest will you earn in one year?",
             "opts": { "1": "₹10", "2": "₹50", "3": "₹30" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U08-Q04",
             "q": "A person takes a loan to start a business. What is a possible positive outcome of this action, based on decision-making skills discussed in the video?",
             "opts": {
               "1": "Decreasing the business's revenue",
@@ -864,6 +918,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U08-Q05",
             "q": "A government official is planning to use interest to fund a new infrastructure project. What should they consider to make a smart decision?",
             "opts": {
               "1": "The popularity of the project",
@@ -876,6 +931,7 @@
       }
     },
     {
+      "uid": "LU-DUMMY-C11761-U09",
       "nm": "QR Moves the Money 📲",
       "desc": "Digital Payments",
       "rwc": "Pencil, Eraser",
@@ -895,6 +951,7 @@
         "nm": "Can UPI replace your wallet? 📲",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U09-Q01",
             "q": "What does UPI stand for in the context of digital payments?",
             "opts": {
               "1": "Universal Payments Interface",
@@ -904,6 +961,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U09-Q02",
             "q": "How do digital payments support SDG 8 according to the script?",
             "opts": {
               "1": "By reducing the need for physical currency and promoting global trade",
@@ -913,6 +971,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U09-Q03",
             "q": "Which method allows you to pay instantly without worrying about exact change, according to the script?",
             "opts": {
               "1": "Scanning a QR code with your phone",
@@ -922,6 +981,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U09-Q04",
             "q": "You are a shopkeeper who wants to restock quickly after a busy day. Which payment method should you encourage customers to use to ensure quick access to funds?",
             "opts": {
               "1": "Digital payments via UPI",
@@ -931,6 +991,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U09-Q05",
             "q": "You are planning to pay a daily-wage worker as soon as they complete their work. What is the most efficient payment method according to the script?",
             "opts": { "1": "Paying in cash", "2": "Digital transfer", "3": "Writing a check" },
             "ans": "2"
@@ -939,6 +1000,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U09-A01",
           "id": "Build-the-Digital-Payments-Puzzle-📲-Advanced",
           "seq": 110,
           "nm": "Build the Digital Payments Puzzle 📲",
@@ -990,6 +1052,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C11761-U10",
       "nm": "Transfer in Seconds 💳",
       "desc": "Digital Payments",
       "rwc": "Pencil, Eraser",
@@ -1009,6 +1072,7 @@
         "nm": "Which payment is truly instant? ⚡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U10-Q01",
             "q": "What does UPI stand for?",
             "opts": {
               "1": "Unified Payments Interface",
@@ -1018,11 +1082,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U10-Q02",
             "q": "Which digital payment method is typically not instant and may take some time?",
             "opts": { "1": "IMPS", "2": "UPI", "3": "NEFT" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U10-Q03",
             "q": "What is the first step in making a digital payment?",
             "opts": {
               "1": "Open the app or website",
@@ -1032,11 +1098,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U10-Q04",
             "q": "If you need to transfer a large amount of money immediately, which method should you choose?",
             "opts": { "1": "RTGS", "2": "NEFT", "3": "UPI" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U10-Q05",
             "q": "You are at a store with no cash. What should you do to pay quickly using a mobile app?",
             "opts": {
               "1": "Wait for NEFT transfer",
@@ -1049,6 +1117,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U10-A01",
           "id": "Complete-the-Digital-Payments-Chart-💳-Remedial",
           "seq": 111,
           "nm": "Complete the Digital Payments Chart 💳",

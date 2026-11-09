@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C1567-U01",
       "nm": "Hero Clears the Air 🌿",
       "desc": "Concepts: Animation sequencing, message passing (synchronization), scene transitions, cause-effect representation (pollution vs clean environment). Blocks: When Play, Say, Wait, Send, When Received, Hide, Show, Switch Backdrop",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -26,6 +27,7 @@
         "nm": "Can code clean the air? 🌫️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U01-Q01",
             "q": "ಒಕ್ಟೋಸ್ಟುಡಿಯೋದಲ್ಲಿ ಒಂದು ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ ಅನೇಕ ದೃಶ್ಯಗಳನ್ನು ಬದಲಾಯಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
             "opts": {
               "1": "ಸೇ ಬ್ಲಾಕ್",
@@ -35,6 +37,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U01-Q02",
             "q": "ಅನಿಮೇಷನ್ ರಚನೆ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿ ಸೆಂಡ್ ಬ್ಲಾಕ್‌ನ ಉದ್ದೇಶವೇನು?",
             "opts": {
               "1": "ಮತ್ತೊಂದು ಸ್ಪ್ರೈಟ್ ಕ್ರಿಯೆ ಪ್ರಾರಂಭಿಸಲು ಸಂದೇಶ ಕಳುಹಿಸಲು",
@@ -44,6 +47,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U01-Q03",
             "q": "ಹುಡುಗಿಯ ಸಂಭಾಷಣೆ ನಿರ್ದಿಷ್ಟ ಸಮಯ ಕಾಣಿಸಬೇಕಿದ್ದರೆ ಯಾವ ಬ್ಲಾಕ್‌ಗಳು ಬಳಸಬೇಕು?",
             "opts": {
               "1": "ಸೆಂಡ್ ಮತ್ತು ವೇಟ್ ಬ್ಲಾಕ್‌ಗಳು",
@@ -53,6 +57,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U01-Q04",
             "q": "ಮಲಿನ ವಾತಾವರಣದಿಂದ ಶುದ್ಧ ವಾತಾವರಣಕ್ಕೆ ಪರಿವರ್ತನೆ ತೋರಿಸಲು ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೇಗೆ ಮಾಡಬಹುದು?",
             "opts": {
               "1": "ಸ್ವಿಚ್ ಬ್ಯಾಕ್‌ಡ್ರಾಪ್, ಸೇ ಮತ್ತು ಸೆಂಡ್ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಸಂಯೋಜಿಸಿ",
@@ -62,6 +67,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U01-Q05",
             "q": "ಹೊಗೆ ಕಾಣಿಸಿಕೊಂಡ ನಂತರ ವೇಗವಾಗಿ ಸ್ವಚ್ಛ ಮಾಡುವ ಹೊಸ ಪಾತ್ರ ಸೇರಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಬೇಕು?",
             "opts": {
               "1": "ಹೊಸ ಪಾತ್ರದ ಕ್ರಿಯೆ ಪ್ರಾರಂಭಿಸಲು ಸೆಂಡ್ ಬ್ಲಾಕ್ ಬಳಸಿ",
@@ -74,6 +80,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U01-A01",
           "id": "Animate-a-Clean-Air-Hero-🌿-Basic",
           "seq": 96,
           "nm": "Animate a Clean Air Hero 🌿",
@@ -125,6 +132,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U02",
       "nm": "Seed Grows a Hero 🌱",
       "desc": "Concepts: Animation, conditionals, events Blocks: When tapped, Move, When touching, Send, Hide, Show, Wait",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -144,6 +152,7 @@
         "nm": "Can a sprite speak? 🗣️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U02-Q01",
             "q": "ಈ ಅನಿಮೇಷನ್ ಚಟುವಟಿಕೆಯ ಮುಖ್ಯ ಗುರಿ ಏನು?",
             "opts": {
               "1": "ಕಾರುಗಳಿಗೆ ನೀರು ಹಾಕುವ ಪಾತ್ರ ಅನಿಮೇಟ್ ಮಾಡಲು",
@@ -153,11 +162,13 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U02-Q02",
             "q": "ಈ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಸ್ಪ್ರೈಟ್ ಮಾತನಾಡುವಂತೆ ಮಾಡಲು ಯಾವ ಬ್ಲಾಕ್ ವರ್ಗ ಬಳಸಲಾಗುತ್ತದೆ?",
             "opts": { "1": "ವರ್ಡ್ಸ್ ಅಂಡ್ ಸೌಂಡ್ಸ್", "2": "ಮೋಷನ್", "3": "ಕಂಟ್ರೋಲ್" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U02-Q03",
             "q": "ಈ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಸೇ ಬ್ಲಾಕ್ ಏನು ಮಾಡುತ್ತದೆ?",
             "opts": {
               "1": "ಸ್ಪ್ರೈಟ್ ನೆಗೆಯುವಂತೆ ಮಾಡುತ್ತದೆ",
@@ -167,6 +178,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U02-Q04",
             "q": "ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಮುದುಕ ಸ್ಪ್ರೈಟ್ ಏನು ಹೇಳುತ್ತದೆ?",
             "opts": {
               "1": "\"ಮರ ನೆಡುವುದು ನಮ್ಮ ಭೂಮಿಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ.\"",
@@ -176,6 +188,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U02-Q05",
             "q": "ಬೀಜ ಸ್ಪ್ರೈಟ್ 'plant' ಸಂದೇಶ ಸ್ವೀಕರಿಸಿದಾಗ ಏನಾಗುತ್ತದೆ?",
             "opts": {
               "1": "ಬೀಜ ಮಾಯವಾಗುತ್ತದೆ",
@@ -188,6 +201,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U02-A01",
           "id": "Animate-a-Tree-Planting-Story-🌱-Remedial",
           "seq": 97,
           "nm": "Animate a Tree Planting Story 🌱",
@@ -239,6 +253,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U03",
       "nm": "Share the Leftovers 🍱",
       "desc": "Concepts: Event-based programming, message passing (broadcast & receive), sequencing of actions, social awareness through animation, sprite interaction, timing and synchronization. Blocks/Functions: When Play, Say, Wait, Send, When Received, Go To (motion), Text Block, Speed control.",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -258,11 +273,13 @@
         "nm": "Does food waste matter? 🍱",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U03-Q01",
             "q": "ಈ ಅನಿಮೇಷನ್ ಚಟುವಟಿಕೆಯ ಮುಖ್ಯ ಸಂದೇಶ ಏನು?",
             "opts": { "1": "ನೀರು ಉಳಿಸಿ", "2": "ಹೆಚ್ಚು ಮರುಬಳಕೆ ಮಾಡಿ", "3": "ಆಹಾರ ವ್ಯರ್ಥ ಮಾಡಬೇಡಿ" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U03-Q02",
             "q": "ಈ ಚಟುವಟಿಕೆಗೆ ಯಾವ ಸುಸ್ಥಿರ ಅಭಿವೃದ್ಧಿ ಗುರಿ ಸಂಬಂಧಿಸಿದೆ?",
             "opts": {
               "1": "SDG 3 - ಉತ್ತಮ ಆರೋಗ್ಯ ಮತ್ತು ಯೋಗಕ್ಷೇಮ",
@@ -272,11 +289,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U03-Q03",
             "q": "ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಸ್ಪ್ರೈಟ್‌ಗಳ ನಡುವೆ ಸಂವಹನ ಮಾಡಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
             "opts": { "1": "ಸೇ ಬ್ಲಾಕ್", "2": "ಸೆಂಡ್ ಬ್ಲಾಕ್", "3": "ವೇಟ್ ಬ್ಲಾಕ್" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U03-Q04",
             "q": "ಆಹಾರ ವ್ಯರ್ಥದ ಬಗ್ಗೆ ಅನಿಮೇಷನ್ ಸೃಜನಾತ್ಮಕವಾಗಿ ಉತ್ತಮಗೊಳಿಸಲು ಏನು ಮಾಡಬಹುದು?",
             "opts": {
               "1": "ಕೇವಲ ಕಪ್ಪು ಮತ್ತು ಬಿಳಿ ಬಣ್ಣ ಬಳಸಿ",
@@ -286,6 +305,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U03-Q05",
             "q": "'ಆಹಾರ ವ್ಯರ್ಥ ಮಾಡಬೇಡಿ' ಸಂದೇಶ ವಿಭಿನ್ನ ಸನ್ನಿವೇಶದಲ್ಲಿ ಅನಿಮೇಷನ್‌ನ ಮೂಲಕ ತೋರಿಸಲು ಹೇಗೆ ಮಾಡಬಹುದು?",
             "opts": {
               "1": "ಪಾತ್ರಗಳಿಲ್ಲದೆ ಕೇವಲ ಆಹಾರ ವಸ್ತುಗಳ ಮೇಲೆ ಗಮನ ಕೊಡಿ",
@@ -298,6 +318,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U03-A01",
           "id": "Animate-a-Food-Sharing-Scene-🍱-Basic",
           "seq": 98,
           "nm": "Animate a Food Sharing Scene 🍱",
@@ -344,6 +365,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U04",
       "nm": "Every Drop Saved 💧",
       "desc": "Concepts: Water conservation (SDG 6), event-based programming, continuous loops, collision detection, variables and scoring system, sprite interaction, sensor-based control (tilt), sequencing and timing. Blocks/Functions: When Play, When Tap, Tilt to Move, Send, When Received, Go To, Hide, Show, Forever, Wait, When Touches, Set Variable, Change Variable.",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -363,6 +385,7 @@
         "nm": "Can a tap save water? 🚰",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U04-Q01",
             "q": "ರಚಿಸಲಾದ ಸಂವಾದಾತ್ಮಕ ಆಟದ ಮುಖ್ಯ ಗುರಿ ಏನು?",
             "opts": {
               "1": "ಸೋರುವ ನಲ್ಲಿಗಳಿಂದ ತೊಟ್ಟಿಕ್ಕುವ ನೀರನ್ನು ಲೋಟದಲ್ಲಿ ಸಂಗ್ರಹಿಸಲು",
@@ -372,6 +395,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U04-Q02",
             "q": "ಈ ಚಟುವಟಿಕೆ ಯಾವ SDG ಗೆ ಸಂಬಂಧಿಸಿದೆ?",
             "opts": {
               "1": "SDG 13 - ಹವಾಮಾನ ಕ್ರಿಯೆ",
@@ -381,11 +405,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U04-Q03",
             "q": "ಒಕ್ಟೋಸ್ಟುಡಿಯೋದಲ್ಲಿ ನಲ್ಲಿ ಸ್ಪ್ರೈಟ್ ಸರಿಯಾಗಿ ಇಡಲು ಯಾವ ಟೂಲ್ ಬಳಸಲಾಗುತ್ತದೆ?",
             "opts": { "1": "ರಿಸೈಜ್ ಟೂಲ್", "2": "ರೊಟೇಟ್ ಟೂಲ್", "3": "ಕ್ರಾಪ್ ಟೂಲ್" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U04-Q04",
             "q": "ನೀರು ಉಳಿಸುವ ಆಟವನ್ನು ಶಕ್ತಿ ಸಂರಕ್ಷಣೆ ಕಲಿಸಲು ಹೇಗೆ ವಿಸ್ತರಿಸಬಹುದು?",
             "opts": {
               "1": "ದೀಪ ಆರಿಸಿದಾಗ ಅಂಕ ಸಿಗುವ ವ್ಯವಸ್ಥೆ ಸೇರಿಸಿ",
@@ -395,6 +421,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U04-Q05",
             "q": "ಜಾಗತಿಕ ನೀರಿನ ಕೊರತೆ ಬಗ್ಗೆ ಶೈಕ್ಷಣಿಕ ವಿಷಯ ಸೇರಿಸಲು ಸೃಜನಾತ್ಮಕ ವಿಧಾನ ಏನು?",
             "opts": {
               "1": "ಆಡುವಾಗ ನೀರಿನ ಕೊರತೆ ಬಗ್ಗೆ ಪಾಪ್-ಅಪ್ ಮಾಹಿತಿ ಸೇರಿಸಿ",
@@ -407,6 +434,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U04-A01",
           "id": "Build-a-Water-Saving-Game-💧-Remedial",
           "seq": 99,
           "nm": "Build a Water Saving Game 💧",
@@ -458,6 +486,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U05",
       "nm": "Sun Powers the Bulb ☀️",
       "desc": "Concepts: Renewable energy (solar energy), energy transformation, event-based programming, sequencing, synchronization, animation flow, visual effects (glow, colour change), sprite interaction. Blocks/Functions: When Play, Say, Wait, Send, When Received, Move, Hide, Show, Repeat, Glow, Change Colour, Text Block.",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -477,11 +506,13 @@
         "nm": "Can sunlight power things? ☀️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U05-Q01",
             "q": "ಸ್ಪ್ರೈಟ್‌ನ ಮಾತನ್ನು ಪರದೆಯ ಮೇಲೆ ತೋರಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
             "opts": { "1": "ಸೇ ಬ್ಲಾಕ್", "2": "ಮೂವ್ ಬ್ಲಾಕ್", "3": "ಸೆಂಡ್ ಬ್ಲಾಕ್" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U05-Q02",
             "q": "ಸೆಂಡ್ ಮತ್ತು ವೆನ್ ರಿಸೀವ್ಡ್ ಬ್ಲಾಕ್‌ಗಳಲ್ಲಿ ಒಂದೇ ಸಂದೇಶ ಬಳಸುವುದು ಯಾಕೆ ಮುಖ್ಯ?",
             "opts": {
               "1": "ಸ್ಪ್ರೈಟ್ ವೇಗವಾಗಿ ಚಲಿಸಲು",
@@ -491,11 +522,13 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U05-Q03",
             "q": "ಸಂದೇಶ ಸ್ವೀಕರಿಸಿದ ನಂತರ ಸ್ಪ್ರೈಟ್ ಪರದೆಯ ಮೇಲೆ ಕಾಣಿಸಿಕೊಳ್ಳಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಬೇಕು?",
             "opts": { "1": "ಶೋ ಬ್ಲಾಕ್", "2": "ಗ್ಲೋ ಬ್ಲಾಕ್", "3": "ಹೈಡ್ ಬ್ಲಾಕ್" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U05-Q04",
             "q": "ಸೋಲಾರ್ ಪ್ಯಾನೆಲ್ ಚಾರ್ಜಿಂಗ್ ಪ್ರಕ್ರಿಯೆ ಸೃಜನಾತ್ಮಕವಾಗಿ ತೋರಿಸಲು ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಏನು ಮಾಡಬಹುದು?",
             "opts": {
               "1": "ಹಿನ್ನೆಲೆ ಹೊಳೆಯುವ ಬಣ್ಣಕ್ಕೆ ಬದಲಾಯಿಸಿ",
@@ -505,6 +538,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U05-Q05",
             "q": "ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಸೂರ್ಯನ ಬೆಳಕಿನ ಚಲನೆ ಸೃಜನಾತ್ಮಕವಾಗಿ ತೋರಿಸಲು ಏನು ಮಾಡಬಹುದು?",
             "opts": {
               "1": "ಹುಡುಗಿಯ ಉಡುಪು ಬದಲಾಯಿಸಿ",
@@ -517,6 +551,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U05-A01",
           "id": "Code-Your-First-Big-Idea-💡-Intermediate",
           "seq": 100,
           "nm": "Code Your First Big Idea 💡",
@@ -563,6 +598,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U06",
       "nm": "Sun Powers the Road ☀️",
       "desc": "Concepts: Renewable energy (solar energy), energy conversion, event-based programming, collision detection, sequencing, cause-and-effect in animations, environmental awareness (SDG 7 & SDG 13). Blocks/Functions: When Play, Move, When Touches, Send, When Received, Hide, Text Block.",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -582,6 +618,7 @@
         "nm": "Did the Cloud Stop Your Car? ☁️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U06-Q01",
             "q": "ಅನಿಮೇಷನ್ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ ಕಾರಿಗೆ ಸೋಲಾರ್ ಪ್ಯಾನೆಲ್ ಸೇರಿಸುವ ಉದ್ದೇಶವೇನು?",
             "opts": {
               "1": "ಸೋಲಾರ್ ಪ್ಯಾನೆಲ್ ಹೇಗೆ ನಿರ್ಮಿಸಲಾಗುತ್ತದೆ ಎಂದು ತೋರಿಸಲು",
@@ -591,6 +628,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U06-Q02",
             "q": "'ವೆನ್ ಟಚಸ್' ಬ್ಲಾಕ್ ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಹೇಗೆ ಕಾರ್ಯ ನಿರ್ವಹಿಸುತ್ತದೆ?",
             "opts": {
               "1": "ಒಂದು ವಸ್ತು ಮತ್ತೊಂದನ್ನು ಮುಟ್ಟಿದಾಗ ಕ್ರಿಯೆ ಪ್ರಾರಂಭಿಸುತ್ತದೆ",
@@ -600,16 +638,19 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U06-Q03",
             "q": "ಮೋಡ ಸೂರ್ಯನ ಬೆಳಕು ತಡೆದಾಗ ಸೂರ್ಯಕಿರಣಗಳನ್ನು ಮರೆಮಾಡಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
             "opts": { "1": "ಹೈಡ್ ಬ್ಲಾಕ್", "2": "ಮೂವ್ ಬ್ಲಾಕ್", "3": "ಸೆಂಡ್ ಬ್ಲಾಕ್" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U06-Q04",
             "q": "ಸೂರ್ಯ ಕಾಣಿಸಿಕೊಂಡಾಗ ಹೂವುಗಳು ಅರಳುವ ದೃಶ್ಯ ರಚಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಮುಖ್ಯವಾಗಿ ಬಳಸಬೇಕು?",
             "opts": { "1": "ವೆನ್ ರಿಸೀವ್ಡ್ ಬ್ಲಾಕ್", "2": "ಹೈಡ್ ಬ್ಲಾಕ್", "3": "ಟೆಕ್ಸ್ಟ್ ಬ್ಲಾಕ್" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U06-Q05",
             "q": "ಸೂರ್ಯ ಇದ್ದಾಗ ತಿರುಗುವ ಗಾಳಿಯಂತ್ರ ಸೇರಿಸಲು ಅನಿಮೇಷನ್ ಪ್ರಕ್ರಿಯೆಯ ಯಾವ ಭಾಗ ಸಂಬಂಧಿಸಿದೆ?",
             "opts": {
               "1": "ಪೇಂಟ್ ಎಡಿಟರ್‌ನಲ್ಲಿ ಸೂರ್ಯಕಿರಣ ಚಿತ್ರಿಸುವುದು",
@@ -622,6 +663,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U06-A01",
           "id": "Animate-a-Solar-Speedster-🚗-Remedial",
           "seq": 101,
           "nm": "Animate a Solar Speedster 🚗",
@@ -673,6 +715,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U07",
       "nm": "Three Bins Sorted 🗑️",
       "desc": "Concepts Waste sorting, Environmental awareness, Recycling, Creative coding Blocks Set variable, Change variable, When play, When touches, Show, Hide, Move, Wait, Play sound, If-Else, Text",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -692,6 +735,7 @@
         "nm": "Can you sort the trash? ♻️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U07-Q01",
             "q": "SDG 12 ಯಾವ ವಿಷಯದ ಬಗ್ಗೆ?",
             "opts": {
               "1": "ಜವಾಬ್ದಾರಿಯುತ ಬಳಕೆ ಮತ್ತು ಉತ್ಪಾದನೆ",
@@ -701,6 +745,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U07-Q02",
             "q": "ತ್ಯಾಜ್ಯ ಸರಿಯಾಗಿ ವಿಂಗಡಿಸುವುದು ಯಾಕೆ ಮುಖ್ಯ?",
             "opts": {
               "1": "ತ್ಯಾಜ್ಯ ಸಂಗ್ರಹ ಸಮಯ ಉಳಿಸಲು",
@@ -710,11 +755,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U07-Q03",
             "q": "ಆಟದಲ್ಲಿ ಸರಿಯಾಗಿ ವಿಂಗಡಿಸಿದ ನಂತರ ವಸ್ತು ಮರೆಮಾಡಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
             "opts": { "1": "ಸೆಟ್ ವೇರಿಯೇಬಲ್", "2": "ಹೈಡ್", "3": "ಚೇಂಜ್ ವೇರಿಯೇಬಲ್" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U07-Q04",
             "q": "ತ್ಯಾಜ್ಯ ವಿಂಗಡಣೆ ಆಟ ವಿನ್ಯಾಸ ಮಾಡಲು ಸೃಜನಾತ್ಮಕತೆ ಹೇಗೆ ಅಳವಡಿಸಬಹುದು?",
             "opts": {
               "1": "ಕೇವಲ ಡೀಫಾಲ್ಟ್ ಸೆಟ್ಟಿಂಗ್ ಬಳಸಿ",
@@ -724,6 +771,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U07-Q05",
             "q": "ತ್ಯಾಜ್ಯ ವಿಂಗಡಣೆ ಆಟದಲ್ಲಿ ಬಳಕೆದಾರರ ತೊಡಗಿಸಿಕೊಳ್ಳುವಿಕೆ ಹೆಚ್ಚಿಸಲು ಸೃಜನಾತ್ಮಕ ವಿಧಾನ ಯಾವುದು?",
             "opts": {
               "1": "ಆಟ ಸರಳಗೊಳಿಸುವ ಮೂಲಕ",
@@ -736,6 +784,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U07-A01",
           "id": "Build-a-Waste-Sorting-Game-🗑️-Intermediate",
           "seq": 102,
           "nm": "Build a Waste Sorting Game 🗑️",

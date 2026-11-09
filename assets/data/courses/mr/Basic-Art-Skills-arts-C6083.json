@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C6083-U01",
       "nm": "Waste Becomes a Holder ♻️",
       "desc": "Recycling art",
       "rwc": "Boxes, Bottles, Paper, Glue, Scissors, Colors, Decorative Items",
@@ -26,6 +27,7 @@
         "nm": "Can trash become a holder? 🗑️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U01-Q01",
             "q": "अ‍ॅक्टिव्हिटी मध्ये पेन होल्डर तयार करण्यासाठी मुख्य सामग्री कोणती सुचवली आहे?",
             "opts": {
               "1": "Cardboard tubes",
@@ -35,6 +37,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U01-Q02",
             "q": "व्हिडिओनुसार कचरा सामग्री पुनर्वापर का महत्त्वाचे आहे?",
             "opts": {
               "1": "It reduces the cost of new products",
@@ -44,6 +47,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U01-Q03",
             "q": "कचरा बॉक्सला पेन होल्डरमध्ये बदलण्यासाठी पहिला चरण कोणता आहे?",
             "opts": {
               "1": "Marking where to cut with a pen",
@@ -53,6 +57,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U01-Q04",
             "q": "बेस पेपरने कव्हर केल्यानंतर तुमचा पेन होल्डर सर्जनशीलपणे कसा सजवू शकता?",
             "opts": {
               "1": "By attaching stickers and ribbons",
@@ -62,6 +67,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U01-Q05",
             "q": "तुमच्याकडे कागदाऐवजी उरलेला फॅब्रिक असेल तर ते पेन होल्डरसाठी कसे सर्जनशीलपणे वापरू शकता?",
             "opts": {
               "1": "Use it to wrap the pens inside the holder",
@@ -74,6 +80,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U01-A01",
           "id": "Make-a-Waste-Material-Pen-Holder-♻️-Basic",
           "seq": 38,
           "nm": "Pen Holder",
@@ -125,6 +132,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C6083-U02",
       "nm": "Box Becomes a Stand 📦",
       "desc": "Recycling art",
       "rwc": "Boxes, Bottles, Paper, Glue, Scissors, Colors",
@@ -144,6 +152,7 @@
         "nm": "What makes your holder unique? ✨",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U02-Q01",
             "q": "पेन होल्डर तयार करण्यासाठी कोणत्या साहित्याची आवश्यकता आहे?",
             "opts": {
               "1": "An empty box, waste paper, scissors, and glue",
@@ -153,6 +162,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U02-Q02",
             "q": "बॉक्स कव्हर करण्यासाठी दोन कागद वापरण्याचा सल्ला का दिला आहे?",
             "opts": {
               "1": "To ensure the paper does not tear easily",
@@ -162,6 +172,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U02-Q03",
             "q": "पेन होल्डर डिझाइन करताना गोंद कागदावर मार्क्स सोडल्यास काय करावे?",
             "opts": {
               "1": "Cover the marks with more paper",
@@ -171,6 +182,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U02-Q04",
             "q": "आपला पेन होल्डर सजवण्यासाठी आपण सर्जनशीलता कशी लागू करू शकता?",
             "opts": {
               "1": "Follow the exact design shown in the video",
@@ -180,6 +192,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U02-Q05",
             "q": "तुमच्या पेन होल्डरला अद्वितीय शैलीचे प्रतिबिंबित करायचे असल्यास काय करणार?",
             "opts": {
               "1": "Only use plain paper and avoid patterns",
@@ -192,6 +205,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U02-A01",
           "id": "Make-a-Box-Pen-Stand-📦-Remedial",
           "seq": 39,
           "nm": "Pen stand",
@@ -243,6 +257,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C6083-U03",
       "nm": "Everyday Things Pop 🎨",
       "desc": "PopArt",
       "rwc": "Paper, Pencil, Markers, Crayons, Oil Pastels, Marker",
@@ -262,11 +277,13 @@
         "nm": "Who invented Pop Art anyway? 🎨",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U03-Q01",
             "q": "पॉप आर्टचे जनक कोण मानले जातात?",
             "opts": { "1": "Andy Warhol", "2": "Roy Lichtenstein", "3": "Pablo Picasso" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U03-Q02",
             "q": "पॉप आर्टचा मुख्य उद्देश काय आहे?",
             "opts": {
               "1": "Transforming everyday objects into art",
@@ -276,6 +293,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U03-Q03",
             "q": "खालीलपैकी पॉप आर्टची विशेष वैशिष्ट्ये कोणती आहेत?",
             "opts": {
               "1": "Complex geometric patterns",
@@ -285,6 +303,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U03-Q04",
             "q": "जर तुम्ही एखाद्या साध्या वस्तूसाठी पॉप आर्ट प्रेरित जाहिरात तयार करणार असाल, तर खालीलपैकी कोणता दृष्टिकोन सर्जनशीलतेला सर्वोत्तम प्रदर्शित करेल?",
             "opts": {
               "1": "Using bright colors and unique patterns to make the object eye-catching",
@@ -294,6 +313,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U03-Q05",
             "q": "कल्पना करा तुमच्याकडे पेन्सिलसारखी एक साधी वस्तू आहे. जाहिरातीत ती उठावदार बनवण्यासाठी पॉप आर्ट तंत्रांचा सर्जनशीलपणे वापर कसा करू शकाल?",
             "opts": {
               "1": "Draw it in a realistic style with subtle shades",
@@ -306,6 +326,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U03-A01",
           "id": "Design-a-Pop-Art-Advertisement-🎨-Basic",
           "seq": 40,
           "nm": "Pop Art Advertisement",
@@ -357,6 +378,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C6083-U04",
       "nm": "One Object Four Colors 🖼️",
       "desc": "PopArt",
       "rwc": "Paper, Pencil, Markers, Crayons, Oil Pastels, Marker",
@@ -376,11 +398,13 @@
         "nm": "Can objects become pop art? 🍌",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U04-Q01",
             "q": "सामान्य वस्तूंना पॉप आर्टमध्ये रूपांतरित करण्यासाठी कोण प्रसिद्ध आहे?",
             "opts": { "1": "Andy Warhol", "2": "Pablo Picasso", "3": "Vincent van Gogh" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U04-Q02",
             "q": "व्हिडिओमध्ये वर्णन केल्याप्रमाणे पॉप आर्ट तयार करण्याची मुख्य कल्पना काय आहे?",
             "opts": {
               "1": "To draw complex and realistic portraits",
@@ -390,6 +414,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U04-Q03",
             "q": "कला निर्मितीसाठी कोणत्या चरणात तुमच्या कागदाला विभागांमध्ये विभागणे समाविष्ट आहे?",
             "opts": {
               "1": "Create an outline",
@@ -399,6 +424,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U04-Q04",
             "q": "तुमच्या पॉप आर्टमध्ये अधिक सर्जनशीलता जोडण्यासाठी, ठळक सीमा बनवण्याशिवाय तुम्ही काय करू शकता?",
             "opts": {
               "1": "Draw multiple objects in one section",
@@ -408,6 +434,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U04-Q05",
             "q": "पूरक रंगांचा वापर करताना तुमच्या पॉप आर्टच्या प्रत्येक विभागाला वेगळे कसे बनवता येईल?",
             "opts": {
               "1": "Avoid using any colors",
@@ -420,6 +447,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U04-A01",
           "id": "Create-a-Four-Panel-Pop-Art-🖼️-Remedial",
           "seq": 41,
           "nm": "Pop Art",
@@ -471,6 +499,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C6083-U05",
       "nm": "Strips Weave a Story 🧵",
       "desc": "Kente weaving technique",
       "rwc": "Base Sheet, Paper, Glue, Scissors",
@@ -490,11 +519,13 @@
         "nm": "What story does Kente tell? 🧵",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U05-Q01",
             "q": "घानाच्या कपड्याचे नाव काय आहे?",
             "opts": { "1": "Ankara", "2": "Dashiki", "3": "Kente" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U05-Q02",
             "q": "केंते विणकामामध्ये पॅटर्नची पुनरावृत्ती का महत्त्वाची आहे?",
             "opts": {
               "1": "It makes the cloth more expensive.",
@@ -504,6 +535,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U05-Q03",
             "q": "जर तुम्हाला केंते-शैलीचे विणकाम सुरू करायचे असेल, तर तुम्ही पहिले काय कराल?",
             "opts": {
               "1": "Paint the base sheet with colors.",
@@ -513,6 +545,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U05-Q04",
             "q": "तुम्ही केंते-प्रेरित कला निर्मित करत असल्याचे कल्पना करा. सर्जनशीलतेचा वापर करून तुम्ही तुमच्या कथेत कोणता अनोखा वळण देऊ शकता?",
             "opts": {
               "1": "Use only one color to keep it simple.",
@@ -522,6 +555,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U05-Q05",
             "q": "तुमच्या केंते-प्रेरित पिशवीची कथा इतरांसोबत सर्जनशीलतेने कशी शेअर करू शकता?",
             "opts": {
               "1": "Share its story and meaning on TAP Buddy to connect globally.",
@@ -534,6 +568,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U05-A01",
           "id": "Weave-a-Kente-Inspired-Bookmark-🧵-Intermediate",
           "seq": 42,
           "nm": "Kente Weaving",
@@ -585,6 +620,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C6083-U06",
       "nm": "Ghana Lives in Paper 🪡",
       "desc": "Kente weaving technique",
       "rwc": "Base Sheet, Colored Strips, Glue, Scissors",
@@ -604,11 +640,13 @@
         "nm": "Can strips become a weave? 🎨",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U06-Q01",
             "q": "दोन धाग्याच्या संच किंवा कागदी पट्ट्या ओलांडण्याची प्रक्रिया काय म्हणतात?",
             "opts": { "1": "Sewing", "2": "Weaving", "3": "Knitting" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U06-Q02",
             "q": "केंटे विणण्यात सांस्कृतिक महत्त्व काय आहे?",
             "opts": {
               "1": "It is a modern art form.",
@@ -618,6 +656,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U06-Q03",
             "q": "कुठल्या चरणामध्ये पट्ट्या जोडण्यासाठी गोंद वापरले जाते?",
             "opts": {
               "1": "Making rough sketches for the final artwork",
@@ -627,11 +666,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U06-Q04",
             "q": "केंटे विणण्यासाठी नवीन नमुना तयार करायचा असल्यास तुम्ही कोणती कौशल्य वापरता?",
             "opts": { "1": "Collaboration", "2": "Critical Thinking", "3": "Creativity" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U06-Q05",
             "q": "तुम्ही विणकाम करत असताना पट्ट्या हलू नयेत म्हणून सर्जनशीलतेने काय करू शकता?",
             "opts": {
               "1": "By weaving faster",
@@ -644,6 +685,7 @@
       }
     },
     {
+      "uid": "LU-DUMMY-C6083-U07",
       "nm": "Dots Tell Nature's Tale 🌿",
       "desc": "Gond art",
       "rwc": "Paper, Pencil, Pen, Colors",
@@ -663,6 +705,7 @@
         "nm": "What does Gond art say? 🌳",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U07-Q01",
             "q": "गोंड कला मुख्यत्वे मध्य भारताच्या आदिवासी समुदायात कशासाठी वापरली जाते?",
             "opts": {
               "1": "To decorate their homes",
@@ -672,6 +715,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U07-Q02",
             "q": "गोंड कलामध्ये कोणते मुख्य घटक दिसून येतात?",
             "opts": {
               "1": "Modern architecture",
@@ -681,6 +725,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U07-Q03",
             "q": "पर्यावरण संरक्षणाबद्दल संदेश देण्यासाठी आपण गोंड कला कशी लागू करू शकता?",
             "opts": {
               "1": "By drawing nature-themed artwork with patterns and bright colors",
@@ -690,6 +735,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U07-Q04",
             "q": "जर आपण गोंड कलासाठी हार्मनीचे प्रतीक असलेला नवीन नमुना शोधू शकला तर खालीलपैकी कोणता सर्वात सर्जनशील ठरेल?",
             "opts": {
               "1": "A series of disconnected dots",
@@ -699,6 +745,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U07-Q05",
             "q": "पाणी संवर्धनाचे महत्त्व सांगणारी गोंड कला तयार करण्यासाठी कोणत्या वस्तूंचा समन्वय सर्वात सर्जनशील ठरेल?",
             "opts": {
               "1": "A mountain with animals",
@@ -711,6 +758,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U07-A01",
           "id": "Create-a-Gond-Art-Nature-Scene-🌿-Intermediate",
           "seq": 43,
           "nm": "Gond Art",
@@ -762,6 +810,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C6083-U08",
       "nm": "Animal Wears Patterns 🐘",
       "desc": "Gond art",
       "rwc": "Paper, Cardboard, Pencil, Pen, Colors, Scissors",
@@ -781,6 +830,7 @@
         "nm": "Can animals become coasters? 🐾",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U08-Q01",
             "q": "गोंड कलेचा उगम स्क्रिप्टमध्ये कुठे सांगितला आहे?",
             "opts": {
               "1": "Madhya Pradesh and Central India",
@@ -790,6 +840,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U08-Q02",
             "q": "गोंड शैलीतील पशू कोस्टर तयार करण्याच्या प्रक्रियेतील पहिला टप्पा काय आहे?",
             "opts": {
               "1": "Outline with a dark marker",
@@ -799,6 +850,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U08-Q03",
             "q": "गोंड कला प्रक्रियेत पशू आकृती काढल्यानंतर काय करावे?",
             "opts": {
               "1": "Add patterns inspired by nature",
@@ -808,6 +860,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U08-Q04",
             "q": "जर तुम्हाला माशाचा वापर करून गोंड शैलीतील पॅटर्न तयार करायचा असेल, तर खालीलपैकी कोणता घटक तुम्ही सर्जनशीलतेने समाविष्ट करू शकता?",
             "opts": {
               "1": "Wave lines and leaf shapes",
@@ -817,6 +870,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U08-Q05",
             "q": "कल्पना करा की तुम्ही गोंड शैलीतील कासव कोस्टर तयार करत आहात. व्हिडिओमध्ये वर्णन केल्यानुसार सर्जनशीलतेच्या कौशल्याशी सुसंगत कोणती सर्जनशील पद्धत आहे?",
             "opts": {
               "1": "Mixing patterns like dots and curves to give a natural vibe",
@@ -829,6 +883,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U08-A01",
           "id": "Make-a-Gond-Art-Animal-Coaster-🐘-Remedial",
           "seq": 44,
           "nm": "Gond Art Coaster",
@@ -880,6 +935,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C6083-U09",
       "nm": "Shapes Speak Without Words 🌍",
       "desc": "Warli art",
       "rwc": "Paper, Paint, Pen, Brush, Pencil",
@@ -899,6 +955,7 @@
         "nm": "Can shapes tell a story? 🔺",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U09-Q01",
             "q": "वारली कला पोस्टर बनवण्यासाठी कोणत्या प्रकारच्या कागदाचा वापर करावा?",
             "opts": {
               "1": "Bright white paper",
@@ -908,6 +965,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U09-Q02",
             "q": "वारली कलेत निसर्ग घटक का जोडणे महत्त्वाचे आहे?",
             "opts": {
               "1": "To emphasize that nature is central to the theme",
@@ -917,6 +975,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U09-Q03",
             "q": "वारली कलेत संदेश पोहोचवण्यासाठी कोणत्या आकारांचा वापर होतो?",
             "opts": {
               "1": "Squares, diamonds, and hexagons",
@@ -926,6 +985,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U09-Q04",
             "q": "जर तुम्ही 'पाणी वाचवा' ही थीम निवडली तर वारली आकारांचा वापर करून कोणते दृश्य दाखवू शकाल?",
             "opts": {
               "1": "A person reading a book by the river",
@@ -935,6 +995,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C6083-U09-Q05",
             "q": "जर तुम्ही 'कचरा फेकू नका' या विषयावर वारली कला पोस्टर बनवले तर हालचाल कशी दाखवू शकाल?",
             "opts": {
               "1": "Draw a static figure standing beside a dustbin",
@@ -947,6 +1008,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U09-A01",
           "id": "Design-a-Warli-Environment-Poster-🌍-Advanced",
           "seq": 45,
           "nm": "Warli Poster",
@@ -998,6 +1060,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C6083-U10",
       "nm": "Triangles Build Villages 🏕️",
       "desc": "Warli",
       "rwc": "Paper, Pen, Paint, Brush, Pencil",
@@ -1017,6 +1080,7 @@
         "nm": "What does Warli art show? 🏡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C6083-U10-Q01",
             "q": "वारली कलेचा मुख्य लक्ष कोणत्या गोष्टीवर असतो?",
             "opts": {
               "1": "Balance and simplicity",
@@ -1026,16 +1090,19 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U10-Q02",
             "q": "वारली कला पारंपारिकरित्या कोणत्या प्रकारच्या पृष्ठभागावर तयार केली जाते?",
             "opts": { "1": "Wooden panels", "2": "Canvas", "3": "Red mud walls" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C6083-U10-Q03",
             "q": "वारली कलेतील कोणता भूमितीय आकार सूर्य आणि चंद्राचे प्रतिनिधित्व करतो?",
             "opts": { "1": "Circle", "2": "Line", "3": "Triangle" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U10-Q04",
             "q": "तुम्हाला एका सणाचे चित्रण करताना वारली कला तयार करायची असल्यास, तुम्ही कोणत्या घटकावर सर्जनशीलतेने लक्ष केंद्रित कराल?",
             "opts": {
               "1": "People dancing and celebrating",
@@ -1045,6 +1112,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C6083-U10-Q05",
             "q": "वारली कला तयार करताना, तुमच्या कलाकृतीला सर्जनशीलतेने कसे वाढवू शकता?",
             "opts": {
               "1": "By focusing only on geometric shapes",
@@ -1057,6 +1125,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C6083-U10-A01",
           "id": "Create-a-Warli-Village-Scene-🏕️-Remedial",
           "seq": 46,
           "nm": "Warli art",

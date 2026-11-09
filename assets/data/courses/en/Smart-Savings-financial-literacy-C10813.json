@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C10813-U01",
       "nm": "Idea Becomes a Business 💼",
       "desc": "Entrepreneurship, Business Loans",
       "rwc": "Pencil, Eraser",
@@ -26,6 +27,7 @@
         "nm": "Can a loan start your business? 💼",
         "qs": [
           {
+            "qid": "QN-DUMMY-C10813-U01-Q01",
             "q": "What is the Pradhan Mantri Mudra Yojana (PMMY) designed to do?",
             "opts": {
               "1": "Provide scholarships for education",
@@ -35,6 +37,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C10813-U01-Q02",
             "q": "Why is no collateral required for loans under PMMY?",
             "opts": {
               "1": "To encourage large corporations to apply",
@@ -44,11 +47,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C10813-U01-Q03",
             "q": "If your business needs a loan of ₹3 lakh, which PMMY category should you choose?",
             "opts": { "1": "Kishor", "2": "Tarun", "3": "Shishu" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C10813-U01-Q04",
             "q": "You want to open a stationery shop but lack funds. What would be a smart first step based on the script?",
             "opts": {
               "1": "Apply for a PMMY loan with a well-thought-out plan",
@@ -58,6 +63,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C10813-U01-Q05",
             "q": "Imagine your business idea is to start an online craft shop. How can you use the PMMY to create jobs according to the script?",
             "opts": {
               "1": "Hire a delivery person or assistant",
@@ -70,6 +76,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C10813-U01-A01",
           "id": "Design-Your-Own-Business-Idea-Card-💼-Basic",
           "seq": 122,
           "nm": "Design Your Own Business Idea Card 💼",
@@ -110,6 +117,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C10813-U02",
       "nm": "Small Shop Starts Here 🏪",
       "desc": "Entrepreneurship, Business Loans",
       "rwc": "Pencil, Eraser",
@@ -129,6 +137,7 @@
         "nm": "Which loan fits your business? 🏪",
         "qs": [
           {
+            "qid": "QN-DUMMY-C10813-U02-Q01",
             "q": "What is the purpose of the Pradhan Mantri Mudra Yojana (PMMY)?",
             "opts": {
               "1": "To offer scholarships for international studies",
@@ -138,6 +147,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C10813-U02-Q02",
             "q": "Why is the Pradhan Mantri Mudra Yojana important for SDG 8?",
             "opts": {
               "1": "It focuses on environmental conservation",
@@ -147,11 +157,13 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C10813-U02-Q03",
             "q": "Which loan category should Ravi initially apply for if he is just starting his printing business?",
             "opts": { "1": "Tarun", "2": "Kishor", "3": "Shishu" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C10813-U02-Q04",
             "q": "Ravi needs to decide how to fund his new printing shop. What should he consider?",
             "opts": {
               "1": "Applying for a Shishu loan under PMMY",
@@ -161,6 +173,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C10813-U02-Q05",
             "q": "Ravi wants to expand his business after a year of successful operation. Which loan category should he consider?",
             "opts": { "1": "Tarun Plus", "2": "Kishor", "3": "Shishu" },
             "ans": "2"
@@ -169,6 +182,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C10813-U02-A01",
           "id": "Design-a-Simple-Business-Card-🏪-Remedial",
           "seq": 123,
           "nm": "Design a Simple Business Card 🏪",
@@ -220,6 +234,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C10813-U03",
       "nm": "Future Gets Saved Early 🌸",
       "desc": "Sukanya Samriddhi Yojana",
       "rwc": "Pencil, Eraser",
@@ -239,6 +254,7 @@
         "nm": "Can you save for your daughter? 👧",
         "qs": [
           {
+            "qid": "QN-DUMMY-C10813-U03-Q01",
             "q": "What is the Sukanya Samriddhi Account?",
             "opts": {
               "1": "A private investment plan for retirement",
@@ -248,6 +264,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C10813-U03-Q02",
             "q": "Who is eligible to open a Sukanya Samriddhi Account?",
             "opts": {
               "1": "Any individual or organization",
@@ -257,16 +274,19 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C10813-U03-Q03",
             "q": "What is the minimum annual deposit required for the Sukanya Samriddhi Account?",
             "opts": { "1": "500 rupees", "2": "1,000 rupees", "3": "250 rupees" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C10813-U03-Q04",
             "q": "If a parent wants to open a Sukanya Samriddhi Account for their two daughters, what is the maximum number of accounts they can open?",
             "opts": { "1": "Three accounts", "2": "Two accounts", "3": "One account" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C10813-U03-Q05",
             "q": "A family wants to save for their daughter's education and marriage using a government scheme. Which account should they consider?",
             "opts": {
               "1": "Sukanya Samriddhi Account",
@@ -279,6 +299,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C10813-U03-A01",
           "id": "Answer-the-Sukanya-Scheme-Questions-🌸-Basic",
           "seq": 124,
           "nm": "Answer the Sukanya Scheme Questions 🌸",
@@ -330,6 +351,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C10813-U04",
       "nm": "Girl's Goal Has a Plan 🎯",
       "desc": "Government Savings Schemes",
       "rwc": "Pencil, Eraser",
@@ -349,6 +371,7 @@
         "nm": "Can a scheme build her future? 🌟",
         "qs": [
           {
+            "qid": "QN-DUMMY-C10813-U04-Q01",
             "q": "What is the name of the government saving scheme mentioned in the script?",
             "opts": {
               "1": "Sukanya Samriddhi Yojana",
@@ -358,6 +381,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C10813-U04-Q02",
             "q": "Who is eligible to benefit from the Sukanya Samriddhi Yojana?",
             "opts": {
               "1": "Girl children who are 10 years old or younger",
@@ -367,6 +391,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C10813-U04-Q03",
             "q": "How can Sneha's parents start saving for her future education through the scheme?",
             "opts": {
               "1": "By opening a regular savings account",
@@ -376,11 +401,13 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C10813-U04-Q04",
             "q": "If a family has two daughters, what is the maximum amount they can deposit in Sukanya Samriddhi Yojana per year for both daughters?",
             "opts": { "1": "1,50,000 rupees", "2": "2,50,000 rupees", "3": "3,00,000 rupees" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C10813-U04-Q05",
             "q": "How does the Sukanya Samriddhi Yojana differ from a Piggy Bank?",
             "opts": {
               "1": "The government pays yearly interest, increasing savings",
@@ -393,6 +420,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C10813-U04-A01",
           "id": "Build-a-Sukanya-Future-Plan-Poster-🎯-Remedial",
           "seq": 125,
           "nm": "Build a Sukanya Future Plan Poster 🎯",
@@ -444,6 +472,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C10813-U05",
       "nm": "Money Plans the Future 🗺️",
       "desc": "Saving and Investment Options",
       "rwc": "Pencil, Eraser",
@@ -463,6 +492,7 @@
         "nm": "Can saving fight poverty? 💪",
         "qs": [
           {
+            "qid": "QN-DUMMY-C10813-U05-Q01",
             "q": "What is the main objective of SDG 1 mentioned in the script?",
             "opts": {
               "1": "Promote gender equality",
@@ -472,6 +502,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C10813-U05-Q02",
             "q": "Why did Aisha's parents save and invest money?",
             "opts": {
               "1": "To go on a vacation",
@@ -481,6 +512,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C10813-U05-Q03",
             "q": "What is the benefit of keeping money in a bank or post office as explained by Aisha?",
             "opts": {
               "1": "It helps in immediate spending",
@@ -490,6 +522,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C10813-U05-Q04",
             "q": "If you were to design a creative workshop like Aisha, what resource could you use to make it engaging?",
             "opts": {
               "1": "Plain text documents",
@@ -499,6 +532,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C10813-U05-Q05",
             "q": "You want to help your community understand financial literacy. What decision can you make to effectively spread awareness?",
             "opts": {
               "1": "Rely solely on social media posts",
@@ -511,6 +545,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C10813-U05-A01",
           "id": "Build-a-Financial-Planning-Poster-🗺️-Intermediate",
           "seq": 126,
           "nm": "Build a Financial Planning Poster 🗺️",
@@ -562,6 +597,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C10813-U06",
       "nm": "Plans Protect the Future 🛡️",
       "desc": "Financial Services",
       "rwc": "Pencil, Eraser",
@@ -581,11 +617,13 @@
         "nm": "Can investing protect your future? 📊",
         "qs": [
           {
+            "qid": "QN-DUMMY-C10813-U06-Q01",
             "q": "What was the amount Aman saved from his first salary?",
             "opts": { "1": "₹5,000", "2": "₹15,000", "3": "₹10,000" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C10813-U06-Q02",
             "q": "What is the main goal of the lesson in the script?",
             "opts": {
               "1": "Learn Smart Financial Planning",
@@ -595,6 +633,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C10813-U06-Q03",
             "q": "If a person has ₹10,000 to invest, how should they divide it according to the diversification example in the script?",
             "opts": {
               "1": "₹5,000 in stocks, ₹3,000 in savings, ₹2,000 in mutual funds",
@@ -604,6 +643,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C10813-U06-Q04",
             "q": "Aman wants to invest his savings for both growth and protection. Which two financial actions should he consider?",
             "opts": {
               "1": "Saving money in a fixed deposit only",
@@ -613,6 +653,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C10813-U06-Q05",
             "q": "Anjali is planning her finances and wants to ensure she is protected against unexpected medical emergencies. What should she prioritize in her financial plan?",
             "opts": {
               "1": "Saving money in a savings account",
@@ -625,6 +666,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C10813-U06-A01",
           "id": "Build-Your-Financial-Protection-Plan-🛡️-Remedial",
           "seq": 127,
           "nm": "Build Your Financial Protection Plan 🛡️",
@@ -676,6 +718,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C10813-U07",
       "nm": "Interest Earns Extra Back 🧮",
       "desc": "Simple Interest",
       "rwc": "Pencil, Eraser",
@@ -695,11 +738,13 @@
         "nm": "Which bank gives more interest? 🏦",
         "qs": [
           {
+            "qid": "QN-DUMMY-C10813-U07-Q01",
             "q": "What does “P” stand for in the Simple Interest formula?",
             "opts": { "1": "Profit", "2": "Principal", "3": "Percentage" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C10813-U07-Q02",
             "q": "Why do people keep money in the bank?",
             "opts": {
               "1": "To keep it safe and earn interest",
@@ -709,16 +754,19 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C10813-U07-Q03",
             "q": "SI for ₹200 at 6% for 1 year is:",
             "opts": { "1": "₹10", "2": "₹8", "3": "₹12" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C10813-U07-Q04",
             "q": "You want to earn more interest. Which bank will you choose?",
             "opts": { "1": "Bank giving 5%", "2": "Bank giving 3%", "3": "Bank giving 0%" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C10813-U07-Q05",
             "q": "Which is a good rule for growing your money?",
             "opts": {
               "1": "Never save money",
@@ -731,6 +779,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C10813-U07-A01",
           "id": "Solve-Two-Interest-Calculations-🧮-Intermediate",
           "seq": 128,
           "nm": "Solve Two Interest Calculations 🧮",
@@ -782,6 +831,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C10813-U08",
       "nm": "Growth Powers the Economy 📊",
       "desc": "Interest, Banking",
       "rwc": "Pencil, Eraser",
@@ -801,6 +851,7 @@
         "nm": "Can interest grow an economy? 📈",
         "qs": [
           {
+            "qid": "QN-DUMMY-C10813-U08-Q01",
             "q": "What is the main topic of the video?",
             "opts": {
               "1": "The Power of Interest",
@@ -810,6 +861,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C10813-U08-Q02",
             "q": "How does interest contribute to economic growth according to the video?",
             "opts": {
               "1": "By reducing taxes",
@@ -819,11 +871,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C10813-U08-Q03",
             "q": "If you save ₹1,000 in a bank with an interest rate of 3% per year, how much interest will you earn in one year?",
             "opts": { "1": "₹10", "2": "₹50", "3": "₹30" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C10813-U08-Q04",
             "q": "A person takes a loan to start a business. What is a possible positive outcome of this action, based on decision-making skills discussed in the video?",
             "opts": {
               "1": "Decreasing the business's revenue",
@@ -833,6 +887,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C10813-U08-Q05",
             "q": "A government official is planning to use interest to fund a new infrastructure project. What should they consider to make a smart decision?",
             "opts": {
               "1": "The popularity of the project",
@@ -845,6 +900,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C10813-U08-A01",
           "id": "Draw-the-Interest-Growth-Panels-📊-Remedial",
           "seq": 129,
           "nm": "Draw the Interest Growth Panels 📊",
@@ -896,6 +952,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C10813-U09",
       "nm": "Scan Pay Done 📲",
       "desc": "Digital Payments",
       "rwc": "Pencil, Eraser",
@@ -915,6 +972,7 @@
         "nm": "Can UPI replace your wallet? 📲",
         "qs": [
           {
+            "qid": "QN-DUMMY-C10813-U09-Q01",
             "q": "What does UPI stand for in the context of digital payments?",
             "opts": {
               "1": "Universal Payments Interface",
@@ -924,6 +982,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C10813-U09-Q02",
             "q": "How do digital payments support SDG 8 according to the script?",
             "opts": {
               "1": "By reducing the need for physical currency and promoting global trade",
@@ -933,6 +992,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C10813-U09-Q03",
             "q": "Which method allows you to pay instantly without worrying about exact change, according to the script?",
             "opts": {
               "1": "Scanning a QR code with your phone",
@@ -942,6 +1002,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C10813-U09-Q04",
             "q": "You are a shopkeeper who wants to restock quickly after a busy day. Which payment method should you encourage customers to use to ensure quick access to funds?",
             "opts": {
               "1": "Digital payments via UPI",
@@ -951,6 +1012,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C10813-U09-Q05",
             "q": "You are planning to pay a daily-wage worker as soon as they complete their work. What is the most efficient payment method according to the script?",
             "opts": { "1": "Paying in cash", "2": "Digital transfer", "3": "Writing a check" },
             "ans": "2"
@@ -959,6 +1021,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C10813-U09-A01",
           "id": "Build-the-Digital-Payments-Puzzle-📲-Advanced",
           "seq": 130,
           "nm": "Build the Digital Payments Puzzle 📲",
@@ -1010,6 +1073,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C10813-U10",
       "nm": "Payments Go Digital 💳",
       "desc": "Digital Payments",
       "rwc": "Pencil, Eraser",
@@ -1029,6 +1093,7 @@
         "nm": "Which payment is truly instant? ⚡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C10813-U10-Q01",
             "q": "What does UPI stand for?",
             "opts": {
               "1": "Unified Payments Interface",
@@ -1038,11 +1103,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C10813-U10-Q02",
             "q": "Which digital payment method is typically not instant and may take some time?",
             "opts": { "1": "IMPS", "2": "UPI", "3": "NEFT" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C10813-U10-Q03",
             "q": "What is the first step in making a digital payment?",
             "opts": {
               "1": "Open the app or website",
@@ -1052,11 +1119,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C10813-U10-Q04",
             "q": "If you need to transfer a large amount of money immediately, which method should you choose?",
             "opts": { "1": "RTGS", "2": "NEFT", "3": "UPI" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C10813-U10-Q05",
             "q": "You are at a store with no cash. What should you do to pay quickly using a mobile app?",
             "opts": {
               "1": "Wait for NEFT transfer",
@@ -1069,6 +1138,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C10813-U10-A01",
           "id": "Complete-the-Digital-Payments-Chart-💳-Remedial",
           "seq": 131,
           "nm": "Complete the Digital Payments Chart 💳",

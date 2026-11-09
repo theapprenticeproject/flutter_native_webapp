@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C12267-U01",
       "nm": "Diary Tracks the Cash 📒",
       "desc": "Cash Flow Statement, Business Finance",
       "rwc": "Pencil, Eraser",
@@ -26,6 +27,7 @@
         "nm": "Can a diary track your profits? 📒",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U01-Q01",
             "q": "What is the primary purpose of maintaining a cash diary in a business?",
             "opts": {
               "1": "To track money inflow and outflow",
@@ -35,6 +37,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U01-Q02",
             "q": "What does the term 'Money Out' refer to in a business context?",
             "opts": {
               "1": "The money earned from sales",
@@ -44,6 +47,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C12267-U01-Q03",
             "q": "If Fiza wants to know if her business made a profit on Day 3, what should she calculate?",
             "opts": {
               "1": "The number of customers she served",
@@ -53,11 +57,13 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C12267-U01-Q04",
             "q": "Fiza wants to expand her lemonade stall but lacks sufficient funds. Which type of loan should she consider?",
             "opts": { "1": "A personal loan", "2": "A Mudra Loan", "3": "A credit card loan" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U01-Q05",
             "q": "Imagine Fiza wants to use a Mudra Loan to attract new customers. What could be a potential strategy?",
             "opts": {
               "1": "Decrease product quality",
@@ -70,6 +76,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C12267-U01-A01",
           "id": "Fill-Your-Business-Cash-Diary-📒-Basic",
           "seq": 1,
           "nm": "Fill Your Business Cash Diary 📒",
@@ -121,6 +128,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C12267-U02",
       "nm": "Shop Logs Every Rupee 🧾",
       "desc": "Cash Flow Statement, Business Finance",
       "rwc": "Pencil, Eraser",
@@ -140,6 +148,7 @@
         "nm": "Did your business make profit? 💰",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U02-Q01",
             "q": "What does 'Money In' refer to in the context of a business?",
             "opts": {
               "1": "The money received from sales",
@@ -149,6 +158,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U02-Q02",
             "q": "How is profit determined in a business according to the script?",
             "opts": {
               "1": "When Money Out is greater than Money In",
@@ -158,16 +168,19 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U02-Q03",
             "q": "If a business has Money In of ₹400 and Money Out of ₹150, what is the financial result?",
             "opts": { "1": "Profit", "2": "Loss", "3": "No profit, no loss" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U02-Q04",
             "q": "If you wanted to expand your lemonade stall but lack funds, which loan could help according to the script?",
             "opts": { "1": "Personal Loan", "2": "Mudra Loan", "3": "Mortgage Loan" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U02-Q05",
             "q": "Which type of Mudra Loan would be suitable for an expanding business as per the script?",
             "opts": { "1": "Shishu Loan", "2": "Kishor Loan", "3": "Tarun Loan" },
             "ans": "3"
@@ -176,6 +189,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C12267-U02-A01",
           "id": "Fill-Fiza's-Business-Cash-Diary-🧾-Remedial",
           "seq": 2,
           "nm": "Fill Fiza's Business Cash Diary 🧾",
@@ -227,6 +241,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C12267-U03",
       "nm": "Direct or Indirect Sorted 📑",
       "desc": "Types of Taxes",
       "rwc": "Pencil, Eraser",
@@ -246,6 +261,7 @@
         "nm": "Do you pay tax without knowing? 🧾",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U03-Q01",
             "q": "What is a Direct Tax?",
             "opts": {
               "1": "A tax that is directly paid to the government by an individual or organization.",
@@ -255,6 +271,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U03-Q02",
             "q": "How does an Indirect Tax work?",
             "opts": {
               "1": "It is included in the price of goods and services and paid by the consumer.",
@@ -264,11 +281,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U03-Q03",
             "q": "Which of the following is an example of an Indirect Tax?",
             "opts": { "1": "Income Tax", "2": "Property Tax", "3": "Tax on biscuits" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C12267-U03-Q04",
             "q": "Anika's parents receive a monthly salary, and she sees a deduction labeled \"Income Tax\" on their payslip. What should Anika understand about this deduction?",
             "opts": {
               "1": "It is a Direct Tax paid directly from her parents' income to the government.",
@@ -278,6 +297,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U03-Q05",
             "q": "Raj buys a packet of chips and notices a small tax amount added to the total bill. He wants to make a smart financial decision regarding this type of tax. What should Raj consider?",
             "opts": {
               "1": "Stop buying chips to avoid paying any tax at all.",
@@ -290,6 +310,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C12267-U03-A01",
           "id": "Sort-Direct-and-Indirect-Taxes-📑-Basic",
           "seq": 3,
           "nm": "Sort Direct and Indirect Taxes 📑",
@@ -341,6 +362,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C12267-U04",
       "nm": "Government Spends Wisely 🏛️",
       "desc": "Tax",
       "rwc": "Pencil, Eraser",
@@ -360,6 +382,7 @@
         "nm": "How does tax money get spent? 🏗️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U04-Q01",
             "q": "What does the government use tax money for?",
             "opts": {
               "1": "To run public services like roads and hospitals",
@@ -369,6 +392,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U04-Q02",
             "q": "Why does every choice of the government matter?",
             "opts": {
               "1": "Because choices can be changed anytime without impact",
@@ -378,6 +402,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C12267-U04-Q03",
             "q": "If a school roof is broken, which area needs tax money?",
             "opts": {
               "1": "Buying more computer",
@@ -387,6 +412,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C12267-U04-Q04",
             "q": "What can happen if all the money is spent only on one favourite problem?",
             "opts": {
               "1": "Other important needs will not get support",
@@ -396,6 +422,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U04-Q05",
             "q": "You are making a poster. Which title shows clear decision-making?",
             "opts": {
               "1": "My favourite colours and drawings",
@@ -408,6 +435,7 @@
       }
     },
     {
+      "uid": "LU-DUMMY-C12267-U05",
       "nm": "Wheel Spins the Investments 🎡",
       "desc": "Investments Types of investments Diversification",
       "rwc": "Pencil, Eraser",
@@ -427,6 +455,7 @@
         "nm": "Can smart investing reduce risk? 📊",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U05-Q01",
             "q": "What is the main focus of the activity 'Smart Investing'?",
             "opts": {
               "1": "Financial Literacy",
@@ -436,6 +465,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U05-Q02",
             "q": "What is diversification in the context of investments?",
             "opts": {
               "1": "Spreading money across different investments",
@@ -445,6 +475,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U05-Q03",
             "q": "How can one balance returns and reduce risk according to the script?",
             "opts": {
               "1": "By only choosing the safest investments",
@@ -454,6 +485,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U05-Q04",
             "q": "If you have a high tolerance for risk and want to maximize returns, what should you consider doing?",
             "opts": {
               "1": "Invest more in risky investments",
@@ -463,6 +495,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U05-Q05",
             "q": "You have 20,000 rupees to invest and want to practice diversification. What is a balanced approach?",
             "opts": {
               "1": "Invest all in one risky investment",
@@ -475,6 +508,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C12267-U05-A01",
           "id": "Build-Your-Investment-Wheel-🎡-Intermediate",
           "seq": 4,
           "nm": "Build Your Investment Wheel 🎡",
@@ -526,6 +560,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C12267-U06",
       "nm": "Risk Meets the Return 📈",
       "desc": "Investments, Risk, Return",
       "rwc": "Pencil, Eraser",
@@ -545,6 +580,7 @@
         "nm": "Can risk ever be worth it? 💹",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U06-Q01",
             "q": "What does Investment mean?",
             "opts": {
               "1": "Spending all your money on Wants",
@@ -554,6 +590,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U06-Q02",
             "q": "Why do people invest even when there is risk?",
             "opts": {
               "1": "Because investments give returns, which can be profit or loss",
@@ -563,16 +600,19 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U06-Q03",
             "q": "If you put money in a Fixed Deposit, what type of investment is it?",
             "opts": { "1": "Safe Investment", "2": "Risky Investment", "3": "No Investment" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U06-Q04",
             "q": "Imagine you need your money back safely in 2 months. Which option should you choose?",
             "opts": { "1": "Stocks", "2": "Savings account", "3": "Cryptocurrency" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U06-Q05",
             "q": "Imagine you want to grow your money over 10 years. Which is the smarter choice?",
             "opts": {
               "1": "Keep all money at home",
@@ -585,6 +625,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C12267-U06-A01",
           "id": "Choose-Your-Safe-and-Risky-Investments-📈-Remedial",
           "seq": 5,
           "nm": "Choose Your Safe and Risky Investments 📈",
@@ -636,6 +677,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C12267-U07",
       "nm": "Puzzle Unlocks Payments 🧩",
       "desc": "Digital Payments",
       "rwc": "Pencil, Eraser",
@@ -655,6 +697,7 @@
         "nm": "Can UPI replace your wallet? 📲",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U07-Q01",
             "q": "What does UPI stand for in the context of digital payments?",
             "opts": {
               "1": "Universal Payments Interface",
@@ -664,6 +707,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U07-Q02",
             "q": "How do digital payments support SDG 8 according to the script?",
             "opts": {
               "1": "By reducing the need for physical currency and promoting global trade",
@@ -673,6 +717,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U07-Q03",
             "q": "Which method allows you to pay instantly without worrying about exact change, according to the script?",
             "opts": {
               "1": "Scanning a QR code with your phone",
@@ -682,6 +727,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U07-Q04",
             "q": "You are a shopkeeper who wants to restock quickly after a busy day. Which payment method should you encourage customers to use to ensure quick access to funds?",
             "opts": {
               "1": "Digital payments via UPI",
@@ -691,6 +737,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U07-Q05",
             "q": "You are planning to pay a daily-wage worker as soon as they complete their work. What is the most efficient payment method according to the script?",
             "opts": { "1": "Paying in cash", "2": "Digital transfer", "3": "Writing a check" },
             "ans": "2"
@@ -699,6 +746,7 @@
       }
     },
     {
+      "uid": "LU-DUMMY-C12267-U08",
       "nm": "Chart Maps the Transfer 💳",
       "desc": "Digital Payments",
       "rwc": "Pencil, Eraser",
@@ -718,6 +766,7 @@
         "nm": "Which payment is truly instant? ⚡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U08-Q01",
             "q": "What does UPI stand for?",
             "opts": {
               "1": "Unified Payments Interface",
@@ -727,11 +776,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U08-Q02",
             "q": "Which digital payment method is typically not instant and may take some time?",
             "opts": { "1": "IMPS", "2": "UPI", "3": "NEFT" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C12267-U08-Q03",
             "q": "What is the first step in making a digital payment?",
             "opts": {
               "1": "Open the app or website",
@@ -741,11 +792,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U08-Q04",
             "q": "If you need to transfer a large amount of money immediately, which method should you choose?",
             "opts": { "1": "RTGS", "2": "NEFT", "3": "UPI" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U08-Q05",
             "q": "You are at a store with no cash. What should you do to pay quickly using a mobile app?",
             "opts": {
               "1": "Wait for NEFT transfer",
@@ -758,6 +811,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C12267-U08-A01",
           "id": "Complete-the-Digital-Payments-Chart-💳-Remedial",
           "seq": 6,
           "nm": "Complete the Digital Payments Chart 💳",
@@ -809,6 +863,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C12267-U09",
       "nm": "Loan Funds the Dream 🎓",
       "desc": "Education Loan Flowchart",
       "rwc": "Pencil, Eraser",
@@ -828,6 +883,7 @@
         "nm": "Can a loan fund your studies? 🎓",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U09-Q01",
             "q": "What is the primary purpose of an education loan according to the script?",
             "opts": {
               "1": "To buy a new car",
@@ -837,6 +893,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U09-Q02",
             "q": "Why is it important to compare different education loan options?",
             "opts": {
               "1": "To avoid wrong decisions and reduce financial pressure",
@@ -846,6 +903,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U09-Q03",
             "q": "What should Riya do after gathering necessary documents for an education loan?",
             "opts": {
               "1": "Fill out the loan application form",
@@ -855,11 +913,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U09-Q04",
             "q": "Riya is choosing between two loans. Loan 1 has a lower interest rate, but a shorter moratorium period. Loan 2 has a slightly higher interest rate, but a longer moratorium period. Which loan should she consider if she wants to reduce immediate financial pressure?",
             "opts": { "1": "Loan 1", "2": "Both are equal", "3": "Loan 2" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C12267-U09-Q05",
             "q": "Riya's friend is unsure about when to start repaying her education loan. What should Riya advise based on the moratorium period concept?",
             "opts": {
               "1": "Repay after course completion plus 6 months to 1 year",
@@ -872,6 +932,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C12267-U09-A01",
           "id": "Map-the-Education-Loan-Steps-🎓-Advanced",
           "seq": 7,
           "nm": "Map the Education Loan Steps 🎓",
@@ -923,6 +984,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C12267-U10",
       "nm": "Steps Open the Future 🚪",
       "desc": "Education Loan Flowchart",
       "rwc": "Pencil, Eraser",
@@ -942,11 +1004,13 @@
         "nm": "Which loan has better terms? 📝",
         "qs": [
           {
+            "qid": "QN-DUMMY-C12267-U10-Q01",
             "q": "What is the first step in applying for an education loan?",
             "opts": { "1": "Check eligibility", "2": "Collect documents", "3": "Compare loans" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U10-Q02",
             "q": "What does the moratorium period allow you to do?",
             "opts": {
               "1": "Have a break time from repaying the loan",
@@ -956,6 +1020,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U10-Q03",
             "q": "Which documents are needed for income proof of a co-applicant?",
             "opts": {
               "1": "Aadhaar and passport",
@@ -965,6 +1030,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C12267-U10-Q04",
             "q": "If you are choosing a loan, which option is better?",
             "opts": {
               "1": "Low interest + long moratorium",
@@ -974,6 +1040,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C12267-U10-Q05",
             "q": "Riya wants to study without financial pressure. Which loan feature should she prioritize?",
             "opts": {
               "1": "High loan amount",
@@ -986,6 +1053,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C12267-U10-A01",
           "id": "Complete-the-Education-Loan-Guide-🚪-Remedial",
           "seq": 8,
           "nm": "Complete the Education Loan Guide 🚪",

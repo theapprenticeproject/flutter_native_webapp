@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C1567-U01",
       "nm": "Hero Clears the Air 🌿",
       "desc": "Concepts: Animation sequencing, message passing (synchronization), scene transitions, cause-effect representation (pollution vs clean environment). Blocks: When Play, Say, Wait, Send, When Received, Hide, Show, Switch Backdrop",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -26,11 +27,13 @@
         "nm": "Can code clean the air? 🌫️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U01-Q01",
             "q": "ऑक्टोस्टूडियो में एक प्रोजेक्ट में कई दृश्य बदलने के लिए कौन सा ब्लॉक उपयोग किया जाता है?",
             "opts": { "1": "Say block", "2": "When Play block", "3": "Switch Backdrop block" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U01-Q02",
             "q": "एनीमेशन निर्माण प्रक्रिया में सेंड ब्लॉक का उपयोग करने का उद्देश्य क्या है?",
             "opts": {
               "1": "To send a message allowing another sprite to take action",
@@ -40,6 +43,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U01-Q03",
             "q": "यदि आप चाहते हैं कि लड़की का संवाद एक निश्चित समय के लिए स्क्रीन पर दिखाई दे, तो आप कौन से ब्लॉक का उपयोग करेंगे?",
             "opts": {
               "1": "Send and Wait blocks",
@@ -49,6 +53,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U01-Q04",
             "q": "आप स्क्रिप्ट में बताए गए उपकरणों का उपयोग करके प्रदूषित से स्वच्छ पर्यावरण में परिवर्तन को रचनात्मक रूप से कैसे दिखा सकते हैं?",
             "opts": {
               "1": "Use a combination of Switch Backdrop, Say, and Send blocks to illustrate the change",
@@ -58,6 +63,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U01-Q05",
             "q": "कल्पना करें कि आप एक नया पात्र जोड़ना चाहते हैं जो धुएं को तेजी से साफ करता है। मौजूदा ब्लॉक का उपयोग करके आप इस पात्र को रचनात्मक रूप से कैसे एकीकृत करेंगे?",
             "opts": {
               "1": "Use the Send block to trigger the new character's action after smoke appears",
@@ -70,6 +76,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U01-A01",
           "id": "Animate-a-Clean-Air-Hero-🌿-Basic",
           "seq": 96,
           "nm": "Clean Air Mission",
@@ -121,6 +128,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U02",
       "nm": "Seed Grows a Hero 🌱",
       "desc": "Concepts: Animation, conditionals, events Blocks: When tapped, Move, When touching, Send, Hide, Show, Wait",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -140,6 +148,7 @@
         "nm": "Can a sprite speak? 🗣️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U02-Q01",
             "q": "इस एनीमेशन गतिविधि का मुख्य उद्देश्य क्या है?",
             "opts": {
               "1": "To animate a character watering the cars",
@@ -149,11 +158,13 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U02-Q02",
             "q": "इस गतिविधि में स्प्राइट को बोलने के लिए कौन सा ब्लॉक श्रेणी उपयोग की जाती है?",
             "opts": { "1": "Words and Sounds", "2": "Motion", "3": "Control" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U02-Q03",
             "q": "इस गतिविधि में \"Say\" ब्लॉक क्या करता है?",
             "opts": {
               "1": "It makes the sprite jump",
@@ -163,6 +174,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U02-Q04",
             "q": "एनीमेशन में \"Old Man\" स्प्राइट कौन सा संदेश बोलता है?",
             "opts": {
               "1": "\"Planting trees helps our Earth.\"",
@@ -172,6 +184,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U02-Q05",
             "q": "\"Seed\" स्प्राइट को “plant” संदेश मिलने पर क्या होता है?",
             "opts": {
               "1": "The seed disappears",
@@ -184,6 +197,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U02-A01",
           "id": "Animate-a-Tree-Planting-Story-🌱-Remedial",
           "seq": 97,
           "nm": "Climate Hero Story Builder",
@@ -235,6 +249,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U03",
       "nm": "Share the Leftovers 🍱",
       "desc": "Concepts: Event-based programming, message passing (broadcast & receive), sequencing of actions, social awareness through animation, sprite interaction, timing and synchronization. Blocks/Functions: When Play, Say, Wait, Send, When Received, Go To (motion), Text Block, Speed control.",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -254,11 +269,13 @@
         "nm": "Does food waste matter? 🍱",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U03-Q01",
             "q": "एनिमेशन एक्टिविटी का मुख्य संदेश क्या है?",
             "opts": { "1": "Save Water", "2": "Recycle More", "3": "Say No to Food Waste" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U03-Q02",
             "q": "यह एक्टिविटी किस सस्टेनेबल डेवलपमेंट गोल (SDG) से जुड़ी है?",
             "opts": {
               "1": "SDG 3 - Good Health and Well-being",
@@ -268,11 +285,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U03-Q03",
             "q": "एनिमेशन में स्प्राइट्स के बीच संवाद के लिए कौन सा ब्लॉक उपयोग होता है?",
             "opts": { "1": "Say block", "2": "Send block", "3": "Wait block" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U03-Q04",
             "q": "खाने की बर्बादी पर एनिमेशन को बेहतर बनाने के लिए आप क्रिएटिविटी का उपयोग कैसे कर सकते हैं?",
             "opts": {
               "1": "Use only black and white colors",
@@ -282,6 +301,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U03-Q05",
             "q": "एनिमेशन का उपयोग करके 'खाना बर्बाद न करें' संदेश को एक अलग सेटिंग में क्रिएटिव तरीके से कैसे दर्शा सकते हैं?",
             "opts": {
               "1": "Focus only on the food items without showing any characters",
@@ -294,6 +314,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U03-A01",
           "id": "Animate-a-Food-Sharing-Scene-🍱-Basic",
           "seq": 98,
           "nm": "Say No To FoodWaste Animation",
@@ -345,6 +366,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U04",
       "nm": "Every Drop Saved 💧",
       "desc": "Concepts: Water conservation (SDG 6), event-based programming, continuous loops, collision detection, variables and scoring system, sprite interaction, sensor-based control (tilt), sequencing and timing. Blocks/Functions: When Play, When Tap, Tilt to Move, Send, When Received, Go To, Hide, Show, Forever, Wait, When Touches, Set Variable, Change Variable.",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -364,6 +386,7 @@
         "nm": "Can a tap save water? 🚰",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U04-Q01",
             "q": "इंटरएक्टिव गेम बनाने का मुख्य लक्ष्य क्या है?",
             "opts": {
               "1": "To collect dripping water from leaking taps into a glass",
@@ -373,6 +396,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U04-Q02",
             "q": "यह एक्टिविटी किस सतत विकास लक्ष्य (SDG) से जुड़ी है?",
             "opts": {
               "1": "SDG 13 - Climate Action",
@@ -382,11 +406,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U04-Q03",
             "q": "टैप स्प्राइट को सही ढंग से स्थिति में लाने के लिए OctoStudio में कौन सा उपकरण उपयोग किया जाता है?",
             "opts": { "1": "Resize tool", "2": "Rotate tool", "3": "Crop tool" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U04-Q04",
             "q": "ऊर्जा संरक्षण के बारे में सिखाने के लिए पानी बचाने वाले गेम को आप कैसे रचनात्मक रूप से बढ़ा सकते हैं?",
             "opts": {
               "1": "Include a mechanism where turning off lights earns points",
@@ -396,6 +422,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U04-Q05",
             "q": "कल्पना करें कि आप गेम को वैश्विक जल संकट के बारे में शैक्षिक सामग्री से समृद्ध करना चाहते हैं। आप कौन सा रचनात्मक तरीका अपना सकते हैं?",
             "opts": {
               "1": "Include pop-up facts about water scarcity while playing",
@@ -408,6 +435,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U04-A01",
           "id": "Build-a-Water-Saving-Game-💧-Remedial",
           "seq": 99,
           "nm": "Save Every Drop",
@@ -459,6 +487,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U05",
       "nm": "Sun Powers the Bulb ☀️",
       "desc": "Concepts: Renewable energy (solar energy), energy transformation, event-based programming, sequencing, synchronization, animation flow, visual effects (glow, colour change), sprite interaction. Blocks/Functions: When Play, Say, Wait, Send, When Received, Move, Hide, Show, Repeat, Glow, Change Colour, Text Block.",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -478,11 +507,13 @@
         "nm": "Can sunlight power things? ☀️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U05-Q01",
             "q": "कौन सा ब्लॉक स्क्रीन पर स्प्राइट की बातें दिखाने के लिए उपयोग होता है?",
             "opts": { "1": "Say block", "2": "Move block", "3": "Send block" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U05-Q02",
             "q": "सेंड और व्हेन रिसीव्ड ब्लॉक्स में एक ही संदेश का उपयोग करना क्यों महत्वपूर्ण है?",
             "opts": {
               "1": "To make the sprite move faster",
@@ -492,11 +523,13 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U05-Q03",
             "q": "किस ब्लॉक का उपयोग आप स्प्राइट को संदेश प्राप्त करने के बाद स्क्रीन पर दिखाने के लिए करेंगे?",
             "opts": { "1": "Show block", "2": "Glow block", "3": "Hide block" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U05-Q04",
             "q": "आप अपनी एनीमेशन में सोलर पैनल चार्जिंग की प्रक्रिया को रचनात्मक रूप से कैसे दिखा सकते हैं?",
             "opts": {
               "1": "Change the backdrop to a brighter color",
@@ -506,6 +539,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U05-Q05",
             "q": "आप अपनी एनीमेशन में सूर्य की रोशनी की गति को रचनात्मक रूप से कैसे दर्शा सकते हैं?",
             "opts": {
               "1": "By changing the girl's costume",
@@ -518,6 +552,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U05-A01",
           "id": "Code-Your-First-Big-Idea-💡-Intermediate",
           "seq": 100,
           "nm": "Sunlight to Power – Solar Energy Animation",
@@ -569,6 +604,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U06",
       "nm": "Sun Powers the Road ☀️",
       "desc": "Concepts: Renewable energy (solar energy), energy conversion, event-based programming, collision detection, sequencing, cause-and-effect in animations, environmental awareness (SDG 7 & SDG 13). Blocks/Functions: When Play, Move, When Touches, Send, When Received, Hide, Text Block.",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -588,6 +624,7 @@
         "nm": "Did the Cloud Stop Your Car? ☁️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U06-Q01",
             "q": "एनिमेशन प्रोजेक्ट में कार में सोलर पैनल जोड़ने का क्या उद्देश्य है?",
             "opts": {
               "1": "To show how solar panels are built.",
@@ -597,6 +634,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U06-Q02",
             "q": "जब छूता है' ब्लॉक एनिमेशन में कैसे काम करता है?",
             "opts": {
               "1": "It triggers an action when one object touches another.",
@@ -606,16 +644,19 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U06-Q03",
             "q": "कौन सा ब्लॉक सूर्य की किरणों को छुपाने के लिए उपयोग किया जाता है जब बादल सूर्य की रोशनी को रोकता है?",
             "opts": { "1": "Hide block", "2": "Move block", "3": "Send block" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U06-Q04",
             "q": "यदि आप एक दृश्य बनाना चाहते हैं जहाँ फूल खिलते हैं जब सूर्य दिखाई देता है, तो आप खिलने की क्रिया को ट्रिगर करने के लिए मुख्य रूप से कौन सा ब्लॉक उपयोग करेंगे?",
             "opts": { "1": "When Received block", "2": "Hide block", "3": "Text block" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U06-Q05",
             "q": "कल्पना करें कि आप एक पवन चक्की जोड़ना चाहते हैं जो सूर्य के बाहर होने पर घूमती है। यह एनिमेशन प्रक्रिया के किस भाग से संबंधित होगा?",
             "opts": {
               "1": "Drawing sunrays with the Paint Editor.",
@@ -628,6 +669,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U06-A01",
           "id": "Animate-a-Solar-Speedster-🚗-Remedial",
           "seq": 101,
           "nm": "Solar Car Start!",
@@ -679,6 +721,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C1567-U07",
       "nm": "Three Bins Sorted 🗑️",
       "desc": "Concepts Waste sorting, Environmental awareness, Recycling, Creative coding Blocks Set variable, Change variable, When play, When touches, Show, Hide, Move, Wait, Play sound, If-Else, Text",
       "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
@@ -698,6 +741,7 @@
         "nm": "Can you sort the trash? ♻️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C1567-U07-Q01",
             "q": "एसडीजी 12 किस बारे में है?",
             "opts": {
               "1": "Responsible consumption and production",
@@ -707,6 +751,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C1567-U07-Q02",
             "q": "कचरे को सही ढंग से छांटना क्यों महत्वपूर्ण है?",
             "opts": {
               "1": "It saves time during waste collection.",
@@ -716,11 +761,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U07-Q03",
             "q": "खेल में सही तरीके से छांटने के बाद किसी आइटम को छुपाने के लिए कौन सा ब्लॉक उपयोग किया जाता है?",
             "opts": { "1": "Set Variable", "2": "Hide", "3": "Change Variable" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C1567-U07-Q04",
             "q": "वेस्ट सॉर्टिंग गेम को डिजाइन करते समय रचनात्मकता कैसे लागू की जा सकती है?",
             "opts": {
               "1": "By using only default settings.",
@@ -730,6 +777,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C1567-U07-Q05",
             "q": "वेस्ट सॉर्टिंग गेम में उपयोगकर्ता की सहभागिता बढ़ाने के लिए आप किस तरह से रचनात्मकता का उपयोग कर सकते हैं?",
             "opts": {
               "1": "By making the game simpler.",
@@ -742,6 +790,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C1567-U07-A01",
           "id": "Build-a-Waste-Sorting-Game-🗑️-Intermediate",
           "seq": 102,
           "nm": "Waste Sorting Game (3 Bins)",

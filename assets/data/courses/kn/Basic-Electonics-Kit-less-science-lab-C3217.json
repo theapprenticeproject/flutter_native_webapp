@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C3217-U01",
       "nm": "The Circuit's Bodyguard 🛡️",
       "desc": "Overcurrent protection, fuse working principle, voltage–current relationship, circuit breaking, safety in electrical circuits. DC power supply, fuse, LED, ammeter (series), connecting wires, simulate.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -26,6 +27,7 @@
         "nm": "When Does the Fuse Blow? ⚡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U01-Q01",
             "q": "ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ ಫ್ಯೂಸ್‌ನ ಮುಖ್ಯ ಕಾರ್ಯವೇನು?",
             "opts": {
               "1": "ಅತಿಯಾದ ವಿದ್ಯುತ್ ಪ್ರವಾಹದಿಂದ ಸಾಧನಗಳು ಹಾಳಾಗದಂತೆ ರಕ್ಷಿಸಲು",
@@ -35,6 +37,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U01-Q02",
             "q": "ಫ್ಯೂಸ್ ತಂತಿ ಏಕೆ ಕರಗುತ್ತದೆ?",
             "opts": {
               "1": "ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಗರಿಷ್ಠ ಮಿತಿ ಮೀರಿದಾಗ",
@@ -44,6 +47,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U01-Q03",
             "q": "DC ಪೂರೈಕೆ ವೋಲ್ಟೇಜ್ 2.1V ಗೆ ಹೆಚ್ಚಿಸಿದಾಗ ಏನಾಗುತ್ತದೆ?",
             "opts": {
               "1": "ಸರ್ಕ್ಯೂಟ್ ಸಂಪೂರ್ಣ ನಿಲ್ಲುತ್ತದೆ",
@@ -53,6 +57,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U01-Q04",
             "q": "ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ LED ನಿರೀಕ್ಷಿತಂತೆ ಹೊಳೆಯದಿದ್ದರೆ ವಿದ್ಯಾರ್ಥಿ ಮೊದಲು ಏನು ಪರಿಶೀಲಿಸಬೇಕು?",
             "opts": {
               "1": "LED ಸರಿಯಾದ ಬಣ್ಣದ್ದಾಗಿದೆಯೇ",
@@ -62,6 +67,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U01-Q05",
             "q": "ಫ್ಯೂಸ್ ಸಹಿತ ಸರ್ಕ್ಯೂಟ್ ಸ್ಥಾಪಿಸಿದ್ದರೂ LED ಹಾಳಾದರೆ ಕಾರಣ ಏನಾಗಿರಬಹುದು?",
             "opts": {
               "1": "LED ತಿರುವಾಗಿ ಸಂಪರ್ಕಗೊಂಡಿತ್ತು",
@@ -74,6 +80,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U01-A01",
           "id": "Blow-the-Fuse-Safely-💥-Basic",
           "seq": 47,
           "nm": "Blow the Fuse Safely 💥",
@@ -125,6 +132,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U02",
       "nm": "One Button to Rule the Light 💡",
       "desc": "Current flow in a closed circuit, role of switches in circuit control, resistance limiting current, energy conservation in electrical systems. DC power supply, push button (switch), resistor, LED, simulate.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -144,11 +152,13 @@
         "nm": "Press It and See! 🔘",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U02-Q01",
             "q": "ಚಟುವಟಿಕೆಯಲ್ಲಿ ನಿರ್ಮಿಸಿದ ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ 'ದ್ವಾರಪಾಲಕ' ಆಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುವ ಘಟಕ ಯಾವುದು?",
             "opts": { "1": "LED", "2": "ಪುಶ್ ಬಟನ್", "3": "ರೆಸಿಸ್ಟರ್" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U02-Q02",
             "q": "ಚಟುವಟಿಕೆಯಲ್ಲಿ ಸ್ಮಾರ್ಟ್ ಕಂಟ್ರೋಲ್ ಸಿಸ್ಟಮ್ ಬಳಸುವ ಮುಖ್ಯ ಉದ್ದೇಶವೇನು?",
             "opts": {
               "1": "LED ಯ ಪ್ರಕಾಶ ಹೆಚ್ಚಿಸಲು",
@@ -158,11 +168,13 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U02-Q03",
             "q": "ಪುಶ್ ಬಟನ್ ಒತ್ತಿದಾಗ ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ LED ಮೇಲೆ ಯಾವ ಪರಿಣಾಮ?",
             "opts": { "1": "LED ಮಿನುಗುತ್ತದೆ", "2": "LED ಆಫ್ ಇರುತ್ತದೆ", "3": "LED ಹೊಳೆಯುತ್ತದೆ" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U02-Q04",
             "q": "ರಿಯಾ ಮನೆಯಲ್ಲಿ ಅನಗತ್ಯ ಶಕ್ತಿ ವ್ಯಯ ತಡೆಯಲು ಚಟುವಟಿಕೆ ಪರಿಕಲ್ಪನೆ ಆಧರಿಸಿ ಏನು ಅಳವಡಿಸಬಹುದು?",
             "opts": {
               "1": "ಹೆಚ್ಚಿನ ದೀಪಗಳನ್ನು ಅಳವಡಿಸಿ",
@@ -172,6 +184,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U02-Q05",
             "q": "ಸ್ಕ್ರಿಪ್ಟ್ ಪ್ರಕಾರ ಸರ್ಕ್ಯೂಟ್‌ನ LED ಹೊಳೆಯದಿದ್ದರೆ ಮೊದಲು ಏನು ಪರಿಶೀಲಿಸಬೇಕು?",
             "opts": { "1": "LED ಧ್ರುವೀಯತೆ", "2": "ಸಿಮ್ಯುಲೇಷನ್ ವೇಗ", "3": "ರೆಸಿಸ್ಟರ್ ಮೌಲ್ಯ" },
             "ans": "1"
@@ -180,6 +193,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U02-A01",
           "id": "Build-a-Smart-Energy-Switch-🔘-Remedial",
           "seq": 48,
           "nm": "Build a Smart Energy Switch 🔘",
@@ -231,6 +245,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U03",
       "nm": "Twist to Dim 🎚️",
       "desc": "Variable resistance, voltage–current relationship, current–brightness relationship, energy efficiency. DC power supply, potentiometer, LED, simulate.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -250,11 +265,13 @@
         "nm": "How Bright Can You Go? 💡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U03-Q01",
             "q": "ಪ್ರತಿರೋಧ ಬದಲಿಸುವ ಮೂಲಕ LED ಯ ಪ್ರಕಾಶ ನಿಯಂತ್ರಿಸಲು ಯಾವ ಘಟಕ ಬಳಸಬಹುದು?",
             "opts": { "1": "ಕೆಪಾಸಿಟರ್", "2": "ಇಂಡಕ್ಟರ್", "3": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U03-Q02",
             "q": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್‌ನ ಪ್ರತಿರೋಧ ಹೆಚ್ಚಿಸಿದಾಗ ವಿದ್ಯುತ್ ಪ್ರವಾಹಕ್ಕೆ ಏನಾಗುತ್ತದೆ?",
             "opts": {
               "1": "ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಯಥಾವತ್ ಇರುತ್ತದೆ",
@@ -264,11 +281,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U03-Q03",
             "q": "DC ಪವರ್ ಸಪ್ಲೈ, ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಮತ್ತು LED ಸಂಪರ್ಕಿಸಲು ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ವಿವರಿಸಿದ ಘಟಕ ಜೋಡಣೆ ಯಾವುದು?",
             "opts": { "1": "ಸರಣಿ", "2": "ಯಾದೃಚ್ಛಿಕ", "3": "ಸಮಾನಾಂತರ" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U03-Q04",
             "q": "ಸರ್ಕ್ಯೂಟ್ ಸಿಮ್ಯುಲೇಷನ್‌ನಲ್ಲಿ LED ಮಂದವಾಗಿ ಹೊಳೆಯಲು ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್‌ನೊಂದಿಗೆ ಏನು ಮಾಡಬೇಕು?",
             "opts": {
               "1": "ಪ್ರತಿರೋಧ ಹೆಚ್ಚಿಸಿ",
@@ -278,6 +297,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U03-Q05",
             "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಬಳಸಿ LED ಯ ಗರಿಷ್ಠ ಪ್ರಕಾಶ ಹೇಗೆ ಸಾಧಿಸಬಹುದು?",
             "opts": {
               "1": "ಕಡಿಮೆ ಪ್ರತಿರೋಧ ಸೆಟ್ಟಿಂಗ್‌ಗೆ ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಹೊಂದಿಸಿ",
@@ -290,6 +310,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U03-A01",
           "id": "Dial-Up-the-Glow-🎚️-Basic",
           "seq": 49,
           "nm": "Dial Up the Glow 🎚️",
@@ -341,6 +362,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U04",
       "nm": "Dim Your Light, Save the Planet 🌍",
       "desc": "Variable resistance, voltage–current relationship, current–brightness relationship, Ohm’s Law, energy efficiency. DC power supply, potentiometer, resistor, LED, simulate.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -360,11 +382,13 @@
         "nm": "Is Your Potentiometer Saving Power? ⚡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U04-Q01",
             "q": "ಚಟುವಟಿಕೆಯಲ್ಲಿ LED ಯ ಪ್ರಕಾಶ ಸರಿಹೊಂದಿಸಲು ಯಾವ ಘಟಕ ಬಳಸಲಾಗುತ್ತದೆ?",
             "opts": { "1": "ರೆಸಿಸ್ಟರ್", "2": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್", "3": "DC ಪವರ್ ಸಪ್ಲೈ" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U04-Q02",
             "q": "'ದೀಪ ಮಂದ ಮಾಡಿ, ಭೂಮಿ ಉಳಿಸಿ' ಚಟುವಟಿಕೆಯ ಮುಖ್ಯ ಗುರಿ ಏನು?",
             "opts": {
               "1": "LED ಪ್ರಕಾಶ ನಿಯಂತ್ರಿಸಿ ಶಕ್ತಿ ಉಳಿತಾಯ",
@@ -374,6 +398,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U04-Q03",
             "q": "ಸಿಮ್ಯುಲೇಷನ್ ಸಮಯದಲ್ಲಿ LED ಹಾರಿ ಹೋದರೆ ಏನು ಮಾಡಬೇಕು?",
             "opts": {
               "1": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ತೆಗೆದುಹಾಕಿ",
@@ -383,6 +408,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U04-Q04",
             "q": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಸರಿಹೊಂದಿಸಿದ ನಂತರವೂ LED ಪ್ರಕಾಶದಲ್ಲಿ ಗಮನಾರ್ಹ ಬದಲಾವಣೆ ಕಾಣದಿದ್ದರೆ ಏನು ಮಾಡಬೇಕು?",
             "opts": {
               "1": "ಪವರ್ ಸಪ್ಲೈ ವೋಲ್ಟೇಜ್ ಕಡಿಮೆ ಮಾಡಿ",
@@ -392,6 +418,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U04-Q05",
             "q": "ಈ ಚಟುವಟಿಕೆಯ ಪರಿಕಲ್ಪನೆ ಮನೆಯಲ್ಲಿ ಅನ್ವಯಿಸಲು ಉದಾಹರಣೆ ಏನು?",
             "opts": {
               "1": "ಹೆಚ್ಚಿನ ಪ್ರಕಾಶಕ್ಕಾಗಿ ಹೆಚ್ಚಿನ ದೀಪಗಳನ್ನು ಅಳವಡಿಸಿ",
@@ -404,6 +431,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U04-A01",
           "id": "Smart-Dimmer-Challenge-🌍-Remedial",
           "seq": 50,
           "nm": "Smart Dimmer Challenge 🌍",
@@ -455,6 +483,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U05",
       "nm": "One Way Only 🚦",
       "desc": "One-way current flow, diode functionality, voltage–current relationship, circuit protection, basic clean energy systems. DC power supply, diode, resistor, LED, voltmeter, simulate.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -474,11 +503,13 @@
         "nm": "Forward or Reverse? ⬅️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U05-Q01",
             "q": "ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ ಯಾವ ಘಟಕ ವಿದ್ಯುತ್ ಕೇವಲ ಒಂದು ದಿಕ್ಕಿನಲ್ಲಿ ಹರಿಯುವಂತೆ ಖಚಿತಪಡಿಸುತ್ತದೆ?",
             "opts": { "1": "ವೋಲ್ಟ್‌ಮೀಟರ್", "2": "ರೆಸಿಸ್ಟರ್", "3": "ಡಯೋಡ್" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U05-Q02",
             "q": "ಸ್ವಚ್ಛ ಶಕ್ತಿ ವ್ಯವಸ್ಥೆಗಳಲ್ಲಿ ಡಯೋಡ್ ಏಕ ಮುಖ ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಖಚಿತಪಡಿಸುವುದು ಏಕೆ ಮುಖ್ಯ?",
             "opts": {
               "1": "ಶಕ್ತಿ ನಷ್ಟ ಮತ್ತು ಘಟಕ ಹಾನಿ ತಡೆಯಲು",
@@ -488,6 +519,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U05-Q03",
             "q": "ಡಯೋಡ್ ತಿರುವಾದ ದಿಕ್ಕಿನಲ್ಲಿ ಸಂಪರ್ಕಿಸಿದರೆ ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ ಏನಾಗುತ್ತದೆ?",
             "opts": {
               "1": "ವೋಲ್ಟ್‌ಮೀಟರ್ ಓದುವಿಕೆ ತೋರಿಸುತ್ತದೆ",
@@ -497,11 +529,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U05-Q04",
             "q": "ರಾತ್ರಿ ಸೌರ ಫಲಕ ವ್ಯವಸ್ಥೆಯ ಬ್ಯಾಟರಿ ಖಾಲಿಯಾಗುತ್ತಿದ್ದರೆ ಯಾವ ಘಟಕ ಪರಿಶೀಲಿಸಬೇಕು ಅಥವಾ ಸೇರಿಸಬೇಕು?",
             "opts": { "1": "ರೆಸಿಸ್ಟರ್", "2": "ಡಯೋಡ್", "3": "LED" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U05-Q05",
             "q": "ಸರ್ಕ್ಯೂಟ್ ಸಿಮ್ಯುಲೇಷನ್ ಸಮಯದಲ್ಲಿ ಎಲ್ಲಾ ಸಂಪರ್ಕಗಳು ಸರಿಯಾಗಿದ್ದರೂ LED ಹೊಳೆಯದಿದ್ದರೆ ಸಂಭಾವ್ಯ ಕಾರಣ ಏನು?",
             "opts": {
               "1": "ಡಯೋಡ್ ತಿರುವಾದ ದಿಕ್ಕಿನಲ್ಲಿ ಇರಬಹುದು",
@@ -514,6 +548,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U05-A01",
           "id": "Build-the-One-Way-Gate-🚦-Intermediate",
           "seq": 51,
           "nm": "Build the One-Way Gate 🚦",
@@ -565,6 +600,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U06",
       "nm": "The Current's One-Way Street 🛣️",
       "desc": "One-way current flow, forward bias, reverse bias, diode functionality, basic circuit behavior. DC power supply, diode, LED, simulate.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -584,6 +620,7 @@
         "nm": "Does the Diode Block or Allow? ⚡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U06-Q01",
             "q": "ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ ಡಯೋಡ್‌ನ ಮುಖ್ಯ ಕಾರ್ಯವೇನು?",
             "opts": {
               "1": "ಶಕ್ತಿ ಸಂಗ್ರಹಿಸಲು",
@@ -593,6 +630,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U06-Q02",
             "q": "ಡಯೋಡ್ ರಿವರ್ಸ್ ಬಯಾಸ್‌ನಲ್ಲಿ ಸಂಪರ್ಕಿಸಿದಾಗ ಏನಾಗುತ್ತದೆ?",
             "opts": {
               "1": "LED ಆಫ್ ಆಗುತ್ತದೆ",
@@ -602,6 +640,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U06-Q03",
             "q": "ProtoCircuit ನಲ್ಲಿ ಸರ್ಕ್ಯೂಟ್ ಸಿಮ್ಯುಲೇಟ್ ಮಾಡಲು ಘಟಕಗಳನ್ನು ಹೇಗೆ ಜೋಡಿಸಬೇಕು?",
             "opts": {
               "1": "ಸರಣಿಯಲ್ಲಿ, ಒಂದರ ನಂತರ ಒಂದು",
@@ -611,6 +650,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U06-Q04",
             "q": "LED ಹೊಳೆಯದಿದ್ದರೆ ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ ಯಾವ ಸಮಸ್ಯೆ ಇರಬಹುದು?",
             "opts": {
               "1": "DC ಪವರ್ ಸಪ್ಲೈ ತುಂಬಾ ಹೆಚ್ಚಾಗಿದೆ",
@@ -620,6 +660,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U06-Q05",
             "q": "ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ ಡಯೋಡ್ ಸರಿಯಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿದೆಯೇ ಎಂದು ಹೇಗೆ ಪರಿಶೀಲಿಸಬಹುದು?",
             "opts": {
               "1": "ಡಯೋಡ್ ಫಾರ್ವರ್ಡ್ ಬಯಾಸ್‌ನಲ್ಲಿದ್ದಾಗ LED ಹೊಳೆಯುತ್ತದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ",
@@ -632,6 +673,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U06-A01",
           "id": "Flip-the-Diode-and-Find-Out-🔄-Remedial",
           "seq": 52,
           "nm": "Flip the Diode and Find Out 🔄",
@@ -683,6 +725,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U07",
       "nm": "Ohm's Law in Action 📐",
       "desc": "Ohm’s Law (V = I × R), voltage–current relationship, resistance variation, current–brightness relationship, measurement and observation. DC power supply, potentiometer, LED, ammeter (series), voltmeter (parallel), simulate.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -702,6 +745,7 @@
         "nm": "Voltage, Current, Resistance — Can You Crack It? 📐",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U07-Q01",
             "q": "ಸ್ಥಿರ ವೋಲ್ಟೇಜ್ ಇದ್ದಾಗ ಸರ್ಕ್ಯೂಟ್‌ನ ಪ್ರತಿರೋಧ ಹೆಚ್ಚಿದರೆ ವಿದ್ಯುತ್ ಪ್ರವಾಹಕ್ಕೆ ಏನಾಗುತ್ತದೆ?",
             "opts": {
               "1": "ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಕಡಿಮೆಯಾಗುತ್ತದೆ",
@@ -711,16 +755,19 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U07-Q02",
             "q": "ವಿವರಿಸಿದ ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ LED ಯ ಪ್ರಕಾಶ ನಿಯಂತ್ರಿಸಲು ಯಾವ ಘಟಕ ಬಳಸಲಾಗುತ್ತದೆ?",
             "opts": { "1": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್", "2": "ವೋಲ್ಟ್‌ಮೀಟರ್", "3": "ಆಮ್ಮೀಟರ್" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U07-Q03",
             "q": "ಸ್ಕ್ರಿಪ್ಟ್ ಪ್ರಕಾರ ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ 0.2 ಗೆ ಸರಿಹೊಂದಿಸಿದಾಗ ಪ್ರತಿರೋಧ ಎಷ್ಟು?",
             "opts": { "1": "30 ಓಮ್", "2": "150 ಓಮ್", "3": "96 ಓಮ್" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U07-Q04",
             "q": "ಅದೇ ಸರ್ಕ್ಯೂಟ್ ನಿರ್ಮಿಸಿದಾಗ LED ಹೊಳೆಯದಿದ್ದರೆ ಯಾವ ಹಂತ ತಪ್ಪಿಸಿಕೊಂಡಿರಬಹುದು?",
             "opts": {
               "1": "LED ಉದ್ದಕ್ಕೂ ವೋಲ್ಟ್‌ಮೀಟರ್ ಸಂಪರ್ಕಿಸುವುದು",
@@ -730,6 +777,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U07-Q05",
             "q": "ಸರ್ಕ್ಯೂಟ್‌ನ LED ನಿರೀಕ್ಷಿತಂತೆ ಮಂದ ಆಗದಿದ್ದರೆ ಯಾವ ಘಟಕದ ಸೆಟ್ಟಿಂಗ್ ಸರಿಹೊಂದಿಸಬೇಕು?",
             "opts": { "1": "ವೋಲ್ಟ್‌ಮೀಟರ್", "2": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್", "3": "ಆಮ್ಮೀಟರ್" },
             "ans": "2"
@@ -738,6 +786,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U07-A01",
           "id": "Prove-Ohm's-Law-Yourself-📐-Intermediate",
           "seq": 53,
           "nm": "Prove Ohm's Law Yourself 📐",
@@ -789,6 +838,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U08",
       "nm": "The Brightness Dial Experiment 🎛️",
       "desc": "Potentiometer, LED, Variable resistor, Current measurement, Ammeter, Current limiting",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -808,6 +858,7 @@
         "nm": "High Resistance or Low — What Wins? 🎚️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U08-Q01",
             "q": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಎಂದರೇನು?",
             "opts": {
               "1": "ಪರಿವರ್ತಕ ಪ್ರತಿರೋಧಕ",
@@ -817,6 +868,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U08-Q02",
             "q": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್‌ನ ಪ್ರತಿರೋಧ ಹೆಚ್ಚಿಸಿದರೆ LED ಗೆ ಏನಾಗುತ್ತದೆ?",
             "opts": {
               "1": "LED ಮಿನುಗುತ್ತದೆ",
@@ -826,6 +878,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U08-Q03",
             "q": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಕಡಿಮೆ ಪ್ರತಿರೋಧಕ್ಕೆ ಹೊಂದಿಸಿದ್ದರೆ ಸರ್ಕ್ಯೂಟ್‌ನ ವಿದ್ಯುತ್ ಪ್ರವಾಹಕ್ಕೆ ಏನಾಗುತ್ತದೆ?",
             "opts": {
               "1": "ವಿದ್ಯುತ್ ಪ್ರವಾಹ ಹೆಚ್ಚಾಗುತ್ತದೆ",
@@ -835,6 +888,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U08-Q04",
             "q": "ProtoCircuit ನಲ್ಲಿ ಆಮ್ಮೀಟರ್ ಋಣಾತ್ಮಕ ಓದುವಿಕೆ ತೋರಿಸಿದರೆ ಏನು ಮಾಡಬೇಕು?",
             "opts": {
               "1": "ಆಮ್ಮೀಟರ್ ಬದಲಿಸಿ",
@@ -844,6 +898,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U08-Q05",
             "q": "ProtoCircuit ಅಪ್ಲಿಕೇಷನ್‌ನಲ್ಲಿ ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಸರ್ಕ್ಯೂಟ್ ಬಳಸಿ ಸಮಸ್ಯೆ ಪರಿಹಾರ ಕೌಶಲ ಹೇಗೆ ಪ್ರದರ್ಶಿಸಬಹುದು?",
             "opts": {
               "1": "ಪೊಟೆನ್ಷಿಯೋಮೀಟರ್ ಸರಿಹೊಂದಿಸಿ ಅಪೇಕ್ಷಿತ LED ಪ್ರಕಾಶ ಸಾಧಿಸಿ ಬದಲಾವಣೆಗಳನ್ನು ವಿಶ್ಲೇಷಿಸುವ ಮೂಲಕ",
@@ -856,6 +911,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U08-A01",
           "id": "Spin-the-Knob,-Change-the-Glow-🎛️-Remedial",
           "seq": 54,
           "nm": "Spin the Knob, Change the Glow 🎛️",
@@ -907,6 +963,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U09",
       "nm": "The Delay Game ⏳",
       "desc": "Capacitance, charging and discharging of a capacitor, time delay in circuits, energy storage, relationship between capacitance and discharge time. DC power supply, resistor, polarized capacitor, LED, SPST switch, simulate.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -926,6 +983,7 @@
         "nm": "Which Capacitor Holds On Longer? ⏱️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U09-Q01",
             "q": "ಕೆಪಾಸಿಟರ್ ಚಾರ್ಜ್ ಆಗುವಾಗ ಸರ್ಕ್ಯೂಟ್‌ನ LED ಗೆ ಏನಾಗುತ್ತದೆ?",
             "opts": {
               "1": "LED ಮೊದಲು ಪ್ರಕಾಶಮಾನ ಹೊಳೆಯುತ್ತದೆ",
@@ -935,11 +993,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U09-Q02",
             "q": "ಸ್ವಿಚ್ ಆಫ್ ಮಾಡಿದ ನಂತರ LED ತಡವಾಗಿ ಆಫ್ ಆಗಲು ಸರ್ಕ್ಯೂಟ್‌ನ ಯಾವ ಘಟಕ ಕಾರಣ?",
             "opts": { "1": "ರೆಸಿಸ್ಟರ್", "2": "DC ಪವರ್ ಸಪ್ಲೈ", "3": "ಕೆಪಾಸಿಟರ್" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U09-Q03",
             "q": "ಸ್ವಿಚ್ ಆಫ್ ಮಾಡಿದ ನಂತರ LED ಹೆಚ್ಚು ಕಾಲ ಆನ್ ಇರಬೇಕಿದ್ದರೆ ಏನು ಮಾಡಬೇಕು?",
             "opts": {
               "1": "ರೆಸಿಸ್ಟರ್‌ನ ಪ್ರತಿರೋಧ ಕಡಿಮೆ ಮಾಡಿ",
@@ -949,6 +1009,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U09-Q04",
             "q": "ProtoCircuit ನಲ್ಲಿ ಸರ್ಕ್ಯೂಟ್ ಸಿಮ್ಯುಲೇಟ್ ಮಾಡಿ ಸ್ವಿಚ್ ಆಫ್ ಮಾಡಿದ ನಂತರ LED ತ್ವರಿತ ಆಫ್ ಆಗಿದ್ದರೆ ಅಡಿಸಿಕೊಂಬ ಅಡ್ಡಮಾರ್ಗ ಏನು?",
             "opts": {
               "1": "ಹೆಚ್ಚಿನ ಪ್ರತಿರೋಧದ ರೆಸಿಸ್ಟರ್ ಬಳಸಿ",
@@ -958,6 +1019,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U09-Q05",
             "q": "ಸ್ವಿಚ್ ಆಫ್ ಮಾಡಿದ ನಂತರವೂ LED ಎಂದಿಗೂ ಆಫ್ ಆಗದಿದ್ದರೆ ಯಾವ ಸಮಸ್ಯೆ ಇರಬಹುದು?",
             "opts": {
               "1": "ಸ್ವಿಚ್ ಸರಿಯಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸದಿರಬಹುದು",
@@ -970,6 +1032,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U09-A01",
           "id": "Race-the-Capacitors-🏁-Advanced",
           "seq": 55,
           "nm": "Race the Capacitors 🏁",
@@ -1021,6 +1084,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C3217-U10",
       "nm": "Store It, Glow It! 🔋",
       "desc": "Capacitors, voltage smoothing, energy storage, LED operation, push-to-charge circuits. DC power supply, LED, resistor, polarized capacitor, SPST switch.",
       "rwc": "Smartphone, Internet, Proto Circuit App, Notebook, Pen",
@@ -1040,6 +1104,7 @@
         "nm": "How Long Does Your Capacitor Last? 🔋",
         "qs": [
           {
+            "qid": "QN-DUMMY-C3217-U10-Q01",
             "q": "ಕೆಪಾಸಿಟರ್‌ನ ಮುಖ್ಯ ಕಾರ್ಯವೇನು?",
             "opts": {
               "1": "ಸ್ವಿಚ್ ಆಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸಲು",
@@ -1049,6 +1114,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C3217-U10-Q02",
             "q": "ಸ್ವಿಚ್ ಆಫ್ ಮಾಡಿದ ನಂತರವೂ LED ಸ್ವಲ್ಪ ಸಮಯ ಏಕೆ ಹೊಳೆಯುತ್ತಲೇ ಇರುತ್ತದೆ?",
             "opts": {
               "1": "ಕೆಪಾಸಿಟರ್ ಸಂಗ್ರಹಿಸಿದ ಶಕ್ತಿ ಡಿಸ್ಚಾರ್ಜ್ ಆಗುವ ಕಾರಣ",
@@ -1058,6 +1124,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C3217-U10-Q03",
             "q": "ಕೆಪಾಸಿಟರ್ ಮೌಲ್ಯ ಹೆಚ್ಚಿಸಿದರೆ ಸ್ವಿಚ್ ತೆರೆದ ನಂತರ LED ಯ ಹೊಳೆಯುವ ಸಮಯದ ಮೇಲೆ ಯಾವ ಪರಿಣಾಮ?",
             "opts": {
               "1": "LED ತಕ್ಷಣ ಹೊಳೆಯದಂತಾಗುತ್ತದೆ",
@@ -1067,6 +1134,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U10-Q04",
             "q": "ProtoCircuit ಸಿಮ್ಯುಲೇಷನ್‌ನಲ್ಲಿ ಸ್ವಿಚ್ ಆಫ್ ಮಾಡಿದ ನಂತರ LED ಆನ್ ಇರದಿದ್ದರೆ ಸಂಭಾವ್ಯ ಸಮಸ್ಯೆ ಏನು?",
             "opts": {
               "1": "DC ಪವರ್ ಸಪ್ಲೈ ಸಾಲದು",
@@ -1076,6 +1144,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C3217-U10-Q05",
             "q": "ಸಿಮ್ಯುಲೇಷನ್ ಸಮಯದಲ್ಲಿ LED ಏಕೇ ಹೊಳೆಯದಿದ್ದರೆ ಸಮಸ್ಯೆ ಪರಿಹಾರ ಕೌಶಲ ಬಳಸಿ ಯಾವ ಪರಿಹಾರ ಮಾಡಬಹುದು?",
             "opts": {
               "1": "ವಿವರಿಸಿದ ಸರ್ಕ್ಯೂಟ್‌ಗೆ ಹೊಂದುವಂತೆ ಎಲ್ಲಾ ಸಂಪರ್ಕಗಳನ್ನು ಪರಿಶೀಲಿಸಿ",
@@ -1088,6 +1157,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C3217-U10-A01",
           "id": "Build-the-Glow-After-Off-Circuit-🔋-Remedial",
           "seq": 56,
           "nm": "Build the Glow-After-Off Circuit 🔋",

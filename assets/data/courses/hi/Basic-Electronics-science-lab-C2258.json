@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C2258-U01",
       "nm": "LEDs Speak Emotions 💡",
       "desc": "LED",
       "rwc": "Diy Card, LED, Coin Cell",
@@ -26,6 +27,7 @@
         "nm": "Can copper light a card? 💡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C2258-U01-Q01",
             "q": "स्क्रिप्ट बच्चों को क्या बनाने के लिए प्रेरित करता है?",
             "opts": {
               "1": "A birthday cake",
@@ -35,6 +37,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U01-Q02",
             "q": "एलईडी कार्ड प्रोजेक्ट में कॉपर टेप का उपयोग क्यों किया जाता है?",
             "opts": {
               "1": "To add weight to the card",
@@ -44,6 +47,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U01-Q03",
             "q": "रोबोट डिज़ाइन वाले कार्ड पर एलईडी कहां लगाना चाहिए?",
             "opts": {
               "1": "On the robot's arm",
@@ -53,6 +57,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U01-Q04",
             "q": "यदि एलईडी नहीं जलती है, तो आपको सबसे पहले कौन सा समस्या-समाधान कदम उठाना चाहिए?",
             "opts": {
               "1": "Check the LED connections to the coin cell",
@@ -62,6 +67,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C2258-U01-Q05",
             "q": "कैसे सुनिश्चित करें कि कार्ड को दबाने पर एलईडी जले?",
             "opts": {
               "1": "Make sure the circuit is completed by pressing the side",
@@ -74,6 +80,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C2258-U01-A01",
           "id": "Build-a-Glowing-LED-Card-💡-Basic",
           "seq": 57,
           "nm": "Glowing Card",
@@ -125,6 +132,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C2258-U02",
       "nm": "Lamp and Fan Born 🔌",
       "desc": "DC Motors",
       "rwc": "Breadboard, Resistor, LED, Battery, Switch, Motor",
@@ -144,11 +152,13 @@
         "nm": "Can light control a lamp? 🔦",
         "qs": [
           {
+            "qid": "QN-DUMMY-C2258-U02-Q01",
             "q": "स्टडी लैंप + फैन प्रोजेक्ट में प्रकाश देने के लिए कौन सा घटक उपयोग किया जाता है?",
             "opts": { "1": "LED", "2": "Fluorescent tube", "3": "Incandescent bulb" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C2258-U02-Q02",
             "q": "स्क्रिप्ट में वर्णित प्रोजेक्ट में डीसी मोटर का मुख्य उद्देश्य क्या है?",
             "opts": {
               "1": "To generate electricity",
@@ -158,6 +168,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U02-Q03",
             "q": "सर्किट में रेसिस्टर कैसे जुड़ा हुआ है?",
             "opts": {
               "1": "Between the motor and the battery",
@@ -167,6 +178,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C2258-U02-Q04",
             "q": "यदि एलईडी नहीं जल रही है, तो समस्या क्या हो सकती है?",
             "opts": {
               "1": "The switch is turned on",
@@ -176,6 +188,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C2258-U02-Q05",
             "q": "ऐसी स्थिति में जहां फैन चल रहा है लेकिन लाइट नहीं जल रही है, संभावित समस्या क्या हो सकती है?",
             "opts": {
               "1": "The fan blade might be loose",
@@ -188,6 +201,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C2258-U02-A01",
           "id": "Build-a-Study-Lamp-and-Fan-🔌-Remedial",
           "seq": 58,
           "nm": "Study Lamp+Fan",
@@ -239,6 +253,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C2258-U03",
       "nm": "Darkness Triggers Light 🌑",
       "desc": "LDR",
       "rwc": "Ldr, Transistor, LED, Resistors, Wires, Battery",
@@ -258,11 +273,13 @@
         "nm": "Can darkness switch lights on? 🌃",
         "qs": [
           {
+            "qid": "QN-DUMMY-C2258-U03-Q01",
             "q": "स्मार्ट स्ट्रीट लाइट सिस्टम में किस कंपोनेंट का उपयोग लाइट लेवल्स का पता लगाने के लिए किया जाता है?",
             "opts": { "1": "LED", "2": "Transistor", "3": "LDR" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C2258-U03-Q02",
             "q": "दिन के समय स्ट्रीट लाइट्स का स्वचालित रूप से बंद होना क्यों लाभदायक है?",
             "opts": {
               "1": "It makes the street lights last longer",
@@ -272,16 +289,19 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C2258-U03-Q03",
             "q": "जब एलडीआर पर लाइट कम होती है तो एलईडी के साथ क्या होता है?",
             "opts": { "1": "The LED turns ON", "2": "The LED turns OFF", "3": "The LED blinks" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C2258-U03-Q04",
             "q": "अगर किसी शहर की स्ट्रीट लाइट्स रात में स्वचालित रूप से चालू नहीं हो रही हैं, तो संभावित समस्याओं के लिए पहले किस कंपोनेंट की जाँच करनी चाहिए?",
             "opts": { "1": "Battery", "2": "LDR", "3": "Wires" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U03-Q05",
             "q": "एक छात्र सर्किट बना रहा है और देखता है कि रात में एलईडी चालू नहीं हो रही है। इसका संभावित कारण क्या हो सकता है?",
             "opts": {
               "1": "The battery is overcharged",
@@ -294,6 +314,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C2258-U03-A01",
           "id": "Build-Automatic-Street-Lights-🌑-Basic",
           "seq": 59,
           "nm": "Automatic Street Lights",
@@ -345,6 +366,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C2258-U04",
       "nm": "Buttons Control Traffic 🚦",
       "desc": "Parallel Circuits",
       "rwc": "Motor, Wire, Battery, Switch, Tape, Glue, Cardboard, Scale, Pencil, Scissors",
@@ -364,6 +386,7 @@
         "nm": "Can a button control traffic? 🚦",
         "qs": [
           {
+            "qid": "QN-DUMMY-C2258-U04-Q01",
             "q": "मैनुअल ट्रैफिक सिस्टम में उपयोग की जाने वाली एलईडी के रंग क्या हैं?",
             "opts": {
               "1": "Red, Blue, Green",
@@ -373,6 +396,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U04-Q02",
             "q": "स्क्रिप्ट में वर्णित सर्किट में बटन दबाने पर क्या होता है?",
             "opts": {
               "1": "The corresponding LED turns on",
@@ -382,11 +406,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C2258-U04-Q03",
             "q": "सर्किट में करंट सप्लाई को सीमित करने के लिए कौन सा कंपोनेंट उपयोग किया जाता है?",
             "opts": { "1": "Transistor", "2": "Resistor", "3": "Capacitor" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U04-Q04",
             "q": "यदि लाल एलईडी नहीं जल रही है, तो आपके सर्किट में संभावित समस्या क्या हो सकती है?",
             "opts": {
               "1": "The resistor is connected to the yellow LED",
@@ -396,6 +422,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C2258-U04-Q05",
             "q": "यदि आप चाहते हैं कि हरी एलईडी का बटन छोड़ने के बाद भी वह जलती रहे, तो आप सेटअप को कैसे संशोधित कर सकते हैं?",
             "opts": {
               "1": "Connect a second push button in parallel with the green LED",
@@ -408,6 +435,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C2258-U04-A01",
           "id": "Build-a-Manual-Traffic-Simulator-🚦-Remedial",
           "seq": 60,
           "nm": "Traffic simulator",
@@ -459,6 +487,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C2258-U05",
       "nm": "Plants Get Their Light 🌿",
       "desc": "LDR",
       "rwc": "Ldr, Transistor, LED, Resistors, Wires, Battery",
@@ -478,6 +507,7 @@
         "nm": "Can darkness trigger a light? 🌙",
         "qs": [
           {
+            "qid": "QN-DUMMY-C2258-U05-Q01",
             "q": "स्क्रिप्ट में वर्णित स्मार्ट सिस्टम बनाने के लिए किन घटकों की आवश्यकता है?",
             "opts": {
               "1": "Capacitors, diodes, resistors, and a solar panel.",
@@ -487,6 +517,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U05-Q02",
             "q": "जब प्रकाश कम होता है तो एलडीआर की प्रतिरोध क्या होती है?",
             "opts": {
               "1": "The resistance increases.",
@@ -496,6 +527,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C2258-U05-Q03",
             "q": "स्मार्ट सिस्टम में एलईडी कैसे जुड़ा हुआ है?",
             "opts": {
               "1": "The anode to the collector of the transistor and the cathode to the positive terminal of the battery.",
@@ -505,11 +537,13 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C2258-U05-Q04",
             "q": "यदि आप इस सिस्टम को गार्डन में रात में लाइट्स ऑटोमेटिकली ऑन करने के लिए लागू करना चाहते हैं, तो प्रकाश में परिवर्तन को पहचानने के लिए कौन सा घटक महत्वपूर्ण है?",
             "opts": { "1": "LDR (Light Dependent Resistor).", "2": "Battery.", "3": "Transistor." },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C2258-U05-Q05",
             "q": "एक स्मार्ट होम सेटअप में ऊर्जा बचाने के लिए, इनडोर लाइटिंग से जुड़ा यह सिस्टम क्या भूमिका निभाता है?",
             "opts": {
               "1": "It requires manual operation to turn lights on and off.",
@@ -522,6 +556,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C2258-U05-A01",
           "id": "Build-an-Automatic-Plant-Light-🌿-Intermediate",
           "seq": 61,
           "nm": "Automatic Plant Light",
@@ -573,6 +608,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C2258-U06",
       "nm": "Motor Lifts the Weight 🏗️",
       "desc": "Mechanical Advantage, Pulley System Efficiency, Rotational Force, Torque, Data Analysis, Design Refinement",
       "rwc": "Tape, Battery, Switch, Motor, A Small Object",
@@ -592,11 +628,13 @@
         "nm": "Can a motor lift things up? 🏋️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C2258-U06-Q01",
             "q": "पुली सिस्टम में मोटर किस प्रकार की गति करती है?",
             "opts": { "1": "Linear motion", "2": "Rotational motion", "3": "Oscillatory motion" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U06-Q02",
             "q": "स्क्रिप्ट में वर्णित पुली सिस्टम में मोटर का प्राथमिक कार्य क्या है?",
             "opts": {
               "1": "To convert electrical energy into rotational motion",
@@ -606,11 +644,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C2258-U06-Q03",
             "q": "किस घटक को मोटर और बैटरी दोनों से जोड़ना चाहिए ताकि पुली सिस्टम को नियंत्रित किया जा सके?",
             "opts": { "1": "Pulley wheel", "2": "Switch", "3": "Rubber bands" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U06-Q04",
             "q": "यदि आपके पास घर पर केवल एक पेंसिल और एक बोतल है, तो पुली सिस्टम बनाने में उनका संभावित उपयोग क्या हो सकता है?",
             "opts": {
               "1": "To replace the battery",
@@ -620,6 +660,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U06-Q05",
             "q": "मोटर चालित पुली वस्तुओं को उठाते समय किस समस्या का समाधान करती है?",
             "opts": {
               "1": "It simplifies lifting by using electrical energy",
@@ -632,6 +673,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C2258-U06-A01",
           "id": "Build-a-Motorised-Pulley-System-🏗️-Remedial",
           "seq": 62,
           "nm": "Motorised pulley",
@@ -683,6 +725,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C2258-U07",
       "nm": "Coin Cell Glows Small 🔋",
       "desc": "Coin Cell Power Source, Low-Voltage Circuitry, Power Source Comparison, Miniaturization, Safe Current Limiting",
       "rwc": "Resistor, LED, Wire, Battery, Tape, Cardboard",
@@ -702,11 +745,13 @@
         "nm": "Can a badge actually glow? ✨",
         "qs": [
           {
+            "qid": "QN-DUMMY-C2258-U07-Q01",
             "q": "स्क्रिप्ट में मिनी एलईडी बैज को पावर देने के लिए क्या उपयोग किया जाता है?",
             "opts": { "1": "A 5V USB charger", "2": "A 3V coin cell", "3": "A 12V car battery" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U07-Q02",
             "q": "9V बैटरी से जुड़ी एलईडी 3V सिक्का सेल से जुड़ी एलईडी की तुलना में अधिक चमकदार क्यों दिखाई देती है?",
             "opts": {
               "1": "Because the LED is larger",
@@ -716,6 +761,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U07-Q03",
             "q": "एलईडी बैज प्रोजेक्ट में इलेक्ट्रिकल टेप का उपयोग करने का उद्देश्य क्या है?",
             "opts": {
               "1": "To change the color of the LED",
@@ -725,6 +771,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U07-Q04",
             "q": "यदि कोई छात्र एक ऐसा बैज बनाना चाहता है जो एक ही बैटरी पर अधिक समय तक चले, तो उन्हें किस घटक पर पुनर्विचार करना चाहिए?",
             "opts": {
               "1": "The type of battery used",
@@ -734,6 +781,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C2258-U07-Q05",
             "q": "एक छात्र देखता है कि उनकी एलईडी बैज नहीं जल रही है। स्क्रिप्ट के आधार पर उन्हें सबसे पहले क्या जांचना चाहिए?",
             "opts": {
               "1": "If the cardboard shape is correct",
@@ -746,6 +794,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C2258-U07-A01",
           "id": "Build-a-Coin-Cell-Gadget-🔋-Intermediate",
           "seq": 63,
           "nm": "Coin cell gadget",
@@ -797,6 +846,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C2258-U08",
       "nm": "Tank Signals Its Full 💧",
       "desc": "Touch Sensor",
       "rwc": "Breadboard, Resistor, LED, Battery, Transistor, Cardboard",
@@ -816,6 +866,7 @@
         "nm": "Is your water tank full? 💧",
         "qs": [
           {
+            "qid": "QN-DUMMY-C2258-U08-Q01",
             "q": "स्क्रिप्ट में चर्चा किए गए पानी के स्तर डिटेक्टर का मुख्य उद्देश्य क्या है?",
             "opts": {
               "1": "To improve the taste of water",
@@ -825,6 +876,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U08-Q02",
             "q": "स्क्रिप्ट के अनुसार, पानी के स्तर डिटेक्टर बनाना क्यों महत्वपूर्ण है?",
             "opts": {
               "1": "It accelerates water flow in pipes",
@@ -834,11 +886,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U08-Q03",
             "q": "पानी के संपर्क को प्रदर्शित करने के लिए एक्टिविटी में कौन सा घटक उपयोग होता है?",
             "opts": { "1": "A wet finger", "2": "A piece of cloth", "3": "A pencil" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C2258-U08-Q04",
             "q": "यदि आप देखते हैं कि टंकी भर जाने पर भी एलईडी नहीं जलती है, तो सेटअप निर्देशों के आधार पर सबसे पहले आपको क्या जांचना चाहिए?",
             "opts": {
               "1": "Replace the LED with a new one",
@@ -848,6 +902,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C2258-U08-Q05",
             "q": "मान लीजिए कि मोटर अपेक्षित तरीके से वस्तु को नहीं उठा रही है। संभावित समाधान क्या हो सकता है?",
             "opts": {
               "1": "Remove the battery and use direct current from a power outlet",
@@ -860,6 +915,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C2258-U08-A01",
           "id": "Build-a-Water-Level-Indicator-💧-Remedial",
           "seq": 64,
           "nm": "Water Level Indicator",
@@ -911,6 +967,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C2258-U09",
       "nm": "Knob Dims the Torch 🔦",
       "desc": "Current Control, Ohm's Law Application",
       "rwc": "Potentiometer, LED, Battery, Resistor",
@@ -930,11 +987,13 @@
         "nm": "Can you control light brightness? 🔆",
         "qs": [
           {
+            "qid": "QN-DUMMY-C2258-U09-Q01",
             "q": "स्क्रिप्ट में टॉर्च की चमक को समायोजित करने में कौन सा कंपोनेंट मदद करता है?",
             "opts": { "1": "Resistor", "2": "Potentiometer", "3": "Breadboard" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U09-Q02",
             "q": "स्क्रिप्ट के अनुसार टॉर्च सर्किट में पोटेंशियोमीटर की मुख्य भूमिका क्या है?",
             "opts": {
               "1": "To supply power",
@@ -944,11 +1003,13 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C2258-U09-Q03",
             "q": "यदि आपके पास जंपर वायर को छोड़कर सभी कंपोनेंट्स हैं, तो स्क्रिप्ट के अनुसार आप इसके बजाय क्या उपयोग कर सकते हैं?",
             "opts": { "1": "Simple connecting wires", "2": "Resistor", "3": "Breadboard" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C2258-U09-Q04",
             "q": "यदि आप स्क्रिप्ट में वर्णित DIY टॉर्च की चमक बदलना चाहते हैं, तो आपको क्या करना चाहिए?",
             "opts": {
               "1": "Use a different resistor",
@@ -958,6 +1019,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C2258-U09-Q05",
             "q": "यदि स्क्रिप्ट में दिए गए निर्देशों का पालन करने के बाद आपकी एलईडी नहीं जलती है, तो संभावित समस्या क्या हो सकती है?",
             "opts": {
               "1": "The LED is too bright",
@@ -970,6 +1032,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C2258-U09-A01",
           "id": "Build-a-Potentiometer-Flashlight-🔦-Advanced",
           "seq": 65,
           "nm": "Potentiometer DIY Flashlight",
@@ -1021,6 +1084,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C2258-U10",
       "nm": "Hull Finds Its Speed 🚤",
       "desc": "Design Trade-Offs, Hull Drag, Propeller Pitch,",
       "rwc": "Pen, Paper",
@@ -1040,6 +1104,7 @@
         "nm": "Can a motor sail a boat? ⛵",
         "qs": [
           {
+            "qid": "QN-DUMMY-C2258-U10-Q01",
             "q": "स्क्रिप्ट में वर्णित नौका एक्टिविटी का मुख्य उद्देश्य क्या है?",
             "opts": {
               "1": "To build the largest boat possible.",
@@ -1049,6 +1114,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C2258-U10-Q02",
             "q": "नौका के केंद्र में बैटरी रखना क्यों महत्वपूर्ण है?",
             "opts": {
               "1": "To ensure better balance and stability.",
@@ -1058,6 +1124,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C2258-U10-Q03",
             "q": "नौका के लिए कौन सा प्रोपेलर आकार सबसे प्रभावी पाया गया?",
             "opts": {
               "1": "A small propeller.",
@@ -1067,6 +1134,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C2258-U10-Q04",
             "q": "यदि कोई छात्र देखता है कि उनकी नौका ज़िग-ज़ैग पैटर्न में चल रही है, तो समस्या सुलझाने के लिए उन्हें सबसे पहले क्या जांचना चाहिए?",
             "opts": {
               "1": "The placement of the battery.",
@@ -1076,6 +1144,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C2258-U10-Q05",
             "q": "एक छात्र देखता है कि उनकी नौका एक मजबूत मोटर के बावजूद ज्यादा दूरी नहीं तय कर रही है। एक्टिविटी के आधार पर एक संभावित समाधान क्या हो सकता है?",
             "opts": {
               "1": "Increase the size of the battery.",
@@ -1088,6 +1157,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C2258-U10-A01",
           "id": "Optimise-Your-Bottle-Boat-🚤-Remedial",
           "seq": 66,
           "nm": "Boat distance instructor",

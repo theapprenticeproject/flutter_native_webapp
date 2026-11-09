@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C7031-U01",
       "nm": "Lines Make a Mandala 🔵",
       "desc": "Lines Mandala art",
       "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
@@ -26,11 +27,13 @@
         "nm": "Can circles become mandalas? 🔵",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U01-Q01",
             "q": "What is the meaning of the word 'Mandala' in Sanskrit?",
             "opts": { "1": "Art", "2": "Pattern", "3": "Circle" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U01-Q02",
             "q": "How does Mandala Art benefit individuals?",
             "opts": {
               "1": "It helps in building patience and focus.",
@@ -40,11 +43,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U01-Q03",
             "q": "Which element of art is primarily focused on in this activity?",
             "opts": { "1": "Colors", "2": "Lines", "3": "Textures" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U01-Q04",
             "q": "If you were to create a Mandala Art piece shaped like a fish, which step would you perform first?",
             "opts": {
               "1": "Fill the design with patterns.",
@@ -54,6 +59,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U01-Q05",
             "q": "You want to create a Mandala Art piece that represents a feeling of tranquility. Which elements would you focus on to achieve this creatively?",
             "opts": {
               "1": "Dense textures and dark shades.",
@@ -66,6 +72,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U01-A01",
           "id": "Create-a-Bird-Mandala-Art-🔵-Basic",
           "seq": 67,
           "nm": "Create a Bird Mandala Art 🔵",
@@ -117,6 +124,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U02",
       "nm": "Circles Grow Outward 🌀",
       "desc": "Lines Mandala art",
       "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
@@ -136,11 +144,13 @@
         "nm": "Can you draw a perfect mandala? ⭕",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U02-Q01",
             "q": "What is the initial shape used to start a simple mandala?",
             "opts": { "1": "A triangle", "2": "A square", "3": "A circle" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U02-Q02",
             "q": "Why is maintaining uniformity important in creating a mandala?",
             "opts": {
               "1": "It ensures the mandala is colorful",
@@ -150,11 +160,13 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U02-Q03",
             "q": "Which tool can be used to draw multiple circles in a mandala?",
             "opts": { "1": "Compass", "2": "Ruler", "3": "Protractor" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U02-Q04",
             "q": "If you want to create a mandala inspired by natural elements, what could you include?",
             "opts": {
               "1": "Digital patterns",
@@ -164,6 +176,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U02-Q05",
             "q": "How can you creatively incorporate the concept of 'kaju katli' into your mandala design?",
             "opts": {
               "1": "By adding a square border around the mandala",
@@ -176,6 +189,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U02-A01",
           "id": "Draw-a-Patterned-Circle-Mandala-🌀-Remedial",
           "seq": 68,
           "nm": "Draw a Patterned Circle Mandala 🌀",
@@ -227,6 +241,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U03",
       "nm": "Paper Folds into Life 🍃",
       "desc": "Origami Paper Craft",
       "rwc": "Origami Papers, Sketchpens, Glue",
@@ -246,26 +261,31 @@
         "nm": "Can craft become a message? 🎀",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U03-Q01",
             "q": "What is the main theme for the hanging decor project?",
             "opts": { "1": "Nature", "2": "Space", "3": "Technology" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U03-Q02",
             "q": "What skill is primarily emphasized in creating the decor?",
             "opts": { "1": "Mathematics", "2": "History", "3": "Creativity" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U03-Q03",
             "q": "Which technique is NOT mentioned as part of this activity?",
             "opts": { "1": "Paper folding", "2": "Paper cutting", "3": "Wood carving" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U03-Q04",
             "q": "If a student wants to create a decor piece using their imagination, which skill should they primarily use?",
             "opts": { "1": "Communication", "2": "Creativity", "3": "Analysis" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U03-Q05",
             "q": "How can a shy student effectively communicate their art piece in a video?",
             "opts": {
               "1": "By discussing the historical context of their work",
@@ -278,6 +298,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U03-A01",
           "id": "Make-a-Nature-Inspired-Wall-Hanging-🍃-Basic",
           "seq": 69,
           "nm": "Make a Nature Inspired Wall Hanging 🍃",
@@ -329,6 +350,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U04",
       "nm": "Tulips Rise from Folds 🌷",
       "desc": "Origami Paper Craft",
       "rwc": "Origami Papers, Sketchpens, Glue",
@@ -348,11 +370,13 @@
         "nm": "Can old paper become origami? 🌷",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U04-Q01",
             "q": "What is the main material that you'll need to create origami objects?",
             "opts": { "1": "Scissors", "2": "Glue", "3": "Paper" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U04-Q02",
             "q": "What is the primary goal of SDG 12?",
             "opts": {
               "1": "Reduce waste and create creative things from simple materials",
@@ -362,6 +386,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U04-Q03",
             "q": "During the origami process, what is crucial for making the folds look neat and realistic?",
             "opts": {
               "1": "Pressing the folds neatly",
@@ -371,6 +396,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U04-Q04",
             "q": "If you were to create a unique origami shape beyond the tulip, which skill would help you the most?",
             "opts": {
               "1": "Using expensive materials",
@@ -380,6 +406,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U04-Q05",
             "q": "How can you creatively use old magazine paper based on the principles in the script?",
             "opts": {
               "1": "Throw it away to make space",
@@ -392,6 +419,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U04-A01",
           "id": "Fold-Three-Origami-Tulips-🌷-Remedial",
           "seq": 70,
           "nm": "Fold Three Origami Tulips 🌷",
@@ -443,6 +471,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U05",
       "nm": "Objects Turn to Characters 🤖",
       "desc": "Figure study",
       "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
@@ -460,11 +489,13 @@
             "nm": "Can a spoon become a character? 🥄",
             "qs": [
               {
+                "qid": "QN-DUMMY-C7031-U05-V01-Q01",
                 "q": "What do you think is the main focus in this art activity?",
                 "opts": { "1": "Art Transformation", "2": "Cartoon Designing", "3": "Skecthing" },
                 "ans": "3"
               },
               {
+                "qid": "QN-DUMMY-C7031-U05-V01-Q02",
                 "q": "What is the purpose of transforming everyday objects into figures or characters?",
                 "opts": {
                   "1": "To enhance creativity and problem-solving skills",
@@ -474,6 +505,7 @@
                 "ans": "1"
               },
               {
+                "qid": "QN-DUMMY-C7031-U05-V01-Q03",
                 "q": "What materials are needed in order to design a character?",
                 "opts": {
                   "1": "Art book, eraser, colors, and sketch pencils",
@@ -483,6 +515,7 @@
                 "ans": "1"
               },
               {
+                "qid": "QN-DUMMY-C7031-U05-V01-Q04",
                 "q": "If you were given a spoon, how might you creatively transform it into a character?",
                 "opts": {
                   "1": "Use it as a background element",
@@ -492,6 +525,7 @@
                 "ans": "3"
               },
               {
+                "qid": "QN-DUMMY-C7031-U05-V01-Q05",
                 "q": "For a classroom project, how can you apply your creativity to transform a book into a fictional character?",
                 "opts": {
                   "1": "Turn the book into a wise old wizard",
@@ -509,11 +543,13 @@
         "nm": "Can a spoon become a character? 🥄",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U05-Q01",
             "q": "What do you think is the main focus in this art activity?",
             "opts": { "1": "Art Transformation", "2": "Cartoon Designing", "3": "Skecthing" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U05-Q02",
             "q": "What is the purpose of transforming everyday objects into figures or characters?",
             "opts": {
               "1": "To enhance creativity and problem-solving skills",
@@ -523,6 +559,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U05-Q03",
             "q": "What materials are needed in order to design a character?",
             "opts": {
               "1": "Art book, eraser, colors, and sketch pencils",
@@ -532,6 +569,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U05-Q04",
             "q": "If you were given a spoon, how might you creatively transform it into a character?",
             "opts": {
               "1": "Use it as a background element",
@@ -541,6 +579,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U05-Q05",
             "q": "For a classroom project, how can you apply your creativity to transform a book into a fictional character?",
             "opts": {
               "1": "Turn the book into a wise old wizard",
@@ -553,6 +592,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U05-A01",
           "id": "Transform-an-Object-Into-a-Character-🤖-Intermediate",
           "seq": 71,
           "nm": "Transform an Object Into a Character 🤖",
@@ -604,6 +644,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U06",
       "nm": "Shapes Build a Face 🎭",
       "desc": "Character Designing Geometrical Figures",
       "rwc": "Paper, Pencil, Ruler, Colors",
@@ -623,6 +664,7 @@
         "nm": "Can shapes build a face? 🔷",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U06-Q01",
             "q": "What materials are required for this activity?",
             "opts": {
               "1": "Charcoal and sketchbooks",
@@ -632,6 +674,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U06-Q02",
             "q": "Why is using geometric shapes beneficial in character designing?",
             "opts": {
               "1": "They simplify the drawing process",
@@ -641,11 +684,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U06-Q03",
             "q": "Which shapes were suggested for creating the base of a character's face in the lesson?",
             "opts": { "1": "Square with rounded corners", "2": "Circles", "3": "Rectangles" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U06-Q04",
             "q": "How can you creatively apply the lesson's technique to solve a real-life problem?",
             "opts": {
               "1": "Create a comic strip about the problem",
@@ -655,6 +700,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U06-Q05",
             "q": "If you were to create a new character using the techniques from the lesson, how could you enhance its uniqueness?",
             "opts": {
               "1": "Combine different geometric shapes in unexpected ways",
@@ -667,6 +713,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U06-A01",
           "id": "Design-a-Geometric-Character-🎭-Remedial",
           "seq": 72,
           "nm": "Design a Geometric Character 🎭",
@@ -718,6 +765,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U07",
       "nm": "Sticks and Strings Dream 🌙",
       "desc": "Craft",
       "rwc": "Cardboard, Fevicol, Scissors, Glue, Colors, Rope",
@@ -737,6 +785,7 @@
         "nm": "What do dream catchers catch? 🕸️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U07-Q01",
             "q": "What did Native American tribes use Dream Catchers for?",
             "opts": {
               "1": "To protect their dreams",
@@ -746,16 +795,19 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U07-Q02",
             "q": "What does the hoop in a Dream Catcher represent?",
             "opts": { "1": "A spider web", "2": "The circle of life", "3": "A dream" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U07-Q03",
             "q": "Which materials can be used to make the hoop of a Dream Catcher?",
             "opts": { "1": "Metal only", "2": "Plastic only", "3": "Wood, metal, or cardboard" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U07-Q04",
             "q": "If you don't have colored paper, what creative method can you use to make feathers for a Dream Catcher?",
             "opts": {
               "1": "Color white paper and cut it into feather shapes",
@@ -765,6 +817,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U07-Q05",
             "q": "How can you creatively use common materials to make a Dream Catcher if you lack traditional materials?",
             "opts": {
               "1": "Use a glass bottle as the hoop",
@@ -777,6 +830,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U07-A01",
           "id": "Build-a-Nature-Inspired-Dream-Catcher-🌙-Intermediate",
           "seq": 73,
           "nm": "Build a Nature Inspired Dream Catcher 🌙",
@@ -828,6 +882,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U08",
       "nm": "Paper City Dreams Big 🏙️",
       "desc": "Exploring the use of Shapes",
       "rwc": "Colorful, Texture, Paper, Glue, Scissors, Marker",
@@ -847,11 +902,13 @@
         "nm": "Can you build a dream city? 🏙️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U08-Q01",
             "q": "Who is the artist that inspired the Dream City activity?",
             "opts": { "1": "Vincent van Gogh", "2": "Pablo Picasso", "3": "Paul Klee" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U08-Q02",
             "q": "What artistic style is Paul Klee known for?",
             "opts": {
               "1": "Realistic portraits and landscapes",
@@ -861,6 +918,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U08-Q03",
             "q": "What materials are suggested for creating the Dream City?",
             "opts": {
               "1": "Colored papers, scissors, glue, and markers",
@@ -870,6 +928,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C7031-U08-Q04",
             "q": "How can you make your Dream City unique when creating it?",
             "opts": {
               "1": "By following a strict blueprint",
@@ -879,6 +938,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U08-Q05",
             "q": "What should you do if you don't have specific colored papers for the activity?",
             "opts": {
               "1": "Use alternative papers or magazine cutouts",
@@ -891,6 +951,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U08-A01",
           "id": "Build-a-Dream-City-Collage-🏙️-Remedial",
           "seq": 74,
           "nm": "Build a Dream City Collage 🏙️",
@@ -942,6 +1003,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U09",
       "nm": "Bottles Bloom into Flowers 🌺",
       "desc": "Plastic Pollution, Sustainable Development",
       "rwc": "Plastic Bottles, Waste Papers, Markers, Paints, Brushes, Thread, Scissors, Tape",
@@ -961,6 +1023,7 @@
         "nm": "Can plastic become painted art? 🎨",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U09-Q01",
             "q": "What are we learning in today's art activity?",
             "opts": {
               "1": "Practicing drawing and sketching skills",
@@ -970,6 +1033,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U09-Q02",
             "q": "What is the meaning of decomposition?",
             "opts": {
               "1": "Melting due to heat",
@@ -979,6 +1043,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U09-Q03",
             "q": "How can you ensure that paint adheres well to plastic when painting?",
             "opts": {
               "1": "By using very thin paint",
@@ -988,6 +1053,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C7031-U09-Q04",
             "q": "If you wanted to create a new type of artwork using recycled materials, what could you do differently?",
             "opts": {
               "1": "Paint on new canvases",
@@ -997,6 +1063,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U09-Q05",
             "q": "How might you creatively solve the problem of plastic pollution in your community?",
             "opts": {
               "1": "Organize a community art project using collected plastic waste",
@@ -1009,6 +1076,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U09-A01",
           "id": "Make-a-Plastic-Bottle-Flower-Hanging-🌺-Advanced",
           "seq": 75,
           "nm": "Make a Plastic Bottle Flower Hanging 🌺",
@@ -1060,6 +1128,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C7031-U10",
       "nm": "Scraps Hang as Art 🎑",
       "desc": "Plastic Pollution, Sustainable Development",
       "rwc": "Plastic Bottles, Waste Papers, Markers, Paints, Brushes, Thread, Scissors, Tape",
@@ -1079,6 +1148,7 @@
         "nm": "Can waste become wall art? 🖼️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C7031-U10-Q01",
             "q": "What sustainable development goal is related to the activity?",
             "opts": {
               "1": "SDG 15: Life on Land",
@@ -1088,6 +1158,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U10-Q02",
             "q": "What is the main purpose of the activity?",
             "opts": {
               "1": "To practice drawing techniques",
@@ -1097,6 +1168,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U10-Q03",
             "q": "If you have magazine paper and old packaging boxes, which step would you perform first to create the wall hanging?",
             "opts": {
               "1": "Glue the paper to the cardboard base",
@@ -1106,6 +1178,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U10-Q04",
             "q": "How can you creatively add texture to your recycled wall hanging?",
             "opts": {
               "1": "Use only smooth, perfectly cut pieces of paper",
@@ -1115,6 +1188,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C7031-U10-Q05",
             "q": "What creative element must be included in the design according to the rules?",
             "opts": {
               "1": "A painted border",
@@ -1127,6 +1201,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C7031-U10-A01",
           "id": "Make-a-Recycled-Wall-Hanging-🎑-Remedial",
           "seq": 76,
           "nm": "Make a Recycled Wall Hanging 🎑",

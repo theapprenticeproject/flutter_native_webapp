@@ -7,6 +7,7 @@
   "desc": "A test description about the course. To Test the description field about the course. I don't know what more to right. But still I need to right something right? Why course Descriptions are so long? Who reads it anyway",
   "units": [
     {
+      "uid": "LU-DUMMY-C11761-U01",
       "nm": "Shield Covers the Bill 🛡️",
       "desc": "Health Insurance, Financial Protection",
       "rwc": "Pencil, Eraser",
@@ -26,6 +27,7 @@
         "nm": "Can insurance save your family? 🏥",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U01-Q01",
             "q": "स्क्रिप्टनुसार आरोग्य विम्याचा मुख्य उद्देश काय आहे?",
             "opts": {
               "1": "To avoid paying any medical bills.",
@@ -35,6 +37,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U01-Q02",
             "q": "आरोग्य विमा SDG 3 ला कसा समर्थन देतो?",
             "opts": {
               "1": "By ensuring everyone gets free healthcare.",
@@ -44,6 +47,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U01-Q03",
             "q": "जर कुटुंबाकडे आरोग्य विमा असेल तर वैद्यकीय आपत्कालीन स्थितीत त्यांचा आर्थिक परिस्थितीवर काय परिणाम होतो?",
             "opts": {
               "1": "It increases financial burden due to high premiums.",
@@ -53,6 +57,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U01-Q04",
             "q": "कल्पना करा की तुम्ही तुमच्या कुटुंबासाठी आरोग्य विमा घेण्याचा विचार करत आहात. स्क्रिप्टनुसार विचार करण्यासाठी एक महत्वाचा घटक कोणता आहे?",
             "opts": {
               "1": "The potential for emergencies and the financial protection offered.",
@@ -62,6 +67,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U01-Q05",
             "q": "तुम्ही आरोग्य संरक्षण योजना तयार करत आहात. स्क्रिप्टनुसार पहिला टप्पा काय आहे?",
             "opts": {
               "1": "Choosing a medical emergency situation.",
@@ -74,6 +80,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U01-A01",
           "id": "Build-Your-Health-Protection-Shield-🛡️-Basic",
           "seq": 103,
           "nm": "My Health Protection Shield",
@@ -125,6 +132,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C11761-U02",
       "nm": "Insurance Saves the Day 🏥",
       "desc": "Health Insurance, Financial Protection",
       "rwc": "Pencil, Eraser",
@@ -144,11 +152,13 @@
         "nm": "Can diversification protect savings? 📊",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U02-Q01",
             "q": "स्क्रिप्टनुसार आर्थिक नियोजनाचा पाया काय आहे?",
             "opts": { "1": "Investing in stocks", "2": "Buying insurance", "3": "Saving money" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U02-Q02",
             "q": "आर्थिक नियोजनामध्ये विविधतेचे महत्त्व का आहे?",
             "opts": {
               "1": "To maximize returns",
@@ -158,6 +168,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U02-Q03",
             "q": "तुमच्याकडे ₹10,000 असल्यास, स्क्रिप्टनुसार विविधता कशी लागू करता येईल?",
             "opts": {
               "1": "Invest all in stocks",
@@ -167,6 +178,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U02-Q04",
             "q": "अंजलीने आपत्कालीन परिस्थितीसाठी नियोजन केले नाही आणि तिला वैद्यकीय संकटाचा सामना करावा लागला. तिने ही परिस्थिती कशी टाळली असती?",
             "opts": {
               "1": "By investing in high-risk stocks",
@@ -176,6 +188,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U02-Q05",
             "q": "अमानने सर्व पैसे स्टॉक्समध्ये गुंतवले आणि बाजार खाली गेल्यावर ते गमावले. त्याने वेगळे काय करायला हवे होते?",
             "opts": {
               "1": "Diversified his investments",
@@ -188,6 +201,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U02-A01",
           "id": "Build-Your-Financial-Protection-Plan-🏥-Remedial",
           "seq": 104,
           "nm": "Simple Health Protection Shield",
@@ -239,6 +253,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C11761-U03",
       "nm": "Taxes Split Two Ways 📑",
       "desc": "Types of Taxes",
       "rwc": "Pencil, Eraser",
@@ -258,6 +273,7 @@
         "nm": "Do you pay tax without knowing? 🧾",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U03-Q01",
             "q": "थेट कर म्हणजे काय?",
             "opts": {
               "1": "A tax that is directly paid to the government by an individual or organization.",
@@ -267,6 +283,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U03-Q02",
             "q": "अप्रत्यक्ष कर कसा कार्य करतो?",
             "opts": {
               "1": "It is included in the price of goods and services and paid by the consumer.",
@@ -276,11 +293,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U03-Q03",
             "q": "खालीलपैकी कोणता अप्रत्यक्ष कराचा उदाहरण आहे?",
             "opts": { "1": "Income Tax", "2": "Property Tax", "3": "Tax on biscuits" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U03-Q04",
             "q": "अनिकाच्या पालकांना मासिक पगार मिळतो, आणि ती त्यांच्या पगाराच्या पावतीवर \"उत्पन्न कर\" नावाचे कपात पाहते. या कपातीबद्दल अनिकाने काय समजून घ्यावे?",
             "opts": {
               "1": "It is a Direct Tax paid directly from her parents' income to the government.",
@@ -290,6 +309,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U03-Q05",
             "q": "राज एक चिप्सचा पॅकेट विकत घेतो आणि तो एकूण बिलावर लहान कर रक्कम जोडलेली पाहतो. राजला या प्रकारच्या कराबद्दल हुशार आर्थिक निर्णय घ्यायचा आहे. राजने काय विचार करावा?",
             "opts": {
               "1": "Stop buying chips to avoid paying any tax at all.",
@@ -302,6 +322,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U03-A01",
           "id": "Sort-Direct-and-Indirect-Taxes-📑-Basic",
           "seq": 105,
           "nm": "Know Your Taxes",
@@ -353,6 +374,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C11761-U04",
       "nm": "Tax Money Serves All 🏗️",
       "desc": "Tax",
       "rwc": "Pencil, Eraser",
@@ -372,6 +394,7 @@
         "nm": "How does tax money get spent? 🏗️",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U04-Q01",
             "q": "सरकार कराचे पैसे कशासाठी वापरते?",
             "opts": {
               "1": "To run public services like roads and hospitals",
@@ -381,6 +404,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U04-Q02",
             "q": "सरकारच्या प्रत्येक निवडीचे महत्त्व का आहे?",
             "opts": {
               "1": "Because choices can be changed anytime without impact",
@@ -390,6 +414,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U04-Q03",
             "q": "शाळेची छप्पर तुटल्यास, कोणत्या क्षेत्राला कराच्या पैशांची गरज आहे?",
             "opts": {
               "1": "Buying more computer",
@@ -399,6 +424,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U04-Q04",
             "q": "संपूर्ण पैसा फक्त एका आवडत्या समस्येवर खर्च केल्यास काय होऊ शकते?",
             "opts": {
               "1": "Other important needs will not get support",
@@ -408,6 +434,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U04-Q05",
             "q": "तुम्ही एक पोस्टर बनवत आहात. कोणता शीर्षक स्पष्ट निर्णय-निर्मिती दर्शवतो?",
             "opts": {
               "1": "My favourite colours and drawings",
@@ -420,6 +447,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U04-A01",
           "id": "Divide-Tax-Money-Across-Needs-🏗️-Remedial",
           "seq": 106,
           "nm": "The Power of Taxes",
@@ -471,6 +499,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C11761-U05",
       "nm": "Steps Shape the Future 🗺️",
       "desc": "Saving and Investment Options",
       "rwc": "Pencil, Eraser",
@@ -490,6 +519,7 @@
         "nm": "Can saving fight poverty? 💪",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U05-Q01",
             "q": "स्क्रिप्टमध्ये उल्लेखित SDG 1 चे मुख्य उद्दिष्ट काय आहे?",
             "opts": {
               "1": "Promote gender equality",
@@ -499,6 +529,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U05-Q02",
             "q": "ऐशाच्या पालकांनी पैसे का वाचवले आणि गुंतवले?",
             "opts": {
               "1": "To go on a vacation",
@@ -508,6 +539,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U05-Q03",
             "q": "बँक किंवा पोस्ट ऑफिसमध्ये पैसे ठेवण्याचा फायदा ऐशाने कसा सांगितला?",
             "opts": {
               "1": "It helps in immediate spending",
@@ -517,6 +549,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U05-Q04",
             "q": "जर तुम्ही ऐशासारखी सर्जनशील कार्यशाळा डिझाइन करणार असाल, तर ती आकर्षक बनवण्यासाठी कोणता संसाधन वापरू शकता?",
             "opts": {
               "1": "Plain text documents",
@@ -526,6 +559,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U05-Q05",
             "q": "तुम्हाला तुमच्या समुदायाला आर्थिक साक्षरता समजून घेण्यास मदत करायची आहे. प्रभावीपणे जनजागृती पसरवण्यासाठी तुम्ही कोणता निर्णय घेऊ शकता?",
             "opts": {
               "1": "Rely solely on social media posts",
@@ -538,6 +572,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U05-A01",
           "id": "Build-a-Financial-Planning-Poster-🗺️-Intermediate",
           "seq": 107,
           "nm": "Financial Planning Poster",
@@ -589,6 +624,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C11761-U06",
       "nm": "Plan Protects Your Wealth 🛡️",
       "desc": "Financial Services",
       "rwc": "Pencil, Eraser",
@@ -608,11 +644,13 @@
         "nm": "Can investing protect your future? 📊",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U06-Q01",
             "q": "अमानने आपल्या पहिल्या पगारातून किती रक्कम वाचवली?",
             "opts": { "1": "₹5,000", "2": "₹15,000", "3": "₹10,000" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U06-Q02",
             "q": "स्क्रिप्टमधील धड्याचा मुख्य उद्देश काय आहे?",
             "opts": {
               "1": "Learn Smart Financial Planning",
@@ -622,6 +660,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U06-Q03",
             "q": "जर एखाद्या व्यक्तीकडे ₹१०,००० गुंतवणूक करण्यासाठी असतील, तर स्क्रिप्टमधील विविधता उदाहरणानुसार त्याने ते कसे विभागावे?",
             "opts": {
               "1": "₹5,000 in stocks, ₹3,000 in savings, ₹2,000 in mutual funds",
@@ -631,6 +670,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U06-Q04",
             "q": "अमान आपल्या बचतीची गुंतवणूक वाढवण्यासाठी आणि संरक्षणासाठी काय करायला पाहिजे?",
             "opts": {
               "1": "Saving money in a fixed deposit only",
@@ -640,6 +680,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U06-Q05",
             "q": "अंजली तिच्या आर्थिक नियोजनाची तयारी करत आहे आणि तिला अचानक वैद्यकीय आणीबाणीपासून संरक्षण मिळवायचे आहे. तिने आपल्या आर्थिक योजनेत काय प्राधान्य द्यावे?",
             "opts": {
               "1": "Saving money in a savings account",
@@ -652,6 +693,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U06-A01",
           "id": "Build-Your-Financial-Protection-Plan-🛡️-Remedial",
           "seq": 108,
           "nm": "Financial Planning Simplified",
@@ -703,6 +745,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C11761-U07",
       "nm": "Formula Grows the Savings 🧮",
       "desc": "Simple Interest",
       "rwc": "Pencil, Eraser",
@@ -722,11 +765,13 @@
         "nm": "Can simple interest grow savings? 📈",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U07-Q01",
             "q": "साध्या व्याजाच्या सूत्रातील “P” म्हणजे काय?",
             "opts": { "1": "Payment", "2": "Profit", "3": "Principal" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U07-Q02",
             "q": "साधे व्याज दरवर्षी समान का राहते?",
             "opts": {
               "1": "Because it is always calculated on the original savings",
@@ -736,11 +781,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U07-Q03",
             "q": "जर तुम्ही ₹1000 1 वर्षासाठी 4% व्याजाने बचत केली, तर तुम्हाला किती व्याज मिळेल?",
             "opts": { "1": "₹20", "2": "₹40", "3": "₹60" },
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U07-Q04",
             "q": "जर तुम्हाला तुमचे पैसे सुरक्षितपणे आणि निश्चित परताव्यासह वाढवायचे असतील, तर तुम्ही काय निवडाल?",
             "opts": {
               "1": "Simple Interest saving",
@@ -750,6 +797,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U07-Q05",
             "q": "साध्या व्याजाबद्दल माहिती असणे तुमच्या खऱ्या आयुष्यात कसे मदत करते?",
             "opts": {
               "1": "To spend money quickly",
@@ -762,6 +810,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U07-A01",
           "id": "Solve-the-Simple-Interest-Challenge-🧮-Intermediate",
           "seq": 109,
           "nm": "Simple  Interest",
@@ -813,6 +862,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C11761-U08",
       "nm": "Interest Builds the Economy 🏗️",
       "desc": "Interest, Banking",
       "rwc": "Pencil, Eraser",
@@ -832,6 +882,7 @@
         "nm": "Can interest grow an economy? 📈",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U08-Q01",
             "q": "व्हिडिओचा मुख्य विषय काय आहे?",
             "opts": {
               "1": "The Power of Interest",
@@ -841,6 +892,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U08-Q02",
             "q": "व्हिडिओनुसार इंटरेस्ट कसा आर्थिक वाढीस मदत करतो?",
             "opts": {
               "1": "By reducing taxes",
@@ -850,11 +902,13 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U08-Q03",
             "q": "जर तुम्ही ₹1,000 एका बँकेत 3% वार्षिक व्याजदराने जमा केले, तर एका वर्षात तुम्हाला किती व्याज मिळेल?",
             "opts": { "1": "₹10", "2": "₹50", "3": "₹30" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U08-Q04",
             "q": "एक व्यक्ती व्यवसाय सुरू करण्यासाठी कर्ज घेतो. व्हिडिओमध्ये चर्चेत आलेल्या निर्णयक्षमतेच्या आधारावर या कृतीचा एक सकारात्मक परिणाम काय असू शकतो?",
             "opts": {
               "1": "Decreasing the business's revenue",
@@ -864,6 +918,7 @@
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U08-Q05",
             "q": "सरकारी अधिकारी नवीन पायाभूत सुविधा प्रकल्पासाठी इंटरेस्ट वापरून निधी उभारण्याचा विचार करीत आहेत. चांगला निर्णय घेण्यासाठी त्यांनी काय विचार करायला हवा?",
             "opts": {
               "1": "The popularity of the project",
@@ -876,6 +931,7 @@
       }
     },
     {
+      "uid": "LU-DUMMY-C11761-U09",
       "nm": "QR Moves the Money 📲",
       "desc": "Digital Payments",
       "rwc": "Pencil, Eraser",
@@ -895,6 +951,7 @@
         "nm": "Can UPI replace your wallet? 📲",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U09-Q01",
             "q": "डिजिटल पेमेंट्सच्या संदर्भात UPI चा पूर्ण अर्थ काय आहे?",
             "opts": {
               "1": "Universal Payments Interface",
@@ -904,6 +961,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U09-Q02",
             "q": "स्क्रिप्टनुसार डिजिटल पेमेंट्स SDG 8 ला कसा समर्थन करतात?",
             "opts": {
               "1": "By reducing the need for physical currency and promoting global trade",
@@ -913,6 +971,7 @@
             "ans": "2"
           },
           {
+            "qid": "QN-DUMMY-C11761-U09-Q03",
             "q": "स्क्रिप्टनुसार कोणती पद्धत तुम्हाला अचूक चेंजची चिंता न करता त्वरित पेमेंट करण्यास अनुमती देते?",
             "opts": {
               "1": "Scanning a QR code with your phone",
@@ -922,6 +981,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U09-Q04",
             "q": "तुम्ही एक दुकानदार आहात जो व्यस्त दिवसानंतर लवकर पुनर्भरण करू इच्छिता. जलद निधी उपलब्ध होण्यासाठी ग्राहकांना कोणत्या पेमेंट पद्धतीचा वापर करावा यासाठी प्रोत्साहन द्याल?",
             "opts": {
               "1": "Digital payments via UPI",
@@ -931,6 +991,7 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U09-Q05",
             "q": "तुम्ही एका दैनिक वेतन कामगाराला त्याचे काम पूर्ण होताच पैसे देण्याचे नियोजन करत आहात. स्क्रिप्टनुसार सर्वात कार्यक्षम पेमेंट पद्धत कोणती आहे?",
             "opts": { "1": "Paying in cash", "2": "Digital transfer", "3": "Writing a check" },
             "ans": "2"
@@ -939,6 +1000,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U09-A01",
           "id": "Build-the-Digital-Payments-Puzzle-📲-Advanced",
           "seq": 110,
           "nm": "Digital Payments Poster",
@@ -990,6 +1052,7 @@
       ]
     },
     {
+      "uid": "LU-DUMMY-C11761-U10",
       "nm": "Transfer in Seconds 💳",
       "desc": "Digital Payments",
       "rwc": "Pencil, Eraser",
@@ -1009,6 +1072,7 @@
         "nm": "Which payment is truly instant? ⚡",
         "qs": [
           {
+            "qid": "QN-DUMMY-C11761-U10-Q01",
             "q": "UPI चा फुलफॉर्म काय आहे?",
             "opts": {
               "1": "Unified Payments Interface",
@@ -1018,11 +1082,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U10-Q02",
             "q": "कोणता डिजिटल पेमेंट पद्धत सामान्यतः तत्काळ नसते आणि काही वेळ घेऊ शकते?",
             "opts": { "1": "IMPS", "2": "UPI", "3": "NEFT" },
             "ans": "3"
           },
           {
+            "qid": "QN-DUMMY-C11761-U10-Q03",
             "q": "डिजिटल पेमेंट करण्याची पहिली पायरी कोणती आहे?",
             "opts": {
               "1": "Open the app or website",
@@ -1032,11 +1098,13 @@
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U10-Q04",
             "q": "जर तुम्हाला त्वरित मोठी रक्कम ट्रान्सफर करायची असेल तर कोणती पद्धत निवडावी?",
             "opts": { "1": "RTGS", "2": "NEFT", "3": "UPI" },
             "ans": "1"
           },
           {
+            "qid": "QN-DUMMY-C11761-U10-Q05",
             "q": "तुम्ही दुकानात आहात आणि तुमच्याकडे रोख पैसे नाहीत. मोबाइल ऍप वापरून त्वरीत पैसे कसे द्याल?",
             "opts": {
               "1": "Wait for NEFT transfer",
@@ -1049,6 +1117,7 @@
       },
       "assigns": [
         {
+          "aid": "AS-DUMMY-C11761-U10-A01",
           "id": "Complete-the-Digital-Payments-Chart-💳-Remedial",
           "seq": 111,
           "nm": "Simple Digital Payment Chart",
