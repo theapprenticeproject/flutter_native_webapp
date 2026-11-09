@@ -74,9 +74,7 @@ class _HomeDashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final progress = dashboard.progress;
-    final stage = dashboard.showCompletionCelebration ||
-            dashboard.hasReachedWeeklyCap ||
-            dashboard.unit == null
+    final stage = dashboard.showCompletionCelebration || dashboard.unit == null
         ? LearningStage.completed
         : progress.currentStage;
     final unit = dashboard.unit;
@@ -104,7 +102,6 @@ class _HomeDashboard extends StatelessWidget {
                     title: 'Home',
                     studentName: progress.studentName,
                     points: progress.points,
-                    streakDay: progress.streakDay,
                     showStudentSummary: true,
                   ),
                   Expanded(
@@ -121,8 +118,6 @@ class _HomeDashboard extends StatelessWidget {
                           : _StageContent(
                               stage: stage,
                               unit: unit,
-                              hasReachedWeeklyCap:
-                                  dashboard.hasReachedWeeklyCap,
                               isWide: isWide,
                               completionPoints: dashboard.completionPoints,
                               onContinue: dashboard.showCompletionCelebration
@@ -170,7 +165,6 @@ class _NoEnrollmentState extends StatelessWidget {
 class _StageContent extends StatelessWidget {
   final LearningStage stage;
   final CourseUnit? unit;
-  final bool hasReachedWeeklyCap;
   final bool isWide;
   final int completionPoints;
   final VoidCallback? onContinue;
@@ -178,7 +172,6 @@ class _StageContent extends StatelessWidget {
   const _StageContent({
     required this.stage,
     required this.unit,
-    required this.hasReachedWeeklyCap,
     required this.isWide,
     required this.completionPoints,
     required this.onContinue,
@@ -198,7 +191,6 @@ class _StageContent extends StatelessWidget {
     final card = _ActiveCard(
       stage: stage,
       unit: unit!,
-      hasReachedWeeklyCap: hasReachedWeeklyCap,
     );
     final artHeight = switch (stage) {
       LearningStage.startActivity => 440.0,
@@ -325,12 +317,10 @@ class _CompletedStage extends StatelessWidget {
 class _ActiveCard extends StatelessWidget {
   final LearningStage stage;
   final CourseUnit unit;
-  final bool hasReachedWeeklyCap;
 
   const _ActiveCard({
     required this.stage,
     required this.unit,
-    required this.hasReachedWeeklyCap,
   });
 
   @override
@@ -341,9 +331,7 @@ class _ActiveCard extends StatelessWidget {
         unitName: unit.unitName,
         thumbnailAsset: unit.thumbnailAsset,
         points: unit.videoPoints,
-        onStart: hasReachedWeeklyCap
-            ? null
-            : () => context.go(AppRoutes.classroom),
+        onStart: () => context.go(AppRoutes.classroom),
       ),
       LearningStage.sendProject => SendProjectCard(
         courseDisplay: unit.courseDisplay,

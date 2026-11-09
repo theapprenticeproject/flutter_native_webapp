@@ -102,7 +102,7 @@ class OnboardingMessageTile extends StatelessWidget {
                           child: Icon(
                             Icons.done_all,
                             size: 16,
-                            color: AppTheme.streakColor,
+                            color: AppTheme.successGreen,
                           ),
                         ),
                     ],

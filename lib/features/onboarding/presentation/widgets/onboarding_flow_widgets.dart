@@ -777,7 +777,7 @@ class _SelectedIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) => const Icon(
     Icons.check_circle_rounded,
-    color: AppTheme.streakColor,
+    color: AppTheme.successGreen,
     size: 20,
   );
 }

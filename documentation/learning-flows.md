@@ -1,5 +1,7 @@
 # Learning Flows
 
+> **Old: this page describes the prototype flows.** Since M0 (2026-11-09) the app has no weekly limit, no streaks, no gems and no archetype calculation (R-39). Every student gets the `submitter` submission step, which is a photo or a video (R-63). The v1 activity flow is Watch, Make, Quiz, Results (R-61). See `v1-requirements.md`. Parts of this page below are out of date.
+
 ## Authentication and profile selection
 
 1. Check whether the phone is registered.

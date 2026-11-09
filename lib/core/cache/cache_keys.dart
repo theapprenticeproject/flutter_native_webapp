@@ -69,12 +69,6 @@ class CacheKeys {
   static String homeCelebration(String learnerId) =>
       _k('activity:$learnerId:home_celebration');
 
-  static String weeklyWatchWindow(String learnerId) =>
-      _k('activity:$learnerId:weekly_window');
-
-  static String sessionWindow(String learnerId) =>
-      _k('class_session:$learnerId:window');
-
   static bool belongsToPhone(String key, String phone) =>
       key.contains(':$phone:');
 

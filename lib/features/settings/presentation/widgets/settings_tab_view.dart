@@ -29,7 +29,7 @@ class _ThemeCard extends StatelessWidget {
           final compact = constraints.maxWidth < 460;
           final selector = Container(
             decoration: BoxDecoration(
-              color: AppTheme.gemBg,
+              color: AppTheme.softLavender,
               borderRadius: BorderRadius.circular(10),
             ),
             child: compact

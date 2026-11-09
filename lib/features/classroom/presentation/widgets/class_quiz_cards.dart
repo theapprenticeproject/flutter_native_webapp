@@ -198,7 +198,7 @@ class ClassQuizFeedbackCard extends StatelessWidget {
                 isCorrect ? Icons.check_circle_rounded : Icons.info_rounded,
                 size: 18,
                 color: isCorrect
-                    ? AppTheme.streakColor
+                    ? AppTheme.successGreen
                     : const Color(0xFFE29A22),
               ),
               const SizedBox(width: 6),

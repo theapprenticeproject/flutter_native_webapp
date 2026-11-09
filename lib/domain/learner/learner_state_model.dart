@@ -2,8 +2,6 @@ import 'achievement_model.dart';
 import 'enrollment_model.dart';
 import '../profile/learner_profile_fields_model.dart';
 
-const int weeklyActivityLimit = 2;
-
 class LearnerStateModel {
   LearnerStateModel({
     required this.learnerId,
@@ -12,17 +10,6 @@ class LearnerStateModel {
     this.weeklyXp,
     this.xpDaily,
     this.level,
-    this.streak,
-    this.longestStreak,
-    this.lastActivityDate,
-    this.unitsCompletedThisWeek,
-    this.maxWeeklyUnits,
-    this.isBingeing,
-    this.windowStartDate,
-    this.windowResetsOn,
-    this.unitsRemaining,
-    this.archetype,
-    this.submissionGems,
     this.submissionIndex,
     this.achievements,
     this.enrollment,
@@ -37,17 +24,6 @@ class LearnerStateModel {
   int? weeklyXp;
   List<int>? xpDaily;
   String? level;
-  int? streak;
-  int? longestStreak;
-  String? lastActivityDate;
-  int? unitsCompletedThisWeek;
-  int? maxWeeklyUnits;
-  bool? isBingeing;
-  String? windowStartDate;
-  String? windowResetsOn;
-  int? unitsRemaining;
-  String? archetype;
-  int? submissionGems;
   int? submissionIndex;
   List<AchievementModel>? achievements;
   EnrollmentModel? enrollment;
@@ -90,57 +66,6 @@ class LearnerStateModel {
     }
     if (full || json.containsKey('level')) {
       level = json['level'] as String? ?? level;
-    }
-    if (full || json.containsKey('streak')) {
-      streak = (json['streak'] as num?)?.toInt() ?? streak;
-    }
-    if (full || json.containsKey('longest_streak')) {
-      longestStreak =
-          (json['longest_streak'] as num?)?.toInt() ?? longestStreak;
-    }
-    if (full || json.containsKey('last_activity_date')) {
-      lastActivityDate =
-          json['last_activity_date'] as String? ?? lastActivityDate;
-    }
-    if (full ||
-        json.containsKey('units_completed_this_week') ||
-        json.containsKey('activities_watched_this_week')) {
-      unitsCompletedThisWeek =
-          (json['units_completed_this_week'] as num?)?.toInt() ??
-          (json['activities_watched_this_week'] as num?)?.toInt() ??
-          unitsCompletedThisWeek;
-    }
-    if (full ||
-        json.containsKey('max_weekly_units') ||
-        json.containsKey('max_weekly_activities')) {
-      maxWeeklyUnits =
-          (json['max_weekly_units'] as num?)?.toInt() ??
-          (json['max_weekly_activities'] as num?)?.toInt() ??
-          maxWeeklyUnits;
-    }
-    if (full || json.containsKey('is_bingeing')) {
-      isBingeing = json['is_bingeing'] as bool? ?? isBingeing;
-    }
-    if (full || json.containsKey('window_start_date')) {
-      windowStartDate = json['window_start_date'] as String? ?? windowStartDate;
-    }
-    if (full || json.containsKey('window_resets_on')) {
-      windowResetsOn = json['window_resets_on'] as String? ?? windowResetsOn;
-    }
-    if (full ||
-        json.containsKey('units_remaining') ||
-        json.containsKey('activities_remaining')) {
-      unitsRemaining =
-          (json['units_remaining'] as num?)?.toInt() ??
-          (json['activities_remaining'] as num?)?.toInt() ??
-          unitsRemaining;
-    }
-    if (full || json.containsKey('archetype')) {
-      archetype = json['archetype'] as String? ?? archetype;
-    }
-    if (full || json.containsKey('submission_gems')) {
-      submissionGems =
-          (json['submission_gems'] as num?)?.toInt() ?? submissionGems;
     }
     if (full || json.containsKey('submission_index')) {
       submissionIndex =
@@ -217,17 +142,6 @@ class LearnerStateModel {
     'weekly_xp': weeklyXp,
     'xp_daily': xpDaily,
     'level': level,
-    'streak': streak,
-    'longest_streak': longestStreak,
-    'last_activity_date': lastActivityDate,
-    'units_completed_this_week': unitsCompletedThisWeek,
-    'max_weekly_units': maxWeeklyUnits,
-    'is_bingeing': isBingeing,
-    'window_start_date': windowStartDate,
-    'window_resets_on': windowResetsOn,
-    'units_remaining': unitsRemaining,
-    'archetype': archetype,
-    'submission_gems': submissionGems,
     'submission_index': submissionIndex,
     'achievements': achievements == null
         ? null
@@ -243,18 +157,5 @@ class LearnerStateModel {
     model._applyJson(json, full: true);
     model.hasPendingConflict = json['has_pending_conflict'] as bool? ?? false;
     return model;
-  }
-}
-
-extension LearnerStateWeeklyLimit on LearnerStateModel {
-  bool hasReachedWeeklyActivityLimit({int localCompleted = 0}) {
-    final serverCompleted = unitsCompletedThisWeek ?? 0;
-    final completed = serverCompleted > localCompleted
-        ? serverCompleted
-        : localCompleted;
-    final remaining = unitsRemaining;
-    return (isBingeing ?? false) ||
-        (remaining != null && remaining <= 0) ||
-        completed >= weeklyActivityLimit;
   }
 }

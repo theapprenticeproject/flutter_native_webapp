@@ -3,9 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'classroom_progress_stage.dart';
 import '../learner/learner_state_model.dart';
 import '../program_content/course_detail_model.dart';
-import 'class_session_window_repository.dart';
 import '../learner/learner_state_provider.dart';
-import '../../core/cache/local_cache_provider.dart';
 import '../profile/profile_provider.dart';
 import '../program_content/program_content_provider.dart';
 
@@ -16,12 +14,6 @@ class NoActiveEnrollmentException implements Exception {
   String toString() => 'No active course enrollment for this profile.';
 }
 
-final classSessionWindowRepositoryProvider =
-    FutureProvider<ClassSessionWindowRepository>((ref) async {
-      final localCache = await ref.watch(localCacheProvider.future);
-      return ClassSessionWindowRepository(localCache);
-    });
-
 class ClassSessionBootstrap {
   const ClassSessionBootstrap({
     required this.learnerId,
@@ -31,7 +23,6 @@ class ClassSessionBootstrap {
     required this.unit,
     required this.nextUnit,
     required this.unitIndex,
-    required this.weeklyCapAlreadyReached,
   });
 
   final String learnerId;
@@ -41,7 +32,6 @@ class ClassSessionBootstrap {
   final CourseUnitModel? unit;
   final CourseUnitModel? nextUnit;
   final int unitIndex;
-  final bool weeklyCapAlreadyReached;
 }
 
 final classSessionBootstrapProvider =
@@ -59,22 +49,12 @@ final classSessionBootstrapProvider =
         learnerId: activeProfile.learnerId,
       );
 
-      if (!learnerState.hasReachedWeeklyActivityLimit() &&
-          learnerState.hasPendingLocalProgress) {
+      if (learnerState.hasPendingLocalProgress) {
         final synced = await learnerStateRepository.syncCompletedLocalProgress(
           activeProfile.learnerId,
         );
         if (synced != null) learnerState = synced;
       }
-
-      final sessionWindowRepository = await ref.watch(
-        classSessionWindowRepositoryProvider.future,
-      );
-      final localCompleted = sessionWindowRepository
-          .completedUnitCountThisWindow(
-        activeProfile.learnerId,
-        learnerState.windowStartDate,
-      );
 
       var enrollment = learnerState.enrollment;
       if (enrollment == null || enrollment.course == null) {
@@ -93,7 +73,6 @@ final classSessionBootstrapProvider =
           unit: null,
           nextUnit: null,
           unitIndex: 0,
-          weeklyCapAlreadyReached: true,
         );
       }
 
@@ -125,24 +104,6 @@ final classSessionBootstrapProvider =
           unit: selectedUnit,
         );
       }
-      final capReached = learnerState.hasReachedWeeklyActivityLimit(
-        localCompleted: localCompleted,
-      );
-
-      if (capReached &&
-          selectedProgress.stage == ClassroomProgressStage.watchVideo) {
-        return ClassSessionBootstrap(
-          learnerId: activeProfile.learnerId,
-          phone: activeProfile.phone,
-          learnerState: learnerState,
-          courseName: course.name,
-          unit: null,
-          nextUnit: nextUnit,
-          unitIndex: startIndex,
-          weeklyCapAlreadyReached: true,
-        );
-      }
-
       if (selectedProgress.stage != ClassroomProgressStage.unitCompleted) {
         return ClassSessionBootstrap(
           learnerId: activeProfile.learnerId,
@@ -152,20 +113,6 @@ final classSessionBootstrapProvider =
           unit: selectedUnit,
           nextUnit: nextUnit,
           unitIndex: startIndex,
-          weeklyCapAlreadyReached: false,
-        );
-      }
-
-      if (capReached) {
-        return ClassSessionBootstrap(
-          learnerId: activeProfile.learnerId,
-          phone: activeProfile.phone,
-          learnerState: learnerState,
-          courseName: course.name,
-          unit: null,
-          nextUnit: nextUnit,
-          unitIndex: startIndex,
-          weeklyCapAlreadyReached: true,
         );
       }
 
@@ -177,6 +124,5 @@ final classSessionBootstrapProvider =
         unit: selectedUnit,
         nextUnit: nextUnit,
         unitIndex: startIndex,
-        weeklyCapAlreadyReached: false,
       );
     });

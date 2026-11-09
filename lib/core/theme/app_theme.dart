@@ -34,9 +34,8 @@ class AppTheme {
 
   static const Color pointColor = Color(0xFFF4A22E);
   static const Color pointBg = Color(0xFFFFEBCF);
-  static const Color gemBg = Color(0xFFE8E5FF);
-  static const Color streakColor = Color(0xFF24A866);
-  static const Color streakBg = Color(0xFFDFF5E8);
+  static const Color softLavender = Color(0xFFE8E5FF);
+  static const Color successGreen = Color(0xFF24A866);
   static const Color successBubble = Color(0xFFE0F2E6);
   static const Color chatSuccessBubble = Color(0xFFE8FAF1);
   static const Color successText = Color(0xFF0F5132);

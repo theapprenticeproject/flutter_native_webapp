@@ -15,22 +15,14 @@ class RewardItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isGem = icon == Icons.diamond_rounded;
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
         Container(
           width: 20,
           height: 20,
-          decoration: BoxDecoration(
-            color: isGem ? Colors.transparent : color,
-            shape: BoxShape.circle,
-          ),
-          child: Icon(
-            icon,
-            color: isGem ? color : Colors.white,
-            size: isGem ? 22 : 12,
-          ),
+          decoration: BoxDecoration(color: color, shape: BoxShape.circle),
+          child: Icon(icon, color: Colors.white, size: 12),
         ),
         const SizedBox(width: 6),
         ConstrainedBox(

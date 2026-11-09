@@ -50,14 +50,6 @@ class _ClassScreenState extends ConsumerState<ClassScreen> {
       loading: () => _scaffold(const ClassLoadingSkeleton()),
       error: (_, _) => _buildClassSession(),
       data: (dashboard) {
-        if (dashboard.hasReachedWeeklyCap) {
-          return _scaffold(
-            ClassWeeklyCapRevealBody(
-              unitIndex: 0,
-              onHome: () => context.go(AppRoutes.home),
-            ),
-          );
-        }
         if (dashboard.showCompletionCelebration && dashboard.unit != null) {
           return _scaffold(
             ClassPendingActivityChoiceBody(
@@ -80,7 +72,7 @@ class _ClassScreenState extends ConsumerState<ClassScreen> {
         loading: () => const ClassLoadingSkeleton(),
         error: (error, _) {
           if (error is NoUnitAvailableException) {
-            return ClassWeeklyCapRevealBody(
+            return ClassNoActivityBody(
               unitIndex: 0,
               onHome: () => context.go(AppRoutes.home),
             );
@@ -287,13 +279,6 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
     return AnimatedBuilder(
       animation: widget.controller,
       builder: (context, _) {
-        if (widget.controller.outcome == ClassSessionOutcome.weeklyCapReached) {
-          return ClassWeeklyCapRevealBody(
-            unitIndex: widget.controller.unitIndex,
-            onHome: () => context.go(AppRoutes.home),
-          );
-        }
-
         final showChoiceReveal =
             widget.controller.outcome == ClassSessionOutcome.choice;
         final isVideoStartCheckpoint =

@@ -201,7 +201,7 @@ About 10 frames.
   - Edit profile form.
   - Settings sheet (app language, read messages aloud, theme: default, light, dark).
   - Switch Profile sheet.
-- **App today**: Passport (points, gems, streak) and Profile/Settings (`settings_screen.dart`,
+- **App today**: Passport (points only since M0; the gems and streak cards were removed) and Profile/Settings (`settings_screen.dart`,
   `profile_details_view.dart`, `profile_switcher.dart`). They are two separate places.
 - **In v1** (R-7, R-73, R-74, R-87, R-95, D8):
   - One Me screen: profile, level, points, "My projects this year", project feedback screens, settings and switch profile.

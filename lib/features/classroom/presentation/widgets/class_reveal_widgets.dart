@@ -334,18 +334,6 @@ class ClassNextActivityInlineCard extends ConsumerWidget {
                         iconColor: const Color(0xFFE29A22),
                         label: '${controller.nextUnitPoints} Points',
                       ),
-                      const SizedBox(height: 4),
-                      const _EarnRow(
-                        icon: Icons.local_fire_department_rounded,
-                        iconColor: AppTheme.streakColor,
-                        label: '1 streak',
-                      ),
-                      const SizedBox(height: 4),
-                      const _EarnRow(
-                        icon: Icons.diamond_rounded,
-                        iconColor: AppTheme.buttonColor,
-                        label: '1 skill gem',
-                      ),
                     ],
                   ),
                 ),
@@ -428,8 +416,9 @@ class _EarnRow extends StatelessWidget {
   }
 }
 
-class ClassWeeklyCapRevealBody extends StatelessWidget {
-  const ClassWeeklyCapRevealBody({
+/// Shown when there is no activity to do right now.
+class ClassNoActivityBody extends StatelessWidget {
+  const ClassNoActivityBody({
     super.key,
     required this.unitIndex,
     required this.onHome,
@@ -454,7 +443,7 @@ class ClassWeeklyCapRevealBody extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
-                    'You did really well this week! 🎉',
+                    'You did really well! 🎉',
                     textAlign: TextAlign.center,
                     style: GoogleFonts.inter(
                       fontSize: 20,
@@ -463,7 +452,7 @@ class ClassWeeklyCapRevealBody extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    "You've completed your activities for this week. See you next week!",
+                    "You've finished your activities for now. Come back soon for the next one!",
                     textAlign: TextAlign.center,
                     style: GoogleFonts.inter(
                       fontSize: 14,
@@ -551,7 +540,7 @@ class ClassRevealRail extends StatelessWidget {
                 child: const Icon(
                   Icons.auto_awesome_rounded,
                   size: 15,
-                  color: AppTheme.streakColor,
+                  color: AppTheme.successGreen,
                 ),
               ),
               const SizedBox(width: 8),

@@ -15,7 +15,6 @@ enum ClassChatContentType {
   quizSummary,
   unitTransition,
   sessionEnd,
-  weeklyCapReached,
   errorRetry,
   loading,
 }

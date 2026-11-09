@@ -92,9 +92,7 @@ Never commit production JWT, Frappe API, or analytics secrets. If a secret has a
 1. Apply DocType/schema migrations.
 2. Confirm all Worker-targeted whitelisted methods exist.
 3. Confirm JWT secrets match Worker configuration.
-4. Confirm the default weekly maximum is two.
-5. Enable and schedule XP rotation, weekly rollover, and analytics jobs.
-6. Test login, profile selection, learner state, and unit completion through the Worker URL.
+4. Test login, profile selection, learner state, and unit completion through the Worker URL.
 
 ## Release checklist
 
@@ -106,6 +104,5 @@ Never commit production JWT, Frappe API, or analytics secrets. If a secret has a
 - All bundled assets load in a release build.
 - Login token refresh works.
 - A first unit can be deferred and resumed only after confirmation.
-- A third weekly activity is blocked by frontend and backend.
 - Desktop and mobile layouts have been checked.
 - Rollback versions for frontend and Worker are recorded.

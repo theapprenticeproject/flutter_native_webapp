@@ -5,7 +5,7 @@ import '../../core/network/api_endpoints.dart';
 import '../../core/network/http_client.dart';
 
 const completedUnitStateFields =
-    'profile,xp,level,streak,window,archetype,submission,enrollment,achievements';
+    'profile,xp,level,submission,enrollment,achievements';
 
 class ProgressConflictException implements Exception {
   ProgressConflictException(this.responseBody);

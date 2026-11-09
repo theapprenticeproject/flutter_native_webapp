@@ -70,18 +70,6 @@ class CompletedCard extends StatelessWidget {
                   icon: Icons.star_rounded,
                   text: 'Points',
                 ),
-                const SizedBox(height: 10),
-                const RewardItem(
-                  color: Color(0xFF28B36A),
-                  icon: Icons.local_fire_department,
-                  text: 'Streaks',
-                ),
-                const SizedBox(height: 10),
-                const RewardItem(
-                  color: Color(0xFF5B5BD6),
-                  icon: Icons.diamond_rounded,
-                  text: 'Skill gem',
-                ),
               ],
             );
 

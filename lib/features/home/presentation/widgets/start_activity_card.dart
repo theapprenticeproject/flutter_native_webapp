@@ -138,18 +138,6 @@ class StartActivityCard extends StatelessWidget {
                               icon: Icons.star_rounded,
                               text: '$points Points',
                             ),
-                            const SizedBox(height: 8),
-                            RewardItem(
-                              color: const Color(0xFF2ECC71),
-                              icon: Icons.local_fire_department,
-                              text: '1 streak',
-                            ),
-                            const SizedBox(height: 8),
-                            RewardItem(
-                              color: const Color(0xFF5B5BD6),
-                              icon: Icons.diamond_rounded,
-                              text: '1 skill gem',
-                            ),
                           ],
                         ),
                       ),

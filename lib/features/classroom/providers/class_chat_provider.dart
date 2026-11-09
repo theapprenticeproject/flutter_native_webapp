@@ -27,9 +27,6 @@ final classChatControllerProvider = FutureProvider.autoDispose
       final learnerStateRepository = await ref.watch(
         learnerStateRepositoryProvider.future,
       );
-      final sessionWindowRepository = await ref.watch(
-        classSessionWindowRepositoryProvider.future,
-      );
       final studentName =
           bootstrap.learnerState.profile?.studentName ?? 'Champ';
       var providerIsActive = true;
@@ -45,7 +42,6 @@ final classChatControllerProvider = FutureProvider.autoDispose
         unitIndex: bootstrap.unitIndex,
         initialLearnerState: bootstrap.learnerState,
         learnerStateRepository: learnerStateRepository,
-        sessionWindowRepository: sessionWindowRepository,
         onProgressSaved: () {
           if (!providerIsActive) return;
           ref.invalidate(learnerStateDataProvider(bootstrap.learnerId));

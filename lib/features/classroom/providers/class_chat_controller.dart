@@ -10,12 +10,10 @@ import '../models/class_chat_message_model.dart';
 import '../../../domain/learning_progress/classroom_progress_stage.dart';
 import '../../../domain/learner/enrollment_model.dart';
 import '../models/learner_archetype.dart';
-import '../models/local_archetype_calculator.dart';
 import '../../../domain/program_content/course_detail_model.dart';
 import '../models/submission_answer_model.dart';
-import '../../../domain/learning_progress/class_session_window_repository.dart';
 
-enum ClassSessionOutcome { none, choice, weeklyCapReached }
+enum ClassSessionOutcome { none, choice }
 
 const int _quizPointsPerCorrectAnswer = 5;
 
@@ -45,13 +43,11 @@ class ClassChatController extends ChangeNotifier {
     required this.unitIndex,
     required LearnerStateModel initialLearnerState,
     required LearnerStateRepository learnerStateRepository,
-    required ClassSessionWindowRepository sessionWindowRepository,
     VoidCallback? onProgressSaved,
   }) : _flow = flow,
        _unit = unit,
        _nextUnit = nextUnit,
        _learnerStateRepository = learnerStateRepository,
-       _sessionWindowRepository = sessionWindowRepository,
        _learnerState = initialLearnerState,
        _startingPoints = initialLearnerState.xp ?? 0,
        _onProgressSaved = onProgressSaved {
@@ -73,15 +69,16 @@ class ClassChatController extends ChangeNotifier {
   final CourseUnitModel _unit;
   final CourseUnitModel? _nextUnit;
   final LearnerStateRepository _learnerStateRepository;
-  final ClassSessionWindowRepository _sessionWindowRepository;
   final VoidCallback? _onProgressSaved;
 
   LearnerStateModel _learnerState;
   LearnerStateModel get learnerState => _learnerState;
   final int _startingPoints;
 
-  String get _currentArchetype =>
-      LearnerArchetype.normalize(_learnerState.archetype);
+  // v1 has one flow for every student (R-61). The old archetype is gone. This
+  // fixed value keeps the Make step a photo or a video (R-63). The step
+  // selector is rebuilt in M3 to M5.
+  String get _currentArchetype => LearnerArchetype.submitter;
 
   final List<ClassChatMessage> _messages = [];
   List<ClassChatMessage> get messages => List.unmodifiable(_messages);
@@ -210,9 +207,7 @@ class ClassChatController extends ChangeNotifier {
           unawaited(_completeUnitThenReveal());
           return;
         }
-        _outcome = _stateSaysCapped(_learnerState)
-            ? ClassSessionOutcome.weeklyCapReached
-            : ClassSessionOutcome.choice;
+        _outcome = ClassSessionOutcome.choice;
         notifyListeners();
         return;
     }
@@ -410,7 +405,6 @@ class ClassChatController extends ChangeNotifier {
           'subTypes': assignStep.subTypes,
           'validCriteria': assignStep.validCriteria,
           'submissionKind': kind.name,
-          'archetype': _currentArchetype,
           'points': _currentUnit.xp,
           'stepNumber': 1,
           'stepTotal': 1,
@@ -695,7 +689,7 @@ class ClassChatController extends ChangeNotifier {
       stepId: 'FINAL-WIN',
       image: 'assets/class-screen/you-won.png',
       text:
-          'Activity Points    ${_accumulatedVideoPoints + _accumulatedSubmissionPoints} 🪙\nQuiz Points    $_accumulatedQuizPoints 🪙\nSkill Gems    ${_submissionAcceptedThisUnit ? 1 : 0} 💎\nSubmission Streak    ${_submissionAcceptedThisUnit ? 1 : 0} 🔥',
+          'Activity Points    ${_accumulatedVideoPoints + _accumulatedSubmissionPoints} 🪙\nQuiz Points    $_accumulatedQuizPoints 🪙',
       buttonLabel: 'Continue',
       action: 'finish',
     );
@@ -723,7 +717,7 @@ class ClassChatController extends ChangeNotifier {
         stepId: 'QUIZ-TOTALS',
         image: null,
         text:
-            'Great job Champ!\nDo you want to know your total points and gems collected so far?',
+            'Great job Champ!\nDo you want to know your total points collected so far?',
         buttonLabel: 'Yes Yes Yes 😍',
         action: 'totals',
       );
@@ -881,25 +875,7 @@ class ClassChatController extends ChangeNotifier {
     unawaited(_completeUnitThenReveal());
   }
 
-  bool _stateSaysCapped(
-    LearnerStateModel state, {
-    int localCompleted = 0,
-  }) =>
-      state.hasReachedWeeklyActivityLimit(localCompleted: localCompleted);
-
   Future<ClassSessionOutcome> _completionOutcome() async {
-    final localCompleted =
-        _sessionWindowRepository.completedUnitCountThisWindow(
-      learnerId,
-      _learnerState.windowStartDate,
-    );
-    if (_stateSaysCapped(
-      _learnerState,
-      localCompleted: localCompleted,
-    )) {
-      await _learnerStateRepository.clearHomeCelebration(learnerId);
-      return ClassSessionOutcome.weeklyCapReached;
-    }
     await _learnerStateRepository.showHomeCelebration(
       learnerId,
       points: _completedUnitPoints,
@@ -928,7 +904,6 @@ class ClassChatController extends ChangeNotifier {
     );
     notifyListeners();
 
-    final unitKey = _currentUnit.name;
     try {
       await _learnerStateRepository.markLocalProgressReady(learnerId);
       _completedUnitPoints = _learnerState.pendingProgressXp > 0
@@ -945,14 +920,7 @@ class ClassChatController extends ChangeNotifier {
         fields: completedUnitStateFields,
       );
 
-      _learnerState = _reconcileArchetype(submittedState);
-
-      await _sessionWindowRepository.markUnitCompleted(
-        learnerId: learnerId,
-        unitKey: unitKey,
-        windowResetsOn: _learnerState.windowResetsOn,
-        windowStartDate: _learnerState.windowStartDate,
-      );
+      _learnerState = submittedState;
 
       _messages.clear();
 
@@ -967,12 +935,6 @@ class ClassChatController extends ChangeNotifier {
           forceRefresh: true,
         );
         _learnerState = refreshed;
-        await _sessionWindowRepository.markUnitCompleted(
-          learnerId: learnerId,
-          unitKey: unitKey,
-          windowResetsOn: _learnerState.windowResetsOn,
-          windowStartDate: _learnerState.windowStartDate,
-        );
         _messages.removeWhere((m) => m.stepId == 'SAVING');
         _outcome = await _completionOutcome();
         _onProgressSaved?.call();
@@ -995,13 +957,6 @@ class ClassChatController extends ChangeNotifier {
     } catch (_) {
       _hasCompletedUnit = false;
       _messages.removeWhere((m) => m.stepId == 'SAVING');
-      if (_stateSaysCapped(_learnerState) &&
-          _learnerState.hasPendingLocalProgress) {
-        await _learnerStateRepository.clearHomeCelebration(learnerId);
-        _outcome = ClassSessionOutcome.weeklyCapReached;
-        notifyListeners();
-        return;
-      }
       _errorMessage = 'Something went wrong saving your progress.';
       _push(
         ClassChatMessage(
@@ -1017,20 +972,6 @@ class ClassChatController extends ChangeNotifier {
   }
 
   bool _hasCompletedUnit = false;
-
-  LearnerStateModel _reconcileArchetype(LearnerStateModel serverState) {
-    if (serverState.archetype != null && serverState.archetype!.isNotEmpty) {
-      return serverState;
-    }
-    final localArchetype = LocalArchetypeCalculator.compute(
-      streak: serverState.streak ?? 0,
-      submissionCount: serverState.submissionIndex ?? 0,
-      lastActivityDate: serverState.lastActivityDate,
-      now: DateTime.now(),
-    );
-    serverState.archetype = localArchetype;
-    return serverState;
-  }
 
   void retryAfterError() {
     final error = _messages.lastWhere(

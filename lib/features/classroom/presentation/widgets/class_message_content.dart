@@ -66,7 +66,6 @@ class ClassMessageContent extends StatelessWidget {
       case ClassChatContentType.quizSummary:
         return ClassQuizSummaryCard(message: message);
       case ClassChatContentType.sessionEnd:
-      case ClassChatContentType.weeklyCapReached:
         return const SizedBox.shrink();
       case ClassChatContentType.errorRetry:
         return ClassErrorRetryCard(message: message, controller: controller);

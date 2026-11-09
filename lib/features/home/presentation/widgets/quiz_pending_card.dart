@@ -119,18 +119,6 @@ class QuizPendingCard extends StatelessWidget {
                               icon: Icons.star_rounded,
                               text: '$points Points',
                             ),
-                            const SizedBox(height: 10),
-                            const RewardItem(
-                              color: Color(0xFF28B36A),
-                              icon: Icons.local_fire_department,
-                              text: '1 streak',
-                            ),
-                            const SizedBox(height: 10),
-                            const RewardItem(
-                              color: Color(0xFF5B5BD6),
-                              icon: Icons.diamond_rounded,
-                              text: '1 skill gem',
-                            ),
                           ],
                         ),
                       ),

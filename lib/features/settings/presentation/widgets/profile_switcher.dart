@@ -253,7 +253,7 @@ class _ProfileOption extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
-          color: selected ? AppTheme.gemBg : AppTheme.cardBackground,
+          color: selected ? AppTheme.softLavender : AppTheme.cardBackground,
           borderRadius: BorderRadius.circular(8),
           border: Border.all(color: AppTheme.borderColor),
         ),
@@ -261,7 +261,7 @@ class _ProfileOption extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 18,
-              backgroundColor: AppTheme.gemBg,
+              backgroundColor: AppTheme.softLavender,
               child: Text(
                 _initials(profile.studentName),
                 style: GoogleFonts.inter(

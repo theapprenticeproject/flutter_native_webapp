@@ -8,7 +8,6 @@ class AppHeader extends StatelessWidget {
   final String studentName;
   final String subtitle;
   final int points;
-  final int streakDay;
   final bool showStudentSummary;
   final bool showBack;
   final bool showPoints;
@@ -20,7 +19,6 @@ class AppHeader extends StatelessWidget {
     this.studentName = 'Aarav',
     this.subtitle = "Ready for today's class?",
     this.points = 0,
-    this.streakDay = 0,
     this.showStudentSummary = false,
     this.showBack = false,
     this.showPoints = false,
@@ -153,11 +151,6 @@ class AppHeader extends StatelessWidget {
                 icon: Icons.stars_rounded,
                 iconColor: const Color(0xFFE29A22),
                 label: '$points',
-              ),
-              _MetricPill(
-                icon: Icons.local_fire_department_rounded,
-                iconColor: const Color(0xFF28B36A),
-                label: 'Day $streakDay',
               ),
             ],
           );

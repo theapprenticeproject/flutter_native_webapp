@@ -311,7 +311,7 @@ class _StudentSummaryCard extends StatelessWidget {
         children: [
           CircleAvatar(
             radius: 30,
-            backgroundColor: AppTheme.gemBg,
+            backgroundColor: AppTheme.softLavender,
             child: Text(
               _initials(studentName),
               style: const TextStyle(color: AppTheme.buttonColor),
@@ -352,7 +352,7 @@ class _StudentSummaryCard extends StatelessWidget {
                         const Icon(
                           Icons.check_circle_outline_rounded,
                           size: 16,
-                          color: AppTheme.streakColor,
+                          color: AppTheme.successGreen,
                         ),
                       ],
                     ),
@@ -417,7 +417,7 @@ class _MetaLine extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(icon, size: 15, color: AppTheme.streakColor),
+          Icon(icon, size: 15, color: AppTheme.successGreen),
           const SizedBox(width: 5),
           Expanded(
             child: Text(

@@ -40,8 +40,6 @@ class _PassportDashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     final progress = dashboard.progress;
     final points = progress.points;
-    final gems = progress.skillGems;
-    final streak = progress.streakDay;
 
     return LayoutBuilder(
       builder: (context, constraints) {
@@ -62,7 +60,6 @@ class _PassportDashboard extends StatelessWidget {
                     studentName: progress.studentName,
                     subtitle: 'Have a look at your progress',
                     points: progress.points,
-                    streakDay: progress.streakDay,
                     showStudentSummary: true,
                   ),
                   Expanded(
@@ -105,8 +102,6 @@ class _PassportDashboard extends StatelessWidget {
                                           Expanded(
                                             child: _ProgressColumn(
                                               points: points,
-                                              gems: gems,
-                                              streak: streak,
                                             ),
                                           ),
                                           const SizedBox(width: 24),
@@ -120,11 +115,7 @@ class _PassportDashboard extends StatelessWidget {
                                         crossAxisAlignment:
                                             CrossAxisAlignment.center,
                                         children: [
-                                          _ProgressColumn(
-                                            points: points,
-                                            gems: gems,
-                                            streak: streak,
-                                          ),
+                                          _ProgressColumn(points: points),
                                           const SizedBox(height: 22),
                                           _StudentProfileCard(
                                             studentName: progress.studentName,
@@ -150,14 +141,8 @@ class _PassportDashboard extends StatelessWidget {
 
 class _ProgressColumn extends StatelessWidget {
   final int points;
-  final int gems;
-  final int streak;
 
-  const _ProgressColumn({
-    required this.points,
-    required this.gems,
-    required this.streak,
-  });
+  const _ProgressColumn({required this.points});
 
   @override
   Widget build(BuildContext context) {
@@ -195,26 +180,6 @@ class _ProgressColumn extends StatelessWidget {
                 label: 'Points',
                 title: 'What are points',
                 description: 'Earn points by doing TAP Activities every week!',
-              ),
-              _AchievementCard(
-                icon: Icons.diamond_rounded,
-                iconColor: AppTheme.buttonColor,
-                iconBg: AppTheme.gemBg,
-                value: '$gems',
-                label: 'Skill Gems',
-                title: 'What are skill gems',
-                description:
-                    'You earn 1 skill gem for every submission you make.',
-              ),
-              _AchievementCard(
-                icon: Icons.water_drop_rounded,
-                iconColor: AppTheme.streakColor,
-                iconBg: AppTheme.streakBg,
-                value: '$streak',
-                label: 'Streak',
-                title: 'What are streaks',
-                description:
-                    'If you forget to submit your streak resets to zero.',
               ),
             ];
 

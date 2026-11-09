@@ -47,8 +47,6 @@ class LearningProgress {
   const LearningProgress({
     required this.studentName,
     required this.points,
-    required this.skillGems,
-    required this.streakDay,
     required this.videoDone,
     required this.submissionDone,
     required this.quizDone,
@@ -57,8 +55,6 @@ class LearningProgress {
 
   final String studentName;
   final int points;
-  final int skillGems;
-  final int streakDay;
   final bool videoDone;
   final bool submissionDone;
   final bool quizDone;
@@ -72,7 +68,6 @@ class LearningDashboard {
     required this.progress,
     required this.unit,
     required this.hasEnrollment,
-    required this.hasReachedWeeklyCap,
     this.showCompletionCelebration = false,
     this.completionPoints = 0,
   });
@@ -80,7 +75,6 @@ class LearningDashboard {
   final LearningProgress progress;
   final CourseUnit? unit;
   final bool hasEnrollment;
-  final bool hasReachedWeeklyCap;
   final bool showCompletionCelebration;
   final int completionPoints;
 }

@@ -6,7 +6,6 @@ import 'classroom_progress_stage.dart';
 import '../learner/enrollment_model.dart';
 import '../learner/learner_state_model.dart';
 import '../program_content/course_detail_model.dart';
-import 'class_session_bootstrap_provider.dart';
 import '../learner/learner_state_provider.dart';
 import '../profile/profile_provider.dart';
 import '../program_content/program_content_provider.dart';
@@ -42,8 +41,6 @@ LearningProgress _buildProgress({
     studentName:
         learnerState.profile?.studentName ?? profile.studentName ?? 'Champ',
     points: learnerState.xp ?? 0,
-    skillGems: learnerState.submissionGems ?? 0,
-    streakDay: learnerState.streak ?? 0,
     videoDone: snapshot.videoDone,
     submissionDone: snapshot.submissionDone,
     quizDone: snapshot.quizDone,
@@ -61,17 +58,6 @@ final learningDashboardProvider = FutureProvider.autoDispose<LearningDashboard>(
     var learnerState = await ref.watch(
       learnerStateDataProvider(activeProfile.learnerId).future,
     );
-    final sessionWindowRepository = await ref.watch(
-      classSessionWindowRepositoryProvider.future,
-    );
-    final localCompleted = sessionWindowRepository.completedUnitCountThisWindow(
-      activeProfile.learnerId,
-      learnerState.windowStartDate,
-    );
-    final hasReachedWeeklyCap = learnerState.hasReachedWeeklyActivityLimit(
-      localCompleted: localCompleted,
-    );
-
     var enrollment = learnerState.enrollment;
     if (enrollment == null || enrollment.course == null) {
       return LearningDashboard(
@@ -83,7 +69,6 @@ final learningDashboardProvider = FutureProvider.autoDispose<LearningDashboard>(
         ),
         unit: null,
         hasEnrollment: false,
-        hasReachedWeeklyCap: hasReachedWeeklyCap,
       );
     }
 
@@ -101,7 +86,6 @@ final learningDashboardProvider = FutureProvider.autoDispose<LearningDashboard>(
         ),
         unit: null,
         hasEnrollment: true,
-        hasReachedWeeklyCap: hasReachedWeeklyCap,
       );
     }
 
@@ -152,9 +136,7 @@ final learningDashboardProvider = FutureProvider.autoDispose<LearningDashboard>(
       progress: progress,
       unit: allUnitsDone ? null : CourseUnit.fromCourse(course, unitIndex),
       hasEnrollment: true,
-      hasReachedWeeklyCap: hasReachedWeeklyCap,
-      showCompletionCelebration:
-          !allUnitsDone && !hasReachedWeeklyCap && celebration?['show'] == true,
+      showCompletionCelebration: !allUnitsDone && celebration?['show'] == true,
       completionPoints: (celebration?['points'] as num?)?.toInt() ?? 0,
     );
   },

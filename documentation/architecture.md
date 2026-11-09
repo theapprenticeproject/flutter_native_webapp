@@ -66,6 +66,5 @@ Features: `auth`, `onboarding`, `welcome`, `splash`, `home`, `classroom`, `passp
 | Unit stage and pending XP    | Device until unit completion | Restored after refresh/restart, then submitted once |
 | Course and flow JSON         | App bundle                   | Read locally; no API call                           |
 | Tapbuddy history             | Device                       | Recent messages sent with each request              |
-| Weekly completion keys       | Device plus Frappe           | Local count protects against stale server responses |
 
 Cache keys use the `v2` schema in `CacheKeys`. Changing cached JSON shapes should also change the schema version or include a migration.

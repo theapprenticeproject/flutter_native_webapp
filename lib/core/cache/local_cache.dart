@@ -203,7 +203,6 @@ class LocalCache {
     await delete(CacheKeys.learnerState(learnerId));
     await delete(CacheKeys.achievements(learnerId));
     await delete(CacheKeys.activityProgress(learnerId));
-    await delete(CacheKeys.weeklyWatchWindow(learnerId));
   }
 
   Future<void> invalidateRosterAndProfiles(String phone) async {

@@ -9,9 +9,9 @@ npm run format:check
 mkdocs build --strict
 ```
 
-Current Flutter tests cover onboarding flow parsing, classroom stage resolution, learner/course submission index separation, local progress restoration, weekly limits, and archetype step selection.
+Current Flutter tests cover onboarding flow parsing, classroom stage resolution, learner/course submission index separation, local progress restoration, archetype step selection, and that the old weekly limit fields are ignored. Guard tests fail if removed features (the AI review, the TapBuddy chat, the weekly cap, streaks, gems and the archetype calculation) come back into `lib/`.
 
-Add tests when changing cache behavior, progress indexes, archetype mapping, weekly windows, flow JSON parsing, or API response models.
+Add tests when changing cache behavior, progress indexes, flow JSON parsing, or API response models.
 
 ## Manual critical-path test
 
@@ -22,7 +22,7 @@ Add tests when changing cache behavior, progress indexes, archetype mapping, wee
 5. Choose **Maybe later** and return Home.
 6. Reopen Class and verify the next unit does not start automatically.
 7. Choose **Let's go** and complete the second unit.
-8. Verify Home/Class show the weekly-complete state and no third unit starts.
+8. Complete a third unit and confirm nothing blocks it (v1 has no weekly limit, R-39).
 9. Restart during a unit and confirm local stage recovery.
 10. Test phone and desktop widths.
 
