@@ -7,6 +7,7 @@ import '../../../domain/learning_progress/activity_models.dart';
 import '../../../domain/learning_progress/home_dashboard_provider.dart';
 import '../../../shared/widgets/app_header.dart';
 import '../../../shared/widgets/app_nav.dart';
+import '../../../shared/widgets/load_error_view.dart';
 import '../../../shared/widgets/loading_view.dart';
 import 'widgets/completed_card.dart';
 import 'widgets/home_buddy_art.dart';
@@ -26,27 +27,9 @@ class HomeScreen extends ConsumerWidget {
         backgroundColor: const Color(0xFFF4F4F6),
         body: dashboardAsync.when(
           loading: () => const LoadingView(),
-          error: (err, stack) => Center(
-            child: Padding(
-              padding: const EdgeInsets.all(24),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  const Icon(
-                    Icons.error_outline_rounded,
-                    color: Colors.red,
-                    size: 42,
-                  ),
-                  const SizedBox(height: 12),
-                  Text(_errorMessage(err), textAlign: TextAlign.center),
-                  const SizedBox(height: 16),
-                  ElevatedButton(
-                    onPressed: () => ref.invalidate(learningDashboardProvider),
-                    child: const Text('Retry'),
-                  ),
-                ],
-              ),
-            ),
+          error: (err, stack) => LoadErrorView(
+            error: err,
+            onRetry: () => ref.invalidate(learningDashboardProvider),
           ),
           data: (dashboard) => _HomeDashboard(
             dashboard: dashboard,
@@ -55,13 +38,6 @@ class HomeScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
-
-  String _errorMessage(Object err) {
-    if (err is NoActiveProfileException) {
-      return 'No profile selected. Please sign in again.';
-    }
-    return 'Failed to load dashboard: $err';
   }
 }
 

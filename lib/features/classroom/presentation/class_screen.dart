@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/router/app_routes.dart';
 import '../../../core/theme/app_theme.dart';
@@ -16,6 +15,7 @@ import '../../../domain/learner/learner_state_provider.dart';
 import '../../../domain/profile/profile_provider.dart';
 import '../../../shared/widgets/app_header.dart';
 import '../../../shared/widgets/app_nav.dart';
+import '../../../shared/widgets/load_error_view.dart';
 import 'widgets/class_chat_row.dart';
 import 'widgets/class_loading_skeleton.dart';
 import 'widgets/class_message_content.dart';
@@ -77,9 +77,12 @@ class _ClassScreenState extends ConsumerState<ClassScreen> {
               onHome: () => context.go(AppRoutes.home),
             );
           }
-          return _ErrorBody(
+          return LoadErrorView(
             error: error,
-            onBack: () => context.go(AppRoutes.home),
+            onRetry: () {
+              ref.invalidate(classSessionBootstrapProvider);
+              ref.invalidate(classChatControllerProvider(_attempt));
+            },
           );
         },
         data: (controller) => _ClassChatView(
@@ -93,47 +96,6 @@ class _ClassScreenState extends ConsumerState<ClassScreen> {
   Widget _scaffold(Widget body) => AppNav(
         child: Scaffold(backgroundColor: AppTheme.appBackground, body: body),
       );
-}
-
-class _ErrorBody extends StatelessWidget {
-  const _ErrorBody({required this.error, required this.onBack});
-
-  final Object error;
-  final VoidCallback onBack;
-
-  @override
-  Widget build(BuildContext context) {
-    final isNoEnrollment = error is NoActiveEnrollmentException;
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.all(32),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              isNoEnrollment
-                  ? "You're not enrolled in a course yet."
-                  : 'Something went wrong loading your class.',
-              textAlign: TextAlign.center,
-              style: GoogleFonts.inter(
-                fontSize: 18,
-                fontWeight: FontWeight.w700,
-              ),
-            ),
-            const SizedBox(height: 18),
-            ElevatedButton(
-              onPressed: onBack,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppTheme.buttonColor,
-                foregroundColor: Colors.white,
-              ),
-              child: const Text('Go home'),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
 }
 
 class _ClassChatView extends ConsumerStatefulWidget {

@@ -9,6 +9,7 @@ import '../../../domain/learning_progress/activity_models.dart';
 import '../../../domain/learning_progress/home_dashboard_provider.dart';
 import '../../../shared/widgets/app_header.dart';
 import '../../../shared/widgets/app_nav.dart';
+import '../../../shared/widgets/load_error_view.dart';
 import '../../../shared/widgets/loading_view.dart';
 
 class PassportScreen extends ConsumerWidget {
@@ -23,7 +24,10 @@ class PassportScreen extends ConsumerWidget {
         backgroundColor: AppTheme.appBackground,
         body: dashboardAsync.when(
           loading: () => const LoadingView(),
-          error: (err, stack) => Center(child: Text('Failed to load passport')),
+          error: (err, stack) => LoadErrorView(
+            error: err,
+            onRetry: () => ref.invalidate(learningDashboardProvider),
+          ),
           data: (dashboard) => _PassportDashboard(dashboard: dashboard),
         ),
       ),

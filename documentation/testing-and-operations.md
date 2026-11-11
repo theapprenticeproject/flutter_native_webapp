@@ -9,7 +9,7 @@ npm run format:check
 mkdocs build --strict
 ```
 
-Current Flutter tests cover onboarding flow parsing, classroom stage resolution, learner/course submission index separation, local progress restoration, archetype step selection, and that the old weekly limit fields are ignored. Guard tests fail if removed features (the AI review, the TapBuddy chat, the weekly cap, streaks, gems and the archetype calculation) come back into `lib/`.
+Current Flutter tests cover onboarding flow parsing, classroom stage resolution, learner/course submission index separation, local progress restoration, archetype step selection, and that the old weekly limit fields are ignored. Error tests check that every failure becomes a plain message with a button that can fix the cause (R-44), and that no screen prints a raw error. Guard tests fail if removed features (the AI review, the TapBuddy chat, the weekly cap, streaks, gems and the archetype calculation) come back into `lib/`.
 
 Add tests when changing cache behavior, progress indexes, flow JSON parsing, or API response models.
 

@@ -48,6 +48,8 @@ Use `forceRefresh: true` only for conflict recovery or a user-requested refresh.
 
 `HttpClient` converts HTTP `401` into `AuthException` and `429` into `RateLimitedException`. Other Dio failures remain transport errors. Initial-load failures should always offer recovery without discarding pending progress.
 
+Home, Passport and Class show a failed load with `LoadErrorView` (`lib/shared/widgets/`). It takes its text from `describeError()` (`lib/shared/errors/friendly_error.dart`). Offline, busy and server problems get a **Try again** button. An ended session gets a **Sign in** button that logs out and opens the login screen, because trying again cannot fix it. No screen shows the raw error (R-44). Auth, Settings and Onboarding already had plain messages.
+
 The app uses shared `AppHeader` and `AppNav` shells. Classroom and Home switch layouts through `LayoutBuilder` breakpoints. New fixed-size media or controls need bounded dimensions and a mobile fallback.
 
 # v1 changes
