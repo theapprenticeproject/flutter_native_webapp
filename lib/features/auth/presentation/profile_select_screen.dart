@@ -5,14 +5,12 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/router/app_routes.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../domain/profile/active_profile_model.dart';
-import '../../../domain/profile/profile_summary_model.dart';
+import '../../../domain/auth/auth_provider.dart';
+import '../../../domain/auth/redeemed_student.dart';
 import '../../../domain/profile/profile_provider.dart';
 
 class ProfileSelectScreen extends ConsumerStatefulWidget {
-  const ProfileSelectScreen({super.key, required this.phone});
-
-  final String phone;
+  const ProfileSelectScreen({super.key});
 
   @override
   ConsumerState<ProfileSelectScreen> createState() =>
@@ -20,46 +18,26 @@ class ProfileSelectScreen extends ConsumerStatefulWidget {
 }
 
 class _ProfileSelectScreenState extends ConsumerState<ProfileSelectScreen> {
-  String? _selectingLearnerId;
+  String? _selectingStudentId;
   String? _errorText;
 
-  Future<void> _selectProfile(ProfileSummaryModel profile) async {
+  Future<void> _selectProfile(RedeemedStudent student) async {
     setState(() {
-      _selectingLearnerId = profile.learnerId;
+      _selectingStudentId = student.studentId;
       _errorText = null;
     });
 
     try {
-      final repository = await ref.read(profileRepositoryProvider.future);
-
-      final learnerState = await repository.selectProfile(
-        phone: widget.phone,
-        learnerId: profile.learnerId,
-      );
-      final onboardingCompleted = repository.isOnboardingCompleted(
-        profile.learnerId,
-        fallback: profile.onboardingCompleted,
-      );
-
-      await setActiveProfile(
-        ref,
-        ActiveProfileModel(
-          phone: widget.phone,
-          learnerId: profile.learnerId,
-          studentName: learnerState.profile?.studentName ?? profile.studentName,
-          grade: profile.grade,
-          division: profile.division,
-          avatar: profile.avatar,
-          onboardingCompleted: onboardingCompleted,
-        ),
-      );
-
+      final repository = await ref.read(magicLinkRepositoryProvider.future);
+      await repository.switchStudent(student.studentId);
+      ref.invalidate(activeProfileProvider);
       if (!mounted) return;
-      context.go(onboardingCompleted ? AppRoutes.home : AppRoutes.onboarding);
+      context.go(AppRoutes.home);
     } catch (e) {
+      debugPrint('Could not pick a student: $e');
       if (!mounted) return;
       setState(() {
-        _selectingLearnerId = null;
+        _selectingStudentId = null;
         _errorText = 'Could not load that profile. Please try again.';
       });
     }
@@ -67,9 +45,7 @@ class _ProfileSelectScreenState extends ConsumerState<ProfileSelectScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final profilesAsync = ref.watch(
-      profilesPageDataProvider(ProfilesPageRequest(phone: widget.phone)),
-    );
+    final profilesAsync = ref.watch(linkRosterProvider);
 
     return Scaffold(
       backgroundColor: AppTheme.bgColor,
@@ -132,7 +108,7 @@ class _ProfileSelectScreenState extends ConsumerState<ProfileSelectScreen> {
     );
   }
 
-  Widget _buildProfileGrid(List<ProfileSummaryModel> profiles, bool isDesktop) {
+  Widget _buildProfileGrid(List<RedeemedStudent> profiles, bool isDesktop) {
     if (profiles.isEmpty) {
       return Padding(
         padding: const EdgeInsets.symmetric(vertical: 48),
@@ -161,11 +137,11 @@ class _ProfileSelectScreenState extends ConsumerState<ProfileSelectScreen> {
       itemCount: profiles.length,
       itemBuilder: (context, index) {
         final profile = profiles[index];
-        final isSelecting = _selectingLearnerId == profile.learnerId;
+        final isSelecting = _selectingStudentId == profile.studentId;
         return _ProfileCard(
           profile: profile,
           isLoading: isSelecting,
-          onTap: _selectingLearnerId == null
+          onTap: _selectingStudentId == null
               ? () => _selectProfile(profile)
               : null,
         );
@@ -181,7 +157,7 @@ class _ProfileCard extends StatelessWidget {
     required this.isLoading,
   });
 
-  final ProfileSummaryModel profile;
+  final RedeemedStudent profile;
   final VoidCallback? onTap;
   final bool isLoading;
 
@@ -212,7 +188,7 @@ class _ProfileCard extends StatelessWidget {
                   radius: 34,
                   backgroundColor: const Color(0xFFE8E8FB),
                   child: Text(
-                    _initials(profile.studentName),
+                    _initials(profile.name),
                     style: GoogleFonts.inter(
                       fontSize: 22,
                       fontWeight: FontWeight.w800,
@@ -227,9 +203,7 @@ class _ProfileCard extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    profile.studentName.isEmpty
-                        ? 'Student'
-                        : profile.studentName,
+                    profile.name.isEmpty ? 'Student' : profile.name,
                     style: GoogleFonts.inter(
                       fontSize: 15,
                       fontWeight: FontWeight.w700,
@@ -241,10 +215,7 @@ class _ProfileCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    [
-                      if (profile.grade != null) 'Grade ${profile.grade}',
-                      if (profile.division != null) profile.division,
-                    ].join(' · '),
+                    profile.grade.isEmpty ? '' : 'Grade ${profile.grade}',
                     style: GoogleFonts.inter(
                       fontSize: 12,
                       fontWeight: FontWeight.w500,

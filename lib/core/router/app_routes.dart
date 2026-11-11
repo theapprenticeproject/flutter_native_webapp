@@ -15,5 +15,9 @@ class AppRoutes {
   static const String profile = '/profile';
   static const String error = '/error';
 
+  /// The magic link from WhatsApp carries a code: `/l/<code>`.
+  static const String link = '/l/:code';
+  static String linkFor(String code) => '/l/$code';
+
   static Page<void> page(Widget child) => NoTransitionPage<void>(child: child);
 }

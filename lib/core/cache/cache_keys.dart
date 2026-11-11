@@ -14,6 +14,9 @@ class CacheKeys {
 
   static String activeProfile() => _k('active_profile');
 
+  /// The students on the phone, saved when the magic link is opened.
+  static String linkRoster() => _k('link_roster');
+
   static String profilesPage(String phone, int page, int pageSize) =>
       _k('profiles:$phone:page$page:$pageSize');
 

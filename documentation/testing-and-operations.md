@@ -13,6 +13,16 @@ Current Flutter tests cover onboarding flow parsing, classroom stage resolution,
 
 Add tests when changing cache behavior, progress indexes, flow JSON parsing, or API response models.
 
+### Live test against the test Worker
+
+`test/live/test_worker_login_live_test.dart` signs in against the real test Worker with its seeded phones: one student, three siblings, a lost student token, and a bad code. It only reads and signs in. It never writes progress. It is skipped unless you give the Worker address:
+
+```bash
+flutter test test/live --dart-define=WORKER_URL=https://tapapp-test-worker.tapific.workers.dev
+```
+
+The test Worker's data is shared by everyone who tests, so numbers such as points can change between runs. The test avoids checking them.
+
 ## Manual critical-path test
 
 1. Login and select a learner profile.

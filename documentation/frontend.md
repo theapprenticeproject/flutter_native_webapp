@@ -44,6 +44,12 @@ The redirect checks the cached authentication session, active profile, and onboa
 
 Use `forceRefresh: true` only for conflict recovery or a user-requested refresh. It should not be the default navigation behavior.
 
+## Signing in with the magic link (new)
+
+The WhatsApp link carries a code. The route `/l/<code>` (`LinkSignInScreen`) calls `/auth/redeem` and gets one token per student on the phone. One student goes to Home. Several students go to the name picker (`/profile-select`). Picking a name only swaps the saved token, with no call. If a student token is lost, `/auth/select_profile` with the phone token gets a new one. The Worker has no token refresh, so a token that ends (30 days) means the student opens a new link. The code is in `lib/domain/auth/magic_link_repository.dart`, and the tokens are kept in `SecureTokenStore`.
+
+The old phone and password login screens still exist. They are removed in a later commit. The web app uses hash URLs today (`/#/l/<code>`). Where the Worker's `/l/<code>` link sends the student is decided later.
+
 ## Errors and responsiveness (today)
 
 `HttpClient` converts HTTP `401` into `AuthException` and `429` into `RateLimitedException`. Other Dio failures remain transport errors. Initial-load failures should always offer recovery without discarding pending progress.

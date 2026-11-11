@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../features/splash/presentation/splash_screen.dart';
 import '../features/error/presentation/error_screen.dart';
 import '../features/auth/presentation/auth_screen.dart';
+import '../features/auth/presentation/link_sign_in_screen.dart';
 import '../features/auth/presentation/profile_select_screen.dart';
 import '../features/onboarding/presentation/onboarding_screen.dart';
 import '../features/home/presentation/home_screen.dart';
@@ -73,6 +74,9 @@ final routerProvider = Provider<GoRouter>((ref) {
       final activeProfileAsync = ref.read(activeProfileProvider);
       final target = state.matchedLocation;
 
+      // The magic link opens on its own: it signs the student in itself.
+      if (target.startsWith('/l/')) return null;
+
       if (activeProfileAsync.isLoading &&
           !activeProfileAsync.hasValue &&
           !refreshListenable.hasResolvedOnce) {
@@ -139,8 +143,13 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: AppRoutes.profileSelect,
+        pageBuilder: (context, state) =>
+            AppRoutes.page(const ProfileSelectScreen()),
+      ),
+      GoRoute(
+        path: AppRoutes.link,
         pageBuilder: (context, state) => AppRoutes.page(
-          ProfileSelectScreen(phone: state.uri.queryParameters['phone'] ?? ''),
+          LinkSignInScreen(code: state.pathParameters['code'] ?? ''),
         ),
       ),
       GoRoute(

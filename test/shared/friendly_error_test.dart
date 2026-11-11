@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:tapapp/core/network/api_exception.dart';
 import 'package:tapapp/core/network/http_client.dart';
 import 'package:tapapp/domain/learning_progress/class_session_bootstrap_provider.dart';
 import 'package:tapapp/domain/learning_progress/home_dashboard_provider.dart';
@@ -46,6 +47,26 @@ void main() {
         requestOptions: RequestOptions(path: '/x'),
         type: DioExceptionType.badResponse,
       ),
+      ErrorAction.retry,
+    ),
+    'link expired (UNAUTHORIZED)': (
+      ApiException('UNAUTHORIZED', 'x', status: 401),
+      ErrorAction.signInAgain,
+    ),
+    'no student (STUDENT_NOT_FOUND)': (
+      ApiException('STUDENT_NOT_FOUND', 'x', status: 404),
+      ErrorAction.retry,
+    ),
+    'limit reached (CONFLICT)': (
+      ApiException('CONFLICT', 'x', status: 409),
+      ErrorAction.retry,
+    ),
+    'rate limited (RATE_LIMITED)': (
+      ApiException('RATE_LIMITED', 'x', status: 429),
+      ErrorAction.retry,
+    ),
+    'server problem (UPSTREAM_ERROR)': (
+      ApiException('UPSTREAM_ERROR', 'x', status: 502),
       ErrorAction.retry,
     ),
     'anything else': (StateError('boom: secret detail'), ErrorAction.retry),

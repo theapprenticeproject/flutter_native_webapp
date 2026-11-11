@@ -11,6 +11,9 @@ class ErrorView extends StatefulWidget {
   final VoidCallback onRetry;
   final String imagePath;
 
+  /// Hide the button when trying again cannot fix the problem (R-44).
+  final bool showButton;
+
   const ErrorView({
     super.key,
     required this.title,
@@ -21,6 +24,7 @@ class ErrorView extends StatefulWidget {
     this.desktopButtonText,
     required this.onRetry,
     this.imagePath = 'assets/error-screen-assets/sad_girl_error.png',
+    this.showButton = true,
   });
 
   @override
@@ -76,7 +80,6 @@ class _ErrorViewState extends State<ErrorView> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-
                 AnimatedContainer(
                   duration: const Duration(milliseconds: 300),
                   width: isDesktop ? 280 : 260,
@@ -121,57 +124,58 @@ class _ErrorViewState extends State<ErrorView> {
                   style: messageStyle,
                   textAlign: TextAlign.center,
                 ),
-                const SizedBox(height: 40),
+                if (widget.showButton) const SizedBox(height: 40),
 
-                Container(
-                  constraints: BoxConstraints(
-                    maxWidth: isDesktop ? 300 : double.infinity,
-                  ),
-                  child: MouseRegion(
-                    onEnter: (_) => setState(() => _isHovering = true),
-                    onExit: (_) => setState(() => _isHovering = false),
-                    child: GestureDetector(
-                      onTapDown: (_) => setState(() => _isPressing = true),
-                      onTapUp: (_) => setState(() => _isPressing = false),
-                      onTapCancel: () => setState(() => _isPressing = false),
-                      onTap: widget.onRetry,
-                      child: AnimatedScale(
-                        scale: _isPressing
-                            ? 0.95
-                            : _isHovering
-                            ? 1.03
-                            : 1.0,
-                        duration: const Duration(milliseconds: 150),
-                        curve: Curves.easeInOut,
-                        child: Container(
-                          height: 56,
-                          decoration: BoxDecoration(
-                            color: const Color(0xFF5B5BD6),
-                            borderRadius: BorderRadius.circular(20),
-                            boxShadow: [
-                              BoxShadow(
-                                color: const Color(
-                                  0xFF5B5BD6,
-                                ).withValues(alpha: 0.3),
-                                blurRadius: 16,
-                                offset: const Offset(0, 6),
+                if (widget.showButton)
+                  Container(
+                    constraints: BoxConstraints(
+                      maxWidth: isDesktop ? 300 : double.infinity,
+                    ),
+                    child: MouseRegion(
+                      onEnter: (_) => setState(() => _isHovering = true),
+                      onExit: (_) => setState(() => _isHovering = false),
+                      child: GestureDetector(
+                        onTapDown: (_) => setState(() => _isPressing = true),
+                        onTapUp: (_) => setState(() => _isPressing = false),
+                        onTapCancel: () => setState(() => _isPressing = false),
+                        onTap: widget.onRetry,
+                        child: AnimatedScale(
+                          scale: _isPressing
+                              ? 0.95
+                              : _isHovering
+                              ? 1.03
+                              : 1.0,
+                          duration: const Duration(milliseconds: 150),
+                          curve: Curves.easeInOut,
+                          child: Container(
+                            height: 56,
+                            decoration: BoxDecoration(
+                              color: const Color(0xFF5B5BD6),
+                              borderRadius: BorderRadius.circular(20),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: const Color(
+                                    0xFF5B5BD6,
+                                  ).withValues(alpha: 0.3),
+                                  blurRadius: 16,
+                                  offset: const Offset(0, 6),
+                                ),
+                              ],
+                            ),
+                            alignment: Alignment.center,
+                            child: Text(
+                              displayButtonText,
+                              style: GoogleFonts.inter(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.w700,
                               ),
-                            ],
-                          ),
-                          alignment: Alignment.center,
-                          child: Text(
-                            displayButtonText,
-                            style: GoogleFonts.inter(
-                              color: Colors.white,
-                              fontSize: 18,
-                              fontWeight: FontWeight.w700,
                             ),
                           ),
                         ),
                       ),
                     ),
                   ),
-                ),
               ],
             ),
           ),

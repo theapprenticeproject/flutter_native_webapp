@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 
+import '../../core/network/api_exception.dart';
 import '../../core/network/http_client.dart';
 import '../../domain/learning_progress/class_session_bootstrap_provider.dart';
 import '../../domain/learning_progress/home_dashboard_provider.dart';
@@ -30,6 +31,7 @@ class FriendlyError {
 
 /// Turns any error into a [FriendlyError]. Log the real error elsewhere.
 FriendlyError describeError(Object error) {
+  if (error is ApiException) return _describeApiError(error);
   if (error is AuthException || error is NoActiveProfileException) {
     return const FriendlyError(
       title: 'Please sign in again',
@@ -68,6 +70,35 @@ FriendlyError describeError(Object error) {
     buttonText: 'Try again',
     action: ErrorAction.retry,
   );
+}
+
+/// The Worker's error codes (`api-contract.md`). The Worker's own message is
+/// for logs only, so none of it is shown.
+FriendlyError _describeApiError(ApiException e) {
+  switch (e.code) {
+    case 'UNAUTHORIZED':
+      return describeError(AuthException(e.code));
+    case 'RATE_LIMITED':
+      return describeError(RateLimitedException('default'));
+    case 'STUDENT_NOT_FOUND':
+      return const FriendlyError(
+        title: 'We could not find you',
+        message:
+            'This phone number is not signed up for TAP yet. '
+            'Please ask your teacher.',
+        buttonText: 'Try again',
+        action: ErrorAction.retry,
+      );
+    case 'CONFLICT':
+      return const FriendlyError(
+        title: 'That is all for now',
+        message: 'You have reached the limit for this activity.',
+        buttonText: 'Try again',
+        action: ErrorAction.retry,
+      );
+    default:
+      return describeError(StateError(e.code));
+  }
 }
 
 bool _isConnectionProblem(DioException e) =>
