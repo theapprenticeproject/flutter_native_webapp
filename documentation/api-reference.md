@@ -2,6 +2,8 @@
 
 > **Old: this page describes the prototype Worker, before the v1 changes.** It still shows the password login, the OTP routes and `phone` as the identity. Tasks B2 and C2 remove or change these. **The two AI routes (`/tapbuddy/chat` and `/submission-review/review`) were removed from the Worker in M0 (task C1, 2026-11-06), and from this page.** For v1, see [api-contract.md](api-contract.md) (Worker to backend). The new routes between the app and the Worker are listed in `build-bootstrap.md`, section 7. Do not copy the old model. Rewrite or delete this page after task C4.
 
+**What the app calls today (v1, test Worker):** the routes `/auth/redeem`, `/auth/select_profile`, `/profile/get_profile`, `/progress/submit_video`, `/progress/submit_quiz`, `/progress/sync`, `/progress/last_submission` and `/app/config`. The code is in `lib/domain/auth/magic_link_repository.dart` and `lib/domain/progress/progress_repository.dart`. Every answer is `{ok, data}` or `{ok:false, error:{code, message}}`, read by `HttpClient.postApi`. Every write sends an `idempotency_key` (`newIdempotencyKey`). The Worker owns the points and the caps, and a cap answers `CONFLICT`. The full list of the test Worker's routes, seed phones and caps is in the product team's `Dummy API.md`.
+
 This page documents the **Cloudflare Worker API called by Flutter**. Use the Worker base URL, not the Frappe URL, in Postman.
 
 ## Authentication

@@ -13,6 +13,7 @@ import 'package:tapapp/core/constants/app_constants.dart';
 import 'package:tapapp/core/network/api_exception.dart';
 import 'package:tapapp/core/network/http_client.dart';
 import 'package:tapapp/domain/auth/magic_link_repository.dart';
+import 'package:tapapp/domain/progress/progress_repository.dart';
 
 /// Signs in against the real test Worker with its seeded phones. It reads and
 /// signs in only. It never writes progress or submissions.
@@ -110,5 +111,29 @@ void main() {
       throwsA(isA<ApiException>()),
     );
     expect(await store.readToken(), isNull);
+  }, skip: skip);
+
+  // Read-only progress calls. The writes (submit_video, submit_quiz) are not
+  // run here: the test Worker's data is shared, and each write adds points.
+  test('progress reads work with the saved student token', () async {
+    await repo.redeem(await mint('919100000001'));
+    final progress = ProgressRepository(http);
+
+    final profile = await progress.getProfile();
+    expect(profile.studentId, 'STU-FRESH-01');
+    expect(profile.name, isNotEmpty);
+
+    final sync = await progress.sync(lastUpdated: 0);
+    expect(sync.changed, isTrue);
+    expect(sync.points, isNotNull);
+    expect(sync.currentLearningUnit, isNotNull);
+
+    final last = await progress.lastSubmission(lastUpdated: 0);
+    expect(last.points, isNotNull);
+
+    final config = await progress.appConfig();
+    expect(config.uploadMaxBytesVideo, greaterThan(config.uploadMaxBytesImage));
+    expect(config.tierFor(0), 'bronze');
+    expect(config.tierFor(1000), 'silver');
   }, skip: skip);
 }
