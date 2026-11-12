@@ -5,6 +5,10 @@ version: 1.0.0+1
 
 environment:
   sdk: ^3.11.5
+  # Pinned: the web renderer (CanvasKit) comes from the Flutter engine, and a 3.41
+  # build rendered incorrectly in WhatsApp's browser on some Android phones.
+  # Upgrade deliberately: test on real phones, then change this range.
+  flutter: ">=3.47.1 <3.48.0"
 
 dependencies:
   flutter:

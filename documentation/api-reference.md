@@ -1,4 +1,6 @@
-# API Reference
+# API Reference (prototype Worker)
+
+> **Old: this page describes the prototype Worker, before the v1 changes.** It still shows the password login, the OTP routes and `phone` as the identity. Tasks B2, C1 and C2 remove or change these. For v1, see [api-contract.md](api-contract.md) (Worker to backend). The new routes between the app and the Worker are listed in `build-bootstrap.md`, section 7. Do not copy the old model. Rewrite or delete this page after task C4.
 
 This page documents the **Cloudflare Worker API called by Flutter**. Use the Worker base URL, not the Frappe URL, in Postman.
 

@@ -48,6 +48,18 @@ mkdocs serve
 
 Open `http://127.0.0.1:8000`.
 
+## Set up the git hook (once for each clone)
+
+The repository has a `pre-push` hook in `.githooks/`. It runs the quick checks (analyze, unit tests and the architecture check) before a push. Turn it on once:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+It also runs when you push from VS Code. If a check fails, read the message in the terminal, or in the **Output** panel (choose **Git**).
+
+> The hook does not exist yet. It is task E4 in the [v1 task breakdown](v1-task-breakdown.md). Until then, run the checks below by hand.
+
 ## Useful checks
 
 ```bash

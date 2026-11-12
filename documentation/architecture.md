@@ -24,15 +24,25 @@ screens/widgets
                 -> Worker API / Hive / secure storage
 ```
 
-| Layer     | Main location                 | Responsibility                                     |
-| --------- | ----------------------------- | -------------------------------------------------- |
-| UI        | `lib/screens`, `lib/widgets`  | Responsive rendering and user interaction          |
-| State     | `lib/providers`               | Async loading, orchestration, controller lifetime  |
-| Domain    | `lib/models`                  | Typed learner, enrollment, course, and flow models |
-| Data      | `lib/data/repositories`       | Cache policy and API payloads                      |
-| Transport | `lib/data/remote`             | Endpoints, Dio, auth and rate-limit errors         |
-| Cache     | `lib/core/cache`              | Hive data and secure credentials                   |
-| Content   | `assets/data`, `assets/flows` | Courses, UI flows, images, and language data       |
+`lib/` is organised by layer, and each layer may only import the ones to its right.
+See [Architecture Tenets](architecture-tenets.md) for the rules and how they are checked.
+
+```text
+app  ->  features  ->  shared  ->  domain  ->  core
+```
+
+| Layer     | Main location                                | Responsibility                                                         |
+| --------- | -------------------------------------------- | ---------------------------------------------------------------------- |
+| App       | `lib/app`                                    | Router wiring and auth redirects (the only place that sees every screen) |
+| Features  | `lib/features/<feature>`                     | Screens, widgets and UI state for one user-facing feature              |
+| Shared UI | `lib/shared/widgets`                         | Header, bottom bar, TapBuddy panel, loading and error views            |
+| Domain    | `lib/domain/<concept>`                       | Models, repositories and providers for data shared by many screens     |
+| Transport | `lib/core/network`                           | Endpoints, Dio, auth and rate-limit errors                             |
+| Cache     | `lib/core/cache`                             | Hive data and secure credentials                                       |
+| Content   | `assets/data`, `assets/flows`                | Courses, UI flows, images, and language data                           |
+
+Domain concepts: `auth`, `profile`, `learner`, `program_content`, `learning_progress`, `tapbuddy`, `reference_data`.
+Features: `auth`, `onboarding`, `welcome`, `splash`, `home`, `classroom`, `passport`, `settings`, `error`.
 
 ## Request lifecycle
 

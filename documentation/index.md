@@ -29,9 +29,16 @@ The Flutter app calls the Worker URL defined in `lib/core/constants/app_constant
 | ----------------------------------------- | --------------------------------------------------- |
 | Run the project locally                   | [Getting Started](getting-started.md)               |
 | Understand ownership and data flow        | [Architecture](architecture.md)                     |
+| Look up a code such as R-40, O-9 or GP3   | [Codes](codes.md)                                   |
+| See how the TAP backend works today       | [System understanding](system-understanding.md)     |
+| Understand the proposed content files     | [Content specification](content-spec.md)            |
+| Start building in a new chat              | [Build bootstrap](build-bootstrap.md)               |
+| Fix `tapapp` before it moves to `frappe_tap` | [tapapp changes](tapapp-changes.md)              |
+| See the Worker to backend calls          | [API contract](api-contract.md)                     |
+| See the v1 tasks and effort               | [v1 task breakdown](v1-task-breakdown.md)           |
 | Change screens, providers, or caching     | [Frontend](frontend.md)                             |
 | Understand onboarding and classroom rules | [Learning Flows](learning-flows.md)                 |
-| Call endpoints from Postman               | [API Reference](api-reference.md)                   |
+| Call the prototype Worker from Postman (old, before v1) | [API Reference](api-reference.md) |
 | Maintain Frappe jobs and DocTypes         | [Frappe Backend](frappe-backend.md)                 |
 | Add a course, language, flow, or image    | [Content and Assets](content-and-assets.md)         |
 | Release the app and Worker                | [Deployment](deployment.md)                         |
@@ -42,7 +49,7 @@ The Flutter app calls the Worker URL defined in `lib/core/constants/app_constant
 When documentation and code disagree, use this order:
 
 1. Worker routes in `worker/src/routes.js` for the public HTTP contract.
-2. Flutter repositories in `lib/data/repositories/` for payloads consumed by the app.
+2. Flutter repositories in the repositories under `lib/domain/` and `lib/features/*/data/` for payloads consumed by the app.
 3. Deployed Frappe methods for backend behavior.
 4. This documentation.
 
