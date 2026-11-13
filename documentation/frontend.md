@@ -48,6 +48,12 @@ Use `forceRefresh: true` only for conflict recovery or a user-requested refresh.
 
 The WhatsApp link carries a code. The route `/l/<code>` (`LinkSignInScreen`) calls `/auth/redeem` and gets one token per student on the phone. One student goes to Home. Several students go to the name picker (`/profile-select`). Picking a name only swaps the saved token, with no call. If a student token is lost, `/auth/select_profile` with the phone token gets a new one. The Worker has no token refresh, so a token that ends (30 days) means the student opens a new link. The code is in `lib/domain/auth/magic_link_repository.dart`, and the tokens are kept in `SecureTokenStore`.
 
+## Progress in v1 (new)
+
+The app follows the bundled course order. The unit and the step the student is on are kept on the phone (`LearnerStateRepository`). The Worker records each step and owns the points. The first state is built from the login answer (name, points, course). If the Worker's `course_id` is not a bundled course, the first bundled course is used (test only, until the Worker returns real ids). Points refresh from `/progress/sync` when Home opens (3 seconds at most, then the saved points are used).
+
+When the student taps "I watched it", `StepRecorder` calls `/progress/submit_video_watched` with the unit and video ids and an idempotency key. The key is kept until the call works, so the Retry button sends the same key and cannot give the points twice. `CONFLICT` means the video was marked before, and the app goes on. The points on screen are the ones the Worker returned. A unit now finishes on the phone, with no call. The old `/learner/*` calls are gone. Quiz and Make are still local, and move to the Worker in the next commits.
+
 The old phone and password login screens still exist. They are removed in a later commit. The web app uses hash URLs today (`/#/l/<code>`). Where the Worker's `/l/<code>` link sends the student is decided later.
 
 ## Errors and responsiveness (today)

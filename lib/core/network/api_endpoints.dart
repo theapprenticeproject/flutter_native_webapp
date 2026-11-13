@@ -19,10 +19,6 @@ class ApiEndpoints {
   static const String studentsUpdate = '/students/update';
   static const String studentsBulkUpdate = '/students/bulk-update';
 
-  static const String learnerState = '/learner/state';
-  static const String learnerEnroll = '/learner/enroll';
-  static const String learnerSubmitProgress = '/learner/submit-progress';
-
   static const String achievements = '/achievements';
   static const String achievementsAward = '/achievements/award';
 

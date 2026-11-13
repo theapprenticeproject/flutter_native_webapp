@@ -20,29 +20,31 @@ void main() {
   }
 
   group('video', () {
-    test('sends the unit, watched and the idempotency key', () async {
-      final adapter = FakeWorkerAdapter(
-        (_) => ok({
-          'points_awarded': 10,
-          'points_total': 337,
-          'points_tier': 'bronze',
-          'context': 'program',
-          'updated_at': 1794026773,
-          'repeat': false,
-        }),
-      );
+    Map<String, dynamic> awarded({bool repeat = false}) => {
+      'points_awarded': 10,
+      'points_total': 337,
+      'points_tier': 'bronze',
+      'context': 'program',
+      'updated_at': 1794026773,
+      'repeat': repeat,
+    };
+
+    test('sends the unit, the video, watched and the key', () async {
+      final adapter = FakeWorkerAdapter((_) => ok(awarded()));
       final result = await repoFor(adapter).submitVideo(
         unitId: 'LU-0088',
+        videoId: 'VC-1',
         watched: true,
-        idempotencyKey: 'video:S1:LU-0088:abc',
+        idempotencyKey: 'video:S1:VC-1:abc',
       );
 
       final call = adapter.seen.single;
-      expect(call.path, '/progress/submit_video');
+      expect(call.path, '/progress/submit_video_watched');
       expect(call.body, {
         'unit_id': 'LU-0088',
+        'video_id': 'VC-1',
         'watched': true,
-        'idempotency_key': 'video:S1:LU-0088:abc',
+        'idempotency_key': 'video:S1:VC-1:abc',
       });
       expect(result.pointsAwarded, 10);
       expect(result.pointsTotal, 337);
@@ -51,18 +53,13 @@ void main() {
     });
 
     test('a repeat of the same key is reported, not an error', () async {
-      final adapter = FakeWorkerAdapter(
-        (_) => ok({
-          'points_awarded': 10,
-          'points_total': 337,
-          'points_tier': 'bronze',
-          'updated_at': 1,
-          'repeat': true,
-        }),
+      final adapter = FakeWorkerAdapter((_) => ok(awarded(repeat: true)));
+      final result = await repoFor(adapter).submitVideo(
+        unitId: 'U',
+        videoId: 'V',
+        watched: true,
+        idempotencyKey: 'k',
       );
-      final result = await repoFor(
-        adapter,
-      ).submitVideo(unitId: 'U', watched: true, idempotencyKey: 'k');
       expect(result.isRepeat, isTrue);
     });
 
@@ -71,11 +68,56 @@ void main() {
         (_) => failure(409, 'CONFLICT', 'per-unit video-event cap reached'),
       );
       await expectLater(
-        repoFor(
-          adapter,
-        ).submitVideo(unitId: 'U', watched: true, idempotencyKey: 'k'),
+        repoFor(adapter).submitVideo(
+          unitId: 'U',
+          videoId: 'V',
+          watched: true,
+          idempotencyKey: 'k',
+        ),
         throwsA(isA<ApiException>().having((e) => e.code, 'code', 'CONFLICT')),
       );
+    });
+
+    // TEMPORARY: the test Worker still has only the old route name. Remove this
+    // test and the fallback in ProgressRepository once it has the new one.
+    test(
+      'falls back to the old route while the Worker lacks the new one',
+      () async {
+        final adapter = FakeWorkerAdapter((r) {
+          if (r.path == '/progress/submit_video_watched') {
+            return failure(404, 'NOT_FOUND', 'no such route');
+          }
+          return ok(awarded());
+        });
+        final result = await repoFor(adapter).submitVideo(
+          unitId: 'U',
+          videoId: 'V',
+          watched: true,
+          idempotencyKey: 'k',
+        );
+        expect(adapter.seen.map((r) => r.path), [
+          '/progress/submit_video_watched',
+          '/progress/submit_video',
+        ]);
+        expect(adapter.seen.last.body!['idempotency_key'], 'k');
+        expect(result.pointsAwarded, 10);
+      },
+    );
+
+    test('a real NOT_FOUND (not a missing route) is not retried', () async {
+      final adapter = FakeWorkerAdapter(
+        (_) => failure(404, 'NOT_FOUND', 'video does not exist'),
+      );
+      await expectLater(
+        repoFor(adapter).submitVideo(
+          unitId: 'U',
+          videoId: 'V',
+          watched: true,
+          idempotencyKey: 'k',
+        ),
+        throwsA(isA<ApiException>()),
+      );
+      expect(adapter.seen, hasLength(1));
     });
   });
 
@@ -137,25 +179,28 @@ void main() {
       expect(result.points, isNull);
     });
 
-    test('something changed, with the resume state and extra fields ignored', () async {
-      final adapter = FakeWorkerAdapter(
-        (_) => ok({
-          'changed': true,
-          'updated_at': 1794026909,
-          'points': 337,
-          'points_tier': 'bronze',
-          'gems': 50,
-          'current_learning_unit': 'LU-0088',
-          'last_activity_type': 'video',
-        }),
-      );
-      final result = await repoFor(adapter).sync(lastUpdated: 1);
-      expect(result.changed, isTrue);
-      expect(result.points, 337);
-      expect(result.currentLearningUnit, 'LU-0088');
-      expect(result.lastActivityType, 'video');
-      expect(result.lastSubmission, isNull);
-    });
+    test(
+      'something changed, with the resume state and extra fields ignored',
+      () async {
+        final adapter = FakeWorkerAdapter(
+          (_) => ok({
+            'changed': true,
+            'updated_at': 1794026909,
+            'points': 337,
+            'points_tier': 'bronze',
+            'gems': 50,
+            'current_learning_unit': 'LU-0088',
+            'last_activity_type': 'video',
+          }),
+        );
+        final result = await repoFor(adapter).sync(lastUpdated: 1);
+        expect(result.changed, isTrue);
+        expect(result.points, 337);
+        expect(result.currentLearningUnit, 'LU-0088');
+        expect(result.lastActivityType, 'video');
+        expect(result.lastSubmission, isNull);
+      },
+    );
 
     test('a graded submission comes with it; status ignores case', () async {
       final adapter = FakeWorkerAdapter(
@@ -204,17 +249,6 @@ void main() {
       expect(sub.isGraded, isFalse);
       expect(sub.canSendAgain, isFalse);
     });
-  });
-
-  test('lastSubmission: points are there even with no update', () async {
-    final adapter = FakeWorkerAdapter(
-      (_) => ok({'has_update': false, 'points': 337, 'points_tier': 'bronze'}),
-    );
-    final result = await repoFor(adapter).lastSubmission(lastUpdated: 5);
-    expect(adapter.seen.single.path, '/progress/last_submission');
-    expect(result.hasUpdate, isFalse);
-    expect(result.points, 337);
-    expect(result.submission, isNull);
   });
 
   test('profile and config', () async {

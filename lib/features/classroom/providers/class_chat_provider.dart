@@ -6,6 +6,8 @@ import '../../../domain/learning_progress/class_session_bootstrap_provider.dart'
 import '../../../domain/learning_progress/home_dashboard_provider.dart';
 import '../../../core/localization/language_provider.dart';
 import '../../../domain/learner/learner_state_provider.dart';
+import '../../../domain/progress/progress_provider.dart';
+import '../../../domain/progress/step_recorder.dart';
 
 class NoUnitAvailableException implements Exception {
   const NoUnitAvailableException();
@@ -42,6 +44,10 @@ final classChatControllerProvider = FutureProvider.autoDispose
         unitIndex: bootstrap.unitIndex,
         initialLearnerState: bootstrap.learnerState,
         learnerStateRepository: learnerStateRepository,
+        stepRecorder: StepRecorder(
+          ref.read(progressRepositoryProvider),
+          studentId: bootstrap.learnerId,
+        ),
         onProgressSaved: () {
           if (!providerIsActive) return;
           ref.invalidate(learnerStateDataProvider(bootstrap.learnerId));

@@ -1,35 +1,35 @@
 import '../../core/cache/cache_keys.dart';
 import '../../core/cache/local_cache.dart';
-import 'learner_state_model.dart';
-import '../../core/network/api_endpoints.dart';
 import '../../core/network/http_client.dart';
+import '../auth/redeemed_student.dart';
+import '../profile/learner_profile_fields_model.dart';
+import '../progress/progress_repository.dart';
+import 'enrollment_model.dart';
+import 'learner_state_model.dart';
 
-const completedUnitStateFields =
-    'profile,xp,level,submission,enrollment,achievements';
+/// Picks the bundled course for a student. The Worker's `course_id` may not be
+/// a bundled course yet, so the first bundled course is used then (test only).
+typedef CourseResolver = Future<String?> Function(String? serverCourseId);
 
-class ProgressConflictException implements Exception {
-  ProgressConflictException(this.responseBody);
-  final Map<String, dynamic> responseBody;
-
-  @override
-  String toString() =>
-      'ProgressConflictException(learner progress write was rejected — local state left untouched)';
-}
-
-class ProgressNotRecordedException implements Exception {
-  ProgressNotRecordedException(this.responseBody);
-  final Map<String, dynamic> responseBody;
-
-  @override
-  String toString() =>
-      'ProgressNotRecordedException(learner progress write was not recorded)';
-}
-
+/// The learner state in v1.
+///
+/// It is built from the login answer (name, points, course). The unit and the
+/// step the student is on are kept on the phone, because the app follows the
+/// bundled course order. The Worker owns the points: they come from its answers.
 class LearnerStateRepository {
-  LearnerStateRepository(this._http, this._localCache);
+  LearnerStateRepository(
+    this._http,
+    this._localCache, {
+    ProgressRepository? progress,
+    CourseResolver? resolveCourse,
+  }) : _progress = progress,
+       _resolveCourse = resolveCourse;
 
+  // ignore: unused_field
   final HttpClient _http;
   final LocalCache _localCache;
+  final ProgressRepository? _progress;
+  final CourseResolver? _resolveCourse;
 
   Future<LearnerStateModel?> readCached(String learnerId) async {
     final raw = _localCache.getForeverRaw(CacheKeys.learnerState(learnerId));
@@ -37,93 +37,79 @@ class LearnerStateRepository {
     return LearnerStateModel.fromCache(raw);
   }
 
+  /// The saved state, or a new one built from the login answer. With
+  /// [forceRefresh] the points are asked from the Worker (`sync`) and the unit
+  /// step on the phone is kept.
   Future<LearnerStateModel> fetchState({
     required String learnerId,
-    String? fields,
     bool forceRefresh = false,
   }) async {
-    if (!forceRefresh) {
-      final cached = await readCached(learnerId);
-      if (cached != null) return cached;
-    }
-
-    final data = await _http.get(
-      ApiEndpoints.learnerState,
-      query: {'learner_id': learnerId, 'fields': ?fields},
-    );
-
-    final serverState = await _writeFull(learnerId, data);
-    return restoreLocalProgress(serverState);
+    final cached = await readCached(learnerId);
+    if (cached == null) return restoreLocalProgress(await _seed(learnerId));
+    if (forceRefresh) await refreshPoints(learnerId);
+    return restoreLocalProgress(await readCached(learnerId) ?? cached);
   }
 
-  Future<LearnerStateModel> enrollCourse({
-    required String learnerId,
-    required String course,
-  }) async {
-    final data = await _http.post(
-      ApiEndpoints.learnerEnroll,
-      body: {'learner_id': learnerId, 'course': course},
+  Future<LearnerStateModel> _seed(String learnerId) async {
+    final roster = _localCache.getForeverList(
+      CacheKeys.linkRoster(),
+      RedeemedStudent.fromJson,
     );
-    return _writePartial(learnerId, data);
+    final student = roster?.where((s) => s.studentId == learnerId).firstOrNull;
+    final course = await _resolveCourse?.call(student?.courseId);
+    final model = LearnerStateModel(
+      learnerId: learnerId,
+      profile: LearnerProfileFieldsModel(
+        studentName: student?.name,
+        language: student?.language,
+      ),
+      xp: student?.points ?? 0,
+      enrollment: EnrollmentModel(course: course ?? student?.courseId),
+    );
+    await _localCache.setForeverRaw(
+      CacheKeys.learnerState(learnerId),
+      model.toJson(),
+    );
+    return model;
   }
 
-  Future<LearnerStateModel> submitProgress({
-    required String learnerId,
-    int? xp,
-    String? activityType,
-    int? videoIndex,
-    int? quizIndex,
-    int? submissionIndex,
-    String? fields,
-  }) async {
-    final data = await _http.post(
-      ApiEndpoints.learnerSubmitProgress,
-      body: {
-        'learner_id': learnerId,
-        'xp': ?xp,
-        'activity_type': ?activityType,
-        'video_index': ?videoIndex,
-        'quiz_index': ?quizIndex,
-        'submission_index': ?submissionIndex,
-        'fields': ?fields,
-      },
+  /// Takes the student's points from the Worker. A network problem keeps the
+  /// saved points: the home screen must still open.
+  Future<void> refreshPoints(String learnerId) async {
+    final progress = _progress;
+    if (progress == null) return;
+    try {
+      final sync = await progress.sync(lastUpdated: 0);
+      final points = sync.points;
+      if (points != null) await applyServerPoints(learnerId, points);
+    } catch (_) {
+      // Keep what we have.
+    }
+  }
+
+  /// Saves the total the Worker gave in an answer.
+  Future<void> applyServerPoints(String learnerId, int pointsTotal) async {
+    final existing = await readCached(learnerId);
+    if (existing == null) return;
+    existing.xp = pointsTotal;
+    await _localCache.setForeverRaw(
+      CacheKeys.learnerState(learnerId),
+      existing.toJson(),
     );
+  }
 
-    final mergedProgress = {
-      ...data,
-      'video_index': ?videoIndex,
-      'quiz_index': ?quizIndex,
-    };
-
-    final conflict = data['conflict'] == true;
-    final recorded = data['progress_recorded'] == true;
-
-    if (conflict && !recorded) {
-      await _markConflict(learnerId);
-      throw ProgressConflictException(data);
-    }
-    if (data['success'] == false) {
-      throw ProgressNotRecordedException(data);
-    }
-
-    final model = await _writeProgressResult(learnerId, mergedProgress);
-    if (submissionIndex != null && model.enrollment != null) {
-      model.enrollment = model.enrollment!.copyWith(
-        submissionIndex: _max(
-          model.enrollment!.submissionIndex,
-          submissionIndex,
-        ),
-      );
-    }
-    if (activityType == 'unit_complete') {
-      await _localCache.delete(CacheKeys.activityProgress(learnerId));
-      model.hasPendingLocalProgress = false;
-      model.pendingProgressXp = 0;
-      await _localCache.setForeverRaw(
-        CacheKeys.learnerState(learnerId),
-        model.toJson(),
-      );
-    }
+  /// Finishes the unit on the phone. The steps were already recorded on the
+  /// Worker one by one, so there is nothing to send here.
+  Future<LearnerStateModel> completeUnitLocally(String learnerId) async {
+    final model =
+        await readCached(learnerId) ?? LearnerStateModel(learnerId: learnerId);
+    await _localCache.delete(CacheKeys.activityProgress(learnerId));
+    model.hasPendingLocalProgress = false;
+    model.pendingProgressXp = 0;
+    await _localCache.setForeverRaw(
+      CacheKeys.learnerState(learnerId),
+      model.toJson(),
+    );
     return model;
   }
 
@@ -303,6 +289,7 @@ class LearnerStateRepository {
   Future<void> clearHomeCelebration(String learnerId) =>
       _localCache.delete(CacheKeys.homeCelebration(learnerId));
 
+  /// A unit that was finished but not closed (the app stopped): close it now.
   Future<LearnerStateModel?> syncCompletedLocalProgress(
     String learnerId,
   ) async {
@@ -310,24 +297,7 @@ class LearnerStateRepository {
       CacheKeys.activityProgress(learnerId),
     );
     if (progress == null || progress['ready_to_sync'] != true) return null;
-
-    final unitIndex = _localUnitIndex(progress);
-    final synced = await submitProgress(
-      learnerId: learnerId,
-      xp: (progress['pending_xp'] as num?)?.toInt(),
-      activityType: 'unit_complete',
-      videoIndex: progress['video_done'] == true && unitIndex != null
-          ? unitIndex + 1
-          : null,
-      quizIndex: progress['quiz_done'] == true && unitIndex != null
-          ? unitIndex + 1
-          : null,
-      submissionIndex: progress['submission_done'] == true && unitIndex != null
-          ? unitIndex + 1
-          : null,
-      fields: completedUnitStateFields,
-    );
-    return synced;
+    return completeUnitLocally(learnerId);
   }
 
   Future<void> applyAchievementAward(
@@ -342,56 +312,6 @@ class LearnerStateRepository {
       CacheKeys.learnerState(learnerId),
       existing.toJson(),
     );
-  }
-
-  Future<void> _markConflict(String learnerId) async {
-    final existing = await readCached(learnerId);
-    if (existing == null) return;
-    existing.hasPendingConflict = true;
-    await _localCache.setForeverRaw(
-      CacheKeys.learnerState(learnerId),
-      existing.toJson(),
-    );
-  }
-
-  Future<LearnerStateModel> _writeFull(
-    String learnerId,
-    Map<String, dynamic> json,
-  ) async {
-    final model = LearnerStateModel.fromFullJson(learnerId, json);
-    await _localCache.setForeverRaw(
-      CacheKeys.learnerState(learnerId),
-      model.toJson(),
-    );
-    return model;
-  }
-
-  Future<LearnerStateModel> _writePartial(
-    String learnerId,
-    Map<String, dynamic> json,
-  ) async {
-    final existing = await readCached(learnerId);
-    final model = existing == null
-        ? LearnerStateModel.fromFullJson(learnerId, json)
-        : existing.mergeFrom(json);
-    await _localCache.setForeverRaw(
-      CacheKeys.learnerState(learnerId),
-      model.toJson(),
-    );
-    return model;
-  }
-
-  Future<LearnerStateModel> _writeProgressResult(
-    String learnerId,
-    Map<String, dynamic> json,
-  ) async {
-    final model = await _writePartial(learnerId, json);
-    model.hasPendingConflict = false;
-    await _localCache.setForeverRaw(
-      CacheKeys.learnerState(learnerId),
-      model.toJson(),
-    );
-    return model;
   }
 
   Future<void> invalidate(String learnerId) =>

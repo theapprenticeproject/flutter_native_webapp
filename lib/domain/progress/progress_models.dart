@@ -125,34 +125,6 @@ class SyncResult {
   );
 }
 
-/// The answer of `/progress/last_submission`. Points come back even when there
-/// is no update, so this one call can refresh a header.
-class LastSubmissionResult {
-  const LastSubmissionResult({
-    required this.hasUpdate,
-    this.points,
-    this.pointsTier,
-    this.submission,
-  });
-
-  final bool hasUpdate;
-  final int? points;
-  final String? pointsTier;
-  final SubmissionInfo? submission;
-
-  factory LastSubmissionResult.fromJson(Map<String, dynamic> json) =>
-      LastSubmissionResult(
-        hasUpdate: json['has_update'] == true,
-        points: _int(json['points']),
-        pointsTier: json['points_tier'] as String?,
-        submission: json['last_submission'] is Map
-            ? SubmissionInfo.fromJson(
-                Map<String, dynamic>.from(json['last_submission'] as Map),
-              )
-            : null,
-      );
-}
-
 /// The answer of `/profile/get_profile`. (The Worker names the field `name1`.)
 class StudentProfile {
   const StudentProfile({

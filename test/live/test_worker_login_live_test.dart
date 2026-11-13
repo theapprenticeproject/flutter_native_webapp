@@ -13,6 +13,7 @@ import 'package:tapapp/core/constants/app_constants.dart';
 import 'package:tapapp/core/network/api_exception.dart';
 import 'package:tapapp/core/network/http_client.dart';
 import 'package:tapapp/domain/auth/magic_link_repository.dart';
+import 'package:tapapp/domain/learner/learner_state_repository.dart';
 import 'package:tapapp/domain/progress/progress_repository.dart';
 
 /// Signs in against the real test Worker with its seeded phones. It reads and
@@ -128,12 +129,30 @@ void main() {
     expect(sync.points, isNotNull);
     expect(sync.currentLearningUnit, isNotNull);
 
-    final last = await progress.lastSubmission(lastUpdated: 0);
-    expect(last.points, isNotNull);
-
     final config = await progress.appConfig();
     expect(config.uploadMaxBytesVideo, greaterThan(config.uploadMaxBytesImage));
     expect(config.tierFor(0), 'bronze');
     expect(config.tierFor(1000), 'silver');
+  }, skip: skip);
+
+  test('learner state is built from login and refreshed from sync', () async {
+    await repo.redeem(await mint('919100000001'));
+    final cache = LocalCache.forTesting(values, indexes);
+    final learner = LearnerStateRepository(
+      http,
+      cache,
+      progress: ProgressRepository(http),
+      resolveCourse: (_) async => 'Some-Bundled-Course',
+    );
+
+    final seeded = await learner.fetchState(learnerId: 'STU-FRESH-01');
+    expect(seeded.profile?.studentName, isNotEmpty);
+    expect(seeded.enrollment?.course, 'Some-Bundled-Course');
+
+    final refreshed = await learner.fetchState(
+      learnerId: 'STU-FRESH-01',
+      forceRefresh: true,
+    );
+    expect(refreshed.xp, isNotNull);
   }, skip: skip);
 }

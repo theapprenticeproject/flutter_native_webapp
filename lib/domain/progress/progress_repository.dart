@@ -1,3 +1,4 @@
+import '../../core/network/api_exception.dart';
 import '../../core/network/http_client.dart';
 import 'progress_models.dart';
 
@@ -28,20 +29,36 @@ class ProgressRepository {
 
   final HttpClient _http;
 
+  /// Records that the student watched the video. This is not a video sent for
+  /// review: it only marks the video as watched.
   Future<ProgressResult> submitVideo({
     required String unitId,
+    required String videoId,
     required bool watched,
     required String idempotencyKey,
-  }) async => ProgressResult.fromJson(
-    await _http.postApi(
-      '/progress/submit_video',
-      body: {
-        'unit_id': unitId,
-        'watched': watched,
-        'idempotency_key': idempotencyKey,
-      },
-    ),
-  );
+  }) async {
+    final body = {
+      'unit_id': unitId,
+      'video_id': videoId,
+      'watched': watched,
+      'idempotency_key': idempotencyKey,
+    };
+    try {
+      return ProgressResult.fromJson(
+        await _http.postApi('/progress/submit_video_watched', body: body),
+      );
+    } on ApiException catch (e) {
+      // TEMPORARY: the test Worker still has only the old route name. Remove
+      // this fallback once it has `/progress/submit_video_watched`. A real
+      // NOT_FOUND (a missing video) has another message and is not retried.
+      if (e.code == 'NOT_FOUND' && e.message == 'no such route') {
+        return ProgressResult.fromJson(
+          await _http.postApi('/progress/submit_video', body: body),
+        );
+      }
+      rethrow;
+    }
+  }
 
   Future<ProgressResult> submitQuiz({
     required String unitId,
@@ -71,15 +88,6 @@ class ProgressRepository {
           body: {'last_updated': lastUpdated},
         ),
       );
-
-  Future<LastSubmissionResult> lastSubmission({
-    required int lastUpdated,
-  }) async => LastSubmissionResult.fromJson(
-    await _http.postApi(
-      '/progress/last_submission',
-      body: {'last_updated': lastUpdated},
-    ),
-  );
 
   Future<StudentProfile> getProfile() async =>
       StudentProfile.fromJson(await _http.postApi('/profile/get_profile'));

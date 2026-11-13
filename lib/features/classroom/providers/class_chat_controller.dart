@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 
 import '../../../domain/learner/learner_state_model.dart';
 import '../../../domain/learner/learner_state_repository.dart';
+import '../../../domain/progress/step_recorder.dart';
 import '../models/activity_flow_model.dart';
 import '../models/archetype_step_selector.dart';
 import '../models/class_chat_message_model.dart';
@@ -43,11 +44,13 @@ class ClassChatController extends ChangeNotifier {
     required this.unitIndex,
     required LearnerStateModel initialLearnerState,
     required LearnerStateRepository learnerStateRepository,
+    required StepRecorder stepRecorder,
     VoidCallback? onProgressSaved,
   }) : _flow = flow,
        _unit = unit,
        _nextUnit = nextUnit,
        _learnerStateRepository = learnerStateRepository,
+       _stepRecorder = stepRecorder,
        _learnerState = initialLearnerState,
        _startingPoints = initialLearnerState.xp ?? 0,
        _onProgressSaved = onProgressSaved {
@@ -69,6 +72,7 @@ class ClassChatController extends ChangeNotifier {
   final CourseUnitModel _unit;
   final CourseUnitModel? _nextUnit;
   final LearnerStateRepository _learnerStateRepository;
+  final StepRecorder _stepRecorder;
   final VoidCallback? _onProgressSaved;
 
   LearnerStateModel _learnerState;
@@ -328,7 +332,6 @@ class ClassChatController extends ChangeNotifier {
     if (video == null || _videoWatchedThisUnit) return;
 
     _videoWatchedThisUnit = true;
-    _accumulatedVideoPoints += video.points;
     _awaitingInput = false;
 
     if (msgIndex != -1) {
@@ -347,9 +350,10 @@ class ClassChatController extends ChangeNotifier {
       ),
     );
 
-    final saved = await _saveVideoProgress(video.points);
+    final saved = await _saveVideoProgress();
     if (_disposed) return;
     if (!saved) {
+      _videoWatchedThisUnit = false;
       _showProgressSaveRetry(
         'We could not save that you watched the video. Please check your connection and retry.',
         action: 'save_video',
@@ -362,7 +366,7 @@ class ClassChatController extends ChangeNotifier {
       stepId: 'VIDEO-CHECKPOINT',
       image: 'assets/class-screen/10Points.png',
       text:
-          'Wow! That’s amazing 🤩  $studentName, you just earned ${video.points} points🪩 for watching the video 🥳🥳🥳\n\nNow it’s time to do the activity submission 🌟',
+          'Wow! That’s amazing 🤩  $studentName, you just earned $_accumulatedVideoPoints points🪩 for watching the video 🥳🥳🥳\n\nNow it’s time to do the activity submission 🌟',
       buttonLabel: 'Continue',
       action: 'video_reward',
     );
@@ -792,7 +796,7 @@ class ClassChatController extends ChangeNotifier {
     final video = _currentVideo;
     if (video == null) return;
 
-    final saved = await _saveVideoProgress(video.points);
+    final saved = await _saveVideoProgress();
     if (_disposed) return;
     if (!saved) {
       _showProgressSaveRetry(
@@ -806,24 +810,39 @@ class ClassChatController extends ChangeNotifier {
       stepId: 'VIDEO-CHECKPOINT',
       image: 'assets/class-screen/10Points.png',
       text:
-          'Wow! That’s amazing 🤩  $studentName, you just earned ${video.points} points🪩 for watching the video 🥳🥳🥳\n\nNow it’s time to do the activity submission 🌟',
+          'Wow! That’s amazing 🤩  $studentName, you just earned $_accumulatedVideoPoints points🪩 for watching the video 🥳🥳🥳\n\nNow it’s time to do the activity submission 🌟',
       buttonLabel: 'Continue',
       action: 'video_reward',
     );
   }
 
-  Future<bool> _saveVideoProgress(int points) async {
+  /// Records the video on the Worker, then on the phone. The points shown are
+  /// the ones the Worker gave (R-41). On a failure it returns false and the
+  /// student sees the Retry button. The retry sends the same key.
+  Future<bool> _saveVideoProgress() async {
     if (_videoProgressSaved) return true;
+    final video = _currentVideo;
+    if (video == null) return true;
     _videoProgressSaved = true;
     var saved = false;
     try {
+      final record = await _stepRecorder.recordVideo(
+        unitId: _currentUnit.unitId,
+        videoId: video.videoId,
+      );
+      _accumulatedVideoPoints = record.pointsAwarded;
       _learnerState = await _learnerStateRepository.applyLocalProgress(
         learnerId: learnerId,
-        xp: points,
+        xp: record.pointsAwarded,
         videoIndex: unitIndex + 1,
       );
+      final total = record.pointsTotal;
+      if (total != null) {
+        await _learnerStateRepository.applyServerPoints(learnerId, total);
+      }
       saved = true;
-    } catch (_) {
+    } catch (e) {
+      debugPrint('Could not record the video: $e');
       saved = false;
     }
     _videoProgressSaved = saved;
@@ -910,14 +929,8 @@ class ClassChatController extends ChangeNotifier {
           ? _learnerState.pendingProgressXp
           : sessionTotalPoints;
 
-      final submittedState = await _learnerStateRepository.submitProgress(
-        learnerId: learnerId,
-        xp: _completedUnitPoints > 0 ? _completedUnitPoints : null,
-        activityType: 'unit_complete',
-        videoIndex: _videoWatchedThisUnit ? unitIndex + 1 : null,
-        quizIndex: _quizProgressSaved ? unitIndex + 1 : null,
-        submissionIndex: _submissionAcceptedThisUnit ? unitIndex + 1 : null,
-        fields: completedUnitStateFields,
+      final submittedState = await _learnerStateRepository.completeUnitLocally(
+        learnerId,
       );
 
       _learnerState = submittedState;
@@ -927,33 +940,6 @@ class ClassChatController extends ChangeNotifier {
       _outcome = await _completionOutcome();
       _onProgressSaved?.call();
       notifyListeners();
-    } on ProgressConflictException {
-      _hasCompletedUnit = false;
-      try {
-        final refreshed = await _learnerStateRepository.fetchState(
-          learnerId: learnerId,
-          forceRefresh: true,
-        );
-        _learnerState = refreshed;
-        _messages.removeWhere((m) => m.stepId == 'SAVING');
-        _outcome = await _completionOutcome();
-        _onProgressSaved?.call();
-        notifyListeners();
-      } catch (_) {
-        _messages.removeWhere((m) => m.stepId == 'SAVING');
-        _errorMessage =
-            'We could not save your progress. Please check your connection.';
-        _push(
-          ClassChatMessage(
-            id: _newId(),
-            stepId: 'ERROR',
-            sender: ClassChatSender.bot,
-            contentType: ClassChatContentType.errorRetry,
-            text: _errorMessage,
-          ),
-        );
-        notifyListeners();
-      }
     } catch (_) {
       _hasCompletedUnit = false;
       _messages.removeWhere((m) => m.stepId == 'SAVING');
