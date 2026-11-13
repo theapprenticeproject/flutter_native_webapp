@@ -136,6 +136,7 @@ void main() {
       );
       final result = await repoFor(adapter).submitQuiz(
         unitId: 'LU-0088',
+        quizId: 'QZ-1',
         answers: const [
           QuizAnswer(questionId: 'Q1', selectedKey: 'a'),
           QuizAnswer(questionId: 'Q2', selectedKey: 'c'),
@@ -145,6 +146,7 @@ void main() {
       );
 
       expect(adapter.seen.single.path, '/progress/submit_quiz');
+      expect(adapter.seen.single.body!['quiz_id'], 'QZ-1');
       expect(adapter.seen.single.body!['answers'], [
         {'question_id': 'Q1', 'selected_key': 'a'},
         {'question_id': 'Q2', 'selected_key': 'c'},
@@ -158,9 +160,12 @@ void main() {
     test('an empty answer list is refused before any request', () async {
       final adapter = FakeWorkerAdapter((_) => ok({}));
       await expectLater(
-        repoFor(
-          adapter,
-        ).submitQuiz(unitId: 'U', answers: const [], idempotencyKey: 'k'),
+        repoFor(adapter).submitQuiz(
+          unitId: 'U',
+          quizId: 'Z',
+          answers: const [],
+          idempotencyKey: 'k',
+        ),
         throwsA(isA<ArgumentError>()),
       );
       expect(adapter.seen, isEmpty);

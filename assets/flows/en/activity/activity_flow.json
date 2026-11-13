@@ -164,7 +164,7 @@
         "source": "generated",
         "kind": "celebration"
       },
-      "display_text": "Nailed it! [+{{quiz_points}} pts]",
+      "display_text": "Nailed it!",
       "auto_advance_ms": 1500,
       "next_step_rule": {
         "if_more_questions": "AF-QUIZ-QUESTION",

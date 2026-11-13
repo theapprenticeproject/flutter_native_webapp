@@ -198,7 +198,7 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
                   Expanded(
                     child: Text(
                       toast.isCorrect
-                          ? 'Correct Answer!  +${toast.points} points'
+                          ? 'Correct Answer!'
                           : 'Not quite. Correct answer: ${toast.correctAnswer ?? ''}',
                       style: const TextStyle(
                         color: Color(0xFF25252B),

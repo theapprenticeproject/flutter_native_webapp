@@ -4,6 +4,8 @@ import 'package:flutter/foundation.dart';
 
 import '../../../domain/learner/learner_state_model.dart';
 import '../../../domain/learner/learner_state_repository.dart';
+import '../../../domain/progress/progress_repository.dart';
+import '../../../domain/progress/quiz_answers.dart';
 import '../../../domain/progress/step_recorder.dart';
 import '../models/activity_flow_model.dart';
 import '../models/archetype_step_selector.dart';
@@ -16,19 +18,15 @@ import '../models/submission_answer_model.dart';
 
 enum ClassSessionOutcome { none, choice }
 
-const int _quizPointsPerCorrectAnswer = 5;
-
 class ClassQuizToast {
   const ClassQuizToast({
     required this.id,
     required this.isCorrect,
-    required this.points,
     this.correctAnswer,
   });
 
   final int id;
   final bool isCorrect;
-  final int points;
   final String? correctAnswer;
 }
 
@@ -101,6 +99,9 @@ class ClassChatController extends ChangeNotifier {
 
   int _quizIndex = 0;
   int _quizCorrectCount = 0;
+
+  /// The student's answers in question order, kept until the quiz is sent.
+  final List<QuizAnswer> _quizAnswers = [];
 
   int _accumulatedVideoPoints = 0;
   int _accumulatedSubmissionPoints = 0;
@@ -237,10 +238,6 @@ class ClassChatController extends ChangeNotifier {
           '${explicitPoints ?? _currentVideo?.points ?? 0}',
         )
         .replaceAll('{{submission_points}}', '${explicitPoints ?? unit.xp}')
-        .replaceAll(
-          '{{quiz_points}}',
-          '${explicitPoints ?? _quizPointsPerCorrectAnswer}',
-        )
         .replaceAll('{{quiz_question_count}}', '${_quizQuestions.length}');
   }
 
@@ -542,15 +539,14 @@ class ClassChatController extends ChangeNotifier {
     );
 
     final isCorrect = optionKey == question.answerKey;
-    if (isCorrect) {
-      _quizCorrectCount++;
-      _accumulatedQuizPoints += _quizPointsPerCorrectAnswer;
-    }
+    // Right or wrong comes from the key on the phone, at once. The points come
+    // later, from the Worker's answer to the whole quiz (R-41, R-91).
+    _quizAnswers.add(quizAnswerFor(question, optionKey));
+    if (isCorrect) _quizCorrectCount++;
 
     _quizToast = ClassQuizToast(
       id: ++_quizToastId,
       isCorrect: isCorrect,
-      points: isCorrect ? _quizPointsPerCorrectAnswer : 0,
       correctAnswer: isCorrect ? null : question.options[question.answerKey],
     );
     notifyListeners();
@@ -700,7 +696,7 @@ class ClassChatController extends ChangeNotifier {
   }
 
   Future<void> _saveQuizThenShowTotals() async {
-    final saved = await _saveQuizProgress(_accumulatedQuizPoints);
+    final saved = await _saveQuizProgress();
     if (_disposed) return;
     if (!saved) {
       _showProgressSaveRetry(
@@ -869,18 +865,34 @@ class ClassChatController extends ChangeNotifier {
     return saved;
   }
 
-  Future<bool> _saveQuizProgress(int points) async {
+  /// Sends the quiz to the Worker once, then saves it on the phone. The points
+  /// are the ones the Worker gave. On a failure it returns false and the
+  /// student sees the Retry button. The retry sends the same key.
+  Future<bool> _saveQuizProgress() async {
     if (_quizProgressSaved) return true;
+    final quiz = _currentUnit.quiz;
+    if (quiz == null) return true;
     _quizProgressSaved = true;
     var saved = false;
     try {
+      final record = await _stepRecorder.recordQuiz(
+        unitId: _currentUnit.unitId,
+        quizId: quiz.quizId,
+        answers: List.unmodifiable(_quizAnswers),
+      );
+      _accumulatedQuizPoints = record.pointsAwarded;
       _learnerState = await _learnerStateRepository.applyLocalProgress(
         learnerId: learnerId,
-        xp: points,
+        xp: record.pointsAwarded,
         quizIndex: unitIndex + 1,
       );
+      final total = record.pointsTotal;
+      if (total != null) {
+        await _learnerStateRepository.applyServerPoints(learnerId, total);
+      }
       saved = true;
-    } catch (_) {
+    } catch (e) {
+      debugPrint('Could not record the quiz: $e');
       saved = false;
     }
     _quizProgressSaved = saved;

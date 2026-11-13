@@ -62,6 +62,7 @@ class ProgressRepository {
 
   Future<ProgressResult> submitQuiz({
     required String unitId,
+    required String quizId,
     required List<QuizAnswer> answers,
     required String idempotencyKey,
   }) async {
@@ -73,6 +74,7 @@ class ProgressRepository {
         '/progress/submit_quiz',
         body: {
           'unit_id': unitId,
+          'quiz_id': quizId,
           'answers': [for (final a in answers) a.toJson()],
           'idempotency_key': idempotencyKey,
         },
