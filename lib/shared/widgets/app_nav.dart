@@ -10,15 +10,12 @@ class AppNav extends StatelessWidget {
 
   const AppNav({super.key, required this.child});
 
+  /// The bottom bar has 3 items (R-1). There is no Class tab: the activity
+  /// opens from Home (R-2), so Home stays the active tab while it runs.
   static const _items = [
     _NavDestination(AppRoutes.home, Icons.home_outlined, 'Home'),
-    _NavDestination(AppRoutes.classroom, Icons.school_outlined, 'Class'),
-    _NavDestination(AppRoutes.passport, Icons.badge_outlined, 'Passport'),
-    _NavDestination(
-      AppRoutes.profile,
-      Icons.account_circle_outlined,
-      'Profile',
-    ),
+    _NavDestination(AppRoutes.gallery, Icons.photo_library_outlined, 'Gallery'),
+    _NavDestination(AppRoutes.passport, Icons.account_circle_outlined, 'Me'),
   ];
 
   @override
@@ -57,7 +54,10 @@ class _BottomNav extends StatelessWidget {
                   fit: FlexFit.loose,
                   child: SizedBox(
                     width: MediaQuery.sizeOf(context).width > 700 ? 180 : null,
-                    child: _NavItem(item: item, active: location == item.route),
+                    child: _NavItem(
+                      item: item,
+                      active: _isActive(item, location),
+                    ),
                   ),
                 ),
             ],
@@ -67,6 +67,13 @@ class _BottomNav extends StatelessWidget {
     );
   }
 }
+
+/// The activity (`/classroom`) opens from Home, so it counts as Home.
+/// Settings (`/profile`) is opened from Me, so it counts as Me.
+bool _isActive(_NavDestination item, String location) =>
+    location == item.route ||
+    (item.route == AppRoutes.home && location == AppRoutes.classroom) ||
+    (item.route == AppRoutes.passport && location == AppRoutes.profile);
 
 class _NavItem extends StatelessWidget {
   final _NavDestination item;

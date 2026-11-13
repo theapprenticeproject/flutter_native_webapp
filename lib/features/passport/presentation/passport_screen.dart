@@ -11,6 +11,7 @@ import '../../../shared/widgets/app_header.dart';
 import '../../../shared/widgets/app_nav.dart';
 import '../../../shared/widgets/load_error_view.dart';
 import '../../../shared/widgets/loading_view.dart';
+import 'widgets/me_settings_button.dart';
 
 class PassportScreen extends ConsumerWidget {
   const PassportScreen({super.key});
@@ -60,7 +61,7 @@ class _PassportDashboard extends StatelessWidget {
               child: Column(
                 children: [
                   AppHeader(
-                    title: 'Passport',
+                    title: 'Me',
                     studentName: progress.studentName,
                     subtitle: 'Have a look at your progress',
                     points: progress.points,
@@ -133,6 +134,7 @@ class _PassportDashboard extends StatelessWidget {
                       },
                     ),
                   ),
+                  const MeSettingsButton(),
                 ],
               ),
             ),

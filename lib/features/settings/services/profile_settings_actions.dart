@@ -2,7 +2,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../domain/profile/active_profile_model.dart';
 import '../../../domain/learner/learner_state_model.dart';
-import '../../../domain/profile/profile_summary_model.dart';
 import '../../../domain/learner/learner_state_provider.dart';
 import '../../../domain/profile/profile_provider.dart';
 
@@ -82,34 +81,6 @@ class ProfileSettingsActions {
     return ProfileSaveResult(
       learnerState: updatedState,
       updatedProfile: updatedProfile,
-    );
-  }
-
-  Future<ProfileSettingsSnapshot> switchProfile({
-    required WidgetRef ref,
-    required String phone,
-    required ProfileSummaryModel profile,
-  }) async {
-    final repository = await ref.read(profileRepositoryProvider.future);
-    final learnerState = await repository.selectProfile(
-      phone: phone,
-      learnerId: profile.learnerId,
-    );
-
-    final activeProfile = ActiveProfileModel(
-      phone: phone,
-      learnerId: profile.learnerId,
-      studentName: learnerState.profile?.studentName ?? profile.studentName,
-      grade: profile.grade,
-      division: profile.division,
-      avatar: profile.avatar,
-      onboardingCompleted: profile.onboardingCompleted,
-    );
-    await repository.setActiveProfile(activeProfile);
-
-    return ProfileSettingsSnapshot(
-      activeProfile: activeProfile,
-      learnerState: learnerState,
     );
   }
 }

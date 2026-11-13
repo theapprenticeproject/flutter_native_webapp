@@ -3,8 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/theme/app_theme.dart';
-import '../../../../domain/profile/profile_summary_model.dart';
-import '../../../../domain/profile/profile_provider.dart';
+import '../../../../domain/auth/auth_provider.dart';
+import '../../../../domain/auth/redeemed_student.dart';
 
 class SwitchProfileBar extends StatelessWidget {
   const SwitchProfileBar({
@@ -76,17 +76,17 @@ class SwitchProfileBar extends StatelessWidget {
   }
 }
 
+/// Lists the students saved at login (R-34). It needs no phone number and makes
+/// no request: switching only changes the saved token.
 class SwitchProfileDialog extends ConsumerStatefulWidget {
   const SwitchProfileDialog({
-    required this.phone,
     required this.activeLearnerId,
     required this.onProfileSelected,
     super.key,
   });
 
-  final String phone;
   final String? activeLearnerId;
-  final Future<void> Function(ProfileSummaryModel) onProfileSelected;
+  final Future<void> Function(RedeemedStudent) onProfileSelected;
 
   @override
   ConsumerState<SwitchProfileDialog> createState() =>
@@ -96,17 +96,15 @@ class SwitchProfileDialog extends ConsumerStatefulWidget {
 class _SwitchProfileDialogState extends ConsumerState<SwitchProfileDialog> {
   String? _switchingLearnerId;
 
-  Future<void> _handleTap(ProfileSummaryModel profile) async {
-    setState(() => _switchingLearnerId = profile.learnerId);
+  Future<void> _handleTap(RedeemedStudent profile) async {
+    setState(() => _switchingLearnerId = profile.studentId);
     await widget.onProfileSelected(profile);
     if (mounted) setState(() => _switchingLearnerId = null);
   }
 
   @override
   Widget build(BuildContext context) {
-    final profilesAsync = ref.watch(
-      profilesPageDataProvider(ProfilesPageRequest(phone: widget.phone)),
-    );
+    final profilesAsync = ref.watch(linkRosterProvider);
 
     return Dialog(
       insetPadding: const EdgeInsets.all(24),
@@ -163,8 +161,8 @@ class _SwitchProfileDialogState extends ConsumerState<SwitchProfileDialog> {
                         _ProfileOption(
                           profile: profiles[i],
                           selected:
-                              profiles[i].learnerId == widget.activeLearnerId,
-                          loading: _switchingLearnerId == profiles[i].learnerId,
+                              profiles[i].studentId == widget.activeLearnerId,
+                          loading: _switchingLearnerId == profiles[i].studentId,
                           onTap: _switchingLearnerId == null
                               ? () => _handleTap(profiles[i])
                               : null,
@@ -235,17 +233,14 @@ class _ProfileOption extends StatelessWidget {
     required this.onTap,
   });
 
-  final ProfileSummaryModel profile;
+  final RedeemedStudent profile;
   final bool selected;
   final bool loading;
   final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
-    final meta = [
-      if (profile.grade != null) 'Grade ${profile.grade}',
-      if (profile.division != null) profile.division,
-    ].join(' • ');
+    final meta = profile.grade.isEmpty ? '' : 'Grade ${profile.grade}';
 
     return InkWell(
       onTap: onTap,
@@ -263,7 +258,7 @@ class _ProfileOption extends StatelessWidget {
               radius: 18,
               backgroundColor: AppTheme.softLavender,
               child: Text(
-                _initials(profile.studentName),
+                _initials(profile.name),
                 style: GoogleFonts.inter(
                   fontSize: 11,
                   fontWeight: FontWeight.w700,
@@ -278,9 +273,7 @@ class _ProfileOption extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    profile.studentName.isEmpty
-                        ? 'Student'
-                        : profile.studentName,
+                    profile.name.isEmpty ? 'Student' : profile.name,
                     style: GoogleFonts.inter(
                       fontSize: 12,
                       fontWeight: FontWeight.w700,

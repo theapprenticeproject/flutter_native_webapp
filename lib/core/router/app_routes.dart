@@ -12,6 +12,7 @@ class AppRoutes {
   static const String home = '/home';
   static const String classroom = '/classroom';
   static const String passport = '/passport';
+  static const String gallery = '/gallery';
   static const String profile = '/profile';
   static const String error = '/error';
 

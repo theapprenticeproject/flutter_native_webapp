@@ -10,6 +10,7 @@ import '../features/auth/presentation/profile_select_screen.dart';
 import '../features/onboarding/presentation/onboarding_screen.dart';
 import '../features/home/presentation/home_screen.dart';
 import '../features/classroom/presentation/class_screen.dart';
+import '../features/gallery/presentation/gallery_screen.dart';
 import '../features/passport/presentation/passport_screen.dart';
 import '../features/settings/presentation/settings_screen.dart';
 import '../features/welcome/presentation/welcome_screen.dart';
@@ -168,6 +169,10 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: AppRoutes.classroom,
         pageBuilder: (context, state) => AppRoutes.page(const ClassScreen()),
+      ),
+      GoRoute(
+        path: AppRoutes.gallery,
+        pageBuilder: (context, state) => AppRoutes.page(const GalleryScreen()),
       ),
       GoRoute(
         path: AppRoutes.passport,

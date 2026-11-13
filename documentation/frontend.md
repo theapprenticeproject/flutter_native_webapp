@@ -44,6 +44,10 @@ The redirect checks the cached authentication session, active profile, and onboa
 
 Use `forceRefresh: true` only for conflict recovery or a user-requested refresh. It should not be the default navigation behavior.
 
+## The bottom bar (new)
+
+The bar has 3 items: **Home, Gallery, Me** (R-1). There is no Class tab: the activity opens from Home (R-2), and Home stays the active tab while it runs. **Gallery** (`/gallery`) is an empty state for now (task D9 builds it). **Me** opens today's Passport page, with a button to Settings, where the student switches profile (R-7, R-34). Settings counts as Me. **Switch profile** lists the students saved at login and swaps the saved token. It needs no phone number and makes no request (R-34). The full Me page (My projects and the rest) is task D8, and it replaces Passport and Profile. The code is in `lib/shared/widgets/app_nav.dart`, with a test in `test/shared/app_nav_test.dart`.
+
 ## Signing in with the magic link (new)
 
 The WhatsApp link carries a code. The route `/l/<code>` (`LinkSignInScreen`) calls `/auth/redeem` and gets one token per student on the phone. One student goes to Home. Several students go to the name picker (`/profile-select`). Picking a name only swaps the saved token, with no call. If a student token is lost, `/auth/select_profile` with the phone token gets a new one. The Worker has no token refresh, so a token that ends (30 days) means the student opens a new link. The code is in `lib/domain/auth/magic_link_repository.dart`, and the tokens are kept in `SecureTokenStore`.

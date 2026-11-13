@@ -4,8 +4,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../domain/profile/active_profile_model.dart';
 import '../../../domain/learner/learner_state_model.dart';
-import '../../../domain/profile/profile_summary_model.dart';
 import '../../../domain/auth/auth_provider.dart';
+import '../../../domain/auth/redeemed_student.dart';
+import '../../../domain/learning_progress/home_dashboard_provider.dart';
 import '../../../domain/learner/learner_state_provider.dart';
 import '../../../domain/profile/profile_provider.dart';
 import '../controllers/profile_form_controller.dart';
@@ -271,55 +272,35 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   }
 
   Future<void> _showSwitchProfile() async {
-    final phone = await _resolvePhone();
     if (!mounted || _disposed) return;
-
-    if (phone.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text(
-            'Could not verify your phone number. Please log in again.',
-          ),
-        ),
-      );
-      return;
-    }
-
     showDialog<void>(
       context: context,
       barrierColor: AppTheme.subtleShadow.withValues(alpha: 0.48),
       builder: (context) => SwitchProfileDialog(
-        phone: phone,
         activeLearnerId: _activeProfile?.learnerId,
         onProfileSelected: _switchToProfile,
       ),
     );
   }
 
-  Future<void> _switchToProfile(ProfileSummaryModel profile) async {
-    final phone = await _resolvePhone();
-    if (!mounted || _disposed) return;
-    if (phone.isEmpty) return;
-
+  /// Makes another student on this phone the active one. It only swaps the
+  /// saved token, with no request (R-34).
+  Future<void> _switchToProfile(RedeemedStudent student) async {
     try {
-      final snapshot = await _profileActions.switchProfile(
-        ref: ref,
-        phone: phone,
-        profile: profile,
-      );
-
+      final repository = await ref.read(magicLinkRepositoryProvider.future);
+      await repository.switchStudent(student.studentId);
       if (!mounted || _disposed) return;
 
       ref.invalidate(activeProfileProvider);
-      ref.invalidate(learnerStateDataProvider(profile.learnerId));
+      ref.invalidate(learnerStateDataProvider(student.studentId));
+      ref.invalidate(learningDashboardProvider);
 
+      Navigator.of(context).pop();
       setState(() {
-        _activeProfile = snapshot.activeProfile;
-        _learnerState = snapshot.learnerState;
+        _isLoadingProfile = true;
+        _isEditing = false;
       });
-      _syncControllersFromState();
-
-      if (mounted) Navigator.of(context).pop();
+      await _bootstrapProfile();
     } catch (e) {
       debugPrint('Failed to switch profile: $e');
       if (!mounted || _disposed) return;
