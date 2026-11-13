@@ -15,6 +15,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C6083-U01-V01",
           "id": 41,
           "nm": "Can waste become a holder? ♻️",
           "desc": "In this activity, students will make a pen holder using waste materials!They will use empty boxes, bottles, and leftover paper to create something useful. This activity will help students be creative and learn how to care for the environment. They will decorate their pen holder in their own way and make it unique!",
@@ -23,6 +24,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C6083-U01",
         "id": 42,
         "nm": "Can trash become a holder? 🗑️",
         "qs": [
@@ -140,6 +142,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C6083-U02-V01",
           "id": 42,
           "nm": "Can a box become stand? 📦",
           "desc": "In this activity, students will make a pen holder using waste materials.They will use boxes, bottles, and paper. This will help them be creative and care for the environment. They will decorate their pen holder in their own way.",
@@ -148,6 +151,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C6083-U02",
         "id": 43,
         "nm": "What makes your holder unique? ✨",
         "qs": [
@@ -265,6 +269,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C6083-U03-V01",
           "id": 43,
           "nm": "Can chips become pop art? 🎨",
           "desc": "In this activity, students will recognise the main features of pop art culture and create a pop art style advertisement inspired by Andy Warhol",
@@ -273,6 +278,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C6083-U03",
         "id": 44,
         "nm": "Who invented Pop Art anyway? 🎨",
         "qs": [
@@ -386,6 +392,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C6083-U04-V01",
           "id": 44,
           "nm": "Can one object pop four? 🖼️",
           "desc": "Students will create a Pop Art–style artwork inspired by Andy Warhol by drawing one simple object four times on their paper and coloring each version using different pairs of complementary colors. They will experiment with bold outlines, bright contrasts, and simple background patterns to make their artwork look vibrant and balanced.",
@@ -394,6 +401,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C6083-U04",
         "id": 45,
         "nm": "Can objects become pop art? 🍌",
         "qs": [
@@ -503,6 +511,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C6083-U05-V01",
           "id": 45,
           "nm": "Can paper strips weave stories? 🧵",
           "desc": "In this activity students will learn about the cultural references of Kente Weaving and how patterns and repetitions can be used in order to create a expressive artwork",
@@ -511,6 +520,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C6083-U05",
         "id": 46,
         "nm": "What story does Kente tell? 🧵",
         "qs": [
@@ -624,6 +634,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C6083-U06-V01",
           "id": 46,
           "nm": "Can Ghana's art use paper? 🪡",
           "desc": "In this activity, students will learn about a traditional African weaving technique using colorful strips of paper.",
@@ -632,6 +643,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C6083-U06",
         "id": 47,
         "nm": "Can strips become a weave? 🎨",
         "qs": [
@@ -689,6 +701,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C6083-U07-V01",
           "id": 47,
           "nm": "Can nature merge into art? 🌿",
           "desc": "In this activity, students will create a Gond Art inspired art work to promote nature conservation & sustainability",
@@ -697,6 +710,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C6083-U07",
         "id": 48,
         "nm": "What does Gond art say? 🌳",
         "qs": [
@@ -814,6 +828,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C6083-U08-V01",
           "id": 48,
           "nm": "Can patterns dress an animal? 🐘",
           "desc": "Students make a colourful animal coaster using Gond art style. They draw a simple animal, fill it with bright colours, and then decorate it with easy patterns like lines, dots, and shapes inspired by nature. This activity shows how simple drawings can become beautiful traditional artworks.",
@@ -822,6 +837,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C6083-U08",
         "id": 49,
         "nm": "Can animals become coasters? 🐾",
         "qs": [
@@ -939,6 +955,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C6083-U09-V01",
           "id": 49,
           "nm": "Can shapes protect our earth? 🌍",
           "desc": "Students create a simple Warli-style poster to show an environmental message without using words. They choose one rule like saving water, planting trees, or not littering, and draw using basic shapes such as circles, triangles, and lines on dark paper. Nature elements are added, and the final drawing is outlined with white paint to clearly show the message.",
@@ -947,6 +964,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C6083-U09",
         "id": 50,
         "nm": "Can shapes tell a story? 🔺",
         "qs": [
@@ -1064,6 +1082,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C6083-U10-V01",
           "id": 50,
           "nm": "Can triangles build a village? 🏕️",
           "desc": "SWABT understand and appreciate this traditional tribal art from Maharashtra, India. Students will learn to create simple, symbolic designs using geometric shapes like circles, triangles, and lines to depict nature, animals, and daily life.",
@@ -1072,6 +1091,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C6083-U10",
         "id": 51,
         "nm": "What does Warli art show? 🏡",
         "qs": [

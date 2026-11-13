@@ -15,6 +15,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C12267-U01-V01",
           "id": 1,
           "nm": "Can a diary track profit? 📒",
           "desc": "In this activity, students will explore how businesses manage money by tracking income and expenses through a simple cash diary example. They will also understand how loans such as those supported by PM Mudra Yojana help businesses grow.",
@@ -23,6 +24,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C12267-U01",
         "id": 1,
         "nm": "Can a diary track your profits? 📒",
         "qs": [
@@ -136,6 +138,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C12267-U02-V01",
           "id": 2,
           "nm": "Can Fiza find her profit? 🧾",
           "desc": "In this activity, students will learn in an easy way how businesses manage money by keeping track of income and expenses. Students will create a simple cash diary table to record money coming in and going out. They will also understand in a simple way how loans like PM Mudra Yojana help businesses grow.",
@@ -144,6 +147,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C12267-U02",
         "id": 2,
         "nm": "Did your business make profit? 💰",
         "qs": [
@@ -249,6 +253,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C12267-U03-V01",
           "id": 3,
           "nm": "Can chips bills hide taxes? 📑",
           "desc": "In this activity, students learn how Direct and Indirect Taxes work in real life. They understand which taxes they pay directly and which ones are added to the things they buy. Students will sort different taxes, think like smart taxpayers, and learn how taxes affect their daily life and the country’s services.",
@@ -257,6 +262,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C12267-U03",
         "id": 3,
         "nm": "Do you pay tax without knowing? 🧾",
         "qs": [
@@ -370,6 +376,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C12267-U04-V01",
           "id": 4,
           "nm": "Can you spend taxes wisely? 🏛️",
           "desc": "In this activity, students learn how the government uses tax money to provide services like roads, hospitals, and schools. They will think like the government — plan how to use limited money wisely, understand what taxes mean, and learn to make fair, thoughtful decisions that help everyone in their community.",
@@ -378,6 +385,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C12267-U04",
         "id": 4,
         "nm": "How does tax money get spent? 🏗️",
         "qs": [
@@ -443,6 +451,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C12267-U05-V01",
           "id": 5,
           "nm": "Can a wheel spread investments? 🎡",
           "desc": "In this activity, students will create an Investment Wheel by listing five different types of investments and linking them to SDG 4: Quality Education. They will understand how learning investment skills helps prepare for future jobs and entrepreneurship.",
@@ -451,6 +460,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C12267-U05",
         "id": 5,
         "nm": "Can smart investing reduce risk? 📊",
         "qs": [
@@ -568,6 +578,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C12267-U06-V01",
           "id": 6,
           "nm": "Can a truck lose money? 📈",
           "desc": "Students will learn what investment really means and why money can sometimes grow or shrink. Through simple examples like food trucks, trees, and flowers, they will understand the ideas of investment, risk, and return. They will explore the difference between safe investments like FD and PPF, and risky investments like stocks, business, and cryptocurrency. In the activity, students choose safe and risky investment options for a ₹25,000 budget, helping them build strong decision-making skills and understand how to invest wisely based on their goals.",
@@ -576,6 +587,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C12267-U06",
         "id": 6,
         "nm": "Can risk ever be worth it? 💹",
         "qs": [
@@ -685,6 +697,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C12267-U07-V01",
           "id": 7,
           "nm": "Can a puzzle unlock payments? 🧩",
           "desc": "In this activity, students will create a “Digital Payments Puzzle” poster that illustrates the key modes of digital money transfer (UPI via QR/contacts, IMPS, NEFT/RTGS via internet or mobile banking) and shows how each supports SDG 8: Decent Work & Economic Growth. They will illustrate the SDG 8 theme in the centre, summarize its key benefits around it, and depict various digital payment methods in the other panels.",
@@ -693,6 +706,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C12267-U07",
         "id": 7,
         "nm": "Can UPI replace your wallet? 📲",
         "qs": [
@@ -754,6 +768,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C12267-U08-V01",
           "id": 8,
           "nm": "Can a scan replace cash? 💳",
           "desc": "In this activity, students will learn in an easy way about important money topics like saving, investing, tax planning, retirement, and financial protection. Students will create a simple “Financial Planning Poster” to show how these ideas help in managing money and making better decisions for the future. They will also understand how these skills connect to SDG 4: Quality Education.",
@@ -762,6 +777,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C12267-U08",
         "id": 8,
         "nm": "Which payment is truly instant? ⚡",
         "qs": [
@@ -871,6 +887,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C12267-U09-V01",
           "id": 9,
           "nm": "Can a loan fund dreams? 🎓",
           "desc": "In this activity, students learn how an education loan helps continue higher studies when immediate funds are not available. Through Riya’s real-life story, students understand the steps to apply for an education loan, the meaning and importance of the moratorium period, and how loan repayment works after studies are completed. By comparing loan options and identifying better choices based on interest rate and moratorium period, students develop practical decision-making skills for managing education-related finances responsibly.",
@@ -879,6 +896,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C12267-U09",
         "id": 9,
         "nm": "Can a loan fund your studies? 🎓",
         "qs": [
@@ -992,6 +1010,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C12267-U10-V01",
           "id": 10,
           "nm": "Can Neha pay college later? 🚪",
           "desc": "In this activity, students will learn in an easy way how an education loan helps students continue their studies when they do not have enough money. Through a simple example, students will understand the basic steps to apply for an education loan, what a moratorium period means, and how loan repayment works after studies are completed. They will also compare simple loan options to make better financial decisions.",
@@ -1000,6 +1019,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C12267-U10",
         "id": 10,
         "nm": "Which loan has better terms? 📝",
         "qs": [

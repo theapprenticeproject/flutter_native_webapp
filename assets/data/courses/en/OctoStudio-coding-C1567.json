@@ -15,6 +15,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C1567-U01-V01",
           "id": 101,
           "nm": "Can a hero clean the air? 🌿",
           "desc": "In this activity, students will create an animation where a “Clean Air Hero” takes action to reduce pollution in their surroundings. Using OctoStudio, they will design a scene where polluted air gets cleaned through actions like switching off smoke sources or activating clean elements like trees or wind. Students will understand the importance of clean air in fighting climate change while practising event-based coding, sequencing, and simple interactivity.",
@@ -23,6 +24,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C1567-U01",
         "id": 104,
         "nm": "Can code clean the air? 🌫️",
         "qs": [
@@ -136,6 +138,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C1567-U02-V01",
           "id": 102,
           "nm": "Can a seed become a tree? 🌱",
           "desc": "In this activity, students will build a Climate Hero animation in OctoStudio. They’ll design a scene where a kid, guided by an elder, plants a seed, waters it, and watches it grow into a tree using show/hide, say, and send-and-receive blocks. Understand how trees help reduce climate change while practising event-driven coding and sequencing.",
@@ -144,6 +147,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C1567-U02",
         "id": 105,
         "nm": "Can a sprite speak? 🗣️",
         "qs": [
@@ -257,6 +261,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C1567-U03-V01",
           "id": 103,
           "nm": "Can sharing stop food waste? 🍱",
           "desc": "In this activity, students will use OctoStudio to create a short animated conversation where a child shares their leftover food with someone. Students will understand the importance of not wasting food and how sharing leftover food can contribute to Sustainable Development Goal 2: Zero Hunger. They will create an interactive conversation using OctoStudio blocks like send message and recieve message.",
@@ -265,6 +270,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C1567-U03",
         "id": 106,
         "nm": "Does food waste matter? 🍱",
         "qs": [
@@ -374,6 +380,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C1567-U04-V01",
           "id": 104,
           "nm": "Can you catch dripping water? 💧",
           "desc": "Students will learn how to create an interactive game using OctoStudio to collect dripping water from taps, reinforcing the concept of water conservation. They will apply coding skills like using motion, broadcast, and sensing blocks while understanding the real-world relevance of SDG 6 – Clean Water and Sanitation. The activity promotes awareness that even small actions, like fixing leaks, can support a global cause. Through hands-on learning, students will combine creativity and problem-solving to build a meaningful digital solution.",
@@ -382,6 +389,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C1567-U04",
         "id": 107,
         "nm": "Can a tap save water? 🚰",
         "qs": [
@@ -495,6 +503,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C1567-U05-V01",
           "id": 105,
           "nm": "Can sunlight power your bulb? ☀️",
           "desc": "Students will create a simple animation showing how sunlight is converted into usable energy. They will animate the sun, clouds, and a solar panel where sunlight reaching the panel triggers a light or colour change effect. This activity helps students visualize the flow of energy from the sun to the panel, reinforcing clean energy concepts (SDG 7) and climate action (SDG 13).",
@@ -503,6 +512,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C1567-U05",
         "id": 108,
         "nm": "Can sunlight power things? ☀️",
         "qs": [
@@ -612,6 +622,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C1567-U06-V01",
           "id": 106,
           "nm": "Can Sunlight Make a Car Move? 🚗",
           "desc": "Students will create a simple animation where a solar-powered car starts moving only when it receives energy from sunlight. Using OctoStudio, they will animate the sun, a solar panel attached to a car, and the car’s movement. This activity helps students understand how solar energy can be used in real-life applications like transport, while practising event-based coding and sequencing (SDG 7 & 13).",
@@ -620,6 +631,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C1567-U06",
         "id": 109,
         "nm": "Did the Cloud Stop Your Car? ☁️",
         "qs": [
@@ -729,6 +741,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C1567-U07-V01",
           "id": 107,
           "nm": "Can three bins sort waste? 🗑️",
           "desc": "Students will drag items into the correct recycling bins; touching the right bin scores points and glows, while wrong bins subtract points with a “try again” sound. They will finish by restoring a clean park scene, reinforcing responsible consumption (SDG12) and ocean protection (SDG14).",
@@ -737,6 +750,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C1567-U07",
         "id": 110,
         "nm": "Can you sort the trash? ♻️",
         "qs": [

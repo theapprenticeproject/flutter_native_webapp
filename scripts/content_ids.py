@@ -6,6 +6,8 @@ The API needs ids that the exported course files do not have:
   qid  on every quiz question (the API calls it question_id), also on the
                               practice-quiz questions of a video
   aid  on every assignment    (the API calls it assignment_id)
+  vid  on every video         (the API calls it video_id)
+  zid  on the unit quiz       (the API calls it quiz_id)
 
 Until the real ids are known, this script writes clearly marked DUMMY ids. The
 ids depend only on the course and the position, so they are the same in every
@@ -50,6 +52,10 @@ def dummy_id(kind: str, code: str, u: int, v: int = 0, q: int = 0, a: int = 0) -
         return f"QN-DUMMY-{code}-U{u:02d}-Q{q:02d}"
     if kind == "qid_pq":
         return f"QN-DUMMY-{code}-U{u:02d}-V{v:02d}-Q{q:02d}"
+    if kind == "vid":
+        return f"VC-DUMMY-{code}-U{u:02d}-V{v:02d}"
+    if kind == "zid":
+        return f"QZ-DUMMY-{code}-U{u:02d}"
     raise ValueError(kind)
 
 
@@ -73,9 +79,13 @@ def add_ids_to_course(course: dict) -> int:
         put(unit, "uid", dummy_id("uid", code, ui))
         for ai, assign in enumerate(unit.get("assigns", []) or [], 1):
             put(assign, "aid", dummy_id("aid", code, ui, a=ai))
-        for qi, ques in enumerate((unit.get("quiz") or {}).get("qs", []) or [], 1):
+        quiz = unit.get("quiz")
+        if isinstance(quiz, dict):
+            put(quiz, "zid", dummy_id("zid", code, ui))
+        for qi, ques in enumerate((quiz or {}).get("qs", []) or [], 1):
             put(ques, "qid", dummy_id("qid_quiz", code, ui, q=qi))
         for vi, vid in enumerate(unit.get("vids", []) or [], 1):
+            put(vid, "vid", dummy_id("vid", code, ui, v=vi))
             for qi, ques in enumerate((vid.get("pq") or {}).get("qs", []) or [], 1):
                 put(ques, "qid", dummy_id("qid_pq", code, ui, v=vi, q=qi))
     return added
@@ -91,6 +101,8 @@ def objects(lines):
             stack.append((m.group(2), m.group(3)))
             if m.group(2) in ("pq", "quiz"):
                 q = 0
+            if m.group(2) == "quiz" and m.group(3) == "{":
+                yield i, m.group(1), "zid", u, v, q, a
             continue
         m = ANON_OPEN.match(line)
         if m:
@@ -104,6 +116,7 @@ def objects(lines):
             elif bracket == "{" and parent == "vids":
                 v += 1
                 q = 0
+                yield i, indent, "vid", u, v, q, a
             elif bracket == "{" and parent == "qs":
                 q += 1
                 kind = "qid_pq" if grand == "pq" else "qid_quiz"
@@ -117,7 +130,7 @@ def objects(lines):
             stack.pop()
 
 
-FIELD = {"uid": "uid", "aid": "aid", "qid_quiz": "qid", "qid_pq": "qid"}
+FIELD = {"uid": "uid", "aid": "aid", "qid_quiz": "qid", "qid_pq": "qid", "vid": "vid", "zid": "zid"}
 
 
 def process(path: Path, id_map, write: bool):
@@ -139,6 +152,10 @@ def process(path: Path, id_map, write: bool):
                 value = unit["assigns"][a - 1]
             elif kind == "qid_quiz":
                 value = unit["quiz"][q - 1]
+            elif kind == "vid":
+                value = unit.get("vids", [value] * v)[v - 1]
+            elif kind == "zid":
+                value = (unit.get("zid") or [value])[0]
             else:
                 value = unit["pq"][v - 1][q - 1]
         nxt = lines[i + 1] if i + 1 < len(lines) else ""
@@ -171,6 +188,8 @@ def collect(path: Path):
                 "uid": u.get("uid"),
                 "assigns": [x.get("aid") for x in u.get("assigns", [])],
                 "quiz": [q.get("qid") for q in (u.get("quiz") or {}).get("qs", [])],
+                "vids": [vid.get("vid") for vid in u.get("vids", [])],
+                "zid": [u["quiz"].get("zid")] if isinstance(u.get("quiz"), dict) else [],
                 "pq": [[q.get("qid") for q in (vid.get("pq") or {}).get("qs", [])] for vid in u.get("vids", [])],
             }
         )
@@ -181,7 +200,7 @@ def flat(units):
     out = []
     for u in units:
         out.append(u["uid"])
-        out += u["assigns"] + u["quiz"]
+        out += u["assigns"] + u["quiz"] + u["vids"] + u["zid"]
         for p in u["pq"]:
             out += p
     return out

@@ -15,6 +15,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C0078-U01-V01",
           "id": 118,
           "nm": "Can your phone build games? 📱",
           "desc": "In this activity, students learn how to download and open the Scratch Junior app on their devices. They explore the home screen, understand the stage, add sprites, create a simple animated project, and experiment with basic blocks like motion and trigger blocks. Students also learn to customize their project with titles, colors, and backgrounds to create their first animation.",
@@ -55,6 +56,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C0078-U01",
         "id": 122,
         "nm": "Can you code it? 🎮",
         "qs": [
@@ -164,6 +166,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C0078-U02-V01",
           "id": 119,
           "nm": "Can butterflies drink flowers? 🦋",
           "desc": "In this activity, students will create an animation in ScratchJr showing a butterfly flying across flowers and drinking nectar. They will design the scene by adding and duplicating flowers, using the Paint Editor, and animate the butterfly’s movement using trigger, motion and repeat forever blocks. Students will also add a title to their project, making it visually complete and meaningful.",
@@ -200,6 +203,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C0078-U02",
         "id": 124,
         "nm": "Why do butterflies fly? 🦋",
         "qs": [
@@ -309,6 +313,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C0078-U03-V01",
           "id": 120,
           "nm": "Can three animals share a home? 🐘",
           "desc": "In this activity, students will create a multi-page animation in ScratchJr showcasing three endangered animals — a polar bear, an African elephant, and a Bactrian camel — in their natural habitats. They will design each scene using different backgrounds, modify sprites using the Paint Editor, and animate the animals moving across the screen using the blue motion blocks. Students will also connect multiple pages using the go to page end blocks to create a smooth transition between habitats, while understanding how human actions are affecting these animals' homes.",
@@ -345,6 +350,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C0078-U03",
         "id": 126,
         "nm": "Can animals survive change? 🐘",
         "qs": [
@@ -454,6 +460,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C0078-U04-V01",
           "id": 121,
           "nm": "Can a bear find igloo? 🐻",
           "desc": "In this activity, students explore motion blocks in ScratchJr to move characters across the screen. They learn how to control direction, steps, and positioning using a grid system. Through a fun challenge, they guide a polar bear to its igloo while applying logic, sequencing, and visualization skills.",
@@ -498,6 +505,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C0078-U04",
         "id": 128,
         "nm": "What does the grid do? 🔲",
         "qs": [
@@ -615,6 +623,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C0078-U05-V01",
           "id": 122,
           "nm": "Can two characters sync dance? 💃",
           "desc": "In this activity, students will create a coordinated dance animation in Scratch Junior by programming two characters to dance in sync with music. Students will design a dance floor, add characters, record music, and use wait block and repeat block to control when and how each character dances, helping them understand coordination and sequencing in animation.",
@@ -659,6 +668,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C0078-U05",
         "id": 130,
         "nm": "Can you sync the dance? 💃",
         "qs": [
@@ -776,6 +786,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C0078-U06-V01",
           "id": 123,
           "nm": "Can sprites talk about water? 💧",
           "desc": "In this activity, students will create a conversation-based animation in ScratchJr where two characters discuss a water shortage problem. Using message blocks, students will program a sequence of dialogues between the characters to show how water wastage leads to scarcity and why it is important to save water.",
@@ -820,6 +831,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C0078-U06",
         "id": 132,
         "nm": "Where did the water go? 💧",
         "qs": [
@@ -937,6 +949,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C0078-U07-V01",
           "id": 124,
           "nm": "Can a rabbit teach recycling? 🐰",
           "desc": "In this activity, students create an interactive story using ScratchJr message blocks where characters communicate with each other. Through a jungle-based storyline, students learn about proper waste disposal and its impact on the environment while building a sequence of actions using coding blocks.",
@@ -981,6 +994,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C0078-U07",
         "id": 134,
         "nm": "Can blocks send messages? 📨",
         "qs": [
@@ -1098,6 +1112,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C0078-U08-V01",
           "id": 125,
           "nm": "Can two codes move together? 🏃",
           "desc": "In this activity, students will learn how to create new character movements by combining two scripts in Scratch Jr. They will apply their knowledge of basic motion blocks, such as move right, hop, and turn, to create more complex movements like a ball rolling forward or a penguin hopping forward on ice. Students will discover how the repeat forever block can help create continuous, repetitive movements, enabling their characters to perform dynamic actions.",
@@ -1142,6 +1157,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C0078-U08",
         "id": 136,
         "nm": "Can sprites move together? 🔀",
         "qs": [
@@ -1259,6 +1275,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C0078-U09-V01",
           "id": 126,
           "nm": "Can a crab dodge plastic? 🦀",
           "desc": "In this activity, students will make a fun game using Scratch Jr. In the game, a crab needs to jump over a flying plastic bag to safely reach the water. Students will design a beach background, draw the plastic bag, and make it move. They will also program the crab to jump and move forward. Students will add a scoring system, and create screens for winning and losing. Through this project, students will learn how pollution affects sea animals and how to make an interactive game using coding blocks.",
@@ -1299,6 +1316,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C0078-U09",
         "id": 138,
         "nm": "Can a crab save the sea? 🦀",
         "qs": [
@@ -1412,6 +1430,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C0078-U10-V01",
           "id": 127,
           "nm": "Can a lizard outrun cactus? 🦎",
           "desc": "In this activity, students will be walked through the steps to create a desert game in Scratch Jr. They will learn how to modify the desert background, create and resize sprites like the cactus and lizard, change sprite colors and then code them using motion, trigger, and sound blocks. By the end, they will have a fully functional game where to avoid the cactus and they must tap the lizard to make it hop forward without touching the cactus.",
@@ -1448,6 +1467,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C0078-U10",
         "id": 140,
         "nm": "Can Lizzy dodge it? 🦎",
         "qs": [

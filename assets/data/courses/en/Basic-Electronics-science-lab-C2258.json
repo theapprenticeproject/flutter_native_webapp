@@ -15,6 +15,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C2258-U01-V01",
           "id": 61,
           "nm": "Can LEDs express your emotions? 💡",
           "desc": "Students will be able to make paper circuits and learn how they can use sustainability in technology. They will recognise the innovative ways to learn about electricity, circuits, and the basics of electronics, thus addressing SDG 4 of Quality Education.",
@@ -23,6 +24,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C2258-U01",
         "id": 62,
         "nm": "Can copper light a card? 💡",
         "qs": [
@@ -128,6 +130,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C2258-U02-V01",
           "id": 62,
           "nm": "Can one circuit light and fan? 🔌",
           "desc": "Students will make a study lamp and FAN using basic electronics items.",
@@ -136,6 +139,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C2258-U02",
         "id": 63,
         "nm": "Can light control a lamp? 🔦",
         "qs": [
@@ -237,6 +241,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C2258-U03-V01",
           "id": 63,
           "nm": "Can darkness flip a switch? 🌑",
           "desc": "Students will build an automatic streetlight system using light sensors and basic electronics. Through this project, they’ll explore how smart infrastructure can reduce energy waste and improve urban living. It helps them understand the impact of sensor-based automation on sustainability, supporting SDG 7 (Affordable and Clean Energy) and SDG 11 (Sustainable Cities and Communities).",
@@ -245,6 +250,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C2258-U03",
         "id": 64,
         "nm": "Can darkness switch lights on? 🌃",
         "qs": [
@@ -338,6 +344,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C2258-U04-V01",
           "id": 64,
           "nm": "Can buttons control traffic lights? 🚦",
           "desc": "students will create a traffic light circuit. The circuit will consist of three LEDS, Red, Yellow and green. They will use three push button to turn on and off individual LEDs..",
@@ -346,6 +353,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C2258-U04",
         "id": 65,
         "nm": "Can a button control traffic? 🚦",
         "qs": [
@@ -459,6 +467,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C2258-U05-V01",
           "id": 65,
           "nm": "Can a plant get auto-light? 🌿",
           "desc": "Students will build an automatic LED system that lights up plant pots when sunlight is low.",
@@ -467,6 +476,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C2258-U05",
         "id": 66,
         "nm": "Can darkness trigger a light? 🌙",
         "qs": [
@@ -580,6 +590,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C2258-U06-V01",
           "id": 66,
           "nm": "Can a motor lift objects? 🏗️",
           "desc": "Students analyze the final build and performance data from the Motorised Pulley Challenge. They evaluate the system's efficiency, assess the mechanical advantage gained by the pulley, and calculate the motor's theoretical vs. actual lifting capacity. They will propose and justify one final design refinement.",
@@ -588,6 +599,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C2258-U06",
         "id": 67,
         "nm": "Can a motor lift things up? 🏋️",
         "qs": [
@@ -697,6 +709,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C2258-U07-V01",
           "id": 67,
           "nm": "Can one cell light badges? 🔋",
           "desc": "Students will power one LED from the 3V coin cell using 470 Ω (safer, longer life). Build a tiny “badge”: tape coin cell to the back, wires to LED legs. Compare brightness vs. 9V version.",
@@ -705,6 +718,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C2258-U07",
         "id": 68,
         "nm": "Can a badge actually glow? ✨",
         "qs": [
@@ -818,6 +832,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C2258-U08-V01",
           "id": 68,
           "nm": "Can a finger sense water? 💧",
           "desc": "Simulate a water level sensor using touch (wet finger) and LEDs to show when the “tank” is full.",
@@ -826,6 +841,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C2258-U08",
         "id": 69,
         "nm": "Is your water tank full? 💧",
         "qs": [
@@ -939,6 +955,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C2258-U09-V01",
           "id": 69,
           "nm": "Can a knob dim light? 🔦",
           "desc": "Students will be testing their Potentiometer knowledge developed in previous sections.",
@@ -947,6 +964,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C2258-U09",
         "id": 70,
         "nm": "Can you control light brightness? 🔆",
         "qs": [
@@ -1056,6 +1074,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C2258-U10-V01",
           "id": 70,
           "nm": "Can a bottle boat race? 🚤",
           "desc": "Show a stable hull, centered mass, and balanced prop. Explain why bigger isn’t always better (heavier = slower start). Share averaged data from 3 trials and one tip (prop pitch or hull drag).",
@@ -1064,6 +1083,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C2258-U10",
         "id": 71,
         "nm": "Can a motor sail a boat? ⛵",
         "qs": [

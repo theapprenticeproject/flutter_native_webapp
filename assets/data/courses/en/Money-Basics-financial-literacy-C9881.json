@@ -15,6 +15,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C9881-U01-V01",
           "id": 91,
           "nm": "Can Ravi save fifty rupees? 💰",
           "desc": "Students will create a basic budget by listing needs, wants, and a savings goal to learn how to manage money wisely.",
@@ -23,6 +24,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C9881-U01",
         "id": 94,
         "nm": "Can you budget your money? 💰",
         "qs": [
@@ -128,6 +130,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C9881-U02-V01",
           "id": 92,
           "nm": "Can needs beat your wants? 🛒",
           "desc": "Students will sort examples into ‘Needs’ and ‘Wants’ columns and illustrate them with small icons to understand smart money choices.",
@@ -136,6 +139,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C9881-U02",
         "id": 95,
         "nm": "Need or want — which wins? 🤔",
         "qs": [
@@ -245,6 +249,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C9881-U03-V01",
           "id": 93,
           "nm": "Can five steps open accounts? 🏦",
           "desc": "Students will learn the step-by-step process of opening a bank account through the story of Ananya. They will understand how to choose a bank, fill out an account opening form, submit important documents, complete KYC, and receive a welcome kit. This lesson also teaches students how to use decision-making skills to pick the right account type and get the correct documents ready. Through a simple activity, they will list the five steps and required documents, helping them feel confident about opening a bank account in real life.",
@@ -253,6 +258,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C9881-U03",
         "id": 96,
         "nm": "Can you open a bank account? 🏦",
         "qs": [
@@ -366,6 +372,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C9881-U04-V01",
           "id": 94,
           "nm": "Can eight steps get savings? 🏧",
           "desc": "In this activity, students will learn about how to open a bank account and the importance of saving money safely. By following simple 8 steps, they will understand how banks help us keep money secure, allow us to deposit or withdraw money, and provide useful tools like passbooks and ATM cards. Through this lesson, students will explore the difference between saving and current accounts and learn how to make responsible financial decisions with the help of their parents.",
@@ -374,6 +381,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C9881-U04",
         "id": 97,
         "nm": "Is your ATM PIN safe? 🔐",
         "qs": [
@@ -487,6 +495,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C9881-U05-V01",
           "id": 95,
           "nm": "Can RBI control all banks? 🏛️",
           "desc": "Students will learn the difference between the Central Bank and Commercial Banks using simple examples like a school principal and teachers. They will understand how the Reserve Bank of India (RBI) regulates all banks, prints money, and keeps the banking system safe. Students will also explore how commercial banks help people save money and take loans. Through a creative activity, they will identify banks, draw logos, and list their functions, helping them make smart decisions about saving money.",
@@ -495,6 +504,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C9881-U05",
         "id": 98,
         "nm": "Who controls all the banks? 🏛️",
         "qs": [
@@ -604,6 +614,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C9881-U06-V01",
           "id": 96,
           "nm": "Can you spot a fraud? 🚨",
           "desc": "Students will explore the difference between the Central Bank and Commercial Banks by matching their functions and identifying real-life examples.",
@@ -612,6 +623,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C9881-U06",
         "id": 99,
         "nm": "Which bank should you pick? 🏦",
         "qs": [
@@ -721,6 +733,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C9881-U07-V01",
           "id": 97,
           "nm": "Can fake calls steal money? 🕵️",
           "desc": "Students will become young detectives and learn how to stay safe from banking frauds. Through real-life examples, they will understand how fake calls, messages, and links trick people into sharing personal information. Students will learn the golden rule — never share PINs, OTPs, or bank details — and use decision-making skills to check whether a message is real or fake. By the end, they will know how to protect themselves and their families from fraud.",
@@ -729,6 +742,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C9881-U07",
         "id": 100,
         "nm": "Can a call steal your money? 📞",
         "qs": [
@@ -846,6 +860,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C9881-U08-V01",
           "id": 98,
           "nm": "Can a poster warn people? 📢",
           "desc": "In this activity, students will learn simple rules to stay safe from banking fraud. Through everyday examples like unknown calls or messages, they will identify what is safe and unsafe. They will complete a basic Do’s and Don’ts sorting activity to understand how to protect their money.",
@@ -854,6 +869,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C9881-U08",
         "id": 101,
         "nm": "Can a message be a scam? 📱",
         "qs": [
@@ -971,6 +987,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C9881-U09-V01",
           "id": 99,
           "nm": "Can interest beat simple savings? 📈",
           "desc": "In this activity, students become Interest Investigators and help Jinal understand how money grows in a bank. Students learn the meaning of interest and explore the difference between Simple Interest and Compound Interest using formulas and real-life examples. By comparing how ₹1000 grows over time under both types of interest, students discover why compound interest earns more in the long run. Through calculation, comparison, and decision-making, students help Jinal choose the better option for growing her savings.",
@@ -979,6 +996,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C9881-U09",
         "id": 102,
         "nm": "Can interest grow your savings? 📈",
         "qs": [
@@ -1088,6 +1106,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C9881-U10-V01",
           "id": 100,
           "nm": "Can a bank grow money? 🏦",
           "desc": "In this activity, students learn the concept of interest—the extra money a bank gives when they save. Through a child-friendly example comparing a piggy bank to a real bank, students understand how Simple Interest works as a fixed amount earned every year. Students then complete a fill-in-the-blank exercise and draw a picture of something they want to save for, helping them connect interest to real-life goals in a fun and creative way.",
@@ -1096,6 +1115,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C9881-U10",
         "id": 103,
         "nm": "Does a piggy bank earn interest? 🐷",
         "qs": [

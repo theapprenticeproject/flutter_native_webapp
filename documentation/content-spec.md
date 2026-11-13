@@ -164,18 +164,20 @@ Rules:
 
 For the v1 test release the course content is **bundled in the app**, in `assets/data/courses/<language>/<course-id>.json`, with an `index.json` for each language. There are 14 courses in 5 languages (en, hi, kn, mr, pa). Each course has about 10 units. A unit has one video (a YouTube id), one assignment and a quiz of about 5 questions. The quiz questions carry the correct answer (`ans`: "1", "2" or "3"). The app maps "1", "2", "3" to the API's `a`, `b`, `c`.
 
-**Ids for the API.** The API needs a `unit_id`, a `question_id` and an `assignment_id`. The files carry them as:
+**Ids for the API.** The API needs a `unit_id`, a `video_id`, a `quiz_id`, a `question_id` and an `assignment_id`. The files carry them as:
 
 | Key | On | The API calls it |
 |---|---|---|
 | `uid` | every unit | `unit_id` |
 | `qid` | every quiz question, and every practice-quiz question of a video | `question_id` |
 | `aid` | every assignment | `assignment_id` |
+| `vid` | every video (v1: one for each unit; the video that the app marks as watched) | `video_id` |
+| `zid` | the quiz of each unit (not the practice quizzes of a video) | `quiz_id` |
 
-The ids are the same in every language. Until the real ids are known, the files carry clearly marked **dummy ids** (`LU-DUMMY-…`, `QN-DUMMY-…`, `AS-DUMMY-…`).
+The ids are the same in every language. Until the real ids are known, the files carry clearly marked **dummy ids** (`LU-DUMMY-…`, `QN-DUMMY-…`, `AS-DUMMY-…`, `VC-DUMMY-…`, `QZ-DUMMY-…`).
 
 **The script** `scripts/content_ids.py` adds, checks and replaces the ids. It edits the files as text, so the formatting does not change. See the top of the script for the commands. Replacing the dummy ids with the real ones is task B19. Run `python3 scripts/content_ids.py --check --no-dummy` before a deployment: it fails while a dummy id is left. The test `test/domain/program_content/content_ids_test.dart` checks that every id is there, unique, and the same in every language.
 
 **Why the files stay one file for each course and language.** The loader (`AssetDataSource`) reads them that way, all five languages have the same structure and the same answer keys (checked on 2026-11-09), and a change would touch the app code. If the content is later served from the CDN (sections 3 to 5), the layout can change then.
 
-**The export script.** `scripts/export_content.py` rewrites these files from Frappe (it writes compact JSON, so a re-run changes the formatting). It keeps any id that the backend sends, adds a DUMMY id only where one is missing, and prints a warning if it added any. It also no longer deletes the thumbnail folders. The better long-term step is a backend change: the export (`export_program_content` in `tapapp`) should send the real `uid`, `qid` and `aid` (the Frappe names). Then no dummy id is ever added, and the check `python3 scripts/content_ids.py --check --no-dummy` passes straight after an export. I have not run the export against a server, because it needs the Frappe key.
+**The export script.** `scripts/export_content.py` rewrites these files from Frappe (it writes compact JSON, so a re-run changes the formatting). It keeps any id that the backend sends, adds a DUMMY id only where one is missing, and prints a warning if it added any. It also no longer deletes the thumbnail folders. The better long-term step is a backend change: the export (`export_program_content` in `tapapp`) should send the real `uid`, `qid`, `aid`, `vid` and `zid` (the Frappe names). Then no dummy id is ever added, and the check `python3 scripts/content_ids.py --check --no-dummy` passes straight after an export. I have not run the export against a server, because it needs the Frappe key.

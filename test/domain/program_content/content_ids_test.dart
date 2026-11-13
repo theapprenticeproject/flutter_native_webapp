@@ -4,8 +4,9 @@ import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:tapapp/domain/program_content/course_detail_model.dart';
 
-/// The API needs a unit id, a question id and an assignment id. The bundled
-/// course files carry them as `uid`, `qid` and `aid` (see scripts/content_ids.py).
+/// The API needs a unit id, a question id, an assignment id, a video id and a
+/// quiz id. The bundled course files carry them as `uid`, `qid`, `aid`, `vid`
+/// and `zid` (see scripts/content_ids.py).
 /// These tests make sure every id is there, unique, and the same in each language.
 const _langs = ['en', 'hi', 'kn', 'mr', 'pa'];
 
@@ -31,7 +32,10 @@ List<String> _idsOf(CourseDetailModel course) {
     for (final q in unit.quiz?.questions ?? const <CourseQuizQuestionModel>[]) {
       ids.add(q.questionId);
     }
+    final quiz = unit.quiz;
+    if (quiz != null) ids.add(quiz.quizId);
     for (final v in unit.videos) {
+      ids.add(v.videoId);
       for (final q
           in v.postQuiz?.questions ?? const <CourseQuizQuestionModel>[]) {
         ids.add(q.questionId);
@@ -46,7 +50,7 @@ CourseDetailModel _load(File f) => CourseDetailModel.fromJson(
 );
 
 void main() {
-  test('every unit, question and assignment has an id', () {
+  test('every unit, video, quiz, question and assignment has an id', () {
     for (final lang in _langs) {
       for (final f in _courseFiles(lang)) {
         final ids = _idsOf(_load(f));

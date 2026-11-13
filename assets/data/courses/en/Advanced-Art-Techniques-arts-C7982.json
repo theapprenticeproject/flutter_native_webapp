@@ -15,6 +15,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7982-U01-V01",
           "id": 11,
           "nm": "Can lines trick your eyes? 👁️",
           "desc": "In this activity, students will learn about optical illusions and create optical art using basic lines and patterns.",
@@ -23,6 +24,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7982-U01",
         "id": 11,
         "nm": "Can your eyes be tricked? 👀",
         "qs": [
@@ -136,6 +138,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7982-U02-V01",
           "id": 12,
           "nm": "Can squares twist and float? 🔲",
           "desc": "In this activity, students will create an optical illusion by dividing a square into layered black-and-white patterns using lines and shapes.",
@@ -144,6 +147,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7982-U02",
         "id": 12,
         "nm": "Can squares create illusions? 🔲",
         "qs": [
@@ -261,6 +265,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7982-U03-V01",
           "id": 13,
           "nm": "Can collage save the ocean? 🌊",
           "desc": "In this activity, students will create an impactful collage promoting ocean cleanliness using images, text, and design to communicate their message creatively while understanding sustainability.",
@@ -269,6 +274,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7982-U03",
         "id": 13,
         "nm": "Can collage save the ocean? 🌊",
         "qs": [
@@ -386,6 +392,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7982-U04-V01",
           "id": 14,
           "nm": "Can your poster change minds? 📢",
           "desc": "In this activity, students will create an impactful collage promoting ocean cleanliness using creative visual communication techniques.",
@@ -394,6 +401,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7982-U04",
         "id": 14,
         "nm": "Can a poster change minds? 📢",
         "qs": [
@@ -507,6 +515,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7982-U05-V01",
           "id": 15,
           "nm": "Can a hallway go deep? 🏛️",
           "desc": "In this activity, students will learn to use one-point perspective to draw scenes with depth, such as roads, houses, and trees moving into the distance.",
@@ -515,6 +524,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7982-U05",
         "id": 15,
         "nm": "Can lines show depth? 📐",
         "qs": [
@@ -632,6 +642,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7982-U06-V01",
           "id": 16,
           "nm": "Can roads vanish in distance? 🛤️",
           "desc": "In this activity, students will understand the concept of perspective and create a one-point perspective artwork.",
@@ -640,6 +651,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7982-U06",
         "id": 16,
         "nm": "Can perspective fool your brain? 🤯",
         "qs": [
@@ -757,6 +769,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7982-U07-V01",
           "id": 17,
           "nm": "Can shadows give paper depth? 🌒",
           "desc": "In this activity, students will explore the use of light and shadow to create depth, dimension, and drama using a variety of papers in a collage.",
@@ -765,6 +778,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7982-U07",
         "id": 17,
         "nm": "Can shading show emotions? 🎭",
         "qs": [
@@ -882,6 +896,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7982-U08-V01",
           "id": 18,
           "nm": "Can newspaper become a vase? 📰",
           "desc": "In this activity, students will explore the use of old and waste paper to understand recycling by creating a collage of an object around them.",
@@ -890,6 +905,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7982-U08",
         "id": 18,
         "nm": "Can old news become art? 📰",
         "qs": [
@@ -1007,6 +1023,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7982-U09-V01",
           "id": 19,
           "nm": "Can pop art fight climate? 🌏",
           "desc": "In this activity, students will create a Pop Art–style climate action poster using bold outlines, contrasting colors, and strong messages to spread environmental awareness.",
@@ -1063,6 +1080,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7982-U09",
         "id": 20,
         "nm": "Can pop art fight climate change? 🌍",
         "qs": [
@@ -1172,6 +1190,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7982-U10-V01",
           "id": 20,
           "nm": "Can a bottle become art? ⭐",
           "desc": "In this activity, students will identify an everyday object and create a Pop Art–inspired artwork based on it.",
@@ -1180,6 +1199,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7982-U10",
         "id": 21,
         "nm": "Can repetition make art pop? 🎨",
         "qs": [

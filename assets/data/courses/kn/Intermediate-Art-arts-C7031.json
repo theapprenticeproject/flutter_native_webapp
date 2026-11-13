@@ -15,6 +15,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7031-U01-V01",
           "id": 71,
           "nm": "Can lines build a mandala? 🔵",
           "desc": "In this activity, students will learn about the first element of art, line, and create a mandala using different types of lines.",
@@ -23,6 +24,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7031-U01",
         "id": 72,
         "nm": "Can circles become mandalas? 🔵",
         "qs": [
@@ -132,6 +134,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7031-U02-V01",
           "id": 72,
           "nm": "Can circles grow into mandalas? 🌀",
           "desc": "In this activity, students will observe and use at least three patterns to create simple circular mandalas.",
@@ -140,6 +143,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7031-U02",
         "id": 73,
         "nm": "Can you draw a perfect mandala? ⭕",
         "qs": [
@@ -249,6 +253,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7031-U03-V01",
           "id": 73,
           "nm": "Can paper fold into flowers? 🍃",
           "desc": "In this activity, students will create an attractive bookmark using origami techniques.",
@@ -257,6 +262,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7031-U03",
         "id": 74,
         "nm": "Can craft become a message? 🎀",
         "qs": [
@@ -357,6 +363,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7031-U04-V01",
           "id": 74,
           "nm": "Can folds make tulips bloom? 🌷",
           "desc": "In this activity, students will learn the technique of folding origami paper and create three flowers using different colors and combinations.",
@@ -365,6 +372,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7031-U04",
         "id": 75,
         "nm": "Can old paper become origami? 🌷",
         "qs": [
@@ -478,6 +486,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7031-U05-V01",
           "id": 75,
           "nm": "Can a cup become character? 🤖",
           "desc": "In this activity, students will find inspiration for figure drawing in everyday objects and explore creative connections between shapes, forms, and human anatomy.",
@@ -538,6 +547,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7031-U05",
         "id": 77,
         "nm": "Can a spoon become a character? 🥄",
         "qs": [
@@ -651,6 +661,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7031-U06-V01",
           "id": 76,
           "nm": "Can shapes draw a face? 🎭",
           "desc": "In this activity, students will explore the art of character design by using and manipulating basic geometric shapes.",
@@ -659,6 +670,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7031-U06",
         "id": 78,
         "nm": "Can shapes build a face? 🔷",
         "qs": [
@@ -772,6 +784,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7031-U07-V01",
           "id": 77,
           "nm": "Can sticks catch your dreams? 🌙",
           "desc": "In this activity, students will craft their own dream catcher using recyclable natural materials like twigs, shells, feathers, petals, and ice cream sticks.",
@@ -780,6 +793,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7031-U07",
         "id": 79,
         "nm": "What do dream catchers catch? 🕸️",
         "qs": [
@@ -889,6 +903,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7031-U08-V01",
           "id": 78,
           "nm": "Can shapes build dream cities? 🏙️",
           "desc": "In this activity, students will create an imaginary dream city using paper cut-out shapes inspired by the artist Paul Klee.",
@@ -897,6 +912,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7031-U08",
         "id": 80,
         "nm": "Can you build a dream city? 🏙️",
         "qs": [
@@ -1010,6 +1026,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7031-U09-V01",
           "id": 79,
           "nm": "Can bottles bloom into flowers? 🌺",
           "desc": "In this activity, students will identify and describe how plastic harms ocean creatures and use collected materials to create vibrant flower hangings from plastic bottles.",
@@ -1018,6 +1035,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7031-U09",
         "id": 81,
         "nm": "Can plastic become painted art? 🎨",
         "qs": [
@@ -1135,6 +1153,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C7031-U10-V01",
           "id": 80,
           "nm": "Can waste hang as art? 🎑",
           "desc": "In this activity, students will use recycled materials to create a decorative wall hanging.",
@@ -1143,6 +1162,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C7031-U10",
         "id": 82,
         "nm": "Can waste become wall art? 🖼️",
         "qs": [

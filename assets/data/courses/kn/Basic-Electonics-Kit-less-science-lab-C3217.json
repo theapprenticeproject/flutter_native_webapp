@@ -15,6 +15,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C3217-U01-V01",
           "id": 51,
           "nm": "Can a Tiny Wire Save Your Circuit? 🔥",
           "desc": "Students will create a circuit using a 2.5V DC power supply, an 18 mA fuse, and an LED. They will understand what a fuse is and observe how it protects components by breaking the circuit when current exceeds a safe limit.",
@@ -23,6 +24,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C3217-U01",
         "id": 52,
         "nm": "When Does the Fuse Blow? ⚡",
         "qs": [
@@ -140,6 +142,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C3217-U02-V01",
           "id": 52,
           "nm": "Can One Button Save Energy? 🌱",
           "desc": "Students will create a smart light control system using a push button to control electricity use. Through this hands-on project, they will learn the importance of saving energy and reducing waste. By connecting the activity to SDG 7 (Affordable and Clean Energy), students will understand how mindful energy use can contribute to a sustainable future. This project encourages students to adopt smart energy habits in their daily lives.",
@@ -148,6 +151,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C3217-U02",
         "id": 53,
         "nm": "Press It and See! 🔘",
         "qs": [
@@ -253,6 +257,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C3217-U03-V01",
           "id": 53,
           "nm": "Can You Control Light with a Knob? 🎛️",
           "desc": "In this activity, students will simulate a circuit using a potentiometer to control the brightness of an LED and explore how different brightness levels affect energy usage. They will compare multiple settings (low, medium, high) and identify the most efficient level for everyday use. This helps students understand how adjusting energy consumption can reduce waste and supports SDG 12 – Responsible Consumption and Production.",
@@ -261,6 +266,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C3217-U03",
         "id": 54,
         "nm": "How Bright Can You Go? 💡",
         "qs": [
@@ -370,6 +376,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C3217-U04-V01",
           "id": 54,
           "nm": "Can Dimming a Light Save the Earth? 🌱",
           "desc": "Students will be able to simulate a basic electronic circuit using ProtoCircuit to control the brightness of an LED with a potentiometer, and understand how adjusting energy consumption contributes to SDG 12 – Responsible Consumption and Production. Through this hands-on activity, students will learn how small, everyday actions like dimming lights can lead to smarter energy use and reduce environmental impact.",
@@ -378,6 +385,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C3217-U04",
         "id": 55,
         "nm": "Is Your Potentiometer Saving Power? ⚡",
         "qs": [
@@ -491,6 +499,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C3217-U05-V01",
           "id": 55,
           "nm": "Can a Diode Guard Your Solar Panel? ☀️",
           "desc": "In this activity, we’ll build a Clean Energy Indicator using a diode, LED, resistor, and voltmeter in the ProtoCircuit app. You’ll learn how a diode controls the direction of current flow — a key concept in protecting clean energy systems. This project supports SDG 13: Climate Action by helping us understand how simple circuits can make renewable energy safer and more efficient.",
@@ -499,6 +508,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C3217-U05",
         "id": 56,
         "nm": "Forward or Reverse? ⬅️",
         "qs": [
@@ -608,6 +618,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C3217-U06-V01",
           "id": 56,
           "nm": "What Happens When You Flip the Diode? 🔄",
           "desc": "In this activity, students will build a simple circuit using a diode, LED, resistor, and power supply in the ProtoCircuit app to observe how current flows in only one direction. They will test what happens when the diode is connected correctly and when it is reversed. This helps students understand the basic function of a diode and how it controls the flow of electricity, connecting to the idea of safe and efficient energy use (SDG 13 – Climate Action",
@@ -616,6 +627,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C3217-U06",
         "id": 57,
         "nm": "Does the Diode Block or Allow? ⚡",
         "qs": [
@@ -733,6 +745,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C3217-U07-V01",
           "id": 57,
           "nm": "Can Math Predict Your LED's Brightness? 🔢",
           "desc": "In this activity, students will design and analyze a circuit where a potentiometer controls the brightness of an LED by varying current. They will measure current at different resistance levels and use their observations to understand the relationship between voltage, current, and resistance. Students will also explore how adding a fixed resistor can help control excess current, making the circuit safer and more stable.",
@@ -741,6 +754,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C3217-U07",
         "id": 58,
         "nm": "Voltage, Current, Resistance — Can You Crack It? 📐",
         "qs": [
@@ -846,6 +860,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C3217-U08-V01",
           "id": 58,
           "nm": "Can a Spinning Knob Control Your LED? 🌀",
           "desc": "Students will use a potentiometer as a variable resistor in series with an LED and sweep the knob to change brightness. They will record ammeter readings at low and high settings, using a fixed series resistor if needed to limit current.",
@@ -854,6 +869,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C3217-U08",
         "id": 59,
         "nm": "High Resistance or Low — What Wins? 🎚️",
         "qs": [
@@ -971,6 +987,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C3217-U09-V01",
           "id": 59,
           "nm": "Can a Circuit Remember to Glow? ⏳",
           "desc": "Students will design a circuit where they can control how long an LED stays ON after the switch is released by adjusting capacitance and resistance. They will compare multiple configurations and analyze how RC values affect delay time, helping them understand timing circuits used in real-world devices like automatic lights and alarms.",
@@ -979,6 +996,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C3217-U09",
         "id": 60,
         "nm": "Which Capacitor Holds On Longer? ⏱️",
         "qs": [
@@ -1092,6 +1110,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C3217-U10-V01",
           "id": 60,
           "nm": "Can a Tiny Component Store Power? ⚡",
           "desc": "Students will learn how to create and simulate a simple circuit using a capacitor to keep an LED glowing for a short time even after turning off the switch. They will also explore how to adjust the capacitor's capacitance to change the LED's discharge time.",
@@ -1100,6 +1119,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C3217-U10",
         "id": 61,
         "nm": "How Long Does Your Capacitor Last? 🔋",
         "qs": [

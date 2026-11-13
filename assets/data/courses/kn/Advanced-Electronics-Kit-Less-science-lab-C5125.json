@@ -15,6 +15,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C5125-U01-V01",
           "id": 21,
           "nm": "Can a Circuit Teach You to Save Energy? 🌱",
           "desc": "In this activity, students will build a smart room circuit using a switch, LED, and ammeter in the EveryCircuit app to monitor how energy is used in different situations. They will simulate turning the light ON and OFF and observe how current changes, helping them understand how simple actions like switching off unused devices can reduce energy consumption. This activity connects to SDG 7 – Affordable and Clean Energy by promoting mindful and efficient use of electricity in daily life.",
@@ -23,6 +24,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C5125-U01",
         "id": 22,
         "nm": "Is Your Room Wasting Power? 💡",
         "qs": [
@@ -136,6 +138,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C5125-U02-V01",
           "id": 22,
           "nm": "Can One Flip of a Switch Change Everything? 🌍",
           "desc": "In this activity, students will build a smart room light circuit using a toggle switch and an ammeter to monitor current flow. They will understand how simple switching and monitoring support SDG 7: Affordable and Clean Energy by promoting energy conservation.",
@@ -144,6 +147,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C5125-U02",
         "id": 23,
         "nm": "Does Your Ammeter Agree? ⚡",
         "qs": [
@@ -249,6 +253,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C5125-U03-V01",
           "id": 23,
           "nm": "Can a Resistor Decide How Bright Your Room Is? 💡",
           "desc": "In this activity, students use a potentiometer to control LED brightness and a transistor to simulate automatic dimming when ambient light increases (using LDR). Promotes energy-efficient indoor lighting.",
@@ -257,6 +262,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C5125-U03",
         "id": 24,
         "nm": "More Resistance, More Dark? 🌑",
         "qs": [
@@ -370,6 +376,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C5125-U04-V01",
           "id": 24,
           "nm": "Why Does Your Charger Warm Up? 🔌",
           "desc": "Students will explore how power is dissipated in resistors and learn how to calculate the power dissipated in a simple resistive circuit. This activity will also encourage discussion on how power dissipation relates to the efficiency of electronic devices and why understanding power is crucial for designing energy-efficient circuits.",
@@ -378,6 +385,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C5125-U04",
         "id": 25,
         "nm": "Can You Calculate the Heat? 🔥",
         "qs": [
@@ -491,6 +499,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C5125-U05-V01",
           "id": 25,
           "nm": "Can 7 Segments Display Any Number? 🎰",
           "desc": "In this activity, students will design and simulate a multi-digit display system using a EveryCircuit. They will control a 7-segment display to show different numbers by applying correct segment combinations and basic logic. Students will extend their understanding by displaying two-digit numbers (e.g., 23, 45) and exploring how different segment patterns create each digit. This activity helps them connect digital displays used in real life—such as clocks, scoreboards, and counters—with circuit design.",
@@ -499,6 +508,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C5125-U05",
         "id": 26,
         "nm": "Which Segments Make Your Digit? 🔢",
         "qs": [
@@ -616,6 +626,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C5125-U06-V01",
           "id": 26,
           "nm": "Can You Make a Circuit Show 41? 🎯",
           "desc": "Students will crerate a circuit to display a number on a Seven Segments Display.",
@@ -624,6 +635,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C5125-U06",
         "id": 27,
         "nm": "Is Your Display Showing the Right Number? 🔢",
         "qs": [
@@ -737,6 +749,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C5125-U07-V01",
           "id": 27,
           "nm": "Can a Diode Make Solar Power Safer? 🌍",
           "desc": "In this activity, we’ll build a Clean Energy Indicator using a diode, LED, and voltmeter in the EveryCircuit app. You’ll learn how a diode allows current to flow in only one direction — a key concept for protecting clean energy systems. This project supports SDG 13: Climate Action by showing how simple electronics help prevent energy loss in solar panels and batteries.",
@@ -745,6 +758,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C5125-U07",
         "id": 28,
         "nm": "Does Your Diode Keep the Current Safe? 🚦",
         "qs": [
@@ -810,6 +824,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C5125-U08-V01",
           "id": 28,
           "nm": "Can a Tiny Diode Protect a Solar Battery? 🌞",
           "desc": "In this activity, students will build a simple circuit using a diode, LED, and voltmeter in the EveryCircuit app to simulate a solar charging system. They will explore how a diode prevents reverse current flow, ensuring that stored energy (like in a battery) does not flow back and get wasted. This helps students understand how diodes are used in solar panels and battery systems to improve efficiency and safety. The activity connects to SDG 13 – Climate Action by highlighting how small electronic components support clean energy systems.",
@@ -818,6 +833,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C5125-U08",
         "id": 29,
         "nm": "What Blocks the Reverse Flow? ⬅️",
         "qs": [
@@ -927,6 +943,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C5125-U09-V01",
           "id": 29,
           "nm": "Can LEDs Tell You When to Take Out the Trash? 🌆",
           "desc": "In this activity, students simulate a bin-level detection circuit using toggle switches and RGB LEDs. Different colors indicate empty, half-full, and full states, promoting smart city waste management.",
@@ -935,6 +952,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C5125-U09",
         "id": 30,
         "nm": "What Color is the Full Bin? 🌈",
         "qs": [
@@ -1052,6 +1070,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C5125-U10-V01",
           "id": 30,
           "nm": "Can One LED Glow in Every Color? 🌈",
           "desc": "Students will create a circuit on Every Circuit App to learn what an RGB LED is and how it works. They will control the colors of the RGB LED using switches.",
@@ -1060,6 +1079,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C5125-U10",
         "id": 31,
         "nm": "Can You Mix Red, Green and Blue? 🌈",
         "qs": [

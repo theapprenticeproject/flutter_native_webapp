@@ -61,15 +61,20 @@ class CourseQuizModel {
     required this.id,
     required this.name,
     required this.questions,
+    this.quizId = '',
   });
 
   final int id;
+
+  /// The API's `quiz_id` (`zid` in the file). Empty on a practice quiz.
+  final String quizId;
   final String name;
   final List<CourseQuizQuestionModel> questions;
 
   factory CourseQuizModel.fromJson(Map<String, dynamic> json) =>
       CourseQuizModel(
         id: (json['id'] as num?)?.toInt() ?? 0,
+        quizId: json['zid'] as String? ?? '',
         name: json['nm'] as String? ?? '',
         questions: CourseQuizQuestionModel.listFromJson(json['qs']),
       );
@@ -83,9 +88,13 @@ class CourseVideoModel {
     required this.youtubeId,
     required this.points,
     this.postQuiz,
+    this.videoId = '',
   });
 
   final int id;
+
+  /// The API's `video_id` (`vid` in the file).
+  final String videoId;
   final String name;
   final String description;
   final String youtubeId;
@@ -95,6 +104,7 @@ class CourseVideoModel {
   factory CourseVideoModel.fromJson(Map<String, dynamic> json) =>
       CourseVideoModel(
         id: (json['id'] as num?)?.toInt() ?? 0,
+        videoId: json['vid'] as String? ?? '',
         name: json['nm'] as String? ?? '',
         description: json['desc'] as String? ?? '',
         youtubeId: json['yt'] as String? ?? '',

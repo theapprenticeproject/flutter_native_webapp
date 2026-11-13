@@ -15,6 +15,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C4178-U01-V01",
           "id": 31,
           "nm": "Can buttons run traffic signals? 🚦",
           "desc": "In this activity, students having the electronic kit will make a traffic light by designing a simple circuit with a parallel connection of LEDs. Students who do not have the kit will simulate the circuit of the traffic light in the PROTO Circuit Simulator. They will understand the importance of following the traffic rules to prevent injuries and deaths due to road accidents, thus addressing SDG 3 of Good Health and Well-being.",
@@ -23,6 +24,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C4178-U01",
         "id": 32,
         "nm": "Can you build a traffic light? 🚦",
         "qs": [
@@ -132,6 +134,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C4178-U02-V01",
           "id": 32,
           "nm": "Can wetness trigger a wiper? 🌧️",
           "desc": "Students build a circuit using an LDR covered with a wet-absorbent material. When the water level increases (rain), light intensity drops, triggering an LED/motor (wiper demo).",
@@ -140,6 +143,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C4178-U02",
         "id": 33,
         "nm": "Can rain trigger a wiper? 🌧️",
         "qs": [
@@ -253,6 +257,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C4178-U03-V01",
           "id": 33,
           "nm": "Can paper blades generate power? 🌬️",
           "desc": "Students will explore how renewable energy works by creating a simple wind turbine using a DC motor and LEDs. Through this hands-on activity, they’ll understand mechanical-to-electrical energy conversion, the role of sustainable technology, and how clean energy helps reduce climate change. This supports SDG 7 (Affordable and Clean Energy), SDG 9 (Industry, Innovation and Infrastructure), and SDG 13 (Climate Action).",
@@ -261,6 +266,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C4178-U03",
         "id": 34,
         "nm": "Can wind generate electricity? 🌬️",
         "qs": [
@@ -370,6 +376,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C4178-U04-V01",
           "id": 34,
           "nm": "Can light set off alarms? 🔦",
           "desc": "Students will create a light-triggered buzzer alert, simulating a basic security system.",
@@ -378,6 +385,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C4178-U04",
         "id": 35,
         "nm": "Can light trigger a buzzer? 🔔",
         "qs": [
@@ -491,6 +499,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C4178-U05-V01",
           "id": 35,
           "nm": "Can opposite magnets really float? 🧲",
           "desc": "In this activity, students will create a*Magnetic Levitation Display*, where a magnet floats in the air without any support! Using simple components like magnets, LED, wires, and a battery, they will build a model that demonstrates the concept of*magnetic repulsion and balance*. When the magnet achieves perfect levitation, the LED will glow. This fun hands-on project helps students understand futuristic technologies like*Maglev trains*, which are fast, energy-efficient, and eco-friendly. The activity also enhances their creativity and problem-solving skills.",
@@ -499,6 +508,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C4178-U05",
         "id": 36,
         "nm": "Can magnets make things levitate? 🧲",
         "qs": [
@@ -612,6 +622,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C4178-U06-V01",
           "id": 36,
           "nm": "Can a motor lift weight? 🏗️",
           "desc": "Students analyze the final build and performance data from the Motorised Pulley Challenge. They evaluate the system's efficiency, assess the mechanical advantage gained by the pulley, and calculate the motor's theoretical vs. actual lifting capacity. They will propose and justify one final design refinement.",
@@ -620,6 +631,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C4178-U06",
         "id": 37,
         "nm": "Can a motor lift heavy loads? 🏗️",
         "qs": [
@@ -729,6 +741,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C4178-U07-V01",
           "id": 37,
           "nm": "Can a magnet grab metal? 🔩",
           "desc": "Students will analyze the final, integrated design for the Metal Extractor + Pulley Challenge. They will evaluate the efficiency of the combined electromechanical system, focusing on the interface between the lifting force of the electromagnet and the mechanical advantage of the pulley.",
@@ -737,6 +750,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C4178-U07",
         "id": 38,
         "nm": "Can a nail become a magnet? 🔩",
         "qs": [
@@ -846,6 +860,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C4178-U08-V01",
           "id": 38,
           "nm": "Can coils generate real electricity? ⚡",
           "desc": "Students will use primary coil and BC457 transistor to induce current in a secondary coil.",
@@ -854,6 +869,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C4178-U08",
         "id": 39,
         "nm": "Can coils generate electricity? ⚡",
         "qs": [
@@ -967,6 +983,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C4178-U09-V01",
           "id": 39,
           "nm": "Can copper light a card? 💌",
           "desc": "Student have to create a Birthday card using LEDs, coin cell and wire.",
@@ -975,6 +992,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C4178-U09",
         "id": 40,
         "nm": "Can copper light a greeting? 💌",
         "qs": [
@@ -1084,6 +1102,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C4178-U10-V01",
           "id": 40,
           "nm": "Can magnets make things float? 🧲",
           "desc": "In this activity, students will create a*Magnetic Levitation Display*, where a magnet floats in the air without any support! Using simple components like magnets, LED, wires, and a battery, they will build a model that demonstrates the concept of*magnetic repulsion and balance*. When the magnet achieves perfect levitation, the LED will glow. This fun hands-on project helps students understand futuristic technologies like*Maglev trains*, which are fast, energy-efficient, and eco-friendly. The activity also enhances their creativity and problem-solving skills.",
@@ -1092,6 +1111,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C4178-U10",
         "id": 41,
         "nm": "Can magnets make things float? 🧲",
         "qs": [

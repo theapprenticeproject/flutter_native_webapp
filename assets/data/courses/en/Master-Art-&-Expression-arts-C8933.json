@@ -15,6 +15,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C8933-U01-V01",
           "id": 81,
           "nm": "Can a shirt carry messages? 👕",
           "desc": "Students will take an old T-shirt and turn it into a reusable tote bag by cutting and tying. They will decorate the bag using fabric paints or markers with climate awareness messages or images. This bag can be used daily, helping reduce the need for plastic bags.",
@@ -23,6 +24,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C8933-U01",
         "id": 83,
         "nm": "Can a T-shirt carry groceries? 👕",
         "qs": [
@@ -140,6 +142,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C8933-U02-V01",
           "id": 82,
           "nm": "Can old tees become bags? 🧵",
           "desc": "Students will take an old T-shirt and turn it into a reusable tote bag by cutting and tying. They will decorate the bag using fabric paints or markers with climate awareness messages or images. This bag can be used daily, helping reduce the need for plastic bags.",
@@ -204,6 +207,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C8933-U02",
         "id": 85,
         "nm": "Can an old shirt become a bag? 🛍️",
         "qs": [
@@ -280,6 +284,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C8933-U03-V01",
           "id": 83,
           "nm": "Can threads weave a coaster? 🪡",
           "desc": "In this activity students will learn weaving technique and create a simple handmade coaster using the same.",
@@ -288,6 +293,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C8933-U03",
         "id": 86,
         "nm": "Can cardboard become a coaster? 🧵",
         "qs": [
@@ -401,6 +407,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C8933-U04-V01",
           "id": 84,
           "nm": "Can yarn make a mat? 🧶",
           "desc": "In this activity students will learn weaving technique and create a simple handmade coaster using the same.",
@@ -409,6 +416,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C8933-U04",
         "id": 87,
         "nm": "Can thread weave into a coaster? 🎨",
         "qs": [
@@ -470,6 +478,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C8933-U05-V01",
           "id": 85,
           "nm": "Can Warli show sustainability? 🌿",
           "desc": "In this activity, student will describe the basic features of Warli art & utilise this knowledge to create an artwork showcasing sustainable practicses that they have observed in their surroundings (villages/cities/school, etc)",
@@ -478,6 +487,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C8933-U05",
         "id": 88,
         "nm": "Can matchsticks draw Warli art? 🔥",
         "qs": [
@@ -595,6 +605,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C8933-U06-V01",
           "id": 86,
           "nm": "Can triangles tell village life? 🏕️",
           "desc": "SWABT understand and appreciate this traditional tribal art from Maharashtra, India. Students will learn to create simple, symbolic designs using geometric shapes like circles, triangles, and lines to depict nature, animals, and daily life.",
@@ -603,6 +614,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C8933-U06",
         "id": 89,
         "nm": "Can shapes tell tribal stories? 🔺",
         "qs": [
@@ -679,6 +691,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C8933-U07-V01",
           "id": 87,
           "nm": "Can one color hold emotions? 💙",
           "desc": "In this activity, students will create a Monochrome Mood Artwork by expressing an emotion through a single shape and shades of one color. Using concentric layers and gradation from dark to light, they’ll explore how shapes and color intensity can show changing emotions, connecting art with self-expression.",
@@ -687,6 +700,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C8933-U07",
         "id": 90,
         "nm": "Can one color show all moods? 🎭",
         "qs": [
@@ -804,6 +818,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C8933-U08-V01",
           "id": 88,
           "nm": "Can shades paint a mountain? 🌄",
           "desc": "In this activity students will laern about Color values and use color gradations to create a unique landscape",
@@ -812,6 +827,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C8933-U08",
         "id": 91,
         "nm": "Can gray show every feeling? 🩶",
         "qs": [
@@ -888,6 +904,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C8933-U09-V01",
           "id": 89,
           "nm": "Can faces show all feelings? 😶",
           "desc": "Students will draw a 4-frame comic strip that shows four different emotions using only faces and colors. They will change the eyes, eyebrows, and mouth in each frame to show a new feeling and use colors that match the emotion. In the end, they will outline, color neatly, and complete all four frames to tell a small story of changing emotions.",
@@ -896,6 +913,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C8933-U09",
         "id": 92,
         "nm": "Can colors express your emotions? 😄",
         "qs": [
@@ -1009,6 +1027,7 @@
       "xp": 20,
       "vids": [
         {
+          "vid": "VC-DUMMY-C8933-U10-V01",
           "id": 90,
           "nm": "Can lines express every emotion? 🎭",
           "desc": "Students will learn the foundational principles of facial anatomy and proportions to create stylized faces",
@@ -1017,6 +1036,7 @@
         }
       ],
       "quiz": {
+        "zid": "QZ-DUMMY-C8933-U10",
         "id": 93,
         "nm": "Can a drawing show feelings? 😲",
         "qs": [
