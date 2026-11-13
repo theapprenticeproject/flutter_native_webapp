@@ -13,6 +13,15 @@ Current Flutter tests cover onboarding flow parsing, classroom stage resolution,
 
 Add tests when changing cache behavior, progress indexes, flow JSON parsing, or API response models.
 
+### Browser test of the saved sign-in
+
+`test/web_only/secure_storage_web_test.dart` runs in a real browser, with the real web secure storage. It shows why the sign-in values are written one after another: on the web, the first write makes the encryption key, so writes done at the same time make several keys, and only one is kept. The other values then cannot be read (`OperationError`), and every request fails. The store also treats an unreadable value as missing and clears the broken storage, so the student can open a new link. Run it with:
+
+```bash
+flutter test --platform chrome test/web_only
+```
+(It needs Chrome or Edge. Set `CHROME_EXECUTABLE` if it is not found. The normal `flutter test` skips it.)
+
 ### Live test against the test Worker
 
 `test/live/test_worker_login_live_test.dart` signs in against the real test Worker with its seeded phones: one student, three siblings, a lost student token, and a bad code. It only reads and signs in. It never writes progress. It is skipped unless you give the Worker address:

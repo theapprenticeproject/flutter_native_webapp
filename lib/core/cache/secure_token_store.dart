@@ -14,22 +14,41 @@ class SecureTokenStore {
 
   final FlutterSecureStorage _storage;
 
+  /// Writes one value. Callers must write **one after another**, never with
+  /// `Future.wait`. On the web the first write makes the encryption key, so two
+  /// writes at the same time make two keys, only one key is kept, and the other
+  /// value can never be read again (`OperationError`).
+  Future<void> _write(String key, String value) =>
+      _storage.write(key: key, value: value);
+
+  /// Reads one value. A value that cannot be read (a lost or wrong encryption
+  /// key) is treated as missing, and the broken storage is cleared, so the
+  /// student can sign in again. It must never throw: a request reads the token
+  /// first, and a throw here would stop every request.
+  Future<String?> _read(String key) async {
+    try {
+      return await _storage.read(key: key);
+    } catch (_) {
+      try {
+        await _storage.deleteAll();
+      } catch (_) {
+        // Nothing more we can do.
+      }
+      return null;
+    }
+  }
+
   Future<void> saveSession({
     required String phone,
     required String token,
     String? adminCode,
   }) async {
-    await Future.wait([
-      _storage.write(key: _phoneKey, value: phone),
-      _storage.write(key: _tokenKey, value: token),
-      ?adminCode != null
-          ? _storage.write(key: _adminCodeKey, value: adminCode)
-          : null,
-    ]);
+    await _write(_phoneKey, phone);
+    await _write(_tokenKey, token);
+    if (adminCode != null) await _write(_adminCodeKey, adminCode);
   }
 
-  Future<void> saveRefreshedToken(String token) =>
-      _storage.write(key: _tokenKey, value: token);
+  Future<void> saveRefreshedToken(String token) => _write(_tokenKey, token);
 
   /// Saves what `/auth/redeem` returns: the phone token (kept only to fetch a
   /// lost student token) and one token per student on the phone.
@@ -38,19 +57,16 @@ class SecureTokenStore {
     required Map<String, String> studentTokens,
     required String activeStudentId,
   }) async {
-    await Future.wait([
-      _storage.write(key: _phoneTokenKey, value: phoneToken),
-      _storage.write(key: _studentTokensKey, value: jsonEncode(studentTokens)),
-      _storage.write(key: _activeStudentKey, value: activeStudentId),
-    ]);
+    await _write(_phoneTokenKey, phoneToken);
+    await _write(_studentTokensKey, jsonEncode(studentTokens));
+    await _write(_activeStudentKey, activeStudentId);
   }
 
-  Future<String?> readPhoneToken() => _storage.read(key: _phoneTokenKey);
-  Future<String?> readActiveStudentId() =>
-      _storage.read(key: _activeStudentKey);
+  Future<String?> readPhoneToken() => _read(_phoneTokenKey);
+  Future<String?> readActiveStudentId() => _read(_activeStudentKey);
 
   Future<Map<String, String>> _readStudentTokens() async {
-    final raw = await _storage.read(key: _studentTokensKey);
+    final raw = await _read(_studentTokensKey);
     if (raw == null) return {};
     try {
       return Map<String, String>.from(jsonDecode(raw) as Map);
@@ -65,17 +81,17 @@ class SecureTokenStore {
   Future<void> saveStudentToken(String studentId, String token) async {
     final tokens = await _readStudentTokens();
     tokens[studentId] = token;
-    await _storage.write(key: _studentTokensKey, value: jsonEncode(tokens));
+    await _write(_studentTokensKey, jsonEncode(tokens));
   }
 
   Future<void> forgetStudentToken(String studentId) async {
     final tokens = await _readStudentTokens();
     tokens.remove(studentId);
-    await _storage.write(key: _studentTokensKey, value: jsonEncode(tokens));
+    await _write(_studentTokensKey, jsonEncode(tokens));
   }
 
   Future<void> saveActiveStudentId(String studentId) =>
-      _storage.write(key: _activeStudentKey, value: studentId);
+      _write(_activeStudentKey, studentId);
 
   /// The token to send: the active student's, else the old single token.
   Future<String?> readToken() async {
@@ -84,11 +100,11 @@ class SecureTokenStore {
       final studentToken = await readStudentToken(activeId);
       if (studentToken != null) return studentToken;
     }
-    return _storage.read(key: _tokenKey);
+    return _read(_tokenKey);
   }
 
-  Future<String?> readPhone() => _storage.read(key: _phoneKey);
-  Future<String?> readAdminCode() => _storage.read(key: _adminCodeKey);
+  Future<String?> readPhone() => _read(_phoneKey);
+  Future<String?> readAdminCode() => _read(_adminCodeKey);
 
   Future<bool> checkAdminCode(String candidate) async {
     final stored = await readAdminCode();
