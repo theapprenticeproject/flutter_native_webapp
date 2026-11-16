@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../../core/theme/app_theme.dart';
-import '../../../../domain/auth/auth_provider.dart';
-import '../../../../domain/auth/redeemed_student.dart';
+import '../../core/theme/app_theme.dart';
+import '../../domain/auth/auth_provider.dart';
+import '../../domain/auth/redeemed_student.dart';
 
 class SwitchProfileBar extends StatelessWidget {
   const SwitchProfileBar({
@@ -64,7 +64,12 @@ class SwitchProfileBar extends StatelessWidget {
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [text, const SizedBox(width: 18), button],
+                    // The text may wrap, so the row never overflows on a phone.
+                    children: [
+                      Flexible(child: text),
+                      const SizedBox(width: 18),
+                      button,
+                    ],
                   ),
                 ),
               );

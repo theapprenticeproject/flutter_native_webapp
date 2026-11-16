@@ -11,6 +11,7 @@ class RedeemedStudent {
     this.currentLearningUnit,
     this.courseId,
     this.language,
+    this.schoolName,
   });
 
   final String studentId;
@@ -21,6 +22,7 @@ class RedeemedStudent {
   final String? currentLearningUnit;
   final String? courseId;
   final String? language;
+  final String? schoolName;
 
   factory RedeemedStudent.fromJson(Map<String, dynamic> json) =>
       RedeemedStudent(
@@ -32,6 +34,7 @@ class RedeemedStudent {
         currentLearningUnit: json['current_learning_unit'] as String?,
         courseId: json['course_id'] as String?,
         language: json['language'] as String?,
+        schoolName: json['school_name'] as String?,
       );
 
   Map<String, dynamic> toJson() => {
@@ -43,6 +46,7 @@ class RedeemedStudent {
     'current_learning_unit': currentLearningUnit,
     'course_id': courseId,
     'language': language,
+    'school_name': schoolName,
   };
 }
 

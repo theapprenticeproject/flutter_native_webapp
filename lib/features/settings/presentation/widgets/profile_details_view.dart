@@ -167,27 +167,8 @@ class _EditActionsBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (!isEditing) {
-      return SizedBox(
-        width: double.infinity,
-        height: 48,
-        child: OutlinedButton.icon(
-          onPressed: onStartEditing,
-          icon: const Icon(Icons.edit_outlined, size: 18),
-          label: Text(
-            'Edit Info',
-            style: GoogleFonts.inter(fontSize: 14, fontWeight: FontWeight.w700),
-          ),
-          style: OutlinedButton.styleFrom(
-            foregroundColor: AppTheme.buttonColor,
-            side: BorderSide(color: AppTheme.buttonColor),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10),
-            ),
-          ),
-        ),
-      );
-    }
+    // Edit profile is later (R-74): v1 shows the data and does not save it.
+    if (!isEditing) return const SizedBox.shrink();
 
     return Row(
       children: [

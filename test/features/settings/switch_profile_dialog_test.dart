@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:tapapp/domain/auth/auth_provider.dart';
 import 'package:tapapp/domain/auth/redeemed_student.dart';
-import 'package:tapapp/features/settings/presentation/widgets/profile_switcher.dart';
+import 'package:tapapp/shared/widgets/profile_switcher.dart';
 
 /// R-34: the student switches profile without signing in again. The list is the
 /// students saved at login. It needs no phone number and makes no request.

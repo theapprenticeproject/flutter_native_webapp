@@ -11,7 +11,7 @@ import '../features/onboarding/presentation/onboarding_screen.dart';
 import '../features/home/presentation/home_screen.dart';
 import '../features/classroom/presentation/class_screen.dart';
 import '../features/gallery/presentation/gallery_screen.dart';
-import '../features/passport/presentation/passport_screen.dart';
+import '../features/me/presentation/me_screen.dart';
 import '../features/settings/presentation/settings_screen.dart';
 import '../features/welcome/presentation/welcome_screen.dart';
 import '../domain/profile/profile_provider.dart';
@@ -175,8 +175,8 @@ final routerProvider = Provider<GoRouter>((ref) {
         pageBuilder: (context, state) => AppRoutes.page(const GalleryScreen()),
       ),
       GoRoute(
-        path: AppRoutes.passport,
-        pageBuilder: (context, state) => AppRoutes.page(const PassportScreen()),
+        path: AppRoutes.me,
+        pageBuilder: (context, state) => AppRoutes.page(const MeScreen()),
       ),
       GoRoute(
         path: AppRoutes.profile,

@@ -23,6 +23,7 @@ Map<String, dynamic> student(String id, String name, String grade) => {
   'current_learning_unit': 'LU-0088',
   'course_id': 'CRS-SCI-05',
   'language': 'en',
+  'school_name': 'New Horizon Public School',
 };
 
 void main() {
@@ -245,5 +246,19 @@ void main() {
     );
     final result = await repoFor(adapter).redeem('CODE');
     expect(result.activeStudent.toJson().keys, isNot(contains('gems')));
+  });
+
+  test('keeps the school name for the Me page', () async {
+    final adapter = FakeWorkerAdapter(
+      (_) => ok({
+        'phone_token': 'p',
+        'active_student_id': 'S1',
+        'students': [student('S1', 'Asha', '5')],
+      }),
+    );
+    final result = await repoFor(adapter).redeem('CODE');
+    expect(result.activeStudent.schoolName, 'New Horizon Public School');
+    final roster = await repoFor(adapter).readRoster();
+    expect(roster.single.schoolName, 'New Horizon Public School');
   });
 }

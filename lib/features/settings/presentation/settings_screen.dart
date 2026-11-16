@@ -16,7 +16,7 @@ import '../services/profile_settings_actions.dart';
 import 'widgets/about_tap_view.dart';
 import 'widgets/profile_details_view.dart';
 import 'widgets/profile_settings_shell.dart';
-import 'widgets/profile_switcher.dart';
+import '../../../shared/widgets/profile_switcher.dart';
 import 'widgets/settings_tab_view.dart';
 
 class SettingsScreen extends ConsumerStatefulWidget {

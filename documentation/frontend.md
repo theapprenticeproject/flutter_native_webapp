@@ -15,7 +15,7 @@ Routes are defined in `lib/app/router.dart` (route names are constants in `lib/c
 | `/welcome`        | Welcome           | Logged in and onboarded        |
 | `/home`           | Dashboard         | Logged in and onboarded        |
 | `/classroom`      | Lesson session    | Logged in and onboarded        |
-| `/passport`       | Skill passport    | Logged in and onboarded        |
+| `/me`             | Me (profile, level, projects) | Logged in and onboarded        |
 | `/profile`        | Settings/profile  | Logged in and onboarded        |
 | `/error`          | Error             | Available for recovery         |
 
@@ -44,9 +44,20 @@ The redirect checks the cached authentication session, active profile, and onboa
 
 Use `forceRefresh: true` only for conflict recovery or a user-requested refresh. It should not be the default navigation behavior.
 
-## The bottom bar (new)
+## The bottom bar and the Me page (new)
 
-The bar has 3 items: **Home, Gallery, Me** (R-1). There is no Class tab: the activity opens from Home (R-2), and Home stays the active tab while it runs. **Gallery** (`/gallery`) is an empty state for now (task D9 builds it). **Me** opens today's Passport page, with a button to Settings, where the student switches profile (R-7, R-34). Settings counts as Me. **Switch profile** lists the students saved at login and swaps the saved token. It needs no phone number and makes no request (R-34). The full Me page (My projects and the rest) is task D8, and it replaces Passport and Profile. The code is in `lib/shared/widgets/app_nav.dart`, with a test in `test/shared/app_nav_test.dart`.
+The bar has 3 items: **Home, Gallery, Me** (R-1). There is no Class tab: the activity opens from Home (R-2), and Home stays the active tab while it runs. **Gallery** (`/gallery`) is an empty state for now (task D9 builds it). Settings (`/profile`) is opened from Me and counts as Me. The code is in `lib/shared/widgets/app_nav.dart`, with a test in `test/shared/app_nav_test.dart`.
+
+**Me** (`/me`, `MeScreen` and `MeView` in `lib/features/me/`) replaces the old Passport and Profile screens (R-7). From top to bottom:
+- **Switch profile** strip: "Not Asha? Switch to your profile". It lists the students saved at login and swaps the token, with no phone number and no request (R-34).
+- **Profile card:** the TAP Buddy picture (never a photo of the child, R-60), name, class and school.
+- **Level:** for example "Bronze Buddy 120 / 1000", with a bar. It comes from the points and the tiers in `/app/config`, so the names and limits are not hardcoded (R-41, R-87). If the Worker cannot be reached, the level is left out and the page still opens.
+- **Total points** with a "What are points?" hint.
+- **"I'm getting better at"** chips: a fixed list, the same for every student (R-95, `skill_tags.dart`). The words are placeholders until the curriculum team gives its list.
+- **My projects this year** ("3 / 6 done"): one project for each unit with an assignment, at most 6 (R-87). Each shows "Not started", "Feedback pending", "Feedback given", "Wrong format" or "Not accepted". Tapping one shows the Worker's feedback. The state comes from `submission/list`, with the saved state as a fallback when offline.
+- **Settings** row: language and the other settings.
+
+v1 leaves out three later items: the Edit profile form (R-74, so the Edit button on the Settings page is hidden too), signing out (R-35) and the theme switch (R-73). The level and projects logic is in `lib/domain/me/`.
 
 ## The work submission, data layer (new)
 
@@ -82,7 +93,7 @@ The old phone and password login screens still exist. They are removed in a late
 
 `HttpClient` converts HTTP `401` into `AuthException` and `429` into `RateLimitedException`. Other Dio failures remain transport errors. Initial-load failures should always offer recovery without discarding pending progress.
 
-Home, Passport and Class show a failed load with `LoadErrorView` (`lib/shared/widgets/`). It takes its text from `describeError()` (`lib/shared/errors/friendly_error.dart`). Offline, busy and server problems get a **Try again** button. An ended session gets a **Sign in** button that logs out and opens the login screen, because trying again cannot fix it. No screen shows the raw error (R-44). Auth, Settings and Onboarding already had plain messages.
+Home, Me and Class show a failed load with `LoadErrorView` (`lib/shared/widgets/`). It takes its text from `describeError()` (`lib/shared/errors/friendly_error.dart`). Offline, busy and server problems get a **Try again** button. An ended session gets a **Sign in** button that logs out and opens the login screen, because trying again cannot fix it. No screen shows the raw error (R-44). Auth, Settings and Onboarding already had plain messages.
 
 The app uses shared `AppHeader` and `AppNav` shells. Classroom and Home switch layouts through `LayoutBuilder` breakpoints. New fixed-size media or controls need bounded dimensions and a mobile fallback.
 

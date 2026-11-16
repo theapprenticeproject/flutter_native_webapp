@@ -4,7 +4,7 @@ import '../../../../core/theme/app_theme.dart';
 import '../../../../shared/widgets/app_nav.dart';
 import '../../models/profile_tab.dart';
 import 'profile_side_nav.dart';
-import 'profile_switcher.dart';
+import '../../../../shared/widgets/profile_switcher.dart';
 
 class ProfileSettingsShell extends StatelessWidget {
   const ProfileSettingsShell({

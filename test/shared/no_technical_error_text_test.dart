@@ -9,7 +9,7 @@ import 'package:flutter_test/flutter_test.dart';
 /// from describeError() in lib/shared/errors/friendly_error.dart.
 const _dataScreens = [
   'lib/features/home/presentation/home_screen.dart',
-  'lib/features/passport/presentation/passport_screen.dart',
+  'lib/features/me/presentation/me_screen.dart',
   'lib/features/classroom/presentation/class_screen.dart',
 ];
 

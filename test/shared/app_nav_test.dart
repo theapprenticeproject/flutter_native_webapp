@@ -13,8 +13,9 @@ Future<GoRouter> _pump(WidgetTester tester, {String start = '/home'}) async {
     routes: [
       GoRoute(path: AppRoutes.home, builder: (_, _) => page('Home')),
       GoRoute(path: AppRoutes.gallery, builder: (_, _) => page('Gallery')),
-      GoRoute(path: AppRoutes.passport, builder: (_, _) => page('Me')),
+      GoRoute(path: AppRoutes.me, builder: (_, _) => page('Me')),
       GoRoute(path: AppRoutes.classroom, builder: (_, _) => page('Class')),
+      GoRoute(path: AppRoutes.profile, builder: (_, _) => page('Settings')),
     ],
   );
   await tester.pumpWidget(MaterialApp.router(routerConfig: router));
@@ -63,5 +64,11 @@ void main() {
     final gallery = tester.widget<Text>(find.text('Gallery'));
     expect(home.style?.color, Colors.white);
     expect(gallery.style?.color, isNot(Colors.white));
+  });
+
+  testWidgets('Me stays the active tab on the Settings page', (tester) async {
+    await _pump(tester, start: AppRoutes.profile);
+    final me = tester.widget<Text>(find.text('Me'));
+    expect(me.style?.color, Colors.white);
   });
 }

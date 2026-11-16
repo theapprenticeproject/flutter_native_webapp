@@ -15,7 +15,7 @@ class AppNav extends StatelessWidget {
   static const _items = [
     _NavDestination(AppRoutes.home, Icons.home_outlined, 'Home'),
     _NavDestination(AppRoutes.gallery, Icons.photo_library_outlined, 'Gallery'),
-    _NavDestination(AppRoutes.passport, Icons.account_circle_outlined, 'Me'),
+    _NavDestination(AppRoutes.me, Icons.account_circle_outlined, 'Me'),
   ];
 
   @override
@@ -73,7 +73,7 @@ class _BottomNav extends StatelessWidget {
 bool _isActive(_NavDestination item, String location) =>
     location == item.route ||
     (item.route == AppRoutes.home && location == AppRoutes.classroom) ||
-    (item.route == AppRoutes.passport && location == AppRoutes.profile);
+    (item.route == AppRoutes.me && location == AppRoutes.profile);
 
 class _NavItem extends StatelessWidget {
   final _NavDestination item;
