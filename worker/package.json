@@ -1,12 +1,21 @@
 {
-  "name": "tapapp-proxy",
+  "name": "tapapp-worker",
   "version": "1.0.0",
   "private": true,
+  "description": "TapApp Worker middleware — single Cloudflare Worker fronting Frappe, GCS, R2, BigQuery, and the AI provider.",
+  "main": "src/index.ts",
   "scripts": {
     "dev": "wrangler dev",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
   },
   "devDependencies": {
-    "wrangler": "^3.0.0"
-  }
+    "@cloudflare/workers-types": "^4.20241022.0",
+    "typescript": "^5.7.3",
+    "wrangler": "^3.90.0",
+    "vitest": "^2.1.4"
+  },
+  "dependencies": {}
 }

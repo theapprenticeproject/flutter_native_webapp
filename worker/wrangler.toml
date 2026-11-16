@@ -1,12 +1,133 @@
 name = "tapapp-worker"
-main = "src/worker.js"
-compatibility_date = "2026-07-01"
- 
-[vars]
-FRAPPE_BASE_URL = "https://opened.lol:8081"
-ALLOWED_ORIGINS = "*"
-GROQ_MODEL = "qwen/qwen3.6-27b"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
 
-kv_namespaces = [
-  { binding = "KV", id = "e3d834d9f35d4954bc25a0a392e8be09" }
-]
+[vars]
+ENVIRONMENT = "production"
+BQ_DATASET = "tapapp_telemetry"
+GCS_AUTHENTICATED_BUCKET = "tap-submission"
+GCS_PUBLIC_BUCKET = "tap-public-gcs"
+AI_PROVIDER_BASE_URL = "https://api.openai.com"
+AI_PROVIDER_MODEL = "gpt-4o-mini"
+
+# R2 bucket is owned by a DIFFERENT Cloudflare account, so it cannot be reached via a
+# native [[r2_buckets]] binding (bindings are same-account only). All R2 reads/writes
+# instead go through storage/r2.ts's SigV4-signed direct URLs, authenticated with the
+# plain credential vars/secrets below (R2_ACCESS_KEY_ID / R2_SECRET_ACCESS_KEY are
+# secrets — see deploy_worker.sh --secrets — R2_ACCOUNT_ID / R2_SUBMISSIONS_BUCKET_NAME
+# are plain, non-sensitive vars here). This works cross-account because it's API-key
+# auth, not a Workers binding.
+R2_SUBMISSIONS_BUCKET_NAME = "tapapp-submissions"
+R2_ACCOUNT_ID = "REPLACE_WITH_THE_OTHER_ACCOUNTS_CLOUDFLARE_ACCOUNT_ID"
+
+# ── BQ on/off switch ──
+# Master kill switch for all BigQuery writes (telemetry_* + chat_turns). When "false",
+# bqInsertAll() short-circuits immediately — no OAuth token mint, no fetch, no budget
+# check — and StudentSession/ChatSession's alarm handlers treat it as an instant no-op
+# success (buffer is cleared, nothing retried). Flip to "false" to kill BQ traffic
+# entirely (e.g. during an outage or while rotating BQ_SERVICE_ACCOUNT_JSON) without a
+# redeploy of application logic — this is a [vars] change only.
+BQ_ENABLED = "true"
+
+# ── AnalyticsConfig overrides ──
+# Every DO/BQ timing+size knob in one place, resolved via config/analytics.ts.
+# Change any of these per-environment with zero code change.
+
+# Daily byte ceiling for BQ ingestion — a runaway-write circuit breaker, not a
+# bill-rationing mechanism at this system's real scale. On exceeding this, bqInsertAll
+# throws and the DO keeps the rows buffered for retry (no R2 spill anymore).
+BQ_DAILY_BYTE_BUDGET = "10737418240"
+# Per-call timeout for the BQ insertAll call.
+BQ_WRITE_TIMEOUT_MS = "8000"
+# Retry delay after a failed BQ flush before a DO's alarm tries again.
+BQ_FLUSH_RETRY_DELAY_MS = "60000"
+# Max retry attempts after the first failed flush before the buffer is DROPPED (logged,
+# not spilled anywhere). 1 = fail once, retry once, then give up. This is the hard cap
+# on DO active-seconds (= cost) for a persistently-failing BQ call — without it, a bad
+# batch would re-arm the alarm forever.
+BQ_MAX_FLUSH_RETRIES = "1"
+
+# StudentSession idle-flush timeout: no telemetry/rate-limit calls for this long → flush + evict.
+SESSION_IDLE_TIMEOUT_MS = "900000"      # 15 min
+# Hard ceiling: force-flush a continuously-active StudentSession even if it never goes idle.
+SESSION_MAX_LIFETIME_MS = "3600000"     # 1 hour
+
+# ChatSession idle-flush timeout — same idle pattern as StudentSession, separate instance.
+CHAT_IDLE_TIMEOUT_MS = "900000"         # 15 min
+# How many prior exchanges are sent to the AI provider per call (bounds token cost).
+CHAT_MAX_HISTORY_TURNS = "2"
+
+# Caps packed_taps row size regardless of client-sent tap volume.
+MAX_TAPS_PER_ROW = "200"
+
+# ── D1 binding ──
+# config/index.ts reads app_config overrides from this DB on every ConfigSchema
+# resolution (config()), refreshed in the background per CONFIG_REFRESH_SECONDS.
+# db/gallery.ts also reads/writes the gallery_items table here. Already created and
+# migrated — do NOT run `wrangler d1 create` again for this database_id.
+[[d1_databases]]
+binding = "DB"
+database_name = "tapapp-submissions"
+database_id = "e7eac427-d994-4f4b-8770-fd3c95b577d0"
+
+# ── Durable Object bindings ──
+[[durable_objects.bindings]]
+name = "TAPAPP_STUDENT_SESSION"
+class_name = "StudentSession"
+
+[[durable_objects.bindings]]
+name = "TAPAPP_CHAT_SESSION"
+class_name = "ChatSession"
+
+# ── Durable Object migration ──
+# Cloudflare's free plan requires Durable Object classes to be SQLite-backed, declared
+# via `new_sqlite_classes` rather than the older `new_classes` (which only works on
+# paid plans with the legacy key-value DO storage backend). Using `new_classes` here
+# fails deploy with:
+#   "In order to use Durable Objects with a free plan, you must create a namespace
+#    using a `new_sqlite_classes` migration. [code: 10097]"
+#
+# IMPORTANT: if this Worker has ALREADY been deployed successfully once before with a
+# `new_classes` migration under tag "v1", do not edit that tag in place — Cloudflare
+# tracks migrations by tag and silently editing a historical tag can desync from what
+# it already applied. Instead, add a new tag (e.g. "v2") with `new_sqlite_classes`.
+# Since this project has not deployed successfully yet, tag "v1" is defined directly
+# as `new_sqlite_classes` below.
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["StudentSession", "ChatSession"]
+
+# ── R2 bindings ──
+# Intentionally NONE. See the R2_SUBMISSIONS_BUCKET_NAME / R2_ACCOUNT_ID comment above
+# — the bucket lives in another Cloudflare account, so no [[r2_buckets]] binding is
+# possible or needed here.
+
+# ── Workers Analytics Engine ──
+# No create step needed — a dataset is created implicitly on first writeDataPoint()
+# call once this Worker is deployed and handling traffic. Query it directly
+# (Cloudflare dashboard, GraphQL Analytics API, or the Analytics Engine SQL API).
+[[analytics_engine_datasets]]
+binding = "REQUEST_ANALYTICS"
+dataset = "tapapp_requests"
+
+# ── Secrets ──
+# NEVER set secret values in this file. Push them with:
+#   ./scripts/deploy_worker.sh --secrets
+# which reads /home/mau/Projects/TAP/flutter_native_webapp/.env and pushes each one via
+# `wrangler secret put`. Expected secret names (see deploy_worker.sh for the full list
+# and .env for where values live):
+#   MAGIC_LINK_SECRET
+#   PHONE_TOKEN_SECRET
+#   STUDENT_TOKEN_SECRET
+#   GALLERY_SCOPE_TOKEN_SECRET
+#   INTERNAL_API_SECRET
+#   FRAPPE_BASE_URL
+#   FRAPPE_API_KEY
+#   FRAPPE_API_SECRET
+#   GCS_SERVICE_ACCOUNT_JSON
+#   AI_PROVIDER_API_KEY
+#   BQ_SERVICE_ACCOUNT_JSON
+#   BQ_PROJECT_ID
+#   R2_ACCESS_KEY_ID
+#   R2_SECRET_ACCESS_KEY
