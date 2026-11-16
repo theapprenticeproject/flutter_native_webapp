@@ -289,6 +289,22 @@ void main() {
     expect(config.tierFor(1000), 'silver');
   });
 
+  // shortcut: the test Worker renamed point_tiers to tiers on 2026-11-13.
+  test('config reads the tiers under either name', () async {
+    final adapter = FakeWorkerAdapter(
+      (_) => ok({
+        'tiers': [
+          {'id': 'bronze', 'min': 0},
+          {'id': 'silver', 'min': 1000},
+        ],
+        'upload_max_bytes_image': 1,
+        'upload_max_bytes_video': 2,
+      }),
+    );
+    final config = await repoFor(adapter).appConfig();
+    expect(config.tierFor(1500), 'silver');
+  });
+
   group('idempotency keys', () {
     test('are unique per call and say what they are for', () {
       final a = newIdempotencyKey('video', 'S1', 'LU-1');

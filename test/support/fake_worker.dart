@@ -6,11 +6,14 @@ import 'package:dio/dio.dart';
 /// A fake Worker for tests. It answers each request from a handler and keeps
 /// the requests it saw, so a test can check the path, the headers and the body.
 class FakeRequest {
-  FakeRequest(this.method, this.path, this.headers, this.body);
+  FakeRequest(this.method, this.path, this.headers, this.body, [this.raw]);
   final String method;
   final String path;
   final Map<String, dynamic> headers;
   final Map<String, dynamic>? body;
+
+  /// The body as it was sent (for example the bytes of an upload).
+  final Object? raw;
 }
 
 typedef FakeHandler = ({int status, Object body}) Function(FakeRequest r);
@@ -33,6 +36,7 @@ class FakeWorkerAdapter implements HttpClientAdapter {
       options.path,
       Map<String, dynamic>.from(options.headers),
       raw is Map ? Map<String, dynamic>.from(raw) : null,
+      raw,
     );
     seen.add(request);
     final reply = handler(request);

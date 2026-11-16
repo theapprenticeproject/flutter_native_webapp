@@ -48,6 +48,12 @@ Use `forceRefresh: true` only for conflict recovery or a user-requested refresh.
 
 The bar has 3 items: **Home, Gallery, Me** (R-1). There is no Class tab: the activity opens from Home (R-2), and Home stays the active tab while it runs. **Gallery** (`/gallery`) is an empty state for now (task D9 builds it). **Me** opens today's Passport page, with a button to Settings, where the student switches profile (R-7, R-34). Settings counts as Me. **Switch profile** lists the students saved at login and swaps the saved token. It needs no phone number and makes no request (R-34). The full Me page (My projects and the rest) is task D8, and it replaces Passport and Profile. The code is in `lib/shared/widgets/app_nav.dart`, with a test in `test/shared/app_nav_test.dart`.
 
+## The work submission, data layer (new)
+
+`SubmissionRepository` (`lib/domain/submission/`) has the calls for the Make step: `requestUpload` (`/submission/request_upload`, an `image` or a `video`), `upload` (a PUT of the bytes to the signed URL with the Worker's headers and **no** bearer token, 3 tries, a file over `max_size_bytes` is refused before any request), `submitArtwork` (`/submission/submit_artwork`, with an idempotency key) and `list` and `get`. A third attempt for one assignment answers `CONFLICT`. `SubmissionInfo.isValid` is the rule of the API contract, section 4: `Success - Original` and a score above 0. The Make screen does not use this yet (the next commit wires it, with the photo shrink and the camera).
+
+The Worker now checks the order: `request_upload` answers `INVALID_INPUT` until the unit's video is recorded.
+
 ## Signing in with the magic link (new)
 
 The WhatsApp link carries a code. The route `/l/<code>` (`LinkSignInScreen`) calls `/auth/redeem` and gets one token per student on the phone. One student goes to Home. Several students go to the name picker (`/profile-select`). Picking a name only swaps the saved token, with no call. If a student token is lost, `/auth/select_profile` with the phone token gets a new one. The Worker has no token refresh, so a token that ends (30 days) means the student opens a new link. The code is in `lib/domain/auth/magic_link_repository.dart`, and the tokens are kept in `SecureTokenStore`.

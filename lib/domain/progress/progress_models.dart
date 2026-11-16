@@ -44,6 +44,7 @@ class ProgressResult {
 class SubmissionInfo {
   const SubmissionInfo({
     required this.id,
+    this.assignmentId,
     required this.status,
     this.resultStatus,
     this.viewUrl,
@@ -56,6 +57,7 @@ class SubmissionInfo {
   });
 
   final String id;
+  final String? assignmentId;
   final String status;
   final String? resultStatus;
   final String? viewUrl;
@@ -71,11 +73,21 @@ class SubmissionInfo {
   bool get isPending => _status == 'pending' || _status == 'processing';
   bool get isGraded => _status == 'completed';
 
+  /// The work counts (API contract section 4): `Success - Original` and a score
+  /// above 0. Flagged, failed, pending, a score of 0 (the AI could not judge)
+  /// and any value we do not know are not valid.
+  bool get isValid =>
+      (resultStatus ?? '').toLowerCase() == 'success - original' &&
+      (score ?? 0) > 0;
+
   /// The student may send another photo or video (2 attempts in all).
   bool get canSendAgain => (attemptsRemaining ?? 0) > 0;
 
   factory SubmissionInfo.fromJson(Map<String, dynamic> json) => SubmissionInfo(
-    id: (json['name'] as String?) ?? '',
+    // shortcut: the test Worker still says "name". Use only submission_id once
+    // it is fixed.
+    id: ((json['submission_id'] ?? json['name']) as String?) ?? '',
+    assignmentId: json['assignment_id_link'] as String?,
     status: (json['status'] as String?) ?? '',
     resultStatus: json['result_status'] as String?,
     viewUrl: json['view_url'] as String?,
@@ -176,7 +188,9 @@ class AppConfig {
 
   factory AppConfig.fromJson(Map<String, dynamic> json) {
     final tiers =
-        (json['point_tiers'] as List? ?? const [])
+        // shortcut: the test Worker says `tiers`, the contract says
+        // `point_tiers`. Read only the contract name once the Worker follows it.
+        ((json['point_tiers'] ?? json['tiers']) as List? ?? const [])
             .whereType<Map>()
             .map((t) => (id: t['id'] as String, min: _int(t['min']) ?? 0))
             .toList()

@@ -66,7 +66,9 @@ void main() {
 
   Future<String> mint(String phone) async {
     final r = await plain.post<Map>('/test/mint-link', data: {'phone': phone});
-    return r.data!['data']['code'] as String;
+    final data = r.data!['data'] as Map;
+    // The test Worker renamed `code` to `magic_link` on 2026-11-13.
+    return (data['magic_link'] ?? data['code']) as String;
   }
 
   test('fresh phone: one student, goes straight in', () async {
