@@ -10,8 +10,8 @@ import '../submission/feedback_tracker.dart';
 ///
 /// Returns null when there is nothing to ask (the video is not watched yet, or
 /// the unit has no assignment) or when the Worker cannot be reached and nothing
-/// was saved. When the feedback is valid and the quiz is done, it also closes
-/// the unit on the phone, so the next unit can open.
+/// was saved. It never closes the unit: valid feedback first goes through the
+/// Results chat (R-68), which then calls `applyValidFeedback`.
 Future<FeedbackStage?> loadUnitFeedback({
   required FeedbackTracker tracker,
   required LearnerStateRepository learner,
@@ -19,17 +19,11 @@ Future<FeedbackStage?> loadUnitFeedback({
   required CourseUnitModel unit,
   required int unitIndex,
   required bool videoDone,
-  required bool quizDone,
 }) async {
   final assignmentId = unit.assignments.firstOrNull?.assignmentId ?? '';
   if (assignmentId.isEmpty || !videoDone) return null;
 
-  final check = await tracker.check(learnerId, assignmentId);
-  final stage = check?.stage;
-  if (stage == FeedbackStage.valid && quizDone) {
-    await learner.applyValidFeedback(learnerId, unitIndex: unitIndex);
-  }
-  return stage;
+  return (await tracker.check(learnerId, assignmentId))?.stage;
 }
 
 /// The unit the student is on, with where its work stands.
@@ -39,8 +33,9 @@ typedef UnitWithFeedback = ({
   LearnerStateModel state,
 });
 
-/// Picks the current unit, asks the Worker about its work, and moves on to the
-/// next unit when the feedback is valid and the unit is closed (R-83).
+/// Picks the current unit and asks the Worker about its work. Valid feedback
+/// does not move on to the next unit by itself: the unit stays current until
+/// the student has seen the Results chat (R-68, R-83).
 Future<UnitWithFeedback> currentUnitWithFeedback({
   required FeedbackTracker tracker,
   required LearnerStateRepository learner,
@@ -48,12 +43,11 @@ Future<UnitWithFeedback> currentUnitWithFeedback({
   required LearnerStateModel state,
   required List<CourseUnitModel> units,
 }) async {
-  var enrollment = state.enrollment ?? const EnrollmentModel();
-  var index = ClassroomProgressResolver.resolveUnitIndexForCourse(
+  final enrollment = state.enrollment ?? const EnrollmentModel();
+  final index = ClassroomProgressResolver.resolveUnitIndexForCourse(
     enrollment,
     units,
   );
-  final quizDone = enrollment.quizzesCompleted > index;
   final feedback = await loadUnitFeedback(
     tracker: tracker,
     learner: learner,
@@ -61,18 +55,6 @@ Future<UnitWithFeedback> currentUnitWithFeedback({
     unit: units[index],
     unitIndex: index,
     videoDone: enrollment.videosCompleted > index,
-    quizDone: quizDone,
   );
-
-  if (feedback == FeedbackStage.valid && quizDone) {
-    // The unit is closed on the phone: read the new state and move on.
-    final closed = await learner.readCached(learnerId) ?? state;
-    enrollment = closed.enrollment ?? enrollment;
-    index = ClassroomProgressResolver.resolveUnitIndexForCourse(
-      enrollment,
-      units,
-    );
-    return (unitIndex: index, feedback: null, state: closed);
-  }
   return (unitIndex: index, feedback: feedback, state: state);
 }

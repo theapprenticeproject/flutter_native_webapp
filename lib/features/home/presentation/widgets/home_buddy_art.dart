@@ -16,6 +16,7 @@ class HomeBuddyArt extends StatelessWidget {
       LearningStage.quizPending => 'assets/home-screen/home_page_img2.png',
       LearningStage.submissionPending =>
         'assets/home-screen/home_page_img2.png',
+      LearningStage.feedbackReady => 'assets/home-screen/sussess_celebrate.png',
       LearningStage.completed => 'assets/home-screen/sussess_celebrate.png',
     };
 

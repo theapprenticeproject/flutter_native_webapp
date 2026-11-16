@@ -92,19 +92,15 @@ void main() {
     await dir.delete(recursive: true);
   });
 
-  Future<FeedbackStage?> load({
-    CourseUnitModel? unit,
-    bool videoDone = true,
-    bool quizDone = true,
-  }) => loadUnitFeedback(
-    tracker: tracker,
-    learner: learner,
-    learnerId: 'S1',
-    unit: unit ?? _unit(),
-    unitIndex: 0,
-    videoDone: videoDone,
-    quizDone: quizDone,
-  );
+  Future<FeedbackStage?> load({CourseUnitModel? unit, bool videoDone = true}) =>
+      loadUnitFeedback(
+        tracker: tracker,
+        learner: learner,
+        learnerId: 'S1',
+        unit: unit ?? _unit(),
+        unitIndex: 0,
+        videoDone: videoDone,
+      );
 
   test('the video is not watched yet: nothing was sent, no request', () async {
     expect(await load(videoDone: false), isNull);
@@ -126,20 +122,17 @@ void main() {
     expect((await learner.readCached('S1'))?.enrollment?.submissionIndex, 0);
   });
 
-  test('valid and the quiz done: the unit is closed on the phone', () async {
-    await learner.applyLocalProgress(learnerId: 'S1', xp: 0, videoIndex: 1);
-    await learner.applyLocalProgress(learnerId: 'S1', xp: 0, quizIndex: 1);
-    rows = [_row('Success - Original', 80)];
+  test(
+    'valid and the quiz done: the unit stays open until the Results chat',
+    () async {
+      await learner.applyLocalProgress(learnerId: 'S1', xp: 0, videoIndex: 1);
+      await learner.applyLocalProgress(learnerId: 'S1', xp: 0, quizIndex: 1);
+      rows = [_row('Success - Original', 80)];
 
-    expect(await load(), FeedbackStage.valid);
-    expect((await learner.readCached('S1'))?.enrollment?.submissionIndex, 1);
-  });
-
-  test('valid but the quiz is not done: the unit stays open', () async {
-    rows = [_row('Success - Original', 80)];
-    expect(await load(quizDone: false), FeedbackStage.valid);
-    expect((await learner.readCached('S1'))?.enrollment?.submissionIndex, 0);
-  });
+      expect(await load(), FeedbackStage.valid);
+      expect((await learner.readCached('S1'))?.enrollment?.submissionIndex, 0);
+    },
+  );
 
   test('not valid: the unit stays open', () async {
     rows = [_row('Success - Flagged', 40)];
@@ -186,18 +179,28 @@ void main() {
     });
 
     test(
-      'valid feedback closes the unit and the next unit is current',
+      'valid feedback: the same unit stays current for the Results chat',
       () async {
         await learner.applyLocalProgress(learnerId: 'S1', xp: 0, videoIndex: 1);
         await learner.applyLocalProgress(learnerId: 'S1', xp: 0, quizIndex: 1);
         rows = [_row('Success - Original', 80)];
 
         final r = await current();
-        expect(r.unitIndex, 1);
-        expect(r.feedback, isNull, reason: 'the next unit has nothing sent');
-        expect(r.state.enrollment?.submissionIndex, 1);
+        expect(r.unitIndex, 0);
+        expect(r.feedback, FeedbackStage.valid);
       },
     );
+
+    test('after the Results chat the next unit is current', () async {
+      await learner.applyLocalProgress(learnerId: 'S1', xp: 0, videoIndex: 1);
+      await learner.applyLocalProgress(learnerId: 'S1', xp: 0, quizIndex: 1);
+      await learner.applyValidFeedback('S1', unitIndex: 0);
+      rows = [_row('Success - Original', 80)];
+
+      final r = await current();
+      expect(r.unitIndex, 1);
+      expect(r.feedback, isNull, reason: 'the next unit has nothing sent');
+    });
 
     test(
       'the video done, work not sent (postponed): the Make step is next',

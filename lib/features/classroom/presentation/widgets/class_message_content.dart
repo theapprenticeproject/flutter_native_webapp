@@ -98,6 +98,10 @@ class ClassCheckpointCard extends StatelessWidget {
         action == 'submission_retry' ||
         action == 'share_work' ||
         action == 'not_today' ||
+        action == 'results_next' ||
+        action == 'results_points' ||
+        action == 'results_done' ||
+        action == 'send_again' ||
         action == 'quiz') {
       return ClassSectionCheckpoint(
         kind: switch (action) {

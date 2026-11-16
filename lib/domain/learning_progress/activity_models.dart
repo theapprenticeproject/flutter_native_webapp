@@ -9,6 +9,9 @@ enum LearningStage {
 
   /// The work is sent. The student waits for valid feedback (R-4, R-83).
   submissionPending,
+
+  /// The feedback is valid. Home invites the student to see it (R-68).
+  feedbackReady,
   completed,
 }
 
@@ -18,6 +21,7 @@ extension LearningStageClassroomMapper on ClassroomProgressStage {
     ClassroomProgressStage.submitProject => LearningStage.sendProject,
     ClassroomProgressStage.takeQuiz => LearningStage.quizPending,
     ClassroomProgressStage.awaitingFeedback => LearningStage.submissionPending,
+    ClassroomProgressStage.resultsReady => LearningStage.feedbackReady,
     ClassroomProgressStage.unitCompleted => LearningStage.completed,
   };
 }

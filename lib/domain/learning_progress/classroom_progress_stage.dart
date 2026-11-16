@@ -10,6 +10,10 @@ enum ClassroomProgressStage {
   /// The work is sent and the quiz is done, but the feedback is not valid yet
   /// (R-83): waiting, slow, or not valid.
   awaitingFeedback,
+
+  /// The feedback is valid and the student has not seen it yet: the Results
+  /// chat comes next (R-68). The unit closes after it.
+  resultsReady,
   unitCompleted;
 
   double get revealProgress => switch (this) {
@@ -17,6 +21,7 @@ enum ClassroomProgressStage {
     ClassroomProgressStage.submitProject => 0.34,
     ClassroomProgressStage.takeQuiz => 0.67,
     ClassroomProgressStage.awaitingFeedback => 0.67,
+    ClassroomProgressStage.resultsReady => 0.67,
     ClassroomProgressStage.unitCompleted => 1,
   };
 }
@@ -85,11 +90,13 @@ class ClassroomProgressResolver {
           ? ClassroomProgressStage.takeQuiz
           : !valid
           ? ClassroomProgressStage.awaitingFeedback
-          : ClassroomProgressStage.unitCompleted;
+          : enrollment.submissionIndex > unitIndex
+          ? ClassroomProgressStage.unitCompleted
+          : ClassroomProgressStage.resultsReady;
       return ClassroomProgressSnapshot(
         stage: stage,
         videoDone: videoDone,
-        submissionDone: valid,
+        submissionDone: valid && enrollment.submissionIndex > unitIndex,
         quizDone: !hasQuiz || quizDone,
         workSent: sent,
       );

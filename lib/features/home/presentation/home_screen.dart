@@ -180,6 +180,7 @@ class _StageContent extends StatelessWidget {
       LearningStage.sendProject => 400.0,
       LearningStage.quizPending => 400.0,
       LearningStage.submissionPending => 400.0,
+      LearningStage.feedbackReady => 400.0,
       LearningStage.completed => 300.0,
     };
 
@@ -335,6 +336,13 @@ class _ActiveCard extends StatelessWidget {
         courseDisplay: unit.courseDisplay,
         unitName: unit.unitName,
         slow: slowFeedback,
+      ),
+      LearningStage.feedbackReady => SubmissionPendingCard(
+        courseDisplay: unit.courseDisplay,
+        unitName: unit.unitName,
+        slow: false,
+        ready: true,
+        onOpen: () => context.go(AppRoutes.classroom),
       ),
       LearningStage.completed => CompletedCard(points: unit.totalPoints),
     };

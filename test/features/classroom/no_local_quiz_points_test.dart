@@ -68,4 +68,17 @@ void main() {
     expect(text.contains('submissionSentOnly: sentOnly'), isTrue);
     expect(text.contains('_feedbackAllowsCompletion'), isTrue);
   });
+
+  test(
+    'the Results chat closes the unit, and not the first valid check (R-68)',
+    () {
+      final text = read(
+        'lib/features/classroom/providers/class_chat_controller.dart',
+      );
+      // The submission step is marked done only when the chat is over.
+      expect('applyValidFeedback('.allMatches(text).length, 1);
+      expect(text.contains("case 'results_done'"), isTrue);
+      expect(text.contains('startNewAttempt('), isTrue, reason: 'send again');
+    },
+  );
 }

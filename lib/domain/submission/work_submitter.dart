@@ -28,6 +28,10 @@ class WorkSubmitter {
 
   final Map<String, _Attempt> _attempts = {};
 
+  /// "Send again" after a not-valid result: forget the last attempt, so the next
+  /// [submit] asks for a new slot, uploads the new file and uses a new key.
+  void startNewAttempt(String assignmentId) => _attempts.remove(assignmentId);
+
   Future<ArtworkResult> submit({
     required String assignmentId,
     required SubmissionType type,

@@ -279,4 +279,46 @@ void main() {
       hasLength(2),
     );
   });
+
+  test(
+    'send again: a new attempt gets a new slot, a new upload and a new key',
+    () async {
+      final rig = _Rig();
+      final s = rig.submitter();
+      await s.submit(
+        assignmentId: 'AS-1',
+        type: SubmissionType.image,
+        bytes: photo,
+      );
+
+      s.startNewAttempt('AS-1');
+      await s.submit(
+        assignmentId: 'AS-1',
+        type: SubmissionType.image,
+        bytes: photo,
+      );
+
+      expect(
+        rig.calls.where((c) => c == '/submission/request_upload'),
+        hasLength(2),
+      );
+      expect(rig.calls.where((c) => c == 'PUT'), hasLength(2));
+      expect(rig.keys, hasLength(2));
+      expect(rig.keys[0], isNot(rig.keys[1]));
+    },
+  );
+
+  test('startNewAttempt for an assignment never sent is harmless', () async {
+    final rig = _Rig();
+    final s = rig.submitter()..startNewAttempt('AS-9');
+    await s.submit(
+      assignmentId: 'AS-9',
+      type: SubmissionType.image,
+      bytes: photo,
+    );
+    expect(
+      rig.calls.where((c) => c == '/submission/request_upload'),
+      hasLength(1),
+    );
+  });
 }

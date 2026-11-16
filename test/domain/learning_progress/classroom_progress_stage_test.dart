@@ -162,8 +162,9 @@ void main() {
       }
     });
 
-    test('valid feedback with the video and the quiz done: finished', () {
-      expect(stage(FeedbackStage.valid), ClassroomProgressStage.unitCompleted);
+    test('valid feedback, video and quiz done: the Results chat comes next', () {
+      // The unit is not finished yet. It closes after the Results chat (R-68).
+      expect(stage(FeedbackStage.valid), ClassroomProgressStage.resultsReady);
     });
 
     test('sent but the quiz is not done: the quiz comes next', () {
@@ -205,5 +206,30 @@ void main() {
         LearningStage.submissionPending,
       );
     });
+
+    test('Home shows "feedback ready" when the Results chat is next', () {
+      expect(
+        ClassroomProgressStage.resultsReady.homeStage,
+        LearningStage.feedbackReady,
+      );
+    });
+
+    test(
+      'after the Results chat the phone marks the submission done: finished',
+      () {
+        // The Results chat calls applyValidFeedback, which bumps this index.
+        expect(
+          stage(
+            FeedbackStage.valid,
+            enrollment: const EnrollmentModel(
+              videosCompleted: 1,
+              quizzesCompleted: 1,
+              submissionIndex: 1,
+            ),
+          ),
+          ClassroomProgressStage.unitCompleted,
+        );
+      },
+    );
   });
 }

@@ -89,6 +89,16 @@ class ClassChatController extends ChangeNotifier {
 
   /// Where the work for this unit stands (R-83). Null: not known.
   FeedbackStage? _feedback;
+
+  /// The newest submission and its feedback, when the Worker answered.
+  SubmissionInfo? _latestSubmission;
+
+  /// The student has seen the Results chat (or the unit was closed before).
+  /// Valid feedback closes the unit only after this (R-68).
+  late bool _resultsDone;
+
+  /// "Send again" is running: the next send replaces a not-valid one (R-76).
+  bool _resending = false;
   final VoidCallback? _onProgressSaved;
 
   LearnerStateModel _learnerState;
@@ -181,16 +191,19 @@ class ClassChatController extends ChangeNotifier {
       return ClassroomProgressStage.submitProject;
     }
     if (!_quizProgressSaved) return ClassroomProgressStage.takeQuiz;
-    if (!_feedbackAllowsCompletion) {
+    if (_submissionNotRequired) return ClassroomProgressStage.unitCompleted;
+    if (!(_feedback?.opensNextUnit ?? false)) {
       return ClassroomProgressStage.awaitingFeedback;
     }
+    if (!_resultsDone) return ClassroomProgressStage.resultsReady;
     return ClassroomProgressStage.unitCompleted;
   }
 
   /// The unit can close only after valid feedback (R-83), unless it has no
   /// submission.
   bool get _feedbackAllowsCompletion =>
-      _submissionNotRequired || (_feedback?.opensNextUnit ?? false);
+      _submissionNotRequired ||
+      ((_feedback?.opensNextUnit ?? false) && _resultsDone);
 
   double get revealProgress => currentProgressStage.revealProgress;
 
@@ -218,6 +231,9 @@ class ClassChatController extends ChangeNotifier {
       case ClassroomProgressStage.awaitingFeedback:
         _showWaitingForFeedback();
         return;
+      case ClassroomProgressStage.resultsReady:
+        unawaited(_showResults());
+        return;
       case ClassroomProgressStage.unitCompleted:
         return;
     }
@@ -232,6 +248,7 @@ class ClassChatController extends ChangeNotifier {
       feedback: _feedback,
     );
     _videoWatchedThisUnit = progress.videoDone;
+    _resultsDone = (enrollment?.submissionIndex ?? 0) > unitIndex;
     _submissionAcceptedThisUnit = progress.workSent;
     _videoProgressSaved = _videoWatchedThisUnit;
     _submissionProgressSaved = _submissionAcceptedThisUnit;
@@ -249,6 +266,9 @@ class ClassChatController extends ChangeNotifier {
         return;
       case ClassroomProgressStage.awaitingFeedback:
         _showWaitingForFeedback();
+        return;
+      case ClassroomProgressStage.resultsReady:
+        unawaited(_showResults());
         return;
       case ClassroomProgressStage.unitCompleted:
         if (_learnerState.hasPendingLocalProgress) {
@@ -497,7 +517,10 @@ class ClassChatController extends ChangeNotifier {
       return;
     }
     final passed = answer.matchesCriteria(step.validCriteria);
-    if (passed) _feedback = FeedbackStage.valid;
+    if (passed) {
+      _feedback = FeedbackStage.valid;
+      _resultsDone = true;
+    }
     _pushSubmissionReview(
       passed
           ? _finalSubmissionPraise(0)
@@ -540,13 +563,7 @@ class ClassChatController extends ChangeNotifier {
     final check = await _feedbackTracker.check(learnerId, assignmentId);
     if (_disposed || check == null) return;
     _feedback = check.stage;
-    if (check.stage.opensNextUnit) {
-      _learnerState = await _learnerStateRepository.applyLocalProgress(
-        learnerId: learnerId,
-        xp: _accumulatedSubmissionPoints,
-        submissionIndex: unitIndex + 1,
-      );
-    }
+    _latestSubmission = check.submission ?? _latestSubmission;
   }
 
   /// "I'm looking at your work, please wait" (R-68), or "taking longer than
@@ -554,6 +571,12 @@ class ClassChatController extends ChangeNotifier {
   /// app checks by itself every 30 seconds while this is open.
   void _showWaitingForFeedback() {
     final stage = _feedback ?? FeedbackStage.waiting;
+    if (stage == FeedbackStage.notValid ||
+        stage == FeedbackStage.notValidNoRetry) {
+      _feedbackPoll?.cancel();
+      _showNotValid(stage);
+      return;
+    }
     _messages.clear();
     _pushCheckpoint(
       stepId: 'WAITING',
@@ -561,11 +584,9 @@ class ClassChatController extends ChangeNotifier {
       text: switch (stage) {
         FeedbackStage.slow =>
           'Your feedback is taking longer than expected 🕒\nPlease check again a little later.',
-        FeedbackStage.notValid || FeedbackStage.notValidNoRetry =>
-          // shortcut: "Send again" and the Results chat come in the next commit.
-          'Your work needs another try 😊\nPlease come back soon to send it again.',
         _ =>
-          "I'm looking at your work 👀\nPlease wait. Come back later to see my feedback!",
+          "I'm looking at your work 👀\nPlease wait. Come back later to see my feedback!"
+              '\n\nPoints will be provided after feedback.',
       },
       buttonLabel: 'Back to Home',
       action: 'not_today',
@@ -592,10 +613,116 @@ class ClassChatController extends ChangeNotifier {
     if (_disposed) return;
     if (_feedback?.opensNextUnit ?? false) {
       _feedbackPoll?.cancel();
-      unawaited(_completeUnitThenReveal());
+      unawaited(_showResults());
     } else if (_feedback != before) {
       _showWaitingForFeedback();
     }
+  }
+
+  // ---- Results chat (R-68) ----
+
+  /// The Worker's feedback text, or a plain default when it sent none.
+  String _feedbackText({required String fallback}) {
+    final text = _latestSubmission?.feedback?.trim() ?? '';
+    return text.isEmpty ? fallback : text;
+  }
+
+  /// The feedback is valid: TAP Buddy shows the feedback, asks "Do you want to
+  /// know your total points?", and the "Yes" tap shows the "YOU WON" card. The
+  /// header points change only after that tap, so the reveal is not spoiled.
+  Future<void> _showResults() async {
+    if (_latestSubmission == null) await _refreshFeedback();
+    if (_disposed) return;
+    _messages.clear();
+    _pushCheckpoint(
+      stepId: 'RESULTS-FEEDBACK',
+      image: null,
+      text: _feedbackText(fallback: 'Great work! Your project is valid ✅'),
+      buttonLabel: 'Continue',
+      action: 'results_next',
+    );
+  }
+
+  void _askForPoints() {
+    _messages.clear();
+    _pushCheckpoint(
+      stepId: 'RESULTS-ASK',
+      image: null,
+      text: 'Do you want to know your total points collected so far?',
+      buttonLabel: 'Yes Yes Yes 😍',
+      action: 'results_points',
+    );
+  }
+
+  /// The "Yes" tap: take the student's points from the Worker, and show what
+  /// the valid work earned (the rise since the last answer). The points are the
+  /// Worker's, not worked out here (R-75).
+  Future<void> _revealPoints() async {
+    final before = _learnerState.xp ?? 0;
+    await _learnerStateRepository.refreshPoints(learnerId);
+    final fresh = await _learnerStateRepository.readCached(learnerId);
+    if (_disposed) return;
+    if (fresh != null) _learnerState = fresh;
+    final total = _learnerState.xp ?? before;
+    final earned = total > before ? total - before : 0;
+    _accumulatedSubmissionPoints += earned;
+
+    _messages.clear();
+    _pushCheckpoint(
+      stepId: 'RESULTS-WON',
+      image: 'assets/class-screen/you-won.png',
+      text:
+          'YOU WON! 🏆\n'
+          '${earned > 0 ? 'Your valid work earned +$earned points 🪙\n' : ''}'
+          'Your points: $total 🪙',
+      buttonLabel: 'Continue',
+      action: 'results_done',
+    );
+    notifyListeners();
+  }
+
+  /// The Results chat is over: mark the submission step as done on the phone,
+  /// and close the unit (R-83).
+  Future<void> _finishResults() async {
+    _resultsDone = true;
+    _learnerState = await _learnerStateRepository.applyValidFeedback(
+      learnerId,
+      unitIndex: unitIndex,
+    );
+    if (_disposed) return;
+    unawaited(_completeUnitThenReveal());
+  }
+
+  // ---- Not valid: send again (R-76) ----
+
+  /// The work is not valid. The student is told why (the Worker's feedback) and
+  /// can send again, up to 2 attempts in all.
+  void _showNotValid(FeedbackStage stage) {
+    final reason = _feedbackText(fallback: 'Please send your work again.');
+    final canSend = stage == FeedbackStage.notValid;
+    _messages.clear();
+    _pushCheckpoint(
+      stepId: 'NOT-VALID',
+      image: null,
+      text: canSend
+          ? '$reason\n\nPlease send corrected work 📸'
+          : '$reason\n\nYou have used both tries, so you cannot send this '
+                'work again.',
+      buttonLabel: canSend ? 'Send again' : 'Back to Home',
+      action: canSend ? 'send_again' : 'not_today',
+      secondaryLabel: canSend ? 'Back to Home' : null,
+      secondaryAction: canSend ? 'not_today' : null,
+    );
+  }
+
+  /// "Send again": a new upload, with a new slot and a new key.
+  void _sendAgain() {
+    final assignmentId = _currentAssignment?.assignmentId ?? '';
+    if (assignmentId.isEmpty) return;
+    _workSubmitter.startNewAttempt(assignmentId);
+    _resending = true;
+    _messages.clear();
+    _runStep('AF-006');
   }
 
   /// After the quiz: ask again if the student is ready to share the work.
@@ -676,6 +803,11 @@ class ClassChatController extends ChangeNotifier {
       return _workNotSent(answer);
     }
     _pendingWorkAnswer = null;
+    if (_resending) {
+      _resending = false;
+      _showWaitingForFeedback();
+      return;
+    }
     _pushSubmissionReview(
       alreadySent
           ? 'You already sent this work. Let\'s go on! 💪'
@@ -890,6 +1022,18 @@ class ClassChatController extends ChangeNotifier {
         return;
       case 'check_feedback':
         unawaited(_recheckFeedback());
+        return;
+      case 'results_next':
+        _askForPoints();
+        return;
+      case 'results_points':
+        unawaited(_revealPoints());
+        return;
+      case 'results_done':
+        unawaited(_finishResults());
+        return;
+      case 'send_again':
+        _sendAgain();
         return;
       case 'submission_retry':
         _messages.clear();
