@@ -148,4 +148,38 @@ void main() {
       expect(saved?.enrollment?.videosCompleted, 1);
     },
   );
+
+  // R-83: sending the work does not finish the submission step. Only valid
+  // feedback does. If sending marked it done, the next unit would open early.
+  test(
+    'work sent: the points are kept, but the submission is not done',
+    () async {
+      await repo.fetchState(learnerId: 'S1');
+      await repo.applyLocalProgress(learnerId: 'S1', xp: 10, videoIndex: 1);
+
+      final state = await repo.applyLocalProgress(
+        learnerId: 'S1',
+        xp: 25,
+        submissionIndex: 1,
+        submissionSentOnly: true,
+      );
+
+      expect(state.enrollment?.submissionIndex, 0);
+      expect(state.enrollment?.videosCompleted, 1);
+      expect(state.pendingProgressXp, 35, reason: 'the 25 points are counted');
+    },
+  );
+
+  test('valid feedback closes the submission step and the unit', () async {
+    await repo.fetchState(learnerId: 'S1');
+    await repo.applyLocalProgress(learnerId: 'S1', xp: 10, videoIndex: 1);
+    await repo.applyLocalProgress(learnerId: 'S1', xp: 1, quizIndex: 1);
+
+    final state = await repo.applyValidFeedback('S1', unitIndex: 0);
+
+    expect(state.enrollment?.submissionIndex, 1);
+    expect(state.enrollment?.quizzesCompleted, 1);
+    expect(state.hasPendingLocalProgress, isFalse);
+    expect(cache.has(CacheKeys.activityProgress('S1')), isFalse);
+  });
 }

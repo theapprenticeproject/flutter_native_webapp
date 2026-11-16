@@ -51,6 +51,7 @@ void main() {
     );
     expect(text.contains('_saveSubmissionProgress(_currentUnit.xp)'), isFalse);
     expect(text.contains('explicitPoints: _currentUnit.xp'), isFalse);
+    expect(text.contains("'points': _currentUnit.xp"), isFalse);
   });
 
   test('a photo or video goes to the Worker through WorkSubmitter', () {
@@ -58,5 +59,13 @@ void main() {
       'lib/features/classroom/providers/class_chat_controller.dart',
     );
     expect(text.contains('_workSubmitter.submit('), isTrue);
+  });
+
+  test('sending the work does not mark the submission step as done (R-83)', () {
+    final text = read(
+      'lib/features/classroom/providers/class_chat_controller.dart',
+    );
+    expect(text.contains('submissionSentOnly: sentOnly'), isTrue);
+    expect(text.contains('_feedbackAllowsCompletion'), isTrue);
   });
 }

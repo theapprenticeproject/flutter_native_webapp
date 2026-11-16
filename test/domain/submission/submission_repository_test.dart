@@ -287,6 +287,29 @@ void main() {
       expect(rows.first.assignmentId, 'AS-1');
     });
 
+    test('latest picks the newest attempt for the assignment', () async {
+      final adapter = FakeWorkerAdapter(
+        (_) => ok({
+          'submissions': [
+            {...row('SUB-1', 'Failed', 10), 'attempt_number': 1},
+            {...row('SUB-2', 'Pending', null), 'attempt_number': 2},
+            {
+              ...row('SUB-3', 'Success - Original', 90),
+              'assignment_id_link': 'AS-OTHER',
+              'attempt_number': 9,
+            },
+          ],
+        }),
+      );
+      final latest = await repoFor(adapter).latest('AS-1');
+      expect(latest?.id, 'SUB-2');
+    });
+
+    test('latest is null when nothing was sent', () async {
+      final adapter = FakeWorkerAdapter((_) => ok({'submissions': []}));
+      expect(await repoFor(adapter).latest('AS-1'), isNull);
+    });
+
     test('get asks for one submission', () async {
       final adapter = FakeWorkerAdapter(
         (_) => ok(row('SUB-1', 'Success - Original', 78)),

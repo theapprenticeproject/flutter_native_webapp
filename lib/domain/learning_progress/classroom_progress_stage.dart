@@ -1,16 +1,22 @@
 import '../learner/enrollment_model.dart';
 import '../program_content/course_detail_model.dart';
+import '../submission/feedback_state.dart';
 
 enum ClassroomProgressStage {
   watchVideo,
   submitProject,
   takeQuiz,
+
+  /// The work is sent and the quiz is done, but the feedback is not valid yet
+  /// (R-83): waiting, slow, or not valid.
+  awaitingFeedback,
   unitCompleted;
 
   double get revealProgress => switch (this) {
     ClassroomProgressStage.watchVideo => 0,
     ClassroomProgressStage.submitProject => 0.34,
     ClassroomProgressStage.takeQuiz => 0.67,
+    ClassroomProgressStage.awaitingFeedback => 0.67,
     ClassroomProgressStage.unitCompleted => 1,
   };
 }
@@ -21,6 +27,7 @@ class ClassroomProgressSnapshot {
     required this.videoDone,
     required this.submissionDone,
     required this.quizDone,
+    this.workSent = false,
   });
 
   final ClassroomProgressStage stage;
@@ -28,6 +35,8 @@ class ClassroomProgressSnapshot {
   final bool submissionDone;
   final bool quizDone;
 
+  /// The Worker has a submission for this unit's assignment.
+  final bool workSent;
 }
 
 class ClassroomProgressResolver {
@@ -55,12 +64,38 @@ class ClassroomProgressResolver {
     required EnrollmentModel enrollment,
     required int unitIndex,
     CourseUnitModel? unit,
+    FeedbackStage? feedback,
   }) {
     final videoDone = enrollment.videosCompleted > unitIndex;
-    final submissionDone = enrollment.submissionIndex > unitIndex;
     final quizDone = enrollment.quizzesCompleted > unitIndex;
     final hasSubmission = unit == null || unit.assignments.isNotEmpty;
     final hasQuiz = unit == null || (unit.quiz?.questions.isNotEmpty ?? true);
+
+    // With the Worker's feedback state, a unit is finished only when the
+    // feedback is valid (R-83). Without it (never sent, or never checked) the
+    // phone's own submission index counts.
+    if (feedback != null && hasSubmission) {
+      final sent = feedback != FeedbackStage.notSent;
+      final valid = feedback.opensNextUnit;
+      final stage = !videoDone
+          ? ClassroomProgressStage.watchVideo
+          : !sent
+          ? ClassroomProgressStage.submitProject
+          : hasQuiz && !quizDone
+          ? ClassroomProgressStage.takeQuiz
+          : !valid
+          ? ClassroomProgressStage.awaitingFeedback
+          : ClassroomProgressStage.unitCompleted;
+      return ClassroomProgressSnapshot(
+        stage: stage,
+        videoDone: videoDone,
+        submissionDone: valid,
+        quizDone: !hasQuiz || quizDone,
+        workSent: sent,
+      );
+    }
+
+    final submissionDone = enrollment.submissionIndex > unitIndex;
 
     final stage = !videoDone
         ? ClassroomProgressStage.watchVideo
@@ -75,6 +110,7 @@ class ClassroomProgressResolver {
       videoDone: videoDone,
       submissionDone: !hasSubmission || submissionDone,
       quizDone: !hasQuiz || quizDone,
+      workSent: !hasSubmission || submissionDone,
     );
   }
 }

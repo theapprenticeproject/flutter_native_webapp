@@ -5,6 +5,8 @@ import 'package:flutter/foundation.dart';
 import '../../../domain/learner/learner_state_model.dart';
 import '../../../domain/learner/learner_state_repository.dart';
 import '../../../domain/learning_progress/postponed_work.dart';
+import '../../../domain/submission/feedback_state.dart';
+import '../../../domain/submission/feedback_tracker.dart';
 import '../../../domain/progress/progress_repository.dart';
 import '../../../domain/progress/quiz_answers.dart';
 import '../../../domain/progress/step_recorder.dart';
@@ -49,6 +51,8 @@ class ClassChatController extends ChangeNotifier {
     required LearnerStateRepository learnerStateRepository,
     required StepRecorder stepRecorder,
     required WorkSubmitter workSubmitter,
+    required FeedbackTracker feedbackTracker,
+    FeedbackStage? initialFeedback,
     VoidCallback? onProgressSaved,
   }) : _flow = flow,
        _unit = unit,
@@ -56,6 +60,8 @@ class ClassChatController extends ChangeNotifier {
        _learnerStateRepository = learnerStateRepository,
        _stepRecorder = stepRecorder,
        _workSubmitter = workSubmitter,
+       _feedbackTracker = feedbackTracker,
+       _feedback = initialFeedback,
        _learnerState = initialLearnerState,
        _startingPoints = initialLearnerState.xp ?? 0,
        _onProgressSaved = onProgressSaved {
@@ -79,6 +85,10 @@ class ClassChatController extends ChangeNotifier {
   final LearnerStateRepository _learnerStateRepository;
   final StepRecorder _stepRecorder;
   final WorkSubmitter _workSubmitter;
+  final FeedbackTracker _feedbackTracker;
+
+  /// Where the work for this unit stands (R-83). Null: not known.
+  FeedbackStage? _feedback;
   final VoidCallback? _onProgressSaved;
 
   LearnerStateModel _learnerState;
@@ -171,8 +181,16 @@ class ClassChatController extends ChangeNotifier {
       return ClassroomProgressStage.submitProject;
     }
     if (!_quizProgressSaved) return ClassroomProgressStage.takeQuiz;
+    if (!_feedbackAllowsCompletion) {
+      return ClassroomProgressStage.awaitingFeedback;
+    }
     return ClassroomProgressStage.unitCompleted;
   }
+
+  /// The unit can close only after valid feedback (R-83), unless it has no
+  /// submission.
+  bool get _feedbackAllowsCompletion =>
+      _submissionNotRequired || (_feedback?.opensNextUnit ?? false);
 
   double get revealProgress => currentProgressStage.revealProgress;
 
@@ -183,7 +201,7 @@ class ClassChatController extends ChangeNotifier {
 
   bool get _hasCompletedRequiredStages =>
       _videoWatchedThisUnit &&
-      (_submissionNotRequired || _submissionAcceptedThisUnit) &&
+      _feedbackAllowsCompletion &&
       (_quizNotRequired || _quizProgressSaved);
 
   void _resumeCurrentStage() {
@@ -197,6 +215,9 @@ class ClassChatController extends ChangeNotifier {
       case ClassroomProgressStage.takeQuiz:
         _showQuizStartCheckpoint();
         return;
+      case ClassroomProgressStage.awaitingFeedback:
+        _showWaitingForFeedback();
+        return;
       case ClassroomProgressStage.unitCompleted:
         return;
     }
@@ -208,9 +229,10 @@ class ClassChatController extends ChangeNotifier {
       enrollment: enrollment ?? const EnrollmentModel(),
       unitIndex: unitIndex,
       unit: _currentUnit,
+      feedback: _feedback,
     );
     _videoWatchedThisUnit = progress.videoDone;
-    _submissionAcceptedThisUnit = progress.submissionDone;
+    _submissionAcceptedThisUnit = progress.workSent;
     _videoProgressSaved = _videoWatchedThisUnit;
     _submissionProgressSaved = _submissionAcceptedThisUnit;
     _quizProgressSaved = progress.quizDone;
@@ -224,6 +246,9 @@ class ClassChatController extends ChangeNotifier {
         return;
       case ClassroomProgressStage.takeQuiz:
         _showQuizStartCheckpoint();
+        return;
+      case ClassroomProgressStage.awaitingFeedback:
+        _showWaitingForFeedback();
         return;
       case ClassroomProgressStage.unitCompleted:
         if (_learnerState.hasPendingLocalProgress) {
@@ -424,7 +449,6 @@ class ClassChatController extends ChangeNotifier {
           'subTypes': assignStep.subTypes,
           'validCriteria': assignStep.validCriteria,
           'submissionKind': kind.name,
-          'points': _currentUnit.xp,
           'stepNumber': 1,
           'stepTotal': 1,
         },
@@ -473,6 +497,7 @@ class ClassChatController extends ChangeNotifier {
       return;
     }
     final passed = answer.matchesCriteria(step.validCriteria);
+    if (passed) _feedback = FeedbackStage.valid;
     _pushSubmissionReview(
       passed
           ? _finalSubmissionPraise(0)
@@ -504,6 +529,72 @@ class ClassChatController extends ChangeNotifier {
         _showQuizStartCheckpoint();
       case PostponeNext.leave:
         _leaveForLater();
+    }
+  }
+
+  /// Asks the Worker where the work stands. Valid feedback also marks the
+  /// submission step as done on the phone, so the unit can close.
+  Future<void> _refreshFeedback() async {
+    final assignmentId = _currentAssignment?.assignmentId ?? '';
+    if (assignmentId.isEmpty) return;
+    final check = await _feedbackTracker.check(learnerId, assignmentId);
+    if (_disposed || check == null) return;
+    _feedback = check.stage;
+    if (check.stage.opensNextUnit) {
+      _learnerState = await _learnerStateRepository.applyLocalProgress(
+        learnerId: learnerId,
+        xp: _accumulatedSubmissionPoints,
+        submissionIndex: unitIndex + 1,
+      );
+    }
+  }
+
+  /// "I'm looking at your work, please wait" (R-68), or "taking longer than
+  /// expected" after 24 hours. The student can leave, check again, or wait: the
+  /// app checks by itself every 30 seconds while this is open.
+  void _showWaitingForFeedback() {
+    final stage = _feedback ?? FeedbackStage.waiting;
+    _messages.clear();
+    _pushCheckpoint(
+      stepId: 'WAITING',
+      image: null,
+      text: switch (stage) {
+        FeedbackStage.slow =>
+          'Your feedback is taking longer than expected 🕒\nPlease check again a little later.',
+        FeedbackStage.notValid || FeedbackStage.notValidNoRetry =>
+          // shortcut: "Send again" and the Results chat come in the next commit.
+          'Your work needs another try 😊\nPlease come back soon to send it again.',
+        _ =>
+          "I'm looking at your work 👀\nPlease wait. Come back later to see my feedback!",
+      },
+      buttonLabel: 'Back to Home',
+      action: 'not_today',
+      secondaryLabel: 'Check again',
+      secondaryAction: 'check_feedback',
+    );
+    _startFeedbackPolling();
+  }
+
+  Timer? _feedbackPoll;
+
+  void _startFeedbackPolling() {
+    _feedbackPoll?.cancel();
+    _feedbackPoll = Timer.periodic(
+      const Duration(seconds: 30),
+      (_) => unawaited(_recheckFeedback()),
+    );
+    _pendingTimers.add(_feedbackPoll!);
+  }
+
+  Future<void> _recheckFeedback() async {
+    final before = _feedback;
+    await _refreshFeedback();
+    if (_disposed) return;
+    if (_feedback?.opensNextUnit ?? false) {
+      _feedbackPoll?.cancel();
+      unawaited(_completeUnitThenReveal());
+    } else if (_feedback != before) {
+      _showWaitingForFeedback();
     }
   }
 
@@ -563,10 +654,13 @@ class ClassChatController extends ChangeNotifier {
       );
       points = result.pointsAwarded;
       _pendingServerPoints = result.pointsTotal;
+      await _feedbackTracker.markSent(learnerId, assignment.assignmentId);
+      _feedback = FeedbackStage.waiting;
     } on ApiException catch (e) {
       if (e.code != 'CONFLICT') return _workNotSent(answer);
       // Both attempts are used (R-76). The work was sent before: go on.
       alreadySent = true;
+      _feedback ??= FeedbackStage.waiting;
     } on FileTooBigException {
       _pushCheckpoint(
         stepId: 'SUBMISSION-RETRY',
@@ -794,6 +888,9 @@ class ClassChatController extends ChangeNotifier {
       case 'not_today':
         _leaveForLater();
         return;
+      case 'check_feedback':
+        unawaited(_recheckFeedback());
+        return;
       case 'submission_retry':
         _messages.clear();
         final step = _flow.step('AF-007');
@@ -934,7 +1031,10 @@ class ClassChatController extends ChangeNotifier {
           stepId: 'SUBMISSION-REWARD',
           sender: ClassChatSender.bot,
           contentType: ClassChatContentType.submissionReward,
-          data: {'studentName': studentName, 'points': _currentUnit.xp},
+          data: {
+            'studentName': studentName,
+            'points': _accumulatedSubmissionPoints,
+          },
         ),
       );
       _submissionRewardShown = true;
@@ -945,6 +1045,11 @@ class ClassChatController extends ChangeNotifier {
   void continueAfterSubmissionReward() {
     if (!_submissionRewardShown) return;
     _messages.clear();
+    // The quiz may be done already (the student postponed the work, R-66).
+    if (_quizNotRequired || _quizProgressSaved) {
+      unawaited(_completeUnitThenReveal());
+      return;
+    }
     _showQuizStartCheckpoint();
   }
 
@@ -1008,6 +1113,7 @@ class ClassChatController extends ChangeNotifier {
 
   Future<bool> _saveSubmissionProgress(int points) async {
     if (_submissionProgressSaved) return true;
+    final sentOnly = _feedback != FeedbackStage.valid;
     _submissionProgressSaved = true;
     var saved = false;
     try {
@@ -1015,6 +1121,9 @@ class ClassChatController extends ChangeNotifier {
         learnerId: learnerId,
         xp: points,
         submissionIndex: unitIndex + 1,
+        // The work is sent, but not done: only valid feedback finishes the
+        // submission step (R-83).
+        submissionSentOnly: sentOnly,
       );
       final total = _pendingServerPoints;
       if (total != null) {
@@ -1080,6 +1189,16 @@ class ClassChatController extends ChangeNotifier {
 
   Future<void> _completeUnitThenReveal() async {
     if (_hasCompletedUnit) return;
+
+    // The work is sent and the quiz is done: ask the Worker if the feedback is
+    // valid yet (R-83).
+    if (_videoWatchedThisUnit &&
+        (_quizNotRequired || _quizProgressSaved) &&
+        _submissionAcceptedThisUnit &&
+        !_feedbackAllowsCompletion) {
+      await _refreshFeedback();
+      if (_disposed) return;
+    }
 
     if (!_hasCompletedRequiredStages) {
       if (shouldAskToShareWork(

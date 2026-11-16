@@ -9,6 +9,9 @@ import '../program_content/course_detail_model.dart';
 import '../learner/learner_state_provider.dart';
 import '../profile/profile_provider.dart';
 import '../program_content/program_content_provider.dart';
+import '../submission/feedback_provider.dart';
+import '../submission/feedback_state.dart';
+import 'unit_feedback.dart';
 
 class NoActiveProfileException implements Exception {
   const NoActiveProfileException();
@@ -30,11 +33,13 @@ LearningProgress _buildProgress({
   required EnrollmentModel enrollment,
   required int unitIndex,
   CourseUnitModel? unit,
+  FeedbackStage? feedback,
 }) {
   final snapshot = ClassroomProgressResolver.resolve(
     enrollment: enrollment,
     unitIndex: unitIndex,
     unit: unit,
+    feedback: feedback,
   );
 
   return LearningProgress(
@@ -89,10 +94,22 @@ final learningDashboardProvider = FutureProvider.autoDispose<LearningDashboard>(
       );
     }
 
-    final unitIndex = ClassroomProgressResolver.resolveUnitIndexForCourse(
-      enrollment,
-      course.units,
+    // The Worker says where the work stands (R-83). Valid feedback closes the
+    // unit and the next unit becomes current.
+    final learnerRepository = await ref.read(
+      learnerStateRepositoryProvider.future,
     );
+    final current = await currentUnitWithFeedback(
+      tracker: await ref.read(feedbackTrackerProvider.future),
+      learner: learnerRepository,
+      learnerId: activeProfile.learnerId,
+      state: learnerState,
+      units: course.units,
+    );
+    learnerState = current.state;
+    enrollment = learnerState.enrollment!;
+    final unitIndex = current.unitIndex;
+    final feedback = current.feedback;
     final courseUnit = course.units[unitIndex];
     var progress = _buildProgress(
       profile: activeProfile,
@@ -100,6 +117,7 @@ final learningDashboardProvider = FutureProvider.autoDispose<LearningDashboard>(
       enrollment: enrollment,
       unitIndex: unitIndex,
       unit: courseUnit,
+      feedback: feedback,
     );
 
     if (!learnerState.hasPendingLocalProgress &&
@@ -117,6 +135,7 @@ final learningDashboardProvider = FutureProvider.autoDispose<LearningDashboard>(
         enrollment: enrollment,
         unitIndex: unitIndex,
         unit: courseUnit,
+        feedback: feedback,
       );
     }
 
@@ -138,6 +157,7 @@ final learningDashboardProvider = FutureProvider.autoDispose<LearningDashboard>(
       hasEnrollment: true,
       showCompletionCelebration: !allUnitsDone && celebration?['show'] == true,
       completionPoints: (celebration?['points'] as num?)?.toInt() ?? 0,
+      feedback: feedback,
     );
   },
 );

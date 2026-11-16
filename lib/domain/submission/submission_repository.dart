@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import '../../core/constants/app_constants.dart';
 import '../../core/network/http_client.dart';
 import '../progress/progress_models.dart';
+import 'feedback_state.dart';
 
 enum SubmissionType { image, video }
 
@@ -176,6 +177,11 @@ class SubmissionRepository {
         if (raw is Map) SubmissionInfo.fromJson(Map<String, dynamic>.from(raw)),
     ];
   }
+
+  /// The newest submission for an assignment, or null if nothing was sent.
+  /// It reads the list, because `submit_artwork` may not return the id.
+  Future<SubmissionInfo?> latest(String assignmentId) async =>
+      latestFor(assignmentId, await list());
 
   Future<SubmissionInfo> get(String submissionId) async =>
       SubmissionInfo.fromJson(

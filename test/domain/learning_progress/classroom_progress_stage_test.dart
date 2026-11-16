@@ -2,6 +2,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:tapapp/domain/learning_progress/classroom_progress_stage.dart';
 import 'package:tapapp/domain/learner/enrollment_model.dart';
 import 'package:tapapp/domain/program_content/course_detail_model.dart';
+import 'package:tapapp/domain/submission/feedback_state.dart';
+import 'package:tapapp/domain/learning_progress/activity_models.dart';
 
 void main() {
   const unit = CourseUnitModel(
@@ -125,5 +127,83 @@ void main() {
     expect(snapshot.videoDone, isTrue);
     expect(snapshot.quizDone, isTrue);
     expect(snapshot.submissionDone, isFalse);
+  });
+
+  // R-83: a unit is finished only when the feedback is valid. The Worker says
+  // whether the work was sent and what the feedback is.
+  group('with the feedback state from the Worker', () {
+    const done = EnrollmentModel(videosCompleted: 1, quizzesCompleted: 1);
+
+    ClassroomProgressStage stage(
+      FeedbackStage feedback, {
+      EnrollmentModel enrollment = done,
+    }) => ClassroomProgressResolver.resolve(
+      enrollment: enrollment,
+      unitIndex: 0,
+      unit: unit,
+      feedback: feedback,
+    ).stage;
+
+    test('work not sent: the Make step', () {
+      expect(
+        stage(FeedbackStage.notSent),
+        ClassroomProgressStage.submitProject,
+      );
+    });
+
+    test('sent, quiz done, no valid feedback yet: awaiting feedback', () {
+      for (final f in [
+        FeedbackStage.waiting,
+        FeedbackStage.slow,
+        FeedbackStage.notValid,
+        FeedbackStage.notValidNoRetry,
+      ]) {
+        expect(stage(f), ClassroomProgressStage.awaitingFeedback, reason: '$f');
+      }
+    });
+
+    test('valid feedback with the video and the quiz done: finished', () {
+      expect(stage(FeedbackStage.valid), ClassroomProgressStage.unitCompleted);
+    });
+
+    test('sent but the quiz is not done: the quiz comes next', () {
+      expect(
+        stage(
+          FeedbackStage.waiting,
+          enrollment: const EnrollmentModel(videosCompleted: 1),
+        ),
+        ClassroomProgressStage.takeQuiz,
+      );
+    });
+
+    test('the video comes first, whatever the feedback is', () {
+      expect(
+        stage(FeedbackStage.valid, enrollment: const EnrollmentModel()),
+        ClassroomProgressStage.watchVideo,
+      );
+    });
+
+    test('a local submission index alone does not finish the unit', () {
+      // The Worker said the feedback is not valid: the phone's old index
+      // must not open the next unit.
+      expect(
+        stage(
+          FeedbackStage.waiting,
+          enrollment: const EnrollmentModel(
+            videosCompleted: 1,
+            quizzesCompleted: 1,
+            submissionIndex: 1,
+          ),
+        ),
+        ClassroomProgressStage.awaitingFeedback,
+      );
+    });
+
+    test('Home shows "submission pending" while awaiting feedback', () {
+      expect(
+        ClassroomProgressStage.awaitingFeedback.homeStage,
+        LearningStage.submissionPending,
+      );
+    });
   });
 }

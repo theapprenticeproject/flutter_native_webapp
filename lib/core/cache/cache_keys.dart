@@ -14,6 +14,10 @@ class CacheKeys {
 
   static String activeProfile() => _k('active_profile');
 
+  /// The last known state of a student's work for one assignment (R-83).
+  static String feedback(String learnerId, String assignmentId) =>
+      _k('feedback:$learnerId:$assignmentId');
+
   /// The students on the phone, saved when the magic link is opened.
   static String linkRoster() => _k('link_roster');
 

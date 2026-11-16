@@ -54,6 +54,7 @@ class SubmissionInfo {
     this.attemptNumber,
     this.attemptsRemaining,
     this.updatedAt,
+    this.createdAt,
   });
 
   final String id;
@@ -67,6 +68,9 @@ class SubmissionInfo {
   final int? attemptNumber;
   final int? attemptsRemaining;
   final int? updatedAt;
+
+  /// When the work was sent.
+  final DateTime? createdAt;
 
   String get _status => status.toLowerCase();
 
@@ -97,6 +101,7 @@ class SubmissionInfo {
     attemptNumber: _int(json['attempt_number']),
     attemptsRemaining: _int(json['attempts_remaining']),
     updatedAt: _int(json['updated_at']),
+    createdAt: DateTime.tryParse((json['created_at'] as String?) ?? ''),
   );
 }
 

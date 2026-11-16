@@ -98,6 +98,19 @@ class LearnerStateRepository {
     );
   }
 
+  /// The feedback is valid (R-83): the submission step is done, and so is the
+  /// unit when the video and the quiz are done too.
+  Future<LearnerStateModel> applyValidFeedback(
+    String learnerId, {
+    required int unitIndex,
+  }) async {
+    await applyLocalProgress(
+      learnerId: learnerId,
+      submissionIndex: unitIndex + 1,
+    );
+    return completeUnitLocally(learnerId);
+  }
+
   /// Finishes the unit on the phone. The steps were already recorded on the
   /// Worker one by one, so there is nothing to send here.
   Future<LearnerStateModel> completeUnitLocally(String learnerId) async {
@@ -119,6 +132,11 @@ class LearnerStateRepository {
     int? videoIndex,
     int? quizIndex,
     int? submissionIndex,
+
+    /// The work was sent, but its feedback is not valid yet (R-83): keep the
+    /// points, and do NOT mark the submission step as done. Only valid feedback
+    /// does that (see [applyValidFeedback]).
+    bool submissionSentOnly = false,
   }) async {
     final cachedState = await readCached(learnerId);
     final existing = _localCache.getForeverRaw(
@@ -155,7 +173,7 @@ class LearnerStateRepository {
       progress['video_xp'] = xp;
     }
     if (submissionIndex != null) {
-      progress['submission_done'] = true;
+      if (!submissionSentOnly) progress['submission_done'] = true;
       progress['submission_xp'] = xp;
     }
     if (quizIndex != null) {

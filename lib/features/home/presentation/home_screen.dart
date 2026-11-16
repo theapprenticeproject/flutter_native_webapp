@@ -14,6 +14,8 @@ import 'widgets/home_buddy_art.dart';
 import 'widgets/quiz_pending_card.dart';
 import 'widgets/send_project_card.dart';
 import 'widgets/start_activity_card.dart';
+import 'widgets/submission_pending_card.dart';
+import '../../../domain/submission/feedback_state.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -96,6 +98,8 @@ class _HomeDashboard extends StatelessWidget {
                               unit: unit,
                               isWide: isWide,
                               completionPoints: dashboard.completionPoints,
+                              slowFeedback:
+                                  dashboard.feedback == FeedbackStage.slow,
                               onContinue: dashboard.showCompletionCelebration
                                   ? onContinue
                                   : null,
@@ -144,6 +148,7 @@ class _StageContent extends StatelessWidget {
   final bool isWide;
   final int completionPoints;
   final VoidCallback? onContinue;
+  final bool slowFeedback;
 
   const _StageContent({
     required this.stage,
@@ -151,6 +156,7 @@ class _StageContent extends StatelessWidget {
     required this.isWide,
     required this.completionPoints,
     required this.onContinue,
+    this.slowFeedback = false,
   });
 
   @override
@@ -167,11 +173,13 @@ class _StageContent extends StatelessWidget {
     final card = _ActiveCard(
       stage: stage,
       unit: unit!,
+      slowFeedback: slowFeedback,
     );
     final artHeight = switch (stage) {
       LearningStage.startActivity => 440.0,
       LearningStage.sendProject => 400.0,
       LearningStage.quizPending => 400.0,
+      LearningStage.submissionPending => 400.0,
       LearningStage.completed => 300.0,
     };
 
@@ -293,10 +301,12 @@ class _CompletedStage extends StatelessWidget {
 class _ActiveCard extends StatelessWidget {
   final LearningStage stage;
   final CourseUnit unit;
+  final bool slowFeedback;
 
   const _ActiveCard({
     required this.stage,
     required this.unit,
+    required this.slowFeedback,
   });
 
   @override
@@ -320,6 +330,11 @@ class _ActiveCard extends StatelessWidget {
         unitName: unit.unitName,
         points: unit.totalPoints,
         onStartQuiz: () => context.go(AppRoutes.classroom),
+      ),
+      LearningStage.submissionPending => SubmissionPendingCard(
+        courseDisplay: unit.courseDisplay,
+        unitName: unit.unitName,
+        slow: slowFeedback,
       ),
       LearningStage.completed => CompletedCard(points: unit.totalPoints),
     };

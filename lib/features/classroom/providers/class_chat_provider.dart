@@ -8,6 +8,7 @@ import '../../../core/localization/language_provider.dart';
 import '../../../domain/learner/learner_state_provider.dart';
 import '../../../domain/progress/progress_provider.dart';
 import '../../../domain/progress/step_recorder.dart';
+import '../../../domain/submission/feedback_provider.dart';
 import '../../../domain/submission/submission_provider.dart';
 import '../../../domain/submission/work_submitter.dart';
 import '../../../shared/media/webp_encoder.dart';
@@ -47,6 +48,8 @@ final classChatControllerProvider = FutureProvider.autoDispose
         unitIndex: bootstrap.unitIndex,
         initialLearnerState: bootstrap.learnerState,
         learnerStateRepository: learnerStateRepository,
+        feedbackTracker: await ref.watch(feedbackTrackerProvider.future),
+        initialFeedback: bootstrap.feedback,
         workSubmitter: WorkSubmitter(
           ref.read(submissionRepositoryProvider),
           studentId: bootstrap.learnerId,

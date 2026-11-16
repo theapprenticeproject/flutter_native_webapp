@@ -1,13 +1,23 @@
 import '../program_content/course_detail_model.dart';
+import '../submission/feedback_state.dart';
 import 'classroom_progress_stage.dart';
 
-enum LearningStage { startActivity, sendProject, quizPending, completed }
+enum LearningStage {
+  startActivity,
+  sendProject,
+  quizPending,
+
+  /// The work is sent. The student waits for valid feedback (R-4, R-83).
+  submissionPending,
+  completed,
+}
 
 extension LearningStageClassroomMapper on ClassroomProgressStage {
   LearningStage get homeStage => switch (this) {
     ClassroomProgressStage.watchVideo => LearningStage.startActivity,
     ClassroomProgressStage.submitProject => LearningStage.sendProject,
     ClassroomProgressStage.takeQuiz => LearningStage.quizPending,
+    ClassroomProgressStage.awaitingFeedback => LearningStage.submissionPending,
     ClassroomProgressStage.unitCompleted => LearningStage.completed,
   };
 }
@@ -70,6 +80,7 @@ class LearningDashboard {
     required this.hasEnrollment,
     this.showCompletionCelebration = false,
     this.completionPoints = 0,
+    this.feedback,
   });
 
   final LearningProgress progress;
@@ -77,4 +88,7 @@ class LearningDashboard {
   final bool hasEnrollment;
   final bool showCompletionCelebration;
   final int completionPoints;
+
+  /// Where the work for this unit stands, when the Worker said (R-83).
+  final FeedbackStage? feedback;
 }

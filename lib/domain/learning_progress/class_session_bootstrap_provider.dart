@@ -6,6 +6,9 @@ import '../program_content/course_detail_model.dart';
 import '../learner/learner_state_provider.dart';
 import '../profile/profile_provider.dart';
 import '../program_content/program_content_provider.dart';
+import '../submission/feedback_provider.dart';
+import '../submission/feedback_state.dart';
+import 'unit_feedback.dart';
 
 class NoActiveEnrollmentException implements Exception {
   const NoActiveEnrollmentException();
@@ -23,6 +26,7 @@ class ClassSessionBootstrap {
     required this.unit,
     required this.nextUnit,
     required this.unitIndex,
+    this.feedback,
   });
 
   final String learnerId;
@@ -32,6 +36,9 @@ class ClassSessionBootstrap {
   final CourseUnitModel? unit;
   final CourseUnitModel? nextUnit;
   final int unitIndex;
+
+  /// Where the work for this unit stands, when the Worker said (R-83).
+  final FeedbackStage? feedback;
 }
 
 final classSessionBootstrapProvider =
@@ -76,10 +83,19 @@ final classSessionBootstrapProvider =
         );
       }
 
-      final startIndex = ClassroomProgressResolver.resolveUnitIndexForCourse(
-        enrollment,
-        course.units,
+      // The Worker says where the work stands (R-83). Valid feedback closes the
+      // unit and the next unit becomes current.
+      final current = await currentUnitWithFeedback(
+        tracker: await ref.watch(feedbackTrackerProvider.future),
+        learner: learnerStateRepository,
+        learnerId: activeProfile.learnerId,
+        state: learnerState,
+        units: course.units,
       );
+      learnerState = current.state;
+      enrollment = learnerState.enrollment!;
+      final feedback = current.feedback;
+      final startIndex = current.unitIndex;
       final selectedUnit = course.units[startIndex];
       final nextUnit = startIndex + 1 < course.units.length
           ? course.units[startIndex + 1]
@@ -88,6 +104,7 @@ final classSessionBootstrapProvider =
         enrollment: enrollment,
         unitIndex: startIndex,
         unit: selectedUnit,
+        feedback: feedback,
       );
 
       if (!learnerState.hasPendingLocalProgress &&
@@ -102,6 +119,7 @@ final classSessionBootstrapProvider =
           enrollment: enrollment,
           unitIndex: startIndex,
           unit: selectedUnit,
+          feedback: feedback,
         );
       }
       if (selectedProgress.stage != ClassroomProgressStage.unitCompleted) {
@@ -113,6 +131,7 @@ final classSessionBootstrapProvider =
           unit: selectedUnit,
           nextUnit: nextUnit,
           unitIndex: startIndex,
+          feedback: feedback,
         );
       }
 
@@ -124,5 +143,6 @@ final classSessionBootstrapProvider =
         unit: selectedUnit,
         nextUnit: nextUnit,
         unitIndex: startIndex,
+        feedback: feedback,
       );
     });
