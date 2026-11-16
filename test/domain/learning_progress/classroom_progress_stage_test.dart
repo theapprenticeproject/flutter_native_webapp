@@ -108,4 +108,22 @@ void main() {
       ClassroomProgressStage.submitProject,
     );
   });
+
+  // R-66: the work is postponed. Video and quiz are done, no submission yet.
+  // The student must come back to the Make step, and Home shows "send project".
+  test('video and quiz done, work not sent: the stage is submitProject', () {
+    final snapshot = ClassroomProgressResolver.resolve(
+      enrollment: const EnrollmentModel(
+        videosCompleted: 1,
+        quizzesCompleted: 1,
+        submissionIndex: 0,
+      ),
+      unitIndex: 0,
+      unit: unit,
+    );
+    expect(snapshot.stage, ClassroomProgressStage.submitProject);
+    expect(snapshot.videoDone, isTrue);
+    expect(snapshot.quizDone, isTrue);
+    expect(snapshot.submissionDone, isFalse);
+  });
 }

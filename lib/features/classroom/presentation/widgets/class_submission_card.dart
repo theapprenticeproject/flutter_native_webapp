@@ -517,6 +517,16 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
               ? null
               : (hasMedia ? onSubmit : openPicker),
         ),
+        if (canInteract && !_isPicking)
+          Center(
+            child: TextButton(
+              onPressed: () {
+                widget.controller.postponeSubmission();
+                _markSubmitted();
+              },
+              child: const Text("I'll do it later"),
+            ),
+          ),
       ],
     );
   }

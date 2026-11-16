@@ -96,6 +96,7 @@ class ClassCheckpointCard extends StatelessWidget {
     if (action == 'video' ||
         action == 'submission' ||
         action == 'submission_retry' ||
+        action == 'share_work' ||
         action == 'quiz') {
       return ClassSectionCheckpoint(
         kind: switch (action) {
@@ -107,6 +108,10 @@ class ClassCheckpointCard extends StatelessWidget {
         buttonLabel: buttonLabel,
         onPressed: () => controller.continueCheckpoint(action),
         fillAvailableHeight: fillAvailableHeight,
+        secondaryLabel: message.data['secondaryLabel'] as String?,
+        onSecondary: () => controller.continueCheckpoint(
+          message.data['secondaryAction'] as String? ?? '',
+        ),
       );
     }
 

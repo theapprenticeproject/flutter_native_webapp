@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 
 import '../../../domain/learner/learner_state_model.dart';
 import '../../../domain/learner/learner_state_repository.dart';
+import '../../../domain/learning_progress/postponed_work.dart';
 import '../../../domain/progress/progress_repository.dart';
 import '../../../domain/progress/quiz_answers.dart';
 import '../../../domain/progress/step_recorder.dart';
@@ -19,7 +20,8 @@ import '../models/learner_archetype.dart';
 import '../../../domain/program_content/course_detail_model.dart';
 import '../models/submission_answer_model.dart';
 
-enum ClassSessionOutcome { none, choice }
+/// `leave`: the student goes back to Home with the unit still open (R-66).
+enum ClassSessionOutcome { none, choice, leave }
 
 class ClassQuizToast {
   const ClassQuizToast({
@@ -124,6 +126,10 @@ class ClassChatController extends ChangeNotifier {
   ClassQuizToast? get quizToast => _quizToast;
 
   SubmissionAnswer? _pendingWorkAnswer;
+
+  /// The student chose "I'll do it later" on the Make step (R-66). Nothing is
+  /// written to the server.
+  bool _submissionPostponed = false;
 
   /// The student's total points from the last `submit_artwork` answer, saved
   /// when the step is saved on the phone.
@@ -476,6 +482,54 @@ class ClassChatController extends ChangeNotifier {
     await _finishAssignmentStep(accepted: passed);
   }
 
+  /// "I'll do it later" (R-66): go on to the quiz. Nothing is sent to the server.
+  void postponeSubmission() {
+    if (_pendingAssignmentStep == null || !_awaitingInput) return;
+    _awaitingInput = false;
+    _pendingAssignment = null;
+    _pendingAssignmentStep = null;
+    _submissionPostponed = true;
+    _push(
+      ClassChatMessage(
+        id: _newId(),
+        stepId: 'AF-007',
+        sender: ClassChatSender.user,
+        contentType: ClassChatContentType.submissionAnswerEcho,
+        text: "I'll do it later 🕒",
+      ),
+    );
+    switch (afterDoItLater(quizDone: _quizProgressSaved)) {
+      case PostponeNext.quiz:
+        _messages.clear();
+        _showQuizStartCheckpoint();
+      case PostponeNext.leave:
+        _leaveForLater();
+    }
+  }
+
+  /// After the quiz: ask again if the student is ready to share the work.
+  void _askToShareWork() {
+    _messages.clear();
+    _pushCheckpoint(
+      stepId: 'SHARE-WORK',
+      image: null,
+      text: 'Are you ready to share your work? 📸',
+      buttonLabel: "Yes, let's go",
+      action: 'share_work',
+      secondaryLabel: 'Not today',
+      secondaryAction: 'not_today',
+    );
+  }
+
+  /// "Not today": back to Home. The unit stays open and Home shows the
+  /// "send project" card, because the video and the quiz are done and there is
+  /// no submission yet.
+  void _leaveForLater() {
+    _outcome = ClassSessionOutcome.leave;
+    _onProgressSaved?.call();
+    notifyListeners();
+  }
+
   void _pushSubmissionReview(String text, {required bool passed}) => _push(
     ClassChatMessage(
       id: _newId(),
@@ -694,6 +748,8 @@ class ClassChatController extends ChangeNotifier {
     required String text,
     required String buttonLabel,
     required String action,
+    String? secondaryLabel,
+    String? secondaryAction,
   }) {
     _push(
       ClassChatMessage(
@@ -702,7 +758,13 @@ class ClassChatController extends ChangeNotifier {
         sender: ClassChatSender.bot,
         contentType: ClassChatContentType.checkpoint,
         text: text,
-        data: {'image': ?image, 'buttonLabel': buttonLabel, 'action': action},
+        data: {
+          'image': ?image,
+          'buttonLabel': buttonLabel,
+          'action': action,
+          'secondaryLabel': ?secondaryLabel,
+          'secondaryAction': ?secondaryAction,
+        },
       ),
     );
     _awaitingInput = false;
@@ -723,6 +785,14 @@ class ClassChatController extends ChangeNotifier {
       case 'video_reward':
         _messages.clear();
         _runStep('AF-006');
+        return;
+      case 'share_work':
+        _submissionPostponed = false;
+        _messages.clear();
+        _runStep('AF-006');
+        return;
+      case 'not_today':
+        _leaveForLater();
         return;
       case 'submission_retry':
         _messages.clear();
@@ -1012,6 +1082,14 @@ class ClassChatController extends ChangeNotifier {
     if (_hasCompletedUnit) return;
 
     if (!_hasCompletedRequiredStages) {
+      if (shouldAskToShareWork(
+        postponed: _submissionPostponed,
+        quizDone: _quizProgressSaved,
+        workSent: _submissionAcceptedThisUnit,
+      )) {
+        _askToShareWork();
+        return;
+      }
       _resumeCurrentStage();
       notifyListeners();
       return;

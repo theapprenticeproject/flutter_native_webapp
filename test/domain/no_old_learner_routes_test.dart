@@ -11,6 +11,9 @@ final _forbidden = <String, RegExp>{
   'an old /learner/ route': RegExp(r'''['"]/learner/'''),
   'the old unit-complete call': RegExp(r'submitProgress|submit-progress'),
   'the old progress-conflict error': RegExp(r'ProgressConflictException'),
+  'the /submission/do_later call (postponing writes nothing, R-66)': RegExp(
+    r'do_later',
+  ),
   'the unused /progress/last_submission call': RegExp(
     r'progress/last_submission|LastSubmissionResult|\blastSubmission\(',
   ),

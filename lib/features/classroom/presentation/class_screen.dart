@@ -94,8 +94,8 @@ class _ClassScreenState extends ConsumerState<ClassScreen> {
   }
 
   Widget _scaffold(Widget body) => AppNav(
-        child: Scaffold(backgroundColor: AppTheme.appBackground, body: body),
-      );
+    child: Scaffold(backgroundColor: AppTheme.appBackground, body: body),
+  );
 }
 
 class _ClassChatView extends ConsumerStatefulWidget {
@@ -145,6 +145,11 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
   }
 
   void _onControllerChanged() {
+    if (widget.controller.outcome == ClassSessionOutcome.leave) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) context.go(AppRoutes.home);
+      });
+    }
     final quizToast = widget.controller.quizToast;
     if (quizToast != null && quizToast.id != _lastQuizToastId) {
       _lastQuizToastId = quizToast.id;

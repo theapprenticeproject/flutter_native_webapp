@@ -13,6 +13,8 @@ class ClassSectionCheckpoint extends StatelessWidget {
     required this.buttonLabel,
     required this.onPressed,
     this.fillAvailableHeight = false,
+    this.secondaryLabel,
+    this.onSecondary,
   });
 
   final ClassSectionCheckpointKind kind;
@@ -20,6 +22,10 @@ class ClassSectionCheckpoint extends StatelessWidget {
   final String buttonLabel;
   final VoidCallback? onPressed;
   final bool fillAvailableHeight;
+
+  /// An optional second choice under the button, for example "Not today".
+  final String? secondaryLabel;
+  final VoidCallback? onSecondary;
 
   @override
   Widget build(BuildContext context) {
@@ -77,6 +83,20 @@ class ClassSectionCheckpoint extends StatelessWidget {
                   ),
                 ),
               ),
+              if (secondaryLabel != null) ...[
+                const SizedBox(height: 8),
+                TextButton(
+                  onPressed: onSecondary,
+                  child: Text(
+                    secondaryLabel!,
+                    style: GoogleFonts.inter(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w700,
+                      color: AppTheme.buttonColor,
+                    ),
+                  ),
+                ),
+              ],
             ],
           ),
         ),
