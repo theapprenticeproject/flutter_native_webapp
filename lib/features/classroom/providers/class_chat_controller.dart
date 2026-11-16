@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 
 import '../../../domain/learner/learner_state_model.dart';
 import '../../../domain/learner/learner_state_repository.dart';
+import '../../../domain/learning_progress/picture_pieces.dart';
 import '../../../domain/learning_progress/postponed_work.dart';
 import '../../../domain/submission/feedback_state.dart';
 import '../../../domain/submission/feedback_tracker.dart';
@@ -205,7 +206,16 @@ class ClassChatController extends ChangeNotifier {
       _submissionNotRequired ||
       ((_feedback?.opensNextUnit ?? false) && _resultsDone);
 
-  double get revealProgress => currentProgressStage.revealProgress;
+  /// How many of the 4 pieces of today's picture are unlocked (R-69). It counts
+  /// what the Worker has confirmed, and the 4th piece waits for valid feedback.
+  int get unlockedPictureCount => unlockedPieces(
+    videoDone: _videoWatchedThisUnit && _videoProgressSaved,
+    workSent: _submissionAcceptedThisUnit,
+    quizDone: _quizProgressSaved,
+    feedbackValid: _feedback?.opensNextUnit ?? false,
+  );
+
+  double get revealProgress => pieceFraction(unlockedPictureCount);
 
   bool get _submissionNotRequired =>
       _currentAssignment == null || _currentAssignment!.steps.isEmpty;

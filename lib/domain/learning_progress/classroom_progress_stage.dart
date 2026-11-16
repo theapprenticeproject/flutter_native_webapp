@@ -14,16 +14,7 @@ enum ClassroomProgressStage {
   /// The feedback is valid and the student has not seen it yet: the Results
   /// chat comes next (R-68). The unit closes after it.
   resultsReady,
-  unitCompleted;
-
-  double get revealProgress => switch (this) {
-    ClassroomProgressStage.watchVideo => 0,
-    ClassroomProgressStage.submitProject => 0.34,
-    ClassroomProgressStage.takeQuiz => 0.67,
-    ClassroomProgressStage.awaitingFeedback => 0.67,
-    ClassroomProgressStage.resultsReady => 0.67,
-    ClassroomProgressStage.unitCompleted => 1,
-  };
+  unitCompleted,
 }
 
 class ClassroomProgressSnapshot {

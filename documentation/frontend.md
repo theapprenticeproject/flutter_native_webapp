@@ -60,6 +60,10 @@ The Worker now checks the order: `request_upload` answers `INVALID_INPUT` until 
 
 **Not valid: Send again (R-76).** The student sees the Worker's feedback as the reason and "Send again" (a new slot, a new upload and a new idempotency key, through `WorkSubmitter.startNewAttempt`). After the second not-valid result the student sees that no tries are left and cannot go on. A score of 0 counts as not valid (R-92).
 
+## Today's picture badge (new)
+
+Every screen of the activity has a small badge, **0/4 to 4/4**, in the header (R-69, `PictureBadge`). Today's picture has 4 pieces. One unlocks for each step the student finishes: the video, the work sent, and the quiz. The **4th piece unlocks only with valid feedback**, so a not-valid result stays at 3/4. The count does not depend on the order, so a postponed Make (R-66) gives 2/4 after the quiz and 3/4 when the work is sent. The rule is `unlockedPieces()` (`lib/domain/learning_progress/picture_pieces.dart`). The picture on the side rail is revealed in quarters from the same count. The badge counts only what the Worker has confirmed (R-91).
+
 ## Signing in with the magic link (new)
 
 The WhatsApp link carries a code. The route `/l/<code>` (`LinkSignInScreen`) calls `/auth/redeem` and gets one token per student on the phone. One student goes to Home. Several students go to the name picker (`/profile-select`). Picking a name only swaps the saved token, with no call. If a student token is lost, `/auth/select_profile` with the phone token gets a new one. The Worker has no token refresh, so a token that ends (30 days) means the student opens a new link. The code is in `lib/domain/auth/magic_link_repository.dart`, and the tokens are kept in `SecureTokenStore`.

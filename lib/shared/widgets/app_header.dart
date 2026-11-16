@@ -13,6 +13,9 @@ class AppHeader extends StatelessWidget {
   final bool showPoints;
   final VoidCallback? onBack;
 
+  /// Shown before the points, for example today's picture badge (R-69).
+  final Widget? badge;
+
   const AppHeader({
     super.key,
     required this.title,
@@ -23,6 +26,7 @@ class AppHeader extends StatelessWidget {
     this.showBack = false,
     this.showPoints = false,
     this.onBack,
+    this.badge,
   });
 
   @override
@@ -72,6 +76,7 @@ class AppHeader extends StatelessWidget {
             ),
             const SizedBox(width: 18),
             Container(width: 1, height: 32, color: AppTheme.borderColor),
+            if (badge != null) ...[const SizedBox(width: 18), badge!],
             if (showPoints) ...[
               const SizedBox(width: 18),
               _MetricPill(

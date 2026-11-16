@@ -20,6 +20,7 @@ import 'widgets/class_chat_row.dart';
 import 'widgets/class_loading_skeleton.dart';
 import 'widgets/class_message_content.dart';
 import 'widgets/class_reveal_widgets.dart';
+import 'widgets/picture_badge.dart';
 
 class ClassScreen extends ConsumerStatefulWidget {
   const ClassScreen({super.key});
@@ -261,6 +262,9 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
               points: widget.controller.displayedTotalPoints,
               showBack: true,
               showPoints: true,
+              badge: PictureBadge(
+                pieces: widget.controller.unlockedPictureCount,
+              ),
               onBack: () => context.go(AppRoutes.home),
             ),
             Expanded(
