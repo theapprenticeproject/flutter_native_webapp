@@ -19,6 +19,11 @@ class AppConstants {
     defaultValue: 'https://tapapp-worker.tapapp-middleware.workers.dev',
   );
 
+  /// Skips the photo and video upload. Only for a build against the test
+  /// Worker, whose upload address is fake. `scripts/build_web.sh` refuses it
+  /// for a production build.
+  static const bool skipUpload = bool.fromEnvironment('SKIP_UPLOAD');
+
   static const String defaultLanguageCode = 'en';
 
   static const List<AppLanguage> supportedLanguages = [

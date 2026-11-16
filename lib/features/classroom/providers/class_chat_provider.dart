@@ -8,6 +8,9 @@ import '../../../core/localization/language_provider.dart';
 import '../../../domain/learner/learner_state_provider.dart';
 import '../../../domain/progress/progress_provider.dart';
 import '../../../domain/progress/step_recorder.dart';
+import '../../../domain/submission/submission_provider.dart';
+import '../../../domain/submission/work_submitter.dart';
+import '../../../shared/media/webp_encoder.dart';
 
 class NoUnitAvailableException implements Exception {
   const NoUnitAvailableException();
@@ -44,6 +47,11 @@ final classChatControllerProvider = FutureProvider.autoDispose
         unitIndex: bootstrap.unitIndex,
         initialLearnerState: bootstrap.learnerState,
         learnerStateRepository: learnerStateRepository,
+        workSubmitter: WorkSubmitter(
+          ref.read(submissionRepositoryProvider),
+          studentId: bootstrap.learnerId,
+          prepareImage: encodeWebp,
+        ),
         stepRecorder: StepRecorder(
           ref.read(progressRepositoryProvider),
           studentId: bootstrap.learnerId,

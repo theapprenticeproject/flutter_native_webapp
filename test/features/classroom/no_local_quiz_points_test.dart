@@ -44,4 +44,19 @@ void main() {
     );
     expect(text.contains('recordQuiz('), isTrue);
   });
+
+  test('submission points are the Worker points, not the content file xp', () {
+    final text = read(
+      'lib/features/classroom/providers/class_chat_controller.dart',
+    );
+    expect(text.contains('_saveSubmissionProgress(_currentUnit.xp)'), isFalse);
+    expect(text.contains('explicitPoints: _currentUnit.xp'), isFalse);
+  });
+
+  test('a photo or video goes to the Worker through WorkSubmitter', () {
+    final text = read(
+      'lib/features/classroom/providers/class_chat_controller.dart',
+    );
+    expect(text.contains('_workSubmitter.submit('), isTrue);
+  });
 }

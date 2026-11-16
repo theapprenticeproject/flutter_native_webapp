@@ -111,6 +111,32 @@ void main() {
       expect(put.raw, bytes);
     });
 
+    test(
+      'with the skip switch on, nothing is PUT (test Worker only)',
+      () async {
+        final worker = FakeWorkerAdapter((_) => ok(_slot()));
+        final storage = FakeWorkerAdapter((_) => (status: 500, body: ''));
+        final http = HttpClient(
+          SecureTokenStore(const FlutterSecureStorage()),
+          dio: Dio()..httpClientAdapter = worker,
+        );
+        final repo = SubmissionRepository(
+          http,
+          uploader: Dio()..httpClientAdapter = storage,
+          retryDelay: Duration.zero,
+          skipUpload: true,
+        );
+        final slot = await repo.requestUpload(
+          assignmentId: 'AS-1',
+          type: SubmissionType.image,
+        );
+
+        await repo.upload(slot, bytes);
+
+        expect(storage.seen, isEmpty);
+      },
+    );
+
     test('a file over the limit is refused before any request', () async {
       final worker = FakeWorkerAdapter((_) => ok(_slot()));
       final storage = FakeWorkerAdapter((_) => (status: 200, body: ''));

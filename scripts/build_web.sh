@@ -8,6 +8,7 @@
 # WORKER_URL picks the Worker the app talks to, for example the dev Worker.
 # Without it the build uses the production Worker. It must be an https origin
 # with no path. Plain http is allowed only for localhost (a local `wrangler dev`).
+# SKIP_UPLOAD=1 skips the photo upload (test Worker only, see below).
 # DRY_RUN=1 checks the settings and prints the command without building.
 #
 # The build always uses --no-web-resources-cdn, so the app loads CanvasKit (the
@@ -28,8 +29,20 @@ if [ -n "${WORKER_URL:-}" ]; then
   worker_define=(--dart-define=WORKER_URL="$worker_url")
 fi
 
+# SKIP_UPLOAD=1 skips the file upload. The test Worker's upload address is fake,
+# so a photo cannot be uploaded to it. A production build must never skip it.
+skip_define=()
+if [ "${SKIP_UPLOAD:-}" = "1" ]; then
+  prod_worker="https://tapapp-worker.tapapp-middleware.workers.dev"
+  if [ -z "${worker_url:-}" ] || [ "${worker_url}" = "$prod_worker" ]; then
+    echo "SKIP_UPLOAD=1 needs WORKER_URL set to a test Worker, never the production Worker." >&2
+    exit 2
+  fi
+  skip_define=(--dart-define=SKIP_UPLOAD=true)
+fi
+
 if [ "${DRY_RUN:-}" = "1" ]; then
-  echo "DRY RUN: flutter build web --release --no-web-resources-cdn ${worker_define[*]:-} $*"
+  echo "DRY RUN: flutter build web --release --no-web-resources-cdn ${worker_define[*]:-} ${skip_define[*]:-} $*"
   exit 0
 fi
 
@@ -48,6 +61,7 @@ flutter build web --release --no-web-resources-cdn \
   --dart-define=BUILD_FLUTTER_VERSION="$flutter_version" \
   --dart-define=BUILD_ENGINE_REVISION="$engine" \
   ${worker_define[@]+"${worker_define[@]}"} \
+  ${skip_define[@]+"${skip_define[@]}"} \
   "$@"
 
 echo "Built $built, commit $commit, Flutter $flutter_version (engine $engine)"

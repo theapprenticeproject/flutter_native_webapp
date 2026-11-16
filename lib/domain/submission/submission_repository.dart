@@ -1,7 +1,7 @@
-
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 
+import '../../core/constants/app_constants.dart';
 import '../../core/network/http_client.dart';
 import '../progress/progress_models.dart';
 
@@ -100,6 +100,7 @@ class SubmissionRepository {
     this._http, {
     Dio? uploader,
     this.retryDelay = const Duration(seconds: 1),
+    this.skipUpload = AppConstants.skipUpload,
   }) : _uploader = uploader ?? Dio();
 
   final HttpClient _http;
@@ -108,6 +109,9 @@ class SubmissionRepository {
   /// get our bearer token.
   final Dio _uploader;
   final Duration retryDelay;
+
+  /// Test Worker only: do not PUT the file (see [AppConstants.skipUpload]).
+  final bool skipUpload;
 
   static const _uploadTries = 3;
 
@@ -128,6 +132,7 @@ class SubmissionRepository {
     if (bytes.length > slot.maxSizeBytes) {
       throw FileTooBigException(bytes.length, slot.maxSizeBytes);
     }
+    if (skipUpload) return;
     for (var attempt = 1; attempt <= _uploadTries; attempt++) {
       try {
         final response = await _uploader.put<dynamic>(

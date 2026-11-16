@@ -4,11 +4,19 @@ import 'package:flutter_test/flutter_test.dart';
 
 /// M0: `scripts/build_web.sh` must pass a clean WORKER_URL to the build and
 /// refuse anything else. DRY_RUN=1 prints the command and does not build.
-Future<ProcessResult> _run({String? workerUrl, List<String> args = const []}) {
+Future<ProcessResult> _run({
+  String? workerUrl,
+  List<String> args = const [],
+  String? skipUpload,
+}) {
   return Process.run(
     'bash',
     ['scripts/build_web.sh', ...args],
-    environment: {'DRY_RUN': '1', 'WORKER_URL': workerUrl ?? ''},
+    environment: {
+      'DRY_RUN': '1',
+      'WORKER_URL': workerUrl ?? '',
+      'SKIP_UPLOAD': skipUpload ?? '',
+    },
   );
 }
 
@@ -81,5 +89,35 @@ void main() {
         expect(r.stdout, isNot(contains('DRY RUN')));
       });
     }
+  });
+
+  // SKIP_UPLOAD skips the file upload, because the test Worker's upload address
+  // is fake. A production build must never have it.
+  test('SKIP_UPLOAD is passed as a define with a test Worker', () async {
+    final r = await _run(
+      workerUrl: 'https://tapapp-test-worker.tapific.workers.dev',
+      skipUpload: '1',
+    );
+    expect(r.exitCode, 0, reason: '${r.stderr}');
+    expect(r.stdout, contains('--dart-define=SKIP_UPLOAD=true'));
+  });
+
+  test('SKIP_UPLOAD without WORKER_URL (production) is refused', () async {
+    final r = await _run(skipUpload: '1');
+    expect(r.exitCode, 2);
+    expect(r.stderr, contains('SKIP_UPLOAD'));
+  });
+
+  test('SKIP_UPLOAD with the production Worker address is refused', () async {
+    final r = await _run(
+      workerUrl: 'https://tapapp-worker.tapapp-middleware.workers.dev',
+      skipUpload: '1',
+    );
+    expect(r.exitCode, 2);
+  });
+
+  test('without SKIP_UPLOAD the define is not there', () async {
+    final r = await _run(workerUrl: 'https://tapapp-dev.example.workers.dev');
+    expect(r.stdout, isNot(contains('SKIP_UPLOAD')));
   });
 }

@@ -1,3 +1,4 @@
+import 'dart:typed_data';
 
 enum SubmissionKind { emoji, text, audio, textAudio, image, video, imageVideo }
 
@@ -7,12 +8,16 @@ class SubmissionAnswer {
     this.text,
     this.emoji,
     this.mediaPath,
+    this.bytes,
   });
 
   final SubmissionKind kind;
   final String? text;
   final String? emoji;
   final String? mediaPath;
+
+  /// The photo or video file, to upload.
+  final Uint8List? bytes;
 
   factory SubmissionAnswer.emoji(String emoji) =>
       SubmissionAnswer._(kind: SubmissionKind.emoji, emoji: emoji);
@@ -23,17 +28,29 @@ class SubmissionAnswer {
   factory SubmissionAnswer.audioTranscript(String text) =>
       SubmissionAnswer._(kind: SubmissionKind.textAudio, text: text);
 
-  factory SubmissionAnswer.image(String path) =>
-      SubmissionAnswer._(kind: SubmissionKind.image, mediaPath: path);
-
-  factory SubmissionAnswer.video(String path) =>
-      SubmissionAnswer._(kind: SubmissionKind.video, mediaPath: path);
-
-  factory SubmissionAnswer.imageOrVideo(String path, {required bool isVideo}) =>
+  factory SubmissionAnswer.image(String path, {Uint8List? bytes}) =>
       SubmissionAnswer._(
-        kind: isVideo ? SubmissionKind.video : SubmissionKind.image,
+        kind: SubmissionKind.image,
         mediaPath: path,
+        bytes: bytes,
       );
+
+  factory SubmissionAnswer.video(String path, {Uint8List? bytes}) =>
+      SubmissionAnswer._(
+        kind: SubmissionKind.video,
+        mediaPath: path,
+        bytes: bytes,
+      );
+
+  factory SubmissionAnswer.imageOrVideo(
+    String path, {
+    required bool isVideo,
+    Uint8List? bytes,
+  }) => SubmissionAnswer._(
+    kind: isVideo ? SubmissionKind.video : SubmissionKind.image,
+    mediaPath: path,
+    bytes: bytes,
+  );
 
   String get displaySummary {
     switch (kind) {

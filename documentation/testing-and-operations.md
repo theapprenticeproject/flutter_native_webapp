@@ -22,6 +22,15 @@ flutter test --platform chrome test/web_only
 ```
 (It needs Chrome or Edge. Set `CHROME_EXECUTABLE` if it is not found. The normal `flutter test` skips it.)
 
+### Testing the photo upload against the test Worker
+
+The test Worker's upload address is fake, so a real upload always fails there. Build with `SKIP_UPLOAD=1` to skip only the file upload. The slot request and `submit_artwork` still run for real:
+
+```bash
+SKIP_UPLOAD=1 WORKER_URL=https://tapapp-test-worker.tapific.workers.dev scripts/build_web.sh
+```
+The script refuses `SKIP_UPLOAD=1` with no `WORKER_URL`, or with the production Worker. Never deploy a build made with it.
+
 ### Live test against the test Worker
 
 `test/live/test_worker_login_live_test.dart` signs in against the real test Worker with its seeded phones: one student, three siblings, a lost student token, and a bad code. It only reads and signs in. It never writes progress. It is skipped unless you give the Worker address:

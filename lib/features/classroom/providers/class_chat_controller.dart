@@ -7,6 +7,9 @@ import '../../../domain/learner/learner_state_repository.dart';
 import '../../../domain/progress/progress_repository.dart';
 import '../../../domain/progress/quiz_answers.dart';
 import '../../../domain/progress/step_recorder.dart';
+import '../../../domain/submission/submission_repository.dart';
+import '../../../domain/submission/work_submitter.dart';
+import '../../../core/network/api_exception.dart';
 import '../models/activity_flow_model.dart';
 import '../models/archetype_step_selector.dart';
 import '../models/class_chat_message_model.dart';
@@ -43,12 +46,14 @@ class ClassChatController extends ChangeNotifier {
     required LearnerStateModel initialLearnerState,
     required LearnerStateRepository learnerStateRepository,
     required StepRecorder stepRecorder,
+    required WorkSubmitter workSubmitter,
     VoidCallback? onProgressSaved,
   }) : _flow = flow,
        _unit = unit,
        _nextUnit = nextUnit,
        _learnerStateRepository = learnerStateRepository,
        _stepRecorder = stepRecorder,
+       _workSubmitter = workSubmitter,
        _learnerState = initialLearnerState,
        _startingPoints = initialLearnerState.xp ?? 0,
        _onProgressSaved = onProgressSaved {
@@ -71,6 +76,7 @@ class ClassChatController extends ChangeNotifier {
   final CourseUnitModel? _nextUnit;
   final LearnerStateRepository _learnerStateRepository;
   final StepRecorder _stepRecorder;
+  final WorkSubmitter _workSubmitter;
   final VoidCallback? _onProgressSaved;
 
   LearnerStateModel _learnerState;
@@ -116,6 +122,12 @@ class ClassChatController extends ChangeNotifier {
   int _quizToastId = 0;
   ClassQuizToast? _quizToast;
   ClassQuizToast? get quizToast => _quizToast;
+
+  SubmissionAnswer? _pendingWorkAnswer;
+
+  /// The student's total points from the last `submit_artwork` answer, saved
+  /// when the step is saved on the phone.
+  int? _pendingServerPoints;
 
   CourseAssignmentStepModel? _pendingAssignmentStep;
   CourseAssignmentModel? _pendingAssignment;
@@ -416,10 +428,10 @@ class ClassChatController extends ChangeNotifier {
     notifyListeners();
   }
 
-  String _finalSubmissionPraise() => _interpolate(
+  String _finalSubmissionPraise(int points) => _interpolate(
     _flow.step('AF-008')?.displayText ??
         'I am SO proud of you {{name}} 🥹 That\'s the spirit! [+{{submission_points}} pts]',
-    explicitPoints: _currentUnit.xp,
+    explicitPoints: points,
   );
 
   Future<void> submitAssignmentAnswer(SubmissionAnswer answer) async {
@@ -444,39 +456,113 @@ class ClassChatController extends ChangeNotifier {
       ),
     );
 
-    // The prototype AI review is gone (M0). Photos and videos are accepted here
-    // for now. The real upload and the valid or not-valid check come later
-    // (M4, M5, R-27, R-76). Other answers are checked against the flow criteria.
+    // A photo or a video goes to the Worker. The feedback comes later (D6).
+    // Other answers are checked against the flow criteria.
     final isMediaSubmission =
         answer.kind == SubmissionKind.image ||
         answer.kind == SubmissionKind.video ||
         answer.kind == SubmissionKind.imageVideo;
-    final passed = isMediaSubmission
-        ? true
-        : answer.matchesCriteria(step.validCriteria);
-    _push(
-      ClassChatMessage(
-        id: _newId(),
-        stepId: 'AF-008',
-        sender: ClassChatSender.bot,
-        contentType: ClassChatContentType.submissionReview,
-        text: passed
-            ? _finalSubmissionPraise()
-            : "That's a good try — let's keep practicing this one.",
-        data: {'passed': passed, 'isFinalStep': passed},
-      ),
+    if (isMediaSubmission) {
+      await _sendWork(answer, assignment);
+      return;
+    }
+    final passed = answer.matchesCriteria(step.validCriteria);
+    _pushSubmissionReview(
+      passed
+          ? _finalSubmissionPraise(0)
+          : "That's a good try — let's keep practicing this one.",
+      passed: passed,
     );
     await _finishAssignmentStep(accepted: passed);
   }
 
-  Future<void> _finishAssignmentStep({required bool accepted}) async {
+  void _pushSubmissionReview(String text, {required bool passed}) => _push(
+    ClassChatMessage(
+      id: _newId(),
+      stepId: 'AF-008',
+      sender: ClassChatSender.bot,
+      contentType: ClassChatContentType.submissionReview,
+      text: text,
+      data: {'passed': passed, 'isFinalStep': passed},
+    ),
+  );
+
+  /// Sends the photo or video to the Worker (slot, upload, `submit_artwork`).
+  /// The points shown are the ones the Worker gives (+25 for attempt 1).
+  Future<void> _sendWork(
+    SubmissionAnswer answer,
+    CourseAssignmentModel assignment,
+  ) async {
+    var points = 0;
+    var alreadySent = false;
+    try {
+      final bytes = answer.bytes;
+      if (bytes == null || assignment.assignmentId.isEmpty) {
+        throw StateError('No file or no assignment id to send.');
+      }
+      final result = await _workSubmitter.submit(
+        assignmentId: assignment.assignmentId,
+        type: answer.kind == SubmissionKind.video
+            ? SubmissionType.video
+            : SubmissionType.image,
+        bytes: bytes,
+      );
+      points = result.pointsAwarded;
+      _pendingServerPoints = result.pointsTotal;
+    } on ApiException catch (e) {
+      if (e.code != 'CONFLICT') return _workNotSent(answer);
+      // Both attempts are used (R-76). The work was sent before: go on.
+      alreadySent = true;
+    } on FileTooBigException {
+      _pushCheckpoint(
+        stepId: 'SUBMISSION-RETRY',
+        image: null,
+        text:
+            'That file is too big 😅\nPlease choose a smaller photo or a shorter video.',
+        buttonLabel: 'Submit Again',
+        action: 'submission_retry',
+      );
+      return;
+    } catch (e) {
+      debugPrint('Could not send the work: $e');
+      return _workNotSent(answer);
+    }
+    _pendingWorkAnswer = null;
+    _pushSubmissionReview(
+      alreadySent
+          ? 'You already sent this work. Let\'s go on! 💪'
+          : _finalSubmissionPraise(points),
+      passed: true,
+    );
+    await _finishAssignmentStep(accepted: true, points: points);
+  }
+
+  void _workNotSent(SubmissionAnswer answer) {
+    _pendingWorkAnswer = answer;
+    _showProgressSaveRetry(
+      'We could not send your work. Please check your connection and retry.',
+      action: 'send_work',
+    );
+  }
+
+  void _retrySendWork() {
+    final answer = _pendingWorkAnswer;
+    final assignment = _pendingAssignment;
+    if (answer == null || assignment == null) return;
+    unawaited(_sendWork(answer, assignment));
+  }
+
+  Future<void> _finishAssignmentStep({
+    required bool accepted,
+    int points = 0,
+  }) async {
     _pendingAssignment = null;
     _pendingAssignmentStep = null;
     if (accepted) {
       _submissionAcceptedThisUnit = true;
-      _accumulatedSubmissionPoints += _currentUnit.xp;
+      _accumulatedSubmissionPoints += points;
 
-      final saved = await _saveSubmissionProgress(_currentUnit.xp);
+      final saved = await _saveSubmissionProgress(points);
       if (_disposed) return;
       if (!saved) {
         _showProgressSaveRetry(
@@ -667,6 +753,10 @@ class ClassChatController extends ChangeNotifier {
         _messages.removeWhere((m) => m.stepId == 'ERROR');
         unawaited(_retrySaveSubmissionThenShowQuiz());
         return;
+      case 'send_work':
+        _messages.removeWhere((m) => m.stepId == 'ERROR');
+        _retrySendWork();
+        return;
       case 'save_video':
         _messages.removeWhere((m) => m.stepId == 'ERROR');
         unawaited(_retrySaveVideoThenShowSubmission());
@@ -749,7 +839,7 @@ class ClassChatController extends ChangeNotifier {
     );
     notifyListeners();
 
-    final saved = await _saveSubmissionProgress(_currentUnit.xp);
+    final saved = await _saveSubmissionProgress(_accumulatedSubmissionPoints);
     if (_disposed) return;
     _messages.removeWhere((m) => m.stepId == 'SAVING');
 
@@ -856,6 +946,10 @@ class ClassChatController extends ChangeNotifier {
         xp: points,
         submissionIndex: unitIndex + 1,
       );
+      final total = _pendingServerPoints;
+      if (total != null) {
+        await _learnerStateRepository.applyServerPoints(learnerId, total);
+      }
       saved = true;
     } catch (_) {
       saved = false;
@@ -990,6 +1084,9 @@ class ClassChatController extends ChangeNotifier {
         return;
       case 'save_submission':
         unawaited(_retrySaveSubmissionThenShowQuiz());
+        return;
+      case 'send_work':
+        _retrySendWork();
         return;
       case 'save_quiz':
         unawaited(_saveQuizThenShowTotals());

@@ -46,6 +46,29 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
     setState(() => _submitted = true);
   }
 
+  /// Sends the picked photo or video. The controller uploads it to the Worker.
+  Future<void> _submitMedia({required bool isVideo}) async {
+    final file = _pickedMedia;
+    if (file == null) return;
+    _markSubmitted();
+    try {
+      final bytes = _pickedMediaBytes ?? await file.readAsBytes();
+      await widget.controller.submitAssignmentAnswer(
+        isVideo
+            ? SubmissionAnswer.video(file.path, bytes: bytes)
+            : SubmissionAnswer.image(file.path, bytes: bytes),
+      );
+    } catch (_) {
+      if (!mounted) return;
+      setState(() => _submitted = false);
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text("Couldn't read that file. Please try again."),
+        ),
+      );
+    }
+  }
+
   Future<void> _pickImage(ImageSource source) async {
     setState(() {
       _isPicking = true;
@@ -373,13 +396,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
         return _buildMediaPicker(
           canInteract: canInteract,
           allowVideo: false,
-          onSubmit: () {
-            if (_pickedMedia == null) return;
-            widget.controller.submitAssignmentAnswer(
-              SubmissionAnswer.image(_pickedMedia!.path),
-            );
-            _markSubmitted();
-          },
+          onSubmit: () => _submitMedia(isVideo: false),
         );
 
       case SubmissionKind.video:
@@ -387,29 +404,14 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
           canInteract: canInteract,
           allowVideo: true,
           forceVideo: true,
-          onSubmit: () {
-            if (_pickedMedia == null) return;
-            widget.controller.submitAssignmentAnswer(
-              SubmissionAnswer.video(_pickedMedia!.path),
-            );
-            _markSubmitted();
-          },
+          onSubmit: () => _submitMedia(isVideo: true),
         );
 
       case SubmissionKind.imageVideo:
         return _buildMediaPicker(
           canInteract: canInteract,
           allowVideo: true,
-          onSubmit: () {
-            if (_pickedMedia == null) return;
-            widget.controller.submitAssignmentAnswer(
-              SubmissionAnswer.imageOrVideo(
-                _pickedMedia!.path,
-                isVideo: _isVideoPick,
-              ),
-            );
-            _markSubmitted();
-          },
+          onSubmit: () => _submitMedia(isVideo: _isVideoPick),
         );
     }
   }
