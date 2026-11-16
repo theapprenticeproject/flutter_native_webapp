@@ -1,54 +1,73 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../../core/router/app_routes.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../domain/gallery/gallery_header_provider.dart';
+import '../../../domain/gallery/gallery_provider.dart';
+import '../../../shared/media/open_in_new_tab.dart';
+import '../../../shared/widgets/app_header.dart';
 import '../../../shared/widgets/app_nav.dart';
+import 'gallery_view.dart';
+import 'gallery_viewer.dart';
 
-/// The Gallery tab (R-1, R-59). This is only the empty state for now: the real
-/// Gallery (valid works, initials, the full-screen viewer) is task D9, and the
-/// curriculum team's example works fill it at first (R-58).
-class GalleryScreen extends StatelessWidget {
+/// The Gallery tab (R-1, R-6, D9).
+class GalleryScreen extends ConsumerWidget {
   const GalleryScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final gallery = ref.watch(galleryProvider);
+    final notifier = ref.read(galleryProvider.notifier);
+    final header = ref.watch(galleryHeaderProvider).value;
+    final shared = header?.shared ?? false;
+
+    // "Share your work" goes to Home, where the activity card waits.
+    void share() => context.go(AppRoutes.home);
+
     return AppNav(
       child: Scaffold(
         backgroundColor: AppTheme.appBackground,
         body: SafeArea(
-          child: Center(
-            child: Padding(
-              padding: const EdgeInsets.all(32),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  const Icon(
-                    Icons.photo_library_outlined,
-                    size: 56,
-                    color: Color(0xFF5B5BD6),
-                  ),
-                  const SizedBox(height: 16),
-                  Text(
-                    'The Gallery is coming soon',
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.inter(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w700,
-                      color: AppTheme.textColor,
-                    ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    'Come back to see great work from other students.',
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.inter(
-                      fontSize: 14,
-                      color: AppTheme.subheadingColor,
-                    ),
-                  ),
-                ],
+          bottom: false,
+          child: Column(
+            children: [
+              const AppHeader(
+                title: 'Gallery',
+                subtitle: 'See what others made',
               ),
-            ),
+              Expanded(
+                child: GalleryView(
+                  activityTitle: header?.activityTitle,
+                  ownWorkUrl: header?.ownWorkUrl,
+                  shared: shared,
+                  items: gallery.items,
+                  loading: gallery.loading,
+                  failed: gallery.failed,
+                  hasMore: gallery.hasMore,
+                  loadingMore: gallery.loadingMore,
+                  moreFailed: gallery.moreFailed,
+                  onShare: share,
+                  onLoadMore: notifier.loadMore,
+                  onRetry: notifier.load,
+                  onOpen: (i) => Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) => GalleryViewer(
+                        items: gallery.items,
+                        initialIndex: i,
+                        canShare: !shared,
+                        onShare: () {
+                          Navigator.of(context).pop();
+                          share();
+                        },
+                        onOpenVideo: openInNewTab,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ),

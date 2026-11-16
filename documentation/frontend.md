@@ -46,7 +46,7 @@ Use `forceRefresh: true` only for conflict recovery or a user-requested refresh.
 
 ## The bottom bar and the Me page (new)
 
-The bar has 3 items: **Home, Gallery, Me** (R-1). There is no Class tab: the activity opens from Home (R-2), and Home stays the active tab while it runs. **Gallery** (`/gallery`) is an empty state for now (task D9 builds it). Settings (`/profile`) is opened from Me and counts as Me. The code is in `lib/shared/widgets/app_nav.dart`, with a test in `test/shared/app_nav_test.dart`.
+The bar has 3 items: **Home, Gallery, Me** (R-1). There is no Class tab: the activity opens from Home (R-2), and Home stays the active tab while it runs. **Gallery** (`/gallery`) is described in the next section. Settings (`/profile`) is opened from Me and counts as Me. The code is in `lib/shared/widgets/app_nav.dart`, with a test in `test/shared/app_nav_test.dart`.
 
 **Me** (`/me`, `MeScreen` and `MeView` in `lib/features/me/`) replaces the old Passport and Profile screens (R-7). From top to bottom:
 - **Switch profile** strip: "Not Asha? Switch to your profile". It lists the students saved at login and swaps the token, with no phone number and no request (R-34).
@@ -74,6 +74,16 @@ The Worker now checks the order: `request_upload` answers `INVALID_INPUT` until 
 ## Today's picture badge (new)
 
 Every screen of the activity has a small badge, **0/4 to 4/4**, in the header (R-69, `PictureBadge`). Today's picture has 4 pieces. One unlocks for each step the student finishes: the video, the work sent, and the quiz. The **4th piece unlocks only with valid feedback**, so a not-valid result stays at 3/4. The count does not depend on the order, so a postponed Make (R-66) gives 2/4 after the quiz and 3/4 when the work is sent. The rule is `unlockedPieces()` (`lib/domain/learning_progress/picture_pieces.dart`). The picture on the side rail is revealed in quarters from the same count. The badge counts only what the Worker has confirmed (R-91).
+
+## The Gallery (new)
+
+The Gallery tab (`GalleryScreen`, `GalleryView` and `GalleryViewer` in `lib/features/gallery/`) shows:
+- **This activity** (the unit the student is on) and **Your submission**: the student's own work with a "You've shared" tag, or a box with a **Share your work** button that goes to Home (R-6).
+- **From TAP students like you:** a two-column grid of other students' work from `GET /gallery`. The Worker returns only valid work from the R2 copies, in random order (R-59, R-85, R-88). Each tile shows the student's **initials only**, never the name (`initialsOf`: "Durva Sibling" is "DS"). The app asks for 8 works at a time and sends back the Worker's `scope_cache_token` each time. **Load more** adds the next page and never shows the same work twice.
+- **A full-screen viewer:** "1 of 9", previous and next arrows, swipe, close. A student who has not shared sees "Want to share your work too?". A video shows a play icon and an **Open video** button that opens it in a new tab, because the app has no video player yet.
+- **Empty and error states:** with no work yet, a friendly message. When the Worker fails, a plain message and **Try again**. A failed **Load more** keeps what is on screen.
+
+There is no time-left pill (R-72). The curriculum team's example works for the empty state (R-58) are not bundled yet, so the empty state is only a message. The data logic is in `lib/domain/gallery/`.
 
 ## Signing in with the magic link (new)
 
