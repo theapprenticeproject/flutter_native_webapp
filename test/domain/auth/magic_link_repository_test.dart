@@ -261,4 +261,35 @@ void main() {
     final roster = await repoFor(adapter).readRoster();
     expect(roster.single.schoolName, 'New Horizon Public School');
   });
+
+  group('session ended', () {
+    test('clears the sign-in but keeps the learner progress', () async {
+      final adapter = FakeWorkerAdapter(
+        (_) => ok({
+          'phone_token': 'p',
+          'active_student_id': 'S1',
+          'students': [student('S1', 'Asha', '5')],
+        }),
+      );
+      final repo = repoFor(adapter);
+      await repo.redeem('CODE');
+      // Progress the student made on this phone (bundled order, R-83).
+      await cache.setForeverRaw(CacheKeys.learnerState('S1'), {
+        'learner_id': 'S1',
+        'xp': 120,
+      });
+
+      await repo.clearSession();
+
+      expect(await store.readToken(), isNull);
+      expect(await store.readPhoneToken(), isNull);
+      expect(await repo.readRoster(), isEmpty);
+      expect(cache.has(CacheKeys.activeProfile()), isFalse);
+      expect(
+        cache.has(CacheKeys.learnerState('S1')),
+        isTrue,
+        reason: 'opening the link again must not lose the progress',
+      );
+    });
+  });
 }

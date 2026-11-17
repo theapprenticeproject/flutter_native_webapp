@@ -12,20 +12,23 @@ void main() {
     expect(text.contains("'Edit Info'"), isFalse);
   });
 
-  test('Me has no Edit profile, Sign out or theme switch (R-74, R-35, R-73)', () {
-    final text = File(
-      'lib/features/me/presentation/me_view.dart',
-    ).readAsStringSync();
-    // Whole words only: `AppTheme` is the colour set, not a theme switch.
-    for (final word in [
-      'Edit profile',
-      'Sign out',
-      'Log out',
-      'Dark mode',
-      'Light mode',
-    ]) {
-      expect(text.contains(word), isFalse, reason: word);
-    }
-    expect(RegExp(r'(?<![A-Za-z])Theme\b').hasMatch(text), isFalse);
-  });
+  test(
+    'Me has no Edit profile, Sign out or theme switch (R-74, R-35, R-73)',
+    () {
+      final text = File(
+        'lib/features/me/presentation/me_view.dart',
+      ).readAsStringSync();
+      // Whole words only: `AppTheme` is the colour set, not a theme switch.
+      for (final word in [
+        'Edit profile',
+        'Sign out',
+        'Log out',
+        'Dark mode',
+        'Light mode',
+      ]) {
+        expect(text.contains(word), isFalse, reason: word);
+      }
+      expect(RegExp(r'(?<![A-Za-z])Theme\b').hasMatch(text), isFalse);
+    },
+  );
 }
