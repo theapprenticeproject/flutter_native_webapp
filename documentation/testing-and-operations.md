@@ -22,6 +22,17 @@ flutter test --platform chrome test/web_only
 ```
 (It needs Chrome or Edge. Set `CHROME_EXECUTABLE` if it is not found. The normal `flutter test` skips it.)
 
+### Getting a login link from the test Worker
+
+`POST /test/mint-link` makes a link for a seeded phone. The test Worker **renamed the key**: the code is in `data.magic_link` (it was `data.code`). Use `magic_link`, and the old name only as a fallback:
+
+```bash
+code=$(curl -s -X POST https://tapapp-test-worker.tapific.workers.dev/test/mint-link \
+  -H 'Content-Type: application/json' -d '{"phone":"919100000001"}' \
+  | python3 -c 'import sys,json;d=json.load(sys.stdin)["data"];print(d.get("magic_link") or d.get("code"))')
+echo "http://localhost:8080/#/l/$code"
+```
+
 ### Testing the photo upload against the test Worker
 
 The test Worker's upload address is fake, so a real upload always fails there. Build with `SKIP_UPLOAD=1` to skip only the file upload. The slot request and `submit_artwork` still run for real:

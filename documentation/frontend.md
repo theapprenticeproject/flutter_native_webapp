@@ -73,7 +73,11 @@ The Worker now checks the order: `request_upload` answers `INVALID_INPUT` until 
 
 ## Today's picture badge (new)
 
-Every screen of the activity has a small badge, **0/4 to 4/4**, in the header (R-69, `PictureBadge`). Today's picture has 4 pieces. One unlocks for each step the student finishes: the video, the work sent, and the quiz. The **4th piece unlocks only with valid feedback**, so a not-valid result stays at 3/4. The count does not depend on the order, so a postponed Make (R-66) gives 2/4 after the quiz and 3/4 when the work is sent. The rule is `unlockedPieces()` (`lib/domain/learning_progress/picture_pieces.dart`). The picture on the side rail is revealed in quarters from the same count. The badge counts only what the Worker has confirmed (R-91).
+Every screen of the activity has a small badge, **0/4 to 4/4**, in the header (R-69, `PictureBadge`). Today's picture has 4 pieces. One unlocks for each step the student finishes: the video, the work sent, and the quiz. The **4th piece unlocks only with valid feedback**, so a not-valid result stays at 3/4. The count does not depend on the order, so a postponed Make (R-66) gives 2/4 after the quiz and 3/4 when the work is sent. The rule is `unlockedPieces()` (`lib/domain/learning_progress/picture_pieces.dart`). The picture on the side rail is revealed in quarters from the same count. The badge counts only what the Worker has confirmed (R-91). **Tapping the badge opens the picture** in a sheet ("Today's picture · 2/4"). On a narrow screen (under 640 px, a phone) there is no side panel, so the same sheet opens by itself each time a piece unlocks (`shouldShowRevealSheet`). On a wide screen the side panel shows the picture.
+
+**No fake audio until D15 (R-17, R-54).** TAP Buddy's picture does not pulse and does not say "Speaking", and there is no "Hear again" button or speaker icon in the class screens: there is no audio yet, and a student would wait for a sound that never comes. D15 adds the real speaker icon that plays a clip when the student taps it.
+
+**The Make step is a photo or a video (R-63).** For a student, `ArchetypeStepSelector` prefers an `image,video` step, then `video`, then `image`. It used to look only for `image,video` or `video`, so a unit with only a photo step gave the student the first step, the emoji. The card says "PHOTO" and no longer shows made-up "friends" work.
 
 ## The Gallery (new)
 

@@ -3,11 +3,17 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:tapapp/features/classroom/presentation/widgets/picture_badge.dart';
 
 /// R-69: a small badge on every screen of the activity shows 0/4 up to 4/4.
-Future<void> _pump(WidgetTester tester, int pieces) async {
+Future<void> _pump(
+  WidgetTester tester,
+  int pieces, {
+  VoidCallback? onTap,
+}) async {
   await tester.pumpWidget(
     MaterialApp(
       home: Scaffold(
-        body: Center(child: PictureBadge(pieces: pieces)),
+        body: Center(
+          child: PictureBadge(pieces: pieces, onTap: onTap),
+        ),
       ),
     ),
   );
@@ -39,5 +45,12 @@ void main() {
       findsOneWidget,
     );
     handle.dispose();
+  });
+
+  testWidgets('tapping the badge opens the picture', (tester) async {
+    var taps = 0;
+    await _pump(tester, 2, onTap: () => taps++);
+    await tester.tap(find.text('2/4'));
+    expect(taps, 1);
   });
 }

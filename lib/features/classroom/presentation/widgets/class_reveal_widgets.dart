@@ -264,12 +264,6 @@ class ClassNextActivityInlineCard extends ConsumerWidget {
                     color: AppTheme.subheadingColor,
                   ),
                 ),
-                const SizedBox(width: 8),
-                const Icon(
-                  Icons.volume_up_rounded,
-                  size: 16,
-                  color: AppTheme.buttonColor,
-                ),
               ],
             ),
           ),
@@ -577,6 +571,80 @@ class ClassRevealRail extends StatelessWidget {
       ),
     );
   }
+}
+
+/// The picture, revealed as far as [revealProgress] (0 to 1).
+class ClassRevealPicture extends StatelessWidget {
+  const ClassRevealPicture({
+    super.key,
+    required this.unitIndex,
+    required this.revealProgress,
+    this.height = 240,
+  });
+
+  final int unitIndex;
+  final double revealProgress;
+  final double height;
+
+  @override
+  Widget build(BuildContext context) => _RevealImage(
+    unitIndex: unitIndex,
+    revealProgress: revealProgress,
+    height: height,
+  );
+}
+
+/// Shows today's picture in a sheet: what is revealed so far (R-69). On a
+/// narrow screen there is no side panel, so this is where the student sees it.
+Future<void> showRevealSheet(
+  BuildContext context, {
+  required int unitIndex,
+  required int pieces,
+}) {
+  final n = pieces.clamp(0, 4);
+  return showModalBottomSheet<void>(
+    context: context,
+    shape: const RoundedRectangleBorder(
+      borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+    ),
+    builder: (context) => SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(20, 20, 20, 24),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              "Today's picture · $n/4",
+              style: GoogleFonts.inter(
+                fontSize: 16,
+                fontWeight: FontWeight.w800,
+                color: AppTheme.textColor,
+              ),
+            ),
+            const SizedBox(height: 6),
+            Text(
+              n >= 4
+                  ? "Congratulations! 🎉 You unlocked today's picture."
+                  : 'Finish each step to reveal the picture hiding behind the cloud ☁️',
+              style: GoogleFonts.inter(
+                fontSize: 13,
+                height: 1.4,
+                color: AppTheme.subheadingColor,
+              ),
+            ),
+            const SizedBox(height: 14),
+            ClassRevealPicture(unitIndex: unitIndex, revealProgress: n / 4),
+            const SizedBox(height: 14),
+            ElevatedButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: const Text('OK'),
+            ),
+          ],
+        ),
+      ),
+    ),
+  );
 }
 
 class _RevealImage extends StatelessWidget {

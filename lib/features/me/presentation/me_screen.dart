@@ -36,7 +36,10 @@ class MeScreen extends ConsumerWidget {
       ref.invalidate(learnerStateDataProvider(student.studentId));
       ref.invalidate(learningDashboardProvider);
       ref.invalidate(meDataProvider);
-      if (context.mounted) Navigator.of(context).pop();
+      if (!context.mounted) return;
+      Navigator.of(context).pop();
+      // The new student's activity is on Home.
+      context.go(AppRoutes.home);
     } catch (e) {
       debugPrint('Failed to switch profile: $e');
       if (!context.mounted) return;

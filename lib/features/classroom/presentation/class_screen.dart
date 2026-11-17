@@ -20,6 +20,7 @@ import 'widgets/class_chat_row.dart';
 import 'widgets/class_loading_skeleton.dart';
 import 'widgets/class_message_content.dart';
 import 'widgets/class_reveal_widgets.dart';
+import '../../../domain/learning_progress/picture_pieces.dart';
 import 'widgets/picture_badge.dart';
 
 class ClassScreen extends ConsumerStatefulWidget {
@@ -122,6 +123,7 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
   @override
   void initState() {
     super.initState();
+    _lastPieces = widget.controller.unlockedPictureCount;
     widget.controller.addListener(_onControllerChanged);
   }
 
@@ -145,7 +147,28 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
     super.dispose();
   }
 
+  int? _lastPieces;
+
+  void _openPicture() => showRevealSheet(
+    context,
+    unitIndex: widget.controller.unitIndex,
+    pieces: widget.controller.unlockedPictureCount,
+  );
+
   void _onControllerChanged() {
+    final pieces = widget.controller.unlockedPictureCount;
+    final narrow = MediaQuery.sizeOf(context).width < 640;
+    if (shouldShowRevealSheet(
+      previous: _lastPieces,
+      current: pieces,
+      narrow: narrow,
+    )) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) _openPicture();
+      });
+    }
+    _lastPieces = pieces;
+
     if (widget.controller.outcome == ClassSessionOutcome.leave) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (mounted) context.go(AppRoutes.home);
@@ -264,6 +287,7 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
               showPoints: true,
               badge: PictureBadge(
                 pieces: widget.controller.unlockedPictureCount,
+                onTap: _openPicture,
               ),
               onBack: () => context.go(AppRoutes.home),
             ),

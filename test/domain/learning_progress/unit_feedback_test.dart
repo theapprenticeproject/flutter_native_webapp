@@ -48,7 +48,12 @@ Map<String, dynamic> _row(String result, int? score) => {
   'score': score,
   'attempt_number': 1,
   'attempts_remaining': 1,
-  'created_at': '2026-11-16T08:00:00Z',
+  // An hour ago, so the work is "waiting" and never "slow" whatever day the
+  // test runs (these tests use the real clock).
+  'created_at': DateTime.now()
+      .toUtc()
+      .subtract(const Duration(hours: 1))
+      .toIso8601String(),
 };
 
 void main() {

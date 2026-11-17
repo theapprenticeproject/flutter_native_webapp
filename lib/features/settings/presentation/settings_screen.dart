@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../../core/router/app_routes.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../domain/profile/active_profile_model.dart';
 import '../../../domain/learner/learner_state_model.dart';
@@ -226,11 +228,8 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
       ref.invalidate(learningDashboardProvider);
 
       Navigator.of(context).pop();
-      setState(() {
-        _isLoadingProfile = true;
-        _isEditing = false;
-      });
-      await _bootstrapProfile();
+      // The new student's activity is on Home.
+      context.go(AppRoutes.home);
     } catch (e) {
       debugPrint('Failed to switch profile: $e');
       if (!mounted || _disposed) return;

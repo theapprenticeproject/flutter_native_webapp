@@ -184,12 +184,6 @@ class ClassCheckpointCard extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const SizedBox(width: 10),
-                    const Icon(
-                      Icons.volume_up_rounded,
-                      size: 22,
-                      color: AppTheme.buttonColor,
-                    ),
                   ],
                 ),
               ),
@@ -283,35 +277,7 @@ class ClassCheckpointCard extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const ClassTapBuddySpeakingOrb(),
-          const SizedBox(height: 12),
-          Container(
-            height: 34,
-            padding: const EdgeInsets.symmetric(horizontal: 14),
-            decoration: BoxDecoration(
-              color: const Color(0xFFF0EDFF),
-              borderRadius: BorderRadius.circular(999),
-            ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                const Icon(
-                  Icons.volume_up_rounded,
-                  size: 15,
-                  color: AppTheme.buttonColor,
-                ),
-                const SizedBox(width: 6),
-                Text(
-                  'Hear again',
-                  style: GoogleFonts.inter(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w700,
-                    color: AppTheme.buttonColor,
-                  ),
-                ),
-              ],
-            ),
-          ),
+          const ClassTapBuddyOrb(),
           if (image != null) ...[
             const SizedBox(height: 18),
             ConstrainedBox(
@@ -432,12 +398,6 @@ class ClassTextBubble extends StatelessWidget {
                 color: AppTheme.textColor,
               ),
             ),
-          ),
-          const SizedBox(width: 10),
-          const Icon(
-            Icons.volume_up_rounded,
-            size: 18,
-            color: AppTheme.imagePlaceholder,
           ),
         ],
       ),

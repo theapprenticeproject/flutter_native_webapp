@@ -457,21 +457,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Wrap(
-          spacing: 10,
-          runSpacing: 10,
-          children: _mediaFriendExamples(forceVideo: forceVideo)
-              .map(
-                (emoji) => _FriendExampleTile(
-                  label: emoji,
-                  selected: false,
-                  onTap: canInteract ? openPicker : null,
-                ),
-              )
-              .toList(),
-        ),
         if (hasMedia) ...[
-          const SizedBox(height: 12),
           InkWell(
             onTap: canInteract ? openPicker : null,
             borderRadius: BorderRadius.circular(12),
@@ -589,8 +575,9 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
       kind == SubmissionKind.video ||
       kind == SubmissionKind.imageVideo;
 
-  bool _showFriendExamples(SubmissionKind kind) =>
-      kind == SubmissionKind.emoji || _isMediaKind(kind);
+  // The made-up "friends" rows are gone for photo and video: the Gallery shows
+  // real work (R-85).
+  bool _showFriendExamples(SubmissionKind kind) => kind == SubmissionKind.emoji;
 
   String _friendLabel(SubmissionKind kind) => switch (kind) {
     SubmissionKind.emoji => 'Friends sent 👀',
@@ -600,17 +587,14 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
     _ => 'See what friends made 👀',
   };
 
-  List<String> _mediaFriendExamples({required bool forceVideo}) =>
-      forceVideo ? const ['🎥', '🎬', '🚀'] : const ['🐱', '🚀', '🌈'];
-
   String _kindLabel(SubmissionKind kind) => switch (kind) {
     SubmissionKind.emoji => '👉 EMOJI',
     SubmissionKind.text => '💬 TEXT',
     SubmissionKind.audio => '🎤 AUDIO',
     SubmissionKind.textAudio => '💬 TEXT / 🎤 AUDIO',
-    SubmissionKind.image => '🖼️ SCREENSHOT',
+    SubmissionKind.image => '📷 PHOTO',
     SubmissionKind.video => '🎥 VIDEO',
-    SubmissionKind.imageVideo => '🖼️ SCREENSHOT / 🎥 VIDEO',
+    SubmissionKind.imageVideo => '📷 PHOTO / 🎥 VIDEO',
   };
 
   Future<void> _showSubmissionHelpDialog() async {
@@ -804,39 +788,6 @@ class _ExamplePreview extends StatelessWidget {
   }
 }
 
-class _FriendExampleTile extends StatelessWidget {
-  const _FriendExampleTile({
-    required this.label,
-    required this.selected,
-    required this.onTap,
-  });
-
-  final String label;
-  final bool selected;
-  final VoidCallback? onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(10),
-      child: Container(
-        width: 68,
-        height: 58,
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-          color: selected ? AppTheme.mutedLavender : AppTheme.dividerColor,
-          borderRadius: BorderRadius.circular(10),
-          border: Border.all(
-            color: selected ? AppTheme.buttonColor : AppTheme.borderColor,
-          ),
-        ),
-        child: Text(label, style: const TextStyle(fontSize: 22)),
-      ),
-    );
-  }
-}
-
 class ClassSubmissionReviewCard extends StatelessWidget {
   const ClassSubmissionReviewCard({required this.message, super.key});
 
@@ -963,14 +914,6 @@ class ClassSubmissionRewardCard extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Align(
-            alignment: Alignment.topRight,
-            child: Icon(
-              Icons.volume_up_rounded,
-              size: 18,
-              color: AppTheme.buttonColor,
-            ),
-          ),
           Image.asset(
             'assets/class-screen/Skill Passport 1.png',
             height: 235,

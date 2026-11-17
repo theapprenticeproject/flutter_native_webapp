@@ -6,8 +6,11 @@ import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../models/class_chat_message_model.dart';
 import '../../providers/class_chat_controller.dart';
+// The real YouTube iframe in a browser. The empty stub is only for platforms
+// with no browser. (`dart.library.html` is the old condition, and it is false
+// for newer web builds.)
 import 'youtube_embed_stub.dart'
-    if (dart.library.html) 'youtube_embed_web.dart';
+    if (dart.library.js_interop) 'youtube_embed_web.dart';
 
 class ClassVideoCard extends StatefulWidget {
   const ClassVideoCard({
@@ -85,12 +88,6 @@ class _ClassVideoCardState extends State<ClassVideoCard> {
                   fontWeight: FontWeight.w500,
                   color: AppTheme.textColor,
                 ),
-              ),
-              const SizedBox(width: 18),
-              const Icon(
-                Icons.volume_up_rounded,
-                size: 16,
-                color: AppTheme.buttonColor,
               ),
             ],
           ),

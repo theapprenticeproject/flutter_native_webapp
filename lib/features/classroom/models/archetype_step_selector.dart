@@ -30,7 +30,10 @@ class ArchetypeStepSelector {
       LearnerArchetype.dormant => const ['emoji'],
       LearnerArchetype.fenceSitter => const ['text,audio', 'audio', 'text'],
       LearnerArchetype.irregularSubmitter => const ['image'],
-      LearnerArchetype.submitter => const ['image,video', 'video'],
+      // R-63: the Make step is a photo or a video. Many units have only a photo
+      // step, so it must be on the list, or the student would get the first
+      // (emoji) step.
+      LearnerArchetype.submitter => const ['image,video', 'video', 'image'],
       _ => const ['emoji'],
     };
 
