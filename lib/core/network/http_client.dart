@@ -21,10 +21,7 @@ class RateLimitedException implements Exception {
   RateLimitedException(this.bucket);
   final String bucket;
 
-  static String bucketForPath(String path) {
-    if (path.startsWith('/auth/forgot-password/send-otp')) return 'otp';
-    return 'default';
-  }
+  static String bucketForPath(String path) => 'default';
 
   @override
   String toString() => 'RateLimitedException($bucket)';
@@ -46,26 +43,12 @@ class HttpClient {
           }
           handler.next(options);
         },
-        onResponse: (response, handler) async {
-          await _persistTokenIfPresent(response.data);
-          handler.next(response);
-        },
-        onError: (error, handler) async {
-          await _persistTokenIfPresent(error.response?.data);
-          handler.next(error);
-        },
       ),
     );
   }
 
   final Dio _dio;
   final SecureTokenStore _secureTokenStore;
-
-  Future<void> _persistTokenIfPresent(dynamic data) async {
-    if (data is Map && data['token'] is String) {
-      await _secureTokenStore.saveRefreshedToken(data['token'] as String);
-    }
-  }
 
   Future<Map<String, dynamic>> get(
     String path, {

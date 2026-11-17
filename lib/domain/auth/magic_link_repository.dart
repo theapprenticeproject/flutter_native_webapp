@@ -94,6 +94,16 @@ class MagicLinkRepository {
     return student;
   }
 
+  /// The session ended (the token ran out, R-35 has no sign-out in v1): forget
+  /// the sign-in, so the student must open the link again. The learner's
+  /// progress stays on the phone, so opening the link again carries on from the
+  /// same step.
+  Future<void> clearSession() async {
+    await _store.clear();
+    await _cache.delete(CacheKeys.activeProfile());
+    await _cache.delete(CacheKeys.linkRoster());
+  }
+
   /// There is no onboarding in v1 (the kids are pre-registered), so the student
   /// counts as onboarded. The Worker does not send the phone number, and the
   /// student token carries the identity, so the phone is empty.

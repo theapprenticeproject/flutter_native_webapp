@@ -31,8 +31,9 @@ void main() {
       final found = <String>[];
       for (final f in files) {
         for (final line in f.readAsLinesSync()) {
-          if (entry.value.hasMatch(line))
+          if (entry.value.hasMatch(line)) {
             found.add('${f.path}: ${line.trim()}');
+          }
         }
       }
       expect(found, isEmpty);

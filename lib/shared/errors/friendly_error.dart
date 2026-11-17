@@ -10,7 +10,8 @@ enum ErrorAction {
   /// Trying again can fix it (no internet, busy server).
   retry,
 
-  /// Trying again cannot fix it. The student must sign in again.
+  /// Trying again cannot fix it. The student must open the WhatsApp link
+  /// again.
   signInAgain,
 }
 
@@ -34,9 +35,11 @@ FriendlyError describeError(Object error) {
   if (error is ApiException) return _describeApiError(error);
   if (error is AuthException || error is NoActiveProfileException) {
     return const FriendlyError(
-      title: 'Please sign in again',
-      message: 'Your session has ended. Sign in to carry on.',
-      buttonText: 'Sign in',
+      title: 'Please open your link again',
+      message:
+          'Your session has ended. Open the link that TAP sent you on '
+          'WhatsApp to carry on.',
+      buttonText: 'OK',
       action: ErrorAction.signInAgain,
     );
   }

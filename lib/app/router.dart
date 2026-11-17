@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../features/splash/presentation/splash_screen.dart';
 import '../features/error/presentation/error_screen.dart';
-import '../features/auth/presentation/auth_screen.dart';
+import '../features/auth/presentation/open_link_screen.dart';
 import '../features/auth/presentation/link_sign_in_screen.dart';
 import '../features/auth/presentation/profile_select_screen.dart';
 import '../features/onboarding/presentation/onboarding_screen.dart';
@@ -49,14 +49,14 @@ class _AuthRefreshListenable extends ChangeNotifier {
 
 const Set<String> _authOnlyRoutes = {
   AppRoutes.splash,
-  AppRoutes.login,
+  AppRoutes.openLink,
   AppRoutes.onboarding,
   AppRoutes.profileSelect,
 };
 
 const Set<String> _publicRoutes = {
   AppRoutes.splash,
-  AppRoutes.login,
+  AppRoutes.openLink,
   AppRoutes.onboarding,
   AppRoutes.profileSelect,
   AppRoutes.error,
@@ -91,7 +91,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       if (activeProfileAsync.hasError) {
         return _publicRoutes.contains(target) && target != AppRoutes.splash
             ? null
-            : AppRoutes.login;
+            : AppRoutes.openLink;
       }
 
       final profile = activeProfileAsync.value;
@@ -102,7 +102,7 @@ final routerProvider = Provider<GoRouter>((ref) {
         if (target != AppRoutes.splash && _publicRoutes.contains(target)) {
           return null;
         }
-        return AppRoutes.login;
+        return AppRoutes.openLink;
       }
 
       if (!onboarded) {
@@ -133,9 +133,8 @@ final routerProvider = Provider<GoRouter>((ref) {
         pageBuilder: (context, state) => AppRoutes.page(const SplashScreen()),
       ),
       GoRoute(
-        path: AppRoutes.login,
-        pageBuilder: (context, state) =>
-            AppRoutes.page(const AuthCheckScreen()),
+        path: AppRoutes.openLink,
+        pageBuilder: (context, state) => AppRoutes.page(const OpenLinkScreen()),
       ),
       GoRoute(
         path: AppRoutes.onboarding,

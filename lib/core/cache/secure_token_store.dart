@@ -5,9 +5,14 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 class SecureTokenStore {
   SecureTokenStore(this._storage);
 
-  static const String _tokenKey = 'tap_token';
-  static const String _adminCodeKey = 'tap_admin_code';
-  static const String _phoneKey = 'tap_phone';
+  /// What the old phone and password login saved. It is never read or written
+  /// now, but a browser that used the old app may still have it, so sign-out
+  /// removes it.
+  static const List<String> _legacyKeys = [
+    'tap_token',
+    'tap_phone',
+    'tap_admin_code',
+  ];
   static const String _phoneTokenKey = 'tap_phone_token';
   static const String _studentTokensKey = 'tap_student_tokens';
   static const String _activeStudentKey = 'tap_active_student';
@@ -37,18 +42,6 @@ class SecureTokenStore {
       return null;
     }
   }
-
-  Future<void> saveSession({
-    required String phone,
-    required String token,
-    String? adminCode,
-  }) async {
-    await _write(_phoneKey, phone);
-    await _write(_tokenKey, token);
-    if (adminCode != null) await _write(_adminCodeKey, adminCode);
-  }
-
-  Future<void> saveRefreshedToken(String token) => _write(_tokenKey, token);
 
   /// Saves what `/auth/redeem` returns: the phone token (kept only to fetch a
   /// lost student token) and one token per student on the phone.
@@ -93,28 +86,18 @@ class SecureTokenStore {
   Future<void> saveActiveStudentId(String studentId) =>
       _write(_activeStudentKey, studentId);
 
-  /// The token to send: the active student's, else the old single token.
+  /// The token to send: the active student's.
   Future<String?> readToken() async {
     final activeId = await readActiveStudentId();
     if (activeId != null) {
       final studentToken = await readStudentToken(activeId);
       if (studentToken != null) return studentToken;
     }
-    return _read(_tokenKey);
-  }
-
-  Future<String?> readPhone() => _read(_phoneKey);
-  Future<String?> readAdminCode() => _read(_adminCodeKey);
-
-  Future<bool> checkAdminCode(String candidate) async {
-    final stored = await readAdminCode();
-    return stored != null && stored == candidate;
+    return null;
   }
 
   Future<void> clear() => Future.wait([
-    _storage.delete(key: _phoneKey),
-    _storage.delete(key: _tokenKey),
-    _storage.delete(key: _adminCodeKey),
+    for (final key in _legacyKeys) _storage.delete(key: key),
     _storage.delete(key: _phoneTokenKey),
     _storage.delete(key: _studentTokensKey),
     _storage.delete(key: _activeStudentKey),

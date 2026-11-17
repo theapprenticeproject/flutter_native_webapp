@@ -12,16 +12,6 @@ class ProfileSettingsSnapshot {
   final LearnerStateModel? learnerState;
 }
 
-class ProfileSaveResult {
-  const ProfileSaveResult({
-    required this.learnerState,
-    required this.updatedProfile,
-  });
-
-  final LearnerStateModel learnerState;
-  final ActiveProfileModel? updatedProfile;
-}
-
 class ProfileSettingsActions {
   const ProfileSettingsActions();
 
@@ -44,43 +34,6 @@ class ProfileSettingsActions {
     return ProfileSettingsSnapshot(
       activeProfile: activeProfile,
       learnerState: learnerState,
-    );
-  }
-
-  Future<ProfileSaveResult> save({
-    required WidgetRef ref,
-    required String phone,
-    required ActiveProfileModel activeProfile,
-    required Map<String, dynamic> updates,
-    required String fullName,
-    required String grade,
-  }) async {
-    final repository = await ref.read(profileRepositoryProvider.future);
-    final updatedState = await repository.updateProfile(
-      phone: phone,
-      learnerId: activeProfile.learnerId,
-      updates: updates,
-    );
-
-    ActiveProfileModel? updatedProfile;
-    if (updates.containsKey('student_name') || updates.containsKey('grade')) {
-      updatedProfile = ActiveProfileModel(
-        phone: phone,
-        learnerId: activeProfile.learnerId,
-        studentName: updates.containsKey('student_name')
-            ? fullName
-            : activeProfile.studentName,
-        grade: updates.containsKey('grade') ? grade : activeProfile.grade,
-        division: activeProfile.division,
-        avatar: activeProfile.avatar,
-        onboardingCompleted: activeProfile.onboardingCompleted,
-      );
-      await repository.setActiveProfile(updatedProfile);
-    }
-
-    return ProfileSaveResult(
-      learnerState: updatedState,
-      updatedProfile: updatedProfile,
     );
   }
 }

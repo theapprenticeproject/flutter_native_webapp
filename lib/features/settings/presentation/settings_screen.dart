@@ -37,7 +37,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   bool _aboutError = false;
 
   bool _isEditing = false;
-  bool _isSaving = false;
+  final bool _isSaving = false;
   String? _saveError;
 
   final ProfileFormController _formController = ProfileFormController();
@@ -143,74 +143,11 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
     });
   }
 
+  /// Edit profile is later (R-74). The Edit button is hidden, so this never
+  /// runs. The old save needed a phone number that the WhatsApp-link login does
+  /// not give, so it was removed with the password login.
   Future<void> _saveEdits() async {
-    final activeProfile = _activeProfile;
-    if (activeProfile == null) return;
-
-    final phone = await _resolvePhone();
-    if (!_canUpdate) return;
-
-    if (phone.isEmpty) {
-      setState(() {
-        _saveError = 'Could not verify your phone number. Please log in again.';
-      });
-      return;
-    }
-
-    final fullName = _formController.fullName;
-    final grade = _formController.gradeValue;
-    final updates = _formController.toUpdates();
-
-    if (updates.isEmpty) {
-      setState(() => _isEditing = false);
-      return;
-    }
-
-    setState(() {
-      _isSaving = true;
-      _saveError = null;
-    });
-
-    try {
-      final result = await _profileActions.save(
-        ref: ref,
-        phone: phone,
-        activeProfile: activeProfile,
-        updates: updates,
-        fullName: fullName,
-        grade: grade,
-      );
-
-      if (!_canUpdate) return;
-
-      ref.invalidate(activeProfileProvider);
-      ref.invalidate(learnerStateDataProvider(activeProfile.learnerId));
-
-      setState(() {
-        if (result.updatedProfile != null) {
-          _activeProfile = result.updatedProfile;
-        }
-        _learnerState = result.learnerState;
-        _isEditing = false;
-        _isSaving = false;
-      });
-      _syncControllersFromState();
-      _showSavedSnack();
-    } catch (e) {
-      debugPrint('Profile save failed: $e');
-      if (!_canUpdate) return;
-      setState(() {
-        _isSaving = false;
-        _saveError = 'Could not save your changes. Please try again.';
-      });
-    }
-  }
-
-  void _showSavedSnack() {
-    if (!_canUpdate) return;
-    ScaffoldMessenger.of(
-      context,
-    ).showSnackBar(const SnackBar(content: Text('Profile updated')));
+    setState(() => _isEditing = false);
   }
 
   void _onTabChanged(ProfileTab tab) {
@@ -262,13 +199,6 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           onRetry: _loadAboutTap,
         );
     }
-  }
-
-  Future<String> _resolvePhone() async {
-    final authRepository = await ref.read(authRepositoryProvider.future);
-    final storedPhone = await authRepository.readStoredPhone();
-    if (storedPhone != null && storedPhone.isNotEmpty) return storedPhone;
-    return _activeProfile?.phone ?? '';
   }
 
   Future<void> _showSwitchProfile() async {

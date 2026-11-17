@@ -9,7 +9,7 @@ Routes are defined in `lib/app/router.dart` (route names are constants in `lib/c
 | Route             | Screen            | Access rule                    |
 | ----------------- | ----------------- | ------------------------------ |
 | `/`               | Splash            | Always available               |
-| `/login`          | Authentication    | Public                         |
+| `/open-link`      | "Open your WhatsApp link" (no form) | Public                         |
 | `/profile-select` | Profile selection | Logged in                      |
 | `/onboarding`     | Onboarding        | Selected profile not onboarded |
 | `/welcome`        | Welcome           | Logged in and onboarded        |
@@ -25,7 +25,7 @@ The redirect checks the cached authentication session, active profile, and onboa
 
 | Provider                        | Purpose                                              |
 | ------------------------------- | ---------------------------------------------------- |
-| `authProvider`                  | Login, logout, reset-password session state          |
+| `magicLinkRepositoryProvider`   | Signing in with the WhatsApp link, the students on the phone, ending the session |
 | `activeProfileProvider`         | Current learner selected on the device               |
 | `learnerStateDataProvider`      | Cached-first learner state                           |
 | `learningDashboardProvider`     | Home stage, unit card, completion marker             |
@@ -97,13 +97,13 @@ When the student taps "I watched it", `StepRecorder` calls `/progress/submit_vid
 
 The Quiz works the same way. Each answer shows right or wrong at once, from the key in the bundled content, and shows **no points**. The app keeps the answers in order. At the end it sends them once with `/progress/submit_quiz` (`unit_id`, `quiz_id`, and the answers as `a`, `b`, `c`: the content key "1" is `a`, "2" is `b`). The points on the summary and the totals are the ones the Worker returns (+1 for each right answer), not a number worked out on the phone. Only the first scored attempt is sent. `CONFLICT` means the quiz was already scored, so the app goes on with 0 new points. A test checks that every bundled question has an id and a valid answer key. Make (the work submission) is still local and moves to the Worker in the next commits.
 
-The old phone and password login screens still exist. They are removed in a later commit. The web app uses hash URLs today (`/#/l/<code>`). Where the Worker's `/l/<code>` link sends the student is decided later.
+**There is no password login.** The old phone and password screens, the forgot-password flow, `AuthRepository`, the `/auth/check-phone`, `/auth/login` and OTP routes, and the old token handling are removed (R-32, R-33). A student with no sign-in sees `/open-link` (`OpenLinkScreen`): "Open your TAP link", with nothing to type. When the session ends (the student token ran out after 30 days), the error screen says "Please open your link again" and its button clears the sign-in (`MagicLinkRepository.clearSession`) and opens that page. **The student's progress stays on the phone**, so opening the link again carries on from the same step. `SecureTokenStore.clear()` also removes the keys the old login left in the browser. The web app uses hash URLs today (`/#/l/<code>`). Where the Worker's `/l/<code>` link sends the student is decided later.
 
 ## Errors and responsiveness (today)
 
 `HttpClient` converts HTTP `401` into `AuthException` and `429` into `RateLimitedException`. Other Dio failures remain transport errors. Initial-load failures should always offer recovery without discarding pending progress.
 
-Home, Me and Class show a failed load with `LoadErrorView` (`lib/shared/widgets/`). It takes its text from `describeError()` (`lib/shared/errors/friendly_error.dart`). Offline, busy and server problems get a **Try again** button. An ended session gets a **Sign in** button that logs out and opens the login screen, because trying again cannot fix it. No screen shows the raw error (R-44). Auth, Settings and Onboarding already had plain messages.
+Home, Me and Class show a failed load with `LoadErrorView` (`lib/shared/widgets/`). It takes its text from `describeError()` (`lib/shared/errors/friendly_error.dart`). Offline, busy and server problems get a **Try again** button. An ended session gets an **OK** button that clears the sign-in and opens the "open your link" page, because trying again cannot fix it. No screen shows the raw error (R-44). Auth, Settings and Onboarding already had plain messages.
 
 The app uses shared `AppHeader` and `AppNav` shells. Classroom and Home switch layouts through `LayoutBuilder` breakpoints. New fixed-size media or controls need bounded dimensions and a mobile fallback.
 

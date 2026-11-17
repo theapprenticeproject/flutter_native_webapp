@@ -1,13 +1,6 @@
 class ApiEndpoints {
   ApiEndpoints._();
 
-  static const String checkPhone = '/auth/check-phone';
-  static const String login = '/auth/login';
-  static const String forgotPasswordSendOtp = '/auth/forgot-password/send-otp';
-  static const String forgotPasswordVerifyOtp =
-      '/auth/forgot-password/verify-otp';
-  static const String resetPassword = '/auth/reset-password';
-
   static const String profiles = '/profiles';
   static const String profilesSearch = '/profiles/search';
   static const String profilesSelect = '/profiles/select';

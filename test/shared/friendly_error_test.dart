@@ -6,6 +6,10 @@ import 'package:tapapp/core/network/api_exception.dart';
 import 'package:tapapp/core/network/http_client.dart';
 import 'package:tapapp/domain/learning_progress/class_session_bootstrap_provider.dart';
 import 'package:tapapp/domain/learning_progress/home_dashboard_provider.dart';
+import 'package:go_router/go_router.dart';
+import 'package:tapapp/core/router/app_routes.dart';
+import 'package:tapapp/domain/auth/auth_provider.dart';
+import 'package:tapapp/domain/auth/magic_link_repository.dart';
 import 'package:tapapp/shared/errors/friendly_error.dart';
 import 'package:tapapp/shared/widgets/load_error_view.dart';
 
@@ -107,4 +111,61 @@ void main() {
     await tester.tap(find.text('Try again'));
     expect(retries, 1);
   });
+
+  test('an ended session says to open the WhatsApp link again', () {
+    final f = describeError(AuthException('invalid_or_expired_token'));
+    final text = '${f.title} ${f.message}'.toLowerCase();
+    expect(f.action, ErrorAction.signInAgain);
+    expect(text, contains('whatsapp'));
+    expect(text, isNot(contains('password')));
+    expect(text, isNot(contains('sign in')));
+  });
+
+  testWidgets(
+    'the button on an ended session clears the sign-in and opens the link page',
+    (tester) async {
+      final repo = _FakeAuthRepo();
+      final router = GoRouter(
+        initialLocation: '/x',
+        routes: [
+          GoRoute(
+            path: '/x',
+            builder: (_, _) => LoadErrorView(
+              error: AuthException('invalid_or_expired_token'),
+              onRetry: () {},
+            ),
+          ),
+          GoRoute(
+            path: AppRoutes.openLink,
+            builder: (_, _) => const Text('OPEN LINK PAGE'),
+          ),
+        ],
+      );
+      await tester.pumpWidget(
+        ProviderScope(
+          overrides: [
+            magicLinkRepositoryProvider.overrideWith((ref) async => repo),
+          ],
+          child: MaterialApp.router(routerConfig: router),
+        ),
+      );
+      await tester.pump();
+
+      await tester.tap(find.text(describeError(AuthException('x')).buttonText));
+      await tester.pumpAndSettle();
+
+      expect(repo.cleared, 1);
+      expect(find.text('OPEN LINK PAGE'), findsOneWidget);
+    },
+  );
+}
+
+class _FakeAuthRepo implements MagicLinkRepository {
+  int cleared = 0;
+
+  @override
+  Future<void> clearSession() async => cleared++;
+
+  @override
+  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
 }

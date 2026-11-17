@@ -9,7 +9,8 @@ import 'error_view.dart';
 
 /// Shows a failed load with a plain message and a button that fits the cause
 /// (R-44). Retry runs [onRetry]. When a retry cannot help (the session ended),
-/// the button signs the student out and opens the login screen.
+/// the button clears the sign-in and opens the page that says to open the
+/// WhatsApp link again.
 class LoadErrorView extends ConsumerWidget {
   const LoadErrorView({required this.error, required this.onRetry, super.key});
 
@@ -26,9 +27,9 @@ class LoadErrorView extends ConsumerWidget {
       onRetry: friendly.action == ErrorAction.retry
           ? onRetry
           : () async {
-              final auth = await ref.read(authRepositoryProvider.future);
-              await auth.logout();
-              if (context.mounted) context.go(AppRoutes.login);
+              final auth = await ref.read(magicLinkRepositoryProvider.future);
+              await auth.clearSession();
+              if (context.mounted) context.go(AppRoutes.openLink);
             },
     );
   }

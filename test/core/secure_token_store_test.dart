@@ -100,10 +100,33 @@ void main() {
     expect(await store.readPhoneToken(), 'p');
   });
 
-  test('the old session save never writes two values at once either', () async {
-    await store.saveSession(phone: '1', token: 't', adminCode: 'a');
-    expect(storage.maxRunning, 1);
-  });
+  test(
+    'an old single token from the password login is not used any more',
+    () async {
+      storage.data['tap_token'] = 'old-password-login-token';
+      expect(await store.readToken(), isNull);
+    },
+  );
+
+  test(
+    'clearing also removes what the old password login left behind',
+    () async {
+      storage.data.addAll({
+        'tap_token': 'old',
+        'tap_phone': '9198',
+        'tap_admin_code': 'x',
+      });
+      await store.saveStudentSession(
+        phoneToken: 'p',
+        studentTokens: {'S1': 't'},
+        activeStudentId: 'S1',
+      );
+
+      await store.clear();
+
+      expect(storage.data, isEmpty);
+    },
+  );
 
   test(
     'a value that cannot be read is treated as missing, not as a crash',
