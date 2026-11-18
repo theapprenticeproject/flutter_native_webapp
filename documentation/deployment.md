@@ -51,7 +51,8 @@ firebase hosting:channel:deploy m0-test --expires 14d
 - **Always build with `scripts/build_web.sh`.** Plain `flutter build web` has no Worker address (it uses the **production** Worker), no build line, and no local CanvasKit.
 - **Check the last line of the build** (`Worker: ...`) and the build line in the app (long-press the icon on the link page, or "TAP" on Me). A test build must show the test Worker.
 - **`SKIP_UPLOAD=1` never goes to real students.** The script refuses it with no `WORKER_URL` or with the production Worker.
-- **Magic links.** The test Worker's link (`https://<worker>/l/<code>`) does not open this app yet. Testers open `https://<channel-address>/#/l/<code>` by hand. The `/#/` is needed: the app uses hash URLs.
+- **Magic links.** The test Worker's link (`https://<worker>/l/<code>`) does not open this app yet. The app opens two link forms: `https://<app-host>/<code>` (this is the form for the WhatsApp template button) and `https://<app-host>/#/l/<code>`. After sign-in the app removes the code from the address bar.
+- **WhatsApp template (HSM) URL button.** WhatsApp allows a variable only at the END of the URL, so the template URL is `https://<app-host>/{{1}}` and the Worker sends just the code as the variable. Hosting must send every path to `index.html` (`firebase.json` already does).
 - **The channel link is public** to anyone who has it, and it talks to a shared test Worker. Do not put real student data on it.
 - **Get a login link** from the test Worker: see `testing-and-operations.md`.
 

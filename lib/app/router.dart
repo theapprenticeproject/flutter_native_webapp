@@ -15,6 +15,7 @@ import '../features/settings/presentation/settings_screen.dart';
 import '../features/welcome/presentation/welcome_screen.dart';
 import '../domain/profile/profile_provider.dart';
 import '../core/router/app_routes.dart';
+import '../core/router/link_entry.dart';
 
 class _AuthRefreshListenable extends ChangeNotifier {
   _AuthRefreshListenable(this._ref) {
@@ -66,7 +67,7 @@ final routerProvider = Provider<GoRouter>((ref) {
   ref.onDispose(refreshListenable.dispose);
 
   return GoRouter(
-    initialLocation: AppRoutes.splash,
+    initialLocation: initialLocationFor(Uri.base) ?? AppRoutes.splash,
     refreshListenable: refreshListenable,
     redirect: (context, state) {
       final activeProfileAsync = ref.read(activeProfileProvider);

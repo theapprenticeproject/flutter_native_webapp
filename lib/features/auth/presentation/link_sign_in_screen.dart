@@ -1,3 +1,4 @@
+import '../../../shared/web/address_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -36,6 +37,7 @@ class _LinkSignInScreenState extends ConsumerState<LinkSignInScreen> {
       final repository = await ref.read(magicLinkRepositoryProvider.future);
       final result = await repository.redeem(widget.code);
       ref.invalidate(activeProfileProvider);
+      clearPathFromAddressBar();
       if (!mounted) return;
       context.go(result.needsPicker ? AppRoutes.profileSelect : AppRoutes.home);
     } catch (e) {
