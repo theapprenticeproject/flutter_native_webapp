@@ -521,54 +521,12 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
     required VoidCallback? onPressed,
     String primaryLabel = 'Submit',
     bool isLoading = false,
-  }) {
-    return Row(
-      children: [
-        Expanded(
-          child: SizedBox(
-            height: 44,
-            child: ElevatedButton(
-              onPressed: onPressed,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppTheme.buttonColor,
-                foregroundColor: Colors.white,
-                disabledBackgroundColor: AppTheme.dividerColor,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                ),
-              ),
-              child: isLoading
-                  ? const SizedBox(
-                      width: 18,
-                      height: 18,
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                        color: Colors.white,
-                      ),
-                    )
-                  : Text(_submitted ? 'Sent' : primaryLabel),
-            ),
-          ),
-        ),
-        const SizedBox(width: 10),
-        SizedBox(
-          height: 44,
-          child: OutlinedButton(
-            onPressed: _showSubmissionHelpDialog,
-            style: OutlinedButton.styleFrom(
-              foregroundColor: AppTheme.subheadingColor,
-              side: const BorderSide(color: AppTheme.dividerColor),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
-              ),
-              padding: const EdgeInsets.symmetric(horizontal: 14),
-            ),
-            child: const Text('Submission Help'),
-          ),
-        ),
-      ],
-    );
-  }
+  }) => SubmitRow(
+    label: _submitted ? 'Sent' : primaryLabel,
+    isLoading: isLoading,
+    onPressed: onPressed,
+    onHelp: _showSubmissionHelpDialog,
+  );
 
   bool _isMediaKind(SubmissionKind kind) =>
       kind == SubmissionKind.image ||
@@ -966,6 +924,61 @@ class ClassSubmissionRewardCard extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+/// The main button gets the full width and its label stays on one line (it
+/// shrinks if needed). "Submission Help" sits below it. Before, both shared one
+/// row and a long label wrapped and was cut off.
+class SubmitRow extends StatelessWidget {
+  const SubmitRow({
+    super.key,
+    required this.label,
+    required this.onPressed,
+    required this.onHelp,
+    this.isLoading = false,
+  });
+
+  final String label;
+  final bool isLoading;
+  final VoidCallback? onPressed;
+  final VoidCallback onHelp;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        SizedBox(
+          height: 44,
+          child: ElevatedButton(
+            onPressed: onPressed,
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppTheme.buttonColor,
+              foregroundColor: Colors.white,
+              disabledBackgroundColor: AppTheme.dividerColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+            child: isLoading
+                ? const SizedBox(
+                    width: 18,
+                    height: 18,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2,
+                      color: Colors.white,
+                    ),
+                  )
+                : FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(label, maxLines: 1),
+                  ),
+          ),
+        ),
+        TextButton(onPressed: onHelp, child: const Text('Submission Help')),
+      ],
     );
   }
 }
