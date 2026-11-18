@@ -259,6 +259,150 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You have reached the limit for this activity.'**
   String get errorLimitMessage;
+
+  /// No description provided for @homeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get homeTitle;
+
+  /// No description provided for @homeCourseLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Core {course} 1'**
+  String homeCourseLabel(String course);
+
+  /// No description provided for @homeCourseNotReady.
+  ///
+  /// In en, this message translates to:
+  /// **'Your course is not ready yet. Please tell your teacher.'**
+  String get homeCourseNotReady;
+
+  /// No description provided for @homeCongrats.
+  ///
+  /// In en, this message translates to:
+  /// **'Congrats Champ!'**
+  String get homeCongrats;
+
+  /// No description provided for @homeActivityComplete.
+  ///
+  /// In en, this message translates to:
+  /// **'Activity\ncomplete 🥳'**
+  String get homeActivityComplete;
+
+  /// No description provided for @homeDoneForWeek.
+  ///
+  /// In en, this message translates to:
+  /// **'Done for the\nweek 🥳'**
+  String get homeDoneForWeek;
+
+  /// No description provided for @homeKeepWinning.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep winning'**
+  String get homeKeepWinning;
+
+  /// No description provided for @homePoints.
+  ///
+  /// In en, this message translates to:
+  /// **'Points'**
+  String get homePoints;
+
+  /// No description provided for @homeReadyForNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Ready to continue with your next activity?'**
+  String get homeReadyForNext;
+
+  /// No description provided for @homeSeeYouNextWeek.
+  ///
+  /// In en, this message translates to:
+  /// **'See you next week champ with a new activity video!'**
+  String get homeSeeYouNextWeek;
+
+  /// No description provided for @homeLetsGo.
+  ///
+  /// In en, this message translates to:
+  /// **'Let\'s go 🎉'**
+  String get homeLetsGo;
+
+  /// No description provided for @homePendingQuiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Pending: Quiz'**
+  String get homePendingQuiz;
+
+  /// No description provided for @homeStartQuiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Quiz'**
+  String get homeStartQuiz;
+
+  /// No description provided for @homeWeeklyLimit.
+  ///
+  /// In en, this message translates to:
+  /// **'Weekly limit reached'**
+  String get homeWeeklyLimit;
+
+  /// No description provided for @homeStartActivity.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Activity'**
+  String get homeStartActivity;
+
+  /// No description provided for @homeFeedbackReady.
+  ///
+  /// In en, this message translates to:
+  /// **'Feedback ready'**
+  String get homeFeedbackReady;
+
+  /// No description provided for @homePendingFeedback.
+  ///
+  /// In en, this message translates to:
+  /// **'Pending: Feedback'**
+  String get homePendingFeedback;
+
+  /// No description provided for @homeFeedbackReadyText.
+  ///
+  /// In en, this message translates to:
+  /// **'Your feedback is ready! Tap to see what I think.'**
+  String get homeFeedbackReadyText;
+
+  /// No description provided for @homeFeedbackSlowText.
+  ///
+  /// In en, this message translates to:
+  /// **'Your feedback is taking longer than expected. Please check again a little later.'**
+  String get homeFeedbackSlowText;
+
+  /// No description provided for @homeFeedbackWaitingText.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'m looking at your work. Please wait, and come back later to see my feedback.\n\nPoints will be provided after feedback.'**
+  String get homeFeedbackWaitingText;
+
+  /// No description provided for @homeSeeFeedback.
+  ///
+  /// In en, this message translates to:
+  /// **'See feedback'**
+  String get homeSeeFeedback;
+
+  /// No description provided for @homeCheckAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Check again'**
+  String get homeCheckAgain;
+
+  /// No description provided for @homeToDoSend.
+  ///
+  /// In en, this message translates to:
+  /// **'To do: Send project'**
+  String get homeToDoSend;
+
+  /// No description provided for @homeSendProject.
+  ///
+  /// In en, this message translates to:
+  /// **'Send my project'**
+  String get homeSendProject;
 }
 
 class _AppLocalizationsDelegate

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -36,7 +37,7 @@ class SubmissionPendingCard extends ConsumerWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Core $courseDisplay 1',
+              context.l10n.homeCourseLabel(courseDisplay),
               style: GoogleFonts.inter(
                 fontSize: 16,
                 fontWeight: FontWeight.w800,
@@ -62,7 +63,9 @@ class SubmissionPendingCard extends ConsumerWidget {
                 border: Border.all(color: const Color(0xFFE7E7EF)),
               ),
               child: Text(
-                ready ? 'Feedback ready' : 'Pending: Feedback',
+                ready
+                    ? context.l10n.homeFeedbackReady
+                    : context.l10n.homePendingFeedback,
                 style: GoogleFonts.inter(
                   fontSize: 11,
                   fontWeight: FontWeight.w700,
@@ -73,13 +76,10 @@ class SubmissionPendingCard extends ConsumerWidget {
             const SizedBox(height: 28),
             Text(
               ready
-                  ? 'Your feedback is ready! Tap to see what I think.'
+                  ? context.l10n.homeFeedbackReadyText
                   : slow
-                  ? 'Your feedback is taking longer than expected. '
-                        'Please check again a little later.'
-                  : "I'm looking at your work. Please wait, "
-                        'and come back later to see my feedback.\n\n'
-                        'Points will be provided after feedback.',
+                  ? context.l10n.homeFeedbackSlowText
+                  : context.l10n.homeFeedbackWaitingText,
               style: GoogleFonts.inter(
                 fontSize: 16,
                 height: 1.4,
@@ -103,7 +103,9 @@ class SubmissionPendingCard extends ConsumerWidget {
                   ),
                 ),
                 child: Text(
-                  ready ? 'See feedback' : 'Check again',
+                  ready
+                      ? context.l10n.homeSeeFeedback
+                      : context.l10n.homeCheckAgain,
                   style: GoogleFonts.inter(
                     fontSize: 12,
                     fontWeight: FontWeight.w700,

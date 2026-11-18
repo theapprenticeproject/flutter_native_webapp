@@ -14,6 +14,9 @@ const _migrated = [
   'lib/features/auth/presentation/link_sign_in_screen.dart',
 ];
 
+/// Whole folders that are moved: every file inside is checked.
+const _migratedFolders = ['lib/features/home'];
+
 void main() {
   test('migrated files have no text written in the code', () {
     // A string literal of 3+ letters and a space or capital, inside Text( or a
@@ -21,7 +24,13 @@ void main() {
     final literal = RegExp(
       r'''(Text\(\s*|title:\s*|message:\s*|buttonText:\s*)['"][A-Za-z][^'"\n]{2,}['"]''',
     );
-    for (final path in _migrated) {
+    final paths = [
+      ..._migrated,
+      for (final dir in _migratedFolders)
+        for (final f in Directory(dir).listSync(recursive: true))
+          if (f is File && f.path.endsWith('.dart')) f.path,
+    ];
+    for (final path in paths) {
       final hits = literal
           .allMatches(File(path).readAsStringSync())
           .map((m) => m.group(0))

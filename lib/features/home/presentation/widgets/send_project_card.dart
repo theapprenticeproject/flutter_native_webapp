@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'card_deck_wrapper.dart';
@@ -35,7 +36,7 @@ class SendProjectCard extends StatelessWidget {
                     unitName: unitName,
                     badge: _TaskBadge(
                       icon: Icons.info_outline_rounded,
-                      text: 'To do: Send project',
+                      text: context.l10n.homeToDoSend,
                       background: const Color(0xFFFFF2D5),
                       color: const Color(0xFF9E6C00),
                     ),
@@ -58,7 +59,7 @@ class SendProjectCard extends StatelessWidget {
                         ),
                       ),
                       child: Text(
-                        'Send my project',
+                        context.l10n.homeSendProject,
                         style: GoogleFonts.inter(
                           fontSize: 12,
                           fontWeight: FontWeight.w700,
@@ -99,7 +100,7 @@ class _CardBody extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Core $courseDisplay 1',
+                context.l10n.homeCourseLabel(courseDisplay),
                 style: GoogleFonts.inter(
                   fontSize: 16,
                   fontWeight: FontWeight.w800,

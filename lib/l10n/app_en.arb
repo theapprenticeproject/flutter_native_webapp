@@ -28,5 +28,36 @@
   "errorNotFoundTitle": "We could not find you",
   "errorNotFoundMessage": "This phone number is not signed up for TAP yet. Please ask your teacher.",
   "errorLimitTitle": "That is all for now",
-  "errorLimitMessage": "You have reached the limit for this activity."
+  "errorLimitMessage": "You have reached the limit for this activity.",
+  "homeTitle": "Home",
+  "homeCourseLabel": "Core {course} 1",
+  "@homeCourseLabel": {
+    "placeholders": {
+      "course": {
+        "type": "String"
+      }
+    }
+  },
+  "homeCourseNotReady": "Your course is not ready yet. Please tell your teacher.",
+  "homeCongrats": "Congrats Champ!",
+  "homeActivityComplete": "Activity\ncomplete 🥳",
+  "homeDoneForWeek": "Done for the\nweek 🥳",
+  "homeKeepWinning": "Keep winning",
+  "homePoints": "Points",
+  "homeReadyForNext": "Ready to continue with your next activity?",
+  "homeSeeYouNextWeek": "See you next week champ with a new activity video!",
+  "homeLetsGo": "Let's go 🎉",
+  "homePendingQuiz": "Pending: Quiz",
+  "homeStartQuiz": "Start Quiz",
+  "homeWeeklyLimit": "Weekly limit reached",
+  "homeStartActivity": "Start Activity",
+  "homeFeedbackReady": "Feedback ready",
+  "homePendingFeedback": "Pending: Feedback",
+  "homeFeedbackReadyText": "Your feedback is ready! Tap to see what I think.",
+  "homeFeedbackSlowText": "Your feedback is taking longer than expected. Please check again a little later.",
+  "homeFeedbackWaitingText": "I'm looking at your work. Please wait, and come back later to see my feedback.\n\nPoints will be provided after feedback.",
+  "homeSeeFeedback": "See feedback",
+  "homeCheckAgain": "Check again",
+  "homeToDoSend": "To do: Send project",
+  "homeSendProject": "Send my project"
 }

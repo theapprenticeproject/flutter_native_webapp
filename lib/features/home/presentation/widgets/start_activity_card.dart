@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'card_deck_wrapper.dart';
 
@@ -93,7 +94,7 @@ class StartActivityCard extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Core $courseDisplay 1',
+                              context.l10n.homeCourseLabel(courseDisplay),
                               style: GoogleFonts.inter(
                                 fontSize: 16,
                                 fontWeight: FontWeight.w800,
@@ -141,8 +142,8 @@ class StartActivityCard extends StatelessWidget {
                       ),
                       child: Text(
                         onStart == null
-                            ? 'Weekly limit reached'
-                            : 'Start Activity',
+                            ? context.l10n.homeWeeklyLimit
+                            : context.l10n.homeStartActivity,
                         style: GoogleFonts.inter(
                           fontSize: 12,
                           fontWeight: FontWeight.w700,

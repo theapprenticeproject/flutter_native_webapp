@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'card_deck_wrapper.dart';
@@ -24,7 +25,7 @@ class CompletedCard extends StatelessWidget {
                   : CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Congrats Champ!',
+                  context.l10n.homeCongrats,
                   style: GoogleFonts.inter(
                     fontSize: 16,
                     fontWeight: FontWeight.w800,
@@ -36,8 +37,8 @@ class CompletedCard extends StatelessWidget {
                 const SizedBox(height: 8),
                 Text(
                   onContinue != null
-                      ? 'Activity\ncomplete 🥳'
-                      : 'Done for the\nweek 🥳',
+                      ? context.l10n.homeActivityComplete
+                      : context.l10n.homeDoneForWeek,
                   textAlign: compact ? TextAlign.center : TextAlign.left,
                   style: GoogleFonts.inter(
                     fontSize: 28,
@@ -56,7 +57,7 @@ class CompletedCard extends StatelessWidget {
                   : CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Keep winning',
+                  context.l10n.homeKeepWinning,
                   style: GoogleFonts.inter(
                     fontSize: 11,
                     fontWeight: FontWeight.w500,
@@ -65,10 +66,10 @@ class CompletedCard extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 10),
-                const RewardItem(
+                RewardItem(
                   color: Color(0xFFEAA43A),
                   icon: Icons.star_rounded,
-                  text: 'Points',
+                  text: context.l10n.homePoints,
                 ),
               ],
             );
@@ -91,8 +92,8 @@ class CompletedCard extends StatelessWidget {
                 const SizedBox(height: 34),
                 Text(
                   onContinue != null
-                      ? 'Ready to continue with your next activity?'
-                      : 'See you next week champ with a new activity video!',
+                      ? context.l10n.homeReadyForNext
+                      : context.l10n.homeSeeYouNextWeek,
                   style: GoogleFonts.inter(
                     fontSize: 12,
                     fontWeight: FontWeight.w500,
@@ -107,7 +108,7 @@ class CompletedCard extends StatelessWidget {
                     height: 52,
                     child: ElevatedButton(
                       onPressed: onContinue,
-                      child: const Text("Let's go 🎉"),
+                      child: Text(context.l10n.homeLetsGo),
                     ),
                   ),
                 ],

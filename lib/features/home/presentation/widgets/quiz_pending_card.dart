@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'card_deck_wrapper.dart';
@@ -38,7 +39,7 @@ class QuizPendingCard extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Core $courseDisplay 1',
+                              context.l10n.homeCourseLabel(courseDisplay),
                               style: GoogleFonts.inter(
                                 fontSize: 16,
                                 fontWeight: FontWeight.w800,
@@ -81,7 +82,7 @@ class QuizPendingCard extends StatelessWidget {
                                   ),
                                   const SizedBox(width: 5),
                                   Text(
-                                    'Pending: Quiz',
+                                    context.l10n.homePendingQuiz,
                                     style: GoogleFonts.inter(
                                       fontSize: 11,
                                       fontWeight: FontWeight.w700,
@@ -115,7 +116,7 @@ class QuizPendingCard extends StatelessWidget {
                         ),
                       ),
                       child: Text(
-                        'Start Quiz',
+                        context.l10n.homeStartQuiz,
                         style: GoogleFonts.inter(
                           fontSize: 12,
                           fontWeight: FontWeight.w700,

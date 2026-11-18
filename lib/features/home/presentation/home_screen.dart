@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../l10n/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -77,7 +78,7 @@ class _HomeDashboard extends StatelessWidget {
               child: Column(
                 children: [
                   AppHeader(
-                    title: 'Home',
+                    title: context.l10n.homeTitle,
                     studentName: progress.studentName,
                     points: progress.points,
                     showStudentSummary: true,
@@ -127,8 +128,8 @@ class _NoEnrollmentState extends StatelessWidget {
         children: [
           const Icon(Icons.school_outlined, size: 48, color: Color(0xFFB9BBC8)),
           const SizedBox(height: 16),
-          const Text(
-            'Your course is not ready yet. Please tell your teacher.',
+          Text(
+            context.l10n.homeCourseNotReady,
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
           ),

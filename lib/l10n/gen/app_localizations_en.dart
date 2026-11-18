@@ -93,4 +93,83 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get errorLimitMessage =>
       'You have reached the limit for this activity.';
+
+  @override
+  String get homeTitle => 'Home';
+
+  @override
+  String homeCourseLabel(String course) {
+    return 'Core $course 1';
+  }
+
+  @override
+  String get homeCourseNotReady =>
+      'Your course is not ready yet. Please tell your teacher.';
+
+  @override
+  String get homeCongrats => 'Congrats Champ!';
+
+  @override
+  String get homeActivityComplete => 'Activity\ncomplete 🥳';
+
+  @override
+  String get homeDoneForWeek => 'Done for the\nweek 🥳';
+
+  @override
+  String get homeKeepWinning => 'Keep winning';
+
+  @override
+  String get homePoints => 'Points';
+
+  @override
+  String get homeReadyForNext => 'Ready to continue with your next activity?';
+
+  @override
+  String get homeSeeYouNextWeek =>
+      'See you next week champ with a new activity video!';
+
+  @override
+  String get homeLetsGo => 'Let\'s go 🎉';
+
+  @override
+  String get homePendingQuiz => 'Pending: Quiz';
+
+  @override
+  String get homeStartQuiz => 'Start Quiz';
+
+  @override
+  String get homeWeeklyLimit => 'Weekly limit reached';
+
+  @override
+  String get homeStartActivity => 'Start Activity';
+
+  @override
+  String get homeFeedbackReady => 'Feedback ready';
+
+  @override
+  String get homePendingFeedback => 'Pending: Feedback';
+
+  @override
+  String get homeFeedbackReadyText =>
+      'Your feedback is ready! Tap to see what I think.';
+
+  @override
+  String get homeFeedbackSlowText =>
+      'Your feedback is taking longer than expected. Please check again a little later.';
+
+  @override
+  String get homeFeedbackWaitingText =>
+      'I\'m looking at your work. Please wait, and come back later to see my feedback.\n\nPoints will be provided after feedback.';
+
+  @override
+  String get homeSeeFeedback => 'See feedback';
+
+  @override
+  String get homeCheckAgain => 'Check again';
+
+  @override
+  String get homeToDoSend => 'To do: Send project';
+
+  @override
+  String get homeSendProject => 'Send my project';
 }
