@@ -420,5 +420,132 @@
     }
   },
   "classSomethingWrong": "Something went wrong.",
-  "classTapBuddy": "TAP Buddy"
+  "classTapBuddy": "TAP Buddy",
+  "toastCorrect": "Correct! Correct answer: {answer}",
+  "@toastCorrect": {
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
+  "toastWrong": "Not quite. Correct answer: {answer}",
+  "@toastWrong": {
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
+  "chatSaveVideoFailed": "We could not save that you watched the video. Please check your connection and retry.",
+  "chatVideoReward": "Wow! That’s amazing 🤩  {name}, you just earned {points} points🪩 for watching the video 🥳🥳🥳\n\nNow it’s time to do the activity submission 🌟",
+  "@chatVideoReward": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "chatTryPractice": "That's a good try — let's keep practicing this one.",
+  "chatSlowFeedback": "Your feedback is taking longer than expected 🕒\nPlease check again a little later.",
+  "chatWaitingFeedback": "I'm looking at your work 👀\nPlease wait. Come back later to see my feedback!\n\nPoints will be provided after feedback.",
+  "chatBackHome": "Back to Home",
+  "chatValidDefault": "Great work! Your project is valid ✅",
+  "chatAskPoints": "Do you want to know your total points collected so far?",
+  "chatYesYesYes": "Yes Yes Yes 😍",
+  "chatWonTitle": "YOU WON! 🏆",
+  "chatWonEarned": "Your valid work earned +{points} points 🪙",
+  "@chatWonEarned": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "chatWonTotal": "Your points: {total} 🪙",
+  "@chatWonTotal": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "chatSendAgainDefault": "Please send your work again.",
+  "chatSendCorrected": "{reason}\n\nPlease send corrected work 📸",
+  "@chatSendCorrected": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "chatNoMoreTries": "{reason}\n\nYou have used both tries, so you cannot send this work again.",
+  "@chatNoMoreTries": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "chatSendAgain": "Send again",
+  "chatReadyShare": "Are you ready to share your work? 📸",
+  "chatYesLetsGo": "Yes, let's go",
+  "chatNotToday": "Not today",
+  "chatFileTooBig": "That file is too big 😅\nPlease choose a smaller photo or a shorter video.",
+  "chatSubmitAgain": "Submit Again",
+  "chatAlreadySent": "You already sent this work. Let's go on! 💪",
+  "chatSendWorkFailed": "We could not send your work. Please check your connection and retry.",
+  "chatSaveSubmissionFailed": "We could not save your completed submission. Please check your connection and retry.",
+  "chatProTip": "Pro tip: Take the photo in good light and show your full work 📸✨\n\nI’m excited to see what you made😅\nYou can do this! ⭐💪",
+  "chatQuizComplete": "Quiz complete!",
+  "chatStartQuiz": "Let’s start the {unit} quiz🚀🚀🚀",
+  "@chatStartQuiz": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "chatQuizButton": "Quiz",
+  "chatTodayPlay": "Today we're going to play with {unit}.\nWatch a short video, then make your own project.",
+  "@chatTodayPlay": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "chatWatchButton": "Watch",
+  "chatFinalWin": "Activity Points    {activity} 🪙\nQuiz Points    {quiz} 🪙",
+  "@chatFinalWin": {
+    "placeholders": {
+      "activity": {
+        "type": "int"
+      },
+      "quiz": {
+        "type": "int"
+      }
+    }
+  },
+  "chatSaveQuizFailed": "We could not save your quiz result. Please check your connection and retry.",
+  "chatQuizTotals": "Great job Champ!\nDo you want to know your total points collected so far?",
+  "chatSaveSubmissionStill": "Still could not save your submission progress. Please check your connection and retry.",
+  "chatSaveVideoStill": "We still could not save the video checkpoint. Please check your connection and retry.",
+  "chatSaveGeneric": "Something went wrong saving your progress.",
+  "chatWatchedEcho": "I watched it",
+  "chatLaterEcho": "I'll do it later 🕒",
+  "chatPraise": "I am SO proud of you {name} 🥹 That's the spirit! [+{points} pts]",
+  "@chatPraise": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "points": {
+        "type": "int"
+      }
+    }
+  }
 }

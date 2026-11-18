@@ -730,4 +730,162 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get classTapBuddy => 'TAP Buddy';
+
+  @override
+  String toastCorrect(String answer) {
+    return 'Correct! Correct answer: $answer';
+  }
+
+  @override
+  String toastWrong(String answer) {
+    return 'Not quite. Correct answer: $answer';
+  }
+
+  @override
+  String get chatSaveVideoFailed =>
+      'We could not save that you watched the video. Please check your connection and retry.';
+
+  @override
+  String chatVideoReward(String name, int points) {
+    return 'Wow! That’s amazing 🤩  $name, you just earned $points points🪩 for watching the video 🥳🥳🥳\n\nNow it’s time to do the activity submission 🌟';
+  }
+
+  @override
+  String get chatTryPractice =>
+      'That\'s a good try — let\'s keep practicing this one.';
+
+  @override
+  String get chatSlowFeedback =>
+      'Your feedback is taking longer than expected 🕒\nPlease check again a little later.';
+
+  @override
+  String get chatWaitingFeedback =>
+      'I\'m looking at your work 👀\nPlease wait. Come back later to see my feedback!\n\nPoints will be provided after feedback.';
+
+  @override
+  String get chatBackHome => 'Back to Home';
+
+  @override
+  String get chatValidDefault => 'Great work! Your project is valid ✅';
+
+  @override
+  String get chatAskPoints =>
+      'Do you want to know your total points collected so far?';
+
+  @override
+  String get chatYesYesYes => 'Yes Yes Yes 😍';
+
+  @override
+  String get chatWonTitle => 'YOU WON! 🏆';
+
+  @override
+  String chatWonEarned(int points) {
+    return 'Your valid work earned +$points points 🪙';
+  }
+
+  @override
+  String chatWonTotal(int total) {
+    return 'Your points: $total 🪙';
+  }
+
+  @override
+  String get chatSendAgainDefault => 'Please send your work again.';
+
+  @override
+  String chatSendCorrected(String reason) {
+    return '$reason\n\nPlease send corrected work 📸';
+  }
+
+  @override
+  String chatNoMoreTries(String reason) {
+    return '$reason\n\nYou have used both tries, so you cannot send this work again.';
+  }
+
+  @override
+  String get chatSendAgain => 'Send again';
+
+  @override
+  String get chatReadyShare => 'Are you ready to share your work? 📸';
+
+  @override
+  String get chatYesLetsGo => 'Yes, let\'s go';
+
+  @override
+  String get chatNotToday => 'Not today';
+
+  @override
+  String get chatFileTooBig =>
+      'That file is too big 😅\nPlease choose a smaller photo or a shorter video.';
+
+  @override
+  String get chatSubmitAgain => 'Submit Again';
+
+  @override
+  String get chatAlreadySent => 'You already sent this work. Let\'s go on! 💪';
+
+  @override
+  String get chatSendWorkFailed =>
+      'We could not send your work. Please check your connection and retry.';
+
+  @override
+  String get chatSaveSubmissionFailed =>
+      'We could not save your completed submission. Please check your connection and retry.';
+
+  @override
+  String get chatProTip =>
+      'Pro tip: Take the photo in good light and show your full work 📸✨\n\nI’m excited to see what you made😅\nYou can do this! ⭐💪';
+
+  @override
+  String get chatQuizComplete => 'Quiz complete!';
+
+  @override
+  String chatStartQuiz(String unit) {
+    return 'Let’s start the $unit quiz🚀🚀🚀';
+  }
+
+  @override
+  String get chatQuizButton => 'Quiz';
+
+  @override
+  String chatTodayPlay(String unit) {
+    return 'Today we\'re going to play with $unit.\nWatch a short video, then make your own project.';
+  }
+
+  @override
+  String get chatWatchButton => 'Watch';
+
+  @override
+  String chatFinalWin(int activity, int quiz) {
+    return 'Activity Points    $activity 🪙\nQuiz Points    $quiz 🪙';
+  }
+
+  @override
+  String get chatSaveQuizFailed =>
+      'We could not save your quiz result. Please check your connection and retry.';
+
+  @override
+  String get chatQuizTotals =>
+      'Great job Champ!\nDo you want to know your total points collected so far?';
+
+  @override
+  String get chatSaveSubmissionStill =>
+      'Still could not save your submission progress. Please check your connection and retry.';
+
+  @override
+  String get chatSaveVideoStill =>
+      'We still could not save the video checkpoint. Please check your connection and retry.';
+
+  @override
+  String get chatSaveGeneric => 'Something went wrong saving your progress.';
+
+  @override
+  String get chatWatchedEcho => 'I watched it';
+
+  @override
+  String get chatLaterEcho => 'I\'ll do it later 🕒';
+
+  @override
+  String chatPraise(String name, int points) {
+    return 'I am SO proud of you $name 🥹 That\'s the spirit! [+$points pts]';
+  }
 }

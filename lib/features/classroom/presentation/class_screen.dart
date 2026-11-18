@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import '../../../l10n/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -226,7 +227,7 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
                   const SizedBox(width: 10),
                   Expanded(
                     child: Text(
-                      toast.message,
+                      toast.message(context.l10n),
                       style: const TextStyle(
                         color: Color(0xFF25252B),
                         fontWeight: FontWeight.w700,

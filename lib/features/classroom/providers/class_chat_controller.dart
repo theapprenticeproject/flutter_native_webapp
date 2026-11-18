@@ -1,3 +1,4 @@
+import '../../../l10n/gen/app_localizations.dart';
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
@@ -38,11 +39,9 @@ class ClassQuizToast {
   final String? correctAnswer;
 
   /// The right answer is shown after every question, not only after a wrong one.
-  String get message {
-    final answer = correctAnswer == null
-        ? ''
-        : ' Correct answer: $correctAnswer';
-    return isCorrect ? 'Correct!$answer' : 'Not quite.$answer';
+  String message(AppLocalizations l) {
+    final answer = correctAnswer ?? '';
+    return isCorrect ? l.toastCorrect(answer) : l.toastWrong(answer);
   }
 }
 
@@ -52,6 +51,7 @@ class ClassChatController extends ChangeNotifier {
     required this.phone,
     required this.studentName,
     required this.courseDisplay,
+    required this.l,
     required ActivityFlowModel flow,
     required CourseUnitModel unit,
     CourseUnitModel? nextUnit,
@@ -82,6 +82,9 @@ class ClassChatController extends ChangeNotifier {
   final String studentName;
   final String courseDisplay;
   final int unitIndex;
+
+  /// The student's language. Bot messages are built from it.
+  final AppLocalizations l;
 
   String get unitName => _unit.name;
   bool get hasNextUnit => _nextUnit != null;
@@ -423,7 +426,7 @@ class ClassChatController extends ChangeNotifier {
         stepId: 'AF-004',
         sender: ClassChatSender.user,
         contentType: ClassChatContentType.text,
-        text: 'I watched it',
+        text: l.chatWatchedEcho,
       ),
     );
 
@@ -431,10 +434,7 @@ class ClassChatController extends ChangeNotifier {
     if (_disposed) return;
     if (!saved) {
       _videoWatchedThisUnit = false;
-      _showProgressSaveRetry(
-        'We could not save that you watched the video. Please check your connection and retry.',
-        action: 'save_video',
-      );
+      _showProgressSaveRetry(l.chatSaveVideoFailed, action: 'save_video');
       return;
     }
 
@@ -442,9 +442,8 @@ class ClassChatController extends ChangeNotifier {
     _pushCheckpoint(
       stepId: 'VIDEO-CHECKPOINT',
       image: 'assets/class-screen/10Points.png',
-      text:
-          'Wow! That’s amazing 🤩  $studentName, you just earned $_accumulatedVideoPoints points🪩 for watching the video 🥳🥳🥳\n\nNow it’s time to do the activity submission 🌟',
-      buttonLabel: 'Continue',
+      text: l.chatVideoReward(studentName, _accumulatedVideoPoints),
+      buttonLabel: l.buttonContinue,
       action: 'video_reward',
     );
     notifyListeners();
@@ -495,11 +494,12 @@ class ClassChatController extends ChangeNotifier {
     notifyListeners();
   }
 
-  String _finalSubmissionPraise(int points) => _interpolate(
-    _flow.step('AF-008')?.displayText ??
-        'I am SO proud of you {{name}} 🥹 That\'s the spirit! [+{{submission_points}} pts]',
-    explicitPoints: points,
-  );
+  String _finalSubmissionPraise(int points) {
+    final template = _flow.step('AF-008')?.displayText;
+    return template == null
+        ? l.chatPraise(studentName, points)
+        : _interpolate(template, explicitPoints: points);
+  }
 
   Future<void> submitAssignmentAnswer(SubmissionAnswer answer) async {
     final step = _pendingAssignmentStep;
@@ -539,9 +539,7 @@ class ClassChatController extends ChangeNotifier {
       _resultsDone = true;
     }
     _pushSubmissionReview(
-      passed
-          ? _finalSubmissionPraise(0)
-          : "That's a good try — let's keep practicing this one.",
+      passed ? _finalSubmissionPraise(0) : l.chatTryPractice,
       passed: passed,
     );
     await _finishAssignmentStep(accepted: passed);
@@ -560,7 +558,7 @@ class ClassChatController extends ChangeNotifier {
         stepId: 'AF-007',
         sender: ClassChatSender.user,
         contentType: ClassChatContentType.submissionAnswerEcho,
-        text: "I'll do it later 🕒",
+        text: l.chatLaterEcho,
       ),
     );
     switch (afterDoItLater(quizDone: _quizProgressSaved)) {
@@ -599,15 +597,12 @@ class ClassChatController extends ChangeNotifier {
       stepId: 'WAITING',
       image: null,
       text: switch (stage) {
-        FeedbackStage.slow =>
-          'Your feedback is taking longer than expected 🕒\nPlease check again a little later.',
-        _ =>
-          "I'm looking at your work 👀\nPlease wait. Come back later to see my feedback!"
-              '\n\nPoints will be provided after feedback.',
+        FeedbackStage.slow => l.chatSlowFeedback,
+        _ => l.chatWaitingFeedback,
       },
-      buttonLabel: 'Back to Home',
+      buttonLabel: l.chatBackHome,
       action: 'not_today',
-      secondaryLabel: 'Check again',
+      secondaryLabel: l.homeCheckAgain,
       secondaryAction: 'check_feedback',
     );
     _startFeedbackPolling();
@@ -654,8 +649,8 @@ class ClassChatController extends ChangeNotifier {
     _pushCheckpoint(
       stepId: 'RESULTS-FEEDBACK',
       image: null,
-      text: _feedbackText(fallback: 'Great work! Your project is valid ✅'),
-      buttonLabel: 'Continue',
+      text: _feedbackText(fallback: l.chatValidDefault),
+      buttonLabel: l.buttonContinue,
       action: 'results_next',
     );
   }
@@ -665,8 +660,8 @@ class ClassChatController extends ChangeNotifier {
     _pushCheckpoint(
       stepId: 'RESULTS-ASK',
       image: null,
-      text: 'Do you want to know your total points collected so far?',
-      buttonLabel: 'Yes Yes Yes 😍',
+      text: l.chatAskPoints,
+      buttonLabel: l.chatYesYesYes,
       action: 'results_points',
     );
   }
@@ -689,10 +684,10 @@ class ClassChatController extends ChangeNotifier {
       stepId: 'RESULTS-WON',
       image: 'assets/class-screen/you-won.png',
       text:
-          'YOU WON! 🏆\n'
-          '${earned > 0 ? 'Your valid work earned +$earned points 🪙\n' : ''}'
-          'Your points: $total 🪙',
-      buttonLabel: 'Continue',
+          '${l.chatWonTitle}\n'
+          '${earned > 0 ? '${l.chatWonEarned(earned)}\n' : ''}'
+          '${l.chatWonTotal(total)}',
+      buttonLabel: l.buttonContinue,
       action: 'results_done',
     );
     notifyListeners();
@@ -715,19 +710,16 @@ class ClassChatController extends ChangeNotifier {
   /// The work is not valid. The student is told why (the Worker's feedback) and
   /// can send again, up to 2 attempts in all.
   void _showNotValid(FeedbackStage stage) {
-    final reason = _feedbackText(fallback: 'Please send your work again.');
+    final reason = _feedbackText(fallback: l.chatSendAgainDefault);
     final canSend = stage == FeedbackStage.notValid;
     _messages.clear();
     _pushCheckpoint(
       stepId: 'NOT-VALID',
       image: null,
-      text: canSend
-          ? '$reason\n\nPlease send corrected work 📸'
-          : '$reason\n\nYou have used both tries, so you cannot send this '
-                'work again.',
-      buttonLabel: canSend ? 'Send again' : 'Back to Home',
+      text: canSend ? l.chatSendCorrected(reason) : l.chatNoMoreTries(reason),
+      buttonLabel: canSend ? l.chatSendAgain : l.chatBackHome,
       action: canSend ? 'send_again' : 'not_today',
-      secondaryLabel: canSend ? 'Back to Home' : null,
+      secondaryLabel: canSend ? l.chatBackHome : null,
       secondaryAction: canSend ? 'not_today' : null,
     );
   }
@@ -748,10 +740,10 @@ class ClassChatController extends ChangeNotifier {
     _pushCheckpoint(
       stepId: 'SHARE-WORK',
       image: null,
-      text: 'Are you ready to share your work? 📸',
-      buttonLabel: "Yes, let's go",
+      text: l.chatReadyShare,
+      buttonLabel: l.chatYesLetsGo,
       action: 'share_work',
-      secondaryLabel: 'Not today',
+      secondaryLabel: l.chatNotToday,
       secondaryAction: 'not_today',
     );
   }
@@ -809,9 +801,8 @@ class ClassChatController extends ChangeNotifier {
       _pushCheckpoint(
         stepId: 'SUBMISSION-RETRY',
         image: null,
-        text:
-            'That file is too big 😅\nPlease choose a smaller photo or a shorter video.',
-        buttonLabel: 'Submit Again',
+        text: l.chatFileTooBig,
+        buttonLabel: l.chatSubmitAgain,
         action: 'submission_retry',
       );
       return;
@@ -826,9 +817,7 @@ class ClassChatController extends ChangeNotifier {
       return;
     }
     _pushSubmissionReview(
-      alreadySent
-          ? 'You already sent this work. Let\'s go on! 💪'
-          : _finalSubmissionPraise(points),
+      alreadySent ? l.chatAlreadySent : _finalSubmissionPraise(points),
       passed: true,
     );
     await _finishAssignmentStep(accepted: true, points: points);
@@ -836,10 +825,7 @@ class ClassChatController extends ChangeNotifier {
 
   void _workNotSent(SubmissionAnswer answer) {
     _pendingWorkAnswer = answer;
-    _showProgressSaveRetry(
-      'We could not send your work. Please check your connection and retry.',
-      action: 'send_work',
-    );
+    _showProgressSaveRetry(l.chatSendWorkFailed, action: 'send_work');
   }
 
   void _retrySendWork() {
@@ -863,7 +849,7 @@ class ClassChatController extends ChangeNotifier {
       if (_disposed) return;
       if (!saved) {
         _showProgressSaveRetry(
-          'We could not save your completed submission. Please check your connection and retry.',
+          l.chatSaveSubmissionFailed,
           action: 'save_submission',
         );
         return;
@@ -873,9 +859,8 @@ class ClassChatController extends ChangeNotifier {
       _pushCheckpoint(
         stepId: 'SUBMISSION-RETRY',
         image: null,
-        text:
-            'Pro tip: Take the photo in good light and show your full work 📸✨\n\nI’m excited to see what you made😅\nYou can do this! ⭐💪',
-        buttonLabel: 'Submit Again',
+        text: l.chatProTip,
+        buttonLabel: l.chatSubmitAgain,
         action: 'submission_retry',
       );
     }
@@ -954,7 +939,7 @@ class ClassChatController extends ChangeNotifier {
         stepId: step.stepId,
         sender: ClassChatSender.bot,
         contentType: ClassChatContentType.quizSummary,
-        text: _interpolate(step.displayText ?? 'Quiz complete!'),
+        text: _interpolate(step.displayText ?? l.chatQuizComplete),
         data: {'correct': _quizCorrectCount, 'total': _quizQuestions.length},
       ),
     );
@@ -969,8 +954,8 @@ class ClassChatController extends ChangeNotifier {
     _pushCheckpoint(
       stepId: 'QUIZ-START',
       image: 'assets/class-screen/lets_begin.png',
-      text: "Let’s start the ${_currentUnit.name} quiz🚀🚀🚀",
-      buttonLabel: 'Quiz',
+      text: l.chatStartQuiz(_currentUnit.name),
+      buttonLabel: l.chatQuizButton,
       action: 'quiz',
     );
   }
@@ -979,9 +964,8 @@ class ClassChatController extends ChangeNotifier {
     _pushCheckpoint(
       stepId: 'VIDEO-START',
       image: null,
-      text:
-          "Today we're going to play with ${_currentUnit.name}.\nWatch a short video, then make your own project.",
-      buttonLabel: 'Watch',
+      text: l.chatTodayPlay(_currentUnit.name),
+      buttonLabel: l.chatWatchButton,
       action: 'video',
     );
   }
@@ -1066,7 +1050,7 @@ class ClassChatController extends ChangeNotifier {
             stepId: 'QUIZ-START-ECHO',
             sender: ClassChatSender.user,
             contentType: ClassChatContentType.text,
-            text: 'Quiz',
+            text: l.chatQuizButton,
           ),
         );
         _pushCheckpoint(
@@ -1107,9 +1091,11 @@ class ClassChatController extends ChangeNotifier {
     _pushCheckpoint(
       stepId: 'FINAL-WIN',
       image: 'assets/class-screen/you-won.png',
-      text:
-          'Activity Points    ${_accumulatedVideoPoints + _accumulatedSubmissionPoints} 🪙\nQuiz Points    $_accumulatedQuizPoints 🪙',
-      buttonLabel: 'Continue',
+      text: l.chatFinalWin(
+        _accumulatedVideoPoints + _accumulatedSubmissionPoints,
+        _accumulatedQuizPoints,
+      ),
+      buttonLabel: l.buttonContinue,
       action: 'finish',
     );
   }
@@ -1118,10 +1104,7 @@ class ClassChatController extends ChangeNotifier {
     final saved = await _saveQuizProgress();
     if (_disposed) return;
     if (!saved) {
-      _showProgressSaveRetry(
-        'We could not save your quiz result. Please check your connection and retry.',
-        action: 'save_quiz',
-      );
+      _showProgressSaveRetry(l.chatSaveQuizFailed, action: 'save_quiz');
       return;
     }
     _pushCheckpoint(
@@ -1135,9 +1118,8 @@ class ClassChatController extends ChangeNotifier {
       _pushCheckpoint(
         stepId: 'QUIZ-TOTALS',
         image: null,
-        text:
-            'Great job Champ!\nDo you want to know your total points collected so far?',
-        buttonLabel: 'Yes Yes Yes 😍',
+        text: l.chatQuizTotals,
+        buttonLabel: l.chatYesYesYes,
         action: 'totals',
       );
     });
@@ -1174,7 +1156,7 @@ class ClassChatController extends ChangeNotifier {
 
     if (!saved) {
       _showProgressSaveRetry(
-        'Still could not save your submission progress. Please check your connection and retry.',
+        l.chatSaveSubmissionStill,
         action: 'save_submission',
       );
       return;
@@ -1222,19 +1204,15 @@ class ClassChatController extends ChangeNotifier {
     final saved = await _saveVideoProgress();
     if (_disposed) return;
     if (!saved) {
-      _showProgressSaveRetry(
-        'We still could not save the video checkpoint. Please check your connection and retry.',
-        action: 'save_video',
-      );
+      _showProgressSaveRetry(l.chatSaveVideoStill, action: 'save_video');
       return;
     }
 
     _pushCheckpoint(
       stepId: 'VIDEO-CHECKPOINT',
       image: 'assets/class-screen/10Points.png',
-      text:
-          'Wow! That’s amazing 🤩  $studentName, you just earned $_accumulatedVideoPoints points🪩 for watching the video 🥳🥳🥳\n\nNow it’s time to do the activity submission 🌟',
-      buttonLabel: 'Continue',
+      text: l.chatVideoReward(studentName, _accumulatedVideoPoints),
+      buttonLabel: l.buttonContinue,
       action: 'video_reward',
     );
   }
@@ -1408,7 +1386,7 @@ class ClassChatController extends ChangeNotifier {
     } catch (_) {
       _hasCompletedUnit = false;
       _messages.removeWhere((m) => m.stepId == 'SAVING');
-      _errorMessage = 'Something went wrong saving your progress.';
+      _errorMessage = l.chatSaveGeneric;
       _push(
         ClassChatMessage(
           id: _newId(),

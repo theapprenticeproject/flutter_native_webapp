@@ -1369,6 +1369,252 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'TAP Buddy'**
   String get classTapBuddy;
+
+  /// No description provided for @toastCorrect.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct! Correct answer: {answer}'**
+  String toastCorrect(String answer);
+
+  /// No description provided for @toastWrong.
+  ///
+  /// In en, this message translates to:
+  /// **'Not quite. Correct answer: {answer}'**
+  String toastWrong(String answer);
+
+  /// No description provided for @chatSaveVideoFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'We could not save that you watched the video. Please check your connection and retry.'**
+  String get chatSaveVideoFailed;
+
+  /// No description provided for @chatVideoReward.
+  ///
+  /// In en, this message translates to:
+  /// **'Wow! That’s amazing 🤩  {name}, you just earned {points} points🪩 for watching the video 🥳🥳🥳\n\nNow it’s time to do the activity submission 🌟'**
+  String chatVideoReward(String name, int points);
+
+  /// No description provided for @chatTryPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'That\'s a good try — let\'s keep practicing this one.'**
+  String get chatTryPractice;
+
+  /// No description provided for @chatSlowFeedback.
+  ///
+  /// In en, this message translates to:
+  /// **'Your feedback is taking longer than expected 🕒\nPlease check again a little later.'**
+  String get chatSlowFeedback;
+
+  /// No description provided for @chatWaitingFeedback.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'m looking at your work 👀\nPlease wait. Come back later to see my feedback!\n\nPoints will be provided after feedback.'**
+  String get chatWaitingFeedback;
+
+  /// No description provided for @chatBackHome.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to Home'**
+  String get chatBackHome;
+
+  /// No description provided for @chatValidDefault.
+  ///
+  /// In en, this message translates to:
+  /// **'Great work! Your project is valid ✅'**
+  String get chatValidDefault;
+
+  /// No description provided for @chatAskPoints.
+  ///
+  /// In en, this message translates to:
+  /// **'Do you want to know your total points collected so far?'**
+  String get chatAskPoints;
+
+  /// No description provided for @chatYesYesYes.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes Yes Yes 😍'**
+  String get chatYesYesYes;
+
+  /// No description provided for @chatWonTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'YOU WON! 🏆'**
+  String get chatWonTitle;
+
+  /// No description provided for @chatWonEarned.
+  ///
+  /// In en, this message translates to:
+  /// **'Your valid work earned +{points} points 🪙'**
+  String chatWonEarned(int points);
+
+  /// No description provided for @chatWonTotal.
+  ///
+  /// In en, this message translates to:
+  /// **'Your points: {total} 🪙'**
+  String chatWonTotal(int total);
+
+  /// No description provided for @chatSendAgainDefault.
+  ///
+  /// In en, this message translates to:
+  /// **'Please send your work again.'**
+  String get chatSendAgainDefault;
+
+  /// No description provided for @chatSendCorrected.
+  ///
+  /// In en, this message translates to:
+  /// **'{reason}\n\nPlease send corrected work 📸'**
+  String chatSendCorrected(String reason);
+
+  /// No description provided for @chatNoMoreTries.
+  ///
+  /// In en, this message translates to:
+  /// **'{reason}\n\nYou have used both tries, so you cannot send this work again.'**
+  String chatNoMoreTries(String reason);
+
+  /// No description provided for @chatSendAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Send again'**
+  String get chatSendAgain;
+
+  /// No description provided for @chatReadyShare.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you ready to share your work? 📸'**
+  String get chatReadyShare;
+
+  /// No description provided for @chatYesLetsGo.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes, let\'s go'**
+  String get chatYesLetsGo;
+
+  /// No description provided for @chatNotToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Not today'**
+  String get chatNotToday;
+
+  /// No description provided for @chatFileTooBig.
+  ///
+  /// In en, this message translates to:
+  /// **'That file is too big 😅\nPlease choose a smaller photo or a shorter video.'**
+  String get chatFileTooBig;
+
+  /// No description provided for @chatSubmitAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit Again'**
+  String get chatSubmitAgain;
+
+  /// No description provided for @chatAlreadySent.
+  ///
+  /// In en, this message translates to:
+  /// **'You already sent this work. Let\'s go on! 💪'**
+  String get chatAlreadySent;
+
+  /// No description provided for @chatSendWorkFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'We could not send your work. Please check your connection and retry.'**
+  String get chatSendWorkFailed;
+
+  /// No description provided for @chatSaveSubmissionFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'We could not save your completed submission. Please check your connection and retry.'**
+  String get chatSaveSubmissionFailed;
+
+  /// No description provided for @chatProTip.
+  ///
+  /// In en, this message translates to:
+  /// **'Pro tip: Take the photo in good light and show your full work 📸✨\n\nI’m excited to see what you made😅\nYou can do this! ⭐💪'**
+  String get chatProTip;
+
+  /// No description provided for @chatQuizComplete.
+  ///
+  /// In en, this message translates to:
+  /// **'Quiz complete!'**
+  String get chatQuizComplete;
+
+  /// No description provided for @chatStartQuiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Let’s start the {unit} quiz🚀🚀🚀'**
+  String chatStartQuiz(String unit);
+
+  /// No description provided for @chatQuizButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Quiz'**
+  String get chatQuizButton;
+
+  /// No description provided for @chatTodayPlay.
+  ///
+  /// In en, this message translates to:
+  /// **'Today we\'re going to play with {unit}.\nWatch a short video, then make your own project.'**
+  String chatTodayPlay(String unit);
+
+  /// No description provided for @chatWatchButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Watch'**
+  String get chatWatchButton;
+
+  /// No description provided for @chatFinalWin.
+  ///
+  /// In en, this message translates to:
+  /// **'Activity Points    {activity} 🪙\nQuiz Points    {quiz} 🪙'**
+  String chatFinalWin(int activity, int quiz);
+
+  /// No description provided for @chatSaveQuizFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'We could not save your quiz result. Please check your connection and retry.'**
+  String get chatSaveQuizFailed;
+
+  /// No description provided for @chatQuizTotals.
+  ///
+  /// In en, this message translates to:
+  /// **'Great job Champ!\nDo you want to know your total points collected so far?'**
+  String get chatQuizTotals;
+
+  /// No description provided for @chatSaveSubmissionStill.
+  ///
+  /// In en, this message translates to:
+  /// **'Still could not save your submission progress. Please check your connection and retry.'**
+  String get chatSaveSubmissionStill;
+
+  /// No description provided for @chatSaveVideoStill.
+  ///
+  /// In en, this message translates to:
+  /// **'We still could not save the video checkpoint. Please check your connection and retry.'**
+  String get chatSaveVideoStill;
+
+  /// No description provided for @chatSaveGeneric.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong saving your progress.'**
+  String get chatSaveGeneric;
+
+  /// No description provided for @chatWatchedEcho.
+  ///
+  /// In en, this message translates to:
+  /// **'I watched it'**
+  String get chatWatchedEcho;
+
+  /// No description provided for @chatLaterEcho.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'ll do it later 🕒'**
+  String get chatLaterEcho;
+
+  /// No description provided for @chatPraise.
+  ///
+  /// In en, this message translates to:
+  /// **'I am SO proud of you {name} 🥹 That\'s the spirit! [+{points} pts]'**
+  String chatPraise(String name, int points);
 }
 
 class _AppLocalizationsDelegate

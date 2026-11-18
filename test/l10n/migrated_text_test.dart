@@ -34,7 +34,7 @@ void main() {
     // A string literal of 4+ letters (the brand name TAP is not translated) and a space or capital, inside Text( or a
     // title/message/buttonText/label argument.
     final literal = RegExp(
-      r'''(Text\(\s*|title:\s*|message:\s*|buttonText:\s*)['"][A-Za-z][^'"\n]{3,}['"]''',
+      r'''(Text\(\s*|title:\s*|message:\s*|buttonText:\s*|buttonLabel:\s*|secondaryLabel:\s*)['"][A-Za-z][^'"\n]{3,}['"]''',
     );
     final paths = [
       ..._migrated,

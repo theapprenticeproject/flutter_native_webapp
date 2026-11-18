@@ -1,4 +1,8 @@
+import 'dart:ui' show Locale;
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../../l10n/gen/app_localizations.dart';
 
 import 'activity_flow_provider.dart';
 import 'class_chat_controller.dart';
@@ -42,6 +46,7 @@ final classChatControllerProvider = FutureProvider.autoDispose
         phone: bootstrap.phone,
         studentName: studentName,
         courseDisplay: bootstrap.courseName,
+        l: lookupAppLocalizations(Locale(languageCode)),
         flow: flow,
         unit: bootstrap.unit!,
         nextUnit: bootstrap.nextUnit,
