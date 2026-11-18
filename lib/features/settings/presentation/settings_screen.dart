@@ -19,7 +19,6 @@ import 'widgets/about_tap_view.dart';
 import 'widgets/profile_details_view.dart';
 import 'widgets/profile_settings_shell.dart';
 import '../../../shared/widgets/profile_switcher.dart';
-import 'widgets/settings_tab_view.dart';
 
 class SettingsScreen extends ConsumerStatefulWidget {
   const SettingsScreen({super.key});
@@ -191,8 +190,6 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           onCancelEditing: _cancelEditing,
           onSave: _saveEdits,
         );
-      case ProfileTab.settings:
-        return const SettingsTabView();
       case ProfileTab.about:
         return AboutTapView(
           data: _aboutData,

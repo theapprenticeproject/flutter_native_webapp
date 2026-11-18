@@ -7,7 +7,6 @@ import '../features/error/presentation/error_screen.dart';
 import '../features/auth/presentation/open_link_screen.dart';
 import '../features/auth/presentation/link_sign_in_screen.dart';
 import '../features/auth/presentation/profile_select_screen.dart';
-import '../features/onboarding/presentation/onboarding_screen.dart';
 import '../features/home/presentation/home_screen.dart';
 import '../features/classroom/presentation/class_screen.dart';
 import '../features/gallery/presentation/gallery_screen.dart';
@@ -50,14 +49,12 @@ class _AuthRefreshListenable extends ChangeNotifier {
 const Set<String> _authOnlyRoutes = {
   AppRoutes.splash,
   AppRoutes.openLink,
-  AppRoutes.onboarding,
   AppRoutes.profileSelect,
 };
 
 const Set<String> _publicRoutes = {
   AppRoutes.splash,
   AppRoutes.openLink,
-  AppRoutes.onboarding,
   AppRoutes.profileSelect,
   AppRoutes.error,
 };
@@ -96,20 +93,12 @@ final routerProvider = Provider<GoRouter>((ref) {
 
       final profile = activeProfileAsync.value;
       final loggedIn = profile != null;
-      final onboarded = loggedIn && (profile.onboardingCompleted == true);
 
       if (!loggedIn) {
         if (target != AppRoutes.splash && _publicRoutes.contains(target)) {
           return null;
         }
         return AppRoutes.openLink;
-      }
-
-      if (!onboarded) {
-        if (target == AppRoutes.onboarding || target == AppRoutes.error) {
-          return null;
-        }
-        return AppRoutes.onboarding;
       }
 
       final welcomeShown = ref.read(_welcomeGateProvider);
@@ -135,11 +124,6 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: AppRoutes.openLink,
         pageBuilder: (context, state) => AppRoutes.page(const OpenLinkScreen()),
-      ),
-      GoRoute(
-        path: AppRoutes.onboarding,
-        pageBuilder: (context, state) =>
-            AppRoutes.page(const ConversationalOnboardingScreen()),
       ),
       GoRoute(
         path: AppRoutes.profileSelect,

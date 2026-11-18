@@ -11,7 +11,6 @@ Routes are defined in `lib/app/router.dart` (route names are constants in `lib/c
 | `/`               | Splash            | Always available               |
 | `/open-link`      | "Open your WhatsApp link" (no form) | Public                         |
 | `/profile-select` | Profile selection | Logged in                      |
-| `/onboarding`     | Onboarding        | Selected profile not onboarded |
 | `/welcome`        | Welcome           | Logged in and onboarded        |
 | `/home`           | Dashboard         | Logged in and onboarded        |
 | `/classroom`      | Lesson session    | Logged in and onboarded        |
@@ -19,7 +18,7 @@ Routes are defined in `lib/app/router.dart` (route names are constants in `lib/c
 | `/profile`        | Settings/profile  | Logged in and onboarded        |
 | `/error`          | Error             | Available for recovery         |
 
-The redirect checks the cached authentication session, active profile, and onboarding state. Avoid network calls inside route redirects.
+The redirect checks the cached sign-in (the active profile). With none, it sends the student to `/open-link`. Avoid network calls inside route redirects.
 
 ## Important providers (today)
 
@@ -56,6 +55,8 @@ The bar has 3 items: **Home, Gallery, Me** (R-1). There is no Class tab: the act
 - **"I'm getting better at"** chips: a fixed list, the same for every student (R-95, `skill_tags.dart`). The words are placeholders until the curriculum team gives its list.
 - **My projects this year** ("3 / 6 done"): one project for each unit with an assignment, at most 6 (R-87). Each shows "Not started", "Feedback pending", "Feedback given", "Wrong format" or "Not accepted". Tapping one shows the Worker's feedback. The state comes from `submission/list`, with the saved state as a fallback when offline.
 - **Settings** row: language and the other settings.
+
+**Cleaned up (no dead prototype code left):** the onboarding screens and route, the old profile list and update code (`/profiles`, `/students`, `/achievements`, `/onboarding/complete`), the old `ApiEndpoints` class, the Settings **Theme** and **Account Management** cards and the empty Settings tab (R-73, R-36), and the made-up "You'll earn N Points" chips on the Home and next-activity cards. Points are the Worker's (R-41): the cards no longer show a number from the content file. The Settings page now has two tabs, Profile (read only) and About TAP. The language picker comes with D14.
 
 v1 leaves out three later items: the Edit profile form (R-74, so the Edit button on the Settings page is hidden too), signing out (R-35) and the theme switch (R-73). The level and projects logic is in `lib/domain/me/`.
 

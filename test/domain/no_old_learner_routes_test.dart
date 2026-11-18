@@ -14,6 +14,8 @@ final _forbidden = <String, RegExp>{
   'the /submission/do_later call (postponing writes nothing, R-66)': RegExp(
     r'do_later',
   ),
+  'the old video route /progress/submit_video (the Worker has submit_video_watched)':
+      RegExp(r'''['"]/progress/submit_video['"]'''),
   'the unused /progress/last_submission call': RegExp(
     r'progress/last_submission|LastSubmissionResult|\blastSubmission\(',
   ),

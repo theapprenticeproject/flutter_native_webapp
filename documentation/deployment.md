@@ -17,7 +17,7 @@ Build releases with the Flutter version in `pubspec.yaml` (now 3.47.1). `flutter
 
 This is important because the web drawing code (CanvasKit) comes from the Flutter engine that built the app. A build made with Flutter 3.41 showed the login screen zoomed and stretched in the WhatsApp browser on some Android phones (Redmi Note 13 and Samsung A31). The same code built with 3.47.1 looked correct.
 
-`scripts/build_web.sh` builds the app and saves build details inside it. On the login screen, **long-press the logos** to show a line like this:
+`scripts/build_web.sh` builds the app and saves build details inside it. **Long-press the icon** on the "Open your TAP link" page, or the small **"TAP"** at the bottom of the Me page, to show a line like this:
 
 ```text
 Build 2026-10-16T10:42Z · 9462206 · Flutter 3.47.1 (engine 5d531788) · API tapapp-worker.tapapp-middleware.workers.dev
@@ -30,6 +30,39 @@ The line shows:
 - the host of the Worker that this build talks to (`API`).
 
 Long-press again to hide the line. A build made without the script shows `unknown`. Do not deploy that build.
+
+### Preview deploy to the test Worker (Firebase channel)
+
+Use this to test on phones. It does **not** touch the live site.
+
+```bash
+firebase login                       # only if your login has expired
+firebase use tapapp-app-tap          # .firebaserc already says this
+
+# Build for the test Worker. SKIP_UPLOAD=1 is only for the test Worker, whose
+# upload address is fake.
+SKIP_UPLOAD=1 WORKER_URL=https://tapapp-test-worker.tapific.workers.dev scripts/build_web.sh
+
+# Deploy to a preview channel. Pick a new name, so you never overwrite another
+# channel (for example the old probe page).
+firebase hosting:channel:deploy m0-test --expires 14d
+```
+
+- **Always build with `scripts/build_web.sh`.** Plain `flutter build web` has no Worker address (it uses the **production** Worker), no build line, and no local CanvasKit.
+- **Check the last line of the build** (`Worker: ...`) and the build line in the app (long-press the icon on the link page, or "TAP" on Me). A test build must show the test Worker.
+- **`SKIP_UPLOAD=1` never goes to real students.** The script refuses it with no `WORKER_URL` or with the production Worker.
+- **Magic links.** The test Worker's link (`https://<worker>/l/<code>`) does not open this app yet. Testers open `https://<channel-address>/#/l/<code>` by hand. The `/#/` is needed: the app uses hash URLs.
+- **The channel link is public** to anyone who has it, and it talks to a shared test Worker. Do not put real student data on it.
+- **Get a login link** from the test Worker: see `testing-and-operations.md`.
+
+### Deploy to production
+
+1. All checks pass (`flutter analyze`, `flutter test`, `dart run scripts/check_architecture.dart`).
+2. Build **without** `SKIP_UPLOAD` and with the real Worker: `scripts/build_web.sh` (production is the default) or `WORKER_URL=https://<dev-worker-host> scripts/build_web.sh` for the dev server.
+3. Read the build line in the app: the commit has no `-dirty`, the Flutter version is the pinned one, and `API` is the Worker you meant.
+4. `firebase deploy --only hosting`.
+5. **Deploy the app before the Worker.** The Worker no longer has the old AI and learner routes, so an older app version would fail against it.
+6. Run through the release checklist below on a real phone inside WhatsApp.
 
 ### Choose the Worker (dev or production)
 
@@ -56,7 +89,7 @@ curl -s https://<host>/flutter_bootstrap.js | grep -o '"engineRevision":"[a-f0-9
 
 To change the Flutter version:
 1. Upgrade on a separate branch and build.
-2. Test the login screen on real phones inside the WhatsApp browser.
+2. Test the "Open your TAP link" page and a real sign-in on real phones inside the WhatsApp browser.
 3. Then change the version range in `pubspec.yaml`.
 
 `firebase.json` serves `build/web` and rewrites all routes to `index.html`, which is required for `go_router` browser navigation.
@@ -92,17 +125,19 @@ Never commit production JWT, Frappe API, or analytics secrets. If a secret has a
 1. Apply DocType/schema migrations.
 2. Confirm all Worker-targeted whitelisted methods exist.
 3. Confirm JWT secrets match Worker configuration.
-4. Test login, profile selection, learner state, and unit completion through the Worker URL.
+4. Test the link sign-in, the name picker, the points, the video and quiz steps, the work upload, and the feedback through the Worker URL.
 
 ## Release checklist
 
 - No secrets or learner data in the commit.
 - Flutter analysis and tests pass.
-- Built with `scripts/build_web.sh` on the pinned Flutter version, and the build line on the login screen shows the expected commit and Flutter version.
+- Built with `scripts/build_web.sh` on the pinned Flutter version, and the build line (long-press the icon on the link page, or "TAP" on Me) shows the expected commit, Flutter version and Worker host.
+- The build was **not** made with `SKIP_UPLOAD=1`. The script refuses that for the production Worker, but check the build line's `API` host anyway.
 - Worker tests pass (`cd worker && npm test`), and the Worker dry run/deploy succeeds.
 - `mkdocs build --strict` succeeds.
 - All bundled assets load in a release build.
-- Login token refresh works.
-- A first unit can be deferred and resumed only after confirmation.
+- A student can open a magic link, pick a name (a phone with several children), switch profile, and reopen the link after the session ends without losing progress.
+- Every `course_id` the backend can send is one of the 14 bundled ids (`test/domain/program_content/bundled_course_test.dart`).
+- The storage bucket allows the browser `PUT` for uploads (CORS, including the `x-goog-content-length-range` header).
 - Desktop and mobile layouts have been checked.
 - Rollback versions for frontend and Worker are recorded.

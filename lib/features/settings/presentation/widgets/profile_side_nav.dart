@@ -20,7 +20,6 @@ class ProfileSideNav extends StatelessWidget {
   Widget build(BuildContext context) {
     final items = <(ProfileTab, String)>[
       (ProfileTab.profile, 'Profile'),
-      (ProfileTab.settings, 'Settings'),
       (ProfileTab.about, 'About TAP'),
     ];
 

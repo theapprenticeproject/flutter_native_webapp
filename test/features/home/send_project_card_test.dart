@@ -17,7 +17,6 @@ void main() {
             child: SendProjectCard(
               courseDisplay: 'Science',
               unitName: 'Glowing LED Card',
-              points: 5,
               onSend: () => sent++,
             ),
           ),

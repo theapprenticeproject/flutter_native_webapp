@@ -104,9 +104,9 @@ class MagicLinkRepository {
     await _cache.delete(CacheKeys.linkRoster());
   }
 
-  /// There is no onboarding in v1 (the kids are pre-registered), so the student
-  /// counts as onboarded. The Worker does not send the phone number, and the
-  /// student token carries the identity, so the phone is empty.
+  /// There is no onboarding in v1 (the kids are pre-registered). The Worker does
+  /// not send the phone number, and the student token carries the identity, so
+  /// the phone is empty.
   Future<void> _activate(RedeemedStudent student) => _cache.setForeverRaw(
     CacheKeys.activeProfile(),
     ActiveProfileModel(
@@ -114,7 +114,6 @@ class MagicLinkRepository {
       learnerId: student.studentId,
       studentName: student.name,
       grade: student.grade,
-      onboardingCompleted: true,
     ).toJson(),
   );
 }

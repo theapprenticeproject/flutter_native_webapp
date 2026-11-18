@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/theme/app_theme.dart';
+import '../../../shared/widgets/build_info_toggle.dart';
 
 /// Shown when there is no sign-in. v1 has no password (R-32): the student opens
 /// the link that TAP sends on WhatsApp, and the app signs in by itself. There is
@@ -22,10 +23,13 @@ class OpenLinkScreen extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Icon(
-                    Icons.chat_bubble_outline_rounded,
-                    size: 56,
-                    color: Color(0xFF5B5BD6),
+                  // Long-press the icon to see which build this is.
+                  const BuildInfoToggle(
+                    child: Icon(
+                      Icons.chat_bubble_outline_rounded,
+                      size: 56,
+                      color: Color(0xFF5B5BD6),
+                    ),
                   ),
                   const SizedBox(height: 20),
                   Text(

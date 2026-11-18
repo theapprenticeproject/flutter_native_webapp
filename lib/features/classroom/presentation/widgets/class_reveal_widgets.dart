@@ -136,12 +136,6 @@ class ClassPendingActivityChoiceBody extends StatelessWidget {
                                 fontWeight: FontWeight.w800,
                               ),
                             ),
-                            const SizedBox(height: 10),
-                            _EarnRow(
-                              icon: Icons.stars_rounded,
-                              iconColor: const Color(0xFFE29A22),
-                              label: '${unit.totalPoints} Points',
-                            ),
                           ],
                         ),
                       ),
@@ -322,12 +316,6 @@ class ClassNextActivityInlineCard extends ConsumerWidget {
                           color: AppTheme.imagePlaceholder,
                         ),
                       ),
-                      const SizedBox(height: 6),
-                      _EarnRow(
-                        icon: Icons.stars_rounded,
-                        iconColor: const Color(0xFFE29A22),
-                        label: '${controller.nextUnitPoints} Points',
-                      ),
                     ],
                   ),
                 ),
@@ -384,33 +372,6 @@ class ClassNextActivityInlineCard extends ConsumerWidget {
   }
 }
 
-class _EarnRow extends StatelessWidget {
-  const _EarnRow({
-    required this.icon,
-    required this.iconColor,
-    required this.label,
-  });
-
-  final IconData icon;
-  final Color iconColor;
-  final String label;
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Icon(icon, size: 15, color: iconColor),
-        const SizedBox(width: 6),
-        Text(
-          label,
-          style: GoogleFonts.inter(fontSize: 13, fontWeight: FontWeight.w600),
-        ),
-      ],
-    );
-  }
-}
-
-/// Shown when there is no activity to do right now.
 class ClassNoActivityBody extends StatelessWidget {
   const ClassNoActivityBody({
     super.key,

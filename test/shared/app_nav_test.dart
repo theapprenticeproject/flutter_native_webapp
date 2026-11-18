@@ -71,4 +71,24 @@ void main() {
     final me = tester.widget<Text>(find.text('Me'));
     expect(me.style?.color, Colors.white);
   });
+
+  testWidgets('on Settings, tapping the highlighted Me tab goes back to Me', (
+    tester,
+  ) async {
+    await _pump(tester, start: AppRoutes.profile);
+    expect(find.text('Settings PAGE'), findsOneWidget);
+
+    await tester.tap(find.widgetWithText(InkWell, 'Me'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Me PAGE'), findsOneWidget);
+  });
+
+  testWidgets('tapping the tab you are on does nothing', (tester) async {
+    final router = await _pump(tester, start: AppRoutes.home);
+    await tester.tap(find.widgetWithText(InkWell, 'Home'));
+    await tester.pumpAndSettle();
+    expect(find.text('Home PAGE'), findsOneWidget);
+    expect(router.state.matchedLocation, AppRoutes.home);
+  });
 }

@@ -78,47 +78,28 @@ void main() {
       );
     });
 
-    // TEMPORARY: the test Worker still has only the old route name. Remove this
-    // test and the fallback in ProgressRepository once it has the new one.
     test(
-      'falls back to the old route while the Worker lacks the new one',
+      'a missing video (NOT_FOUND) is thrown and not tried on another route',
       () async {
-        final adapter = FakeWorkerAdapter((r) {
-          if (r.path == '/progress/submit_video_watched') {
-            return failure(404, 'NOT_FOUND', 'no such route');
-          }
-          return ok(awarded());
-        });
-        final result = await repoFor(adapter).submitVideo(
-          unitId: 'U',
-          videoId: 'V',
-          watched: true,
-          idempotencyKey: 'k',
+        final adapter = FakeWorkerAdapter(
+          (_) => failure(404, 'NOT_FOUND', 'video does not exist'),
+        );
+        await expectLater(
+          repoFor(adapter).submitVideo(
+            unitId: 'U',
+            videoId: 'V',
+            watched: true,
+            idempotencyKey: 'k',
+          ),
+          throwsA(
+            isA<ApiException>().having((e) => e.code, 'code', 'NOT_FOUND'),
+          ),
         );
         expect(adapter.seen.map((r) => r.path), [
           '/progress/submit_video_watched',
-          '/progress/submit_video',
         ]);
-        expect(adapter.seen.last.body!['idempotency_key'], 'k');
-        expect(result.pointsAwarded, 10);
       },
     );
-
-    test('a real NOT_FOUND (not a missing route) is not retried', () async {
-      final adapter = FakeWorkerAdapter(
-        (_) => failure(404, 'NOT_FOUND', 'video does not exist'),
-      );
-      await expectLater(
-        repoFor(adapter).submitVideo(
-          unitId: 'U',
-          videoId: 'V',
-          watched: true,
-          idempotencyKey: 'k',
-        ),
-        throwsA(isA<ApiException>()),
-      );
-      expect(adapter.seen, hasLength(1));
-    });
   });
 
   group('quiz', () {

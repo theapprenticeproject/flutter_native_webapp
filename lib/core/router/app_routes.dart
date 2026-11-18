@@ -8,7 +8,6 @@ class AppRoutes {
 
   /// Shown when there is no sign-in: "open the link TAP sent on WhatsApp".
   static const String openLink = '/open-link';
-  static const String onboarding = '/onboarding';
   static const String profileSelect = '/profile-select';
   static const String welcome = '/welcome';
   static const String home = '/home';

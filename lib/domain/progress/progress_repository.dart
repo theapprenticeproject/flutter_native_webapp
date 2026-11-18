@@ -1,4 +1,3 @@
-import '../../core/network/api_exception.dart';
 import '../../core/network/http_client.dart';
 import 'progress_models.dart';
 
@@ -43,21 +42,9 @@ class ProgressRepository {
       'watched': watched,
       'idempotency_key': idempotencyKey,
     };
-    try {
-      return ProgressResult.fromJson(
-        await _http.postApi('/progress/submit_video_watched', body: body),
-      );
-    } on ApiException catch (e) {
-      // TEMPORARY: the test Worker still has only the old route name. Remove
-      // this fallback once it has `/progress/submit_video_watched`. A real
-      // NOT_FOUND (a missing video) has another message and is not retried.
-      if (e.code == 'NOT_FOUND' && e.message == 'no such route') {
-        return ProgressResult.fromJson(
-          await _http.postApi('/progress/submit_video', body: body),
-        );
-      }
-      rethrow;
-    }
+    return ProgressResult.fromJson(
+      await _http.postApi('/progress/submit_video_watched', body: body),
+    );
   }
 
   Future<ProgressResult> submitQuiz({

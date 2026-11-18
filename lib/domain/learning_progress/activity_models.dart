@@ -31,28 +31,18 @@ class CourseUnit {
     required this.courseDisplay,
     required this.unitName,
     required this.thumbnailAsset,
-    required this.videoPoints,
-    required this.submissionPoints,
-    required this.totalPoints,
   });
 
   final String courseDisplay;
   final String unitName;
   final String thumbnailAsset;
-  final int videoPoints;
-  final int submissionPoints;
-  final int totalPoints;
 
   factory CourseUnit.fromCourse(CourseDetailModel course, int unitIndex) {
     final unit = course.units[unitIndex];
-    final video = unit.videos.isNotEmpty ? unit.videos.first : null;
     return CourseUnit(
       courseDisplay: course.vertical.isNotEmpty ? course.vertical : course.name,
       unitName: unit.name,
       thumbnailAsset: 'assets/data/courses/thumbnail/${course.id}.webp',
-      videoPoints: video?.points ?? unit.xp,
-      submissionPoints: unit.xp,
-      totalPoints: unit.xp,
     );
   }
 }

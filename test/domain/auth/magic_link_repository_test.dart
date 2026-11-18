@@ -107,7 +107,6 @@ void main() {
       'phone': '',
       'learner_id': 'OLD',
       'student_name': 'Old',
-      'onboarding_completed': true,
     });
     final adapter = FakeWorkerAdapter(
       (_) => ok({
@@ -122,7 +121,7 @@ void main() {
     expect(cache.has(CacheKeys.activeProfile()), isFalse);
   });
 
-  test('one student: becomes the active profile, already onboarded', () async {
+  test('one student: becomes the active profile', () async {
     final adapter = FakeWorkerAdapter(
       (_) => ok({
         'phone_token': 'p',
@@ -135,7 +134,7 @@ void main() {
 
     final saved = cache.getForeverRaw(CacheKeys.activeProfile())!;
     expect(saved['learner_id'], 'S1');
-    expect(saved['onboarding_completed'], true);
+    expect(saved['student_name'], 'Asha');
   });
 
   test('switching student changes the token with no network call', () async {

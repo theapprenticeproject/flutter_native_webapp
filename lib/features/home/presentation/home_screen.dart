@@ -128,13 +128,9 @@ class _NoEnrollmentState extends StatelessWidget {
           const Icon(Icons.school_outlined, size: 48, color: Color(0xFFB9BBC8)),
           const SizedBox(height: 16),
           const Text(
-            'No course enrolled yet.',
+            'Your course is not ready yet. Please tell your teacher.',
+            textAlign: TextAlign.center,
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-          ),
-          const SizedBox(height: 8),
-          ElevatedButton(
-            onPressed: () => context.go(AppRoutes.onboarding),
-            child: const Text('Choose a course'),
           ),
         ],
       ),
@@ -249,10 +245,7 @@ class _CompletedStage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final card = CompletedCard(
-      points: points > 0 ? points : unit?.totalPoints ?? 0,
-      onContinue: onContinue,
-    );
+    final card = CompletedCard(points: points, onContinue: onContinue);
 
     if (!isWide) {
       return Column(
@@ -317,19 +310,16 @@ class _ActiveCard extends StatelessWidget {
         courseDisplay: unit.courseDisplay,
         unitName: unit.unitName,
         thumbnailAsset: unit.thumbnailAsset,
-        points: unit.videoPoints,
         onStart: () => context.go(AppRoutes.classroom),
       ),
       LearningStage.sendProject => SendProjectCard(
         courseDisplay: unit.courseDisplay,
         unitName: unit.unitName,
-        points: unit.submissionPoints,
         onSend: () => context.go(AppRoutes.classroom),
       ),
       LearningStage.quizPending => QuizPendingCard(
         courseDisplay: unit.courseDisplay,
         unitName: unit.unitName,
-        points: unit.totalPoints,
         onStartQuiz: () => context.go(AppRoutes.classroom),
       ),
       LearningStage.submissionPending => SubmissionPendingCard(
@@ -344,7 +334,8 @@ class _ActiveCard extends StatelessWidget {
         ready: true,
         onOpen: () => context.go(AppRoutes.classroom),
       ),
-      LearningStage.completed => CompletedCard(points: unit.totalPoints),
+      // `completed` is drawn by _CompletedStage, never as an active card.
+      LearningStage.completed => const SizedBox.shrink(),
     };
   }
 }

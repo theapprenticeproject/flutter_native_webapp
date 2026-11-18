@@ -57,6 +57,7 @@ class _BottomNav extends StatelessWidget {
                     child: _NavItem(
                       item: item,
                       active: _isActive(item, location),
+                      atRoute: location == item.route,
                     ),
                   ),
                 ),
@@ -79,10 +80,19 @@ class _NavItem extends StatelessWidget {
   final _NavDestination item;
   final bool active;
 
-  const _NavItem({required this.item, required this.active});
+  /// The student is exactly on this tab's page. A tab can be highlighted without
+  /// that: on Settings, "Me" is highlighted but the Me page is not showing, so
+  /// tapping it must go there.
+  final bool atRoute;
+
+  const _NavItem({
+    required this.item,
+    required this.active,
+    required this.atRoute,
+  });
 
   void _navigate(BuildContext context) {
-    if (active) return;
+    if (atRoute) return;
     final route = item.route;
     final router = GoRouter.of(context);
 

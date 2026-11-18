@@ -50,49 +50,6 @@ class HttpClient {
   final Dio _dio;
   final SecureTokenStore _secureTokenStore;
 
-  Future<Map<String, dynamic>> get(
-    String path, {
-    Map<String, dynamic>? query,
-  }) => _send('GET', path, query: query);
-
-  Future<Map<String, dynamic>> post(
-    String path, {
-    Map<String, dynamic>? body,
-  }) => _send('POST', path, body: body);
-
-  Future<Map<String, dynamic>> _send(
-    String method,
-    String path, {
-    Map<String, dynamic>? query,
-    Map<String, dynamic>? body,
-  }) async {
-    try {
-      final response = await _dio.request<dynamic>(
-        path,
-        queryParameters: method == 'GET' ? query : null,
-        data: method == 'GET' ? null : body,
-        options: Options(method: method),
-      );
-      return _asMap(response.data);
-    } on DioException catch (e) {
-      final status = e.response?.statusCode;
-      final data = e.response?.data;
-      final map = data is Map
-          ? Map<String, dynamic>.from(data)
-          : const <String, dynamic>{};
-
-      if (status == 401) {
-        throw AuthException(
-          map['error'] as String? ?? 'invalid_or_expired_token',
-        );
-      }
-      if (status == 429) {
-        throw RateLimitedException(RateLimitedException.bucketForPath(path));
-      }
-      rethrow;
-    }
-  }
-
   /// Calls a route of the v1 Worker and returns its `data` object.
   ///
   /// The Worker answers `{"ok": true, "data": {...}}` or
@@ -159,10 +116,5 @@ class HttpClient {
     } catch (_) {
       return null;
     }
-  }
-
-  Map<String, dynamic> _asMap(dynamic data) {
-    if (data is Map) return Map<String, dynamic>.from(data);
-    return <String, dynamic>{};
   }
 }

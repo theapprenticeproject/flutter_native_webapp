@@ -2,19 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'card_deck_wrapper.dart';
-import 'reward_item.dart';
 
 class QuizPendingCard extends StatelessWidget {
   final String courseDisplay;
   final String unitName;
-  final int points;
   final VoidCallback onStartQuiz;
 
   const QuizPendingCard({
     super.key,
     required this.courseDisplay,
     required this.unitName,
-    required this.points,
     required this.onStartQuiz,
   });
 
@@ -94,30 +91,6 @@ class QuizPendingCard extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(width: 16),
-                      ConstrainedBox(
-                        constraints: const BoxConstraints(maxWidth: 112),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "You'll earn",
-                              style: GoogleFonts.inter(
-                                fontSize: 11,
-                                fontWeight: FontWeight.w500,
-                                color: const Color(0xFF777887),
-                                letterSpacing: 0,
-                              ),
-                            ),
-                            const SizedBox(height: 10),
-                            RewardItem(
-                              color: const Color(0xFFEAA43A),
-                              icon: Icons.star_rounded,
-                              text: '$points Points',
                             ),
                           ],
                         ),

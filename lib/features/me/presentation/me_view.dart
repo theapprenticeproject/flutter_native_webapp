@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../domain/me/level.dart';
 import '../../../domain/me/my_projects.dart';
+import '../../../shared/widgets/build_info_toggle.dart';
 import '../../../shared/widgets/profile_switcher.dart';
 
 /// The body of Me (R-7): profile, level, points, skill chips, "My projects this
@@ -74,6 +75,20 @@ class MeView extends StatelessWidget {
                   _ProjectsSection(projects: projects, onOpen: onOpenProject),
                   const SizedBox(height: 22),
                   _SettingsRow(onTap: onSettings),
+                  const SizedBox(height: 26),
+                  // Long-press "TAP" to see which build this is.
+                  Center(
+                    child: BuildInfoToggle(
+                      child: Text(
+                        'TAP',
+                        style: GoogleFonts.inter(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w800,
+                          color: AppTheme.imagePlaceholder,
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),

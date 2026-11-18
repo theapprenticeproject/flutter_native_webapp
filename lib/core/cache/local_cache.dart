@@ -157,57 +157,10 @@ class LocalCache {
     await _indexBox.deleteAll(keys);
   }
 
-  List<Map<String, dynamic>>? getProfilesIndex(String phone) =>
-      getForeverList(CacheKeys.profilesIndex(phone), (json) => json);
-
-  Future<void> setProfilesIndex(
-    String phone,
-    List<Map<String, dynamic>> profiles,
-  ) async {
-    await setForeverRawList(CacheKeys.profilesIndex(phone), profiles);
-  }
-
-  Future<void> mergeIntoProfilesIndex(
-    String phone,
-    List<Map<String, dynamic>> profiles,
-  ) async {
-    if (profiles.isEmpty) return;
-    final existing = getProfilesIndex(phone) ?? const [];
-    final byLearnerId = {
-      for (final p in existing)
-        if (p['learner_id'] != null) p['learner_id'] as String: p,
-    };
-    for (final p in profiles) {
-      final learnerId = p['learner_id'] as String?;
-      if (learnerId == null) continue;
-      byLearnerId[learnerId] = p;
-    }
-    await setProfilesIndex(phone, byLearnerId.values.toList(growable: false));
-  }
-
-  Future<void> patchProfilesIndexRow(
-    String phone,
-    String learnerId,
-    Map<String, dynamic> Function(Map<String, dynamic> row) patch,
-  ) async {
-    final existing = getProfilesIndex(phone);
-    if (existing == null) return;
-    final idx = existing.indexWhere((p) => p['learner_id'] == learnerId);
-    if (idx == -1) return;
-    final updated = List<Map<String, dynamic>>.from(existing);
-    updated[idx] = patch(Map<String, dynamic>.from(updated[idx]));
-    await setProfilesIndex(phone, updated);
-  }
-
   Future<void> invalidateLearner(String learnerId) async {
     await delete(CacheKeys.learnerState(learnerId));
     await delete(CacheKeys.achievements(learnerId));
     await delete(CacheKeys.activityProgress(learnerId));
-  }
-
-  Future<void> invalidateRosterAndProfiles(String phone) async {
-    await deletePrefix(CacheKeys.rosterIndex(phone).replaceAll(':index', ''));
-    await deletePrefix(CacheKeys.profilesIndex(phone).replaceAll(':index', ''));
   }
 
   Future<void> clearAll() async {

@@ -10,8 +10,6 @@ class CacheKeys {
 
   static String flowManifest(String lang) => _k('flow:manifest:$lang');
 
-  static String authSession(String phone) => _k('auth:$phone:session');
-
   static String activeProfile() => _k('active_profile');
 
   /// The last known state of a student's work for one assignment (R-83).
@@ -21,50 +19,8 @@ class CacheKeys {
   /// The students on the phone, saved when the magic link is opened.
   static String linkRoster() => _k('link_roster');
 
-  static String profilesPage(String phone, int page, int pageSize) =>
-      _k('profiles:$phone:page$page:$pageSize');
-
-  static String profilesSearch(
-    String phone, {
-    String? grade,
-    String? division,
-    String? rollNumber,
-    String? query,
-    int page = 1,
-  }) => _k(
-    'profiles:$phone:search:${grade ?? '*'}:${division ?? '*'}:${rollNumber ?? '*'}:${query ?? '*'}:$page',
-  );
-
-  static String profilesIndex(String phone) => _k('profiles:$phone:index');
-
   static String learnerState(String learnerId) =>
       _k('learner:$learnerId:state');
-
-  static String onboardingCompleted(String learnerId) =>
-      _k('learner:$learnerId:onboarding_completed');
-
-  static String roster(
-    String phone, {
-    String? grade,
-    String? division,
-    String? query,
-  }) => _k('roster:$phone:${grade ?? '*'}:${division ?? '*'}:${query ?? '*'}');
-
-  static String rosterIndex(String phone) => _k('roster:$phone:index');
-
-  static String students(
-    String phone, {
-    String? grade,
-    String? division,
-    int page = 1,
-  }) => _k('students:$phone:${grade ?? '*'}:${division ?? '*'}:$page');
-
-  static String studentSearch(
-    String phone,
-    String grade,
-    String rollNumber,
-    String division,
-  ) => _k('students:$phone:search:$grade:$rollNumber:$division');
 
   static String achievements(String learnerId) => _k('achievements:$learnerId');
 
@@ -75,11 +31,4 @@ class CacheKeys {
 
   static String homeCelebration(String learnerId) =>
       _k('activity:$learnerId:home_celebration');
-
-  static bool belongsToPhone(String key, String phone) =>
-      key.contains(':$phone:');
-
-  static bool isRosterKey(String key) => key.startsWith(_k('roster:'));
-
-  static bool isProfilesKey(String key) => key.startsWith(_k('profiles:'));
 }

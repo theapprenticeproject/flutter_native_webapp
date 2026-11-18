@@ -2,19 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'card_deck_wrapper.dart';
-import 'reward_item.dart';
 
 class SendProjectCard extends StatelessWidget {
   final String courseDisplay;
   final String unitName;
-  final int points;
   final VoidCallback onSend;
 
   const SendProjectCard({
     super.key,
     required this.courseDisplay,
     required this.unitName,
-    required this.points,
     required this.onSend,
   });
 
@@ -36,7 +33,6 @@ class SendProjectCard extends StatelessWidget {
                   child: _CardBody(
                     courseDisplay: courseDisplay,
                     unitName: unitName,
-                    points: points,
                     badge: _TaskBadge(
                       icon: Icons.info_outline_rounded,
                       text: 'To do: Send project',
@@ -85,13 +81,11 @@ class SendProjectCard extends StatelessWidget {
 class _CardBody extends StatelessWidget {
   final String courseDisplay;
   final String unitName;
-  final int points;
   final Widget badge;
 
   const _CardBody({
     required this.courseDisplay,
     required this.unitName,
-    required this.points,
     required this.badge,
   });
 
@@ -130,42 +124,7 @@ class _CardBody extends StatelessWidget {
             ],
           ),
         ),
-        const SizedBox(width: 16),
-        _Rewards(points: points),
       ],
-    );
-  }
-}
-
-class _Rewards extends StatelessWidget {
-  final int points;
-
-  const _Rewards({required this.points});
-
-  @override
-  Widget build(BuildContext context) {
-    return ConstrainedBox(
-      constraints: const BoxConstraints(maxWidth: 112),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            "You'll earn",
-            style: GoogleFonts.inter(
-              fontSize: 11,
-              fontWeight: FontWeight.w500,
-              color: const Color(0xFF777887),
-              letterSpacing: 0,
-            ),
-          ),
-          const SizedBox(height: 10),
-          RewardItem(
-            color: const Color(0xFFEAA43A),
-            icon: Icons.star_rounded,
-            text: '$points Points',
-          ),
-        ],
-      ),
     );
   }
 }

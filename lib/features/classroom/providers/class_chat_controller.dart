@@ -78,7 +78,6 @@ class ClassChatController extends ChangeNotifier {
   String get unitName => _unit.name;
   bool get hasNextUnit => _nextUnit != null;
   String get nextUnitName => _nextUnit?.name ?? _unit.name;
-  int get nextUnitPoints => _nextUnit?.xp ?? 0;
 
   final ActivityFlowModel _flow;
   final CourseUnitModel _unit;
