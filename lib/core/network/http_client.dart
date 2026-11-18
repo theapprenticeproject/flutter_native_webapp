@@ -76,6 +76,54 @@ class HttpClient {
     Map<String, dynamic>? body,
     String? bearer,
   }) async {
+    try {
+      return await _sendOnce(method, path, query, body, bearer);
+    } on ApiException catch (e) {
+      // The student token lives 30 days and is never renewed by the Worker. Ask
+      // for a new one with the phone token, then try the same call once more.
+      // Auth routes and calls with their own token are never renewed.
+      final canRenew =
+          e.code == 'UNAUTHORIZED' &&
+          bearer == null &&
+          !path.startsWith('/auth/');
+      if (!canRenew || !await _renewStudentToken()) rethrow;
+      return _sendOnce(method, path, query, body, bearer);
+    }
+  }
+
+  Future<bool>? _renewing;
+
+  /// Calls at the same time share one renewal. Returns false when the phone
+  /// token is missing or refused: the student must open the link again.
+  Future<bool> _renewStudentToken() =>
+      _renewing ??= _renew().whenComplete(() => _renewing = null);
+
+  Future<bool> _renew() async {
+    try {
+      final studentId = await _secureTokenStore.readActiveStudentId();
+      final phoneToken = await _secureTokenStore.readPhoneToken();
+      if (studentId == null || phoneToken == null || phoneToken.isEmpty) {
+        return false;
+      }
+      final data = await _sendOnce('POST', '/auth/select_profile', null, {
+        'student_id': studentId,
+      }, phoneToken);
+      final token = data['token'];
+      if (token is! String) return false;
+      await _secureTokenStore.saveStudentToken(studentId, token);
+      return true;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  Future<Map<String, dynamic>> _sendOnce(
+    String method,
+    String path,
+    Map<String, dynamic>? query,
+    Map<String, dynamic>? body,
+    String? bearer,
+  ) async {
     final response = await _dio.request<dynamic>(
       path,
       queryParameters: method == 'GET' ? query : null,
