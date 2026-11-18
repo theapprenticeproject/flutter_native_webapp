@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import '../../../l10n/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -58,7 +59,8 @@ class _WelcomeBackScreenState extends ConsumerState<WelcomeBackScreen> {
     final isDesktop = size.width > 800;
 
     final activeProfileAsync = ref.watch(activeProfileProvider);
-    final studentName = activeProfileAsync.value?.studentName ?? 'there';
+    final studentName =
+        activeProfileAsync.value?.studentName ?? context.l10n.welcomeThere;
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -120,7 +122,7 @@ class _WelcomeBackScreenState extends ConsumerState<WelcomeBackScreen> {
                   const SizedBox(height: 32),
 
                   Text(
-                    'Welcome Back, $studentName!',
+                    context.l10n.welcomeBack(studentName),
                     style: GoogleFonts.inter(
                       fontSize: isDesktop ? 32 : 26,
                       fontWeight: FontWeight.w700,
@@ -130,7 +132,7 @@ class _WelcomeBackScreenState extends ConsumerState<WelcomeBackScreen> {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Are you ready for a New Year?',
+                    context.l10n.welcomeNewYear,
                     style: GoogleFonts.inter(
                       fontSize: isDesktop ? 18 : 16,
                       fontWeight: FontWeight.w500,
@@ -158,7 +160,7 @@ class _WelcomeBackScreenState extends ConsumerState<WelcomeBackScreen> {
                         ),
                       ),
                       child: Text(
-                        'Continue',
+                        context.l10n.buttonContinue,
                         style: GoogleFonts.inter(
                           fontSize: 18,
                           fontWeight: FontWeight.w600,

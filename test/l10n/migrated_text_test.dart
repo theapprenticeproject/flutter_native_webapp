@@ -13,6 +13,13 @@ const _migrated = [
   'lib/features/auth/presentation/open_link_screen.dart',
   'lib/features/auth/presentation/link_sign_in_screen.dart',
   'lib/features/settings/presentation/settings_screen.dart',
+  'lib/features/auth/presentation/profile_select_screen.dart',
+  'lib/features/welcome/presentation/welcome_screen.dart',
+  'lib/features/splash/presentation/splash_screen.dart',
+  'lib/features/error/presentation/error_screen.dart',
+  'lib/shared/widgets/profile_switcher.dart',
+  'lib/shared/widgets/app_header.dart',
+  'lib/shared/widgets/loading_view.dart',
 ];
 
 /// Whole folders that are moved: every file inside is checked.

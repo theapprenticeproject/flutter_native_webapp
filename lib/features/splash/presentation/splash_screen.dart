@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -67,7 +68,7 @@ class _SplashScreenState extends State<SplashScreen>
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
-                    'Welcome to TAP!',
+                    context.l10n.splashWelcome,
                     style: GoogleFonts.inter(
                       fontSize: isDesktop ? 34 : 28,
                       fontWeight: FontWeight.w700,
@@ -78,7 +79,7 @@ class _SplashScreenState extends State<SplashScreen>
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Brought to you by MCD Delhi',
+                    context.l10n.splashBroughtBy,
                     style: GoogleFonts.inter(
                       fontSize: isDesktop ? 18 : 16,
                       fontWeight: FontWeight.w500,
@@ -133,7 +134,7 @@ class _SplashScreenState extends State<SplashScreen>
               Padding(
                 padding: const EdgeInsets.only(bottom: 12.0),
                 child: Text(
-                  'Govt. of Delhi x TAP Initiative',
+                  context.l10n.splashGovt,
                   style: GoogleFonts.inter(
                     fontSize: isDesktop ? 16 : 14,
                     fontWeight: FontWeight.w500,

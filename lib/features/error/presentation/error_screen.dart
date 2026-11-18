@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../l10n/l10n.dart';
 import 'package:go_router/go_router.dart';
 import '../../../core/router/app_routes.dart';
 import '../../../shared/widgets/error_view.dart';
@@ -9,14 +10,13 @@ class ErrorScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ErrorView(
-      title: 'Something went wrong',
-      message:
-          'We had trouble loading this page. Please check your internet connection and try again.',
-      buttonText: 'Try Again',
+      title: context.l10n.errorPageTitle,
+      message: context.l10n.errorPageMessage,
+      buttonText: context.l10n.errorPageButton,
 
-      desktopTitle: 'Hey Champ\nI am not able to talk to you',
-      desktopMessage: "Looks like you're offline. Click below to try again.",
-      desktopButtonText: 'Retry',
+      desktopTitle: context.l10n.errorPageDesktopTitle,
+      desktopMessage: context.l10n.errorPageDesktopMessage,
+      desktopButtonText: context.l10n.errorPageDesktopButton,
 
       onRetry: () {
         context.go(AppRoutes.splash);

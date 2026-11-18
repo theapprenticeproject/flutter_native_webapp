@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import '../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LoadingView extends StatelessWidget {
-  final String message;
+  final String? message;
 
-  const LoadingView({super.key, this.message = 'Loading...'});
+  const LoadingView({super.key, this.message});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class LoadingView extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           Text(
-            message,
+            message ?? context.l10n.loadingDefault,
             style: GoogleFonts.inter(
               fontSize: 14,
               fontWeight: FontWeight.w600,

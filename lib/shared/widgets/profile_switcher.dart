@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../l10n/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -34,7 +35,7 @@ class SwitchProfileBar extends StatelessWidget {
               final compact = availableWidth < 380;
 
               final text = Text(
-                'Not $studentName? Switch to your profile',
+                context.l10n.profileNotYou(studentName),
                 textAlign: TextAlign.center,
                 style: GoogleFonts.inter(
                   fontSize: 13,
@@ -44,7 +45,7 @@ class SwitchProfileBar extends StatelessWidget {
               );
 
               final button = _SwitchProfileButton(
-                label: 'Switch Profile',
+                label: context.l10n.profileSwitch,
                 onPressed: onSwitchDialog,
               );
 
@@ -127,7 +128,7 @@ class _SwitchProfileDialogState extends ConsumerState<SwitchProfileDialog> {
                 children: [
                   Expanded(
                     child: Text(
-                      'Switch Profile',
+                      context.l10n.profileSwitch,
                       style: GoogleFonts.inter(
                         fontSize: 15,
                         fontWeight: FontWeight.w900,
@@ -144,7 +145,7 @@ class _SwitchProfileDialogState extends ConsumerState<SwitchProfileDialog> {
                 ],
               ),
               Text(
-                'Hi Champ, please select who I will talk to',
+                context.l10n.profilePickPrompt,
                 style: GoogleFonts.inter(fontSize: 12),
               ),
               const SizedBox(height: 18),
@@ -152,7 +153,7 @@ class _SwitchProfileDialogState extends ConsumerState<SwitchProfileDialog> {
                 data: (profiles) {
                   if (profiles.isEmpty) {
                     return Text(
-                      'No student profiles found for this account.',
+                      context.l10n.profilesNone,
                       style: GoogleFonts.inter(
                         fontSize: 12,
                         color: AppTheme.subheadingColor,
@@ -183,7 +184,7 @@ class _SwitchProfileDialogState extends ConsumerState<SwitchProfileDialog> {
                   child: Center(child: CircularProgressIndicator()),
                 ),
                 error: (err, stack) => Text(
-                  'Could not load profiles. Please try again.',
+                  context.l10n.profilesLoadFailed,
                   style: GoogleFonts.inter(
                     fontSize: 12,
                     color: AppTheme.dangerText,
@@ -245,7 +246,9 @@ class _ProfileOption extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final meta = profile.grade.isEmpty ? '' : 'Grade ${profile.grade}';
+    final meta = profile.grade.isEmpty
+        ? ''
+        : context.l10n.profileGrade(profile.grade);
 
     return InkWell(
       onTap: onTap,
@@ -278,7 +281,9 @@ class _ProfileOption extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    profile.name.isEmpty ? 'Student' : profile.name,
+                    profile.name.isEmpty
+                        ? context.l10n.profileStudent
+                        : profile.name,
                     style: GoogleFonts.inter(
                       fontSize: 12,
                       fontWeight: FontWeight.w700,
@@ -312,7 +317,9 @@ class _ProfileOption extends StatelessWidget {
                   border: Border.all(color: AppTheme.borderColor),
                 ),
                 child: Text(
-                  selected ? 'Selected ✓' : 'Select',
+                  selected
+                      ? context.l10n.profileSelected
+                      : context.l10n.profileSelect,
                   style: GoogleFonts.inter(
                     fontSize: 11,
                     fontWeight: FontWeight.w700,

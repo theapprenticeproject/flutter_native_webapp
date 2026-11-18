@@ -673,6 +673,174 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Open video'**
   String get galleryOpenVideo;
+
+  /// No description provided for @profileNotYou.
+  ///
+  /// In en, this message translates to:
+  /// **'Not {name}? Switch to your profile'**
+  String profileNotYou(String name);
+
+  /// No description provided for @profileSwitch.
+  ///
+  /// In en, this message translates to:
+  /// **'Switch Profile'**
+  String get profileSwitch;
+
+  /// No description provided for @profilePickPrompt.
+  ///
+  /// In en, this message translates to:
+  /// **'Hi Champ, please select who I will talk to'**
+  String get profilePickPrompt;
+
+  /// No description provided for @profilesNone.
+  ///
+  /// In en, this message translates to:
+  /// **'No student profiles found for this account.'**
+  String get profilesNone;
+
+  /// No description provided for @profilesLoadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load profiles. Please try again.'**
+  String get profilesLoadFailed;
+
+  /// No description provided for @profileLoadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load that profile. Please try again.'**
+  String get profileLoadFailed;
+
+  /// No description provided for @profileGrade.
+  ///
+  /// In en, this message translates to:
+  /// **'Grade {grade}'**
+  String profileGrade(String grade);
+
+  /// No description provided for @profileStudent.
+  ///
+  /// In en, this message translates to:
+  /// **'Student'**
+  String get profileStudent;
+
+  /// No description provided for @profileSelected.
+  ///
+  /// In en, this message translates to:
+  /// **'Selected ✓'**
+  String get profileSelected;
+
+  /// No description provided for @profileSelect.
+  ///
+  /// In en, this message translates to:
+  /// **'Select'**
+  String get profileSelect;
+
+  /// No description provided for @profileWhoLearning.
+  ///
+  /// In en, this message translates to:
+  /// **'Who\'s learning today?'**
+  String get profileWhoLearning;
+
+  /// No description provided for @profileSelectToContinue.
+  ///
+  /// In en, this message translates to:
+  /// **'Select a student profile to continue.'**
+  String get profileSelectToContinue;
+
+  /// No description provided for @welcomeBack.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome Back, {name}!'**
+  String welcomeBack(String name);
+
+  /// No description provided for @welcomeThere.
+  ///
+  /// In en, this message translates to:
+  /// **'there'**
+  String get welcomeThere;
+
+  /// No description provided for @welcomeNewYear.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you ready for a New Year?'**
+  String get welcomeNewYear;
+
+  /// No description provided for @buttonContinue.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get buttonContinue;
+
+  /// No description provided for @splashWelcome.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to TAP!'**
+  String get splashWelcome;
+
+  /// No description provided for @splashBroughtBy.
+  ///
+  /// In en, this message translates to:
+  /// **'Brought to you by MCD Delhi'**
+  String get splashBroughtBy;
+
+  /// No description provided for @splashGovt.
+  ///
+  /// In en, this message translates to:
+  /// **'Govt. of Delhi x TAP Initiative'**
+  String get splashGovt;
+
+  /// No description provided for @errorPageTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong'**
+  String get errorPageTitle;
+
+  /// No description provided for @errorPageMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'We had trouble loading this page. Please check your internet connection and try again.'**
+  String get errorPageMessage;
+
+  /// No description provided for @errorPageButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Try Again'**
+  String get errorPageButton;
+
+  /// No description provided for @errorPageDesktopTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hey Champ\nI am not able to talk to you'**
+  String get errorPageDesktopTitle;
+
+  /// No description provided for @errorPageDesktopMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Looks like you\'re offline. Click below to try again.'**
+  String get errorPageDesktopMessage;
+
+  /// No description provided for @errorPageDesktopButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get errorPageDesktopButton;
+
+  /// No description provided for @headerSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Ready for today\'s class?'**
+  String get headerSubtitle;
+
+  /// No description provided for @headerHi.
+  ///
+  /// In en, this message translates to:
+  /// **'Hi {name} 👋'**
+  String headerHi(String name);
+
+  /// No description provided for @loadingDefault.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading...'**
+  String get loadingDefault;
 }
 
 class _AppLocalizationsDelegate

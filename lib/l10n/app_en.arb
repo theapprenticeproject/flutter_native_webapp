@@ -152,5 +152,61 @@
   },
   "gallerySwipe": "Swipe to see more",
   "galleryWantToShare": "Want to share your work too?",
-  "galleryOpenVideo": "Open video"
+  "galleryOpenVideo": "Open video",
+  "profileNotYou": "Not {name}? Switch to your profile",
+  "@profileNotYou": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "profileSwitch": "Switch Profile",
+  "profilePickPrompt": "Hi Champ, please select who I will talk to",
+  "profilesNone": "No student profiles found for this account.",
+  "profilesLoadFailed": "Could not load profiles. Please try again.",
+  "profileLoadFailed": "Could not load that profile. Please try again.",
+  "profileGrade": "Grade {grade}",
+  "@profileGrade": {
+    "placeholders": {
+      "grade": {
+        "type": "String"
+      }
+    }
+  },
+  "profileStudent": "Student",
+  "profileSelected": "Selected ✓",
+  "profileSelect": "Select",
+  "profileWhoLearning": "Who's learning today?",
+  "profileSelectToContinue": "Select a student profile to continue.",
+  "welcomeBack": "Welcome Back, {name}!",
+  "@welcomeBack": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "welcomeThere": "there",
+  "welcomeNewYear": "Are you ready for a New Year?",
+  "buttonContinue": "Continue",
+  "splashWelcome": "Welcome to TAP!",
+  "splashBroughtBy": "Brought to you by MCD Delhi",
+  "splashGovt": "Govt. of Delhi x TAP Initiative",
+  "errorPageTitle": "Something went wrong",
+  "errorPageMessage": "We had trouble loading this page. Please check your internet connection and try again.",
+  "errorPageButton": "Try Again",
+  "errorPageDesktopTitle": "Hey Champ\nI am not able to talk to you",
+  "errorPageDesktopMessage": "Looks like you're offline. Click below to try again.",
+  "errorPageDesktopButton": "Retry",
+  "headerSubtitle": "Ready for today's class?",
+  "headerHi": "Hi {name} 👋",
+  "@headerHi": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "loadingDefault": "Loading..."
 }

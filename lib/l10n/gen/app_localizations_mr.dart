@@ -328,4 +328,99 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get galleryOpenVideo => 'Open video';
+
+  @override
+  String profileNotYou(String name) {
+    return 'Not $name? Switch to your profile';
+  }
+
+  @override
+  String get profileSwitch => 'Switch Profile';
+
+  @override
+  String get profilePickPrompt => 'Hi Champ, please select who I will talk to';
+
+  @override
+  String get profilesNone => 'No student profiles found for this account.';
+
+  @override
+  String get profilesLoadFailed => 'Could not load profiles. Please try again.';
+
+  @override
+  String get profileLoadFailed =>
+      'Could not load that profile. Please try again.';
+
+  @override
+  String profileGrade(String grade) {
+    return 'Grade $grade';
+  }
+
+  @override
+  String get profileStudent => 'Student';
+
+  @override
+  String get profileSelected => 'Selected ✓';
+
+  @override
+  String get profileSelect => 'Select';
+
+  @override
+  String get profileWhoLearning => 'Who\'s learning today?';
+
+  @override
+  String get profileSelectToContinue => 'Select a student profile to continue.';
+
+  @override
+  String welcomeBack(String name) {
+    return 'Welcome Back, $name!';
+  }
+
+  @override
+  String get welcomeThere => 'there';
+
+  @override
+  String get welcomeNewYear => 'Are you ready for a New Year?';
+
+  @override
+  String get buttonContinue => 'Continue';
+
+  @override
+  String get splashWelcome => 'Welcome to TAP!';
+
+  @override
+  String get splashBroughtBy => 'Brought to you by MCD Delhi';
+
+  @override
+  String get splashGovt => 'Govt. of Delhi x TAP Initiative';
+
+  @override
+  String get errorPageTitle => 'Something went wrong';
+
+  @override
+  String get errorPageMessage =>
+      'We had trouble loading this page. Please check your internet connection and try again.';
+
+  @override
+  String get errorPageButton => 'Try Again';
+
+  @override
+  String get errorPageDesktopTitle => 'Hey Champ\nI am not able to talk to you';
+
+  @override
+  String get errorPageDesktopMessage =>
+      'Looks like you\'re offline. Click below to try again.';
+
+  @override
+  String get errorPageDesktopButton => 'Retry';
+
+  @override
+  String get headerSubtitle => 'Ready for today\'s class?';
+
+  @override
+  String headerHi(String name) {
+    return 'Hi $name 👋';
+  }
+
+  @override
+  String get loadingDefault => 'Loading...';
 }

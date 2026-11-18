@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../l10n/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -38,7 +39,7 @@ class _ProfileSelectScreenState extends ConsumerState<ProfileSelectScreen> {
       if (!mounted) return;
       setState(() {
         _selectingStudentId = null;
-        _errorText = 'Could not load that profile. Please try again.';
+        _errorText = context.l10n.profileLoadFailed;
       });
     }
   }
@@ -65,7 +66,7 @@ class _ProfileSelectScreenState extends ConsumerState<ProfileSelectScreen> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Text(
-                        'Who\'s learning today?',
+                        context.l10n.profileWhoLearning,
                         style: GoogleFonts.inter(
                           fontSize: isDesktop ? 26 : 22,
                           fontWeight: FontWeight.w800,
@@ -74,7 +75,7 @@ class _ProfileSelectScreenState extends ConsumerState<ProfileSelectScreen> {
                       ),
                       const SizedBox(height: 8),
                       Text(
-                        'Select a student profile to continue.',
+                        context.l10n.profileSelectToContinue,
                         style: GoogleFonts.inter(
                           fontSize: 14,
                           fontWeight: FontWeight.w500,
@@ -93,9 +94,8 @@ class _ProfileSelectScreenState extends ConsumerState<ProfileSelectScreen> {
                           padding: EdgeInsets.symmetric(vertical: 48),
                           child: Center(child: CircularProgressIndicator()),
                         ),
-                        error: (err, stack) => _ErrorBanner(
-                          text: 'Could not load profiles. Please try again.',
-                        ),
+                        error: (err, stack) =>
+                            _ErrorBanner(text: context.l10n.profilesLoadFailed),
                       ),
                     ],
                   ),
@@ -114,7 +114,7 @@ class _ProfileSelectScreenState extends ConsumerState<ProfileSelectScreen> {
         padding: const EdgeInsets.symmetric(vertical: 48),
         child: Center(
           child: Text(
-            'No student profiles found for this account.',
+            context.l10n.profilesNone,
             style: GoogleFonts.inter(
               fontSize: 14,
               fontWeight: FontWeight.w500,
@@ -203,7 +203,9 @@ class _ProfileCard extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    profile.name.isEmpty ? 'Student' : profile.name,
+                    profile.name.isEmpty
+                        ? context.l10n.profileStudent
+                        : profile.name,
                     style: GoogleFonts.inter(
                       fontSize: 15,
                       fontWeight: FontWeight.w700,
@@ -215,7 +217,9 @@ class _ProfileCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    profile.grade.isEmpty ? '' : 'Grade ${profile.grade}',
+                    profile.grade.isEmpty
+                        ? ''
+                        : context.l10n.profileGrade(profile.grade),
                     style: GoogleFonts.inter(
                       fontSize: 12,
                       fontWeight: FontWeight.w500,

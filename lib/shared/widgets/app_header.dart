@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../core/theme/app_theme.dart';
@@ -6,7 +7,7 @@ import '../../core/theme/app_theme.dart';
 class AppHeader extends StatelessWidget {
   final String title;
   final String studentName;
-  final String subtitle;
+  final String? subtitle;
   final int points;
   final bool showStudentSummary;
   final bool showBack;
@@ -20,7 +21,7 @@ class AppHeader extends StatelessWidget {
     super.key,
     required this.title,
     this.studentName = 'Aarav',
-    this.subtitle = "Ready for today's class?",
+    this.subtitle,
     this.points = 0,
     this.showStudentSummary = false,
     this.showBack = false,
@@ -123,7 +124,7 @@ class AppHeader extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Hi $studentName 👋',
+                context.l10n.headerHi(studentName),
                 textAlign: TextAlign.left,
                 style: GoogleFonts.inter(
                   fontSize: compact ? 18 : 17,
@@ -135,7 +136,7 @@ class AppHeader extends StatelessWidget {
               ),
               const SizedBox(height: 7),
               Text(
-                subtitle,
+                subtitle ?? context.l10n.headerSubtitle,
                 textAlign: TextAlign.left,
                 style: GoogleFonts.inter(
                   fontSize: compact ? 12 : 11,
