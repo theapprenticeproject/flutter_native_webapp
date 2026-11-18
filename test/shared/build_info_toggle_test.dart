@@ -57,7 +57,6 @@ void main() {
             points: 1,
             level: null,
             projects: const [],
-            tags: const [],
             onSwitchProfile: () {},
             onSettings: () {},
             onOpenProject: (_) {},

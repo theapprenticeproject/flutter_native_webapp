@@ -52,7 +52,7 @@ The bar has 3 items: **Home, Gallery, Me** (R-1). There is no Class tab: the act
 - **Profile card:** the TAP Buddy picture (never a photo of the child, R-60), name, class and school.
 - **Level:** for example "Bronze Buddy 120 / 1000", with a bar. It comes from the points and the tiers in `/app/config`, so the names and limits are not hardcoded (R-41, R-87). If the Worker cannot be reached, the level is left out and the page still opens.
 - **Total points** with a "What are points?" hint.
-- **"I'm getting better at"** chips: a fixed list, the same for every student (R-95, `skill_tags.dart`). The words are placeholders until the curriculum team gives its list.
+- **"I'm getting better at"** chips: removed from Me (team decision, 2026-11-18). Skill tags come later (R-95).
 - **My projects this year** ("3 / 6 done"): one project for each unit with an assignment, at most 6 (R-87). Each shows "Not started", "Feedback pending", "Feedback given", "Wrong format" or "Not accepted". Tapping one shows the Worker's feedback. The state comes from `submission/list`, with the saved state as a fallback when offline.
 - **Settings** row: language and the other settings.
 

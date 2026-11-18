@@ -208,7 +208,7 @@ About 10 frames.
   - **Edit profile is later** (R-74). Do not build the form or the save call. Show the profile data only.
   - **Level names and thresholds** are server settings (R-41).
   - **"My projects"** reads the submissions, the feedback (valid or not), the points and the course's assignments. There are 6 projects a year (R-87).
-  - **Skill chips** are placeholders: a fixed list, the same for every student. The curriculum team gives the tags (R-95).
+  - **Skill chips** ("I'm getting better at") are removed from Me (team decision, 2026-11-18). Skill tags come later with the activity-level tags (R-95).
   - **Settings:** app language and account options. **No theme switch** (R-73, F-4). The messages are not read aloud automatically (R-17). The speaker icons on messages replace "read messages aloud".
   - **No Sign out** in v1 (R-35). "Deactivate" and "Delete account" are later (R-36).
 - **To do**:

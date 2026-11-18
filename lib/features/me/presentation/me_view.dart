@@ -19,7 +19,6 @@ class MeView extends StatelessWidget {
     required this.points,
     required this.level,
     required this.projects,
-    required this.tags,
     required this.onSwitchProfile,
     required this.onSettings,
     required this.onOpenProject,
@@ -34,7 +33,6 @@ class MeView extends StatelessWidget {
   /// Null when the Worker's tiers are not known.
   final LevelProgress? level;
   final List<MyProject> projects;
-  final List<String> tags;
   final VoidCallback onSwitchProfile;
   final VoidCallback onSettings;
   final void Function(MyProject) onOpenProject;
@@ -64,14 +62,6 @@ class MeView extends StatelessWidget {
                   ],
                   _PointsCard(points: points),
                   const SizedBox(height: 22),
-                  _SectionTitle("I'm getting better at"),
-                  const SizedBox(height: 10),
-                  Wrap(
-                    spacing: 8,
-                    runSpacing: 8,
-                    children: [for (final tag in tags) _Chip(tag)],
-                  ),
-                  const SizedBox(height: 26),
                   _ProjectsSection(projects: projects, onOpen: onOpenProject),
                   const SizedBox(height: 22),
                   _SettingsRow(onTap: onSettings),
@@ -315,28 +305,6 @@ class _PointsCard extends StatelessWidget {
       ),
     );
   }
-}
-
-class _Chip extends StatelessWidget {
-  const _Chip(this.text);
-  final String text;
-
-  @override
-  Widget build(BuildContext context) => Container(
-    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
-    decoration: BoxDecoration(
-      color: AppTheme.softLavender,
-      borderRadius: BorderRadius.circular(999),
-    ),
-    child: Text(
-      text,
-      style: GoogleFonts.inter(
-        fontSize: 12,
-        fontWeight: FontWeight.w700,
-        color: AppTheme.buttonColor,
-      ),
-    ),
-  );
 }
 
 class _ProjectsSection extends StatelessWidget {

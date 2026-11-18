@@ -4,7 +4,6 @@ import 'package:tapapp/domain/me/level.dart';
 import 'package:tapapp/domain/me/my_projects.dart';
 import 'package:tapapp/domain/submission/feedback_state.dart';
 import 'package:tapapp/features/me/presentation/me_view.dart';
-import 'package:tapapp/features/me/skill_tags.dart';
 
 /// R-7: Me has the profile, the level, the points, "My projects this year", the
 /// skill chips (placeholders, R-95), settings and switch profile.
@@ -43,7 +42,6 @@ Future<void> _pump(
           points: 120,
           level: level,
           projects: projects,
-          tags: skillTags,
           onSwitchProfile: onSwitch ?? () {},
           onSettings: onSettings ?? () {},
           onOpenProject: onOpen ?? (_) {},
@@ -85,12 +83,9 @@ void main() {
     expect(find.text('120'), findsWidgets);
   });
 
-  testWidgets('shows the placeholder skill chips', (tester) async {
+  testWidgets('has no "getting better at" skill chips', (tester) async {
     await _pump(tester);
-    expect(find.text("I'm getting better at"), findsOneWidget);
-    for (final tag in skillTags) {
-      expect(find.text(tag), findsOneWidget, reason: tag);
-    }
+    expect(find.text("I'm getting better at"), findsNothing);
   });
 
   testWidgets('with projects: the count and each state', (tester) async {

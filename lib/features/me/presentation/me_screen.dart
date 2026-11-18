@@ -17,7 +17,6 @@ import '../../../shared/widgets/app_nav.dart';
 import '../../../shared/widgets/load_error_view.dart';
 import '../../../shared/widgets/loading_view.dart';
 import '../../../shared/widgets/profile_switcher.dart';
-import '../skill_tags.dart';
 import 'me_view.dart';
 
 /// The Me tab (R-7). It replaces the old Passport and Profile screens.
@@ -136,7 +135,6 @@ class MeScreen extends ConsumerWidget {
                     points: data.points,
                     level: data.level,
                     projects: data.projects,
-                    tags: skillTags,
                     onSwitchProfile: () =>
                         _showSwitchDialog(context, ref, activeId),
                     onSettings: () => context.go(AppRoutes.profile),

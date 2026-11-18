@@ -6,10 +6,29 @@ Keep the list short. When an item is done, delete it. If we decide not to do an 
 
 Priority: **P1** do before the next release or merge. **P2** do soon. **P3** do when you have time.
 
+## v1 app: open items (updated 2026-11-18)
+
+Decided in the project chat. Details of each item are in `api-contract.md`, `v1-task-breakdown.md` and `frontend.md`.
+
+**Do soon (ours)**
+- [ ] **P1** **Expired student token.** The Worker gives the student token a fixed 30-day life and never renews it. When it ends, a call answers `UNAUTHORIZED`. The contract (section 1) says the app must first try `/auth/select_profile` with the saved **phone token** to get a new student token, once, and only if that fails show "Please open your link again". Today the app goes straight to the "open your link" page. Build it in one place (`HttpClient`), so every call benefits: on `UNAUTHORIZED`, refresh once, retry the same call, then give up. Test: a fake Worker that expires the student token. The phone token also lives 90 days: after that the link is needed.
+- [ ] **P1** **Which activity a student starts at.** Today every student starts at unit 1 of their course and the app counts forward by itself. The Worker already knows each student's `current_learning_unit` (siblings can differ). Decision needed: use the Worker's unit (then a new phone or browser continues in the right place), or keep the bundled order. The backend has confirmed that the unit moves on only after valid feedback.
+- [ ] **P2** **Translations (D14).** Move all app text into translation files, English first. The Hindi, Marathi, Kannada and Punjabi text comes from the curriculum team. Includes the emoji and Hindi fonts, and the fallback name "Champ".
+- [ ] **P2** **Real end-to-end run of the Results chat and "Send again".** Mock the Worker's grading in a local fake Worker (and use the backend's `POST /test/grade` when it exists).
+- [ ] **P2** **Feedback link (D13).** `https://<our-app>/#/f/<submission-id>` opens the Results of that submission for the right student, also when nobody is signed in. Agree the link form with the backend developer.
+- [ ] **P3** The header on Me and Home: on a narrow screen the points pill overlaps the line "Have a look at your progress".
+- [ ] **P3** Make the course id independent of the file name (`index.json` says id to file), when the backend fixes its final course ids.
+
+**Waiting for others**
+- [ ] **Backend:** `POST /test/grade` on the test Worker; the Gallery's R2 key (`401`); `submission/list` answered `500` for students with seeded submissions; `submit_artwork` returns no `submission_id`; the names `tiers` (Worker) and `point_tiers` (contract), and `submission_id` against `name`; add `points_awarded` to each `submission/list` row.
+- [ ] **Curriculum team:** the example works for the empty Gallery (R-58); the Hindi, Marathi, Kannada and Punjabi text; the audio clips (B18, for D15); the units whose assignment has no steps (course C8933: U02, U06, U08, U10).
+- [ ] **Product team:** the time after which feedback counts as "taking longer than expected" (A13, now 24 hours); whether the earlier chat should stay visible after the app is reopened (wait for user feedback first).
+- [ ] **Later, needs audio or a Worker route:** D15 (speaker icons and audio), D18 (interaction events, R-84), D10 (Ask TAP prepared questions).
+
 ## Before we merge the restructure
 
-- [ ] **P1** Test the login screen on real phones inside the WhatsApp browser. Use the Redmi Note 13, the Samsung A31, and one Samsung phone that works.
-- [ ] **P1** Click through the app again on a build made with `scripts/build_web.sh`. Then long-press the logos on the login screen and read the commit. This shows exactly which code you tested.
+- [ ] **P1** Test the sign-in link and the whole student flow on real phones inside the WhatsApp browser. Use the Redmi Note 13, the Samsung A31, and one Samsung phone that works. (There is no login screen any more: the student opens the WhatsApp link.)
+- [ ] **P1** Click through the app again on a build made with `scripts/build_web.sh`. Then long-press the icon on the "Open your TAP link" page (or "TAP" at the bottom of the Me page) and read the commit. This shows exactly which code you tested.
   - Already done on earlier builds: login, home and the other screens on one account. Onboarding with course registration on another account.
   - We do not know the commit of those builds. They were deployed before the script existed.
 - [ ] **P2** The SDE will close pull request #2 (`feature/restructure-frontend`). We use the restructure on `refactor/feature-structure` instead.
