@@ -16,7 +16,11 @@ const _migrated = [
 ];
 
 /// Whole folders that are moved: every file inside is checked.
-const _migratedFolders = ['lib/features/home', 'lib/features/me'];
+const _migratedFolders = [
+  'lib/features/home',
+  'lib/features/me',
+  'lib/features/gallery',
+];
 
 void main() {
   test('migrated files have no text written in the code', () {

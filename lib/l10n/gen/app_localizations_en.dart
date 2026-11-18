@@ -260,4 +260,72 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get projectNotAcceptedHint =>
       'You have used both tries, so you cannot send it again.';
+
+  @override
+  String get galleryTitle => 'Gallery';
+
+  @override
+  String get gallerySubtitle => 'See what others made';
+
+  @override
+  String get galleryThisActivity => 'THIS ACTIVITY';
+
+  @override
+  String get galleryYourSubmission => 'Your submission';
+
+  @override
+  String get galleryFromStudents => 'From TAP students like you';
+
+  @override
+  String get galleryLoadFailed =>
+      'We couldn\'t load the Gallery. Please try again.';
+
+  @override
+  String get galleryEmpty => 'No shared work yet. Be the first to share yours!';
+
+  @override
+  String get galleryLoadMoreFailed =>
+      'We couldn\'t load more. Please try again.';
+
+  @override
+  String get galleryLoadMore => 'Load more';
+
+  @override
+  String get galleryShareWork => 'Share your work';
+
+  @override
+  String get galleryYouShared => 'You\'ve shared';
+
+  @override
+  String galleryVideoBy(String initials) {
+    return 'Video by $initials';
+  }
+
+  @override
+  String galleryWorkBy(String initials) {
+    return 'Work by $initials';
+  }
+
+  @override
+  String get galleryClose => 'Close';
+
+  @override
+  String get galleryPrevious => 'Previous';
+
+  @override
+  String get galleryNext => 'Next';
+
+  @override
+  String galleryPosition(int n, int total) {
+    return '$n of $total';
+  }
+
+  @override
+  String get gallerySwipe => 'Swipe to see more';
+
+  @override
+  String get galleryWantToShare => 'Want to share your work too?';
+
+  @override
+  String get galleryOpenVideo => 'Open video';
 }

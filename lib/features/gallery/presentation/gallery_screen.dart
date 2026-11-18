@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../l10n/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -33,9 +34,9 @@ class GalleryScreen extends ConsumerWidget {
           bottom: false,
           child: Column(
             children: [
-              const AppHeader(
-                title: 'Gallery',
-                subtitle: 'See what others made',
+              AppHeader(
+                title: context.l10n.galleryTitle,
+                subtitle: context.l10n.gallerySubtitle,
               ),
               Expanded(
                 child: GalleryView(

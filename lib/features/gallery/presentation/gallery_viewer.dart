@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../domain/gallery/gallery_models.dart';
@@ -59,14 +60,17 @@ class _GalleryViewerState extends State<GalleryViewer> {
             Row(
               children: [
                 IconButton(
-                  tooltip: 'Close',
+                  tooltip: context.l10n.galleryClose,
                   color: Colors.white,
                   icon: const Icon(Icons.close_rounded),
                   onPressed: () => Navigator.of(context).pop(),
                 ),
                 Expanded(
                   child: Text(
-                    '${_index + 1} of ${widget.items.length}',
+                    context.l10n.galleryPosition(
+                      _index + 1,
+                      widget.items.length,
+                    ),
                     textAlign: TextAlign.center,
                     style: GoogleFonts.inter(
                       color: Colors.white,
@@ -92,19 +96,19 @@ class _GalleryViewerState extends State<GalleryViewer> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  tooltip: 'Previous',
+                  tooltip: context.l10n.galleryPrevious,
                   color: Colors.white,
                   icon: const Icon(Icons.chevron_left_rounded, size: 34),
                   onPressed: _index > 0 ? () => _go(_index - 1) : null,
                 ),
                 const SizedBox(width: 12),
                 Text(
-                  'Swipe to see more',
+                  context.l10n.gallerySwipe,
                   style: GoogleFonts.inter(color: Colors.white70, fontSize: 12),
                 ),
                 const SizedBox(width: 12),
                 IconButton(
-                  tooltip: 'Next',
+                  tooltip: context.l10n.galleryNext,
                   color: Colors.white,
                   icon: const Icon(Icons.chevron_right_rounded, size: 34),
                   onPressed: _index < last ? () => _go(_index + 1) : null,
@@ -118,7 +122,7 @@ class _GalleryViewerState extends State<GalleryViewer> {
                   children: [
                     Expanded(
                       child: Text(
-                        'Want to share your work too?',
+                        context.l10n.galleryWantToShare,
                         style: GoogleFonts.inter(
                           color: Colors.white,
                           fontWeight: FontWeight.w600,
@@ -127,7 +131,7 @@ class _GalleryViewerState extends State<GalleryViewer> {
                     ),
                     ElevatedButton(
                       onPressed: widget.onShare,
-                      child: const Text('Share your work'),
+                      child: Text(context.l10n.galleryShareWork),
                     ),
                   ],
                 ),
@@ -162,7 +166,7 @@ class _Page extends StatelessWidget {
             const SizedBox(height: 14),
             ElevatedButton(
               onPressed: () => onOpenVideo(item.url),
-              child: const Text('Open video'),
+              child: Text(context.l10n.galleryOpenVideo),
             ),
           ],
         ),

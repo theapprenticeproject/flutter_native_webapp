@@ -553,6 +553,126 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You have used both tries, so you cannot send it again.'**
   String get projectNotAcceptedHint;
+
+  /// No description provided for @galleryTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Gallery'**
+  String get galleryTitle;
+
+  /// No description provided for @gallerySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'See what others made'**
+  String get gallerySubtitle;
+
+  /// No description provided for @galleryThisActivity.
+  ///
+  /// In en, this message translates to:
+  /// **'THIS ACTIVITY'**
+  String get galleryThisActivity;
+
+  /// No description provided for @galleryYourSubmission.
+  ///
+  /// In en, this message translates to:
+  /// **'Your submission'**
+  String get galleryYourSubmission;
+
+  /// No description provided for @galleryFromStudents.
+  ///
+  /// In en, this message translates to:
+  /// **'From TAP students like you'**
+  String get galleryFromStudents;
+
+  /// No description provided for @galleryLoadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'We couldn\'t load the Gallery. Please try again.'**
+  String get galleryLoadFailed;
+
+  /// No description provided for @galleryEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No shared work yet. Be the first to share yours!'**
+  String get galleryEmpty;
+
+  /// No description provided for @galleryLoadMoreFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'We couldn\'t load more. Please try again.'**
+  String get galleryLoadMoreFailed;
+
+  /// No description provided for @galleryLoadMore.
+  ///
+  /// In en, this message translates to:
+  /// **'Load more'**
+  String get galleryLoadMore;
+
+  /// No description provided for @galleryShareWork.
+  ///
+  /// In en, this message translates to:
+  /// **'Share your work'**
+  String get galleryShareWork;
+
+  /// No description provided for @galleryYouShared.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve shared'**
+  String get galleryYouShared;
+
+  /// No description provided for @galleryVideoBy.
+  ///
+  /// In en, this message translates to:
+  /// **'Video by {initials}'**
+  String galleryVideoBy(String initials);
+
+  /// No description provided for @galleryWorkBy.
+  ///
+  /// In en, this message translates to:
+  /// **'Work by {initials}'**
+  String galleryWorkBy(String initials);
+
+  /// No description provided for @galleryClose.
+  ///
+  /// In en, this message translates to:
+  /// **'Close'**
+  String get galleryClose;
+
+  /// No description provided for @galleryPrevious.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous'**
+  String get galleryPrevious;
+
+  /// No description provided for @galleryNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get galleryNext;
+
+  /// No description provided for @galleryPosition.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} of {total}'**
+  String galleryPosition(int n, int total);
+
+  /// No description provided for @gallerySwipe.
+  ///
+  /// In en, this message translates to:
+  /// **'Swipe to see more'**
+  String get gallerySwipe;
+
+  /// No description provided for @galleryWantToShare.
+  ///
+  /// In en, this message translates to:
+  /// **'Want to share your work too?'**
+  String get galleryWantToShare;
+
+  /// No description provided for @galleryOpenVideo.
+  ///
+  /// In en, this message translates to:
+  /// **'Open video'**
+  String get galleryOpenVideo;
 }
 
 class _AppLocalizationsDelegate

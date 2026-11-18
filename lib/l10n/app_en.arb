@@ -108,5 +108,49 @@
   "projectNotValidDefault": "This project needs another try.",
   "projectNotValidHint": "Open the activity from Home to send it again.",
   "projectNotAcceptedDefault": "This project was not accepted.",
-  "projectNotAcceptedHint": "You have used both tries, so you cannot send it again."
+  "projectNotAcceptedHint": "You have used both tries, so you cannot send it again.",
+  "galleryTitle": "Gallery",
+  "gallerySubtitle": "See what others made",
+  "galleryThisActivity": "THIS ACTIVITY",
+  "galleryYourSubmission": "Your submission",
+  "galleryFromStudents": "From TAP students like you",
+  "galleryLoadFailed": "We couldn't load the Gallery. Please try again.",
+  "galleryEmpty": "No shared work yet. Be the first to share yours!",
+  "galleryLoadMoreFailed": "We couldn't load more. Please try again.",
+  "galleryLoadMore": "Load more",
+  "galleryShareWork": "Share your work",
+  "galleryYouShared": "You've shared",
+  "galleryVideoBy": "Video by {initials}",
+  "@galleryVideoBy": {
+    "placeholders": {
+      "initials": {
+        "type": "String"
+      }
+    }
+  },
+  "galleryWorkBy": "Work by {initials}",
+  "@galleryWorkBy": {
+    "placeholders": {
+      "initials": {
+        "type": "String"
+      }
+    }
+  },
+  "galleryClose": "Close",
+  "galleryPrevious": "Previous",
+  "galleryNext": "Next",
+  "galleryPosition": "{n} of {total}",
+  "@galleryPosition": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "gallerySwipe": "Swipe to see more",
+  "galleryWantToShare": "Want to share your work too?",
+  "galleryOpenVideo": "Open video"
 }

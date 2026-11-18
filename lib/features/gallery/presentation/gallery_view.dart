@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/theme/app_theme.dart';
@@ -49,7 +50,7 @@ class GalleryView extends StatelessWidget {
       children: [
         if (activityTitle != null) ...[
           Text(
-            'THIS ACTIVITY',
+            context.l10n.galleryThisActivity,
             style: GoogleFonts.inter(
               fontSize: 11,
               fontWeight: FontWeight.w800,
@@ -68,18 +69,18 @@ class GalleryView extends StatelessWidget {
           ),
           const SizedBox(height: 20),
         ],
-        _Title('Your submission'),
+        _Title(context.l10n.galleryYourSubmission),
         const SizedBox(height: 10),
         _OwnWork(url: ownWorkUrl, shared: shared, onShare: onShare),
         const SizedBox(height: 26),
-        _Title('From TAP students like you'),
+        _Title(context.l10n.galleryFromStudents),
         const SizedBox(height: 10),
-        ..._grid(),
+        ..._grid(context),
       ],
     );
   }
 
-  List<Widget> _grid() {
+  List<Widget> _grid(BuildContext context) {
     if (loading) {
       return const [
         Padding(
@@ -90,15 +91,18 @@ class GalleryView extends StatelessWidget {
     }
     if (failed) {
       return [
-        _Message("We couldn't load the Gallery. Please try again."),
+        _Message(context.l10n.galleryLoadFailed),
         const SizedBox(height: 10),
-        OutlinedButton(onPressed: onRetry, child: const Text('Try again')),
+        OutlinedButton(
+          onPressed: onRetry,
+          child: Text(context.l10n.buttonTryAgain),
+        ),
       ];
     }
     if (items.isEmpty) {
       // shortcut: the curriculum team's example works (R-58) are not bundled
       // yet. Show them here when that content exists.
-      return [_Message('No shared work yet. Be the first to share yours!')];
+      return [_Message(context.l10n.galleryEmpty)];
     }
     return [
       GridView.builder(
@@ -115,13 +119,16 @@ class GalleryView extends StatelessWidget {
       ),
       const SizedBox(height: 14),
       if (moreFailed) ...[
-        _Message("We couldn't load more. Please try again."),
+        _Message(context.l10n.galleryLoadMoreFailed),
         const SizedBox(height: 8),
       ],
       if (loadingMore)
         const Center(child: CircularProgressIndicator())
       else if (hasMore)
-        OutlinedButton(onPressed: onLoadMore, child: const Text('Load more')),
+        OutlinedButton(
+          onPressed: onLoadMore,
+          child: Text(context.l10n.galleryLoadMore),
+        ),
     ];
   }
 }
@@ -188,7 +195,7 @@ class _OwnWork extends StatelessWidget {
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: onShare,
-              child: const Text('Share your work'),
+              child: Text(context.l10n.galleryShareWork),
             ),
           ],
         ),
@@ -224,7 +231,7 @@ class _OwnWork extends StatelessWidget {
                 borderRadius: BorderRadius.circular(999),
               ),
               child: Text(
-                "You've shared",
+                context.l10n.galleryYouShared,
                 style: GoogleFonts.inter(
                   fontSize: 12,
                   fontWeight: FontWeight.w800,
@@ -249,8 +256,8 @@ class _Tile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Semantics(
       label: item.isVideo
-          ? 'Video by ${item.initials}'
-          : 'Work by ${item.initials}',
+          ? context.l10n.galleryVideoBy(item.initials)
+          : context.l10n.galleryWorkBy(item.initials),
       button: true,
       child: InkWell(
         onTap: onTap,
