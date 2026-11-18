@@ -1,3 +1,4 @@
+import '../../l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -19,7 +20,7 @@ class LoadErrorView extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final friendly = describeError(error);
+    final friendly = describeError(error, context.l10n);
     return ErrorView(
       title: friendly.title,
       message: friendly.message,

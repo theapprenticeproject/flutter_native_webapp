@@ -9,7 +9,6 @@ class ErrorScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ErrorView(
-
       title: 'Something went wrong',
       message:
           'We had trouble loading this page. Please check your internet connection and try again.',
@@ -20,7 +19,6 @@ class ErrorScreen extends StatelessWidget {
       desktopButtonText: 'Retry',
 
       onRetry: () {
-
         context.go(AppRoutes.splash);
       },
     );

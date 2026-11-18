@@ -1,4 +1,3 @@
-
 class LearnerArchetype {
   LearnerArchetype._();
 

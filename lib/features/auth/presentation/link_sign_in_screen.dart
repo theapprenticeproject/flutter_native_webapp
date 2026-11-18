@@ -1,3 +1,4 @@
+import '../../../l10n/l10n.dart';
 import '../../../shared/web/address_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -50,15 +51,15 @@ class _LinkSignInScreenState extends ConsumerState<LinkSignInScreen> {
   Widget build(BuildContext context) {
     final error = _error;
     if (error == null) {
-      return const Scaffold(body: LoadingView(message: 'Opening your link...'));
+      return Scaffold(body: LoadingView(message: context.l10n.linkOpening));
     }
 
     // A bad or old link cannot be fixed by trying again.
-    final friendly = describeError(error);
+    final friendly = describeError(error, context.l10n);
     if (friendly.action == ErrorAction.signInAgain) {
-      return const ErrorView(
-        title: 'This link is not working',
-        message: 'Please ask for a new link on WhatsApp.',
+      return ErrorView(
+        title: context.l10n.linkNotWorkingTitle,
+        message: context.l10n.linkNotWorkingMessage,
         buttonText: '',
         onRetry: _noop,
         showButton: false,

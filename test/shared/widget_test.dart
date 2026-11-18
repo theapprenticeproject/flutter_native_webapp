@@ -23,7 +23,6 @@ void main() {
   testWidgets('Renders Mobile layout when screen width is under 600', (
     WidgetTester tester,
   ) async {
-
     tester.view.physicalSize = const Size(400, 800);
     tester.view.devicePixelRatio = 1.0;
 
@@ -40,7 +39,6 @@ void main() {
   testWidgets('Renders Desktop layout when screen width is over 600', (
     WidgetTester tester,
   ) async {
-
     tester.view.physicalSize = const Size(1024, 768);
     tester.view.devicePixelRatio = 1.0;
 

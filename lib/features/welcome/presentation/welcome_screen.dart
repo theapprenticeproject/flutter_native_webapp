@@ -67,7 +67,6 @@ class _WelcomeBackScreenState extends ConsumerState<WelcomeBackScreen> {
           padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
           child: Column(
             children: [
-
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -94,7 +93,6 @@ class _WelcomeBackScreenState extends ConsumerState<WelcomeBackScreen> {
               Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-
                   Center(
                     child: Container(
                       width: isDesktop ? 300 : 240,

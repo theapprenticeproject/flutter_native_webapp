@@ -1,3 +1,4 @@
+import '../../../l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -33,7 +34,7 @@ class OpenLinkScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 20),
                   Text(
-                    'Open your TAP link',
+                    context.l10n.openLinkTitle,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.inter(
                       fontSize: 24,
@@ -43,8 +44,7 @@ class OpenLinkScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 12),
                   Text(
-                    'Go to the WhatsApp message from TAP and tap the link in it. '
-                    'You will come back here and be ready to learn.',
+                    context.l10n.openLinkBody,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.inter(
                       fontSize: 16,

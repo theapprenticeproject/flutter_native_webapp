@@ -98,8 +98,8 @@ class LearnerStateModel {
     final videosCompleted = (json['videos_completed'] as num?)?.toInt();
     final quizIndex = (json['quiz_index'] as num?)?.toInt();
     final quizzesCompleted = (json['quizzes_completed'] as num?)?.toInt();
-    final courseSubmissionIndex =
-        (json['course_submission_index'] as num?)?.toInt();
+    final courseSubmissionIndex = (json['course_submission_index'] as num?)
+        ?.toInt();
 
     final nextVideosCompleted = [
       existing.videosCompleted,

@@ -1,3 +1,4 @@
+import '../../l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -12,10 +13,18 @@ class AppNav extends StatelessWidget {
 
   /// The bottom bar has 3 items (R-1). There is no Class tab: the activity
   /// opens from Home (R-2), so Home stays the active tab while it runs.
-  static const _items = [
-    _NavDestination(AppRoutes.home, Icons.home_outlined, 'Home'),
-    _NavDestination(AppRoutes.gallery, Icons.photo_library_outlined, 'Gallery'),
-    _NavDestination(AppRoutes.me, Icons.account_circle_outlined, 'Me'),
+  static final _items = [
+    _NavDestination(AppRoutes.home, Icons.home_outlined, (l) => l.navHome),
+    _NavDestination(
+      AppRoutes.gallery,
+      Icons.photo_library_outlined,
+      (l) => l.navGallery,
+    ),
+    _NavDestination(
+      AppRoutes.me,
+      Icons.account_circle_outlined,
+      (l) => l.navMe,
+    ),
   ];
 
   @override
@@ -23,7 +32,7 @@ class AppNav extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFF7F7FA),
       body: child,
-      bottomNavigationBar: const _BottomNav(items: _items),
+      bottomNavigationBar: _BottomNav(items: _items),
     );
   }
 }
@@ -120,7 +129,7 @@ class _NavItem extends StatelessWidget {
                     Icon(item.icon, size: 18, color: Colors.white),
                     const SizedBox(height: 2),
                     Text(
-                      item.label,
+                      item.label(context.l10n),
                       style: GoogleFonts.inter(
                         fontSize: 11,
                         fontWeight: FontWeight.w600,
@@ -147,7 +156,7 @@ class _NavItem extends StatelessWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    item.label,
+                    item.label(context.l10n),
                     style: GoogleFonts.inter(
                       fontSize: 11,
                       fontWeight: FontWeight.w500,
@@ -164,7 +173,7 @@ class _NavItem extends StatelessWidget {
 class _NavDestination {
   final String route;
   final IconData icon;
-  final String label;
+  final String Function(AppLocalizations) label;
 
   const _NavDestination(this.route, this.icon, this.label);
 }

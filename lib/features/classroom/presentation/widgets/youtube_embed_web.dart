@@ -11,11 +11,11 @@ Widget buildYoutubeEmbed(String youtubeId) {
       ..style.border = 'none'
       ..style.width = '100%'
       ..style.height = '100%'
-      ..allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+      ..allow =
+          'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
       ..allowFullscreen = true;
     return iframe;
   });
 
   return HtmlElementView(viewType: viewType);
 }
-

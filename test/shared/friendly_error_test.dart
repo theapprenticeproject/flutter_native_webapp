@@ -11,10 +11,13 @@ import 'package:go_router/go_router.dart';
 import 'package:tapapp/core/router/app_routes.dart';
 import 'package:tapapp/domain/auth/auth_provider.dart';
 import 'package:tapapp/domain/auth/magic_link_repository.dart';
+import 'package:tapapp/l10n/gen/app_localizations.dart';
 import 'package:tapapp/shared/errors/friendly_error.dart';
 import 'package:tapapp/shared/widgets/load_error_view.dart';
 
 /// R-44: plain messages, and a button that can fix the cause.
+final _en = lookupAppLocalizations(const Locale('en'));
+
 void main() {
   final technical = RegExp(
     r'Exception|Dio|Auth|Error\(|\bnull\b|Instance of|status code|socket',
@@ -79,7 +82,7 @@ void main() {
 
   for (final entry in cases.entries) {
     test('${entry.key}: plain text and the right action', () {
-      final f = describeError(entry.value.$1);
+      final f = describeError(entry.value.$1, _en);
       expect(f.action, entry.value.$2);
       for (final text in [f.title, f.message, f.buttonText]) {
         expect(text, isNotEmpty);
@@ -114,7 +117,7 @@ void main() {
   });
 
   test('an ended session says to open the WhatsApp link again', () {
-    final f = describeError(AuthException('invalid_or_expired_token'));
+    final f = describeError(AuthException('invalid_or_expired_token'), _en);
     final text = '${f.title} ${f.message}'.toLowerCase();
     expect(f.action, ErrorAction.signInAgain);
     expect(text, contains('whatsapp'));
@@ -152,7 +155,9 @@ void main() {
       );
       await tester.pump();
 
-      await tester.tap(find.text(describeError(AuthException('x')).buttonText));
+      await tester.tap(
+        find.text(describeError(AuthException('x'), _en).buttonText),
+      );
       await tester.pumpAndSettle();
 
       expect(repo.cleared, 1);
@@ -163,7 +168,10 @@ void main() {
   test(
     'a course that is not in the app: a plain message, and no useless button',
     () {
-      final f = describeError(const CourseNotBundledException('CRS-SCI-05'));
+      final f = describeError(
+        const CourseNotBundledException('CRS-SCI-05'),
+        _en,
+      );
       final text = '${f.title} ${f.message}';
       expect(f.action, ErrorAction.none);
       expect(
