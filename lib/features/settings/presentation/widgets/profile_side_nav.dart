@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/theme/app_theme.dart';
@@ -19,8 +20,8 @@ class ProfileSideNav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final items = <(ProfileTab, String)>[
-      (ProfileTab.profile, 'Profile'),
-      (ProfileTab.about, 'About TAP'),
+      (ProfileTab.profile, context.l10n.settingsTabProfile),
+      (ProfileTab.about, context.l10n.settingsTabAbout),
     ];
 
     if (horizontal) {

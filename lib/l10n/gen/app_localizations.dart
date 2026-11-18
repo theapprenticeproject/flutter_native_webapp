@@ -841,6 +841,132 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Loading...'**
   String get loadingDefault;
+
+  /// No description provided for @settingsSectionLoadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load this section.'**
+  String get settingsSectionLoadFailed;
+
+  /// No description provided for @buttonRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get buttonRetry;
+
+  /// No description provided for @settingsProfileLoadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load your profile. Please try again later.'**
+  String get settingsProfileLoadFailed;
+
+  /// No description provided for @settingsNoProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'No active profile found.'**
+  String get settingsNoProfile;
+
+  /// No description provided for @settingsPersonal.
+  ///
+  /// In en, this message translates to:
+  /// **'Personal Details'**
+  String get settingsPersonal;
+
+  /// No description provided for @settingsFirstName.
+  ///
+  /// In en, this message translates to:
+  /// **'First name'**
+  String get settingsFirstName;
+
+  /// No description provided for @settingsLastName.
+  ///
+  /// In en, this message translates to:
+  /// **'Last name'**
+  String get settingsLastName;
+
+  /// No description provided for @settingsLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get settingsLanguage;
+
+  /// No description provided for @settingsSibling.
+  ///
+  /// In en, this message translates to:
+  /// **'Is a brother or sister also using TAP?'**
+  String get settingsSibling;
+
+  /// No description provided for @settingsYes.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes'**
+  String get settingsYes;
+
+  /// No description provided for @settingsNo.
+  ///
+  /// In en, this message translates to:
+  /// **'No'**
+  String get settingsNo;
+
+  /// No description provided for @settingsPhone.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number'**
+  String get settingsPhone;
+
+  /// No description provided for @settingsVerified.
+  ///
+  /// In en, this message translates to:
+  /// **'Verified'**
+  String get settingsVerified;
+
+  /// No description provided for @settingsSchoolDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'School Details'**
+  String get settingsSchoolDetails;
+
+  /// No description provided for @settingsSchoolName.
+  ///
+  /// In en, this message translates to:
+  /// **'School Name'**
+  String get settingsSchoolName;
+
+  /// No description provided for @settingsGrade.
+  ///
+  /// In en, this message translates to:
+  /// **'Grade'**
+  String get settingsGrade;
+
+  /// No description provided for @settingsSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Subject'**
+  String get settingsSubject;
+
+  /// No description provided for @buttonCancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get buttonCancel;
+
+  /// No description provided for @settingsSaveChanges.
+  ///
+  /// In en, this message translates to:
+  /// **'Save Changes'**
+  String get settingsSaveChanges;
+
+  /// No description provided for @settingsTabProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile'**
+  String get settingsTabProfile;
+
+  /// No description provided for @settingsTabAbout.
+  ///
+  /// In en, this message translates to:
+  /// **'About TAP'**
+  String get settingsTabAbout;
 }
 
 class _AppLocalizationsDelegate

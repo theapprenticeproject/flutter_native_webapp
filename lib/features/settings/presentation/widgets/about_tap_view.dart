@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/theme/app_theme.dart';
@@ -28,14 +29,17 @@ class AboutTapView extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Could not load this section.',
+              context.l10n.settingsSectionLoadFailed,
               style: GoogleFonts.inter(
                 fontSize: 13,
                 color: AppTheme.subheadingColor,
               ),
             ),
             const SizedBox(height: 12),
-            OutlinedButton(onPressed: onRetry, child: const Text('Retry')),
+            OutlinedButton(
+              onPressed: onRetry,
+              child: Text(context.l10n.buttonRetry),
+            ),
           ],
         ),
       );

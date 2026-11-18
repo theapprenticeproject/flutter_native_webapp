@@ -423,4 +423,68 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get loadingDefault => 'Loading...';
+
+  @override
+  String get settingsSectionLoadFailed => 'Could not load this section.';
+
+  @override
+  String get buttonRetry => 'Retry';
+
+  @override
+  String get settingsProfileLoadFailed =>
+      'Could not load your profile. Please try again later.';
+
+  @override
+  String get settingsNoProfile => 'No active profile found.';
+
+  @override
+  String get settingsPersonal => 'Personal Details';
+
+  @override
+  String get settingsFirstName => 'First name';
+
+  @override
+  String get settingsLastName => 'Last name';
+
+  @override
+  String get settingsLanguage => 'Language';
+
+  @override
+  String get settingsSibling => 'Is a brother or sister also using TAP?';
+
+  @override
+  String get settingsYes => 'Yes';
+
+  @override
+  String get settingsNo => 'No';
+
+  @override
+  String get settingsPhone => 'Phone number';
+
+  @override
+  String get settingsVerified => 'Verified';
+
+  @override
+  String get settingsSchoolDetails => 'School Details';
+
+  @override
+  String get settingsSchoolName => 'School Name';
+
+  @override
+  String get settingsGrade => 'Grade';
+
+  @override
+  String get settingsSubject => 'Subject';
+
+  @override
+  String get buttonCancel => 'Cancel';
+
+  @override
+  String get settingsSaveChanges => 'Save Changes';
+
+  @override
+  String get settingsTabProfile => 'Profile';
+
+  @override
+  String get settingsTabAbout => 'About TAP';
 }

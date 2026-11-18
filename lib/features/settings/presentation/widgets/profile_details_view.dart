@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/theme/app_theme.dart';
@@ -51,14 +52,14 @@ class ProfileDetailsView extends StatelessWidget {
     }
 
     if (loadFailed) {
-      return const _ProfileMessageCard(
-        message: 'Could not load your profile. Please try again later.',
+      return _ProfileMessageCard(
+        message: context.l10n.settingsProfileLoadFailed,
       );
     }
 
     final profile = activeProfile;
     if (profile == null) {
-      return const _ProfileMessageCard(message: 'No active profile found.');
+      return _ProfileMessageCard(message: context.l10n.settingsNoProfile);
     }
 
     final schoolName = learnerState?.profile?.schoolName ?? '—';
@@ -69,7 +70,7 @@ class ProfileDetailsView extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         _StudentSummaryCard(
-          studentName: profile.studentName ?? 'Student',
+          studentName: profile.studentName ?? context.l10n.profileStudent,
           schoolName: schoolName,
           grade: grade,
           subjectDisplay: subjectDisplay,
@@ -80,42 +81,50 @@ class ProfileDetailsView extends StatelessWidget {
           const SizedBox(height: 12),
         ],
         _EditableSection(
-          title: 'Personal Details',
+          title: context.l10n.settingsPersonal,
           children: [
             _EditableField(
-              label: 'First name',
+              label: context.l10n.settingsFirstName,
               isEditing: isEditing,
               controller: firstNameController,
             ),
             _EditableField(
-              label: 'Last name',
+              label: context.l10n.settingsLastName,
               isEditing: isEditing,
               controller: lastNameController,
             ),
             _EditableField(
-              label: 'Language',
+              label: context.l10n.settingsLanguage,
               isEditing: isEditing,
               controller: languageController,
             ),
             _ReadOnlyField(
-              label: 'Is a brother or sister also using TAP?',
-              value: hasSibling ? 'Yes' : 'No',
+              label: context.l10n.settingsSibling,
+              value: hasSibling
+                  ? context.l10n.settingsYes
+                  : context.l10n.settingsNo,
             ),
-            const _ReadOnlyField(label: 'Phone number', value: 'Verified'),
+            _ReadOnlyField(
+              label: context.l10n.settingsPhone,
+              value: context.l10n.settingsVerified,
+            ),
           ],
         ),
         const SizedBox(height: 10),
         _EditableSection(
-          title: 'School Details',
+          title: context.l10n.settingsSchoolDetails,
           children: [
-            _ReadOnlyField(label: 'School Name', value: schoolName),
+            _ReadOnlyField(
+              label: context.l10n.settingsSchoolName,
+              value: schoolName,
+            ),
             _EditableField(
-              label: 'Grade',
+              label: context.l10n.settingsGrade,
               isEditing: isEditing,
               controller: gradeController,
             ),
             _ReadOnlyField(
-              label: 'Subject',
+              label: context.l10n.settingsSubject,
               value: subjectDisplay.isEmpty ? '—' : subjectDisplay,
             ),
           ],
@@ -185,7 +194,7 @@ class _EditActionsBar extends StatelessWidget {
                 ),
               ),
               child: Text(
-                'Cancel',
+                context.l10n.buttonCancel,
                 style: GoogleFonts.inter(
                   fontSize: 14,
                   fontWeight: FontWeight.w700,
@@ -218,7 +227,7 @@ class _EditActionsBar extends StatelessWidget {
                       ),
                     )
                   : Text(
-                      'Save Changes',
+                      context.l10n.settingsSaveChanges,
                       style: GoogleFonts.inter(
                         fontSize: 14,
                         fontWeight: FontWeight.w700,
@@ -350,7 +359,7 @@ class _StudentSummaryCard extends StatelessWidget {
                       children: [
                         _MetaLine(
                           icon: Icons.menu_book_rounded,
-                          text: 'Grade $grade',
+                          text: context.l10n.profileGrade(grade),
                           width: gradeWidth,
                         ),
                         if (subjectDisplay.isNotEmpty)

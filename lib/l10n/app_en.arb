@@ -208,5 +208,26 @@
       }
     }
   },
-  "loadingDefault": "Loading..."
+  "loadingDefault": "Loading...",
+  "settingsSectionLoadFailed": "Could not load this section.",
+  "buttonRetry": "Retry",
+  "settingsProfileLoadFailed": "Could not load your profile. Please try again later.",
+  "settingsNoProfile": "No active profile found.",
+  "settingsPersonal": "Personal Details",
+  "settingsFirstName": "First name",
+  "settingsLastName": "Last name",
+  "settingsLanguage": "Language",
+  "settingsSibling": "Is a brother or sister also using TAP?",
+  "settingsYes": "Yes",
+  "settingsNo": "No",
+  "settingsPhone": "Phone number",
+  "settingsVerified": "Verified",
+  "settingsSchoolDetails": "School Details",
+  "settingsSchoolName": "School Name",
+  "settingsGrade": "Grade",
+  "settingsSubject": "Subject",
+  "buttonCancel": "Cancel",
+  "settingsSaveChanges": "Save Changes",
+  "settingsTabProfile": "Profile",
+  "settingsTabAbout": "About TAP"
 }
