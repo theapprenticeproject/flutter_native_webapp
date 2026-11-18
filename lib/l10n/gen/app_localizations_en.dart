@@ -487,4 +487,247 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsTabAbout => 'About TAP';
+
+  @override
+  String get classFileReadFailed =>
+      'Couldn\'t read that file. Please try again.';
+
+  @override
+  String get classFileAccessFailed =>
+      'Couldn\'t access that. Please try again.';
+
+  @override
+  String get classTakePhoto => 'Take a photo';
+
+  @override
+  String get classChoosePhoto => 'Choose photo from gallery';
+
+  @override
+  String get classRecordVideo => 'Record a video';
+
+  @override
+  String get classChooseVideo => 'Choose video from gallery';
+
+  @override
+  String get classTodaysActivity => 'TODAY\'S ACTIVITY 🏎️🏎️';
+
+  @override
+  String classStep(int n, int total) {
+    return 'STEP $n/$total';
+  }
+
+  @override
+  String classWillCheck(String criteria) {
+    return 'I will check for: $criteria';
+  }
+
+  @override
+  String get classFileLoadFailed =>
+      'We couldn\'t load that file. Please try picking it again.';
+
+  @override
+  String get classHintText => 'Type your answer here...';
+
+  @override
+  String get classHintAudio => 'Type or transcribe your answer here...';
+
+  @override
+  String get classShareSubmission => 'Share submission';
+
+  @override
+  String get classSubmit => 'Submit';
+
+  @override
+  String get classSent => 'Sent';
+
+  @override
+  String get classDoLater => 'I\'ll do it later';
+
+  @override
+  String get classFriendsSent => 'Friends sent 👀';
+
+  @override
+  String get classFriendsSaid => 'Friends said 👀';
+
+  @override
+  String get classSeeFriends => 'See what friends made 👀';
+
+  @override
+  String get classKindEmoji => '👉 EMOJI';
+
+  @override
+  String get classKindText => '💬 TEXT';
+
+  @override
+  String get classKindAudio => '🎤 AUDIO';
+
+  @override
+  String get classKindTextAudio => '💬 TEXT / 🎤 AUDIO';
+
+  @override
+  String get classKindPhoto => '📷 PHOTO';
+
+  @override
+  String get classKindVideo => '🎥 VIDEO';
+
+  @override
+  String get classKindPhotoVideo => '📷 PHOTO / 🎥 VIDEO';
+
+  @override
+  String get classHowToSubmit => 'How to submit';
+
+  @override
+  String classCheck(String criteria) {
+    return 'Check: $criteria';
+  }
+
+  @override
+  String classScore(String score) {
+    return 'Score: $score';
+  }
+
+  @override
+  String get classNoSubmissionPoints =>
+      'No submission points were added for this attempt.';
+
+  @override
+  String classCongratsName(String name) {
+    return 'Congratulations $name!!!🥳';
+  }
+
+  @override
+  String classPointsPill(int points) {
+    return '⊙ +$points pts';
+  }
+
+  @override
+  String classWonPoints(int points) {
+    return 'You have won $points points🪙😍\nYou did a great job champion!';
+  }
+
+  @override
+  String get classSubmissionHelp => 'Submission Help';
+
+  @override
+  String get classWantToContinue => 'Want to continue?';
+
+  @override
+  String get classStartNext => 'Start the next activity when you are ready.';
+
+  @override
+  String get classLetsGo => 'Let\'s go';
+
+  @override
+  String get classMaybeLater => 'Maybe later';
+
+  @override
+  String get classBackHome => 'Back to home';
+
+  @override
+  String get classCourseComplete => 'Course complete! 🎉';
+
+  @override
+  String get classCourseCompleteBody =>
+      'You completed every activity in this course.';
+
+  @override
+  String get classWatchAnother => 'Watch another video?';
+
+  @override
+  String get classYoullEarn => 'YOU\'LL EARN';
+
+  @override
+  String get classDidWell => 'You did really well! 🎉';
+
+  @override
+  String get classFinishedForNow =>
+      'You\'ve finished your activities for now. Come back soon for the next one!';
+
+  @override
+  String get classTodaysPicture => 'Today\'s picture';
+
+  @override
+  String get classPictureUnlocked =>
+      'Congratulations !!🎉 You have unlocked today\'s picture';
+
+  @override
+  String get classPictureLocked =>
+      'Complete the activity to reveal the secret character hiding behind the cloud! ☁️✨';
+
+  @override
+  String classPictureProgress(int n) {
+    return 'Today\'s picture · $n/4';
+  }
+
+  @override
+  String get classPictureUnlocked2 =>
+      'Congratulations! 🎉 You unlocked today\'s picture.';
+
+  @override
+  String get classPictureLocked2 =>
+      'Finish each step to reveal the picture hiding behind the cloud ☁️';
+
+  @override
+  String classPictureSemantics(int n) {
+    return 'Today\'s picture, $n of 4 pieces';
+  }
+
+  @override
+  String classQuizQuestion(int n, String question) {
+    return 'Q$n. $question';
+  }
+
+  @override
+  String classQuizOf(int n, int total) {
+    return 'Question $n of $total';
+  }
+
+  @override
+  String get classConfirm => 'Confirm';
+
+  @override
+  String classCorrectPoints(int points) {
+    return 'Correct! +$points points';
+  }
+
+  @override
+  String get classCorrect => 'Correct!';
+
+  @override
+  String get classNotQuite => 'Not quite';
+
+  @override
+  String classCorrectAnswerIs(String answer) {
+    return 'Correct answer: $answer';
+  }
+
+  @override
+  String get classQuizDone => 'Quiz done!';
+
+  @override
+  String classQuizScore(int correct, int total) {
+    return 'You got $correct out of $total correct.';
+  }
+
+  @override
+  String get classWatchVideo => 'Watch the video 👇';
+
+  @override
+  String classWatchTitle(String title) {
+    return 'Watch: $title';
+  }
+
+  @override
+  String get classWatched => 'Watched';
+
+  @override
+  String classIWatched(int points) {
+    return 'I watched it • +$points points';
+  }
+
+  @override
+  String get classSomethingWrong => 'Something went wrong.';
+
+  @override
+  String get classTapBuddy => 'TAP Buddy';
 }

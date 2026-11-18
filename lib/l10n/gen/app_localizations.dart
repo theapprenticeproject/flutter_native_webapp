@@ -967,6 +967,408 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'About TAP'**
   String get settingsTabAbout;
+
+  /// No description provided for @classFileReadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t read that file. Please try again.'**
+  String get classFileReadFailed;
+
+  /// No description provided for @classFileAccessFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t access that. Please try again.'**
+  String get classFileAccessFailed;
+
+  /// No description provided for @classTakePhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Take a photo'**
+  String get classTakePhoto;
+
+  /// No description provided for @classChoosePhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose photo from gallery'**
+  String get classChoosePhoto;
+
+  /// No description provided for @classRecordVideo.
+  ///
+  /// In en, this message translates to:
+  /// **'Record a video'**
+  String get classRecordVideo;
+
+  /// No description provided for @classChooseVideo.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose video from gallery'**
+  String get classChooseVideo;
+
+  /// No description provided for @classTodaysActivity.
+  ///
+  /// In en, this message translates to:
+  /// **'TODAY\'S ACTIVITY 🏎️🏎️'**
+  String get classTodaysActivity;
+
+  /// No description provided for @classStep.
+  ///
+  /// In en, this message translates to:
+  /// **'STEP {n}/{total}'**
+  String classStep(int n, int total);
+
+  /// No description provided for @classWillCheck.
+  ///
+  /// In en, this message translates to:
+  /// **'I will check for: {criteria}'**
+  String classWillCheck(String criteria);
+
+  /// No description provided for @classFileLoadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'We couldn\'t load that file. Please try picking it again.'**
+  String get classFileLoadFailed;
+
+  /// No description provided for @classHintText.
+  ///
+  /// In en, this message translates to:
+  /// **'Type your answer here...'**
+  String get classHintText;
+
+  /// No description provided for @classHintAudio.
+  ///
+  /// In en, this message translates to:
+  /// **'Type or transcribe your answer here...'**
+  String get classHintAudio;
+
+  /// No description provided for @classShareSubmission.
+  ///
+  /// In en, this message translates to:
+  /// **'Share submission'**
+  String get classShareSubmission;
+
+  /// No description provided for @classSubmit.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit'**
+  String get classSubmit;
+
+  /// No description provided for @classSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Sent'**
+  String get classSent;
+
+  /// No description provided for @classDoLater.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'ll do it later'**
+  String get classDoLater;
+
+  /// No description provided for @classFriendsSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Friends sent 👀'**
+  String get classFriendsSent;
+
+  /// No description provided for @classFriendsSaid.
+  ///
+  /// In en, this message translates to:
+  /// **'Friends said 👀'**
+  String get classFriendsSaid;
+
+  /// No description provided for @classSeeFriends.
+  ///
+  /// In en, this message translates to:
+  /// **'See what friends made 👀'**
+  String get classSeeFriends;
+
+  /// No description provided for @classKindEmoji.
+  ///
+  /// In en, this message translates to:
+  /// **'👉 EMOJI'**
+  String get classKindEmoji;
+
+  /// No description provided for @classKindText.
+  ///
+  /// In en, this message translates to:
+  /// **'💬 TEXT'**
+  String get classKindText;
+
+  /// No description provided for @classKindAudio.
+  ///
+  /// In en, this message translates to:
+  /// **'🎤 AUDIO'**
+  String get classKindAudio;
+
+  /// No description provided for @classKindTextAudio.
+  ///
+  /// In en, this message translates to:
+  /// **'💬 TEXT / 🎤 AUDIO'**
+  String get classKindTextAudio;
+
+  /// No description provided for @classKindPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'📷 PHOTO'**
+  String get classKindPhoto;
+
+  /// No description provided for @classKindVideo.
+  ///
+  /// In en, this message translates to:
+  /// **'🎥 VIDEO'**
+  String get classKindVideo;
+
+  /// No description provided for @classKindPhotoVideo.
+  ///
+  /// In en, this message translates to:
+  /// **'📷 PHOTO / 🎥 VIDEO'**
+  String get classKindPhotoVideo;
+
+  /// No description provided for @classHowToSubmit.
+  ///
+  /// In en, this message translates to:
+  /// **'How to submit'**
+  String get classHowToSubmit;
+
+  /// No description provided for @classCheck.
+  ///
+  /// In en, this message translates to:
+  /// **'Check: {criteria}'**
+  String classCheck(String criteria);
+
+  /// No description provided for @classScore.
+  ///
+  /// In en, this message translates to:
+  /// **'Score: {score}'**
+  String classScore(String score);
+
+  /// No description provided for @classNoSubmissionPoints.
+  ///
+  /// In en, this message translates to:
+  /// **'No submission points were added for this attempt.'**
+  String get classNoSubmissionPoints;
+
+  /// No description provided for @classCongratsName.
+  ///
+  /// In en, this message translates to:
+  /// **'Congratulations {name}!!!🥳'**
+  String classCongratsName(String name);
+
+  /// No description provided for @classPointsPill.
+  ///
+  /// In en, this message translates to:
+  /// **'⊙ +{points} pts'**
+  String classPointsPill(int points);
+
+  /// No description provided for @classWonPoints.
+  ///
+  /// In en, this message translates to:
+  /// **'You have won {points} points🪙😍\nYou did a great job champion!'**
+  String classWonPoints(int points);
+
+  /// No description provided for @classSubmissionHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Submission Help'**
+  String get classSubmissionHelp;
+
+  /// No description provided for @classWantToContinue.
+  ///
+  /// In en, this message translates to:
+  /// **'Want to continue?'**
+  String get classWantToContinue;
+
+  /// No description provided for @classStartNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Start the next activity when you are ready.'**
+  String get classStartNext;
+
+  /// No description provided for @classLetsGo.
+  ///
+  /// In en, this message translates to:
+  /// **'Let\'s go'**
+  String get classLetsGo;
+
+  /// No description provided for @classMaybeLater.
+  ///
+  /// In en, this message translates to:
+  /// **'Maybe later'**
+  String get classMaybeLater;
+
+  /// No description provided for @classBackHome.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to home'**
+  String get classBackHome;
+
+  /// No description provided for @classCourseComplete.
+  ///
+  /// In en, this message translates to:
+  /// **'Course complete! 🎉'**
+  String get classCourseComplete;
+
+  /// No description provided for @classCourseCompleteBody.
+  ///
+  /// In en, this message translates to:
+  /// **'You completed every activity in this course.'**
+  String get classCourseCompleteBody;
+
+  /// No description provided for @classWatchAnother.
+  ///
+  /// In en, this message translates to:
+  /// **'Watch another video?'**
+  String get classWatchAnother;
+
+  /// No description provided for @classYoullEarn.
+  ///
+  /// In en, this message translates to:
+  /// **'YOU\'LL EARN'**
+  String get classYoullEarn;
+
+  /// No description provided for @classDidWell.
+  ///
+  /// In en, this message translates to:
+  /// **'You did really well! 🎉'**
+  String get classDidWell;
+
+  /// No description provided for @classFinishedForNow.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve finished your activities for now. Come back soon for the next one!'**
+  String get classFinishedForNow;
+
+  /// No description provided for @classTodaysPicture.
+  ///
+  /// In en, this message translates to:
+  /// **'Today\'s picture'**
+  String get classTodaysPicture;
+
+  /// No description provided for @classPictureUnlocked.
+  ///
+  /// In en, this message translates to:
+  /// **'Congratulations !!🎉 You have unlocked today\'s picture'**
+  String get classPictureUnlocked;
+
+  /// No description provided for @classPictureLocked.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete the activity to reveal the secret character hiding behind the cloud! ☁️✨'**
+  String get classPictureLocked;
+
+  /// No description provided for @classPictureProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Today\'s picture · {n}/4'**
+  String classPictureProgress(int n);
+
+  /// No description provided for @classPictureUnlocked2.
+  ///
+  /// In en, this message translates to:
+  /// **'Congratulations! 🎉 You unlocked today\'s picture.'**
+  String get classPictureUnlocked2;
+
+  /// No description provided for @classPictureLocked2.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish each step to reveal the picture hiding behind the cloud ☁️'**
+  String get classPictureLocked2;
+
+  /// No description provided for @classPictureSemantics.
+  ///
+  /// In en, this message translates to:
+  /// **'Today\'s picture, {n} of 4 pieces'**
+  String classPictureSemantics(int n);
+
+  /// No description provided for @classQuizQuestion.
+  ///
+  /// In en, this message translates to:
+  /// **'Q{n}. {question}'**
+  String classQuizQuestion(int n, String question);
+
+  /// No description provided for @classQuizOf.
+  ///
+  /// In en, this message translates to:
+  /// **'Question {n} of {total}'**
+  String classQuizOf(int n, int total);
+
+  /// No description provided for @classConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get classConfirm;
+
+  /// No description provided for @classCorrectPoints.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct! +{points} points'**
+  String classCorrectPoints(int points);
+
+  /// No description provided for @classCorrect.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct!'**
+  String get classCorrect;
+
+  /// No description provided for @classNotQuite.
+  ///
+  /// In en, this message translates to:
+  /// **'Not quite'**
+  String get classNotQuite;
+
+  /// No description provided for @classCorrectAnswerIs.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct answer: {answer}'**
+  String classCorrectAnswerIs(String answer);
+
+  /// No description provided for @classQuizDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Quiz done!'**
+  String get classQuizDone;
+
+  /// No description provided for @classQuizScore.
+  ///
+  /// In en, this message translates to:
+  /// **'You got {correct} out of {total} correct.'**
+  String classQuizScore(int correct, int total);
+
+  /// No description provided for @classWatchVideo.
+  ///
+  /// In en, this message translates to:
+  /// **'Watch the video 👇'**
+  String get classWatchVideo;
+
+  /// No description provided for @classWatchTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Watch: {title}'**
+  String classWatchTitle(String title);
+
+  /// No description provided for @classWatched.
+  ///
+  /// In en, this message translates to:
+  /// **'Watched'**
+  String get classWatched;
+
+  /// No description provided for @classIWatched.
+  ///
+  /// In en, this message translates to:
+  /// **'I watched it • +{points} points'**
+  String classIWatched(int points);
+
+  /// No description provided for @classSomethingWrong.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong.'**
+  String get classSomethingWrong;
+
+  /// No description provided for @classTapBuddy.
+  ///
+  /// In en, this message translates to:
+  /// **'TAP Buddy'**
+  String get classTapBuddy;
 }
 
 class _AppLocalizationsDelegate

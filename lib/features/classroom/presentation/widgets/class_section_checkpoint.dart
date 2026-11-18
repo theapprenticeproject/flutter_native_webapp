@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/theme/app_theme.dart';
@@ -168,7 +169,7 @@ class ClassTapBuddyOrb extends StatelessWidget {
                 ),
                 const SizedBox(height: 5),
                 Text(
-                  'TAP Buddy',
+                  context.l10n.classTapBuddy,
                   style: GoogleFonts.inter(
                     fontSize: size * 0.066,
                     fontWeight: FontWeight.w700,

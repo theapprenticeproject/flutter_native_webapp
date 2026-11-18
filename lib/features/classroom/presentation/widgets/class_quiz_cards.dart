@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/theme/app_theme.dart';
@@ -47,7 +48,7 @@ class _ClassQuizQuestionCardState extends State<ClassQuizQuestionCard> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Q${questionIndex + 1}. $question',
+            context.l10n.classQuizQuestion(questionIndex + 1, question),
             style: GoogleFonts.inter(
               fontSize: 16,
               fontWeight: FontWeight.w700,
@@ -56,7 +57,7 @@ class _ClassQuizQuestionCardState extends State<ClassQuizQuestionCard> {
           ),
           const SizedBox(height: 4),
           Text(
-            'Question ${questionIndex + 1} of $totalQuestions',
+            context.l10n.classQuizOf(questionIndex + 1, totalQuestions),
             style: GoogleFonts.inter(
               fontSize: 11,
               fontWeight: FontWeight.w600,
@@ -162,7 +163,7 @@ class _ClassQuizQuestionCardState extends State<ClassQuizQuestionCard> {
                   borderRadius: BorderRadius.circular(12),
                 ),
               ),
-              child: const Text('Confirm'),
+              child: Text(context.l10n.classConfirm),
             ),
           ),
         ],
@@ -205,9 +206,9 @@ class ClassQuizFeedbackCard extends StatelessWidget {
               Text(
                 isCorrect
                     ? (earnedPoints != null
-                          ? 'Correct! +$earnedPoints points'
-                          : 'Correct!')
-                    : 'Not quite',
+                          ? context.l10n.classCorrectPoints(earnedPoints)
+                          : context.l10n.classCorrect)
+                    : context.l10n.classNotQuite,
                 style: GoogleFonts.inter(
                   fontSize: 15,
                   fontWeight: FontWeight.w800,
@@ -218,7 +219,7 @@ class ClassQuizFeedbackCard extends StatelessWidget {
           if (!isCorrect && correctOptionText != null) ...[
             const SizedBox(height: 8),
             Text(
-              'Correct answer: $correctOptionText',
+              context.l10n.classCorrectAnswerIs(correctOptionText),
               style: GoogleFonts.inter(
                 fontSize: 13,
                 fontWeight: FontWeight.w600,
@@ -264,7 +265,7 @@ class ClassQuizSummaryCard extends StatelessWidget {
           const SizedBox(width: 10),
           Expanded(
             child: Text(
-              '${message.text ?? 'Quiz done!'}\nYou got $correct out of $total correct.',
+              '${message.text ?? context.l10n.classQuizDone}\n${context.l10n.classQuizScore(correct, total)}',
               style: GoogleFonts.inter(
                 fontSize: 14,
                 height: 1.4,

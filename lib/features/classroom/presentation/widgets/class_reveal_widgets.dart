@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import '../../../../l10n/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -41,7 +42,7 @@ class ClassContinueBar extends StatelessWidget {
                   borderRadius: BorderRadius.circular(14),
                 ),
               ),
-              child: const Text('Continue'),
+              child: Text(context.l10n.buttonContinue),
             ),
           ),
         ),
@@ -73,7 +74,7 @@ class ClassPendingActivityChoiceBody extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  'Want to continue?',
+                  context.l10n.classWantToContinue,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.inter(
                     fontSize: 24,
@@ -82,7 +83,7 @@ class ClassPendingActivityChoiceBody extends StatelessWidget {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  'Start the next activity when you are ready.',
+                  context.l10n.classStartNext,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.inter(color: AppTheme.subheadingColor),
                 ),
@@ -150,7 +151,7 @@ class ClassPendingActivityChoiceBody extends StatelessWidget {
                         height: 50,
                         child: ElevatedButton(
                           onPressed: onStart,
-                          child: const Text("Let's go"),
+                          child: Text(context.l10n.classLetsGo),
                         ),
                       ),
                     ),
@@ -160,7 +161,7 @@ class ClassPendingActivityChoiceBody extends StatelessWidget {
                         height: 50,
                         child: OutlinedButton(
                           onPressed: onMaybeLater,
-                          child: const Text('Maybe later'),
+                          child: Text(context.l10n.classMaybeLater),
                         ),
                       ),
                     ),
@@ -201,7 +202,7 @@ class ClassNextActivityInlineCard extends ConsumerWidget {
           child: Column(
             children: [
               Text(
-                'Course complete! 🎉',
+                context.l10n.classCourseComplete,
                 style: GoogleFonts.inter(
                   fontSize: 18,
                   fontWeight: FontWeight.w800,
@@ -209,7 +210,7 @@ class ClassNextActivityInlineCard extends ConsumerWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                'You completed every activity in this course.',
+                context.l10n.classCourseCompleteBody,
                 textAlign: TextAlign.center,
                 style: GoogleFonts.inter(color: AppTheme.subheadingColor),
               ),
@@ -224,7 +225,7 @@ class ClassNextActivityInlineCard extends ConsumerWidget {
                     );
                     context.go(AppRoutes.home);
                   },
-                  child: const Text('Back to home'),
+                  child: Text(context.l10n.classBackHome),
                 ),
               ),
             ],
@@ -252,7 +253,7 @@ class ClassNextActivityInlineCard extends ConsumerWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  'Watch another video?',
+                  context.l10n.classWatchAnother,
                   style: GoogleFonts.inter(
                     fontSize: 13,
                     color: AppTheme.subheadingColor,
@@ -308,7 +309,7 @@ class ClassNextActivityInlineCard extends ConsumerWidget {
                       ),
                       const SizedBox(height: 10),
                       Text(
-                        "YOU'LL EARN",
+                        context.l10n.classYoullEarn,
                         style: GoogleFonts.inter(
                           fontSize: 10,
                           fontWeight: FontWeight.w800,
@@ -337,7 +338,7 @@ class ClassNextActivityInlineCard extends ConsumerWidget {
                         borderRadius: BorderRadius.circular(12),
                       ),
                     ),
-                    child: const Text("Let's go 🎉"),
+                    child: Text(context.l10n.homeLetsGo),
                   ),
                 ),
               ),
@@ -360,7 +361,7 @@ class ClassNextActivityInlineCard extends ConsumerWidget {
                         borderRadius: BorderRadius.circular(12),
                       ),
                     ),
-                    child: const Text('Maybe later'),
+                    child: Text(context.l10n.classMaybeLater),
                   ),
                 ),
               ),
@@ -398,7 +399,7 @@ class ClassNoActivityBody extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
-                    'You did really well! 🎉',
+                    context.l10n.classDidWell,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.inter(
                       fontSize: 20,
@@ -407,7 +408,7 @@ class ClassNoActivityBody extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    "You've finished your activities for now. Come back soon for the next one!",
+                    context.l10n.classFinishedForNow,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.inter(
                       fontSize: 14,
@@ -427,7 +428,7 @@ class ClassNoActivityBody extends StatelessWidget {
                           borderRadius: BorderRadius.circular(12),
                         ),
                       ),
-                      child: const Text('Back to home'),
+                      child: Text(context.l10n.classBackHome),
                     ),
                   ),
                 ],
@@ -501,7 +502,7 @@ class ClassRevealRail extends StatelessWidget {
               const SizedBox(width: 8),
               Expanded(
                 child: Text(
-                  "Today's picture",
+                  context.l10n.classTodaysPicture,
                   style: GoogleFonts.inter(
                     fontSize: 12,
                     fontWeight: FontWeight.w700,
@@ -514,8 +515,8 @@ class ClassRevealRail extends StatelessWidget {
           const SizedBox(height: 10),
           Text(
             revealed
-                ? 'Congratulations !!🎉 You have unlocked today\'s picture'
-                : 'Complete the activity to reveal the secret character hiding behind the cloud! ☁️✨',
+                ? context.l10n.classPictureUnlocked
+                : context.l10n.classPictureLocked,
             style: GoogleFonts.inter(
               fontSize: 12,
               height: 1.4,
@@ -576,7 +577,7 @@ Future<void> showRevealSheet(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
-              "Today's picture · $n/4",
+              context.l10n.classPictureProgress(n),
               style: GoogleFonts.inter(
                 fontSize: 16,
                 fontWeight: FontWeight.w800,
@@ -586,8 +587,8 @@ Future<void> showRevealSheet(
             const SizedBox(height: 6),
             Text(
               n >= 4
-                  ? "Congratulations! 🎉 You unlocked today's picture."
-                  : 'Finish each step to reveal the picture hiding behind the cloud ☁️',
+                  ? context.l10n.classPictureUnlocked2
+                  : context.l10n.classPictureLocked2,
               style: GoogleFonts.inter(
                 fontSize: 13,
                 height: 1.4,
@@ -599,7 +600,7 @@ Future<void> showRevealSheet(
             const SizedBox(height: 14),
             ElevatedButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text('OK'),
+              child: Text(context.l10n.buttonOk),
             ),
           ],
         ),

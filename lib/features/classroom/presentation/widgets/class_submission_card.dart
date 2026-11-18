@@ -1,6 +1,7 @@
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
+import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -61,11 +62,9 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
     } catch (_) {
       if (!mounted) return;
       setState(() => _submitted = false);
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text("Couldn't read that file. Please try again."),
-        ),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text(context.l10n.classFileReadFailed)));
     }
   }
 
@@ -89,9 +88,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
       if (mounted) {
         setState(() => _pickError = true);
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text("Couldn't access that. Please try again."),
-          ),
+          SnackBar(content: Text(context.l10n.classFileAccessFailed)),
         );
       }
     } finally {
@@ -121,9 +118,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
       if (mounted) {
         setState(() => _pickError = true);
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text("Couldn't access that. Please try again."),
-          ),
+          SnackBar(content: Text(context.l10n.classFileAccessFailed)),
         );
       }
     } finally {
@@ -148,13 +143,13 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
             if (!forceVideo) ...[
               ListTile(
                 leading: const Icon(Icons.photo_camera_outlined),
-                title: const Text('Take a photo'),
+                title: Text(context.l10n.classTakePhoto),
                 onTap: () =>
                     Navigator.pop(context, _MediaPickChoice.cameraImage),
               ),
               ListTile(
                 leading: const Icon(Icons.photo_library_outlined),
-                title: const Text('Choose photo from gallery'),
+                title: Text(context.l10n.classChoosePhoto),
                 onTap: () =>
                     Navigator.pop(context, _MediaPickChoice.galleryImage),
               ),
@@ -162,13 +157,13 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
             if (allowVideo) ...[
               ListTile(
                 leading: const Icon(Icons.videocam_outlined),
-                title: const Text('Record a video'),
+                title: Text(context.l10n.classRecordVideo),
                 onTap: () =>
                     Navigator.pop(context, _MediaPickChoice.cameraVideo),
               ),
               ListTile(
                 leading: const Icon(Icons.video_library_outlined),
-                title: const Text('Choose video from gallery'),
+                title: Text(context.l10n.classChooseVideo),
                 onTap: () =>
                     Navigator.pop(context, _MediaPickChoice.galleryVideo),
               ),
@@ -219,12 +214,14 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
             crossAxisAlignment: WrapCrossAlignment.center,
             children: [
               _SubmissionChip(
-                label: "TODAY'S ACTIVITY 🏎️🏎️",
+                label: context.l10n.classTodaysActivity,
                 foregroundColor: AppTheme.buttonColor,
               ),
               _SubmissionChip(label: _kindLabel(kind)),
               if (stepNumber != null && stepTotal != null)
-                _SubmissionChip(label: 'STEP $stepNumber/$stepTotal'),
+                _SubmissionChip(
+                  label: context.l10n.classStep(stepNumber, stepTotal),
+                ),
             ],
           ),
           const SizedBox(height: 12),
@@ -263,7 +260,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
           if (validCriteria?.isNotEmpty == true) ...[
             const SizedBox(height: 10),
             Text(
-              'I will check for: $validCriteria',
+              context.l10n.classWillCheck(validCriteria!),
               style: GoogleFonts.inter(
                 fontSize: 11,
                 height: 1.35,
@@ -305,7 +302,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
                     const SizedBox(width: 8),
                     Expanded(
                       child: Text(
-                        "We couldn't load that file. Please try picking it again.",
+                        context.l10n.classFileLoadFailed,
                         style: GoogleFonts.inter(
                           fontSize: 13,
                           color: AppTheme.dangerText,
@@ -368,7 +365,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
       case SubmissionKind.text:
         return _textSubmissionInput(
           canInteract: canInteract,
-          hintText: 'Type your answer here...',
+          hintText: context.l10n.classHintText,
           onSubmit: () {
             if (_textController.text.trim().isEmpty) return;
             widget.controller.submitAssignmentAnswer(
@@ -382,7 +379,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
       case SubmissionKind.audio:
         return _textSubmissionInput(
           canInteract: canInteract,
-          hintText: 'Type or transcribe your answer here...',
+          hintText: context.l10n.classHintAudio,
           onSubmit: () {
             if (_textController.text.trim().isEmpty) return;
             widget.controller.submitAssignmentAnswer(
@@ -497,7 +494,9 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
         ],
         const SizedBox(height: 12),
         _submitRow(
-          primaryLabel: hasMedia ? 'Share submission' : 'Submit',
+          primaryLabel: hasMedia
+              ? context.l10n.classShareSubmission
+              : context.l10n.classSubmit,
           isLoading: _isPicking,
           onPressed: !canInteract || _isPicking
               ? null
@@ -510,7 +509,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
                 widget.controller.postponeSubmission();
                 _markSubmitted();
               },
-              child: const Text("I'll do it later"),
+              child: Text(context.l10n.classDoLater),
             ),
           ),
       ],
@@ -519,10 +518,12 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
 
   Widget _submitRow({
     required VoidCallback? onPressed,
-    String primaryLabel = 'Submit',
+    String? primaryLabel,
     bool isLoading = false,
   }) => SubmitRow(
-    label: _submitted ? 'Sent' : primaryLabel,
+    label: _submitted
+        ? context.l10n.classSent
+        : (primaryLabel ?? context.l10n.classSubmit),
     isLoading: isLoading,
     onPressed: onPressed,
     onHelp: _showSubmissionHelpDialog,
@@ -538,21 +539,21 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
   bool _showFriendExamples(SubmissionKind kind) => kind == SubmissionKind.emoji;
 
   String _friendLabel(SubmissionKind kind) => switch (kind) {
-    SubmissionKind.emoji => 'Friends sent 👀',
+    SubmissionKind.emoji => context.l10n.classFriendsSent,
     SubmissionKind.text ||
     SubmissionKind.textAudio ||
-    SubmissionKind.audio => 'Friends said 👀',
-    _ => 'See what friends made 👀',
+    SubmissionKind.audio => context.l10n.classFriendsSaid,
+    _ => context.l10n.classSeeFriends,
   };
 
   String _kindLabel(SubmissionKind kind) => switch (kind) {
-    SubmissionKind.emoji => '👉 EMOJI',
-    SubmissionKind.text => '💬 TEXT',
-    SubmissionKind.audio => '🎤 AUDIO',
-    SubmissionKind.textAudio => '💬 TEXT / 🎤 AUDIO',
-    SubmissionKind.image => '📷 PHOTO',
-    SubmissionKind.video => '🎥 VIDEO',
-    SubmissionKind.imageVideo => '📷 PHOTO / 🎥 VIDEO',
+    SubmissionKind.emoji => context.l10n.classKindEmoji,
+    SubmissionKind.text => context.l10n.classKindText,
+    SubmissionKind.audio => context.l10n.classKindAudio,
+    SubmissionKind.textAudio => context.l10n.classKindTextAudio,
+    SubmissionKind.image => context.l10n.classKindPhoto,
+    SubmissionKind.video => context.l10n.classKindVideo,
+    SubmissionKind.imageVideo => context.l10n.classKindPhotoVideo,
   };
 
   Future<void> _showSubmissionHelpDialog() async {
@@ -578,7 +579,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
                 Row(
                   children: [
                     _SubmissionChip(
-                      label: "TODAY'S ACTIVITY 🏎️🏎️",
+                      label: context.l10n.classTodaysActivity,
                       foregroundColor: AppTheme.buttonColor,
                     ),
                     const SizedBox(width: 8),
@@ -593,7 +594,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
                 const SizedBox(height: 14),
                 Center(
                   child: Text(
-                    'How to submit',
+                    context.l10n.classHowToSubmit,
                     style: GoogleFonts.inter(
                       fontSize: 16,
                       fontWeight: FontWeight.w800,
@@ -623,7 +624,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
                 if (validCriteria?.isNotEmpty == true) ...[
                   const SizedBox(height: 8),
                   Text(
-                    'Check: $validCriteria',
+                    context.l10n.classCheck(validCriteria!),
                     style: GoogleFonts.inter(
                       fontSize: 12,
                       color: AppTheme.subheadingColor,
@@ -644,7 +645,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
                         borderRadius: BorderRadius.circular(12),
                       ),
                     ),
-                    child: const Text('Continue'),
+                    child: Text(context.l10n.buttonContinue),
                   ),
                 ),
               ],
@@ -807,7 +808,7 @@ class ClassSubmissionReviewCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(999),
                   ),
                   child: Text(
-                    'Score: $score',
+                    context.l10n.classScore('$score'),
                     style: GoogleFonts.inter(
                       fontSize: 13,
                       fontWeight: FontWeight.w800,
@@ -833,7 +834,7 @@ class ClassSubmissionReviewCard extends StatelessWidget {
           if (failed) ...[
             const SizedBox(height: 8),
             Text(
-              'No submission points were added for this attempt.',
+              context.l10n.classNoSubmissionPoints,
               style: GoogleFonts.inter(
                 fontSize: 12,
                 fontWeight: FontWeight.w600,
@@ -879,7 +880,7 @@ class ClassSubmissionRewardCard extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            'Congratulations $studentName!!!🥳',
+            context.l10n.classCongratsName(studentName),
             textAlign: TextAlign.center,
             style: GoogleFonts.inter(
               fontSize: 20,
@@ -895,7 +896,7 @@ class ClassSubmissionRewardCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(999),
             ),
             child: Text(
-              '⊙ +$points pts',
+              context.l10n.classPointsPill(points),
               style: GoogleFonts.inter(
                 fontSize: 14,
                 fontWeight: FontWeight.w800,
@@ -905,7 +906,7 @@ class ClassSubmissionRewardCard extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           Text(
-            'You have won $points points🪙😍\nYou did a great job champion!',
+            context.l10n.classWonPoints(points),
             textAlign: TextAlign.center,
             style: GoogleFonts.inter(
               fontSize: 15,
@@ -919,7 +920,7 @@ class ClassSubmissionRewardCard extends StatelessWidget {
             height: 48,
             child: ElevatedButton(
               onPressed: controller.continueAfterSubmissionReward,
-              child: const Text('Continue'),
+              child: Text(context.l10n.buttonContinue),
             ),
           ),
         ],
@@ -977,7 +978,10 @@ class SubmitRow extends StatelessWidget {
                   ),
           ),
         ),
-        TextButton(onPressed: onHelp, child: const Text('Submission Help')),
+        TextButton(
+          onPressed: onHelp,
+          child: Text(context.l10n.classSubmissionHelp),
+        ),
       ],
     );
   }

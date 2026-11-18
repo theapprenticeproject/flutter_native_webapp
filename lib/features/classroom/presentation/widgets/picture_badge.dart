@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 /// The small badge on every screen of the activity: how many of the 4 pieces of
@@ -15,7 +16,7 @@ class PictureBadge extends StatelessWidget {
   Widget build(BuildContext context) {
     final n = pieces.clamp(0, 4);
     return Semantics(
-      label: "Today's picture, $n of 4 pieces",
+      label: context.l10n.classPictureSemantics(n),
       excludeSemantics: true,
       child: InkWell(
         onTap: onTap,

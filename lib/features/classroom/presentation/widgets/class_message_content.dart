@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/theme/app_theme.dart';
@@ -422,7 +423,7 @@ class ClassErrorRetryCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            message.text ?? 'Something went wrong.',
+            message.text ?? context.l10n.classSomethingWrong,
             style: GoogleFonts.inter(
               fontSize: 14,
               fontWeight: FontWeight.w600,
@@ -442,7 +443,7 @@ class ClassErrorRetryCard extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12),
                 ),
               ),
-              child: const Text('Retry'),
+              child: Text(context.l10n.buttonRetry),
             ),
           ),
         ],

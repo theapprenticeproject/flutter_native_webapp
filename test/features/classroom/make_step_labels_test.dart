@@ -10,9 +10,15 @@ void main() {
     'lib/features/classroom/presentation/widgets/class_submission_card.dart',
   ).readAsStringSync();
 
+  // The words live in the translation file now.
+  final words = File('lib/l10n/app_en.arb').readAsStringSync();
+
   test('the photo step is called PHOTO, not SCREENSHOT', () {
-    expect(text.contains('SCREENSHOT'), isFalse);
-    expect(text.contains('PHOTO'), isTrue);
+    expect(
+      text.contains('SCREENSHOT') || words.contains('SCREENSHOT'),
+      isFalse,
+    );
+    expect(words.contains('📷 PHOTO'), isTrue);
   });
 
   test('the photo and video card shows no made-up friends work', () {

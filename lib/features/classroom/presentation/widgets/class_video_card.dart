@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
@@ -82,7 +83,7 @@ class _ClassVideoCardState extends State<ClassVideoCard> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                'Watch the video 👇',
+                context.l10n.classWatchVideo,
                 style: GoogleFonts.inter(
                   fontSize: 14,
                   fontWeight: FontWeight.w500,
@@ -124,7 +125,7 @@ class _ClassVideoCardState extends State<ClassVideoCard> {
               ),
               const SizedBox(height: 12),
               Text(
-                'Watch: $title',
+                context.l10n.classWatchTitle(title),
                 style: GoogleFonts.inter(
                   fontSize: 14,
                   fontWeight: FontWeight.w500,
@@ -149,7 +150,9 @@ class _ClassVideoCardState extends State<ClassVideoCard> {
               ),
             ),
             child: Text(
-              watched ? 'Watched' : 'I watched it • +$points points',
+              watched
+                  ? context.l10n.classWatched
+                  : context.l10n.classIWatched(points),
               style: GoogleFonts.inter(
                 fontSize: 18,
                 fontWeight: FontWeight.w800,
