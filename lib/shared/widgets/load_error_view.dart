@@ -24,6 +24,9 @@ class LoadErrorView extends ConsumerWidget {
       title: friendly.title,
       message: friendly.message,
       buttonText: friendly.buttonText,
+      // Nothing to retry (for example a course that is not in the app): no
+      // button, because a button that cannot fix it is worse than none (R-44).
+      showButton: friendly.action != ErrorAction.none,
       onRetry: friendly.action == ErrorAction.retry
           ? onRetry
           : () async {

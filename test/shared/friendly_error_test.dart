@@ -5,6 +5,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:tapapp/core/network/api_exception.dart';
 import 'package:tapapp/core/network/http_client.dart';
 import 'package:tapapp/domain/learning_progress/class_session_bootstrap_provider.dart';
+import 'package:tapapp/domain/program_content/bundled_course.dart';
 import 'package:tapapp/domain/learning_progress/home_dashboard_provider.dart';
 import 'package:go_router/go_router.dart';
 import 'package:tapapp/core/router/app_routes.dart';
@@ -158,6 +159,39 @@ void main() {
       expect(find.text('OPEN LINK PAGE'), findsOneWidget);
     },
   );
+
+  test(
+    'a course that is not in the app: a plain message, and no useless button',
+    () {
+      final f = describeError(const CourseNotBundledException('CRS-SCI-05'));
+      final text = '${f.title} ${f.message}';
+      expect(f.action, ErrorAction.none);
+      expect(
+        text,
+        isNot(contains('CRS-SCI-05')),
+        reason: 'no id, no technical text',
+      );
+      expect(text.toLowerCase(), contains('teacher'));
+    },
+  );
+
+  testWidgets('with nothing to retry, the error page has no button', (
+    tester,
+  ) async {
+    await tester.pumpWidget(
+      ProviderScope(
+        child: MaterialApp(
+          home: LoadErrorView(
+            error: const CourseNotBundledException('X'),
+            onRetry: () {},
+          ),
+        ),
+      ),
+    );
+    await tester.pump();
+    expect(find.byType(ElevatedButton), findsNothing);
+    expect(find.textContaining('teacher'), findsWidgets);
+  });
 }
 
 class _FakeAuthRepo implements MagicLinkRepository {

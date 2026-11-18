@@ -9,6 +9,7 @@ import 'package:tapapp/core/cache/local_cache.dart';
 import 'package:tapapp/core/cache/secure_token_store.dart';
 import 'package:tapapp/core/network/http_client.dart';
 import 'package:tapapp/domain/learner/learner_state_repository.dart';
+import 'package:tapapp/domain/program_content/bundled_course.dart';
 import 'package:tapapp/domain/progress/progress_repository.dart';
 
 import '../../support/fake_worker.dart';
@@ -38,7 +39,7 @@ void main() {
         'name': 'Asha New',
         'grade': '5',
         'points': 300,
-        'course_id': 'CRS-NOT-BUNDLED',
+        'course_id': 'Course-A',
       },
       {
         'student_id': 'S2',
@@ -46,6 +47,13 @@ void main() {
         'grade': '8',
         'points': 40,
         'course_id': 'Course-B',
+      },
+      {
+        'student_id': 'S3',
+        'name': 'Om',
+        'grade': '3',
+        'points': 0,
+        'course_id': 'CRS-NOT-BUNDLED',
       },
     ]);
     adapter = FakeWorkerAdapter(
@@ -64,7 +72,7 @@ void main() {
       http,
       cache,
       progress: ProgressRepository(http),
-      resolveCourse: (id) async => bundled.contains(id) ? id : bundled.first,
+      resolveCourse: (id) async => resolveBundledCourse(id, bundled),
     );
   });
 
@@ -75,17 +83,25 @@ void main() {
   });
 
   test('first state is built from the login answer, with no request', () async {
-    final state = await repo.fetchState(learnerId: 'S1');
+    final state = await repo.fetchState(learnerId: 'S2');
     expect(adapter.seen, isEmpty);
-    expect(state.xp, 300);
-    expect(state.profile?.studentName, 'Asha New');
-    expect(
-      state.enrollment?.course,
-      'Course-A',
-      reason: 'an unknown course falls back to the first bundled course',
-    );
+    expect(state.xp, 40);
+    expect(state.profile?.studentName, 'Manu');
+    expect(state.enrollment?.course, 'Course-B');
     expect(state.enrollment?.videosCompleted, 0);
   });
+
+  test(
+    'a course that is not bundled is an error, and nothing is saved',
+    () async {
+      // S3 has `CRS-NOT-BUNDLED`: the app cannot show it.
+      await expectLater(
+        repo.fetchState(learnerId: 'S3'),
+        throwsA(isA<CourseNotBundledException>()),
+      );
+      expect(await repo.readCached('S3'), isNull);
+    },
+  );
 
   test('a known bundled course id is kept', () async {
     final state = await repo.fetchState(learnerId: 'S2');
@@ -181,5 +197,74 @@ void main() {
     expect(state.enrollment?.quizzesCompleted, 1);
     expect(state.hasPendingLocalProgress, isFalse);
     expect(cache.has(CacheKeys.activityProgress('S1')), isFalse);
+  });
+
+  group('follows the Worker course', () {
+    Future<void> workerSays(String studentId, String? course) async {
+      await cache.setForeverRawList(CacheKeys.linkRoster(), [
+        {
+          'student_id': studentId,
+          'name': 'Manu',
+          'grade': '8',
+          'points': 40,
+          'course_id': course,
+        },
+      ]);
+    }
+
+    test('the same course as before: the saved progress stays', () async {
+      await workerSays('S2', 'Course-B');
+      await repo.fetchState(learnerId: 'S2');
+      await repo.applyLocalProgress(learnerId: 'S2', xp: 10, videoIndex: 1);
+
+      final again = await repo.fetchState(learnerId: 'S2');
+
+      expect(again.enrollment?.course, 'Course-B');
+      expect(again.enrollment?.videosCompleted, 1);
+    });
+
+    test(
+      'the Worker moved the student to another course: start that course',
+      () async {
+        await workerSays('S2', 'Course-A');
+        await repo.fetchState(learnerId: 'S2');
+        await repo.applyLocalProgress(learnerId: 'S2', xp: 10, videoIndex: 1);
+
+        await workerSays('S2', 'Course-B');
+        final moved = await repo.fetchState(learnerId: 'S2');
+
+        expect(moved.enrollment?.course, 'Course-B');
+        expect(
+          moved.enrollment?.videosCompleted,
+          0,
+          reason: 'a new course starts at unit 1',
+        );
+        expect(cache.has(CacheKeys.activityProgress('S2')), isFalse);
+      },
+    );
+
+    test(
+      'the new course is not bundled: an error, the old progress is kept',
+      () async {
+        await workerSays('S2', 'Course-A');
+        await repo.fetchState(learnerId: 'S2');
+        await repo.applyLocalProgress(learnerId: 'S2', xp: 10, videoIndex: 1);
+
+        await workerSays('S2', 'Course-Z');
+        await expectLater(
+          repo.fetchState(learnerId: 'S2'),
+          throwsA(isA<CourseNotBundledException>()),
+        );
+        expect((await repo.readCached('S2'))?.enrollment?.course, 'Course-A');
+      },
+    );
+
+    test('the Worker sent no course at all: an error', () async {
+      await workerSays('S2', null);
+      await expectLater(
+        repo.fetchState(learnerId: 'S2'),
+        throwsA(isA<CourseNotBundledException>()),
+      );
+    });
   });
 }

@@ -4,11 +4,12 @@ import '../../core/network/http_client.dart';
 import '../auth/redeemed_student.dart';
 import '../profile/learner_profile_fields_model.dart';
 import '../progress/progress_repository.dart';
+import '../program_content/bundled_course.dart';
 import 'enrollment_model.dart';
 import 'learner_state_model.dart';
 
-/// Picks the bundled course for a student. The Worker's `course_id` may not be
-/// a bundled course yet, so the first bundled course is used then (test only).
+/// Picks the bundled course for a student from the Worker's `course_id`. It
+/// throws `CourseNotBundledException` when that course is not in the app.
 typedef CourseResolver = Future<String?> Function(String? serverCourseId);
 
 /// The learner state in v1.
@@ -39,15 +40,40 @@ class LearnerStateRepository {
 
   /// The saved state, or a new one built from the login answer. With
   /// [forceRefresh] the points are asked from the Worker (`sync`) and the unit
-  /// step on the phone is kept.
+  /// step on the phone is kept. The Worker decides the course: if its
+  /// `course_id` changed, the student starts the new course.
   Future<LearnerStateModel> fetchState({
     required String learnerId,
     bool forceRefresh = false,
   }) async {
     final cached = await readCached(learnerId);
     if (cached == null) return restoreLocalProgress(await _seed(learnerId));
+    final moved = await followWorkerCourse(learnerId);
+    if (moved != null) return restoreLocalProgress(moved);
     if (forceRefresh) await refreshPoints(learnerId);
     return restoreLocalProgress(await readCached(learnerId) ?? cached);
+  }
+
+  /// If the Worker's course for this student is not the saved one, starts the
+  /// new course (unit 1, no saved steps) and returns the new state. Returns null
+  /// when nothing changed. A course that is not bundled throws
+  /// [CourseNotBundledException] and leaves the old progress untouched.
+  Future<LearnerStateModel?> followWorkerCourse(String learnerId) async {
+    final resolve = _resolveCourse;
+    if (resolve == null) return null;
+    final roster = _localCache.getForeverList(
+      CacheKeys.linkRoster(),
+      RedeemedStudent.fromJson,
+    );
+    final student = roster?.where((s) => s.studentId == learnerId).firstOrNull;
+    if (student == null) return null;
+
+    final course = await resolve(student.courseId); // throws if not bundled
+    final cached = await readCached(learnerId);
+    if (cached?.enrollment?.course == course) return null;
+
+    await _localCache.delete(CacheKeys.activityProgress(learnerId));
+    return _seed(learnerId);
   }
 
   Future<LearnerStateModel> _seed(String learnerId) async {

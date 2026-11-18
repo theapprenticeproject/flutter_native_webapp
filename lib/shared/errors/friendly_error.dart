@@ -4,6 +4,7 @@ import '../../core/network/api_exception.dart';
 import '../../core/network/http_client.dart';
 import '../../domain/learning_progress/class_session_bootstrap_provider.dart';
 import '../../domain/learning_progress/home_dashboard_provider.dart';
+import '../../domain/program_content/bundled_course.dart';
 
 /// What the student can do about an error (R-44).
 enum ErrorAction {
@@ -13,6 +14,9 @@ enum ErrorAction {
   /// Trying again cannot fix it. The student must open the WhatsApp link
   /// again.
   signInAgain,
+
+  /// Nothing the student can do. No button: someone else must fix it.
+  none,
 }
 
 /// A plain message for a failed call. It never contains technical text.
@@ -33,6 +37,14 @@ class FriendlyError {
 /// Turns any error into a [FriendlyError]. Log the real error elsewhere.
 FriendlyError describeError(Object error) {
   if (error is ApiException) return _describeApiError(error);
+  if (error is CourseNotBundledException) {
+    return const FriendlyError(
+      title: 'This course is not ready',
+      message: 'We could not open your course. Please tell your teacher.',
+      buttonText: '',
+      action: ErrorAction.none,
+    );
+  }
   if (error is AuthException || error is NoActiveProfileException) {
     return const FriendlyError(
       title: 'Please open your link again',

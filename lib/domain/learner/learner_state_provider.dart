@@ -5,6 +5,7 @@ import 'learner_state_repository.dart';
 import '../../core/network/http_client_provider.dart';
 import '../../core/cache/local_cache_provider.dart';
 import '../progress/progress_provider.dart';
+import '../program_content/bundled_course.dart';
 import '../program_content/program_content_provider.dart';
 
 final learnerStateRepositoryProvider = FutureProvider<LearnerStateRepository>((
@@ -18,8 +19,7 @@ final learnerStateRepositoryProvider = FutureProvider<LearnerStateRepository>((
     resolveCourse: (serverCourseId) async {
       final content = await ref.read(programContentRepositoryProvider.future);
       final courses = await content.fetchCourseIndex();
-      if (courses.any((c) => c.id == serverCourseId)) return serverCourseId;
-      return courses.isEmpty ? serverCourseId : courses.first.id;
+      return resolveBundledCourse(serverCourseId, courses.map((c) => c.id));
     },
   );
 });
@@ -29,6 +29,9 @@ final learnerStateDataProvider = FutureProvider.autoDispose
       final repository = await ref.watch(learnerStateRepositoryProvider.future);
       final cached = await repository.readCached(learnerId);
       if (cached != null && cached.enrollment != null) {
+        // The Worker decides the course. If it changed, start the new one.
+        final moved = await repository.followWorkerCourse(learnerId);
+        if (moved != null) return repository.restoreLocalProgress(moved);
         // Take the points from the Worker, but never wait long for it.
         await repository
             .refreshPoints(learnerId)

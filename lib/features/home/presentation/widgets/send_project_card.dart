@@ -72,34 +72,7 @@ class SendProjectCard extends StatelessWidget {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 26),
-                  child: Text.rich(
-                    TextSpan(
-                      children: [
-                        const TextSpan(text: 'Send in '),
-                        TextSpan(
-                          text: '2days 15hrs',
-                          style: GoogleFonts.inter(
-                            color: const Color(0xFF28B36A),
-                          ),
-                        ),
-                        const TextSpan(text: ' and earn '),
-                        TextSpan(
-                          text: 'extra 2💎',
-                          style: GoogleFonts.inter(
-                            color: const Color(0xFF5B5BD6),
-                          ),
-                        ),
-                      ],
-                    ),
-                    style: GoogleFonts.inter(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                      color: const Color(0xFF1C1C21),
-                    ),
-                  ),
-                ),
+                const SizedBox(height: 4),
               ],
             ),
           );
