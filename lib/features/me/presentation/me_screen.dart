@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../../l10n/l10n.dart';
+import '../project_text.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -42,11 +44,9 @@ class MeScreen extends ConsumerWidget {
     } catch (e) {
       debugPrint('Failed to switch profile: $e');
       if (!context.mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Could not switch profile. Please try again.'),
-        ),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text(context.l10n.switchProfileFailed)));
     }
   }
 
@@ -83,7 +83,7 @@ class MeScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                project.label,
+                project.labelOf(context.l10n),
                 style: GoogleFonts.inter(
                   fontSize: 12,
                   fontWeight: FontWeight.w700,
@@ -92,7 +92,7 @@ class MeScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 14),
               Text(
-                project.detail,
+                project.detailOf(context.l10n),
                 style: GoogleFonts.inter(fontSize: 14, height: 1.4),
               ),
             ],
@@ -121,9 +121,9 @@ class MeScreen extends ConsumerWidget {
             child: Column(
               children: [
                 AppHeader(
-                  title: 'Me',
+                  title: context.l10n.meTitle,
                   studentName: data.studentName,
-                  subtitle: 'Have a look at your progress',
+                  subtitle: context.l10n.meSubtitle,
                   points: data.points,
                   showStudentSummary: true,
                 ),

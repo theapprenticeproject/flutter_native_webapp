@@ -172,4 +172,92 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get homeSendProject => 'Send my project';
+
+  @override
+  String get meTitle => 'Me';
+
+  @override
+  String get meSubtitle => 'Have a look at your progress';
+
+  @override
+  String meClass(String grade) {
+    return 'Class $grade';
+  }
+
+  @override
+  String meNextLevel(String name) {
+    return 'Next: $name';
+  }
+
+  @override
+  String get meTotalPoints => 'Total points';
+
+  @override
+  String get mePointsHelp =>
+      'What are points? You earn them by doing TAP activities.';
+
+  @override
+  String get meProjectsTitle => 'My projects this year';
+
+  @override
+  String meProjectsDone(int done, int total) {
+    return '$done / $total done';
+  }
+
+  @override
+  String get meNoProjects =>
+      'No projects yet. Finish an activity to see it here.';
+
+  @override
+  String get meSettings => 'Settings';
+
+  @override
+  String get switchProfileFailed =>
+      'Could not switch profile. Please try again.';
+
+  @override
+  String get projectNotStarted => 'Not started';
+
+  @override
+  String get projectFeedbackPending => 'Feedback pending';
+
+  @override
+  String get projectSlow => 'Taking longer than expected';
+
+  @override
+  String get projectFeedbackGiven => 'Feedback given';
+
+  @override
+  String get projectWrongFormat => 'Wrong format';
+
+  @override
+  String get projectNotAccepted => 'Not accepted';
+
+  @override
+  String get projectNotSentDetail => 'You have not sent this project yet.';
+
+  @override
+  String get projectWaitingDetail =>
+      'I\'m looking at your work. Please wait. Points will be provided after feedback.';
+
+  @override
+  String get projectSlowDetail =>
+      'Your feedback is taking longer than expected. Please check again a little later.';
+
+  @override
+  String get projectValidDetail => 'Your project is valid. Well done!';
+
+  @override
+  String get projectNotValidDefault => 'This project needs another try.';
+
+  @override
+  String get projectNotValidHint =>
+      'Open the activity from Home to send it again.';
+
+  @override
+  String get projectNotAcceptedDefault => 'This project was not accepted.';
+
+  @override
+  String get projectNotAcceptedHint =>
+      'You have used both tries, so you cannot send it again.';
 }

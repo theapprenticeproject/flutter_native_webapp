@@ -1,5 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:flutter/widgets.dart';
 import 'package:tapapp/domain/me/my_projects.dart';
+import 'package:tapapp/features/me/project_text.dart';
+import 'package:tapapp/l10n/gen/app_localizations.dart';
 import 'package:tapapp/domain/program_content/course_detail_model.dart';
 import 'package:tapapp/domain/progress/progress_models.dart';
 import 'package:tapapp/domain/submission/feedback_state.dart';
@@ -49,6 +52,8 @@ SubmissionInfo _row(
   createdAt: DateTime.utc(2026, 11, 16, 8),
 );
 
+final _en = lookupAppLocalizations(const Locale('en'));
+
 void main() {
   final now = DateTime.utc(2026, 11, 16, 12);
   final units = [for (var i = 1; i <= 8; i++) _unit('Unit $i', 'AS-$i')];
@@ -71,11 +76,11 @@ void main() {
       _row('AS-4', result: 'Failed', left: 0, attempt: 2),
     ];
     final p = buildProjects(units, rows, now: now);
-    expect(p[0].label, 'Feedback given');
-    expect(p[1].label, 'Feedback pending');
-    expect(p[2].label, 'Wrong format');
-    expect(p[3].label, 'Not accepted');
-    expect(p[4].label, 'Not started');
+    expect(p[0].labelOf(_en), 'Feedback given');
+    expect(p[1].labelOf(_en), 'Feedback pending');
+    expect(p[2].labelOf(_en), 'Wrong format');
+    expect(p[3].labelOf(_en), 'Not accepted');
+    expect(p[4].labelOf(_en), 'Not started');
   });
 
   test('3 of 6 done counts only valid work', () {
@@ -96,7 +101,10 @@ void main() {
       _row('AS-1', result: 'Failed', attempt: 1),
       _row('AS-1', attempt: 2),
     ];
-    expect(buildProjects(units, rows, now: now).first.label, 'Feedback given');
+    expect(
+      buildProjects(units, rows, now: now).first.labelOf(_en),
+      'Feedback given',
+    );
   });
 
   test('the Worker feedback and the unit name are carried to the detail', () {
@@ -128,34 +136,43 @@ void main() {
 
     test('given: the Worker feedback', () {
       expect(
-        withStage(FeedbackStage.valid, feedback: 'Great colours!').detail,
+        withStage(
+          FeedbackStage.valid,
+          feedback: 'Great colours!',
+        ).detailOf(_en),
         'Great colours!',
       );
     });
 
     test('given but the Worker sent no text: a plain default', () {
-      expect(withStage(FeedbackStage.valid).detail, contains('valid'));
+      expect(withStage(FeedbackStage.valid).detailOf(_en), contains('valid'));
     });
 
     test('pending and slow: no feedback yet, and points come after', () {
       expect(
-        withStage(FeedbackStage.waiting).detail,
+        withStage(FeedbackStage.waiting).detailOf(_en),
         contains('Points will be provided after feedback'),
       );
       expect(
-        withStage(FeedbackStage.slow).detail,
+        withStage(FeedbackStage.slow).detailOf(_en),
         contains('longer than expected'),
       );
     });
 
     test('wrong format: the reason, and how to send again', () {
-      final d = withStage(FeedbackStage.notValid, feedback: 'Too dark.').detail;
+      final d = withStage(
+        FeedbackStage.notValid,
+        feedback: 'Too dark.',
+      ).detailOf(_en);
       expect(d, contains('Too dark.'));
       expect(d, contains('send'));
     });
 
     test('not started: says so', () {
-      expect(withStage(FeedbackStage.notSent).detail, contains('not sent'));
+      expect(
+        withStage(FeedbackStage.notSent).detailOf(_en),
+        contains('not sent'),
+      );
     });
   });
 
@@ -178,7 +195,7 @@ void main() {
       createdAt: DateTime.utc(2026, 11, 14),
     );
     expect(
-      buildProjects(units, [old], now: now).first.label,
+      buildProjects(units, [old], now: now).first.labelOf(_en),
       'Taking longer than expected',
     );
   });

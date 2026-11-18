@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../../l10n/l10n.dart';
+import '../project_text.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/theme/app_theme.dart';
@@ -124,7 +126,7 @@ class _ProfileCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final details = [
-      if (grade.isNotEmpty) 'Class $grade',
+      if (grade.isNotEmpty) context.l10n.meClass(grade),
       if (school != null && school!.isNotEmpty) school!,
     ].join(' · ');
     return Container(
@@ -245,7 +247,7 @@ class _LevelCard extends StatelessWidget {
           if (level.nextName != null) ...[
             const SizedBox(height: 6),
             Text(
-              'Next: ${level.nextName}',
+              context.l10n.meNextLevel(level.nextName!),
               style: GoogleFonts.inter(
                 fontSize: 11,
                 color: AppTheme.subheadingColor,
@@ -283,7 +285,7 @@ class _PointsCard extends StatelessWidget {
                 ),
               ),
               Text(
-                'Total points',
+                context.l10n.meTotalPoints,
                 style: GoogleFonts.inter(
                   fontSize: 12,
                   color: AppTheme.subheadingColor,
@@ -294,7 +296,7 @@ class _PointsCard extends StatelessWidget {
           const SizedBox(width: 16),
           Expanded(
             child: Text(
-              'What are points? You earn them by doing TAP activities.',
+              context.l10n.mePointsHelp,
               style: GoogleFonts.inter(
                 fontSize: 11,
                 color: AppTheme.subheadingColor,
@@ -320,10 +322,13 @@ class _ProjectsSection extends StatelessWidget {
       children: [
         Row(
           children: [
-            const Expanded(child: _SectionTitle('My projects this year')),
+            Expanded(child: _SectionTitle(context.l10n.meProjectsTitle)),
             if (projects.isNotEmpty)
               Text(
-                '${doneCount(projects)} / ${projects.length} done',
+                context.l10n.meProjectsDone(
+                  doneCount(projects),
+                  projects.length,
+                ),
                 style: GoogleFonts.inter(
                   fontSize: 12,
                   fontWeight: FontWeight.w700,
@@ -338,7 +343,7 @@ class _ProjectsSection extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             decoration: _card(),
             child: Text(
-              'No projects yet. Finish an activity to see it here.',
+              context.l10n.meNoProjects,
               style: GoogleFonts.inter(
                 fontSize: 13,
                 color: AppTheme.subheadingColor,
@@ -382,7 +387,7 @@ class _ProjectRow extends StatelessWidget {
               ),
             ),
             Text(
-              project.label,
+              project.labelOf(context.l10n),
               style: GoogleFonts.inter(
                 fontSize: 11,
                 fontWeight: FontWeight.w700,
@@ -415,7 +420,7 @@ class _SettingsRow extends StatelessWidget {
             const SizedBox(width: 10),
             Expanded(
               child: Text(
-                'Settings',
+                context.l10n.meSettings,
                 style: GoogleFonts.inter(
                   fontSize: 14,
                   fontWeight: FontWeight.w700,

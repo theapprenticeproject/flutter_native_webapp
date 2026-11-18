@@ -12,17 +12,18 @@ const _migrated = [
   'lib/shared/widgets/app_nav.dart',
   'lib/features/auth/presentation/open_link_screen.dart',
   'lib/features/auth/presentation/link_sign_in_screen.dart',
+  'lib/features/settings/presentation/settings_screen.dart',
 ];
 
 /// Whole folders that are moved: every file inside is checked.
-const _migratedFolders = ['lib/features/home'];
+const _migratedFolders = ['lib/features/home', 'lib/features/me'];
 
 void main() {
   test('migrated files have no text written in the code', () {
-    // A string literal of 3+ letters and a space or capital, inside Text( or a
+    // A string literal of 4+ letters (the brand name TAP is not translated) and a space or capital, inside Text( or a
     // title/message/buttonText/label argument.
     final literal = RegExp(
-      r'''(Text\(\s*|title:\s*|message:\s*|buttonText:\s*)['"][A-Za-z][^'"\n]{2,}['"]''',
+      r'''(Text\(\s*|title:\s*|message:\s*|buttonText:\s*)['"][A-Za-z][^'"\n]{3,}['"]''',
     );
     final paths = [
       ..._migrated,

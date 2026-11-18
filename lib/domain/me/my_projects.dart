@@ -24,43 +24,6 @@ class MyProject {
   /// The Worker's feedback text, when there is one.
   final String? feedback;
   final int? score;
-
-  /// The label of the Figma frames: pending, given, wrong format.
-  String get label => switch (stage) {
-    FeedbackStage.notSent => 'Not started',
-    FeedbackStage.waiting => 'Feedback pending',
-    FeedbackStage.slow => 'Taking longer than expected',
-    FeedbackStage.valid => 'Feedback given',
-    FeedbackStage.notValid => 'Wrong format',
-    FeedbackStage.notValidNoRetry => 'Not accepted',
-  };
-}
-
-/// The text under a project: the Worker's feedback when there is some, and a
-/// plain line for each state otherwise (the Figma "Feedback pending", "Feedback
-/// given" and "Wrong format" screens).
-extension MyProjectDetail on MyProject {
-  String get detail {
-    final text = feedback?.trim() ?? '';
-    switch (stage) {
-      case FeedbackStage.notSent:
-        return 'You have not sent this project yet.';
-      case FeedbackStage.waiting:
-        return "I'm looking at your work. Please wait. "
-            'Points will be provided after feedback.';
-      case FeedbackStage.slow:
-        return 'Your feedback is taking longer than expected. '
-            'Please check again a little later.';
-      case FeedbackStage.valid:
-        return text.isEmpty ? 'Your project is valid. Well done!' : text;
-      case FeedbackStage.notValid:
-        return '${text.isEmpty ? 'This project needs another try.' : text}\n\n'
-            'Open the activity from Home to send it again.';
-      case FeedbackStage.notValidNoRetry:
-        return '${text.isEmpty ? 'This project was not accepted.' : text}\n\n'
-            'You have used both tries, so you cannot send it again.';
-    }
-  }
 }
 
 /// The projects of the course: one for each unit that has an assignment, at

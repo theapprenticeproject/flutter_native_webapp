@@ -403,6 +403,156 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Send my project'**
   String get homeSendProject;
+
+  /// No description provided for @meTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Me'**
+  String get meTitle;
+
+  /// No description provided for @meSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Have a look at your progress'**
+  String get meSubtitle;
+
+  /// No description provided for @meClass.
+  ///
+  /// In en, this message translates to:
+  /// **'Class {grade}'**
+  String meClass(String grade);
+
+  /// No description provided for @meNextLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'Next: {name}'**
+  String meNextLevel(String name);
+
+  /// No description provided for @meTotalPoints.
+  ///
+  /// In en, this message translates to:
+  /// **'Total points'**
+  String get meTotalPoints;
+
+  /// No description provided for @mePointsHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'What are points? You earn them by doing TAP activities.'**
+  String get mePointsHelp;
+
+  /// No description provided for @meProjectsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'My projects this year'**
+  String get meProjectsTitle;
+
+  /// No description provided for @meProjectsDone.
+  ///
+  /// In en, this message translates to:
+  /// **'{done} / {total} done'**
+  String meProjectsDone(int done, int total);
+
+  /// No description provided for @meNoProjects.
+  ///
+  /// In en, this message translates to:
+  /// **'No projects yet. Finish an activity to see it here.'**
+  String get meNoProjects;
+
+  /// No description provided for @meSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get meSettings;
+
+  /// No description provided for @switchProfileFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not switch profile. Please try again.'**
+  String get switchProfileFailed;
+
+  /// No description provided for @projectNotStarted.
+  ///
+  /// In en, this message translates to:
+  /// **'Not started'**
+  String get projectNotStarted;
+
+  /// No description provided for @projectFeedbackPending.
+  ///
+  /// In en, this message translates to:
+  /// **'Feedback pending'**
+  String get projectFeedbackPending;
+
+  /// No description provided for @projectSlow.
+  ///
+  /// In en, this message translates to:
+  /// **'Taking longer than expected'**
+  String get projectSlow;
+
+  /// No description provided for @projectFeedbackGiven.
+  ///
+  /// In en, this message translates to:
+  /// **'Feedback given'**
+  String get projectFeedbackGiven;
+
+  /// No description provided for @projectWrongFormat.
+  ///
+  /// In en, this message translates to:
+  /// **'Wrong format'**
+  String get projectWrongFormat;
+
+  /// No description provided for @projectNotAccepted.
+  ///
+  /// In en, this message translates to:
+  /// **'Not accepted'**
+  String get projectNotAccepted;
+
+  /// No description provided for @projectNotSentDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'You have not sent this project yet.'**
+  String get projectNotSentDetail;
+
+  /// No description provided for @projectWaitingDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'m looking at your work. Please wait. Points will be provided after feedback.'**
+  String get projectWaitingDetail;
+
+  /// No description provided for @projectSlowDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'Your feedback is taking longer than expected. Please check again a little later.'**
+  String get projectSlowDetail;
+
+  /// No description provided for @projectValidDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'Your project is valid. Well done!'**
+  String get projectValidDetail;
+
+  /// No description provided for @projectNotValidDefault.
+  ///
+  /// In en, this message translates to:
+  /// **'This project needs another try.'**
+  String get projectNotValidDefault;
+
+  /// No description provided for @projectNotValidHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Open the activity from Home to send it again.'**
+  String get projectNotValidHint;
+
+  /// No description provided for @projectNotAcceptedDefault.
+  ///
+  /// In en, this message translates to:
+  /// **'This project was not accepted.'**
+  String get projectNotAcceptedDefault;
+
+  /// No description provided for @projectNotAcceptedHint.
+  ///
+  /// In en, this message translates to:
+  /// **'You have used both tries, so you cannot send it again.'**
+  String get projectNotAcceptedHint;
 }
 
 class _AppLocalizationsDelegate

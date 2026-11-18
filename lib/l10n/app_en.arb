@@ -59,5 +59,54 @@
   "homeSeeFeedback": "See feedback",
   "homeCheckAgain": "Check again",
   "homeToDoSend": "To do: Send project",
-  "homeSendProject": "Send my project"
+  "homeSendProject": "Send my project",
+  "meTitle": "Me",
+  "meSubtitle": "Have a look at your progress",
+  "meClass": "Class {grade}",
+  "@meClass": {
+    "placeholders": {
+      "grade": {
+        "type": "String"
+      }
+    }
+  },
+  "meNextLevel": "Next: {name}",
+  "@meNextLevel": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "meTotalPoints": "Total points",
+  "mePointsHelp": "What are points? You earn them by doing TAP activities.",
+  "meProjectsTitle": "My projects this year",
+  "meProjectsDone": "{done} / {total} done",
+  "@meProjectsDone": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "meNoProjects": "No projects yet. Finish an activity to see it here.",
+  "meSettings": "Settings",
+  "switchProfileFailed": "Could not switch profile. Please try again.",
+  "projectNotStarted": "Not started",
+  "projectFeedbackPending": "Feedback pending",
+  "projectSlow": "Taking longer than expected",
+  "projectFeedbackGiven": "Feedback given",
+  "projectWrongFormat": "Wrong format",
+  "projectNotAccepted": "Not accepted",
+  "projectNotSentDetail": "You have not sent this project yet.",
+  "projectWaitingDetail": "I'm looking at your work. Please wait. Points will be provided after feedback.",
+  "projectSlowDetail": "Your feedback is taking longer than expected. Please check again a little later.",
+  "projectValidDetail": "Your project is valid. Well done!",
+  "projectNotValidDefault": "This project needs another try.",
+  "projectNotValidHint": "Open the activity from Home to send it again.",
+  "projectNotAcceptedDefault": "This project was not accepted.",
+  "projectNotAcceptedHint": "You have used both tries, so you cannot send it again."
 }
