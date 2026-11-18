@@ -172,6 +172,7 @@ class _Page extends StatelessWidget {
       child: Center(
         child: Image.network(
           item.url,
+          webHtmlElementStrategy: WebHtmlElementStrategy.fallback,
           fit: BoxFit.contain,
           errorBuilder: (_, _, _) => const Icon(
             Icons.broken_image_outlined,

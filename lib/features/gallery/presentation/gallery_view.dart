@@ -207,6 +207,7 @@ class _OwnWork extends StatelessWidget {
           if (url != null)
             Image.network(
               url!,
+              webHtmlElementStrategy: WebHtmlElementStrategy.fallback,
               fit: BoxFit.cover,
               errorBuilder: (_, _, _) =>
                   const Icon(Icons.image_outlined, size: 40),
@@ -271,6 +272,7 @@ class _Tile extends StatelessWidget {
                       )
                     : Image.network(
                         item.url,
+                        webHtmlElementStrategy: WebHtmlElementStrategy.fallback,
                         fit: BoxFit.cover,
                         errorBuilder: (_, _, _) =>
                             const Icon(Icons.image_outlined, size: 36),

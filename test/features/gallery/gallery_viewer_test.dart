@@ -131,4 +131,15 @@ void main() {
     await tester.tap(find.text('Open video'));
     expect(opened, 'https://r2.example/v.webp');
   });
+
+  testWidgets('the viewer picture also falls back to a browser image', (
+    tester,
+  ) async {
+    await _pump(tester, items: three);
+    final image = tester.widget<Image>(find.byType(Image).first);
+    expect(
+      (image.image as NetworkImage).webHtmlElementStrategy,
+      WebHtmlElementStrategy.fallback,
+    );
+  });
 }

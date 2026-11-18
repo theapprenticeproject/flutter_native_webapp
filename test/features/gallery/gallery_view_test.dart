@@ -199,4 +199,30 @@ void main() {
     expect(find.textContaining('Ends in'), findsNothing);
     expect(find.textContaining('left'), findsNothing);
   });
+
+  // The R2 picture links have no CORS headers. On the web, Flutter downloads a
+  // picture's bytes by default, which then fails and shows only the placeholder.
+  // `fallback` uses a plain browser <img> when the download fails, which needs
+  // no CORS.
+  testWidgets(
+    'pictures fall back to a browser image, so R2 links without CORS show',
+    (tester) async {
+      await _pump(
+        tester,
+        shared: true,
+        ownWorkUrl: 'https://gcs.example/mine.webp',
+        items: [_item('1', 'DS'), _item('2', 'AB')],
+      );
+      final images = tester.widgetList<Image>(find.byType(Image)).toList();
+      expect(images.length, greaterThanOrEqualTo(3));
+      for (final image in images) {
+        final provider = image.image;
+        expect(provider, isA<NetworkImage>());
+        expect(
+          (provider as NetworkImage).webHtmlElementStrategy,
+          WebHtmlElementStrategy.fallback,
+        );
+      }
+    },
+  );
 }

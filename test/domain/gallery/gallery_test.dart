@@ -72,6 +72,31 @@ void main() {
   });
 
   group('GalleryItem', () {
+    test(
+      'no submission_id: the id comes from the picture address, not empty',
+      () {
+        final json = {
+          'display_name': 'Durva',
+          'media_type': 'image',
+          'url':
+              'https://r2.example/tapapp/A/ST1/p6apu4sxdj-1.png?X-Amz-Signature=abc',
+        };
+        final a = GalleryItem.fromJson(json);
+        final b = GalleryItem.fromJson({
+          ...json,
+          'url':
+              'https://r2.example/tapapp/A/ST2/zzz-1.png?X-Amz-Signature=def',
+        });
+        expect(a.submissionId, isNotEmpty);
+        expect(a.submissionId, isNot(b.submissionId));
+        expect(
+          a.submissionId,
+          isNot(contains('X-Amz')),
+          reason: 'the signature changes every time, the id must not',
+        );
+      },
+    );
+
     test('reads an image and a video', () {
       expect(GalleryItem.fromJson(_img('1', 'A B')).isVideo, isFalse);
       expect(

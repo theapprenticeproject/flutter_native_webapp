@@ -33,7 +33,9 @@ class GalleryItem {
   final String url;
 
   factory GalleryItem.fromJson(Map<String, dynamic> json) => GalleryItem(
-    submissionId: (json['submission_id'] ?? json['key'] ?? '') as String,
+    submissionId:
+        (json['submission_id'] ?? json['key'] ?? _idFromUrl(json['url']))
+            as String,
     initials: initialsOf((json['display_name'] as String?) ?? ''),
     isVideo: json['media_type'] == 'video',
     url: (json['url'] as String?) ?? '',
@@ -51,3 +53,6 @@ class GalleryPage {
 
   bool get hasMore => cursor != null && cursor!.isNotEmpty;
 }
+
+// The Worker sends no id yet. The path (without the changing signature) is stable.
+String _idFromUrl(Object? url) => Uri.tryParse('$url')?.path ?? '';
