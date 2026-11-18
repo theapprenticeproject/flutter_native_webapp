@@ -36,6 +36,14 @@ class ClassQuizToast {
   final int id;
   final bool isCorrect;
   final String? correctAnswer;
+
+  /// The right answer is shown after every question, not only after a wrong one.
+  String get message {
+    final answer = correctAnswer == null
+        ? ''
+        : ' Correct answer: $correctAnswer';
+    return isCorrect ? 'Correct!$answer' : 'Not quite.$answer';
+  }
 }
 
 class ClassChatController extends ChangeNotifier {
@@ -922,13 +930,14 @@ class ClassChatController extends ChangeNotifier {
     _quizToast = ClassQuizToast(
       id: ++_quizToastId,
       isCorrect: isCorrect,
-      correctAnswer: isCorrect ? null : question.options[question.answerKey],
+      correctAnswer: question.options[question.answerKey],
     );
     notifyListeners();
 
     _quizIndex++;
     final hasMore = _quizIndex < _quizQuestions.length;
-    final autoAdvanceMs = isCorrect ? 1500 : 2500;
+    // Same time for right and wrong: the student needs time to read the answer.
+    const autoAdvanceMs = 2500;
     _scheduleAutoAdvance(autoAdvanceMs, () {
       if (hasMore) {
         _runStep('AF-QUIZ-QUESTION');

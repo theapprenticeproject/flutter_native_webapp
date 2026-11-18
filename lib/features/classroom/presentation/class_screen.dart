@@ -226,9 +226,7 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
                   const SizedBox(width: 10),
                   Expanded(
                     child: Text(
-                      toast.isCorrect
-                          ? 'Correct Answer!'
-                          : 'Not quite. Correct answer: ${toast.correctAnswer ?? ''}',
+                      toast.message,
                       style: const TextStyle(
                         color: Color(0xFF25252B),
                         fontWeight: FontWeight.w700,
@@ -244,7 +242,7 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
     );
     Overlay.of(context).insert(_quizToastOverlay!);
     _quizToastTimer = Timer(
-      Duration(milliseconds: toast.isCorrect ? 1400 : 2300),
+      const Duration(milliseconds: 2300),
       _removeQuizToast,
     );
   }
