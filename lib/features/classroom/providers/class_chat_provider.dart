@@ -8,7 +8,7 @@ import 'activity_flow_provider.dart';
 import 'class_chat_controller.dart';
 import '../../../domain/learning_progress/class_session_bootstrap_provider.dart';
 import '../../../domain/learning_progress/home_dashboard_provider.dart';
-import '../../../core/localization/language_provider.dart';
+import '../../../domain/profile/student_language_provider.dart';
 import '../../../domain/learner/learner_state_provider.dart';
 import '../../../domain/progress/progress_provider.dart';
 import '../../../domain/progress/step_recorder.dart';
@@ -31,7 +31,7 @@ final classChatControllerProvider = FutureProvider.autoDispose
         throw const NoUnitAvailableException();
       }
 
-      final languageCode = ref.watch(languageProvider);
+      final languageCode = ref.watch(studentLanguageProvider);
       final flow = await ref.watch(activityFlowProvider(languageCode).future);
 
       final learnerStateRepository = await ref.watch(

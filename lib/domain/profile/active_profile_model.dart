@@ -9,6 +9,7 @@ class ActiveProfileModel {
     required this.learnerId,
     required this.studentName,
     this.grade,
+    this.language,
   });
 
   final String phone;
@@ -16,12 +17,16 @@ class ActiveProfileModel {
   final String? studentName;
   final String? grade;
 
+  /// What the Worker sent for the student (a code or a name).
+  final String? language;
+
   factory ActiveProfileModel.fromJson(Map<String, dynamic> json) =>
       ActiveProfileModel(
         phone: (json['phone'] as String?) ?? '',
         learnerId: json['learner_id'] as String,
         studentName: json['student_name'] as String?,
         grade: json['grade'] as String?,
+        language: json['language'] as String?,
       );
 
   Map<String, dynamic> toJson() => {
@@ -29,5 +34,6 @@ class ActiveProfileModel {
     'learner_id': learnerId,
     'student_name': studentName,
     'grade': grade,
+    'language': language,
   };
 }

@@ -1,0 +1,759 @@
+{
+  "id": "Coding-with-OctoStudio-(TapApp)",
+  "nm": "Coding with OctoStudio ",
+  "lvl": "Level 2",
+  "vrt": "003",
+  "kit_less": false,
+  "desc": "Students install and explore OctoStudio, then build a series of hands-on projects — animations, games, and interactive stories — tied to everyday themes (time management, savings, heatwave safety, water conservation, air pollution) while practicing core coding logic and 21st-century problem-solving skills.",
+  "units": [
+    {
+      "uid": "Unit -1-Coding with OctoStudio (TapApp)-62656",
+      "nm": "Introduction to animation world",
+      "desc": "",
+      "rwc": "",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "vid": "Introduction to animation world-62640",
+          "id": 1,
+          "nm": "Introduction to animation world",
+          "desc": "In this activity, students will learn why OctoStudio is useful for creating animations and interactive stories. They will download and install the app on a mobile device and explore its main interface. They will be introduced to the coding area, characters, backgrounds, and project stage.",
+          "yt": "vN0-c4NC-Og",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "zid": "Introduction to animation world Quiz-62655",
+        "id": 2,
+        "nm": "Introduction to animation world Quiz",
+        "qs": [
+          {
+            "qid": "Introduction to animation world Q1QN62645",
+            "q": "What is the primary function of the OctoStudio app?",
+            "opts": {
+              "1": "To edit photos and videos",
+              "2": "To watch video tutorials",
+              "3": "To create animations and simple games using coding blocks"
+            },
+            "ans": "3"
+          },
+          {
+            "qid": "Introduction to animation world Q2QN62647",
+            "q": "What role do sprites play in OctoStudio projects?",
+            "opts": {
+              "1": "They are used to write code in the coding area.",
+              "2": "They determine the backdrop settings.",
+              "3": "They act as characters or objects in the project."
+            },
+            "ans": "3"
+          },
+          {
+            "qid": "Introduction to animation world Q3QN62649",
+            "q": "If you want to change the setting of your animation scene, which part of OctoStudio should you modify?",
+            "opts": {
+              "1": "Coding Area",
+              "2": "Backdrop Settings",
+              "3": "Sprite Panel"
+            },
+            "ans": "2"
+          },
+          {
+            "qid": "Introduction to animation world Q4QN62651",
+            "q": "You and your friend want to create an animation of a school scene. How could you use creativity and collaboration in OctoStudio to achieve this?",
+            "opts": {
+              "1": "Only one person selects the sprites while the other observes.",
+              "2": "Individually create separate projects and compare them later.",
+              "3": "Collaboratively choose sprites that represent students and a school backdrop, and creatively code actions for the characters."
+            },
+            "ans": "3"
+          },
+          {
+            "qid": "Introduction to animation world Q5QN62653",
+            "q": "You want your sprite to react only when you tap it. Which coding choice fits best?",
+            "opts": {
+              "1": "When tap + Motion block",
+              "2": "Backdrop + Turn block",
+              "3": "Sprite + Play button only"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "aid": "Introduction to animation world Submission-62633",
+          "id": "Introduction to animation world Submission-62633",
+          "seq": 1,
+          "nm": "Introduction to animation world Submission",
+          "desc": "In this activity, students will learn why OctoStudio is useful for creating animations and interactive stories. They will download and install the app on a mobile device and explore its main interface. They will be introduced to the coding area, characters, backgrounds, and project stage.",
+          "type": "Regular",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot or video of your activity showing a lizard in a desert background, with the coding blocks clearly visible in the programming area."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uid": "Unit -2-Coding with OctoStudio (TapApp)-62886",
+      "nm": "RacetheSchoolBus",
+      "desc": "",
+      "rwc": "",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "vid": "RacetheSchoolBus-62872",
+          "id": 3,
+          "nm": "RacetheSchoolBus",
+          "desc": "In this activity, Students address the problem of getting late for school because of an unplanned morning routine. They create a racing game in which the character must brush, dress, eat breakfast, fill a water bottle, and pack the school bag before the bus arrives. Choosing the wrong activity or repeating a task wastes time.",
+          "yt": "_5Lzfk_4Sv8",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "zid": "RacetheSchoolBus Quiz-62823",
+        "id": 4,
+        "nm": "RacetheSchoolBus Quiz",
+        "qs": [
+          {
+            "qid": "RacetheSchoolBus Q1QN62753",
+            "q": "Which block in OctoStudio is used to move the character in the Race the School Bus animation?",
+            "opts": {
+              "2": "Wait block",
+              "3": "Move block"
+            },
+            "ans": "1"
+          },
+          {
+            "qid": "RacetheSchoolBus Q2QN62755",
+            "q": "What is the main objective of the Race the School Bus animation?",
+            "opts": {
+              "1": "To create a visually appealing game",
+              "2": "To complete morning tasks before the bus arrives",
+              "3": "To add as many obstacles as possible"
+            },
+            "ans": "2"
+          },
+          {
+            "qid": "RacetheSchoolBus Q3QN62757",
+            "q": "How can you adjust the character's speed in the game?",
+            "opts": {
+              "1": "By changing the background",
+              "2": "By modifying the value of the move block",
+              "3": "By using the Text block"
+            },
+            "ans": "2"
+          },
+          {
+            "qid": "RacetheSchoolBus Q4QN62759",
+            "q": "If a player frequently chooses the wrong options in the game, what is a creative way to alert them about the delay?",
+            "opts": {
+              "1": "Add a warning sound or message saying 'Time is running out!'",
+              "2": "Remove the obstacles from the game",
+              "3": "Increase the speed of the character automatically"
+            },
+            "ans": "1"
+          },
+          {
+            "qid": "RacetheSchoolBus Q5QN62761",
+            "q": "You need another copy of the same block in your code. What can you do?",
+            "opts": {
+              "1": "Change its speed",
+              "2": "Long press or left click to duplicate it",
+              "3": "Delete the project"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "aid": "RacetheSchoolBus Submission-62830",
+          "id": "RacetheSchoolBus Submission-62830",
+          "seq": 2,
+          "nm": "RacetheSchoolBus Submission",
+          "desc": "In this activity, Students address the problem of getting late for school because of an unplanned morning routine. They create a racing game in which the character must brush, dress, eat breakfast, fill a water bottle, and pack the school bag before the bus arrives. Choosing the wrong activity or repeating a task wastes time.",
+          "type": "Regular",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot of your OctoStudio Race the School Bus game project. Show the character or sprite and the coding area, including relevant blocks used for the morning-task sequence, obstacles, delays, movement, or bus-race animation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uid": "Unit -3-Coding with OctoStudio (TapApp)-62889",
+      "nm": "Escape the Shopping Trap",
+      "desc": "",
+      "rwc": "",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "vid": "Escape the Shopping Trap-62874",
+          "id": 5,
+          "nm": "Escape the Shopping Trap",
+          "desc": "In this activity, students address the problem of wanting to buy every attractive item they see. They create a game in which colourful products, discounts, and advertisements try to trap the character. The player must identify needs, avoid unnecessary purchases, and reach the exit without using the entire budget.",
+          "yt": "AxR4QT60ass",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "zid": "Escape the Shopping Trap Quiz-62824",
+        "id": 6,
+        "nm": "Escape the Shopping Trap Quiz",
+        "qs": [
+          {
+            "qid": "Escape the Shopping Trap Q1QN62763",
+            "q": "What happens if you make a smart saving choice in the Build the Ultimate Savings Tower Challenge?",
+            "opts": {
+              "1": "The tower changes color",
+              "2": "A block is removed from the tower",
+              "3": "A block is added to the tower"
+            },
+            "ans": "3"
+          },
+          {
+            "qid": "Escape the Shopping Trap Q2QN62765",
+            "q": "What is the purpose of the Send block in the OctoStudio project?",
+            "opts": {
+              "1": "To send a message that can start the code for another character or object",
+              "2": "To send a message to your friend",
+              "3": "To send a message to the audience"
+            },
+            "ans": "1"
+          },
+          {
+            "qid": "Escape the Shopping Trap Q3QN62767",
+            "q": "Which tool is used to draw a rectangle in OctoStudio?",
+            "opts": {
+              "1": "Text tool",
+              "2": "Paint tool",
+              "3": "Shape tool"
+            },
+            "ans": "3"
+          },
+          {
+            "qid": "Escape the Shopping Trap Q4QN62769",
+            "q": "If your savings tower isn't growing despite making smart saving choices, what might you check in your code?",
+            "opts": {
+              "1": "The sequence of the background image",
+              "2": "The color of the arranged blocks",
+              "3": "The sequence and messages in the Send and When Received blocks"
+            },
+            "ans": "3"
+          },
+          {
+            "qid": "Escape the Shopping Trap Q5QN62771",
+            "q": "How can you make the process of building the tower more efficient?",
+            "opts": {
+              "1": "Change the sprite every time",
+              "2": "Draw each block individually",
+              "3": "Use repeated actions for similar tasks"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "aid": "Escape the Shopping Trap Submission-62836",
+          "id": "Escape the Shopping Trap Submission-62836",
+          "seq": 3,
+          "nm": "Escape the Shopping Trap Submission",
+          "desc": "In this activity, students address the problem of wanting to buy every attractive item they see. They create a game in which colourful products, discounts, and advertisements try to trap the character. The player must identify needs, avoid unnecessary purchases, and reach the exit without using the entire budget.",
+          "type": "Regular",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot or video of your OctoStudio Escape the Shopping Trap game. Show the character, shopping items or advertisements, and coding area. Include relevant coding blocks or actions that demonstrate identifying needs, avoiding unnecessary purchases, managing the budget, or reaching the exit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uid": "Unit -4-Coding with OctoStudio (TapApp)-62892",
+      "nm": "Build the Ultimate Savings Tower Challenge",
+      "desc": "",
+      "rwc": "",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "vid": "Build the Ultimate Savings Tower Challenge-62876",
+          "id": 7,
+          "nm": "Build the Ultimate Savings Tower Challenge",
+          "desc": "In this activity, Students address the challenge of saving money for a book, sports item, school supply, or gift. They create a tower-building animation in which each smart saving choice adds one block to the tower. Unplanned purchases remove blocks, and the selected goal is unlocked when the tower reaches the required height.",
+          "yt": "5yogp1BiFLw",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "zid": "Build the Ultimate Savings Tower Challenge Quiz-62825",
+        "id": 8,
+        "nm": "Build the Ultimate Savings Tower Challenge Quiz",
+        "qs": [
+          {
+            "qid": "Build the Ultimate Savings Tower Challenge Q1QN62773",
+            "q": "What happens when you make a smart saving choice in the project?",
+            "opts": {
+              "2": "A block is removed from the tower",
+              "3": "A block is added to the tower"
+            },
+            "ans": "1"
+          },
+          {
+            "qid": "Build the Ultimate Savings Tower Challenge Q2QN62775",
+            "q": "Why might it take longer to reach your savings goal if you spend money without planning?",
+            "opts": {
+              "1": "The tower becomes unstable",
+              "2": "The project stops working",
+              "3": "A block is removed from the tower, delaying progress"
+            },
+            "ans": "3"
+          },
+          {
+            "qid": "Build the Ultimate Savings Tower Challenge Q3QN62777",
+            "q": "What does the growing Savings Tower represent?",
+            "opts": {
+              "1": "Spending money always helps us reach our goal faster",
+              "2": "Smart saving choices help us move closer to our saving goal",
+              "3": "Planning does not affect a saving goal"
+            },
+            "ans": "2"
+          },
+          {
+            "qid": "Build the Ultimate Savings Tower Challenge Q4QN62779",
+            "q": "How could you creatively solve a problem if blocks are not being added to the tower when expected?",
+            "opts": {
+              "1": "Restart the entire project from scratch",
+              "2": "Check the code to ensure the correct event triggers block addition",
+              "3": "Ignore the issue and complete the project as is"
+            },
+            "ans": "2"
+          },
+          {
+            "qid": "Build the Ultimate Savings Tower Challenge Q5QN62781",
+            "q": "Riya is saving money for an art kit. She decides to save ₹50 instead of spending it. What should happen in her project when she taps this choice?",
+            "opts": {
+              "1": "A block should be added to the tower",
+              "2": "The project should restart",
+              "3": "A block should be removed from the tower"
+            },
+            "ans": "1"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "aid": "Build the Ultimate Savings Tower Challenge Submission-62842",
+          "id": "Build the Ultimate Savings Tower Challenge Submission-62842",
+          "seq": 4,
+          "nm": "Build the Ultimate Savings Tower Challenge Submission",
+          "desc": "In this activity, Students address the challenge of saving money for a book, sports item, school supply, or gift. They create a tower-building animation in which each smart saving choice adds one block to the tower. Unplanned purchases remove blocks, and the selected goal is unlocked when the tower reaches the required height.",
+          "type": "Regular",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot of your OctoStudio Build the Ultimate Savings Tower project. Show the Savings Tower and Programming Area, including coding actions used to add a tower block for a smart saving choice or remove a block for an unplanned spending choice."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uid": "Unit -5-Coding with OctoStudio (TapApp)-62895",
+      "nm": "Heatwave Safety Quest",
+      "desc": "",
+      "rwc": "",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "vid": "Heatwave Safety Quest-62878",
+          "id": 9,
+          "nm": "Heatwave Safety Quest",
+          "desc": "In this activity, students will will observe their surroundings to identify factors that increase heat in semi-urban or urban areas, such as concrete surfaces, traffic, smoke, limited trees, and waste burning. The facilitator will explain through a short animation how heat becomes trapped and how it affects people, animals, plants, and daily life. Students will then create a simple OctoStudio animation or mini-game showing the causes of extreme heat, its effects, and practical safety or cooling solutions for their community.",
+          "yt": "fDKnCOdt0dk",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "zid": "Heatwave Safety Quest Quiz-62826",
+        "id": 10,
+        "nm": "Heatwave Safety Quest Quiz",
+        "qs": [
+          {
+            "qid": "Heatwave Safety Quest Q1QN62783",
+            "q": "What tool is used in OctoStudio to create different looks for the same character?",
+            "opts": {
+              "1": "Backdrop feature",
+              "2": "Costume feature",
+              "3": "Sprite tool"
+            },
+            "ans": "2"
+          },
+          {
+            "qid": "Heatwave Safety Quest Q2QN62785",
+            "q": "What concept is being illustrated by choosing a backdrop with concrete surfaces in the animation?",
+            "opts": {
+              "1": "Character development",
+              "2": "Heat absorption and its effects",
+              "3": "Narrative structure"
+            },
+            "ans": "2"
+          },
+          {
+            "qid": "Heatwave Safety Quest Q3QN62787",
+            "q": "Which block is used to change the character's costume in the animation?",
+            "opts": {
+              "1": "Set Costume block",
+              "2": "Switch Sprite block",
+              "3": "Change Backdrop block"
+            },
+            "ans": "1"
+          },
+          {
+            "qid": "Heatwave Safety Quest Q4QN62789",
+            "q": "If Riya is still feeling very hot in the animation, what can you do to improve her safety during a heatwave?",
+            "opts": {
+              "1": "Remove the heat effects from the animation",
+              "2": "Decrease the animation duration",
+              "3": "Add a costume with an umbrella and a water bottle"
+            },
+            "ans": "3"
+          },
+          {
+            "qid": "Heatwave Safety Quest Q5QN62791",
+            "q": "In the animation project, Riya's message is not showing for the correct duration. What problem-solving technique can you apply to fix this?",
+            "opts": {
+              "1": "Change Riya's costume more frequently",
+              "2": "Adjust the duration setting in the Say block",
+              "3": "Add more trees in the backdrop"
+            },
+            "ans": "2"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "aid": "Heatwave Safety Quest Submission-62848",
+          "id": "Heatwave Safety Quest Submission-62848",
+          "seq": 5,
+          "nm": "Heatwave Safety Quest Submission",
+          "desc": "In this activity, students will will observe their surroundings to identify factors that increase heat in semi-urban or urban areas, such as concrete surfaces, traffic, smoke, limited trees, and waste burning. The facilitator will explain through a short animation how heat becomes trapped and how it affects people, animals, plants, and daily life. Students will then create a simple OctoStudio animation or mini-game showing the causes of extreme heat, its effects, and practical safety or cooling solutions for their community.",
+          "type": "Regular",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot of your OctoStudio Heatwave Safety Quest project. Show the girl sprite and coding area, including relevant blocks used to change the character's costumes and display heatwave-safety messages or demonstrate heatwave causes, effects, and safety solutions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uid": "Unit -6-Coding with OctoStudio (TapApp)-62898",
+      "nm": "Hydration Hero Beat the Heat",
+      "desc": "",
+      "rwc": "",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "vid": "Hydration Hero Beat the Heat-62880",
+          "id": 11,
+          "nm": "Hydration Hero Beat the Heat",
+          "desc": "In this activity, students will create an interactive OctoStudio game that teaches ways to stay safe during a heatwave. The player completes actions such as drinking water, resting in the shade, wearing light clothing, and avoiding outdoor activity during the hottest hours. Each correct action earns a point, while unsafe choices provide feedback and safety guidance. The game ends with a heatwave-safety message based on the player’s score.",
+          "yt": "01wjYYJcFGQ",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "zid": "Hydration Hero Beat the Heat Quiz-62827",
+        "id": 12,
+        "nm": "Hydration Hero Beat the Heat Quiz",
+        "qs": [
+          {
+            "qid": "Hydration Hero Beat the Heat Q1QN62793",
+            "q": "What is the primary purpose of drinking water regularly during a heatwave?",
+            "opts": {
+              "1": "To make the heatwave worse",
+              "2": "To prevent dehydration",
+              "3": "To increase thirst"
+            },
+            "ans": "2"
+          },
+          {
+            "qid": "Hydration Hero Beat the Heat Q2QN62795",
+            "q": "In the script, what happens when the glass sprite is tapped?",
+            "opts": {
+              "1": "The Heat Level increases",
+              "2": "The Heat Level decreases",
+              "3": "The game ends immediately"
+            },
+            "ans": "2"
+          },
+          {
+            "qid": "Hydration Hero Beat the Heat Q3QN62797",
+            "q": "Which block is used to make the glass sprite disappear and reappear after a delay?",
+            "opts": {
+              "2": "Change Variable block",
+              "3": "Hide, Wait, and Show blocks"
+            },
+            "ans": "3"
+          },
+          {
+            "qid": "Hydration Hero Beat the Heat Q4QN62799",
+            "q": "In a new game scenario, how might you use the concept of a 'Heat Level' variable creatively?",
+            "opts": {
+              "1": "Use it to track the number of animals seen in a zoo game",
+              "2": "Use it to track the intensity of sunlight exposure for a solar panel efficiency game",
+              "3": "Use it to count the number of steps taken in a dance game"
+            },
+            "ans": "2"
+          },
+          {
+            "qid": "Hydration Hero Beat the Heat Q5QN62801",
+            "q": "How could you enhance the 'Hydration Hero: Beat the Heat' game to encourage better hydration habits?",
+            "opts": {
+              "1": "Decrease the frequency of water availability",
+              "2": "Add a timer to increase stress",
+              "3": "Include rewards for maintaining low Heat Levels consistently"
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "aid": "Hydration Hero Beat the Heat Submission-62854",
+          "id": "Hydration Hero Beat the Heat Submission-62854",
+          "seq": 6,
+          "nm": "Hydration Hero Beat the Heat Submission",
+          "desc": "In this activity, students will create an interactive OctoStudio game that teaches ways to stay safe during a heatwave. The player completes actions such as drinking water, resting in the shade, wearing light clothing, and avoiding outdoor activity during the hottest hours. Each correct action earns a point, while unsafe choices provide feedback and safety guidance. The game ends with a heatwave-safety message based on the player’s score.",
+          "type": "Regular",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot of your OctoStudio Hydration Hero Beat the Heat game. Show the girl sprite, water sprite, and coding area. Include relevant coding blocks used to reduce the Heat Level, move or show the water sprite, and display hydration or heatwave-safety messages."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uid": "Unit -7-Coding with OctoStudio (TapApp)-62901",
+      "nm": "Save the Last Drop",
+      "desc": "",
+      "rwc": "",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "vid": "Save the Last Drop-62882",
+          "id": 13,
+          "nm": "Save the Last Drop",
+          "desc": "In this activity, students address the problem of water being wasted through leaking taps, overflowing tanks, and careless use. They create a timed rescue game in which the community water tank is losing water. The player must locate and fix every source of waste before the tank becomes empty.",
+          "yt": "4pXA-Rvmgao",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "zid": "Save the Last Drop Quiz-62828",
+        "id": 14,
+        "nm": "Save the Last Drop Quiz",
+        "qs": [
+          {
+            "qid": "Save the Last Drop Q1QN62803",
+            "q": "Which block is used to remember the Water Level in the game?",
+            "opts": {
+              "1": "the Repeat control block",
+              "2": "the Set Variable block",
+              "3": "the Change Variable block"
+            },
+            "ans": "2"
+          },
+          {
+            "qid": "Save the Last Drop Q2QN62805",
+            "q": "Why might a creator increase the Water Drop's speed?",
+            "opts": {
+              "1": "It makes drops fall faster, showing quicker water wastage.",
+              "2": "It makes the tank fill faster after each tap.",
+              "3": "It makes the water level increase without collecting drops."
+            },
+            "ans": "1"
+          },
+          {
+            "qid": "Save the Last Drop Q3QN62807",
+            "q": "A creator wants each collected Water Drop to raise the displayed Water Level. Which action should be used?",
+            "opts": {
+              "1": "Change Water Level by a negative value after every tap.",
+              "2": "Set Water Level to a fixed value after every tap.",
+              "3": "Change Water Level by a positive value after every tap."
+            },
+            "ans": "3"
+          },
+          {
+            "qid": "Save the Last Drop Q4QN62809",
+            "q": "During testing, players cannot notice water wasted by an overflowing tank. What change best makes the problem clearer?",
+            "opts": {
+              "1": "Increase the drop speed and repeat count near the tank.",
+              "2": "Reduce the drop speed and repeat count near the tank.",
+              "3": "Hide each drop before it reaches the tank."
+            },
+            "ans": "1"
+          },
+          {
+            "qid": "Save the Last Drop Q5QN62811",
+            "q": "A school wants the game to encourage conservation after a player stops a leak. Which improvement is best?",
+            "opts": {
+              "1": "Restart the dripping sequence after each successful water-saving tap.",
+              "2": "Show a score penalty after each water-drop tap.",
+              "3": "Show a water-saving message after the dripping sequence ends."
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "aid": "Save the Last Drop Submission-62860",
+          "id": "Save the Last Drop Submission-62860",
+          "seq": 7,
+          "nm": "Save the Last Drop Submission",
+          "desc": "In this activity, students address the problem of water being wasted through leaking taps, overflowing tanks, and careless use. They create a timed rescue game in which the community water tank is losing water. The player must locate and fix every source of waste before the tank becomes empty.",
+          "type": "Regular",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot or video of your OctoStudio Save the Last Drop project. Show the water tank, water-drop sprite, and coding area. Include relevant coding blocks or actions demonstrating water wastage, identifying and fixing leaks, and preventing the water tank from becoming empty."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uid": "Unit -8-Coding with OctoStudio (TapApp)-62904",
+      "nm": "Clean Air Action Challenge",
+      "desc": "",
+      "rwc": "",
+      "diff": "Basic",
+      "xp": 20,
+      "vids": [
+        {
+          "vid": "Clean Air Action Challenge-62884",
+          "id": 15,
+          "nm": "Clean Air Action Challenge",
+          "desc": "In this activity, students will create an OctoStudio challenge based on air pollution they may experience around them, such as heavy road dust, vehicle smoke, construction dust, or waste burning. The activity begins with a relatable situation where a student starts coughing, feels throat or eye irritation, or feels uncomfortable breathing while passing through a highly dusty or smoky area.",
+          "yt": "B4rVKc-5bks",
+          "pts": 10
+        }
+      ],
+      "quiz": {
+        "zid": "Clean Air Action Challenge Quiz-62829",
+        "id": 16,
+        "nm": "Clean Air Action Challenge Quiz",
+        "qs": [
+          {
+            "qid": "Clean Air Action Challenge Q1QN62813",
+            "q": "Which source of air pollution is named in the activity?",
+            "opts": {
+              "1": "Steam from cooking pots",
+              "2": "Vehicle smoke from busy roads",
+              "3": "Morning mist near buildings"
+            },
+            "ans": "2"
+          },
+          {
+            "qid": "Clean Air Action Challenge Q2QN62815",
+            "q": "Why does the character need two different costumes?",
+            "opts": {
+              "1": "They allow the character to use different backdrops.",
+              "2": "They help the character change between different scenes.",
+              "3": "They show the character before and during discomfort."
+            },
+            "ans": "3"
+          },
+          {
+            "qid": "Clean Air Action Challenge Q3QN62817",
+            "q": "Why should we use the Say block in the Clean Air Action Challenge?",
+            "opts": {
+              "1": "To make the character communicate the effects of polluted air",
+              "2": "To change the character’s costume based on the backdrop",
+              "3": "To control the movement of vehicles in the animation"
+            },
+            "ans": "1"
+          },
+          {
+            "qid": "Clean Air Action Challenge Q4QN62819",
+            "q": "During a group project, which action shows effective collaboration?",
+            "opts": {
+              "1": "Each member makes a project without discussing choices.",
+              "2": "Members take turns creating animations and share their ideas.",
+              "3": "One student completes every task while others only watch."
+            },
+            "ans": "2"
+          },
+          {
+            "qid": "Clean Air Action Challenge Q5QN62821",
+            "q": "During testing, the message appears but the costume does not change. What should the team do first?",
+            "opts": {
+              "1": "Choose a new backdrop and restart the entire animation.",
+              "2": "Add another character and write a longer message.",
+              "3": "Check the Set Costume block and its place in code."
+            },
+            "ans": "3"
+          }
+        ]
+      },
+      "assigns": [
+        {
+          "aid": "Clean Air Action Challenge Submission-62866",
+          "id": "Clean Air Action Challenge Submission-62866",
+          "seq": 8,
+          "nm": "Clean Air Action Challenge Submission",
+          "desc": "In this activity, students will create an OctoStudio challenge based on air pollution they may experience around them, such as heavy road dust, vehicle smoke, construction dust, or waste burning. The activity begins with a relatable situation where a student starts coughing, feels throat or eye irritation, or feels uncomfortable breathing while passing through a highly dusty or smoky area.",
+          "type": "Regular",
+          "diff": "Basic",
+          "steps": [
+            {
+              "step": 5,
+              "label": "image/video",
+              "sub_types": "image,video",
+              "unguided_text": "Share a clear screenshot of your OctoStudio Clean Air Action Challenge project. Show the character, selected backdrop, and coding blocks such as Set Costume, Say, and Text. Make sure your project communicates an air pollution problem and displays a message about taking action for clean air."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

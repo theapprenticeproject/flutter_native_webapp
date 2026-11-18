@@ -114,6 +114,7 @@ class MagicLinkRepository {
       learnerId: student.studentId,
       studentName: student.name,
       grade: student.grade,
+      language: student.language,
     ).toJson(),
   );
 }

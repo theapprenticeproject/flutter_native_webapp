@@ -37,6 +37,16 @@ class AppConstants {
   static bool isSupportedLanguage(String code) =>
       supportedLanguages.any((l) => l.code == code);
 
+  /// The app's language code for what the Worker sends: a code ("hi") or a name
+  /// ("Hindi"). Anything else, or nothing, is English.
+  static String languageCodeFor(String? value) {
+    final v = value?.trim().toLowerCase() ?? '';
+    for (final l in supportedLanguages) {
+      if (v == l.code || v == l.label.toLowerCase()) return l.code;
+    }
+    return defaultLanguageCode;
+  }
+
   static const List<String> flowCategories = [
     'auth',
     'onboarding',

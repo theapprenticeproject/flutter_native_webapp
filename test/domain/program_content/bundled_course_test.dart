@@ -18,6 +18,8 @@ const bundledCourseIds = <String>{
   'Basic-Art-Skills-arts-C6083',
   'Basic-Electonics-Kit-less-science-lab-C3217', // "Electonics" is the real id
   'Basic-Electronics-science-lab-C2258',
+  // The real id has brackets. The file name is the id, brackets included.
+  'Coding-with-OctoStudio-(TapApp)',
   'Intermediate-Art-arts-C7031',
   'Master-Art-&-Expression-arts-C8933',
   'Money-Basics-financial-literacy-C9881',

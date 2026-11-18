@@ -4,6 +4,7 @@ import '../../core/assets/asset_loader.dart';
 import 'program_content_repository.dart';
 import '../reference_data/asset_data_source.dart';
 import 'course_detail_model.dart';
+import '../profile/student_language_provider.dart';
 import '../../core/cache/local_cache_provider.dart';
 
 final assetDataSourceProvider = Provider<AssetDataSource>((ref) {
@@ -24,5 +25,8 @@ final courseDetailDataProvider = FutureProvider.autoDispose
       final repository = await ref.watch(
         programContentRepositoryProvider.future,
       );
-      return repository.fetchCourseDetail(courseId);
+      return repository.fetchCourseDetail(
+        courseId,
+        lang: ref.watch(studentLanguageProvider),
+      );
     });

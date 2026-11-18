@@ -172,3 +172,7 @@ Changes from today:
 - The app is tested in the **WhatsApp in-app browser** on Android 10 and later, on real phones (task E2). Audio, the camera, the microphone and storage work there. Speech does not. The video camera is not tested yet (R-9).
 - The first screen must appear in an agreed time on a slow connection (R-43). Fonts are bundled, and the big loader GIF is replaced (D0).
 - Text is in Hindi and English, in translation files, with one translated fallback for "Champ" (D14, R-23, R-25).
+
+## Language
+
+The app language is the signed-in student's `language` from the Worker (`studentLanguageProvider`; a code like `hi` or a name like `Hindi`, anything else is English). It is saved in the active profile at sign-in. It sets the app text, the chat flow and the course content file (`assets/data/courses/<lang>/<course id>.json`). There is no language switch in v1. Before 2026-11-18 the course loader always read the English file.
