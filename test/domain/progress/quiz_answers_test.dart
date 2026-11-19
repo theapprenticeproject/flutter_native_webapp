@@ -25,18 +25,22 @@ const _knownMissingOption = {
 };
 
 void main() {
-  test('turns the option key "1/2/3" into the Worker letter "a/b/c"', () {
-    expect(quizAnswerFor(_q(), '1').selectedKey, 'a');
-    expect(quizAnswerFor(_q(), '2').selectedKey, 'b');
-    expect(quizAnswerFor(_q(), '3').selectedKey, 'c');
+  // The real Worker answers INVALID_INPUT to letters: "each answer needs a
+  // question_id and a numeric selected_key (e.g. "1", "2", "3")".
+  test('sends the option key as it is: a number as text, "1/2/3"', () {
+    expect(quizAnswerFor(_q(), '1').selectedKey, '1');
+    expect(quizAnswerFor(_q(), '2').selectedKey, '2');
+    expect(quizAnswerFor(_q(), '3').selectedKey, '3');
     expect(quizAnswerFor(_q(id: 'QN-9'), '1').questionId, 'QN-9');
   });
 
   test(
-    'refuses an answer it cannot send (no id, or a key that is no letter)',
+    'refuses an answer it cannot send (no id, or a key that is no number)',
     () {
       expect(() => quizAnswerFor(_q(id: ''), '1'), throwsStateError);
       expect(() => quizAnswerFor(_q(), 'x'), throwsStateError);
+      expect(() => quizAnswerFor(_q(), '0'), throwsStateError);
+      expect(() => quizAnswerFor(_q(), 'a'), throwsStateError);
     },
   );
 
@@ -63,7 +67,7 @@ void main() {
           if (q.questionId.isEmpty) {
             problems.add('${f.path}: a question has no qid');
           }
-          if (q.answerLetter.isEmpty) {
+          if ((int.tryParse(q.answerKey) ?? 0) < 1) {
             problems.add(
               '${f.path}: ${q.questionId} answer "${q.answerKey}" is no key',
             );

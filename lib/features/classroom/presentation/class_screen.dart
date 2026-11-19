@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import '../../../l10n/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -117,9 +116,6 @@ class _ClassChatView extends ConsumerStatefulWidget {
 class _ClassChatViewState extends ConsumerState<_ClassChatView> {
   final ScrollController _scrollController = ScrollController();
   int _lastMessageCount = 0;
-  int _lastQuizToastId = 0;
-  OverlayEntry? _quizToastOverlay;
-  Timer? _quizToastTimer;
 
   @override
   void initState() {
@@ -135,15 +131,12 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
       oldWidget.controller.removeListener(_onControllerChanged);
       widget.controller.addListener(_onControllerChanged);
       _lastMessageCount = 0;
-      _lastQuizToastId = 0;
-      _removeQuizToast();
     }
   }
 
   @override
   void dispose() {
     widget.controller.removeListener(_onControllerChanged);
-    _removeQuizToast();
     _scrollController.dispose();
     super.dispose();
   }
@@ -175,84 +168,10 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
         if (mounted) context.go(AppRoutes.home);
       });
     }
-    final quizToast = widget.controller.quizToast;
-    if (quizToast != null && quizToast.id != _lastQuizToastId) {
-      _lastQuizToastId = quizToast.id;
-      WidgetsBinding.instance.addPostFrameCallback(
-        (_) => _showQuizToast(quizToast),
-      );
-    }
     if (widget.controller.messages.length != _lastMessageCount) {
       _lastMessageCount = widget.controller.messages.length;
       WidgetsBinding.instance.addPostFrameCallback((_) => _scrollToBottom());
     }
-  }
-
-  void _showQuizToast(ClassQuizToast toast) {
-    if (!mounted) return;
-    _removeQuizToast();
-
-    final media = MediaQuery.of(context);
-    final isWide = media.size.width >= 640;
-    _quizToastOverlay = OverlayEntry(
-      builder: (context) => Positioned(
-        top: media.padding.top + (isWide ? 96 : 12),
-        right: isWide ? 24 : 12,
-        left: isWide ? null : 12,
-        width: isWide ? 320 : null,
-        child: IgnorePointer(
-          child: Material(
-            color: Colors.transparent,
-            child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
-              decoration: BoxDecoration(
-                color: toast.isCorrect
-                    ? const Color(0xFFDCF6E7)
-                    : const Color(0xFFFFE7E2),
-                borderRadius: BorderRadius.circular(18),
-                boxShadow: const [
-                  BoxShadow(
-                    color: Color(0x1A000000),
-                    blurRadius: 18,
-                    offset: Offset(0, 6),
-                  ),
-                ],
-              ),
-              child: Row(
-                children: [
-                  Text(
-                    toast.isCorrect ? '🎉' : '💡',
-                    style: const TextStyle(fontSize: 20),
-                  ),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Text(
-                      toast.message(context.l10n),
-                      style: const TextStyle(
-                        color: Color(0xFF25252B),
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-    Overlay.of(context).insert(_quizToastOverlay!);
-    _quizToastTimer = Timer(
-      const Duration(milliseconds: 2300),
-      _removeQuizToast,
-    );
-  }
-
-  void _removeQuizToast() {
-    _quizToastTimer?.cancel();
-    _quizToastTimer = null;
-    _quizToastOverlay?.remove();
-    _quizToastOverlay = null;
   }
 
   void _scrollToBottom() {

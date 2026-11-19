@@ -216,7 +216,7 @@ class ClassQuizFeedbackCard extends StatelessWidget {
               ),
             ],
           ),
-          if (!isCorrect && correctOptionText != null) ...[
+          if (correctOptionText != null) ...[
             const SizedBox(height: 8),
             Text(
               context.l10n.classCorrectAnswerIs(correctOptionText),

@@ -141,7 +141,7 @@ The bundled content carries the ids (`content-spec.md`, section 10). Until the r
 | `qid` | `question_id` |
 | `aid` | `assignment_id` |
 
-- The answer key in the file is "1", "2" or "3". The app sends it as `a`, `b` or `c` (`selected_key`).
+- The answer key in the file is "1", "2" or "3". The app sends it as it is, a number as text (`selected_key: "2"`). The dev Worker refuses letters: `each answer needs a question_id and a numeric selected_key (e.g. "1", "2", "3")` (checked 2026-11-19; the old dummy notes said letters).
 - The app has the correct answers in the bundled content, so it gives right or wrong at once, also without a network. The server grades again, and its result is the one that counts (R-91). The backend must hold the same key. A test in B19 checks this.
 - The practice quizzes inside a video are not sent to the server.
 

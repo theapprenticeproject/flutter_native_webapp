@@ -27,24 +27,6 @@ import '../models/submission_answer_model.dart';
 /// `leave`: the student goes back to Home with the unit still open (R-66).
 enum ClassSessionOutcome { none, choice, leave }
 
-class ClassQuizToast {
-  const ClassQuizToast({
-    required this.id,
-    required this.isCorrect,
-    this.correctAnswer,
-  });
-
-  final int id;
-  final bool isCorrect;
-  final String? correctAnswer;
-
-  /// The right answer is shown after every question, not only after a wrong one.
-  String message(AppLocalizations l) {
-    final answer = correctAnswer ?? '';
-    return isCorrect ? l.toastCorrect(answer) : l.toastWrong(answer);
-  }
-}
-
 class ClassChatController extends ChangeNotifier {
   ClassChatController({
     required this.learnerId,
@@ -152,9 +134,6 @@ class ClassChatController extends ChangeNotifier {
   bool _submissionProgressSaved = false;
   bool _quizProgressSaved = false;
   bool _submissionRewardShown = false;
-  int _quizToastId = 0;
-  ClassQuizToast? _quizToast;
-  ClassQuizToast? get quizToast => _quizToast;
 
   SubmissionAnswer? _pendingWorkAnswer;
 
@@ -912,12 +891,21 @@ class ClassChatController extends ChangeNotifier {
     _quizAnswers.add(quizAnswerFor(question, optionKey));
     if (isCorrect) _quizCorrectCount++;
 
-    _quizToast = ClassQuizToast(
-      id: ++_quizToastId,
-      isCorrect: isCorrect,
-      correctAnswer: question.options[question.answerKey],
+    // The answer stays in the chat after every question (not a pop-up). No
+    // points here: the Worker gives them at the end (R-41).
+    _push(
+      ClassChatMessage(
+        id: _newId(),
+        stepId: 'AF-QUIZ-FEEDBACK',
+        sender: ClassChatSender.bot,
+        contentType: ClassChatContentType.quizFeedback,
+        data: {
+          'isCorrect': isCorrect,
+          'correctOptionText': question.options[question.answerKey],
+          'explanation': question.explanation,
+        },
+      ),
     );
-    notifyListeners();
 
     _quizIndex++;
     final hasMore = _quizIndex < _quizQuestions.length;

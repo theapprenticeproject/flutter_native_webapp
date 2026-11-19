@@ -1370,18 +1370,6 @@ abstract class AppLocalizations {
   /// **'TAP Buddy'**
   String get classTapBuddy;
 
-  /// No description provided for @toastCorrect.
-  ///
-  /// In en, this message translates to:
-  /// **'Correct! Correct answer: {answer}'**
-  String toastCorrect(String answer);
-
-  /// No description provided for @toastWrong.
-  ///
-  /// In en, this message translates to:
-  /// **'Not quite. Correct answer: {answer}'**
-  String toastWrong(String answer);
-
   /// No description provided for @chatSaveVideoFailed.
   ///
   /// In en, this message translates to:

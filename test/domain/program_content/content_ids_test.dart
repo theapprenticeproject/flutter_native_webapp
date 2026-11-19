@@ -102,24 +102,4 @@ void main() {
       }
     }
   });
-
-  test('the answer key maps to the API letters', () {
-    const q = CourseQuizQuestionModel(
-      question: 'q',
-      options: {'1': 'x', '2': 'y', '3': 'z'},
-      answerKey: '2',
-    );
-    expect(q.answerLetter, 'b');
-    expect(CourseQuizQuestionModel.letterForOptionKey('1'), 'a');
-    expect(CourseQuizQuestionModel.letterForOptionKey('3'), 'c');
-    expect(CourseQuizQuestionModel.letterForOptionKey('x'), '');
-    expect(
-      const CourseQuizQuestionModel(
-        question: 'q',
-        options: {},
-        answerKey: '',
-      ).answerLetter,
-      '',
-    );
-  });
 }

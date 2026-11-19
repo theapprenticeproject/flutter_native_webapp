@@ -119,9 +119,9 @@ void main() {
         unitId: 'LU-0088',
         quizId: 'QZ-1',
         answers: const [
-          QuizAnswer(questionId: 'Q1', selectedKey: 'a'),
-          QuizAnswer(questionId: 'Q2', selectedKey: 'c'),
-          QuizAnswer(questionId: 'Q3', selectedKey: 'a'),
+          QuizAnswer(questionId: 'Q1', selectedKey: '1'),
+          QuizAnswer(questionId: 'Q2', selectedKey: '3'),
+          QuizAnswer(questionId: 'Q3', selectedKey: '1'),
         ],
         idempotencyKey: 'quiz:S1:LU-0088:z',
       );
@@ -129,9 +129,9 @@ void main() {
       expect(adapter.seen.single.path, '/progress/submit_quiz');
       expect(adapter.seen.single.body!['quiz_id'], 'QZ-1');
       expect(adapter.seen.single.body!['answers'], [
-        {'question_id': 'Q1', 'selected_key': 'a'},
-        {'question_id': 'Q2', 'selected_key': 'c'},
-        {'question_id': 'Q3', 'selected_key': 'a'},
+        {'question_id': 'Q1', 'selected_key': '1'},
+        {'question_id': 'Q2', 'selected_key': '3'},
+        {'question_id': 'Q3', 'selected_key': '1'},
       ]);
       expect(result.correctCount, 2);
       expect(result.totalCount, 3);

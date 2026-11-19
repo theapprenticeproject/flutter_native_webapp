@@ -15,21 +15,6 @@ class CourseQuizQuestionModel {
   /// The id the API calls `question_id` (`qid` in the content file).
   final String questionId;
 
-  /// The answer key as the API's letter: "1" is "a", "2" is "b", and so on.
-  /// Empty when the key is not a number from 1 to 26.
-  String get answerLetter {
-    final n = int.tryParse(answerKey);
-    if (n == null || n < 1 || n > 26) return '';
-    return String.fromCharCode(0x60 + n);
-  }
-
-  /// The API's letter for an option key such as "2" (see [answerLetter]).
-  static String letterForOptionKey(String optionKey) {
-    final n = int.tryParse(optionKey);
-    if (n == null || n < 1 || n > 26) return '';
-    return String.fromCharCode(0x60 + n);
-  }
-
   factory CourseQuizQuestionModel.fromJson(Map<String, dynamic> json) =>
       CourseQuizQuestionModel(
         question: json['q'] as String? ?? '',

@@ -127,8 +127,8 @@ void main() {
 // ---- Quiz ----
 
 const _answers = [
-  QuizAnswer(questionId: 'Q1', selectedKey: 'b'),
-  QuizAnswer(questionId: 'Q2', selectedKey: 'a'),
+  QuizAnswer(questionId: 'Q1', selectedKey: '2'),
+  QuizAnswer(questionId: 'Q2', selectedKey: '1'),
 ];
 
 Map<String, dynamic> _scored({bool repeat = false}) => {
@@ -165,8 +165,8 @@ void quizTests() {
       expect(body['unit_id'], 'U1');
       expect(body['quiz_id'], 'Z1');
       expect(body['answers'], [
-        {'question_id': 'Q1', 'selected_key': 'b'},
-        {'question_id': 'Q2', 'selected_key': 'a'},
+        {'question_id': 'Q1', 'selected_key': '2'},
+        {'question_id': 'Q2', 'selected_key': '1'},
       ]);
       expect(record.pointsAwarded, 1, reason: 'the Worker gives +1 for each');
       expect(record.pointsTotal, 301);
@@ -208,7 +208,7 @@ void quizTests() {
       final retake = await recorder.recordQuiz(
         unitId: 'U1',
         quizId: 'Z1',
-        answers: const [QuizAnswer(questionId: 'Q1', selectedKey: 'c')],
+        answers: const [QuizAnswer(questionId: 'Q1', selectedKey: '3')],
       );
       expect(adapter.seen, hasLength(1));
       expect(retake.pointsAwarded, 1, reason: 'the first result stays');

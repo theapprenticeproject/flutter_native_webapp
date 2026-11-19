@@ -421,22 +421,6 @@
   },
   "classSomethingWrong": "Something went wrong.",
   "classTapBuddy": "TAP Buddy",
-  "toastCorrect": "Correct! Correct answer: {answer}",
-  "@toastCorrect": {
-    "placeholders": {
-      "answer": {
-        "type": "String"
-      }
-    }
-  },
-  "toastWrong": "Not quite. Correct answer: {answer}",
-  "@toastWrong": {
-    "placeholders": {
-      "answer": {
-        "type": "String"
-      }
-    }
-  },
   "chatSaveVideoFailed": "We could not save that you watched the video. Please check your connection and retry.",
   "chatVideoReward": "Wow! That’s amazing 🤩  {name}, you just earned {points} points🪩 for watching the video 🥳🥳🥳\n\nNow it’s time to do the activity submission 🌟",
   "@chatVideoReward": {

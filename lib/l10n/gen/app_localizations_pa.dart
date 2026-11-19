@@ -732,16 +732,6 @@ class AppLocalizationsPa extends AppLocalizations {
   String get classTapBuddy => 'TAP Buddy';
 
   @override
-  String toastCorrect(String answer) {
-    return 'Correct! Correct answer: $answer';
-  }
-
-  @override
-  String toastWrong(String answer) {
-    return 'Not quite. Correct answer: $answer';
-  }
-
-  @override
   String get chatSaveVideoFailed =>
       'We could not save that you watched the video. Please check your connection and retry.';
 
