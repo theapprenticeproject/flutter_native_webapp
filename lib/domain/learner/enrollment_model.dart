@@ -31,6 +31,26 @@ class EnrollmentModel {
     enrolledOn: enrolledOn ?? this.enrolledOn,
   );
 
+  /// The counters when the student is on unit [unitIndex] (the Worker's answer):
+  /// earlier units are done, later ones are not. A count far ahead of the Worker
+  /// (for example after a reset) goes back to it. The Worker closes a unit only
+  /// after valid feedback (R-83), so a unit it still calls current is never
+  /// finished by the phone: the submission step stays open.
+  EnrollmentModel alignedToUnit(int unitIndex) {
+    int fix(int n) => n < unitIndex || n > unitIndex + 1 ? unitIndex : n;
+    final video = fix(videosCompleted);
+    final quiz = fix(quizzesCompleted);
+    var submission = fix(submissionIndex);
+    if (video > unitIndex && quiz > unitIndex && submission > unitIndex) {
+      submission = unitIndex;
+    }
+    return copyWith(
+      videosCompleted: video,
+      quizzesCompleted: quiz,
+      submissionIndex: submission,
+    );
+  }
+
   factory EnrollmentModel.fromJson(Map<String, dynamic> json) =>
       EnrollmentModel(
         course: json['course'] as String?,

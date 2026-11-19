@@ -38,7 +38,7 @@ class FriendlyError {
 /// Turns any error into a [FriendlyError]. Log the real error elsewhere.
 FriendlyError describeError(Object error, AppLocalizations l) {
   if (error is ApiException) return _describeApiError(error, l);
-  if (error is CourseNotBundledException) {
+  if (error is CourseNotBundledException || error is UnitNotBundledException) {
     return FriendlyError(
       title: l.errorCourseNotReadyTitle,
       message: l.errorCourseNotReadyMessage,

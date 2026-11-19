@@ -43,6 +43,8 @@ Future<UnitWithFeedback> currentUnitWithFeedback({
   required LearnerStateModel state,
   required List<CourseUnitModel> units,
 }) async {
+  // The Worker says where the student is (an unknown unit id throws).
+  state = await learner.alignToWorkerUnit(learnerId, units);
   final enrollment = state.enrollment ?? const EnrollmentModel();
   final index = ClassroomProgressResolver.resolveUnitIndexForCourse(
     enrollment,

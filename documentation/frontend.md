@@ -176,3 +176,7 @@ Changes from today:
 ## Language
 
 The app language is the signed-in student's `language` from the Worker (`studentLanguageProvider`; a code like `hi` or a name like `Hindi`, anything else is English). It is saved in the active profile at sign-in. It sets the app text, the chat flow and the course content file (`assets/data/courses/<lang>/<course id>.json`). There is no language switch in v1. Before 2026-11-18 the course loader always read the English file.
+
+## Which unit a student is on
+
+The Worker decides (`current_learning_unit` in `/progress/sync`; it is a Learning Unit name, the same as the content file's `uid`). `LearnerStateRepository.refreshPoints` keeps the answer of the latest successful sync, and `alignToWorkerUnit` uses it once, before the unit is chosen (`currentUnitWithFeedback`). Earlier units count as done, a unit the Worker still calls current is never finished by the phone (valid feedback closes it, R-83), and steps saved for another unit are dropped. An id that is not in the bundled course throws `UnitNotBundledException` (plain "course not ready" error, no button). No answer (the sync failed, or `null`) changes nothing. The Worker rejects progress calls for a unit that is not next in sequence, which is why the app follows it.

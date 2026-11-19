@@ -15,6 +15,18 @@ void main() {
     );
   });
 
+  test('WhatsApp adds ?fbclid=… to the link: the code is still found', () {
+    expect(
+      initialLocationFor(
+        Uri.parse(
+          'https://app.example/AIAG-W5LE-FDKD-4LYZ-ADAR-BAJJ-S'
+          '?fbclid=IwdHNhZgAAAAJwZ_abc&utm=x',
+        ),
+      ),
+      '/l/AIAG-W5LE-FDKD-4LYZ-ADAR-BAJJ-S',
+    );
+  });
+
   test('the hash form is left to the router', () {
     expect(
       initialLocationFor(Uri.parse('https://app.example/#/l/AbC123xy')),

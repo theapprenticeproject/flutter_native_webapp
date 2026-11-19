@@ -5,6 +5,7 @@ import '../auth/redeemed_student.dart';
 import '../profile/learner_profile_fields_model.dart';
 import '../progress/progress_repository.dart';
 import '../program_content/bundled_course.dart';
+import '../program_content/course_detail_model.dart';
 import 'enrollment_model.dart';
 import 'learner_state_model.dart';
 
@@ -104,13 +105,56 @@ class LearnerStateRepository {
   Future<void> refreshPoints(String learnerId) async {
     final progress = _progress;
     if (progress == null) return;
+    _workerUnitId =
+        null; // an old answer must never be used after a failed sync
     try {
       final sync = await progress.sync(lastUpdated: 0);
+      _workerUnitId = sync.currentLearningUnit;
       final points = sync.points;
       if (points != null) await applyServerPoints(learnerId, points);
     } catch (_) {
       // Keep what we have.
     }
+  }
+
+  /// The unit the Worker named in the latest successful `sync`. It is used once,
+  /// by [alignToWorkerUnit].
+  String? _workerUnitId;
+
+  /// Puts the student on the unit the Worker says (`current_learning_unit`): the
+  /// Worker rejects progress for a unit that is not next in sequence. Does
+  /// nothing when there is no fresh answer (the sync failed, or the Worker named
+  /// no unit). Throws [UnitNotBundledException] when the id is not in [units]:
+  /// the app never guesses another unit.
+  Future<LearnerStateModel> alignToWorkerUnit(
+    String learnerId,
+    List<CourseUnitModel> units,
+  ) async {
+    final state =
+        await readCached(learnerId) ?? LearnerStateModel(learnerId: learnerId);
+    final id = _workerUnitId;
+    _workerUnitId = null;
+    final enrollment = state.enrollment;
+    if (id == null || id.isEmpty || enrollment == null) {
+      return restoreLocalProgress(state);
+    }
+    final index = units.indexWhere((u) => u.unitId == id);
+    if (index < 0) throw UnitNotBundledException(id);
+
+    final aligned = enrollment.alignedToUnit(index);
+    final saved = _localCache.getForeverRaw(
+      CacheKeys.activityProgress(learnerId),
+    );
+    // Steps saved for another unit do not belong to this one.
+    if (saved != null && _localUnitIndex(saved) != index) {
+      await _localCache.delete(CacheKeys.activityProgress(learnerId));
+    }
+    state.enrollment = aligned;
+    await _localCache.setForeverRaw(
+      CacheKeys.learnerState(learnerId),
+      state.toJson(),
+    );
+    return restoreLocalProgress(state);
   }
 
   /// Saves the total the Worker gave in an answer.
