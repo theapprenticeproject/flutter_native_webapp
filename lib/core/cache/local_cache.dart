@@ -157,6 +157,24 @@ class LocalCache {
     await _indexBox.deleteAll(keys);
   }
 
+  /// Bundled files (course list, course files, chat flow) are also saved here.
+  /// A browser that ran an older build would keep the old copies forever and
+  /// ignore the new files, for example a new course. So saved copies from
+  /// another build are dropped. The student's progress is never touched. A
+  /// build with no stamp (not made by `scripts/build_web.sh`) always drops them.
+  Future<void> dropContentFromOtherBuilds(String build) async {
+    final sameBuild =
+        !build.startsWith('unknown') &&
+        getForeverRaw(_contentBuildKey)?['build'] == build;
+    if (sameBuild) return;
+    for (final prefix in CacheKeys.bundledContentPrefixes) {
+      await deletePrefix(prefix);
+    }
+    await setForeverRaw(_contentBuildKey, {'build': build});
+  }
+
+  static const String _contentBuildKey = 'v2:content_build';
+
   Future<void> invalidateLearner(String learnerId) async {
     await delete(CacheKeys.learnerState(learnerId));
     await delete(CacheKeys.achievements(learnerId));

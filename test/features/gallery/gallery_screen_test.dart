@@ -25,6 +25,7 @@ Future<void> _pump(
   WidgetTester tester, {
   required FakeWorkerAdapter worker,
   bool shared = false,
+  bool headerFails = false,
 }) async {
   FlutterSecureStorage.setMockInitialValues({});
   tester.view.physicalSize = const Size(420, 2600);
@@ -52,11 +53,13 @@ Future<void> _pump(
       overrides: [
         galleryRepositoryProvider.overrideWithValue(repo),
         galleryHeaderProvider.overrideWith(
-          (ref) async => GalleryHeader(
-            activityTitle: 'Glowing LED Card',
-            shared: shared,
-            ownWorkUrl: null,
-          ),
+          (ref) async => headerFails
+              ? throw StateError('course not ready')
+              : GalleryHeader(
+                  activityTitle: 'Glowing LED Card',
+                  shared: shared,
+                  ownWorkUrl: null,
+                ),
         ),
       ],
       child: MaterialApp.router(routerConfig: router),
@@ -167,5 +170,36 @@ void main() {
     await _pump(tester, worker: worker, shared: true);
     expect(find.text("You've shared"), findsOneWidget);
     expect(find.text('Share your work'), findsNothing);
+  });
+
+  // The header needs the student's course. When that fails (for example the
+  // course is not bundled), the Gallery must still show the work of others, not
+  // a blank gray page.
+  testWidgets('a failing header does not break the Gallery', (tester) async {
+    final worker = FakeWorkerAdapter(
+      (_) => ok({
+        'images': [_img('1', 'Durva Sibling')],
+        'truncated': false,
+      }),
+    );
+    await _pump(tester, worker: worker, headerFails: true);
+
+    expect(tester.takeException(), isNull);
+    expect(find.text('DS'), findsOneWidget);
+  });
+
+  testWidgets('an empty Gallery with a failing header shows the empty text', (
+    tester,
+  ) async {
+    final worker = FakeWorkerAdapter(
+      (_) => ok({'images': [], 'truncated': false, 'cursor': null}),
+    );
+    await _pump(tester, worker: worker, headerFails: true);
+
+    expect(tester.takeException(), isNull);
+    expect(
+      find.text('No shared work yet. Be the first to share yours!'),
+      findsOneWidget,
+    );
   });
 }

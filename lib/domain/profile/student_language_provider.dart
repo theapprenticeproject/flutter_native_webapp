@@ -8,6 +8,6 @@ import 'profile_provider.dart';
 /// or the language is not one the app has.
 final studentLanguageProvider = Provider<String>(
   (ref) => AppConstants.languageCodeFor(
-    ref.watch(activeProfileProvider).value?.language,
+    ref.watch(activeProfileProvider).valueOrNull?.language,
   ),
 );

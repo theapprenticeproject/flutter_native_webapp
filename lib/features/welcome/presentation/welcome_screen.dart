@@ -60,7 +60,8 @@ class _WelcomeBackScreenState extends ConsumerState<WelcomeBackScreen> {
 
     final activeProfileAsync = ref.watch(activeProfileProvider);
     final studentName =
-        activeProfileAsync.value?.studentName ?? context.l10n.welcomeThere;
+        activeProfileAsync.valueOrNull?.studentName ??
+        context.l10n.welcomeThere;
 
     return Scaffold(
       backgroundColor: Colors.white,

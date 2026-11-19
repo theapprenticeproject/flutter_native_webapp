@@ -105,7 +105,7 @@ class MeScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final async = ref.watch(meDataProvider);
-    final activeId = ref.watch(activeProfileProvider).value?.learnerId;
+    final activeId = ref.watch(activeProfileProvider).valueOrNull?.learnerId;
 
     return AppNav(
       child: Scaffold(

@@ -5,6 +5,15 @@ class CacheKeys {
 
   static String _k(String parts) => '$schemaVersion:$parts';
 
+  /// Saved copies of files that are bundled in the app (the course list, the
+  /// course files, the chat flow). They are dropped when the build changes
+  /// (`LocalCache.dropContentFromOtherBuilds`). The program content keys are
+  /// built in `ProgramContentCache`; a test checks the prefixes still match.
+  static const List<String> bundledContentPrefixes = [
+    '$schemaVersion:program_content:',
+    '$schemaVersion:flow:',
+  ];
+
   static String flow(String lang, String category, String fileName) =>
       _k('flow:$lang:$category:$fileName');
 

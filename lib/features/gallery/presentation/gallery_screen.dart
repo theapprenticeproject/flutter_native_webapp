@@ -21,7 +21,7 @@ class GalleryScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final gallery = ref.watch(galleryProvider);
     final notifier = ref.read(galleryProvider.notifier);
-    final header = ref.watch(galleryHeaderProvider).value;
+    final header = ref.watch(galleryHeaderProvider).valueOrNull;
     final shared = header?.shared ?? false;
 
     // "Share your work" goes to Home, where the activity card waits.
