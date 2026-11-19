@@ -1609,6 +1609,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Finish each step to open the whole picture'**
   String get classPicturePartBody;
+
+  /// No description provided for @chatVideoRepeat.
+  ///
+  /// In en, this message translates to:
+  /// **'Points are given only the first time you watch the video 🎬\n\nNow it’s time to do the activity submission 🌟'**
+  String get chatVideoRepeat;
 }
 
 class _AppLocalizationsDelegate

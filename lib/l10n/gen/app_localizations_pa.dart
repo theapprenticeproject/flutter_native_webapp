@@ -881,4 +881,8 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get classPicturePartBody =>
       'Finish each step to open the whole picture';
+
+  @override
+  String get chatVideoRepeat =>
+      'Points are given only the first time you watch the video 🎬\n\nNow it’s time to do the activity submission 🌟';
 }

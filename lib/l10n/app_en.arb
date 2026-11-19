@@ -532,5 +532,6 @@
       }
     }
   },
-  "classPicturePartBody": "Finish each step to open the whole picture"
+  "classPicturePartBody": "Finish each step to open the whole picture",
+  "chatVideoRepeat": "Points are given only the first time you watch the video 🎬\n\nNow it’s time to do the activity submission 🌟"
 }

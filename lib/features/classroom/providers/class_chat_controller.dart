@@ -1,3 +1,4 @@
+import 'video_reward.dart';
 import '../../../l10n/gen/app_localizations.dart';
 import 'dart:async';
 
@@ -125,6 +126,7 @@ class ClassChatController extends ChangeNotifier {
   final List<QuizAnswer> _quizAnswers = [];
 
   int _accumulatedVideoPoints = 0;
+  bool _videoAlreadyRecorded = false;
   int _accumulatedSubmissionPoints = 0;
   int _accumulatedQuizPoints = 0;
   int _completedUnitPoints = 0;
@@ -420,8 +422,8 @@ class ClassChatController extends ChangeNotifier {
     _awaitingInput = false;
     _pushCheckpoint(
       stepId: 'VIDEO-CHECKPOINT',
-      image: 'assets/class-screen/10Points.png',
-      text: l.chatVideoReward(studentName, _accumulatedVideoPoints),
+      image: _videoReward().image,
+      text: _videoReward().text,
       buttonLabel: l.buttonContinue,
       action: 'video_reward',
     );
@@ -1198,12 +1200,19 @@ class ClassChatController extends ChangeNotifier {
 
     _pushCheckpoint(
       stepId: 'VIDEO-CHECKPOINT',
-      image: 'assets/class-screen/10Points.png',
-      text: l.chatVideoReward(studentName, _accumulatedVideoPoints),
+      image: _videoReward().image,
+      text: _videoReward().text,
       buttonLabel: l.buttonContinue,
       action: 'video_reward',
     );
   }
+
+  VideoReward _videoReward() => videoReward(
+    l,
+    studentName: studentName,
+    points: _accumulatedVideoPoints,
+    alreadyRecorded: _videoAlreadyRecorded,
+  );
 
   /// Records the video on the Worker, then on the phone. The points shown are
   /// the ones the Worker gave (R-41). On a failure it returns false and the
@@ -1220,6 +1229,7 @@ class ClassChatController extends ChangeNotifier {
         videoId: video.videoId,
       );
       _accumulatedVideoPoints = record.pointsAwarded;
+      _videoAlreadyRecorded = record.alreadyRecorded;
       _learnerState = await _learnerStateRepository.applyLocalProgress(
         learnerId: learnerId,
         xp: record.pointsAwarded,
