@@ -1253,26 +1253,8 @@ abstract class AppLocalizations {
   /// No description provided for @classPictureLocked.
   ///
   /// In en, this message translates to:
-  /// **'Complete the activity to reveal the secret character hiding behind the cloud! ☁️✨'**
+  /// **'Finish each step to open today\'s secret picture! ✨'**
   String get classPictureLocked;
-
-  /// No description provided for @classPictureProgress.
-  ///
-  /// In en, this message translates to:
-  /// **'Today\'s picture · {n}/4'**
-  String classPictureProgress(int n);
-
-  /// No description provided for @classPictureUnlocked2.
-  ///
-  /// In en, this message translates to:
-  /// **'Congratulations! 🎉 You unlocked today\'s picture.'**
-  String get classPictureUnlocked2;
-
-  /// No description provided for @classPictureLocked2.
-  ///
-  /// In en, this message translates to:
-  /// **'Finish each step to reveal the picture hiding behind the cloud ☁️'**
-  String get classPictureLocked2;
 
   /// No description provided for @classPictureSemantics.
   ///
@@ -1603,6 +1585,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'I am SO proud of you {name} 🥹 That\'s the spirit! [+{points} pts]'**
   String chatPraise(String name, int points);
+
+  /// No description provided for @classPictureFullTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'You opened the full picture! 🥳'**
+  String get classPictureFullTitle;
+
+  /// No description provided for @classPictureFullBody.
+  ///
+  /// In en, this message translates to:
+  /// **'You finished all 4 steps. Great job, champ!'**
+  String get classPictureFullBody;
+
+  /// No description provided for @classPicturePartTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} of 4 pieces opened'**
+  String classPicturePartTitle(int n);
+
+  /// No description provided for @classPicturePartBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish each step to open the whole picture'**
+  String get classPicturePartBody;
 }
 
 class _AppLocalizationsDelegate

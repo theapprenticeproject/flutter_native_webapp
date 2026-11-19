@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import '../../../../l10n/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -12,6 +10,7 @@ import '../../../../domain/learning_progress/activity_models.dart';
 import '../../providers/class_chat_controller.dart';
 import '../../../../domain/learner/learner_state_provider.dart';
 import '../../providers/reveal_asset_resolver.dart';
+import 'picture_quarters.dart';
 
 class ClassContinueBar extends StatelessWidget {
   const ClassContinueBar({super.key, required this.onContinue});
@@ -556,30 +555,99 @@ class ClassRevealPicture extends StatelessWidget {
   );
 }
 
-/// Shows today's picture in a sheet: what is revealed so far (R-69). On a
-/// narrow screen there is no side panel, so this is where the student sees it.
+/// The "Today's picture" sheet (design M-C26b): the picture in quarters, 4
+/// progress bars, and a line that says how far the student is. It opens by
+/// itself when the 4th piece unlocks, and when the student taps the badge.
 Future<void> showRevealSheet(
   BuildContext context, {
   required int unitIndex,
   required int pieces,
+  String? asset,
 }) {
   final n = pieces.clamp(0, 4);
   return showModalBottomSheet<void>(
     context: context,
+    showDragHandle: true,
+    isScrollControlled: true,
     shape: const RoundedRectangleBorder(
-      borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
     ),
     builder: (context) => SafeArea(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(20, 20, 20, 24),
+        padding: const EdgeInsets.fromLTRB(20, 0, 20, 24),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    context.l10n.classTodaysPicture,
+                    style: GoogleFonts.inter(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w800,
+                      color: AppTheme.textColor,
+                    ),
+                  ),
+                ),
+                IconButton.filledTonal(
+                  onPressed: () => Navigator.of(context).pop(),
+                  icon: const Icon(Icons.close_rounded),
+                ),
+              ],
+            ),
+            const SizedBox(height: 16),
+            Center(
+              child: SizedBox(
+                width: 240,
+                child: asset != null
+                    ? PictureQuarters(asset: asset, pieces: n, radius: 20)
+                    : FutureBuilder<String>(
+                        future: RevealAssetResolver.resolve(unitIndex),
+                        builder: (context, snapshot) => PictureQuarters(
+                          asset: snapshot.data,
+                          pieces: n,
+                          radius: 20,
+                        ),
+                      ),
+              ),
+            ),
+            const SizedBox(height: 14),
+            Center(
+              child: SizedBox(
+                width: 240,
+                child: Row(
+                  children: [
+                    for (var i = 0; i < 4; i++) ...[
+                      if (i > 0) const SizedBox(width: 4),
+                      Expanded(
+                        child: Container(
+                          key: ValueKey(
+                            'picture-bar-$i-${i < n ? 'on' : 'off'}',
+                          ),
+                          height: 4,
+                          decoration: BoxDecoration(
+                            color: i < n
+                                ? AppTheme.buttonColor
+                                : const Color(0xFFE4E4FB),
+                            borderRadius: BorderRadius.circular(999),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 18),
             Text(
-              context.l10n.classPictureProgress(n),
+              n >= 4
+                  ? context.l10n.classPictureFullTitle
+                  : context.l10n.classPicturePartTitle(n),
+              textAlign: TextAlign.center,
               style: GoogleFonts.inter(
-                fontSize: 16,
+                fontSize: 18,
                 fontWeight: FontWeight.w800,
                 color: AppTheme.textColor,
               ),
@@ -587,20 +655,14 @@ Future<void> showRevealSheet(
             const SizedBox(height: 6),
             Text(
               n >= 4
-                  ? context.l10n.classPictureUnlocked2
-                  : context.l10n.classPictureLocked2,
+                  ? context.l10n.classPictureFullBody
+                  : context.l10n.classPicturePartBody,
+              textAlign: TextAlign.center,
               style: GoogleFonts.inter(
-                fontSize: 13,
+                fontSize: 14,
                 height: 1.4,
                 color: AppTheme.subheadingColor,
               ),
-            ),
-            const SizedBox(height: 14),
-            ClassRevealPicture(unitIndex: unitIndex, revealProgress: n / 4),
-            const SizedBox(height: 14),
-            ElevatedButton(
-              onPressed: () => Navigator.of(context).pop(),
-              child: Text(context.l10n.buttonOk),
             ),
           ],
         ),
@@ -624,124 +686,15 @@ class _RevealImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return FutureBuilder<String>(
       future: RevealAssetResolver.resolve(unitIndex),
-      builder: (context, snapshot) {
-        if (!snapshot.hasData) {
-          return SizedBox(
-            height: height,
-            child: const Center(
-              child: CircularProgressIndicator(color: AppTheme.buttonColor),
-            ),
-          );
-        }
-        return ClipRRect(
-          borderRadius: BorderRadius.circular(12),
-          child: Stack(
-            alignment: Alignment.center,
-            children: [
-              Container(
-                width: double.infinity,
-                height: height,
-                color: const Color(0xFFDBF4C9),
-              ),
-              Image.asset(
-                snapshot.data!,
-                fit: BoxFit.cover,
-                width: double.infinity,
-                height: height,
-                errorBuilder: (context, error, stackTrace) => Container(
-                  height: height,
-                  color: AppTheme.classroomMessageSurface,
-                  child: const Icon(
-                    Icons.image_rounded,
-                    size: 40,
-                    color: AppTheme.imagePlaceholder,
-                  ),
-                ),
-              ),
-              Positioned.fill(
-                child: AnimatedOpacity(
-                  opacity: (1 - revealProgress).clamp(0.0, 1.0),
-                  duration: const Duration(milliseconds: 500),
-                  child: BackdropFilter(
-                    filter: ImageFilter.blur(
-                      sigmaX: 7 * (1 - revealProgress),
-                      sigmaY: 7 * (1 - revealProgress),
-                    ),
-                    child: Container(color: Colors.white.withValues(alpha: 0)),
-                  ),
-                ),
-              ),
-              if (revealProgress < 1)
-                Positioned.fill(
-                  child: IgnorePointer(
-                    child: CustomPaint(
-                      painter: _CloudRevealPainter(
-                        progress: revealProgress,
-                        color: Colors.white.withValues(alpha: 0.9),
-                      ),
-                    ),
-                  ),
-                ),
-              if (revealProgress < 0.95)
-                Text(
-                  '???',
-                  style: GoogleFonts.inter(
-                    fontSize: 34,
-                    fontWeight: FontWeight.w900,
-                    color: const Color(0xFF2B2B30),
-                    shadows: const [
-                      Shadow(
-                        color: Colors.white,
-                        blurRadius: 3,
-                        offset: Offset(0, 1),
-                      ),
-                    ],
-                  ),
-                ),
-            ],
+      builder: (context, snapshot) => Center(
+        child: SizedBox(
+          width: height,
+          child: PictureQuarters(
+            asset: snapshot.data,
+            pieces: (revealProgress.clamp(0.0, 1.0) * 4).round(),
           ),
-        );
-      },
-    );
-  }
-}
-
-class _CloudRevealPainter extends CustomPainter {
-  const _CloudRevealPainter({required this.progress, required this.color});
-
-  final double progress;
-  final Color color;
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final paint = Paint()..color = color;
-    final coverWidth = size.width * (1 - progress.clamp(0.0, 1.0));
-    final centerX = size.width / 2;
-    final centerY = size.height * 0.48;
-
-    canvas.drawCircle(Offset(centerX, centerY), coverWidth * 0.42, paint);
-    canvas.drawCircle(
-      Offset(centerX - coverWidth * 0.18, centerY + 8),
-      coverWidth * 0.32,
-      paint,
-    );
-    canvas.drawCircle(
-      Offset(centerX + coverWidth * 0.18, centerY + 6),
-      coverWidth * 0.34,
-      paint,
-    );
-    canvas.drawOval(
-      Rect.fromCenter(
-        center: Offset(centerX, centerY + 20),
-        width: coverWidth * 0.82,
-        height: coverWidth * 0.34,
+        ),
       ),
-      paint,
     );
-  }
-
-  @override
-  bool shouldRepaint(covariant _CloudRevealPainter oldDelegate) {
-    return oldDelegate.progress != progress || oldDelegate.color != color;
   }
 }

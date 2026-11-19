@@ -652,20 +652,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get classPictureLocked =>
-      'Complete the activity to reveal the secret character hiding behind the cloud! ☁️✨';
-
-  @override
-  String classPictureProgress(int n) {
-    return 'Today\'s picture · $n/4';
-  }
-
-  @override
-  String get classPictureUnlocked2 =>
-      'Congratulations! 🎉 You unlocked today\'s picture.';
-
-  @override
-  String get classPictureLocked2 =>
-      'Finish each step to reveal the picture hiding behind the cloud ☁️';
+      'Finish each step to open today\'s secret picture! ✨';
 
   @override
   String classPictureSemantics(int n) {
@@ -878,4 +865,20 @@ class AppLocalizationsHi extends AppLocalizations {
   String chatPraise(String name, int points) {
     return 'I am SO proud of you $name 🥹 That\'s the spirit! [+$points pts]';
   }
+
+  @override
+  String get classPictureFullTitle => 'You opened the full picture! 🥳';
+
+  @override
+  String get classPictureFullBody =>
+      'You finished all 4 steps. Great job, champ!';
+
+  @override
+  String classPicturePartTitle(int n) {
+    return '$n of 4 pieces opened';
+  }
+
+  @override
+  String get classPicturePartBody =>
+      'Finish each step to open the whole picture';
 }

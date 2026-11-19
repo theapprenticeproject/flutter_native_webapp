@@ -17,13 +17,12 @@ int unlockedPieces({
 /// How much of the picture is revealed: a quarter for each piece.
 double pieceFraction(int pieces) => pieces.clamp(0, 4) / 4;
 
-/// Show the picture in a sheet when a piece unlocks (R-69). A wide screen has a
-/// side panel that already shows it. A narrow one (a phone) has none, so the
-/// sheet is the way the student sees the picture get revealed. [previous] is the
-/// count before; null means this is the first time we look, which is a starting
-/// point and not a new unlock.
+/// Open the full picture sheet when the 4th piece unlocks (R-69, mock M-C26b).
+/// Pieces 1 to 3 show only in the badge. A wide screen has a side panel that
+/// already shows the picture. [previous] is the count before; null means this
+/// is the first time we look, which is a starting point and not a new unlock.
 bool shouldShowRevealSheet({
   required int? previous,
   required int current,
   required bool narrow,
-}) => narrow && previous != null && current > previous;
+}) => narrow && previous != null && previous < 4 && current >= 4;

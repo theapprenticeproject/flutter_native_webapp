@@ -196,128 +196,139 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
                 ClassChatContentType.checkpoint &&
             widget.controller.messages.first.data['action'] == 'video';
 
-        return Column(
+        // The badge floats at the bottom right (design M-C03, M-C05).
+        return Stack(
           children: [
-            AppHeader(
-              title: widget.controller.unitName,
-              points: widget.controller.displayedTotalPoints,
-              showBack: true,
-              showPoints: true,
-              badge: PictureBadge(
-                pieces: widget.controller.unlockedPictureCount,
-                onTap: _openPicture,
-              ),
-              onBack: () => context.go(AppRoutes.home),
-            ),
-            Expanded(
-              child: Container(
-                color: AppTheme.appBackground,
-                child: LayoutBuilder(
-                  builder: (context, constraints) {
-                    final showRail = constraints.maxWidth >= 640;
+            Column(
+              children: [
+                AppHeader(
+                  title: widget.controller.unitName,
+                  points: widget.controller.displayedTotalPoints,
+                  showBack: true,
+                  showPoints: true,
+                  onBack: () => context.go(AppRoutes.home),
+                ),
+                Expanded(
+                  child: Container(
+                    color: AppTheme.appBackground,
+                    child: LayoutBuilder(
+                      builder: (context, constraints) {
+                        final showRail = constraints.maxWidth >= 640;
 
-                    if (isVideoStartCheckpoint) {
-                      return Center(
-                        child: ConstrainedBox(
-                          constraints: const BoxConstraints(maxWidth: 1060),
-                          child: ClassCheckpointCard(
-                            message: widget.controller.messages.first,
-                            controller: widget.controller,
-                            fillAvailableHeight: true,
-                          ),
-                        ),
-                      );
-                    }
-
-                    final chatColumn = ListView.builder(
-                      controller: _scrollController,
-                      padding: const EdgeInsets.fromLTRB(14, 20, 14, 24),
-                      itemCount:
-                          widget.controller.messages.length +
-                          (showChoiceReveal ? 1 : 0),
-                      itemBuilder: (context, index) {
-                        if (index < widget.controller.messages.length) {
-                          final message = widget.controller.messages[index];
-                          return ClassChatBubbleRow(
-                            key: ValueKey(message.id),
-                            message: message,
-                            controller: widget.controller,
+                        if (isVideoStartCheckpoint) {
+                          return Center(
+                            child: ConstrainedBox(
+                              constraints: const BoxConstraints(maxWidth: 1060),
+                              child: ClassCheckpointCard(
+                                message: widget.controller.messages.first,
+                                controller: widget.controller,
+                                fillAvailableHeight: true,
+                              ),
+                            ),
                           );
                         }
-                        return ClassNextActivityInlineCard(
-                          controller: widget.controller,
-                          onStartNextActivity: widget.onStartNextActivity,
+
+                        final chatColumn = ListView.builder(
+                          controller: _scrollController,
+                          padding: const EdgeInsets.fromLTRB(14, 20, 14, 24),
+                          itemCount:
+                              widget.controller.messages.length +
+                              (showChoiceReveal ? 1 : 0),
+                          itemBuilder: (context, index) {
+                            if (index < widget.controller.messages.length) {
+                              final message = widget.controller.messages[index];
+                              return ClassChatBubbleRow(
+                                key: ValueKey(message.id),
+                                message: message,
+                                controller: widget.controller,
+                              );
+                            }
+                            return ClassNextActivityInlineCard(
+                              controller: widget.controller,
+                              onStartNextActivity: widget.onStartNextActivity,
+                            );
+                          },
+                        );
+
+                        if (!showRail) {
+                          return Center(
+                            child: ConstrainedBox(
+                              constraints: const BoxConstraints(maxWidth: 760),
+                              child: Container(
+                                color: AppTheme.classroomBackground,
+                                child: chatColumn,
+                              ),
+                            ),
+                          );
+                        }
+
+                        return Center(
+                          child: ConstrainedBox(
+                            constraints: const BoxConstraints(maxWidth: 1060),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Expanded(
+                                  child: Padding(
+                                    padding: const EdgeInsets.fromLTRB(
+                                      60,
+                                      14,
+                                      0,
+                                      14,
+                                    ),
+                                    child: ConstrainedBox(
+                                      constraints: const BoxConstraints(
+                                        maxWidth: 700,
+                                      ),
+                                      child: Container(
+                                        color: AppTheme.classroomBackground,
+                                        child: chatColumn,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 260,
+                                  child: Padding(
+                                    padding: const EdgeInsets.fromLTRB(
+                                      34,
+                                      20,
+                                      16,
+                                      20,
+                                    ),
+                                    child: ClassRevealRail(
+                                      unitIndex: widget.controller.unitIndex,
+                                      revealProgress: showChoiceReveal
+                                          ? 1
+                                          : widget.controller.revealProgress,
+                                      studentName:
+                                          widget.controller.studentName,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         );
                       },
-                    );
-
-                    if (!showRail) {
-                      return Center(
-                        child: ConstrainedBox(
-                          constraints: const BoxConstraints(maxWidth: 760),
-                          child: Container(
-                            color: AppTheme.classroomBackground,
-                            child: chatColumn,
-                          ),
-                        ),
-                      );
-                    }
-
-                    return Center(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(maxWidth: 1060),
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Expanded(
-                              child: Padding(
-                                padding: const EdgeInsets.fromLTRB(
-                                  60,
-                                  14,
-                                  0,
-                                  14,
-                                ),
-                                child: ConstrainedBox(
-                                  constraints: const BoxConstraints(
-                                    maxWidth: 700,
-                                  ),
-                                  child: Container(
-                                    color: AppTheme.classroomBackground,
-                                    child: chatColumn,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              width: 260,
-                              child: Padding(
-                                padding: const EdgeInsets.fromLTRB(
-                                  34,
-                                  20,
-                                  16,
-                                  20,
-                                ),
-                                child: ClassRevealRail(
-                                  unitIndex: widget.controller.unitIndex,
-                                  revealProgress: showChoiceReveal
-                                      ? 1
-                                      : widget.controller.revealProgress,
-                                  studentName: widget.controller.studentName,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    );
-                  },
+                    ),
+                  ),
                 ),
+                if (widget.controller.isAwaitingContinue && !showChoiceReveal)
+                  ClassContinueBar(
+                    onContinue: widget.controller.continueAfterReview,
+                  ),
+              ],
+            ),
+            Positioned(
+              right: 16,
+              bottom: 16,
+              child: PictureBadge(
+                pieces: widget.controller.unlockedPictureCount,
+                unitIndex: widget.controller.unitIndex,
+                onTap: _openPicture,
               ),
             ),
-            if (widget.controller.isAwaitingContinue && !showChoiceReveal)
-              ClassContinueBar(
-                onContinue: widget.controller.continueAfterReview,
-              ),
           ],
         );
       },
