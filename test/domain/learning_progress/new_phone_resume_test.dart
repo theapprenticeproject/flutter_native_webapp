@@ -178,24 +178,24 @@ void main() {
   );
 
   test(
-    'the Worker has no step but a pending work for this unit: not Watch',
+    'no step on the Worker, even with a work sent: Watch (video first)',
     () async {
-      // What a test student looked like after a reset: last_activity_type null,
-      // yet the sync answer carries the work that was sent.
+      // A reset student: last_activity_type null, but the sync answer still
+      // carries the work. The Worker refuses the quiz until the video is
+      // recorded, so the student starts with the video.
       syncAnswer = sync(null, sentFor: 'AS-1');
       submissions = [_row('Pending')];
 
       final r = await openApp();
 
-      expect(r.feedback, FeedbackStage.waiting);
+      expect(r.feedback, isNull);
       expect(
         ClassroomProgressResolver.resolve(
           enrollment: r.state.enrollment!,
           unitIndex: r.unitIndex,
           unit: _units[0],
-          feedback: r.feedback,
         ).stage,
-        ClassroomProgressStage.takeQuiz,
+        ClassroomProgressStage.watchVideo,
       );
     },
   );

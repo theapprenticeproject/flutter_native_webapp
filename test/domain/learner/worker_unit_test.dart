@@ -351,14 +351,16 @@ void main() {
     });
 
     test(
-      'no step recorded, but a work was sent for this unit: video done',
+      'no step recorded, even with a work sent: the video is NOT done',
       () async {
-        // The Worker only takes a work after the video, so the video is done.
+        // After a reset the Worker can hold a work but no watched video. It
+        // refuses the quiz ("video must be completed") until the video is
+        // recorded, so the app must not skip the Watch step.
         syncActivity = null;
         syncSubmissionFor = 'AS-Unit -3-Course-A-3';
         await repo.refreshPoints('S1');
         final state = await repo.alignToWorkerUnit('S1', _units);
-        expect(state.enrollment!.videosCompleted, 3);
+        expect(state.enrollment!.videosCompleted, 2);
         expect(state.enrollment!.quizzesCompleted, 2);
         expect(state.enrollment!.submissionIndex, 2);
       },
