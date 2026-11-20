@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import '../../../l10n/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -19,38 +17,9 @@ class WelcomeBackScreen extends ConsumerStatefulWidget {
 }
 
 class _WelcomeBackScreenState extends ConsumerState<WelcomeBackScreen> {
-  static const Duration _minimumHold = Duration(seconds: 5);
-
-  Timer? _autoAdvanceTimer;
-  bool _minimumHoldElapsed = false;
-  bool _userTappedContinue = false;
-
-  @override
-  void initState() {
-    super.initState();
-    _autoAdvanceTimer = Timer(_minimumHold, () {
-      if (!mounted) return;
-      setState(() => _minimumHoldElapsed = true);
-
-      if (_userTappedContinue) _goHome();
-    });
-  }
-
-  @override
-  void dispose() {
-    _autoAdvanceTimer?.cancel();
-    super.dispose();
-  }
-
   void _goHome() {
     widget.onDone?.call();
     if (mounted) context.go(AppRoutes.home);
-  }
-
-  void _handleContinuePressed() {
-    _userTappedContinue = true;
-
-    if (_minimumHoldElapsed) _goHome();
   }
 
   @override
@@ -148,9 +117,7 @@ class _WelcomeBackScreenState extends ConsumerState<WelcomeBackScreen> {
                     width: isDesktop ? 320 : double.infinity,
                     height: 56,
                     child: ElevatedButton(
-                      onPressed: _minimumHoldElapsed
-                          ? _handleContinuePressed
-                          : null,
+                      onPressed: _goHome,
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(0xFF5B5BD6),
                         foregroundColor: Colors.white,
