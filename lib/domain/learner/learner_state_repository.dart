@@ -108,12 +108,14 @@ class LearnerStateRepository {
     // An old answer must never be used after a failed sync.
     _workerUnitId = null;
     _workerActivityKnown = false;
+    _workerSubmissionFor = null;
     try {
       final sync = await progress.sync(lastUpdated: 0);
       _workerUnitId = sync.currentLearningUnit;
       // `changed: false` carries no data: nothing is known then.
       _workerActivityKnown = sync.changed;
       _workerActivity = sync.lastActivityType;
+      _workerSubmissionFor = sync.lastSubmission?.assignmentId;
       final points = sync.points;
       if (points != null) await applyServerPoints(learnerId, points);
     } catch (_) {
@@ -130,6 +132,9 @@ class LearnerStateRepository {
   String? _workerActivity;
   bool _workerActivityKnown = false;
 
+  /// The assignment of the work the same `sync` showed (`last_submission`).
+  String? _workerSubmissionFor;
+
   /// Puts the student on the unit the Worker says (`current_learning_unit`): the
   /// Worker rejects progress for a unit that is not next in sequence. Does
   /// nothing when there is no fresh answer (the sync failed, or the Worker named
@@ -144,6 +149,8 @@ class LearnerStateRepository {
     final id = _workerUnitId;
     final activity = _workerActivity;
     final activityKnown = _workerActivityKnown;
+    final sentFor = _workerSubmissionFor;
+    _workerSubmissionFor = null;
     _workerUnitId = null;
     _workerActivity = null;
     _workerActivityKnown = false;
@@ -154,10 +161,15 @@ class LearnerStateRepository {
     final index = units.indexWhere((u) => u.unitId == id);
     if (index < 0) throw UnitNotBundledException(id);
 
+    // A work sent for this unit means the video was done: the Worker only takes
+    // a work after it. This holds even when it records no step (after a reset).
+    final sentHere =
+        sentFor != null &&
+        units[index].assignments.any((a) => a.assignmentId == sentFor);
     final aligned = enrollment.alignedToUnit(
       index,
       known: activityKnown,
-      lastActivity: activity,
+      lastActivity: activity ?? (sentHere ? 'submission' : null),
     );
     final saved = _localCache.getForeverRaw(
       CacheKeys.activityProgress(learnerId),

@@ -118,12 +118,18 @@ void main() {
     );
   }
 
-  Map<String, dynamic> sync(String? activity, {String unit = 'U-1'}) => {
+  Map<String, dynamic> sync(
+    String? activity, {
+    String unit = 'U-1',
+    String? sentFor,
+  }) => {
     'changed': true,
     'updated_at': 5,
     'points': 10,
     'current_learning_unit': unit,
     'last_activity_type': activity,
+    if (sentFor != null)
+      'last_submission': {..._row('Pending'), 'assignment_id_link': sentFor},
   };
 
   test(
@@ -154,6 +160,29 @@ void main() {
       // "quiz" first when it is), so the quiz stays open. If it was done, the
       // Worker answers a repeat and the student goes on.
       syncAnswer = sync('submission');
+      submissions = [_row('Pending')];
+
+      final r = await openApp();
+
+      expect(r.feedback, FeedbackStage.waiting);
+      expect(
+        ClassroomProgressResolver.resolve(
+          enrollment: r.state.enrollment!,
+          unitIndex: r.unitIndex,
+          unit: _units[0],
+          feedback: r.feedback,
+        ).stage,
+        ClassroomProgressStage.takeQuiz,
+      );
+    },
+  );
+
+  test(
+    'the Worker has no step but a pending work for this unit: not Watch',
+    () async {
+      // What a test student looked like after a reset: last_activity_type null,
+      // yet the sync answer carries the work that was sent.
+      syncAnswer = sync(null, sentFor: 'AS-1');
       submissions = [_row('Pending')];
 
       final r = await openApp();

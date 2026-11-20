@@ -165,11 +165,13 @@ void main() {
     late LearnerStateRepository repo;
     Object? syncUnit = 'Unit -3-Course-A-3';
     Object? syncActivity;
+    String? syncSubmissionFor;
     var syncFails = false;
 
     setUp(() async {
       syncUnit = 'Unit -3-Course-A-3';
       syncActivity = null;
+      syncSubmissionFor = null;
       syncFails = false;
       FlutterSecureStorage.setMockInitialValues({});
       dir = await Directory.systemTemp.createTemp('tap_worker_unit_');
@@ -195,6 +197,15 @@ void main() {
                 'points': 5,
                 'current_learning_unit': syncUnit,
                 'last_activity_type': syncActivity,
+                if (syncSubmissionFor != null)
+                  'last_submission': {
+                    'submission_id': 'SUB-1',
+                    'assignment_id_link': syncSubmissionFor,
+                    'status': 'Processing',
+                    'result_status': 'Pending',
+                    'attempt_number': 1,
+                    'attempts_remaining': 1,
+                  },
               }),
       );
       final http = HttpClient(
@@ -338,5 +349,38 @@ void main() {
       final state = await repo.alignToWorkerUnit('S1', _units);
       expect(state.enrollment!.videosCompleted, 2);
     });
+
+    test(
+      'no step recorded, but a work was sent for this unit: video done',
+      () async {
+        // The Worker only takes a work after the video, so the video is done.
+        syncActivity = null;
+        syncSubmissionFor = 'AS-Unit -3-Course-A-3';
+        await repo.refreshPoints('S1');
+        final state = await repo.alignToWorkerUnit('S1', _units);
+        expect(state.enrollment!.videosCompleted, 3);
+        expect(state.enrollment!.quizzesCompleted, 2);
+        expect(state.enrollment!.submissionIndex, 2);
+      },
+    );
+
+    test('a work sent for another unit says nothing about this one', () async {
+      syncActivity = null;
+      syncSubmissionFor = 'AS-Unit -1-Course-A-1';
+      await repo.refreshPoints('S1');
+      final state = await repo.alignToWorkerUnit('S1', _units);
+      expect(state.enrollment!.videosCompleted, 2);
+    });
+
+    test(
+      'the Worker\'s own last activity is not changed by a sent work',
+      () async {
+        syncActivity = 'quiz';
+        syncSubmissionFor = 'AS-Unit -3-Course-A-3';
+        await repo.refreshPoints('S1');
+        final state = await repo.alignToWorkerUnit('S1', _units);
+        expect(state.enrollment!.quizzesCompleted, 3);
+      },
+    );
   });
 }
