@@ -105,11 +105,15 @@ class LearnerStateRepository {
   Future<void> refreshPoints(String learnerId) async {
     final progress = _progress;
     if (progress == null) return;
-    _workerUnitId =
-        null; // an old answer must never be used after a failed sync
+    // An old answer must never be used after a failed sync.
+    _workerUnitId = null;
+    _workerActivityKnown = false;
     try {
       final sync = await progress.sync(lastUpdated: 0);
       _workerUnitId = sync.currentLearningUnit;
+      // `changed: false` carries no data: nothing is known then.
+      _workerActivityKnown = sync.changed;
+      _workerActivity = sync.lastActivityType;
       final points = sync.points;
       if (points != null) await applyServerPoints(learnerId, points);
     } catch (_) {
@@ -120,6 +124,11 @@ class LearnerStateRepository {
   /// The unit the Worker named in the latest successful `sync`. It is used once,
   /// by [alignToWorkerUnit].
   String? _workerUnitId;
+
+  /// What the Worker said about the student's work in that unit
+  /// (`last_activity_type`), when the same sync carried data.
+  String? _workerActivity;
+  bool _workerActivityKnown = false;
 
   /// Puts the student on the unit the Worker says (`current_learning_unit`): the
   /// Worker rejects progress for a unit that is not next in sequence. Does
@@ -133,7 +142,11 @@ class LearnerStateRepository {
     final state =
         await readCached(learnerId) ?? LearnerStateModel(learnerId: learnerId);
     final id = _workerUnitId;
+    final activity = _workerActivity;
+    final activityKnown = _workerActivityKnown;
     _workerUnitId = null;
+    _workerActivity = null;
+    _workerActivityKnown = false;
     final enrollment = state.enrollment;
     if (id == null || id.isEmpty || enrollment == null) {
       return restoreLocalProgress(state);
@@ -141,12 +154,19 @@ class LearnerStateRepository {
     final index = units.indexWhere((u) => u.unitId == id);
     if (index < 0) throw UnitNotBundledException(id);
 
-    final aligned = enrollment.alignedToUnit(index);
+    final aligned = enrollment.alignedToUnit(
+      index,
+      known: activityKnown,
+      lastActivity: activity,
+    );
     final saved = _localCache.getForeverRaw(
       CacheKeys.activityProgress(learnerId),
     );
-    // Steps saved for another unit do not belong to this one.
-    if (saved != null && _localUnitIndex(saved) != index) {
+    // Steps saved for another unit do not belong to this one. Steps for this
+    // unit stay, unless the Worker says they did not happen (after a reset).
+    if (saved != null &&
+        (_localUnitIndex(saved) != index ||
+            (activityKnown && _contradicts(saved, activity)))) {
       await _localCache.delete(CacheKeys.activityProgress(learnerId));
     }
     state.enrollment = aligned;
@@ -317,6 +337,15 @@ class LearnerStateRepository {
     );
     return model;
   }
+
+  /// The saved steps say something the Worker's `last_activity_type` excludes.
+  /// The video needs any activity, the quiz needs `quiz` (`submission` does not
+  /// say), and the work is closed only by the Worker (R-83).
+  bool _contradicts(Map<String, dynamic> saved, String? activity) =>
+      (saved['video_done'] == true && activity == null) ||
+      (saved['quiz_done'] == true &&
+          (activity == null || activity == 'video')) ||
+      saved['submission_done'] == true;
 
   int? _localUnitIndex(Map<String, dynamic> progress) {
     final explicit = (progress['unit_index'] as num?)?.toInt();

@@ -100,6 +100,62 @@ void main() {
     });
   });
 
+  group('EnrollmentModel.alignedToUnit with the Worker\'s last activity', () {
+    EnrollmentModel e(int v, int q, int s) => EnrollmentModel(
+      course: 'C',
+      videosCompleted: v,
+      quizzesCompleted: q,
+      submissionIndex: s,
+    );
+    List<int> counts(EnrollmentModel m) => [
+      m.videosCompleted,
+      m.quizzesCompleted,
+      m.submissionIndex,
+    ];
+    List<int> at(int unit, String? last, [EnrollmentModel? from]) => counts(
+      (from ?? e(0, 0, 0)).alignedToUnit(unit, known: true, lastActivity: last),
+    );
+
+    // The Worker's last_activity_type: video, quiz, submission or null.
+    test('video: the video is done, nothing else', () {
+      expect(at(2, 'video'), [3, 2, 2]);
+    });
+
+    test('quiz: the video and the quiz are done', () {
+      expect(at(2, 'quiz'), [3, 3, 2]);
+    });
+
+    test('submission: the video is done; the quiz is not known, so open', () {
+      expect(at(2, 'submission'), [3, 2, 2]);
+    });
+
+    test('null: nothing is done in this unit, whatever the phone says', () {
+      expect(at(2, null), [2, 2, 2]);
+      expect(at(2, null, e(3, 3, 3)), [2, 2, 2]);
+    });
+
+    test('the work is never closed by the phone: valid feedback does that', () {
+      for (final last in ['video', 'quiz', 'submission', null]) {
+        expect(at(2, last)[2], 2, reason: '$last');
+      }
+    });
+
+    test('no answer from the Worker: the earlier rule still holds', () {
+      expect(counts(e(3, 3, 3).alignedToUnit(2)), [3, 3, 2]);
+    });
+
+    test('the unit index is the Worker\'s unit for every activity', () {
+      for (final last in ['video', 'quiz', 'submission', null]) {
+        final m = e(0, 0, 0).alignedToUnit(2, known: true, lastActivity: last);
+        expect(
+          ClassroomProgressResolver.resolveUnitIndexForCourse(m, _units),
+          2,
+          reason: '$last',
+        );
+      }
+    });
+  });
+
   group('LearnerStateRepository.alignToWorkerUnit', () {
     late Directory dir;
     late Box<String> values;
@@ -108,10 +164,12 @@ void main() {
     late FakeWorkerAdapter adapter;
     late LearnerStateRepository repo;
     Object? syncUnit = 'Unit -3-Course-A-3';
+    Object? syncActivity;
     var syncFails = false;
 
     setUp(() async {
       syncUnit = 'Unit -3-Course-A-3';
+      syncActivity = null;
       syncFails = false;
       FlutterSecureStorage.setMockInitialValues({});
       dir = await Directory.systemTemp.createTemp('tap_worker_unit_');
@@ -136,6 +194,7 @@ void main() {
                 'updated_at': 9,
                 'points': 5,
                 'current_learning_unit': syncUnit,
+                'last_activity_type': syncActivity,
               }),
       );
       final http = HttpClient(
@@ -238,13 +297,46 @@ void main() {
       },
     );
 
-    test('steps saved for the same unit are kept', () async {
-      syncUnit = 'Unit -1-Course-A-1';
-      await repo.applyLocalProgress(learnerId: 'S1', xp: 5, videoIndex: 1);
+    test(
+      'steps saved for the same unit are kept when the Worker agrees',
+      () async {
+        syncUnit = 'Unit -1-Course-A-1';
+        syncActivity = 'video';
+        await repo.applyLocalProgress(learnerId: 'S1', xp: 5, videoIndex: 1);
+        await repo.refreshPoints('S1');
+        final state = await repo.alignToWorkerUnit('S1', _units);
+        expect(state.enrollment!.videosCompleted, 1);
+        expect(
+          cache.getForeverRaw(CacheKeys.activityProgress('S1')),
+          isNotNull,
+        );
+      },
+    );
+
+    test('the video the Worker already has is done on a new phone', () async {
+      syncActivity = 'video';
       await repo.refreshPoints('S1');
       final state = await repo.alignToWorkerUnit('S1', _units);
-      expect(state.enrollment!.videosCompleted, 1);
-      expect(cache.getForeverRaw(CacheKeys.activityProgress('S1')), isNotNull);
+      expect(state.enrollment!.videosCompleted, 3);
+      expect(state.enrollment!.quizzesCompleted, 2);
+      expect(state.enrollment!.submissionIndex, 2);
+    });
+
+    test('video and quiz the Worker already has are done too', () async {
+      syncActivity = 'quiz';
+      await repo.refreshPoints('S1');
+      final state = await repo.alignToWorkerUnit('S1', _units);
+      expect(state.enrollment!.videosCompleted, 3);
+      expect(state.enrollment!.quizzesCompleted, 3);
+    });
+
+    test('a Worker with nothing in this unit wins over the phone', () async {
+      // The phone says the video is done (for example after a reset).
+      await repo.applyLocalProgress(learnerId: 'S1', xp: 5, videoIndex: 3);
+      syncActivity = null;
+      await repo.refreshPoints('S1');
+      final state = await repo.alignToWorkerUnit('S1', _units);
+      expect(state.enrollment!.videosCompleted, 2);
     });
   });
 }
