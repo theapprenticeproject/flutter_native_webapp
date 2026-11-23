@@ -21,5 +21,10 @@ class AppRoutes {
   static const String link = '/l/:code';
   static String linkFor(String code) => '/l/$code';
 
-  static Page<void> page(Widget child) => NoTransitionPage<void>(child: child);
+  /// A route's page. It needs its own key: without one, the Navigator treats
+  /// the next page as the same page with new content, and a dialog or sheet
+  /// opened above the old screen stays on top of the new one (the phone Back
+  /// button left "Submission Help" over Home, and then a gray page).
+  static Page<void> page(GoRouterState state, Widget child) =>
+      NoTransitionPage<void>(key: state.pageKey, child: child);
 }

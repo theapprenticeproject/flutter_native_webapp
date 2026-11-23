@@ -120,26 +120,30 @@ final routerProvider = Provider<GoRouter>((ref) {
     routes: [
       GoRoute(
         path: AppRoutes.splash,
-        pageBuilder: (context, state) => AppRoutes.page(const SplashScreen()),
+        pageBuilder: (context, state) =>
+            AppRoutes.page(state, const SplashScreen()),
       ),
       GoRoute(
         path: AppRoutes.openLink,
-        pageBuilder: (context, state) => AppRoutes.page(const OpenLinkScreen()),
+        pageBuilder: (context, state) =>
+            AppRoutes.page(state, const OpenLinkScreen()),
       ),
       GoRoute(
         path: AppRoutes.profileSelect,
         pageBuilder: (context, state) =>
-            AppRoutes.page(const ProfileSelectScreen()),
+            AppRoutes.page(state, const ProfileSelectScreen()),
       ),
       GoRoute(
         path: AppRoutes.link,
         pageBuilder: (context, state) => AppRoutes.page(
+          state,
           LinkSignInScreen(code: state.pathParameters['code'] ?? ''),
         ),
       ),
       GoRoute(
         path: AppRoutes.welcome,
         pageBuilder: (context, state) => AppRoutes.page(
+          state,
           WelcomeBackScreen(
             onDone: () => ref.read(_welcomeGateProvider.notifier).state = true,
           ),
@@ -148,27 +152,33 @@ final routerProvider = Provider<GoRouter>((ref) {
 
       GoRoute(
         path: AppRoutes.home,
-        pageBuilder: (context, state) => AppRoutes.page(const HomeScreen()),
+        pageBuilder: (context, state) =>
+            AppRoutes.page(state, const HomeScreen()),
       ),
       GoRoute(
         path: AppRoutes.classroom,
-        pageBuilder: (context, state) => AppRoutes.page(const ClassScreen()),
+        pageBuilder: (context, state) =>
+            AppRoutes.page(state, const ClassScreen()),
       ),
       GoRoute(
         path: AppRoutes.gallery,
-        pageBuilder: (context, state) => AppRoutes.page(const GalleryScreen()),
+        pageBuilder: (context, state) =>
+            AppRoutes.page(state, const GalleryScreen()),
       ),
       GoRoute(
         path: AppRoutes.me,
-        pageBuilder: (context, state) => AppRoutes.page(const MeScreen()),
+        pageBuilder: (context, state) =>
+            AppRoutes.page(state, const MeScreen()),
       ),
       GoRoute(
         path: AppRoutes.profile,
-        pageBuilder: (context, state) => AppRoutes.page(const SettingsScreen()),
+        pageBuilder: (context, state) =>
+            AppRoutes.page(state, const SettingsScreen()),
       ),
       GoRoute(
         path: AppRoutes.error,
-        pageBuilder: (context, state) => AppRoutes.page(const ErrorScreen()),
+        pageBuilder: (context, state) =>
+            AppRoutes.page(state, const ErrorScreen()),
       ),
     ],
   );
