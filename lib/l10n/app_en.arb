@@ -447,7 +447,7 @@
       }
     }
   },
-  "chatSendCorrected": "{reason}\n\nPlease send corrected work 📸",
+  "chatSendCorrected": "{reason}\n\nNo worries; please send it again!",
   "@chatSendCorrected": {
     "placeholders": {
       "reason": {
@@ -533,6 +533,6 @@
   },
   "classPicturePartBody": "Finish each step to open the whole picture",
   "chatVideoRepeat": "Points are given only the first time you watch the video 🎬\n\nNow it’s time to do the activity submission 🌟",
-  "chatSendCorrectedOnly": "Please send corrected work 📸",
-  "chatNotAccepted": "This work was not accepted."
+  "chatSendCorrectedOnly": "Hi Champ 👋\nI couldn't review your work 🥺 Because the photo was either a bit unclear or not of today's activity.\n\nNo worries; please send it again!",
+  "chatNotAccepted": "I couldn't review your work 🥺 Because the photo was either a bit unclear or not of today's activity."
 }

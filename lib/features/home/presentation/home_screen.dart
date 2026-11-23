@@ -55,7 +55,7 @@ class _HomeDashboard extends StatelessWidget {
     final progress = dashboard.progress;
     final stage = dashboard.showCompletionCelebration || dashboard.unit == null
         ? LearningStage.completed
-        : progress.currentStage;
+        : dashboard.stage;
     final unit = dashboard.unit;
 
     return LayoutBuilder(

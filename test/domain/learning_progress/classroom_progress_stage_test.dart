@@ -207,6 +207,40 @@ void main() {
       );
     });
 
+    // A not-valid result is feedback too: Home says "feedback ready" and the
+    // button opens the activity, where the page with the message and "Send
+    // again" is. Home does not repeat that message.
+    test('Home shows "feedback ready" for a work that is not valid', () {
+      for (final f in [FeedbackStage.notValid, FeedbackStage.notValidNoRetry]) {
+        expect(
+          homeStageFor(ClassroomProgressStage.awaitingFeedback, f),
+          LearningStage.feedbackReady,
+          reason: '$f',
+        );
+      }
+    });
+
+    test('waiting, slow or unknown feedback stays "submission pending"', () {
+      for (final f in [FeedbackStage.waiting, FeedbackStage.slow, null]) {
+        expect(
+          homeStageFor(ClassroomProgressStage.awaitingFeedback, f),
+          LearningStage.submissionPending,
+          reason: '$f',
+        );
+      }
+    });
+
+    test('the feedback changes no other stage', () {
+      for (final stage in ClassroomProgressStage.values) {
+        if (stage == ClassroomProgressStage.awaitingFeedback) continue;
+        expect(
+          homeStageFor(stage, FeedbackStage.notValid),
+          stage.homeStage,
+          reason: '$stage',
+        );
+      }
+    });
+
     test('Home shows "feedback ready" when the Results chat is next', () {
       expect(
         ClassroomProgressStage.resultsReady.homeStage,

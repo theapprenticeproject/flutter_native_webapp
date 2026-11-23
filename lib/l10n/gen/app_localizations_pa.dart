@@ -767,7 +767,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String chatSendCorrected(String reason) {
-    return '$reason\n\nPlease send corrected work 📸';
+    return '$reason\n\nNo worries; please send it again!';
   }
 
   @override
@@ -884,8 +884,10 @@ class AppLocalizationsPa extends AppLocalizations {
       'Points are given only the first time you watch the video 🎬\n\nNow it’s time to do the activity submission 🌟';
 
   @override
-  String get chatSendCorrectedOnly => 'Please send corrected work 📸';
+  String get chatSendCorrectedOnly =>
+      'Hi Champ 👋\nI couldn\'t review your work 🥺 Because the photo was either a bit unclear or not of today\'s activity.\n\nNo worries; please send it again!';
 
   @override
-  String get chatNotAccepted => 'This work was not accepted.';
+  String get chatNotAccepted =>
+      'I couldn\'t review your work 🥺 Because the photo was either a bit unclear or not of today\'s activity.';
 }

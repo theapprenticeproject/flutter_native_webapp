@@ -1427,7 +1427,7 @@ abstract class AppLocalizations {
   /// No description provided for @chatSendCorrected.
   ///
   /// In en, this message translates to:
-  /// **'{reason}\n\nPlease send corrected work 📸'**
+  /// **'{reason}\n\nNo worries; please send it again!'**
   String chatSendCorrected(String reason);
 
   /// No description provided for @chatNoMoreTries.
@@ -1613,13 +1613,13 @@ abstract class AppLocalizations {
   /// No description provided for @chatSendCorrectedOnly.
   ///
   /// In en, this message translates to:
-  /// **'Please send corrected work 📸'**
+  /// **'Hi Champ 👋\nI couldn\'t review your work 🥺 Because the photo was either a bit unclear or not of today\'s activity.\n\nNo worries; please send it again!'**
   String get chatSendCorrectedOnly;
 
   /// No description provided for @chatNotAccepted.
   ///
   /// In en, this message translates to:
-  /// **'This work was not accepted.'**
+  /// **'I couldn\'t review your work 🥺 Because the photo was either a bit unclear or not of today\'s activity.'**
   String get chatNotAccepted;
 }
 

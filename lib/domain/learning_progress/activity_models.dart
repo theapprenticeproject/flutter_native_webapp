@@ -26,6 +26,19 @@ extension LearningStageClassroomMapper on ClassroomProgressStage {
   };
 }
 
+/// The card Home shows. A work that is not valid is feedback too: Home says
+/// "feedback ready" and the button opens the activity, where the page with the
+/// message and "Send again" is. Home does not repeat that message.
+LearningStage homeStageFor(
+  ClassroomProgressStage stage,
+  FeedbackStage? feedback,
+) =>
+    stage == ClassroomProgressStage.awaitingFeedback &&
+        (feedback == FeedbackStage.notValid ||
+            feedback == FeedbackStage.notValidNoRetry)
+    ? LearningStage.feedbackReady
+    : stage.homeStage;
+
 class CourseUnit {
   const CourseUnit({
     required this.courseDisplay,
@@ -85,4 +98,7 @@ class LearningDashboard {
 
   /// Where the work for this unit stands, when the Worker said (R-83).
   final FeedbackStage? feedback;
+
+  /// The card Home shows.
+  LearningStage get stage => homeStageFor(progress.classroomStage, feedback);
 }
