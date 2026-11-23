@@ -1,3 +1,4 @@
+import 'not_valid_text.dart';
 import 'video_reward.dart';
 import '../../../l10n/gen/app_localizations.dart';
 import 'dart:async';
@@ -691,13 +692,16 @@ class ClassChatController extends ChangeNotifier {
   /// The work is not valid. The student is told why (the Worker's feedback) and
   /// can send again, up to 2 attempts in all.
   void _showNotValid(FeedbackStage stage) {
-    final reason = _feedbackText(fallback: l.chatSendAgainDefault);
     final canSend = stage == FeedbackStage.notValid;
     _messages.clear();
     _pushCheckpoint(
       stepId: 'NOT-VALID',
       image: null,
-      text: canSend ? l.chatSendCorrected(reason) : l.chatNoMoreTries(reason),
+      text: notValidText(
+        l,
+        feedback: _latestSubmission?.feedback,
+        canSend: canSend,
+      ),
       buttonLabel: canSend ? l.chatSendAgain : l.chatBackHome,
       action: canSend ? 'send_again' : 'not_today',
       secondaryLabel: canSend ? l.chatBackHome : null,

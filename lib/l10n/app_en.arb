@@ -447,7 +447,6 @@
       }
     }
   },
-  "chatSendAgainDefault": "Please send your work again.",
   "chatSendCorrected": "{reason}\n\nPlease send corrected work 📸",
   "@chatSendCorrected": {
     "placeholders": {
@@ -533,5 +532,7 @@
     }
   },
   "classPicturePartBody": "Finish each step to open the whole picture",
-  "chatVideoRepeat": "Points are given only the first time you watch the video 🎬\n\nNow it’s time to do the activity submission 🌟"
+  "chatVideoRepeat": "Points are given only the first time you watch the video 🎬\n\nNow it’s time to do the activity submission 🌟",
+  "chatSendCorrectedOnly": "Please send corrected work 📸",
+  "chatNotAccepted": "This work was not accepted."
 }

@@ -766,9 +766,6 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get chatSendAgainDefault => 'Please send your work again.';
-
-  @override
   String chatSendCorrected(String reason) {
     return '$reason\n\nPlease send corrected work 📸';
   }
@@ -885,4 +882,10 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get chatVideoRepeat =>
       'Points are given only the first time you watch the video 🎬\n\nNow it’s time to do the activity submission 🌟';
+
+  @override
+  String get chatSendCorrectedOnly => 'Please send corrected work 📸';
+
+  @override
+  String get chatNotAccepted => 'This work was not accepted.';
 }

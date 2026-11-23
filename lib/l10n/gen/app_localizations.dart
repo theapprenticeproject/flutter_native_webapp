@@ -1424,12 +1424,6 @@ abstract class AppLocalizations {
   /// **'Your points: {total} 🪙'**
   String chatWonTotal(int total);
 
-  /// No description provided for @chatSendAgainDefault.
-  ///
-  /// In en, this message translates to:
-  /// **'Please send your work again.'**
-  String get chatSendAgainDefault;
-
   /// No description provided for @chatSendCorrected.
   ///
   /// In en, this message translates to:
@@ -1615,6 +1609,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Points are given only the first time you watch the video 🎬\n\nNow it’s time to do the activity submission 🌟'**
   String get chatVideoRepeat;
+
+  /// No description provided for @chatSendCorrectedOnly.
+  ///
+  /// In en, this message translates to:
+  /// **'Please send corrected work 📸'**
+  String get chatSendCorrectedOnly;
+
+  /// No description provided for @chatNotAccepted.
+  ///
+  /// In en, this message translates to:
+  /// **'This work was not accepted.'**
+  String get chatNotAccepted;
 }
 
 class _AppLocalizationsDelegate
