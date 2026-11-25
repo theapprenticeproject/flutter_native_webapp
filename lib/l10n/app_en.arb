@@ -188,7 +188,6 @@
   "errorPageDesktopTitle": "Hey Champ\nI am not able to talk to you",
   "errorPageDesktopMessage": "Looks like you're offline. Click below to try again.",
   "errorPageDesktopButton": "Retry",
-  "headerSubtitle": "Ready for today's class?",
   "headerHi": "Hi {name} 👋",
   "@headerHi": {
     "placeholders": {

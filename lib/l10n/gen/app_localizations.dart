@@ -800,12 +800,6 @@ abstract class AppLocalizations {
   /// **'Retry'**
   String get errorPageDesktopButton;
 
-  /// No description provided for @headerSubtitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Ready for today\'s class?'**
-  String get headerSubtitle;
-
   /// No description provided for @headerHi.
   ///
   /// In en, this message translates to:

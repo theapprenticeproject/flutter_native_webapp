@@ -400,9 +400,6 @@ class AppLocalizationsMr extends AppLocalizations {
   String get errorPageDesktopButton => 'Retry';
 
   @override
-  String get headerSubtitle => 'Ready for today\'s class?';
-
-  @override
   String headerHi(String name) {
     return 'Hi $name 👋';
   }

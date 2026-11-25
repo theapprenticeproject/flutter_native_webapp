@@ -80,11 +80,7 @@ class AppHeader extends StatelessWidget {
             if (badge != null) ...[const SizedBox(width: 18), badge!],
             if (showPoints) ...[
               const SizedBox(width: 18),
-              _MetricPill(
-                icon: Icons.stars_rounded,
-                iconColor: const Color(0xFFE29A22),
-                label: '$points',
-              ),
+              _MetricPill(label: '$points'),
             ],
             if (showPoints) ...[
               const SizedBox(width: 18),
@@ -128,23 +124,25 @@ class AppHeader extends StatelessWidget {
                 textAlign: TextAlign.left,
                 style: GoogleFonts.inter(
                   fontSize: compact ? 18 : 17,
-                  fontWeight: FontWeight.w800,
+                  fontWeight: FontWeight.w700,
                   color: const Color(0xFF19191F),
                   height: 1.05,
                   letterSpacing: 0,
                 ),
               ),
-              const SizedBox(height: 7),
-              Text(
-                subtitle ?? context.l10n.headerSubtitle,
-                textAlign: TextAlign.left,
-                style: GoogleFonts.inter(
-                  fontSize: compact ? 12 : 11,
-                  fontWeight: FontWeight.w500,
-                  color: const Color(0xFF777887),
-                  letterSpacing: 0,
+              if (subtitle != null) ...[
+                const SizedBox(height: 7),
+                Text(
+                  subtitle!,
+                  textAlign: TextAlign.left,
+                  style: GoogleFonts.inter(
+                    fontSize: compact ? 12 : 11,
+                    fontWeight: FontWeight.w500,
+                    color: const Color(0xFF777887),
+                    letterSpacing: 0,
+                  ),
                 ),
-              ),
+              ],
             ],
           );
 
@@ -152,13 +150,7 @@ class AppHeader extends StatelessWidget {
             spacing: 10,
             runSpacing: 8,
             alignment: compact ? WrapAlignment.start : WrapAlignment.end,
-            children: [
-              _MetricPill(
-                icon: Icons.stars_rounded,
-                iconColor: const Color(0xFFE29A22),
-                label: context.l10n.headerPoints(points),
-              ),
-            ],
+            children: [_MetricPill(label: context.l10n.headerPoints(points))],
           );
 
           if (!showStudentSummary) {
@@ -193,7 +185,7 @@ class AppHeader extends StatelessWidget {
                 topRow,
                 const SizedBox(height: 18),
                 Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Expanded(child: greeting),
                     const SizedBox(width: 12),
@@ -210,7 +202,7 @@ class AppHeader extends StatelessWidget {
               topRow,
               const SizedBox(height: 14),
               Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Expanded(child: greeting),
                   const SizedBox(width: 24),
@@ -236,7 +228,13 @@ class _PostOnboardingBrand extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Image.asset('assets/logos/gov-logo.png', height: compact ? 26 : 30),
-        SizedBox(width: compact ? 12 : 9),
+        Container(
+          key: const ValueKey('logo-divider'),
+          width: 1,
+          height: compact ? 26 : 30,
+          margin: const EdgeInsets.symmetric(horizontal: 10),
+          color: AppTheme.borderColor,
+        ),
         Image.asset(
           'assets/logos/tap-otherLogo.png',
           height: compact ? 26 : 30,
@@ -246,22 +244,18 @@ class _PostOnboardingBrand extends StatelessWidget {
   }
 }
 
+/// The points pill (design M-F2-01): a ring-shaped coin and the points, 36 high.
 class _MetricPill extends StatelessWidget {
-  final IconData icon;
-  final Color iconColor;
   final String label;
 
-  const _MetricPill({
-    required this.icon,
-    required this.iconColor,
-    required this.label,
-  });
+  const _MetricPill({required this.label});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 28,
-      padding: const EdgeInsets.symmetric(horizontal: 11),
+      key: const ValueKey('points-pill'),
+      height: 36,
+      padding: const EdgeInsets.symmetric(horizontal: 14),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(999),
@@ -270,13 +264,30 @@ class _MetricPill extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(icon, color: iconColor, size: 13),
-          const SizedBox(width: 5),
+          Container(
+            key: const ValueKey('points-coin'),
+            width: 20,
+            height: 20,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              border: Border.all(color: const Color(0xFFE29A22), width: 2.5),
+            ),
+            child: Container(
+              width: 6,
+              height: 6,
+              decoration: const BoxDecoration(
+                color: Color(0xFFE29A22),
+                shape: BoxShape.circle,
+              ),
+            ),
+          ),
+          const SizedBox(width: 8),
           Text(
             label,
             style: GoogleFonts.inter(
-              fontSize: 12,
-              fontWeight: FontWeight.w600,
+              fontSize: 16,
+              fontWeight: FontWeight.w500,
               color: const Color(0xFF3A3A46),
               letterSpacing: 0,
             ),

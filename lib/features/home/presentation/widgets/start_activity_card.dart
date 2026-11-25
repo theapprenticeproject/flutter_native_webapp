@@ -92,16 +92,6 @@ class StartActivityCard extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              context.l10n.homeCourseLabel(courseDisplay),
-                              style: GoogleFonts.inter(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w800,
-                                color: const Color(0xFF747583),
-                                letterSpacing: 0,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
                               unitName,
                               style: GoogleFonts.inter(
                                 fontSize: 27,
