@@ -1,20 +1,21 @@
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
-import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/theme/app_theme.dart';
 import '../../models/class_chat_message_model.dart';
 import '../../providers/class_chat_controller.dart';
-import 'class_card_shell.dart';
 import 'class_quiz_cards.dart';
+import 'class_results_cards.dart';
 import 'class_section_checkpoint.dart';
 import 'class_submission_card.dart';
 import 'class_submitted_preview.dart';
 import 'class_video_reward_card.dart';
 import 'class_video_card.dart';
 import '../../../../shared/widgets/app_primary_button.dart';
+import '../../../../shared/widgets/app_tonal_button.dart';
+import '../../../../shared/text/first_name.dart';
 
 class ClassMessageContent extends StatelessWidget {
   const ClassMessageContent({
@@ -33,7 +34,11 @@ class ClassMessageContent extends StatelessWidget {
     switch (message.contentType) {
       case ClassChatContentType.text:
       case ClassChatContentType.unitTransition:
-        return ClassTextBubble(text: message.text ?? '', isUser: isUser);
+        return ClassTextBubble(
+          text: message.text ?? '',
+          isUser: isUser,
+          isWarning: message.data['warning'] == true,
+        );
       case ClassChatContentType.checkpoint:
         return ClassCheckpointCard(message: message, controller: controller);
       case ClassChatContentType.video:
@@ -104,14 +109,46 @@ class ClassCheckpointCard extends StatelessWidget {
     final buttonLabel = message.data['buttonLabel'] as String? ?? 'Continue';
     final action = message.data['action'] as String? ?? '';
 
+    // The screens after the work (design M-C23 to M-C27).
+    if (message.data['bare'] == true) {
+      return ClassChoiceButtons(
+        primaryLabel: buttonLabel,
+        onPrimary: () => controller.continueCheckpoint(action),
+        secondaryLabel: message.data['secondaryLabel'] as String?,
+        onSecondary: () => controller.continueCheckpoint(
+          message.data['secondaryAction'] as String? ?? '',
+        ),
+      );
+    }
+    if (message.data['resend'] == true) {
+      return ClassResendCard(
+        onAdd: () => controller.continueCheckpoint(action),
+        onLater: () => controller.continueCheckpoint(
+          message.data['secondaryAction'] as String? ?? '',
+        ),
+      );
+    }
+    if (action == 'results_points') {
+      return AppTonalButton(
+        label: buttonLabel,
+        onPressed: () => controller.continueCheckpoint(action),
+      );
+    }
+    if (action == 'results_done' && image != null) {
+      return ClassYouWonCard(
+        image: image,
+        label: message.data['pointsLabel'] as String? ?? '',
+        points: message.data['points'] as int? ?? 0,
+        buttonLabel: buttonLabel,
+        onContinue: () => controller.continueCheckpoint(action),
+      );
+    }
+
     if (action == 'video' ||
         action == 'submission' ||
         action == 'submission_retry' ||
         action == 'share_work' ||
         action == 'not_today' ||
-        action == 'results_next' ||
-        action == 'results_points' ||
-        action == 'results_done' ||
         action == 'send_again' ||
         action == 'quiz') {
       return ClassSectionCheckpoint(
@@ -131,7 +168,9 @@ class ClassCheckpointCard extends StatelessWidget {
       );
     }
 
-    if ((action == 'quiz_begin_art' || action == 'quiz_complete_art') &&
+    if ((action == 'quiz_begin_art' ||
+            action == 'quiz_complete_art' ||
+            action == 'art') &&
         image != null) {
       return Align(
         alignment: Alignment.centerLeft,
@@ -258,11 +297,15 @@ class ClassTextBubble extends StatelessWidget {
     required this.text,
     required this.isUser,
     this.isMuted = false,
+    this.isWarning = false,
   });
 
   final String text;
   final bool isUser;
   final bool isMuted;
+
+  /// A pink bubble: the work was not valid (design M-C25).
+  final bool isWarning;
 
   @override
   Widget build(BuildContext context) {
@@ -293,14 +336,15 @@ class ClassTextBubble extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
       decoration: BoxDecoration(
-        color: AppTheme.classroomMessageSurface,
+        color: isWarning
+            ? const Color(0xFFFBE4E4)
+            : AppTheme.classroomMessageSurface,
         borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(4),
           topRight: Radius.circular(16),
           bottomLeft: Radius.circular(16),
           bottomRight: Radius.circular(16),
         ),
-        border: Border.all(color: AppTheme.classroomMessageSurface),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -322,6 +366,7 @@ class ClassTextBubble extends StatelessWidget {
   }
 }
 
+/// A save or a send failed (design M-C23): the sad TAP Buddy and Retry.
 class ClassErrorRetryCard extends StatelessWidget {
   const ClassErrorRetryCard({
     super.key,
@@ -334,25 +379,9 @@ class ClassErrorRetryCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClassCardShell(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            message.text ?? context.l10n.classSomethingWrong,
-            style: GoogleFonts.inter(
-              fontSize: 14,
-              fontWeight: FontWeight.w600,
-              height: 1.4,
-            ),
-          ),
-          const SizedBox(height: 12),
-          AppPrimaryButton(
-            label: context.l10n.buttonRetry,
-            onPressed: controller.retryAfterError,
-          ),
-        ],
-      ),
+    return ClassOfflineCard(
+      name: firstName(controller.studentName),
+      onRetry: controller.retryAfterError,
     );
   }
 }

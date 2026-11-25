@@ -605,6 +605,18 @@ class ClassChatController extends ChangeNotifier {
     _latestSubmission = check.submission ?? _latestSubmission;
   }
 
+  /// A bubble from TAP Buddy. [warning] makes it pink (design M-C25).
+  void _say(String text, {bool warning = false}) => _push(
+    ClassChatMessage(
+      id: _newId(),
+      stepId: 'SAY',
+      sender: ClassChatSender.bot,
+      contentType: ClassChatContentType.text,
+      text: text,
+      data: {if (warning) 'warning': true},
+    ),
+  );
+
   /// "I'm looking at your work, please wait" (R-68), or "taking longer than
   /// expected" after 24 hours. The student can leave, check again, or wait: the
   /// app checks by itself every 30 seconds while this is open.
@@ -617,17 +629,23 @@ class ClassChatController extends ChangeNotifier {
       return;
     }
     _messages.clear();
+    // Design M-C29: TAP Buddy says it is still checking, then the way out.
+    if (stage == FeedbackStage.slow) {
+      _say(l.chatSlowFeedback);
+    } else {
+      _say(l.chatWaitingHi(firstName(studentName)));
+      _say(l.chatWaitingStill);
+      _say(l.chatWaitingKeep);
+    }
     _pushCheckpoint(
       stepId: 'WAITING',
       image: null,
-      text: switch (stage) {
-        FeedbackStage.slow => l.chatSlowFeedback,
-        _ => l.chatWaitingFeedback,
-      },
+      text: '',
       buttonLabel: l.chatBackHome,
       action: 'not_today',
       secondaryLabel: l.homeCheckAgain,
       secondaryAction: 'check_feedback',
+      extra: {'bare': true},
     );
     _startFeedbackPolling();
   }
@@ -670,21 +688,15 @@ class ClassChatController extends ChangeNotifier {
     if (_latestSubmission == null) await _refreshFeedback();
     if (_disposed) return;
     _messages.clear();
-    _pushCheckpoint(
-      stepId: 'RESULTS-FEEDBACK',
-      image: null,
-      text: _feedbackText(fallback: l.chatValidDefault),
-      buttonLabel: l.buttonContinue,
-      action: 'results_next',
-    );
-  }
-
-  void _askForPoints() {
-    _messages.clear();
+    final name = firstName(studentName);
+    // Design M-C24 and M-C26: three bubbles, then "Yes Yes Yes".
+    _say(l.chatResultsHi(name));
+    _say(_feedbackText(fallback: l.chatValidDefault));
+    _say(l.chatResultsAsk(name));
     _pushCheckpoint(
       stepId: 'RESULTS-ASK',
       image: null,
-      text: l.chatAskPoints,
+      text: '',
       buttonLabel: l.chatYesYesYes,
       action: 'results_points',
     );
@@ -703,16 +715,26 @@ class ClassChatController extends ChangeNotifier {
     final earned = total > before ? total - before : 0;
     _accumulatedSubmissionPoints += earned;
 
-    _messages.clear();
+    _messages.removeWhere((m) => m.stepId == 'RESULTS-ASK');
+    _push(
+      ClassChatMessage(
+        id: _newId(),
+        stepId: 'RESULTS-YES',
+        sender: ClassChatSender.user,
+        contentType: ClassChatContentType.text,
+        text: l.chatYesYesYes,
+      ),
+    );
     _pushCheckpoint(
       stepId: 'RESULTS-WON',
       image: 'assets/class-screen/you-won.png',
-      text:
-          '${l.chatWonTitle}\n'
-          '${earned > 0 ? '${l.chatWonEarned(earned)}\n' : ''}'
-          '${l.chatWonTotal(total)}',
+      text: '',
       buttonLabel: l.buttonContinue,
       action: 'results_done',
+      extra: {
+        'points': earned > 0 ? earned : total,
+        'pointsLabel': earned > 0 ? l.classActivityPoints : l.classYourPoints,
+      },
     );
     notifyListeners();
   }
@@ -736,18 +758,42 @@ class ClassChatController extends ChangeNotifier {
   void _showNotValid(FeedbackStage stage) {
     final canSend = stage == FeedbackStage.notValid;
     _messages.clear();
+    final reason = notValidText(
+      l,
+      feedback: _latestSubmission?.feedback,
+      canSend: canSend,
+    );
+    if (canSend) {
+      // Design M-C25: the reason, a pro tip, then the upload box.
+      _say(reason, warning: true);
+      _say(l.chatProTip, warning: true);
+      _pushCheckpoint(
+        stepId: 'NOT-VALID',
+        image: null,
+        text: '',
+        buttonLabel: l.classAddMyWork,
+        action: 'send_again',
+        secondaryAction: 'not_today',
+        extra: {'resend': true},
+      );
+      return;
+    }
+    // Design M-C25A: the picture, the reason, and the way home.
+    _pushCheckpoint(
+      stepId: 'NOT-VALID-ART',
+      image: 'assets/class-screen/wrong-submission.png',
+      text: '',
+      buttonLabel: '',
+      action: 'art',
+    );
+    _say(reason, warning: true);
     _pushCheckpoint(
       stepId: 'NOT-VALID',
       image: null,
-      text: notValidText(
-        l,
-        feedback: _latestSubmission?.feedback,
-        canSend: canSend,
-      ),
-      buttonLabel: canSend ? l.chatSendAgain : l.chatBackHome,
-      action: canSend ? 'send_again' : 'not_today',
-      secondaryLabel: canSend ? l.chatBackHome : null,
-      secondaryAction: canSend ? 'not_today' : null,
+      text: '',
+      buttonLabel: l.chatBackHome,
+      action: 'not_today',
+      extra: {'bare': true},
     );
   }
 
@@ -1025,6 +1071,7 @@ class ClassChatController extends ChangeNotifier {
     required String action,
     String? secondaryLabel,
     String? secondaryAction,
+    Map<String, dynamic>? extra,
   }) {
     _push(
       ClassChatMessage(
@@ -1034,6 +1081,7 @@ class ClassChatController extends ChangeNotifier {
         contentType: ClassChatContentType.checkpoint,
         text: text,
         data: {
+          ...?extra,
           'image': ?image,
           'buttonLabel': buttonLabel,
           'action': action,
@@ -1075,9 +1123,6 @@ class ClassChatController extends ChangeNotifier {
         return;
       case 'check_feedback':
         unawaited(_recheckFeedback());
-        return;
-      case 'results_next':
-        _askForPoints();
         return;
       case 'results_points':
         unawaited(_revealPoints());

@@ -164,7 +164,7 @@ def import_(path):
 def selftest():
     rows = [HEAD, ['navHome', 'Bottom bar', 'Home', '', 'होम', '', '', ''],
             ['classCongratsName', '', 'Congratulations {name}!!!', '', 'बधाई {naam}!', '', '', ''],
-            ['chatWonTitle', '', 'a & b <c> "d"\nline 2', '', 'x', '', '', '']]
+            ['chatBackHome', '', 'a & b <c> "d"\nline 2', '', 'x', '', '', '']]
     with tempfile.TemporaryDirectory() as d:
         p = os.path.join(d, 't.xlsx')
         write_xlsx(p, rows, README)

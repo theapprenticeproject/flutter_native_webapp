@@ -714,34 +714,13 @@ class AppLocalizationsHi extends AppLocalizations {
       'Your feedback is taking longer than expected 🕒\nPlease check again a little later.';
 
   @override
-  String get chatWaitingFeedback =>
-      'I\'m looking at your work 👀\nPlease wait. Come back later to see my feedback!\n\nPoints will be provided after feedback.';
-
-  @override
   String get chatBackHome => 'Back to Home';
 
   @override
   String get chatValidDefault => 'Great work! Your project is valid ✅';
 
   @override
-  String get chatAskPoints =>
-      'Do you want to know your total points collected so far?';
-
-  @override
   String get chatYesYesYes => 'Yes Yes Yes 😍';
-
-  @override
-  String get chatWonTitle => 'YOU WON! 🏆';
-
-  @override
-  String chatWonEarned(int points) {
-    return 'Your valid work earned +$points points 🪙';
-  }
-
-  @override
-  String chatWonTotal(int total) {
-    return 'Your points: $total 🪙';
-  }
 
   @override
   String chatSendCorrected(String reason) {
@@ -752,9 +731,6 @@ class AppLocalizationsHi extends AppLocalizations {
   String chatNoMoreTries(String reason) {
     return '$reason\n\nYou have used both tries, so you cannot send this work again.';
   }
-
-  @override
-  String get chatSendAgain => 'Send again';
 
   @override
   String get chatReadyShare => 'Great quiz! 🎉 Ready to send your work now?';
@@ -963,4 +939,42 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get classNeedHelp => 'Need help? 🙋';
+
+  @override
+  String chatResultsHi(String name) {
+    return 'Hi $name 👏😊\nI looked at the work you sent me!\nHere is what I think 👀';
+  }
+
+  @override
+  String chatResultsAsk(String name) {
+    return 'Great job $name!\nDo you want to know your total points collected so far?';
+  }
+
+  @override
+  String chatWaitingHi(String name) {
+    return 'Hey $name! 🎉\nThanks for sending me your work.';
+  }
+
+  @override
+  String get chatWaitingStill =>
+      'I\'m still checking it and will share my thoughts with you real soon! 🙂';
+
+  @override
+  String get chatWaitingKeep =>
+      'Keep doing the activities, share your submissions to keep winning 🏆📈\n\nI will meet you again ✌️\n\nByeeee 👋👋';
+
+  @override
+  String get classActivityPoints => 'Activity Points';
+
+  @override
+  String get classYourPoints => 'Your points';
+
+  @override
+  String classOfflineTitle(String name) {
+    return 'Hey $name\nI am not able to talk to you';
+  }
+
+  @override
+  String get classOfflineHint =>
+      'Looks like you\'re offline. Click below to try again.';
 }

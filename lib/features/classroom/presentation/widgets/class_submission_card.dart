@@ -7,6 +7,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/router/app_routes.dart';
 import '../../../../shared/media/file_kind.dart';
+import 'dashed_upload_box.dart';
 import 'submission_confirm_dialog.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -558,65 +559,54 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
           ),
         ],
         const SizedBox(height: 12),
-        CustomPaint(
-          painter: _DashedBorderPainter(error: _wrongFile),
-          child: Container(
-            decoration: BoxDecoration(
-              color: _wrongFile ? const Color(0xFFFBE9E7) : null,
-              borderRadius: BorderRadius.circular(16),
-            ),
-            padding: const EdgeInsets.all(14),
-            child: Column(
-              children: [
-                Icon(
-                  _wrongFile
-                      ? Icons.warning_amber_rounded
-                      : Icons.upload_rounded,
-                  size: 22,
-                  color: _wrongFile
-                      ? AppTheme.dangerText
-                      : AppTheme.buttonColor,
-                ),
-                const SizedBox(height: 8),
-                if (_wrongFile) ...[
-                  Text(
-                    forceVideo
-                        ? context.l10n.classNotAVideo
-                        : context.l10n.classNotAPhoto,
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.inter(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w500,
-                      color: AppTheme.dangerText,
-                    ),
-                  ),
-                  const SizedBox(height: 10),
-                ],
-                AppPrimaryButton(
-                  label: _submitted
-                      ? context.l10n.classSent
-                      : hasMedia
-                      ? context.l10n.classShareSubmission
-                      : context.l10n.classAddMyWork,
-                  loading: _isPicking,
-                  onPressed: !canInteract || _isPicking
-                      ? null
-                      : (hasMedia ? onSubmit : openPicker),
-                ),
-                const SizedBox(height: 8),
+        DashedUploadBox(
+          error: _wrongFile,
+          child: Column(
+            children: [
+              Icon(
+                _wrongFile ? Icons.warning_amber_rounded : Icons.upload_rounded,
+                size: 22,
+                color: _wrongFile ? AppTheme.dangerText : AppTheme.buttonColor,
+              ),
+              const SizedBox(height: 8),
+              if (_wrongFile) ...[
                 Text(
                   forceVideo
-                      ? context.l10n.classVideoNeeded
-                      : allowVideo
-                      ? context.l10n.classPhotoOrVideoNeeded
-                      : context.l10n.classPhotoNeeded,
+                      ? context.l10n.classNotAVideo
+                      : context.l10n.classNotAPhoto,
+                  textAlign: TextAlign.center,
                   style: GoogleFonts.inter(
-                    fontSize: 12,
-                    color: AppTheme.subheadingColor,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                    color: AppTheme.dangerText,
                   ),
                 ),
+                const SizedBox(height: 10),
               ],
-            ),
+              AppPrimaryButton(
+                label: _submitted
+                    ? context.l10n.classSent
+                    : hasMedia
+                    ? context.l10n.classShareSubmission
+                    : context.l10n.classAddMyWork,
+                loading: _isPicking,
+                onPressed: !canInteract || _isPicking
+                    ? null
+                    : (hasMedia ? onSubmit : openPicker),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                forceVideo
+                    ? context.l10n.classVideoNeeded
+                    : allowVideo
+                    ? context.l10n.classPhotoOrVideoNeeded
+                    : context.l10n.classPhotoNeeded,
+                style: GoogleFonts.inter(
+                  fontSize: 12,
+                  color: AppTheme.subheadingColor,
+                ),
+              ),
+            ],
           ),
         ),
         // Design M-S-05: "Need help?" is outside the box, like "I'll do it later".
@@ -1122,31 +1112,4 @@ class SubmitRow extends StatelessWidget {
       ],
     );
   }
-}
-
-/// The dashed frame around "Add my work" (design M-S-01).
-class _DashedBorderPainter extends CustomPainter {
-  _DashedBorderPainter({this.error = false});
-
-  final bool error;
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final paint = Paint()
-      ..color = error ? AppTheme.dangerText : const Color(0xFFB9B3F0)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.5;
-    final path = Path()
-      ..addRRect(
-        RRect.fromRectAndRadius(Offset.zero & size, const Radius.circular(16)),
-      );
-    for (final metric in path.computeMetrics()) {
-      for (var d = 0.0; d < metric.length; d += 12) {
-        canvas.drawPath(metric.extractPath(d, d + 6), paint);
-      }
-    }
-  }
-
-  @override
-  bool shouldRepaint(covariant _DashedBorderPainter old) => old.error != error;
 }

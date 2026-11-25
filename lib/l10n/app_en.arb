@@ -405,28 +405,9 @@
   },
   "chatTryPractice": "That's a good try — let's keep practicing this one.",
   "chatSlowFeedback": "Your feedback is taking longer than expected 🕒\nPlease check again a little later.",
-  "chatWaitingFeedback": "I'm looking at your work 👀\nPlease wait. Come back later to see my feedback!\n\nPoints will be provided after feedback.",
   "chatBackHome": "Back to Home",
   "chatValidDefault": "Great work! Your project is valid ✅",
-  "chatAskPoints": "Do you want to know your total points collected so far?",
   "chatYesYesYes": "Yes Yes Yes 😍",
-  "chatWonTitle": "YOU WON! 🏆",
-  "chatWonEarned": "Your valid work earned +{points} points 🪙",
-  "@chatWonEarned": {
-    "placeholders": {
-      "points": {
-        "type": "int"
-      }
-    }
-  },
-  "chatWonTotal": "Your points: {total} 🪙",
-  "@chatWonTotal": {
-    "placeholders": {
-      "total": {
-        "type": "int"
-      }
-    }
-  },
   "chatSendCorrected": "{reason}\n\nNo worries; please send it again!",
   "@chatSendCorrected": {
     "placeholders": {
@@ -443,7 +424,6 @@
       }
     }
   },
-  "chatSendAgain": "Send again",
   "chatReadyShare": "Great quiz! 🎉 Ready to send your work now?",
   "chatYesLetsGo": "Yes, let's go",
   "chatNotToday": "Not today",
@@ -581,5 +561,42 @@
   "classPhotoOrVideoNeeded": "1 photo or video needed",
   "classNotAPhoto": "Oh no champ! 😮 This is not a photo. Try another one 😊",
   "classNotAVideo": "Oh no champ! 😮 This is not a video. Try another one 😊",
-  "classNeedHelp": "Need help? 🙋"
+  "classNeedHelp": "Need help? 🙋",
+  "chatResultsHi": "Hi {name} 👏😊\nI looked at the work you sent me!\nHere is what I think 👀",
+  "@chatResultsHi": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatResultsAsk": "Great job {name}!\nDo you want to know your total points collected so far?",
+  "@chatResultsAsk": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatWaitingHi": "Hey {name}! 🎉\nThanks for sending me your work.",
+  "@chatWaitingHi": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatWaitingStill": "I'm still checking it and will share my thoughts with you real soon! 🙂",
+  "chatWaitingKeep": "Keep doing the activities, share your submissions to keep winning 🏆📈\n\nI will meet you again ✌️\n\nByeeee 👋👋",
+  "classActivityPoints": "Activity Points",
+  "classYourPoints": "Your points",
+  "classOfflineTitle": "Hey {name}\nI am not able to talk to you",
+  "@classOfflineTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "classOfflineHint": "Looks like you're offline. Click below to try again."
 }

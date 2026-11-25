@@ -1340,12 +1340,6 @@ abstract class AppLocalizations {
   /// **'Your feedback is taking longer than expected 🕒\nPlease check again a little later.'**
   String get chatSlowFeedback;
 
-  /// No description provided for @chatWaitingFeedback.
-  ///
-  /// In en, this message translates to:
-  /// **'I\'m looking at your work 👀\nPlease wait. Come back later to see my feedback!\n\nPoints will be provided after feedback.'**
-  String get chatWaitingFeedback;
-
   /// No description provided for @chatBackHome.
   ///
   /// In en, this message translates to:
@@ -1358,35 +1352,11 @@ abstract class AppLocalizations {
   /// **'Great work! Your project is valid ✅'**
   String get chatValidDefault;
 
-  /// No description provided for @chatAskPoints.
-  ///
-  /// In en, this message translates to:
-  /// **'Do you want to know your total points collected so far?'**
-  String get chatAskPoints;
-
   /// No description provided for @chatYesYesYes.
   ///
   /// In en, this message translates to:
   /// **'Yes Yes Yes 😍'**
   String get chatYesYesYes;
-
-  /// No description provided for @chatWonTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'YOU WON! 🏆'**
-  String get chatWonTitle;
-
-  /// No description provided for @chatWonEarned.
-  ///
-  /// In en, this message translates to:
-  /// **'Your valid work earned +{points} points 🪙'**
-  String chatWonEarned(int points);
-
-  /// No description provided for @chatWonTotal.
-  ///
-  /// In en, this message translates to:
-  /// **'Your points: {total} 🪙'**
-  String chatWonTotal(int total);
 
   /// No description provided for @chatSendCorrected.
   ///
@@ -1399,12 +1369,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{reason}\n\nYou have used both tries, so you cannot send this work again.'**
   String chatNoMoreTries(String reason);
-
-  /// No description provided for @chatSendAgain.
-  ///
-  /// In en, this message translates to:
-  /// **'Send again'**
-  String get chatSendAgain;
 
   /// No description provided for @chatReadyShare.
   ///
@@ -1735,6 +1699,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Need help? 🙋'**
   String get classNeedHelp;
+
+  /// No description provided for @chatResultsHi.
+  ///
+  /// In en, this message translates to:
+  /// **'Hi {name} 👏😊\nI looked at the work you sent me!\nHere is what I think 👀'**
+  String chatResultsHi(String name);
+
+  /// No description provided for @chatResultsAsk.
+  ///
+  /// In en, this message translates to:
+  /// **'Great job {name}!\nDo you want to know your total points collected so far?'**
+  String chatResultsAsk(String name);
+
+  /// No description provided for @chatWaitingHi.
+  ///
+  /// In en, this message translates to:
+  /// **'Hey {name}! 🎉\nThanks for sending me your work.'**
+  String chatWaitingHi(String name);
+
+  /// No description provided for @chatWaitingStill.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'m still checking it and will share my thoughts with you real soon! 🙂'**
+  String get chatWaitingStill;
+
+  /// No description provided for @chatWaitingKeep.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep doing the activities, share your submissions to keep winning 🏆📈\n\nI will meet you again ✌️\n\nByeeee 👋👋'**
+  String get chatWaitingKeep;
+
+  /// No description provided for @classActivityPoints.
+  ///
+  /// In en, this message translates to:
+  /// **'Activity Points'**
+  String get classActivityPoints;
+
+  /// No description provided for @classYourPoints.
+  ///
+  /// In en, this message translates to:
+  /// **'Your points'**
+  String get classYourPoints;
+
+  /// No description provided for @classOfflineTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hey {name}\nI am not able to talk to you'**
+  String classOfflineTitle(String name);
+
+  /// No description provided for @classOfflineHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Looks like you\'re offline. Click below to try again.'**
+  String get classOfflineHint;
 }
 
 class _AppLocalizationsDelegate
