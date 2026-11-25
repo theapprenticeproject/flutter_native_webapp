@@ -63,6 +63,22 @@ void main() {
       expect(slot.headers['content-type'], 'image/webp');
     });
 
+    test('asks for the file format and sends the key, when given', () async {
+      final adapter = FakeWorkerAdapter((_) => ok(_slot()));
+      await repoFor(adapter).requestUpload(
+        assignmentId: 'AS-1',
+        type: SubmissionType.image,
+        format: 'jpg',
+        idempotencyKey: 'upload:S1:AS-1:abc',
+      );
+      expect(adapter.seen.single.body, {
+        'assignment_id': 'AS-1',
+        'submission_type': 'image',
+        'format': 'jpg',
+        'idempotency_key': 'upload:S1:AS-1:abc',
+      });
+    });
+
     test('a video asks for submission_type video', () async {
       final adapter = FakeWorkerAdapter((_) => ok(_slot()));
       await repoFor(

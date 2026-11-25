@@ -125,6 +125,43 @@ void main() {
     }
   });
 
+  test(
+    'a photo asks for JPG and sends a key; a video asks for neither format',
+    () async {
+      final photoRig = _Rig();
+      await photoRig
+          .submitter(prepareImage: (b, _) async => b)
+          .submit(
+            assignmentId: 'AS-1',
+            type: SubmissionType.image,
+            bytes: photo,
+          );
+      final asked = photoRig.worker.seen.first.body!;
+      expect(asked['format'], 'jpg');
+      expect(asked['idempotency_key'], startsWith('upload:S1:AS-1:'));
+
+      final videoRig = _Rig();
+      await videoRig
+          .submitter(prepareImage: (b, _) async => b)
+          .submit(
+            assignmentId: 'AS-1',
+            type: SubmissionType.video,
+            bytes: photo,
+          );
+      expect(videoRig.worker.seen.first.body!.containsKey('format'), isFalse);
+    },
+  );
+
+  test('a photo that is not converted does not claim to be JPG', () async {
+    final rig = _Rig();
+    await rig.submitter().submit(
+      assignmentId: 'AS-1',
+      type: SubmissionType.image,
+      bytes: photo,
+    );
+    expect(rig.worker.seen.first.body!.containsKey('format'), isFalse);
+  });
+
   test('a video is uploaded as it is, with no shrinking', () async {
     final rig = _Rig();
     var shrunk = false;

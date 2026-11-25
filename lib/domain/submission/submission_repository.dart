@@ -121,13 +121,24 @@ class SubmissionRepository {
 
   static const _uploadTries = 3;
 
+  /// [format] is the file type we will upload (`jpg`). Without it the Worker
+  /// uses its default (webp for an image, mp4 for a video). [idempotencyKey] is
+  /// optional on this route: with it, a double tap gives one slot and one
+  /// attempt, not two.
   Future<UploadSlot> requestUpload({
     required String assignmentId,
     required SubmissionType type,
+    String? format,
+    String? idempotencyKey,
   }) async => UploadSlot.fromJson(
     await _http.postApi(
       '/submission/request_upload',
-      body: {'assignment_id': assignmentId, 'submission_type': type.name},
+      body: {
+        'assignment_id': assignmentId,
+        'submission_type': type.name,
+        'format': ?format,
+        'idempotency_key': ?idempotencyKey,
+      },
     ),
   );
 

@@ -6,6 +6,7 @@ import 'submission_repository.dart';
 
 class _Attempt {
   UploadSlot? slot;
+  String? uploadKey;
   bool uploaded = false;
   String? key;
   ArtworkResult? done;
@@ -46,6 +47,17 @@ class WorkSubmitter {
     attempt.slot ??= await _repo.requestUpload(
       assignmentId: assignmentId,
       type: type,
+      // The photo is made as JPG before the upload (the backend asked for JPG).
+      format: type == SubmissionType.image && prepareImage != null
+          ? 'jpg'
+          : null,
+      // The same key for every call of this attempt: a double tap, or a retry
+      // after a lost answer, never uses a second attempt slot.
+      idempotencyKey: attempt.uploadKey ??= newIdempotencyKey(
+        'upload',
+        studentId,
+        assignmentId,
+      ),
     );
     if (!attempt.uploaded) {
       final shrink = prepareImage;
