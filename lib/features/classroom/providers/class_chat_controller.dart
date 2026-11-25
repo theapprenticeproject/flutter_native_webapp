@@ -700,6 +700,18 @@ class ClassChatController extends ChangeNotifier {
       buttonLabel: l.chatYesYesYes,
       action: 'results_points',
     );
+    _revealSheetDue = true;
+    notifyListeners();
+  }
+
+  bool _revealSheetDue = false;
+
+  /// True once after the results screen was shown: the screen then opens the
+  /// full picture sheet (design M-C26b).
+  bool takeRevealSheetDue() {
+    final due = _revealSheetDue;
+    _revealSheetDue = false;
+    return due;
   }
 
   /// The "Yes" tap: take the student's points from the Worker, and show what

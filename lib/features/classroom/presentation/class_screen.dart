@@ -121,7 +121,6 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
   @override
   void initState() {
     super.initState();
-    _lastPieces = widget.controller.unlockedPictureCount;
     widget.controller.addListener(_onControllerChanged);
   }
 
@@ -142,8 +141,6 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
     super.dispose();
   }
 
-  int? _lastPieces;
-
   void _openPicture() => showRevealSheet(
     context,
     unitIndex: widget.controller.unitIndex,
@@ -151,18 +148,13 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
   );
 
   void _onControllerChanged() {
-    final pieces = widget.controller.unlockedPictureCount;
     final narrow = MediaQuery.sizeOf(context).width < 640;
-    if (shouldShowRevealSheet(
-      previous: _lastPieces,
-      current: pieces,
-      narrow: narrow,
-    )) {
-      WidgetsBinding.instance.addPostFrameCallback((_) {
+    final due = widget.controller.takeRevealSheetDue();
+    if (shouldShowRevealSheet(due: due, narrow: narrow)) {
+      Future<void>.delayed(revealSheetDelay, () {
         if (mounted) _openPicture();
       });
     }
-    _lastPieces = pieces;
 
     if (widget.controller.outcome == ClassSessionOutcome.leave) {
       WidgetsBinding.instance.addPostFrameCallback((_) {

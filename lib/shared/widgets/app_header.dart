@@ -264,23 +264,11 @@ class _MetricPill extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Container(
-            key: const ValueKey('points-coin'),
+          const SizedBox(
+            key: ValueKey('points-coin'),
             width: 20,
             height: 20,
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              border: Border.all(color: const Color(0xFFE29A22), width: 2.5),
-            ),
-            child: Container(
-              width: 6,
-              height: 6,
-              decoration: const BoxDecoration(
-                color: Color(0xFFE29A22),
-                shape: BoxShape.circle,
-              ),
-            ),
+            child: CustomPaint(painter: _CoinPainter()),
           ),
           const SizedBox(width: 8),
           Text(
@@ -296,4 +284,38 @@ class _MetricPill extends StatelessWidget {
       ),
     );
   }
+}
+
+/// The coin of the points pill, drawn from the design icon (M-F2-01): an orange
+/// ring with a diamond in the middle.
+class _CoinPainter extends CustomPainter {
+  const _CoinPainter();
+
+  static const _orange = Color(0xFFE8A13B);
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final s = size.width;
+    final c = Offset(s / 2, s / 2);
+    canvas.drawCircle(
+      c,
+      s * 0.45,
+      Paint()
+        ..color = _orange
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = s * 0.1,
+    );
+    canvas.drawPath(
+      Path()
+        ..moveTo(c.dx - s * 0.2, c.dy)
+        ..lineTo(c.dx, c.dy - s * 0.3)
+        ..lineTo(c.dx + s * 0.2, c.dy)
+        ..lineTo(c.dx, c.dy + s * 0.3)
+        ..close(),
+      Paint()..color = _orange,
+    );
+  }
+
+  @override
+  bool shouldRepaint(covariant _CoinPainter old) => false;
 }

@@ -17,12 +17,14 @@ int unlockedPieces({
 /// How much of the picture is revealed: a quarter for each piece.
 double pieceFraction(int pieces) => pieces.clamp(0, 4) / 4;
 
-/// Open the full picture sheet when the 4th piece unlocks (R-69, mock M-C26b).
-/// Pieces 1 to 3 show only in the badge. A wide screen has a side panel that
-/// already shows the picture. [previous] is the count before; null means this
-/// is the first time we look, which is a starting point and not a new unlock.
-bool shouldShowRevealSheet({
-  required int? previous,
-  required int current,
-  required bool narrow,
-}) => narrow && previous != null && previous < 4 && current >= 4;
+/// How long after the results screen the full picture sheet opens by itself
+/// (mock M-C26b: "auto-opens ~2s"), so the student can read the feedback first.
+const revealSheetDelay = Duration(seconds: 2);
+
+/// Open the full picture sheet when the results screen shows, which is when the
+/// 4th piece unlocks (R-69, mock M-C26b). [due] is true once per results screen,
+/// also when the student comes back later and the work is already valid. Pieces
+/// 1 to 3 show only in the badge. A wide screen has a side panel that already
+/// shows the picture.
+bool shouldShowRevealSheet({required bool due, required bool narrow}) =>
+    due && narrow;
