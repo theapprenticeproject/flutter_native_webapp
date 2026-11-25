@@ -907,4 +907,15 @@ class AppLocalizationsPa extends AppLocalizations {
   String welcomeHeading(String name) {
     return 'Welcome Back, $name!\nAre you ready for a New Year?';
   }
+
+  @override
+  String headerPoints(int points) {
+    String _temp0 = intl.Intl.pluralLogic(
+      points,
+      locale: localeName,
+      other: '$points Points',
+      one: '1 Point',
+    );
+    return '$_temp0';
+  }
 }

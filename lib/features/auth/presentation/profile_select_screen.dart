@@ -1,3 +1,4 @@
+import '../../../shared/widgets/app_primary_button.dart';
 import 'package:flutter/material.dart';
 import '../../../l10n/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -20,6 +21,8 @@ class ProfileSelectScreen extends ConsumerStatefulWidget {
 }
 
 class _ProfileSelectScreenState extends ConsumerState<ProfileSelectScreen> {
+  /// The row the student tapped. Continue signs this one in.
+  String? _pickedStudentId;
   String? _selectingStudentId;
   String? _errorText;
 
@@ -162,18 +165,30 @@ class _ProfileSelectScreenState extends ConsumerState<ProfileSelectScreen> {
         ),
       );
     }
+    final picked = profiles
+        .where((p) => p.studentId == _pickedStudentId)
+        .firstOrNull;
     return Column(
       children: [
         for (final profile in profiles) ...[
           _StudentRow(
             profile: profile,
             subject: courseNames[profile.courseId],
-            isLoading: _selectingStudentId == profile.studentId,
+            selected: _pickedStudentId == profile.studentId,
             onSelect: _selectingStudentId == null
-                ? () => _selectProfile(profile)
+                ? () => setState(() => _pickedStudentId = profile.studentId)
                 : null,
           ),
           const SizedBox(height: 12),
+        ],
+        // The design: a Continue button appears after a student is picked.
+        if (picked != null) ...[
+          const SizedBox(height: 8),
+          AppPrimaryButton(
+            label: context.l10n.buttonContinue,
+            loading: _selectingStudentId != null,
+            onPressed: () => _selectProfile(picked),
+          ),
         ],
       ],
     );
@@ -186,13 +201,15 @@ class _StudentRow extends StatelessWidget {
     required this.profile,
     required this.subject,
     required this.onSelect,
-    required this.isLoading,
+    required this.selected,
   });
 
   final RedeemedStudent profile;
   final String? subject;
   final VoidCallback? onSelect;
-  final bool isLoading;
+
+  /// The picked row: a purple border and a "Selected ✓" tag instead of Select.
+  final bool selected;
 
   @override
   Widget build(BuildContext context) {
@@ -201,11 +218,15 @@ class _StudentRow extends StatelessWidget {
       if (subject != null && subject!.isNotEmpty) subject!,
     ].join(' • ');
     return Container(
+      key: selected ? ValueKey('student-${profile.studentId}-selected') : null,
       padding: const EdgeInsets.fromLTRB(14, 14, 14, 14),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: const Color(0xFFDADAE3)),
+        border: Border.all(
+          color: selected ? const Color(0xFF5B5BD6) : const Color(0xFFDADAE3),
+          width: selected ? 2 : 1,
+        ),
       ),
       child: Row(
         children: [
@@ -251,11 +272,24 @@ class _StudentRow extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 10),
-          isLoading
-              ? const SizedBox(
-                  width: 24,
-                  height: 24,
-                  child: CircularProgressIndicator(strokeWidth: 2),
+          selected
+              ? Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 10,
+                  ),
+                  decoration: const BoxDecoration(
+                    color: Color(0xFFE8E8FB),
+                    borderRadius: BorderRadius.all(Radius.circular(999)),
+                  ),
+                  child: Text(
+                    context.l10n.profileSelected,
+                    style: GoogleFonts.inter(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w600,
+                      color: const Color(0xFF5B5BD6),
+                    ),
+                  ),
                 )
               : OutlinedButton(
                   onPressed: onSelect,

@@ -156,7 +156,7 @@ class AppHeader extends StatelessWidget {
               _MetricPill(
                 icon: Icons.stars_rounded,
                 iconColor: const Color(0xFFE29A22),
-                label: '$points',
+                label: context.l10n.headerPoints(points),
               ),
             ],
           );

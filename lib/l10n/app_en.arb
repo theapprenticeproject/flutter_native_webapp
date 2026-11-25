@@ -546,5 +546,13 @@
         "type": "String"
       }
     }
+  },
+  "headerPoints": "{points, plural, =1{1 Point} other{{points} Points}}",
+  "@headerPoints": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
   }
 }

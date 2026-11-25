@@ -1651,6 +1651,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Welcome Back, {name}!\nAre you ready for a New Year?'**
   String welcomeHeading(String name);
+
+  /// No description provided for @headerPoints.
+  ///
+  /// In en, this message translates to:
+  /// **'{points, plural, =1{1 Point} other{{points} Points}}'**
+  String headerPoints(int points);
 }
 
 class _AppLocalizationsDelegate
