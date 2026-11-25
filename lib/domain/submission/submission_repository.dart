@@ -129,7 +129,11 @@ class SubmissionRepository {
   /// Uploads the file bytes to the slot. Tries 3 times, then throws
   /// [UploadFailedException]. A file over the limit throws [FileTooBigException]
   /// before any request.
-  Future<void> upload(UploadSlot slot, Uint8List bytes) async {
+  Future<void> upload(
+    UploadSlot slot,
+    Uint8List bytes, {
+    void Function(double)? onProgress,
+  }) async {
     if (bytes.length > slot.maxSizeBytes) {
       throw FileTooBigException(bytes.length, slot.maxSizeBytes);
     }
@@ -139,6 +143,11 @@ class SubmissionRepository {
         final response = await _uploader.put<dynamic>(
           slot.uploadUrl,
           data: bytes,
+          onSendProgress: onProgress == null
+              ? null
+              : (sent, total) {
+                  if (total > 0) onProgress(sent / total);
+                },
           options: Options(
             headers: slot.headers,
             responseType: ResponseType.plain,

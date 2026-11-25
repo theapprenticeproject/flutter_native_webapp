@@ -36,6 +36,7 @@ class WorkSubmitter {
     required String assignmentId,
     required SubmissionType type,
     required Uint8List bytes,
+    void Function(double)? onProgress,
   }) async {
     final attempt = _attempts.putIfAbsent(assignmentId, _Attempt.new);
     final done = attempt.done;
@@ -50,7 +51,7 @@ class WorkSubmitter {
       final file = type == SubmissionType.image && shrink != null
           ? await shrink(bytes)
           : bytes;
-      await _repo.upload(attempt.slot!, file);
+      await _repo.upload(attempt.slot!, file, onProgress: onProgress);
       attempt.uploaded = true;
     }
 

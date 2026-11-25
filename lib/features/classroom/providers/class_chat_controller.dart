@@ -768,7 +768,7 @@ class ClassChatController extends ChangeNotifier {
       stepId: 'SHARE-WORK',
       image: null,
       text: l.chatReadyShare,
-      buttonLabel: l.chatYesLetsGo,
+      buttonLabel: l.classAddMyWork,
       action: 'share_work',
       secondaryLabel: l.chatNotToday,
       secondaryAction: 'not_today',
@@ -804,6 +804,7 @@ class ClassChatController extends ChangeNotifier {
     var points = 0;
     var alreadySent = false;
     _sentBefore = false;
+    uploadProgress.value = 0;
     try {
       final bytes = answer.bytes;
       if (bytes == null || assignment.assignmentId.isEmpty) {
@@ -815,6 +816,7 @@ class ClassChatController extends ChangeNotifier {
             ? SubmissionType.video
             : SubmissionType.image,
         bytes: bytes,
+        onProgress: (p) => uploadProgress.value = p,
       );
       points = result.pointsAwarded;
       _pendingServerPoints = result.pointsTotal;
@@ -839,6 +841,7 @@ class ClassChatController extends ChangeNotifier {
       return _workNotSent(answer);
     }
     _pendingWorkAnswer = null;
+    uploadProgress.value = null;
     if (_resending) {
       _resending = false;
       _showWaitingForFeedback();
@@ -850,11 +853,16 @@ class ClassChatController extends ChangeNotifier {
     await _finishAssignmentStep(accepted: true, points: points);
   }
 
+  /// How much of the photo or video is uploaded, 0 to 1. Null when no upload
+  /// runs. The preview bubble shows it as "Sending… 60%" (design M-S-04).
+  final uploadProgress = ValueNotifier<double?>(null);
+
   /// The Worker said this work was sent before (a CONFLICT): no points card.
   bool _sentBefore = false;
 
   void _workNotSent(SubmissionAnswer answer) {
     _pendingWorkAnswer = answer;
+    uploadProgress.value = null;
     _showProgressSaveRetry(l.chatSendWorkFailed, action: 'send_work');
   }
 
@@ -1532,6 +1540,7 @@ class ClassChatController extends ChangeNotifier {
       timer.cancel();
     }
     _pendingTimers.clear();
+    uploadProgress.dispose();
     super.dispose();
   }
 }

@@ -1409,7 +1409,7 @@ abstract class AppLocalizations {
   /// No description provided for @chatReadyShare.
   ///
   /// In en, this message translates to:
-  /// **'Are you ready to share your work? 📸'**
+  /// **'Great quiz! 🎉 Ready to send your work now?'**
   String get chatReadyShare;
 
   /// No description provided for @chatYesLetsGo.
@@ -1663,6 +1663,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Add my work 📷'**
   String get classAddMyWork;
+
+  /// No description provided for @classCheckBeforeSending.
+  ///
+  /// In en, this message translates to:
+  /// **'Check your work before sending'**
+  String get classCheckBeforeSending;
+
+  /// No description provided for @classSendToBuddy.
+  ///
+  /// In en, this message translates to:
+  /// **'Send to TAP Buddy'**
+  String get classSendToBuddy;
+
+  /// No description provided for @classChangeFile.
+  ///
+  /// In en, this message translates to:
+  /// **'Change file'**
+  String get classChangeFile;
+
+  /// No description provided for @classRightPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo - right kind for this activity'**
+  String get classRightPhoto;
+
+  /// No description provided for @classRightVideo.
+  ///
+  /// In en, this message translates to:
+  /// **'Video - right kind for this activity'**
+  String get classRightVideo;
+
+  /// No description provided for @classSendingPercent.
+  ///
+  /// In en, this message translates to:
+  /// **'Sending… {percent}%'**
+  String classSendingPercent(int percent);
+
+  /// No description provided for @classPhotoNeeded.
+  ///
+  /// In en, this message translates to:
+  /// **'1 photo needed'**
+  String get classPhotoNeeded;
+
+  /// No description provided for @classVideoNeeded.
+  ///
+  /// In en, this message translates to:
+  /// **'1 video needed'**
+  String get classVideoNeeded;
+
+  /// No description provided for @classPhotoOrVideoNeeded.
+  ///
+  /// In en, this message translates to:
+  /// **'1 photo or video needed'**
+  String get classPhotoOrVideoNeeded;
 }
 
 class _AppLocalizationsDelegate

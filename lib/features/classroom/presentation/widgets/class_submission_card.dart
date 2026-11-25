@@ -2,7 +2,11 @@ import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import '../../../../l10n/l10n.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../../../../core/router/app_routes.dart';
+import 'submission_confirm_dialog.dart';
 import 'package:image_picker/image_picker.dart';
 
 import '../../../../core/theme/app_theme.dart';
@@ -177,6 +181,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
       ),
     );
 
+    final before = _pickedMedia;
     switch (choice) {
       case _MediaPickChoice.cameraImage:
         await _pickImage(ImageSource.camera);
@@ -192,6 +197,29 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
         break;
       case null:
         break;
+    }
+    // Design M-S-03: look at the new file before it is sent.
+    if (mounted && _pickedMedia != null && !identical(_pickedMedia, before)) {
+      await showDialog<void>(
+        context: context,
+        builder: (dialog) => Dialog.fullscreen(
+          child: SubmissionConfirmDialog(
+            bytes: _pickedMediaBytes,
+            isVideo: _isVideoPick,
+            onSend: () {
+              Navigator.pop(dialog);
+              _submitMedia(isVideo: _isVideoPick);
+            },
+            onChange: () {
+              Navigator.pop(dialog);
+              _showMediaSourceSheet(
+                allowVideo: allowVideo,
+                forceVideo: forceVideo,
+              );
+            },
+          ),
+        ),
+      );
     }
   }
 
@@ -216,12 +244,10 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
             runSpacing: 8,
             crossAxisAlignment: WrapCrossAlignment.center,
             children: [
-              _SubmissionChip(
-                label: context.l10n.classTodaysActivity,
-                foregroundColor: AppTheme.buttonColor,
-              ),
               _SubmissionChip(label: _kindLabel(kind)),
-              if (stepNumber != null && stepTotal != null)
+              // The design (M-S-01) has only the kind chip. "Step 1/1" says
+              // nothing, so it shows only when there are several steps.
+              if (stepNumber != null && stepTotal != null && stepTotal > 1)
                 _SubmissionChip(
                   label: context.l10n.classStep(stepNumber, stepTotal),
                 ),
@@ -274,6 +300,24 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
             ),
           ],
           const SizedBox(height: 12),
+          if (_isMediaKind(kind)) ...[
+            // Design M-S-01: the real work of the others is in the Gallery (R-85).
+            InkWell(
+              onTap: () => context.go(AppRoutes.gallery),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 4),
+                child: Text(
+                  context.l10n.classSeeFriends,
+                  style: GoogleFonts.inter(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                    color: AppTheme.buttonColor,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 8),
+          ],
           if (_showFriendExamples(kind)) ...[
             Text(
               _friendLabel(kind),
@@ -496,15 +540,44 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
           ),
         ],
         const SizedBox(height: 12),
-        _submitRow(
-          primaryLabel: hasMedia
-              ? context.l10n.classShareSubmission
-              : context.l10n.classAddMyWork,
-          isLoading: _isPicking,
-          onPressed: !canInteract || _isPicking
-              ? null
-              : (hasMedia ? onSubmit : openPicker),
+        CustomPaint(
+          painter: _DashedBorderPainter(),
+          child: Padding(
+            padding: const EdgeInsets.all(14),
+            child: Column(
+              children: [
+                const Icon(
+                  Icons.upload_rounded,
+                  size: 22,
+                  color: AppTheme.buttonColor,
+                ),
+                const SizedBox(height: 8),
+                _submitRow(
+                  primaryLabel: hasMedia
+                      ? context.l10n.classShareSubmission
+                      : context.l10n.classAddMyWork,
+                  isLoading: _isPicking,
+                  onPressed: !canInteract || _isPicking
+                      ? null
+                      : (hasMedia ? onSubmit : openPicker),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  forceVideo
+                      ? context.l10n.classVideoNeeded
+                      : allowVideo
+                      ? context.l10n.classPhotoOrVideoNeeded
+                      : context.l10n.classPhotoNeeded,
+                  style: GoogleFonts.inter(
+                    fontSize: 12,
+                    color: AppTheme.subheadingColor,
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
+        const SizedBox(height: 8),
         if (canInteract && !_isPicking)
           Align(
             alignment: Alignment.centerLeft,
@@ -998,4 +1071,27 @@ class SubmitRow extends StatelessWidget {
       ],
     );
   }
+}
+
+/// The dashed frame around "Add my work" (design M-S-01).
+class _DashedBorderPainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final paint = Paint()
+      ..color = const Color(0xFFB9B3F0)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1.5;
+    final path = Path()
+      ..addRRect(
+        RRect.fromRectAndRadius(Offset.zero & size, const Radius.circular(16)),
+      );
+    for (final metric in path.computeMetrics()) {
+      for (var d = 0.0; d < metric.length; d += 12) {
+        canvas.drawPath(metric.extractPath(d, d + 6), paint);
+      }
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }

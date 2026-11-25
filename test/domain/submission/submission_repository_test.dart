@@ -87,6 +87,24 @@ void main() {
   group('upload', () {
     final bytes = Uint8List.fromList([1, 2, 3, 4]);
 
+    test(
+      'tells how much was sent, from 0 to 1 (the "Sending… 60%" line)',
+      () async {
+        final worker = FakeWorkerAdapter((_) => ok(_slot()));
+        final storage = _ProgressAdapter((_) => (status: 200, body: ''));
+        final repo = repoFor(worker, storage: storage);
+        final slot = await repo.requestUpload(
+          assignmentId: 'AS-1',
+          type: SubmissionType.image,
+        );
+        final seen = <double>[];
+
+        await repo.upload(slot, bytes, onProgress: seen.add);
+
+        expect(seen, [0.5, 1.0]);
+      },
+    );
+
     test('PUTs the bytes to the signed URL with the Worker headers', () async {
       final worker = FakeWorkerAdapter((_) => ok(_slot()));
       final storage = FakeWorkerAdapter((_) => (status: 200, body: ''));
@@ -359,4 +377,20 @@ void main() {
       expect(withResult('success - original', 50).isValid, isTrue);
     });
   });
+}
+
+/// A storage that reports 2 of 4 bytes, then 4 of 4, as the real upload does.
+class _ProgressAdapter extends FakeWorkerAdapter {
+  _ProgressAdapter(super.handler);
+
+  @override
+  Future<ResponseBody> fetch(
+    RequestOptions options,
+    Stream<Uint8List>? requestStream,
+    Future<void>? cancelFuture,
+  ) {
+    options.onSendProgress?.call(2, 4);
+    options.onSendProgress?.call(4, 4);
+    return super.fetch(options, requestStream, cancelFuture);
+  }
 }

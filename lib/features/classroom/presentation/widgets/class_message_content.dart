@@ -54,6 +54,7 @@ class ClassMessageContent extends StatelessWidget {
           return ClassSubmittedPreview(
             bytes: message.data['previewBytes'] as Uint8List?,
             isVideo: message.data['isVideo'] == true,
+            progress: controller.uploadProgress,
           );
         }
         return ClassTextBubble(text: message.text ?? '', isUser: true);

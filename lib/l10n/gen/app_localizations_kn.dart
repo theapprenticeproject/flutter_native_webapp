@@ -757,7 +757,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get chatSendAgain => 'Send again';
 
   @override
-  String get chatReadyShare => 'Are you ready to share your work? 📸';
+  String get chatReadyShare => 'Great quiz! 🎉 Ready to send your work now?';
 
   @override
   String get chatYesLetsGo => 'Yes, let\'s go';
@@ -923,4 +923,33 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get classAddMyWork => 'Add my work 📷';
+
+  @override
+  String get classCheckBeforeSending => 'Check your work before sending';
+
+  @override
+  String get classSendToBuddy => 'Send to TAP Buddy';
+
+  @override
+  String get classChangeFile => 'Change file';
+
+  @override
+  String get classRightPhoto => 'Photo - right kind for this activity';
+
+  @override
+  String get classRightVideo => 'Video - right kind for this activity';
+
+  @override
+  String classSendingPercent(int percent) {
+    return 'Sending… $percent%';
+  }
+
+  @override
+  String get classPhotoNeeded => '1 photo needed';
+
+  @override
+  String get classVideoNeeded => '1 video needed';
+
+  @override
+  String get classPhotoOrVideoNeeded => '1 photo or video needed';
 }

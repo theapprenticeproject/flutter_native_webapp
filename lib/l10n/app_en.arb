@@ -444,7 +444,7 @@
     }
   },
   "chatSendAgain": "Send again",
-  "chatReadyShare": "Are you ready to share your work? 📸",
+  "chatReadyShare": "Great quiz! 🎉 Ready to send your work now?",
   "chatYesLetsGo": "Yes, let's go",
   "chatNotToday": "Not today",
   "chatFileTooBig": "That file is too big 😅\nPlease choose a smaller photo or a shorter video.",
@@ -562,5 +562,21 @@
       }
     }
   },
-  "classAddMyWork": "Add my work 📷"
+  "classAddMyWork": "Add my work 📷",
+  "classCheckBeforeSending": "Check your work before sending",
+  "classSendToBuddy": "Send to TAP Buddy",
+  "classChangeFile": "Change file",
+  "classRightPhoto": "Photo - right kind for this activity",
+  "classRightVideo": "Video - right kind for this activity",
+  "classSendingPercent": "Sending… {percent}%",
+  "@classSendingPercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "classPhotoNeeded": "1 photo needed",
+  "classVideoNeeded": "1 video needed",
+  "classPhotoOrVideoNeeded": "1 photo or video needed"
 }
