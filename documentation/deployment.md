@@ -146,7 +146,7 @@ Never commit production JWT, Frappe API, or analytics secrets. If a secret has a
 ## A phone shows the old version after a deploy
 
 Two caches can hold the old app:
-1. **The browser's HTTP cache.** `firebase.json` now sends `Cache-Control: no-cache` for the files that decide which version runs (`index.html`, `flutter_bootstrap.js`, `flutter_service_worker.js`, `main.dart.js`, `version.json`, `manifest.json`), so the browser asks the server every time. Before, Firebase's default let a phone reuse them for an hour. `test/core/firebase_headers_test.dart` keeps this.
+1. **The browser's HTTP cache.** `firebase.json` now sends `Cache-Control: no-cache` for the files that decide which version runs (`index.html`, `flutter_bootstrap.js`, `flutter_service_worker.js`, `main.dart.js`, `version.json`, `manifest.json`) and for everything under `assets/` (the course files and pictures have no version in their names), so the browser asks the server every time. Before, Firebase's default let a phone reuse them for an hour. `test/core/firebase_headers_test.dart` keeps this.
 2. **Flutter's service worker.** After a deploy the first load still shows the old version, while the new one downloads in the background. The new version shows on the next load. Flutter 3.47 has no build option to turn it off (it is deprecated, see `todo.md`).
 
 To check what a phone runs, long-press the icon on the "Open your TAP link" page (or "TAP" at the bottom of Me): the build line shows the build time and commit. To get the new version in the WhatsApp browser: close the page completely and open the link again (twice), or clear WhatsApp's cache (Android Settings, Apps, WhatsApp, Storage, Clear cache; this is not Clear data).

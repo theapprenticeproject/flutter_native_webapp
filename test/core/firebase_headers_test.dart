@@ -14,6 +14,9 @@ const _entryFiles = [
   '/main.dart.js',
   '/version.json',
   '/manifest.json',
+  // The course files and the picture files are under assets/. Their names carry
+  // no version, so a changed file would be served stale for an hour otherwise.
+  '/assets/**',
 ];
 
 void main() {
