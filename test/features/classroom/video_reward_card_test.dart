@@ -36,6 +36,7 @@ Future<void> _pump(
 }
 
 void main() {
+  rewardCardHasFixedPictureHeight();
   testWidgets('the picture is no taller than 240', (tester) async {
     await _pump(tester, size: const Size(412, 900));
     final picture = find.byType(Image);
@@ -68,5 +69,20 @@ void main() {
   testWidgets('fits a 320 wide phone', (tester) async {
     await _pump(tester, size: const Size(320, 640));
     expect(tester.takeException(), isNull);
+  });
+}
+
+/// The chat scrolls to the bottom in the frame after the card is added. The
+/// picture must have its height at once, else the scroll stops short and the
+/// last lines of text stay below the screen (QA, M-C05).
+void rewardCardHasFixedPictureHeight() {
+  testWidgets('the picture box is 240 high before the picture is decoded', (
+    tester,
+  ) async {
+    await _pump(tester, size: const Size(412, 800));
+    final box = tester.widget<SizedBox>(
+      find.byKey(const ValueKey('reward-picture')),
+    );
+    expect(box.height, 240);
   });
 }

@@ -22,9 +22,11 @@ ActivityStepBarState activityStepBar({
   required bool resultsDone,
   required bool makePostponed,
   bool makeRequired = true,
+  bool rewardOpen = false,
 }) {
   final done = <ActivityStep>{
-    if (videoDone) ActivityStep.watch,
+    // While the video reward card is on screen, Watch is still the current step.
+    if (videoDone && !rewardOpen) ActivityStep.watch,
     if (workSent || !makeRequired) ActivityStep.make,
     if (quizDone) ActivityStep.quiz,
     if (resultsDone) ActivityStep.results,

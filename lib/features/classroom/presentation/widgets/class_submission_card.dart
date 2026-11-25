@@ -499,7 +499,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
         _submitRow(
           primaryLabel: hasMedia
               ? context.l10n.classShareSubmission
-              : context.l10n.classSubmit,
+              : context.l10n.classAddMyWork,
           isLoading: _isPicking,
           onPressed: !canInteract || _isPicking
               ? null

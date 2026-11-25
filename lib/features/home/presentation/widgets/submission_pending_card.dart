@@ -40,8 +40,8 @@ class SubmissionPendingCard extends ConsumerWidget {
             Text(
               unitName,
               style: GoogleFonts.inter(
-                fontSize: 27,
-                fontWeight: FontWeight.w500,
+                fontSize: 24,
+                fontWeight: FontWeight.w700,
                 color: const Color(0xFF1C1C21),
                 height: 1.02,
               ),

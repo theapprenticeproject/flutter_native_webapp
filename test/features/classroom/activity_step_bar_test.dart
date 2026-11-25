@@ -15,7 +15,9 @@ ActivityStepBarState _bar({
   bool results = false,
   bool postponed = false,
   bool makeRequired = true,
+  bool rewardOpen = false,
 }) => activityStepBar(
+  rewardOpen: rewardOpen,
   videoDone: video,
   workSent: work,
   quizDone: quiz,
@@ -31,6 +33,15 @@ void main() {
       expect(s.current, ActivityStep.watch);
       expect(s.done, isEmpty);
     });
+
+    test(
+      'the video reward card is still on screen: Watch stays current (M-C05)',
+      () {
+        final s = _bar(video: true, rewardOpen: true);
+        expect(s.current, ActivityStep.watch);
+        expect(s.done, isEmpty);
+      },
+    );
 
     test('the video done: Make', () {
       final s = _bar(video: true);

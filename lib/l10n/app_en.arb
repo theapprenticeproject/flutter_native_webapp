@@ -553,5 +553,14 @@
         "type": "int"
       }
     }
-  }
+  },
+  "chatLaterReply": "No problem, {name}! Let's do the quiz first 🧠 You can send your work after.",
+  "@chatLaterReply": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "classAddMyWork": "Add my work 📷"
 }

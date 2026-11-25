@@ -915,4 +915,12 @@ class AppLocalizationsMr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String chatLaterReply(String name) {
+    return 'No problem, $name! Let\'s do the quiz first 🧠 You can send your work after.';
+  }
+
+  @override
+  String get classAddMyWork => 'Add my work 📷';
 }

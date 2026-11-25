@@ -38,8 +38,9 @@ class ClassVideoRewardCard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(18),
               ),
               child: Center(
-                child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxHeight: 240),
+                child: SizedBox(
+                  key: const ValueKey('reward-picture'),
+                  height: 240,
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8),
                     child: Image.asset(image, fit: BoxFit.contain),

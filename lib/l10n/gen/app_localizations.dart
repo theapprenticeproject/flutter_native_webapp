@@ -1651,6 +1651,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{points, plural, =1{1 Point} other{{points} Points}}'**
   String headerPoints(int points);
+
+  /// No description provided for @chatLaterReply.
+  ///
+  /// In en, this message translates to:
+  /// **'No problem, {name}! Let\'s do the quiz first 🧠 You can send your work after.'**
+  String chatLaterReply(String name);
+
+  /// No description provided for @classAddMyWork.
+  ///
+  /// In en, this message translates to:
+  /// **'Add my work 📷'**
+  String get classAddMyWork;
 }
 
 class _AppLocalizationsDelegate

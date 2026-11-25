@@ -5,7 +5,7 @@ import 'package:tapapp/shared/widgets/app_header.dart';
 /// The Home design shows the points as "3 Points" (with the word). The activity
 /// header shows only the number next to the coin ("40").
 Future<void> _pump(WidgetTester tester, Widget header) async {
-  tester.view.physicalSize = const Size(412, 800);
+  tester.view.physicalSize = const Size(600, 800);
   tester.view.devicePixelRatio = 1;
   addTearDown(tester.view.resetPhysicalSize);
   await tester.pumpWidget(MaterialApp(home: Scaffold(body: header)));

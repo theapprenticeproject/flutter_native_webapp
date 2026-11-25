@@ -221,7 +221,10 @@ class ClassChatController extends ChangeNotifier {
     resultsDone: _resultsDone,
     makePostponed: _submissionPostponed,
     makeRequired: !_submissionNotRequired,
+    rewardOpen: _videoRewardOpen,
   );
+
+  bool _videoRewardOpen = false;
 
   bool get _submissionNotRequired =>
       _currentAssignment == null || _currentAssignment!.steps.isEmpty;
@@ -442,6 +445,7 @@ class ClassChatController extends ChangeNotifier {
       buttonLabel: l.buttonContinue,
       action: 'video_reward',
     );
+    _videoRewardOpen = true;
     notifyListeners();
   }
 
@@ -575,7 +579,15 @@ class ClassChatController extends ChangeNotifier {
     );
     switch (afterDoItLater(quizDone: _quizProgressSaved)) {
       case PostponeNext.quiz:
-        _messages.clear();
+        _push(
+          ClassChatMessage(
+            id: _newId(),
+            stepId: 'AF-007-LATER',
+            sender: ClassChatSender.bot,
+            contentType: ClassChatContentType.text,
+            text: l.chatLaterReply(firstName(studentName)),
+          ),
+        );
         _showQuizStartCheckpoint();
       case PostponeNext.leave:
         _leaveForLater();
@@ -1038,6 +1050,7 @@ class ClassChatController extends ChangeNotifier {
         _runStep('AF-006');
         return;
       case 'video_reward':
+        _videoRewardOpen = false;
         _messages.clear();
         _runStep('AF-006');
         return;
@@ -1266,6 +1279,7 @@ class ClassChatController extends ChangeNotifier {
       buttonLabel: l.buttonContinue,
       action: 'video_reward',
     );
+    _videoRewardOpen = true;
   }
 
   VideoReward _videoReward() => videoReward(
