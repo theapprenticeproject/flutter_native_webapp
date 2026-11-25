@@ -1,4 +1,5 @@
 import 'not_valid_text.dart';
+import 'quiz_end_art.dart';
 import 'video_reward.dart';
 import '../../../l10n/gen/app_localizations.dart';
 import 'dart:async';
@@ -1101,13 +1102,19 @@ class ClassChatController extends ChangeNotifier {
       _showProgressSaveRetry(l.chatSaveQuizFailed, action: 'save_quiz');
       return;
     }
-    _pushCheckpoint(
-      stepId: 'QUIZ-COMPLETE-ART',
-      image: 'assets/class-screen/won-champ.png',
-      text: '',
-      buttonLabel: '',
-      action: 'quiz_complete_art',
+    final art = quizEndArt(
+      correct: _quizCorrectCount,
+      total: _quizQuestions.length,
     );
+    if (art != null) {
+      _pushCheckpoint(
+        stepId: 'QUIZ-COMPLETE-ART',
+        image: art,
+        text: '',
+        buttonLabel: '',
+        action: 'quiz_complete_art',
+      );
+    }
     _scheduleAutoAdvance(1200, () {
       _pushCheckpoint(
         stepId: 'QUIZ-TOTALS',

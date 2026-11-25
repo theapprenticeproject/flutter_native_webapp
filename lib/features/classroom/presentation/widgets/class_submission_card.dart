@@ -570,88 +570,117 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
         child: ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 620),
-          child: Padding(
-            padding: const EdgeInsets.all(18),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
+          child: SubmissionHelpDialog(
+            kindLabel: _kindLabel(kind),
+            text: guidedText?.isNotEmpty == true ? guidedText! : unguidedText,
+            validCriteria: validCriteria,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// The content of "Submission Help". The chips wrap to a second line on a narrow
+/// phone (they shared a row with the close X and ran past the edge), and the
+/// whole content scrolls, so Continue can always be reached.
+class SubmissionHelpDialog extends StatelessWidget {
+  const SubmissionHelpDialog({
+    super.key,
+    required this.kindLabel,
+    required this.text,
+    required this.validCriteria,
+  });
+
+  final String kindLabel;
+  final String text;
+  final String? validCriteria;
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      padding: const EdgeInsets.all(18),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
                   children: [
                     _SubmissionChip(
                       label: context.l10n.classTodaysActivity,
                       foregroundColor: AppTheme.buttonColor,
                     ),
-                    const SizedBox(width: 8),
-                    _SubmissionChip(label: _kindLabel(kind)),
-                    const Spacer(),
-                    IconButton(
-                      onPressed: () => Navigator.pop(context),
-                      icon: const Icon(Icons.close_rounded),
-                    ),
+                    _SubmissionChip(label: kindLabel),
                   ],
                 ),
-                const SizedBox(height: 14),
-                Center(
-                  child: Text(
-                    context.l10n.classHowToSubmit,
-                    style: GoogleFonts.inter(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w800,
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 12),
-                Container(
-                  width: double.infinity,
-                  height: 220,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(14),
-                    border: Border.all(color: AppTheme.borderColor),
-                  ),
-                  child: const Icon(
-                    Icons.image_outlined,
-                    size: 34,
-                    color: AppTheme.imagePlaceholder,
-                  ),
-                ),
-                const SizedBox(height: 14),
-                Text(
-                  guidedText?.isNotEmpty == true ? guidedText! : unguidedText,
-                  style: GoogleFonts.inter(fontSize: 14, height: 1.4),
-                ),
-                if (validCriteria?.isNotEmpty == true) ...[
-                  const SizedBox(height: 8),
-                  Text(
-                    context.l10n.classCheck(validCriteria!),
-                    style: GoogleFonts.inter(
-                      fontSize: 12,
-                      color: AppTheme.subheadingColor,
-                      height: 1.35,
-                    ),
-                  ),
-                ],
-                const SizedBox(height: 18),
-                SizedBox(
-                  width: double.infinity,
-                  height: 48,
-                  child: ElevatedButton(
-                    onPressed: () => Navigator.pop(context),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppTheme.buttonColor,
-                      foregroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                    ),
-                    child: Text(context.l10n.buttonContinue),
-                  ),
-                ),
-              ],
+              ),
+              IconButton(
+                onPressed: () => Navigator.pop(context),
+                icon: const Icon(Icons.close_rounded),
+              ),
+            ],
+          ),
+          const SizedBox(height: 14),
+          Center(
+            child: Text(
+              context.l10n.classHowToSubmit,
+              style: GoogleFonts.inter(
+                fontSize: 16,
+                fontWeight: FontWeight.w800,
+              ),
             ),
           ),
-        ),
+          const SizedBox(height: 12),
+          Container(
+            width: double.infinity,
+            height: 220,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(14),
+              border: Border.all(color: AppTheme.borderColor),
+            ),
+            child: const Icon(
+              Icons.image_outlined,
+              size: 34,
+              color: AppTheme.imagePlaceholder,
+            ),
+          ),
+          const SizedBox(height: 14),
+          Text(text, style: GoogleFonts.inter(fontSize: 14, height: 1.4)),
+          if (validCriteria?.isNotEmpty == true) ...[
+            const SizedBox(height: 8),
+            Text(
+              context.l10n.classCheck(validCriteria!),
+              style: GoogleFonts.inter(
+                fontSize: 12,
+                color: AppTheme.subheadingColor,
+                height: 1.35,
+              ),
+            ),
+          ],
+          const SizedBox(height: 18),
+          SizedBox(
+            width: double.infinity,
+            height: 48,
+            child: ElevatedButton(
+              onPressed: () => Navigator.pop(context),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppTheme.buttonColor,
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: Text(context.l10n.buttonContinue),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -952,7 +981,7 @@ class SubmitRow extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         SizedBox(
-          height: 44,
+          height: 52,
           child: ElevatedButton(
             onPressed: onPressed,
             style: ElevatedButton.styleFrom(
@@ -974,7 +1003,15 @@ class SubmitRow extends StatelessWidget {
                   )
                 : FittedBox(
                     fit: BoxFit.scaleDown,
-                    child: Text(label, maxLines: 1),
+                    child: Text(
+                      label,
+                      maxLines: 1,
+                      // The design's main buttons: 18, semi-bold.
+                      style: GoogleFonts.inter(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
                   ),
           ),
         ),

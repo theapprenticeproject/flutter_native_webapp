@@ -28,6 +28,13 @@ class PictureBadge extends StatelessWidget {
 
   static const _purple = Color(0xFF5B5BD6);
 
+  /// The badge floats at the bottom right (design M-C03). The chat list ends
+  /// with [clearance] of room, so the last item (the Confirm button) can be
+  /// scrolled up above it.
+  static const double size = 64;
+  static const double margin = 16;
+  static const double clearance = size + margin + 16;
+
   @override
   Widget build(BuildContext context) {
     final n = pieces.clamp(0, 4);
@@ -38,8 +45,8 @@ class PictureBadge extends StatelessWidget {
         onTap: onTap,
         customBorder: const CircleBorder(),
         child: SizedBox(
-          width: 64,
-          height: 64,
+          width: size,
+          height: size,
           child: Stack(
             clipBehavior: Clip.none,
             children: [

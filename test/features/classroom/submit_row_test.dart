@@ -36,4 +36,22 @@ void main() {
       expect(find.text('Submission Help'), findsOneWidget);
     },
   );
+
+  // QA bug 9: the Submit label was Flutter's small default (14). The design's
+  // main buttons use a large label: 18, semi-bold, like the welcome Continue.
+  testWidgets('the label is 18, semi-bold, like the other main buttons', (
+    tester,
+  ) async {
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: SubmitRow(label: 'Submit', onPressed: () {}, onHelp: () {}),
+        ),
+      ),
+    );
+    final style = tester.widget<Text>(find.text('Submit')).style;
+    expect(style?.fontSize, 18);
+    expect(style?.fontWeight, FontWeight.w600);
+    expect(tester.getSize(find.byType(ElevatedButton)).height, 52);
+  });
 }

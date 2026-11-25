@@ -170,4 +170,25 @@ void main() {
     expect(text.contains("'???'"), isFalse);
     expect(text.contains('BackdropFilter'), isFalse);
   });
+
+  // QA bug 14: the floating badge covered the end of the last item (the Confirm
+  // button). The chat list must end with enough room to scroll that item up
+  // above the badge.
+  group('the badge does not cover the end of the chat', () {
+    test('the room at the bottom is larger than the badge and its margin', () {
+      expect(
+        PictureBadge.clearance,
+        greaterThan(PictureBadge.size + PictureBadge.margin),
+      );
+    });
+
+    test('the class screen uses it for the list and for the badge', () {
+      final text = File(
+        'lib/features/classroom/presentation/class_screen.dart',
+      ).readAsStringSync();
+      expect(text.contains('PictureBadge.clearance'), isTrue);
+      expect(text.contains('right: PictureBadge.margin'), isTrue);
+      expect(text.contains('bottom: PictureBadge.margin'), isTrue);
+    });
+  });
 }

@@ -230,7 +230,12 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
 
                         final chatColumn = ListView.builder(
                           controller: _scrollController,
-                          padding: const EdgeInsets.fromLTRB(14, 20, 14, 24),
+                          padding: const EdgeInsets.fromLTRB(
+                            14,
+                            20,
+                            14,
+                            PictureBadge.clearance,
+                          ),
                           itemCount:
                               widget.controller.messages.length +
                               (showChoiceReveal ? 1 : 0),
@@ -321,8 +326,8 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
               ],
             ),
             Positioned(
-              right: 16,
-              bottom: 16,
+              right: PictureBadge.margin,
+              bottom: PictureBadge.margin,
               child: PictureBadge(
                 pieces: widget.controller.unlockedPictureCount,
                 unitIndex: widget.controller.unitIndex,
