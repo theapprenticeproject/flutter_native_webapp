@@ -952,4 +952,15 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get classPhotoOrVideoNeeded => '1 photo or video needed';
+
+  @override
+  String get classNotAPhoto =>
+      'Oh no champ! 😮 This is not a photo. Try another one 😊';
+
+  @override
+  String get classNotAVideo =>
+      'Oh no champ! 😮 This is not a video. Try another one 😊';
+
+  @override
+  String get classNeedHelp => 'Need help? 🙋';
 }

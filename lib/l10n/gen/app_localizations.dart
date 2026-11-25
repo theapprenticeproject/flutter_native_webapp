@@ -1717,6 +1717,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'1 photo or video needed'**
   String get classPhotoOrVideoNeeded;
+
+  /// No description provided for @classNotAPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Oh no champ! 😮 This is not a photo. Try another one 😊'**
+  String get classNotAPhoto;
+
+  /// No description provided for @classNotAVideo.
+  ///
+  /// In en, this message translates to:
+  /// **'Oh no champ! 😮 This is not a video. Try another one 😊'**
+  String get classNotAVideo;
+
+  /// No description provided for @classNeedHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Need help? 🙋'**
+  String get classNeedHelp;
 }
 
 class _AppLocalizationsDelegate

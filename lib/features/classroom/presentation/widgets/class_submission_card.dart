@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/router/app_routes.dart';
+import '../../../../shared/media/file_kind.dart';
 import 'submission_confirm_dialog.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -44,6 +45,9 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
   bool _submitted = false;
   bool _pickError = false;
 
+  /// The file is not a photo (or video): the red box of design M-S-05.
+  bool _wrongFile = false;
+
   @override
   void dispose() {
     _textController.dispose();
@@ -75,14 +79,26 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
     }
   }
 
+  bool _isRight(XFile file, {required bool video}) {
+    final ok = isRightFile(
+      mimeType: file.mimeType,
+      name: file.name,
+      video: video,
+    );
+    if (!ok && mounted) setState(() => _wrongFile = true);
+    return ok;
+  }
+
   Future<void> _pickImage(ImageSource source) async {
     setState(() {
       _isPicking = true;
       _pickError = false;
+      _wrongFile = false;
     });
     try {
       final file = await _picker.pickImage(source: source, imageQuality: 85);
       if (file != null) {
+        if (!_isRight(file, video: false)) return;
         final bytes = await file.readAsBytes();
         if (!mounted) return;
         setState(() {
@@ -107,6 +123,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
     setState(() {
       _isPicking = true;
       _pickError = false;
+      _wrongFile = false;
     });
     try {
       final file = await _picker.pickVideo(
@@ -114,6 +131,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
         maxDuration: const Duration(seconds: 60),
       );
       if (file != null) {
+        if (!_isRight(file, video: true)) return;
         if (!mounted) return;
         setState(() {
           _pickedMedia = file;
@@ -541,27 +559,51 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
         ],
         const SizedBox(height: 12),
         CustomPaint(
-          painter: _DashedBorderPainter(),
-          child: Padding(
+          painter: _DashedBorderPainter(error: _wrongFile),
+          child: Container(
+            decoration: BoxDecoration(
+              color: _wrongFile ? const Color(0xFFFBE9E7) : null,
+              borderRadius: BorderRadius.circular(16),
+            ),
             padding: const EdgeInsets.all(14),
             child: Column(
               children: [
-                const Icon(
-                  Icons.upload_rounded,
+                Icon(
+                  _wrongFile
+                      ? Icons.warning_amber_rounded
+                      : Icons.upload_rounded,
                   size: 22,
-                  color: AppTheme.buttonColor,
+                  color: _wrongFile
+                      ? AppTheme.dangerText
+                      : AppTheme.buttonColor,
                 ),
                 const SizedBox(height: 8),
-                _submitRow(
-                  primaryLabel: hasMedia
+                if (_wrongFile) ...[
+                  Text(
+                    forceVideo
+                        ? context.l10n.classNotAVideo
+                        : context.l10n.classNotAPhoto,
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.inter(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500,
+                      color: AppTheme.dangerText,
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                ],
+                AppPrimaryButton(
+                  label: _submitted
+                      ? context.l10n.classSent
+                      : hasMedia
                       ? context.l10n.classShareSubmission
                       : context.l10n.classAddMyWork,
-                  isLoading: _isPicking,
+                  loading: _isPicking,
                   onPressed: !canInteract || _isPicking
                       ? null
                       : (hasMedia ? onSubmit : openPicker),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 8),
                 Text(
                   forceVideo
                       ? context.l10n.classVideoNeeded
@@ -577,10 +619,19 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
             ),
           ),
         ),
+        // Design M-S-05: "Need help?" is outside the box, like "I'll do it later".
+        const SizedBox(height: 12),
+        SizedBox(
+          width: double.infinity,
+          child: AppTonalButton(
+            label: context.l10n.classNeedHelp,
+            onPressed: _showSubmissionHelpDialog,
+          ),
+        ),
         const SizedBox(height: 8),
         if (canInteract && !_isPicking)
-          Align(
-            alignment: Alignment.centerLeft,
+          SizedBox(
+            width: double.infinity,
             child: AppTonalButton(
               label: context.l10n.classDoLater,
               trailing: Icons.arrow_forward_rounded,
@@ -1075,10 +1126,14 @@ class SubmitRow extends StatelessWidget {
 
 /// The dashed frame around "Add my work" (design M-S-01).
 class _DashedBorderPainter extends CustomPainter {
+  _DashedBorderPainter({this.error = false});
+
+  final bool error;
+
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = const Color(0xFFB9B3F0)
+      ..color = error ? AppTheme.dangerText : const Color(0xFFB9B3F0)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1.5;
     final path = Path()
@@ -1093,5 +1148,5 @@ class _DashedBorderPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
+  bool shouldRepaint(covariant _DashedBorderPainter old) => old.error != error;
 }

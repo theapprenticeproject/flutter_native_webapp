@@ -578,5 +578,8 @@
   },
   "classPhotoNeeded": "1 photo needed",
   "classVideoNeeded": "1 video needed",
-  "classPhotoOrVideoNeeded": "1 photo or video needed"
+  "classPhotoOrVideoNeeded": "1 photo or video needed",
+  "classNotAPhoto": "Oh no champ! 😮 This is not a photo. Try another one 😊",
+  "classNotAVideo": "Oh no champ! 😮 This is not a video. Try another one 😊",
+  "classNeedHelp": "Need help? 🙋"
 }
