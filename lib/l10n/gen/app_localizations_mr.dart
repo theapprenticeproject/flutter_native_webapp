@@ -365,12 +365,6 @@ class AppLocalizationsMr extends AppLocalizations {
   String get profileSelect => 'Select';
 
   @override
-  String get profileWhoLearning => 'Who\'s learning today?';
-
-  @override
-  String get profileSelectToContinue => 'Select a student profile to continue.';
-
-  @override
   String welcomeBack(String name) {
     return 'Welcome Back, $name!';
   }
@@ -890,4 +884,12 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get chatNotAccepted =>
       'I couldn\'t review your work 🥺 Because the photo was either a bit unclear or not of today\'s activity.';
+
+  @override
+  String get profileWelcome => 'Welcome';
+
+  @override
+  String profileClass(String grade) {
+    return 'Class $grade';
+  }
 }

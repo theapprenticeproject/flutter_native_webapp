@@ -9,6 +9,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../domain/auth/auth_provider.dart';
 import '../../../domain/auth/redeemed_student.dart';
 import '../../../domain/profile/profile_provider.dart';
+import '../../../domain/program_content/program_content_provider.dart';
 
 class ProfileSelectScreen extends ConsumerStatefulWidget {
   const ProfileSelectScreen({super.key});
@@ -47,68 +48,105 @@ class _ProfileSelectScreenState extends ConsumerState<ProfileSelectScreen> {
   @override
   Widget build(BuildContext context) {
     final profilesAsync = ref.watch(linkRosterProvider);
+    final courseNames = ref.watch(courseNameByIdProvider).valueOrNull ?? {};
 
     return Scaffold(
-      backgroundColor: AppTheme.bgColor,
+      backgroundColor: Colors.white,
       body: SafeArea(
-        child: LayoutBuilder(
-          builder: (context, constraints) {
-            final isDesktop = constraints.maxWidth > 800;
-            return Center(
-              child: SingleChildScrollView(
-                padding: EdgeInsets.symmetric(
-                  horizontal: isDesktop ? 0 : 24,
-                  vertical: 32,
-                ),
-                child: ConstrainedBox(
-                  constraints: BoxConstraints(maxWidth: isDesktop ? 560 : 480),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
+        child: Center(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.fromLTRB(20, 16, 20, 32),
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 480),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  // The two logos, as in the design (M-F1-01).
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        context.l10n.profileWhoLearning,
-                        style: GoogleFonts.inter(
-                          fontSize: isDesktop ? 26 : 22,
-                          fontWeight: FontWeight.w800,
-                          color: AppTheme.textColor,
-                        ),
+                      Image.asset(
+                        'assets/logos/gov-logo.png',
+                        height: 54,
+                        fit: BoxFit.contain,
+                        errorBuilder: (_, _, _) => const SizedBox.shrink(),
                       ),
-                      const SizedBox(height: 8),
-                      Text(
-                        context.l10n.profileSelectToContinue,
-                        style: GoogleFonts.inter(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500,
-                          color: AppTheme.subheadingColor,
-                        ),
-                      ),
-                      const SizedBox(height: 24),
-                      if (_errorText != null) ...[
-                        _ErrorBanner(text: _errorText!),
-                        const SizedBox(height: 16),
-                      ],
-                      profilesAsync.when(
-                        data: (profiles) =>
-                            _buildProfileGrid(profiles, isDesktop),
-                        loading: () => const Padding(
-                          padding: EdgeInsets.symmetric(vertical: 48),
-                          child: Center(child: CircularProgressIndicator()),
-                        ),
-                        error: (err, stack) =>
-                            _ErrorBanner(text: context.l10n.profilesLoadFailed),
+                      Image.asset(
+                        'assets/logos/tap_logo.png',
+                        height: 38,
+                        fit: BoxFit.contain,
+                        errorBuilder: (_, _, _) => const SizedBox.shrink(),
                       ),
                     ],
                   ),
-                ),
+                  const SizedBox(height: 24),
+                  Center(
+                    child: Container(
+                      width: 160,
+                      height: 160,
+                      padding: const EdgeInsets.all(14),
+                      decoration: const BoxDecoration(
+                        color: Color(0xFFE8E8FB),
+                        shape: BoxShape.circle,
+                      ),
+                      child: Image.asset(
+                        'assets/onboarding/hello_welcome.png',
+                        fit: BoxFit.contain,
+                        errorBuilder: (_, _, _) => const Icon(
+                          Icons.person,
+                          size: 80,
+                          color: Color(0xFF5B5BD6),
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 24),
+                  Text(
+                    context.l10n.profileWelcome,
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.inter(
+                      fontSize: 28,
+                      fontWeight: FontWeight.w700,
+                      color: const Color(0xFF1C1C21),
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    context.l10n.profilePickPrompt,
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.inter(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w400,
+                      color: const Color(0xFF6E6E7A),
+                    ),
+                  ),
+                  const SizedBox(height: 22),
+                  if (_errorText != null) ...[
+                    _ErrorBanner(text: _errorText!),
+                    const SizedBox(height: 16),
+                  ],
+                  profilesAsync.when(
+                    data: (profiles) => _buildRows(profiles, courseNames),
+                    loading: () => const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 48),
+                      child: Center(child: CircularProgressIndicator()),
+                    ),
+                    error: (err, stack) =>
+                        _ErrorBanner(text: context.l10n.profilesLoadFailed),
+                  ),
+                ],
               ),
-            );
-          },
+            ),
+          ),
         ),
       ),
     );
   }
 
-  Widget _buildProfileGrid(List<RedeemedStudent> profiles, bool isDesktop) {
+  Widget _buildRows(
+    List<RedeemedStudent> profiles,
+    Map<String, String> courseNames,
+  ) {
     if (profiles.isEmpty) {
       return Padding(
         padding: const EdgeInsets.symmetric(vertical: 48),
@@ -124,121 +162,121 @@ class _ProfileSelectScreenState extends ConsumerState<ProfileSelectScreen> {
         ),
       );
     }
-
-    return GridView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: isDesktop ? 3 : 2,
-        crossAxisSpacing: 14,
-        mainAxisSpacing: 14,
-        childAspectRatio: 0.85,
-      ),
-      itemCount: profiles.length,
-      itemBuilder: (context, index) {
-        final profile = profiles[index];
-        final isSelecting = _selectingStudentId == profile.studentId;
-        return _ProfileCard(
-          profile: profile,
-          isLoading: isSelecting,
-          onTap: _selectingStudentId == null
-              ? () => _selectProfile(profile)
-              : null,
-        );
-      },
+    return Column(
+      children: [
+        for (final profile in profiles) ...[
+          _StudentRow(
+            profile: profile,
+            subject: courseNames[profile.courseId],
+            isLoading: _selectingStudentId == profile.studentId,
+            onSelect: _selectingStudentId == null
+                ? () => _selectProfile(profile)
+                : null,
+          ),
+          const SizedBox(height: 12),
+        ],
+      ],
     );
   }
 }
 
-class _ProfileCard extends StatelessWidget {
-  const _ProfileCard({
+/// One student: initials, name, "Class N • subject" and a Select button.
+class _StudentRow extends StatelessWidget {
+  const _StudentRow({
     required this.profile,
-    required this.onTap,
+    required this.subject,
+    required this.onSelect,
     required this.isLoading,
   });
 
   final RedeemedStudent profile;
-  final VoidCallback? onTap;
+  final String? subject;
+  final VoidCallback? onSelect;
   final bool isLoading;
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        clipBehavior: Clip.antiAlias,
-        decoration: BoxDecoration(
-          color: AppTheme.cardBackground,
-          borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: AppTheme.borderColor),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withValues(alpha: 0.04),
-              blurRadius: 10,
-              offset: const Offset(0, 4),
+    final meta = [
+      if (profile.grade.isNotEmpty) context.l10n.profileClass(profile.grade),
+      if (subject != null && subject!.isNotEmpty) subject!,
+    ].join(' • ');
+    return Container(
+      padding: const EdgeInsets.fromLTRB(14, 14, 14, 14),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: const Color(0xFFDADAE3)),
+      ),
+      child: Row(
+        children: [
+          CircleAvatar(
+            radius: 22,
+            backgroundColor: const Color(0xFFE8E8FB),
+            child: Text(
+              _initials(profile.name),
+              style: GoogleFonts.inter(
+                fontSize: 15,
+                fontWeight: FontWeight.w500,
+                color: const Color(0xFF5B5BD6),
+              ),
             ),
-          ],
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Expanded(
-              child: Center(
-                child: CircleAvatar(
-                  radius: 34,
-                  backgroundColor: const Color(0xFFE8E8FB),
-                  child: Text(
-                    _initials(profile.name),
+          ),
+          const SizedBox(width: 14),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  profile.name.isEmpty
+                      ? context.l10n.profileStudent
+                      : profile.name,
+                  style: GoogleFonts.inter(
+                    fontSize: 17,
+                    fontWeight: FontWeight.w600,
+                    color: const Color(0xFF1C1C21),
+                  ),
+                ),
+                if (meta.isNotEmpty) ...[
+                  const SizedBox(height: 4),
+                  Text(
+                    meta,
                     style: GoogleFonts.inter(
-                      fontSize: 22,
-                      fontWeight: FontWeight.w800,
-                      color: const Color(0xFF5B5BD6),
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                      color: const Color(0xFF6E6E7A),
+                    ),
+                  ),
+                ],
+              ],
+            ),
+          ),
+          const SizedBox(width: 10),
+          isLoading
+              ? const SizedBox(
+                  width: 24,
+                  height: 24,
+                  child: CircularProgressIndicator(strokeWidth: 2),
+                )
+              : OutlinedButton(
+                  onPressed: onSelect,
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: const Color(0xFF1C1C21),
+                    side: const BorderSide(color: Color(0xFFDADAE3)),
+                    shape: const StadiumBorder(),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 20,
+                      vertical: 12,
+                    ),
+                  ),
+                  child: Text(
+                    context.l10n.profileSelect,
+                    style: GoogleFonts.inter(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
                 ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(12, 0, 12, 14),
-              child: Column(
-                children: [
-                  Text(
-                    profile.name.isEmpty
-                        ? context.l10n.profileStudent
-                        : profile.name,
-                    style: GoogleFonts.inter(
-                      fontSize: 15,
-                      fontWeight: FontWeight.w700,
-                      color: AppTheme.textColor,
-                    ),
-                    textAlign: TextAlign.center,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    profile.grade.isEmpty
-                        ? ''
-                        : context.l10n.profileGrade(profile.grade),
-                    style: GoogleFonts.inter(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                      color: AppTheme.subheadingColor,
-                    ),
-                  ),
-                  if (isLoading) ...[
-                    const SizedBox(height: 8),
-                    const SizedBox(
-                      width: 16,
-                      height: 16,
-                      child: CircularProgressIndicator(strokeWidth: 2),
-                    ),
-                  ],
-                ],
-              ),
-            ),
-          ],
-        ),
+        ],
       ),
     );
   }

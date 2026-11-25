@@ -734,18 +734,6 @@ abstract class AppLocalizations {
   /// **'Select'**
   String get profileSelect;
 
-  /// No description provided for @profileWhoLearning.
-  ///
-  /// In en, this message translates to:
-  /// **'Who\'s learning today?'**
-  String get profileWhoLearning;
-
-  /// No description provided for @profileSelectToContinue.
-  ///
-  /// In en, this message translates to:
-  /// **'Select a student profile to continue.'**
-  String get profileSelectToContinue;
-
   /// No description provided for @welcomeBack.
   ///
   /// In en, this message translates to:
@@ -1621,6 +1609,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'I couldn\'t review your work 🥺 Because the photo was either a bit unclear or not of today\'s activity.'**
   String get chatNotAccepted;
+
+  /// No description provided for @profileWelcome.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome'**
+  String get profileWelcome;
+
+  /// No description provided for @profileClass.
+  ///
+  /// In en, this message translates to:
+  /// **'Class {grade}'**
+  String profileClass(String grade);
 }
 
 class _AppLocalizationsDelegate

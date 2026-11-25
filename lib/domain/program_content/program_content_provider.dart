@@ -30,3 +30,11 @@ final courseDetailDataProvider = FutureProvider.autoDispose
         lang: ref.watch(studentLanguageProvider),
       );
     });
+
+/// Course id to course name, from the bundled course list. The student picker
+/// shows it next to the class ("Class 5 • Science").
+final courseNameByIdProvider = FutureProvider<Map<String, String>>((ref) async {
+  final repository = await ref.watch(programContentRepositoryProvider.future);
+  final courses = await repository.fetchCourseIndex();
+  return {for (final c in courses) c.id: c.name.trim()};
+});
