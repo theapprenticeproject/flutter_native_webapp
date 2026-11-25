@@ -487,6 +487,9 @@ class ClassChatController extends ChangeNotifier {
           'submissionKind': kind.name,
           'stepNumber': 1,
           'stepTotal': 1,
+          // "Send again" came from an "Add my work" tap: open the picker at
+          // once, so the student does not see a second "Add my work" box.
+          'autoPick': _resending,
         },
       ),
     );

@@ -51,6 +51,26 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
   bool _wrongFile = false;
 
   @override
+  void initState() {
+    super.initState();
+    if (widget.message.data['autoPick'] == true) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        final kind = SubmissionKindResolver.fromSubTypes(
+          widget.message.data['subTypes'] as String? ?? '',
+        );
+        if (mounted &&
+            _isMediaKind(kind) &&
+            widget.controller.isAwaitingInput) {
+          _showMediaSourceSheet(
+            allowVideo: kind != SubmissionKind.image,
+            forceVideo: kind == SubmissionKind.video,
+          );
+        }
+      });
+    }
+  }
+
+  @override
   void dispose() {
     _textController.dispose();
     super.dispose();
