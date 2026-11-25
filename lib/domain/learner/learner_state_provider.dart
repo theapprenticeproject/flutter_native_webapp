@@ -26,6 +26,15 @@ final learnerStateRepositoryProvider = FutureProvider<LearnerStateRepository>((
 
 final learnerStateDataProvider = FutureProvider.autoDispose
     .family<LearnerStateModel, String>((ref, learnerId) async {
+      // Keep the answer for the whole session (until the page is reloaded), also
+      // when the student leaves the screen. Home, Me and Gallery all read it,
+      // and every new read calls `sync`, a route the Worker limits. The state
+      // changes only through the student's own steps (they call
+      // `ref.invalidate`), pull to refresh, or a new profile.
+      // shortcut: a change made on the server side (a grader's points) shows
+      // after the next reload or pull to refresh, not by itself. Add a cheap
+      // check (`sync` with `last_updated`) if that is too late.
+      ref.keepAlive();
       final repository = await ref.watch(learnerStateRepositoryProvider.future);
       var state = await repository.readCached(learnerId);
       if (state != null && state.enrollment != null) {

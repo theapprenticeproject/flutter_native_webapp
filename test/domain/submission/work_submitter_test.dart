@@ -237,6 +237,63 @@ void main() {
     },
   );
 
+  // Bug seen on the dev Worker: the first photo failed, the student chose
+  // another one, and the app sent the OLD slot (attempt 1) without uploading the
+  // new photo. The Worker answered INVALID_INPUT "object_key's attempt (1) does
+  // not match ... next attempt number (2)".
+  test('another photo gets its own slot and is uploaded', () async {
+    final rig = _Rig()..submitReply = failure(500, 'INTERNAL', 'x');
+    final s = rig.submitter();
+    await expectLater(
+      s.submit(assignmentId: 'AS-1', type: SubmissionType.image, bytes: photo),
+      throwsA(isA<ApiException>()),
+    );
+    rig.submitReply = null;
+    final other = Uint8List.fromList([7, 8, 9]);
+    await s.submit(
+      assignmentId: 'AS-1',
+      type: SubmissionType.image,
+      bytes: other,
+    );
+    expect(
+      rig.calls.where((c) => c == '/submission/request_upload'),
+      hasLength(2),
+    );
+    expect(rig.calls.where((c) => c == 'PUT'), hasLength(2));
+    expect(rig.storage.seen.last.raw, other);
+    expect(rig.keys[0], isNot(rig.keys[1]));
+  });
+
+  for (final code in ['INVALID_INPUT', 'CONFLICT']) {
+    test(
+      '$code from submit_artwork: the next try asks for a new slot',
+      () async {
+        final rig = _Rig()
+          ..submitReply = failure(400, code, 'attempt mismatch');
+        final s = rig.submitter();
+        await expectLater(
+          s.submit(
+            assignmentId: 'AS-1',
+            type: SubmissionType.image,
+            bytes: photo,
+          ),
+          throwsA(isA<ApiException>()),
+        );
+        rig.submitReply = null;
+        await s.submit(
+          assignmentId: 'AS-1',
+          type: SubmissionType.image,
+          bytes: photo,
+        );
+        expect(
+          rig.calls.where((c) => c == '/submission/request_upload'),
+          hasLength(2),
+        );
+        expect(rig.calls.where((c) => c == 'PUT'), hasLength(2));
+      },
+    );
+  }
+
   test('upload_not_confirmed means upload again, with the same slot', () async {
     final rig = _Rig()
       ..submitReply = failure(400, 'upload_not_confirmed', 'object missing');

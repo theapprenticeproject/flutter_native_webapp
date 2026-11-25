@@ -7,6 +7,9 @@ import 'submission_repository.dart';
 class _Attempt {
   UploadSlot? slot;
   String? uploadKey;
+
+  /// Which file this attempt is for. Another file is another attempt.
+  int? fingerprint;
   bool uploaded = false;
   String? key;
   ArtworkResult? done;
@@ -40,7 +43,15 @@ class WorkSubmitter {
     required Uint8List bytes,
     void Function(double)? onProgress,
   }) async {
-    final attempt = _attempts.putIfAbsent(assignmentId, _Attempt.new);
+    final fingerprint = Object.hash(bytes.length, Object.hashAll(bytes));
+    if (_attempts[assignmentId]?.fingerprint != fingerprint) {
+      // A different photo: it needs its own slot, upload and key.
+      _attempts.remove(assignmentId);
+    }
+    final attempt = _attempts.putIfAbsent(
+      assignmentId,
+      () => _Attempt()..fingerprint = fingerprint,
+    );
     final done = attempt.done;
     if (done != null) return done;
 
@@ -82,7 +93,13 @@ class WorkSubmitter {
         'upload_size_invalid',
         'upload_type_mismatch',
       };
-      if (uploadProblems.contains(e.code)) attempt.uploaded = false;
+      if (uploadProblems.contains(e.code)) {
+        attempt.uploaded = false;
+      } else if (e.code == 'CONFLICT' || e.code == 'INVALID_INPUT') {
+        // The Worker refused this slot (for example the attempt number moved
+        // on). Using it again cannot work: the next try asks for a new one.
+        _attempts.remove(assignmentId);
+      }
       rethrow;
     }
   }

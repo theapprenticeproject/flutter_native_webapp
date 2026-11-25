@@ -122,4 +122,21 @@ void main() {
     await c.read(learnerStateDataProvider('S1').future);
     expect(worker.seen.where((r) => r.path == '/progress/sync'), hasLength(2));
   });
+
+  // The dev Worker answers RATE_LIMITED ("turn budget exceeded for
+  // /progress/sync") after about 10 calls a minute. Home, Me and Gallery each
+  // read this state, so hopping between tabs called `sync` on every tap. The
+  // answer now lasts for the session; only a write or a refresh asks again.
+  test('leaving a screen and coming back does not ask again', () async {
+    final c = container();
+    final sub = c.listen(learnerStateDataProvider('S1'), (_, _) {});
+    await c.read(learnerStateDataProvider('S1').future);
+    sub.close(); // the screen is left
+    await Future<void>.delayed(Duration.zero);
+
+    await c.read(learnerStateDataProvider('S1').future); // another tab
+    await c.read(learnerStateDataProvider('S1').future); // and another
+
+    expect(worker.seen.where((r) => r.path == '/progress/sync'), hasLength(1));
+  });
 }
