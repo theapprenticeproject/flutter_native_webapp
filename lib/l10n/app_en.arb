@@ -371,7 +371,7 @@
       }
     }
   },
-  "classWatchVideo": "Watch the video 👇",
+  "classWatchVideo": "Watch the video by clicking on the link below📹 and earn *10 points*🪩\n\nClick here 👇👇👇",
   "classWatchTitle": "Watch: {title}",
   "@classWatchTitle": {
     "placeholders": {
@@ -443,7 +443,7 @@
     }
   },
   "chatQuizButton": "Quiz",
-  "chatTodayPlay": "Today we're going to play with {unit}.\nWatch a short video, then make your own project.",
+  "chatTodayPlay": "Today we're going to play with {unit}!\nWatch a short video, then make your own project.",
   "@chatTodayPlay": {
     "placeholders": {
       "unit": {
@@ -452,19 +452,7 @@
     }
   },
   "chatWatchButton": "Watch",
-  "chatFinalWin": "Activity Points    {activity} 🪙\nQuiz Points    {quiz} 🪙",
-  "@chatFinalWin": {
-    "placeholders": {
-      "activity": {
-        "type": "int"
-      },
-      "quiz": {
-        "type": "int"
-      }
-    }
-  },
   "chatSaveQuizFailed": "We could not save your quiz result. Please check your connection and retry.",
-  "chatQuizTotals": "Great job Champ!\nDo you want to know your total points collected so far?",
   "chatSaveSubmissionStill": "Still could not save your submission progress. Please check your connection and retry.",
   "chatSaveVideoStill": "We still could not save the video checkpoint. Please check your connection and retry.",
   "chatSaveGeneric": "Something went wrong saving your progress.",
@@ -509,7 +497,6 @@
   "classStepQuiz": "Quiz",
   "classStepResults": "Results",
   "classGreatJob": "You did a great job, champion!",
-  "chatIMadeThis": "I made this",
   "chatSubmissionProud": "I am so proud of you {name}🤩👑",
   "@chatSubmissionProud": {
     "placeholders": {
@@ -614,5 +601,22 @@
   "askTapHint": "Type here...",
   "askTapBusy": "I need a short rest 😅 Please ask me again in a little while.",
   "askTapFailed": "I could not answer right now. Please try again.",
-  "askTapBack": "Back to my activity"
+  "askTapBack": "Back to my activity",
+  "chatQuizEnd": "You are very smart {name}!🤩\nYou answered {correct}/{total} questions correctly🤩 and earned {points} points🪩 in total!😍\n\nAmazing champ!😎",
+  "@chatQuizEnd": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "points": {
+        "type": "int"
+      }
+    }
+  }
 }

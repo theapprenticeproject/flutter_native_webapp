@@ -1283,7 +1283,7 @@ abstract class AppLocalizations {
   /// No description provided for @classWatchVideo.
   ///
   /// In en, this message translates to:
-  /// **'Watch the video 👇'**
+  /// **'Watch the video by clicking on the link below📹 and earn *10 points*🪩\n\nClick here 👇👇👇'**
   String get classWatchVideo;
 
   /// No description provided for @classWatchTitle.
@@ -1445,7 +1445,7 @@ abstract class AppLocalizations {
   /// No description provided for @chatTodayPlay.
   ///
   /// In en, this message translates to:
-  /// **'Today we\'re going to play with {unit}.\nWatch a short video, then make your own project.'**
+  /// **'Today we\'re going to play with {unit}!\nWatch a short video, then make your own project.'**
   String chatTodayPlay(String unit);
 
   /// No description provided for @chatWatchButton.
@@ -1454,23 +1454,11 @@ abstract class AppLocalizations {
   /// **'Watch'**
   String get chatWatchButton;
 
-  /// No description provided for @chatFinalWin.
-  ///
-  /// In en, this message translates to:
-  /// **'Activity Points    {activity} 🪙\nQuiz Points    {quiz} 🪙'**
-  String chatFinalWin(int activity, int quiz);
-
   /// No description provided for @chatSaveQuizFailed.
   ///
   /// In en, this message translates to:
   /// **'We could not save your quiz result. Please check your connection and retry.'**
   String get chatSaveQuizFailed;
-
-  /// No description provided for @chatQuizTotals.
-  ///
-  /// In en, this message translates to:
-  /// **'Great job Champ!\nDo you want to know your total points collected so far?'**
-  String get chatQuizTotals;
 
   /// No description provided for @chatSaveSubmissionStill.
   ///
@@ -1591,12 +1579,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You did a great job, champion!'**
   String get classGreatJob;
-
-  /// No description provided for @chatIMadeThis.
-  ///
-  /// In en, this message translates to:
-  /// **'I made this'**
-  String get chatIMadeThis;
 
   /// No description provided for @chatSubmissionProud.
   ///
@@ -1807,6 +1789,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Back to my activity'**
   String get askTapBack;
+
+  /// No description provided for @chatQuizEnd.
+  ///
+  /// In en, this message translates to:
+  /// **'You are very smart {name}!🤩\nYou answered {correct}/{total} questions correctly🤩 and earned {points} points🪩 in total!😍\n\nAmazing champ!😎'**
+  String chatQuizEnd(String name, int correct, int total, int points);
 }
 
 class _AppLocalizationsDelegate

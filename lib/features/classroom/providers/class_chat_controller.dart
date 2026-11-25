@@ -275,7 +275,9 @@ class ClassChatController extends ChangeNotifier {
 
     switch (progress.stage) {
       case ClassroomProgressStage.watchVideo:
-        _runStep('AF-001');
+        // Design M-C01: only TAP Buddy's start screen. The flow's greeting
+        // bubbles (AF-001 to AF-003) are not shown.
+        _showVideoStartCheckpoint();
         return;
       case ClassroomProgressStage.submitProject:
         _runStep('AF-006');
@@ -343,7 +345,7 @@ class ClassChatController extends ChangeNotifier {
         _emitQuizQuestionStep(step);
         return;
       case 'AF-011':
-        _emitQuizSummaryStep(step);
+        _emitQuizSummaryStep();
         return;
     }
 
@@ -518,21 +520,23 @@ class ClassChatController extends ChangeNotifier {
         answer.kind == SubmissionKind.video ||
         answer.kind == SubmissionKind.imageVideo;
 
-    _push(
-      ClassChatMessage(
-        id: _newId(),
-        stepId: 'AF-007',
-        sender: ClassChatSender.user,
-        contentType: ClassChatContentType.submissionAnswerEcho,
-        // Design M-C19: "I made this", then a bubble with the photo.
-        text: isMediaSubmission ? l.chatIMadeThis : answer.displaySummary,
-        data: {
-          'kind': answer.kind.name,
-          'text': answer.text,
-          'emoji': answer.emoji,
-        },
-      ),
-    );
+    // Design M-S-04: a photo or video shows as its own bubble, with no text line.
+    if (!isMediaSubmission) {
+      _push(
+        ClassChatMessage(
+          id: _newId(),
+          stepId: 'AF-007',
+          sender: ClassChatSender.user,
+          contentType: ClassChatContentType.submissionAnswerEcho,
+          text: answer.displaySummary,
+          data: {
+            'kind': answer.kind.name,
+            'text': answer.text,
+            'emoji': answer.emoji,
+          },
+        ),
+      );
+    }
     if (isMediaSubmission) {
       _push(
         ClassChatMessage(
@@ -1040,19 +1044,11 @@ class ClassChatController extends ChangeNotifier {
     });
   }
 
-  void _emitQuizSummaryStep(FlowStepModel step) {
-    _push(
-      ClassChatMessage(
-        id: _newId(),
-        stepId: step.stepId,
-        sender: ClassChatSender.bot,
-        contentType: ClassChatContentType.quizSummary,
-        text: _interpolate(step.displayText ?? l.chatQuizComplete),
-        data: {'correct': _quizCorrectCount, 'total': _quizQuestions.length},
-      ),
-    );
+  /// The quiz is over. The summary is shown after the answers are saved
+  /// (`_saveQuizThenShowEnd`).
+  void _emitQuizSummaryStep() {
     _awaitingInput = false;
-    unawaited(_saveQuizThenShowTotals());
+    unawaited(_saveQuizThenShowEnd());
   }
 
   void _showQuizStartCheckpoint({bool replaceThread = false}) {
@@ -1187,10 +1183,7 @@ class ClassChatController extends ChangeNotifier {
         return;
       case 'save_quiz':
         _messages.removeWhere((m) => m.stepId == 'ERROR');
-        unawaited(_saveQuizThenShowTotals());
-        return;
-      case 'totals':
-        _showFinalWinCard();
+        unawaited(_saveQuizThenShowEnd());
         return;
       case 'finish':
         unawaited(_completeUnitThenReveal());
@@ -1198,20 +1191,7 @@ class ClassChatController extends ChangeNotifier {
     }
   }
 
-  void _showFinalWinCard() {
-    _pushCheckpoint(
-      stepId: 'FINAL-WIN',
-      image: 'assets/class-screen/you-won.png',
-      text: l.chatFinalWin(
-        _accumulatedVideoPoints + _accumulatedSubmissionPoints,
-        _accumulatedQuizPoints,
-      ),
-      buttonLabel: l.buttonContinue,
-      action: 'finish',
-    );
-  }
-
-  Future<void> _saveQuizThenShowTotals() async {
+  Future<void> _saveQuizThenShowEnd() async {
     final saved = await _saveQuizProgress();
     if (_disposed) return;
     if (!saved) {
@@ -1222,6 +1202,8 @@ class ClassChatController extends ChangeNotifier {
       correct: _quizCorrectCount,
       total: _quizQuestions.length,
     );
+    // Design M-C22: the picture and the score in TAP Buddy's words. With nothing
+    // right there is no picture, so the plain summary stays.
     if (art != null) {
       _pushCheckpoint(
         stepId: 'QUIZ-COMPLETE-ART',
@@ -1230,16 +1212,38 @@ class ClassChatController extends ChangeNotifier {
         buttonLabel: '',
         action: 'quiz_complete_art',
       );
-    }
-    _scheduleAutoAdvance(1200, () {
-      _pushCheckpoint(
-        stepId: 'QUIZ-TOTALS',
-        image: null,
-        text: l.chatQuizTotals,
-        buttonLabel: l.chatYesYesYes,
-        action: 'totals',
+      _say(
+        l.chatQuizEnd(
+          firstName(studentName),
+          _quizCorrectCount,
+          _quizQuestions.length,
+          _accumulatedQuizPoints,
+        ),
       );
-    });
+    } else {
+      _push(
+        ClassChatMessage(
+          id: _newId(),
+          stepId: 'AF-011',
+          sender: ClassChatSender.bot,
+          contentType: ClassChatContentType.quizSummary,
+          text: _interpolate(
+            _flow.step('AF-011')?.displayText ?? l.chatQuizComplete,
+          ),
+          data: {'correct': _quizCorrectCount, 'total': _quizQuestions.length},
+        ),
+      );
+    }
+    // What comes next depends on the work: send it, wait for the feedback, or
+    // the results. `_completeUnitThenReveal` decides (design M-S-08, M-C29, M-C24).
+    _pushCheckpoint(
+      stepId: 'QUIZ-END',
+      image: null,
+      text: '',
+      buttonLabel: l.buttonContinue,
+      action: 'finish',
+      extra: {'bare': true},
+    );
   }
 
   void _showProgressSaveRetry(String message, {required String action}) {
@@ -1285,7 +1289,7 @@ class ClassChatController extends ChangeNotifier {
 
   Future<void> _continueToQuizAfterSavedSubmission() async {
     if (!_submissionRewardShown) {
-      // The thread stays (design M-C19): the prompt, "I made this", the photo.
+      // The thread stays (design M-S-04): the prompt and the photo.
       // The upload card is done, so it goes.
       _messages.removeWhere(
         (m) => m.contentType == ClassChatContentType.submission,
@@ -1567,7 +1571,7 @@ class ClassChatController extends ChangeNotifier {
         _retrySendWork();
         return;
       case 'save_quiz':
-        unawaited(_saveQuizThenShowTotals());
+        unawaited(_saveQuizThenShowEnd());
         return;
     }
     unawaited(_completeUnitThenReveal());

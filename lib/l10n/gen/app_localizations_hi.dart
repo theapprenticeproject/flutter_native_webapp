@@ -675,7 +675,8 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get classWatchVideo => 'Watch the video 👇';
+  String get classWatchVideo =>
+      'Watch the video by clicking on the link below📹 and earn *10 points*🪩\n\nClick here 👇👇👇';
 
   @override
   String classWatchTitle(String title) {
@@ -776,24 +777,15 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String chatTodayPlay(String unit) {
-    return 'Today we\'re going to play with $unit.\nWatch a short video, then make your own project.';
+    return 'Today we\'re going to play with $unit!\nWatch a short video, then make your own project.';
   }
 
   @override
   String get chatWatchButton => 'Watch';
 
   @override
-  String chatFinalWin(int activity, int quiz) {
-    return 'Activity Points    $activity 🪙\nQuiz Points    $quiz 🪙';
-  }
-
-  @override
   String get chatSaveQuizFailed =>
       'We could not save your quiz result. Please check your connection and retry.';
-
-  @override
-  String get chatQuizTotals =>
-      'Great job Champ!\nDo you want to know your total points collected so far?';
 
   @override
   String get chatSaveSubmissionStill =>
@@ -867,9 +859,6 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get classGreatJob => 'You did a great job, champion!';
-
-  @override
-  String get chatIMadeThis => 'I made this';
 
   @override
   String chatSubmissionProud(String name) {
@@ -1007,4 +996,9 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get askTapBack => 'Back to my activity';
+
+  @override
+  String chatQuizEnd(String name, int correct, int total, int points) {
+    return 'You are very smart $name!🤩\nYou answered $correct/$total questions correctly🤩 and earned $points points🪩 in total!😍\n\nAmazing champ!😎';
+  }
 }
