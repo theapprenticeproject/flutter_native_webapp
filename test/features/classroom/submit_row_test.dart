@@ -54,4 +54,18 @@ void main() {
     expect(style?.fontWeight, FontWeight.w600);
     expect(tester.getSize(find.byType(ElevatedButton)).height, 52);
   });
+
+  // QA slide 10 circled the "Submission Help" link too: it was Flutter's small
+  // default (14). It is 16, like the other secondary actions.
+  testWidgets('the Submission Help link is 16', (tester) async {
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: SubmitRow(label: 'Submit', onPressed: () {}, onHelp: () {}),
+        ),
+      ),
+    );
+    final style = tester.widget<Text>(find.text('Submission Help')).style;
+    expect(style?.fontSize, 16);
+  });
 }

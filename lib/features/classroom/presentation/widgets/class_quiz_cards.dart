@@ -95,7 +95,7 @@ class _ClassQuizQuestionCardState extends State<ClassQuizQuestionCard> {
                 onTap: (widget.controller.isAwaitingInput && !_confirmed)
                     ? () => setState(() => _selectedKey = option.key)
                     : null,
-                borderRadius: BorderRadius.circular(999),
+                borderRadius: BorderRadius.circular(12),
                 child: Container(
                   width: double.infinity,
                   padding: const EdgeInsets.symmetric(
@@ -104,7 +104,7 @@ class _ClassQuizQuestionCardState extends State<ClassQuizQuestionCard> {
                   ),
                   decoration: BoxDecoration(
                     color: fillColor,
-                    borderRadius: BorderRadius.circular(999),
+                    borderRadius: BorderRadius.circular(12),
                     border: Border.all(
                       color: borderColor,
                       width: selected || (_confirmed && isCorrectOption)

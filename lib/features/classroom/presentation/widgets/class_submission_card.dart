@@ -12,6 +12,7 @@ import '../../models/submission_answer_model.dart';
 import '../../providers/class_chat_controller.dart';
 import 'class_card_shell.dart';
 import '../../../../shared/widgets/app_primary_button.dart';
+import '../../../../shared/widgets/app_tonal_button.dart';
 
 class ClassSubmissionCard extends StatefulWidget {
   const ClassSubmissionCard({
@@ -505,13 +506,15 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
               : (hasMedia ? onSubmit : openPicker),
         ),
         if (canInteract && !_isPicking)
-          Center(
-            child: TextButton(
+          Align(
+            alignment: Alignment.centerLeft,
+            child: AppTonalButton(
+              label: context.l10n.classDoLater,
+              trailing: Icons.arrow_forward_rounded,
               onPressed: () {
                 widget.controller.postponeSubmission();
                 _markSubmitted();
               },
-              child: Text(context.l10n.classDoLater),
             ),
           ),
       ],
@@ -987,7 +990,10 @@ class SubmitRow extends StatelessWidget {
         ),
         TextButton(
           onPressed: onHelp,
-          child: Text(context.l10n.classSubmissionHelp),
+          child: Text(
+            context.l10n.classSubmissionHelp,
+            style: GoogleFonts.inter(fontSize: 16, fontWeight: FontWeight.w500),
+          ),
         ),
       ],
     );

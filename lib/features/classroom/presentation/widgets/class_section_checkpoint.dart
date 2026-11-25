@@ -54,7 +54,7 @@ class ClassSectionCheckpoint extends StatelessWidget {
                 text,
                 textAlign: TextAlign.center,
                 style: GoogleFonts.inter(
-                  fontSize: compact ? 18 : 20,
+                  fontSize: 16,
                   height: 1.28,
                   fontWeight: FontWeight.w500,
                   color: AppTheme.textColor,
