@@ -1,4 +1,4 @@
-import '../models/first_name.dart';
+import '../../../shared/text/first_name.dart';
 import 'not_valid_text.dart';
 import 'quiz_end_art.dart';
 import 'video_reward.dart';

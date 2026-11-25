@@ -365,15 +365,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profileSelect => 'Select';
 
   @override
-  String welcomeBack(String name) {
-    return 'Welcome Back, $name!';
-  }
-
-  @override
   String get welcomeThere => 'there';
-
-  @override
-  String get welcomeNewYear => 'Are you ready for a New Year?';
 
   @override
   String get buttonContinue => 'Continue';
@@ -909,5 +901,10 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String chatSubmissionProud(String name) {
     return 'I am so proud of you $name🤩👑';
+  }
+
+  @override
+  String welcomeHeading(String name) {
+    return 'Welcome Back, $name!\nAre you ready for a New Year?';
   }
 }

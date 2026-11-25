@@ -1,3 +1,4 @@
+import '../../../shared/text/first_name.dart';
 import 'package:flutter/material.dart';
 import '../../../l10n/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -29,9 +30,10 @@ class _WelcomeBackScreenState extends ConsumerState<WelcomeBackScreen> {
     final isDesktop = size.width > 800;
 
     final activeProfileAsync = ref.watch(activeProfileProvider);
-    final studentName =
-        activeProfileAsync.valueOrNull?.studentName ??
-        context.l10n.welcomeThere;
+    final studentName = firstName(
+      activeProfileAsync.valueOrNull?.studentName,
+      fallback: context.l10n.welcomeThere,
+    );
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -92,22 +94,14 @@ class _WelcomeBackScreenState extends ConsumerState<WelcomeBackScreen> {
 
                   const SizedBox(height: 32),
 
+                  // One heading with both lines, as in the design (M-F1-04).
                   Text(
-                    context.l10n.welcomeBack(studentName),
+                    context.l10n.welcomeHeading(studentName),
                     style: GoogleFonts.inter(
-                      fontSize: isDesktop ? 32 : 26,
+                      fontSize: 24,
+                      height: 1.3,
                       fontWeight: FontWeight.w700,
                       color: const Color(0xFF1C1C21),
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    context.l10n.welcomeNewYear,
-                    style: GoogleFonts.inter(
-                      fontSize: isDesktop ? 18 : 16,
-                      fontWeight: FontWeight.w500,
-                      color: const Color(0xFF6E6E7A),
                     ),
                     textAlign: TextAlign.center,
                   ),

@@ -734,23 +734,11 @@ abstract class AppLocalizations {
   /// **'Select'**
   String get profileSelect;
 
-  /// No description provided for @welcomeBack.
-  ///
-  /// In en, this message translates to:
-  /// **'Welcome Back, {name}!'**
-  String welcomeBack(String name);
-
   /// No description provided for @welcomeThere.
   ///
   /// In en, this message translates to:
   /// **'there'**
   String get welcomeThere;
-
-  /// No description provided for @welcomeNewYear.
-  ///
-  /// In en, this message translates to:
-  /// **'Are you ready for a New Year?'**
-  String get welcomeNewYear;
 
   /// No description provided for @buttonContinue.
   ///
@@ -1657,6 +1645,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'I am so proud of you {name}🤩👑'**
   String chatSubmissionProud(String name);
+
+  /// No description provided for @welcomeHeading.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome Back, {name}!\nAre you ready for a New Year?'**
+  String welcomeHeading(String name);
 }
 
 class _AppLocalizationsDelegate

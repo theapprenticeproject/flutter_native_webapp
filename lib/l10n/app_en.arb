@@ -177,16 +177,7 @@
   "profileStudent": "Student",
   "profileSelected": "Selected ✓",
   "profileSelect": "Select",
-  "welcomeBack": "Welcome Back, {name}!",
-  "@welcomeBack": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
   "welcomeThere": "there",
-  "welcomeNewYear": "Are you ready for a New Year?",
   "buttonContinue": "Continue",
   "splashWelcome": "Welcome to TAP!",
   "splashBroughtBy": "Brought to you by MCD Delhi",
@@ -542,6 +533,14 @@
   "chatIMadeThis": "I made this",
   "chatSubmissionProud": "I am so proud of you {name}🤩👑",
   "@chatSubmissionProud": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "welcomeHeading": "Welcome Back, {name}!\nAre you ready for a New Year?",
+  "@welcomeHeading": {
     "placeholders": {
       "name": {
         "type": "String"

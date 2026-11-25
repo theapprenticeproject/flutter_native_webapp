@@ -4,7 +4,7 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:tapapp/features/classroom/models/class_chat_message_model.dart';
-import 'package:tapapp/features/classroom/models/first_name.dart';
+import 'package:tapapp/shared/text/first_name.dart';
 import 'package:tapapp/features/classroom/presentation/widgets/class_submission_card.dart';
 import 'package:tapapp/features/classroom/presentation/widgets/class_submitted_preview.dart';
 
