@@ -1139,20 +1139,14 @@ abstract class AppLocalizations {
   /// No description provided for @classCongratsName.
   ///
   /// In en, this message translates to:
-  /// **'Congratulations {name}!!!🥳'**
+  /// **'Congratulations {name}! 🥳'**
   String classCongratsName(String name);
 
   /// No description provided for @classPointsPill.
   ///
   /// In en, this message translates to:
-  /// **'⊙ +{points} pts'**
+  /// **'+{points} points'**
   String classPointsPill(int points);
-
-  /// No description provided for @classWonPoints.
-  ///
-  /// In en, this message translates to:
-  /// **'You have won {points} points🪙😍\nYou did a great job champion!'**
-  String classWonPoints(int points);
 
   /// No description provided for @classSubmissionHelp.
   ///
@@ -1645,6 +1639,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Results'**
   String get classStepResults;
+
+  /// No description provided for @classGreatJob.
+  ///
+  /// In en, this message translates to:
+  /// **'You did a great job, champion!'**
+  String get classGreatJob;
+
+  /// No description provided for @chatIMadeThis.
+  ///
+  /// In en, this message translates to:
+  /// **'I made this'**
+  String get chatIMadeThis;
+
+  /// No description provided for @chatSubmissionProud.
+  ///
+  /// In en, this message translates to:
+  /// **'I am so proud of you {name}🤩👑'**
+  String chatSubmissionProud(String name);
 }
 
 class _AppLocalizationsDelegate

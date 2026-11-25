@@ -289,7 +289,7 @@
     }
   },
   "classNoSubmissionPoints": "No submission points were added for this attempt.",
-  "classCongratsName": "Congratulations {name}!!!🥳",
+  "classCongratsName": "Congratulations {name}! 🥳",
   "@classCongratsName": {
     "placeholders": {
       "name": {
@@ -297,16 +297,8 @@
       }
     }
   },
-  "classPointsPill": "⊙ +{points} pts",
+  "classPointsPill": "+{points} points",
   "@classPointsPill": {
-    "placeholders": {
-      "points": {
-        "type": "int"
-      }
-    }
-  },
-  "classWonPoints": "You have won {points} points🪙😍\nYou did a great job champion!",
-  "@classWonPoints": {
     "placeholders": {
       "points": {
         "type": "int"
@@ -545,5 +537,15 @@
   "classStepWatch": "Watch",
   "classStepMake": "Make",
   "classStepQuiz": "Quiz",
-  "classStepResults": "Results"
+  "classStepResults": "Results",
+  "classGreatJob": "You did a great job, champion!",
+  "chatIMadeThis": "I made this",
+  "chatSubmissionProud": "I am so proud of you {name}🤩👑",
+  "@chatSubmissionProud": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  }
 }

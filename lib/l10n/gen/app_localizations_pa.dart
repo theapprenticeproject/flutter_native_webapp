@@ -586,17 +586,12 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String classCongratsName(String name) {
-    return 'Congratulations $name!!!🥳';
+    return 'Congratulations $name! 🥳';
   }
 
   @override
   String classPointsPill(int points) {
-    return '⊙ +$points pts';
-  }
-
-  @override
-  String classWonPoints(int points) {
-    return 'You have won $points points🪙😍\nYou did a great job champion!';
+    return '+$points points';
   }
 
   @override
@@ -904,4 +899,15 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get classStepResults => 'Results';
+
+  @override
+  String get classGreatJob => 'You did a great job, champion!';
+
+  @override
+  String get chatIMadeThis => 'I made this';
+
+  @override
+  String chatSubmissionProud(String name) {
+    return 'I am so proud of you $name🤩👑';
+  }
 }

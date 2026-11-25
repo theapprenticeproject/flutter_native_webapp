@@ -1,3 +1,4 @@
+import '../models/first_name.dart';
 import 'not_valid_text.dart';
 import 'quiz_end_art.dart';
 import 'video_reward.dart';
@@ -503,13 +504,21 @@ class ClassChatController extends ChangeNotifier {
 
     _awaitingInput = false;
 
+    // A photo or a video goes to the Worker. The feedback comes later (D6).
+    // Other answers are checked against the flow criteria.
+    final isMediaSubmission =
+        answer.kind == SubmissionKind.image ||
+        answer.kind == SubmissionKind.video ||
+        answer.kind == SubmissionKind.imageVideo;
+
     _push(
       ClassChatMessage(
         id: _newId(),
         stepId: 'AF-007',
         sender: ClassChatSender.user,
         contentType: ClassChatContentType.submissionAnswerEcho,
-        text: answer.displaySummary,
+        // Design M-C19: "I made this", then a bubble with the photo.
+        text: isMediaSubmission ? l.chatIMadeThis : answer.displaySummary,
         data: {
           'kind': answer.kind.name,
           'text': answer.text,
@@ -517,13 +526,21 @@ class ClassChatController extends ChangeNotifier {
         },
       ),
     );
-
-    // A photo or a video goes to the Worker. The feedback comes later (D6).
-    // Other answers are checked against the flow criteria.
-    final isMediaSubmission =
-        answer.kind == SubmissionKind.image ||
-        answer.kind == SubmissionKind.video ||
-        answer.kind == SubmissionKind.imageVideo;
+    if (isMediaSubmission) {
+      _push(
+        ClassChatMessage(
+          id: _newId(),
+          stepId: 'AF-007',
+          sender: ClassChatSender.user,
+          contentType: ClassChatContentType.submissionAnswerEcho,
+          data: {
+            'isPreview': true,
+            'previewBytes': answer.bytes,
+            'isVideo': answer.kind == SubmissionKind.video,
+          },
+        ),
+      );
+    }
     if (isMediaSubmission) {
       await _sendWork(answer, assignment);
       return;
@@ -774,6 +791,7 @@ class ClassChatController extends ChangeNotifier {
   ) async {
     var points = 0;
     var alreadySent = false;
+    _sentBefore = false;
     try {
       final bytes = answer.bytes;
       if (bytes == null || assignment.assignmentId.isEmpty) {
@@ -814,12 +832,14 @@ class ClassChatController extends ChangeNotifier {
       _showWaitingForFeedback();
       return;
     }
-    _pushSubmissionReview(
-      alreadySent ? l.chatAlreadySent : _finalSubmissionPraise(points),
-      passed: true,
-    );
+    // The Congratulations card and the "proud" bubble come after the progress is
+    // saved (`_continueToQuizAfterSavedSubmission`).
+    _sentBefore = alreadySent;
     await _finishAssignmentStep(accepted: true, points: points);
   }
+
+  /// The Worker said this work was sent before (a CONFLICT): no points card.
+  bool _sentBefore = false;
 
   void _workNotSent(SubmissionAnswer answer) {
     _pendingWorkAnswer = answer;
@@ -1021,6 +1041,9 @@ class ClassChatController extends ChangeNotifier {
         _messages.clear();
         _runStep('AF-006');
         return;
+      case 'submission_continue':
+        continueAfterSubmissionReward();
+        return;
       case 'share_work':
         _submissionPostponed = false;
         _messages.clear();
@@ -1181,18 +1204,33 @@ class ClassChatController extends ChangeNotifier {
 
   Future<void> _continueToQuizAfterSavedSubmission() async {
     if (!_submissionRewardShown) {
-      _messages.clear();
-      _push(
-        ClassChatMessage(
-          id: _newId(),
-          stepId: 'SUBMISSION-REWARD',
-          sender: ClassChatSender.bot,
-          contentType: ClassChatContentType.submissionReward,
-          data: {
-            'studentName': studentName,
-            'points': _accumulatedSubmissionPoints,
-          },
-        ),
+      // The thread stays (design M-C19): the prompt, "I made this", the photo.
+      // The upload card is done, so it goes.
+      _messages.removeWhere(
+        (m) => m.contentType == ClassChatContentType.submission,
+      );
+      if (_accumulatedSubmissionPoints > 0) {
+        _push(
+          ClassChatMessage(
+            id: _newId(),
+            stepId: 'SUBMISSION-REWARD',
+            sender: ClassChatSender.bot,
+            contentType: ClassChatContentType.submissionReward,
+            data: {
+              'studentName': studentName,
+              'points': _accumulatedSubmissionPoints,
+            },
+          ),
+        );
+      }
+      _pushCheckpoint(
+        stepId: 'SUBMISSION-PROUD',
+        image: null,
+        text: _sentBefore
+            ? l.chatAlreadySent
+            : l.chatSubmissionProud(firstName(studentName)),
+        buttonLabel: l.buttonContinue,
+        action: 'submission_continue',
       );
       _submissionRewardShown = true;
       notifyListeners();

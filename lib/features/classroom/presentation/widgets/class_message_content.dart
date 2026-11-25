@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
 import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -9,6 +11,7 @@ import 'class_card_shell.dart';
 import 'class_quiz_cards.dart';
 import 'class_section_checkpoint.dart';
 import 'class_submission_card.dart';
+import 'class_submitted_preview.dart';
 import 'class_video_card.dart';
 
 class ClassMessageContent extends StatelessWidget {
@@ -44,14 +47,18 @@ class ClassMessageContent extends StatelessWidget {
           controller: controller,
         );
       case ClassChatContentType.submissionAnswerEcho:
+        // The photo or video the student sent has its own bubble.
+        if (message.data['isPreview'] == true) {
+          return ClassSubmittedPreview(
+            bytes: message.data['previewBytes'] as Uint8List?,
+            isVideo: message.data['isVideo'] == true,
+          );
+        }
         return ClassTextBubble(text: message.text ?? '', isUser: true);
       case ClassChatContentType.submissionReview:
         return ClassSubmissionReviewCard(message: message);
       case ClassChatContentType.submissionReward:
-        return ClassSubmissionRewardCard(
-          message: message,
-          controller: controller,
-        );
+        return ClassSubmissionRewardCard(message: message);
       case ClassChatContentType.quizQuestion:
         return isUser
             ? ClassTextBubble(text: message.text ?? '', isUser: true)

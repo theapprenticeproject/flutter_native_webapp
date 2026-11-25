@@ -7,6 +7,7 @@ import 'package:image_picker/image_picker.dart';
 
 import '../../../../core/theme/app_theme.dart';
 import '../../models/class_chat_message_model.dart';
+import '../../models/first_name.dart';
 import '../../models/submission_answer_model.dart';
 import '../../providers/class_chat_controller.dart';
 import 'class_card_shell.dart';
@@ -877,79 +878,88 @@ class ClassSubmissionReviewCard extends StatelessWidget {
   }
 }
 
+/// The Congratulations card (design M-C19): the picture, "Congratulations
+/// Aarav! 🥳", a "+25 points" pill and "You did a great job, champion!". There
+/// is no button in it: the next bubble has the Continue.
 class ClassSubmissionRewardCard extends StatelessWidget {
-  const ClassSubmissionRewardCard({
-    required this.message,
-    required this.controller,
-    super.key,
-  });
+  const ClassSubmissionRewardCard({required this.message, super.key});
 
   final ClassChatMessage message;
-  final ClassChatController controller;
 
   @override
   Widget build(BuildContext context) {
-    final studentName = message.data['studentName'] as String? ?? 'Champ';
+    final name = firstName(message.data['studentName'] as String? ?? '');
     final points = (message.data['points'] as num?)?.toInt() ?? 0;
 
     return Container(
       width: 300,
       padding: const EdgeInsets.fromLTRB(18, 18, 18, 20),
       decoration: BoxDecoration(
-        color: AppTheme.classroomMessageSurface,
+        color: Colors.white,
         borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: const Color(0xFFE7E7EF)),
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           Image.asset(
             'assets/class-screen/Skill Passport 1.png',
-            height: 235,
+            height: 200,
             fit: BoxFit.contain,
           ),
           const SizedBox(height: 8),
           Text(
-            context.l10n.classCongratsName(studentName),
+            context.l10n.classCongratsName(name),
             textAlign: TextAlign.center,
             style: GoogleFonts.inter(
-              fontSize: 20,
-              fontWeight: FontWeight.w900,
+              fontSize: 22,
+              fontWeight: FontWeight.w800,
               color: AppTheme.textColor,
             ),
           ),
           const SizedBox(height: 12),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
             decoration: BoxDecoration(
-              color: const Color(0xFFF3A72C),
+              color: const Color(0xFFFDEBD2),
               borderRadius: BorderRadius.circular(999),
             ),
-            child: Text(
-              context.l10n.classPointsPill(points),
-              style: GoogleFonts.inter(
-                fontSize: 14,
-                fontWeight: FontWeight.w800,
-                color: AppTheme.textColor,
-              ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(
+                  width: 20,
+                  height: 20,
+                  decoration: const BoxDecoration(
+                    color: Color(0xFFE8A33A),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.star_rounded,
+                    size: 13,
+                    color: Colors.white,
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Text(
+                  context.l10n.classPointsPill(points),
+                  style: GoogleFonts.inter(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w800,
+                    color: const Color(0xFF9A5B00),
+                  ),
+                ),
+              ],
             ),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 14),
           Text(
-            context.l10n.classWonPoints(points),
+            context.l10n.classGreatJob,
             textAlign: TextAlign.center,
             style: GoogleFonts.inter(
-              fontSize: 15,
+              fontSize: 16,
               height: 1.35,
-              color: AppTheme.textColor,
-            ),
-          ),
-          const SizedBox(height: 18),
-          SizedBox(
-            width: double.infinity,
-            height: 48,
-            child: ElevatedButton(
-              onPressed: controller.continueAfterSubmissionReward,
-              child: Text(context.l10n.buttonContinue),
+              color: AppTheme.subheadingColor,
             ),
           ),
         ],
