@@ -6,6 +6,7 @@ import '../../../../core/theme/app_theme.dart';
 import '../../models/class_chat_message_model.dart';
 import '../../providers/class_chat_controller.dart';
 import 'class_card_shell.dart';
+import '../../../../shared/widgets/app_primary_button.dart';
 
 class ClassQuizQuestionCard extends StatefulWidget {
   const ClassQuizQuestionCard({
@@ -142,29 +143,17 @@ class _ClassQuizQuestionCardState extends State<ClassQuizQuestionCard> {
             );
           }),
           const SizedBox(height: 4),
-          SizedBox(
-            width: double.infinity,
-            height: 48,
-            child: ElevatedButton(
-              onPressed:
-                  (widget.controller.isAwaitingInput &&
-                      _selectedKey != null &&
-                      !_confirmed)
-                  ? () {
-                      setState(() => _confirmed = true);
-                      widget.controller.submitQuizAnswer(_selectedKey!);
-                    }
-                  : null,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppTheme.buttonColor,
-                foregroundColor: Colors.white,
-                disabledBackgroundColor: AppTheme.mutedLavender,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                ),
-              ),
-              child: Text(context.l10n.classConfirm),
-            ),
+          AppPrimaryButton(
+            label: context.l10n.classConfirm,
+            onPressed:
+                (widget.controller.isAwaitingInput &&
+                    _selectedKey != null &&
+                    !_confirmed)
+                ? () {
+                    setState(() => _confirmed = true);
+                    widget.controller.submitQuizAnswer(_selectedKey!);
+                  }
+                : null,
           ),
         ],
       ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'card_deck_wrapper.dart';
+import '../../../../shared/widgets/app_primary_button.dart';
 
 class StartActivityCard extends StatelessWidget {
   final String courseDisplay;
@@ -27,9 +28,6 @@ class StartActivityCard extends StatelessWidget {
               .toDouble();
           final mediaHeight = (constraints.maxWidth * 0.36)
               .clamp(150.0, 182.0)
-              .toDouble();
-          final buttonHeight = (constraints.maxWidth * 0.12)
-              .clamp(52.0, 58.0)
               .toDouble();
           final horizontalPadding = (constraints.maxWidth * 0.05)
               .clamp(18.0, 22.0)
@@ -127,30 +125,11 @@ class StartActivityCard extends StatelessWidget {
                     horizontalPadding,
                     bottomPadding,
                   ),
-                  child: SizedBox(
-                    width: double.infinity,
-                    height: buttonHeight,
-                    child: ElevatedButton(
-                      onPressed: onStart,
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF5B5BD6),
-                        foregroundColor: Colors.white,
-                        elevation: 0,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                      ),
-                      child: Text(
-                        onStart == null
-                            ? context.l10n.homeWeeklyLimit
-                            : context.l10n.homeStartActivity,
-                        style: GoogleFonts.inter(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w700,
-                          letterSpacing: 0,
-                        ),
-                      ),
-                    ),
+                  child: AppPrimaryButton(
+                    label: onStart == null
+                        ? context.l10n.homeWeeklyLimit
+                        : context.l10n.homeStartActivity,
+                    onPressed: onStart,
                   ),
                 ),
               ],

@@ -3,6 +3,7 @@ import '../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../domain/gallery/gallery_models.dart';
+import '../../../shared/widgets/app_primary_button.dart';
 
 /// The full-screen viewer (R-6): "1 of 9", previous and next, swipe, close. A
 /// student who has not shared is invited to ("Want to share your work too?").
@@ -129,9 +130,9 @@ class _GalleryViewerState extends State<GalleryViewer> {
                         ),
                       ),
                     ),
-                    ElevatedButton(
+                    AppPrimaryButton(
+                      label: context.l10n.galleryShareWork,
                       onPressed: widget.onShare,
-                      child: Text(context.l10n.galleryShareWork),
                     ),
                   ],
                 ),
@@ -164,9 +165,9 @@ class _Page extends StatelessWidget {
               color: Colors.white,
             ),
             const SizedBox(height: 14),
-            ElevatedButton(
+            AppPrimaryButton(
+              label: context.l10n.galleryOpenVideo,
               onPressed: () => onOpenVideo(item.url),
-              child: Text(context.l10n.galleryOpenVideo),
             ),
           ],
         ),

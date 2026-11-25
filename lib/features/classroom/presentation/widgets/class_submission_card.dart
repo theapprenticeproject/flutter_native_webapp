@@ -11,6 +11,7 @@ import '../../models/first_name.dart';
 import '../../models/submission_answer_model.dart';
 import '../../providers/class_chat_controller.dart';
 import 'class_card_shell.dart';
+import '../../../../shared/widgets/app_primary_button.dart';
 
 class ClassSubmissionCard extends StatefulWidget {
   const ClassSubmissionCard({
@@ -666,20 +667,9 @@ class SubmissionHelpDialog extends StatelessWidget {
             ),
           ],
           const SizedBox(height: 18),
-          SizedBox(
-            width: double.infinity,
-            height: 48,
-            child: ElevatedButton(
-              onPressed: () => Navigator.pop(context),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppTheme.buttonColor,
-                foregroundColor: Colors.white,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                ),
-              ),
-              child: Text(context.l10n.buttonContinue),
-            ),
+          AppPrimaryButton(
+            label: context.l10n.buttonContinue,
+            onPressed: () => Navigator.pop(context),
           ),
         ],
       ),
@@ -990,40 +980,10 @@ class SubmitRow extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        SizedBox(
-          height: 52,
-          child: ElevatedButton(
-            onPressed: onPressed,
-            style: ElevatedButton.styleFrom(
-              backgroundColor: AppTheme.buttonColor,
-              foregroundColor: Colors.white,
-              disabledBackgroundColor: AppTheme.dividerColor,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
-              ),
-            ),
-            child: isLoading
-                ? const SizedBox(
-                    width: 18,
-                    height: 18,
-                    child: CircularProgressIndicator(
-                      strokeWidth: 2,
-                      color: Colors.white,
-                    ),
-                  )
-                : FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      label,
-                      maxLines: 1,
-                      // The design's main buttons: 18, semi-bold.
-                      style: GoogleFonts.inter(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ),
-          ),
+        AppPrimaryButton(
+          label: label,
+          loading: isLoading,
+          onPressed: onPressed,
         ),
         TextButton(
           onPressed: onHelp,

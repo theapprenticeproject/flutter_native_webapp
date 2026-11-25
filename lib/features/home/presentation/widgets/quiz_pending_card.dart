@@ -3,6 +3,7 @@ import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'card_deck_wrapper.dart';
+import '../../../../shared/widgets/app_primary_button.dart';
 
 class QuizPendingCard extends StatelessWidget {
   final String courseDisplay;
@@ -102,28 +103,9 @@ class QuizPendingCard extends StatelessWidget {
                 const Spacer(),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(22, 0, 22, 34),
-                  child: SizedBox(
-                    width: double.infinity,
-                    height: 56,
-                    child: ElevatedButton(
-                      onPressed: onStartQuiz,
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF5B5BD6),
-                        foregroundColor: Colors.white,
-                        elevation: 0,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                      ),
-                      child: Text(
-                        context.l10n.homeStartQuiz,
-                        style: GoogleFonts.inter(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w700,
-                          letterSpacing: 0,
-                        ),
-                      ),
-                    ),
+                  child: AppPrimaryButton(
+                    label: context.l10n.homeStartQuiz,
+                    onPressed: onStartQuiz,
                   ),
                 ),
               ],

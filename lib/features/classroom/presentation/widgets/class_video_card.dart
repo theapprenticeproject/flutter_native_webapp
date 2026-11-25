@@ -1,3 +1,4 @@
+import '../../../../shared/widgets/app_primary_button.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import '../../../../l10n/l10n.dart';
@@ -136,29 +137,11 @@ class _ClassVideoCardState extends State<ClassVideoCard> {
           ),
         ),
         const SizedBox(height: 12),
-        SizedBox(
-          width: double.infinity,
-          height: 54,
-          child: ElevatedButton(
-            onPressed: watched ? null : widget.controller.markVideoWatched,
-            style: ElevatedButton.styleFrom(
-              backgroundColor: AppTheme.buttonColor,
-              foregroundColor: AppTheme.cardBackground,
-              disabledBackgroundColor: AppTheme.dividerColor,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
-              ),
-            ),
-            child: Text(
-              watched
-                  ? context.l10n.classWatched
-                  : context.l10n.classIWatched(points),
-              style: GoogleFonts.inter(
-                fontSize: 18,
-                fontWeight: FontWeight.w800,
-              ),
-            ),
-          ),
+        AppPrimaryButton(
+          label: watched
+              ? context.l10n.classWatched
+              : context.l10n.classIWatched(points),
+          onPressed: watched ? null : widget.controller.markVideoWatched,
         ),
       ],
     );

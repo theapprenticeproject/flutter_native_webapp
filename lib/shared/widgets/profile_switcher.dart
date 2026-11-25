@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../core/theme/app_theme.dart';
 import '../../domain/auth/auth_provider.dart';
 import '../../domain/auth/redeemed_student.dart';
+import 'app_primary_button.dart';
 
 class SwitchProfileBar extends StatelessWidget {
   const SwitchProfileBar({
@@ -209,24 +210,7 @@ class _SwitchProfileButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: 132,
-      height: 42,
-      child: ElevatedButton(
-        onPressed: onPressed,
-        style: ElevatedButton.styleFrom(
-          backgroundColor: AppTheme.buttonColor,
-          foregroundColor: AppTheme.cardBackground,
-          elevation: 0,
-          minimumSize: Size.zero,
-          fixedSize: const Size(132, 42),
-          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-          padding: EdgeInsets.zero,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(9)),
-        ),
-        child: Text(
-          label,
-          style: GoogleFonts.inter(fontSize: 12, fontWeight: FontWeight.w700),
-        ),
-      ),
+      child: AppPrimaryButton(label: label, onPressed: onPressed),
     );
   }
 }

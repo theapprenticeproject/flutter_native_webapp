@@ -11,6 +11,7 @@ import '../../providers/class_chat_controller.dart';
 import '../../../../domain/learner/learner_state_provider.dart';
 import '../../providers/reveal_asset_resolver.dart';
 import 'picture_quarters.dart';
+import '../../../../shared/widgets/app_primary_button.dart';
 
 class ClassContinueBar extends StatelessWidget {
   const ClassContinueBar({super.key, required this.onContinue});
@@ -29,20 +30,9 @@ class ClassContinueBar extends StatelessWidget {
       child: Center(
         child: ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 760),
-          child: SizedBox(
-            width: double.infinity,
-            height: 50,
-            child: ElevatedButton(
-              onPressed: onContinue,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppTheme.buttonColor,
-                foregroundColor: Colors.white,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(14),
-                ),
-              ),
-              child: Text(context.l10n.buttonContinue),
-            ),
+          child: AppPrimaryButton(
+            label: context.l10n.buttonContinue,
+            onPressed: onContinue,
           ),
         ),
       ),
@@ -146,12 +136,9 @@ class ClassPendingActivityChoiceBody extends StatelessWidget {
                 Row(
                   children: [
                     Expanded(
-                      child: SizedBox(
-                        height: 50,
-                        child: ElevatedButton(
-                          onPressed: onStart,
-                          child: Text(context.l10n.classLetsGo),
-                        ),
+                      child: AppPrimaryButton(
+                        label: context.l10n.classLetsGo,
+                        onPressed: onStart,
                       ),
                     ),
                     const SizedBox(width: 10),
@@ -214,18 +201,14 @@ class ClassNextActivityInlineCard extends ConsumerWidget {
                 style: GoogleFonts.inter(color: AppTheme.subheadingColor),
               ),
               const SizedBox(height: 16),
-              SizedBox(
-                width: double.infinity,
-                height: 48,
-                child: ElevatedButton(
-                  onPressed: () {
-                    ref.invalidate(
-                      learnerStateDataProvider(controller.learnerId),
-                    );
-                    context.go(AppRoutes.home);
-                  },
-                  child: Text(context.l10n.classBackHome),
-                ),
+              AppPrimaryButton(
+                label: context.l10n.classBackHome,
+                onPressed: () {
+                  ref.invalidate(
+                    learnerStateDataProvider(controller.learnerId),
+                  );
+                  context.go(AppRoutes.home);
+                },
               ),
             ],
           ),
@@ -326,42 +309,21 @@ class ClassNextActivityInlineCard extends ConsumerWidget {
           Row(
             children: [
               Expanded(
-                child: SizedBox(
-                  height: 48,
-                  child: ElevatedButton(
-                    onPressed: onStartNextActivity,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppTheme.buttonColor,
-                      foregroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                    ),
-                    child: Text(context.l10n.homeLetsGo),
-                  ),
+                child: AppPrimaryButton(
+                  label: context.l10n.homeLetsGo,
+                  onPressed: onStartNextActivity,
                 ),
               ),
               const SizedBox(width: 10),
               Expanded(
-                child: SizedBox(
-                  height: 48,
-                  child: ElevatedButton(
-                    onPressed: () {
-                      ref.invalidate(
-                        learnerStateDataProvider(controller.learnerId),
-                      );
-                      context.go(AppRoutes.home);
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppTheme.mutedLavender,
-                      foregroundColor: AppTheme.buttonColor,
-                      elevation: 0,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                    ),
-                    child: Text(context.l10n.classMaybeLater),
-                  ),
+                child: AppPrimaryButton(
+                  label: context.l10n.classMaybeLater,
+                  onPressed: () {
+                    ref.invalidate(
+                      learnerStateDataProvider(controller.learnerId),
+                    );
+                    context.go(AppRoutes.home);
+                  },
                 ),
               ),
             ],
@@ -417,17 +379,9 @@ class ClassNoActivityBody extends StatelessWidget {
                   const SizedBox(height: 24),
                   SizedBox(
                     width: 220,
-                    height: 48,
-                    child: ElevatedButton(
+                    child: AppPrimaryButton(
+                      label: context.l10n.classBackHome,
                       onPressed: onHome,
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: AppTheme.buttonColor,
-                        foregroundColor: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                      ),
-                      child: Text(context.l10n.classBackHome),
                     ),
                   ),
                 ],

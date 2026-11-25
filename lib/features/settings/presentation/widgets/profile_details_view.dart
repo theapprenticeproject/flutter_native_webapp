@@ -1,3 +1,4 @@
+import '../../../../shared/widgets/app_primary_button.dart';
 import 'package:flutter/material.dart';
 import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -205,35 +206,10 @@ class _EditActionsBar extends StatelessWidget {
         ),
         const SizedBox(width: 12),
         Expanded(
-          child: SizedBox(
-            height: 48,
-            child: ElevatedButton(
-              onPressed: isSaving ? null : onSave,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppTheme.buttonColor,
-                foregroundColor: AppTheme.cardBackground,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              child: isSaving
-                  ? const SizedBox(
-                      width: 18,
-                      height: 18,
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                        color: AppTheme.cardBackground,
-                      ),
-                    )
-                  : Text(
-                      context.l10n.settingsSaveChanges,
-                      style: GoogleFonts.inter(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-            ),
+          child: AppPrimaryButton(
+            label: context.l10n.settingsSaveChanges,
+            loading: isSaving,
+            onPressed: onSave,
           ),
         ),
       ],

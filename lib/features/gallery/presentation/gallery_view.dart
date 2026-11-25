@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/theme/app_theme.dart';
 import '../../../domain/gallery/gallery_models.dart';
+import '../../../shared/widgets/app_primary_button.dart';
 
 /// The body of the Gallery tab (R-6): the current activity, the student's own
 /// work, and a grid of other students' valid work with initials only (R-59,
@@ -193,9 +194,9 @@ class _OwnWork extends StatelessWidget {
           children: [
             const Icon(Icons.add_photo_alternate_outlined, size: 36),
             const SizedBox(height: 10),
-            ElevatedButton(
+            AppPrimaryButton(
+              label: context.l10n.galleryShareWork,
               onPressed: onShare,
-              child: Text(context.l10n.galleryShareWork),
             ),
           ],
         ),

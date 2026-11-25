@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/router/app_routes.dart';
 import '../../../domain/profile/profile_provider.dart';
+import '../../../shared/widgets/app_primary_button.dart';
 
 class WelcomeBackScreen extends ConsumerStatefulWidget {
   const WelcomeBackScreen({super.key, this.onDone});
@@ -115,25 +116,9 @@ class _WelcomeBackScreenState extends ConsumerState<WelcomeBackScreen> {
 
                   SizedBox(
                     width: isDesktop ? 320 : double.infinity,
-                    height: 56,
-                    child: ElevatedButton(
+                    child: AppPrimaryButton(
+                      label: context.l10n.buttonContinue,
                       onPressed: _goHome,
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF5B5BD6),
-                        foregroundColor: Colors.white,
-                        disabledBackgroundColor: const Color(0xFFBDC3C7),
-                        elevation: 0,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30),
-                        ),
-                      ),
-                      child: Text(
-                        context.l10n.buttonContinue,
-                        style: GoogleFonts.inter(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
                     ),
                   ),
                 ],

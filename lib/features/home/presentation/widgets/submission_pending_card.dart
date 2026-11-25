@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../domain/learning_progress/home_dashboard_provider.dart';
 import 'card_deck_wrapper.dart';
+import '../../../../shared/widgets/app_primary_button.dart';
 
 /// The work is sent and the student waits for feedback (R-4, R-68). There is
 /// nothing to do, so the card has only "Check again", which asks the Worker.
@@ -87,31 +88,13 @@ class SubmissionPendingCard extends ConsumerWidget {
               ),
             ),
             const SizedBox(height: 28),
-            SizedBox(
-              width: double.infinity,
-              height: 56,
-              child: ElevatedButton(
-                onPressed: ready
-                    ? onOpen
-                    : () => ref.invalidate(learningDashboardProvider),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF5B5BD6),
-                  foregroundColor: Colors.white,
-                  elevation: 0,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
-                child: Text(
-                  ready
-                      ? context.l10n.homeSeeFeedback
-                      : context.l10n.homeCheckAgain,
-                  style: GoogleFonts.inter(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-              ),
+            AppPrimaryButton(
+              label: ready
+                  ? context.l10n.homeSeeFeedback
+                  : context.l10n.homeCheckAgain,
+              onPressed: ready
+                  ? onOpen
+                  : () => ref.invalidate(learningDashboardProvider),
             ),
           ],
         ),

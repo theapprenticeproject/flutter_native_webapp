@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'card_deck_wrapper.dart';
 import 'reward_item.dart';
+import '../../../../shared/widgets/app_primary_button.dart';
 
 class CompletedCard extends StatelessWidget {
   final int points;
@@ -103,13 +104,9 @@ class CompletedCard extends StatelessWidget {
                 ),
                 if (onContinue != null) ...[
                   const SizedBox(height: 24),
-                  SizedBox(
-                    width: double.infinity,
-                    height: 52,
-                    child: ElevatedButton(
-                      onPressed: onContinue,
-                      child: Text(context.l10n.homeLetsGo),
-                    ),
+                  AppPrimaryButton(
+                    label: context.l10n.homeLetsGo,
+                    onPressed: onContinue,
                   ),
                 ],
               ],

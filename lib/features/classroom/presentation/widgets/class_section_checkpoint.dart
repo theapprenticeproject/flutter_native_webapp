@@ -3,6 +3,7 @@ import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/theme/app_theme.dart';
+import '../../../../shared/widgets/app_primary_button.dart';
 
 enum ClassSectionCheckpointKind { video, submission, quiz, finalWin, generic }
 
@@ -62,24 +63,9 @@ class ClassSectionCheckpoint extends StatelessWidget {
               const SizedBox(height: 18),
               SizedBox(
                 width: compact ? double.infinity : 292,
-                height: 54,
-                child: ElevatedButton(
+                child: AppPrimaryButton(
+                  label: buttonLabel,
                   onPressed: onPressed,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppTheme.buttonColor,
-                    foregroundColor: Colors.white,
-                    elevation: 0,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                  child: Text(
-                    buttonLabel,
-                    style: GoogleFonts.inter(
-                      fontSize: 13,
-                      fontWeight: FontWeight.w800,
-                    ),
-                  ),
                 ),
               ),
               if (secondaryLabel != null) ...[
@@ -108,9 +94,10 @@ class ClassSectionCheckpoint extends StatelessWidget {
   }
 }
 
-/// TAP Buddy's picture. It does not pulse and does not say "speaking": there is
-/// no audio yet. The speaker icon that plays a clip when the student taps it
-/// comes with task D15 (R-17).
+/// TAP Buddy's circle (design M-C01): soft purple blobs around a dark circle
+/// with the TAP Buddy avatar and its name. It does not pulse and does not say
+/// "Speaking": there is no audio yet. The speaker icon that plays a clip when
+/// the student taps it comes with task D15 (R-17).
 class ClassTapBuddyOrb extends StatelessWidget {
   const ClassTapBuddyOrb({super.key, this.size = 136});
 
@@ -118,61 +105,60 @@ class ClassTapBuddyOrb extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final middle = size * 0.85;
-    final inner = size * 0.69;
+    final dark = size * 0.66;
+    final avatar = size * 0.22;
     return SizedBox(
       width: size,
       height: size,
       child: Stack(
         alignment: Alignment.center,
         children: [
-          Container(
-            width: size,
-            height: size,
-            decoration: BoxDecoration(
-              color: const Color(0xFFB9AAFF).withValues(alpha: 0.52),
-              shape: BoxShape.circle,
+          // Three soft blobs, turned a little against each other.
+          for (final (angle, alpha) in [(0.0, 0.34), (0.8, 0.3), (1.6, 0.26)])
+            Transform.rotate(
+              angle: angle,
+              child: Container(
+                width: size,
+                height: size * 0.9,
+                decoration: BoxDecoration(
+                  color: const Color(0xFF9A8BFF).withValues(alpha: alpha),
+                  borderRadius: BorderRadius.all(
+                    Radius.elliptical(size / 2, size * 0.45),
+                  ),
+                ),
+              ),
             ),
-          ),
           Container(
-            width: middle,
-            height: middle,
-            decoration: BoxDecoration(
-              color: const Color(0xFF8F80FF).withValues(alpha: 0.42),
-              shape: BoxShape.circle,
-            ),
-          ),
-          Container(
-            width: inner,
-            height: inner,
+            width: dark,
+            height: dark,
             decoration: const BoxDecoration(
-              color: Color(0xFF292930),
+              color: Color(0xFF333333),
               shape: BoxShape.circle,
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  width: size * 0.34,
-                  height: size * 0.34,
+                  width: avatar,
+                  height: avatar,
                   decoration: const BoxDecoration(
-                    color: Color(0xFFE9FFE9),
+                    color: Color(0xFFD7F5D9),
                     shape: BoxShape.circle,
                   ),
                   clipBehavior: Clip.antiAlias,
                   child: Image.asset(
-                    'assets/class-screen/tap_buddy_ai.png',
+                    'assets/onboarding/TAP-bot.png',
                     fit: BoxFit.cover,
                     errorBuilder: (context, error, stackTrace) =>
-                        const Icon(Icons.smart_toy_rounded, size: 18),
+                        Icon(Icons.smart_toy_rounded, size: avatar * 0.6),
                   ),
                 ),
-                const SizedBox(height: 5),
+                SizedBox(height: size * 0.03),
                 Text(
                   context.l10n.classTapBuddy,
                   style: GoogleFonts.inter(
-                    fontSize: size * 0.066,
-                    fontWeight: FontWeight.w700,
+                    fontSize: size * 0.06,
+                    fontWeight: FontWeight.w600,
                     color: Colors.white,
                   ),
                 ),

@@ -188,3 +188,7 @@ The same `sync` answer carries `last_activity_type` (the Worker: `quiz` if the q
 ## Routes and the phone Back button
 
 Build every route page with `AppRoutes.page(state, child)`: it gives the page its own key (`state.pageKey`). On the web the phone Back button moves the router to the previous address. Pages without a key were treated by the Navigator as the same page with new content, so a dialog or sheet opened above the old screen (for example "Submission Help") stayed on top of the new one, and the next Back left the screen gray. `test/core/router_pages_test.dart` keeps this fixed for a dialog, a bottom sheet and a pushed full-screen page.
+
+## Buttons
+
+The main button is `AppPrimaryButton` (`shared/widgets/app_primary_button.dart`): 52 high, radius 14, label Inter 18 semi-bold, the app purple, muted lavender when disabled, a `loading` spinner option, and a long label shrinks to stay on one line. Do not style a new `ElevatedButton` on a screen: `test/shared/app_primary_button_test.dart` fails if one is added. (Before, about 25 buttons had their own sizes from 44 to 76 high, radii from 10 to 30, and labels from 12 to 18: QA bug 13.)

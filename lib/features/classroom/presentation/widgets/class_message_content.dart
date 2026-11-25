@@ -12,7 +12,9 @@ import 'class_quiz_cards.dart';
 import 'class_section_checkpoint.dart';
 import 'class_submission_card.dart';
 import 'class_submitted_preview.dart';
+import 'class_video_reward_card.dart';
 import 'class_video_card.dart';
+import '../../../../shared/widgets/app_primary_button.dart';
 
 class ClassMessageContent extends StatelessWidget {
   const ClassMessageContent({
@@ -148,78 +150,11 @@ class ClassCheckpointCard extends StatelessWidget {
     }
 
     if (action == 'video_reward' && image != null) {
-      return Align(
-        alignment: Alignment.center,
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 430),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Container(
-                padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  color: AppTheme.classroomMessageSurface,
-                  borderRadius: BorderRadius.circular(18),
-                ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(2),
-                  child: AspectRatio(
-                    aspectRatio: 1,
-                    child: Image.asset(image, fit: BoxFit.cover),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 16),
-              Container(
-                padding: const EdgeInsets.fromLTRB(16, 12, 14, 14),
-                decoration: BoxDecoration(
-                  color: AppTheme.classroomMessageSurface,
-                  borderRadius: BorderRadius.circular(18),
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Expanded(
-                      child: Text(
-                        message.text ?? '',
-                        textAlign: TextAlign.left,
-                        style: GoogleFonts.inter(
-                          fontSize: 18,
-                          height: 1.35,
-                          fontWeight: FontWeight.w400,
-                          color: AppTheme.textColor,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 18),
-              SizedBox(
-                height: 76,
-                child: ElevatedButton(
-                  onPressed: () => controller.continueCheckpoint(action),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppTheme.buttonColor,
-                    foregroundColor: Colors.white,
-                    elevation: 0,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18),
-                    ),
-                  ),
-                  child: Text(
-                    buttonLabel,
-                    style: GoogleFonts.inter(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
+      return ClassVideoRewardCard(
+        image: image,
+        text: message.text ?? '',
+        buttonLabel: buttonLabel,
+        onContinue: () => controller.continueCheckpoint(action),
       );
     }
 
@@ -252,21 +187,9 @@ class ClassCheckpointCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 12),
-              SizedBox(
-                width: double.infinity,
-                height: 48,
-                child: ElevatedButton(
-                  onPressed: () => controller.continueCheckpoint(action),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppTheme.buttonColor,
-                    foregroundColor: Colors.white,
-                    elevation: 0,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                  child: Text(buttonLabel),
-                ),
+              AppPrimaryButton(
+                label: buttonLabel,
+                onPressed: () => controller.continueCheckpoint(action),
               ),
             ],
           ),
@@ -315,26 +238,11 @@ class ClassCheckpointCard extends StatelessWidget {
           const SizedBox(height: 22),
           SizedBox(
             width: 280,
-            height: 48,
-            child: ElevatedButton(
+            child: AppPrimaryButton(
+              label: buttonLabel,
               onPressed: action.isEmpty
                   ? null
                   : () => controller.continueCheckpoint(action),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppTheme.buttonColor,
-                foregroundColor: Colors.white,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              child: Text(
-                buttonLabel,
-                style: GoogleFonts.inter(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
             ),
           ),
         ],
@@ -438,20 +346,9 @@ class ClassErrorRetryCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 12),
-          SizedBox(
-            width: double.infinity,
-            height: 44,
-            child: ElevatedButton(
-              onPressed: controller.retryAfterError,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppTheme.buttonColor,
-                foregroundColor: Colors.white,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                ),
-              ),
-              child: Text(context.l10n.buttonRetry),
-            ),
+          AppPrimaryButton(
+            label: context.l10n.buttonRetry,
+            onPressed: controller.retryAfterError,
           ),
         ],
       ),
