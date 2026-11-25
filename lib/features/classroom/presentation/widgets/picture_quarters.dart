@@ -85,7 +85,8 @@ class PictureQuarters extends StatelessWidget {
   }
 
   Widget _closed(int i, double half) {
-    final dark = i == 0 || i == 3;
+    // A checkerboard (design M-C03, M-C05): light, dark, dark, light.
+    final dark = i == 1 || i == 2;
     return SizedBox(
       key: ValueKey('quarter-$i-closed'),
       width: half,

@@ -16,6 +16,7 @@ import '../../../domain/profile/profile_provider.dart';
 import '../../../shared/widgets/app_header.dart';
 import '../../../shared/widgets/app_nav.dart';
 import '../../../shared/widgets/load_error_view.dart';
+import 'widgets/activity_step_bar.dart';
 import 'widgets/class_chat_row.dart';
 import 'widgets/class_loading_skeleton.dart';
 import 'widgets/class_message_content.dart';
@@ -208,6 +209,7 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
                   showPoints: true,
                   onBack: () => context.go(AppRoutes.home),
                 ),
+                ActivityStepBar(state: widget.controller.stepBar),
                 Expanded(
                   child: Container(
                     color: AppTheme.appBackground,

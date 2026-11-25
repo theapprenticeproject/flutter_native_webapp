@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -189,6 +190,62 @@ void main() {
       expect(text.contains('PictureBadge.clearance'), isTrue);
       expect(text.contains('right: PictureBadge.margin'), isTrue);
       expect(text.contains('bottom: PictureBadge.margin'), isTrue);
+    });
+  });
+
+  // QA bug 15: the closed quarters are a checkerboard in the design (M-C03,
+  // M-C05, M-C21): light top left, dark top right, dark bottom left, light
+  // bottom right.
+  group('closed quarters follow the design\'s checkerboard', () {
+    Color colorOf(WidgetTester tester, int i) => tester
+        .widget<ColoredBox>(
+          find.descendant(of: _closed(i), matching: find.byType(ColoredBox)),
+        )
+        .color;
+
+    testWidgets('light, dark, dark, light', (tester) async {
+      await _pump(
+        tester,
+        const SizedBox(
+          width: 120,
+          child: PictureQuarters(asset: _asset, pieces: 0),
+        ),
+      );
+      const light = Color(0xFFE4E4FB);
+      const dark = Color(0xFF5B5BD6);
+      expect(colorOf(tester, 0), light);
+      expect(colorOf(tester, 1), dark);
+      expect(colorOf(tester, 2), dark);
+      expect(colorOf(tester, 3), light);
+    });
+  });
+
+  // QA bug 7: a grey ring around the badge with a purple arc over it. The arc
+  // starts at 12 o'clock and runs clockwise: a quarter of the ring for each open
+  // piece.
+  group('the badge ring', () {
+    for (final n in [1, 2, 3, 4]) {
+      testWidgets('$n pieces: an arc of $n quarters from 12 o\'clock', (
+        tester,
+      ) async {
+        await _pump(tester, PictureBadge(pieces: n, asset: _asset));
+        final ring = find.byWidgetPredicate(
+          (w) => w is CustomPaint && w.painter is PictureRingPainter,
+        );
+        expect(ring, findsOneWidget);
+        expect(
+          tester.renderObject(ring),
+          paints..arc(startAngle: -math.pi / 2, sweepAngle: n * math.pi / 2),
+        );
+      });
+    }
+
+    testWidgets('0 pieces: the grey ring only, no arc', (tester) async {
+      await _pump(tester, const PictureBadge(pieces: 0, asset: _asset));
+      final ring = find.byWidgetPredicate(
+        (w) => w is CustomPaint && w.painter is PictureRingPainter,
+      );
+      expect(tester.renderObject(ring), isNot(paints..arc()));
     });
   });
 }

@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -51,8 +53,7 @@ class PictureBadge extends StatelessWidget {
             clipBehavior: Clip.none,
             children: [
               Positioned.fill(
-                child: Container(
-                  padding: const EdgeInsets.all(4),
+                child: DecoratedBox(
                   decoration: const BoxDecoration(
                     color: Colors.white,
                     shape: BoxShape.circle,
@@ -64,16 +65,30 @@ class PictureBadge extends StatelessWidget {
                       ),
                     ],
                   ),
-                  child: asset != null
-                      ? PictureQuarters(asset: asset, pieces: n, circle: true)
-                      : FutureBuilder<String>(
-                          future: RevealAssetResolver.resolve(unitIndex),
-                          builder: (context, snapshot) => PictureQuarters(
-                            asset: snapshot.data,
-                            pieces: n,
-                            circle: true,
-                          ),
-                        ),
+                  // The ring (design M-C05): a grey track with a purple arc
+                  // over it, a quarter for each open piece.
+                  child: CustomPaint(
+                    painter: PictureRingPainter(progress: n / 4),
+                    child: Padding(
+                      padding: const EdgeInsets.all(
+                        PictureRingPainter.width + 3,
+                      ),
+                      child: asset != null
+                          ? PictureQuarters(
+                              asset: asset,
+                              pieces: n,
+                              circle: true,
+                            )
+                          : FutureBuilder<String>(
+                              future: RevealAssetResolver.resolve(unitIndex),
+                              builder: (context, snapshot) => PictureQuarters(
+                                asset: snapshot.data,
+                                pieces: n,
+                                circle: true,
+                              ),
+                            ),
+                    ),
+                  ),
                 ),
               ),
               Positioned(
@@ -105,4 +120,43 @@ class PictureBadge extends StatelessWidget {
       ),
     );
   }
+}
+
+/// The ring around the badge: a grey track, and over it a purple arc that starts
+/// at 12 o'clock and runs clockwise for [progress] (0 to 1) of the circle.
+class PictureRingPainter extends CustomPainter {
+  const PictureRingPainter({required this.progress});
+
+  final double progress;
+
+  static const double width = 5;
+  static const _track = Color(0xFFD6D6DC);
+  static const _arc = Color(0xFF5B5BD6);
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final rect = (Offset.zero & size).deflate(width / 2);
+    canvas.drawCircle(
+      rect.center,
+      rect.shortestSide / 2,
+      Paint()
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = width
+        ..color = _track,
+    );
+    if (progress <= 0) return;
+    canvas.drawArc(
+      rect,
+      -math.pi / 2,
+      progress.clamp(0.0, 1.0) * 2 * math.pi,
+      false,
+      Paint()
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = width
+        ..color = _arc,
+    );
+  }
+
+  @override
+  bool shouldRepaint(PictureRingPainter old) => old.progress != progress;
 }

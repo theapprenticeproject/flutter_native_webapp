@@ -892,4 +892,16 @@ class AppLocalizationsMr extends AppLocalizations {
   String profileClass(String grade) {
     return 'Class $grade';
   }
+
+  @override
+  String get classStepWatch => 'Watch';
+
+  @override
+  String get classStepMake => 'Make';
+
+  @override
+  String get classStepQuiz => 'Quiz';
+
+  @override
+  String get classStepResults => 'Results';
 }

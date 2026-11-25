@@ -20,6 +20,7 @@ import '../../../domain/submission/work_submitter.dart';
 import '../../../core/network/api_exception.dart';
 import '../models/activity_flow_model.dart';
 import '../models/archetype_step_selector.dart';
+import '../models/activity_step.dart';
 import '../models/class_chat_message_model.dart';
 import '../../../domain/learning_progress/classroom_progress_stage.dart';
 import '../../../domain/learner/enrollment_model.dart';
@@ -209,6 +210,17 @@ class ClassChatController extends ChangeNotifier {
   );
 
   double get revealProgress => pieceFraction(unlockedPictureCount);
+
+  /// The step bar under the header (design M-C03): which steps are done and
+  /// which one is the current one.
+  ActivityStepBarState get stepBar => activityStepBar(
+    videoDone: _videoWatchedThisUnit && _videoProgressSaved,
+    workSent: _submissionAcceptedThisUnit,
+    quizDone: _quizProgressSaved,
+    resultsDone: _resultsDone,
+    makePostponed: _submissionPostponed,
+    makeRequired: !_submissionNotRequired,
+  );
 
   bool get _submissionNotRequired =>
       _currentAssignment == null || _currentAssignment!.steps.isEmpty;

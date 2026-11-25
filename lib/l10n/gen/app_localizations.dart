@@ -1621,6 +1621,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Class {grade}'**
   String profileClass(String grade);
+
+  /// No description provided for @classStepWatch.
+  ///
+  /// In en, this message translates to:
+  /// **'Watch'**
+  String get classStepWatch;
+
+  /// No description provided for @classStepMake.
+  ///
+  /// In en, this message translates to:
+  /// **'Make'**
+  String get classStepMake;
+
+  /// No description provided for @classStepQuiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Quiz'**
+  String get classStepQuiz;
+
+  /// No description provided for @classStepResults.
+  ///
+  /// In en, this message translates to:
+  /// **'Results'**
+  String get classStepResults;
 }
 
 class _AppLocalizationsDelegate
