@@ -3,6 +3,7 @@ import '../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../core/theme/app_theme.dart';
+import 'app_tonal_button.dart';
 
 class AppHeader extends StatelessWidget {
   final String title;
@@ -17,6 +18,9 @@ class AppHeader extends StatelessWidget {
   /// Shown before the points, for example today's picture badge (R-69).
   final Widget? badge;
 
+  /// Shows the "Ask TAP" button and opens the help panel (design M-F2-01).
+  final VoidCallback? onAskTap;
+
   const AppHeader({
     super.key,
     required this.title,
@@ -28,6 +32,7 @@ class AppHeader extends StatelessWidget {
     this.showPoints = false,
     this.onBack,
     this.badge,
+    this.onAskTap,
   });
 
   @override
@@ -82,14 +87,21 @@ class AppHeader extends StatelessWidget {
               const SizedBox(width: 18),
               _MetricPill(label: '$points'),
             ],
-            if (showPoints) ...[
-              const SizedBox(width: 18),
-              Container(width: 1, height: 32, color: AppTheme.borderColor),
+            if (onAskTap != null)
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: isCompact ? 10 : 18),
+                child: AskTapButton(onPressed: onAskTap!),
+              )
+            else ...[
+              if (showPoints) ...[
+                const SizedBox(width: 18),
+                Container(width: 1, height: 32, color: AppTheme.borderColor),
+              ],
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: isCompact ? 14 : 24),
+                child: _PostOnboardingBrand(compact: isCompact),
+              ),
             ],
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: isCompact ? 14 : 24),
-              child: _PostOnboardingBrand(compact: isCompact),
-            ),
           ],
         ),
       );
@@ -150,7 +162,10 @@ class AppHeader extends StatelessWidget {
             spacing: 10,
             runSpacing: 8,
             alignment: compact ? WrapAlignment.start : WrapAlignment.end,
-            children: [_MetricPill(label: context.l10n.headerPoints(points))],
+            children: [
+              _MetricPill(label: context.l10n.headerPoints(points)),
+              if (onAskTap != null) AskTapButton(onPressed: onAskTap!),
+            ],
           );
 
           if (!showStudentSummary) {
@@ -318,4 +333,15 @@ class _CoinPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _CoinPainter old) => false;
+}
+
+/// "Ask TAP": the quiet lavender button of the design that opens the help panel.
+class AskTapButton extends StatelessWidget {
+  const AskTapButton({super.key, required this.onPressed});
+
+  final VoidCallback onPressed;
+
+  @override
+  Widget build(BuildContext context) =>
+      AppTonalButton(label: context.l10n.headerAskTap, onPressed: onPressed);
 }

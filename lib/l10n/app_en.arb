@@ -598,5 +598,21 @@
       }
     }
   },
-  "classOfflineHint": "Looks like you're offline. Click below to try again."
+  "classOfflineHint": "Looks like you're offline. Click below to try again.",
+  "headerAskTap": "Ask TAP",
+  "askTapTitle": "TAP Buddy",
+  "askTapSubtitle": "Your learning didi",
+  "askTapToday": "Today",
+  "askTapHello": "Hey there {name}!\nHow may I help you?",
+  "@askTapHello": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "askTapHint": "Type here...",
+  "askTapBusy": "I need a short rest 😅 Please ask me again in a little while.",
+  "askTapFailed": "I could not answer right now. Please try again.",
+  "askTapBack": "Back to my activity"
 }

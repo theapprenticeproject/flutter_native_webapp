@@ -977,4 +977,34 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get classOfflineHint =>
       'Looks like you\'re offline. Click below to try again.';
+
+  @override
+  String get headerAskTap => 'Ask TAP';
+
+  @override
+  String get askTapTitle => 'TAP Buddy';
+
+  @override
+  String get askTapSubtitle => 'Your learning didi';
+
+  @override
+  String get askTapToday => 'Today';
+
+  @override
+  String askTapHello(String name) {
+    return 'Hey there $name!\nHow may I help you?';
+  }
+
+  @override
+  String get askTapHint => 'Type here...';
+
+  @override
+  String get askTapBusy =>
+      'I need a short rest 😅 Please ask me again in a little while.';
+
+  @override
+  String get askTapFailed => 'I could not answer right now. Please try again.';
+
+  @override
+  String get askTapBack => 'Back to my activity';
 }

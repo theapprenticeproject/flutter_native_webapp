@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/router/app_routes.dart';
+import 'ask_tap_launcher.dart';
 import '../../../core/theme/app_theme.dart';
 import '../models/class_chat_message_model.dart';
 import '../providers/class_chat_controller.dart';
@@ -200,6 +201,7 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
                   showBack: true,
                   showPoints: true,
                   onBack: () => context.go(AppRoutes.home),
+                  onAskTap: () => openAskTapFor(context, widget.controller),
                 ),
                 ActivityStepBar(state: widget.controller.stepBar),
                 Expanded(

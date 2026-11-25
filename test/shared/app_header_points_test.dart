@@ -13,6 +13,7 @@ Future<void> _pump(WidgetTester tester, Widget header) async {
 }
 
 void main() {
+  askTapButtonTests();
   testWidgets('Home header: "3 Points"', (tester) async {
     await _pump(
       tester,
@@ -115,6 +116,55 @@ void main() {
     testWidgets('a divider between the two logos', (tester) async {
       await _pump(tester, home);
       expect(find.byKey(const ValueKey('logo-divider')), findsOneWidget);
+    });
+  });
+}
+
+/// Design M-F2-01 and M-C01: the header has an "Ask TAP" button.
+void askTapButtonTests() {
+  group('the Ask TAP button', () {
+    testWidgets('Home header: shown, and it works', (tester) async {
+      var taps = 0;
+      await _pump(
+        tester,
+        AppHeader(
+          title: 'Home',
+          studentName: 'Aarav',
+          points: 3,
+          showStudentSummary: true,
+          onAskTap: () => taps++,
+        ),
+      );
+      await tester.tap(find.text('Ask TAP'));
+      expect(taps, 1);
+    });
+
+    testWidgets('activity header: shown, and it works', (tester) async {
+      var taps = 0;
+      await _pump(
+        tester,
+        AppHeader(
+          title: 'Unit',
+          showBack: true,
+          showPoints: true,
+          points: 40,
+          onAskTap: () => taps++,
+        ),
+      );
+      await tester.tap(find.text('Ask TAP'));
+      expect(taps, 1);
+    });
+
+    testWidgets('no callback, no button', (tester) async {
+      await _pump(
+        tester,
+        const AppHeader(
+          title: 'Home',
+          studentName: 'A',
+          showStudentSummary: true,
+        ),
+      );
+      expect(find.text('Ask TAP'), findsNothing);
     });
   });
 }

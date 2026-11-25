@@ -1,3 +1,4 @@
+import '../../../shared/ask_tap/ask_tap_sheet.dart';
 import 'package:flutter/material.dart';
 import '../../../l10n/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -82,6 +83,11 @@ class _HomeDashboard extends StatelessWidget {
                     studentName: progress.studentName,
                     points: progress.points,
                     showStudentSummary: true,
+                    onAskTap: () => showAskTapSheet(
+                      context,
+                      studentName: progress.studentName,
+                      screen: 'home',
+                    ),
                   ),
                   Expanded(
                     child: SingleChildScrollView(

@@ -2,9 +2,10 @@ import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
 
-/// M0 / D0: the prototype TapBuddy AI chat and its Ask TAP panel are gone.
-/// In v1, Ask TAP shows prepared questions only (R-70). It comes back later as
-/// a new panel (D10), so the old chat code must not return.
+/// M0 / D0: the prototype TapBuddy AI chat and its Ask TAP panel are gone. The
+/// new Ask TAP (D10) is `lib/shared/ask_tap` and `lib/domain/tap_buddy`, written
+/// for the Worker's `/tapbuddy/chat` (API reference v7). The old prototype code
+/// below must not return.
 ///
 /// The animated TAP Buddy character in the classroom (`ClassTapBuddySpeakingOrb`)
 /// is not the AI chat, so it is not on this list.
@@ -17,7 +18,7 @@ final _tapBuddyChatPieces = <String, RegExp>{
   ),
   'the Ask TAP panel': RegExp(r'TapBuddyPanel|tap_buddy_panel'),
   'the panel scope': RegExp(r'TapBuddyScope'),
-  'the chat endpoint': RegExp(r'/tapbuddy/chat|tapbuddyChat'),
+  'the old chat call': RegExp(r'tapbuddyChat'),
   'the chat history cache key': RegExp(r'chatTranscript'),
   'the Ask TAP button in the header': RegExp(
     r'showAskBuddy|onAskBuddy|AskBuddyButton',

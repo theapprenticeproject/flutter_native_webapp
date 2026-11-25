@@ -49,6 +49,7 @@ On `submit_artwork` the error can also be one of `upload_not_confirmed`, `upload
 | `POST /submission/get` | `submission_id` | The same fields for one row. | Results step, and the "feedback is ready" link. |
 | `POST /progress/sync` | `last_updated` (the last `updated_at`) | `changed: false`, or `changed: true` with `points`, `points_tier`, `gems`, `current_learning_unit`, `last_activity_type`, and `last_submission` when a graded one is new. | Catch up after a reopen, and the home points. `last_submission` is absent while the work is `Pending` or `Processing`. |
 | `GET /app/config` | none | `point_tiers` (id and minimum points), upload limits, `point_tiers_version`. | The level name and its limits. The tier table is not hardcoded. |
+| `POST /tapbuddy/chat` | `message`, `context` (free object: the app sends `screen`, `language`, and on an activity `unit_name` and `step`) | `reply`. Errors: `INVALID_INPUT`, `RATE_LIMITED`, `UPSTREAM_ERROR` (safe to retry). | Ask TAP. The Worker keeps the chat history for about 10 idle minutes, so the app sends only the new message. |
 | `GET /gallery` | optional `assignment_id`, `grade`, `cursor` | `images[]`: `display_name`, `url`, `media_type`, `score`. `cursor`. | Gallery (R-88). |
 
 Calls we do **not** make in v1:
@@ -56,7 +57,6 @@ Calls we do **not** make in v1:
 - `/progress/last_submission`: `sync` is enough.
 - `/profile/get_profile`: the login answer has what we need. Edit profile is later (R-74).
 - `/events/*`: not in v1.
-- `/tapbuddy/chat`: R-70 says v1 has prepopulated questions only.
 - `/telemetry/flush` and `_t`: the backend developer designs the backend side. The app still collects the events of R-84, and sends them to the Worker route of tasks C9 and C10 (section 6).
 
 ## 3. The activity as calls (R-61)

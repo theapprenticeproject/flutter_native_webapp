@@ -1753,6 +1753,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Looks like you\'re offline. Click below to try again.'**
   String get classOfflineHint;
+
+  /// No description provided for @headerAskTap.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask TAP'**
+  String get headerAskTap;
+
+  /// No description provided for @askTapTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'TAP Buddy'**
+  String get askTapTitle;
+
+  /// No description provided for @askTapSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your learning didi'**
+  String get askTapSubtitle;
+
+  /// No description provided for @askTapToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Today'**
+  String get askTapToday;
+
+  /// No description provided for @askTapHello.
+  ///
+  /// In en, this message translates to:
+  /// **'Hey there {name}!\nHow may I help you?'**
+  String askTapHello(String name);
+
+  /// No description provided for @askTapHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Type here...'**
+  String get askTapHint;
+
+  /// No description provided for @askTapBusy.
+  ///
+  /// In en, this message translates to:
+  /// **'I need a short rest 😅 Please ask me again in a little while.'**
+  String get askTapBusy;
+
+  /// No description provided for @askTapFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'I could not answer right now. Please try again.'**
+  String get askTapFailed;
+
+  /// No description provided for @askTapBack.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to my activity'**
+  String get askTapBack;
 }
 
 class _AppLocalizationsDelegate
