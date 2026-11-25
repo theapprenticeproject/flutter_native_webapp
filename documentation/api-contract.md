@@ -153,7 +153,7 @@ The bundled content carries the ids (`content-spec.md`, section 10). Until the r
 | 2 | Remove the gem cost for "send again" (attempt 2). | Asked |
 | 3 | Confirm how `current_learning_unit` moves on. We read it so: a unit is `Completed` when the video is marked, the quiz is scored and the work has a graded result, and the next unit is the first one that is not `Completed` (Reference v6, lines 31, 100 to 105, 112 and 113). Only `Success - Original` should count (R-83), see question 1. | To confirm |
 | 4 | Add `points_awarded` to each `submission.list` row, so Results can show the activity points. | To ask |
-| 5 | JPEG: `request_upload` has no field to ask for a file type. How does the app say "JPEG"? (Her text now says other image formats are accepted.) | To ask |
+| 5 | JPEG: the backend asked for JPEG instead of WebP. `request_upload` has no field to ask for a type, so the app follows the slot: it makes the photo in the slot's `content_type`. Please return `image/jpeg`, a `.jpg` object key and `content-type: image/jpeg` in `upload_headers`. | Asked, waiting for the Worker |
 | 6 | ~~Does `status` stay `Pending` until the feedback windows?~~ Not a front-end issue (decided on 2026-11-13). The app shows the waiting screen while the result is `Pending`. | Closed |
 | 7 | The quiz: confirm that a second `submit_quiz` returns `CONFLICT` and that a repeat with the same key returns `repeat: true`. | To ask |
 | 8 | Which folder holds your new methods: `tapapp` (the new folder for this app, R-46) or the existing `tap_app`? Your reference names `tap_lms/tap_app/api` (v6, line 5). And who builds the production Worker? | To ask |

@@ -11,11 +11,11 @@ import 'package:tapapp/domain/submission/work_submitter.dart';
 
 import '../../support/fake_worker.dart';
 
-Map<String, dynamic> _slot({int max = 1000}) => {
+Map<String, dynamic> _slot({int max = 1000, String type = 'image/jpeg'}) => {
   'upload_url': 'https://storage.example/up?sig=1',
-  'object_key': 'tapapp/AS-1/S1/k-1.webp',
-  'content_type': 'image/webp',
-  'upload_headers': {'content-type': 'image/webp'},
+  'object_key': 'tapapp/AS-1/S1/k-1.jpg',
+  'content_type': type,
+  'upload_headers': {'content-type': type},
   'max_size_bytes': max,
   'attempt_number': 1,
   'attempts_remaining': 1,
@@ -61,7 +61,7 @@ class _Rig {
   ({int status, Object body})? uploadReply;
 
   WorkSubmitter submitter({
-    Future<Uint8List> Function(Uint8List)? prepareImage,
+    Future<Uint8List> Function(Uint8List, String)? prepareImage,
   }) {
     FlutterSecureStorage.setMockInitialValues({});
     final http = HttpClient(
@@ -100,9 +100,29 @@ void main() {
     final rig = _Rig();
     final small = Uint8List.fromList([9]);
     await rig
-        .submitter(prepareImage: (_) async => small)
+        .submitter(prepareImage: (_, _) async => small)
         .submit(assignmentId: 'AS-1', type: SubmissionType.image, bytes: photo);
     expect(rig.storage.seen.single.raw, small);
+  });
+
+  test('the photo is made in the type the slot is signed for', () async {
+    for (final type in ['image/jpeg', 'image/webp']) {
+      final rig = _Rig()..requestUploadReply = ok(_slot(type: type));
+      String? asked;
+      await rig
+          .submitter(
+            prepareImage: (b, mime) async {
+              asked = mime;
+              return b;
+            },
+          )
+          .submit(
+            assignmentId: 'AS-1',
+            type: SubmissionType.image,
+            bytes: photo,
+          );
+      expect(asked, type);
+    }
   });
 
   test('a video is uploaded as it is, with no shrinking', () async {
@@ -110,7 +130,7 @@ void main() {
     var shrunk = false;
     await rig
         .submitter(
-          prepareImage: (b) async {
+          prepareImage: (b, _) async {
             shrunk = true;
             return b;
           },

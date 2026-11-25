@@ -23,8 +23,9 @@ class WorkSubmitter {
   final SubmissionRepository _repo;
   final String studentId;
 
-  /// Makes a photo smaller before the upload (WebP). A video is not changed.
-  final Future<Uint8List> Function(Uint8List)? prepareImage;
+  /// Makes a photo smaller before the upload, in the type the slot asks for
+  /// (JPEG or WebP). A video is not changed.
+  final Future<Uint8List> Function(Uint8List, String mimeType)? prepareImage;
 
   final Map<String, _Attempt> _attempts = {};
 
@@ -49,7 +50,7 @@ class WorkSubmitter {
     if (!attempt.uploaded) {
       final shrink = prepareImage;
       final file = type == SubmissionType.image && shrink != null
-          ? await shrink(bytes)
+          ? await shrink(bytes, attempt.slot!.contentType)
           : bytes;
       await _repo.upload(attempt.slot!, file, onProgress: onProgress);
       attempt.uploaded = true;

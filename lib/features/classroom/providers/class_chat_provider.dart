@@ -15,7 +15,7 @@ import '../../../domain/progress/step_recorder.dart';
 import '../../../domain/submission/feedback_provider.dart';
 import '../../../domain/submission/submission_provider.dart';
 import '../../../domain/submission/work_submitter.dart';
-import '../../../shared/media/webp_encoder.dart';
+import '../../../shared/media/image_encoder.dart';
 
 class NoUnitAvailableException implements Exception {
   const NoUnitAvailableException();
@@ -58,7 +58,7 @@ final classChatControllerProvider = FutureProvider.autoDispose
         workSubmitter: WorkSubmitter(
           ref.read(submissionRepositoryProvider),
           studentId: bootstrap.learnerId,
-          prepareImage: encodeWebp,
+          prepareImage: encodeImage,
         ),
         stepRecorder: StepRecorder(
           ref.read(progressRepositoryProvider),

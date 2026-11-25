@@ -14,6 +14,7 @@ class UploadSlot {
     required this.uploadUrl,
     required this.objectKey,
     required this.headers,
+    required this.contentType,
     required this.maxSizeBytes,
     required this.attemptNumber,
     required this.attemptsRemaining,
@@ -24,6 +25,9 @@ class UploadSlot {
 
   /// Sent as they are with the upload (they are part of the signature).
   final Map<String, String> headers;
+
+  /// The file type the URL is signed for. The photo must be made in this type.
+  final String contentType;
   final int maxSizeBytes;
   final int attemptNumber;
   final int attemptsRemaining;
@@ -35,6 +39,7 @@ class UploadSlot {
       for (final e in ((json['upload_headers'] as Map?) ?? const {}).entries)
         e.key.toString(): e.value.toString(),
     },
+    contentType: (json['content_type'] as String?) ?? 'image/jpeg',
     maxSizeBytes: (json['max_size_bytes'] as num?)?.toInt() ?? 0,
     attemptNumber: (json['attempt_number'] as num?)?.toInt() ?? 1,
     attemptsRemaining: (json['attempts_remaining'] as num?)?.toInt() ?? 0,

@@ -4,20 +4,21 @@ import 'dart:typed_data';
 
 import 'package:web/web.dart' as web;
 
-/// The browser cannot make WebP. The upload slot asks for WebP, so the photo
-/// cannot be sent.
-class WebpNotSupportedException implements Exception {
+/// The browser cannot make the file type the upload slot asks for, so the
+/// photo cannot be sent.
+class ImageTypeNotSupportedException implements Exception {
   @override
-  String toString() => 'WebpNotSupportedException';
+  String toString() => 'ImageTypeNotSupportedException';
 }
 
 const _maxSide = 1600;
 const _quality = 0.8;
 
-/// Makes a photo smaller: at most 1600 pixels on the long side, WebP at 80%.
-/// The browser draws it (`createImageBitmap` turns it upright using the EXIF
-/// data of a phone photo).
-Future<Uint8List> encodeWebp(Uint8List bytes) async {
+/// Makes a photo smaller: at most 1600 pixels on the long side, 80% quality, in
+/// the type of the upload slot (`image/jpeg` or `image/webp`). The browser draws
+/// it (`createImageBitmap` turns it upright using the EXIF data of a phone
+/// photo).
+Future<Uint8List> encodeImage(Uint8List bytes, String mimeType) async {
   final blob = web.Blob([bytes.toJS].toJS);
   final bitmap = await web.window.createImageBitmap(blob).toDart;
 
@@ -42,13 +43,13 @@ Future<Uint8List> encodeWebp(Uint8List bytes) async {
   final done = Completer<web.Blob?>();
   canvas.toBlob(
     ((web.Blob? b) => done.complete(b)).toJS,
-    'image/webp',
+    mimeType,
     _quality.toJS,
   );
   final out = await done.future;
-  // A browser that cannot make WebP answers with a PNG.
-  if (out == null || out.type != 'image/webp') {
-    throw WebpNotSupportedException();
+  // A browser that cannot make this type answers with a PNG.
+  if (out == null || out.type != mimeType) {
+    throw ImageTypeNotSupportedException();
   }
   return (await out.arrayBuffer().toDart).toDart.asUint8List();
 }

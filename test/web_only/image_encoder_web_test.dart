@@ -6,7 +6,7 @@ import 'dart:js_interop';
 import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:tapapp/shared/media/webp_encoder.dart';
+import 'package:tapapp/shared/media/image_encoder.dart';
 import 'package:web/web.dart' as web;
 
 /// Runs in a real browser: `flutter test --platform chrome test/web_only`.
@@ -23,10 +23,7 @@ Future<Uint8List> _png(int w, int h) async {
   return (await blob.arrayBuffer().toDart).toDart.asUint8List();
 }
 
-bool _isWebp(Uint8List b) =>
-    b.length > 12 &&
-    String.fromCharCodes(b.sublist(0, 4)) == 'RIFF' &&
-    String.fromCharCodes(b.sublist(8, 12)) == 'WEBP';
+bool _isJpeg(Uint8List b) => b.length > 3 && b[0] == 0xFF && b[1] == 0xD8;
 
 Future<({int w, int h})> _size(Uint8List webp) async {
   final bitmap = await web.window
@@ -36,17 +33,17 @@ Future<({int w, int h})> _size(Uint8List webp) async {
 }
 
 void main() {
-  test('makes a real WebP that is smaller than the PNG', () async {
+  test('makes a real JPEG that is smaller than the PNG', () async {
     final png = await _png(800, 600);
-    final webp = await encodeWebp(png);
-    expect(_isWebp(webp), isTrue);
+    final webp = await encodeImage(png, 'image/jpeg');
+    expect(_isJpeg(webp), isTrue);
     expect(webp.length, lessThan(png.length));
   });
 
   test(
     'a big photo is scaled to 1600 on the long side, keeping the shape',
     () async {
-      final webp = await encodeWebp(await _png(3200, 2400));
+      final webp = await encodeImage(await _png(3200, 2400), 'image/jpeg');
       final size = await _size(webp);
       expect(size.w, 1600);
       expect(size.h, 1200);
@@ -54,7 +51,9 @@ void main() {
   );
 
   test('a small photo is not made bigger', () async {
-    final size = await _size(await encodeWebp(await _png(400, 300)));
+    final size = await _size(
+      await encodeImage(await _png(400, 300), 'image/jpeg'),
+    );
     expect(size.w, 400);
     expect(size.h, 300);
   });
