@@ -61,7 +61,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
         if (mounted &&
             _isMediaKind(kind) &&
             widget.controller.isAwaitingInput) {
-          _showMediaSourceSheet(
+          _chooseFile(
             allowVideo: kind != SubmissionKind.image,
             forceVideo: kind == SubmissionKind.video,
           );
@@ -173,70 +173,56 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
     }
   }
 
-  Future<void> _showMediaSourceSheet({
+  /// A photo or a video (the activity accepts both): one chooser for both.
+  Future<void> _pickPhotoOrVideo() async {
+    setState(() {
+      _isPicking = true;
+      _pickError = false;
+      _wrongFile = false;
+    });
+    try {
+      final file = await _picker.pickMedia(imageQuality: 85);
+      if (file != null) {
+        final video = isRightFile(
+          mimeType: file.mimeType,
+          name: file.name,
+          video: true,
+        );
+        if (!video && !_isRight(file, video: false)) return;
+        final bytes = video ? null : await file.readAsBytes();
+        if (!mounted) return;
+        setState(() {
+          _pickedMedia = file;
+          _pickedMediaBytes = bytes;
+          _isVideoPick = video;
+        });
+      }
+    } catch (_) {
+      if (mounted) {
+        setState(() => _pickError = true);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(context.l10n.classFileAccessFailed)),
+        );
+      }
+    } finally {
+      if (mounted) setState(() => _isPicking = false);
+    }
+  }
+
+  /// Opens the phone's own chooser (design M-S-02: "Choose an action" with
+  /// Camera, Photos and Files). On the web a file input makes the phone draw it,
+  /// so the app has no source sheet of its own.
+  Future<void> _chooseFile({
     required bool allowVideo,
     bool forceVideo = false,
   }) async {
-    final choice = await showModalBottomSheet<_MediaPickChoice>(
-      context: context,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (context) => SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const SizedBox(height: 8),
-            if (!forceVideo) ...[
-              ListTile(
-                leading: const Icon(Icons.photo_camera_outlined),
-                title: Text(context.l10n.classTakePhoto),
-                onTap: () =>
-                    Navigator.pop(context, _MediaPickChoice.cameraImage),
-              ),
-              ListTile(
-                leading: const Icon(Icons.photo_library_outlined),
-                title: Text(context.l10n.classChoosePhoto),
-                onTap: () =>
-                    Navigator.pop(context, _MediaPickChoice.galleryImage),
-              ),
-            ],
-            if (allowVideo) ...[
-              ListTile(
-                leading: const Icon(Icons.videocam_outlined),
-                title: Text(context.l10n.classRecordVideo),
-                onTap: () =>
-                    Navigator.pop(context, _MediaPickChoice.cameraVideo),
-              ),
-              ListTile(
-                leading: const Icon(Icons.video_library_outlined),
-                title: Text(context.l10n.classChooseVideo),
-                onTap: () =>
-                    Navigator.pop(context, _MediaPickChoice.galleryVideo),
-              ),
-            ],
-            const SizedBox(height: 8),
-          ],
-        ),
-      ),
-    );
-
     final before = _pickedMedia;
-    switch (choice) {
-      case _MediaPickChoice.cameraImage:
-        await _pickImage(ImageSource.camera);
-        break;
-      case _MediaPickChoice.galleryImage:
-        await _pickImage(ImageSource.gallery);
-        break;
-      case _MediaPickChoice.cameraVideo:
-        await _pickVideo(ImageSource.camera);
-        break;
-      case _MediaPickChoice.galleryVideo:
-        await _pickVideo(ImageSource.gallery);
-        break;
-      case null:
-        break;
+    if (forceVideo) {
+      await _pickVideo(ImageSource.gallery);
+    } else if (allowVideo) {
+      await _pickPhotoOrVideo();
+    } else {
+      await _pickImage(ImageSource.gallery);
     }
     // Design M-S-03: look at the new file before it is sent.
     if (mounted && _pickedMedia != null && !identical(_pickedMedia, before)) {
@@ -252,10 +238,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
             },
             onChange: () {
               Navigator.pop(dialog);
-              _showMediaSourceSheet(
-                allowVideo: allowVideo,
-                forceVideo: forceVideo,
-              );
+              _chooseFile(allowVideo: allowVideo, forceVideo: forceVideo);
             },
           ),
         ),
@@ -299,7 +282,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
             isVideo: _isVideoPick,
             mediaBytes: _pickedMediaBytes,
             onTap: canInteract && _isMediaKind(kind)
-                ? () => _showMediaSourceSheet(
+                ? () => _chooseFile(
                     allowVideo: kind != SubmissionKind.image,
                     forceVideo: kind == SubmissionKind.video,
                   )
@@ -536,7 +519,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
   }) {
     final hasMedia = _pickedMedia != null;
     void openPicker() =>
-        _showMediaSourceSheet(allowVideo: allowVideo, forceVideo: forceVideo);
+        _chooseFile(allowVideo: allowVideo, forceVideo: forceVideo);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -814,8 +797,6 @@ class SubmissionHelpDialog extends StatelessWidget {
     );
   }
 }
-
-enum _MediaPickChoice { cameraImage, galleryImage, cameraVideo, galleryVideo }
 
 class _SubmissionChip extends StatelessWidget {
   const _SubmissionChip({

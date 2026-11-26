@@ -474,18 +474,6 @@ class AppLocalizationsPa extends AppLocalizations {
       'Couldn\'t access that. Please try again.';
 
   @override
-  String get classTakePhoto => 'Take a photo';
-
-  @override
-  String get classChoosePhoto => 'Choose photo from gallery';
-
-  @override
-  String get classRecordVideo => 'Record a video';
-
-  @override
-  String get classChooseVideo => 'Choose video from gallery';
-
-  @override
   String get classTodaysActivity => 'TODAY\'S ACTIVITY 🏎️🏎️';
 
   @override

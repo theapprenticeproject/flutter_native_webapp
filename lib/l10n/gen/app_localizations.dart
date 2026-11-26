@@ -944,30 +944,6 @@ abstract class AppLocalizations {
   /// **'Couldn\'t access that. Please try again.'**
   String get classFileAccessFailed;
 
-  /// No description provided for @classTakePhoto.
-  ///
-  /// In en, this message translates to:
-  /// **'Take a photo'**
-  String get classTakePhoto;
-
-  /// No description provided for @classChoosePhoto.
-  ///
-  /// In en, this message translates to:
-  /// **'Choose photo from gallery'**
-  String get classChoosePhoto;
-
-  /// No description provided for @classRecordVideo.
-  ///
-  /// In en, this message translates to:
-  /// **'Record a video'**
-  String get classRecordVideo;
-
-  /// No description provided for @classChooseVideo.
-  ///
-  /// In en, this message translates to:
-  /// **'Choose video from gallery'**
-  String get classChooseVideo;
-
   /// No description provided for @classTodaysActivity.
   ///
   /// In en, this message translates to:

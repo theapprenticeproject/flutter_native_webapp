@@ -212,10 +212,6 @@
   "settingsTabAbout": "About TAP",
   "classFileReadFailed": "Couldn't read that file. Please try again.",
   "classFileAccessFailed": "Couldn't access that. Please try again.",
-  "classTakePhoto": "Take a photo",
-  "classChoosePhoto": "Choose photo from gallery",
-  "classRecordVideo": "Record a video",
-  "classChooseVideo": "Choose video from gallery",
   "classTodaysActivity": "TODAY'S ACTIVITY 🏎️🏎️",
   "classStep": "STEP {n}/{total}",
   "@classStep": {
