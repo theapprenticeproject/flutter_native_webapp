@@ -872,5 +872,9 @@
         "type": "int"
       }
     }
-  }
+  },
+  "classChooseAction": "Choose an action",
+  "classCameraOption": "Camera",
+  "classVideoOption": "Video",
+  "classPhotosOption": "Photos"
 }

@@ -1,5 +1,4 @@
-import 'dart:typed_data';
-
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import '../../../../l10n/l10n.dart';
 import 'package:go_router/go_router.dart';
@@ -9,6 +8,7 @@ import '../../../../core/router/app_routes.dart';
 import '../../../../shared/media/file_kind.dart';
 import '../ask_tap_launcher.dart';
 import '../../../../shared/widgets/dashed_upload_box.dart';
+import 'media_source_sheet.dart';
 import 'submission_confirm_dialog.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -217,12 +217,32 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
     bool forceVideo = false,
   }) async {
     final before = _pickedMedia;
-    if (forceVideo) {
-      await _pickVideo(ImageSource.gallery);
-    } else if (allowVideo) {
-      await _pickPhotoOrVideo();
-    } else {
-      await _pickImage(ImageSource.gallery);
+    // A phone asks first: the WhatsApp browser opens the photo picker and has
+    // no camera entry. A laptop opens its file dialog at once.
+    var source = MediaSource.library;
+    if (usesSourceSheet(defaultTargetPlatform)) {
+      final choice = await showModalBottomSheet<MediaSource>(
+        context: context,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+        ),
+        builder: (_) =>
+            MediaSourceSheet(allowPhoto: !forceVideo, allowVideo: allowVideo),
+      );
+      if (choice == null) return;
+      source = choice;
+    }
+    switch (source) {
+      case MediaSource.camera:
+        await _pickImage(ImageSource.camera);
+      case MediaSource.video:
+        await _pickVideo(ImageSource.camera);
+      case MediaSource.library when forceVideo:
+        await _pickVideo(ImageSource.gallery);
+      case MediaSource.library when allowVideo:
+        await _pickPhotoOrVideo();
+      case MediaSource.library:
+        await _pickImage(ImageSource.gallery);
     }
     // Design M-S-03: look at the new file before it is sent.
     if (mounted && _pickedMedia != null && !identical(_pickedMedia, before)) {

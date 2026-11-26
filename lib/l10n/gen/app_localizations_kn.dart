@@ -1209,4 +1209,16 @@ class AppLocalizationsKn extends AppLocalizations {
   String chatGreatQuizPoints(int points) {
     return 'Great quiz! 🎉 Ready to send your work now? You\'ll get +$points points';
   }
+
+  @override
+  String get classChooseAction => 'Choose an action';
+
+  @override
+  String get classCameraOption => 'Camera';
+
+  @override
+  String get classVideoOption => 'Video';
+
+  @override
+  String get classPhotosOption => 'Photos';
 }

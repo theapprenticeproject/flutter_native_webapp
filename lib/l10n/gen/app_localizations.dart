@@ -2137,6 +2137,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Great quiz! 🎉 Ready to send your work now? You\'ll get +{points} points'**
   String chatGreatQuizPoints(int points);
+
+  /// No description provided for @classChooseAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose an action'**
+  String get classChooseAction;
+
+  /// No description provided for @classCameraOption.
+  ///
+  /// In en, this message translates to:
+  /// **'Camera'**
+  String get classCameraOption;
+
+  /// No description provided for @classVideoOption.
+  ///
+  /// In en, this message translates to:
+  /// **'Video'**
+  String get classVideoOption;
+
+  /// No description provided for @classPhotosOption.
+  ///
+  /// In en, this message translates to:
+  /// **'Photos'**
+  String get classPhotosOption;
 }
 
 class _AppLocalizationsDelegate
