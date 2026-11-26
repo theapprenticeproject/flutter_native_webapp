@@ -223,6 +223,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
     if (usesSourceSheet(defaultTargetPlatform)) {
       final choice = await showModalBottomSheet<MediaSource>(
         context: context,
+        backgroundColor: const Color(0xFFF4F4F7),
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
         ),

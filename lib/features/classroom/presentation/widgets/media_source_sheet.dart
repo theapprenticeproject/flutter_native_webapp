@@ -12,7 +12,8 @@ enum MediaSource { camera, video, library }
 bool usesSourceSheet(TargetPlatform platform) =>
     platform == TargetPlatform.android || platform == TargetPlatform.iOS;
 
-/// "Choose an action" (design M-S-02): round icons with a word under each.
+/// "Choose an action" (design M-S-02): round buttons with an emoji, and a word
+/// under each. The sheet is light grey and the circles are white.
 /// [allowPhoto] shows Camera, [allowVideo] shows Video, and Photos is always
 /// there. Closing the sheet answers null.
 class MediaSourceSheet extends StatelessWidget {
@@ -49,18 +50,18 @@ class MediaSourceSheet extends StatelessWidget {
               children: [
                 if (allowPhoto)
                   _Action(
-                    icon: Icons.photo_camera_outlined,
+                    emoji: '📷',
                     label: l.classCameraOption,
                     onTap: () => Navigator.pop(context, MediaSource.camera),
                   ),
                 if (allowVideo)
                   _Action(
-                    icon: Icons.videocam_outlined,
+                    emoji: '🎥',
                     label: l.classVideoOption,
                     onTap: () => Navigator.pop(context, MediaSource.video),
                   ),
                 _Action(
-                  icon: Icons.photo_library_outlined,
+                  emoji: '🖼️',
                   label: l.classPhotosOption,
                   onTap: () => Navigator.pop(context, MediaSource.library),
                 ),
@@ -74,9 +75,13 @@ class MediaSourceSheet extends StatelessWidget {
 }
 
 class _Action extends StatelessWidget {
-  const _Action({required this.icon, required this.label, required this.onTap});
+  const _Action({
+    required this.emoji,
+    required this.label,
+    required this.onTap,
+  });
 
-  final IconData icon;
+  final String emoji;
   final String label;
   final VoidCallback onTap;
 
@@ -92,11 +97,13 @@ class _Action extends StatelessWidget {
           Container(
             width: 56,
             height: 56,
+            alignment: Alignment.center,
             decoration: const BoxDecoration(
-              color: Color(0xFFE8E8FB),
+              color: Colors.white,
               shape: BoxShape.circle,
             ),
-            child: Icon(icon, size: 26, color: AppTheme.buttonColor),
+            // The design (M-S-02) uses emoji, as the phone's own chooser does.
+            child: Text(emoji, style: const TextStyle(fontSize: 24)),
           ),
           const SizedBox(height: 6),
           Text(

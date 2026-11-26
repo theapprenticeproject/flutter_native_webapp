@@ -39,6 +39,20 @@ Future<MediaSource?> _open(
 }
 
 void main() {
+  // The mock's round buttons hold emoji: 📷 Camera, 🖼️ Photos, 📁 Files.
+  testWidgets('each choice has its emoji in a white circle', (tester) async {
+    await _open(tester, photo: true, video: true, tap: '');
+    expect(find.text('📷'), findsOneWidget);
+    expect(find.text('🎥'), findsOneWidget);
+    expect(find.text('🖼️'), findsOneWidget);
+    final circle = tester.widget<Container>(
+      find
+          .ancestor(of: find.text('📷'), matching: find.byType(Container))
+          .first,
+    );
+    expect((circle.decoration! as BoxDecoration).color, Colors.white);
+  });
+
   testWidgets('a photo activity: Camera and Photos', (tester) async {
     await _open(tester, photo: true, video: false, tap: '');
     expect(find.text('Camera'), findsOneWidget);
