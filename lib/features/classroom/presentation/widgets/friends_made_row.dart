@@ -32,17 +32,18 @@ class FriendsMadeRow extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(height: 6),
+        const SizedBox(height: 4),
         Row(
           children: [
             for (var i = 0; i < _emoji.length; i++) ...[
-              if (i > 0) const SizedBox(width: 10),
+              if (i > 0) const SizedBox(width: 8),
               Expanded(
                 child: InkWell(
+                  key: ValueKey('friend-tile-$i'),
                   onTap: onTap,
                   borderRadius: BorderRadius.circular(10),
                   child: Container(
-                    height: 44,
+                    height: 72,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -51,7 +52,7 @@ class FriendsMadeRow extends StatelessWidget {
                     ),
                     child: Text(
                       _emoji[i],
-                      style: const TextStyle(fontSize: 20),
+                      style: const TextStyle(fontSize: 24),
                     ),
                   ),
                 ),

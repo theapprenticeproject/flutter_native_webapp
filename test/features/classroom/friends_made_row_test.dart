@@ -51,4 +51,29 @@ void main() {
     ];
     expect(sizes.toSet().length, 1);
   });
+
+  // Figma: the tiles are 101 x 72 in a 319 wide card, 8 apart. They looked flat
+  // (about 100 x 44) when they were made 44 high.
+  testWidgets('the tiles are 72 high, about 1.4 times as wide, 8 apart', (
+    tester,
+  ) async {
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: Center(
+            child: SizedBox(width: 319, child: FriendsMadeRow(onTap: () {})),
+          ),
+        ),
+      ),
+    );
+    Size tile(String e) => tester.getSize(
+      find.ancestor(of: find.text(e), matching: find.byType(InkWell)).first,
+    );
+    expect(tile('🐱').height, 72);
+    expect(tile('🐱').width, closeTo(101, 0.5));
+    final gap =
+        tester.getTopLeft(find.byKey(const ValueKey('friend-tile-1'))).dx -
+        tester.getTopRight(find.byKey(const ValueKey('friend-tile-0'))).dx;
+    expect(gap, 8);
+  });
 }
