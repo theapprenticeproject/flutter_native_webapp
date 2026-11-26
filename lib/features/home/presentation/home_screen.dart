@@ -322,21 +322,25 @@ class _ActiveCard extends StatelessWidget {
       LearningStage.sendProject => SendProjectCard(
         courseDisplay: unit.courseDisplay,
         unitName: unit.unitName,
+        thumbnailAsset: unit.thumbnailAsset,
         onSend: () => context.go(AppRoutes.classroom),
       ),
       LearningStage.quizPending => QuizPendingCard(
         courseDisplay: unit.courseDisplay,
         unitName: unit.unitName,
+        thumbnailAsset: unit.thumbnailAsset,
         onStartQuiz: () => context.go(AppRoutes.classroom),
       ),
       LearningStage.submissionPending => SubmissionPendingCard(
         courseDisplay: unit.courseDisplay,
         unitName: unit.unitName,
+        thumbnailAsset: unit.thumbnailAsset,
         slow: slowFeedback,
       ),
       LearningStage.feedbackReady => SubmissionPendingCard(
         courseDisplay: unit.courseDisplay,
         unitName: unit.unitName,
+        thumbnailAsset: unit.thumbnailAsset,
         slow: false,
         ready: true,
         onOpen: () => context.go(AppRoutes.classroom),

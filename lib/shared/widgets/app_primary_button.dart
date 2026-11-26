@@ -13,14 +13,21 @@ class AppPrimaryButton extends StatelessWidget {
     required this.label,
     required this.onPressed,
     this.loading = false,
+    this.tall = false,
   });
 
   static const double height = 52;
+
+  /// The call-to-action height of the Home card in Figma ("Primary action").
+  static const double tallHeight = 56;
   static const double radius = 14;
 
   final String label;
   final VoidCallback? onPressed;
   final bool loading;
+
+  /// 56 high, as the Figma button of the Home card, instead of 52.
+  final bool tall;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +35,7 @@ class AppPrimaryButton extends StatelessWidget {
     // does not (for example in a Row).
     return LayoutBuilder(
       builder: (context, constraints) => SizedBox(
-        height: height,
+        height: tall ? tallHeight : height,
         width: constraints.hasBoundedWidth ? double.infinity : null,
         child: _button(),
       ),
@@ -44,7 +51,7 @@ class AppPrimaryButton extends StatelessWidget {
         disabledBackgroundColor: AppTheme.mutedLavender,
         disabledForegroundColor: Colors.white,
         elevation: 0,
-        minimumSize: const Size(0, height),
+        minimumSize: Size(0, tall ? tallHeight : height),
         padding: const EdgeInsets.symmetric(horizontal: 20),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(radius),

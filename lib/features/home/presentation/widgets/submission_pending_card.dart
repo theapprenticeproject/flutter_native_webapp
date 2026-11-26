@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../../../l10n/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../domain/learning_progress/home_dashboard_provider.dart';
-import 'card_deck_wrapper.dart';
-import '../../../../shared/widgets/app_primary_button.dart';
+import 'activity_card.dart';
 
 /// The work is sent and the student waits for feedback (R-4, R-68). There is
 /// nothing to do, so the card has only "Check again", which asks the Worker.
@@ -17,6 +15,7 @@ class SubmissionPendingCard extends ConsumerWidget {
     required this.slow,
     this.ready = false,
     this.onOpen,
+    this.thumbnailAsset,
   });
 
   final String courseDisplay;
@@ -28,68 +27,29 @@ class SubmissionPendingCard extends ConsumerWidget {
   /// The feedback is valid and waiting to be seen (R-68): the button opens it.
   final bool ready;
   final VoidCallback? onOpen;
+  final String? thumbnailAsset;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return CardDeckWrapper(
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(22, 48, 22, 34),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              unitName,
-              style: GoogleFonts.inter(
-                fontSize: 24,
-                fontWeight: FontWeight.w700,
-                color: const Color(0xFF1C1C21),
-                height: 1.02,
-              ),
-            ),
-            const SizedBox(height: 13),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 7),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(999),
-                border: Border.all(color: const Color(0xFFE7E7EF)),
-              ),
-              child: Text(
-                ready
-                    ? context.l10n.homeFeedbackReady
-                    : context.l10n.homePendingFeedback,
-                style: GoogleFonts.inter(
-                  fontSize: 11,
-                  fontWeight: FontWeight.w700,
-                  color: const Color(0xFF777887),
-                ),
-              ),
-            ),
-            const SizedBox(height: 28),
-            Text(
-              ready
-                  ? context.l10n.homeFeedbackReadyText
-                  : slow
-                  ? context.l10n.homeFeedbackSlowText
-                  : context.l10n.homeFeedbackWaitingText,
-              style: GoogleFonts.inter(
-                fontSize: 16,
-                height: 1.4,
-                color: const Color(0xFF3A3A45),
-              ),
-            ),
-            const SizedBox(height: 28),
-            AppPrimaryButton(
-              label: ready
-                  ? context.l10n.homeSeeFeedback
-                  : context.l10n.homeCheckAgain,
-              onPressed: ready
-                  ? onOpen
-                  : () => ref.invalidate(learningDashboardProvider),
-            ),
-          ],
-        ),
+    final l = context.l10n;
+    return ActivityCard(
+      title: unitName,
+      thumbnailAsset: thumbnailAsset,
+      chip: ActivityChip(
+        icon: ready
+            ? Icons.check_circle_outline_rounded
+            : Icons.schedule_rounded,
+        text: ready ? l.homeFeedbackReady : l.homePendingFeedback,
       ),
+      body: ready
+          ? l.homeFeedbackReadyText
+          : slow
+          ? l.homeFeedbackSlowText
+          : l.homeFeedbackWaitingText,
+      buttonLabel: ready ? l.homeSeeFeedback : l.homeCheckAgain,
+      onPressed: ready
+          ? onOpen
+          : () => ref.invalidate(learningDashboardProvider),
     );
   }
 }
