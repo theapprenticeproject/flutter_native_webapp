@@ -199,4 +199,70 @@ void main() {
       'Taking longer than expected',
     );
   });
+
+  group('the path (design M-ME-01)', () {
+    List<PathState> states(List<SubmissionInfo> rows) => [
+      for (final n in projectPath(buildProjects(units, rows, now: now)))
+        n.state,
+    ];
+
+    test('nothing sent: the first project is next, the rest wait', () {
+      expect(states(const []), [
+        PathState.current,
+        PathState.locked,
+        PathState.locked,
+        PathState.locked,
+        PathState.locked,
+        PathState.locked,
+      ]);
+    });
+
+    test('done, then the one in progress, then the locked ones', () {
+      expect(states([_row('AS-1'), _row('AS-2')]), [
+        PathState.done,
+        PathState.done,
+        PathState.current,
+        PathState.locked,
+        PathState.locked,
+        PathState.locked,
+      ]);
+    });
+
+    test('work that waits for feedback is the current project', () {
+      final rows = [
+        _row('AS-1'),
+        _row('AS-2', status: 'Pending', result: 'Pending', score: null),
+      ];
+      expect(states(rows).sublist(0, 3), [
+        PathState.done,
+        PathState.current,
+        PathState.locked,
+      ]);
+    });
+
+    test('all done: no current project', () {
+      final rows = [for (var i = 1; i <= 6; i++) _row('AS-$i')];
+      expect(states(rows).every((s) => s == PathState.done), isTrue);
+    });
+
+    test('the numbers start at 1', () {
+      final nodes = projectPath(buildProjects(units, const [], now: now));
+      expect([for (final n in nodes) n.number], [1, 2, 3, 4, 5, 6]);
+    });
+
+    test('a project carries when it was sent and the link to the work', () {
+      final row = SubmissionInfo(
+        id: 'S1',
+        assignmentId: 'AS-1',
+        status: 'Completed',
+        resultStatus: 'Success - Original',
+        score: 80,
+        viewUrl: 'https://r2.example/w.jpg',
+        createdAt: DateTime.utc(2026, 11, 16, 8),
+      );
+      final p = buildProjects(units, [row], now: now).first;
+      expect(p.viewUrl, 'https://r2.example/w.jpg');
+      expect(p.createdAt, DateTime.utc(2026, 11, 16, 8));
+    });
+  });
 }

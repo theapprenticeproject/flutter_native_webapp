@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../../../l10n/l10n.dart';
-import '../project_text.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/theme/app_theme.dart';
@@ -12,6 +11,7 @@ import '../../../shared/widgets/app_header.dart'
     show PointsCoin, PostOnboardingBrand;
 import '../../../shared/widgets/app_primary_button.dart';
 import '../../../shared/widgets/build_info_toggle.dart';
+import 'project_journey.dart';
 import '../../../shared/widgets/profile_switcher.dart';
 
 /// The body of Me (R-7; design M-ME-01 and M-ME-02): the switch-profile strip,
@@ -90,7 +90,12 @@ class MeView extends StatelessWidget {
                   ],
                   _PointsCard(points: points),
                   const SizedBox(height: 22),
-                  _ProjectsSection(projects: projects, onOpen: onOpenProject),
+                  ProjectJourney(
+                    projects: projects,
+                    studentName: studentName,
+                    onOpen: onOpenProject,
+                    onStart: onStartActivity,
+                  ),
                   const SizedBox(height: 26),
                   // Long-press "TAP" to see which build this is.
                   Center(
@@ -120,21 +125,6 @@ BoxDecoration _card() => BoxDecoration(
   borderRadius: BorderRadius.circular(16),
   border: Border.all(color: AppTheme.borderColor),
 );
-
-class _SectionTitle extends StatelessWidget {
-  const _SectionTitle(this.text);
-  final String text;
-
-  @override
-  Widget build(BuildContext context) => Text(
-    text,
-    style: GoogleFonts.inter(
-      fontSize: 16,
-      fontWeight: FontWeight.w900,
-      color: AppTheme.headingText,
-    ),
-  );
-}
 
 /// The white top: the logos, "Welcome Aarav 👋" and the settings button.
 class _Top extends StatelessWidget {
@@ -589,99 +579,6 @@ class _PointsCard extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class _ProjectsSection extends StatelessWidget {
-  const _ProjectsSection({required this.projects, required this.onOpen});
-
-  final List<MyProject> projects;
-  final void Function(MyProject) onOpen;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Row(
-          children: [
-            Expanded(child: _SectionTitle(context.l10n.meProjectsTitle)),
-            if (projects.isNotEmpty)
-              Text(
-                context.l10n.meProjectsDone(
-                  doneCount(projects),
-                  projects.length,
-                ),
-                style: GoogleFonts.inter(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w700,
-                  color: AppTheme.subheadingColor,
-                ),
-              ),
-          ],
-        ),
-        const SizedBox(height: 10),
-        if (projects.isEmpty)
-          Container(
-            padding: const EdgeInsets.all(16),
-            decoration: _card(),
-            child: Text(
-              context.l10n.meNoProjects,
-              style: GoogleFonts.inter(
-                fontSize: 13,
-                color: AppTheme.subheadingColor,
-              ),
-            ),
-          )
-        else
-          for (final project in projects) ...[
-            _ProjectRow(project: project, onTap: () => onOpen(project)),
-            const SizedBox(height: 8),
-          ],
-      ],
-    );
-  }
-}
-
-class _ProjectRow extends StatelessWidget {
-  const _ProjectRow({required this.project, required this.onTap});
-
-  final MyProject project;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(12),
-      child: Container(
-        padding: const EdgeInsets.all(14),
-        decoration: _card(),
-        child: Row(
-          children: [
-            Expanded(
-              child: Text(
-                project.unitName,
-                style: GoogleFonts.inter(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w700,
-                  color: AppTheme.textColor,
-                ),
-              ),
-            ),
-            Text(
-              project.labelOf(context.l10n),
-              style: GoogleFonts.inter(
-                fontSize: 11,
-                fontWeight: FontWeight.w700,
-                color: AppTheme.subheadingColor,
-              ),
-            ),
-            const Icon(Icons.chevron_right_rounded, size: 18),
-          ],
-        ),
       ),
     );
   }

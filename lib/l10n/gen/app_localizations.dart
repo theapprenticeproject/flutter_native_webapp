@@ -1903,6 +1903,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Start Activity'**
   String get meStartActivity;
+
+  /// No description provided for @meProjectsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a project to see your work and feedback 👆'**
+  String get meProjectsHint;
+
+  /// No description provided for @meYouAreHere.
+  ///
+  /// In en, this message translates to:
+  /// **'You are here'**
+  String get meYouAreHere;
+
+  /// No description provided for @meUpNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Up next'**
+  String get meUpNext;
+
+  /// No description provided for @meUnlocksSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlocks soon'**
+  String get meUnlocksSoon;
+
+  /// No description provided for @meProjectN.
+  ///
+  /// In en, this message translates to:
+  /// **'Project {n}'**
+  String meProjectN(int n);
+
+  /// No description provided for @projectSeeMyWork.
+  ///
+  /// In en, this message translates to:
+  /// **'See my work'**
+  String get projectSeeMyWork;
+
+  /// No description provided for @projectShared.
+  ///
+  /// In en, this message translates to:
+  /// **'Shared {date}'**
+  String projectShared(String date);
+
+  /// No description provided for @projectThinks.
+  ///
+  /// In en, this message translates to:
+  /// **'TAP Buddy thinks'**
+  String get projectThinks;
+
+  /// No description provided for @projectThinksWaiting.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'m still looking at your work. I\'ll share what I think very soon!'**
+  String get projectThinksWaiting;
+
+  /// No description provided for @projectWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'You will get points only if you submit your work as photo/video 📷\nI know you will do better next time 💪'**
+  String get projectWarning;
+
+  /// No description provided for @projectSendAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Send again'**
+  String get projectSendAgain;
 }
 
 class _AppLocalizationsDelegate

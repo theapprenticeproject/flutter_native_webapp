@@ -101,24 +101,29 @@ void main() {
     expect(find.textContaining('Being on time'), findsOneWidget);
   });
 
-  testWidgets('with projects: the count and each state', (tester) async {
-    await _pump(
-      tester,
-      projects: [
-        _p('Glowing LED Card', FeedbackStage.valid),
-        _p('Paper Circuit', FeedbackStage.waiting),
-        _p('Robot Hand', FeedbackStage.notValid),
-        _p('Solar Car', FeedbackStage.notSent),
-      ],
-    );
-    expect(find.text('My projects this year'), findsOneWidget);
-    expect(find.text('1 / 4 done'), findsOneWidget);
-    expect(find.text('Glowing LED Card'), findsOneWidget);
-    expect(find.text('Feedback given'), findsOneWidget);
-    expect(find.text('Feedback pending'), findsOneWidget);
-    expect(find.text('Wrong format'), findsOneWidget);
-    expect(find.text('Not started'), findsOneWidget);
-  });
+  testWidgets(
+    'with projects: the count, the one done and the one in progress',
+    (tester) async {
+      await _pump(
+        tester,
+        projects: [
+          _p('Glowing LED Card', FeedbackStage.valid),
+          _p('Paper Circuit', FeedbackStage.waiting),
+          _p('Robot Hand', FeedbackStage.notSent),
+          _p('Solar Car', FeedbackStage.notSent),
+        ],
+      );
+      expect(find.text('My projects this year'), findsOneWidget);
+      expect(find.text('1 / 4 done'), findsOneWidget);
+      expect(find.text('Glowing LED Card'), findsOneWidget);
+      expect(find.text('Feedback given'), findsOneWidget);
+      expect(find.text('Paper Circuit'), findsOneWidget);
+      expect(find.text('Feedback pending'), findsOneWidget);
+      // The next ones are locked: no names yet (design M-ME-01).
+      expect(find.text('Robot Hand'), findsNothing);
+      expect(find.text('Project 3'), findsOneWidget);
+    },
+  );
 
   testWidgets('without projects: a friendly empty state', (tester) async {
     await _pump(tester);

@@ -1064,4 +1064,43 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get meStartActivity => 'Start Activity';
+
+  @override
+  String get meProjectsHint => 'Tap a project to see your work and feedback 👆';
+
+  @override
+  String get meYouAreHere => 'You are here';
+
+  @override
+  String get meUpNext => 'Up next';
+
+  @override
+  String get meUnlocksSoon => 'Unlocks soon';
+
+  @override
+  String meProjectN(int n) {
+    return 'Project $n';
+  }
+
+  @override
+  String get projectSeeMyWork => 'See my work';
+
+  @override
+  String projectShared(String date) {
+    return 'Shared $date';
+  }
+
+  @override
+  String get projectThinks => 'TAP Buddy thinks';
+
+  @override
+  String get projectThinksWaiting =>
+      'I\'m still looking at your work. I\'ll share what I think very soon!';
+
+  @override
+  String get projectWarning =>
+      'You will get points only if you submit your work as photo/video 📷\nI know you will do better next time 💪';
+
+  @override
+  String get projectSendAgain => 'Send again';
 }

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../l10n/l10n.dart';
-import '../project_text.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/router/app_routes.dart';
 import '../../../core/theme/app_theme.dart';
@@ -19,6 +17,8 @@ import '../../../shared/widgets/load_error_view.dart';
 import '../../../shared/widgets/loading_view.dart';
 import '../../../shared/widgets/profile_switcher.dart';
 import 'me_view.dart';
+import 'project_page.dart';
+import 'project_sheet.dart';
 
 /// The Me tab (R-7). It replaces the old Passport and Profile screens.
 class MeScreen extends ConsumerWidget {
@@ -60,43 +60,28 @@ class MeScreen extends ConsumerWidget {
     );
   }
 
+  /// The sheet of a project (design M-ME-01). "See my work" opens its page.
   void _showProject(BuildContext context, MyProject project) {
     showModalBottomSheet<void>(
       context: context,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
-      builder: (_) => SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(22, 22, 22, 26),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                project.unitName,
-                style: GoogleFonts.inter(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w800,
-                ),
+      builder: (sheet) => ProjectSheet(
+        project: project,
+        onClose: () => Navigator.of(sheet).pop(),
+        onSeeWork: () {
+          Navigator.of(sheet).pop();
+          Navigator.of(context).push(
+            MaterialPageRoute<void>(
+              builder: (_) => ProjectPage(
+                project: project,
+                // Send again starts from the activity card on Home.
+                onSendAgain: () => context.go(AppRoutes.home),
               ),
-              const SizedBox(height: 4),
-              Text(
-                project.labelOf(context.l10n),
-                style: GoogleFonts.inter(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w700,
-                  color: AppTheme.subheadingColor,
-                ),
-              ),
-              const SizedBox(height: 14),
-              Text(
-                project.detailOf(context.l10n),
-                style: GoogleFonts.inter(fontSize: 14, height: 1.4),
-              ),
-            ],
-          ),
-        ),
+            ),
+          );
+        },
       ),
     );
   }

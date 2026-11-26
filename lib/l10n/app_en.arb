@@ -667,5 +667,30 @@
   },
   "meFirstActivity": "Finish your first activity to start earning points",
   "mePointsHelpTitle": "What are points?",
-  "meStartActivity": "Start Activity"
+  "meStartActivity": "Start Activity",
+  "meProjectsHint": "Tap a project to see your work and feedback 👆",
+  "meYouAreHere": "You are here",
+  "meUpNext": "Up next",
+  "meUnlocksSoon": "Unlocks soon",
+  "meProjectN": "Project {n}",
+  "@meProjectN": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "projectSeeMyWork": "See my work",
+  "projectShared": "Shared {date}",
+  "@projectShared": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "projectThinks": "TAP Buddy thinks",
+  "projectThinksWaiting": "I'm still looking at your work. I'll share what I think very soon!",
+  "projectWarning": "You will get points only if you submit your work as photo/video 📷\nI know you will do better next time 💪",
+  "projectSendAgain": "Send again"
 }
