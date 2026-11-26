@@ -177,6 +177,32 @@ void main() {
     }
   });
 
+  // Until the designer sends art for the other levels, every level shows the
+  // Bronze pictures.
+  testWidgets('a Silver student also sees the TAP Buddy pictures', (
+    tester,
+  ) async {
+    await _pump(
+      tester,
+      points: 1200,
+      level: const LevelProgress(
+        id: 'silver',
+        name: 'Silver Buddy',
+        nextName: 'Gold Buddy',
+        label: '1200 / 5000',
+        fraction: 0.05,
+        points: 1200,
+        nextMin: 5000,
+      ),
+    );
+    final assets = tester
+        .widgetList<Image>(find.byType(Image))
+        .map((i) => (i.image as AssetImage).assetName)
+        .toList();
+    expect(assets, contains('assets/profile-screen/bronze-buddy.png'));
+    expect(assets, contains('assets/profile-screen/bronze-thumb.png'));
+  });
+
   // Design M-ME-01 and M-ME-02.
   group('the design', () {
     testWidgets('the welcome line and the settings button', (tester) async {

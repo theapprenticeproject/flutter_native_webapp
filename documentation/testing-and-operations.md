@@ -33,6 +33,8 @@ code=$(curl -s -X POST https://tapapp-test-worker.tapific.workers.dev/test/mint-
 echo "http://localhost:8080/#/l/$code"
 ```
 
+**Serve the build with `scripts/serve_web.py`, not with `python3 -m http.server`.** The WhatsApp link is `https://<app-host>/<code>`, a path with no file behind it. Firebase hosting sends such a path to `index.html` (the rewrite in `firebase.json`). The plain Python server answers 404. `python3 scripts/serve_web.py` (port 8080, folder `build/web`) does the same rewrite, so `http://localhost:8080/<code>` opens like the real link. The Worker must allow the origin `http://localhost:8080` (CORS).
+
 ### Testing the photo upload against the test Worker
 
 The test Worker's upload address is fake, so a real upload always fails there. Build with `SKIP_UPLOAD=1` to skip only the file upload. The slot request and `submit_artwork` still run for real:

@@ -301,7 +301,9 @@ class _ProfileCard extends StatelessWidget {
                 color: AppTheme.buttonColor,
               ),
             ),
-            if (level!.id == 'bronze') ...[
+            // shortcut: every level shows the Bronze pictures until the designer
+            // sends the art for Silver, Gold and Platinum. Then pick by level.id.
+            ...[
               const SizedBox(height: 8),
               Image.asset(
                 'assets/profile-screen/bronze-buddy.png',
@@ -417,23 +419,16 @@ class _LevelCard extends StatelessWidget {
         children: [
           Row(
             children: [
-              if (level.id == 'bronze')
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8),
-                  child: Image.asset(
-                    'assets/profile-screen/bronze-thumb.png',
-                    width: 44,
-                    height: 44,
-                    fit: BoxFit.cover,
-                    errorBuilder: (_, _, _) => const SizedBox(width: 44),
-                  ),
-                )
-              else
-                const Icon(
-                  Icons.workspace_premium_rounded,
-                  size: 36,
-                  color: Color(0xFFC17A43),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(8),
+                child: Image.asset(
+                  'assets/profile-screen/bronze-thumb.png',
+                  width: 44,
+                  height: 44,
+                  fit: BoxFit.cover,
+                  errorBuilder: (_, _, _) => const SizedBox(width: 44),
                 ),
+              ),
               const SizedBox(width: 12),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
