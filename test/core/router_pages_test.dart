@@ -81,4 +81,20 @@ void main() {
       expect(tester.takeException(), isNull);
     });
   }
+
+  // The text of every screen can be selected and copied. Flutter draws text on a
+  // canvas, so the browser cannot select it by itself.
+  testWidgets('a screen is inside a SelectionArea, so its text can be copied', (
+    tester,
+  ) async {
+    await tester.pumpWidget(MaterialApp.router(routerConfig: _router()));
+    await tester.pumpAndSettle();
+    expect(
+      find.ancestor(
+        of: find.text('PAGE A'),
+        matching: find.byType(SelectionArea),
+      ),
+      findsOneWidget,
+    );
+  });
 }

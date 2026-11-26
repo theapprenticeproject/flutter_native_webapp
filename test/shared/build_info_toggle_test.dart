@@ -33,6 +33,23 @@ void main() {
     expect(find.textContaining('Build '), findsNothing);
   });
 
+  // Every screen is inside a SelectionArea (text can be copied). A long press
+  // on text starts a selection there, so the logo must keep its own long press.
+  testWidgets('it still works inside a SelectionArea', (tester) async {
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: Scaffold(
+          body: SelectionArea(
+            child: Center(child: BuildInfoToggle(child: Text('TAP'))),
+          ),
+        ),
+      ),
+    );
+    await tester.longPress(find.text('TAP'));
+    await tester.pump();
+    expect(find.text(BuildInfo.label), findsOneWidget);
+  });
+
   testWidgets('the open-link page has it (a student with no sign-in)', (
     tester,
   ) async {

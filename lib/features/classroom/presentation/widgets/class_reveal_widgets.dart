@@ -231,17 +231,12 @@ class ClassNextActivityInlineCard extends ConsumerWidget {
               color: AppTheme.classroomMessageSurface,
               borderRadius: BorderRadius.circular(12),
             ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  context.l10n.classWatchAnother,
-                  style: GoogleFonts.inter(
-                    fontSize: 13,
-                    color: AppTheme.subheadingColor,
-                  ),
-                ),
-              ],
+            child: Text(
+              context.l10n.classWatchAnother,
+              style: GoogleFonts.inter(
+                fontSize: 13,
+                color: AppTheme.subheadingColor,
+              ),
             ),
           ),
           const SizedBox(height: 14),

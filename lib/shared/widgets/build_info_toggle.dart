@@ -26,7 +26,8 @@ class _BuildInfoToggleState extends State<BuildInfoToggle> {
         GestureDetector(
           behavior: HitTestBehavior.opaque,
           onLongPress: () => setState(() => _shown = !_shown),
-          child: widget.child,
+          // The logo is not selectable text: the long press must toggle the line.
+          child: SelectionContainer.disabled(child: widget.child),
         ),
         if (_shown)
           Padding(

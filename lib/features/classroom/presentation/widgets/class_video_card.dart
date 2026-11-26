@@ -5,6 +5,7 @@ import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
+import 'class_video_prompt.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../models/class_chat_message_model.dart';
 import '../../providers/class_chat_controller.dart';
@@ -73,27 +74,7 @@ class _ClassVideoCardState extends State<ClassVideoCard> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
-          constraints: const BoxConstraints(maxWidth: 330),
-          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-          decoration: BoxDecoration(
-            color: AppTheme.classroomMessageSurface,
-            borderRadius: BorderRadius.circular(12),
-          ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(
-                context.l10n.classWatchVideo,
-                style: GoogleFonts.inter(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500,
-                  color: AppTheme.textColor,
-                ),
-              ),
-            ],
-          ),
-        ),
+        ClassVideoPrompt(text: context.l10n.classWatchVideo),
         const SizedBox(height: 12),
         Container(
           width: double.infinity,

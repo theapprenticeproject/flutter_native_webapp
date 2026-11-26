@@ -26,11 +26,14 @@ Future<void> showAskTapSheet(
   shape: const RoundedRectangleBorder(
     borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
   ),
-  builder: (_) => AskTapSheet(
-    studentName: studentName,
-    screen: screen,
-    extra: extra,
-    fromActivity: fromActivity,
+  // The answers can be selected and copied.
+  builder: (_) => SelectionArea(
+    child: AskTapSheet(
+      studentName: studentName,
+      screen: screen,
+      extra: extra,
+      fromActivity: fromActivity,
+    ),
   ),
 );
 

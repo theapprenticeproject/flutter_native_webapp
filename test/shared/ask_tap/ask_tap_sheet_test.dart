@@ -88,4 +88,38 @@ void main() {
     await tester.pump();
     expect(find.text('Back to my activity'), findsNothing);
   });
+
+  testWidgets('the answers can be selected and copied', (tester) async {
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [
+          tapBuddyRepositoryProvider.overrideWithValue(_FakeRepo()),
+          studentLanguageProvider.overrideWithValue('en'),
+        ],
+        child: MaterialApp(
+          home: Scaffold(
+            body: Builder(
+              builder: (context) => TextButton(
+                onPressed: () => showAskTapSheet(
+                  context,
+                  studentName: 'Aarav',
+                  screen: 'home',
+                ),
+                child: const Text('open'),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+    await tester.tap(find.text('open'));
+    await tester.pumpAndSettle();
+    expect(
+      find.ancestor(
+        of: find.text('Hey there Aarav!\nHow may I help you?'),
+        matching: find.byType(SelectionArea),
+      ),
+      findsOneWidget,
+    );
+  });
 }

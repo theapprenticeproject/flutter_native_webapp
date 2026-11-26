@@ -1,4 +1,4 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class AppRoutes {
@@ -25,6 +25,13 @@ class AppRoutes {
   /// the next page as the same page with new content, and a dialog or sheet
   /// opened above the old screen stays on top of the new one (the phone Back
   /// button left "Submission Help" over Home, and then a gray page).
+  ///
+  /// Every screen sits in a [SelectionArea]. Flutter draws text on a canvas, so
+  /// the browser cannot select it. The area lets a student, a parent or a
+  /// tester press and hold to select text and copy it, across several widgets.
   static Page<void> page(GoRouterState state, Widget child) =>
-      NoTransitionPage<void>(key: state.pageKey, child: child);
+      NoTransitionPage<void>(
+        key: state.pageKey,
+        child: SelectionArea(child: child),
+      );
 }
