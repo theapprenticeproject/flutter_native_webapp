@@ -337,7 +337,7 @@
       }
     }
   },
-  "classCorrect": "Correct!",
+  "classCorrect": "Correct Answer!",
   "classNotQuite": "Not quite",
   "classCorrectAnswerIs": "Correct answer: {answer}",
   "@classCorrectAnswerIs": {
@@ -876,5 +876,6 @@
   "classChooseAction": "Choose an action",
   "classCameraOption": "Camera",
   "classVideoOption": "Video",
-  "classPhotosOption": "Photos"
+  "classPhotosOption": "Photos",
+  "chatIMadeThis": "I made this"
 }

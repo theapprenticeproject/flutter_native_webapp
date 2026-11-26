@@ -1223,7 +1223,7 @@ abstract class AppLocalizations {
   /// No description provided for @classCorrect.
   ///
   /// In en, this message translates to:
-  /// **'Correct!'**
+  /// **'Correct Answer!'**
   String get classCorrect;
 
   /// No description provided for @classNotQuite.
@@ -2161,6 +2161,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Photos'**
   String get classPhotosOption;
+
+  /// No description provided for @chatIMadeThis.
+  ///
+  /// In en, this message translates to:
+  /// **'I made this'**
+  String get chatIMadeThis;
 }
 
 class _AppLocalizationsDelegate

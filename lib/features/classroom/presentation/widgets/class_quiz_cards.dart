@@ -184,13 +184,14 @@ class ClassQuizFeedbackCard extends StatelessWidget {
         children: [
           Row(
             children: [
-              Icon(
-                isCorrect ? Icons.check_circle_rounded : Icons.info_rounded,
-                size: 18,
-                color: isCorrect
-                    ? AppTheme.successGreen
-                    : const Color(0xFFE29A22),
-              ),
+              if (isCorrect)
+                const Text('🎉', style: TextStyle(fontSize: 18))
+              else
+                const Icon(
+                  Icons.info_rounded,
+                  size: 18,
+                  color: Color(0xFFE29A22),
+                ),
               const SizedBox(width: 6),
               Text(
                 isCorrect

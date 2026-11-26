@@ -108,4 +108,19 @@ void main() {
     }
     expect(found, isEmpty, reason: 'use AppPrimaryButton: $found');
   });
+
+  // Figma token radius-lg is 20 (measured on the Home card button, M-F2-01).
+  testWidgets('the corners are 20 round, as in Figma', (tester) async {
+    await tester.pumpWidget(
+      _wrap(AppPrimaryButton(label: 'Submit', onPressed: () {})),
+    );
+    final shape =
+        tester
+                .widget<ElevatedButton>(find.byType(ElevatedButton))
+                .style!
+                .shape!
+                .resolve({})
+            as RoundedRectangleBorder;
+    expect(shape.borderRadius, BorderRadius.circular(20));
+  });
 }

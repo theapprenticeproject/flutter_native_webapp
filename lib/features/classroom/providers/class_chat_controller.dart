@@ -1313,6 +1313,21 @@ class ClassChatController extends ChangeNotifier {
       _messages.removeWhere(
         (m) => m.contentType == ClassChatContentType.submission,
       );
+      // Design M-C19: "I made this" comes before the photo once the work is
+      // sent (while it is being sent, only the photo shows, M-S-04).
+      final photo = _messages.indexWhere((m) => m.data['isPreview'] == true);
+      if (photo != -1) {
+        _messages.insert(
+          photo,
+          ClassChatMessage(
+            id: _newId(),
+            stepId: 'AF-007',
+            sender: ClassChatSender.user,
+            contentType: ClassChatContentType.submissionAnswerEcho,
+            text: l.chatIMadeThis,
+          ),
+        );
+      }
       if (_accumulatedSubmissionPoints > 0) {
         _push(
           ClassChatMessage(
@@ -1327,14 +1342,19 @@ class ClassChatController extends ChangeNotifier {
           ),
         );
       }
+      // Design M-C19: TAP Buddy's words are a bubble under the card, then Continue.
+      _say(
+        _sentBefore
+            ? l.chatAlreadySent
+            : l.chatSubmissionProud(firstName(studentName)),
+      );
       _pushCheckpoint(
         stepId: 'SUBMISSION-PROUD',
         image: null,
-        text: _sentBefore
-            ? l.chatAlreadySent
-            : l.chatSubmissionProud(firstName(studentName)),
+        text: '',
         buttonLabel: l.buttonContinue,
         action: 'submission_continue',
+        extra: {'bare': true},
       );
       _submissionRewardShown = true;
       notifyListeners();

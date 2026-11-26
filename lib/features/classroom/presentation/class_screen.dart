@@ -202,6 +202,13 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
     if (widget.controller.messages.length != _lastMessageCount) {
       _lastMessageCount = widget.controller.messages.length;
       WidgetsBinding.instance.addPostFrameCallback((_) => _scrollToBottom());
+      // A picture decodes and a card grows a little after the message appears.
+      // Scroll again, so the last card does not stay under the 2/4 badge (QA 14).
+      for (final ms in const [250, 700]) {
+        Future<void>.delayed(Duration(milliseconds: ms), () {
+          if (mounted) _scrollToBottom();
+        });
+      }
     }
   }
 

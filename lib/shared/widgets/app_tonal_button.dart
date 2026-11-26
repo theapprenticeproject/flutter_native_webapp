@@ -29,7 +29,7 @@ class AppTonalButton extends StatelessWidget {
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
         padding: const EdgeInsets.symmetric(horizontal: 18),
         elevation: 0,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,

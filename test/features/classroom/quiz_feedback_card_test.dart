@@ -26,7 +26,10 @@ Future<void> _pump(WidgetTester tester, Map<String, dynamic> data) =>
 void main() {
   testWidgets('a right answer shows the correct answer too', (tester) async {
     await _pump(tester, {'isCorrect': true, 'correctOptionText': 'Paris'});
-    expect(find.text('Correct!'), findsOneWidget);
+    // Design M-C21: a party emoji and "Correct Answer!" (the points of each
+    // answer are not known: the quiz is sent once, at the end).
+    expect(find.text('Correct Answer!'), findsOneWidget);
+    expect(find.text('🎉'), findsOneWidget);
     expect(find.text('Correct answer: Paris'), findsOneWidget);
   });
 

@@ -638,7 +638,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get classCorrect => 'Correct!';
+  String get classCorrect => 'Correct Answer!';
 
   @override
   String get classNotQuite => 'Not quite';
@@ -1221,4 +1221,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get classPhotosOption => 'Photos';
+
+  @override
+  String get chatIMadeThis => 'I made this';
 }

@@ -20,7 +20,7 @@ class AppPrimaryButton extends StatelessWidget {
 
   /// The call-to-action height of the Home card in Figma ("Primary action").
   static const double tallHeight = 56;
-  static const double radius = 14;
+  static const double radius = 20; // Figma radius-lg
 
   final String label;
   final VoidCallback? onPressed;
