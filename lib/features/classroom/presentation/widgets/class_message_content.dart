@@ -1,8 +1,10 @@
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../../../core/router/app_routes.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../models/class_chat_message_model.dart';
 import '../../providers/class_chat_controller.dart';
@@ -159,7 +161,11 @@ class ClassCheckpointCard extends StatelessWidget {
         },
         text: message.text ?? '',
         buttonLabel: buttonLabel,
-        onPressed: () => controller.continueCheckpoint(action),
+        // Watch moves the address to the video, so the phone Back button
+        // returns to this screen first. The screen then opens the video.
+        onPressed: action == 'video'
+            ? () => context.go(AppRoutes.classroomVideo)
+            : () => controller.continueCheckpoint(action),
         fillAvailableHeight: fillAvailableHeight,
         secondaryLabel: message.data['secondaryLabel'] as String?,
         onSecondary: () => controller.continueCheckpoint(

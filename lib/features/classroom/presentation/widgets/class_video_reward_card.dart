@@ -67,7 +67,16 @@ class ClassVideoRewardCard extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 14),
-            AppPrimaryButton(label: buttonLabel, onPressed: onContinue),
+            // The Figma button is 343 wide (M-C05): it does not grow on a wide window.
+            Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 343),
+                child: AppPrimaryButton(
+                  label: buttonLabel,
+                  onPressed: onContinue,
+                ),
+              ),
+            ),
           ],
         ),
       ),

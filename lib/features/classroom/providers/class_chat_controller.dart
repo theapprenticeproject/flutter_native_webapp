@@ -1105,12 +1105,31 @@ class ClassChatController extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// The video is open: the student tapped Watch (the address is now
+  /// `/classroom?step=video`).
+  void openVideo() {
+    _messages.clear();
+    final step = _flow.step('AF-004');
+    if (step != null) _emitVideoStep(step);
+    notifyListeners();
+  }
+
+  /// Back from the video, before it was marked as watched: the Watch start
+  /// screen again. Nothing was saved, so nothing is undone.
+  void backToStart() {
+    if (_videoWatchedThisUnit) return;
+    _messages.clear();
+    _awaitingInput = false;
+    _showVideoStartCheckpoint();
+  }
+
+  /// "I watched it" was tapped.
+  bool get videoWatched => _videoWatchedThisUnit;
+
   void continueCheckpoint(String action) {
     switch (action) {
       case 'video':
-        _messages.clear();
-        final step = _flow.step('AF-004');
-        if (step != null) _emitVideoStep(step);
+        openVideo();
         return;
       case 'submission':
         _messages.clear();

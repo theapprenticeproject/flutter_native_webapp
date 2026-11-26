@@ -12,6 +12,10 @@ class AppRoutes {
   static const String welcome = '/welcome';
   static const String home = '/home';
   static const String classroom = '/classroom';
+
+  /// The same screen with the video open. It gives the phone Back button a step
+  /// to go back to: the Watch start screen.
+  static const String classroomVideo = '/classroom?step=video';
   static const String me = '/me';
   static const String gallery = '/gallery';
   static const String profile = '/profile';

@@ -58,6 +58,7 @@ GoRouter _router() => GoRouter(
 );
 
 void main() {
+  activityAddressTests();
   for (final (open, shown) in [
     ('open dialog', 'HELP'),
     ('open sheet', 'SHEET'),
@@ -96,5 +97,62 @@ void main() {
       ),
       findsOneWidget,
     );
+  });
+}
+
+/// The activity keeps ONE screen. Tapping "Watch" only changes the address to
+/// `/classroom?step=video`, so the phone Back button has a step to go back to.
+/// For that the screen must stay the same screen (the same State) when only the
+/// query changes: the chat controller lives in it.
+class _Probe extends StatefulWidget {
+  const _Probe({required this.videoOpen});
+  final bool videoOpen;
+  static int created = 0;
+
+  @override
+  State<_Probe> createState() => _ProbeState();
+}
+
+class _ProbeState extends State<_Probe> {
+  @override
+  void initState() {
+    super.initState();
+    _Probe.created++;
+  }
+
+  @override
+  Widget build(BuildContext context) =>
+      Text(widget.videoOpen ? 'VIDEO OPEN' : 'START');
+}
+
+void activityAddressTests() {
+  testWidgets('the query changes, the screen stays the same screen', (
+    tester,
+  ) async {
+    _Probe.created = 0;
+    final router = GoRouter(
+      initialLocation: '/classroom',
+      routes: [
+        GoRoute(
+          path: '/classroom',
+          pageBuilder: (context, state) => AppRoutes.page(
+            state,
+            _Probe(videoOpen: state.uri.queryParameters['step'] == 'video'),
+          ),
+        ),
+      ],
+    );
+    await tester.pumpWidget(MaterialApp.router(routerConfig: router));
+    await tester.pumpAndSettle();
+    expect(find.text('START'), findsOneWidget);
+
+    router.go(AppRoutes.classroomVideo); // "Watch" tapped
+    await tester.pumpAndSettle();
+    expect(find.text('VIDEO OPEN'), findsOneWidget);
+
+    router.go(AppRoutes.classroom); // what the phone Back button does
+    await tester.pumpAndSettle();
+    expect(find.text('START'), findsOneWidget);
+    expect(_Probe.created, 1, reason: 'a new screen would lose the controller');
   });
 }

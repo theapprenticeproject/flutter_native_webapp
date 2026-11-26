@@ -157,8 +157,10 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: AppRoutes.classroom,
-        pageBuilder: (context, state) =>
-            AppRoutes.page(state, const ClassScreen()),
+        pageBuilder: (context, state) => AppRoutes.page(
+          state,
+          ClassScreen(videoOpen: state.uri.queryParameters['step'] == 'video'),
+        ),
       ),
       GoRoute(
         path: AppRoutes.gallery,

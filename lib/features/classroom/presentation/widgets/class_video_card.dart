@@ -118,11 +118,17 @@ class _ClassVideoCardState extends State<ClassVideoCard> {
           ),
         ),
         const SizedBox(height: 12),
-        AppPrimaryButton(
-          label: watched
-              ? context.l10n.classWatched
-              : context.l10n.classIWatched(points),
-          onPressed: watched ? null : widget.controller.markVideoWatched,
+        // The Figma button is 343 wide: it does not grow on a wide window.
+        Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 343),
+            child: AppPrimaryButton(
+              label: watched
+                  ? context.l10n.classWatched
+                  : context.l10n.classIWatched(points),
+              onPressed: watched ? null : widget.controller.markVideoWatched,
+            ),
+          ),
         ),
       ],
     );

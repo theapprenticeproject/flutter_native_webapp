@@ -23,10 +23,14 @@ import 'widgets/class_loading_skeleton.dart';
 import 'widgets/class_message_content.dart';
 import 'widgets/class_reveal_widgets.dart';
 import '../../../domain/learning_progress/picture_pieces.dart';
+import '../../../domain/learning_progress/watch_navigation.dart';
 import 'widgets/picture_badge.dart';
 
 class ClassScreen extends ConsumerStatefulWidget {
-  const ClassScreen({super.key});
+  const ClassScreen({super.key, this.videoOpen = false});
+
+  /// The address says the video is open (`/classroom?step=video`).
+  final bool videoOpen;
 
   @override
   ConsumerState<ClassScreen> createState() => _ClassScreenState();
@@ -92,6 +96,7 @@ class _ClassScreenState extends ConsumerState<ClassScreen> {
         data: (controller) => _ClassChatView(
           controller: controller,
           onStartNextActivity: _startNextActivity,
+          videoOpen: widget.videoOpen,
         ),
       ),
     );
@@ -106,10 +111,12 @@ class _ClassChatView extends ConsumerStatefulWidget {
   const _ClassChatView({
     required this.controller,
     required this.onStartNextActivity,
+    required this.videoOpen,
   });
 
   final ClassChatController controller;
   final VoidCallback onStartNextActivity;
+  final bool videoOpen;
 
   @override
   ConsumerState<_ClassChatView> createState() => _ClassChatViewState();
@@ -118,16 +125,43 @@ class _ClassChatView extends ConsumerStatefulWidget {
 class _ClassChatViewState extends ConsumerState<_ClassChatView> {
   final ScrollController _scrollController = ScrollController();
   int _lastMessageCount = 0;
+  bool _videoUrlCleared = false;
 
   @override
   void initState() {
     super.initState();
     widget.controller.addListener(_onControllerChanged);
+    // A new page load at the video address (a reload, a pasted link) starts at
+    // the Watch start screen, so the address goes back to match.
+    if (widget.videoOpen) _clearVideoUrl();
+  }
+
+  /// Replaces `/classroom?step=video` by `/classroom` in the history, so Back
+  /// leaves the activity instead of stepping to a screen that no longer exists.
+  void _clearVideoUrl() {
+    if (_videoUrlCleared) return;
+    _videoUrlCleared = true;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) context.replace(AppRoutes.classroom);
+    });
   }
 
   @override
   void didUpdateWidget(covariant _ClassChatView oldWidget) {
     super.didUpdateWidget(oldWidget);
+    switch (watchNavFor(
+      wasOpen: oldWidget.videoOpen,
+      isOpen: widget.videoOpen,
+      watched: widget.controller.videoWatched,
+    )) {
+      case WatchNav.open:
+        _videoUrlCleared = false;
+        widget.controller.openVideo();
+      case WatchNav.backToStart:
+        widget.controller.backToStart();
+      case WatchNav.none:
+        break;
+    }
     if (oldWidget.controller != widget.controller) {
       oldWidget.controller.removeListener(_onControllerChanged);
       widget.controller.addListener(_onControllerChanged);
@@ -149,6 +183,9 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
   );
 
   void _onControllerChanged() {
+    // The student tapped "I watched it": the video step is saved and cannot be
+    // undone, so the video address is replaced. Back then leaves the activity.
+    if (widget.videoOpen && widget.controller.videoWatched) _clearVideoUrl();
     final narrow = MediaQuery.sizeOf(context).width < 640;
     final due = widget.controller.takeRevealSheetDue();
     if (shouldShowRevealSheet(due: due, narrow: narrow)) {

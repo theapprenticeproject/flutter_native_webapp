@@ -57,6 +57,19 @@ void main() {
     expect(taps, 1);
   });
 
+  // QA: "the Continue button is excessively large compared to Figma". In Figma
+  // the button of the Watch screens is 343 wide (M-C05, "Primary CTA"). On a wide
+  // window it grew to 430.
+  testWidgets('the button is at most 343 wide, also on a wide window', (
+    tester,
+  ) async {
+    await _pump(tester, size: const Size(900, 900));
+    expect(
+      tester.getSize(find.byType(ElevatedButton)).width,
+      lessThanOrEqualTo(343),
+    );
+  });
+
   testWidgets('the whole card is under 600 high on a 412 wide phone', (
     tester,
   ) async {
