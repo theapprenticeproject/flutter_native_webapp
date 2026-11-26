@@ -2,6 +2,7 @@
 """Translation sheet for the app text (lib/l10n/*.arb). Standard library only.
 
   python3 scripts/arb_sheet.py export texts.xlsx   # app_en.arb (+ saved translations) -> sheet
+  python3 scripts/arb_sheet.py export texts.xlsx --since old.xlsx   # also mark NEW and CHANGED texts
   python3 scripts/arb_sheet.py import texts.xlsx   # sheet -> app_hi/kn/mr/pa.arb
   python3 scripts/arb_sheet.py selftest
 
@@ -22,7 +23,7 @@ WHERE = {'home': 'Home page', 'me': 'Me page', 'project': 'Me page (projects)',
          'toast': 'Activity (quiz answer pop-up)', 'settings': 'Settings', 'profile': 'Profile picker',
          'profiles': 'Profile picker', 'welcome': 'Welcome', 'splash': 'Start screen',
          'error': 'Error messages', 'link': 'Opening the link', 'open': 'Opening the link', 'buttons': 'Button', 'toast': 'Activity (quiz answer pop-up)',
-         'nav': 'Bottom bar', 'switch': 'Me page and Settings', 'button': 'Button', 'header': 'Page header', 'loading': 'Loading'}
+         'nav': 'Bottom bar', 'edit': 'Edit profile', 'ask': 'Ask TAP chat', 'switch': 'Me page and Settings', 'button': 'Button', 'header': 'Page header', 'loading': 'Loading'}
 README = [
     'How to fill this sheet',
     'Write the translation in your language column. Leave a cell empty to keep the English text.',
@@ -31,6 +32,7 @@ README = [
     'Buttons are short on purpose. Keep the translation short too.',
     'Some texts change order in other languages. Move the {words} to where they fit your sentence.',
     'Do not change the key and English columns. Save the file as .xlsx.',
+    'Notes: NEW = a text added since the last sheet. CHANGED = the English changed, please translate again. NOT IN THE APP YET = a text from the designs that the app does not show yet; translate it now so it is ready.',
 ]
 
 def load(name):
@@ -88,6 +90,22 @@ def write_xlsx(path, texts, readme):
     with zipfile.ZipFile(path, 'w', zipfile.ZIP_DEFLATED) as z:
         for n, c in files.items(): z.writestr(n, c)
 
+def _texts_sheet(z, names):
+    """The file of the sheet named "Texts". A translator may save the file with
+    the sheets in another order, so the first sheet is not always the texts."""
+    R = '{http://schemas.openxmlformats.org/officeDocument/2006/relationships}'
+    try:
+        wb = ET.fromstring(z.read('xl/workbook.xml'))
+        rels = ET.fromstring(z.read('xl/_rels/workbook.xml.rels'))
+        targets = {r.get('Id'): r.get('Target') for r in rels}
+        for s in wb.iter(M + 'sheet'):
+            if s.get('name') == 'Texts':
+                t = targets[s.get(R + 'id')].lstrip('/')
+                return t if t.startswith('xl/') else 'xl/' + t
+    except (KeyError, ET.ParseError):
+        pass
+    return 'xl/worksheets/sheet1.xml'
+
 def read_xlsx(path):
     """Rows of the first sheet as lists of strings (inline or shared strings)."""
     with zipfile.ZipFile(path) as z:
@@ -97,7 +115,7 @@ def read_xlsx(path):
             root = ET.fromstring(z.read('xl/sharedStrings.xml'))
             for si in root.iter(M + 'si'):
                 shared.append(''.join(t.text or '' for t in si.iter(M + 't')))
-        sheet = ET.fromstring(z.read('xl/worksheets/sheet1.xml'))
+        sheet = ET.fromstring(z.read(_texts_sheet(z, names)))
     rows = []
     for row in sheet.iter(M + 'row'):
         cells = {}
@@ -116,15 +134,27 @@ def read_xlsx(path):
     return rows
 
 # ---- commands --------------------------------------------------------------
-def export(path):
+def texts_of(path):
+    """key -> English, from a sheet exported earlier."""
+    rows = read_xlsx(path)
+    return {r[0]: r[2] for r in rows[1:] if len(r) > 2 and r[0]}
+
+def export(path, since=None):
     en = load('en')
     keys = [k for k in en if not k.startswith('@')]
     saved = {code: load(code) for code, _ in LANGS}
+    old = texts_of(since) if since else None
     rows = [HEAD]
     for k in keys:
-        rows.append([k, where(k), en[k], note(k, en[k], en)] + [saved[c].get(k, '') for c, _ in LANGS])
+        n = note(k, en[k], en)
+        if old is not None:
+            if k not in old: n = ('NEW. ' + n).strip()
+            elif old[k] != en[k]: n = ('CHANGED. ' + n).strip()
+        rows.append([k, where(k), en[k], n] + [saved[c].get(k, '') for c, _ in LANGS])
     write_xlsx(path, rows, README)
     print(f'{len(keys)} texts written to {path}')
+    if old is not None:
+        print('new:', sum(1 for k in keys if k not in old), 'changed:', sum(1 for k in keys if k in old and old[k] != en[k]))
 
 def convert(rows):
     """Sheet rows -> ({code: {key: text}}, [problems])."""
@@ -177,7 +207,7 @@ def selftest():
 
 if __name__ == '__main__':
     cmd, *arg = sys.argv[1:] or ['']
-    if cmd == 'export' and arg: export(arg[0])
+    if cmd == 'export' and arg: export(arg[0], arg[2] if len(arg) > 2 and arg[1] == '--since' else None)
     elif cmd == 'import' and arg: sys.exit(import_(arg[0]))
     elif cmd == 'selftest': selftest()
     else: print(__doc__); sys.exit(2)

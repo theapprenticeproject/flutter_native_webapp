@@ -1103,4 +1103,122 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get projectSendAgain => 'Send again';
+
+  @override
+  String get settingsSheetSubtitle => 'Ask a grown-up before changing these';
+
+  @override
+  String get settingsAppLanguage => 'App language';
+
+  @override
+  String get settingsLangOther => 'Other';
+
+  @override
+  String get settingsReadAloud => 'Read messages aloud';
+
+  @override
+  String get settingsReadAloudHint => 'Buddy reads every message out loud';
+
+  @override
+  String get settingsTheme => 'Theme';
+
+  @override
+  String get settingsThemeDefault => 'Default';
+
+  @override
+  String get settingsThemeLight => 'Light';
+
+  @override
+  String get settingsThemeDark => 'Dark';
+
+  @override
+  String get settingsAccount => 'Account Management';
+
+  @override
+  String settingsAccountBody(String name) {
+    return 'Hi $name, If you need to take a break or want to permanently delete your account, you can manage these options here.';
+  }
+
+  @override
+  String get settingsDeactivate => 'Deactivate Account';
+
+  @override
+  String get settingsDelete => 'Delete Account';
+
+  @override
+  String get editProfile => 'Edit profile';
+
+  @override
+  String get editProfileSubtitle => 'Update your details';
+
+  @override
+  String get editUpdate => 'Update & continue';
+
+  @override
+  String meHalfway(int n, String year) {
+    return 'Halfway there! Finish $n more to complete $year 🎉';
+  }
+
+  @override
+  String get meJourneyStarts =>
+      'Your journey starts here! Finish a project to unlock the next one 🚀';
+
+  @override
+  String get mePointsAfterFeedback => 'Points after feedback';
+
+  @override
+  String meProjectPoints(int n) {
+    return '+$n points';
+  }
+
+  @override
+  String meVoiceNote(String time) {
+    return 'Voice note · $time';
+  }
+
+  @override
+  String get projectWrongSubmission => 'Wrong submission';
+
+  @override
+  String get projectSheetWaiting =>
+      'TAP Buddy is still checking your work. Check back soon!';
+
+  @override
+  String projectWarningPoints(int points) {
+    return 'You will get $points points only if you submit your work as photo/video📷\nI know you will do better next time 💪';
+  }
+
+  @override
+  String galleryEndsIn(int days, int hours) {
+    return 'Ends in $days days $hours hrs';
+  }
+
+  @override
+  String galleryNotHereTimer(int points) {
+    return 'Share it before the timer ends to earn +$points points and show it to TAP students.';
+  }
+
+  @override
+  String galleryWantToShareTimer(int points) {
+    return 'Share it before the timer ends to earn +$points points.';
+  }
+
+  @override
+  String homePointsPill(int points) {
+    return '+$points points';
+  }
+
+  @override
+  String get classHearAgain => 'Hear again';
+
+  @override
+  String get classSpeaking => 'Speaking';
+
+  @override
+  String get chatReadyAddWork => 'Ready? Add your work here 👇';
+
+  @override
+  String chatGreatQuizPoints(int points) {
+    return 'Great quiz! 🎉 Ready to send your work now? You\'ll get +$points points';
+  }
 }

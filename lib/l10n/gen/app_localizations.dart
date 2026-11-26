@@ -1969,6 +1969,198 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Send again'**
   String get projectSendAgain;
+
+  /// NOT IN THE APP YET (design M-ME-04, Settings)
+  ///
+  /// In en, this message translates to:
+  /// **'Ask a grown-up before changing these'**
+  String get settingsSheetSubtitle;
+
+  /// NOT IN THE APP YET (design M-ME-04, Settings)
+  ///
+  /// In en, this message translates to:
+  /// **'App language'**
+  String get settingsAppLanguage;
+
+  /// NOT IN THE APP YET (design M-ME-04, Settings)
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get settingsLangOther;
+
+  /// NOT IN THE APP YET (design M-ME-04, Settings. Audio is later (R-17))
+  ///
+  /// In en, this message translates to:
+  /// **'Read messages aloud'**
+  String get settingsReadAloud;
+
+  /// NOT IN THE APP YET (design M-ME-04, Settings. Audio is later (R-17))
+  ///
+  /// In en, this message translates to:
+  /// **'Buddy reads every message out loud'**
+  String get settingsReadAloudHint;
+
+  /// NOT IN THE APP YET (design M-ME-04, Settings. No theme switch in v1 (R-73))
+  ///
+  /// In en, this message translates to:
+  /// **'Theme'**
+  String get settingsTheme;
+
+  /// NOT IN THE APP YET (design M-ME-04, Settings. No theme switch in v1 (R-73))
+  ///
+  /// In en, this message translates to:
+  /// **'Default'**
+  String get settingsThemeDefault;
+
+  /// NOT IN THE APP YET (design M-ME-04, Settings. No theme switch in v1 (R-73))
+  ///
+  /// In en, this message translates to:
+  /// **'Light'**
+  String get settingsThemeLight;
+
+  /// NOT IN THE APP YET (design M-ME-04, Settings. No theme switch in v1 (R-73))
+  ///
+  /// In en, this message translates to:
+  /// **'Dark'**
+  String get settingsThemeDark;
+
+  /// NOT IN THE APP YET (design M-ME-04, Settings. Later (R-36))
+  ///
+  /// In en, this message translates to:
+  /// **'Account Management'**
+  String get settingsAccount;
+
+  /// NOT IN THE APP YET (design M-ME-04, Settings. Later (R-36))
+  ///
+  /// In en, this message translates to:
+  /// **'Hi {name}, If you need to take a break or want to permanently delete your account, you can manage these options here.'**
+  String settingsAccountBody(String name);
+
+  /// NOT IN THE APP YET (design M-ME-04, Settings. Later (R-36))
+  ///
+  /// In en, this message translates to:
+  /// **'Deactivate Account'**
+  String get settingsDeactivate;
+
+  /// NOT IN THE APP YET (design M-ME-04, Settings. Later (R-36))
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Account'**
+  String get settingsDelete;
+
+  /// NOT IN THE APP YET (design M-ME-03, Edit profile. Later (R-74))
+  ///
+  /// In en, this message translates to:
+  /// **'Edit profile'**
+  String get editProfile;
+
+  /// NOT IN THE APP YET (design M-ME-03, Edit profile. Later (R-74))
+  ///
+  /// In en, this message translates to:
+  /// **'Update your details'**
+  String get editProfileSubtitle;
+
+  /// NOT IN THE APP YET (design M-ME-03, Edit profile. Later (R-74))
+  ///
+  /// In en, this message translates to:
+  /// **'Update & continue'**
+  String get editUpdate;
+
+  /// NOT IN THE APP YET (design M-ME-01 and M-ME-02, Me. Needs the school year from the server)
+  ///
+  /// In en, this message translates to:
+  /// **'Halfway there! Finish {n} more to complete {year} 🎉'**
+  String meHalfway(int n, String year);
+
+  /// NOT IN THE APP YET (design M-ME-01 and M-ME-02, Me. Check the exact words in the Figma frame)
+  ///
+  /// In en, this message translates to:
+  /// **'Your journey starts here! Finish a project to unlock the next one 🚀'**
+  String get meJourneyStarts;
+
+  /// NOT IN THE APP YET (design M-ME-01 and M-ME-02, Me. Project page, while the feedback is pending)
+  ///
+  /// In en, this message translates to:
+  /// **'Points after feedback'**
+  String get mePointsAfterFeedback;
+
+  /// NOT IN THE APP YET (design M-ME-01 and M-ME-02, Me. Project page. Needs the points of each project from the server)
+  ///
+  /// In en, this message translates to:
+  /// **'+{n} points'**
+  String meProjectPoints(int n);
+
+  /// NOT IN THE APP YET (design M-ME-01 and M-ME-02, Me. Project page, for voice work (later))
+  ///
+  /// In en, this message translates to:
+  /// **'Voice note · {time}'**
+  String meVoiceNote(String time);
+
+  /// NOT IN THE APP YET (design M-ME-01 and M-ME-02, Me. A second kind of "not right" pill)
+  ///
+  /// In en, this message translates to:
+  /// **'Wrong submission'**
+  String get projectWrongSubmission;
+
+  /// NOT IN THE APP YET (design M-ME-01 and M-ME-02, Me. Project sheet, while the feedback is pending)
+  ///
+  /// In en, this message translates to:
+  /// **'TAP Buddy is still checking your work. Check back soon!'**
+  String get projectSheetWaiting;
+
+  /// NOT IN THE APP YET (design M-ME-01 and M-ME-02, Me. The warning with the number of points)
+  ///
+  /// In en, this message translates to:
+  /// **'You will get {points} points only if you submit your work as photo/video📷\nI know you will do better next time 💪'**
+  String projectWarningPoints(int points);
+
+  /// NOT IN THE APP YET (design M-GA-01 to M-GA-03b, Gallery. No deadline in v1 (R-72))
+  ///
+  /// In en, this message translates to:
+  /// **'Ends in {days} days {hours} hrs'**
+  String galleryEndsIn(int days, int hours);
+
+  /// NOT IN THE APP YET (design M-GA-01 to M-GA-03b, Gallery. No deadline in v1 (R-72))
+  ///
+  /// In en, this message translates to:
+  /// **'Share it before the timer ends to earn +{points} points and show it to TAP students.'**
+  String galleryNotHereTimer(int points);
+
+  /// NOT IN THE APP YET (design M-GA-01 to M-GA-03b, Gallery. No deadline in v1 (R-72))
+  ///
+  /// In en, this message translates to:
+  /// **'Share it before the timer ends to earn +{points} points.'**
+  String galleryWantToShareTimer(int points);
+
+  /// NOT IN THE APP YET (design M-F2-01, Home. The points of the activity card)
+  ///
+  /// In en, this message translates to:
+  /// **'+{points} points'**
+  String homePointsPill(int points);
+
+  /// NOT IN THE APP YET (design M-C01 and M-D-03, Activity. Audio is later (R-17))
+  ///
+  /// In en, this message translates to:
+  /// **'Hear again'**
+  String get classHearAgain;
+
+  /// NOT IN THE APP YET (design M-C01 and M-D-03, Activity. Audio is later (R-17))
+  ///
+  /// In en, this message translates to:
+  /// **'Speaking'**
+  String get classSpeaking;
+
+  /// NOT IN THE APP YET (design M-D-03, after "Back to my activity")
+  ///
+  /// In en, this message translates to:
+  /// **'Ready? Add your work here 👇'**
+  String get chatReadyAddWork;
+
+  /// NOT IN THE APP YET (design M-S-08, after the quiz)
+  ///
+  /// In en, this message translates to:
+  /// **'Great quiz! 🎉 Ready to send your work now? You\'ll get +{points} points'**
+  String chatGreatQuizPoints(int points);
 }
 
 class _AppLocalizationsDelegate

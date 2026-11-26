@@ -52,8 +52,14 @@ void main() {
     final found = <String>[];
     for (final f in Directory('lib').listSync(recursive: true)) {
       if (f is! File || !f.path.endsWith('.dart')) continue;
+      // The translation files already hold the two texts for the sheet
+      // ("classHearAgain", "classSpeaking"), but no screen may use them yet.
+      if (f.path.contains('/l10n/gen/')) continue;
       final text = f.readAsStringSync();
-      if (text.contains("'Speaking'") || text.contains("'Hear again'")) {
+      if (text.contains("'Speaking'") ||
+          text.contains("'Hear again'") ||
+          text.contains('classSpeaking') ||
+          text.contains('classHearAgain')) {
         found.add(f.path);
       }
     }

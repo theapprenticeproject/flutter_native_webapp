@@ -692,5 +692,189 @@
   "projectThinks": "TAP Buddy thinks",
   "projectThinksWaiting": "I'm still looking at your work. I'll share what I think very soon!",
   "projectWarning": "You will get points only if you submit your work as photo/video 📷\nI know you will do better next time 💪",
-  "projectSendAgain": "Send again"
+  "projectSendAgain": "Send again",
+  "settingsSheetSubtitle": "Ask a grown-up before changing these",
+  "@settingsSheetSubtitle": {
+    "description": "NOT IN THE APP YET (design M-ME-04, Settings)"
+  },
+  "settingsAppLanguage": "App language",
+  "@settingsAppLanguage": {
+    "description": "NOT IN THE APP YET (design M-ME-04, Settings)"
+  },
+  "settingsLangOther": "Other",
+  "@settingsLangOther": {
+    "description": "NOT IN THE APP YET (design M-ME-04, Settings)"
+  },
+  "settingsReadAloud": "Read messages aloud",
+  "@settingsReadAloud": {
+    "description": "NOT IN THE APP YET (design M-ME-04, Settings. Audio is later (R-17))"
+  },
+  "settingsReadAloudHint": "Buddy reads every message out loud",
+  "@settingsReadAloudHint": {
+    "description": "NOT IN THE APP YET (design M-ME-04, Settings. Audio is later (R-17))"
+  },
+  "settingsTheme": "Theme",
+  "@settingsTheme": {
+    "description": "NOT IN THE APP YET (design M-ME-04, Settings. No theme switch in v1 (R-73))"
+  },
+  "settingsThemeDefault": "Default",
+  "@settingsThemeDefault": {
+    "description": "NOT IN THE APP YET (design M-ME-04, Settings. No theme switch in v1 (R-73))"
+  },
+  "settingsThemeLight": "Light",
+  "@settingsThemeLight": {
+    "description": "NOT IN THE APP YET (design M-ME-04, Settings. No theme switch in v1 (R-73))"
+  },
+  "settingsThemeDark": "Dark",
+  "@settingsThemeDark": {
+    "description": "NOT IN THE APP YET (design M-ME-04, Settings. No theme switch in v1 (R-73))"
+  },
+  "settingsAccount": "Account Management",
+  "@settingsAccount": {
+    "description": "NOT IN THE APP YET (design M-ME-04, Settings. Later (R-36))"
+  },
+  "settingsAccountBody": "Hi {name}, If you need to take a break or want to permanently delete your account, you can manage these options here.",
+  "@settingsAccountBody": {
+    "description": "NOT IN THE APP YET (design M-ME-04, Settings. Later (R-36))",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsDeactivate": "Deactivate Account",
+  "@settingsDeactivate": {
+    "description": "NOT IN THE APP YET (design M-ME-04, Settings. Later (R-36))"
+  },
+  "settingsDelete": "Delete Account",
+  "@settingsDelete": {
+    "description": "NOT IN THE APP YET (design M-ME-04, Settings. Later (R-36))"
+  },
+  "editProfile": "Edit profile",
+  "@editProfile": {
+    "description": "NOT IN THE APP YET (design M-ME-03, Edit profile. Later (R-74))"
+  },
+  "editProfileSubtitle": "Update your details",
+  "@editProfileSubtitle": {
+    "description": "NOT IN THE APP YET (design M-ME-03, Edit profile. Later (R-74))"
+  },
+  "editUpdate": "Update & continue",
+  "@editUpdate": {
+    "description": "NOT IN THE APP YET (design M-ME-03, Edit profile. Later (R-74))"
+  },
+  "meHalfway": "Halfway there! Finish {n} more to complete {year} 🎉",
+  "@meHalfway": {
+    "description": "NOT IN THE APP YET (design M-ME-01 and M-ME-02, Me. Needs the school year from the server)",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "meJourneyStarts": "Your journey starts here! Finish a project to unlock the next one 🚀",
+  "@meJourneyStarts": {
+    "description": "NOT IN THE APP YET (design M-ME-01 and M-ME-02, Me. Check the exact words in the Figma frame)"
+  },
+  "mePointsAfterFeedback": "Points after feedback",
+  "@mePointsAfterFeedback": {
+    "description": "NOT IN THE APP YET (design M-ME-01 and M-ME-02, Me. Project page, while the feedback is pending)"
+  },
+  "meProjectPoints": "+{n} points",
+  "@meProjectPoints": {
+    "description": "NOT IN THE APP YET (design M-ME-01 and M-ME-02, Me. Project page. Needs the points of each project from the server)",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "meVoiceNote": "Voice note · {time}",
+  "@meVoiceNote": {
+    "description": "NOT IN THE APP YET (design M-ME-01 and M-ME-02, Me. Project page, for voice work (later))",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "projectWrongSubmission": "Wrong submission",
+  "@projectWrongSubmission": {
+    "description": "NOT IN THE APP YET (design M-ME-01 and M-ME-02, Me. A second kind of \"not right\" pill)"
+  },
+  "projectSheetWaiting": "TAP Buddy is still checking your work. Check back soon!",
+  "@projectSheetWaiting": {
+    "description": "NOT IN THE APP YET (design M-ME-01 and M-ME-02, Me. Project sheet, while the feedback is pending)"
+  },
+  "projectWarningPoints": "You will get {points} points only if you submit your work as photo/video📷\nI know you will do better next time 💪",
+  "@projectWarningPoints": {
+    "description": "NOT IN THE APP YET (design M-ME-01 and M-ME-02, Me. The warning with the number of points)",
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "galleryEndsIn": "Ends in {days} days {hours} hrs",
+  "@galleryEndsIn": {
+    "description": "NOT IN THE APP YET (design M-GA-01 to M-GA-03b, Gallery. No deadline in v1 (R-72))",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "galleryNotHereTimer": "Share it before the timer ends to earn +{points} points and show it to TAP students.",
+  "@galleryNotHereTimer": {
+    "description": "NOT IN THE APP YET (design M-GA-01 to M-GA-03b, Gallery. No deadline in v1 (R-72))",
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "galleryWantToShareTimer": "Share it before the timer ends to earn +{points} points.",
+  "@galleryWantToShareTimer": {
+    "description": "NOT IN THE APP YET (design M-GA-01 to M-GA-03b, Gallery. No deadline in v1 (R-72))",
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "homePointsPill": "+{points} points",
+  "@homePointsPill": {
+    "description": "NOT IN THE APP YET (design M-F2-01, Home. The points of the activity card)",
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "classHearAgain": "Hear again",
+  "@classHearAgain": {
+    "description": "NOT IN THE APP YET (design M-C01 and M-D-03, Activity. Audio is later (R-17))"
+  },
+  "classSpeaking": "Speaking",
+  "@classSpeaking": {
+    "description": "NOT IN THE APP YET (design M-C01 and M-D-03, Activity. Audio is later (R-17))"
+  },
+  "chatReadyAddWork": "Ready? Add your work here 👇",
+  "@chatReadyAddWork": {
+    "description": "NOT IN THE APP YET (design M-D-03, after \"Back to my activity\")"
+  },
+  "chatGreatQuizPoints": "Great quiz! 🎉 Ready to send your work now? You'll get +{points} points",
+  "@chatGreatQuizPoints": {
+    "description": "NOT IN THE APP YET (design M-S-08, after the quiz)",
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  }
 }
