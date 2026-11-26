@@ -87,7 +87,7 @@ void main() {
   testWidgets('the previous arrow is off at the first work', (tester) async {
     await _pump(tester, items: three);
     final button = tester.widget<IconButton>(
-      find.widgetWithIcon(IconButton, Icons.chevron_left_rounded),
+      find.widgetWithIcon(IconButton, Icons.arrow_back_rounded),
     );
     expect(button.onPressed, isNull);
   });
@@ -95,7 +95,7 @@ void main() {
   testWidgets('the next arrow is off at the last work', (tester) async {
     await _pump(tester, items: three, index: 2);
     final button = tester.widget<IconButton>(
-      find.widgetWithIcon(IconButton, Icons.chevron_right_rounded),
+      find.widgetWithIcon(IconButton, Icons.arrow_forward_rounded),
     );
     expect(button.onPressed, isNull);
   });

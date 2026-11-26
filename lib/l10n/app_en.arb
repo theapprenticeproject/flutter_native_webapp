@@ -61,7 +61,7 @@
   "homeToDoSend": "To do: Send project",
   "homeSendProject": "Send my project",
   "meTitle": "Me",
-  "meSubtitle": "Have a look at your progress",
+  "meSubtitle": "Here is how you are doing this year",
   "meClass": "Class {grade}",
   "@meClass": {
     "placeholders": {
@@ -70,16 +70,8 @@
       }
     }
   },
-  "meNextLevel": "Next: {name}",
-  "@meNextLevel": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "meTotalPoints": "Total points",
-  "mePointsHelp": "What are points? You earn them by doing TAP activities.",
+  "meTotalPoints": "Total points earned",
+  "mePointsHelp": "Earn points by doing TAP Activities every week!",
   "meProjectsTitle": "My projects this year",
   "meProjectsDone": "{done} / {total} done",
   "@meProjectsDone": {
@@ -111,7 +103,7 @@
   "projectNotAcceptedHint": "You have used both tries, so you cannot send it again.",
   "galleryTitle": "Gallery",
   "gallerySubtitle": "See what others made",
-  "galleryThisActivity": "THIS ACTIVITY",
+  "galleryThisActivity": "THIS WEEK'S ACTIVITY",
   "galleryYourSubmission": "Your submission",
   "galleryFromStudents": "From TAP students like you",
   "galleryLoadFailed": "We couldn't load the Gallery. Please try again.",
@@ -618,5 +610,62 @@
         "type": "int"
       }
     }
-  }
+  },
+  "galleryNotHere": "Your work isn't here yet",
+  "galleryNotHereBody": "Share your work to show it to TAP students.",
+  "galleryYouSuffix": "{name} (You)",
+  "@galleryYouSuffix": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "galleryFromStudentsSub": "Class {grade} · same activity · shared from schools across TAP",
+  "@galleryFromStudentsSub": {
+    "placeholders": {
+      "grade": {
+        "type": "String"
+      }
+    }
+  },
+  "meWelcome": "Welcome {name} 👋",
+  "@meWelcome": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "meSubtitleNew": "Let's start your TAP journey",
+  "meMyLevel": "My level",
+  "meYourLevel": "Your level",
+  "meSkillsTitle": "I'm getting better at",
+  "meSkillsNone": "Skills you get good at will show up here",
+  "meSkill1": "💡 Making new things",
+  "meSkill2": "🧩 Solving tricky problems",
+  "meSkill3": "🗣️ Sharing my ideas",
+  "meSkill4": "⏰ Being on time",
+  "meLevelPoints": "{label} points",
+  "@meLevelPoints": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "meMorePoints": "{n} more points to reach {name}",
+  "@meMorePoints": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "meFirstActivity": "Finish your first activity to start earning points",
+  "mePointsHelpTitle": "What are points?",
+  "meStartActivity": "Start Activity"
 }

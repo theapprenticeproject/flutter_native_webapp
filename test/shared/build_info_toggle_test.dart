@@ -60,6 +60,7 @@ void main() {
             onSwitchProfile: () {},
             onSettings: () {},
             onOpenProject: (_) {},
+            onStartActivity: () {},
           ),
         ),
       ),

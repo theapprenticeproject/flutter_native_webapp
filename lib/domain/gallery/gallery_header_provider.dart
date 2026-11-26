@@ -16,6 +16,8 @@ class GalleryHeader {
     required this.activityTitle,
     required this.shared,
     required this.ownWorkUrl,
+    this.ownName,
+    this.grade,
   });
 
   final String? activityTitle;
@@ -25,6 +27,10 @@ class GalleryHeader {
 
   /// A link to the student's own work, when the Worker gave one.
   final String? ownWorkUrl;
+
+  /// The student's own name and class, for the card of the student's work.
+  final String? ownName;
+  final String? grade;
 }
 
 final galleryHeaderProvider = FutureProvider.autoDispose<GalleryHeader>((
@@ -84,5 +90,7 @@ final galleryHeaderProvider = FutureProvider.autoDispose<GalleryHeader>((
     activityTitle: unit.name,
     shared: shared,
     ownWorkUrl: latest?.viewUrl,
+    ownName: profile.studentName,
+    grade: profile.grade,
   );
 });

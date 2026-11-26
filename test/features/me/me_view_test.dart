@@ -8,10 +8,13 @@ import 'package:tapapp/features/me/presentation/me_view.dart';
 /// R-7: Me has the profile, the level, the points, "My projects this year", the
 /// skill chips (placeholders, R-95), settings and switch profile.
 const _level = LevelProgress(
+  id: 'bronze',
   name: 'Bronze Buddy',
   nextName: 'Silver Buddy',
-  label: '120 / 1000',
-  fraction: 0.12,
+  label: '120 / 400',
+  fraction: 0.3,
+  points: 120,
+  nextMin: 400,
 );
 
 MyProject _p(String name, FeedbackStage stage, {String? feedback}) => MyProject(
@@ -25,6 +28,9 @@ Future<void> _pump(
   WidgetTester tester, {
   List<MyProject> projects = const [],
   LevelProgress? level = _level,
+  int points = 120,
+  String? subject = 'Science Lab',
+  VoidCallback? onStart,
   VoidCallback? onSwitch,
   VoidCallback? onSettings,
   void Function(MyProject)? onOpen,
@@ -39,8 +45,10 @@ Future<void> _pump(
           studentName: 'Asha',
           grade: '5',
           school: 'New Horizon Public School',
-          points: 120,
+          points: points,
+          subject: subject,
           level: level,
+          onStartActivity: onStart ?? () {},
           projects: projects,
           onSwitchProfile: onSwitch ?? () {},
           onSettings: onSettings ?? () {},
@@ -67,9 +75,10 @@ void main() {
 
   testWidgets('shows the level, its progress and the points', (tester) async {
     await _pump(tester);
-    expect(find.text('Bronze Buddy'), findsOneWidget);
-    expect(find.text('120 / 1000'), findsOneWidget);
-    expect(find.textContaining('Silver Buddy'), findsOneWidget);
+    // In the profile card ("My level") and in the level card.
+    expect(find.text('Bronze Buddy'), findsNWidgets(2));
+    expect(find.text('120 / 400 points'), findsOneWidget);
+    expect(find.textContaining('Silver Buddy'), findsWidgets);
     expect(find.byType(LinearProgressIndicator), findsOneWidget);
     expect(find.text('120'), findsWidgets);
   });
@@ -83,9 +92,13 @@ void main() {
     expect(find.text('120'), findsWidgets);
   });
 
-  testWidgets('has no "getting better at" skill chips', (tester) async {
+  testWidgets('has the placeholder skill chips (R-95, design M-ME-01)', (
+    tester,
+  ) async {
     await _pump(tester);
-    expect(find.text("I'm getting better at"), findsNothing);
+    expect(find.text("I'm getting better at"), findsOneWidget);
+    expect(find.textContaining('Making new things'), findsOneWidget);
+    expect(find.textContaining('Being on time'), findsOneWidget);
   });
 
   testWidgets('with projects: the count and each state', (tester) async {
@@ -125,7 +138,7 @@ void main() {
     expect(opened?.unitName, 'Glowing LED Card');
   });
 
-  testWidgets('has the switch profile strip and a settings row', (
+  testWidgets('has the switch profile strip and a settings button', (
     tester,
   ) async {
     var switched = 0;
@@ -140,7 +153,7 @@ void main() {
     await tester.tap(find.text('Switch Profile'));
     expect(switched, 1);
 
-    await tester.tap(find.text('Settings'));
+    await tester.tap(find.byTooltip('Settings'));
     expect(settings, 1);
   });
 
@@ -157,5 +170,79 @@ void main() {
     ]) {
       expect(find.textContaining(word), findsNothing, reason: word);
     }
+  });
+
+  // Design M-ME-01 and M-ME-02.
+  group('the design', () {
+    testWidgets('the welcome line and the settings button', (tester) async {
+      await _pump(tester);
+      expect(find.text('Welcome Asha 👋'), findsOneWidget);
+      expect(find.text('Here is how you are doing this year'), findsOneWidget);
+      expect(find.byTooltip('Settings'), findsOneWidget);
+    });
+
+    testWidgets('a new student: "Let\'s start your TAP journey"', (
+      tester,
+    ) async {
+      await _pump(
+        tester,
+        points: 0,
+        level: const LevelProgress(
+          id: 'bronze',
+          name: 'Bronze Buddy',
+          nextName: 'Silver Buddy',
+          label: '0 / 400',
+          fraction: 0,
+          points: 0,
+          nextMin: 400,
+        ),
+      );
+      expect(find.text("Let's start your TAP journey"), findsOneWidget);
+      expect(
+        find.text('Skills you get good at will show up here'),
+        findsOneWidget,
+      );
+      expect(find.text('0 / 400 points'), findsOneWidget);
+      expect(
+        find.text('Finish your first activity to start earning points'),
+        findsOneWidget,
+      );
+    });
+
+    testWidgets('the profile card: initials, class, subject and school', (
+      tester,
+    ) async {
+      await _pump(tester);
+      expect(find.text('A'), findsWidgets);
+      expect(find.textContaining('Class 5'), findsOneWidget);
+      expect(find.textContaining('Science Lab'), findsOneWidget);
+      expect(find.text('My level'), findsOneWidget);
+    });
+
+    testWidgets('the level card: points left and Start Activity', (
+      tester,
+    ) async {
+      var started = 0;
+      await _pump(tester, onStart: () => started++);
+      expect(find.text('Your level'), findsOneWidget);
+      expect(
+        find.text('280 more points to reach Silver Buddy'),
+        findsOneWidget,
+      );
+      await tester.tap(find.text('Start Activity'));
+      expect(started, 1);
+    });
+
+    testWidgets('the points card: the total and what points are', (
+      tester,
+    ) async {
+      await _pump(tester);
+      expect(find.text('Total points earned'), findsOneWidget);
+      expect(find.text('What are points?'), findsOneWidget);
+      expect(
+        find.text('Earn points by doing TAP Activities every week!'),
+        findsOneWidget,
+      );
+    });
   });
 }

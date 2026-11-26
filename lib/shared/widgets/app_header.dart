@@ -99,7 +99,7 @@ class AppHeader extends StatelessWidget {
               ],
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: isCompact ? 14 : 24),
-                child: _PostOnboardingBrand(compact: isCompact),
+                child: PostOnboardingBrand(compact: isCompact),
               ),
             ],
           ],
@@ -123,7 +123,7 @@ class AppHeader extends StatelessWidget {
               Expanded(
                 child: Align(
                   alignment: Alignment.centerLeft,
-                  child: _PostOnboardingBrand(compact: compact),
+                  child: PostOnboardingBrand(compact: compact),
                 ),
               ),
             ],
@@ -173,7 +173,7 @@ class AppHeader extends StatelessWidget {
               height: compact ? 48 : 54,
               child: Row(
                 children: [
-                  _PostOnboardingBrand(compact: compact),
+                  PostOnboardingBrand(compact: compact),
                   const SizedBox(width: 18),
                   Expanded(
                     child: Text(
@@ -232,10 +232,11 @@ class AppHeader extends StatelessWidget {
   }
 }
 
-class _PostOnboardingBrand extends StatelessWidget {
+/// The two logos with a thin line between them.
+class PostOnboardingBrand extends StatelessWidget {
   final bool compact;
 
-  const _PostOnboardingBrand({required this.compact});
+  const PostOnboardingBrand({super.key, required this.compact});
 
   @override
   Widget build(BuildContext context) {
@@ -279,12 +280,7 @@ class _MetricPill extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const SizedBox(
-            key: ValueKey('points-coin'),
-            width: 20,
-            height: 20,
-            child: CustomPaint(painter: _CoinPainter()),
-          ),
+          const PointsCoin(),
           const SizedBox(width: 8),
           Text(
             label,
@@ -344,4 +340,19 @@ class AskTapButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) =>
       AppTonalButton(label: context.l10n.headerAskTap, onPressed: onPressed);
+}
+
+/// The points coin: an orange ring with a diamond in the middle (design M-F2-01).
+class PointsCoin extends StatelessWidget {
+  const PointsCoin({super.key, this.size = 20});
+
+  final double size;
+
+  @override
+  Widget build(BuildContext context) => SizedBox(
+    key: const ValueKey('points-coin'),
+    width: size,
+    height: size,
+    child: const CustomPaint(painter: _CoinPainter()),
+  );
 }

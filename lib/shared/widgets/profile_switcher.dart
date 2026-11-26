@@ -33,11 +33,12 @@ class SwitchProfileBar extends StatelessWidget {
               final availableWidth = constraints.hasBoundedWidth
                   ? constraints.maxWidth
                   : screenWidth;
-              final compact = availableWidth < 380;
+              // Design M-ME-01: the text and the button sit in one row, also at 375.
+              final compact = availableWidth < 320;
 
               final text = Text(
                 context.l10n.profileNotYou(studentName),
-                textAlign: TextAlign.center,
+                textAlign: compact ? TextAlign.center : TextAlign.left,
                 style: GoogleFonts.inter(
                   fontSize: 13,
                   fontWeight: FontWeight.w500,
@@ -62,17 +63,13 @@ class SwitchProfileBar extends StatelessWidget {
 
               return SizedBox(
                 width: availableWidth,
-                child: Center(
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    // The text may wrap, so the row never overflows on a phone.
-                    children: [
-                      Flexible(child: text),
-                      const SizedBox(width: 18),
-                      button,
-                    ],
-                  ),
+                child: Row(
+                  // The text may wrap, so the row never overflows on a phone.
+                  children: [
+                    Expanded(child: text),
+                    const SizedBox(width: 12),
+                    button,
+                  ],
                 ),
               );
             },

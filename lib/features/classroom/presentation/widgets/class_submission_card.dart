@@ -8,7 +8,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../../../core/router/app_routes.dart';
 import '../../../../shared/media/file_kind.dart';
 import '../ask_tap_launcher.dart';
-import 'dashed_upload_box.dart';
+import '../../../../shared/widgets/dashed_upload_box.dart';
 import 'submission_confirm_dialog.dart';
 import 'package:image_picker/image_picker.dart';
 

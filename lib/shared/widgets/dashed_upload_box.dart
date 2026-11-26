@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/theme/app_theme.dart';
+import '../../core/theme/app_theme.dart';
 
 /// The dashed frame around "Add my work" (design M-S-01). Red when the file was
 /// wrong (M-S-05).

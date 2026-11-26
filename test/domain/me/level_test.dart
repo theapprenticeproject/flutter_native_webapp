@@ -17,6 +17,10 @@ void main() {
     expect(l.label, '120 / 1000');
     expect(l.fraction, closeTo(0.12, 0.0001));
     expect(l.nextName, 'Silver Buddy');
+    expect(l.id, 'bronze');
+    expect(l.points, 120);
+    expect(l.nextMin, 1000);
+    expect(l.remaining, 880);
   });
 
   test('the first point of a tier belongs to that tier', () {

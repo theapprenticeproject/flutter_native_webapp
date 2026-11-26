@@ -413,7 +413,7 @@ abstract class AppLocalizations {
   /// No description provided for @meSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'Have a look at your progress'**
+  /// **'Here is how you are doing this year'**
   String get meSubtitle;
 
   /// No description provided for @meClass.
@@ -422,22 +422,16 @@ abstract class AppLocalizations {
   /// **'Class {grade}'**
   String meClass(String grade);
 
-  /// No description provided for @meNextLevel.
-  ///
-  /// In en, this message translates to:
-  /// **'Next: {name}'**
-  String meNextLevel(String name);
-
   /// No description provided for @meTotalPoints.
   ///
   /// In en, this message translates to:
-  /// **'Total points'**
+  /// **'Total points earned'**
   String get meTotalPoints;
 
   /// No description provided for @mePointsHelp.
   ///
   /// In en, this message translates to:
-  /// **'What are points? You earn them by doing TAP activities.'**
+  /// **'Earn points by doing TAP Activities every week!'**
   String get mePointsHelp;
 
   /// No description provided for @meProjectsTitle.
@@ -569,7 +563,7 @@ abstract class AppLocalizations {
   /// No description provided for @galleryThisActivity.
   ///
   /// In en, this message translates to:
-  /// **'THIS ACTIVITY'**
+  /// **'THIS WEEK\'S ACTIVITY'**
   String get galleryThisActivity;
 
   /// No description provided for @galleryYourSubmission.
@@ -1795,6 +1789,120 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You are very smart {name}!🤩\nYou answered {correct}/{total} questions correctly🤩 and earned {points} points🪩 in total!😍\n\nAmazing champ!😎'**
   String chatQuizEnd(String name, int correct, int total, int points);
+
+  /// No description provided for @galleryNotHere.
+  ///
+  /// In en, this message translates to:
+  /// **'Your work isn\'t here yet'**
+  String get galleryNotHere;
+
+  /// No description provided for @galleryNotHereBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Share your work to show it to TAP students.'**
+  String get galleryNotHereBody;
+
+  /// No description provided for @galleryYouSuffix.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} (You)'**
+  String galleryYouSuffix(String name);
+
+  /// No description provided for @galleryFromStudentsSub.
+  ///
+  /// In en, this message translates to:
+  /// **'Class {grade} · same activity · shared from schools across TAP'**
+  String galleryFromStudentsSub(String grade);
+
+  /// No description provided for @meWelcome.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome {name} 👋'**
+  String meWelcome(String name);
+
+  /// No description provided for @meSubtitleNew.
+  ///
+  /// In en, this message translates to:
+  /// **'Let\'s start your TAP journey'**
+  String get meSubtitleNew;
+
+  /// No description provided for @meMyLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'My level'**
+  String get meMyLevel;
+
+  /// No description provided for @meYourLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'Your level'**
+  String get meYourLevel;
+
+  /// No description provided for @meSkillsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'I\'m getting better at'**
+  String get meSkillsTitle;
+
+  /// No description provided for @meSkillsNone.
+  ///
+  /// In en, this message translates to:
+  /// **'Skills you get good at will show up here'**
+  String get meSkillsNone;
+
+  /// No description provided for @meSkill1.
+  ///
+  /// In en, this message translates to:
+  /// **'💡 Making new things'**
+  String get meSkill1;
+
+  /// No description provided for @meSkill2.
+  ///
+  /// In en, this message translates to:
+  /// **'🧩 Solving tricky problems'**
+  String get meSkill2;
+
+  /// No description provided for @meSkill3.
+  ///
+  /// In en, this message translates to:
+  /// **'🗣️ Sharing my ideas'**
+  String get meSkill3;
+
+  /// No description provided for @meSkill4.
+  ///
+  /// In en, this message translates to:
+  /// **'⏰ Being on time'**
+  String get meSkill4;
+
+  /// No description provided for @meLevelPoints.
+  ///
+  /// In en, this message translates to:
+  /// **'{label} points'**
+  String meLevelPoints(String label);
+
+  /// No description provided for @meMorePoints.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} more points to reach {name}'**
+  String meMorePoints(int n, String name);
+
+  /// No description provided for @meFirstActivity.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish your first activity to start earning points'**
+  String get meFirstActivity;
+
+  /// No description provided for @mePointsHelpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'What are points?'**
+  String get mePointsHelpTitle;
+
+  /// No description provided for @meStartActivity.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Activity'**
+  String get meStartActivity;
 }
 
 class _AppLocalizationsDelegate

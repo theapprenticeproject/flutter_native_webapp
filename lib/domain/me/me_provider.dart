@@ -19,6 +19,7 @@ class MeData {
     required this.studentName,
     required this.grade,
     required this.school,
+    required this.subject,
     required this.points,
     required this.level,
     required this.projects,
@@ -27,6 +28,9 @@ class MeData {
   final String studentName;
   final String grade;
   final String? school;
+
+  /// The course the student is on (the "subject" of the profile card).
+  final String? subject;
   final int points;
   final LevelProgress? level;
   final List<MyProject> projects;
@@ -73,6 +77,9 @@ final meDataProvider = FutureProvider.autoDispose<MeData>((ref) async {
     studentName: state.profile?.studentName ?? profile.studentName ?? 'Champ',
     grade: student?.grade ?? profile.grade ?? '',
     school: student?.schoolName,
+    subject: (await ref.watch(
+      courseNameByIdProvider.future,
+    ))[student?.courseId],
     points: points,
     level: levelProgress(points, tiers),
     projects: buildProjects(

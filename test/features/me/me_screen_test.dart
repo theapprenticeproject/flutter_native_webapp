@@ -51,6 +51,7 @@ void main() {
               studentName: 'Durva',
               grade: '5',
               school: null,
+              subject: null,
               points: 10,
               level: null,
               projects: [],

@@ -18,6 +18,8 @@ Future<void> _pump(
   WidgetTester tester, {
   String? ownWorkUrl,
   bool shared = false,
+  String? ownName,
+  String? grade,
   List<GalleryItem> items = const [],
   bool loading = false,
   bool failed = false,
@@ -39,6 +41,8 @@ Future<void> _pump(
           activityTitle: 'Build a Glowing LED Card',
           ownWorkUrl: ownWorkUrl,
           shared: shared,
+          ownName: ownName,
+          grade: grade,
           items: items,
           loading: loading,
           failed: failed,
@@ -213,7 +217,11 @@ void main() {
         ownWorkUrl: 'https://gcs.example/mine.webp',
         items: [_item('1', 'DS'), _item('2', 'AB')],
       );
-      final images = tester.widgetList<Image>(find.byType(Image)).toList();
+      // The logos at the top are bundled pictures: only the works come from R2.
+      final images = tester
+          .widgetList<Image>(find.byType(Image))
+          .where((i) => i.image is! AssetImage)
+          .toList();
       expect(images.length, greaterThanOrEqualTo(3));
       for (final image in images) {
         final provider = image.image;
@@ -225,4 +233,44 @@ void main() {
       }
     },
   );
+
+  // Design M-GA-01, M-GA-02 and M-GA-03.
+  group('the design', () {
+    testWidgets('not shared: "Your work isn\'t here yet" in a dashed box', (
+      tester,
+    ) async {
+      await _pump(tester);
+      expect(find.text("Your work isn't here yet"), findsOneWidget);
+      expect(find.byKey(const ValueKey('own-work-empty')), findsOneWidget);
+    });
+
+    testWidgets('shared: your work with your name and "(You)"', (tester) async {
+      await _pump(tester, shared: true, ownName: 'Aarav Kumar');
+      expect(find.text('Aarav Kumar (You)'), findsOneWidget);
+      expect(find.text("You've shared"), findsOneWidget);
+    });
+
+    testWidgets('the class and the kind of work, under "From TAP students"', (
+      tester,
+    ) async {
+      await _pump(tester, grade: '4');
+      expect(
+        find.text('Class 4 · same activity · shared from schools across TAP'),
+        findsOneWidget,
+      );
+    });
+
+    testWidgets('a work is a white card with the initials in a circle', (
+      tester,
+    ) async {
+      await _pump(tester, items: [_item('a', 'PS')]);
+      expect(find.byKey(const ValueKey('work-card-a')), findsOneWidget);
+      expect(find.byKey(const ValueKey('initials-circle')), findsOneWidget);
+    });
+
+    testWidgets('the logos are at the top', (tester) async {
+      await _pump(tester);
+      expect(find.byKey(const ValueKey('logo-divider')), findsOneWidget);
+    });
+  });
 }

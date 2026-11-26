@@ -8,7 +8,21 @@ class LevelProgress {
     required this.nextName,
     required this.label,
     required this.fraction,
+    this.id = '',
+    this.points = 0,
+    this.nextMin,
   });
+
+  /// The tier id from the Worker, for example "bronze".
+  final String id;
+
+  /// The student's points, and where the next level starts (null at the top).
+  final int points;
+  final int? nextMin;
+
+  /// Points still needed for the next level.
+  int get remaining =>
+      nextMin == null ? 0 : (nextMin! - points).clamp(0, 1 << 30);
 
   /// For example "Bronze Buddy".
   final String name;
@@ -42,6 +56,9 @@ LevelProgress? levelProgress(int points, List<PointTier> tiers) {
   final next = index + 1 < sorted.length ? sorted[index + 1] : null;
 
   return LevelProgress(
+    id: tier.id,
+    points: p,
+    nextMin: next?.min,
     name: _buddyName(tier.id),
     nextName: next == null ? null : _buddyName(next.id),
     label: next == null ? '$p' : '$p / ${next.min}',

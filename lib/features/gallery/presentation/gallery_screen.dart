@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../../l10n/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -8,7 +7,6 @@ import '../../../core/theme/app_theme.dart';
 import '../../../domain/gallery/gallery_header_provider.dart';
 import '../../../domain/gallery/gallery_provider.dart';
 import '../../../shared/media/open_in_new_tab.dart';
-import '../../../shared/widgets/app_header.dart';
 import '../../../shared/widgets/app_nav.dart';
 import 'gallery_view.dart';
 import 'gallery_viewer.dart';
@@ -34,15 +32,13 @@ class GalleryScreen extends ConsumerWidget {
           bottom: false,
           child: Column(
             children: [
-              AppHeader(
-                title: context.l10n.galleryTitle,
-                subtitle: context.l10n.gallerySubtitle,
-              ),
               Expanded(
                 child: GalleryView(
                   activityTitle: header?.activityTitle,
                   ownWorkUrl: header?.ownWorkUrl,
                   shared: shared,
+                  ownName: header?.ownName,
+                  grade: header?.grade,
                   items: gallery.items,
                   loading: gallery.loading,
                   failed: gallery.failed,

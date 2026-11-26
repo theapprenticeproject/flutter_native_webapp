@@ -14,7 +14,6 @@ import '../../../domain/learning_progress/home_dashboard_provider.dart';
 import '../../../domain/me/me_provider.dart';
 import '../../../domain/me/my_projects.dart';
 import '../../../domain/profile/profile_provider.dart';
-import '../../../shared/widgets/app_header.dart';
 import '../../../shared/widgets/app_nav.dart';
 import '../../../shared/widgets/load_error_view.dart';
 import '../../../shared/widgets/loading_view.dart';
@@ -120,24 +119,19 @@ class MeScreen extends ConsumerWidget {
             bottom: false,
             child: Column(
               children: [
-                AppHeader(
-                  title: context.l10n.meTitle,
-                  studentName: data.studentName,
-                  subtitle: context.l10n.meSubtitle,
-                  points: data.points,
-                  showStudentSummary: true,
-                ),
                 Expanded(
                   child: MeView(
                     studentName: data.studentName,
                     grade: data.grade,
                     school: data.school,
+                    subject: data.subject,
                     points: data.points,
                     level: data.level,
                     projects: data.projects,
                     onSwitchProfile: () =>
                         _showSwitchDialog(context, ref, activeId),
                     onSettings: () => context.go(AppRoutes.profile),
+                    onStartActivity: () => context.go(AppRoutes.home),
                     onOpenProject: (p) => _showProject(context, p),
                   ),
                 ),

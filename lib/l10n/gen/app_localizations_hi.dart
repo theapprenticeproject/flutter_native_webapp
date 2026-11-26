@@ -177,7 +177,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get meTitle => 'Me';
 
   @override
-  String get meSubtitle => 'Have a look at your progress';
+  String get meSubtitle => 'Here is how you are doing this year';
 
   @override
   String meClass(String grade) {
@@ -185,16 +185,10 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String meNextLevel(String name) {
-    return 'Next: $name';
-  }
+  String get meTotalPoints => 'Total points earned';
 
   @override
-  String get meTotalPoints => 'Total points';
-
-  @override
-  String get mePointsHelp =>
-      'What are points? You earn them by doing TAP activities.';
+  String get mePointsHelp => 'Earn points by doing TAP Activities every week!';
 
   @override
   String get meProjectsTitle => 'My projects this year';
@@ -268,7 +262,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get gallerySubtitle => 'See what others made';
 
   @override
-  String get galleryThisActivity => 'THIS ACTIVITY';
+  String get galleryThisActivity => 'THIS WEEK\'S ACTIVITY';
 
   @override
   String get galleryYourSubmission => 'Your submission';
@@ -1001,4 +995,73 @@ class AppLocalizationsHi extends AppLocalizations {
   String chatQuizEnd(String name, int correct, int total, int points) {
     return 'You are very smart $name!🤩\nYou answered $correct/$total questions correctly🤩 and earned $points points🪩 in total!😍\n\nAmazing champ!😎';
   }
+
+  @override
+  String get galleryNotHere => 'Your work isn\'t here yet';
+
+  @override
+  String get galleryNotHereBody =>
+      'Share your work to show it to TAP students.';
+
+  @override
+  String galleryYouSuffix(String name) {
+    return '$name (You)';
+  }
+
+  @override
+  String galleryFromStudentsSub(String grade) {
+    return 'Class $grade · same activity · shared from schools across TAP';
+  }
+
+  @override
+  String meWelcome(String name) {
+    return 'Welcome $name 👋';
+  }
+
+  @override
+  String get meSubtitleNew => 'Let\'s start your TAP journey';
+
+  @override
+  String get meMyLevel => 'My level';
+
+  @override
+  String get meYourLevel => 'Your level';
+
+  @override
+  String get meSkillsTitle => 'I\'m getting better at';
+
+  @override
+  String get meSkillsNone => 'Skills you get good at will show up here';
+
+  @override
+  String get meSkill1 => '💡 Making new things';
+
+  @override
+  String get meSkill2 => '🧩 Solving tricky problems';
+
+  @override
+  String get meSkill3 => '🗣️ Sharing my ideas';
+
+  @override
+  String get meSkill4 => '⏰ Being on time';
+
+  @override
+  String meLevelPoints(String label) {
+    return '$label points';
+  }
+
+  @override
+  String meMorePoints(int n, String name) {
+    return '$n more points to reach $name';
+  }
+
+  @override
+  String get meFirstActivity =>
+      'Finish your first activity to start earning points';
+
+  @override
+  String get mePointsHelpTitle => 'What are points?';
+
+  @override
+  String get meStartActivity => 'Start Activity';
 }

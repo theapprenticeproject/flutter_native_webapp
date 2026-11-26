@@ -5,7 +5,7 @@ import '../../../../core/theme/app_theme.dart';
 import '../../../../l10n/l10n.dart';
 import '../../../../shared/widgets/app_primary_button.dart';
 import '../../../../shared/widgets/app_tonal_button.dart';
-import 'dashed_upload_box.dart';
+import '../../../../shared/widgets/dashed_upload_box.dart';
 
 /// Connection error (design M-C23): the sad TAP Buddy, what happened, Retry.
 class ClassOfflineCard extends StatelessWidget {
