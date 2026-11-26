@@ -8,6 +8,7 @@ import '../../../../core/router/app_routes.dart';
 import '../../../../shared/media/file_kind.dart';
 import '../ask_tap_launcher.dart';
 import '../../../../shared/widgets/dashed_upload_box.dart';
+import 'friends_made_row.dart';
 import 'media_source_sheet.dart';
 import 'submission_confirm_dialog.dart';
 import 'package:image_picker/image_picker.dart';
@@ -345,22 +346,10 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
           ],
           const SizedBox(height: 12),
           if (_isMediaKind(kind)) ...[
-            // Design M-S-01: the real work of the others is in the Gallery (R-85).
-            InkWell(
-              onTap: () => context.go(AppRoutes.gallery),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 4),
-                child: Text(
-                  context.l10n.classSeeFriends,
-                  style: GoogleFonts.inter(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                    color: AppTheme.buttonColor,
-                  ),
-                ),
-              ),
-            ),
-            const SizedBox(height: 8),
+            // Design M-S-01 and M-S-04: the real work of the others is in the
+            // Gallery (R-85).
+            FriendsMadeRow(onTap: () => context.go(AppRoutes.gallery)),
+            const SizedBox(height: 12),
           ],
           if (_showFriendExamples(kind)) ...[
             Text(
