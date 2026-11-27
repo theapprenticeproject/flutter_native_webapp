@@ -179,61 +179,12 @@ class _StageContent extends StatelessWidget {
       unit: unit!,
       slowFeedback: slowFeedback,
     );
-    final artHeight = switch (stage) {
-      LearningStage.startActivity => 440.0,
-      LearningStage.sendProject => 400.0,
-      LearningStage.quizPending => 400.0,
-      LearningStage.submissionPending => 400.0,
-      LearningStage.feedbackReady => 400.0,
-      LearningStage.completed => 300.0,
-    };
-
-    if (!isWide) {
-      return Column(
-        children: [
-          ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 430),
-            child: card,
-          ),
-          const SizedBox(height: 22),
-          HomeBuddyArt(stage: stage, maxHeight: 280),
-        ],
-      );
-    }
-
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        final groupWidth = (constraints.maxWidth * 0.86).clamp(760.0, 920.0);
-        final gap = (groupWidth * 0.05).clamp(28.0, 38.0);
-
-        return Center(
-          child: SizedBox(
-            width: groupWidth,
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Expanded(
-                  child: Align(
-                    alignment: Alignment.topRight,
-                    child: ConstrainedBox(
-                      constraints: const BoxConstraints(maxWidth: 520),
-                      child: card,
-                    ),
-                  ),
-                ),
-                SizedBox(width: gap),
-                SizedBox(
-                  width: groupWidth * 0.3,
-                  child: Align(
-                    alignment: Alignment.bottomLeft,
-                    child: HomeBuddyArt(stage: stage, maxHeight: artHeight),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        );
-      },
+    // Figma M-F2-01: the card alone, with no TAP Buddy picture under it.
+    return Center(
+      child: ConstrainedBox(
+        constraints: BoxConstraints(maxWidth: isWide ? 520 : 430),
+        child: card,
+      ),
     );
   }
 }
