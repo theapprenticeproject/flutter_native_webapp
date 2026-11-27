@@ -43,11 +43,24 @@ class EnrollmentModel {
   /// says: any activity means the video is done, only `quiz` means the quiz is
   /// done (with `submission` the quiz is not known, so it stays open), and the
   /// work is never closed here.
+  ///
+  /// With [completed] (the Worker's `completed_activities`: the steps that are
+  /// done in this unit, and only those) the steps are exactly that list. It wins
+  /// over [lastActivity]. The work is still not closed here: only valid feedback
+  /// does that (R-83).
   EnrollmentModel alignedToUnit(
     int unitIndex, {
     bool known = false,
     String? lastActivity,
+    Set<String>? completed,
   }) {
+    if (known && completed != null) {
+      return copyWith(
+        videosCompleted: unitIndex + (completed.contains('video') ? 1 : 0),
+        quizzesCompleted: unitIndex + (completed.contains('quiz') ? 1 : 0),
+        submissionIndex: unitIndex,
+      );
+    }
     if (known) {
       return copyWith(
         videosCompleted: unitIndex + (lastActivity != null ? 1 : 0),

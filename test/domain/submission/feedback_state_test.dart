@@ -156,4 +156,49 @@ void main() {
       expect(latestFor('AS-1', const []), isNull);
     });
   });
+
+  // Seen on the dev Worker (2026-11-27): `last_submission` of `/progress/sync` for
+  // a good work has `result_status: "Success - Original"` and NO `score` (only
+  // `points` and `points_awarded`, both 0). The app judged it "not valid" because
+  // a missing score counted as 0, and showed "I couldn't review your work".
+  group('a work with no score field', () {
+    final sync = SubmissionInfo.fromJson({
+      'submission_id': 'qddxre26mk',
+      'assignment_id_link': 'Introduction to animation world Submission-62633',
+      'status': 'Completed',
+      'result_status': 'Success - Original',
+      'points': 0,
+      'overall_feedback_translated':
+          'Hi Champ, This is Really a very good submission',
+      'points_awarded': 0,
+      'gems_awarded': 0,
+      'context': 'program',
+      'attempt_number': 1,
+      'attempts_remaining': 999,
+      'updated_at': 1795793854,
+    });
+
+    test('Success - Original is valid when the Worker sends no score', () {
+      expect(sync.score, isNull);
+      expect(sync.isValid, isTrue);
+      expect(feedbackStage(sync, now: now), FeedbackStage.valid);
+    });
+
+    test(
+      'a score of exactly 0 (the AI could not judge) is still not valid',
+      () {
+        expect(_row(score: 0).isValid, isFalse);
+      },
+    );
+
+    test('flagged or failed is not valid, with or without a score', () {
+      for (final result in ['Success - Flagged', 'Failed', 'Pending', null]) {
+        expect(
+          _row(result: result, score: null).isValid,
+          isFalse,
+          reason: '$result',
+        );
+      }
+    });
+  });
 }

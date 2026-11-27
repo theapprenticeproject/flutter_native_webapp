@@ -108,12 +108,14 @@ class LearnerStateRepository {
     // An old answer must never be used after a failed sync.
     _workerUnitId = null;
     _workerActivityKnown = false;
+    _workerCompleted = null;
     try {
       final sync = await progress.sync(lastUpdated: 0);
       _workerUnitId = sync.currentLearningUnit;
       // `changed: false` carries no data: nothing is known then.
       _workerActivityKnown = sync.changed;
       _workerActivity = sync.lastActivityType;
+      _workerCompleted = sync.changed ? sync.completedActivities : null;
       final points = sync.points;
       if (points != null) await applyServerPoints(learnerId, points);
     } catch (_) {
@@ -130,6 +132,10 @@ class LearnerStateRepository {
   String? _workerActivity;
   bool _workerActivityKnown = false;
 
+  /// The steps done in this unit, from the same sync (`completed_activities`).
+  /// Null when the Worker did not send the list.
+  Set<String>? _workerCompleted;
+
   /// Puts the student on the unit the Worker says (`current_learning_unit`): the
   /// Worker rejects progress for a unit that is not next in sequence. Does
   /// nothing when there is no fresh answer (the sync failed, or the Worker named
@@ -144,9 +150,11 @@ class LearnerStateRepository {
     final id = _workerUnitId;
     final activity = _workerActivity;
     final activityKnown = _workerActivityKnown;
+    final completed = _workerCompleted;
     _workerUnitId = null;
     _workerActivity = null;
     _workerActivityKnown = false;
+    _workerCompleted = null;
     final enrollment = state.enrollment;
     if (id == null || id.isEmpty || enrollment == null) {
       return restoreLocalProgress(state);
@@ -161,6 +169,7 @@ class LearnerStateRepository {
       index,
       known: activityKnown,
       lastActivity: activity,
+      completed: completed,
     );
     final saved = _localCache.getForeverRaw(
       CacheKeys.activityProgress(learnerId),
@@ -169,7 +178,7 @@ class LearnerStateRepository {
     // unit stay, unless the Worker says they did not happen (after a reset).
     if (saved != null &&
         (_localUnitIndex(saved) != index ||
-            (activityKnown && _contradicts(saved, activity)))) {
+            (activityKnown && _contradicts(saved, activity, completed)))) {
       await _localCache.delete(CacheKeys.activityProgress(learnerId));
     }
     state.enrollment = aligned;
@@ -344,7 +353,23 @@ class LearnerStateRepository {
   /// The saved steps say something the Worker's `last_activity_type` excludes.
   /// The video needs any activity, the quiz needs `quiz` (`submission` does not
   /// say), and the work is closed only by the Worker (R-83).
-  bool _contradicts(Map<String, dynamic> saved, String? activity) =>
+  ///
+  /// With the Worker's list of completed steps, a saved video or quiz that is not
+  /// in the list did not happen (for example after a reset).
+  bool _contradicts(
+    Map<String, dynamic> saved,
+    String? activity,
+    Set<String>? completed,
+  ) {
+    if (completed != null) {
+      return (saved['video_done'] == true && !completed.contains('video')) ||
+          (saved['quiz_done'] == true && !completed.contains('quiz')) ||
+          saved['submission_done'] == true;
+    }
+    return _contradictsActivity(saved, activity);
+  }
+
+  bool _contradictsActivity(Map<String, dynamic> saved, String? activity) =>
       (saved['video_done'] == true && activity == null) ||
       (saved['quiz_done'] == true &&
           (activity == null || activity == 'video')) ||

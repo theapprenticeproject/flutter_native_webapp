@@ -156,6 +156,50 @@ void main() {
     });
   });
 
+  // `completed_activities` of `/progress/sync` lists exactly the steps the student
+  // has done in the current unit (agreed with the backend on 2026-11-27).
+  group(
+    'EnrollmentModel.alignedToUnit with the list of completed activities',
+    () {
+      List<int> at(int unit, Set<String> done, {String? last}) {
+        final m = EnrollmentModel(
+          course: 'C',
+        ).alignedToUnit(unit, known: true, lastActivity: last, completed: done);
+        return [m.videosCompleted, m.quizzesCompleted, m.submissionIndex];
+      }
+
+      test('nothing done: nothing is open to continue from', () {
+        expect(at(2, {}), [2, 2, 2]);
+      });
+
+      test('video', () => expect(at(2, {'video'}), [3, 2, 2]));
+      test('video and quiz', () => expect(at(2, {'video', 'quiz'}), [3, 3, 2]));
+
+      test(
+        'all three: the work is sent, but only valid feedback closes it',
+        () {
+          expect(at(2, {'video', 'quiz', 'submission'}), [3, 3, 2]);
+        },
+      );
+
+      test(
+        'the quiz is known, unlike with `submission` as the last activity',
+        () {
+          expect(at(2, {'video', 'submission'}, last: 'submission'), [3, 2, 2]);
+          expect(at(2, {'video', 'quiz', 'submission'}, last: 'submission'), [
+            3,
+            3,
+            2,
+          ]);
+        },
+      );
+
+      test('the list wins over last_activity_type', () {
+        expect(at(2, {'video'}, last: 'quiz'), [3, 2, 2]);
+      });
+    },
+  );
+
   group('LearnerStateRepository.alignToWorkerUnit', () {
     late Directory dir;
     late Box<String> values;
@@ -165,12 +209,14 @@ void main() {
     late LearnerStateRepository repo;
     Object? syncUnit = 'Unit -3-Course-A-3';
     Object? syncActivity;
+    Object? syncCompleted;
     String? syncSubmissionFor;
     var syncFails = false;
 
     setUp(() async {
       syncUnit = 'Unit -3-Course-A-3';
       syncActivity = null;
+      syncCompleted = null;
       syncSubmissionFor = null;
       syncFails = false;
       FlutterSecureStorage.setMockInitialValues({});
@@ -197,6 +243,7 @@ void main() {
                 'points': 5,
                 'current_learning_unit': syncUnit,
                 'last_activity_type': syncActivity,
+                'completed_activities': ?syncCompleted,
                 if (syncSubmissionFor != null)
                   'last_submission': {
                     'submission_id': 'SUB-1',
@@ -331,6 +378,30 @@ void main() {
       expect(state.enrollment!.videosCompleted, 3);
       expect(state.enrollment!.quizzesCompleted, 2);
       expect(state.enrollment!.submissionIndex, 2);
+    });
+
+    test('the list of completed activities decides the steps', () async {
+      syncActivity = 'submission'; // says nothing about the quiz
+      syncCompleted = ['video', 'quiz', 'submission'];
+      await repo.refreshPoints('S1');
+      final state = await repo.alignToWorkerUnit('S1', _units);
+      expect(state.enrollment!.videosCompleted, 3);
+      expect(state.enrollment!.quizzesCompleted, 3);
+      expect(state.enrollment!.submissionIndex, 2);
+    });
+
+    test('a quiz the phone has but the list does not is dropped', () async {
+      await repo.applyLocalProgress(
+        learnerId: 'S1',
+        xp: 5,
+        videoIndex: 3,
+        quizIndex: 3,
+      );
+      syncCompleted = ['video'];
+      await repo.refreshPoints('S1');
+      final state = await repo.alignToWorkerUnit('S1', _units);
+      expect(state.enrollment!.videosCompleted, 3);
+      expect(state.enrollment!.quizzesCompleted, 2);
     });
 
     test('video and quiz the Worker already has are done too', () async {

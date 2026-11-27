@@ -77,12 +77,14 @@ class SubmissionInfo {
   bool get isPending => _status == 'pending' || _status == 'processing';
   bool get isGraded => _status == 'completed';
 
-  /// The work counts (API contract section 4): `Success - Original` and a score
-  /// above 0. Flagged, failed, pending, a score of 0 (the AI could not judge)
-  /// and any value we do not know are not valid.
+  /// The work counts (API contract section 4): `Success - Original`, and a score
+  /// above 0 when the Worker sends one. Flagged, failed, pending, a score of 0
+  /// (the AI could not judge) and any value we do not know are not valid.
+  /// The `last_submission` of `/progress/sync` has no `score` field (seen on
+  /// 2026-11-27): a missing score does not make a good work invalid.
   bool get isValid =>
       (resultStatus ?? '').toLowerCase() == 'success - original' &&
-      (score ?? 0) > 0;
+      (score == null || score! > 0);
 
   factory SubmissionInfo.fromJson(Map<String, dynamic> json) => SubmissionInfo(
     // shortcut: the test Worker still says "name". Use only submission_id once
@@ -111,6 +113,7 @@ class SyncResult {
     this.pointsTier,
     this.currentLearningUnit,
     this.lastActivityType,
+    this.completedActivities,
     this.lastSubmission,
   });
 
@@ -120,6 +123,11 @@ class SyncResult {
   final String? pointsTier;
   final String? currentLearningUnit;
   final String? lastActivityType;
+
+  /// The steps the student has done in the current unit: `video`, `quiz` and
+  /// `submission`, only those that are done. Null when the Worker does not send
+  /// the list (an older Worker).
+  final Set<String>? completedActivities;
 
   /// Present only when the newest submission is graded and newer than asked.
   final SubmissionInfo? lastSubmission;
@@ -131,6 +139,12 @@ class SyncResult {
     pointsTier: json['points_tier'] as String?,
     currentLearningUnit: json['current_learning_unit'] as String?,
     lastActivityType: json['last_activity_type'] as String?,
+    completedActivities: json['completed_activities'] is List
+        ? {
+            for (final a in json['completed_activities'] as List)
+              if (a is String) a.toLowerCase(),
+          }
+        : null,
     lastSubmission: json['last_submission'] is Map
         ? SubmissionInfo.fromJson(
             Map<String, dynamic>.from(json['last_submission'] as Map),

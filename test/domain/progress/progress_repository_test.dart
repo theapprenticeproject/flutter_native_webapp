@@ -320,6 +320,30 @@ void main() {
     expect(config.rules.activityPoints(quizQuestions: 5), isNull);
   });
 
+  test(
+    'sync reads the list of completed activities, and tells when it is absent',
+    () async {
+      final withList = FakeWorkerAdapter(
+        (_) => ok({
+          'changed': true,
+          'updated_at': 9,
+          'completed_activities': ['video', 'Quiz', 'submission'],
+        }),
+      );
+      expect(
+        (await repoFor(withList).sync(lastUpdated: 0)).completedActivities,
+        {'video', 'quiz', 'submission'},
+      );
+      final without = FakeWorkerAdapter(
+        (_) => ok({'changed': true, 'updated_at': 9}),
+      );
+      expect(
+        (await repoFor(without).sync(lastUpdated: 0)).completedActivities,
+        isNull,
+      );
+    },
+  );
+
   group('idempotency keys', () {
     test('are unique per call and say what they are for', () {
       final a = newIdempotencyKey('video', 'S1', 'LU-1');

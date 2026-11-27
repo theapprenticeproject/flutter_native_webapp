@@ -385,8 +385,14 @@ void main() {
       }
     });
 
-    test('a missing score on an original result is not valid', () {
-      expect(withResult('Success - Original', null).isValid, isFalse);
+    // The Worker's `last_submission` in `/progress/sync` has no `score` field
+    // (seen on 2026-11-27), so a missing score must not make a good work invalid.
+    test('a missing score on an original result is valid', () {
+      expect(withResult('Success - Original', null).isValid, isTrue);
+    });
+
+    test('an original result with a score of 0 is not valid', () {
+      expect(withResult('Success - Original', 0).isValid, isFalse);
     });
 
     test('the status text is read without case', () {
