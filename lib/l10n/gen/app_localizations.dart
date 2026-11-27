@@ -1202,12 +1202,6 @@ abstract class AppLocalizations {
   /// **'Q{n}. {question}'**
   String classQuizQuestion(int n, String question);
 
-  /// No description provided for @classQuizOf.
-  ///
-  /// In en, this message translates to:
-  /// **'Question {n} of {total}'**
-  String classQuizOf(int n, int total);
-
   /// No description provided for @classConfirm.
   ///
   /// In en, this message translates to:

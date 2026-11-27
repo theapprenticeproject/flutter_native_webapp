@@ -317,17 +317,6 @@
       }
     }
   },
-  "classQuizOf": "Question {n} of {total}",
-  "@classQuizOf": {
-    "placeholders": {
-      "n": {
-        "type": "int"
-      },
-      "total": {
-        "type": "int"
-      }
-    }
-  },
   "classConfirm": "Confirm",
   "classCorrectPoints": "Correct! +{points} points",
   "@classCorrectPoints": {

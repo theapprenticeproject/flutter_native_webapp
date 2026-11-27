@@ -625,11 +625,6 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String classQuizOf(int n, int total) {
-    return 'Question $n of $total';
-  }
-
-  @override
   String get classConfirm => 'Confirm';
 
   @override

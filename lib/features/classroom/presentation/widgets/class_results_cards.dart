@@ -85,12 +85,8 @@ class ClassResendCard extends StatelessWidget {
         DashedUploadBox(
           child: Column(
             children: [
-              const Icon(
-                Icons.upload_rounded,
-                size: 22,
-                color: AppTheme.buttonColor,
-              ),
-              const SizedBox(height: 8),
+              const UploadBadge(),
+              const SizedBox(height: 12),
               AppPrimaryButton(
                 label: context.l10n.classAddMyWork,
                 onPressed: onAdd,

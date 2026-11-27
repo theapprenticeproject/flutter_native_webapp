@@ -5,6 +5,13 @@ import '../../models/class_chat_message_model.dart';
 import '../../providers/class_chat_controller.dart';
 import 'class_message_content.dart';
 
+/// TAP Buddy's small avatar goes beside a bubble. A card that is a form (the
+/// upload card, a quiz question) has none: the avatar sat at its bottom left,
+/// under the buttons.
+bool showsBotAvatar(ClassChatMessage message) =>
+    message.contentType != ClassChatContentType.submission &&
+    message.contentType != ClassChatContentType.quizQuestion;
+
 class ClassChatBubbleRow extends StatelessWidget {
   const ClassChatBubbleRow({
     super.key,
@@ -64,8 +71,12 @@ class ClassChatBubbleRow extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          const _ClassAvatar(isUser: false),
-          const SizedBox(width: 8),
+          if (showsBotAvatar(message)) ...[
+            const _ClassAvatar(isUser: false),
+            const SizedBox(width: 8),
+          ] else
+            // Keep the card in line with the bubbles above it.
+            const SizedBox(width: 38),
           Expanded(
             child: ClassMessageContent(
               message: message,

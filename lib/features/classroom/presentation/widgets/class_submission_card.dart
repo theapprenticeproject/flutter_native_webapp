@@ -577,12 +577,15 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
           error: _wrongFile,
           child: Column(
             children: [
-              Icon(
-                _wrongFile ? Icons.warning_amber_rounded : Icons.upload_rounded,
-                size: 22,
-                color: _wrongFile ? AppTheme.dangerText : AppTheme.buttonColor,
-              ),
-              const SizedBox(height: 8),
+              if (_wrongFile)
+                const Icon(
+                  Icons.warning_amber_rounded,
+                  size: 40,
+                  color: AppTheme.dangerText,
+                )
+              else
+                const UploadBadge(),
+              const SizedBox(height: 12),
               if (_wrongFile) ...[
                 Text(
                   forceVideo

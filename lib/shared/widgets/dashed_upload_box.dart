@@ -19,11 +19,33 @@ class DashedUploadBox extends StatelessWidget {
           color: error ? const Color(0xFFFBE9E7) : null,
           borderRadius: BorderRadius.circular(16),
         ),
-        padding: const EdgeInsets.all(14),
+        // Figma "Submission Drop Zone": 26 at the sides, about 34 above and below.
+        padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 32),
         child: child,
       ),
     );
   }
+}
+
+/// The round badge with the upload arrow, at the top of the box (Figma, 56).
+class UploadBadge extends StatelessWidget {
+  const UploadBadge({super.key});
+
+  @override
+  Widget build(BuildContext context) => Container(
+    width: 56,
+    height: 56,
+    alignment: Alignment.center,
+    decoration: const BoxDecoration(
+      color: Color(0xFFE8E8FB),
+      shape: BoxShape.circle,
+    ),
+    child: const Icon(
+      Icons.upload_rounded,
+      size: 24,
+      color: AppTheme.buttonColor,
+    ),
+  );
 }
 
 class _DashedBorderPainter extends CustomPainter {

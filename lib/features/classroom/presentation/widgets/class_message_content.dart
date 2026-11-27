@@ -75,7 +75,8 @@ class ClassMessageContent extends StatelessWidget {
             : ClassQuizQuestionCard(
                 key: ValueKey('quiz_${message.id}'),
                 message: message,
-                controller: controller,
+                awaiting: controller.isAwaitingInput,
+                onAnswer: controller.submitQuizAnswer,
               );
       case ClassChatContentType.quizAnswerEcho:
         return ClassTextBubble(text: message.text ?? '', isUser: true);
