@@ -12,11 +12,17 @@ class AppTonalButton extends StatelessWidget {
     required this.label,
     required this.onPressed,
     this.trailing,
+    this.height = 44,
+    this.minWidth = 0,
   });
 
   final String label;
   final VoidCallback? onPressed;
   final IconData? trailing;
+
+  /// 44 high by default. The "Ask TAP" button of the header is 48 by 96 (Figma).
+  final double height;
+  final double minWidth;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +31,7 @@ class AppTonalButton extends StatelessWidget {
       style: FilledButton.styleFrom(
         backgroundColor: const Color(0xFFE8E8FB),
         foregroundColor: AppTheme.buttonColor,
-        minimumSize: const Size(0, 44),
+        minimumSize: Size(minWidth, height),
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
         padding: const EdgeInsets.symmetric(horizontal: 18),
         elevation: 0,

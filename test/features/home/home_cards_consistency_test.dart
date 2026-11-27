@@ -118,4 +118,32 @@ void main() {
     expect(buttons.map((r) => r.width).toSet().length, 1, reason: '$buttons');
     expect(gapsToBottom.toSet().length, 1, reason: '$gapsToBottom');
   });
+
+  // Figma M-F2-01 shows "+40 points" under the title. The number comes from the
+  // server (the activity's points). It is not known yet, so without it the card
+  // shows no chip.
+  testWidgets(
+    'the start card shows the points chip when the points are known',
+    (tester) async {
+      await _pump(
+        tester,
+        StartActivityCard(
+          courseDisplay: '003',
+          unitName: _title,
+          thumbnailAsset: _thumb,
+          points: 40,
+          onStart: () {},
+        ),
+      );
+      expect(find.text('+40 points'), findsOneWidget);
+      final chip = tester.widget<Container>(
+        find.byKey(const ValueKey('activity-chip')),
+      );
+      expect(
+        (chip.decoration! as BoxDecoration).color,
+        const Color(0xFFFCEFD6),
+      );
+      expect(find.byKey(const ValueKey('points-coin')), findsOneWidget);
+    },
+  );
 }

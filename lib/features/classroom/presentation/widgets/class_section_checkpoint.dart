@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import '../../../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -32,15 +34,20 @@ class ClassSectionCheckpoint extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final compact = MediaQuery.sizeOf(context).width < 640;
+    // The start screen (design M-C01): the orb is 256 across, the text is 16 on a
+    // 24 line and the button is 343 by 56. In a thread the orb stays smaller.
+    final orbSize = fillAvailableHeight
+        ? math.min(256.0, MediaQuery.sizeOf(context).width - 64)
+        : 160.0;
 
     final content = Container(
       width: double.infinity,
       color: AppTheme.classroomBackground,
       padding: EdgeInsets.fromLTRB(
-        compact ? 20 : 32,
-        compact ? 44 : 64,
-        compact ? 20 : 32,
-        40,
+        16,
+        fillAvailableHeight ? 24 : (compact ? 44 : 64),
+        16,
+        fillAvailableHeight ? 24 : 40,
       ),
       child: Center(
         child: ConstrainedBox(
@@ -48,24 +55,25 @@ class ClassSectionCheckpoint extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const ClassTapBuddyOrb(size: 160),
-              const SizedBox(height: 18),
+              ClassTapBuddyOrb(size: orbSize),
+              SizedBox(height: fillAvailableHeight ? 24 : 18),
               Text(
                 text,
                 textAlign: TextAlign.center,
                 style: GoogleFonts.inter(
                   fontSize: 16,
-                  height: 1.28,
-                  fontWeight: FontWeight.w500,
+                  height: 1.5,
+                  fontWeight: FontWeight.w400,
                   color: AppTheme.textColor,
                 ),
               ),
-              const SizedBox(height: 18),
-              SizedBox(
-                width: compact ? double.infinity : 292,
+              SizedBox(height: fillAvailableHeight ? 16 : 18),
+              ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 343),
                 child: AppPrimaryButton(
                   label: buttonLabel,
                   onPressed: onPressed,
+                  tall: true,
                 ),
               ),
               if (secondaryLabel != null) ...[
@@ -90,7 +98,15 @@ class ClassSectionCheckpoint extends StatelessWidget {
 
     if (!fillAvailableHeight) return content;
 
-    return SizedBox.expand(child: SingleChildScrollView(child: content));
+    // The start screen sits in the middle of the free space (design M-C01).
+    return LayoutBuilder(
+      builder: (context, box) => SingleChildScrollView(
+        child: ConstrainedBox(
+          constraints: BoxConstraints(minHeight: box.maxHeight),
+          child: Center(child: content),
+        ),
+      ),
+    );
   }
 }
 
@@ -105,8 +121,9 @@ class ClassTapBuddyOrb extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = size * 0.66;
-    final avatar = size * 0.22;
+    // Figma M-C01: a 256 orb has a 144 dark circle and a 35 avatar in it.
+    final dark = size * 0.5625;
+    final avatar = dark * 0.244;
     return SizedBox(
       width: size,
       height: size,
@@ -157,7 +174,7 @@ class ClassTapBuddyOrb extends StatelessWidget {
                 Text(
                   context.l10n.classTapBuddy,
                   style: GoogleFonts.inter(
-                    fontSize: size * 0.06,
+                    fontSize: math.max(9, size * 0.045),
                     fontWeight: FontWeight.w600,
                     color: Colors.white,
                   ),

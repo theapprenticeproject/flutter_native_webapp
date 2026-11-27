@@ -103,13 +103,13 @@ void main() {
       expect((hi.dy - pill.dy).abs(), lessThan(4));
     });
 
-    testWidgets('the pill is 36 high with the ring coin', (tester) async {
+    testWidgets('the pill is 40 high with the ring coin', (tester) async {
       await _pump(tester, home);
       final pill = find.ancestor(
         of: find.text('3 Points'),
         matching: find.byKey(const ValueKey('points-pill')),
       );
-      expect(tester.getSize(pill).height, 36);
+      expect(tester.getSize(pill).height, 40);
       expect(find.byKey(const ValueKey('points-coin')), findsOneWidget);
     });
 
@@ -165,6 +165,58 @@ void askTapButtonTests() {
         ),
       );
       expect(find.text('Ask TAP'), findsNothing);
+    });
+  });
+
+  // Figma M-C01 and M-C03: the activity header is 69 high. The start screen has
+  // the activity name and Ask TAP, and no points. The later screens have the
+  // points and Ask TAP, and no name.
+  group('the activity header follows the design', () {
+    testWidgets('start screen: the name and Ask TAP, no points pill', (
+      tester,
+    ) async {
+      await _pump(
+        tester,
+        AppHeader(
+          title: 'Get Ready For ScratchJr',
+          showBack: true,
+          points: 40,
+          onAskTap: () {},
+        ),
+      );
+      expect(find.text('Get Ready For ScratchJr'), findsOneWidget);
+      expect(find.text('Ask TAP'), findsOneWidget);
+      expect(find.byKey(const ValueKey('points-pill')), findsNothing);
+      expect(tester.getSize(find.byType(AppHeader)).height, 69);
+    });
+
+    testWidgets('later screens: the points and Ask TAP, no name', (
+      tester,
+    ) async {
+      await _pump(
+        tester,
+        AppHeader(
+          title: '',
+          showBack: true,
+          showPoints: true,
+          points: 40,
+          onAskTap: () {},
+        ),
+      );
+      expect(find.byKey(const ValueKey('points-pill')), findsOneWidget);
+      expect(find.text('40'), findsOneWidget);
+      expect(find.text('Ask TAP'), findsOneWidget);
+      expect(tester.getSize(find.byType(AppHeader)).height, 69);
+    });
+
+    testWidgets('Ask TAP is 96 wide and 48 high, as in Figma', (tester) async {
+      await _pump(
+        tester,
+        AppHeader(title: 'Unit', showBack: true, points: 1, onAskTap: () {}),
+      );
+      final size = tester.getSize(find.byType(AskTapButton));
+      expect(size.height, 48);
+      expect(size.width, closeTo(96, 8));
     });
   });
 }

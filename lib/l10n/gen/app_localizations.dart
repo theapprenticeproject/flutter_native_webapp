@@ -2108,7 +2108,7 @@ abstract class AppLocalizations {
   /// **'Share it before the timer ends to earn +{points} points.'**
   String galleryWantToShareTimer(int points);
 
-  /// NOT IN THE APP YET (design M-F2-01, Home. The points of the activity card)
+  /// The points of the activity, on the Home card (design M-F2-01)
   ///
   /// In en, this message translates to:
   /// **'+{points} points'**

@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
 
 import '../../../../l10n/l10n.dart';
+import '../../../../shared/widgets/app_header.dart' show PointsCoin;
 import 'activity_card.dart';
 
-/// The activity has not been started. The card has no chip: the points of an
-/// activity (Figma "+40 points") are not known to the app yet.
+/// The activity has not been started: the thumbnail, the title, the points when
+/// they are known (Figma "+40 points", M-F2-01) and "Start Activity".
 class StartActivityCard extends StatelessWidget {
   final String courseDisplay;
   final String unitName;
   final String thumbnailAsset;
   final VoidCallback? onStart;
+
+  /// The points of the activity, when the server tells them. Without them the
+  /// card shows no chip (the number is not made up).
+  final int? points;
 
   const StartActivityCard({
     super.key,
@@ -17,6 +22,7 @@ class StartActivityCard extends StatelessWidget {
     required this.unitName,
     required this.thumbnailAsset,
     required this.onStart,
+    this.points,
   });
 
   @override
@@ -24,6 +30,12 @@ class StartActivityCard extends StatelessWidget {
     return ActivityCard(
       title: unitName,
       thumbnailAsset: thumbnailAsset,
+      chip: points == null
+          ? null
+          : ActivityChip(
+              leading: const PointsCoin(size: 16),
+              text: context.l10n.homePointsPill(points!),
+            ),
       buttonLabel: onStart == null
           ? context.l10n.homeWeeklyLimit
           : context.l10n.homeStartActivity,

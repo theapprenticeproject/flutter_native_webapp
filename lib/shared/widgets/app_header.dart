@@ -40,67 +40,51 @@ class AppHeader extends StatelessWidget {
     final isCompact = MediaQuery.sizeOf(context).width < 620;
 
     if (showBack) {
+      // Figma Class Header (M-C01, M-C03): 69 high, a 48 round back button, the
+      // activity name (only on the start screen), the points (only on the later
+      // screens) and "Ask TAP". The logos are not in this header.
       return Container(
-        height: isCompact ? 64 : 86,
+        height: 69,
+        padding: const EdgeInsets.symmetric(horizontal: 16),
         decoration: const BoxDecoration(
           color: Colors.white,
           border: Border(bottom: BorderSide(color: AppTheme.borderColor)),
         ),
         child: Row(
           children: [
-            SizedBox(
-              width: isCompact ? 72 : 142,
-              child: Center(
-                child: IconButton(
-                  onPressed: onBack ?? () => Navigator.of(context).maybePop(),
-                  icon: Icon(
-                    Icons.arrow_circle_left_outlined,
-                    size: isCompact ? 34 : 44,
-                  ),
-                  color: const Color(0xFF6E6E7A),
-                ),
+            IconButton(
+              tooltip: MaterialLocalizations.of(context).backButtonTooltip,
+              onPressed: onBack ?? () => Navigator.of(context).maybePop(),
+              icon: const Icon(Icons.arrow_back_rounded, size: 22),
+              style: IconButton.styleFrom(
+                backgroundColor: const Color(0xFFF0F0F4),
+                fixedSize: const Size(48, 48),
               ),
             ),
-            const VerticalDivider(
-              width: 1,
-              thickness: 1,
-              color: AppTheme.borderColor,
-            ),
-            SizedBox(width: isCompact ? 16 : 26),
+            const SizedBox(width: 8),
             Expanded(
-              child: Text(
-                title,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: GoogleFonts.inter(
-                  fontSize: isCompact ? 13 : 18,
-                  fontWeight: FontWeight.w700,
-                  color: AppTheme.subheadingColor,
-                  letterSpacing: 0,
-                ),
-              ),
+              child: title.isEmpty
+                  ? const SizedBox.shrink()
+                  : Text(
+                      title,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: GoogleFonts.inter(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
+                        color: AppTheme.textColor,
+                        letterSpacing: 0,
+                      ),
+                    ),
             ),
-            const SizedBox(width: 18),
-            Container(width: 1, height: 32, color: AppTheme.borderColor),
-            if (badge != null) ...[const SizedBox(width: 18), badge!],
+            if (badge != null) ...[const SizedBox(width: 8), badge!],
             if (showPoints) ...[
-              const SizedBox(width: 18),
+              const SizedBox(width: 8),
               _MetricPill(label: '$points'),
             ],
-            if (onAskTap != null)
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: isCompact ? 10 : 18),
-                child: AskTapButton(onPressed: onAskTap!),
-              )
-            else ...[
-              if (showPoints) ...[
-                const SizedBox(width: 18),
-                Container(width: 1, height: 32, color: AppTheme.borderColor),
-              ],
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: isCompact ? 14 : 24),
-                child: PostOnboardingBrand(compact: isCompact),
-              ),
+            if (onAskTap != null) ...[
+              const SizedBox(width: 8),
+              AskTapButton(onPressed: onAskTap!),
             ],
           ],
         ),
@@ -270,7 +254,7 @@ class _MetricPill extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       key: const ValueKey('points-pill'),
-      height: 36,
+      height: 40,
       padding: const EdgeInsets.symmetric(horizontal: 14),
       decoration: BoxDecoration(
         color: Colors.white,
@@ -337,9 +321,14 @@ class AskTapButton extends StatelessWidget {
 
   final VoidCallback onPressed;
 
+  // Figma "Ask TAP": 96 wide and 48 high.
   @override
-  Widget build(BuildContext context) =>
-      AppTonalButton(label: context.l10n.headerAskTap, onPressed: onPressed);
+  Widget build(BuildContext context) => AppTonalButton(
+    label: context.l10n.headerAskTap,
+    onPressed: onPressed,
+    height: 48,
+    minWidth: 96,
+  );
 }
 
 /// The points coin: an orange ring with a diamond in the middle (design M-F2-01).

@@ -845,7 +845,7 @@
   },
   "homePointsPill": "+{points} points",
   "@homePointsPill": {
-    "description": "NOT IN THE APP YET (design M-F2-01, Home. The points of the activity card)",
+    "description": "The points of the activity, on the Home card (design M-F2-01)",
     "placeholders": {
       "points": {
         "type": "int"

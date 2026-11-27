@@ -39,6 +39,24 @@ void main() {
     });
   }
 
+  // Figma M-C01: the orb is 256 across and its dark circle is 144.
+  testWidgets('the dark circle is 144 in a 256 orb', (tester) async {
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: Scaffold(body: Center(child: ClassTapBuddyOrb(size: 256))),
+      ),
+    );
+    final dark = tester.getSize(
+      find
+          .ancestor(
+            of: find.text('TAP Buddy'),
+            matching: find.byType(Container),
+          )
+          .first,
+    );
+    expect(dark.width, closeTo(144, 0.5));
+  });
+
   test('does not use the picture that is already a whole orb', () {
     final text = File(
       'lib/features/classroom/presentation/widgets/class_section_checkpoint.dart',

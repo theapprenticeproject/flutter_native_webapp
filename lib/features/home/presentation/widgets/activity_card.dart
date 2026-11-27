@@ -138,9 +138,11 @@ class _Placeholder extends StatelessWidget {
 /// The chip of the design (Figma "Chips/gamification-points"): a light orange
 /// pill with an orange icon and dark orange text.
 class ActivityChip extends StatelessWidget {
-  const ActivityChip({super.key, required this.icon, required this.text});
+  const ActivityChip({super.key, required this.text, this.icon, this.leading});
 
-  final IconData icon;
+  /// An icon, or a [leading] widget (for example the points coin) instead.
+  final IconData? icon;
+  final Widget? leading;
   final String text;
 
   @override
@@ -157,7 +159,7 @@ class ActivityChip extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(icon, size: 16, color: const Color(0xFFE8A13B)),
+            leading ?? Icon(icon, size: 16, color: const Color(0xFFE8A13B)),
             const SizedBox(width: 6),
             Flexible(
               child: Text(

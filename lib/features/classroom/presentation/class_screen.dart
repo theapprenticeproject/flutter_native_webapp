@@ -239,15 +239,21 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
           children: [
             Column(
               children: [
+                // Design M-C01: the start screen has the activity name and no
+                // points. Design M-C03: the later screens have the points and
+                // the step bar, and no name.
                 AppHeader(
-                  title: widget.controller.unitName,
+                  title: isVideoStartCheckpoint
+                      ? widget.controller.unitName
+                      : '',
                   points: widget.controller.displayedTotalPoints,
                   showBack: true,
-                  showPoints: true,
+                  showPoints: !isVideoStartCheckpoint,
                   onBack: () => context.go(AppRoutes.home),
                   onAskTap: () => openAskTapFor(context, widget.controller),
                 ),
-                ActivityStepBar(state: widget.controller.stepBar),
+                if (!isVideoStartCheckpoint)
+                  ActivityStepBar(state: widget.controller.stepBar),
                 Expanded(
                   child: Container(
                     color: AppTheme.appBackground,
