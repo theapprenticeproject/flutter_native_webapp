@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import '../../l10n/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -21,6 +23,10 @@ class AppHeader extends StatelessWidget {
   /// Shows the "Ask TAP" button and opens the help panel (design M-F2-01).
   final VoidCallback? onAskTap;
 
+  /// The number in the activity header is the points of this activity (the
+  /// activity coin), not the student's total (the ring coin).
+  final bool pointsAreActivity;
+
   const AppHeader({
     super.key,
     required this.title,
@@ -33,6 +39,7 @@ class AppHeader extends StatelessWidget {
     this.onBack,
     this.badge,
     this.onAskTap,
+    this.pointsAreActivity = false,
   });
 
   @override
@@ -80,7 +87,7 @@ class AppHeader extends StatelessWidget {
             if (badge != null) ...[const SizedBox(width: 8), badge!],
             if (showPoints) ...[
               const SizedBox(width: 8),
-              _MetricPill(label: '$points'),
+              _MetricPill(label: '$points', activity: pointsAreActivity),
             ],
             if (onAskTap != null) ...[
               const SizedBox(width: 8),
@@ -247,8 +254,9 @@ class PostOnboardingBrand extends StatelessWidget {
 /// The points pill (design M-F2-01): a ring-shaped coin and the points, 36 high.
 class _MetricPill extends StatelessWidget {
   final String label;
+  final bool activity;
 
-  const _MetricPill({required this.label});
+  const _MetricPill({required this.label, this.activity = false});
 
   @override
   Widget build(BuildContext context) {
@@ -264,7 +272,7 @@ class _MetricPill extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const PointsCoin(),
+          activity ? const ActivityPointsCoin() : const PointsCoin(),
           const SizedBox(width: 8),
           Text(
             label,
@@ -344,4 +352,49 @@ class PointsCoin extends StatelessWidget {
     height: size,
     child: const CustomPaint(painter: _CoinPainter()),
   );
+}
+
+/// The coin of the points of ONE activity (Figma, the activity header pill): a
+/// dark brown rim, an amber ring, an orange disc and a small white star.
+class ActivityPointsCoin extends StatelessWidget {
+  const ActivityPointsCoin({super.key, this.size = 20});
+
+  final double size;
+
+  @override
+  Widget build(BuildContext context) => SizedBox(
+    key: const ValueKey('activity-points-coin'),
+    width: size,
+    height: size,
+    child: const CustomPaint(painter: _ActivityCoinPainter()),
+  );
+}
+
+class _ActivityCoinPainter extends CustomPainter {
+  const _ActivityCoinPainter();
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final c = Offset(size.width / 2, size.height / 2);
+    final r = size.width / 2;
+    canvas.drawCircle(c, r, Paint()..color = const Color(0xFF9A5B00));
+    canvas.drawCircle(c, r * 0.82, Paint()..color = const Color(0xFFC17E1D));
+    canvas.drawCircle(c, r * 0.64, Paint()..color = const Color(0xFFE8A13B));
+    // A small five-pointed star.
+    final star = Path();
+    for (var i = 0; i < 10; i++) {
+      final radius = (i.isEven ? 0.30 : 0.13) * r;
+      final angle = -math.pi / 2 + i * math.pi / 5;
+      final p = Offset(
+        c.dx + radius * math.cos(angle),
+        c.dy + radius * math.sin(angle),
+      );
+      i == 0 ? star.moveTo(p.dx, p.dy) : star.lineTo(p.dx, p.dy);
+    }
+    star.close();
+    canvas.drawPath(star, Paint()..color = Colors.white);
+  }
+
+  @override
+  bool shouldRepaint(covariant _ActivityCoinPainter old) => false;
 }

@@ -1,3 +1,4 @@
+import '../../../domain/progress/app_config_provider.dart';
 import '../../../shared/ask_tap/ask_tap_sheet.dart';
 import 'package:flutter/material.dart';
 import '../../../l10n/l10n.dart';
@@ -299,7 +300,7 @@ class _CompletedStage extends StatelessWidget {
   }
 }
 
-class _ActiveCard extends StatelessWidget {
+class _ActiveCard extends ConsumerWidget {
   final LearningStage stage;
   final CourseUnit unit;
   final bool slowFeedback;
@@ -311,12 +312,20 @@ class _ActiveCard extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    // What the activity can earn, from the server's point rules. Without them
+    // (an older config, or no network) the card shows no points.
+    final points = ref
+        .watch(appConfigProvider)
+        .valueOrNull
+        ?.rules
+        .activityPoints(quizQuestions: unit.quizQuestions);
     return switch (stage) {
       LearningStage.startActivity => StartActivityCard(
         courseDisplay: unit.courseDisplay,
         unitName: unit.unitName,
         thumbnailAsset: unit.thumbnailAsset,
+        points: points,
         onStart: () => context.go(AppRoutes.classroom),
       ),
       LearningStage.sendProject => SendProjectCard(

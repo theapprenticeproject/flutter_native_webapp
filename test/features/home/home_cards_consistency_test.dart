@@ -143,7 +143,11 @@ void main() {
         (chip.decoration! as BoxDecoration).color,
         const Color(0xFFFCEFD6),
       );
-      expect(find.byKey(const ValueKey('points-coin')), findsOneWidget);
+      // The points of an activity have the activity coin, not the total's ring.
+      expect(
+        find.byKey(const ValueKey('activity-points-coin')),
+        findsOneWidget,
+      );
     },
   );
 }

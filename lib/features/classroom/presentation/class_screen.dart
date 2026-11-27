@@ -24,6 +24,7 @@ import 'widgets/class_message_content.dart';
 import 'widgets/class_reveal_widgets.dart';
 import '../../../domain/learning_progress/picture_pieces.dart';
 import '../../../domain/learning_progress/watch_navigation.dart';
+import '../../../domain/progress/app_config_provider.dart';
 import 'widgets/picture_badge.dart';
 
 class ClassScreen extends ConsumerStatefulWidget {
@@ -234,6 +235,12 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
                 ClassChatContentType.checkpoint &&
             widget.controller.messages.first.data['action'] == 'video';
 
+        final activityPoints = ref
+            .watch(appConfigProvider)
+            .valueOrNull
+            ?.rules
+            .activityPoints(quizQuestions: widget.controller.quizQuestionCount);
+
         // The badge floats at the bottom right (design M-C03, M-C05).
         return Stack(
           children: [
@@ -246,7 +253,11 @@ class _ClassChatViewState extends ConsumerState<_ClassChatView> {
                   title: isVideoStartCheckpoint
                       ? widget.controller.unitName
                       : '',
-                  points: widget.controller.displayedTotalPoints,
+                  // The pill shows what THIS activity can earn (design M-C03),
+                  // from the server's point rules. Without them, the total.
+                  pointsAreActivity: activityPoints != null,
+                  points:
+                      activityPoints ?? widget.controller.displayedTotalPoints,
                   showBack: true,
                   showPoints: !isVideoStartCheckpoint,
                   onBack: () => context.go(AppRoutes.home),

@@ -44,11 +44,15 @@ class CourseUnit {
     required this.courseDisplay,
     required this.unitName,
     required this.thumbnailAsset,
+    this.quizQuestions = 0,
   });
 
   final String courseDisplay;
   final String unitName;
   final String thumbnailAsset;
+
+  /// How many quiz questions the unit has (each right answer earns points).
+  final int quizQuestions;
 
   factory CourseUnit.fromCourse(CourseDetailModel course, int unitIndex) {
     final unit = course.units[unitIndex];
@@ -56,6 +60,7 @@ class CourseUnit {
       courseDisplay: course.vertical.isNotEmpty ? course.vertical : course.name,
       unitName: unit.name,
       thumbnailAsset: 'assets/data/courses/thumbnail/${course.id}.webp',
+      quizQuestions: unit.quiz?.questions.length ?? 0,
     );
   }
 }

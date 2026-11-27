@@ -219,4 +219,44 @@ void askTapButtonTests() {
       expect(size.width, closeTo(96, 8));
     });
   });
+
+  // Design: two coins. The ring with a diamond is the TOTAL points (Home, Me). The
+  // brown and orange coin with a star is the points of THIS ACTIVITY (the activity
+  // screens and the Home card).
+  group('two coins', () {
+    testWidgets('Home: the total points have the ring coin', (tester) async {
+      await _pump(
+        tester,
+        const AppHeader(
+          title: 'Home',
+          studentName: 'Aarav',
+          points: 3,
+          showStudentSummary: true,
+        ),
+      );
+      expect(find.byKey(const ValueKey('points-coin')), findsOneWidget);
+      expect(find.byKey(const ValueKey('activity-points-coin')), findsNothing);
+    });
+
+    testWidgets('the activity header: the points of the activity', (
+      tester,
+    ) async {
+      await _pump(
+        tester,
+        const AppHeader(
+          title: '',
+          showBack: true,
+          showPoints: true,
+          pointsAreActivity: true,
+          points: 40,
+        ),
+      );
+      expect(
+        find.byKey(const ValueKey('activity-points-coin')),
+        findsOneWidget,
+      );
+      expect(find.byKey(const ValueKey('points-coin')), findsNothing);
+      expect(find.text('40'), findsOneWidget);
+    });
+  });
 }

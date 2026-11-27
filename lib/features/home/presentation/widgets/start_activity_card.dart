@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../l10n/l10n.dart';
-import '../../../../shared/widgets/app_header.dart' show PointsCoin;
+import '../../../../shared/widgets/app_header.dart' show ActivityPointsCoin;
 import 'activity_card.dart';
 
 /// The activity has not been started: the thumbnail, the title, the points when
@@ -33,7 +33,7 @@ class StartActivityCard extends StatelessWidget {
       chip: points == null
           ? null
           : ActivityChip(
-              leading: const PointsCoin(size: 16),
+              leading: const ActivityPointsCoin(size: 16),
               text: context.l10n.homePointsPill(points!),
             ),
       buttonLabel: onStart == null

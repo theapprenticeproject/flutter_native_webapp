@@ -174,9 +174,13 @@ class AppConfig {
     required this.uploadMaxBytesImage,
     required this.uploadMaxBytesVideo,
     required this.pointTiers,
+    this.rules = const PointRules(),
   });
 
   final int uploadMaxBytesImage;
+
+  /// The points of each step (R-41: they are the server's settings).
+  final PointRules rules;
   final int uploadMaxBytesVideo;
 
   /// `(id, min)` sorted by `min`.
@@ -204,6 +208,58 @@ class AppConfig {
       uploadMaxBytesImage: _int(json['upload_max_bytes_image']) ?? 0,
       uploadMaxBytesVideo: _int(json['upload_max_bytes_video']) ?? 0,
       pointTiers: tiers,
+      rules: PointRules.fromJson(json),
+    );
+  }
+}
+
+/// How many points each step is worth, from `/app/config`. They are settings on
+/// the server and can change, so the app does not keep them in code (R-41).
+class PointRules {
+  const PointRules({
+    this.video = 0,
+    this.quizPerCorrect = 0,
+    this.submissionFirstAttempt = 0,
+    this.reviewValid = 0,
+  });
+
+  /// The video marked as watched.
+  final int video;
+
+  /// Each correct quiz answer.
+  final int quizPerCorrect;
+
+  /// The work sent, first attempt (the second attempt gives none).
+  final int submissionFirstAttempt;
+
+  /// The work was graded valid.
+  final int reviewValid;
+
+  /// The server sent at least one rule. An older config has none.
+  bool get known =>
+      video > 0 ||
+      quizPerCorrect > 0 ||
+      submissionFirstAttempt > 0 ||
+      reviewValid > 0;
+
+  /// What a whole activity can earn: the video, the work (first attempt), a valid
+  /// review and every quiz question right. Null when the rules are not known.
+  int? activityPoints({required int quizQuestions}) => known
+      ? video +
+            submissionFirstAttempt +
+            reviewValid +
+            quizPerCorrect * quizQuestions
+      : null;
+
+  factory PointRules.fromJson(Map<String, dynamic> json) {
+    Map<String, dynamic> part(String key) =>
+        (json[key] as Map?)?.cast<String, dynamic>() ?? const {};
+    return PointRules(
+      video: _int(part('video')['points_complete']) ?? 0,
+      quizPerCorrect: _int(part('quiz')['points_per_correct_answer']) ?? 0,
+      submissionFirstAttempt:
+          _int(part('submission')['points_first_attempt']) ?? 0,
+      reviewValid: _int(part('submission')['points_review_valid']) ?? 0,
     );
   }
 }

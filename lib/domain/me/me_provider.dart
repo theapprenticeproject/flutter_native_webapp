@@ -6,8 +6,8 @@ import '../learning_progress/home_dashboard_provider.dart';
 import '../profile/profile_provider.dart';
 import '../program_content/course_detail_model.dart';
 import '../program_content/program_content_provider.dart';
+import '../progress/app_config_provider.dart';
 import '../progress/progress_models.dart';
-import '../progress/progress_provider.dart';
 import '../submission/feedback_provider.dart';
 import '../submission/submission_provider.dart';
 import 'level.dart';
@@ -54,7 +54,7 @@ final meDataProvider = FutureProvider.autoDispose<MeData>((ref) async {
 
   List<PointTier> tiers = const [];
   try {
-    tiers = (await ref.read(progressRepositoryProvider).appConfig()).pointTiers;
+    tiers = (await ref.watch(appConfigProvider.future)).pointTiers;
   } catch (_) {
     // No level to show.
   }

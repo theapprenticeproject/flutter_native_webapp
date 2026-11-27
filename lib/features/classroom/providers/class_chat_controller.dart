@@ -231,6 +231,9 @@ class ClassChatController extends ChangeNotifier {
 
   bool get _quizNotRequired => _quizQuestions.isEmpty;
 
+  /// How many quiz questions this activity has.
+  int get quizQuestionCount => _quizQuestions.length;
+
   bool get _hasCompletedRequiredStages =>
       _videoWatchedThisUnit &&
       _feedbackAllowsCompletion &&

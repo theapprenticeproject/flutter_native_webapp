@@ -286,6 +286,42 @@ void main() {
     expect(config.tierFor(1500), 'silver');
   });
 
+  // The shape the Worker really sends (checked on 2026-11-27).
+  test('config reads the point rules and the points of an activity', () async {
+    final adapter = FakeWorkerAdapter(
+      (_) => ok({
+        'tiers': [
+          {'id': 'bronze', 'min': 0},
+          {'id': 'silver', 'min': 100},
+        ],
+        'video': {'points_complete': 10},
+        'quiz': {'points_per_correct_answer': 1},
+        'submission': {
+          'points_first_attempt': 25,
+          'points_review_valid': 10,
+          'gems_review_valid': 1,
+        },
+      }),
+    );
+    final config = await repoFor(adapter).appConfig();
+    expect(config.rules.video, 10);
+    expect(config.rules.quizPerCorrect, 1);
+    expect(config.rules.submissionFirstAttempt, 25);
+    expect(config.rules.reviewValid, 10);
+    // video 10 + work 25 + valid review 10 + 5 quiz questions of 1 point.
+    expect(config.rules.activityPoints(quizQuestions: 5), 50);
+    expect(config.rules.activityPoints(quizQuestions: 0), 45);
+  });
+
+  test('an older config without the rules: the points are not known', () async {
+    final adapter = FakeWorkerAdapter(
+      (_) => ok({'tiers': const [], 'upload_max_bytes_image': 1}),
+    );
+    final config = await repoFor(adapter).appConfig();
+    expect(config.rules.known, isFalse);
+    expect(config.rules.activityPoints(quizQuestions: 5), isNull);
+  });
+
   group('idempotency keys', () {
     test('are unique per call and say what they are for', () {
       final a = newIdempotencyKey('video', 'S1', 'LU-1');
