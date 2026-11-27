@@ -19,11 +19,9 @@ enum FeedbackStage {
   /// Valid feedback: the Results step opens and so can the next unit.
   valid,
 
-  /// Not valid, and the student can send again.
-  notValid,
-
-  /// Not valid, and both attempts are used: the student cannot go on (R-76).
-  notValidNoRetry;
+  /// Not valid. The student can send again, as often as needed: there is no
+  /// limit on the number of attempts.
+  notValid;
 
   /// The next unit opens only after valid feedback (R-83).
   bool get opensNextUnit => this == FeedbackStage.valid;
@@ -45,9 +43,7 @@ FeedbackStage feedbackStage(
     return late ? FeedbackStage.slow : FeedbackStage.waiting;
   }
   if (latest.isValid) return FeedbackStage.valid;
-  return latest.canSendAgain
-      ? FeedbackStage.notValid
-      : FeedbackStage.notValidNoRetry;
+  return FeedbackStage.notValid;
 }
 
 /// The newest attempt for [assignmentId] among [rows], or null.

@@ -84,7 +84,7 @@ If the student postpones Make, the app goes to the Quiz and asks again later. No
 
 The score 0 rule keeps R-92 case 1: when the AI evaluation fails, the pipeline publishes the result as original with grade 0 and the text "technical issue". That is not valid.
 
-"Send again" is a new `request_upload` and a new `submit_artwork` with a new key. The cap is 2 attempts for each assignment. After two not-valid results the child cannot go on (decided: the cap stays).
+"Send again" is a new `request_upload` and a new `submit_artwork` with a new key. There is **no limit on attempts** (decided 2026-11-27): a child sends again until the work is valid. The first attempt gives the submit points (+25); later attempts give none. The app does not read `attempts_remaining` any more.
 
 ## 5. Points and caps (R-75, R-91)
 
@@ -105,7 +105,7 @@ Until the +10 arrives, the project shows "Points will be provided after feedback
 |---|---|
 | `submit_quiz` | The quiz was already scored. **The app sends only the first scored attempt** (decided on 2026-11-13). A retake is graded on the phone only and is never sent. If the server answers `CONFLICT`, the app treats the quiz as scored. |
 | `submit_video_watched` | The video was already marked (too many events). The app goes on. |
-| `request_upload`, `submit_artwork` | The cap of 2 attempts is reached. The app shows that the child cannot send again (R-76). |
+| `request_upload`, `submit_artwork` | There is no attempt cap any more. To ask the backend what `CONFLICT` means now (for example the same photo sent twice). The app treats it as "already sent" and goes on. |
 
 Gems are not in the v1 design. The app does not show them and does not ask for them. If the backend makes "send again" cost a gem, a child with no gem is stuck. The backend developer is asked to remove the gem cost.
 

@@ -192,7 +192,9 @@ void main() {
       );
     });
 
-    testWidgets('not valid: the warning and Send again', (tester) async {
+    testWidgets('not valid: the warning and Send again, as often as needed', (
+      tester,
+    ) async {
       var again = 0;
       await _pumpPage(
         tester,
@@ -209,20 +211,6 @@ void main() {
       expect(find.textContaining('do better next time'), findsOneWidget);
       await tester.tap(find.text('Send again'));
       expect(again, 1);
-    });
-
-    testWidgets('not accepted (both tries used): no Send again', (
-      tester,
-    ) async {
-      await _pumpPage(
-        tester,
-        ProjectPage(
-          project: _p('Art from Waste', FeedbackStage.notValidNoRetry),
-          onSendAgain: () {},
-        ),
-      );
-      expect(find.text('Not accepted'), findsOneWidget);
-      expect(find.text('Send again'), findsNothing);
     });
   });
 

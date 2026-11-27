@@ -42,9 +42,7 @@ class ProjectPage extends StatelessWidget {
     final l = context.l10n;
     final sent = _sent(context);
     final url = project.viewUrl;
-    final notRight =
-        project.stage == FeedbackStage.notValid ||
-        project.stage == FeedbackStage.notValidNoRetry;
+    final notRight = project.stage == FeedbackStage.notValid;
     final thinks = switch (project.stage) {
       FeedbackStage.waiting => l.projectThinksWaiting,
       _ => project.detailOf(l),

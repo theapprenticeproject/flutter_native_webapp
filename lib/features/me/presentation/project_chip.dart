@@ -27,7 +27,7 @@ class ProjectChip extends StatelessWidget {
         const Color(0xFFB26A00),
         Icons.schedule_rounded,
       ),
-      FeedbackStage.notValid || FeedbackStage.notValidNoRetry => (
+      FeedbackStage.notValid => (
         const Color(0xFFFBE4E4),
         AppTheme.dangerText,
         Icons.warning_amber_rounded,

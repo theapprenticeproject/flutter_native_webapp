@@ -11,7 +11,6 @@ extension MyProjectText on MyProject {
     FeedbackStage.slow => l.projectSlow,
     FeedbackStage.valid => l.projectFeedbackGiven,
     FeedbackStage.notValid => l.projectWrongFormat,
-    FeedbackStage.notValidNoRetry => l.projectNotAccepted,
   };
 
   /// The Worker's feedback when there is some, and a plain line for each state
@@ -30,9 +29,6 @@ extension MyProjectText on MyProject {
       case FeedbackStage.notValid:
         return '${text.isEmpty ? l.projectNotValidDefault : text}\n\n'
             '${l.projectNotValidHint}';
-      case FeedbackStage.notValidNoRetry:
-        return '${text.isEmpty ? l.projectNotAcceptedDefault : text}\n\n'
-            '${l.projectNotAcceptedHint}';
     }
   }
 }

@@ -108,11 +108,19 @@ void main() {
       );
     });
 
-    test('not valid with no attempt left: stuck (R-76)', () {
-      expect(
-        feedbackStage(_row(result: 'Failed', left: 0, attempt: 2), now: now),
-        FeedbackStage.notValidNoRetry,
-      );
+    // There is no limit on the number of attempts any more: a student sends
+    // again until the work is right. Attempt 2, 7 or 20 is never "stuck".
+    test('not valid is always "send again", whatever the attempt number', () {
+      for (final attempt in [1, 2, 7, 20]) {
+        expect(
+          feedbackStage(
+            _row(result: 'Failed', left: 0, attempt: attempt),
+            now: now,
+          ),
+          FeedbackStage.notValid,
+          reason: 'attempt $attempt',
+        );
+      }
     });
 
     test('only valid feedback opens the next unit (R-83)', () {

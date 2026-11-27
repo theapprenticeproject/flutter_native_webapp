@@ -225,9 +225,6 @@ class AppLocalizationsKn extends AppLocalizations {
   String get projectWrongFormat => 'Wrong format';
 
   @override
-  String get projectNotAccepted => 'Not accepted';
-
-  @override
   String get projectNotSentDetail => 'You have not sent this project yet.';
 
   @override
@@ -247,13 +244,6 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get projectNotValidHint =>
       'Open the activity from Home to send it again.';
-
-  @override
-  String get projectNotAcceptedDefault => 'This project was not accepted.';
-
-  @override
-  String get projectNotAcceptedHint =>
-      'You have used both tries, so you cannot send it again.';
 
   @override
   String get galleryTitle => 'Gallery';
@@ -706,11 +696,6 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
-  String chatNoMoreTries(String reason) {
-    return '$reason\n\nYou have used both tries, so you cannot send this work again.';
-  }
-
-  @override
   String get chatReadyShare => 'Great quiz! 🎉 Ready to send your work now?';
 
   @override
@@ -809,10 +794,6 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get chatSendCorrectedOnly =>
       'Hi Champ 👋\nI couldn\'t review your work 🥺 Because the photo was either a bit unclear or not of today\'s activity.\n\nNo worries; please send it again!';
-
-  @override
-  String get chatNotAccepted =>
-      'I couldn\'t review your work 🥺 Because the photo was either a bit unclear or not of today\'s activity.';
 
   @override
   String get profileWelcome => 'Welcome';

@@ -214,7 +214,6 @@ void main() {
       expect(sub.isPending, isFalse);
       expect(sub.score, 78);
       expect(sub.attemptsRemaining, 1);
-      expect(sub.canSendAgain, isTrue);
     });
 
     test('pending and lower-case statuses are read the same way', () async {
@@ -233,7 +232,6 @@ void main() {
       final sub = (await repoFor(adapter).sync(lastUpdated: 1)).lastSubmission!;
       expect(sub.isPending, isTrue);
       expect(sub.isGraded, isFalse);
-      expect(sub.canSendAgain, isFalse);
     });
   });
 

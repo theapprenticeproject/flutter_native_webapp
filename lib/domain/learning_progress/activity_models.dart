@@ -34,8 +34,7 @@ LearningStage homeStageFor(
   FeedbackStage? feedback,
 ) =>
     stage == ClassroomProgressStage.awaitingFeedback &&
-        (feedback == FeedbackStage.notValid ||
-            feedback == FeedbackStage.notValidNoRetry)
+        feedback == FeedbackStage.notValid
     ? LearningStage.feedbackReady
     : stage.homeStage;
 

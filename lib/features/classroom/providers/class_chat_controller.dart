@@ -632,10 +632,9 @@ class ClassChatController extends ChangeNotifier {
   /// app checks by itself every 30 seconds while this is open.
   void _showWaitingForFeedback() {
     final stage = _feedback ?? FeedbackStage.waiting;
-    if (stage == FeedbackStage.notValid ||
-        stage == FeedbackStage.notValidNoRetry) {
+    if (stage == FeedbackStage.notValid) {
       _feedbackPoll?.cancel();
-      _showNotValid(stage);
+      _showNotValid();
       return;
     }
     _messages.clear();
@@ -776,46 +775,20 @@ class ClassChatController extends ChangeNotifier {
   // ---- Not valid: send again (R-76) ----
 
   /// The work is not valid. The student is told why (the Worker's feedback) and
-  /// can send again, up to 2 attempts in all.
-  void _showNotValid(FeedbackStage stage) {
-    final canSend = stage == FeedbackStage.notValid;
+  /// can send again, as often as needed: there is no limit on attempts.
+  void _showNotValid() {
     _messages.clear();
-    final reason = notValidText(
-      l,
-      feedback: _latestSubmission?.feedback,
-      canSend: canSend,
-    );
-    if (canSend) {
-      // Design M-C25: the reason, a pro tip, then the upload box.
-      _say(reason, warning: true);
-      _say(l.chatProTip, warning: true);
-      _pushCheckpoint(
-        stepId: 'NOT-VALID',
-        image: null,
-        text: '',
-        buttonLabel: l.classAddMyWork,
-        action: 'send_again',
-        secondaryAction: 'not_today',
-        extra: {'resend': true},
-      );
-      return;
-    }
-    // Design M-C25A: the picture, the reason, and the way home.
-    _pushCheckpoint(
-      stepId: 'NOT-VALID-ART',
-      image: 'assets/class-screen/wrong-submission.png',
-      text: '',
-      buttonLabel: '',
-      action: 'art',
-    );
-    _say(reason, warning: true);
+    // Design M-C25: the reason, a pro tip, then the upload box.
+    _say(notValidText(l, feedback: _latestSubmission?.feedback), warning: true);
+    _say(l.chatProTip, warning: true);
     _pushCheckpoint(
       stepId: 'NOT-VALID',
       image: null,
       text: '',
-      buttonLabel: l.chatBackHome,
-      action: 'not_today',
-      extra: {'bare': true},
+      buttonLabel: l.classAddMyWork,
+      action: 'send_again',
+      secondaryAction: 'not_today',
+      extra: {'resend': true},
     );
   }
 
@@ -892,7 +865,10 @@ class ClassChatController extends ChangeNotifier {
       _feedback = FeedbackStage.waiting;
     } on ApiException catch (e) {
       if (e.code != 'CONFLICT') return _workNotSent(answer);
-      // Both attempts are used (R-76). The work was sent before: go on.
+      // There is no attempt limit any more (decided 2026-11-27). A CONFLICT now
+      // means the Worker already has this send (same key or same photo): go on.
+      // shortcut: ask the backend what CONFLICT means now, because the same
+      // photo sent twice may need "choose another photo" instead.
       alreadySent = true;
       _feedback ??= FeedbackStage.waiting;
     } on FileTooBigException {

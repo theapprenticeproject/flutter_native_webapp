@@ -84,9 +84,6 @@ class SubmissionInfo {
       (resultStatus ?? '').toLowerCase() == 'success - original' &&
       (score ?? 0) > 0;
 
-  /// The student may send another photo or video (2 attempts in all).
-  bool get canSendAgain => (attemptsRemaining ?? 0) > 0;
-
   factory SubmissionInfo.fromJson(Map<String, dynamic> json) => SubmissionInfo(
     // shortcut: the test Worker still says "name". Use only submission_id once
     // it is fixed.

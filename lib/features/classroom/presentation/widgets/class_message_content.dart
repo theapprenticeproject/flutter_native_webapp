@@ -175,9 +175,7 @@ class ClassCheckpointCard extends StatelessWidget {
       );
     }
 
-    if ((action == 'quiz_begin_art' ||
-            action == 'quiz_complete_art' ||
-            action == 'art') &&
+    if ((action == 'quiz_begin_art' || action == 'quiz_complete_art') &&
         image != null) {
       return Align(
         alignment: Alignment.centerLeft,

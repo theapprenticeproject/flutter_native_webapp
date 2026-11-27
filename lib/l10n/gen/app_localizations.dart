@@ -494,12 +494,6 @@ abstract class AppLocalizations {
   /// **'Wrong format'**
   String get projectWrongFormat;
 
-  /// No description provided for @projectNotAccepted.
-  ///
-  /// In en, this message translates to:
-  /// **'Not accepted'**
-  String get projectNotAccepted;
-
   /// No description provided for @projectNotSentDetail.
   ///
   /// In en, this message translates to:
@@ -535,18 +529,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Open the activity from Home to send it again.'**
   String get projectNotValidHint;
-
-  /// No description provided for @projectNotAcceptedDefault.
-  ///
-  /// In en, this message translates to:
-  /// **'This project was not accepted.'**
-  String get projectNotAcceptedDefault;
-
-  /// No description provided for @projectNotAcceptedHint.
-  ///
-  /// In en, this message translates to:
-  /// **'You have used both tries, so you cannot send it again.'**
-  String get projectNotAcceptedHint;
 
   /// No description provided for @galleryTitle.
   ///
@@ -1328,12 +1310,6 @@ abstract class AppLocalizations {
   /// **'{reason}\n\nNo worries; please send it again!'**
   String chatSendCorrected(String reason);
 
-  /// No description provided for @chatNoMoreTries.
-  ///
-  /// In en, this message translates to:
-  /// **'{reason}\n\nYou have used both tries, so you cannot send this work again.'**
-  String chatNoMoreTries(String reason);
-
   /// No description provided for @chatReadyShare.
   ///
   /// In en, this message translates to:
@@ -1495,12 +1471,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Hi Champ 👋\nI couldn\'t review your work 🥺 Because the photo was either a bit unclear or not of today\'s activity.\n\nNo worries; please send it again!'**
   String get chatSendCorrectedOnly;
-
-  /// No description provided for @chatNotAccepted.
-  ///
-  /// In en, this message translates to:
-  /// **'I couldn\'t review your work 🥺 Because the photo was either a bit unclear or not of today\'s activity.'**
-  String get chatNotAccepted;
 
   /// No description provided for @profileWelcome.
   ///

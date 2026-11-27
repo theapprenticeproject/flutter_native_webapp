@@ -13,7 +13,7 @@ final _en = lookupAppLocalizations(const Locale('en'));
 void main() {
   test('can send again, with the Worker\'s feedback: it, then the hint', () {
     expect(
-      notValidText(_en, feedback: 'Too dark.', canSend: true),
+      notValidText(_en, feedback: 'Too dark.'),
       'Too dark.\n\nNo worries; please send it again!',
     );
   });
@@ -21,25 +21,11 @@ void main() {
   test('can send again, no feedback: one sentence only', () {
     for (final none in [null, '', '   ']) {
       expect(
-        notValidText(_en, feedback: none, canSend: true),
+        notValidText(_en, feedback: none),
         'Hi Champ 👋\nI couldn\'t review your work 🥺 Because the photo was either '
         'a bit unclear or not of today\'s activity.\n\n'
         'No worries; please send it again!',
       );
     }
-  });
-
-  test('no tries left, with feedback: it, then why there is no button', () {
-    expect(
-      notValidText(_en, feedback: 'Too dark.', canSend: false),
-      startsWith('Too dark.\n\nYou have used both tries'),
-    );
-  });
-
-  test('no tries left, no feedback: it was not accepted, and why', () {
-    final text = notValidText(_en, feedback: null, canSend: false);
-    expect(text, contains('I couldn\'t review your work'));
-    expect(text, contains('both tries'));
-    expect(text, isNot(contains('please send it again')));
   });
 }

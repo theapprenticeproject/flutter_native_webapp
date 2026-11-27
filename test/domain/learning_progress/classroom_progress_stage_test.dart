@@ -156,7 +156,6 @@ void main() {
         FeedbackStage.waiting,
         FeedbackStage.slow,
         FeedbackStage.notValid,
-        FeedbackStage.notValidNoRetry,
       ]) {
         expect(stage(f), ClassroomProgressStage.awaitingFeedback, reason: '$f');
       }
@@ -211,7 +210,7 @@ void main() {
     // button opens the activity, where the page with the message and "Send
     // again" is. Home does not repeat that message.
     test('Home shows "feedback ready" for a work that is not valid', () {
-      for (final f in [FeedbackStage.notValid, FeedbackStage.notValidNoRetry]) {
+      for (final f in [FeedbackStage.notValid]) {
         expect(
           homeStageFor(ClassroomProgressStage.awaitingFeedback, f),
           LearningStage.feedbackReady,

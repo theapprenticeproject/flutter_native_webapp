@@ -79,7 +79,8 @@ void main() {
     expect(p[0].labelOf(_en), 'Feedback given');
     expect(p[1].labelOf(_en), 'Feedback pending');
     expect(p[2].labelOf(_en), 'Wrong format');
-    expect(p[3].labelOf(_en), 'Not accepted');
+    // No attempt limit: a failed second attempt is also "send again".
+    expect(p[3].labelOf(_en), 'Wrong format');
     expect(p[4].labelOf(_en), 'Not started');
   });
 

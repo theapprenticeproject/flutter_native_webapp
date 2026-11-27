@@ -99,8 +99,9 @@ class UploadFailedException implements Exception {
 }
 
 /// The work submission (R-63, R-76): ask for a slot, upload the file to it,
-/// then tell the Worker (`submit_artwork`). A student has 2 attempts for each
-/// assignment, and a third `request_upload` answers `CONFLICT`.
+/// then tell the Worker (`submit_artwork`). There is no limit on attempts: a
+/// student sends again until the work is valid. Only the first attempt gives the
+/// submit points.
 class SubmissionRepository {
   SubmissionRepository(
     this._http, {
