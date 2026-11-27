@@ -162,6 +162,17 @@ class LearnerStateRepository {
     final index = units.indexWhere((u) => u.unitId == id);
     if (index < 0) throw UnitNotBundledException(id);
 
+    // The student has just finished this unit: the feedback was valid and seen,
+    // so the phone closed it. The Worker can be a moment behind and still name
+    // this unit, with all three steps done. That is not a reset (a reset has
+    // steps missing), so the phone keeps its place: going back showed the old
+    // feedback again after "Let's go".
+    if (completed != null &&
+        completed.containsAll(const {'video', 'quiz', 'submission'}) &&
+        enrollment.submissionIndex > index) {
+      return restoreLocalProgress(state);
+    }
+
     // Only the steps the Worker has recorded count. A work in `last_submission`
     // does not prove the video: after a reset the Worker can hold a work but no
     // watched video, and it refuses the quiz until the video is recorded.

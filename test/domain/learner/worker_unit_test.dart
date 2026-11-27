@@ -412,6 +412,52 @@ void main() {
       expect(state.enrollment!.quizzesCompleted, 3);
     });
 
+    // The student finished a unit (valid feedback seen, the phone closed it). The
+    // Worker, a moment behind, still names that unit with all three steps done.
+    // The phone must not be pulled back: "Let's go" showed the old feedback again.
+    test(
+      'a Worker a moment behind does not pull a finished unit back',
+      () async {
+        await repo.refreshPoints('S1');
+        await repo.alignToWorkerUnit(
+          'S1',
+          _units,
+        ); // the Worker's unit: index 2
+        await repo.applyLocalProgress(
+          learnerId: 'S1',
+          xp: 5,
+          videoIndex: 3,
+          quizIndex: 3,
+          submissionIndex: 3, // closed: the feedback was valid and seen
+        );
+        syncCompleted = ['video', 'quiz', 'submission'];
+        await repo.refreshPoints('S1'); // still names unit index 2
+        expect(
+          await indexAfterAlign(),
+          3,
+          reason: 'the next unit, not unit 2 again',
+        );
+      },
+    );
+
+    test(
+      'with nothing done in that unit, the Worker still wins (a reset)',
+      () async {
+        await repo.refreshPoints('S1');
+        await repo.alignToWorkerUnit('S1', _units);
+        await repo.applyLocalProgress(
+          learnerId: 'S1',
+          xp: 5,
+          videoIndex: 3,
+          quizIndex: 3,
+          submissionIndex: 3,
+        );
+        syncCompleted = <String>[];
+        await repo.refreshPoints('S1');
+        expect(await indexAfterAlign(), 2);
+      },
+    );
+
     test('a Worker with nothing in this unit wins over the phone', () async {
       // The phone says the video is done (for example after a reset).
       await repo.applyLocalProgress(learnerId: 'S1', xp: 5, videoIndex: 3);
