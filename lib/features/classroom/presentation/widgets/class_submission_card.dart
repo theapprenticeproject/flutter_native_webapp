@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/router/app_routes.dart';
 import '../../../../shared/media/file_kind.dart';
+import '../../../../shared/media/image_encoder.dart';
 import '../ask_tap_launcher.dart';
 import '../../../../shared/widgets/dashed_upload_box.dart';
 import 'friends_made_row.dart';
@@ -102,6 +103,20 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
     }
   }
 
+  /// A smaller JPEG of the photo (at most 1600 on the long side), for the preview
+  /// and for sending. A full camera photo can be too big to draw (black picture),
+  /// so the browser makes it smaller first. If that fails, the original is used.
+  // shortcut: the photo is made smaller twice (here, and again before the upload
+  // to the type the slot asks for). A small loss of quality. Skip the second
+  // step when the first already made the type the slot wants.
+  Future<Uint8List> _shrink(Uint8List original) async {
+    try {
+      return await encodeImage(original, 'image/jpeg');
+    } catch (_) {
+      return original;
+    }
+  }
+
   bool _isRight(XFile file, {required bool video}) {
     final ok = isRightFile(
       mimeType: file.mimeType,
@@ -119,10 +134,12 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
       _wrongFile = false;
     });
     try {
-      final file = await _picker.pickImage(source: source, imageQuality: 85);
+      // No quality setting here: the picker would re-draw the photo on a canvas, and
+      // a big camera photo comes back blank (QA). The app shrinks it itself.
+      final file = await _picker.pickImage(source: source);
       if (file != null) {
         if (!_isRight(file, video: false)) return;
-        final bytes = await file.readAsBytes();
+        final bytes = await _shrink(await file.readAsBytes());
         if (!mounted) return;
         setState(() {
           _pickedMedia = file;
@@ -182,7 +199,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
       _wrongFile = false;
     });
     try {
-      final file = await _picker.pickMedia(imageQuality: 85);
+      final file = await _picker.pickMedia();
       if (file != null) {
         final video = isRightFile(
           mimeType: file.mimeType,
@@ -190,7 +207,7 @@ class _ClassSubmissionCardState extends State<ClassSubmissionCard> {
           video: true,
         );
         if (!video && !_isRight(file, video: false)) return;
-        final bytes = video ? null : await file.readAsBytes();
+        final bytes = video ? null : await _shrink(await file.readAsBytes());
         if (!mounted) return;
         setState(() {
           _pickedMedia = file;
